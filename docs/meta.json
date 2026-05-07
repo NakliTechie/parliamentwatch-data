@@ -1,14 +1,18 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-07T18:21:39Z",
+  "generated_at": "2026-05-07T19:39:38Z",
   "lok_sabhas": [
+    14,
+    15,
+    16,
+    17,
     18
   ],
-  "text_limit_per_committee": 3,
-  "total_reports": 2671,
+  "text_limit_per_committee": 20,
+  "total_reports": 14707,
   "extract_stats": {
-    "extracted": 69,
-    "skipped": 0,
-    "failed": 3
+    "extracted": 396,
+    "skipped": 75,
+    "failed": 9
   }
 }
