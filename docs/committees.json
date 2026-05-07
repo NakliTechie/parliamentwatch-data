@@ -1,0 +1,98 @@
+{
+  "agriculture": {
+    "name": "Agriculture, Animal Husbandry and Food Processing",
+    "house": "L"
+  },
+  "chemicals": {
+    "name": "Chemicals & Fertilizers",
+    "house": "L"
+  },
+  "coal": {
+    "name": "Coal, Mines and Steel",
+    "house": "L"
+  },
+  "defence": {
+    "name": "Defence",
+    "house": "L"
+  },
+  "energy": {
+    "name": "Energy",
+    "house": "L"
+  },
+  "external_affairs": {
+    "name": "External Affairs",
+    "house": "L"
+  },
+  "finance": {
+    "name": "Finance",
+    "house": "L"
+  },
+  "consumer_affairs": {
+    "name": "Consumer Affairs, Food and Public Distribution",
+    "house": "L"
+  },
+  "communications": {
+    "name": "Communications and Information Technology",
+    "house": "L"
+  },
+  "labour": {
+    "name": "Labour, Textiles and Skill Development",
+    "house": "L"
+  },
+  "petroleum": {
+    "name": "Petroleum & Natural Gas",
+    "house": "L"
+  },
+  "railways": {
+    "name": "Railways",
+    "house": "L"
+  },
+  "rural_development": {
+    "name": "Rural Development and Panchayati Raj",
+    "house": "L"
+  },
+  "social_justice": {
+    "name": "Social Justice & Empowerment",
+    "house": "L"
+  },
+  "housing": {
+    "name": "Housing and Urban Affairs",
+    "house": "L"
+  },
+  "water_resources": {
+    "name": "Water Resources",
+    "house": "L"
+  },
+  "commerce": {
+    "name": "Commerce",
+    "house": "R"
+  },
+  "health": {
+    "name": "Health and Family Welfare",
+    "house": "R"
+  },
+  "home_affairs": {
+    "name": "Home Affairs",
+    "house": "R"
+  },
+  "education": {
+    "name": "Education, Women, Children, Youth and Sports",
+    "house": "R"
+  },
+  "industry": {
+    "name": "Industry",
+    "house": "R"
+  },
+  "personnel": {
+    "name": "Personnel, Public Grievances, Law and Justice",
+    "house": "R"
+  },
+  "science": {
+    "name": "Science and Technology, Environment and Forests",
+    "house": "R"
+  },
+  "transport": {
+    "name": "Transport, Tourism and Culture",
+    "house": "R"
+  }
+}

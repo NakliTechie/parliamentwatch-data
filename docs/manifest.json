@@ -1,0 +1,340 @@
+{
+  "texts": {
+    "agriculture": {
+      "36": {
+        "size": 51978,
+        "url": "text/agriculture/36.txt"
+      },
+      "37": {
+        "size": 91309,
+        "url": "text/agriculture/37.txt"
+      },
+      "38": {
+        "size": 118557,
+        "url": "text/agriculture/38.txt"
+      }
+    },
+    "chemicals": {
+      "21": {
+        "size": 194947,
+        "url": "text/chemicals/21.txt"
+      },
+      "22": {
+        "size": 148535,
+        "url": "text/chemicals/22.txt"
+      },
+      "23": {
+        "size": 276079,
+        "url": "text/chemicals/23.txt"
+      }
+    },
+    "coal": {
+      "21": {
+        "size": 0,
+        "url": "text/coal/21.txt"
+      },
+      "22": {
+        "size": 68276,
+        "url": "text/coal/22.txt"
+      },
+      "23": {
+        "size": 0,
+        "url": "text/coal/23.txt"
+      }
+    },
+    "commerce": {
+      "254": {
+        "size": 169958,
+        "url": "text/commerce/254.txt"
+      },
+      "255": {
+        "size": 240819,
+        "url": "text/commerce/255.txt"
+      },
+      "256": {
+        "size": 0,
+        "url": "text/commerce/256.txt"
+      }
+    },
+    "communications": {
+      "25": {
+        "size": 180364,
+        "url": "text/communications/25.txt"
+      },
+      "26": {
+        "size": 247260,
+        "url": "text/communications/26.txt"
+      },
+      "27": {
+        "size": 681049,
+        "url": "text/communications/27.txt"
+      }
+    },
+    "consumer_affairs": {
+      "12": {
+        "size": 57260,
+        "url": "text/consumer_affairs/12.txt"
+      },
+      "13": {
+        "size": 195299,
+        "url": "text/consumer_affairs/13.txt"
+      },
+      "14": {
+        "size": 236341,
+        "url": "text/consumer_affairs/14.txt"
+      }
+    },
+    "defence": {
+      "21": {
+        "size": 171173,
+        "url": "text/defence/21.txt"
+      },
+      "22": {
+        "size": 252981,
+        "url": "text/defence/22.txt"
+      },
+      "23": {
+        "size": 138665,
+        "url": "text/defence/23.txt"
+      }
+    },
+    "education": {
+      "376": {
+        "size": 166449,
+        "url": "text/education/376.txt"
+      },
+      "377": {
+        "size": 214263,
+        "url": "text/education/377.txt"
+      },
+      "378": {
+        "size": 332481,
+        "url": "text/education/378.txt"
+      }
+    },
+    "energy": {
+      "10": {
+        "size": 180018,
+        "url": "text/energy/10.txt"
+      },
+      "11": {
+        "size": 142994,
+        "url": "text/energy/11.txt"
+      },
+      "12": {
+        "size": 143874,
+        "url": "text/energy/12.txt"
+      }
+    },
+    "external_affairs": {
+      "11": {
+        "size": 381394,
+        "url": "text/external_affairs/11.txt"
+      },
+      "12": {
+        "size": 561631,
+        "url": "text/external_affairs/12.txt"
+      },
+      "13": {
+        "size": 153577,
+        "url": "text/external_affairs/13.txt"
+      }
+    },
+    "finance": {
+      "33": {
+        "size": 299669,
+        "url": "text/finance/33.txt"
+      },
+      "34": {
+        "size": 161680,
+        "url": "text/finance/34.txt"
+      },
+      "35": {
+        "size": 129112,
+        "url": "text/finance/35.txt"
+      }
+    },
+    "health": {
+      "172": {
+        "size": 1001423,
+        "url": "text/health/172.txt"
+      },
+      "173": {
+        "size": 513618,
+        "url": "text/health/173.txt"
+      },
+      "174": {
+        "size": 527522,
+        "url": "text/health/174.txt"
+      }
+    },
+    "home_affairs": {
+      "256": {
+        "size": 158248,
+        "url": "text/home_affairs/256.txt"
+      },
+      "257": {
+        "size": 435822,
+        "url": "text/home_affairs/257.txt"
+      },
+      "258": {
+        "size": 213896,
+        "url": "text/home_affairs/258.txt"
+      }
+    },
+    "housing": {
+      "7": {
+        "size": 156435,
+        "url": "text/housing/7.txt"
+      },
+      "8": {
+        "size": 85094,
+        "url": "text/housing/8.txt"
+      },
+      "9": {
+        "size": 217067,
+        "url": "text/housing/9.txt"
+      }
+    },
+    "industry": {
+      "331": {
+        "size": 81169,
+        "url": "text/industry/331.txt"
+      },
+      "332": {
+        "size": 167917,
+        "url": "text/industry/332.txt"
+      },
+      "333": {
+        "size": 202317,
+        "url": "text/industry/333.txt"
+      }
+    },
+    "labour": {
+      "18": {
+        "size": 179088,
+        "url": "text/labour/18.txt"
+      },
+      "19": {
+        "size": 140259,
+        "url": "text/labour/19.txt"
+      },
+      "20": {
+        "size": 199155,
+        "url": "text/labour/20.txt"
+      }
+    },
+    "personnel": {
+      "162": {
+        "size": 141061,
+        "url": "text/personnel/162.txt"
+      },
+      "163": {
+        "size": 83708,
+        "url": "text/personnel/163.txt"
+      },
+      "164": {
+        "size": 98320,
+        "url": "text/personnel/164.txt"
+      }
+    },
+    "petroleum": {
+      "5": {
+        "size": 113548,
+        "url": "text/petroleum/5.txt"
+      },
+      "6": {
+        "size": 102786,
+        "url": "text/petroleum/6.txt"
+      },
+      "7": {
+        "size": 161517,
+        "url": "text/petroleum/7.txt"
+      }
+    },
+    "railways": {
+      "6": {
+        "size": 141854,
+        "url": "text/railways/6.txt"
+      },
+      "7": {
+        "size": 73974,
+        "url": "text/railways/7.txt"
+      },
+      "8": {
+        "size": 246931,
+        "url": "text/railways/8.txt"
+      }
+    },
+    "rural_development": {
+      "30": {
+        "size": 92180,
+        "url": "text/rural_development/30.txt"
+      },
+      "31": {
+        "size": 59295,
+        "url": "text/rural_development/31.txt"
+      },
+      "32": {
+        "size": 72595,
+        "url": "text/rural_development/32.txt"
+      }
+    },
+    "science": {
+      "409": {
+        "size": 79476,
+        "url": "text/science/409.txt"
+      },
+      "410": {
+        "size": 159868,
+        "url": "text/science/410.txt"
+      },
+      "411": {
+        "size": 185619,
+        "url": "text/science/411.txt"
+      }
+    },
+    "social_justice": {
+      "18": {
+        "size": 173777,
+        "url": "text/social_justice/18.txt"
+      },
+      "19": {
+        "size": 114436,
+        "url": "text/social_justice/19.txt"
+      },
+      "20": {
+        "size": 91465,
+        "url": "text/social_justice/20.txt"
+      }
+    },
+    "transport": {
+      "389": {
+        "size": 110937,
+        "url": "text/transport/389.txt"
+      },
+      "390": {
+        "size": 99453,
+        "url": "text/transport/390.txt"
+      },
+      "391": {
+        "size": 75480,
+        "url": "text/transport/391.txt"
+      }
+    },
+    "water_resources": {
+      "10": {
+        "size": 235989,
+        "url": "text/water_resources/10.txt"
+      },
+      "11": {
+        "size": 254325,
+        "url": "text/water_resources/11.txt"
+      },
+      "9": {
+        "size": 176115,
+        "url": "text/water_resources/9.txt"
+      }
+    }
+  }
+}
