@@ -2,27 +2,33 @@ name: Scrape and publish
 
 on:
   schedule:
-    - cron: '30 4 * * *'   # 04:30 UTC daily = 10:00 IST
+    # 22:00 UTC = 03:30 IST. Off-peak for sansad.in (and downstream IST users).
+    - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
       lok_sabhas:
         description: 'Comma-separated Lok Sabha numbers to scrape'
         default: '18'
-      text_limit:
-        description: 'Max reports per committee to extract text for'
-        default: '20'
+      max_extractions:
+        description: 'Max PDFs to extract this run (politeness budget)'
+        default: '400'
+      max_run_seconds:
+        description: 'Hard wall-clock cap for the extraction phase, seconds'
+        default: '1800'
 
 permissions:
   contents: write
 
 concurrency:
+  # Don't let two scheduled or manual runs ever overlap — they would race on
+  # the on-disk text cache and produce a noisy git diff.
   group: scrape
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -35,8 +41,12 @@ jobs:
 
       - name: Build static data
         env:
-          LOK_SABHAS: ${{ inputs.lok_sabhas || '18' }}
-          TEXT_LIMIT_PER_COMMITTEE: ${{ inputs.text_limit || '20' }}
+          LOK_SABHAS:              ${{ inputs.lok_sabhas       || '18' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions  || '400' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds  || '1800' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
         run: python build_static.py
 
       - name: Commit and push
