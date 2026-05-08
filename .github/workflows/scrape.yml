@@ -2,8 +2,19 @@ name: Scrape and publish
 
 on:
   schedule:
-    # 22:00 UTC = 03:30 IST. Off-peak for sansad.in (and downstream IST users).
-    - cron: '0 22 * * *'
+    # Every 4 hours. With max_extractions=400 (env default in this workflow),
+    # 6 runs/day × 400 = 2,400 PDFs/day = ~5.5 days to complete the LS14-18
+    # historical backfill (~13,300 candidates as of 2026-05-08).
+    #
+    # build_static.py has a rate-limit cooldown guard (6h) that skips the
+    # extraction phase when the previous run was 429'd by sansad.in, so
+    # this cron is safe to fire-and-forget — at most one wasted cycle per
+    # rate-limit event.
+    #
+    # Once backfill completes, the steady-state cost is 6 quiet runs/day
+    # (no PDFs to extract, no commits). If that becomes an issue, switch
+    # back to a single daily cron later.
+    - cron: '0 */4 * * *'
   workflow_dispatch:
     inputs:
       lok_sabhas:

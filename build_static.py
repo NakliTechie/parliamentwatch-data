@@ -42,6 +42,12 @@ MAX_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_EXTRACTIONS_PER_RUN", "400"))
 MAX_RUN_SECONDS = int(os.environ.get("MAX_RUN_SECONDS", "1800"))  # 30 min
 EXTRACT_WORKERS = int(os.environ.get("EXTRACT_WORKERS", "4"))
 
+# After a 429/403 from sansad.in, skip the extraction phase for this many
+# seconds so the next scheduled run doesn't immediately retry-storm. Tuned
+# to be ≥ one cron interval (currently 4h) so we always sit out at least
+# one cycle after a rate-limit before attempting again.
+RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
+
 LOK_SABHAS = [int(x) for x in os.environ.get("LOK_SABHAS", "18").split(",")]
 
 
@@ -167,7 +173,33 @@ def _missing_reports_priority_order():
 
 def extract_missing_texts():
     """Extract up to MAX_EXTRACTIONS_PER_RUN missing PDFs. Stops early on
-    rate-limit (429/403) or wall-clock budget exhaustion."""
+    rate-limit (429/403) or wall-clock budget exhaustion.
+
+    Pre-flight: if the most recent run wrote `rate_limited: true` to
+    meta.json within the last RATE_LIMIT_COOLDOWN_SECONDS, skip the
+    extraction phase entirely. The cron fires every 4h; the cooldown is
+    6h, so we always sit out at least one cycle after sansad.in 429s us.
+    """
+    prev_meta_path = DOCS / "meta.json"
+    if prev_meta_path.exists():
+        try:
+            prev_meta = json.loads(prev_meta_path.read_text())
+            prev_rl = prev_meta.get("extract_stats", {}).get("rate_limited", False)
+            if prev_rl:
+                gen_at = prev_meta.get("generated_at", "")
+                gen_dt = datetime.strptime(gen_at, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+                age = (datetime.now(timezone.utc) - gen_dt).total_seconds()
+                if age < RATE_LIMIT_COOLDOWN_SECONDS:
+                    print(f"  Previous run was rate-limited {int(age/60)}m ago "
+                          f"(cooldown is {RATE_LIMIT_COOLDOWN_SECONDS//60}m) — skipping extraction this run.")
+                    return {"extracted": [], "failed": [], "rate_limited": True,
+                            "budget_hit": False, "candidates_total": 0,
+                            "skipped_due_to_cooldown": True}
+                else:
+                    print(f"  Previous run rate-limited {int(age/60)}m ago — cooldown elapsed, proceeding.")
+        except Exception as e:
+            print(f"  (rate-limit pre-flight check failed: {e} — proceeding anyway)")
+
     candidates = _missing_reports_priority_order()
     print(f"  candidates: {len(candidates)} reports missing extracted text")
     if not candidates:
