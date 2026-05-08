@@ -1,18 +1,18 @@
 {
   "version": "1.1",
-  "generated_at": "2026-05-08T16:04:03Z",
+  "generated_at": "2026-05-08T18:05:23Z",
   "lok_sabhas": [
     18
   ],
   "max_extractions_per_run": 400,
   "extract_workers": 4,
   "total_reports": 14707,
-  "total_with_text": 2493,
+  "total_with_text": 2855,
   "extract_stats": {
-    "extracted": 307,
-    "failed": 93,
+    "extracted": 352,
+    "failed": 48,
     "rate_limited": false,
     "budget_hit": false,
-    "candidates_remaining_after_run": 12269
+    "candidates_remaining_after_run": 11862
   }
 }
