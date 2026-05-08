@@ -1,10 +1,16 @@
-# Cloudflare Pages cache rules for the SansadLocal data mirror.
+# Cloudflare Pages cache + CORS rules for the SansadLocal data mirror.
 # Read by CF Workers + Static Assets on each deploy; ignored by GitHub Pages.
 #
-# Note: CF Workers + Static Assets automatically sets
-# `Access-Control-Allow-Origin: *` on responses. We deliberately do NOT
-# duplicate it here — having two values produces an invalid header
-# (`*, *`) that browsers reject as a CORS error.
+# IMPORTANT: only ONE block sets Access-Control-Allow-Origin. CF Workers
+# + Static Assets merges matching header rules across blocks — if both
+# `/*.json` and `/*` set CORS, the response gets two `Access-Control-
+# Allow-Origin: *` values, which browsers reject as malformed CORS.
+
+# Public CORS for everything served from this mirror. Set once at the
+# catch-all level so it doesn't duplicate when path-specific blocks
+# below also match.
+/*
+  Access-Control-Allow-Origin: *
 
 # JSON metadata changes on every backfill run (a few times a day during
 # backfill, once daily steady-state). Short edge cache + revalidation
