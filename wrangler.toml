@@ -1,0 +1,15 @@
+# Cloudflare Workers + Static Assets config for the SansadLocal data mirror.
+# Deploys docs/ as static files served from CF's global edge. No worker code.
+#
+# CF Workers Builds runs `npx wrangler deploy`, which reads this file and
+# uploads the contents of ./docs as static assets. Each push to main triggers
+# a fresh deploy automatically.
+
+name = "sansad-files"
+compatibility_date = "2024-12-01"
+
+# All static files live under docs/. CF serves them with the cache + CORS
+# rules from docs/_headers (already in the repo).
+[assets]
+directory = "./docs"
+not_found_handling = "404-page"
