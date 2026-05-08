@@ -575,6 +575,78 @@
       }
     },
     "education": {
+      "341": {
+        "size": 176039,
+        "url": "text/education/341.txt"
+      },
+      "342": {
+        "size": 120719,
+        "url": "text/education/342.txt"
+      },
+      "343": {
+        "size": 134572,
+        "url": "text/education/343.txt"
+      },
+      "344": {
+        "size": 75489,
+        "url": "text/education/344.txt"
+      },
+      "345": {
+        "size": 69739,
+        "url": "text/education/345.txt"
+      },
+      "346": {
+        "size": 72658,
+        "url": "text/education/346.txt"
+      },
+      "347": {
+        "size": 139563,
+        "url": "text/education/347.txt"
+      },
+      "348": {
+        "size": 141088,
+        "url": "text/education/348.txt"
+      },
+      "349": {
+        "size": 117585,
+        "url": "text/education/349.txt"
+      },
+      "350": {
+        "size": 116592,
+        "url": "text/education/350.txt"
+      },
+      "351": {
+        "size": 121619,
+        "url": "text/education/351.txt"
+      },
+      "352": {
+        "size": 84303,
+        "url": "text/education/352.txt"
+      },
+      "353": {
+        "size": 51894,
+        "url": "text/education/353.txt"
+      },
+      "354": {
+        "size": 26786,
+        "url": "text/education/354.txt"
+      },
+      "355": {
+        "size": 55998,
+        "url": "text/education/355.txt"
+      },
+      "356": {
+        "size": 194334,
+        "url": "text/education/356.txt"
+      },
+      "357": {
+        "size": 10774,
+        "url": "text/education/357.txt"
+      },
+      "358": {
+        "size": 228086,
+        "url": "text/education/358.txt"
+      },
       "359": {
         "size": 80592,
         "url": "text/education/359.txt"
@@ -1629,6 +1701,210 @@
       }
     },
     "science": {
+      "341": {
+        "size": 39810,
+        "url": "text/science/341.txt"
+      },
+      "342": {
+        "size": 42515,
+        "url": "text/science/342.txt"
+      },
+      "343": {
+        "size": 46571,
+        "url": "text/science/343.txt"
+      },
+      "344": {
+        "size": 49064,
+        "url": "text/science/344.txt"
+      },
+      "345": {
+        "size": 54717,
+        "url": "text/science/345.txt"
+      },
+      "346": {
+        "size": 44594,
+        "url": "text/science/346.txt"
+      },
+      "347": {
+        "size": 42924,
+        "url": "text/science/347.txt"
+      },
+      "348": {
+        "size": 107011,
+        "url": "text/science/348.txt"
+      },
+      "349": {
+        "size": 91968,
+        "url": "text/science/349.txt"
+      },
+      "350": {
+        "size": 38747,
+        "url": "text/science/350.txt"
+      },
+      "351": {
+        "size": 46429,
+        "url": "text/science/351.txt"
+      },
+      "352": {
+        "size": 30312,
+        "url": "text/science/352.txt"
+      },
+      "353": {
+        "size": 35986,
+        "url": "text/science/353.txt"
+      },
+      "354": {
+        "size": 53287,
+        "url": "text/science/354.txt"
+      },
+      "355": {
+        "size": 41607,
+        "url": "text/science/355.txt"
+      },
+      "356": {
+        "size": 38209,
+        "url": "text/science/356.txt"
+      },
+      "357": {
+        "size": 27029,
+        "url": "text/science/357.txt"
+      },
+      "358": {
+        "size": 46226,
+        "url": "text/science/358.txt"
+      },
+      "359": {
+        "size": 54554,
+        "url": "text/science/359.txt"
+      },
+      "360": {
+        "size": 58064,
+        "url": "text/science/360.txt"
+      },
+      "361": {
+        "size": 54129,
+        "url": "text/science/361.txt"
+      },
+      "362": {
+        "size": 61252,
+        "url": "text/science/362.txt"
+      },
+      "363": {
+        "size": 70369,
+        "url": "text/science/363.txt"
+      },
+      "364": {
+        "size": 54997,
+        "url": "text/science/364.txt"
+      },
+      "365": {
+        "size": 1341582,
+        "url": "text/science/365.txt"
+      },
+      "366": {
+        "size": 65901,
+        "url": "text/science/366.txt"
+      },
+      "367": {
+        "size": 37407,
+        "url": "text/science/367.txt"
+      },
+      "368": {
+        "size": 50073,
+        "url": "text/science/368.txt"
+      },
+      "369": {
+        "size": 40613,
+        "url": "text/science/369.txt"
+      },
+      "370": {
+        "size": 40878,
+        "url": "text/science/370.txt"
+      },
+      "371": {
+        "size": 51653,
+        "url": "text/science/371.txt"
+      },
+      "372": {
+        "size": 35034,
+        "url": "text/science/372.txt"
+      },
+      "373": {
+        "size": 72799,
+        "url": "text/science/373.txt"
+      },
+      "374": {
+        "size": 74324,
+        "url": "text/science/374.txt"
+      },
+      "375": {
+        "size": 59315,
+        "url": "text/science/375.txt"
+      },
+      "376": {
+        "size": 64553,
+        "url": "text/science/376.txt"
+      },
+      "377": {
+        "size": 80432,
+        "url": "text/science/377.txt"
+      },
+      "378": {
+        "size": 85679,
+        "url": "text/science/378.txt"
+      },
+      "379": {
+        "size": 64478,
+        "url": "text/science/379.txt"
+      },
+      "380": {
+        "size": 36405,
+        "url": "text/science/380.txt"
+      },
+      "381": {
+        "size": 35821,
+        "url": "text/science/381.txt"
+      },
+      "382": {
+        "size": 32997,
+        "url": "text/science/382.txt"
+      },
+      "383": {
+        "size": 25929,
+        "url": "text/science/383.txt"
+      },
+      "384": {
+        "size": 42900,
+        "url": "text/science/384.txt"
+      },
+      "385": {
+        "size": 58780,
+        "url": "text/science/385.txt"
+      },
+      "386": {
+        "size": 24848,
+        "url": "text/science/386.txt"
+      },
+      "387": {
+        "size": 163688,
+        "url": "text/science/387.txt"
+      },
+      "388": {
+        "size": 86349,
+        "url": "text/science/388.txt"
+      },
+      "389": {
+        "size": 90084,
+        "url": "text/science/389.txt"
+      },
+      "390": {
+        "size": 79814,
+        "url": "text/science/390.txt"
+      },
+      "391": {
+        "size": 144985,
+        "url": "text/science/391.txt"
+      },
       "392": {
         "size": 88780,
         "url": "text/science/392.txt"
@@ -1793,6 +2069,130 @@
       }
     },
     "transport": {
+      "341": {
+        "size": 259142,
+        "url": "text/transport/341.txt"
+      },
+      "342": {
+        "size": 308185,
+        "url": "text/transport/342.txt"
+      },
+      "343": {
+        "size": 260377,
+        "url": "text/transport/343.txt"
+      },
+      "344": {
+        "size": 28501,
+        "url": "text/transport/344.txt"
+      },
+      "345": {
+        "size": 112048,
+        "url": "text/transport/345.txt"
+      },
+      "346": {
+        "size": 60731,
+        "url": "text/transport/346.txt"
+      },
+      "347": {
+        "size": 81787,
+        "url": "text/transport/347.txt"
+      },
+      "348": {
+        "size": 305715,
+        "url": "text/transport/348.txt"
+      },
+      "349": {
+        "size": 107497,
+        "url": "text/transport/349.txt"
+      },
+      "350": {
+        "size": 374974,
+        "url": "text/transport/350.txt"
+      },
+      "351": {
+        "size": 231238,
+        "url": "text/transport/351.txt"
+      },
+      "352": {
+        "size": 350981,
+        "url": "text/transport/352.txt"
+      },
+      "353": {
+        "size": 299551,
+        "url": "text/transport/353.txt"
+      },
+      "354": {
+        "size": 270042,
+        "url": "text/transport/354.txt"
+      },
+      "355": {
+        "size": 240409,
+        "url": "text/transport/355.txt"
+      },
+      "356": {
+        "size": 171149,
+        "url": "text/transport/356.txt"
+      },
+      "357": {
+        "size": 351680,
+        "url": "text/transport/357.txt"
+      },
+      "358": {
+        "size": 210478,
+        "url": "text/transport/358.txt"
+      },
+      "359": {
+        "size": 145298,
+        "url": "text/transport/359.txt"
+      },
+      "360": {
+        "size": 145404,
+        "url": "text/transport/360.txt"
+      },
+      "361": {
+        "size": 126239,
+        "url": "text/transport/361.txt"
+      },
+      "362": {
+        "size": 247052,
+        "url": "text/transport/362.txt"
+      },
+      "363": {
+        "size": 58769,
+        "url": "text/transport/363.txt"
+      },
+      "364": {
+        "size": 126056,
+        "url": "text/transport/364.txt"
+      },
+      "365": {
+        "size": 152412,
+        "url": "text/transport/365.txt"
+      },
+      "366": {
+        "size": 154781,
+        "url": "text/transport/366.txt"
+      },
+      "367": {
+        "size": 132642,
+        "url": "text/transport/367.txt"
+      },
+      "368": {
+        "size": 158150,
+        "url": "text/transport/368.txt"
+      },
+      "369": {
+        "size": 172568,
+        "url": "text/transport/369.txt"
+      },
+      "370": {
+        "size": 105616,
+        "url": "text/transport/370.txt"
+      },
+      "371": {
+        "size": 139983,
+        "url": "text/transport/371.txt"
+      },
       "372": {
         "size": 145082,
         "url": "text/transport/372.txt"
