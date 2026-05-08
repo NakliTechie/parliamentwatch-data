@@ -1,0 +1,22 @@
+# Cloudflare Pages cache + CORS rules for the SansadLocal data mirror.
+# Read by CF Pages on each deploy; ignored by GitHub Pages.
+
+# JSON metadata changes on every backfill run (a few times a day during
+# backfill, once daily steady-state). Short edge cache + revalidation
+# means users see fresh data within ~5 minutes of a mirror push.
+/*.json
+  Cache-Control: public, max-age=300, must-revalidate
+  Access-Control-Allow-Origin: *
+
+# Extracted text files are immutable in practice — once a report's text
+# is published, the content doesn't change. Aggressive long-cache + the
+# 'immutable' hint tells browsers and CF's edge to skip revalidation.
+# If we ever need to invalidate (e.g. re-extraction with better OCR),
+# add a query-string version to the fetch URL.
+/text/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Catch-all for anything else (e.g. _headers itself).
+/*
+  Access-Control-Allow-Origin: *
