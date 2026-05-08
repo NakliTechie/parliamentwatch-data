@@ -18,6 +18,7 @@ Output is served by GitHub Pages from /docs.
 
 import json
 import os
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -44,10 +45,91 @@ EXTRACT_WORKERS = int(os.environ.get("EXTRACT_WORKERS", "4"))
 LOK_SABHAS = [int(x) for x in os.environ.get("LOK_SABHAS", "18").split(",")]
 
 
-def _safe_filename(report_num):
+def _safe_num(report_num):
+    """Filesystem-safe encoding of a report number (without LS prefix)."""
     if report_num is None:
         return None
     return str(report_num).replace("/", "-").replace(" ", "_")
+
+
+def _file_id(lok_sabha, report_num):
+    """Filesystem id for a report's text file: LS<n>_<safe-num>.
+
+    Pre-v0.4 we keyed by report_num alone — but the same number recurs
+    across Lok Sabhas (LS18 #23, LS17 #23, ...). Same-named files were
+    overwriting each other on disk and the manifest collapsed multi-LS
+    rows into one. The LS prefix uniquely identifies a single report.
+    """
+    safe = _safe_num(report_num)
+    if safe is None:
+        return None
+    if lok_sabha is None:
+        return safe   # shouldn't happen for real data; defensive fallback
+    return f"LS{lok_sabha}_{safe}"
+
+
+_LS_PREFIX_RE = re.compile(r"^LS\d+_")
+
+
+def migrate_unprefixed_text_files():
+    """One-time migration of pre-v0.4 text files to the LS-prefixed naming.
+
+    Walks text/<committee>/<num>.txt entries and renames each to
+    text/<committee>/LS<n>_<num>.txt, picking the highest-LS variant
+    that matches in reports.json (the old extraction order processed
+    LS desc and skipped if file existed, so the file represents the
+    highest LS most of the time).
+
+    Idempotent — files already LS-prefixed are left alone.
+    """
+    text_root = DOCS / "text"
+    if not text_root.exists():
+        return {"migrated": 0, "ambiguous": 0, "missing": 0, "preexisting": 0}
+
+    from scraper import load_existing_reports as _load
+    reports = _load()
+    migrated = ambiguous = missing = preexisting = 0
+
+    for committee_dir in sorted(text_root.iterdir()):
+        if not committee_dir.is_dir():
+            continue
+        committee_key = committee_dir.name
+        committee_reports = reports.get(committee_key, [])
+        # safe_num -> [lok_sabha, ...]
+        num_to_ls = {}
+        for r in committee_reports:
+            num = r.get("report_number")
+            ls = r.get("lok_sabha")
+            if num is None or ls is None:
+                continue
+            safe = _safe_num(num)
+            num_to_ls.setdefault(safe, []).append(ls)
+
+        for old_path in list(committee_dir.glob("*.txt")):
+            stem = old_path.stem
+            if _LS_PREFIX_RE.match(stem):
+                continue   # already migrated
+            ls_options = num_to_ls.get(stem, [])
+            if not ls_options:
+                print(f"  [migrate] no metadata for {committee_key}/{stem}.txt — leaving in place")
+                missing += 1
+                continue
+            ls = max(ls_options)   # extraction-order heuristic: highest LS first
+            if len(set(ls_options)) > 1:
+                ambiguous += 1
+            new_path = committee_dir / f"LS{ls}_{stem}.txt"
+            if new_path.exists():
+                # An LS-prefixed file already exists for the same report —
+                # this can happen if a partial migration ran earlier. The
+                # un-prefixed copy is the older one; remove it.
+                print(f"  [migrate] {new_path.name} already exists, removing stale {old_path.name}")
+                old_path.unlink()
+                preexisting += 1
+                continue
+            old_path.rename(new_path)
+            migrated += 1
+
+    return {"migrated": migrated, "ambiguous": ambiguous, "missing": missing, "preexisting": preexisting}
 
 
 def _missing_reports_priority_order():
@@ -55,11 +137,8 @@ def _missing_reports_priority_order():
     extracted text file, ordered (lok_sabha desc, report_number desc) so the
     most recent reports go first.
 
-    This replaces the old per-committee-cap loop, which left everything older
-    than the top-N invisible to the action. With this version, the per-run
-    cap is global (MAX_EXTRACTIONS_PER_RUN) and any single run picks up where
-    the last run left off — the on-disk text/<committee>/<id>.txt cache is
-    the source of truth for "already done".
+    The on-disk text file path is text/<committee>/LS<n>_<num>.txt, which
+    uniquely identifies a single (committee, lok_sabha, report_number) tuple.
     """
     reports = load_existing_reports()
     candidates = []
@@ -67,18 +146,19 @@ def _missing_reports_priority_order():
         for report in committee_reports:
             num = report.get("report_number")
             url = report.get("pdf_url")
-            if not num or not url:
+            ls = report.get("lok_sabha")
+            if not num or not url or ls is None:
                 continue
-            safe = _safe_filename(num)
-            text_path = DOCS / "text" / committee_key / f"{safe}.txt"
+            file_id = _file_id(ls, num)
+            text_path = DOCS / "text" / committee_key / f"{file_id}.txt"
             if text_path.exists():
                 continue
             candidates.append({
                 "committee_key": committee_key,
                 "report_number": num,
                 "pdf_url": url,
-                "lok_sabha": report.get("lok_sabha", 0) or 0,
-                "safe": safe,
+                "lok_sabha": ls or 0,
+                "file_id": file_id,
             })
     # Most recent first (LS18 before LS17, higher report number first within an LS)
     candidates.sort(key=lambda c: (c["lok_sabha"], c["report_number"]), reverse=True)
@@ -103,8 +183,12 @@ def extract_missing_texts():
     budget_hit = False
 
     def _do(c):
+        # pdf_utils saves the text to text/<committee>/<file_id>.txt — we pass
+        # file_id (LS<n>_<num>) as the "report_number" arg so the filename
+        # matches our manifest key. pdf_utils itself doesn't care about the
+        # naming scheme.
         try:
-            text = get_report_text(c["pdf_url"], c["committee_key"], str(c["report_number"]))
+            text = get_report_text(c["pdf_url"], c["committee_key"], c["file_id"])
             return c, text, None
         except RateLimited as rl:
             return c, None, rl
@@ -115,7 +199,7 @@ def extract_missing_texts():
         futures = {ex.submit(_do, c): c for c in target}
         for fut in as_completed(futures):
             c, text, err = fut.result()
-            label = f"{c['committee_key']}/{c['safe']}"
+            label = f"{c['committee_key']}/{c['file_id']}"
             if isinstance(err, RateLimited):
                 print(f"  [RATE-LIMITED] {label}: {err}")
                 rate_limited = True
@@ -204,25 +288,30 @@ def main():
     print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
     print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
 
-    print("\n[1/4] Scraping committee metadata...")
+    print("\n[1/5] Scraping committee metadata...")
     for ls in LOK_SABHAS:
         print(f"  Lok Sabha {ls}:")
         scrape_all_committees(lok_sabha=ls)
 
-    print("\n[2/4] Extracting missing texts (priority: newest first)...")
+    print("\n[2/5] Migrating any pre-v0.4 un-prefixed text files...")
+    mig = migrate_unprefixed_text_files()
+    print(f"  migrated={mig['migrated']} ambiguous={mig['ambiguous']} "
+          f"missing_metadata={mig['missing']} preexisting={mig['preexisting']}")
+
+    print("\n[3/5] Extracting missing texts (priority: newest first)...")
     extract_stats = extract_missing_texts()
     print(f"  extracted={len(extract_stats['extracted'])} "
           f"failed={len(extract_stats['failed'])} "
           f"rate_limited={extract_stats.get('rate_limited', False)} "
           f"budget_hit={extract_stats.get('budget_hit', False)}")
 
-    print("\n[3/4] Building manifest + committees index...")
+    print("\n[4/5] Building manifest + committees index...")
     manifest = build_manifest()
     with open(DOCS / "manifest.json", "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     build_committees_index()
 
-    print("\n[4/4] Writing meta.json...")
+    print("\n[5/5] Writing meta.json...")
     reports = load_existing_reports()
     total = sum(len(v) for v in reports.values())
     total_with_text = sum(len(v) for v in manifest.get("texts", {}).values())
