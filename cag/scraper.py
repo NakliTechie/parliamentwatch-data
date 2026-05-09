@@ -84,9 +84,20 @@ _DETAIL_ID_RE = re.compile(r'audit-report/details/(\d+)')
 
 def fetch_listing_page(page: int) -> list[int]:
     """Return the list of detail-page IDs on listing page `page`. Empty list
-    means the page is past the last one with content."""
-    resp = _get(f"{LISTING_URL}?page={page}")
-    # Dedup-preserving extract
+    means the page is past the last one with content.
+
+    cag.gov.in returns 404 for pages past the corpus end (not an empty
+    200 like the local-probe via curl-piped-to-grep suggested during
+    recon). Catch and treat as "no more". Backfill run 25608634028
+    crashed on `?page=272` before this fix landed.
+    """
+    url = f"{LISTING_URL}?page={page}"
+    try:
+        resp = _get(url)
+    except requests.exceptions.HTTPError as e:
+        if e.response is not None and e.response.status_code == 404:
+            return []
+        raise
     seen = set()
     ids: list[int] = []
     for m in _DETAIL_ID_RE.finditer(resp.text):
