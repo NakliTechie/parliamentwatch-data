@@ -357,7 +357,164 @@ def build_search_bundle(head_chars=5000):
     }
 
 
-def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None):
+# Inverted index for full-body recall (v0.6 part C). Pairs with the search
+# bundle: bundle is title + first 5K chars (snippet preview + substring),
+# index is token-presence across the full body of every report.
+#
+# Tokenization: \w+ lowercased. Stopwords dropped (common English only;
+# Hindi gets separate treatment if/when search-quality complaints surface).
+# Frequency cutoff drops tokens that appear in >FREQ_CUTOFF of docs —
+# prunes governmental boilerplate ("committee", "report", "shri" appear in
+# nearly every doc and never help recall).
+#
+# Output shape (compact int postings):
+#   { version, generated_at, report_count, vocab_size, total_postings,
+#     freq_cutoff, stopwords_count,
+#     report_keys: [<key>, ...],
+#     vocab:       [<token>, ...]   # sorted alphabetically — supports prefix match via binary search
+#     postings:    [[ri, ri, ...], ...]   # postings[i] = sorted ints into report_keys for vocab[i] }
+#
+# Bundle path moves to docs/drsc/search-index.json in v1.0a phase 2.
+
+# Common English stopwords (keep small; aim is to drop the obvious filler,
+# not to do full IR-grade stopword filtering — the freq cutoff catches the
+# rest of the high-frequency tokens corpus-side).
+_STOPWORDS = frozenset("""
+a an and the of to in on at by for with from is are was were be been being
+this that these those it its they them their there as or but if then so
+not no nor have has had do does did will would should could may might must
+can shall about above after again against all am any because before below
+between both each few further here how i me my myself we our ours ourselves
+you your yours yourself yourselves he him his himself she her hers herself
+itself which who whom whose what when where why off out over under up down
+into through during until while above below between because such own same
+""".split())
+
+_TOKEN_RE = re.compile(r"\w+", re.UNICODE)
+# Drop tokens in >FREQ_CUTOFF_HIGH of docs (governmental near-universals like
+# "report", "committee", "shri" — every doc has them, useless for search).
+# Drop tokens in <FREQ_CUTOFF_LOW (default: <2 docs ⇒ singleton, usually OCR
+# garbage or report-specific names that won't be queried).
+_FREQ_CUTOFF_HIGH = 0.9
+_FREQ_CUTOFF_LOW  = 2
+_MAX_TOKEN_LEN    = 25   # 25+ char tokens are essentially always OCR junk
+
+
+def build_search_index():
+    reports = load_existing_reports()
+    text_root = DOCS / "text"
+    if not text_root.exists():
+        return None
+
+    # First pass: collect (report_key, set_of_tokens) per doc. Sets dedupe
+    # within-doc — we don't store positions or counts, just presence.
+    report_keys = []        # parallel array — index → "<committee>|<ls>|<num>"
+    doc_token_sets = []     # parallel array — index → set of tokens in that doc
+    df = {}                 # token → document frequency (int count of docs containing it)
+
+    for committee_key, committee_reports in reports.items():
+        for r in committee_reports:
+            num = r.get("report_number")
+            ls  = r.get("lok_sabha")
+            if num is None:
+                continue
+            file_id = _file_id(ls, num)
+            if file_id is None:
+                continue
+            text_path = text_root / committee_key / f"{file_id}.txt"
+            if not text_path.exists():
+                continue
+            try:
+                text = text_path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
+            # Lowercase + tokenize. Cap token count per doc as a defensive
+            # measure against pathological PDFs (text extraction sometimes
+            # produces millions of single-char tokens from scanned junk).
+            tokens = set()
+            for m in _TOKEN_RE.finditer(text.lower()):
+                t = m.group(0)
+                # Junk filters: too short / too long / pure-numeric / stopword.
+                # Pure-numeric drops "144" etc — not ideal but the alternative
+                # is indexing every page number and date. Revisit if real
+                # numeric queries become a thing.
+                if len(t) < 2 or len(t) > _MAX_TOKEN_LEN:
+                    continue
+                if t.isdigit() or t in _STOPWORDS:
+                    continue
+                tokens.add(t)
+                if len(tokens) >= 50000:
+                    break
+            report_keys.append(f"{committee_key}|{ls if ls is not None else ''}|{num}")
+            doc_token_sets.append(tokens)
+            for t in tokens:
+                df[t] = df.get(t, 0) + 1
+
+    n_docs = len(report_keys)
+    if n_docs == 0:
+        return None
+
+    # Frequency cutoff: drop tokens that are too common to discriminate
+    # (>90%) AND drop singletons (<2 docs — usually OCR errors or
+    # report-specific identifiers that won't be queried).
+    high = int(n_docs * _FREQ_CUTOFF_HIGH)
+    low  = _FREQ_CUTOFF_LOW
+    keep_tokens = sorted(t for t, c in df.items() if low <= c <= high)
+    token_to_idx = {t: i for i, t in enumerate(keep_tokens)}
+
+    # Build postings: for each kept token, the sorted list of doc indices
+    # that contain it. Delta-encode the sorted list so consecutive small
+    # deltas dominate the JSON — gzip handles that pattern much better than
+    # large absolute IDs (saves ~25% on the wire).
+    raw_postings = [[] for _ in keep_tokens]
+    for doc_idx, tokens in enumerate(doc_token_sets):
+        for t in tokens:
+            ti = token_to_idx.get(t)
+            if ti is not None:
+                raw_postings[ti].append(doc_idx)
+
+    total_postings = sum(len(p) for p in raw_postings)
+
+    def _delta(lst):
+        if not lst:
+            return lst
+        out = [lst[0]]
+        prev = lst[0]
+        for x in lst[1:]:
+            out.append(x - prev)
+            prev = x
+        return out
+
+    postings = [_delta(p) for p in raw_postings]
+
+    index = {
+        "version":         2,                 # bumped: postings are delta-encoded
+        "encoding":        "delta",           # app reverses with cumulative sum
+        "generated_at":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "report_count":    n_docs,
+        "vocab_size":      len(keep_tokens),
+        "total_postings":  total_postings,
+        "freq_cutoff_low":  low,
+        "freq_cutoff_high": high,
+        "stopwords_count": len(_STOPWORDS),
+        "report_keys":     report_keys,
+        "vocab":           keep_tokens,
+        "postings":        postings,
+    }
+    out_path = DOCS / "search-index.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+    return {
+        "report_count":    n_docs,
+        "vocab_size":      len(keep_tokens),
+        "total_postings":  total_postings,
+        "size_bytes":      out_path.stat().st_size,
+        "freq_cutoff_low":  low,
+        "freq_cutoff_high": high,
+    }
+
+
+def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None, index_stats=None):
     meta = {
         "version": "1.2",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -376,6 +533,7 @@ def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None)
             ),
         },
         "search_bundle": bundle_stats,   # None if bundle wasn't built this run
+        "search_index":  index_stats,    # None if index wasn't built this run
     }
     with open(DOCS / "meta.json", "w") as f:
         json.dump(meta, f, indent=2)
@@ -413,7 +571,7 @@ def main():
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     build_committees_index()
 
-    print("\n[5/6] Building search bundle (title + first 5K chars per report)...")
+    print("\n[5/7] Building search bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle()
     if bundle_stats:
         mb = bundle_stats["size_bytes"] / (1024 * 1024)
@@ -423,11 +581,21 @@ def main():
     else:
         print("  no text/ directory yet — skipping bundle build")
 
-    print("\n[6/6] Writing meta.json...")
+    print("\n[6/7] Building search index (inverted token index, full body)...")
+    index_stats = build_search_index()
+    if index_stats:
+        mb = index_stats["size_bytes"] / (1024 * 1024)
+        print(f"  search-index.json: {index_stats['report_count']} docs, "
+              f"vocab={index_stats['vocab_size']} (post-cutoff), "
+              f"postings={index_stats['total_postings']} · {mb:.1f} MB raw")
+    else:
+        print("  no text/ directory yet — skipping index build")
+
+    print("\n[7/7] Writing meta.json...")
     reports = load_existing_reports()
     total = sum(len(v) for v in reports.values())
     total_with_text = sum(len(v) for v in manifest.get("texts", {}).values())
-    meta = write_meta(extract_stats, total, total_with_text, bundle_stats)
+    meta = write_meta(extract_stats, total, total_with_text, bundle_stats, index_stats)
     print(json.dumps(meta, indent=2))
 
     print("\nDone.")
