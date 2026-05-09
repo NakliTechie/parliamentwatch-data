@@ -78,24 +78,28 @@ RENDER_DPI = int(os.environ.get("RENDER_DPI", "150"))
 TESSERACT_LANGS = os.environ.get("TESSERACT_LANGS", "eng+hin")
 
 
-def find_ocr_candidates() -> list[int]:
-    """Walk pdfs/ for any <id>.pdf with no corresponding text/<id>.txt
-    and no text/<id>.ocr-failed tombstone. Returns ids sorted newest-first
-    (highest id wins — CAG IDs are monotonic)."""
-    if not PDFS_DIR.exists():
-        return []
-    candidates: list[int] = []
-    for pdf in PDFS_DIR.glob("*.pdf"):
-        try:
-            rid = int(pdf.stem)
-        except ValueError:
+def find_ocr_candidates(reports: dict[int, dict]) -> list[tuple[int, str]]:
+    """Walk reports.json for any report with a pdf_url that has neither a
+    text/<id>.txt nor a text/<id>.ocr-failed tombstone. Returns
+    [(id, pdf_url), ...] sorted newest-first (highest id wins — CAG IDs
+    are monotonic).
+
+    pdfs/ is gitignored, so on a fresh runner we don't have local PDFs
+    cached. The slow lane downloads each candidate's PDF before OCR'ing.
+    On subsequent runs that hit the same PDF (rare — tombstones prevent
+    most retries), the cached file is reused.
+    """
+    candidates: list[tuple[int, str]] = []
+    for rid, meta in reports.items():
+        pdf_url = meta.get("pdf_url")
+        if not pdf_url:
             continue
         text_path = TEXT_DIR / f"{rid}.txt"
         tombstone = TEXT_DIR / f"{rid}.ocr-failed"
         if text_path.exists() or tombstone.exists():
             continue
-        candidates.append(rid)
-    candidates.sort(reverse=True)
+        candidates.append((rid, pdf_url))
+    candidates.sort(key=lambda c: -c[0])
     return candidates
 
 
@@ -167,32 +171,44 @@ def main():
               "or brew install tesseract (local).")
         sys.exit(1)
 
-    print("\n[1/3] Finding OCR candidates (PDFs in pdfs/ with no .txt and no .ocr-failed)...")
-    candidates = find_ocr_candidates()
-    print(f"  candidates: {len(candidates)}")
+    print("\n[1/3] Finding OCR candidates (reports with no extracted text and no tombstone)...")
+    from build_cag import load_existing_reports as _load
+    reports = _load()
+    candidates = find_ocr_candidates(reports)
+    print(f"  candidates: {len(candidates)} (out of {len(reports)} total reports)")
     if not candidates:
-        print("  nothing to do — all scanned PDFs already OCR'd or tombstoned")
+        print("  nothing to do — all reports already have text or are tombstoned")
         return
 
     target = candidates[:MAX_OCR_PER_RUN]
     print(f"  budget: OCR'ing up to {len(target)} this run (newest first)")
+    print(f"  note: pdfs/ is gitignored — slow-lane downloads each PDF before OCR.")
 
     deadline = time.monotonic() + MAX_RUN_SECONDS
     succeeded: list[int] = []
     failed: list[int] = []
     timed_out: list[int] = []
 
-    print("\n[2/3] Running OCR...")
-    for i, rid in enumerate(target, start=1):
+    print("\n[2/3] Downloading + OCR'ing...")
+    # Lazy-import the scraper's downloader (handles jitter + rate-limit).
+    from cag.scraper import download_pdf as _download_pdf, RateLimited
+    for i, (rid, pdf_url) in enumerate(target, start=1):
         if time.monotonic() > deadline:
             print(f"  [BUDGET] wall-clock budget hit after {len(succeeded)} successes")
             break
         pdf_path = PDFS_DIR / f"{rid}.pdf"
         if not pdf_path.exists():
-            print(f"  id={rid}: pdf missing (likely pruned) — skipping")
-            continue
+            print(f"  [{i}/{len(target)}] id={rid}: downloading {pdf_url}...", flush=True)
+            try:
+                got = _download_pdf(pdf_url, rid, pdfs_dir=str(PDFS_DIR))
+            except RateLimited as rl:
+                print(f"    RATE-LIMITED ({rl}) — stopping this run")
+                break
+            if not got:
+                print(f"    download failed — skipping (no tombstone; will retry next run)")
+                continue
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
-        print(f"  [{i}/{len(target)}] id={rid} ({size_mb:.1f} MB)...", flush=True)
+        print(f"  [{i}/{len(target)}] id={rid} ({size_mb:.1f} MB) — running OCR...", flush=True)
         t0 = time.time()
         try:
             text = ocr_pdf(pdf_path, deadline=deadline)
