@@ -65,6 +65,14 @@ MAX_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_EXTRACTIONS_PER_RUN", "100"))
 MAX_RUN_SECONDS         = int(os.environ.get("MAX_RUN_SECONDS", "1800"))   # 30 min
 EXTRACT_WORKERS         = int(os.environ.get("EXTRACT_WORKERS", "4"))
 
+# How many parallel detail-page fetches. cag.gov.in is plain Apache — can
+# handle multiple concurrent requests without rate-limit issues. 4 workers
+# × 250-500ms jitter ≈ 8-16 req/sec, polite enough but ~4× faster than
+# sequential. Backfill run 25609052452 hit the 60-min GH Actions timeout
+# fetching ~2,660 detail pages sequentially (~45 min just for metadata)
+# before reaching the extract phase. Parallelising fixes that.
+DETAIL_WORKERS          = int(os.environ.get("DETAIL_WORKERS", "4"))
+
 # Cooldown after a 429 / 403 — same idea as DRSC's: skip the extraction phase
 # if the previous run was rate-limited within this many seconds.
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
@@ -148,32 +156,64 @@ def enumerate_ids(*, max_pages: int | None) -> list[int]:
 
 # ── Phase 2: fetch detail metadata for new IDs ──────────────────────────────
 
-def fetch_new_metadata(known_ids: set[int], all_ids: list[int]) -> dict[int, dict]:
+def fetch_new_metadata(known_ids: set[int], all_ids: list[int],
+                       *, deadline: float | None = None) -> dict[int, dict]:
     """Fetch detail-page metadata for any IDs not already in known_ids.
-    Returns {id: metadata_dict}. Stops on RateLimited."""
+    Parallelised with DETAIL_WORKERS threads to stay under the GH Actions
+    60-min runner timeout. Stops on RateLimited or when deadline (monotonic
+    seconds) is exceeded.
+
+    Returns {id: metadata_dict}.
+    """
     new_ids = [i for i in all_ids if i not in known_ids]
     if not new_ids:
         print("  no new ids — skipping detail fetch")
         return {}
-    print(f"  fetching detail metadata for {len(new_ids)} new ids...")
+    print(f"  fetching detail metadata for {len(new_ids)} new ids "
+          f"(workers={DETAIL_WORKERS})...")
 
     out: dict[int, dict] = {}
     rate_limited = False
+    deadline_hit = False
     t0 = time.time()
-    for i, rid in enumerate(new_ids, start=1):
+    progress_step = max(50, len(new_ids) // 20)
+
+    def _worker(rid: int):
         try:
-            rep = fetch_detail(rid)
+            return rid, fetch_detail(rid), None
         except RateLimited as rl:
-            print(f"  [RATE-LIMITED] {rl} — stopping detail-fetch phase")
-            rate_limited = True
-            break
+            return rid, None, rl
         except Exception as e:
-            print(f"  detail fetch failed for id={rid}: {e}")
-            continue
-        out[rid] = rep.to_dict()
-        if i % 20 == 0:
-            print(f"  ...{i}/{len(new_ids)} ({time.time()-t0:.1f}s)")
-    print(f"  fetched {len(out)} metadata entries in {time.time()-t0:.1f}s · rate_limited={rate_limited}")
+            return rid, None, e
+
+    with ThreadPoolExecutor(max_workers=DETAIL_WORKERS) as ex:
+        futures = {ex.submit(_worker, rid): rid for rid in new_ids}
+        for fut in as_completed(futures):
+            if deadline and time.monotonic() > deadline:
+                print(f"  [DEADLINE] hit after {len(out)} fetches — stopping detail-fetch phase")
+                deadline_hit = True
+                for f in futures:
+                    if not f.done(): f.cancel()
+                break
+            rid, rep, err = fut.result()
+            if isinstance(err, RateLimited):
+                print(f"  [RATE-LIMITED] id={rid}: {err} — stopping detail-fetch phase")
+                rate_limited = True
+                for f in futures:
+                    if not f.done(): f.cancel()
+                break
+            if err is not None:
+                # Non-fatal individual failure (404, parse error, etc.)
+                continue
+            out[rid] = rep.to_dict()
+            n_done = len(out)
+            if n_done % progress_step == 0:
+                rate = n_done / max(0.1, time.time() - t0)
+                eta_s = (len(new_ids) - n_done) / max(0.1, rate)
+                print(f"  ...{n_done}/{len(new_ids)} ({time.time()-t0:.1f}s · {rate:.1f}/s · ETA {eta_s:.0f}s)")
+
+    print(f"  fetched {len(out)} metadata entries in {time.time()-t0:.1f}s · "
+          f"rate_limited={rate_limited} · deadline_hit={deadline_hit}")
     return out
 
 
@@ -461,6 +501,11 @@ def main():
     print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
     print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
 
+    # Unified deadline across phases so backfill runs that hit the GH
+    # Actions 60-min runner timeout stop cleanly mid-phase, commit
+    # whatever they've gathered, and let the next cron pick up.
+    overall_deadline = time.monotonic() + MAX_RUN_SECONDS
+
     print("\n[1/7] Walking cag.gov.in listing pages...")
     all_ids = enumerate_ids(max_pages=MAX_LISTING_PAGES)
 
@@ -469,7 +514,7 @@ def main():
     cleaned = cleanup_html_entities(reports)
     if cleaned:
         print(f"  cleaned {cleaned} entries with HTML-entity-encoded fields (one-shot fix)")
-    new_meta = fetch_new_metadata(set(reports.keys()), all_ids)
+    new_meta = fetch_new_metadata(set(reports.keys()), all_ids, deadline=overall_deadline)
     reports.update(new_meta)
     save_reports(reports)
     print(f"  reports.json: {len(reports)} total ({len(new_meta)} new this run)")
