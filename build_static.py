@@ -295,15 +295,14 @@ def build_committees_index():
 
 
 # Single search bundle the app fetches once and caches in IDB. Replaces the
-# per-text-file fan-out the SansadLocal "deep search" toggle did. Each entry
-# is the report's metadata key, title, and the first N characters of the
-# extracted text — enough for substring matching across the corpus's
-# scope/intro/findings without paying for the full ~500 MB body corpus.
+# per-text-file fan-out the original SansadLocal-era "deep search" toggle
+# did. Each entry is the report's metadata key, title, and the first N
+# characters of the extracted text — enough for substring matching across
+# the corpus's scope / intro / findings without paying for the full
+# ~500 MB body corpus.
 #
-# Bundle lives at docs/search-bundle.json today (DRSC is the only corpus).
-# When v1.0a phase 2 moves DRSC's files into docs/drsc/, this output moves
-# alongside to docs/drsc/search-bundle.json — change the output path here
-# and update DRSCCorpus.searchBundleUrl in the app at the same time.
+# Bundle lives at docs/drsc/search-bundle.json (post-Phase-2 layout).
+# Output path is implicit via the DOCS constant above.
 def build_search_bundle(head_chars=5000):
     reports = load_existing_reports()
     text_root = DOCS / "text"
