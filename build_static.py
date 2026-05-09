@@ -24,10 +24,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-DOCS = Path(__file__).resolve().parent / "docs"
-DOCS.mkdir(exist_ok=True)
+# CF Workers serves the entire `docs/` directory as static assets. Each
+# corpus's outputs are scoped under `docs/<corpus>/` so the URL space
+# becomes `https://sansad-files.naklitechie.com/<corpus>/...`. DRSC is
+# the first corpus (this file); CAG and the others land in their own
+# sibling subfolders without touching this layout.
+ASSETS = Path(__file__).resolve().parent / "docs"
+DOCS   = ASSETS / "drsc"   # v1.0a phase 2 — corpus-scoped output
+DOCS.mkdir(parents=True, exist_ok=True)
 
-# Force scraper paths to docs/ before importing config-dependent modules
+# Force scraper paths to docs/drsc/ before importing config-dependent modules.
 os.environ["DATA_DIR"] = str(DOCS)
 
 from scraper import scrape_all_committees, load_existing_reports  # noqa: E402
