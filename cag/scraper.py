@@ -25,6 +25,7 @@ when a third corpus arrives and the duplication starts to bite.
 
 from __future__ import annotations
 
+import html
 import os
 import random
 import re
@@ -139,8 +140,15 @@ _WHITESPACE_RE = re.compile(r'\s+')
 
 
 def _clean_text(s: str) -> str:
-    """Strip HTML tags and collapse whitespace inside an extracted value."""
+    """Strip HTML tags, decode HTML entities, collapse whitespace.
+
+    HTML entity decoding matters because cag.gov.in's pages double-encode
+    ampersands in some fields. Without it, a "J&K" report's PDF URL gets
+    extracted as `J&amp;amp;K...` which 404s on download. Caught by OCR
+    run 25608708774's failure on id 125145 (Jammu & Kashmir Revenues).
+    """
     s = _HTML_TAG_RE.sub('', s)
+    s = html.unescape(s)
     s = _WHITESPACE_RE.sub(' ', s).strip()
     return s
 
@@ -188,6 +196,19 @@ class CAGReport:
         return {k: v for k, v in asdict(self).items() if v not in (None, "")}
 
 
+def _html_unescape_loop(s: str) -> str:
+    """html.unescape only undoes one level of encoding. cag.gov.in
+    occasionally emits double-encoded entities (`&amp;amp;` for `&`),
+    so we loop until no further change. Bounded to avoid pathological
+    input loops."""
+    for _ in range(4):
+        prev = s
+        s = html.unescape(s)
+        if s == prev:
+            break
+    return s
+
+
 def parse_detail_html(report_id: int, html: str) -> CAGReport:
     rep = CAGReport(id=report_id, detail_url=DETAIL_URL_FMT.format(id=report_id))
 
@@ -225,10 +246,13 @@ def parse_detail_html(report_id: int, html: str) -> CAGReport:
     if m:
         rep.report_type = m.group(1).strip()
 
-    # PDF link
+    # PDF link. unescape because the href attribute is HTML-encoded and
+    # some reports' URLs contain `&amp;amp;` for ampersands in their slugs
+    # (e.g. J&K reports). Apply twice in case of double-encoding.
     m = _PDF_RE.search(html)
     if m:
-        rep.pdf_url = m.group(1)
+        url = _html_unescape_loop(m.group(1))
+        rep.pdf_url = url
 
     # File size — usually formatted as "(3.81 MB)" near the PDF link.
     m = _FILESIZE_RE.search(html)

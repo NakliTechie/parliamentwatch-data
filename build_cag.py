@@ -106,6 +106,28 @@ def load_existing_reports() -> dict[int, dict]:
     return {int(k): v for k, v in raw.items()}
 
 
+def cleanup_html_entities(reports: dict[int, dict]) -> int:
+    """One-shot idempotent cleanup. Walks reports and applies HTML-entity
+    decoding to fields that may have been captured pre-fix (before
+    cag/scraper.py's html.unescape support). Idempotent: re-running on
+    already-clean entries is a no-op.
+
+    Returns the number of entries modified.
+    """
+    from cag.scraper import _html_unescape_loop
+    n_changed = 0
+    for rid, meta in reports.items():
+        before = dict(meta)
+        for field in ("title", "pdf_url", "department", "sector", "state",
+                      "report_type", "report_no", "date_tabled", "date_sent"):
+            v = meta.get(field)
+            if isinstance(v, str) and "&amp;" in v:
+                meta[field] = _html_unescape_loop(v)
+        if meta != before:
+            n_changed += 1
+    return n_changed
+
+
 def save_reports(reports: dict[int, dict]) -> None:
     # Sort by id desc (newest first) for stable diffs and easier scanning.
     sorted_items = sorted(reports.items(), key=lambda kv: -kv[0])
@@ -444,6 +466,9 @@ def main():
 
     print("\n[2/7] Loading existing metadata + fetching new detail pages...")
     reports = load_existing_reports()
+    cleaned = cleanup_html_entities(reports)
+    if cleaned:
+        print(f"  cleaned {cleaned} entries with HTML-entity-encoded fields (one-shot fix)")
     new_meta = fetch_new_metadata(set(reports.keys()), all_ids)
     reports.update(new_meta)
     save_reports(reports)
