@@ -288,9 +288,78 @@ def build_committees_index():
         json.dump(out, f, indent=2, ensure_ascii=False)
 
 
-def write_meta(extract_stats, total_reports, total_with_text):
+# Single search bundle the app fetches once and caches in IDB. Replaces the
+# per-text-file fan-out the SansadLocal "deep search" toggle did. Each entry
+# is the report's metadata key, title, and the first N characters of the
+# extracted text — enough for substring matching across the corpus's
+# scope/intro/findings without paying for the full ~500 MB body corpus.
+#
+# Bundle lives at docs/search-bundle.json today (DRSC is the only corpus).
+# When v1.0a phase 2 moves DRSC's files into docs/drsc/, this output moves
+# alongside to docs/drsc/search-bundle.json — change the output path here
+# and update DRSCCorpus.searchBundleUrl in the app at the same time.
+def build_search_bundle(head_chars=5000):
+    reports = load_existing_reports()
+    text_root = DOCS / "text"
+    if not text_root.exists():
+        return None
+
+    entries = []
+    truncated = 0
+    total_text_bytes = 0
+
+    for committee_key, committee_reports in reports.items():
+        for r in committee_reports:
+            num = r.get("report_number")
+            ls  = r.get("lok_sabha")
+            if num is None:
+                continue
+            file_id = _file_id(ls, num)
+            if file_id is None:
+                continue
+            text_path = text_root / committee_key / f"{file_id}.txt"
+            if not text_path.exists():
+                continue
+            try:
+                text = text_path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
+            head = text[:head_chars]
+            if len(text) > head_chars:
+                truncated += 1
+            total_text_bytes += len(head.encode("utf-8"))
+            key = f"{committee_key}|{ls if ls is not None else ''}|{num}"
+            entries.append({
+                "key":   key,
+                "title": r.get("title", ""),
+                "head":  head,
+            })
+
+    bundle = {
+        "version":      1,
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "head_chars":   head_chars,
+        "total":        len(entries),
+        "truncated":    truncated,
+        "entries":      entries,
+    }
+    out_path = DOCS / "search-bundle.json"
+    # ensure_ascii=False so Hindi/Devanagari stays one byte per char (gzip
+    # handles utf-8 better than \uXXXX escapes). separators tightens the JSON.
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+
+    return {
+        "total":      len(entries),
+        "truncated":  truncated,
+        "head_chars": head_chars,
+        "size_bytes": out_path.stat().st_size,
+    }
+
+
+def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None):
     meta = {
-        "version": "1.1",
+        "version": "1.2",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "lok_sabhas": LOK_SABHAS,
         "max_extractions_per_run": MAX_EXTRACTIONS_PER_RUN,
@@ -306,6 +375,7 @@ def write_meta(extract_stats, total_reports, total_with_text):
                 0, extract_stats.get("candidates_total", 0) - len(extract_stats["extracted"])
             ),
         },
+        "search_bundle": bundle_stats,   # None if bundle wasn't built this run
     }
     with open(DOCS / "meta.json", "w") as f:
         json.dump(meta, f, indent=2)
@@ -337,17 +407,27 @@ def main():
           f"rate_limited={extract_stats.get('rate_limited', False)} "
           f"budget_hit={extract_stats.get('budget_hit', False)}")
 
-    print("\n[4/5] Building manifest + committees index...")
+    print("\n[4/6] Building manifest + committees index...")
     manifest = build_manifest()
     with open(DOCS / "manifest.json", "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     build_committees_index()
 
-    print("\n[5/5] Writing meta.json...")
+    print("\n[5/6] Building search bundle (title + first 5K chars per report)...")
+    bundle_stats = build_search_bundle()
+    if bundle_stats:
+        mb = bundle_stats["size_bytes"] / (1024 * 1024)
+        print(f"  search-bundle.json: {bundle_stats['total']} entries, "
+              f"{bundle_stats['truncated']} truncated to {bundle_stats['head_chars']} chars · "
+              f"{mb:.1f} MB raw (CF gzip serves ~30%)")
+    else:
+        print("  no text/ directory yet — skipping bundle build")
+
+    print("\n[6/6] Writing meta.json...")
     reports = load_existing_reports()
     total = sum(len(v) for v in reports.values())
     total_with_text = sum(len(v) for v in manifest.get("texts", {}).values())
-    meta = write_meta(extract_stats, total, total_with_text)
+    meta = write_meta(extract_stats, total, total_with_text, bundle_stats)
     print(json.dumps(meta, indent=2))
 
     print("\nDone.")
