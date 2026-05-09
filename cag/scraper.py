@@ -1,0 +1,314 @@
+"""CAG (Comptroller and Auditor General of India) scraper.
+
+CORS posture: cag.gov.in returns Access-Control-Allow-Origin: cag.gov.in
+(restrictive, malformed). Cross-origin browser fetches are blocked, so this
+mirror runs server-side and re-publishes via CF Workers.
+
+Anti-bot: server is plain Apache, no Cloudflare bot management. CCR /
+GH Actions / local laptops all work — unlike sansad.in which blocks
+Anthropic CCR egress IPs.
+
+Site shape:
+  LISTING : https://cag.gov.in/en/audit-report?page=<N>      # 10/page, default newest first
+  DETAIL  : https://cag.gov.in/en/audit-report/details/<id>
+  PDF     : https://cag.gov.in/uploads/download_audit_report/<year>/<filename>.pdf
+
+The corpus is ~2,710 reports total (page 1..271). Year filtering via URL
+params is broken (?year=N is silently ignored); we derive year from the
+publication date in our index.
+
+Independence from DRSC scraper.py: no shared imports, no shared state.
+The HTTP / jitter / rate-limit primitives are duplicated by design — per
+spec v0.4 §"Independence Principle". Refactor to a shared helper later
+when a third corpus arrives and the duplication starts to bite.
+"""
+
+from __future__ import annotations
+
+import os
+import random
+import re
+import time
+from dataclasses import dataclass, field, asdict
+from typing import Iterable, Iterator, Optional
+
+import requests
+from pypdf import PdfReader
+
+# ── Constants ───────────────────────────────────────────────────────────────
+
+BASE_URL = "https://cag.gov.in"
+LISTING_URL = BASE_URL + "/en/audit-report"
+DETAIL_URL_FMT = BASE_URL + "/en/audit-report/details/{id}"
+
+_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+}
+
+# Politeness — random per-fetch sleep so we don't hammer cag.gov.in. Same
+# defaults as the DRSC scraper. Set JITTER_MIN_MS / JITTER_MAX_MS to 0 for
+# a quick local test.
+_JITTER_MIN_MS = int(os.environ.get("JITTER_MIN_MS", "250"))
+_JITTER_MAX_MS = int(os.environ.get("JITTER_MAX_MS", "500"))
+
+
+class RateLimited(Exception):
+    """Raised when cag.gov.in returns 429 / 403 — caller should stop the loop."""
+
+
+def _jitter() -> None:
+    if _JITTER_MAX_MS <= 0:
+        return
+    ms = random.randint(_JITTER_MIN_MS, _JITTER_MAX_MS)
+    time.sleep(ms / 1000.0)
+
+
+def _get(url: str, *, timeout: int = 30, **kwargs) -> requests.Response:
+    """HTTP GET with rate-limit-aware error handling."""
+    _jitter()
+    resp = requests.get(url, headers=_HEADERS, timeout=timeout, **kwargs)
+    if resp.status_code in (429, 403):
+        raise RateLimited(f"{resp.status_code} from {url}")
+    resp.raise_for_status()
+    return resp
+
+
+# ── Listing walker ──────────────────────────────────────────────────────────
+
+_DETAIL_ID_RE = re.compile(r'audit-report/details/(\d+)')
+
+
+def fetch_listing_page(page: int) -> list[int]:
+    """Return the list of detail-page IDs on listing page `page`. Empty list
+    means the page is past the last one with content."""
+    resp = _get(f"{LISTING_URL}?page={page}")
+    # Dedup-preserving extract
+    seen = set()
+    ids: list[int] = []
+    for m in _DETAIL_ID_RE.finditer(resp.text):
+        rid = int(m.group(1))
+        if rid in seen:
+            continue
+        seen.add(rid)
+        ids.append(rid)
+    return ids
+
+
+def walk_listing(*, max_pages: Optional[int] = None) -> Iterator[int]:
+    """Yield report IDs in listing order (newest first by default).
+
+    `max_pages=None` walks until the listing returns an empty page (full
+    archive — currently ~271 pages). Pass a small int for a quick slice
+    (initial seeding, dev runs).
+    """
+    page = 1
+    while True:
+        if max_pages is not None and page > max_pages:
+            return
+        ids = fetch_listing_page(page)
+        if not ids:
+            return
+        for rid in ids:
+            yield rid
+        page += 1
+
+
+# ── Detail page parser ─────────────────────────────────────────────────────
+
+# Detail pages render metadata as <div class="labelTitleBold">LABEL</div>
+# followed by <div class="labelItemBold">VALUE</div> pairs. The title is in
+# an <h3 class="singTitle">. The PDF link is the first <a> with href to
+# /uploads/download_audit_report/. The file size is in a "(X.XX MB)" string
+# near the PDF link.
+_TITLE_RE     = re.compile(r'<h3\s+class="singTitle">\s*(.+?)\s*</h3>', re.DOTALL)
+_LABEL_RE     = re.compile(
+    r'<div class="labelTitleBold">\s*(.+?)\s*</div>\s*'
+    r'<div class="labelItemBold">\s*(.+?)\s*</div>',
+    re.DOTALL,
+)
+_PDF_RE       = re.compile(
+    r'href="(https://cag\.gov\.in/uploads/download_audit_report/[^"]+\.pdf)"',
+    re.IGNORECASE,
+)
+_FILESIZE_RE  = re.compile(r'\(([0-9.]+)\s*(KB|MB|GB)\)', re.IGNORECASE)
+_HTML_TAG_RE  = re.compile(r'<[^>]+>')
+_WHITESPACE_RE = re.compile(r'\s+')
+
+
+def _clean_text(s: str) -> str:
+    """Strip HTML tags and collapse whitespace inside an extracted value."""
+    s = _HTML_TAG_RE.sub('', s)
+    s = _WHITESPACE_RE.sub(' ', s).strip()
+    return s
+
+
+# Best-effort year inference from publication-date strings. CAG date strings
+# vary: "30/06/2023", "30 June 2023", "2023-06-30", etc. Fall back to None.
+_YEAR_FROM_DATE = re.compile(r'(19|20)\d{2}')
+
+
+def _infer_year(date_str: str) -> Optional[int]:
+    if not date_str:
+        return None
+    m = _YEAR_FROM_DATE.search(date_str)
+    return int(m.group(0)) if m else None
+
+
+# Best-effort report-type / report-number extraction from title. CAG title
+# formats vary across years and gov-types:
+#   "Report No. 6 of 2026 (Financial Audit)"
+#   "Report 2 of 2026: ..."
+#   "Report No. 3 of 2023 - State Finances"
+# The regex tolerates "No.", "No", or no separator at all.
+_REPORT_NO_RE     = re.compile(r'\bReport\s+(?:No\.?\s*)?([0-9]+)\s+of\s+(\d{4})\b', re.IGNORECASE)
+_REPORT_TYPE_RE   = re.compile(r'\(([^)]+?Audit)\)', re.IGNORECASE)
+
+
+@dataclass
+class CAGReport:
+    id: int                        # detail-page integer ID — stable, unique
+    title: str = ""
+    report_no: Optional[str] = None     # "6 of 2026" if extractable from title
+    report_type: Optional[str] = None   # Financial / Compliance / Performance Audit
+    gov_type: Optional[str] = None      # Union / State / Local Bodies
+    department: Optional[str] = None
+    sector: Optional[str] = None
+    state: Optional[str] = None         # set when gov_type is State
+    date_tabled: Optional[str] = None   # raw string from page (date format varies)
+    date_sent: Optional[str] = None     # raw string from page
+    year: Optional[int] = None          # inferred from date_tabled/date_sent/title
+    pdf_url: Optional[str] = None
+    file_size_mb: Optional[float] = None
+    detail_url: str = ""
+
+    def to_dict(self) -> dict:
+        return {k: v for k, v in asdict(self).items() if v not in (None, "")}
+
+
+def parse_detail_html(report_id: int, html: str) -> CAGReport:
+    rep = CAGReport(id=report_id, detail_url=DETAIL_URL_FMT.format(id=report_id))
+
+    m = _TITLE_RE.search(html)
+    if m:
+        rep.title = _clean_text(m.group(1))
+
+    # Pull all label-value pairs; map known labels to fields.
+    for label_raw, value_raw in _LABEL_RE.findall(html):
+        label = _clean_text(label_raw).lower()
+        value = _clean_text(value_raw)
+        if not value:
+            continue
+        if 'date on which report tabled' in label:
+            rep.date_tabled = value
+        elif 'date of sending the report' in label:
+            rep.date_sent = value
+        elif label == 'government type':
+            rep.gov_type = value
+        elif 'union department' in label or label == 'department' or 'department/sector' in label:
+            rep.department = value
+        elif label == 'sector' or label == 'sector in india':
+            rep.sector = value
+        elif 'state' in label and 'union' not in label:
+            rep.state = value
+
+    # Year inference: prefer date_tabled, fall back to date_sent, then title.
+    rep.year = _infer_year(rep.date_tabled) or _infer_year(rep.date_sent) or _infer_year(rep.title)
+
+    # Report number + type from title
+    m = _REPORT_NO_RE.search(rep.title or "")
+    if m:
+        rep.report_no = f"{m.group(1)} of {m.group(2)}"
+    m = _REPORT_TYPE_RE.search(rep.title or "")
+    if m:
+        rep.report_type = m.group(1).strip()
+
+    # PDF link
+    m = _PDF_RE.search(html)
+    if m:
+        rep.pdf_url = m.group(1)
+
+    # File size — usually formatted as "(3.81 MB)" near the PDF link.
+    m = _FILESIZE_RE.search(html)
+    if m:
+        n = float(m.group(1))
+        unit = m.group(2).upper()
+        rep.file_size_mb = n if unit == 'MB' else (n / 1024 if unit == 'KB' else n * 1024)
+
+    return rep
+
+
+def fetch_detail(report_id: int) -> CAGReport:
+    resp = _get(DETAIL_URL_FMT.format(id=report_id))
+    return parse_detail_html(report_id, resp.text)
+
+
+# ── PDF download + text extraction ─────────────────────────────────────────
+
+def _ensure_dirs(text_dir: str, pdfs_dir: str) -> None:
+    os.makedirs(text_dir, exist_ok=True)
+    os.makedirs(pdfs_dir, exist_ok=True)
+
+
+def download_pdf(pdf_url: str, report_id: int, *, pdfs_dir: str) -> Optional[str]:
+    """Download <id>.pdf into pdfs_dir. Returns filesystem path, or None on
+    non-rate-limit failure. Idempotent — skips if already present."""
+    os.makedirs(pdfs_dir, exist_ok=True)
+    pdf_path = os.path.join(pdfs_dir, f"{report_id}.pdf")
+    if os.path.exists(pdf_path):
+        return pdf_path
+
+    try:
+        resp = _get(pdf_url, timeout=180, stream=True)
+        with open(pdf_path, "wb") as f:
+            for chunk in resp.iter_content(chunk_size=8192):
+                f.write(chunk)
+        return pdf_path
+    except RateLimited:
+        raise
+    except Exception as e:
+        print(f"  Failed to download {pdf_url}: {e}")
+        return None
+
+
+def extract_text(pdf_path: str, report_id: int, *, text_dir: str) -> Optional[str]:
+    """Extract text from pdf_path → text_dir/<id>.txt. Idempotent."""
+    os.makedirs(text_dir, exist_ok=True)
+    text_path = os.path.join(text_dir, f"{report_id}.txt")
+    if os.path.exists(text_path):
+        with open(text_path, "r", encoding="utf-8") as f:
+            return f.read()
+
+    try:
+        reader = PdfReader(pdf_path)
+        parts = []
+        for page in reader.pages:
+            t = page.extract_text()
+            if t:
+                parts.append(t)
+        full = "\n\n".join(parts)
+        # Don't write 0-byte / whitespace-only files. pypdf returns empty
+        # text for scanned-only PDFs, encrypted PDFs, and a few malformed
+        # ones — counting those as "extracted" would lie in manifest /
+        # bundle / index. Returning None lets the caller mark them failed.
+        # The PDF is still cached locally; future runs that improve
+        # extraction (e.g. add OCR) can retry without re-downloading.
+        if not full.strip():
+            print(f"  pypdf produced empty text for id={report_id} — likely scanned/encrypted; skipping write")
+            return None
+        with open(text_path, "w", encoding="utf-8") as f:
+            f.write(full)
+        return full
+    except Exception as e:
+        print(f"  Failed to extract text from {pdf_path}: {e}")
+        return None
+
+
+def get_report_text(pdf_url: str, report_id: int, *, text_dir: str, pdfs_dir: str) -> Optional[str]:
+    """Convenience: download + extract in one call. Returns extracted text or None."""
+    pdf_path = download_pdf(pdf_url, report_id, pdfs_dir=pdfs_dir)
+    if not pdf_path:
+        return None
+    return extract_text(pdf_path, report_id, text_dir=text_dir)

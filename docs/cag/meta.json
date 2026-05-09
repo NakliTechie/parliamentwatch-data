@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "corpus": "cag",
+  "generated_at": "2026-05-09T18:12:07Z",
+  "max_extractions_per_run": 0,
+  "extract_workers": 4,
+  "total_reports": 50,
+  "total_with_text": 9,
+  "extract_stats": {
+    "extracted": 0,
+    "failed": 0,
+    "rate_limited": false,
+    "budget_hit": false,
+    "candidates_remaining_after_run": 37
+  },
+  "search_bundle": {
+    "total": 9,
+    "truncated": 9,
+    "head_chars": 5000,
+    "size_bytes": 56626
+  },
+  "search_index": {
+    "report_count": 9,
+    "vocab_size": 5462,
+    "total_postings": 22035,
+    "size_bytes": 112048,
+    "freq_cutoff_low": 2,
+    "freq_cutoff_high": 8
+  }
+}

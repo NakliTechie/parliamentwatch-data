@@ -24,8 +24,10 @@
 # If we ever need to invalidate (e.g. re-extraction with better OCR),
 # add a query-string version to the fetch URL.
 #
-# v1.0a phase 2: paths moved under /<corpus>/text/. DRSC lives at
-# /drsc/text/. Future corpora add their own /<corpus>/text/* rule (or
-# this gets generalised once the second corpus lands).
+# v1.0a phase 2: paths moved under /<corpus>/text/. v1.0b adds CAG.
+# Per-corpus rules (rather than a single /*/text/*) make any future
+# per-corpus override straightforward.
 /drsc/text/*
+  Cache-Control: public, max-age=31536000, immutable
+/cag/text/*
   Cache-Control: public, max-age=31536000, immutable
