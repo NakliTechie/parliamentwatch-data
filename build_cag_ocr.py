@@ -242,45 +242,15 @@ def main():
 
     print(f"\n  succeeded: {len(succeeded)} · failed (tombstoned): {len(failed)} · timed out: {len(timed_out)}")
 
-    print("\n[3/3] Rebuilding manifest + bundle + index + meta...")
-    # Re-run the same builders the daily cron uses. Lazy-import so we
-    # don't pay for the heavy pypdf path in this fast OCR-only runner.
-    from build_cag import (
-        load_existing_reports, build_manifest, build_search_bundle,
-        build_search_index, write_meta,
-    )
-    reports = load_existing_reports()
-    manifest = build_manifest()
-    with open(MANIFEST_JSON, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2)
-    bundle_stats = build_search_bundle(reports)
-    index_stats = build_search_index()
-
-    # Reuse write_meta but stuff our OCR-run stats into extract_stats so
-    # they show up in meta.json. The daily cron's next run will overwrite
-    # extract_stats with its own; that's fine — our data just lives until
-    # then for visibility.
-    extract_stats = {
-        "extracted":  succeeded,
-        "failed":     failed + timed_out,
-        "rate_limited": False,
-        "budget_hit":   len(timed_out) > 0,
-        "candidates_total": len(candidates),
-        "ocr_run":    True,
-    }
-    n_with_text = len(manifest["texts"])
-    write_meta(
-        total_reports=len(reports),
-        total_with_text=n_with_text,
-        extract_stats=extract_stats,
-        bundle_stats=bundle_stats,
-        index_stats=index_stats,
-    )
-    print(f"  manifest: {n_with_text} reports with extracted text")
-    if bundle_stats:
-        print(f"  search-bundle: {bundle_stats['total']} entries")
-    if index_stats:
-        print(f"  search-index: {index_stats['report_count']} docs, vocab {index_stats['vocab_size']}")
+    # Note: this slow lane deliberately does NOT regenerate manifest /
+    # bundle / index / meta. The daily `cag.yml` cron walks the filesystem
+    # for text/*.txt and rebuilds those four derived files from scratch on
+    # its next run, so the new OCR'd texts get picked up automatically
+    # within ~24h. Skipping the regen here keeps OCR commits to a small,
+    # disjoint diff (text/<id>.txt + text/<id>.ocr-failed only) — no
+    # rebase conflicts with the daily cron when both ran concurrently
+    # against the same derived files. v1.0b session 1 caught this race
+    # in run 25608520034.
 
     print("\nDone.")
 

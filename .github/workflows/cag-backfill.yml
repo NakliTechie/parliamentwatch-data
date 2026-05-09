@@ -25,10 +25,13 @@ permissions:
   contents: write
 
 concurrency:
-  # Distinct from `cag` (daily) and `cag-ocr` (weekly) — backfill runs in
-  # parallel with neither blocking nor being blocked by them. Two backfill
-  # runs queue rather than overlap (cancel-in-progress: false).
-  group: cag-backfill
+  # Shared with `cag.yml` (daily) under group `cag` — both workflows
+  # regenerate the same derived files (manifest/bundle/index/meta), so
+  # serialising avoids the rebase-conflict race that would otherwise
+  # happen when an hourly backfill commits at the same time as the daily.
+  # `cag-ocr` keeps its own group because it (post-fix in build_cag_ocr.py)
+  # only writes disjoint text/*.txt additions, no derived files.
+  group: cag
   cancel-in-progress: false
 
 jobs:
