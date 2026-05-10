@@ -67,20 +67,35 @@ def _jitter() -> None:
     time.sleep(ms / 1000.0)
 
 
-def _get(url: str, *, timeout: int = 15, **kwargs) -> requests.Response:
-    """HTTP GET with rate-limit-aware error handling.
+def _get(url: str, *, timeout: int = 30, retries: int = 1, **kwargs) -> requests.Response:
+    """HTTP GET with rate-limit-aware error handling + one retry on transient
+    timeouts. Default 30s — generous enough to ride out cag.gov.in's
+    occasional slow-response blips (run 25619522300 caught a 15s+
+    listing-page response and crashed the whole backfill workflow before
+    this fix).
 
-    Default timeout is 15s for HTML pages — keeps thread-pool workers
-    from blocking too long in a stuck-server scenario, so the unified
-    deadline can fire promptly. Callers needing longer timeouts (PDF
-    downloads, ~180s) pass `timeout=` explicitly.
+    RateLimited / HTTPError still short-circuit immediately (signal, not
+    noise). Only ReadTimeout / ConnectionError trigger the retry path.
+    Callers needing longer timeouts (PDF downloads, ~180s) pass
+    `timeout=` explicitly.
     """
-    _jitter()
-    resp = requests.get(url, headers=_HEADERS, timeout=timeout, **kwargs)
-    if resp.status_code in (429, 403):
-        raise RateLimited(f"{resp.status_code} from {url}")
-    resp.raise_for_status()
-    return resp
+    last_err: Exception | None = None
+    for attempt in range(retries + 1):
+        _jitter()
+        try:
+            resp = requests.get(url, headers=_HEADERS, timeout=timeout, **kwargs)
+        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
+            last_err = e
+            if attempt < retries:
+                time.sleep(1.5 * (attempt + 1))   # tiny backoff before retry
+                continue
+            raise
+        if resp.status_code in (429, 403):
+            raise RateLimited(f"{resp.status_code} from {url}")
+        resp.raise_for_status()
+        return resp
+    # Unreachable — loop returns or raises.
+    raise last_err if last_err else RuntimeError("_get exhausted")
 
 
 # ── Listing walker ──────────────────────────────────────────────────────────
