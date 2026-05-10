@@ -1,0 +1,2007 @@
+ 
+ 
+www.cag.gov.in  
+ 
+ 
+ 
+ 
+Report of the  
+Comptroller and Auditor General of India 
+ 
+on 
+ 
+Performance Audit of Direct Benefit Transfer 
+Scheme ‘Aasara Pensions in Telangana’ 
+for the year ended 31 March 2021 
+  
+ 
+Government of Telangana 
+Report No. 1 of 2023
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Page i 
+ 
+ 
+ Reference to 
+ Paragraph Page 
+Preface  iii 
+Executive Summary  v 
+Chapter I – Introduction 
+Introduction 1.1 1 
+Audit Framework 1.2 3 
+Chapter II - Budget and Utilisation 
+Financial outlay 2.1 5 
+Conclusion 2.2 7 
+Chapter III - Implementation of Aasara Pensions as a DBT Scheme 
+Identification of beneficiaries 3.1 10 
+Sanction of Pension 3.2 13 
+Process and Methods of Pension Disbursement 3.3 20 
+Results of Beneficiary Survey 3.4 27 
+Observations on dovetailing Central Assistance into Aasara 
+and inconsistencies in data tables 
+3.5 28 
+Conclusion 3.6 29 
+Recommendations 3.7 30 
+Chapter IV - Evaluation of Controls in Aasara IT Application 
+Evaluation of IT Controls implemented in Aasara 
+Application 
+4.1 31 
+Conclusion 4.2 37 
+Recommendations 4.3 37 
+Glossary of Abbreviations 39 
+ 
+ 
+ 
+Table of Contents 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+Page iii 
+ 
+ 
+ 
+ 
+ 
+This Report of the Comptroller and Auditor General of India for the year end ed 31 March 
+2021 has been prepared for submission to the Governor of Telangana under Article 151 of 
+the Constitution of India, for being laid before the Legislature of the State. 
+The Report contains significant results of the Performance Audit of Direct Benefit 
+Transfer Scheme ‘Aasara Pensions in Telangana’, covering the period from 2018-19 to 
+2020-21. 
+The instances mentioned in this Report are among those which came to notice during the 
+course of test audit. 
+The Audit has been conducted in conformity with the Auditing Standards  
+issued by the Comptroller and Auditor General of India. 
+ 
+ 
+  
+Preface 
+
+ 
+ 
+ 
+
+  
+ 
+ 
+ 
+ 
+Executive Summary 
+
+ 
+ 
+ 
+Pages 1 - 4 
+Chapter I 
+Introduction  
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+Chapter-I - Introduction 
+ 
+Page 1 
+ 
+Chapter I – Introduction 
+  
+1.1 Introduction 
+Direct Benefit Transfer (DBT) launched (January 2013) by Government of India is a major 
+initiative to re-engineer the process of delivery in various welfare schemes for simpler and 
+faster flow of information/funds for ensuring accurate targeting of the beneficiaries and for 
+eliminating duplication and fraud.  Information and Communication Technology (ICT) is 
+used effectively to identify the beneficiaries accurately  so as to eliminate duplications, to 
+reduce delays in payments with minimum intermediary levels and to eliminate pilferages & 
+frauds.  Government of Telangana (GoT) as a part of its social safety net strategy introduced 
+(November 2014) ‘Aasara1 Pensions’ scheme, to ensure secure life with dignity for the poor 
+households and vulnerable sections of the State by sanctioning pension to ( i) old  aged 
+persons (ii) widows (iii) disabled persons (iv) incapacitated weavers (v) toddy tappers and 
+(vi) persons with HIV-AIDS; the scheme was later extended to provide monthly financial 
+assistance to (vii) beedi workers (March 2015) (viii) single women (April 2017) and 
+pension to (ix) filaria patients (April 2018). 
+The amount of pension/ financial assistance under Aasara Pensions scheme  is ₹2,016  
+per month  (₹1,000 up  to May 2019) for all categories except ‘disabled’ category, and 
+₹3,016 per month (₹1,500 up to May 2019) for ‘disabled’ category. Aasara is implemented 
+as a DBT scheme. 
+GoI through the three2 components of the National Social Assistance Programme (NSAP) 
+provides pension of ₹200, ₹300 and ₹500, as the case 3 may be, under the categories of  
+(a) Old Age (b) Widow and (c) Disabled.  The beneficiaries under NSAP form part of 
+Aasara Pensions scheme also. The amount received from GoI on account of their pension 
+under NSAP is dovetailed under Aasara Pensions scheme. Further, GoT provides additional 
+funds over and above NSAP limits, to bridge the shortfall for the pension amounts as fixed 
+in Aasara Pensions scheme. 
+Disbursement of pension to Aasara beneficiaries (both in Urban and Rural areas) is made 
+in three modes viz., (1) by cash through Post Office s using the AEPS 4 (by Department of 
+Posts-DoP) for authentication, (2) by transfer using NPCI 5’s Aadhaar Payment Bridge 
+(APB) to transfer amount directly into Aadhaar seeded bank account through Core Banking 
+Solution (CBS) and (3) by cash in manual mode by the concerned Gram Panchayat (GP) 
+Secretary or Bill Collector by registering his/her own biometrics6. 
+ 
+ 
+1 ‘Aasara’, translates to ‘support’ 
+2 Indira Gandhi National Old Age Pension Scheme (IGNOAPS), Indira Gandhi National Wido w Pension Scheme 
+(IGNWPS) and Indira Gandhi National Disability Pension Scheme (IGNDPS) 
+3 (i) For beneficiaries below the age of 80 years: ₹200 per month for Old Age Pension and ₹300 per month for the other 
+two schemes; (ii) for beneficiaries of 80 years and above: ₹500 per month for all three schemes 
+4 Aadhaar Enabled Payment System 
+5 National Payments Corporation of India 
+6 In rare circumstances where beneficiaries are bed-ridden or their upper extremities are badly affected 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+ 
+Page 2 
+ 
+1.1.1 Eligibility conditions and Exclusion Criteria 
+Eligibility criteria for sanction of pension under different categories of Aasara Pensions 
+scheme are as shown in Table-1.1. 
+Table-1.1: Category-wise eligibility criteria for Aasara Pensions 
+Sl. 
+No. Category 
+Eligibility Criteria 
+Age Other additional parameters 
+1.  Old Age 65 Years 
+and above 
+--- 
+2.  Widow 18 Years 
+and above 
+--- 
+3.  Differently Abled 
+(persons with disabilities) 
+Irrespective 
+of age 
+Minimum Disability for Hearing 
+Impaired: 51 per cent; other categories: 
+40 per cent 
+4.  Weavers 50 Years 
+and above 
+--- 
+5.  Toddy Tappers 50 Years 
+and above 
+Registered member in the Cooperative 
+Society of Toddy Tappers 
+6.  Persons with HIV-AIDS --- Persons undergoing Anti-Retroviral 
+Therapy (ART) 
+7.  Filaria Patients --- Grade – II & III patients 
+8.  Beedi Workers Above 18 
+Years  
+Poor Beedi workers who started the beedi 
+rolling by taking raw material from 
+contractor before 28 February 2014 
+9.  Single Women-Married Above 18 
+Years  
+Separated from or deserted by husband 
+and separation period shall be more than 
+one year 
+Single Women -
+Unmarried in Rural areas 
+Above 30 
+Years 
+--- 
+Single Women-
+Unmarried in Urban areas 
+Above 35 
+Years 
+--- 
+Source: Government Orders on the scheme 
+The exclusion criteria stipulated for the scheme inter alia  include households having 
+(i) annual income of more than ₹1.50 lakh in Rural Areas and ₹2.00 lakh in Urban areas  
+(ii) landholdings exceeding 3.0 Acres wet/ irrigated dry or 7.5 Acres dry (iii) children who 
+are Government/Public Sector/Private Sector/Outsourced/Contract employees (iv) children 
+who are Doctors, Contractors, Professionals and Self-employed (v) owners of four wheelers 
+and big vehicles  (vi) persons receiving freedom fighter pension or Government pension 
+(vii) large business enterprises like rice/oil mills, petrol pumps, rig ownership or shop 
+ownership, etc. 
+1.1.2 Organisational setup 
+The Aasara Pensions scheme is implemented by Society for Elimination of Rural Poverty 
+(SERP), a registered body functioning under the administrative control of Secretary, 
+
+Chapter-I - Introduction 
+ 
+Page 3 
+ 
+Panchayat Raj and Rural Develo pment (PR&RD) Department who is assisted by 
+Commissioner, Rural Development (CRD) and Chief Executive Officer (CEO), SERP.  
+At the district level, the scheme is being implemented by the District Rural Development  
+Agency (DRDA) and is headed by District Rural Development Officer (DRDO).   
+In Hyderabad, which is a 100 per cent urban district, the scheme is implemented by District 
+Revenue Officer (DRO). District Collector accords 
+administrative approval to new sanctio ns and 
+monthly payment proceedings submitted by 
+DRDO/DRO. Mandal Parishad Development 
+Officers (MPDOs) in rural areas, Municipal 
+Commissioners (MCs) in urban local bodies, Deputy 
+Commissioners (DCs) in Greater Hyderabad 
+Municipal Corporation - GHMC (other than 
+Hyderabad District) and Tahsildars in Hyderabad 
+District are responsible for beneficiary identification 
+and sanction of pension.   Concerned Panchayat 
+Secretary (PS) and Bill Collector (BC) in rural and 
+urban area respectively is responsible for receiving 
+the applications from Aasara aspirants, verifying 
+their antecedents and certifying the eligibility.  The 
+scheme is implemented since March 2015 through 
+a web based application (Aasara Portal) developed and maintained by a private service 
+provider (Tata Consultancy Services Limited-TCS). 
+1.2 Audit Framework 
+1.2.1 Audit Objectives 
+Performance audit of the DBT scheme was carried out to assess whether: 
+1. Organisation and management of Aasara Pensions scheme was adequate and effective. 
+2. Implementation of ‘Aasara  Pensions’ scheme (through Information Technology 
+application) has achieved the intended objectives of providing social security in a 
+transparent and effective manner. 
+3. The Information Technology (general and application) controls and information 
+system security controls were adequate and effective. 
+1.2.2 Audit Criteria 
+Audit findings were benchmarked against criteria sourced from the following: 
+i. Documents, circulars, orders, instructions, and notifications issued on DBT by DBT 
+Mission, GoI.  
+ii. Standard Operating Procedure, Handbook on DBT and Guidelines for State DBT Cell 
+issued by DBT Mission.  
+Chart-1.1: Organisational setup 
+
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+ 
+Page 4 
+ 
+iii. Guidelines of Aasara Pension Scheme7 on process of identification and authentication 
+of beneficiaries and payments issued by GoT from time to time. 
+iv. Information Technology Act 2000, as amended, and instructions/guidelines issued 
+thereunder. 
+1.2.3 Scope, Sample and Methodology of Audit 
+The Performance Audit was carried out during February 2021 – February 20228 covering 
+a three-year period from 2018-19 to 2020-21.  Eight districts 9 (25 per cent  of 33) were 
+selected by applying the Simple Random Sampling Without Replacement  (SRSWOR) 
+technique.  Four mandals (blocks) and two municipalities from each sampled district were 
+selected by the SRSWOR method.  Entry Conference was held with Secretary, PR&RD in 
+January 2021 wherein audit objectives, methodology, scope, criteria and audit sample were 
+explained.  Audit methodology involved the following: 
+1. Scrutiny of records relating to the scheme at the offices of Secretary, PR&RD, 
+Commissioner of Rural Development, SERP, State DBT Cell and selected units.  Audit 
+Enquiries were issued  and discussions were held with Depart mental authorities at 
+various levels. 
+2. From each Mandal/Municipality, 20 applications submitted by Aasara aspirants were 
+selected for review. Beneficiary Survey was conducted in respect of 10 beneficiaries 
+randomly selected therefrom, to elicit their opinion on the scheme and service delivery. 
+3. Analysis of the Aasara IT Application database (as furnished by the Department) for 
+the period 2018 -19 to 2020 -21 was carried out . Further, data available from other 
+Government Departments was utilised to cross-check the stipulated inclusion/exclusion 
+criteria. 
+The audit observations are presented in the following chapters: 
+Chapter-II :  Budget and Utilisation  
+Chapter-III:  Implementation of Aasara Pensions as a DBT Scheme 
+Chapter IV- Evaluation of Controls in Aasara IT Application 
+Audit findings were discussed with the Secretary to Government, PR&RD  in the Exit 
+Conference conducted in June 2022. Replies of the Government have been incorporated in 
+the Report at appropriate places. 
+1.2.4 Acknowledgement 
+Audit acknowledges the cooperation and assistance extended by the State Government , 
+staff of SERP and all the test-checked units during the execution of the Performance Audit. 
+ 
+ 
+7 vide G.O.Ms.No. 17, dated 5 November 2014 of Panchayat Raj & Rural development (RD. I) Department 
+8 Due to COVID-19 pandemic, Audit could not visit the sampled units during April-June 2021 
+9 Hyderabad, Mahbubnagar, Medak, Nizamabad, Rangareddy, Sangareddy, Siddipet, and Yadadri-Bhuvanagiri  
+
+ 
+ 
+Chapter II 
+ 
+Pages 5 - 7 
+Budget and Utilisation   
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Chapter-II – Budget and Utilisation 
+ 
+Page 5 
+ 
+Chapter II – Budget and Utilisation 
+ 
+ 
+• Utilisation Certificates were submitted by the SERP to the GoI and GoT stating 
+that the entire amount of grants-in-aid for pension disbursement was utilised 
+even though unutilised amounts were retained in the bank accounts. 
+• Pensions to 2.30 lakh beneficiaries per month on an average remained 
+undisbursed during April 2018 to March 2021. 
+  
+2.1 Financial outlay 
+2.1.1 Budget and Expenditure 
+State Government makes budget provision in the annual Budget Estimates for Aasara 
+Pensions scheme, along with provision for 100 per cent share of GoI under NSAP.  Funds 
+are drawn from Government Account by CRD and transferred to the Nodal Bank account 
+of CEO, SERP.  Details of funds allocated in the budget, expenditure incurred in 
+Government account for the period from 2018-19 to 2020-21 are shown in the Table-2.1. 
+Table-2.1: Budget allotment and expenditure during 2018-2021 
+(₹ in crore) 
+Year Budget Allotment Expenditure* 
+GoI Share State share Total GoI Share State share Total 
+2018-19 210 5,157 5,367 109 5,056 5,165 
+2019-20 413 9,350 9,763 343 8,353 8,696 
+2020-21  333 11,725 12,058 347 8,885 9,232 
+Total 956 26,232 27,188 799 22,294 23,093 
+Source: Budget Estimates and Appropriation Accounts of respective years 
+* Expenditure is booked in Government Account as and when the funds are drawn by the Commissioner , 
+Rural Development and transferred to the Nodal Bank  account of SERP irrespective of actual benefit 
+disbursement  to the beneficiaries. 
+2.1.2 Direct Benefit Transfer to the beneficiaries  
+Expenditure figures booked under Government Account reflect as receipts in the Nodal 
+Bank account of SERP. Details of amounts paid to the beneficiaries by SERP through DBT 
+mode (CBS: 45 per cent and DoP: 55 per cent) and manual mode during the audit period 
+are shown in Table-2.2. 
+Table-2.2: Details of amounts paid to the beneficiaries during 2018-2021 
+(₹ in crore) 
+Year Direct Benefit Transfer Manual Grand Total Bank DoP Total 
+2018-19 2,196.62 2,777.81 4,974.43 0.59 4,975.02 
+2019-20 3,884.51 4,825.36 8,709.87 0.63 8,710.50⁎ 
+2020-21 4,386.51 5,317.96 9,704.47 0.60 9,705.07⁎ 
+Total 10,467.64 12,921.13 23,388.77 1.82 23,390.59 
+Source: Report R5.1(b) from Aasara Portal; 
+⁎Expenditure was more than receipts due to available balances with SERP 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 6 
+ 
+According to paragraph 17.1 of Telangana Budget Manual, an appropriation authorised by 
+the Legislature is operative only until the close of the financial year; any unspent balance 
+lapses and is not available for utilisation in the following year.  However, unutilised 
+amounts were retained in the bank account of SERP (2018-19: ₹455.17 crore; 2019-20: 
+₹933.94 crore; and 2020-21: ₹550.29 crore), without remittance back into Government 
+Account. Despite having balances at the end of each year, Utilisation Certificates (UCs) 
+were submitted to the GoI and GoT in a routine manner by CEO, SERP stating that ‘the 
+entire amount of grants-in-aid received was utilised for the purpose for which it was 
+released’.  
+Department in its reply stated (June 2022) that the amounts were meant for next cycle 
+disbursement and advance UCs were given to enable submission of bills by the CRD in 
+anticipation of fund releases. UCs to GoI were communicated in the format prescribed.  
+Reply is not acceptable as this practice is against the provisions of Budget Manual.  
+2.1.3 Pension amounts remaining undisbursed 
+The releases made by SERP towards pensions for the beneficiaries, amounts disbursed and 
+remained undisbursed in March 2019, March 2020 and March 2021 are given in 
+Tables-2.3, 2.4 and 2.5. 
+Table-2.3: Total Beneficiaries and pension amounts released 
+Month 
+and 
+Year 
+Bank Department of Posts Manual Total 
+No. of 
+beneficiari
+es 
+Amount  
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+March 
+2019 
+17,36,021 18589.52 22,00,170 26163.96 330 3.68 39,36,521 44757.15 
+March 
+2020 
+17,20,260 36774.72 21,44,244 50290.46 247 5.59 38,64,751 87070.77 
+March 
+2021 
+16,93,117 36268.40 20,66,322 48182.59 196 4.63 37,59,635 84455.62 
+Table-2.4: Beneficiaries and amounts disbursed 
+Month 
+and 
+Year 
+Bank Department of Posts Manual Total 
+No. of 
+beneficiar
+ies 
+Amount 
+(₹ in lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+March 
+2019 
+17,31,163 18334.21 18,57,915 21989.76 326 3.64 35,89,404 40327.60 
+March 
+2020 
+17,19,843 36765.92 20,32,924 47467.70 241 5.59 37,53,008 84239.20 
+March 
+2021 
+16,91,882 36242.43 18,64,042 43251.34 192 4.55 35,56,116 79498.32 
+
+Chapter-II – Budget and Utilisation 
+ 
+Page 7 
+ 
+Table-2.5: Beneficiaries and amounts remaining undisbursed  
+Month 
+and 
+Year 
+Bank Department of Posts Manual Total 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+No. of 
+beneficiari
+es 
+Amount 
+(₹ in 
+lakh) 
+March 
+2019 
+4,858 255.32 3,42,255 4174.20 4 0.04 3,47,117 4429.56 
+March 
+2020 
+417 8.81 1,11,320 2822.76 6 0.00 1,11,743 2831.57 
+March 
+2021 
+1,235 25.97 2,02,280 4931.25 4 0.08 2,03,519 4957.30 
+Source: Report R5.1(b) from Aasara Portal 
+Note: Details in the above tables related to one month (March) only 
+The average monthly pension amount released by SERP to the bank accounts of individuals 
+and disbursing agencies (DoP and MPDOs) for the period from July 2019 to March 2021 
+was ₹862 crore10. Monthly average of the undisbursed amounts worked out to ₹45 crore 
+(5 per cent). The undisbursed amounts are later remitted back to SERP’s bank account. 
+Further, on an average, pensions to 2.30 lakh (6 per cent out of 38.87 lakh) beneficiaries 
+per month remained undisbursed, during April 2018 to March 2021. 
+Government attributed (June 2022) the non -disbursement of released pension amounts to 
+deaths/permanent migrations/non -turning up of beneficiaries/bank rejections for various 
+reasons. Further, undisbursed amounts would be released for three months for beneficiaries 
+who did not turn up, after which their status would be treated as ‘permanent migration’ and 
+pension, thereafter, would be stopped. 
+2.2 Conclusion 
+Unutilised amounts at the end of the financial year were retained in the Nodal Bank account 
+of SERP without remittance into Government Account , in violation of the provisions of 
+Budget Manual . Utilisation certificates submitted by the SERP to GoI and State 
+Government did not reflect the balances available with the SERP. 
+ 
+ 
+  
+ 
+10 ₹453 crore from April 2018 to June 2019 at old rates 
+
+ 
+ 
+ 
+ 
+  
+
+ 
+ 
+Chapter III 
+ 
+Pages 9 - 30 
+Implementation of Aasara Pensions 
+as a DBT Scheme 
+
+ 
+ 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 9 
+ 
+Chapter III - Implementation of Aasara Pensions as a DBT Scheme 
+ 
+  
+• Cross-check of Aasara beneficiaries and Samagra Kutumba Survey (SKS) data 
+in Aasara database  revealed that 19 per cent  of households data was not 
+available in SKS data and 16 per cent of households found to be ineligible as per 
+the SKS data were included as beneficiaries of Aasara Pensions indicating 
+ineffective verification and identification processes.  
+• Irregular/ inappropriate sanctions were made resulting in payment of ₹535.39 
+crore under the categories of Disabled (₹71.90 crore), Beedi Workers   
+(₹446.96 crore) and Single Women (₹1.70 crore) and to more than one member 
+in a household (₹14.83 crore).  
+• The automation of Aasara IT Application  was not done as an end-to-end 
+solution since receipt and verification processes were done manually. 
+• Analysis of Rythu Bandhu data (2018 to 2020) of Department of Agriculture 
+with Aasara beneficiary details revealed that the persons owning land more than 
+the eligible limits prescribed in the Aasara Pensions scheme guidelines were 
+given undue benefit of ₹67.41 crore during the audit period. 
+• Analysis of Rythu Bima data (August 2018 to February 2020) of Department of 
+Agriculture with Aasara beneficiary details  revealed th at pension benefit of 
+₹0.90 crore was irregularly paid against 367 deceased beneficiaries beyond their 
+date of death.   
+• Analysis of Transport Department  data (as of May 2017) with Aasara 
+beneficiary details revealed that undue benefit of ₹51.98 crore was passed on to 
+ineligible beneficiaries having four wheelers.  
+• Analysis of Registration & Stamps Department data with Aasara beneficiary 
+details revealed that undue benefit of ₹31.42 crore was extended to 5,715 persons 
+involved in the registration of assets worth more than ₹10 lakh.  
+• Irregular payment of ₹1,175 crore was made to 2.02 lakh ineligible beneficiaries 
+despite their identification for exclusion by the department. 
+• Best Fingerprint Detection failure occurred for 9 per cent beneficiaries (March 
+2021). Payments were made in these cases through biometric authentication of 
+Panchayat Secretary/Bill Collector . Repeated failure of BFD authentication 
+ranging from 7 to 30 months was noticed for 21,536 beneficiaries (benefit paid: 
+₹58.33 crore). 
+• In test checked units, it was observed that acquittance register/record as a proof 
+of payment  in cases where  pension amounts were drawn with biometric 
+authentication of GP Secretary/Bill Collector was not maintained /not properly 
+maintained. 
+• Beneficiary survey of 480 beneficiaries revealed that 32 (7 per cent) beneficiaries 
+were ineligible for the pension benefit as per their own statement. 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 10 
+ 
+The processes involved in implementation of Aasara Pensions scheme is detailed below:  
+3.1 Identification of beneficiaries 
+Eligibility Criteria for granting pensions to various categories are given in the guidelines11 
+issued for implementation of Aasara Pensions scheme and explained in paragraph 1.1.1 
+supra.  The data of households collected during the ‘Samagra Kutumba Survey’  (SKS)12 
+was considered as the basis for identifying the poor and vulnerable for granting Aasara 
+Pensions. 
+The following diagram depicts the flow of the processes involved in identification of a 
+beneficiary:  
+ 
+3.1.1 Receipt of Applications  
+The Aasara Pensions scheme guidelines stipulate that  the aspirants submit their 
+applications in physical form to PS of the GP or BC of the municipal ward along with 
+required documents. All applications shall be entered in a register with details of serial 
+number, name, surname, contact number, date and ackn owledgement issued to each 
+applicant giving serial number of his/ her application. 
+3.1.2 Verification of applications and identification of beneficiaries 
+The guidelines stipulate that the PS or BC shall verify and certify the applications and 
+forward them to MPDO/MC/DC/Tahsildar for identifying the applicant for Aasara Pension. 
+The poorest of the poor amongst the verified list covering all social categories shall be 
+identified.  Adequate care shall be taken to ensure that no eligible beneficiary is left out. 
+ 
+11 Issued vide G.O.Ms.No. 17 dated 5 November 2014 of Panchayat Raj and Rural Development (RD.I) Department 
+12 A comprehensive integrated household survey conducted in Telangana on 19 August 2014 whose data is maintained 
+by National Informatics Centre 
+Eligible 
+ 
+Submission of 
+physical 
+Application by 
+Aspirants 
+Gram 
+Panchayat 
+Secretary/Bill 
+Collector 
+Verification 
+& 
+Certification  
+ 
+Not eligible 
+ Rejected 
+Administrative 
+approval of 
+District 
+Collector 
+Sanction of 
+pension by 
+MPDO/MC/DC 
+Submission to 
+MPDO/MC/DC 
+for assessment 
+& sanction 
+ 
+  
+ 
+ 
+Manual 
+Automated 
+Chart 3.1: Aasara Pensions -Beneficiary Identification 
+Process 
+Hybrid 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 11 
+ 
+3.1.3 Ineffective verification and identification processes 
+Audit noticed that the inputs to SKS were self -declared by the household members and 
+were not supported by authenticated evidence.  Audit cross-checked Aasara beneficiaries 
+and SKS data 13 to ascertain accuracy, authenticity and transparency of the process of 
+identifying the Aasara beneficiaries. Data analysis revealed the following: 
+➢ Household details of 9,76,223 (19 per cent) beneficiaries out of 50,30,158 were not 
+available in the SKS data ta ble, indicating that SKS data available in the Aasara 
+database was incomplete and inadequate. Further, Audit observed that Verification and 
+Sanctioning Officers did not have access to original SKS database maintained by 
+National Informatics Centre. The Verification and Sanctioning officers were therefore 
+unable to cross check the self-declared information vis-a-vis that captured in the SKS. 
+➢ Of the 27,43,019 households whose information was available in SKS data table, 
+4,35,112 households (16 per cent) were found to be ineligible on account of owning  
+land and/or four-wheeler and/or being an  Income Tax assessee and/or receiving 
+Government/freedom fighter pensions, etc.  During April 2018 to March 2021, pension 
+of ₹1768.42 crore  was paid to 3,09,134 benefici aries from 2,92,566 ineligible 
+households (67  per cent ).  Inclusion of these beneficiaries in the Aasara Pensions 
+scheme, despite  their ineligibility, as  per SKS data table was against the scheme 
+guidelines. 
+Further, verification and correlation cannot be done based on the SKS data alone and could 
+only be undertaken by cross verifying Aasara beneficiary details with the data of other 
+related departments .  The absence of any mechanism to enable the Verification and 
+Sanctioning Officers to cross-check with other databases such as National Voters Service 
+Portal for required age, Revenue Records about land holdings, Transport Department data 
+about ownership of four-wheelers and heavy vehicles by the applicant’s household , etc., 
+results in the identification of beneficiaries not being correct or up-to-date. 
+Government replied (June 2022) that SKS data was not integrated with Aasara IT 
+Application and admitted that no mechanism existed to cross-check Aasara applicant’s data 
+with SKS d ata. The reply is not in consonance with the procedure stipulated in scheme 
+guidelines which mandates that Sanctioning Officers are required to broadly assess the 
+recommendation reports of Verification Officers and correlate the same with SKS survey 
+data (exclusion and inclusion criteria).  Government also admitted that no mechanism exists 
+for integration with other departments’ databa ses. In the absence of integration with SKS 
+data as well as other databases of Government, identification and verification is purely 
+based on information furnished by the applicants/ verification authorities. This has resulted 
+in inclusion of ineligible beneficiaries, as discussed in the succeeding paragraphs. 
+ 
+13 BENEFICIARY_DETAILS and SKS_HH_MASTER tables of Aasara database 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 12 
+ 
+3.1.4 Lacunae in application receipt and verification processes 
+The DBT Flyer 14 defined that the purpose of DBT is to bring efficiency, effectiveness, 
+transparency and accountability in the Government system and infuse confidence of citizen 
+in governance.  Thus, DBT entails leveraging modern technology and IT tools to achieve 
+the goal of ‘Minimum Government - Maximum Governance’. 
+To assess the efficiency, transparency and effectiveness aspects in Aasara Pensions scheme, 
+Audit test checked 960 applications15 from those available with the sampled units.  Scrutiny 
+of applications/connected records and data analysis revealed the following: 
+3.1.4.1 Issues in the Application process 
+➢ As the application receipt and verification processes are in manual mode,  Aasara IT 
+Application is not a completely automated end-to-end solution. 
+➢ A fixed common format of physical application to capture relevant beneficiary data was 
+not prescribed. This resulted in  different formats being used in the sampled 
+units/districts. 
+➢ Audit observed that  the register for chronological recording of application s was not 
+maintained at all in 32 units and not properly maintained16 in the remaining 16 units for 
+the audit period.  Due to non-maintenance/ improper maintenance of this register, Audit 
+could not vouch for inclusion of all eligible applicants and deliberate omissions/delays, 
+if any. 
+➢ Audit observed that the approved physical applications were not retained by the 
+Sanctioning Officers in the test checked units.  Where applications are available, they 
+were kept haphazardly, without year -wise, GP-wise/Ward-wise segregation and none 
+of the test-checked units could produce the 20 sampled applications. 
+Government replied (June 2022) that instructions were issued to district authorities to 
+maintain the required registers/records.  
+3.1.4.2 Issues in verification process 
+➢ Audit observed that there was n o uniform Verification Report and different formats 
+were used for Verification Report/ Checklis t/ Certificate of eligibility in the test -
+checked units.  
+➢ Aasara Pensions scheme guidelines prescribe grant of sanctions only after submission 
+of verification reports. However, in 312 out of 960 cases (33 per cent), pensions were 
+sanctioned without verification reports.  An amount of ₹1.38 crore was paid to 289 (out 
+of 312) beneficiaries during the audit period.  In 202 cases  (21 per cent), pensions were 
+sanctioned without an application of the aspirant.  Pensions were sanctioned  in these 
+cases by collecting copies of beneficiaries’ Aadhaar Card/ first page of Savings Bank 
+Account Passbook. 
+ 
+14 Document issued by DBT Mission 
+15 20 each from the 48 selected units 
+16 date of application/receipt/ verification/sanction/rejection were not available 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 13 
+ 
+During Exit Conference, Government assured (June 2022) that there would be no 
+necessity of physical applications in future as this process wou ld be carried out only 
+through electronic mode.   
+➢ Aasara Pensions scheme guidelines stipulate that the eligibility of an applicant is to be 
+determined based on the fulfillment of inclusion/exclusion criteria for the household of 
+the applicant.  However, d etails of name and age of all children and other family 
+members of the household, their Unique Iden tification (UID) numbers, 
+occupation/employment/ profession/ business and details of annual income, land 
+holdings, vehicles for self and family members of the applicant’s household with 
+supporting documents of detailed verification were not available. 
+(i) Income details of the beneficiary were not mentioned in the applications.  
+Tahsildar’s Certificate17 in proof of income of the household was also not 
+enclosed in 872 (91 per cent) test-checked applications. 
+(ii) Certificate given by competent authority regarding land ownership 18 was not 
+enclosed in 844 (88 per cent) test-checked applications. Further, it was not clear 
+on how motor vehicle ownership status was verified. 
+(iii) Details of criteria considered to ascertain the lifestyle, possession of assets and 
+non-receipt of Government /Freedom Fighter Pension s by the applicant 
+himself/other members of the household were not available for the test -checked 
+applications. 
+Audit observed that application and verification processes were conducted physically and 
+kept out of the Aasara IT Application.  Further, the physical processes lacked uniformity 
+and suffered from deficiencies pointed above. 
+Government accepted (June 2022) that verif ication reports in respect of beneficiaries 
+sanctioned initially were not available and stated that scanned copies of beneficiary’s 
+application, duly certified by PS/BC and MPDO/Municipal Commissioner are being 
+captured now. In respect of other issues, Government stated that instructions were issued 
+to maintain all records for future reference. 
+3.2 Sanction of Pension 
+The data pertaining to the identified beneficiary after verification is fed on Aasara Portal at 
+Rural/Urban block level by a Computer Operator. Sanctioning Officers are required to 
+broadly assess the recommendation reports of Verification Officers and correlate the same 
+with SKS survey (exclusion and inclusion c riteria), population census data, etc. and the 
+percentages of allocations made, category -wise, for the Mandal by the District Collector. 
+New sanctions are submitted to the District Collector for administrative sanction through 
+DRDOs. 
+ 
+17 to support that the annual household income was within the stipulated ceiling of ₹1.50 lakh in Rural Areas and  
+₹2.00 lakh in Urban areas 
+18 that the self and family members of the applicant’s household does not possess landholding more than 3.0 Acres wet/ 
+irrigated dry or 7.5 Acres dry 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 14 
+ 
+However, there was no evidence available regarding such assessment made in any of the 
+test checked Mandals/ULBs . In the absence of access to SKS survey data and other 
+databases of Government, p ension was sanctioned by the Sanctioning Officer  merely 
+depending upon the recommendation of the Verification Officer. 
+Details of new sanctions made during the audit period are shown in Table-3.1. 
+Table-3.1: Number of new sanctions made during 2018-19 to 2020-21 
+Year OAP Widow Disabled Toddy 
+Tapper 
+Weaver Single 
+Women 
+Beedi 
+Workers 
+Total 
+2018-19 53,533 55,983 22,489 3,117 1,875 8,776 2,265 1,48,038 
+2019-20 38,887 67,150 31,787 3,072 1,639 7,417 1,150 1,51,102 
+2020-21 5,496 7,494 1,234 391 204 364 11,789 26,972 
+Source: Report R 2.2 (a) of Aasara Portal. 
+3.2.1 Non-maintenance of registers 
+Aasara Pensions scheme  guidelines stipulate that GPs should necessarily maintain an ‘A 
+Register’ specifying the existing pensioners and a ‘B Register’ for those who are eligible 
+but have not been considered for a pension. As and when there is a vacancy and a person 
+can be accommodated, the person who is accommodated first should be considered based 
+on the criteria - oldest among those listed, SC/ST, landless with a preference to women, 
+especially deserted women in all categories. The IT Application used for automation of 
+scheme implementation is expected to provide an end -to-end solution to comply with all 
+business rules without fail.  The criteria adopted in release of benefit on priority among the 
+waitlisted applicants should also be available online to ensure that the eligibility process  
+had been scrupulously followed. Audit observed that: 
+➢ Register A and Register B were not maintained in the test -checked19 
+Municipalities/GPs of the Mandals. 
+➢ During the period 2018-21, benefit disbursement did not commence as per the criteria 
+stipulated in the guidelines for 98,987 (30 per cent) cases out of 3,26,112. This is further 
+explained in paragraph 3.3.1 infra. 
+➢ Aasara Pension is generally not disbursed to new pensioners immediately in succeeding 
+month of District Collector’s (Administrative) sanction.  In any given month, master 
+list of beneficiaries does not match with list of disbursals. Analysis of new sanctioned 
+pensioners data revealed that 30 per cent of them were not disbursed with pension 
+immediately.  Among eligible beneficiaries, the period of waiting (i.e., before they were 
+considered for pension), ranged from 7 to 36 months. 
+Non-maintenance of requisite record s under the scheme indicates lack of transparency in 
+identification and enrolment of beneficiaries. 
+Government replied (June 2022) that instructions were issued to the districts for 
+maintenance of registers/records, chronologically.  Delay in release of pensions to eligible 
+beneficiaries was attributed to budgetary considerations. 
+ 
+19 Registers are maintained in Chegunta (10 GPs) and in Kowdipally (11 GPs) mandals in Medak district; in Gajwel 
+(6 GPs) mandal in Siddipet district   
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 15 
+ 
+3.2.2 Issues relating to irregular sanctions 
+Audit analysed the Aasara database for the years 2018-2021 and verified the results of data 
+analysis through field verification and benefici ary survey.  Issues in sanction of pensions 
+are discussed below: 
+3.2.2.1 Pension to more than one member in a household 
+Aasara Pensions scheme guidelines stipulate that in respect of all pensions except disabled, 
+widows and beedi workers, only one member per household, preferably a woman, shall be 
+allowed pension. Data Analysis of 20,36,537 pensioners pertaining to Old Age Pension 
+(OAP), Weavers, Toddy Tappers and Single Women categories for the period of audit 
+revealed that benefit of ₹14.83 crore was passed on to 3,009 ineligible beneficiaries hailing 
+from 2,914 households. These beneficiaries already had another member from their 
+household receiving Aasara Pension. 
+3.2.2.2 Lapses in sanction of pension to Disabled persons  
+Aasara Pensions scheme guidelines stipulate that disabled person shall be sanctioned 
+pension based on the certificate provided by SADAREM 20. Further, for sanctioning 
+pension to a disabled person, mapping of SADAREM_ID21 is mandatory. 
+➢ Audit noticed that in respect of 11,629 disabled pensioners (2 per cent out of 5,83,050) 
+SADAREM_ID was not captured in the beneficiary details table.  An amount of   
+₹2.16 crore was paid to 1,467 beneficiaries (13 per cent out of 11,629) during the audit 
+period. Government accepted that SADAREM validation was built into the Aasara IT 
+application in February 2019 only and stated that proposals for ratification of lapses is 
+under consideration.  The delay in implementation of business rule had led to payment 
+of pension to ineligible persons. 
+➢ Audit cross -checked ‘employee type description’ column of 
+SADAREM_COMPLETE_DETAILS_SHARING table 22 with ‘BENEFICIARY_ 
+DETAILS’ table and found that 8,760 disabled persons were ineligible for Aasara 
+Pensions as they were employed either in government sector (1,644) or private sector 
+(7,116).  These ineligible persons were paid an amount of ₹69.74 crore (₹13.08 crore 
+for government employees and ₹56.66 crore for private sector employees) during the 
+period of audit.   
+Government stated that only Pensioner’s certificate type, certificate expiry date and 
+disability percentage are considered from SADAREM data for sanctioning pension and that 
+the employment status was not considered. The reply is not acce ptable as employment 
+status cannot be ignored and this has resulted in sanction of pensions to ineligible persons.  
+Also, SADAREM data is collected and maintained by SERP itself and hence, proper checks 
+to prevent sanction of pensions to ineligible persons could have been taken. 
+ 
+20 ‘Software for Assessment of Disabled for Access Rehabilitation and Empowerment (SADAREM)’ is a web - based 
+application for generation of a computer based Disability Certificate with unique ID along with Identity Card. Disability 
+Certificate is issued on regular or temporary (with limited period of validity) basis as per the scientific assessment of 
+degree of the disability done on the basis of methods and formulae prescribed 
+21 Identity generated on SADAREM portal certifying the degree of disability of a disabled person  
+22 The table contains disability related details of beneficiaries populated from SADAREM portal 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 16 
+ 
+3.2.2.3 Inappropriate sanction of Financial Assistance to Beedi Workers 
+The GoT ordered (March 2015) 23 to provide Financial Assistance to Beedi Workers 
+registered under SKS through Aasara Pensions scheme .  Later, based on the requests of 
+five District Collectors 24, GoT decided 25 (April 2015) to extend the benefit to 1,20,419 
+Beedi Workers who were registered with Employees’ Provident Fund Organisation (EPFO) 
+before 1 March 2014 and not covered under SKS in those districts alone.  A sub -category 
+“Beedi Workers (Non -SKS PF)” was created duly imposing an additional condition that 
+the beneficiary age shall be less than 50 years.   
+Analysis of data pertaining to 4,91,120 Beedi workers26 revealed that: 
+➢ 12,643 beneficiaries with age more than 50 years, were paid benefit of ₹46.20 crore 
+during the period of audit, in contravention to the business rules. Of the 960 test -
+checked cases, 123 were under the Beedi Workers category. Of this, 14 were paid 
+financial assistance beyond 50 years age. 
+➢ 68,324 additional persons were sanctioned financial assistance under Beedi Workers 
+category without Government orders, over and above the 1,20,419 beneficiaries 
+identified a nd recommended by District Collectors. The benefit for these 68,324 
+additional persons worked out to ₹391.74 crore during 2018 -19 to 2020 -21. Audit is 
+unable to deduce the basis on which these additional persons were identified as Beedi 
+Workers and sanctioned financial assistance. 
+➢ 1,596 Beedi Workers hailing from districts other than the identified districts, were paid 
+₹9.02 crore without Government orders/specific reasons. 
+Government replied (June 2022) that proposals have been submitted for ratification and the 
+same are under consideration. 
+3.2.2.4 Irregular sanction of Financial Assistance to Single Women 
+The GoT ordered (April 2017)27 to provide Financial Assistance through Aasara Pensions 
+scheme to the most vulnerable single women not having family support and in dire financial 
+stress.  Data analysis of 1,41,196 cases under the category revealed the following 
+irregularities: 
+➢ Financial Assistance of ₹1.33 crore was paid to 256 unmarried urban women even 
+though their age was less than the stipulated age of 35 year s. Similarly, benefit of  
+₹4.58 lakh was given to eight unmarried rural women though their age was less than 
+the stipulated 30 years. 
+Government admitted (June 2022) that this happened in respect of cases where the 
+beneficiary's residential area was conver ted from Rural to Urban and Rural 
+beneficiary’s migration to Urban area.  In such cases, though the Age criteria is 35, the 
+ 
+23 Vide G.O.Ms.No.29 dated 11 March 2015 of Panchayat Raj and Rural Development (RD) Department 
+24 Adilabad, Karimnagar, Medak, Nizamabad and Warangal districts 
+25 Vide G.O.Ms.No.38 dated 7 April 2015 of Panchayat Raj and Rural Development (RD) Department 
+26 SKS: 2,99,727; non-SKS: 1,91,393 
+27 Vide G.O.Ms.No.27  dated 2 May 2017 of Panchayat Raj and Rural Development (RD) Department 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 17 
+ 
+Financial Assistance is continued as per the Rural Area eligibility. It was also stated 
+that proposal submitted for amending the relaxation in age criteria is under 
+consideration.  This indicates the absence of controls in the Aasara IT Application to 
+flag changes in beneficiary data and their domicile status.  
+➢ Financial Assistance of ₹32 lakh was  paid to 61 married rural women when their age 
+was equal to or less than the stipulated age of 18 years. 
+➢ Financial Assistance to a single woman shall be discontinued, if she gets remarried or 
+gets permanent employment or attains economic stability. Responsibility for verifying 
+the status, on quarterly basis, was devolved on MPDOs in rural areas, Municipal 
+Commissioners in urban local bodies, D eputy Commissioners in GHMC (other than 
+Hyderabad District) and Tahsildars in Hyderabad District.  However, no records 
+reflecting such verification process, were made available to Audit. 
+Government accepted that condition relating to period of separation from/desertion by the 
+spouse was not built into Aasara IT Application and is proposed to be incorpo rated now. 
+This indicates incomplete mapping of business rules. 
+➢ Further, no record evidencing conduct of super checks 28 on 10 per cent  of the 
+beneficiaries by Special Officers appointed by the District Collector was produced to 
+Audit in test checked units. 
+3.2.3 Non-correlation with other databases 
+Non-correlation of Aasara particulars with information available in databases of other 
+departments/agencies led to sanction and payment of pension to ineligible persons as 
+detailed below: 
+3.2.3.1 Analysis with ‘Rythu Bandhu’ database 
+Aasara Pensions scheme guidelines stipulate that beneficiaries belonging to the households 
+having land more than 3.0 Acres wet/ irrigated dry or 7.5 Acres dry are not eligible for 
+Aasara Pensions. Audit cross-checked Rythu Bandhu29 data (2018 to 2020) of Department 
+of Agriculture with Aasara beneficiary details and noticed that persons owning land more 
+than the eligible limits prescribed in Aasara Pensions scheme  guidelines were drawing 
+benefit irregularly.  The details are: 
+➢ In 12,835 cases, ineligible persons from households possessing land above 7.5 acres 
+were sanctioned pension. Undue benefit of ₹67.41 crore was passed on to 12,152 
+persons, during April 2018 to March 2021. 
+➢ Similarly, 2,12,709 persons from households possessing land between 3 to 7.5 acres  
+were sanctioned pension and of this, 2,04,688 persons were paid  pension of  
+₹1,150.71 crore during the  audit period. Details of land categorisation (wet/irrigated 
+dry/dry) were, however, not available in Aasara databa se. Further, these details were 
+also not readily available with the verification/sanctioning authorities concerned in the 
+ 
+28 Paragraph 2 III (vi) of G.O.Ms.No.27 dated 2 May 2017 of Panchayat Raj and Rural Development (RD) Department 
+29 Agriculture Investment Support Scheme implemented in the State of Telangana from 2018-19 onwards which provides 
+assistance of ₹5,000 per acre per season of agricultural land ownership 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 18 
+ 
+test-checked units. Due to non -availability of  wet or irrigated dry categori sation of 
+lands, Audit could not arrive at the exact quantum of undue benefits passed on in these 
+cases. 
+3.2.3.2 Analysis with Rythu Bima 
+Audit cross-checked Rythu Bima30 data (August 2018 to February 2020) of Department of 
+Agriculture with Aasara beneficiary details and noticed that pension benefit of ₹89.56 lakh 
+was irregularly paid against 367 deceased beneficiaries beyond their date of death.   
+➢ Audit detected that an amount of ₹78.82 lakh was transferred to the bank accounts of 
+329 deceased beneficiaries during the audit period.  
+➢ Audit also detected that in 38 cases under DoP mode, an amount of ₹10.74 lakh was 
+fraudulently drawn after the date of beneficiary’s death by the concerned PS/BC using 
+their biometrics. 
+3.2.3.3 Analysis with data of Transport Department 
+Audit cross -checked data of Transport Department ( as of March 2017) with Aasara 
+beneficiary details and noticed that persons owning vehicles ( four-wheeler or heavy 
+vehicles) were sanctioned Aasara benefit against the guidelines: 
+➢ Pensions were sanctioned to 5,250 persons even though they belong to the 
+households possessing a four-wheeler/big vehicle, as on the date of sanction.  This 
+resulted in payment of undue benefit of ₹26.81 crore to 4,645 ineligible 
+beneficiaries during the audit period. 
+➢ Four-wheeler/big vehicle  was acquired by households of 5,315 beneficiaries after  
+sanction of pension.  However, they were not weeded out from the database of eligible 
+beneficiaries.  This resulted in undue payment of ₹25.17 crore to 4,463 ineligible 
+beneficiaries during April 2018 to March 2021. 
+3.2.3.4 Analysis with data of Registration & Stamps Department 
+Aasara Pensions scheme was introduced to protect the most vulnerable sections of society 
+and the quantum of pension was fixed in  order to cover the basic minimum requirements 
+of the needy to combat the ever -increasing cost of living and inflation. As per the socio -
+economic criteria stipulated in the Scheme Guidelines, the Verification Officer may assess 
+the manner of lifestyle, occupation a nd possession of assets by households of Aasara 
+beneficiaries and render them ineligible. 
+Audit cross-checked data of Stamps & Registration department with Aasara beneficiary 
+details. On a conservative assessment, Audit took the basic (book) value of asset  worth  
+₹10 lakh as benchmark. This is equal to five times of annual income ceiling  (₹2 lakh) 
+ 
+30 A “Farmers’ Group Life Insurance Scheme”, under which ₹5.00 lakh is deposited in to the bank account of nominee 
+of the deceased farmer 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 19 
+ 
+stipulated for exclusion criteria. Audit noticed that persons involved in the registration of 
+assets worth more than ₹10 lakh (either as executants or claimants) during the years 
+2018-20 were paid the following benefits under the scheme: 
+➢ In respect of 456 cases, the registration process took place even before the pension was 
+sanctioned and the benefit given to them was ₹1.95 crore. 
+➢ Similarly, in 5,259 cases, registration activity was after sanction of pension. However, 
+eligibility of these beneficiaries was not reassessed and benefit of ₹29.47 crore was 
+given to them. 
+3.2.3.5 Analysis with State Government Employees’ data 
+Audit test checked Aasara beneficiary details with G eneral Provident Fund (GPF) data to 
+identify the serving/retired government employees or any of their family members among 
+Aasara beneficiaries.  It was noticed that: 
+➢ Family members of the households pertaining to 126 employees of Telangana State 
+Government (in service /retired)31 were irregularly drawing Aasara Pension.  Payment 
+of ₹73.75 lakh was made during the period covered in audit to these households32. 
+➢ Cross-checking also revealed that mobile numbers belonging to 13,934 Aasara 
+beneficiaries matched with the in -service/retired Government  employees’ mobile 
+numbers33.  Further, mobile number of 436 employees working with PR&RD 
+(including retired) was used against 8,927 Aasara beneficiaries, indicating that 
+beneficiary data capture was not as per guidelines and PR&RD employees’ mobile 
+numbers were extensively used to facilitate data entry. 
+These instances indicate that the process of identifying a beneficiary/household was not 
+done in accordance with the prescribed procedure and these disbursals suggest failures/gaps 
+in (a) the mechanism of verifying the antecedents of a beneficiary/household and  
+(b) process of reviewing their economic status periodically. 
+Further, the eligibility criteria for ‘Toddy Tappers’ prescribes registration of the beneficiary 
+with Cooperative Society of Toddy Tappers, whereas similar criterion was not fixed for 
+‘Weavers’.  Also, due to non-mapping of Toddy Tappers’ Cooperative Society registration 
+details with Aasara IT Application, Audit could not verify the  veracity of their eligibility 
+for pension.  
+Government accepted (June 2022) that no mechanism exists for integration of Aasara IT 
+Application with databases of other departments to identify ineligible beneficiaries and that 
+action would be taken for such integration. 
+ 
+31 74 Households of in-service Government employee and 52 of retired Government employees 
+32 ₹43.44 lakh to the households of in-service employees and ₹30.31 lakh to the households of retired employees 
+33 9,886 in-service and 4,048 retired employees 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 20 
+ 
+3.3 Process and Methods of Pension Disbursement 
+The process involved every month for generating payment proceedings and disbursement 
+is depicted in Chart-3.2: 
+ 
+The DRDOs in 32 districts and District Revenue Officer (DRO) for Hyderabad District 
+submit the updated list of beneficiaries to District Collector concerned every month for 
+his/her approval.  On transfer of the approved list to SERP, c entralised proceedings get 
+generated through  Aasara IT Application and are  forwarded back electronically to the 
+DRDO/DRO concerned for obtaining authorisation of District Collector on the physical 
+file for releasing the payments.  The DRDO/DRO uploads the details of District Collector’s 
+approval into Aasara IT Application.  Relevant Fund Transfer Request (FTR) is generated 
+on the Aasara IT Application, Block -wise and GP-wise, by DRDO/DRO for each district 
+Monthly proceeding 
+with new sanctions 
+by MPDO/MC/DC 
+Live Pensioners 
+Rollbacks 
+Generation of 
+disbursement 
+proceedings by DRDA 
+Approval of 
+proceeding by 
+District Collector 
+FTR 
+generation 
+(Mandal wise& 
+Disbursement 
+Mode wise) 
+FTOs Approval by 
+Director, Pensions/ 
+SERP 
+Sending FTOs to Bank to release the funds  
+(CBS: Beneficiary A/cs, DoP: HPOs A/cs, &  
+Manual: MPDO A/cs) 
+CBS Payments 
+(Bank) 
+Biometric Payments 
+(DoP) 
+Manual 
+Payments 
+Credit of amount in 
+Beneficiary A/c 
+Response from 
+Bank 
+ 
+Physical Cash to 
+Beneficiary at 
+Bank/ATM 
+ 
+Credit of amount to 
+HPO A/c 
+Beneficiary’s 
+Biometric 
+Authentication  
+Physical cash to 
+beneficiary 
+through DoP 
+Personnel 
+Credit of amount 
+to MPDO A/c 
+Physical cash to 
+beneficiary 
+through 
+Panchayat 
+Secretary 
+Chart-3.2: Aasara Pensions - Disbursement Process 
+(Automated) 
+Acquittance 
+updation 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 21 
+ 
+for physical and financial figures for a particular month  and against which Fund Transfer 
+Order (FTO) is issued at State Level by Director (Pensions) , SERP for transfer of funds 
+electronically from the State Nodal Account34 to the Disbursing Agencies. 
+Once approved and digitally signed by the Authoriser, the payment files are sent by Aasara 
+IT Application through an automated process to the Nodal Bank account of SERP. 
+In respect of disbursement of pensions through Core Banking Solution (CBS), authorised 
+amount is debited from SERP’s bank account, routed through NPCI35 and the beneficiaries’ 
+bank accounts are credited with respective pension amounts thr ough the appropriate 
+payment bridge (Beneficiary’s Account number and the relevant IFSC Code of the Branch 
+are captured in Aasara IT Application). 
+State Bank of India shares, through an automated process, the payment status response files 
+with Aasara IT Ap plication through NPCI within 24 to 48 hours , i.e., T+2 days.  These 
+response files contain the details of successful and failed transactions along with reasons 
+for the failure.  
+In case of pension disbursement via biometric authentication mode, the service provider is 
+Department of Posts (DoP).  Pension amount is transferred to Head Post Offices (HPOs-84) 
+of DoP.  The beneficiaries data transmitted to DoP is further transferred to the server of its 
+technical service provider (TS Online) from where it is downloaded into the Point of 
+Transaction Devices (PoTDs) held by Sub-Post Masters/Branch Post Masters/ Dak Sevaks. 
+The amount is paid in cash upon authentication of biometrics through Aadhaar Enabled 
+Payment System (AEPS). 
+In rare cases such as those who a re bed-ridden, or whose upper extremities are badly 
+affected, pension amount is transferred to the bank account of MPDO and the disbursement 
+is made through manual mode in cash by Secretary of the GP concerned or by BC 
+concerned in the Urban Local Body (ULB) at the beneficiary’s door steps.  
+Approved pensioners are receiving pension monthly without any interruption and this was  
+verified during the Beneficiary Survey.  Acknowledgement is also posted transaction-wise 
+against each beneficiary in the Aasara portal.  Average success rate during 36 months 
+period covered in Audit was 99.81 per cent for payments through bank accounts and was 
+89.50 per cent for payments through DoP36. 
+Audit test-checked the number of beneficiaries as sanctioned by the District Collector on 
+file (FTRs) with the amounts actually released (FTOs) as per the database provided , for 
+ 
+34 Maintained at State Bank of India (SBI) Adarshnagar Branch, Hyderabad 
+35All Aadhaar based transactions are routed through Aadhaar Payment Bridge System (APBS) of National Payments 
+Corporation of India (NPCI) and all non-Aadhaar based transactions are routed through National Automated Clearing 
+House (NACH) of NPCI 
+APBS: Aadhaar Payment Bridge (APB) System, one of the payment systems implemented by NPCI, uses Aadhaar 
+number for electronically channelising the Government benefits and subsidies in the Aadhaar Enabled Bank Accounts 
+of the intended beneficiaries  
+NACH: NPCI has implemented “National Automated Clearing House (NACH)” for Banks, a web-based solution to 
+facilitate interbank, high volume, electronic transactions which are repetitive and periodic in nature. NACH System 
+can be used for making bulk transactions towards distribution of subsidies, pension etc. The sponsor bank routes all 
+non-Aadhaar based transactions through NACH which is an automated process 
+36 including payments through messenger authentication 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 22 
+ 
+two sampled Mandals in two sampled Districts for two months 37. We did not find any  
+variation or discrepancies between them.  
+As per the information available on the Aasara Portal, 100 per cent Aadhaar seeding was 
+completed for all live pensioners  of Aasara scheme. However, the data provided to Audit 
+by the SERP  was without Aadh aar (UID) numbers; hence Audit could not confirm the 
+Aadhaar linkage. 
+3.3.1 Selective sanction and disbursement of pension 
+Analysis of Aasara data revealed that payments to new sanctions were stopped from 
+September 2019 and the sanction generating feature in Aasara IT Application was disabled 
+with effect from January 2020.  However, in the month of September 2020, the interface 
+was temporarily enabled for Medak, Sangareddy an d Siddipet districts to accommodate 
+addition of 36,690 38 new pensioners. Justification was not available for preferential 
+sanction of pensions to these persons en masse, ignoring 98,987 other eligible pensioners39 
+across the State.  Further, it was noticed that: 
+➢ New sanctions were accorded to 26,94340 beneficiaries between 2nd and 5th September 
+2020, while for the remaining 9,747 beneficiaries, pensions were sanctioned prior to 
+that. 
+➢ Pensions amounting to ₹ 4.75 crore  was disbur sed to 23,077 beneficiaries for the 
+previous month of August 2020 also. 
+➢ To accommodate these fresh set of pensioners, the disbursement proceedings generated 
+on 30th/31st August 2020 for the month of August 2020, were revised subsequently on 
+10th September 2020, in these districts. 
+Government replied (June 2022) that pension amount was released in September 2020 to 
+the beneficiaries in the three districts of Medak, Sangareddy and Siddipet as a special case.  
+The reply is not acceptable as selection of just three districts lacks justification for ignoring 
+other eligible persons in the waitlist across the State. 
+3.3.2 Delay in payment of benefit 
+A monthly disbursement cycle (to be followed without fail) was stipulated in the scheme 
+guidelines so that the poor receive pension between 1st to 7th of every month.  In this regard, 
+scrutiny of disbursement data revealed that there were delays ranging from 6 to 32 days in 
+disbursement process for all the 36 months during April 2018 to March 2021.  
+Government attributed (June 2022) the delays to exigencies but no specific reasons were 
+furnished.  
+ 
+37 Armoor Mandal and Nizamabad Municipal Corporation in Nizamabad District and Abdullapurmet Mandal and 
+Saroornagar urban Mandal in GHMC area in Rangareddy District for November 2020 and December 2020 
+38 10,319 from Medak, 9,499 from Sangareddy and 16,872 from Siddipet 
+39 1,205 from the districts of Medak, Sangareddy and Siddipet while the remaining 97,782 are from other districts 
+40 7,274 from Medak, 4,973 from Sangareddy and 14,696 from Siddipet 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 23 
+ 
+3.3.3 Pension Amount credited to Bank Accounts of deceased 
+beneficiaries 
+Panchayat Secretary/ Bill Collector  shall report ev ery month change in status of the 
+pensioner/beneficiary (viz., his/her death, remarriage in respect of a widow, percentage of 
+disability, etc) and the MPDO/Municipal Commissioner shall be responsible for deleting 
+these names on an immediate basis. 
+In the T elangana State , deaths are registered on Unified Birth and Death Registration 
+Management Information System (UBDMIS) through a web application 41, developed and 
+maintained by National Informatics Centre (NIC).  The responsibility of registering the 
+death and issue of death certificate vests with the concerned Urban Local Body 
+(Municipality/Municipal Corporation) or Panchayat Raj Institut ion (Gram Panchayat).  
+Further, the responsibility to update the data on the websites for registration of deaths an d 
+Aasara Pensions vests with the PRIs/ULBs. Similar data is maintained by Greater 
+Hyderabad Municipal Corporation (GHMC) for deaths under its jurisdiction through its 
+website42 designed and developed by Centre for Good Governance (CGG) . Scrutiny of 
+relevant records in test-checked units revealed the following: 
+➢ The death details in UBDMIS and GHMC websites were not integrated with the data 
+of beneficiaries captured in Aasara IT Application .  Due to lack of coordination 
+between two Sections in the ULBs (dealing with Registration of Deaths and Aasara 
+Pensions), beneficiaries were not deleted from Aasara database  even after registration 
+of deaths in the same ULBs too.  
+➢ Further, MPDOs and DRDOs are not obtaining the details of all death cases from the 
+local bodies under their jurisdiction for identification and delet ion of  deceased 
+beneficiaries from the Aasara IT Application. 
+➢ The death details were not uploaded to the UBDMIS web site by PRIs and were 
+maintained offline in physical registers during the audit period and the deaths 
+information was not updated in Aasara database. 
+This result ed in irregular credit of pension /financial assistance to deceased beneficiaries, 
+leaving scop e for its mis utilisation. Audit observed that in Nizamabad Municipal 
+Corporation, ₹76.55 lakh was found to be recoverable43 from the persons drawing pension 
+against deceased beneficiaries. 
+➢ Relatives/nominees of the deceased beneficiaries approached the 
+MPDOs/Commissioners of ULBs for authori sation to be given to Bank authorities to 
+draw outstanding amounts in the bank accounts .  Only i n such cases , the 
+MPDOs/Municipal Commissioners delete d the deceas ed beneficiaries from Aasar a 
+Portal and request ed the concerned bank authorities to transfer irregularly credited 
+amounts back to the nodal account of SERP. 
+ 
+41 http://ubdmis.telangana.gov.in 
+42 https://bnd.ghmc.gov.in/Death_Certificate.aspx 
+43 ₹ 48.83 lakh (64 per cent) recovered as of March 2021 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 24 
+ 
+➢ As per the records made available to Audit, a n amount of ₹ 1.31 crore was credited to 
+the bank accounts of deceased beneficiaries in 672 cases44.  The period of credits after 
+the date of death ranged from 1 to 39 months.  However, there was no follow up either 
+with the authorities of the Banks or SERP with regard to recovery of identified amount 
+and its remittance to Nodal Account of SERP.  CEO, SERP also stated (June 2022) that 
+there was no mechanism to reconcile such amounts remitted to State Nodal Account. 
+➢ The status of  4,78,280 beneficiaries is denoted with “D” ( Notation for Death) in the 
+BENEFICIARIES_DETAILS table but corresponding dates of death were not captured 
+in any case . In absence of this, Audit could not ascertain  the benefits, if any, paid to 
+such deceased beneficiaries. 
+➢ Scrutiny revealed that 50 beneficiaries under ‘Filaria’ category were deleted due to the 
+death of beneficiary and death date was captured for 24 (out of 50) beneficiaries. Cross-
+checking with payments data revealed that payment of ₹3.78 lakh was passed on, during 
+April 2018 to March 2021, to these 24 beneficiaries even after their death. 
+Government replied (June 2022) that no mechanism existed for integration of Aasara 
+database with databases of other departments (including UBDMIS and GHMC) and due 
+steps are being taken to implement such a mechanism. 
+These lapses indicate lack of adequate monitoring at Apex level and District level  and 
+therefore, necessary action may be taken for strengthening oversight. 
+3.3.4 Pension disbursed to excluded beneficiaries 
+As per the Aasara Portal, details of deletion of beneficiaries were as shown in Table-3.2. 
+Table-3.2: Number of deletions during 2018-19 to 2020-21 
+Year 
+ 
+Reason for Deletion Total 
+Deletions Death Ineligibility Double 
+OAP 
+Repeated Permanent 
+Migration (PM) 
+less % of 
+disability 
+2018-19 38,680 4,136 65 161 53,052 29 96,123 
+2019-20 97,027 4,774 130 218 34,859 2,590 1,39,598 
+2020-21 1,18,208 5,286 184 116 44,227 1,070 1,69,091 
+Total 2,53,915 14,196 379 495 1,32,138 3,689 4,04,812 
+Source: Report R 1.16-Deleted Pensioners Details on Aasara Portal 
+There was no provision in the Aasara IT Application to capture the dates when the 
+beneficiaries were found to be ineligible and recoveries to be made in case of excluded 
+beneficiaries. Audit could not ascertain payments made to above deleted beneficiaries in 
+the absence of effective date of deletion and reflection of deletion s tatus in database for 
+stopping benefit disbursal. These beneficiaries are not receiving pensions as on date. 
+Government accepted (June 2022) that there was no provision in the Aasara portal to 
+capture date from which beneficiary is ineligible. 
+ 
+44 Hayathnagar (GHMC) (14 cases: ₹ 4.08 lakh), Sangareddy Municipality (43 cases: ₹ 3.90 lakh), MPDO, Ramayampet, 
+Medak (22 cases : ₹2.82 lakh), MPDO, Chegunta, Medak (4 cases: ₹0.64 lakh), Tahsildar, Nampally (1 case: ₹0.08 
+lakh), Jadcherla Municipality (3 cases: ₹1.04 lakh); Nizamabad District (351 cases: ₹76.55 lakh), Saroornagar (GHMC) 
+(102 cases: ₹16.75 lakh), Tahsildar, Charminar (61 cases: ₹10.36 lakh) and MPDO, Patancheru (71 cases: ₹14.37 lakh) 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 25 
+ 
+Scrutiny of Aasara data also revealed that 2,80,224 beneficiaries who were identified by 
+the department for exclusion as the beneficiaries were  (a) possessing excess land or four 
+wheelers, (b) employed with government and private sector, (c) drawing freedom fighter/ 
+other pension, etc. Cross-checking with payment history revealed that 2,02,294 of these 
+beneficiaries were paid ₹1,175 crore during  the period 2018-19 to 2020 -21.  Details are  
+given in Table-3.3. 
+Table-3.3: Beneficiaries identified for exclusion by the Department 
+ Exclusion Criteria Total 
+Employees Freedom 
+Fighter/ 
+Other 
+Pension 
+Four/Higher 
+wheeled 
+vehicles 
+Wet/Dry 
+Land 
+Large 
+businesses 
+Multiple 
+conditions 
+Number of 
+ineligible 
+persons  
+1,16,453 34,995 9,349 19,681 881 20,935 2,02,294 
+Amount 
+(₹ in crore) 
+684.86 198.89 55.09 108.87 5.12 122.12 1174.95 
+Source: Aasara Database tables 
+Further, pension was sanctioned to 1,94,315 (out of 2,02,294) ineligible persons before 
+January 2015.  Delays in conducting regular checks to weed out the ineligible 
+beneficiaries resulted in  payment of undue benefit to them. Data analysis  further 
+revealed that 1,80,297 (out of 2,02,294) beneficiaries identified for exclusion were still 
+receiving benefits (as of March 2021) and no action was taken to weed them out. 
+CEO, SERP replied (June 2022) that  details of live beneficiaries and new sanctions were 
+given to Samagra Vedika 45 for the scrutiny of  eligibility, in the year  2019.  However, 
+Government reply (June 2022) is silent on reasons for inaction on the beneficiaries 
+identified for exclusion. 
+Responsibility on the concerned officials  needs to be fixed for their failure to delete the 
+ineligible beneficiaries timely which led to erroneous use of Government money.  
+Immediate action should also be taken  for deletion of tho se identified ineligible 
+beneficiaries from the Aasara database to avoid further burden on the exchequer. 
+3.3.5 Pension amounts drawn on the biometric authenticat ion of 
+Gram Panchayat Secretaries/Bill Collectors 
+For disbursement of pension in cash from DoP, it is mandatory to authenticate biometrics 
+of the beneficiary on Point of Transaction Device (PoTD)46.  Only in rare cases, where the 
+beneficiaries are bedridde n or their upper extremities are affected, the benefit can be 
+disbursed by using biometrics of PS/BC, subject  to clearance of all such cases by a 
+competent higher authority.  The stipulation is in consonance with the DBT Guidelines 
+issued by the Union Government. 
+ 
+45 Telangana’s integrated platform using big data, Machine Language, Graph database for better citizen service delivery 
+and transparency, accountable and efficient Govern ance, an initia tive by Information Technology , Electronics and 
+Communications Department, GoT  
+46 a handheld machine operated with internet by the DoP personnel for payment of pension 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 26 
+ 
+Audit observed that a facility was also made for pensions disbursed under DoP mode 
+enabling PS/BC, to  draw pension with their biometrics for old age/ bed -ridden 
+beneficiaries, whose biometrics could not be authenticated. 
+Data analysis of DoP disbursements and scrutiny of relevant records revealed the following 
+lapses: 
+Table-3.4: Disbursements made without Biometric authentication 
+Year Total DoP 
+disbursements 
+during the Year 
+Number of disbursements 
+without beneficiary’s biometric 
+authentication (per cent) 
+Amount Disbursed without 
+beneficiary’s biometric 
+authentication (₹ in crore) 
+2018-19 2,65,39,959 9,52,622(4) 135.63 
+2019-20 2,60,60,061 10,08,073 (4) 232.53 
+2020-21 2,52,80,765 11,39,660 (5) 285.57 
+Total 7,78,80,785 31,00,355 (4) 653.73 
+Source: Aasara database 
+➢ In the month of March 2021, Best Fingerprint Detection (BFD) failure occurred in 
+respect of 1,82,608 (9 per cent) out of 20,66,322 beneficiaries. Payments in these cases 
+were made through biometric authentication of PS/BC and these transactions were 
+recorded as payments through ‘messenger authentication’ in the Aasara IT Application. 
+➢ Repeated BFD authentication failure was noticed (ranging from 7 to 30 pension months 
+out of 36) for 21,536 out of 5,10,980 beneficiaries and benefit of ₹58.33 crore was paid 
+to them. Further, none of these beneficiaries belong to disabled or old age categories. 
+➢ To evaluate gaps in data maintenance/interfacing/reconcilia tion at granular level of 
+postal disbursements, Audit sought data relating to tracing the last mile delivery of 
+benefit, but the same was not made available.  Granular level data is not available with 
+SERP as DoP acquired services of third party (TS Online) for PoTD data maintenance 
+and biometric authentication. Non-retention of granular level data depicting complete 
+path of delivery, is a serious risk to data retention and transaction traceability. 
+➢ Register/record for obtaining acknowledgment (signature/ thumb impression) from the 
+beneficiaries as a physical acquittance for the pension amounts drawn with biometric 
+authentication of GP Secretary/ BC was not maintained in most of the test -checked 
+municipalities and GPs under test-checked Mandals47.  Thus, Audit could not vouch the 
+actual disbursement of pensions to beneficiaries. 
+Government replied (June 2022) that payments are made to senior citizens through 
+messenger in rare circumstances. However, Audit analysis revealed that 4 per cent of DoP 
+payments were authenticated through messenger.  Further, continuous payments through 
+messengers to persons not falling under disabled and old age categories is not justified. 
+ 
+47 Registers are maintained in Ibrahimpatnam (1 GP) Mandal and Amangal Municipality in Rangareddy district; Armoor 
+(3 GPs), Dichpally (2 GPs), Makloor (6 GPs), Yedpally (4GPs) Mandals in Nizamabad district; Ganded (1 GP), 
+Mahabubnagar (7GPs), Rajapur (7 GPs) Mandals in Mahabubnagar district;  Gajwel (1 GP). Wargal (2 GPs) Mandals 
+in Siddipet district and in Bibinagar (5 GPs), Turkapally (7 GPs) Mandals in Yadadri-Bhuvanagiri district 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 27 
+ 
+In test checked units, where acquittance registers were maintained, following irregularities 
+were noticed: 
+➢ Register was not maintained for entire period covered in audit, i.e. , maintained for the 
+partial period only.   Number of beneficiaries for whom pension was drawn with GP 
+Secretary’s biometric authentication as per Aasara IT Application was not in agreement 
+with the number of persons whose acknowledgment was recorded in the Registers.  
+There was shortfall in recording acknowledgements. 
+➢ Signatures of persons other than the actual beneficiaries were taken in token of 
+disbursement of pension.  Pension was disbursed to multiple persons with 
+acknowledgement from single person. Signatures of GP staff (Secretary/Karobaar) 
+were also recorded. 
+➢ In the test checked mandal of Chegunta in Medak district , Audit detected fraudulent 
+withdrawal of ₹0.20 lakh after death of the beneficiar y using biometric authentication 
+of the PS for 10 months (August 2020 to May 2021).  Similar fraudulent withdrawals 
+amounting to ₹0.17 lakh for 1 -3 months were made in four more cases in Yadadri -
+Bhuvanagiri district. 
+This indicates that the authentication mechanism adopted for payments through Messenger 
+is not supported by proper acquittance of the beneficiary and hence, is in contravention of 
+Aasara Pensions scheme guidelines as well as DBT guidelines. 
+Government accepted the audit observations  and stated that instructions were issued to 
+maintain the acquittance registers systematically. 
+3.4 Results of Beneficiary Survey 
+Survey, with the help of a structured questionnaire, was conducted for 480 beneficiaries by 
+Audit, to elicit their opinion on the scheme and to evaluate transparency, adequacy and 
+deficiencies in service delivery. Results of the survey are detailed below: 
+(i) Beneficiaries knew about the Aasara Pensions scheme from their friends and family 
+members (41 per cent ) followed by radio/television (23 per cent ), People’s 
+Representatives (21 per cent) and campaign by Departmental authorities (15 per cent). 
+(ii) Most of the beneficiaries (76 per cent) stated that they got help from the authorities in 
+filling and submission of pension application. Of the total beneficiaries surveyed, only 
+5 per cent beneficiaries stated that they had faced difficulty while getting sanction for 
+pension. 
+Number of beneficiaries who stated that they / their family members visited the 
+authorities more than two times for pension sanction is given in Table-3.5. 
+Table-3.5: Details of surveyed beneficiaries visited offices more than two times for pension sanction 
+Number of Visits Number of Surveyed Beneficiaries who visited these offices 
+GP Office MPDO/Municipal Office DRDA/Collectorate 
+More than Two 
+times 73 112 3 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 28 
+ 
+(iii) With regard to the purpose of immediate utilisation of pension amount , 37 per cent,  
+27 per cent and 24 per cent of the beneficiaries respectively  stated that the pension 
+amount was  used for procuring medicines, food and multi -household items.  The 
+pension amount was spent by themselves for their daily needs by 95 per cent  of 
+surveyed beneficiaries and the amount was spent by their family members for the 
+remaining beneficiaries (5 per cent). 
+(iv) Beneficiaries, stated that there was no  alert mechanism for D oP disbursement/ Bank 
+Credits (65 per cent).  DoP beneficiaries stated that they were taking help of neighbours 
+about the information on disbursements during a month. Review of  Aasara IT 
+Application also revealed that no alert mechanism exists to intimate beneficiaries about 
+payment initiation. This was against the  stipulation in Standard Operating Procedure 
+(SOP) for DBT payments. 
+(v) Of the 480 Surveyed Beneficiaries, pension was credited to their bank accounts in 
+respect of 220 Beneficiaries.  Of this, 87 beneficiaries stated that pension amount was 
+drawn with Debit Card at ATM facility by self (76) or family members (11); and 133 
+beneficiaries stated that they have no ATM Card and they draw pension at bank. 
+(vi) With regard to immovable properties, 271 (56 per cent) beneficiaries stated that they 
+or their family members were having own house and/or agriculture land. 
+(vii)  Audit found that 32 beneficiaries (7 per cent  of 480 beneficiari es surveyed) were 
+found to be ineligible for the pension benefit as per their own statement given during 
+the beneficiary survey. 
+Government confirmed the ineligibility of the beneficiaries in 15 cases and stated that 
+enquiry was pending in 6 cases. Further, 11 cases were found eligible as per latest status of 
+the beneficiaries.  
+3.5 Observations on dovetailing Central Assistance into 
+Aasara and inconsistencies in data tables 
+Audit analysed the Aasara and NSAP data tables and observed the following 
+inconsistencies: 
+➢ Cross-checking of Aasara beneficiary details with NSAP data revealed mismatch of age 
+among 5,21,881 out of 8,47,374 (62 per cent) beneficiaries.  The mismatch ranged from 
+1 year to 79 years. 
+➢ 38,012 NSAP beneficiaries are not eligible  as their age is less than that prescribed in 
+NSAP criteria.  An amount of ₹ 23.54 crore was irregularly paid to these beneficiaries 
+from central assistance during April 2018 to March 2021 as detailed in Table-3.6. 
+
+Chapter-III – Implementation of Aasara Pensions as a DBT Scheme 
+Page 29 
+ 
+Table-3.6: Category-wise under aged beneficiaries shown under NSAP  
+Sl. 
+No. 
+NSAP 
+component 
+Minimum 
+age 
+prescribed 
+Beneficiaries with 
+age less than 
+stipulation 
+Central 
+Amount 
+(₹ in crore) 
+State 
+Amount 
+(₹ in crore) 
+Total 
+Amount 
+(₹ in crore) 
+(a) (b) (c) (d) (e) (f) (e) + (f) 
+1 IGNOAPS 60 years 12,260  1.09 9.58 10.67 
+2 IGNWPS 40 years 24,488 21.52 94.80 116.32 
+3 IGNDPS 18 years 1,264 0.93 6.67 7.60 
+Total 38,012 23.54 111.05 134.59 
+Source: Aasara and NSAP data tables 
+➢ 6,204 Aasara beneficiaries other than Old Age or Widow or Disabled category were 
+shown under NSAP, indicating erratic dovetailing of central assistance under NSAP.  
+➢ Scrutiny and cross -checking of 15,814 (out of 24,099 beneficiaries ) IGNDPS 
+beneficiary data with Aasara  data revealed that disability percentage did not comply 
+with NSAP disability stipulation (80 per cent).  An amount of ₹12 crore was irregularly 
+paid to these beneficiaries from central assistance during April 2018 to March 2021. 
+Above observations indicate that NSAP criteria were  not being captured/maintained 
+accurately and was not in adherence to NSAP guidelines . It is imperative on the State 
+Government to adopt and adhere to the NSAP guidelines when GoI funds are utili sed for 
+disbursement of pension. 
+Due to non -updation of age of NSAP/Aasara beneficiaries, eligibility of a NSAP 
+beneficiary for enhanced pension, after attaining 80 years of age, could not be ascertained. 
+Government accepted (June 2022) non -updation of age in Aasara/NSAP tables and 
+inconsistencies in data amongst related tables. 
+3.5.1.  State specific Guidelines for implementation of Social Security 
+Pensions under NSAP 
+GoI recognised the variations in methods/processes adopted for implementation  of Social 
+Security Pensions in different States. GoI realised that it would not be possible to harmonise 
+all the variations  as State schemes are largely based on precedents and local situations . 
+Hence, NSAP Guidelines (October 2014) gave scope for adoption of State-specific 
+Guidelines while complying with its key principles and requirements. States were required 
+to suggest variations needed and submit the same within three months, for one -time 
+approval of the National Social Assistance Advisory Committee in the Ministry of Rural 
+Development, GoI.  However, the State Government did not furnish information to Audit 
+regarding submission of its guidelines to GoI for one -time approval, though specificall y 
+called for. 
+3.6 Conclusion 
+Aasara IT Application has not been  implemented as an end -to-end IT based solution for 
+pension application, approval and processing.  IT system did not provide for application 
+receipt and for verification of eligibility criteria. Ineligible persons were sanctioned and 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 30 
+ 
+paid pensions due to ineffective verification. Aasara IT Application had no interfacing with 
+databases of other Government Departments to cross-check eligibility criteria stipulated in 
+the scheme guidelines. The objective of extending benefits to all eligible persons from the 
+poorest of poor households was not fully achieved as a substantial number of eligible 
+applicants were kept waiting for the benefit upto three years. Biometric authentication 
+failed in respect of four per cent of payments through DoP mode. Delays in timely deletion 
+of the ineligible beneficiaries from the database resulted in payment of undue benefit of  
+₹1,175 crore to those ineligible beneficiaries during the period 2018-19 to 2020-21. 
+3.7 Recommendations 
+(i) Effective interfacing mechanism with the databases of other Government 
+departments should be put in place. 
+(ii) Government should ensure that surveys  are conducted regularly for inclusion 
+and exclusion of beneficiaries with due verification of eligibility conditions. 
+(iii) Penal provisions should also be enforced to prevent claiming of Aasara benefit 
+by ineligible persons. 
+(iv) While dovetailing Central assistance with State scheme, adequate care should be 
+taken to adopt the GoI norms under NSAP. 
+(v) Adequate monitoring of the Scheme at Apex level and District level should be 
+ensured. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+Chapter IV 
+Pages 31 - 37 
+Evaluation of Controls in Aasara IT 
+Application
+
+ 
+ 
+ 
+ 
+ 
+
+Chapter-IV – Evaluation of Controls in Aasara IT Application 
+Page 31 
+ 
+Chapter IV - Evaluation of Controls in Aasara IT Application 
+  
+• Password policy management through Aasara IT Application is inadequate. 
+• Login/logout/IP Address/session details (including time stamps) of 
+officials/staff operating through Aasara IT Application are not maintained. 
+• Contrary to the guidelines of National Critical Information Infrastructure 
+Protection Centre (NCIIPC) on Proper B ackup plan and policy , 
+critical/important information was stored at same location. 
+• Details of Verification Officer (viz., name, designation) are not captured. 
+• Inbuilt business rule did not exist  for ‘H ousehold income ’ and the system 
+accepted higher incomes than stipulated in the criteria. 
+• Payments were made to ineligible beneficiaries due to inadequacies in capture 
+of reliable and accurate data  and there were gaps in Processing controls and 
+Output controls in Aasara IT Application. 
+4.1 Evaluation of IT Controls implemented in A asara 
+Application 
+For implementing Aasara Pensions scheme , the CEO , SERP issued (December 2014) a 
+work order to the service provider for designing, developing  and hosting a dedicated IT 
+application (Web based) and its maintenance for a specified period.  The service provider 
+completed the software development and implemented the Aasara IT Application  with 
+effect from January 2015.  The database is being maintained at the State Data Centre (SDC), 
+Hyderabad. Audit evaluated the controls implemented in the IT application. 
+4.1.1 General controls 
+General controls are crucial to ensure effective implementation of IT application and 
+security/integrity of IT and IT systems. 
+The processes involved in a System Development Lifecycle are (a) Feasibility Study,  
+(b) Requirement Projection & Analysis, (c) Designing & Development, (d) Testing/User 
+Acceptance & Quality Assurance (e) Deployment and (f) Continued Maintenance and 
+Improvements to the product, etc.  Audit assessed IT controls associated with development 
+and implementation of Aasara software and observed following gaps: 
+4.1.1.1 Non-adherence to bidding procedures  
+The Telangana State Financial Code 48 stipulates that all State Government Departments/ 
+Agencies shall follow ‘open tender system’ for procuring goods/services where the 
+estimated value of the order is ₹5 lakh or more. Audit observed that open tendering 
+method/competitive bidding process was not followed for identifying the service provider.  
+A direct work order49 was issued (value: ₹38.20 lakh) to the pre-determined vendor (TCS) 
+ 
+48  Rule 3 article 125 of Vol-I 
+49 05/SERP.APS/2014 dated 23 December 2014 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 32 
+ 
+on a techno-commercial proposal, prepared by the vendor in October 2014 i.e., three weeks 
+before the Scheme guidelines were issued in November 2014 .  This indicated that 
+competitive bidding process was not explored.  
+Government accepted the observation and stated (June 2022) that proposal for ratification 
+is under consideration. 
+4.1.1.2 Lack of documentation and policies 
+A) Audit requested SERP to provide records relating to project initiation such as User 
+Requirement Specification (URS), Software Requirements Specification (SRS), 
+Change Management, etc. Documentation on High Level Design , D atabase Design, 
+SRS, Deployment M anual and Server details only were furnished. URS, Change 
+Requests, Knowledge Transfer terms were not furnished despite repeated written 
+requests. In this background, the gaps between URS and SRS could not be ascertained 
+by Audit. 
+B) IT Policies and procedures instrumental for assuring protection of information system 
+assets like data, software, hardware, etc. Evaluation of relevant policies and procedures 
+implemented revealed the following: 
+• Password policy management through Aasara IT Application  is inadequate, since 
+enforcement of periodical password change was not made mandatory. Government 
+accepted that password change is mandatory only on first time login. 
+• Login/logout/IP Address/session details (including time stamps) of officials/staff 
+operating through Aasara IT Application  are not maintained and Audit could not 
+evaluate unauthori sed access/changes, if any, to the critical/sensitive data. 
+Government replied (June2022) that IP address and session details were captured 
+but the reply was silent on access or changes to sensitive/critical data.  
+• Effective User awareness & liability ensure risk free changes to Master data like 
+Bank Account Number, Disability percentage , etc.  Audit noticed from analysis of 
+‘ALL_DELETIONS_TILL_NOW’ table that payment  in respect of 255 
+beneficiaries was withheld (July 2019) in Charminar Mandal due to change of bank 
+account numbers abnormally , as noticed from  Management Information System  
+(MIS) reports.  This indicates gaps in access /privilege management, lack of audit 
+logs/trails and review mechanism. Government reply (June 2022) was silent on audit 
+observation.  However, CEO, SERP replied (June 2022) that the said case is under 
+investigation by Cyber Crime team of Police. 
+• Audit sought details of documentation/test case s/acceptance certificates pertaining 
+to the changes implemented.  Though access to the periodical work done report on 
+changes was provided to Audit, documentation relevant to major/minor changes 
+proposed/approved with budgets/review by technical committee for implementation 
+of changes along with testing and review reports w ere not available. This indicates 
+lapses in change management procedures adopted. 
+• Business Continuity Plan (BCP) and Disaster Recovery management policy (DRP) 
+were not drafted. Audit sought vulnerability assessment reports done by SERP.  No 
+specific reply was furnished by the Government for this observation. 
+
+Chapter-IV – Evaluation of Controls in Aasara IT Application 
+Page 33 
+ 
+• National Critical Information Infrastructure Protection Centre (NCIIPC 50), 
+guidelines (January 2015) on protection of Critical Inform ation Infrastructure 
+stipulate ‘Proper Backup plan and policy should be in place for the protection of all 
+types of data on the regular basis’ as a best practice.  However, Audit observed from 
+the operational log that copies of backup media are being store d at same location 
+(i.e. SDC, Hyderabad) and storing of critical/important information is not being done 
+at any other alternate location, where they may be recovered from, in case of disaster.  
+No specific reply was furnished by the Government for this observation. 
+• Audit sought documentation on emergency response strategy/testing/alarm 
+procedures and expected response scenarios for attending various levels of 
+emergencies to safeguard the IT assets at SDC or SERP. Excepting Fire Safety 
+Adherence compliance as per SDC norms, no specific reply was furnished for other 
+types of emergencies/disasters. 
+• Audit observed that adequate training was not provided to staff working at all the 
+implementation levels.   
+Government reply (June 2022) is not specific to the trainings imparted to field level 
+staff subordinate to MPDOs/Municipal Commissioners/DRDOs. 
+• Except for Web application security audit (last done in June 2020 for the audit period 
+to end of March 2021), Aasara IT infrastructure lacks defined IT Security Policy and 
+periodical audits, either at SDC or SERP, to ensure security of Database/Network. 
+4.1.2 Inadequate Input controls 
+Input controls ensure entry of correct and complete information being fed into the database, 
+thereby, assuring data integrity and reliability.  Audit evaluated input controls of Aasara IT 
+Application and the following gaps are noticed: 
+➢ Details of Verification Officer (like name, designation) are not captured; 
+Government replied (June2022) that details of Verification Officer were captured. 
+However, data analysis by Audit revealed that in 60 per cent records (29,20,671 out of 
+48,51,310 records), Verification Officer details were not available. 
+➢  ‘SKS ID’ captured in Aasara IT Application was not standardised; 
+Government r eplied (June 2022) that SKS data  was not integrated with Aasara  IT 
+Application.  The reply is not acceptable as it is not in compliance with the Scheme 
+Guidelines. 
+➢ Inbuilt business rule was non-existent for ‘Household income’ and the system accepted 
+higher incomes than stipulated in the criteria. 
+Government accepted the lapse and replied (June 2022) that suitable validation has been 
+incorporated in the system. 
+➢ Data entry screens were not designed, as per requirements (SRS), to implement 
+mandatory capture of inputs (like SKS ID, Date of Birth, Age, Account Number, etc). 
+ 
+50 Nodal Agency notified (January 2014) by GoI for Critical Information Infrastructure Protection under Section 70A of 
+Information Technology Act 2000 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 34 
+ 
+Government replied (June 2022) that capture of information again st these columns is 
+mandatory. However, scrutiny of data for the audit period revealed that out of 50,30,158 
+beneficiaries, important data like Date of Birth against 45,87,465 beneficiaries and 
+Bank Account Number in respect of 7,80,019 beneficiaries was not available. Further, 
+issues referred in paragraphs 3.1.3, 3.2.2.2, 3.2.2.4 and 3.2.3 also indicate inadequate 
+input controls. This has resulted in incomplete/incorrect/duplicate data capture as well 
+as financial loss, as indicated, previously. 
+4.1.3 Gaps in Processing controls  
+Data analysis showed that there were ineligible payments to disabled beneficiaries after 
+expiry of the validity of SADAREM certificates. Similarly, cases of payments to 
+beneficiaries with duplicate/improper SADAREM IDs and lesser degree of disability than 
+the prescribed limits51 were detected.  Details of payments made to ineligible beneficiaries 
+due to inadequacies in capture of reliable and accurate data are described below: 
+➢ In 7,675 cases, pension payments of ₹14.01 crore were made even after expiry of 
+SADAREM certificate during the Audit period. This indicates that validity/renewal of 
+disability certificate (SADAREM) was not checked/carried out periodically.   
+Government replied (June 2022) that ratification proposals are under consideration. 
+➢ In respect of 7,336 cases improper/duplicate SADAREM_IDs were detected and 1,302 
+beneficiaries were paid pensions of ₹5.56 crore during the audit period. This indicates 
+that department had sanctioned pensions without verifying the uniqueness of the 
+SADAREM_ID. Government replied (June 2022) that validation to prevent  duplicate 
+SADAREM_IDs was put in place since February 2019.  However, Audit detected six 
+cases of duplication even after February 2019.  
+➢ The degree of disability in respect of 73 hearing impaired and 304 other than hearing 
+impaired (Total: 377 cases) was less than the percentage stipulated.  Amounts of 
+₹10 lakh and ₹ 28 lakh respectively were disbursed to these ineligible beneficiaries 
+during audit period.  
+Government replied (June 2022) that validation for percentage of disability was put in 
+place since February 2019 and upon reassessment , pension was stopped if the 
+percentage is less than the stipulation.  However, scrutiny of data revealed three 
+instances of sanctions with lesser disability percentage after February 2019 also. 
+➢ Cross-checking of Aasara data with National Voters’ Service Portal, Aadhaar 
+particulars and details submitted in the physical applications revealed that 14 
+applicants52 having age less than 65 years were sanctioned Aasara Pension under OAP 
+category in violation of the inclusion criteria.  Payments made to these  ineligible 
+persons during the audit period worked out to ₹5 lakh.  Beneficiaries age should be 
+updated/ calcula ted automatically after initial data entry .  However,  the department 
+stated (December 2021) that the age captured during data entry was not being updated 
+periodically. 
+Government confirmed (June 2022) the ineligibility of the beneficiaries in 11 cases and 
+stated that enquiry is pending against three cases. 
+ 
+51 Hearing Impaired: 51 per cent and  other categories: 40 per cent 
+52 Hyderabad district: one case-₹0.55 lakh; Medak district: seven cases-₹2.35 lakh; Siddipet district: five cases: ₹1.53 
+lakh; Yadadri-Bhuvanagiri district: one case-₹ 0.57 lakh 
+
+Chapter-IV – Evaluation of Controls in Aasara IT Application 
+Page 35 
+ 
+➢ Further, d uring the scrutiny of sampled application s, Audit detected that  
+13 beneficiaries under widow (6 cases), OAP (4 cases) and disabled (3 cases) categories 
+though not eligible under the respective categories (as per inclusion and exclusion 
+criteria) were sanctioned pension.  
+Government confirmed (June 2022) the ineligibility in these cases.  
+Above observations indicate inadequate processing controls.  
+4.1.4 Gaps in Output controls 
+Output controls provide reasonable assurance for matching the results of authorised and 
+approved input processes with the output generated . Control totals produced in outputs 
+during processing need to be compared and reconciled with input control totals. 
+➢ Audit observed that the MIS Report R5.1(b) generated through Aasara Portal for the 
+month of March 2020 was erratic since there was a mismatch between number of 
+beneficiaries and corresponding amount for undisbursed totals. This indicates lapses in 
+reporting/output generation.  
+➢ There was mismatch between the sanction orders relating to new pensioners added in 
+Siddipet district and total sanctioned pensioners’ report (R 2.2 of Aasara Portal) for the 
+period from November 2016 to September 2020.  Aasara IT Application  is not 
+facilitated to carry out reconciliation of funds (control unit wise) for flagging of 
+undisbursed/unutilised amounts for recovery purpose.  Government concurred (June 
+2022) that reconciliation of undisbursed funds is taking place under DoP mode only, 
+leaving out undisbursed funds in bank and manual modes. 
+➢ Under the jurisdiction of Greater Warangal Municipal Corporation, 10 beneficiaries 
+were being credited with Aasara Pension amount even though these beneficiaries were 
+reported as deceased/expired (May 2020).  Aasara IT Application reflected the current 
+status of these beneficiaries as ‘live’.  This indicate d that the current status  of a 
+beneficiary and the IT Application reports are not being updated in a timely manner.  
+Non-updating of beneficiary data in these cases resulted in erratic output as well as 
+ineligible payment of ₹0.73 lakh during April 2018 to March 2021 for nine 
+beneficiaries. Status of these beneficiaries was updated after intimation of audit 
+observation. Similar lapses pertaining to live status of beneficiaries have been brought 
+in paragraph 3.3.4 supra.  Government concurred (June 2022) that pensions were 
+credited to deceased beneficiary accounts due to delay in reporting of death/updation. 
+These cases indicate that Aasara IT Application  has certain gaps in implementing 
+effective/adequate output controls . Further, issues relating to age criterion and disability 
+percentage level as referred to in paragraph 3.5 supra also indicate inadequate output 
+controls. 
+4.1.5 Lacunae in data management system controls 
+Standard data management controls assure accurate and consistent data maintenance. 
+Ineffective data management controls do not mitigate the risks relating to data integrity and 
+security. 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 36 
+ 
+➢ Scrutiny of data revealed that important information like age, bank account number, 
+SKS ID and surname are not accurately captured.  Further, mechanisms to 
+maintain/update accurate data do not exist, due to which implementation of criteria in 
+categorisation/disbursement processes were affected as brought out in paragraph 3.2 
+supra.  Government replied (June 2022) that capture of Bank Account details was made 
+mandatory for beneficiaries drawing pensions under DoP mode since January 2017.  
+However, scrutiny of data revealed that bank account numbers are not available against 
+beneficiaries who were sanctioned pension prior to January 2017 . This indicates lack 
+of data updating for such persons. 
+➢ Audit observed that the software maintenance service provider was directed (January 
+2018) to make changes to Aasara data unilaterally by updatin g age of Old Age 
+pensioners having age as null in the database to 66 years.  Similarly, the age of widow 
+pensioners was directed to be updated between 35-40 years and for other categories to 
+the age prescribed in eligibility criteria.  As a result, the age  of 3,88,005 (out of 
+17,76,109) OAP pensioners and that of 2,08,555 (out of 16,88,180) widows was 
+updated without any basis.  This indicates that Aasara data is not supported with 
+documentary proof of age stipulated in the Aasara Pensions scheme  guidelines.  
+Government did not furnish specific reply to this observation.  Responsibility on the 
+concerned officials needs to be fixed and disciplinary action should be taken. 
+➢ Aasara IT Application  lacks provisions for  uploading of manual 
+application/verification report and also does not facilitate the capture of all required 
+details to ascertain eligibility. This indicates that Aasara IT Application is ineffective 
+in providing assurance for transparency/verifiability in sanction process as brought out 
+in paragraph 3.2 supra.  Government stated (June 2022) that a facility has since been 
+created in the Po rtal enabling uploading of scanned copy of beneficiary application, 
+duly certified by PS/BC and MPDO/Municipal Commissioner. 
+➢ Due to lack of standard data maintenance practices and cleansing activities,  
+inadequacies/inconsistencies were noticed as brought o ut in paragraph 3.2 supra .  
+Department stated (June 2022) that data cleansing activities would be taken up. 
+During the exit meeting, the Government accepted the audit observations and stated that 
+the audit process had aided in identifying the gaps in the A asara IT application and 
+necessary rectifications shall be carried out. 
+4.1.6 Grievance Redressal Mechanism 
+An effective Grievance Redressal System enables users and stakeholders to escalate and 
+resolve issues and prevents delay in services provided through IT solution. 
+Scrutiny of grievances data revealed that 53,097 issues were reported through Aasara IT 
+Application.  Of this, 51,653 (97 per cent ) issues relate to rolling back the status of 
+beneficiary (from ineligible to eligible), 1362 relate to change of address, 72 relate to issues 
+with Point of Transaction Devices (POTD Module), 6  relate to Name Correction of 
+Pensioner and 4 relate to wrong tagging of SADAREM (SADAREM ID Wrong Tagging 
+Module). 
+Ninety-seven per cent  of issues in Rollback module i ndicate that beneficiaries were 
+excluded in erratic manner or on misrepresented facts. This indicates that in these cases, 
+
+ 
+ 
+ 
+ 
+Pages 39 - 40 
+Glossary of Abbreviations 
+
+ 
+ 
+
+Glossary of Abbreviations 
+ 
+Page 39 
+ 
+BC Bill Collector 
+BFD Best Fingerprint Detection 
+CBS Core Banking Solution 
+CEO Chief Executive Officer 
+CGG Centre for Good Governance 
+CRD Commissioner, Rural Development 
+DBT Direct Benefit Transfer 
+DoP Department of Posts 
+DRDA District Rural Development Agency 
+DRDO District Rural Development Officer 
+DRO District Revenue Officer 
+EPFO Employees’ Provident Fund Organisation 
+FTO Fund Transfer Order 
+FTR Fund Transfer Request 
+GHMC Greater Hyderabad Municipal Corporation 
+GoI Government of India 
+GoT Government of Telangana 
+GP Gram Panchayat 
+GPF General Provident Fund 
+GWMC Greater Warangal Municipal Corporation 
+ICT Information and Communication Technology 
+IGNDPS Indira Gandhi National Disability Pension Scheme 
+IGNOAPS Indira Gandhi National Old Age Pension Scheme 
+IGNWPS Indira Gandhi National Widow Pension Scheme 
+MC Municipal Commissioner 
+MIS Management Information System 
+MPDO Mandal Parishad Development Officer 
+NIC National Informatics Centre 
+NPCI National Payments Corporation of India 
+NSAP National Social Assistance Programme 
+OAP Old Age Pension 
+PoTD Point of Transaction Device 
+PR&RD Panchayat Raj and Rural Development 
+PS Panchayat Secretary 
+SADAREM Software for Assessment of Disabled for Access Rehabilitation 
+and Empowerment 
+SDC State Data Centre 
+
+Performance Audit of Direct Benefit Transfer Scheme ‘Aasara Pensions in Telangana’ 
+Page 40 
+ 
+SERP Society for Elimination of Rural Poverty 
+SKS Samagra Kutumba Survey 
+SRS Software Requirements Specification 
+SRSWOR Simple Random Sampling Without Replacement 
+TCS Tata Consultancy Services Limited 
+UBDMIS Unified Birth and Death Registration Management Information 
+System 
+UC Utilisation Certificate 
+UID Unique Identification Number 
+URS User Requirement Specification 
+ 
+ 
+
+ 
+ 
+ 
+ 
+  
+
+ 
+https://cag.gov.in/ag/telangana  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+© COMPTROLLER AND 
+AUDITOR GENERAL OF INDIA 
+https://cag.gov.in 
