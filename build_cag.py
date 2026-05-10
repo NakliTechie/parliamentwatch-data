@@ -9,8 +9,7 @@ Per scheduled (or workflow_dispatch) run:
   4. Build manifest.json + reports.json + meta.json
   5. Build search-bundle.json + search-index.json (mirror DRSC's v0.6 ladder)
 
-Output goes under docs/cag/. CF Workers serves it at /cag/* on
-sansadsaar-data.naklitechie.com (and the legacy sansad-files alias).
+Output goes under docs/cag/, served at sansadsaar-data.naklitechie.com/cag/.
 
 Independence Principle: this orchestrator does not import from the DRSC
 build_static.py. The two corpora share a docs/ tree but no Python state.
@@ -354,8 +353,8 @@ def build_manifest() -> dict:
 # ── Phase 5+6: search bundle + index, BOTH SHARDED (v1.0c) ────────────────
 #
 # Same architecture as DRSC's build_static.py: split outputs into N shards
-# by sorted reportKey range so no single file exceeds CF Workers' 25 MiB
-# per-asset cap. Bundle shards each carry a slice of entries; index shards
+# by sorted reportKey range so no single file exceeds the 25 MiB per-asset
+# cap on the host. Bundle shards each carry a slice of entries; index shards
 # carry full vocab + slice of report_keys + slice of postings (postings
 # indices are local to the shard, app applies offsets when merging).
 

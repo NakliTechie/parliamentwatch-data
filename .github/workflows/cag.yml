@@ -2,15 +2,6 @@ name: CAG scrape and publish
 
 on:
   schedule:
-    # Daily at 06:17 UTC (= 11:47 IST). CAG publishes far less frequently
-    # than the DRSC committees (handful of reports per week vs ~tens per
-    # day during sessions), so the 4-hour cadence the DRSC scrape uses is
-    # overkill here. Daily covers normal cadence; manual workflow_dispatch
-    # is the escape hatch for ad-hoc backfills.
-    #
-    # Off-hour minute (:17) deliberately — top-of-hour is GH's busiest slot
-    # for scheduled jobs and runs get delayed up to an hour or sometimes
-    # dropped entirely.
     - cron: '17 6 * * *'
   workflow_dispatch:
     inputs:

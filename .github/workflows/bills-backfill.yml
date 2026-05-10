@@ -2,13 +2,6 @@ name: Bills (sansad-side) backfill (4-hourly, until corpus full)
 
 on:
   schedule:
-    # Every 4 hours at :17 — gentler cadence than CAG's hourly backfill
-    # (per Chirag 2026-05-10: bills are not time-critical, no rush).
-    # 6 runs/day × MAX_EXTRACTIONS_PER_RUN budget = backfill rate.
-    # At 200/run × 6 runs/day = 1200/day; remaining ~6,000 missing texts
-    # complete in ~5 days. Off-hour minute :17 (same as DRSC + CAG) to
-    # dodge GH scheduler congestion at top-of-hour. Identical concurrency
-    # group as bills-sansad.yml means daily + backfill queue safely.
     - cron: '17 */4 * * *'
   workflow_dispatch:
     inputs:

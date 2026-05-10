@@ -15,9 +15,8 @@ Pagination shape: ?page=N&size=M, optional &billYear=YYYY. Default size=10,
 max effective size=500. Total: ~10,069 records as of 2026-05; archive
 goes back to 1952. Full corpus pull: ~21 pages at size=500 in ~35 s.
 
-Anti-bot posture: same as DRSC (sansad.in is Cloudflare-fronted).
-Anthropic CCR egress IPs blocked; GH Actions Azure IPs work; laptop
-works. CCR routines must not run this scraper.
+Anti-bot posture: same as DRSC. Run from CI or laptop, not from agent
+runtimes.
 
 Recon: plan/bills-recon-001.md (in SansadLocal repo, internal/gitignored).
 """

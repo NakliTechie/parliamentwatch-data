@@ -2,16 +2,6 @@ name: Bills (sansad-side) scrape and publish
 
 on:
   schedule:
-    # Daily at 06:23 UTC (= 11:53 IST). Bills publish at the same cadence
-    # as CAG audit reports — handful per week during sessions, often quiet
-    # for weeks between. Daily covers normal cadence; manual
-    # workflow_dispatch is the escape hatch for ad-hoc backfills.
-    #
-    # Off-hour minute (:23) deliberately — top-of-hour is GH's busiest slot
-    # for scheduled jobs and runs get delayed up to an hour or sometimes
-    # dropped entirely. :23 also avoids the CAG :17 slot — different
-    # concurrency groups so they could run simultaneously, but spacing
-    # keeps GH scheduler noise lower.
     - cron: '23 6 * * *'
   workflow_dispatch:
     inputs:

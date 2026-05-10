@@ -1,12 +1,7 @@
 """CAG (Comptroller and Auditor General of India) scraper.
 
-CORS posture: cag.gov.in returns Access-Control-Allow-Origin: cag.gov.in
-(restrictive, malformed). Cross-origin browser fetches are blocked, so this
-mirror runs server-side and re-publishes via CF Workers.
-
-Anti-bot: server is plain Apache, no Cloudflare bot management. CCR /
-GH Actions / local laptops all work — unlike sansad.in which blocks
-Anthropic CCR egress IPs.
+Cross-origin browser fetches are blocked by upstream; this mirror runs
+server-side and re-publishes the data with CORS-friendly headers.
 
 Site shape:
   LISTING : https://cag.gov.in/en/audit-report?page=<N>      # 10/page, default newest first

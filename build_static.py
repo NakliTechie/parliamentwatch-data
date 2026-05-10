@@ -25,11 +25,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-# CF Workers serves the entire `docs/` directory as static assets. Each
-# corpus's outputs are scoped under `docs/<corpus>/` so the URL space
-# becomes `https://sansad-files.naklitechie.com/<corpus>/...`. DRSC is
-# the first corpus (this file); CAG and the others land in their own
-# sibling subfolders without touching this layout.
+# Each corpus's outputs are scoped under `docs/<corpus>/`. DRSC is the
+# first corpus (this file); CAG and the others land in their own sibling
+# subfolders without touching this layout.
 ASSETS = Path(__file__).resolve().parent / "docs"
 DOCS   = ASSETS / "drsc"   # v1.0a phase 2 — corpus-scoped output
 DOCS.mkdir(parents=True, exist_ok=True)
@@ -299,12 +297,12 @@ def build_committees_index():
 # app for substring matching across the corpus scope / intro / findings,
 # and as the snippet source in result rows.
 #
-# v1.0c: SHARDED. CF Workers + Static Assets has a 25 MiB per-asset hard
-# limit. At ~5 KB/doc the unsharded bundle crosses 25 MiB around 5,000
-# reports — this corpus is heading to 13k+. We split into N shards by
-# sorted reportKey range; each shard <= DOCS_PER_SHARD reports, each
-# file <= ~15 MiB. App fetches all shards in parallel, merges entries
-# into one Map.
+# v1.0c: SHARDED. The hosting platform has a 25 MiB per-asset hard limit.
+# At ~5 KB/doc the unsharded bundle crosses 25 MiB around 5,000 reports —
+# this corpus is heading to 13k+. We split into N shards by sorted
+# reportKey range; each shard <= DOCS_PER_SHARD reports, each file
+# <= ~15 MiB. App fetches all shards in parallel, merges entries into
+# one Map.
 #
 # Output: docs/drsc/search-bundle-00.json, search-bundle-01.json, ...
 # Old single-file `search-bundle.json` is removed when present so it

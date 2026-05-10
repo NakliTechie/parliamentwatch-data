@@ -1,25 +1,8 @@
-# Cloudflare Workers + Static Assets config for the SansadSaar data mirror.
-# Deploys docs/ as static files served from CF's global edge. No worker code.
-#
-# CF Workers Builds runs `npx wrangler deploy`, which reads this file and
-# uploads the contents of ./docs as static assets. Each push to main triggers
-# a fresh deploy automatically.
-#
-# (Worker `name` stays "sansad-files" — that's an internal CF identifier;
-# user-facing URLs are sansadsaar-data.naklitechie.com [canonical] and
-# sansad-files.naklitechie.com [legacy alias] custom domains on this Worker.)
-#
-# compatibility_date bumped 2026-05-10 to force a full re-deploy after the
-# 9610be1 DRSC auto-update (270+ files in one commit) was incrementally
-# skipped by CF Workers Builds — agriculture/LS17_38.txt et al. were
-# committed to git but never uploaded to CF assets, so meta.json /
-# manifest.json stayed at the pre-21:19 state on the live mirror.
+# Static-assets deploy config for the data mirror. No worker code.
 
 name = "sansad-files"
 compatibility_date = "2026-05-09"
 
-# All static files live under docs/. CF serves them with the cache + CORS
-# rules from docs/_headers (already in the repo).
 [assets]
 directory = "./docs"
 not_found_handling = "404-page"

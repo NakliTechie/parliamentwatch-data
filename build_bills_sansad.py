@@ -11,15 +11,14 @@ Per scheduled (or workflow_dispatch) run:
         docs/bills/manifest.json         (deeper stats for diagnostics)
         docs/bills/meta.json             (status display for the chip)
 
-Output goes under docs/bills/. CF Workers serves it at /bills/* on
-sansadsaar-data.naklitechie.com.
+Output goes under docs/bills/, served at sansadsaar-data.naklitechie.com/bills/.
 
 Sharding rationale: full archive ~9.9k records ≈ 10.5 MB single-file. Under
-the CF Workers 25 MiB cap today, but PRS-payload merge will grow the index
-and we don't want to scramble the app once it's depending on a single
-fixed shape. Sharded from day 1: predictable filenames, parallel app
-fetch, smaller per-cron commit diffs. App-side: fetch index-meta.json
-first, then fetch all (or selected) shards in parallel.
+the 25 MiB per-asset cap on the host today, but PRS-payload merge will grow
+the index and we don't want to scramble the app once it's depending on a
+single fixed shape. Sharded from day 1: predictable filenames, parallel app
+fetch, smaller per-cron commit diffs. App-side: fetch index-meta.json first,
+then fetch all (or selected) shards in parallel.
 
 Independence Principle: this orchestrator does not import from
 build_static.py (DRSC) or build_cag.py. The three corpora share a
@@ -504,7 +503,7 @@ def _delete_legacy(path: Path) -> None:
 def build_search_bundle(records: list[dict]) -> Optional[dict]:
     """Build sharded search-bundle-NN.json — title + first _HEAD_CHARS chars
     per bill that has extracted text. Sharded by sorted-key range so no shard
-    exceeds CF Workers' 25 MiB cap. Mirrors build_cag.py's pattern (v1.0c).
+    exceeds the 25 MiB per-asset cap. Mirrors build_cag.py's pattern (v1.0c).
 
     Returns shard-stats dict (used by meta.json), or None if no texts yet.
     """

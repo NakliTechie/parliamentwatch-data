@@ -11,12 +11,6 @@ on:
     # this cron is safe to fire-and-forget — at most one wasted cycle per
     # rate-limit event.
     #
-    # Once backfill completes, the steady-state cost is 6 quiet runs/day
-    # (no PDFs to extract, no commits). If that becomes an issue, switch
-    # back to a single daily cron later.
-    # Minute 17 deliberately — top-of-hour is GH's busiest slot for scheduled
-    # jobs, where runs get delayed up to an hour or sometimes dropped entirely.
-    # Off-hour minutes are far more reliable.
     - cron: '17 */4 * * *'
   workflow_dispatch:
     inputs:
