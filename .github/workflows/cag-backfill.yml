@@ -15,11 +15,11 @@ on:
   workflow_dispatch:
     inputs:
       max_extractions:
-        description: 'Max PDFs to extract per run (default 500)'
-        default: '500'
+        description: 'Max PDFs to extract per run (default 200)'
+        default: '200'
       max_run_seconds:
-        description: 'Hard wall-clock cap (default 3000 = 50 min)'
-        default: '3000'
+        description: 'Hard wall-clock cap (default 2700 = 45 min, leaves 15-min buffer to 60-min runner cap)'
+        default: '2700'
 
 permissions:
   contents: write
@@ -51,9 +51,10 @@ jobs:
       - name: Build CAG static data (backfill mode)
         env:
           MAX_LISTING_PAGES:       ''                     # walk to last page
-          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '500' }}
-          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '3000' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '2700' }}
           EXTRACT_WORKERS:         '4'
+          DETAIL_WORKERS:          '4'
           JITTER_MIN_MS:           '250'
           JITTER_MAX_MS:           '500'
         run: python build_cag.py

@@ -245,7 +245,14 @@ def _check_cooldown_and_skip() -> bool:
     return False
 
 
-def extract_missing_texts(reports: dict[int, dict]) -> dict:
+def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
+    """Extract up to MAX_EXTRACTIONS_PER_RUN missing PDFs. Stops on
+    RateLimited or when `deadline` (monotonic seconds) is exceeded.
+
+    `deadline` is the *unified* deadline shared with the metadata-fetch
+    phase — so the whole script respects MAX_RUN_SECONDS as a wall-clock
+    budget regardless of how much time was spent in earlier phases.
+    """
     if _check_cooldown_and_skip():
         return {"extracted": [], "failed": [], "rate_limited": True,
                 "budget_hit": False, "skipped_due_to_cooldown": True,
@@ -267,12 +274,23 @@ def extract_missing_texts(reports: dict[int, dict]) -> dict:
         return {"extracted": [], "failed": [], "rate_limited": False,
                 "budget_hit": False, "candidates_total": 0}
 
+    # Calculate remaining budget from the unified deadline rather than
+    # creating our own. This is the fix that closes the runner-timeout
+    # bug from cag-backfill runs 25611721332 / 25612861100 / 25614057565 /
+    # 25615072064 — they walked + metadata-fetched for ~15-25 min, then
+    # extract phase set its OWN 50-min deadline starting fresh, blowing
+    # past the 60-min GH Actions runner cap.
+    remaining = deadline - time.monotonic()
+    if remaining <= 60:
+        print(f"  only {remaining:.0f}s left in budget — skipping extract phase")
+        return {"extracted": [], "failed": [], "rate_limited": False,
+                "budget_hit": True, "candidates_total": len(candidates)}
+
     target = candidates[:MAX_EXTRACTIONS_PER_RUN]
     print(f"  budget: extracting up to {len(target)} this run "
           f"(MAX_EXTRACTIONS_PER_RUN={MAX_EXTRACTIONS_PER_RUN}, "
-          f"MAX_RUN_SECONDS={MAX_RUN_SECONDS}, EXTRACT_WORKERS={EXTRACT_WORKERS})")
+          f"remaining={remaining:.0f}s, EXTRACT_WORKERS={EXTRACT_WORKERS})")
 
-    deadline = time.monotonic() + MAX_RUN_SECONDS
     extracted, failed = [], []
     rate_limited = False
     budget_hit = False
@@ -520,7 +538,7 @@ def main():
     print(f"  reports.json: {len(reports)} total ({len(new_meta)} new this run)")
 
     print("\n[3/7] Extracting missing texts (priority: newest first)...")
-    extract_stats = extract_missing_texts(reports)
+    extract_stats = extract_missing_texts(reports, deadline=overall_deadline)
     print(f"  extracted={len(extract_stats['extracted'])} "
           f"failed={len(extract_stats['failed'])} "
           f"rate_limited={extract_stats.get('rate_limited', False)} "

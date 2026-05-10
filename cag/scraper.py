@@ -67,8 +67,14 @@ def _jitter() -> None:
     time.sleep(ms / 1000.0)
 
 
-def _get(url: str, *, timeout: int = 30, **kwargs) -> requests.Response:
-    """HTTP GET with rate-limit-aware error handling."""
+def _get(url: str, *, timeout: int = 15, **kwargs) -> requests.Response:
+    """HTTP GET with rate-limit-aware error handling.
+
+    Default timeout is 15s for HTML pages — keeps thread-pool workers
+    from blocking too long in a stuck-server scenario, so the unified
+    deadline can fire promptly. Callers needing longer timeouts (PDF
+    downloads, ~180s) pass `timeout=` explicitly.
+    """
     _jitter()
     resp = requests.get(url, headers=_HEADERS, timeout=timeout, **kwargs)
     if resp.status_code in (429, 403):
