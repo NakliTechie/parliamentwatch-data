@@ -19,6 +19,7 @@ Output is served by GitHub Pages from /docs.
 import json
 import os
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -578,24 +579,18 @@ def build_search_index(docs_per_shard=DOCS_PER_SHARD):
     }
 
 
-def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None, index_stats=None):
+def write_meta(total_reports, total_with_text, bundle_stats=None, index_stats=None):
+    """Write meta.json — purely a function of disk state. The split-phase
+    architecture separates extraction (writers) from derivation (this
+    function's caller); per-run extract counts live in workflow logs, not
+    in meta. See CONV.md "Split-phase scraping pattern".
+    """
     meta = {
         "version": "1.2",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "lok_sabhas": LOK_SABHAS,
-        "max_extractions_per_run": MAX_EXTRACTIONS_PER_RUN,
-        "extract_workers": EXTRACT_WORKERS,
         "total_reports": total_reports,
         "total_with_text": total_with_text,
-        "extract_stats": {
-            "extracted": len(extract_stats["extracted"]),
-            "failed": len(extract_stats["failed"]),
-            "rate_limited": extract_stats.get("rate_limited", False),
-            "budget_hit": extract_stats.get("budget_hit", False),
-            "candidates_remaining_after_run": max(
-                0, extract_stats.get("candidates_total", 0) - len(extract_stats["extracted"])
-            ),
-        },
         "search_bundle": bundle_stats,   # None if bundle wasn't built this run
         "search_index":  index_stats,    # None if index wasn't built this run
     }
@@ -604,63 +599,105 @@ def write_meta(extract_stats, total_reports, total_with_text, bundle_stats=None,
     return meta
 
 
-def main():
-    print("=== ParliamentWatch static builder ===")
-    print(f"DATA_DIR                : {DOCS}")
-    print(f"LOK_SABHAS              : {LOK_SABHAS}")
-    print(f"MAX_EXTRACTIONS_PER_RUN : {MAX_EXTRACTIONS_PER_RUN}")
-    print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
-    print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
-
-    print("\n[1/5] Scraping committee metadata...")
+def phase_extract():
+    """Phase 1 — produce primary files (reports.json + text/<committee>/<file_id>.txt).
+    Safe to run concurrently with other extract-phase workflows.
+    """
+    print("\n[Extract 1/3] Scraping committee metadata...")
     for ls in LOK_SABHAS:
         print(f"  Lok Sabha {ls}:")
         scrape_all_committees(lok_sabha=ls)
 
-    print("\n[2/5] Migrating any pre-v0.4 un-prefixed text files...")
+    print("\n[Extract 2/3] Migrating any pre-v0.4 un-prefixed text files...")
     mig = migrate_unprefixed_text_files()
     print(f"  migrated={mig['migrated']} ambiguous={mig['ambiguous']} "
           f"missing_metadata={mig['missing']} preexisting={mig['preexisting']}")
 
-    print("\n[3/5] Extracting missing texts (priority: newest first)...")
+    print("\n[Extract 3/3] Extracting missing texts (priority: newest first)...")
     extract_stats = extract_missing_texts()
     print(f"  extracted={len(extract_stats['extracted'])} "
           f"failed={len(extract_stats['failed'])} "
           f"rate_limited={extract_stats.get('rate_limited', False)} "
-          f"budget_hit={extract_stats.get('budget_hit', False)}")
+          f"budget_hit={extract_stats.get('budget_hit', False)} "
+          f"remaining_after={max(0, extract_stats.get('candidates_total', 0) - len(extract_stats['extracted']))}")
 
-    print("\n[4/6] Building manifest + committees index...")
+
+def phase_derive():
+    """Phase 2 — regenerate derived files (manifest.json, committees.json,
+    search-bundle-*.json, search-index-*.json, meta.json) from the on-disk
+    primary state. Pure function of reports.json + text/. Owned by
+    drsc-derive.yml; one run at a time via `cancel-in-progress: true`.
+    """
+    print("\n[Derive 1/4] Building manifest + committees index...")
     manifest = build_manifest()
     with open(DOCS / "manifest.json", "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     build_committees_index()
 
-    print("\n[5/7] Building search bundle (title + first 5K chars per report)...")
+    print("\n[Derive 2/4] Building search bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle()
     if bundle_stats:
         mb = bundle_stats["size_bytes"] / (1024 * 1024)
-        print(f"  search-bundle.json: {bundle_stats['total']} entries, "
+        print(f"  search-bundle: {bundle_stats['total']} entries across {bundle_stats['shard_count']} shards, "
               f"{bundle_stats['truncated']} truncated to {bundle_stats['head_chars']} chars · "
               f"{mb:.1f} MB raw (CF gzip serves ~30%)")
     else:
         print("  no text/ directory yet — skipping bundle build")
 
-    print("\n[6/7] Building search index (inverted token index, full body)...")
+    print("\n[Derive 3/4] Building search index (inverted token index, full body)...")
     index_stats = build_search_index()
     if index_stats:
         mb = index_stats["size_bytes"] / (1024 * 1024)
-        print(f"  search-index.json: {index_stats['report_count']} docs, "
+        print(f"  search-index: {index_stats['report_count']} docs across {index_stats['shard_count']} shards, "
               f"vocab={index_stats['vocab_size']} (post-cutoff), "
               f"postings={index_stats['total_postings']} · {mb:.1f} MB raw")
     else:
         print("  no text/ directory yet — skipping index build")
 
-    print("\n[7/7] Writing meta.json...")
+    print("\n[Derive 4/4] Writing meta.json...")
     reports = load_existing_reports()
     total = sum(len(v) for v in reports.values())
     total_with_text = sum(len(v) for v in manifest.get("texts", {}).values())
-    meta = write_meta(extract_stats, total, total_with_text, bundle_stats, index_stats)
+    meta = write_meta(total, total_with_text, bundle_stats, index_stats)
     print(json.dumps(meta, indent=2))
+
+
+def main():
+    """Dispatch to extract / derive / both based on BUILD_PHASE.
+
+    BUILD_PHASE=extract — for scrape.yml writers. Produces only reports.json
+                          + text/<committee>/<file_id>.txt; never touches
+                          derived files. Multiple writers can race-safely
+                          commit because their changes are on different
+                          filenames.
+    BUILD_PHASE=derive  — for drsc-derive.yml. Reads disk state, regenerates
+                          manifest.json + committees.json + search-bundle-*.json
+                          + search-index-*.json + meta.json. Single owner of
+                          derived files (concurrency cancel-in-progress: true).
+    BUILD_PHASE=all     — legacy / local-dev convenience. Runs both phases
+                          in one process; same output as a writer + derive
+                          run back-to-back. Don't use in CI — the split-phase
+                          workflows exist precisely to avoid this race.
+    """
+    phase = os.environ.get("BUILD_PHASE", "all").lower()
+    if phase not in ("extract", "derive", "all"):
+        print(f"BUILD_PHASE={phase!r} is not one of extract|derive|all — aborting.", file=sys.stderr)
+        sys.exit(2)
+
+    print("=== ParliamentWatch static builder ===")
+    print(f"BUILD_PHASE             : {phase}")
+    print(f"DATA_DIR                : {DOCS}")
+    if phase in ("extract", "all"):
+        print(f"LOK_SABHAS              : {LOK_SABHAS}")
+        print(f"MAX_EXTRACTIONS_PER_RUN : {MAX_EXTRACTIONS_PER_RUN}")
+        print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
+        print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
+
+    if phase in ("extract", "all"):
+        phase_extract()
+
+    if phase in ("derive", "all"):
+        phase_derive()
 
     print("\nDone.")
 

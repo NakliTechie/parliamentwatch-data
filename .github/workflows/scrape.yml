@@ -53,8 +53,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build static data
+      - name: Build DRSC primary data (extract phase only)
+        # Split-phase: writers commit reports.json + text/<committee>/<file_id>.txt
+        # only. Derived files (manifest/committees/bundle/index/meta) are
+        # owned by drsc-derive.yml — single owner, cancel-in-progress, never
+        # races. See CONV.md "Split-phase scraping pattern".
         env:
+          BUILD_PHASE:             'extract'
           LOK_SABHAS:              ${{ inputs.lok_sabhas       || '18' }}
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions  || '400' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds  || '1800' }}
@@ -63,19 +68,16 @@ jobs:
           JITTER_MAX_MS:           '500'
         run: python build_static.py
 
-      - name: Commit and push
-        # `git pull --rebase` before push handles the race when a human
-        # pushes to main mid-run (e.g. doc / config edits). The concurrency
-        # group above prevents two scrape runs from racing each other; this
-        # rebase covers everything else. If rebase ever conflicts (it
-        # shouldn't — humans don't edit docs/drsc/* and the scraper doesn't
-        # edit anything outside it), the run fails loudly and the next cron
-        # picks up cleanly from the new main.
+      - name: Commit and push primary changes
+        # Narrow git add to primary files only — reports.json + text/.
+        # Derived files (manifest, committees, meta, bundle, index) are
+        # intentionally excluded; drsc-derive.yml regenerates them after
+        # this commit lands.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git diff --cached --quiet && echo "no changes" && exit 0
-          git commit -m "Auto-update data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git add docs/drsc/reports.json docs/drsc/text/
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update DRSC primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

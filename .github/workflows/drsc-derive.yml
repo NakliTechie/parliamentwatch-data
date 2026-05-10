@@ -1,0 +1,78 @@
+name: DRSC derive (manifest + committees + bundle + index + meta)
+
+# Single-owner regeneration of DRSC's derived files (manifest.json,
+# committees.json, meta.json, search-bundle-*.json, search-index-*.json).
+# Triggered by every successful DRSC primary write (scrape.yml), plus a
+# 30-min cron backstop, plus manual workflow_dispatch.
+#
+# Sibling of cag-derive.yml — same pattern, same rationale. See CONV.md
+# "Split-phase scraping pattern" for the full architecture.
+#
+# DRSC has only one writer workflow today (scrape.yml) so the race
+# pressure is lower than CAG, but the pattern is symmetrical and the
+# cost of doing it the same way is small.
+
+on:
+  workflow_run:
+    workflows:
+      - "Scrape and publish"
+    types: [completed]
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drsc-derive
+  cancel-in-progress: true
+
+jobs:
+  derive:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build DRSC derived files
+        env:
+          BUILD_PHASE: 'derive'
+        run: python build_static.py
+
+      - name: Commit and push derived files
+        # Narrow git add to derived files only. Primary files (reports.json,
+        # text/) are owned by scrape.yml; this workflow never touches them.
+        # Push retry: same pattern as cag-derive.yml — re-derive on rebase
+        # failure, retry up to 3 times.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/meta.json \
+                  docs/drsc/search-bundle-*.json docs/drsc/search-index-*.json
+          git diff --cached --quiet && echo "no derived changes" && exit 0
+          git commit -m "Auto-rebuild DRSC derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "attempt $attempt failed; rebuilding derived files on the rebased state"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            BUILD_PHASE=derive python build_static.py
+            git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/meta.json \
+                    docs/drsc/search-bundle-*.json docs/drsc/search-index-*.json
+            git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
+            git commit -m "Auto-rebuild DRSC derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          done
+          echo "exceeded 3 push attempts; giving up — next derive run will catch up"
+          exit 1
