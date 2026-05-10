@@ -1,0 +1,174 @@
+5
+As introduced in Lok Sabha
+Bill No. 277 of 2024
+THE DIGITAL PERSONAL DATA PROTECTION 
+(AMENDMENT) BILL, 2024
+By
+Shri Jagdambika Pal, M.P.
+A
+BILL
+to amend the Digital Personal Data Protection Act, 2023.
+Be it enacted by Parliament in the Seventy- fifth Year of the Republic of India as 
+follows:—
+ 1.  (1) This Act may be called the Digital Personal Data Protection (Amendment) Act, 
+2024. 
+ ( 2) It shall come into force on such date as the Central Government may, by notification 
+in the Official Gazette, appoint.
+ 2.  In section 9 of the Digital Personal Data Protection Act, 2023 (hereinafter referred to 
+as the principal Act),– 
+ ( a) for sub-section (1), the following sub-section and explanation thereto shall be 
+substituted, namely;–
+ “(1). A data fiduciary shall process the personal data of a child or a person with 
+disability who has a lawful guardian only after obtaining verifiable parental consent 
+Short title and 
+commencement.
+Amendment of 
+section 9.
+10
+22 of 2023.
+
+or verifiable consent from a lawful guardian, using digitally authenticated consent 
+mechanisms which shall be verifiable through digital tools such as two-factor 
+authentication, digital certificates, or the consent manager ecosystem. 
+ Explanation.— For the purposes of this sub-section,–
+ ( 1) Data fiduciaries shall incorporate a range of age-verification mechanisms suited 
+to the platform’s risk and service type. 
+ ( 2) Parental consent shall be authenticated to ensure compliance with age limits and 
+proper oversight.”; and
+ ( b) in sub-section (2), the following Explanation shall be inserted, namely;–
+ “ Explanation.— For the purposes of this sub-section, “detrimental effect” includes, 
+but is not limited to:—
+ ( i) the collection or use of personal data that could lead to behavioral profiling, 
+targeted advertising, or manipulation, especially for in-game purchases or incentives;
+ ( ii) the sharing of personal data that may expose a child to risks such as identity 
+theft, online harassment, or addiction;
+ ( iii) the processing of personal data that may impair the mental health, safety, or 
+moral development of a child.”.
+ 3.  After section 9 of the principal Act, the following section shall be inserted:– 
+ “9A. (1) The data fiduciaries processing the personal data of children shall adhere 
+to the principle of data minimization, collecting only such data as is necessary for the 
+provision of services to the child. 
+ ( 2) The data fiduciary shall ensure that no personal data of children be retained for a 
+period longer than necessary for the specific purpose of processing, unless retention is 
+mandated by law in this behalf. 
+ ( 3) The data fiduciary shall delete the personal data of children upon termination of 
+service or consent withdrawal, as the case may be.
+ 9B. (1) Any data fiduciary processing a substantial volume of personal data of children 
+shall conduct a Data Protection Impact Assessment (DPIA), identifying potential risks 
+to child privacy and safety.
+ ( 2) The DPIA shall be submitted to the Data Protection Board of India annually along 
+with measures taken to mitigate identified risks in such manner as may be prescribed.
+ ( 3) Any fiduciary failing to conduct assessments or protect children from systemic 
+harm shall be subject to additional penalties under this Act.”.
+ 4.  In section 12 of the principal Act, in sub-section (1), the following provisos shall be 
+inserted, namely:–
+ “Provided that in case where the Data Principal is a child, the right to request erasure 
+may be exercised by–
+ ( a) the parent or legal guardian of the child, until the child reaches the age of eighteen 
+years;
+ ( b) the child herself, once she reaches the age of eighteen years, provided she has the 
+capacity to make an informed decision regarding her personal data:
+ Provided further that in the event of a dispute between the child and the parent or 
+guardian, the Data Protection Board of India shall decide on the right to erasing of the 
+personal data of such child.”.
+5
+10
+15
+20
+2
+Restriction 
+on processing 
+personal data of 
+children by data 
+fiduciaries.
+Insertion of new 
+sections 9A and 
+9B.
+Amendment of 
+section 12.
+Data Fiduciary 
+to conduct 
+Data Protection 
+Impact 
+Assessment 
+while processing 
+Data of 
+Children.
+40
+35
+30
+25
+
+3
+STATEMENT OF OBJECTS AND REASONS
+The Digital Personal Data Protection Act, 2023 represents a significant step in 
+safeguarding personal data, including that of children. However, the Act leaves several 
+critical issues unresolved, particularly when addressing the digital rights of children, 
+especially those from marginalized backgrounds. In India, where digital literacy remains 
+low, with only twenty per cent of rural populations being digitally literate and many children 
+sharing devices with family members, the parental consent requirement may unintentionally 
+exclude children from engaging in vital online services. As the Report of the Group of 
+Experts on Privacy (chaired by Justice A.P. Shah) and the Report of the Joint Parliamentary 
+Committee on the Personal Data Protection Bill, 2019 highlighted, it is crucial to develop 
+flexible data privacy frameworks that do not impede access to essential digital tools, 
+particularly for children.
+Children from marginalized communities often face disproportionate barriers to access, 
+especially in scenarios where parents may not be able to navigate consent procedures due 
+to literacy or technical challenges. The current requirement of rigid parental consent, as 
+prescribed by section 9 of the Digital Personal Data Protection Act, 2023, is overly strict 
+and limits equitable participation for children in educational and developmental platforms.
+The age-gating rules, as currently framed, remain unclear, and there is a need for robust 
+age-verification mechanisms that cater to a wide range of platforms with different levels 
+of risk. Given India’s diverse socio-economic landscape and aspirations to build a strong 
+digital economy, there is a need to provide alternative, flexible methods of age assurance that 
+go beyond documentary-based methods and incorporate more technology-driven solutions. 
+This can prevent children from being excluded from the digital ecosystem due to logistical 
+challenges, while also ensuring their privacy and safety are maintained.
+The need is to amend the Digital Personal Data Protection Act, 2023 with a view to,– 
+ (a) strengthen the age-verification process through innovative and diverse 
+mechanisms suited to the platform’s risk type;
+ (b) establish clearer prohibitions on profiling, particularly in online games and 
+services;
+ (c) ensure the implementation of Data Protection Impact Assessments (DPIAs) for 
+platforms processing substantial amounts of children’s data;
+ (d) encourage the use of flexible, digitally authenticated consent systems, such as 
+DigiLocker, that can verify both the child’s age and the parent-child relationship in an 
+inclusive and streamlined manner;
+ The aforesaid amendments will bridge the gap between privacy rights and equitable 
+access, ensuring that no child is excluded from India’s growing digital ecosystem due 
+to barriers in parental consent while maintaining robust child privacy protections.
+Hence this Bill.
+New Delhi;                                                                 JAGDAMBIKA PAL  
+November 11, 2024
+
+4
+ANNEXURE
+[Extract from the Digital Personal Data Protection (Amendment) Act, 2023]
+(Act no. 22 of 2023)
+ * * * * *
+ 9. (1) The Data Fiduciary shall, before processing any personal data of a child or a 
+person with disability who has a lawful guardian obtain verifiable consent of the parent of 
+such child or the lawful guardian, as the case may be, in such manner as may be prescribed. 
+ Explanation.—For the purpose of this sub-section, the expression “consent of the 
+parent” includes the consent of lawful guardian, wherever applicable. 
+ ( 2) A Data Fiduciary shall not undertake such processing of personal data that is likely 
+to cause any detrimental effect on the well-being of a child.
+ * * * * *
+ 12. (1) A Data Principal shall have the right to correction, completion, updating and 
+erasure of her personal data for the processing of which she has previously given consent, 
+including consent as referred to in clause (a) of section 7, in accordance with any requirement 
+or procedure under any law for the time being in force.
+ * * * * *
+Processing of 
+personal data of 
+children.
+Right to 
+correction 
+and erasure of 
+personal data.
+
+LOK SABHA
+a
+BILL
+to amend the Digital Personal Data Protection Act, 2023.
+(Shri Jagdambika Pal, M.P .) 

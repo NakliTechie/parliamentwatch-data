@@ -1,0 +1,826 @@
+As introduced in Lok Sabha
+ Bill No. 214 of  2022
+THE PREVENTION OF INTERNET SHUTDOWN BILL, 2022
+By
+Dr. T. Sumathy(A) Thamizhachi Thangapandian, M.P.
+Arrangement of Clauses
+Clauses
+CHAPTER I
+Preliminary  
+1. Short title, extent and commencement. 
+2. Definitions.
+CHAPTER II 
+Conditions For Suspending Telecom Services
+3. Suspension of internet services.
+4. Principles to be observed while suspending internet services.
+5. Graded scheme for degree of suspension of internet services.
+CHAPTER III
+Regulatory Framework
+6. Content of Orders of or suspension of Internet Services.
+7. Duration of the Internet suspension.
+8. Review of order for suspension of internet services.
+9. Appeal to lie to the High Court.
+CHAPTER IV 
+Constitution, Functions And Powers of Review Board
+10. National Review Board.
+11. Functions of the Board.
+12. Powers of the National Board.
+13. Establishment of the State Review Board.
+14. Functions of the State Board.
+15. Powers of the State Board.
+16. Removal of the Chairperson and the Member from Office.
+17. Secretary, Officers and Other Employees of Board.
+18. Vacancies, etc. not to invalidated proceedings of the Board.
+19. Chairperson and Members to be Public Servants.
+20. Proceedings before Board to be Judicial.
+
+Clauses
+CHAPTER V 
+Compensation
+21. Compensation.
+CHAPTER VI 
+Technical Assistance
+22. Technical Assistance.
+CHAPTER VII 
+Finance, Audit and Annual Report
+23. Grants by the Central Government.
+24. Accounts and Audit.
+25. Annual Report.
+CHAPTER VIII 
+Miscellaneous
+26. Empowerment of Concerned Authority.
+27. Bar of Jurisdiction.
+28. Protection of action taken in good faith.
+29. Act to have overriding effect.
+30. Power to make rules.
+
+ Bill No. 214 of 2022
+  
+THE PREVENTION OF INTERNET SHUTDOWN BILL, 2022
+By
+Dr. T. Sumathy(A) Thamizhachi Thangapandian, M.P.
+a
+BILL
+to provide for the establishment of an effective system to prevent internet shutdown, 
+provide procedural safeguards to bring greater transparency and accountability  
+for internet shutdown and to provide for monitoring of shutdowns and for 
+matters connected therewith.
+WHEREAS the Constitution of India provides to all citizens freedoms of speech and 
+expression and the freedom to practice any profession or carry on any trade, business or 
+occupation and enjoy constitutional protection under articles 19(1)(a) and 19(1)(g); 
+AND WHEREAS the Supreme Court have reasoned that suspension of internet services 
+is illegal and that orders for internet shutdown should satisfy the tests of necessity and 
+proportionality; 
+AND WHEREAS India has acceded to all major International Human Rights Instruments 
+and demonstrated its commitment to international law and human rights norms including the 
+right to freedom of speech and expression; 
+AND WHEREAS there is a need to consolidate, streamline and harmonize the varied 
+practices, policies and standards applicable to internet shutdowns in India. 
+1
+
+Be it enacted in the Parliament in the Seventy-third Year of the Republic of India as 
+follows:—
+CHAPTER I 
+Preliminary 
+1. (1) This Act may be called the Prevention of Internet Shutdown Act, 2022. 
+ (2) It extends to the whole of India. 
+ (3) It shall come into force on such date as the Central Government may, by 
+notification in the Official Gazette, appoint.
+ 2. (1) In this Act, unless the context otherwise requires— 
+(a) “appropriate Government” means in the case of State, the Government of that 
+State and in other cases, the Central Government;
+(b) “Domain Name System (DNS) interference” means an interface at the network 
+or ISP level where DNS traffic is funneled to a modified DNS server that may be 
+configured to block lookups of certain domain names including the interface where 
+ISP’s resolver is working correctly and a DNS injector has been inserted to respond 
+more quickly, resulting in users receiving forged answers in an attack known as 
+‘cache poisoning’; 
+(c) “Deep Packet Inspection (DPI)” means evaluation of the data part and the 
+header of a packet that is transmitted through an inspection point, weeding out 
+any non-compliance to protocol, spam, viruses, intrusions, and any other defined 
+criteria to block the packet from passing through the inspection point; 
+(d) “IP and protocol-based blocking” means blocking where barriers are inserted 
+in the network, such as firewalls, that block all traffic to Definitions certain IP 
+addresses; 
+(e) “National Review Board” means the Review Board constituted by Central 
+Government under section 10;
+(f) “person” does not includes any company or association or body of individuals, 
+whether incorporated or not; 
+(g) “prescribed” means prescribed by rules made under this Act; 
+(h) “public emergency” means problems concerning the interest of the public 
+safety, the sovereignty and integrity of India, the security of the State, friendly 
+relations with foreign States or public order or the prevention of incitement to the 
+commission of an offence, necessary to protect against an imminent and specific 
+threat to human life or an imminent and specific threat to national security; 
+(i) “public safety” means obviation of danger to the general public or public 
+property due to disturbances connected with serious internal disorder or such 
+disturbances of public tranquillity which jeopardizes the security of the State; 
+(j) platform based blocking means where authorities work with ISPs to block 
+information within their geographic region without blocking the entire platform. 
+This includes platform filtering of major search engine providers or social media 
+sites; 
+(k) “State Review Board” means the Review Board constituted by State Government 
+under section 13;
+(l) “throttling” means impairing or degrading lawful Internet traffic where 
+connectivity is substantially slowed for specific sites, apps, or segments of traffic 
+on the basis of Internet content, application or service or use of a non harmful 
+device, subject to reasonable network management practices; 
+(m) “suspension of internet services” means restriction of access to the internet 
+to a segment of the population irrespective of the provider or access medium that 
+they utilize; 
+2
+5
+10
+15
+20
+25
+30
+35
+Definitions.
+40
+45
+Short title, 
+extent and 
+commencement.
+50
+
+(n) “URL-based blocking” means where a blocking device contains a list of web 
+URLs in which to restrict access and internet users trying to view any of the URLs 
+on the list will encounter an interruption.
+CHAPTER II
+Conditions For Suspending Telecom Services
+3. (1) The appropriate Government or an officer not below the rank of a Joint Secretary 
+to the Government of India, who has been duly authorised by the Union Home Secretary or 
+the State Home Secretary, as the case may be, if satisfied that there exists a public emergency 
+or it is necessary in the interest of public safety may issue orders for temporary suspension 
+of internet services in the State or part thereof: 
+Provided that every order for suspension of internet services issued by the officer 
+authorised by the Union Home Secretary or the State Home Secretary, shall be subject 
+to the confirmation from the appropriate Government within twenty-four hours of 
+issuing such order: 
+Provided further that the order of suspension of internet services shall cease to exist 
+in case of failure of receipt of confirmation from the appropriate Government within the 
+said period of twenty-four hours. 
+(2) The appropriate Government or an officer authorized while issuing an order of 
+suspension of internet services under sub-section (1) shall proceed with the least restrictive 
+means with successive steps having increased disruption of telecom technology. 
+4. The appropriate Government while suspending the internet services under section 3 
+shall take into considerations that:—
+(a) any kind of communication disruption shall be the last resort to respond to a 
+situation of public emergency or public safety; 
+(b) all alternative remedies were exhausted or were not available;
+(c) any kind of communication disruption is minimal to achieve stated objectives 
+and have direct nexus with the objective of the suspension of internet services; 
+(d) framework for gradation to every situation which necessitates an internet 
+shutdown has been applied; 
+(e) even when the state is fighting the threat of terrorism, it may prohibit speech 
+only if it is likely to lead to imminent violence; 
+(f) dissemination of information regarding issue of orders has not been denied 
+citing logistical inconvenience; and
+(g) lack of technical ability shall not be an excuse for lack of granularity.
+5. The appropriate Government shall have the power to direct the following order for 
+suspension of internet services:—
+(a) platform based blocking; 
+(b) URL-based blocking; 
+(c) Domain Name System (DNS) interference; 
+(d) Deep Packet Inspection (DPI); 
+(e) IP and protocol-based; 
+(f) throttling; 
+(g) partial suspension of internet; and 
+(h) full suspension of internet:
+3
+Principles to be 
+observed while 
+suspending  
+internet services.
+5
+10
+15
+20
+25
+30
+35
+40
+Graded scheme 
+for degree of 
+suspension of 
+internet services.
+Suspension of 
+internet services.
+
+Provided that the appropriate Government may, by notification in the Official 
+Gazette, amend the grades for suspension of internet services by including therein any 
+other gradation or the ones already specified therein and on the publication of such 
+notification, such gradation shall be deemed to be included in or, as the case may be, 
+omitted from the section: 
+Provided further that the appropriate Government shall not directly order for a full 
+suspension of internet services unless a notification is issued by the Central Government 
+and laid before each House of Parliament.
+CHAPTER III
+Regulatory Framework
+6. (1) Every order of suspension of internet services issued under section (3) shall 
+contain,— 
+(a) the geographic scope of such action and reasons for such direction; and
+(b) the time period of effectiveness of the order of suspension of internet services 
+for which the appropriate Government is requesting authorization to maintain such 
+action and reasons for such direction. 
+(2) A copy of order issued under section (3) shall be forwarded to the National Review 
+Board or the State Review Board, as the case may be, latest by next working day of the 
+issuance of such order: 
+Provided that a copy of the order shall also be published in local or national 
+newspaper and endeavour shall be made to disseminate the order to be made 
+available to general public in such manner as may be prescribed:
+Provided further that the appropriate Government may withhold the publication of 
+the order when maintenance of secrecy of such order or portion thereof is necessary to 
+protect against an imminent and specific threat to national security; or such portion of 
+the order contains classified information, as the case may be.
+(3) The directions for suspension issued under section 3 shall be conveyed to the 
+designated officers of the telegraph authority or to the designated officers of the service 
+providers, who have been granted licenses under section 4 of the Indian Telegraph Act, 
+1885 in writing or by secure electronic communication by an officer not below the rank 
+of Superintendent of Police or of the equivalent rank and mode of secure electronic 
+communication and its implementation shall be determined by the telegraph authority. 
+(4) The telegraph authority and service providers shall designate officers in every 
+licensed service area or State or Union territory, as the case may be, as the nodal officers to 
+receive and handle such requisitions for suspension of internet services. 
+7. The suspension order issued under section 3 shall not be in operation for more than 
+fifteen days at a time:
+Provided that any order for successive suspension of internet services may be 
+notified only after the National or the State Review Board, as the case may be, is 
+satisfied that the sufficient conditions are met and the first order was legal and the 
+situation has improved considerably:
+Provided further that the National or the State Review Board, as the case may 
+be, is satisfied for issue of successive order which shall be in writing specifying the 
+reasons for arriving at the decision and shall be published within forty-eight hours in 
+such manner as may be prescribed. 
+8. The National Review Board or the State Review Board, as the case may be, upon 
+receipt of the order under section 3 for suspension of internet services due to public 
+emergency or public safety, meet within twenty-four hours and record its findings whether 
+the directions issued are in accordance with the provisions of section 3.  
+5
+10
+15
+20
+25
+30
+35
+4
+Content of 
+Orders of or 
+suspension 
+of Internet 
+Services.
+Duration of 
+the Internet 
+suspension.
+Review of order 
+for suspension of 
+internet services.
+40
+45
+
+9. Any person aggrieved by a decision of the National Review Board or the State 
+Review Board, as the case may be, made under this Act, may, within sixty days from the 
+date of such decision and in such manner and form, as may be prescribed, prefer an appeal 
+to the High Court: 
+Provided that the High Court may accept an appeal after the stipulated time period 
+if reasonable cause for the delay is shown. 
+CHAPTER IV 
+Constitution, Functions And Powers Of Review Board
+10. (1) The Central Government shall, by notification, establish, with effect from such 
+date as may be specified therein, a National Board to be known as the National Review 
+Board to exercise the jurisdiction, powers and authority conferred on such Board by or under 
+this Act.
+(2) The National Review Board shall consist of— 
+(a) Cabinet Secretary — Chairperson; 
+(b) Secretary to the Government of India, Department of Legal Affairs, Ministry of 
+Law and Justice — Member; 
+(c) Secretary to the Government of India, Department of Telecommunications, 
+Ministry of Communication — Member;
+(d) a Judicial Member and an expert member to appointed by the Central 
+Government in such manner as may be prescribed;
+(e) an Official from National Human Rights Commission to be appointed by the 
+Central Government in such manner as may be prescribed; and 
+(f) a Member of Parliament from the House of People to be nominated by the 
+Speaker of the House of the People:
+Provided that a person shall not be qualified for appointment as—
+(i) a Judicial Member unless he— 
+(a) is, or has been, a judge of a High Court; or 
+(b) is, or has been, a District Judge for at least five years; or 
+(c) has, for at least ten years been an advocate of a court; 
+Explanation.— For the purposes of computing the period during which a person has 
+been an advocate of a court, there shall be included any period during which the person has 
+held judicial office or the office of a member of a tribunal or any post, under the Union or a 
+State, requiring special knowledge of law after he become an advocate; and
+(ii) an expert member, unless he, —
+(a) has a Bachelor degree in Law, Political Sciences or International Relations, 
+technology or related fields; and
+(b) is a person of proven ability, integrity and standing having special 
+knowledge and experience having an experience of fifteen years in the relevant 
+field including five years practical experience in the field of technology, law and 
+policy, or not less than ten years of litigation experience in the field of human 
+rights. 
+(3) The Judicial Member and the Expert Member shall not—
+(a) hold any other office during their tenure as such; and 
+National Review 
+Board.
+5
+10
+15
+20
+25
+30
+35
+40
+5
+Appeal to lie to 
+the High Court.
+
+(b) for a period of two years from the date on which they cease to hold office, 
+accept any employment in, or connected with the management or administration of, any 
+person who has been a party to a proceeding before the National Review Board under 
+this Act: 
+Provided that nothing contained in this section shall apply to any employment 
+under the Central Government or a State Government or local authority or in any 
+statutory authority or any corporation established by or under any Central, State 
+or Provincial Act or a Government company as defined in section 2(45) of the 
+Companies Act, 2013.
+(4) The Salary and allowances payable to, and other terms and conditions of 
+services of judicial member and expert member of the National Board shall be such as 
+may be prescribed.
+(5) The Chairperson of the National Board may, if considered necessary, invite one 
+or more person having specialised knowledge and experience in a particular case to 
+assist the National Board in such manner as may be prescribed. 
+(6) The Central Government may, by notification, specify the ordinary place or places 
+of sitting of the National Board and the territorial jurisdiction falling under each such place 
+of sitting. 
+(7) The Central Government may, in consultation with the Chairperson of the National 
+Board, make rules regulating the practices and procedure of the Composition of National 
+Review Board.
+11. (1) The National Board shall,—
+(a) declare the validity, necessity, legality and proportionality of the orders for the 
+suspension of the internet services, in accordance with the principles envisaged under 
+section 4; 
+(b) record information on the number of decisions on orders of suspension of 
+internet services; 
+(c) from time to time, assess the impact of suspension of internet services on the 
+Indian economy as well their effectiveness in dealing with public emergencies;
+(d) issue documentation in accordance with provisions contained in this Act; 
+(e) inquire, suo moto or on an application presented to it either by any person 
+aggrieved or by someone acting on their behalf, in respect of the following— 
+(i) suspension of the internet services; or 
+(ii) any conditions or consequent orders be passed following the suspension 
+of the internet; or 
+(iii) any other order that may be necessary under this Act. 
+(f) maintain a record of the details, as prescribed, of orders of suspension of the 
+internet services under the terms of this Act and shall make the same periodically 
+available to the Central Government in such manner as may be prescribed; and 
+(g) undertake such measures and give such directions or pass such orders as are 
+necessary for the purpose of discharging its functions under this Act.
+12. (1) The National Board shall, in the discharge of its functions, be guided by the 
+principles of natural justice and, subject to the other provisions of this Act and of any 
+rules made by the Central Government, the Board shall have the power to regulate its own 
+procedure. 
+Functions of the 
+Board.
+Powers of the 
+National Board.
+5
+15
+20
+25
+30
+35
+10
+6
+40
+45
+
+(2) The Chairperson and the members shall have the power to delegate to one another 
+such powers or functions as may be prescribed. 
+(3) In particular and without prejudice to the generality of the foregoing provisions, 
+the powers of the National Board shall include the power to determine the extent to which 
+persons interested, or claiming to be interested, in the subject-matter of any proceeding 
+before it may be allowed to be present or to be heard, either by themselves or by their 
+representatives, or to examine witnesses, or otherwise take part in the proceedings: 
+Provided that any such procedure as may be prescribed or followed shall be guided 
+by the principles of natural justice. 
+(4) The National Board, for the purposes of any inquiry or for any other purpose under 
+this Act, shall have the same powers as vested in a civil court under the Code of Civil 
+Procedure, 1908, while trying suits in respect of the following matters, namely— 
+(a) summoning and enforcing the attendance of any person from any part of India 
+and examining him on oath; 
+(b) the discovery and production of any document or other material object 
+producible as evidence; 
+(c) the reception of evidence on affidavit; 
+(d) the requisitioning of any public record from any court or office; 
+(e) the issuing of any commission for the examination of witnesses; and 
+(f) any other matter which may be prescribed. 
+(5) The National Board may cause an inquiry to be made into the compliance of its 
+orders or directions made in the exercise of its powers under this Act, and may impose such 
+penalties as may be prescribed. 
+(6) The National Board, with a view to rectifying any mistake apparent from the record, 
+shall have the power to amend any order or direction passed by it under the provisions of 
+this Act: 
+Provided that the Board shall not, while rectifying any mistake apparent from the 
+record, amend the substantive part of such order or direction. 
+(7) The National Board may, appoint such administrative, technical, and other 
+staff as it may consider necessary.
+(8) The Salary and allowances payable to, and other terms and conditions of 
+services of staff of the National Board shall be such as may be prescribed. 
+13. (1) The State Government shall, by notification, establish, with effect from such 
+date as may be specified therein, a State Board to be known as the State Review Board to 
+exercise the jurisdiction, powers and authority conferred on such Board by or under this Act. 
+(2) The State Board shall consist of—
+(a) Chief Secretary — Chairperson; 
+(b) Secretary to the State Government, Department of Legal Affairs — Member; 
+(c) a Judicial Member and an expert member to be appointed by the State 
+Government in such manner as may be prescribed;
+(d) an Official from State Human Rights Commission to be appointed by the State 
+Government in such manner as may be prescribed; 
+Establishment of 
+the State Review 
+Board.
+5
+10
+15
+20
+25
+30
+35
+7
+40
+
+(e) two Members of the State Legislative Assembly one each from the ruling party 
+and the main opposition party to be nominated by the Presiding Officer of the State 
+Legislative Assembly concerned. 
+ Provided that a person shall not be qualified for appointment as—
+    (i) a Judicial Member unless he— 
+    (a) is, or has been, a judge of a High Court; or 
+    (b) is, or has been, a District Judge for at least five years; or 
+    (c) has, for at least ten years been an advocate of a court.
+Explanation.—For computing the period during which a person has been an advocate 
+of a court, there shall be included any period during which the person has held judicial office 
+or the office of a member of a tribunal or any post, under the Union or a State, requiring 
+special knowledge of law after he become an advocate. 
+   (ii) an expert member, unless he,—
+(a) has a Bachelor degree in Law, Political Sciences or International 
+Relations, technology or related fields; and
+(b) is a person of proven ability, integrity and standing having special 
+knowledge and experience having an experience of fifteen years in 
+the relevant field including five years practical experience in the field 
+of technology, law and policy, or not less than ten years of litigation 
+experience in the field of human rights. 
+(3) The Judicial Member and the Expert Member shall not—
+(a) hold any other office during their tenure as such; and 
+(b) for a period of two years from the date on which they cease to hold office, 
+accept any employment in, or connected with the management or administration of, 
+any person who has been a party to a proceeding before the State Review Board under 
+this Act: 
+Provided that nothing contained in this section shall apply to any employment 
+under the Central Government or a State Government or local authority or in any 
+statutory authority or any corporation established by or under any Central, State 
+or Provincial Act or a Government company as defined in section 2(45) of the 
+Companies Act, 2013.
+(4) The Salary and allowances payable to, and other terms and conditions of services of 
+judicial member and expert member of the State Board shall be such as may be prescribed.
+(5) The Chairperson of the State Board may, if considered necessary, invite one or more 
+person having specialised knowledge and experience in a particular case to assist the State 
+Board in such manner as may be prescribed. 
+(6) The State Government may, by notification, specify the ordinary place or places 
+of sitting of the State Board and the territorial jurisdiction falling under each such place of 
+sitting. 
+(7) The State Government may, in consultation with the Chairperson of the State Board, 
+make rules regulating the practices and procedure of the Composition of State Review 
+Board.
+14. (1) The State Board shall,—
+(a) declare the validity, necessity, legality and proportionality of the orders for the 
+5
+15
+20
+25
+30
+35
+10
+8
+Functions of the 
+State Board.
+40
+
+suspension of the internet services, in accordance with the principles envisaged under 
+section 4; 
+(b) record information on the number of decisions on orders of suspension of 
+internet services; 
+(c) from time to time, assess the impact of suspension of internet services on the 
+Indian economy as well their effectiveness in dealing with public emergencies;
+(d) issue documentation in accordance with provisions contained in this Act; 
+(e) inquire, suo moto or on an application presented to it either by any person 
+aggrieved or by someone acting on their behalf, in respect of the following— 
+(i) suspension of the internet services; or 
+(ii) any conditions or consequent orders be passed following the suspension 
+of the internet; or 
+(iii) any other order that may be necessary under this Act. 
+(f) maintain a record of the details, as prescribed, of orders of suspension of the 
+internet services under the terms of this Act and shall make the same periodically 
+available to the State Government in such manner as may be prescribed; and 
+(g) undertake such measures and give such directions or pass such orders as are 
+necessary for the purpose of discharging its functions under this Act.
+15. (1) The State Board shall, in the discharge of its functions, be guided by the principles 
+of natural justice and, subject to the other provisions of this Act and of any rules made by the 
+State Government, the Board shall have the power to regulate its own procedure. 
+(2) The Chairperson and the members shall have the power to delegate to one another 
+such powers or functions as may be prescribed. 
+(3) In particular and without prejudice to the generality of the foregoing provisions, the 
+powers of the State Board shall include the power to determine the extent to which persons 
+interested, or claiming to be interested, in the subject-matter of any proceeding before it may 
+be allowed to be present or to be heard, either by themselves or by their representatives, or 
+to examine witnesses, or otherwise take part in the proceedings: 
+Provided that any such procedure as may be prescribed or followed shall be guided 
+by the principles of natural justice. 
+(4) The State Board, for the purposes of any inquiry or for any other purpose under this 
+Act, shall have the same powers as vested in a civil court under the Code of Civil Procedure, 
+1908, while trying suits in respect of the following matters, namely— 
+(a) summoning and enforcing the attendance of any person from any part of India 
+and examining him on oath; 
+(b) the discovery and production of any document or other material object 
+producible as evidence; 
+(c) the reception of evidence on affidavit; 
+(d) the requisitioning of any public record from any court or office; 
+(e) the issuing of any commission for the examination of witnesses; and 
+(f) any other matter which may be prescribed. 
+(5) The State Board may cause an inquiry to be made into the compliance of its orders or 
+5
+10
+15
+20
+25
+30
+35
+9
+Powers of the 
+State Board.
+40
+
+directions made in the exercise of its powers under this Act, and may impose such penalties 
+as may be prescribed. 
+(6) The State Board, with a view to rectifying any mistake apparent from the record, 
+shall have the power to amend any order or direction passed by it under the provisions of 
+this Act: 
+Provided that the Board shall not, while rectifying any mistake apparent from the 
+record, amend the substantive part of such order or direction. 
+(7) The State Board may, appoint such administrative, technical, and other staff as it 
+may consider necessary.
+(8) The Salary and allowances payable to, and other terms and conditions of services of 
+staff of the State Board shall be such as may be prescribed. 
+16. The appropriate Government may remove from office a Chairperson or Member 
+from the National Review Board or the State Review Board, as the case may be, who— 
+(a) is adjudged an insolvent; or 
+(b) engages during his term of office in any paid employment outside the duties of 
+his office; or 
+(c) is unfit to continue in office by reason of infirmity of mind or body; or 
+(d) is of unsound mind and stands so declared by a competent court; or 
+(e) is convicted for an offence which in the opinion of the Central Government 
+involves moral turpitude; or 
+(f) has acquired such financial or other interest as is likely to affect prejudicially 
+the functions of his office; or 
+(g) has so abused his position as to render his continuance in office prejudicial to 
+the public interest. 
+17. (1) The appropriate Government shall appoint a Secretary to exercise and 
+perform, under the control of or such powers and duties as may be prescribed or as 
+may be specified by the National Board or the State Board as the case may be. 
+(2) The Secretary shall have the powers of general superintendence, direction and 
+control in respect of all administrative matters of the National Board or the State Board as 
+the case may be: 
+Provided that the Secretary may delegate such of his powers, as he may think fit, to 
+any other officer of the National Board or the State Board as the case may be. 
+(3) The salaries and allowances payable to, and the conditions of service of, the 
+Secretary and other officers and employees of the National Board or the State Board as the 
+case may be, shall be such as may be prescribed.
+18. No act or proceeding of the Board, shall be questioned on the ground merely of the 
+existence of any vacancy or defect in the appointment of the Chairperson or Member, or any 
+defect in the appointment of a person acting as the Chairperson, or Member.
+19. The Chairperson, Members and other permanent staff of the National Board or the 
+State Board as the case may be deemed to be public servants within the meaning of section 
+21 of the Indian Penal Code, 1860.
+20. The National Board or the State Board as the case may be deemed to be a civil court 
+every proceeding shall be deemed to be a judicial proceeding. 
+Secretary,  
+Officers  
+and Other 
+Employees 
+of Board.
+Chairperson and 
+Members to be 
+Public Servants.
+5
+15
+20
+25
+30
+35
+10
+10
+Removal of the 
+Chairperson  
+and the Member 
+from Office.
+Vacancies, etc. 
+not to invalidated 
+proceedings of the 
+Board.
+Proceedings  
+before Board to 
+be Judicial.
+40
+
+CHAPTER V 
+Compensation
+21. Any person who is adversely affected or who have suffered loss or injury as a result 
+of suspension of internet services, may approach the High Court for compensation in such 
+manner as may be prescribed.
+CHAPTER VI 
+Technical Assistance
+22. The appropriate Government or the National Board or the State Board, as the case 
+may be, may seek the good offices of the United Nations or other relevant agencies for its 
+expertise, technical assistance and guidance in relation to any matter arising under this Act 
+in such manner as may be prescribed.
+CHAPTER VII 
+Finance, Audit And Annual Report
+23. (1) The Central Government, shall after due appropriation made by Parliament, 
+by law in this behalf, pay to the National Board or the State Board, by way of grants, 
+such sums of money as the Central Government may think fit for being utilised for the 
+purposes of this Act. 
+(2) The National Board or the State Board may spend such sums as it thinks fit for 
+performing the functions under this Act, and such sums shall be treated as expenditure 
+payable out of the grants referred to in sub-section (1).
+24. (1) The National Board or the State Board shall maintain proper accounts and other 
+relevant records, and prepare an annual statement of accounts, in such form as may be 
+prescribed by the Central Government in consultation with the Comptroller and Auditor-
+General of India. 
+(2) The Accounts of the National Board or the State Board shall be audited by the 
+Comptroller and Auditor-General at such intervals as may be specified by him and any 
+expenditure incurred in connection with such audit shall be payable by the Board to the 
+Comptroller and Auditor-General. 
+(3) The Comptroller and Auditor-General or any person appointed by him in connection 
+with the audit of the accounts of the National Board or the State Board under this Act, 
+shall have the same rights, privileges, and authority in connection with such audit, as the 
+Comptroller and Auditor-General generally has in connection with the audit of Central 
+Government accounts: 
+Provided further that the Comptroller and Auditor-General shall, in particular, have 
+the right to demand the production of books, accounts, connected vouchers and 
+other documents and papers, and to inspect any of the offices of the National Board 
+or the State Board, as the case may be. 
+(4) The accounts of the National Board or the State Board, as certified by the Comptroller 
+and Auditor General or any other person appointed by him in this behalf, together with the 
+audit report thereon, shall be forwarded annually to the Central Government by the Board. 
+(5) The Central Government shall cause the audit report forwarded under sub-section 
+(4) to be laid before each House of Parliament as soon as may be after it is received.
+25. (1) The National and the State Review Board shall prepare, once in every year, in 
+such form and at such time as may be prescribed, an annual report giving a full account of 
+its activities during the previous year, copies of which shall be forwarded to the Central 
+Government. 
+(2) A copy of the report received under sub-section (1) shall be laid, as soon as may be 
+after it is received, before each House of Parliament. 
+Technical 
+Assistance.
+Grants by 
+the Central 
+Government.
+Annual 
+Report.
+5
+10
+15
+20
+25
+30
+35
+40
+11
+Accounts 
+and Audit.
+45
+Compensation.
+
+CHAPTER VIII 
+Miscellaneous
+26. The Central Government may by order empower the concerned authorities to assist 
+and cooperate with the Board for the enforcement of this Act. 
+27. On and from the appointed day, no court or authority shall have, or be entitled to 
+exercise, any jurisdiction, powers or authority in relation to matters specified in this Act, 
+except the Supreme Court and a High Court exercising powers under articles 32, 226 and 
+227 of the Constitution.
+28. No suit or other legal proceeding shall lie against the Central Government, 
+State Government, Board or any person acting under the direction either of the Central 
+Government, State Government, Board in respect of anything which is, in good faith, done 
+or intended to be done, in pursuance of this Act or of any rules or any order made thereunder.
+29. The provisions of this Act shall have effect not withstanding anything inconsistent 
+therewith contained in any other law for the time being in force.
+30. (1) The Central Government may, by notification in the Official Gazette, make rules 
+for carrying out the purposes of the Act. 
+(2) In particular, and without prejudice to the generality of the foregoing provision, such 
+rules may provide for— 
+(a) the procedure for suspension of internet services in India under section 4; 
+(b) the duration and procedure for internet suspension subject to the provisions 
+contained under this Act; 
+(c) the salaries and allowances and other terms and conditions of service of the 
+judicial and expert member under section10; 
+(d) the compensation provided under section 21; and 
+(e) the effective implementation of this Act. 
+(3) Every rule made under this Act shall be laid, as soon as may be after it is made, 
+before each House of Parliament, while it is in session, for a total period of thirty days which 
+may be comprised in one session or in two or more successive sessions, and if, before the 
+expiry of the session immediately following the session or the successive sessions aforesaid, 
+both Houses agree in making any modification in the rule or both the Houses agree that the 
+rule should not be made, the rules shall thereafter have effect only in such modified form or 
+be of no effect, as the case may be; so, however, that any such modification or annulment 
+shall be without prejudice to the validity of anything previously done under that rule.
+Bar of 
+Jurisdiction.
+Protection of 
+action taken in 
+good faith.
+Power to make 
+Rules.
+5
+15
+20
+25
+10
+12
+Act to have 
+overriding effect.
+Empowerment 
+of Concerned 
+Authority.
+30
+
+STATEMENT OF OBJECTS AND REASONS
+In recent years, internet shutdowns have become a common answer to any day to day 
+law and order issue or a tool of administrative convenience. It has increased to such an 
+extent that India is now a world leader in the number of Internet shutdowns imposed and no 
+other country is even remotely close to the number of shutdowns imposed in India.
+Internet suspension is governed by Temporary Suspension of Telecom Services (Public 
+Emergency or Public Safety) Rules, 2017. Prior to notification of these rules the State 
+government was allowed to suspend the internet through section 144 of the CrPC. After the 
+notification of these rules State governments were meant to follow the law laid down under 
+them, despite that States continue to suspend the internet under section 144. This practice 
+was criticised by the Supreme Court as well in the case of Anuradha Bhasin vs. Union of 
+India, yet it continues. 
+Understanding the problems that such rampant internet shutdowns pose to the economy 
+and the liberties of individuals, the Standing Committee on Communications and Information 
+Technology (hereinafter “the Committee”) headed by Dr. Shashi Tharoor, decided to undertake 
+a detailed review of the governing legal framework, procedure adopted by the States, 
+safeguards to protect from misuse and other ancillary issues. The Committee noted that 
+“the suspension of internet services greatly affects the local economy, healthcare services, 
+freedom of press and education etc.” It also observed that “the perceived tradeoff of internet 
+shutdowns leading to better law and order outcomes with reduced risk of violence or hate 
+speech is dubious in its assumption”. It further observed that as per empirical study internet 
+shutdowns are not effective in pacifying protests and often have unintended consequences 
+of incentivising violent forms of collective action which requires less communication and 
+coordination. 
+Hence this Bill to cover the grounds for imposing an internet shutdown, directs the 
+government to maintain Official Data on Internet Shutdown, lays down a regulatory 
+framework for suspending internet, and upholds the dictum of the Committee that “it is 
+essential that any interruption to these services should be avoided and where unavoidable, 
+the power to interrupt needs to be exercised with abundant caution”. The bill also attempts 
+to expand the composition/powers and/functions of the Review Board by including Judicial 
+and Expert members as well Member of Parliament/Member of Legislative Assembly, 
+thereby diluting the sway of executive branch. 
+Hence this Bill.
+  New Delhi; T. SUMATHY(A) THAMIZHACHI THANGAPANDIAN
+July 7, 2022.
+13
+
+FINANCIAL MEMORANDUM
+Clause 6 of the Bill provides for printing of orders for internet shutdown in local 
+and national newspapers for information of general public. Clause 10 provides for 
+appointment of Judicial member and expert member to the National Review Board. Further  
+Clause 12 provides for appointment of staff of National Review Board. Clause 17 provides 
+for appointment of Secretary to National and State Review Board. Clause 23 provides 
+for Grants by Central Government to the National and State Review Board after due 
+appropriation made by Parliament. The Bill, therefore, if enacted will involve expenditure 
+from the Consolidated Fund of India. It is estimated that a recurring expenditure of about 
+rupees twenty crore would be involved from the Consolidated Fund of India.
+A non-recurring expenditure of about rupees twenty crore is also likely to be involved. 
+The expenditure in relation to the State Review Board shall be met from the Consolidated 
+Fund of the respective States.
+14
+
+MEMORANDUM REGARDING DELEGATED LEGISLATION
+Clause 30 of the Bill empowers the Central Government to make rules for carrying out 
+the purposes of this Act. As the rules will relate to matters of detail only, the delegation of 
+legislative power is of normal character.
+15
+
+LOK SABHA
+------------ 
+a
+BILL
+to provide for the establishment of an effective system to prevent internet shutdown, 
+provide procedural safeguards to bring greater transparency and accountability 
+for Internet shutdown and to provide for monitoring of shutdowns and for 
+matters connected therewith.
+------------ 
+ 
+(Dr. T. Sumathy(A) Thamizhachi Thangapandian, M.P .)

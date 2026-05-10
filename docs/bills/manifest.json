@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-10T08:19:55Z",
+  "scraped_at": "2026-05-10T08:41:34Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9913,
     "with_intro_pdf": 7463,
     "with_canonical_pdf": 7492,
-    "with_text": 6,
+    "with_text": 1492,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -31,9 +31,9 @@
     "max": 2026
   },
   "this_run": {
-    "extracted": 3,
-    "failed": 0,
+    "extracted": 1486,
+    "failed": 14,
     "rate_limited": false,
-    "elapsed": 1.5845470428466797
+    "elapsed": 1049.6181287765503
   }
 }
