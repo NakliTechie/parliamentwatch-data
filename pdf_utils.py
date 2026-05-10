@@ -58,7 +58,18 @@ def download_pdf(pdf_url, committee_key, report_number):
         if resp.status_code in (429, 403):
             # Don't retry; tell the caller to stop the whole batch. The next
             # scheduled run picks up where we left off.
-            raise RateLimited(f"{resp.status_code} from {pdf_url}")
+            retry_after_hdr = resp.headers.get("Retry-After")
+            suggested_wait = None
+            if retry_after_hdr:
+                try:
+                    suggested_wait = int(retry_after_hdr)
+                except ValueError:
+                    # Could be an HTTP-date instead of seconds; ignore for now.
+                    pass
+            msg = f"{resp.status_code} from {pdf_url}"
+            if suggested_wait is not None:
+                msg += f" (Retry-After: {suggested_wait}s)"
+            raise RateLimited(msg)
         resp.raise_for_status()
         with open(pdf_path, "wb") as f:
             for chunk in resp.iter_content(chunk_size=8192):

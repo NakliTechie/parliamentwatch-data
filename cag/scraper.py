@@ -91,7 +91,18 @@ def _get(url: str, *, timeout: int = 30, retries: int = 1, **kwargs) -> requests
                 continue
             raise
         if resp.status_code in (429, 403):
-            raise RateLimited(f"{resp.status_code} from {url}")
+            retry_after_hdr = resp.headers.get("Retry-After")
+            suggested_wait = None
+            if retry_after_hdr:
+                try:
+                    suggested_wait = int(retry_after_hdr)
+                except ValueError:
+                    # Could be an HTTP-date instead of seconds; ignore for now.
+                    pass
+            msg = f"{resp.status_code} from {url}"
+            if suggested_wait is not None:
+                msg += f" (Retry-After: {suggested_wait}s)"
+            raise RateLimited(msg)
         resp.raise_for_status()
         return resp
     # Unreachable — loop returns or raises.
