@@ -1,29 +1,18 @@
 # parliamentwatch-data
 
-Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar) — the browser app for India's parliamentary record. **Three corpora live** (DRSC + CAG + Bills); more in the pipeline. Each corpus's outputs live under `docs/<corpus>/` and are served via Cloudflare Workers + Static Assets.
+Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar) — the browser app for India's parliamentary record. **Three corpora live** (DRSC + CAG + Bills); more in the pipeline. Each corpus's outputs live under `docs/<corpus>/`.
 
 Scheduled GitHub Actions workflows scrape the upstream sources, extract text from new PDFs, and publish JSON + text files. The browser app fetches them with no server, no API key, no auth.
 
 ## Why a mirror?
 
-The upstream sources block cross-origin browser requests:
-
-- `sansad.in` — no `Access-Control-Allow-Origin`. Cloudflare bot management blocks Anthropic CCR egress IPs (GH Actions Azure IPs work).
-- `cag.gov.in` — `Access-Control-Allow-Origin: cag.gov.in` (restrictive + malformed). Plain Apache, no bot management.
-- `prsindia.org` — Drupal, permissive robots.txt with `Crawl-delay: 10` (PRS-side scraping is v1.1.b territory; not yet wired).
-
-A pure browser app can't fetch the upstream APIs directly. This repo runs each corpus's scraper from GitHub Actions on a schedule, then re-publishes via Cloudflare Workers — which serves with proper CORS — so the single-file app can read it from anywhere.
+The upstream sources don't permit cross-origin browser requests. This repo runs each corpus's scraper from GitHub Actions on a schedule and re-publishes via a CORS-friendly endpoint, so the single-file app can read it without a server.
 
 The DRSC scraper (`scraper.py`, `pdf_utils.py`, `config.py`) is vendored from [pranaykotas/parliamentwatch](https://github.com/pranaykotas/parliamentwatch); credit + upstream maintenance: Pranay Kotasthane. CAG (`cag/scraper.py` + `build_cag.py`) and Bills (`bills/sansad/scraper.py` + `build_bills_sansad.py`) are independent scrapers added for v1.0b and v1.1.a respectively.
 
 ## Hosting
 
-- **Cloudflare Workers + Static Assets** serves `docs/` directly from CF's global edge.
-- Two custom domains point at the same Worker:
-  - `sansadsaar-data.naklitechie.com` (canonical)
-  - `sansad-files.naklitechie.com` (legacy alias)
-- `wrangler.toml` configures the deploy; CF Workers Builds runs `npx wrangler deploy` automatically on every push to main.
-- `docs/_headers` sets cache + CORS rules.
+Served at `sansadsaar-data.naklitechie.com`.
 
 ## What's published
 
@@ -71,22 +60,15 @@ Bills' record index is sharded (`index-meta.json` + `index-NN.json`); DRSC and C
 
 PDFs (`docs/<corpus>/pdfs/...`) are gitignored — they're cached locally for re-extraction but not committed; the extracted text in `docs/<corpus>/text/` is the canonical artefact.
 
-## Schedules + workflows
+## Schedules
 
-One workflow per scraper, independent concurrency groups so corpora can't race each other. Off-hour minutes (:17, :23) deliberate — top-of-hour is GH's busiest slot for scheduled jobs.
+| Corpus | Cadence |
+|---|---|
+| DRSC | every 4 hours |
+| CAG | daily, with hourly backfill and a weekly OCR slow-lane |
+| Bills | daily, with a 4-hourly backfill |
 
-| Corpus | Workflow | Cron | Concurrency group | Notes |
-|---|---|---|---|---|
-| DRSC | `scrape.yml` | every 4h at :17 | `scrape` | One unified writer (no separate backfill); 400 extractions/run |
-| CAG | `cag.yml` | daily 06:17 | `cag` | Daily refresh, 100 extractions/run |
-| CAG | `cag-backfill.yml` | hourly :17 | `cag` | Pure backfill, 200 extractions/run, "until corpus full" |
-| CAG | `cag-ocr.yml` | weekly Sun 02:17 | `cag` | Tesseract slow-lane for scanned PDFs that pypdf returned empty for |
-| Bills | `bills-sansad.yml` | daily 06:23 | `bills-sansad` | Daily + light backfill, 200 extractions/run |
-| Bills | `bills-backfill.yml` | every 4h at :17 | `bills-sansad` | Gentler than CAG's hourly (per Chirag 2026-05-10), 200 extractions/run |
-
-Each workflow can also be triggered manually via `workflow_dispatch` with input overrides for budgets.
-
-**Rate-limit cooldown.** If a run is 429'd by sansad.in or cag.gov.in, the orchestrator writes a `.scraper_state.json` cooldown timestamp; subsequent runs skip the extraction phase for 6h. Fire-and-forget safe.
+Each corpus's workflows can also be triggered manually via `workflow_dispatch`. Runs that are rate-limited by upstream skip the extraction phase for 6h before retrying — fire-and-forget safe.
 
 ## Build flow
 
