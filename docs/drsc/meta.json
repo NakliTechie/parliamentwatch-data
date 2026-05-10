@@ -16,17 +16,35 @@
     "candidates_remaining_after_run": 9323
   },
   "search_bundle": {
-    "total": 5422,
-    "truncated": 5125,
+    "shard_count": 2,
+    "shards": [
+      "search-bundle-00.json",
+      "search-bundle-01.json"
+    ],
+    "shard_sizes": {
+      "search-bundle-00.json": 12302031,
+      "search-bundle-01.json": 12946604
+    },
+    "total": 4870,
     "head_chars": 5000,
-    "size_bytes": 27969125
+    "size_bytes": 25248635,
+    "max_shard_bytes": 12946604
   },
   "search_index": {
-    "report_count": 5422,
-    "vocab_size": 366037,
-    "total_postings": 11292839,
-    "size_bytes": 31523658,
+    "shard_count": 2,
+    "shards": [
+      "search-index-00.json",
+      "search-index-01.json"
+    ],
+    "shard_sizes": {
+      "search-index-00.json": 16579586,
+      "search-index-01.json": 14484541
+    },
+    "report_count": 4870,
+    "vocab_size": 289996,
+    "size_bytes": 31064127,
+    "max_shard_bytes": 16579586,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 4879
+    "freq_cutoff_high": 4383
   }
 }

@@ -14,16 +14,30 @@
     "candidates_remaining_after_run": 33
   },
   "search_bundle": {
+    "shard_count": 1,
+    "shards": [
+      "search-bundle-00.json"
+    ],
+    "shard_sizes": {
+      "search-bundle-00.json": 78450
+    },
     "total": 13,
-    "truncated": 13,
     "head_chars": 5000,
-    "size_bytes": 78439
+    "size_bytes": 78450,
+    "max_shard_bytes": 78450
   },
   "search_index": {
+    "shard_count": 1,
+    "shards": [
+      "search-index-00.json"
+    ],
+    "shard_sizes": {
+      "search-index-00.json": 135710
+    },
     "report_count": 13,
     "vocab_size": 6319,
-    "total_postings": 28487,
-    "size_bytes": 135707,
+    "size_bytes": 135710,
+    "max_shard_bytes": 135710,
     "freq_cutoff_low": 2,
     "freq_cutoff_high": 11
   }
