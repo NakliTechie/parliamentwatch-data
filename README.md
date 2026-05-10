@@ -1,14 +1,20 @@
 # parliamentwatch-data
 
-Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar) — the browser app for Indian Parliamentary documentary output. DRSC (Departmentally Related Standing Committees) is the first registered corpus; future corpora (CAG, Bills, Hansard, etc.) will land in their own sibling subfolders under `docs/`.
+Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar) — the browser app for India's parliamentary record. **Three corpora live** (DRSC + CAG + Bills); more in the pipeline. Each corpus's outputs live under `docs/<corpus>/` and are served via Cloudflare Workers + Static Assets.
 
-A scheduled GitHub Actions workflow scrapes [sansad.in](https://sansad.in), extracts text from new PDFs, and publishes JSON/text files via Cloudflare Workers + Static Assets. The browser app fetches them with no server, no API key, no auth.
+Scheduled GitHub Actions workflows scrape the upstream sources, extract text from new PDFs, and publish JSON + text files. The browser app fetches them with no server, no API key, no auth.
 
 ## Why a mirror?
 
-`sansad.in` blocks cross-origin browser requests (no `Access-Control-Allow-Origin`). A pure browser app cannot fetch its API directly. This repo runs the scraper on a schedule from GitHub Actions, then re-publishes the data via Cloudflare Workers — which serves with proper CORS — so the single-file app can read it from anywhere.
+The upstream sources block cross-origin browser requests:
 
-The scraper code (`scraper.py`, `pdf_utils.py`, `config.py`) is vendored from [pranaykotas/parliamentwatch](https://github.com/pranaykotas/parliamentwatch). Credit and upstream maintenance: Pranay Kotasthane.
+- `sansad.in` — no `Access-Control-Allow-Origin`. Cloudflare bot management blocks Anthropic CCR egress IPs (GH Actions Azure IPs work).
+- `cag.gov.in` — `Access-Control-Allow-Origin: cag.gov.in` (restrictive + malformed). Plain Apache, no bot management.
+- `prsindia.org` — Drupal, permissive robots.txt with `Crawl-delay: 10` (PRS-side scraping is v1.1.b territory; not yet wired).
+
+A pure browser app can't fetch the upstream APIs directly. This repo runs each corpus's scraper from GitHub Actions on a schedule, then re-publishes via Cloudflare Workers — which serves with proper CORS — so the single-file app can read it from anywhere.
+
+The DRSC scraper (`scraper.py`, `pdf_utils.py`, `config.py`) is vendored from [pranaykotas/parliamentwatch](https://github.com/pranaykotas/parliamentwatch); credit + upstream maintenance: Pranay Kotasthane. CAG (`cag/scraper.py` + `build_cag.py`) and Bills (`bills/sansad/scraper.py` + `build_bills_sansad.py`) are independent scrapers added for v1.0b and v1.1.a respectively.
 
 ## Hosting
 
@@ -19,48 +25,102 @@ The scraper code (`scraper.py`, `pdf_utils.py`, `config.py`) is vendored from [p
 - `wrangler.toml` configures the deploy; CF Workers Builds runs `npx wrangler deploy` automatically on every push to main.
 - `docs/_headers` sets cache + CORS rules.
 
-## What's published (DRSC corpus)
+## What's published
+
+Each corpus's outputs land in `docs/<corpus>/` parallel to its siblings. **All three corpora share the same shape** for the deep-search artefacts (sharded record index + sharded `search-bundle-NN.json` + sharded `search-index-NN.json`) so v2's cross-corpus search can merge cleanly. See `Browser/CONV.md` § "Shard the index + the search bundle + the body-token index from day 1" for the full pattern.
+
+### DRSC
 
 ```
 https://sansadsaar-data.naklitechie.com/drsc/
-├── meta.json              # version + last-updated + counts + bundle/index stats
-├── committees.json        # 24 DRSCs (key → name + house)
-├── reports.json           # all metadata (committee → list of reports)
-├── manifest.json          # which texts are extracted (committee → report-id → size)
-├── search-bundle.json     # title + first 5K chars per report (snippet preview + substring)
-├── search-index.json      # inverted token index over the full body of every report
+├── meta.json                # version + last-updated + counts + bundle/index stats
+├── committees.json          # 24 DRSCs (key → name + house)
+├── reports.json             # all metadata (committee → list of reports)
+├── manifest.json            # which texts are extracted (committee → report-id → size)
+├── search-bundle-<NN>.json  # title + first 5K chars per report, sharded
+├── search-index-<NN>.json   # inverted token index over full body, sharded
 └── text/<committee>/<report-id>.txt
 ```
 
-Each future corpus lands in `docs/<corpus>/` parallel to `docs/drsc/`.
-
-## Schedule
-
-- **Cron**: every 4 hours at minute :17 (`17 */4 * * *` UTC). Off-hour minute deliberate — top-of-hour is GH's busiest slot for scheduled jobs.
-- **Manual trigger**: Actions → "Scrape and publish" → Run workflow. Inputs: `lok_sabhas`, `max_extractions`, `max_run_seconds`.
-- **Per-run budget**: `MAX_EXTRACTIONS_PER_RUN=400` (configurable). At ~10s/PDF avg with 4 workers, that finishes in ~17 minutes wall clock. `MAX_RUN_SECONDS=1800` is a hard ceiling.
-- **Rate-limit cooldown**: if the previous run was 429'd by sansad.in, the next run skips the extraction phase for 6h. Fire-and-forget safe.
-
-## Build flow (`build_static.py`)
+### CAG
 
 ```
-[1/7] Scrape committee metadata for configured Lok Sabhas
-[2/7] Migrate any pre-v0.4 unprefixed text files (idempotent — usually no-op)
-[3/7] Extract missing texts (priority: newest first; respects budget + rate limits)
-[4/7] Build manifest.json + committees.json
-[5/7] Build search-bundle.json (title + first 5K chars per report)
-[6/7] Build search-index.json (inverted token index over full body)
-[7/7] Write meta.json
+https://sansadsaar-data.naklitechie.com/cag/
+├── meta.json                # version + last-updated + counts + bundle/index stats
+├── reports.json             # all metadata, flat (id → record)
+├── manifest.json            # which texts are extracted (id → size)
+├── search-bundle-<NN>.json
+├── search-index-<NN>.json
+└── text/<id>.txt
 ```
 
-All outputs land in `docs/drsc/`. The Action commits any diff and pushes; CF Workers redeploys automatically.
+### Bills (sansad-side)
+
+```
+https://sansadsaar-data.naklitechie.com/bills/
+├── meta.json                # version + last-updated + counts + bundle/index stats
+├── index-meta.json          # shard manifest for the record index
+├── index-<NN>.json          # ~1 MB shards, ~1000 records each, newest-first
+├── manifest.json            # which texts are extracted (compositeId → size)
+├── search-bundle-<NN>.json  # title + first 5K chars per bill with text
+├── search-index-<NN>.json   # inverted token index over full body
+└── text/<compositeId>.txt   # compositeId = `<billNumber>_<billYear>_<L|R>`
+```
+
+Bills' record index is sharded (`index-meta.json` + `index-NN.json`); DRSC and CAG indices are still single-file (`reports.json`) — within current cap. Both will shard at the same break-point if needed.
+
+PDFs (`docs/<corpus>/pdfs/...`) are gitignored — they're cached locally for re-extraction but not committed; the extracted text in `docs/<corpus>/text/` is the canonical artefact.
+
+## Schedules + workflows
+
+One workflow per scraper, independent concurrency groups so corpora can't race each other. Off-hour minutes (:17, :23) deliberate — top-of-hour is GH's busiest slot for scheduled jobs.
+
+| Corpus | Workflow | Cron | Concurrency group | Notes |
+|---|---|---|---|---|
+| DRSC | `scrape.yml` | every 4h at :17 | `scrape` | One unified writer (no separate backfill); 400 extractions/run |
+| CAG | `cag.yml` | daily 06:17 | `cag` | Daily refresh, 100 extractions/run |
+| CAG | `cag-backfill.yml` | hourly :17 | `cag` | Pure backfill, 200 extractions/run, "until corpus full" |
+| CAG | `cag-ocr.yml` | weekly Sun 02:17 | `cag` | Tesseract slow-lane for scanned PDFs that pypdf returned empty for |
+| Bills | `bills-sansad.yml` | daily 06:23 | `bills-sansad` | Daily + light backfill, 200 extractions/run |
+| Bills | `bills-backfill.yml` | every 4h at :17 | `bills-sansad` | Gentler than CAG's hourly (per Chirag 2026-05-10), 200 extractions/run |
+
+Each workflow can also be triggered manually via `workflow_dispatch` with input overrides for budgets.
+
+**Rate-limit cooldown.** If a run is 429'd by sansad.in or cag.gov.in, the orchestrator writes a `.scraper_state.json` cooldown timestamp; subsequent runs skip the extraction phase for 6h. Fire-and-forget safe.
+
+## Build flow
+
+Each corpus has its own orchestrator at the repo root, calling into the corpus-specific scraper module:
+
+```
+build_static.py        → docs/drsc/   (uses scraper.py + pdf_utils.py + config.py)
+build_cag.py           → docs/cag/    (uses cag/scraper.py)
+build_bills_sansad.py  → docs/bills/  (uses bills/sansad/scraper.py)
+build_cag_ocr.py       → docs/cag/    (post-pypdf OCR for scanned PDFs)
+```
+
+Each orchestrator's phases:
+
+1. Scrape / refresh metadata from upstream API or listing pages.
+2. Extract missing texts (priority: newest first; respects budget + rate limits).
+3. Write manifest + meta.
+4. Build sharded `search-bundle-<NN>.json` (title + first 5K chars per record).
+5. Build sharded `search-index-<NN>.json` (inverted token index over full body, delta-encoded postings).
+
+Same constants across all three corpora (`_HEAD_CHARS=5000`, `_DOCS_PER_SHARD=2500`, `_FREQ_CUTOFF_HIGH=0.9`, `_FREQ_CUTOFF_LOW=2`, `_MAX_TOKEN_LEN=25`, same `_STOPWORDS` list, same `_TOKEN_RE`) so v2 cross-corpus search has uniform vocab + shard granularity to merge against. Per the Independence Principle, the constants are duplicated across `build_*.py` files, not imported.
 
 ## Local dev
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python build_static.py
+
+# Pick a corpus orchestrator:
+python build_static.py            # DRSC
+python build_cag.py               # CAG
+python build_bills_sansad.py      # Bills (sansad-side)
 ```
 
-Output goes into `docs/drsc/`. PDFs are downloaded to `docs/drsc/pdfs/` (gitignored — re-extracted text is what matters) and text to `docs/drsc/text/<committee>/`.
+Output goes into `docs/<corpus>/`. PDFs are downloaded to `docs/<corpus>/pdfs/` (gitignored via `docs/**/pdfs/`) and text to `docs/<corpus>/text/`.
+
+For a fast dry-run that only refreshes the index + regenerates derived files without downloading new PDFs, set `MAX_EXTRACTIONS_PER_RUN=0`.
