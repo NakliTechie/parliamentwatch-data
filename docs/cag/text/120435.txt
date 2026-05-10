@@ -1,0 +1,2534 @@
+ 
+ 
+Performance Audit Report of the  
+Comptroller and Auditor General of India  
+on Integrated Financial Management System 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+for the year ended 31 March 2022
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Government of Uttarakhand  
+Report No. 1 of the year 2024 
+
+i 
+TABLE OF CONTENTS 
+Sl. No.  Contents Paragraph  Page No. 
+1. Preface  iii 
+2. Highlights  v 
+CHAPTER-1: IFMS OVERVIEW AND AUDIT APPROACH 
+3. Introduction 1.1 1 
+4. Salient Features of IFMS 1.2 1 
+5. Functions Performed by DDOs and Treasuries through 
+IFMS 1.3 2 
+6. Important Milestones of IFMS 1.4 3 
+7. Organisational Set-up 1.5 3 
+8. Audit Objectives 1.6 4 
+9. Audit Criteria 1.7 4 
+10. Audit Scope and Methodology 1.8 4 
+11. Acknowledgement 1.9 5 
+CHAPTER-2: PROJECT MANAGEMENT 
+12. Introduction 2.1 7 
+13. Audit Findings 2.2 7 
+14. Deficiencies in DPR preparation 2.2.1 7 
+15. Inadequate Business Process Re-engineering 2.2. 2 7 
+16. Software Development lifecycle 2.2.3 8 
+17. Payment of ` 32.08 lakhs to Vendors without ensuring 
+deliverables 2.2.4 9 
+18. Go-live of IFMS after 10 days of signing contract with 
+new vendor 2.2.5 12 
+19. Relevant Treasury and Financial codes not updat ed 2.2.6 13 
+20. Change Management 2.2.7 13 
+21. Conclusion 2.3 14 
+22. Recommendations 2.4 14 
+CHAPTER-3: SYSTEM FUNCTIONALITY AND CONTROLS 
+23. Functioning of IFMS system 3.1 15 
+24. Audit Findings 3.2 15 
+25. Modules envisaged in IFMS not implemented 3.2.1  15 
+26. Manual Sanctions 3.2.2 16 
+27. Non-revocation of access rights of ceased users  3.2.3 16 
+28. Non-review of Super User activity 3.2.4 17 
+29. Budgetary workflow and control deficiencies 3.2 .5 17 
+30. Key workflow processes not automated 3.2.5.1 18  
+31. Deficient control over Re-appropriation of budg et 3.2.5.2 19 
+32. Irregular surrender of budget 3.2.5.3 20 
+33. Absence of alert functionality 3.2.5.4 20 
+34. DDO module workflow and controls 3.2.6 21 
+35. Non segregation of roles 3.2.6.1 21 
+36. Incomplete implementation of e-sign functionali ty 3.2.6.2 22 
+37. Inconsistent workflow 3.2.6.3 22 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+ii 
+38. Absence of DDO specimen signature in system 3.2 .6.4 23 
+39. Non-automation of functionalities in DDO module  3.2.6.5 23 
+40. Lack of internal control in timely processing o f bills 3.2.6.6 24 
+41. Lack of internal control in drawing of AC bills  3.2.6.7 25 
+42. Non-availability of functionality for Bill Defacement 
+in IFMS 3.2.6.8 26 
+43. e-Payment workflow and controls 3.2.7 26 
+44. Beneficiary bank details not validated 3.2.7.1 26 
+45. Reconciliation process not automated 3.2.7.2 27  
+46. e-challan module: A successful tool 3.2.8 27 
+47. Accounting workflow and integration with AG (A& E)  3.2.9 28 
+48. Partial integration of IFMS with Transport depa rtment  3.2.9.1 28 
+49. Deficient functionality of correction of accounts 
+through transfer entries 3.2.9.2 29 
+50. Conclusion 3.3 29 
+51. Recommendations 3.4 29 
+CHAPTER-4: INFORMATION SYSTEM SECURITY 
+52. Introduction 4.1 31 
+53. Audit Findings 4.2 31 
+54. Non-conduction of Performance and Quality Audit 
+from STQC 4.2.1 32 
+55. IS security systemic deficiencies 4.2.2 32 
+56. Absence of Business Continuity Plan (BCP) 4.2.3  33 
+57. Disaster Recovery site not set up 4.2.4 34 
+58. Backup and recovery controls 4.2.5 35 
+59. Critical financial data handled by outsourced p ersonnel  4.2.6 35 
+60. Absence of documentation and policies 4.2.7 36 
+61. Poor feedback from end users of IFMS 4.3 36 
+62. Conclusion 4.4 36 
+63. Recommendations 4.5 37 
+ 
+APPENDICES 
+Appendix-1.1  List of Treasuries/Sub-Treasuries 39 
+Appendix-1.2  List of applications integrated with IFMS 41 
+Appendix-1.3  List of Modules 42 
+ABBREVIATIONS 
+List of abbreviations  47 
+ 
+
+iii 
+Preface 
+ 
+This Report of the Comptroller and Auditor General of India for the year ended  
+31 March 2022 has been prepared for submission to t he Governor of the State of 
+Uttarakhand under Article 151(2) of the Constitution of India. 
+The Report contains the result of the Audit on ‘Int egrated Financial Management System 
+(IFMS)’, covering the period 2019-22. 
+The instances mentioned in this Report are those wh ich came to notice in the course of 
+test audit for the period 2019-22; any development subsequent to the year 2021-22 have 
+also been included, wherever necessary. 
+The Audit has been conducted in conformity with the  Auditing Standards issued by the 
+Comptroller and Auditor General of India. 
+Audit wishes to acknowledge the co-operation received from Government of Uttarakhand 
+at each stage of the audit process. 
+ 
+ 
+
+Highlights 
+
+v 
+Highlights 
+ 
+Intent of Integrated Financial Management System 
+Integrated Financial Management System (IFMS) was d eveloped under Mission Mode 
+Project (MMP) of National e-Governance Plan (NeGP) with a vision to increase 
+efficiency of treasury functions, transparency in f inancial administrative systems, better 
+cash flow management, better accounting of receipts  and payments, improved regulatory 
+mechanism, better control on State Finances, strong er Management Information System, 
+accuracy and speed in accounts and budget preparation. 
+Why this Performance Audit?  
+Audit was conducted to assess and derive assurance about the effectiveness of IFMS 
+system with regards to Information Technology (IT) controls, mapping of business 
+processes and functioning of major modules of the system. 
+Period of Audit: 2019-20 to 2021-22 
+Sample: Nine out of 25 modules 
+What Audit found?  
+ Audit observed that preliminary study of existing s ystem was not carried out by the 
+Department which resulted in inclusion of outdated information in Detailed Project 
+Report (DPR) like Inventory Management Module for e -stamps was included in the 
+DPR and the Request for Proposal (RFP) of the vendo r, despite the presence of a 
+prior agreement with Stock Holding Corporation of I ndia Limited (SHCIL) for 
+implementation of e-stamping system. 
+(Paragraph 2.2.1(i), page 7) 
+ DPR was not reviewed before submission to Governmen t of India (GoI) by State 
+Project e-Mission Committee (SPeMT), responsible to  prepare DPR and oversee 
+project execution,  as committee was formed in December 2013, i.e. a ye ar after 
+submission of DPR to GoI. 
+(Paragraph 2.2.1(ii), page 7) 
+ Department paid full scheduled amount of ` 32.08 lakh to vendors without ensuring 
+delivery of certain major deliverables such as Busi ness Continuity Plan, Backup 
+Plan, High & Low Level design documents and User Acceptance Testing (UAT). 
+(Paragraph 2.2.4, page 9) 
+ Post Go-Live, relevant treasury and financial codes  were not updated to align with 
+the working of IFMS. 
+(Paragraph 2.2.6, page 13) 
+ Department had not formulated or adopted any change  management policy. Change 
+management in IFMS was being carried out without ap proval of competent 
+authority which shows the lack of internal controls and monitoring. 
+(Paragraph 2.2.7, page 13) 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+vi 
+ There was no integration between IFMS and Departmen t of Finance (Budget 
+Section) due to which complete automation was not a chieved in budget workflow. 
+IFMS did not support online submission of receipt estimates and revised estimates.  
+(Paragraph 3.2.5.1, page 18) 
+ There was no control or check in IFMS to prevent re -appropriation of budget from 
+Voted to Charged head and vice versa  and Revenue to Capital head and vice versa . 
+Analysis of IFMS data revealed re-appropriation of ₹ 51.85 crore from Revenue 
+head to Capital head and ₹ 13.87 crore from Loan head to Revenue head in  
+2020-21. 
+(Paragraph 3.2.5.2, page 19) 
+ Data analysis revealed that government orders were not implemented in IFMS, and 
+bills were found to be pending at each level for more than 30 days. 
+(Paragraph 3.2.6.6, page 24) 
+ Only limited checks were available for pre-validati on of bank account details. 
+Complete checks regarding correctness of beneficiar y name, IFSC and beneficiary 
+account number were not present in the system. 
+(Paragraph 3.2.7.1, page 26) 
+ The process of reconciliation of payments between R BI/SBI and Treasury was not 
+automated.  
+(Paragraph, 3.2.7.2 page 27) 
+ IFMS went live without required performance and quality certification from STQC.  
+(Paragraph 4.2.1, page 32) 
+ In IFMS, DDOs were registered with their personal e -mail IDs causing potential 
+security risk.  
+(Paragraph 4.2.2 (i), page 32) 
+ Department did not implement biometric authentication even after three  years of 
+operationalization of IFMS.  
+(Paragraph 4.2.2 (iv), page 33) 
+ In absence of audit certificate, network security of IFMS could not be ensured.  
+(Paragraph 4.2.2(v), page 33) 
+ Business Continuity Plan was not framed and adopted  for IFMS, even after four 
+years since operation. In its absence, the staff/ u sers were unaware of the procedure 
+to be followed in the event of disruptions/ disasters. 
+(Paragraph 4.2.3, page 33) 
+ Uttarakhand being in seismic zone IV, Department di d not set up any functional 
+Disaster Recovery(DR) site. In absence of functiona l DR site, business continuity 
+of IFMS remained at risk in case of disasters. 
+(Paragraph 4.2.4, page 34) 
+
+Highlights 
+vii 
+ In absence of documented policies, users were free to handle security related issues 
+in their own manner which could pose risks to IT security of IFMS. 
+(Paragraph 4.2.7, page 36) 
+What Audit recommends?  
+1. Department should ensure delivery of technical d ocuments from the vendor to 
+avoid any vendor lock-in situation. 
+2. Department should expedite the process of updati on of financial rules/codes in line 
+with the working of IFMS. 
+3. Department should issue Standard Operating Proce dure (SOP) for key process 
+implemented in IFMS such as correction of accounts,  handling of failed payments, 
+etc. 
+4. Department should integrate IFMS with e-Office s o that sanction orders can be 
+uploaded automatically. 
+5. Department should implement functionality for su bmission of receipt estimates and 
+revised estimates through IFMS. 
+6. Department should integrate IFMS with Budget dep artment for obtaining Budget 
+data and processing it automatically. 
+7. Department should formulate BCP and set up DR si te to ensure that the system runs 
+smoothly and resumes its operations within definite  time period in case of disasters 
+and other emergency events. 
+8. The Department should expedite the process of cr eating and updating government 
+email Ids for remaining DDOs in IFMS. 
+9. The Department should review and test the backup  restore activity on regular basis 
+so that data can be restored if inadvertently destroyed or lost. 
+10.  The Department should formulate an IT security poli cy for security of IT assets, 
+software and data, backup, data retention and disposal, etc. 
+
+Chapter -1 
+IFMS overview and Audit approach  
+
+1 
+CHAPTER-1 
+IFMS overview and Audit approach 
+ 
+1.1 Introduction  
+Integrated Financial Management System (IFMS) is a Web based financial accounting 
+system under Mission Mode Project (MMP) of National  e-Governance Plan (NeGP). 
+IFMS was designed and developed to provide user int erface to various users of State 
+Government Treasury in the State. This portal provi des real time financial transactions of 
+Government of Uttarakhand (GoU) performed at 91 1Treasuries/Sub Treasuries connected 
+through dedicated lease lines across the state. The  list of treasuries and sub-treasuries is 
+given in Appendix-1.1 . 
+Before implementation of IFMS, various transactions  related to Drawing and Disbursing 
+Officers (DDOs) of GoU were being carried out through Core Treasury System. 
+NeGP, originally launched by the Government of Indi a (GoI) in 2006, currently 
+comprises 31 MMPs. An MMP is an individual project that focuses on one aspect of 
+electronic governance, such as banking, land record s and commercial taxes, etc. 
+Treasuries computerization was one of the 13 MMPs f or states (rest MMPs were central 
+or integrated MMPs) which was developed as IFMS in Uttarakhand. 
+The IFMS architecture was a centralised system with  all processing centralised in a set of 
+servers located at the Finance Data Centre (FDC). T he treasuries were connected to the 
+FDC through Uttarakhand State Wide Area Network (UK SWAN). There was a total of 
+4,586 DDOs registered in IFMS. IFMS was integrated with 23 different applications as 
+given in Appendix-1.2 . IFMS went live in all Department of Uttarakhand w ith effect 
+from 01 April 2019. 
+1.2 Salient features of IFMS  
+ 
+ 
+                                                           
+1 13 District Treasuries, six Treasuries, one Cyber Treasury, 70 sub-treasuries and one Pay and Accounts 
+Office (PAO) 
+Common Electronic 
+Platform 
+•To provide 
+Common Electronic 
+Platform to its 
+internal and external 
+stakeholders 
+Centralised Data 
+Processing 
+•To process all 
+receipts and 
+payments 
+transactions online 
+centrally at FDC. 
+Uniformity 
+•To establish 
+uniformity between 
+Government, Head 
+of the Departments 
+and Head of the 
+Offices. 
+Transparency 
+•To make all 
+payments 
+trasparently in a 
+defined time period. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+2 
+1.3 Functions performed by DDOs and Treasuries thro ugh IFMS  
+DDOs and Treasuries perform various functions through IFMS which are shown below: 
+ 
+ 
+  
+Functions of DDO 
+Online Generation of various Bill forms used by the DDO 
+Online Generation of Employee claims 
+Online Generation of GPF Claim 
+Online Generation of GIS Bills 
+Online Generation of Pension Papers for Retiring 
+Employees 
+Maintenance of Cash Book and other Register through 
+System 
+Reconciliation of Drawls with the Treasuries 
+Functions of Treasury 
+Disbursement of Salaries 
+Disbursement of Non-Salaried bills 
+Disbursement of Pensions 
+Selling and Inventory Management of Stamps 
+DCL Accounts 
+Maintenance of Personal Ledger Accounts 
+Transmission of Details to other Departments 
+Rendering of Accounts to the Accountant General 
+
+Chapter-1: IFMS overview and Audit approach 
+3 
+1.4 Important milestones of IFMS  
+ 
+1.5 Organisational set-up  
+Directorate of Treasury, Pension and Entitlement (D TPE) under the administrative 
+control of Finance Department (FD) was the nodal ag ency for implementation of IFMS. 
+Detailed organisational set-up is given in Chart-1 below: 
+Chart-1: Organisational Structure 
+ 
+2010 - Computerisation of 
+Treasuries initiated under 
+Mission Mode Project 
+(MMP) of National e-
+Governance Plan (NeGP) 
+July 2010 - Government of 
+India (GoI) issued Office 
+Memorandum to all States 
+to send their proposals in 
+accordance with guidelines 
+January 2013 -
+Government of 
+Uttarakhand submitted its 
+Detailed Project Report 
+(DPR) - MMP Treasuries 
+and named the project as 
+IFMS 
+26 July 2013 - GoI 
+approved DPR and 
+released ` 243.50 lakh 
+against total project cost of 
+` 1150.17 lakh. 
+16 October 2014- Tender 
+for Software Development 
+invited. Bid cancelled as 
+only one bidder was 
+qualified in technical bid. 
+23 February 2015 - Re-
+tender invited. M/s Techno 
+Brain India Pvt. Ltd. 
+selected (06 June 2015) to 
+develop IFMS at a total 
+cost of `1,51,68,600/-
+08 October 2015 -
+Contract signed between 
+Finance Department and 
+M/s Techno Brain India 
+Pvt. Ltd. 
+30 August 2018 - Contract 
+with M/s Techno Brain 
+India  Pvt Ltd. Terminated. 
+18 August 2018 - Tender 
+was invited for completion 
+of residual software 
+development. 
+25 October 2018 - M/s 
+Indus Web Solution, Pvt. 
+Ltd. selected to complete 
+residual work at a cost of 
+` 1,12,92,000/-. 
+22 March 2019 - Contract 
+signed with M/s Indus 
+Web Solution, Pvt. Ltd. 
+01 April 2019 - IFMS was 
+made Go-Live. 
+Principal Secretary/ Secretary Finance 
+Director- Treasury, 
+Pension and Entitlement 
+Additional Director 
+Data Centre 
+Assistant Director 
+Data Centre 
+Additional 
+Director 
+Deputy Director 
+Additional Director 
+(Camp Office, Haldwani) 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+4 
+1.6 Audit Objectives 
+Audit was conducted to assess and derive assurance about the effectiveness of IFMS 
+system with regards to IT controls, mapping of busi ness processes and functioning of 
+major modules of the system. The audit assessed eff iciency and effectiveness of 
+following- 
+ 
+ Business process re-engineering. 
+ Project Management. 
+ IFMS functionalities and controls. 
+ Integration of IFMS with other systems; and 
+ Information system security.  
+1.7 Audit criteria 
+The audit criteria were derived from the following sources: 
+ Provisions of National e-Governance policies & stan dards and technical 
+documents. 
+ Detailed Project Report (DPR) of IFMS, Request for Proposal (RFP); Software 
+Requirement Specifications (SRS) and Functional Req uirement Specification 
+(FRS) of IFMS. 
+ Government Orders with regard to treasury computeri zation /cyber security / IT 
+systems etc.; and  
+ Uttarakhand Budget Manual, Financial Hand Book/ Tre asury Rules and Standing 
+Orders on Treasuries. 
+1.8 Audit Scope and Methodology  
+Audit of IFMS was conducted from 05 September 2022 to  15 December 2022. An entry 
+conference was conducted on 26 August 2022 with the Secretary- Finance and Additional 
+Director, In-Charge FDC, DTPE, Dehradun. Audit checked the records of DTPE and was 
+given access to test environment of IFMS. We also a nalysed IFMS data covering the 
+period from 1 April 2019 to 31 March 2022.The Audit  examined nine major modules 2 
+out of total 25 modules, given in Appendix-1.3, available in IFMS. We had access to the 
+system through front-end and back-end for user walk through, and data analysis. Audit 
+also visited Cyber Treasury and FDC to gain insight of the working of IFMS. 
+Audit findings were reported to GoU on 07.03.2023 and an exit conference was held with 
+the Secretary-Finance, GoU on 21.06.2023. The respo nses during exit conference and 
+written replies received (23.08.2023) from the Gove rnment have been incorporated in 
+this report, at appropriate places. 
+ 
+                                                           
+2 Budget (Budget Preparation, Budget Disbursement, B udget Maintenance, Budget Planning); DDO,  
+e-Challan, Receipt Accounting, e-Payment, and Payment Accounting.  
+
+Chapter-1: IFMS overview and Audit approach 
+5 
+1.9 Acknowledgement  
+The Office of the Principal Accountant General (Aud it) Uttarakhand acknowledges the 
+co-operation extended by the officers and staff of DTPE in providing necessary access to 
+data, information and records for audit. 
+
+Chapter -2 
+Project Management 
+
+7 
+CHAPTER-2 
+Project Management 
+ 
+2.1 Introduction 
+The success of an e-Governance project depends upon  the development of the project in 
+an integrated and holistic manner. E-Governance sho uld not be understood merely as the 
+procurement of hardware and other networking equipm ent. E-Governance is an 
+integration of various fields of management thus ma king it a management game rather 
+than merely a technology enabled project. 
+As a part of the project life cycle, the existing I T systems were required to be assessed 
+along with coverage and gaps to understand the exis ting processes before conducting 
+Business Process Re-engineering (BPR). It was vital  that the process redesign, i.e. the 
+critical analysis and radical redesign of workflows  and processes within and between 
+governmental Departments, was undertaken to achieve  breakthrough improvements in 
+performance. 
+2.2 Audit findings 
+The Audit noticed following shortcomings in development of IFMS:  
+2.2.1 Deficiencies in DPR preparation 
+(i) Absence of preliminary study of existing system   
+GoI has directed all States to fill the gaps in com puterization, up-gradation, expansion, 
+and interface requirements of existing system. For this, preliminary study of existing 
+system was to be performed to understand the gaps i n existing system and identify 
+potential improvement areas. Audit noticed that no such study was carried out by the 
+Department which resulted in the inclusion of outda ted information in Detailed Project 
+Report (DPR). For example, Inventory Management Mod ule for e-stamps was included 
+in the DPR and the Request for Proposal (RFP) of th e vendor, despite the presence of a 
+prior agreement with Stock Holding Corporation of I ndia Limited (SHCIL) for 
+implementation of e-stamping system. 
+(ii) DPR not reviewed before submission to GoI 
+State Project e-Mission Team (SPeMT) headed by Secr etary-in-charge of the Department 
+was to be constituted as per scheme guidelines. SPe MT had the responsibility to prepare 
+DPR, oversee project execution, manage implementati on and deal with technology, 
+process & change management related issues. Audit n oticed that SPeMT was formed in 
+Uttarakhand in December 2013, i.e. a year after sub mission of DPR to GoI 
+(January 2013), thus it did not fulfill its role in DPR preparation and reviewing. 
+2.2.2 Inadequate Business Process Re-engineering 
+BPR is the radical redesign of business processes t o achieve dramatic improvements in 
+critical aspects like quality, output, cost, servic e, and speed. GoI directed (July 2010) 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022  
+8 
+States that while preparing DPR, it should include BPR of existing process and introduce 
+new processes, where necessary. The requirement of process re-engineering and a brief 
+methodology to conduct the same was to be included in DPR. The main objective of 
+IFMS was to build an integrated finance information  system to provide efficient transfer, 
+storage and retrieval of information through workfl ow automation. For this, potential 
+improvement areas were to be identified through BPR. 
+As the Department did not provide any document, Aud it could not derive assurance 
+whether BPR was undertaken by the Department or not. 
+During audit, deficiencies were observed in the IFMS which indicates lack of proper BPR 
+prior to development of system. The deficiencies in clude lack of Integration with Budget 
+Section for automation of budget process (Para 3.2. 5.1.i.a), lack of Full automation of 
+submission of supplementary budget estimates (Para 3.2.5.1.i.c), lack of auto-generation 
+of sanction orders in IFMS (Para 3.2.2), lack of De facement of vouchers/sub-vouchers in 
+IFMS (Para 3.2.6.8), and lack of Automation of acco unts acceptance and further 
+correction (if required through transfer entries) with AG (A&E) (Para 3.2.9.2.v).  
+DTPE accepted (Dec 2022) the facts and stated that the current mechanism was adopted 
+in consultation with budget section of Department o f Finance. It also assured that further 
+discussions shall be held with the budget section a nd if required, such functionality shall 
+be added in IFMS. It was also informed that sanctio ned orders were being generated 
+manually but the Department was planning to integrate IFMS with e-Office so that digital 
+sanction orders were automatically made available i n IFMS. DPTE also assured that bill 
+defacement would be implemented in future. 
+The Secretary-Finance, during exit conference (June  2023) agreed to the audit 
+observations and stated that communication with bud get section was underway for 
+integration and functionality for submission of sup plementary estimates through IFMS 
+has been implemented and functional. 
+Reply confirmed that complete workflow automation o f IFMS could not be achieved due 
+to non-review of BPR. Thus, the Department failed t o accomplish one of the major 
+objective of the project. However, at the instance of Audit, the Department implemented 
+the functionality for submission of supplementary estimates through IFMS. 
+2.2.3 Software Development lifecycle  
+The Software Development Life Cycle (SDLC) is a fra mework defining tasks performed 
+at each step in the software development process. I t consists of a detailed plan describing 
+how to develop, maintain and replace specific softw are. It divides the project into distinct 
+stages which follow sequentially and contain key decision points and signoffs. 
+SDLC permits an ordered evaluation of the problem t o be solved, an ordered design and 
+development process, and an ordered implementation of the solution. An example of 
+SDLC is provided in Chart-2: 
+
+Chapter-2: Project Management 
+9 
+Chart-2: Software Development Life Cycle 
+ 
+Audit scrutiny revealed that there was no document available with the Department to 
+ensure that any structured approach for development  of IFMS was adopted. Department 
+continued project development on unstructured appro ach, thus, resulted in non-delivery 
+of key technical design documents (High-Level Desig n and Low-Level Design 
+documents) which was essential to mitigate vendor dependency, non-execution of System 
+Testing and User Acceptance testing to ensure quali ty of the developed software during 
+the project development stages.  
+Thus, non-adherence to SDLC methodology towards sof tware design and development 
+escalated the risk of vendor dependency and compromised the software quality. 
+Government, while accepting the audit observation, stated (Aug 2023) that constant 
+efforts were being made by the Department to get th e essential documents prepared 
+without any additional financial burden. 
+Reply was not acceptable as the fact remains that n on-adherence to SDLC resulted in 
+non-identification of risks during each stage of pr oject development like project timelines 
+were not met, project documentation was not done by  the vendor, deliverables were not 
+achieved, system not tested before Go-Live, cost escalation, quality not assured, etc. 
+ 
+2.2.4 Payment of `` ``    32.08 lakhs to Vendors without ensuring deliverables  
+Agreements between the Department and both the vend ors (M/s. Techno Brain India 
+Private Limited (TBIL) & M/s. Indus Web Solutions P rivate Limited (IWS)) provide for 
+the project milestones with its deliverables and th e amount payable against completion of 
+each milestone. Audit however, noticed that the Dep artment paid contracted amount of 
+₹ 32.08 lakh 1 despite lack of delivery of certain deliverables a s detailed in  Table-2.1 
+below. 
+                                                           
+1 ` 22,24,728 to TBIL and ` 9,84,000 to IWS  
+1. E-Governance 
+Strategy 
+Development 
+2. Current State 
+Assessment 
+3. Future State 
+Definition 
+4. 
+Implementation 
+Approach and 
+Sourcing 
+5. Develop and 
+Implement IT 
+System 
+6. Operate and 
+Sustain 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022  
+10 
+Table-2.1: List of deliverables not delivered by th e vendor. 
+Sl. 
+No. Deliverable Significance of deliverable Audit observation Government’s  
+reply 
+1.  Business 
+Continuity Plan 
+(BCP)/Back-up 
+Plan 
+BCP is a document that outlines 
+every aspect of disaster 
+preparedness, response, 
+recovery, and training. It dictates 
+all the steps that should be taken 
+during a critical event and 
+outlines the preventative 
+measures for mitigating the risks 
+of disaster. 
+The backup plan defines a 
+comprehensive backup strategy 
+to identify critical data and 
+systems to be protected, backup 
+administrator responsibilities, 
+data retention, restoration 
+procedures and more. It is 
+essential because it is last line of 
+defense against data loss 
+stemming from data corruption, 
+hardware failure, or security 
+breach. 
+No BCP formulated by 
+the Directorate till 
+August 2023. In its 
+absence, the staff/ users 
+were unaware of the 
+procedure to be 
+followed in the event of 
+disruptions/ disasters. 
+They were also not 
+trained in preventing, 
+mitigating, and 
+responding to 
+emergency situations. 
+Government 
+emphasized the 
+criticality of BCP 
+during exit 
+conference (June 
+2023) and 
+directed DTPE to 
+frame the BCP as 
+soon as possible.  
+2.  High Level 
+Design (HLD) 
+and Low Level 
+Design (LLD) 
+documents 
+HLD refers to overall system 
+design. It is significant as it 
+covers the system architecture 
+and database. It describes the 
+relation between various 
+modules and functions of the 
+system in brief along with data 
+flow, flow charts and data 
+structures. It converts the 
+business requirements into High 
+Level Solution. 
+LLD refers to component-level 
+design process, thus it is like 
+detailing HLD. It is significant as 
+it converts the High-Level 
+Solution into Detailed solution. It 
+defines the actual logic for each 
+component of the system and 
+goes deep into each modules 
+specification. 
+Design documents were 
+not delivered by the 
+vendor and its contract 
+expired on 31 March 
+2023. As these 
+documents were 
+necessary to understand 
+the system, there was a 
+dependency on vendor 
+as well as contractual 
+staff. In absence of 
+design documents, it 
+will be very difficult for 
+new vendor to gain 
+complete understanding 
+of the system. On 
+expiry of present 
+contract, Department 
+will face a vendor lock-
+in like situation. 
+Government 
+accepted the facts 
+and during exit 
+conference (June 
+2023), directed 
+DTPE to get the 
+essential 
+documents 
+delivered from the 
+vendor as these 
+documents were 
+critical to avoid 
+vendor lock-in 
+situation. 
+3.  Unit testing, 
+System testing, 
+test cases and test 
+reports. 
+Quality Assurance testing (Unit 
+Testing, System Testing, 
+Integration testing, etc.) is an 
+integral aspect of the software 
+development lifecycle to ensure 
+that software meet the required 
+quality, security, availability, 
+No document was made 
+available to audit in this 
+regard. Hence, Audit 
+could not derive any 
+assurance whether 
+software met the 
+required quality, 
+Government 
+accepted the facts 
+(August  2023) 
+and stated that 
+Unit testing, 
+System testing, 
+Test 
+
+Chapter-2: Project Management 
+11 
+Sl. 
+No. Deliverable Significance of deliverable Audit observation Government’s  
+reply 
+reliability, and scalability 
+standards. 
+security, availability, 
+reliability, and 
+scalability standards. 
+cases and Test 
+reports were not 
+provided by the 
+Vendor. 
+4. User Acceptance 
+Testing (UAT) 
+UAT is crucial for the successful 
+launch of any online platform. 
+UAT ensures that system is 
+performing as expected and 
+whether the user accepts the 
+finished product. 
+The system was made 
+Go-Live hurriedly on 
+01 April 2019, within 
+just 10 days of new 
+contract. The 
+Department did not 
+conduct any UATs 
+before implementing 
+the software. Various 
+shortcomings noticed in 
+different modules could 
+be addressed if user 
+acceptance tests were 
+done. 
+ 
+Government 
+replied (August 
+2023) that the 
+work order was 
+issued on 25 
+October, 2018 and 
+based on that 
+Vendor started 
+working on the 
+development of 
+the software.  
+Contract was 
+signed at a later 
+stage. UAT 
+document was not 
+provided by the 
+vendor before Go-
+live. After Go-  
+live FDC prepared 
+UAT Document 
+to ensure software 
+meets user needs.  
+These documents 
+were made 
+available to the 
+Audit.  
+5.  Data migration 
+and verification 
+support; 
+Restructuring of 
+tables and 
+streamlining of 
+database 
+Data Migration is necessary to 
+ensure data is transferred 
+successfully and securely and 
+prevent corruption or data loss. It 
+is required in scenarios where a 
+business needs to upgrade its 
+system or server, hardware, 
+databases that is more aligned 
+with business requirement.  
+The streamlining of databases 
+paves the way for consolidation 
+of databases through integration 
+and elimination of unnecessary 
+tables and overlapping data 
+items. Thus, it allows to take 
+advantage of better data 
+accuracy, better productivity, 
+getting data faster, cost 
+Data Migration, 
+restructuring of tables 
+and streamlining of 
+database was not 
+carried out as data of 
+legacy system was kept 
+in a separate schema. 
+Government 
+stated (August 
+2023) that data 
+migration, 
+restructuring of 
+tables were done 
+by combining all 
+the previous data 
+of the two 
+databases i.e., 
+Core Treasury 
+System and DDO 
+database in a 
+single merged 
+database. For 
+smooth 
+functioning of 
+the system, only 
+current financial 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022  
+12 
+Sl. 
+No. Deliverable Significance of deliverable Audit observation Government’s  
+reply 
+efficiency and overall 
+standardized business processes 
+year data was 
+migrated to 
+UKIFMSW 
+schema and the 
+data 
+previous to the 
+current financial 
+year was kept in 
+BACKDBA 
+schema 
+of the same 
+database. The 
+migrated new 
+joint database was 
+named 
+as IFMRAC. 
+Government, in its reply (August 2023) confirmed th at data of legacy system was kept in 
+separate schema i.e. BACKDBA and only current year data was migrated to new 
+database i.e. UKIFMSW. This clearly shows that the tables were not restructured and 
+databases were not streamlined. 
+Regarding UAT, no supporting documents were provide d to Audit to confirm that work 
+order was issued on 25 October 2018 and UATs were c arried out by the vendor before 
+Go-live. Also, UAT reports provided by the Departme nt showed that UATs were 
+conducted after Go- live of the IFMS. 
+2.2.5 Go-live of IFMS after 10 days of signing cont ract with new vendor 
+M/s. IWS was selected on 25 October 2018 to complet e the residual work after 
+termination of contract with M/s. TBIL. An agreemen t was signed between Department 
+and M/s. IWS on 22 March 2019, according to which 2 4 weeks were assigned to the 
+vendor for completion of the residual work before IFMS was made to Go-Live.  
+Audit noticed that despite agreement, IFMS was made  Go-Live on 01 April 2019, just 
+10 days from signing the contract and without condu cting the mandatory processes of 
+data migration, UAT and a Performance and Quality A udit from Standardization Testing 
+and Quality Certification (STQC). 
+The Government replied (August 2023) that work orde r was issued on 25 October 2018 
+and based on that vendor started working on the dev elopment of the software. The 
+contract was signed at a later stage. So, the vendo r had sufficient time for working on the 
+development of the software. 
+Reply was not acceptable as no supporting documents  were provided to Audit to confirm 
+that work order was issued on 25 October 2018 and t he vendor started working on 
+software development before signing of contract. In  absence of work order, audit could 
+not ascertain when vendor initiated the software development work. 
+
+Chapter-2: Project Management 
+13 
+2.2.6 Relevant Treasury and Financial codes not upd ated 
+Guidelines for ‘Computerization of Treasuries’ issu ed by GoI in July 2010 stipulated that 
+since a large part of treasury computerization woul d become possible only after relevant 
+codes are amended by the States, each state was to prepare and submit an action plan 
+which included the changes required in procedures, practices, codes, manuals and laws 
+(like provision for use of digital signatures, file  formats, transfer of funds electronically) 
+with explicit time lines. The cost of setting up of  a task force to examine the codes was 
+considered a valid cost under the scheme. Similarly , before the IFMS was made go-live 
+in Uttarakhand, a detailed order was issued on 29 M arch 2019 by the State Finance 
+Secretary reiterating that current rules and Financ ial Handbooks would be amended after 
+operationalization of IFMS in the state. 
+During the audit, it was observed that: 
+ The relevant codes like Treasury Rules, Financial H andbooks were not 
+updated/amended to reflect the current situation wh ere majority of critical financial 
+functions and transactions were being carried onlin e through IFMS. This resulted in ever 
+increasing gap between the business rules mentioned in the codes which became outdated 
+and the rules on basis of which actual financial op erations were being transacted in 
+IFMS. 
+ Some functions like digital signature, Bill processing, etc. of IFMS had their basis 
+in GOs issued by GoU. However, for some critical fu nctionalities, audit could not locate 
+any written documentation or authority. For example : Rules governing the system of 
+handling failed payments in IFMS. 
+Case Study : In case of incorrect bank details of beneficiary,  a Return Note was received 
+in IFMS. The details of these failed payments were displayed to DDO and Treasury. 
+DDOs, through failed upload option in IFMS, rectify  the failed payment both in Return 
+Note and Master tables by correcting bank details o f beneficiary. DDO sends a certificate 
+of correctness to treasury and the bill was process ed again. The above process was 
+neither documented nor available in existing financial rules. 
+Government, during exit conference (June 2023) acce pted the audit observation and 
+stated that report had been prepared and submitted by Niyam Samiti  to GoU. The 
+Secretary-Finance directed concerned officials that  a weekly meeting with the members 
+of Niyam Samiti  shall be held to finalize the relevant rules. 
+2.2.7 Change Management 
+National Information Security Policy and Guidelines  provides that the organization must 
+implement and maintain a change management process to track and monitor activity 
+related with changes to existing software applicati ons. Activity such as application 
+maintenance, installation of critical changes, revi ew of changes and post testing, 
+responsibility of changes, documenting change reque st amongst others must be 
+documented with relevant details. Each significant change in application must be 
+approved. SpeMT was responsible for change management. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022  
+14 
+Scrutiny of records revealed that the Department ha d not formulated or adopted any 
+change management policy. Change management in IFMS  was being carried out without 
+approval of SpeMT / FDC-in-charge which shows the l ack of internal controls and 
+monitoring. 
+The Government in its reply (August 2023) stated th at formal change management policy 
+was not in place and changes were made in the softw are after approval from the 
+competent authority and made live after the success ful testing by the team. Framing of 
+change management policy was in progress. 
+The reply was not acceptable as documents provided by the Department revealed that 
+changes in the system were being made without neces sary approval from the competent 
+authority. In absence of change management policy, the due process of change 
+management was not defined. 
+2.3 Conclusion 
+The Department had not conducted preliminary study and BPR which resulted in 
+functional deficiencies in IFMS. Further, SDLC fram ework was not followed during 
+software development which resulted in non-delivery  of essential technical documents of 
+the project. Department made a payment of 
+₹ 32.08 lakhs to vendor without ensuring 
+certain major deliverables like BCP, Testing report s etc. IFMS was made Go-Live 
+without ensuring sufficient testing. Post Go-Live, relevant treasury and financial codes 
+were not updated to align with the working of IFMS.  The department did not frame any 
+change management policy to track and monitor modif ications in the source code of the 
+IFMS. 
+2.4 Recommendations 
+ The Department should ensure delivery of technical documents (HLD, LLD, test 
+cases etc.) from the vendor to avoid any vendor lock-in situation. 
+ The Department should expedite the process of updat ing of financial rules/codes 
+in line with the working of IFMS. 
+ The Department should issue Standard Operating Proc edure (SOP) for key 
+process implemented in IFMS such as correction of a ccounts, handling of failed 
+payments, etc. 
+ The Department should formulate and implement a Cha nge Management Policy 
+for any changes to be made in IFMS source code. 
+ 
+
+Chapter -3 
+System Functionality and Controls 
+
+15 
+CHAPTER-3 
+System Functionality and Controls 
+3.1 Functioning of IFMS system 
+Nine modules were selected for this performance aud it: Budget (Budget Preparation, 
+Budget Disbursement, Budget Maintenance and Budget Planning) DDO, E-Challan, 
+Receipt Accounting, E-Payment and Payment Accountin g. They capture whole process 
+from Budget estimation and approval to expenditure and receipt, their accounting and 
+their compilation by AG (A&E) as Finance Account.  
+3.2 Audit findings 
+The Audit noticed following shortcomings in system functionality and controls of IFMS:  
+3.2.1 Modules envisaged in IFMS not implemented 
+The IFMS application was developed by M/s. TBIL and  M/s. IWS. As per RFP 
+document, 31 Modules were to be developed by the ve ndor. Also, approval of SPeMT 
+committee was required before undertaking any chang es in scope of work. Audit noticed 
+that only 25 modules were developed by the vendor, with following modules (Table-3.1) 
+declared ‘out-of-scope’ by the Directorate without consulting the stakeholder 
+Departments and without obtaining necessary approvals from SPeMT. 
+Table-3.1: List of modules declared out-of-scope 
+Sl. No.  Modules  Objective/Function  
+1. Resource Planning 
+It includes receipt estimation and would have helped t he resource planning 
+section to perform trend analysis and estimation of  expected figures of 
+receipt for the next year.  
+2. Public Debt 
+Management 
+The module would have provided projection on GoU  fiscal deficit. Periodic 
+cash inflow and outflow projections through this mo dule would have been 
+a critical factor in resource planning estimates an d meeting mandatory 
+liabilities of GoU . 
+3. Budget Plan An interface was to be provided to State Planning Department  to upload 
+annual plan outlay and filtering of estimates under Plan and Non Plan head.  
+4. Input/output It included  generation of State Cash Book for receipt and payme nt and 
+graphical presentation of data of five years for decision makers.  
+5. E-Audit 
+It included  Annual Audit Plan, digitization of formats as per a udit manual, 
+audit sampling techniques, Computer Aided Audit Tec hniques, audit 
+progress monitoring system , etc.  
+The Government replied (August 2023) that meetings were held under the chairmanship 
+of competent authorities and as per the directions these modules were kept out of scope. 
+Additionally, certain new modules like SGHS, OPGM, RBI eKuber 2.0 upgradation etc. 
+were added in place of modules kept “Out of Scope”. 
+Reply was not acceptable as the Department did not provide any documents to support 
+the fact that meetings were held with the respectiv e Department. As every module had 
+different requirements and involved different quant ity of work in its development, 
+therefore replacing some modules with others did no t justify that same amount of work 
+was executed. Also, the Department did not seek any  approval for these changes from 
+SPeMT. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+16 
+3.2.2 Manual sanctions  
+GoU order stipulated that paperless facility should  be available in IFMS for any 
+application, form, bill, sanction order, etc. relat ed to any work and it would be auto 
+generated from system. 
+The Audit noticed that the sanctions were not auto generated from IFMS but 
+communicated physically by the competent authority.  The processing of sanctions was 
+handled in IFMS in broadly two ways: 
+ Facility of uploading sanctions available on IFMS i n some cases : Physical 
+sanctions/ sanctions obtained through e-Office were scanned and uploaded along-with the 
+bill in IFMS. Sanctions related to expenditure coul d be uploaded along with other 
+supporting documents during Upload Document stage. 
+ No facility of uploading sanctions available in res t cases : No facility was 
+available in IFMS for capturing the sanctions/order s related to creating a new DDO post 
+or suspension of an employee. Although the processe s could be carried out through 
+IFMS, its authenticity could not be relied upon, as  the functionality to upload 
+sanctions/orders was not available in IFMS. 
+Provision of uploading of sanction orders in IFMS u navailable in case of suspension and 
+creation of new DDO post depicted failure in accomp lishment of paperless facility in 
+IFMS and lack of functionality to auto-generate san ction orders in IFMS and thus, paved 
+the way for manual intervention. 
+The Government accepted the facts and stated (Augus t 2023) that sanction orders were 
+generated using e-Office and a PDF copy of these or ders was uploaded in IFMS. 
+Communication with NIC was open regarding integrati ng e-Office with IFMS. Also, 
+working of IFMS was completely made paperless from 01 Jan 2023 for cyber treasury 
+and from 01 April 2023 for all the other treasuries , uploading of supporting document 
+was made mandatory in almost all the modules. 
+3.2.3 Non-revocation of access rights of ceased use rs  
+User rights and permissions are the levels of acces s granted to users, enabling them to 
+perform specific tasks and access resources on netw ork such as data files or applications. 
+There are four types of access rights (roles) in IF MS viz., Employee, Operator, 
+Supervisor and Officer. These access rights enable users to perform various tasks 
+associated with IFMS. 
+Data Analysis revealed that access rights of 23 emp loyees who had retired or resigned 
+from service or deceased were not revoked. No funct ionality was available in IFMS to 
+auto deactivate the users from assigned role in cas e of death, retirement, or resignation. It 
+was the responsibility of concerned Treasury Office r/DDOs to manually deactivate the 
+User Roles in IFMS. Manual deactivation of User Rol e rather than auto deactivation 
+renders IFMS vulnerable to potential risk of misuse of functionalities of IFMS. 
+
+Chapter-3: System Functionality and Controls 
+17 
+The Government accepted the facts and stated (Augus t 2023) that the issue had been 
+resolved and assigned roles were removed by default  as soon as Last Pay Certificate 
+(LPC) was generated in any of the cases (transfer, death, retirement or resignation). 
+3.2.4 Non-review of Super User activity 
+DTPE created a ‘Super User’ who was to act like fro nt end gateway meant for Data 
+Center for facilitating its treasury operations. It  was the most privileged user in DTPE 
+who was capable to make any changes (Modify/Update)  in various Master 
+ tables like 
+Bank Master, DDO Master, Treasury Master, HoD Maste r, etc. Functionalities which 
+were inter alia performed by Super User were: 
+ DDO Code Creation  
+ Treasury IP binding  
+ Update Master  tables  
+ Display alerts/messages in IFMS  
+ Update DA/DR rates  
+However, Audit observed that Super User was single- handedly performing critical 
+functions like significant changes in Masters i.e. changes in bank details, changes in 
+scheme, activate/deactivate menu in IFMS, changes i n Object Code, DDO Post 
+generation, update party name, etc. It implied that  an individual (Super User) had full 
+control over master data. Activities of Super User,  despite it being the most privileged 
+user, were never reviewed. Super User login facilit ated single mode approval rather than 
+three tier approval, as envisaged in Government Orders. Hence, it was pertinent to review 
+its activities periodically. Furthermore, DTPE was unable to formulate any 
+documentation to substantiate activities performed by Super user. Non-reviewing of 
+critical treasury functions discharged by immensely  empowered Super User was sheer 
+illustration of arbitrary conduct and thus, subject ed to individual will or judgement 
+without restriction.  
+The Government replied (August 2023) that any chang es made by Super User were 
+performed after the approval from the competent aut hority and logs for the same were 
+also being maintained in the system. Also, Implemen tation of three level approval for 
+super user was in progress. 
+Reply was not acceptable as the Department did not provide any document to support 
+their claims. Further, three levels of approval for Super User was to be implemented.  
+3.2.5 Budgetary work flow and control deficiencies  
+The budgetary process in IFMS was required to provi de support for Budget management, 
+including preparation, communication, and revision of budgets for the State/UT 
+Governments. It would enable the Department to mode rate the demands made by field 
+offices and submit them to the Finance Department, indicating their requirements for 
+funds. The Finance Department would analyze the dem ands from various perspectives 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+18 
+and finally recommend provisions for each of the bu dget heads/ Department. The module 
+would be able to print the document for being place d before the legislature for approval. 
+This module would facilitate timely releases as wel l as adherence to the authorized limits 
+of expenditure by the DDOs. The module would allow re-appropriation / supplementary 
+grants, surrenders to be handled through it in similar manner. 
+Audit noticed following systemic deficiencies in their analysis:  
+3.2.5.1 Key work flow processes not automated 
+(i)  Audit noticed that following key processes in the workflow of budget preparation, 
+approval and distribution were done manually or req uired manual intervention in some 
+form or other. 
+a)  Budget estimation: Budget estimation includes both receipt and expendi ture 
+estimates for generation of Annual Financial Statem ent or State Budget to be laid before 
+Legislature. Budget Estimates (BE) limited to expen diture estimates from DDO to HoD 
+and from HoD to Secretary level were submitted thro ugh IFMS. During the system 
+walkthrough, it was noticed that there was no integ ration between IFMS and Department 
+of Finance (Budget Section). However, an interface was provided to the budget section in 
+IFMS. The secretaries could submit consolidated exp enditure estimates to Finance 
+Department online followed by final submission to B udget section for consideration. 
+Thereafter, the budget section downloaded the expenditure estimates in excel format from 
+the available interface in system for budget formul ation. IFMS was oblivious of the data 
+worked upon by the budget section for budget formul ation. Thus, due to absence of 
+integration with Budget section, complete automatio n was not achieved in budget 
+workflow. 
+b)  Receipt estimates: IFMS supported online submission of expenditure est imates 
+only whereas online submission of receipt estimates  was not supported as the Resource 
+Planning module proposed for receipt estimates was dropped. Thus, due to incomplete 
+formulation of budget estimation, IFMS was unable t o generate State Budget (Budget 
+Literature) which was required to be generated from the system automatically. 
+c)  Revised estimates: Due to absence of functionality in IFMS, revised es timates 
+were submitted manually by the Department. 
+The Government accepted the facts and stated (Augus t 2023) that the entire budget 
+module was developed as per the requirement of the budget directorate. Budget 
+preparation was being done by the budget Department  using its own software. Therefore, 
+many functionalities associated with budget prepara tion had not been provided in IFMS. 
+However, Receipt estimation and revised estimation functionality would be provided in 
+IFMS from financial year 2024-2025 after consultation with budget Department. 
+(ii) Uploading of approved budget in IFMS : After the budget is approved by 
+Legislature, there was no functionality in IFMS for  budget section either to upload or fill 
+the approved budget details in IFMS. Therefore, approved budget details were sent by the 
+
+Chapter-3: System Functionality and Controls 
+19 
+Finance Department to FDC, DTPE in excel format thr ough e-mail. FDC imported the 
+budget details in IFMS database manually which then  became available to all secretaries 
+for further distribution. 
+The Government accepted the facts and stated (Augus t 2023) that at present, database 
+dump was shared by the budget section after its app roval by the Governor. However, 
+from financial year 2024-25, the budget data will b e obtained through an API from the 
+budget section in the Finance Department. 
+(iii) Budget distribution:  
+ From Secretary to HoD : A batch ID was generated in IFMS whenever secreta ry 
+allotted funds to HoD. The Batch ID generated in IF MS was not visible to HoD. 
+Therefore, Batch ID was being communicated to HoD t hrough a letter. Once the letter 
+was received, HoD was required to enter the Batch I D manually in IFMS and accept the 
+funds. There was no functionality to accept the funds automatically. 
+ From HoD to DDO : Similarly, a Batch ID was generated and communica ted to 
+DDO through a letter by HoD after allotment of funds. In place of DDO, the functionality 
+to accept the budget was provided to Treasury Offic er. For acceptance of allotted budget, 
+DDO had to produce the letter before the Treasury Officer. 
+DTPE accepted the facts and assured Audit that all manual intervention in all modules 
+would be automated after implementation of e-sign. 
+The Government accepted the facts and stated (Augus t 2023) that working of IFMS was 
+made paperless from 01 April 2023 across the state.  Also, alert functionality was 
+implemented for all the modules. 
+3.2.5.2 Deficient control over Re-appropriation of budget 
+Rule 134 of Uttarakhand Budget Manual stipulates th at Re-appropriations are not 
+permissible -  
+(i)  from one Grant/Appropriation to another; 
+(ii)  from the Charged to the voted section or vice versa; 
+(iii)  where provision for an existing service has been ma de either in the Revenue, 
+Capital or Loan section and it is proposed to chang e the character of service by 
+transferring it from the existing section to any other section; 
+(iv) to provide for new expenditure, whether voted or charged; 
+(iv)  to increase or provide for the expenditure on an it em the provision for which was 
+specifically reduced or disapproved by the Assembly either through a substantive or 
+a token cut; and  
+(v)  after the close of the financial year. 
+Audit scrutiny of the system revealed that there wa s no control or check in IFMS to 
+prevent re-appropriation of budget between inadmiss ible budget heads (from Voted to 
+Charged head and vice-versa  or from Revenue to Capital head and vice-versa ). Analysis 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+20 
+of IFMS data revealed re-appropriation of ₹ 51.85 crore from Revenue head to Capital 
+head in 2020-21 and ₹ 13.87 crore from Loan head to Revenue head as deta iled in 
+Table-3.2 . 
+Table-3.2: Instances of inadmissible Re-appropriations 
+Sl. 
+No. 
+Financial 
+Year 
+Grant 
+No. From Head To Head Amount 
+(in `` ``) Remarks 
+1 
+2020-21 19 
+250106102010105 451500102010653 2,78,00,000 
+Revenue Head 
+to Capital Head  
+2 251500102011042 451500102010653 18,00,00,000 
+3 251500102280050 451500102010653 6,00,00,000 
+4 251500102350050 
+251500102350056 451500102010653 7,10,00,000 
+5 11 220202113010303 420201202010153 17,97,14,778 
+6 2020-21 18 242500106030050 642500108020061 13,86, 69,800 Loan Head to 
+Revenue Head  
+The Government accepted the facts and stated (Augus t 2023) that necessary validations 
+were implemented as per Uttarakhand Budget Manual, 2012. 
+3.2.5.3 Irregular surrender of budget 
+Rule 125 of Uttarakhand Budget Manual provides that  all the final savings must be 
+surrendered to the Finance Department by 25 
+th  March. 
+Audit scrutiny of IFMS revealed that there was no c ontrol or check to prevent generation 
+of surrender requests after the end of financial ye ar. Thus, the system was allowing 
+surrender of budget after 31 st  March. Analysis of IFMS data revealed that: 
+ A total of 1493 surrender requests were submitted f rom HoD to secretary level 
+after 31 March 2021, i.e., from April 2021 to August 2021 (FY 2020-21). 
+ A total of 2339 surrender requests were submitted f rom HoD to secretary level 
+after 31 March 2022, i.e., from April 2022 to September 2022. (FY 2021-22). 
+Moreover, the Audit noticed that there was no funct ionality in IFMS through which the 
+concerned secretaries could surrender the excess bu dget of their Department to the 
+Finance Department. In absence of such functionalit y, the surrender was done through 
+manual process. 
+The Government accepted the facts and stated (Augus t 2023) that implementation of 
+functionality to enable budget surrender by Secreta ry to Finance Department was in 
+progress. 
+3.2.5.4 Absence of alert functionality 
+There was a provision in DPR and FRS to generate e-mail alerts in IFMS on irregularities 
+like unexpected variation in estimates. Regular ale rts to notify concerned estimating 
+officer about the last date of estimate submission were also to be generated in IFMS so 
+that budget estimates from all Department could be submitted timely. During system 
+walkthrough, Audit noticed that budget estimate sub mission timeline was not captured in 
+IFMS. E-mail alert functionality, as part of intern al control and monitoring, was not 
+implemented in IFMS to notify higher authorities ab out any unexpected variation or 
+delay in submission of estimates. 
+
+Chapter-3: System Functionality and Controls 
+21 
+The Government accepted the facts and stated (Augus t 2023) that e-mail alert 
+functionality was developed and it would be enabled  for the officials whose official 
+email-id are available in the system. 
+3.2.6 DDO module workflow and controls  
+Drawing and disbursing officer works on behalf of s tate government and is responsible 
+for all money received or disbursed in his office a nd the maintenance of accounts thereof. 
+There were 4586 DDOs in the state who were using E-DDO module in IFMS.  
+DDO module was an online application/interface in IFMS which enabled DDOs 
+ to:  
+ to create various bills and submit those bills online to Treasury, 
+ to prepare and approve employee loans and advances like House Building advance, 
+Medical Advance, Travelling Allowance, GPF advance and LTC advance, 
+ to generate pension papers of retiring servants, 
+ to online Reconcile data with Treasuries, 
+ to generate Cash Book, 
+ to keep track of receipts and expenditure through v arious MIS reports like Bill 
+Register, UTR detail, Payment Status Report and Voucher list, etc., and 
+ to view the status of their bills submitted online,  and verify status whenever their 
+Bill was approved. 
+Audit noticed following systemic deficiencies in DDO module: 
+3.2.6.1 Non segregation of roles 
+GoU directed that operator (Maker), supervisor (Che cker) and Officer (Approver) would 
+be made three tier users separately in IFMS portal. 
+Data analysis revealed that system, while mapping a n employee to DDO post, by default 
+assigned multiple roles (Operator, Supervisor, Offi cer, and Admin) to a single employee. 
+There was no bar on assigning distinct roles to dif ferent employees, as multiple roles 
+could be assigned to a single person in IFMS. Furth er, Audit noticed that a DDO could 
+assign multiple roles to a subordinate employee. As  a result, Audit noticed instances of a 
+single user performing different and incompatible r oles and functions as shown in  
+Table-3.3 : 
+Table-3.3: Instances of Incompatible roles by same user 
+Financial 
+Year 
+Total no. of bills 
+processed during the 
+year 
+All the three user’s 
+functions performed by a 
+single person 
+Two out of three user’s 
+functions performed by a 
+single person 
+2019-20 6,28,663 3,03,940 1,45,611 
+2020-21 6,80,802 2,64,875 1,91,485 
+2021-22 6,71,553 2,61,496 1,85,506 
+01.04.22 to 
+01.11.22 4,47,186 1,32,824 1,37,937 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+22 
+It is evident from above Table that the segregation  of duties which is a strong safeguard 
+against error, fraud and embezzlement was largely a bsent in financial transactions of the 
+State government. 
+The Government accepted the facts and stated (Augus t 2023) that due to limited staff in 
+many offices, the ability to assign multiple roles to a single person was kept flexible. 
+The reply was not acceptable as assignment of multi ple roles to a single user clearly 
+depicted lack of segregation of duties. 
+3.2.6.2 Incomplete implementation of e-sign functio nality  
+Government orders provided that bill would be prepa red online and scanned copy of 
+related sub-voucher/vouchers/sanction orders, etc. would be uploaded in the system along 
+with the bill. The existing practice of producing h ard copy of bill and vouchers at 
+treasury/PAO was to be discontinued. To achieve this, e-signature was to be implemented 
+at all levels.  
+Audit noticed that the Department did not implement  e-sign functionality in all types of 
+bills. E-sign functionality was implemented only in  three types of bills (Whole Transfer, 
+Value Added Tax refund and State Government Health Scheme claims) and two types of 
+reports (Pension Payment Order and Monthly accounts  sent to AG (A&E)). Remaining 
+bills were being prepared and forwarded to treasury /PAO online. As e-sign functionality 
+was not implemented, a printout copy of online prep ared bill, along-with original 
+supporting documents, after manual signature was be ing sent physically to treasury/PAO 
+for passing of payment. Treasuries, after matching the specimen signature of DDO, 
+passed the bill online. After passing the bill onli ne, treasury transmitted the payment 
+schedule electronically to RBI for e-payment. Once e-payment was made, physical bills 
+were marked as paid and vouchers/sub-vouchers were defaced manually by the treasury. 
+The Government accepted the facts and stated (Augus t 2023) that e-sign functionality 
+was implemented in all the modules of IFMS. 
+3.2.6.3 Inconsistent workflow 
+The procedure for bill processing was divided into three main phases: Bill Initiation, 
+Document Upload, and Bill Generation. Initially, th e Bill was prepared by the DDO, who 
+completed essential information such as the grant, head of the account, and the amount. 
+Subsequently, the DDO uploaded the necessary accomp anying documents. Once done, 
+the DDO triggered the bill generation process, resu lting in the creation of a Transaction 
+ID. This ID was then sent to the Treasury for the subsequent stages of processing. 
+During the audit, it was observed that the DDO enco untered difficulties in creating bills 
+due to the absence of a feature that would automati cally display the budget availability 
+for a specific scheme in IFMS during the bill processing. This led to a situation where the 
+budget availability was not automatically populated  while entering details for a particular 
+scheme during bill processing. In cases where the b udget limit was exceeded, a message 
+
+Chapter-3: System Functionality and Controls 
+23 
+indicating that the 'bill cannot be generated' woul d appear during the Bill Generation 
+stage. This forced the DDO to start the bill preparation process anew. 
+To ensure budget availability, the DDO had to manua lly cross-reference a separate 
+register called the 'Budget Register' in the IFMS. This involved navigating through 
+various pages of the DDO web application to check t he budget availability during the bill 
+processing. This approach resulted in an inconsiste nt workflow for the bill processing 
+procedure and imposed unnecessary workload on the DDO. 
+The Government accepted the facts (August 2023) and  assured of improvement in User 
+interface of bill preparation. 
+3.2.6.4 Absence of DDO specimen signature in system  
+Workflow automation was one of the key objectives of the IFMS project. 
+Audit noticed absence of a functionality that would  allow the DDO's specimen signature 
+to be automatically populated within the system thr oughout the entire Bill Processing 
+Workflow. Instead of utilizing an online submission  process through IFMS, the DDO's 
+name and specimen signature were being manually tra nsmitted to the 
+PAO/Bank/Treasury Officer. Even after the online su bmission of the bill to the Treasury, 
+the DDO still had to send a physical printout of th e online-prepared bill to the Treasury. 
+There, the Treasury Officers manually cross-verifie d the signature on the bill with the 
+DDO's specimen signature, which had been provided m anually to the concerned treasury 
+for authentication. 
+The lack of an automated DDO specimen signature mec hanism prevented the system 
+from achieving full paperless functionality. This absence created a barrier to the complete 
+elimination of the necessity to print bill documents for physical signatures. Consequently, 
+Government Departments were unable to fully realize  the advantages of a seamlessly 
+electronic workflow. 
+The Government accepted the facts and stated (Augus t 2023) that e-sign functionality 
+was implemented in all the modules of IFMS. 
+3.2.6.5 Non-automation of functionalities in DDO mo dule 
+(i)  Creation of New DDO Code 
+DTPE created a Super User who was provided with pri vilege to change DDO Master. 
+Super User through DDO Master created Post/Designat ion of DDO consequent upon 
+receiving of Government Order regarding approval of  creation of new DDO which 
+contained therein only name of DDO and Treasury wit hout mention of DDO Code. After 
+filling various fields like DDO Code, Treasury, DDO  Name, Department, Tax Deduction 
+and Collection Account Number (TAN), Goods and Serv ices Tax Identification Number 
+(GSTIN), District, Mobile Number and Email ID in DD O Master, DDO ID was created. 
+Thereafter any Treasury Officer (having same treasu ry which was contained in GO while 
+creating post of DDO) via his Admin Role maps requi site employee to DDO. After this 
+stage, User ID was created for that particular employee. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+24 
+Audit noticed that DDO Code was entered manually ra ther than auto generated in IFMS, 
+whereas it was observed that Secretary Code was auto generated. DDO Codes were being 
+allotted randomly by DTPE. No prescribed formula or  criteria was being followed while 
+allotting DDO Codes rendering non-uniformity in allotted DDO Codes. 
+The Government accepted the facts (August 2023) and  assured of implementing the 
+functionality in future. 
+(ii) Bill Register (11C) Serial Number 
+A bill register was maintained physically by DDO fo r record of all bills processed for 
+later verification with Treasury.  
+Audit noticed that at the time of Generating Bill, 11C serial number (Bill register) was 
+entered manually rather than auto populated in IFMS . The serial number to be entered 
+was to be time and again tracked from physical Bill  register maintained in the office. 
+Thus, IFMS lacked the functionality of tracking Bil l serial numbers despite the fact that 
+all bills were being processed through IFMS. Non-ac hievement of automation in above 
+functionalities in DDO module defeated the very pur pose of holistic automation of whole 
+DDO functions and enhanced the unnecessary manual workload. 
+The Government accepted the facts and stated (Augus t 2023) that functionality of auto 
+generation of 11C numbers was implemented. 
+3.2.6.6 Lack of internal control in timely processi ng of bills  
+Government orders provided that a bill since its creation in DDO office till its approval at 
+treasury/PAO could be held for a maximum period of one day at each user level. If a bill 
+was held for more than one day at any level, then s ystem should not allow the bill to be 
+approved at maker and approver level for further processing. 
+System walk-through revealed that no alert/checks mechanism was implemented in IFMS 
+to force or remind the maker, checker, or approver to process the bill within stipulated 
+time limit. 
+Data analysis revealed that government orders were not implemented in IFMS, and bills 
+were found to be pending at each level for more than 30 days as shown in Table-3.4 : 
+Table-3.4: Pendency of bills at different stages 
+Financial 
+Year 
+Total Bills 
+Processed 
+during the 
+year 
+Time 
+taken 
+(in 
+days) 
+Number of Bills processed 
+At DDO level At Treasury/PAO level 
+By 
+Maker 
+By 
+Checker 
+By 
+Approver 
+By 
+Maker 
+By 
+Checker 
+By 
+Approver 
+2019-20 628663 
+00-01 526373 574898 582993 323560 615842 603377 
+02-10 92798 49803 41880 269138 12398 24252 
+11-20 7282 3042 3001 26666 318 698 
+21-30 1428 621 489 5883 63 196 
+More 
+than 30 782 299 300 3416 42 140 
+ 
+2020-21 
+ 
+ 
+680802 
+ 
+00-01 560025 623726 636113 385275 662280 671247 
+02-10 115143 55157 42591 283447 17765 9516 
+11-20 4592 1522 1685 8950 541 34 
+21-30 728 253 289 1911 103 2 
+
+Chapter-3: System Functionality and Controls 
+25 
+Financial 
+Year 
+Total Bills 
+Processed 
+during the 
+year 
+Time 
+taken 
+(in 
+days) 
+Number of Bills processed 
+At DDO level At Treasury/PAO level 
+By 
+Maker 
+By 
+Checker 
+By 
+Approver 
+By 
+Maker 
+By 
+Checker 
+By 
+Approver 
+ 
+ 
+ 
+ 
+More 
+than 30 314 144 124 1219 113 3 
+2021-22 671553 
+00-01 555845 614403 626586 404005 647553 659790 
+02-10 110128 55022 43018 267548 23768 11763 
+11-20 4553 1707 1576 0 163 0 
+21-30 709 306 238 0 21 0 
+More 
+than 30 318 115 135 0 48 0 
+Further, though, a DDO could check the status of bi lls pending at various levels but 
+duration of pendency was not shown. Not-implementin g of above timelines/ 
+functionalities in IFMS was in contravention of Gov ernment Order and manifests lack of 
+internal control in timely processing of bills at v arious levels and also the possibility of 
+lack of accountability and delay in processing of bills cannot be ruled out. 
+The Government accepted the facts and stated (Augus t 2023) that timeline of one 
+working day at each user-level had been implemented  from 01 April 2023. Also, 
+dashboard preparation for monitoring/alert purposes was in progress. 
+3.2.6.7 Lack of internal control in drawing of AC b ills  
+Financial Rules provided that Drawing Officer is au thorized to draw advances on 
+Abstract Contingent Bill (AC Bill). A certificate to the effect that the Detailed Contingent 
+Bills (DC Bills) in respect of drawings on AC Bills  have been furnished in respect of 
+each drawing which is over three months old has been recorded on the DC Bill. 
+Audit noticed that system accepted all AC Bills wit hout checking any details related to 
+pending DC Bills. DC bills were required to be subm itted to AG (A&E) and certificate to 
+this effect was to be attached with AC bills. In fa ct, a separate provision for capturing 
+details of this certificate did not exist in the sy stem. Details of AC bills not adjusted 
+within stipulated time limit is shown in Table-3.5 and 3.6 : - 
+Table-3.5: Details of AC Bills adjusted through DC Bills 
+Financial 
+Year 
+Total No. of 
+AC Bills 
+Drawn 
+Duration of AC Bills adjusted through DC Bills 
+Within 3 
+months 
+3 to 6 
+months 
+6 to 9 
+months 
+9 to 12 
+months 
+Beyond 
+1 year 
+Beyond 2 
+year or 
+more 
+2019-20 1558 108 61 19 13 0 0 
+2020-21 838 157 24 10 9 23 0 
+2021-22 600 226 59 12 15 30 8 
+Table-3.6: Details of pending AC Bills 
+Financial 
+Year 
+Previous year’s AC 
+Bills pending for 
+adjustment 
+Total No. of AC 
+Bills Drawn 
+during the year 
+Bills adjusted 
+through DC 
+Bills 
+AC Bills pending for 
+adjustment at the 
+end of year 
+2019-20 1217 1558 201 2574 
+2020-21 2574 838 223 3189 
+2021-22 3189 600 350 3439 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+26 
+Not adjusting of AC bills in stipulated time indica tes lack of monitoring and internal 
+control at treasuries level.  
+The Government accepted the facts and stated (August 2023) that implementation of such 
+control through IFMS would be explored in future. 
+Reply was not acceptable as AC bills were to be adj usted timely as per existing financial 
+rules. 
+3.2.6.8 Non-availability of functionality for Bill Defacement in IFMS  
+All sub-vouchers, whether they were to be retained in the Office of the DDO/Controlling 
+Officer or to be submitted to the AG (A&E), should be cancelled or so defaced or so 
+mutilated by the DDO concerned that they cannot be used again. 
+Audit observed that there was no functionality for online Bill Defacement in the IFMS 
+even though, IFMS had checks and controls for preve nting generation of duplicate bills. 
+Once e-payment was made, physical bills were marked  as paid and vouchers/sub-
+vouchers were defaced manually by the treasury. 
+The Government replied (August 2023) that digital d efacement will not serve any 
+purpose because without physical defacement the sam e sub-voucher may be uploaded 
+again. Also, necessary validations had already been  implemented to avoid the possibility 
+of re-use of the same invoice/sub-voucher. 
+Reply was not acceptable as digital defacement was necessary in cases where only online 
+bills were provided by the third party for achieving paperless processing of bills.  
+3.2.7 e-Payment work flow and controls 
+e-Payment module of IFMS was designed for automated  processing of electronic 
+payments. The entire process like preparation of tr ansaction files for uploading to bank, 
+integrations with payment gateways and treasury por tal along with proper validations, 
+were captured and followed in the module. On behalf  of government, RBI was 
+responsible for making all e-payments except draft payments as draft payments were 
+processed by SBI. All payment requests from IFMS to  RBI and SBI were transmitted 
+through Secure File Transfer Protocol (SFTP) in the  form of payment schedules. Once 
+payment was credited to the beneficiary, the detail s of payment were transmitted back by 
+both the banks to IFMS. Payment details received fr om RBI and SBI were populated in 
+IFMS through scheduler. Audit observed following de ficiencies during analysis of 
+e-payment module: -
+  
+3.2.7.1 Beneficiary bank details not validated  
+Functional Requirement Specification (FRS) of e-pay ment module provided that while 
+making e-payment, the bank account details of benef iciary or third party would be 
+pre-validated. During system analysis, audit notice d that only limited checks which 
+included checks on length of account number and Ind ian Financial System Code (IFSC) 
+only, were available for pre-validation of bank acc ount details. Complete checks 
+
+Chapter-3: System Functionality and Controls 
+27 
+regarding correctness beneficiary name, IFSC and be neficiary account number were not 
+present in the system.  
+The Government accepted the facts and stated (August 2023) that DTPE had signed MoU 
+with National Payments Corporation of India (NPCI) for validating the beneficiary’s 
+name, account number, IFSC etc. and this functionality would be implemented soon. 
+3.2.7.2 Reconciliation process not automated  
+Workflow automation was the main objective of IFMS project. It removes manual 
+intervention and hence ensures data accuracy and integrity. 
+Audit noticed that the process of reconciliation of  payments between RBI/SBI and 
+Treasury was not automated and carried out manually . The daily and monthly scrolls 
+were received from agency banks and RBI through e-m ail. The payment details received 
+in scrolls were manually reconciled by treasuries a nd posted in IFMS. Hence, 
+reconciliation process was not automated. 
+The Government stated (August 2023) that there was automatic reconciliation of 
+payments done using RBI’s e-Kuber system. IFMS auto matically identify the differences 
+in Return Note (RN)/Debit Note (DN) details and ACS T (Account Statement). Once 
+identified, treasury officials would take up the is sue with RBI and resolve the difference. 
+E-mail facility was an additional check to verify t he account statement manually. It was 
+same as the details already shared electronically in the form of ACST. 
+Reply was not acceptable as Department did not prov ide any documents to support their 
+claim of automatic reconciliation of payments in IFMS. 
+3.2.8 e-challan module: A successful tool 
+The practice of manual deposition of governmental r eceipts was discontinued and online 
+collection of all Government receipts through e-Cha llan module was made mandatory 
+w.e.f. 01 April 2021. 
+ e-Challan module facilitated selection of Departmen t and its 
+various services automatically. Multiple services o f a Department could be selected for 
+depositing amount against each service in a single challan ( Figure-1). The module 
+provided the options to deposit the challan amount online or offline. Payment for offline 
+challan could be made at any SBI counter. For onlin e challans, SBI provided banking 
+services including payment gateway, internet bankin g, mobile banking, etc. SBI prepared 
+a daily receipt e-scroll and sent it to IFMS throug h SFTP. Once e-scroll was received 
+from SBI, the IFMS reconciled the receipts automati cally. Department having their own 
+receipt collection portal like excise, mining, elec tion, Police Headquarter, etc. were 
+integrated with IFMS.  
+Audit checked the e-challan module on the parameter s like complete head classification, 
+automation of workflow, checks to prevent refund mo re than once, etc., and found that 
+entire workflow of the module was automated, contai ned necessary checks and controls 
+and functioning as per requirements. Hence, e-chall an module successfully achieved its 
+objectives. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+28 
+ 
+Figure-1 
+ 
+3.2.9 Accounting workflow and integration with AG ( A&E)  
+Financial Rules stipulated that after the close of the month, a consolidated monthly 
+account should be sent to the Accountant General, A ccounts & Entitlements (AG- A&E). 
+The respective treasury generated the monthly accou nts in IFMS and submitted its 
+e-signed report to AG (A&E) online. Various e-signe d reports such as List of Payments 
+(LoP)/Schedule of Payments (SoP), cash account, Res erve Bank Deposit statement, etc. 
+and other data were being forwarded to A&E office t hrough IFMS user interface. During 
+analysis of receipt accounting module, audit observed that: 
+3.2.9.1 Partial integration of IFMS with Transport Department 
+Online receipts of transport Department were collec ted using departmental portal i.e. 
+e-Vahan/ Sarathi  etc. Since there was no integration between IFMS a nd e-Vahan/ 
+Sarathi , the information regarding the receipts collected by Transport Department were 
+received at FDC only through e-scrolls received fro m SBI.  As e-scrolls of Transport 
+Department contained only major head wise details. Thus, the complete 13-digit 
+classification of receipt heads was not captured in  IFMS leading to incomplete data being 
+forwarded to AG (A&E). 
+The Government accepted the facts and stated (Augus t 2023) that multiple reminders 
+were sent to the Transport Department but no action  was taken by Transport Department 
+in this regard. 
+Reply was not acceptable as complete integration wi th Transport Department was not 
+achieved. Further, the reply clearly depicted that there had been lack of synergy between 
+DTPE and Transport Department since requirement gathering phase of the project. 
+
+
+Chapter-3: System Functionality and Controls 
+29 
+3.2.9.2 Deficient functionality of correction of ac counts through transfer entries  
+Audit noticed that although, functionality of propo sing accounts correction through 
+transfer entry was developed in IFMS, the process of account correction and the authority 
+of AG (A&E) office was not captured in the system. Thus, the correction proposals were 
+not submitted to AG (A&E) office through IFMS. Inst ead, to propose any correction in 
+accounts through transfer entry, a printout of the proposal was taken out by the concerned 
+treasury and sent manually to the AG (A&E) Office. After the approval from AG (A&E) 
+Office was obtained, the same was approved in IFMS by the Treasury Officer. 
+The Government accepted the facts and stated (Augus t 2023) that functionality for 
+correction of account through transfer-entry was pa rtially automated and team was 
+working to fully automate this process.  
+Reply was not acceptable as complete automation of correction of account through 
+transfer-entry was not implemented in IFMS. 
+3.3 Conclusion 
+The Department did not implement all the envisaged modules in IFMS. There was 
+existence of manual intervention in IFMS which defe ated the purpose of automation. 
+Duties of ‘Super User’ were not segregated and all the tasks were executed at single user 
+level. The receipt estimates were not submitted thr ough IFMS. IFMS was unable to 
+generate State Budget (Budget Literature) which was  required to be generated from the 
+system automatically. The budget modules lacked com plete automation in budget 
+distribution, deficient controls over re-appropriat ion and surrender of budget. There was 
+absence of alert functionality in IFMS to notify hi gher authorities about any unexpected 
+variation or delay in submission of estimates. 
+IFMS lacked segregation of duties at DDO level. The re was no control in IFMS for 
+timely processing of bills and settlement of AC bil ls. There was lack of validation 
+(beneficiary name, IFSC and bank account number) wh ile adding a new beneficiary in 
+IFMS. There was lack of synergy between DTPE and va rious stakeholders since 
+requirement gathering phase of the project. 
+3.4 Recommendations 
+ Department should integrate IFMS with e-Office so t hat sanctions orders can be 
+uploaded automatically. 
+ Department should implement functionality for submi ssion of receipt estimates 
+and revised estimates through IFMS. 
+ Department should integrate IFMS with Budget Depart ment for obtaining 
+Budget data and processing it automatically. 
+ Department should integrate IFMS with NPCI for vali dation of beneficiary bank 
+details while making payment. 
+ Department should completely integrate IFMS with Tr ansport Department for 
+capturing complete receipt details from e-Vahan / Sarathi. 
+
+Chapter -4 
+Information System Security  
+
+31 
+CHAPTER-4 
+Information System Security 
+4.1 Introduction 
+Traditionally, information available with the gover nment has been safely managed by 
+keeping it in paper records throughout its lifecycl e i.e. creation, storage, access, 
+modification, distribution, and destruction. Howeve r, to make all government services 
+accessible to the common man in his locality, throu gh efficient service delivery outlets, 
+along with transparency & reliability, the governme nt has steadily graduated towards 
+using electronic formats of information. 
+IFMS is a web-based application for payment, accoun ting and reconciliation of 
+Government transactions which integrates various ex isting standalone systems. 
+ IFMS 
+envisages single point of data capture; hence assum e greater importance to ensure the 
+integrity and correctness of information.  As treasury transactions are very sensitive in 
+nature and is therefore imperative that the securit y, consistency and integrity of such data 
+and transactions should be maintained at all levels. 
+4.2 Audit findings 
+In Uttarakhand, the IFMS went live from 1 April 201 9. It is currently being operated 
+through FDC located in the premises of Directorate Treasury, Pension and Entitlement, 
+Dehradun. During Joint physical inspection of FDC a nd system review of IFMS, audit 
+found following (Table-4.1 ) features to be installed and working in the IFMS and setup: 
+Table-4.1: List of observations noticed during join t verification of FDC 
+Sl. No. Parameter Audit observation 
+1. Physical Access 
+controls 
+During Joint inspection of FDC audit noticed that  
+• Physical access to FDC was restricted by biometric door lock 
+devices.  
+• Server room was secured with three layer biometric securities and 
+only authorised personnel were given access to the server room.  
+• Preventive measures like fire extinguishers, air-co nditioned 
+machines, etc. were in place. No dust and loose art icles were found 
+in server room. 
+2. 
+Monitoring 
+Vulnerability and 
+threats 
+Intrusion Prevention System (IPS), Anti Malware, Fi rewall, email 
+filtering to monitor vulnerability and threat throu gh Fort iGATE 2600F 
+Series Firewall was installed at FDC and system log s were being 
+recorded. 
+3. Database security 
+Audit observed that: 
+• Database server was installed on separate dedicated  machine, hosted 
+in private network of UKSWAN.  
+• Three – tier connection methodology was adopted as all connections 
+to database were routed through Application / Integration Server.  
+• Database was configured to allow only trusted IP ad dress.  
+• All users’ sessions were encrypted through Secure S ocket Layer 
+(SSL) handshake keeping data secure in transit.  
+• The development database / application was kept sep arate from 
+production database / application. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended31 March 2022  
+32 
+4.2.1 Non-conduction of Performance and Quality Aud it from STQC  
+Standardization Testing and Quality Certification ( STQC) Directorate, is an attached 
+office of the Ministry of Electronics and Informati on Technology, Government of India, 
+which provides Quality Assurance Services for softw are testing, information security and 
+IT Service Management by conducting Testing, Training, Audit and Certifications.  
+Audit observed that it was the responsibility of se lected bidder 1 to carry out Performance 
+and Quality Audit from STQC before IFMS went live. But the system went live on 
+01 April 2019 without the required certification fr om STQC. During audit, DTPE also 
+accepted that the users of IFMS were facing slownes s issues. Therefore, in absence of 
+necessary STQC certification, risk of quality and p erformance issues in IFMS could not 
+be ruled out. 
+The Government in its reply accepted the facts and stated (August 2023) that some 
+digitization work was going on and shall be complet ed by 2023-24. STQC will be done 
+once digitization work was completed.  Reply was no t acceptable as the contract with the 
+vendor, who had already been paid for the deliverab le ‘Performance and Quality Audit 
+from STQC’, already expired on 31 
+st  March 2023. 
+4.2.2 IS security systemic deficiencies 
+During system review, audit noticed following deficiencies in the system: 
+(i)  Use of personal email IDs by DDOs  
+As per directions of GoU, “All DDOs shall use Gover nment e-mail in IFMS portal 
+provided by State NIC for all official work and com munication. Usage of personal email 
+is strictly forbidden in IFMS”. Audit observed that  2912 (63%) out of 4586 DDOs were 
+registered with their personal e-mail IDs as there was no check available in IFMS to 
+ensure that DDOs register in IFMS through governmen t e-mail IDs only. This created a 
+potential security risk as government data was being stored in servers outside government 
+control.  
+The Government, during exit conference (June 2023) accepted the audit observation and 
+stated that a campaign to create government e-mail IDs for remaining DDOs shall be 
+launched and subsequently e-mail IDs of DDOs shall be updated in IFMS. 
+Chart-5: Use of email IDs 
+ 
+                                                           
+1 M/s IWS. 
+7%
+63%
+30% NIC email 
+Personal email 
+No email 
+
+Chapter-4: Information System Security 
+33 
+(ii) Non-incorporation of audit trails 
+An audit trail (also called audit log) is a securit y-relevant chronological record, set of 
+records, and/or destination and source of records t hat provide documentary evidence of 
+the sequence of activities that have affected at an y time a specific operation, procedure, 
+event, or device. During system walk through, audit  noticed that audit trails were not 
+being incorporated in IFMS due to which details of changes made through IFMS were 
+not traceable through front end. For example: Lifec ycle of a bill including details of 
+rejections and subsequent actions taken on the bill  were captured in the form of logs at 
+back-end but were not available at front end for DDO user. 
+Government accepted the fact that audit trail was n ot visible through front end and stated 
+(August 2023) that report of audit trail will be made available to DDOs soon. 
+(iii)  Weak Password policy 
+Password policy provides that password should be a combination of upper and lower case 
+characters, digits and punctuation characters as we ll and other characters. Audit noticed 
+that the system was not enforcing use of lower case while constructing password. 
+The Government accepted the fact and assured (August 2023) of its compliance in future. 
+(iv) Non implementation of Biometric authentication  during Login  
+As per Software Requirement Specification (SRS) of the project, Biometric 
+authentication (in form of fingerprint capture) of registered users of DDO System 
+2 and 
+Treasuries was to be implemented in IFMS. However, it remained non-implementable 
+even after three years of operationalization of IFMS. 
+The Government accepted the importance of biometric  authentication and stated 
+(August 2023) that integration with Aadhaar was pro posed. Once implemented, Aadhaar 
+based biometric authentication will be done by the users at the time of login.  
+(v) Network Security 
+Audit observed that IFMS was being operated on UKSW AN managed by Information 
+Technology Development Agency (ITDA), Dehradun. Des pite request to DTPE and 
+ITDA to provided network security audit certificate s of UKSWAN to Audit, they were 
+not provided. In absence of audit certificate, Audi t could not ascertain the network 
+security of IFMS. 
+4.2.3 Absence of Business Continuity Plan (BCP)  
+Formulation of BCP was the major component to be im plemented under IFMS project. It 
+ensures that the system runs smoothly and resumes i ts operations within definite time 
+period in case of disasters and other emergency eve nts. Audit noticed that BCP had not 
+been framed and adopted for IFMS, even after four y ears since operation. In its absence, 
+the staff/ users were unaware of the procedure to b e followed in the event of disruptions/ 
+                                                           
+2 DDO is primarily a front-office type of web applic ation and is accessible over the internet using a web 
+browser. 
+
+Performance Audit Report on Integrated Financial Management System for the year ended31 March 2022  
+34 
+disasters. They were also not trained in preventing , mitigating, and responding to 
+emergency situations. 
+The Government accepted the criticality of BCP duri ng exit conference (June 2023) and 
+directed DTPE to frame the BCP as soon as possible. 
+Reply was not acceptable as framing of BCP was the responsibility of vendor who had 
+already been paid for the same. In absence of BCP, business continuity of IFMS 
+remained at risk in case of disruptions/disasters. 
+4.2.4 Disaster Recovery site not set up  
+Disaster Recovery (DR) aims at protecting the Depar tment from the effects of significant 
+catastrophic events. It allows the Department to quickly resume mission-critical functions 
+after a disaster. Various possible disasters that c an take place are – human error, 
+epidemic, power outage, fire or explosions etc. The  distance for a DR site can vary 
+depending on the types of disaster - such as earthq uakes, floods, terror attacks, etc. The 
+Department should choose a DR location that fits it s business model and regulatory 
+requirements. 
+Audit observed that as per the DPR of the project, DR site was to be set up at State Data 
+Centre (SDC) at ITDA. In the same DPR, it was envis aged that once the SDC at ITDA 
+becomes operational, all IT infrastructure and IFMS  operations at Finance Data Center 
+3 
+(FDC) would be relocated to SDC and the former woul d act as an archival site. The 
+proposal to make SDC the DR site was reiterated in a meeting held with DTPE, NIC & 
+ITDA under chairmanship of Finance Secretary on 03 December 2021. 
+Audit noticed that the two provisions of DPR were m utually contradictory as in case of 
+shifting of IFMS operations from FDC to SDC, the la tter could not act as DR site which 
+by definition had to be present at geographically d ifferent location. Moreover, both FDC 
+and SDC were located near to each other, around 6.5  kilometers apart and in a region 
+vulnerable to disasters (Seismic zone IV). Recently , flash flood like situation was created 
+in the region due to cloudburst on 25 August 2021. Thus, despite IFMS being operational 
+since 1 April 2019, no efforts had been made to set  up a DR Site, in absence of which the 
+critical financial operations of GoU remained vulnerable in case of any disaster. 
+During exit conference (Jun 2023), Government accep ted the importance of DR site and 
+stated that IFMS application, presently hosted in F DC was planned to be shifted to SDC 
+in ITDA. Further, ITDA was planning to create a ‘fa r’ DR site for all the applications 
+hosted in SDC. 
+Reply was not acceptable as Dehradun lies in seismi c zone and prone to natural disasters 
+like earthquakes, floods, cloud bursts etc. In abse nce of a functional DR site, business 
+continuity of IFMS remained at risk in case of disasters. 
+                                                           
+3 In DPR, Integrated Data Center  
+
+Chapter-4: Information System Security 
+35 
+ 
+4.2.5 Backup and recovery controls  
+National Information Security Policy and Guidelines , 2014 provides that organization 
+must ensure that backup copies are maintained for a ll operational data to enable 
+reconstruction should they be inadvertently destroy ed or lost. Also, Back-up copies of 
+information and software shall be taken and tested regularly in accordance with the 
+agreed backup policy. 
+Audit noticed that the data generated in IFMS was replicated on real time basis in SDC of 
+ITDA. In the FDC of DTPE, scheduled backup was done  in which backup of data 
+schemas was taken on daily basis and full backup wa s taken after every 15 days. 
+However, despite three years of go-live of IFMS, De partment had not formulated the 
+backup policy and tested the system by restoring it  through back-up data. Also, the 
+Department did not determine the data retention per iod, in absence of which data kept on 
+accumulating and could impact the performance of sy stem such as increased response 
+time, etc. 
+The Government in its reply (August 2023) accepted the fact that backup policy had not 
+been formulated but daily, monthly, incremental and  full backups were taken by the 
+Database Administrator (DBA). Government in its rep ly claimed that backup activities 
+were reviewed and tested on monthly basis, however no documents were provided to 
+audit to substantiate the claims. 
+4.2.6 Critical financial data handled by outsourced  personnel 
+To manage FDC, DTPE demanded the sanction of seven  posts/technical cadre citing the 
+necessity of deploying technically proficient regul ar personnel in view of the sensitivity 
+of the work and the financial implications involved. As per GO dated 12 September 2019, 
+three technical posts 4 were sanctioned by the GoU and directed DTPE to fo rmulate 
+service rules before direct recruitment to aforesai d technical cadre and fill the created 
+posts before 29.02.2020. 
+Audit noticed that instead of formulating the requi red service rules and direct recruitment 
+to the sanctioned posts, all the technical staff at  FDC was outsourced and hired on 
+contractual basis. This not only created dependency  on contractual staff but also involved 
+significant security risk as the critical database including financial transactions and 
+personal data were handled by outsourced personnel.  This defeated the purpose of 
+‘restricting the possible misuse and to protect the  stored data’ for which DTPE got the 
+technical cadre sanctioned from the GoU. 
+The Government in its reply (August 2023) stated th at outsourced personnel worked 
+under the close supervision of the Domain Team whic h was manned by government 
+employees. Most of the outsourced personnel were working with FDC since last ten years. 
+Efforts were being made to have additional technica l resources who would not only help 
+                                                           
+4 Two direct recruitment posts (System Administrator  and Database Administrator) and one outsourced 
+post (Senior Software Engineer) 
+
+Performance Audit Report on Integrated Financial Management System for the year ended31 March 2022  
+36 
+in maintenance and enhancement of IFMS but work as back up of existing resources. In 
+future, requisition would also be sent to the Gover nment for hiring permanent technical 
+staff after their service rule is framed. 
+4.2.7 Absence of documentation and policies 
+Web Application security is of paramount concern fo r all stakeholders. Guidelines for 
+Indian Government Websites state that Department mu st formulate a security policy to 
+address various security issues related to the webs ite. Hence, a well-documented security 
+policy was required for proper functioning of IFMS.  
+Audit observed that Department did not formulate an y IT security policy for security of 
+IT assets, software and data, backup, data retentio n and disposal, incident reporting, 
+e-mail, Password, etc. Due to lack of documented se curity policy, every user was free to 
+handle such issues in his own manner which could pose risks to IT security of IFMS.  
+The Government accepted the facts and stated (Augus t 2023) that IFMS was being 
+shifted to SDC and IT policies regarding infrastruc ture, network, password etc. would be 
+adopted as of SDC. Whereas other policies like BCP,  DR Policy etc. would be framed by 
+DTPE in due course. 
+ 
+4.3 Poor feedback from end users of IFMS 
+Audit carried out an online survey to get feedback from end-users of IFMS at DDOs and 
+Treasuries. Nearly 370 responses were received. Iss ues reported were related to Login, 
+OTP delay, poor and delayed support from helpdesk, slow speed of site, server down, bill 
+creation and accounting, lack of training, lack of user-friendliness, issue in various 
+reports and modules, non-availability of legacy dat a, work-flow, vendor or party 
+management, file-upload size, unnecessary 20 minute s’ wait period after abrupt logout, 
+duplicity of work due to hardcopies, save-session n ot enabled, mismatch in GPF, delayed 
+voucher generation, duplicity of accounts of contra ctors in context of GST, Works 
+module, and many other issues. 
+The Government accepted the feedback given by IFMS users and stated (August 2023) 
+that few issues had been identified and fixed. Issu es related to slowness of the system 
+would be resolved once system is moved to SDC. Other issues would be fixed after hiring 
+of additional technical staff. 
+4.4 Conclusion 
+Information security of IFMS application is of para mount concern to owners as well as 
+users of the applications as treasury transactions are very sensitive in nature. Audit 
+noticed that IFMS went live without required perfor mance and quality certification from 
+STQC. In IFMS, DDOs were registered with their pers onal e-mail IDs causing potential 
+security risk. Department did not implement biometr ic authentication even after three  
+years of operationalization of IFMS. In absence of audit certificate, network security of 
+IFMS could not be ensured. Despite being in seismic  zone, Department did not frame 
+BCP/set up any functional DR site. In absence of BC P/DR site, business continuity of 
+
+Chapter-4: Information System Security 
+37 
+IFMS remained at risk in case of disasters. Department did not formulate any IT security 
+policy. In absence of documented policies, users were free to handle security related 
+issues in their own manner which could pose risks to IT security of IFMS. 
+4.5 Recommendations 
+ The Department should expedite the process of creating and updating government 
+email Ids for remaining DDOs in IFMS. 
+ The Department should formulate Business Continuity Plan and set up Disaster 
+Recovery site to ensure that the system runs smoothly and resumes its operations 
+within definite time period in case of disasters and other emergency events. 
+ The Department should review and test the backup restore activity on regular basis 
+so that data can be restored if inadvertently destroyed or lost. 
+ The Department should formulate an IT security policy for security of IT assets, 
+software and data, backup, data retention and disposal etc. 
+Dehradun 
+The 10 April 2024   
+(PRAVINDRA YADAV) 
+Principal Accountant General (Audit), 
+Uttarakhand 
+Countersigned 
+New Delhi  
+The 26 April 2024    
+(GIRISH CHANDRA MURMU) 
+Comptroller and Auditor General of India 
+
+Appendices  
+
+39 
+Appendix-1.1 
+(Reference: Paragraph-1.1; Page-1) 
+ 
+List of Treasuries/Sub-Treasuries 
+ 
+Sl. No. District Treasury Treasury Sub-Treasury 
+1 Sadar Treasury Dehradun   
+1-Chakrata 
+2-Mussoorie 
+3-Tyuni 
+4-Rishikesh 
+5-Vikasnagar 
+2 Sadar Treasury Nainital   
+1-Betalghat 
+2-Koshyakutoli 
+3-Ramanagar 
+4-Kaladhungi 
+5-Dhari 
+3 Sadar Treasury Almora   
+1-Chaukhutiya 
+2-Dwarahat 
+3-Deghat 
+4-Maulekhal 
+5-Lamgada 
+6-Takula 
+7-Danya 
+8-Bhikiyasen 
+9-Someshwar 
+4 Sadar Treasury Pithoragarh   
+1-Berinag 
+2-Didihat 
+3-Ganaigangoli 
+4-Dharchula 
+5-Gangolihat 
+6-Munsiyari 
+7-Thal 
+8-Askot 
+9-Nachni 
+10-Dewalthal 
+5 Sadar Treasury Gopeshwar, Chamoli   
+1-Chamoli 
+2-Joshimath 
+3-Karnprayag 
+4-Pokhri 
+5-Gairsain 
+6-Tharali 
+7-Dewal 
+8-Narayanbagad 
+9-Ghat 
+6 Sadar Treasury Uttarkashi   
+1-Purola 
+2-Bhatwadi 
+3-Badkot 
+4-Dunda 
+7 Sadar Treasury Pauri Garhwal   
+1-Srinagar 
+2-Thalisan 
+3-Dhoomakot 
+4-Satpuli 
+8 Sadar Treasury New Tehri   
+1-Ghansali 
+2-Thatyud 
+3-Pratapnagar 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+40 
+Sl. No. District Treasury Treasury Sub-Treasury 
+4-Devprayag 
+5-Nainbag 
+9 Sadar Treasury Haridwar   1-Haridwar 
+2-Laksar 
+10 Sadar Treasury Udham Singh Nagar   
+1-Jaspur 
+2-Kashipur 
+3-Bajpur 
+4-Gadarpur 
+5-Kiccha 
+6-Sitarganj 
+7-Khatima 
+11 Sadar Treasury Champawat   
+1-Lohaghat 
+2-Pati 
+3-Tanakpur 
+12 Sadar Treasury Bageshwar   
+1-Kapkot 
+2-Kanda 
+3-Garud 
+4-Dungnakuri 
+13 Sadar Treasury Rudraprayag   
+1-Agastmuni 
+2-Ukhimath 
+3-Jakholi 
+14 Other Treasuries 
+1-Roorkee   
+2-Kotdwar   
+3-Lansdowne   
+4-Narendra Nagar   
+5-Ranikhet   
+6-Haldwani   
+Total  13 6 70 
+15 Pay and Accounts Office, New Delhi 
+16 Cyber Treasury, Dehradun 
+Grand Total 91 
+ 
+  
+
+Appendices 
+41 
+Appendix-1.2 
+(Reference: Paragraph-1.1; Page-1) 
+ 
+List of applications integrated with IFMS 
+ 
+Sl. No Name of Application 
+1.  Reserve Bank of India 
+2.  State Bank of India 
+3.  Goods and Services Network (GSTN) 
+4.  National Securities Depository Limited (NSDL) 
+5.  Public Financial Management System (PFMS) 
+6.  CDAC 
+7.  Jeevan Praman 
+8.  NIC-SMS Gateway 
+9.  NIC-Email Gateway 
+10.  Stock Holding Corporation of India Limited 
+11.  Social Welfare Department 
+12.  State Tax Department 
+13.  Excise Department 
+14.  Directorate of Industries 
+15.  Police Department 
+16.  Planning Department 
+17.  National Scholarship Portal 
+18.  PSARA 
+19.  National Payment Corporation of India (NPCI) throug h SFTP 
+20.  National Payment Corporation of India (NPCI) throug h API 
+21.  Digi Locker 
+22.  Apuni Sarkar 
+23.  State Government Health Scheme (SGHS) 
+  
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+42 
+Appendix-1.3 
+(Reference: Paragraph-1.8; Page-4) 
+ 
+List of modules 
+ 
+Sl. No. Module Proposed Functionality Requirements 
+1 Pay Roll 
+1.  Information of Employee Master, Nominee Details 
+2.  Information of Pay, Entitlements, Loan & Claims 
+3.  Monthly Attendance 
+4.  Monthly Regular Salary Processing 
+5.  Monthly Supplementary Salary Processing 
+6.  Monthly Salary Arrears Processing 
+7.  Salary Bill Generation 
+8.  Employees Pay Slip Generation 
+9.  Employees Annual Statement 
+10.  Last Pay Certificate Generation 
+11.  Schedule of Advances, Recoveries, Loans etc. 
+12.  Bank Schedule 
+13.  Other Analytical Reports for MIS 
+2 Claims 
+1.  Online Claims Bill Submission by Employees for various personal 
+nature claims as per entitlements 
+2.  Processing of Claims at treasury 
+3.  MIS of Claims 
+3 Pension 
+Disbursement 
+1.  Information of Pensioner Master, Nominee Details 
+2.  Monthly Pension Processing 
+3.  Monthly Pension Arrears Processing 
+4.  Pension Bill Generation 
+5.  Last Pay Certificate Generation 
+6.  Life Time Arrear Payment Calculation for Death Case s 
+7.  First Payment Processing 
+8.  Pensioners Slip Generation 
+9.  Pensioners Annual Statement Generation 
+10.  Generation of Various Schedules 
+11.  Other Analytical Report for MIS 
+12.  Capturing of Biometric & Photo for Annual Verification 
+13.  Online Verification of Pensioners annually 
+4 Income Tax 
+1.  Generation of Form 16 
+2.  Generation of Form 16 A 
+3.  Generation of Form 24 Q 
+4.  Generation of Form 26 Q 
+5.  Income Tax Calculator for Employees & Pensioners 
+6.  Generation of Form 24 G 
+7.  Online Submission of required return through Treasu ry Portal 
+5 E-Payment 
+1.  Preparation of Beneficiary and transaction files generated from 
+various modules for uploading in net banking 
+2.  Provision of Validation before upload 
+3.  Integration of Treasury Portal with Bank Server through SFTP 
+4.  Integration of payment gateways 
+5.  MIS 
+6 HRMS 
+1.  Employees Service Book Maintenance 
+2.  Employees Leave Details 
+3.  Employees Corrector Rolls Maintenance 
+4.  Generation of Appointment orders, Transfer Orders & Retirement 
+Orders 
+5.  Annual Character Reports (ACR) 
+
+Appendices 
+43 
+Sl. No. Module Proposed Functionality Requirements 
+6.  Employees Property Return Maintenance 
+1.  MIS 
+7 Works 
+Accounting 
+2.  Online issue of CCL 
+3.  Online Generation of Works Bills 
+4.  Generation of Accounts for AG Submission 
+5.  Generation of Schedules of Recoveries & Advances 
+6.  Generation of Asset and Liability Register 
+7.  Maintenance of Budget and Balances under CCL/DCL 
+8.  e-payment to Contractors 
+9.  MIS 
+8 PLA 
+1.  Online Deposit of money in PLA 
+2.  Online Payment to third Parties 
+3.  Generation of Schedules of Recoveries & Advances 
+4.  Generation of Asset and Liability Register 
+5.  Maintenance of Budget and Balances 
+6.  e-payment 
+7.  MIS 
+9 Receipt 
+Accounting 
+1.  Integration of e-scroll received from Agency Bank 
+2.  Data Entry of Physical Challan 
+3.  Generation of Receipt Account 
+4.  Generation of Receipt Cash Book 
+5.  Generation of Cash Account with enclosures 
+6.  CCL, DCL, PLA Receipt Accounting 
+7.  MIS 
+10 Payment 
+Accounting 
+1.  Integration of e-payment scroll received from Agency Bank 
+2.  Generation of Report KA 
+3.  Generation of Report KHA 
+4.  Generation of Report GA 
+5.  Generation of Cash Book 
+6.  Generation of List of Payment with enclosures 
+7.  Generation of Payment Account 
+8.  CCL, DCL,PLA Payment Account 
+9.  Generation of Schedules for e-payments 
+10.  MIS 
+11 GIS 
+1.  Claim Listing 
+2.  Calculation Sheet 
+3.  Objection Letter 
+4.  Form 26 
+5.  Form 27 
+6.  Form 28 (Claim Register) 
+7.  Form 29 (Covering Letter) 
+8.  Pending Claim List 
+9.  Schedule for e-payment 
+10.  Integration and up gradation to a web enabled appli cation 
+11.  MIS 
+12 GPF 
+1.  Annual GPF Slip Processing 
+2.  Online GPF Claim Submission 
+3.  Broad Sheet Maintenance 
+4.  Interest Calculations 
+5.  GPF Accounting 
+6.  MIS 
+13 Virtual Treasury 1.  Online integration with the Bankers and RBI to capt ure receipt data 
+on run time 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+44 
+Sl. No. Module Proposed Functionality Requirements 
+2.  Online verification of e-transactions 
+3.  MIS 
+14 DDO 
+1.  Online Generation of various Bill forms used by the DDO 
+2.  Online Generation of Employee claims 
+3.  Online Generation of GPF Claims 
+4.  Online Generation of GIS Bills 
+5.  Online Generation of Pension Papers for Retiring Employees 
+6.  Maintenance of Cash Book and other Register through System 
+7.  Reconciliation of Drawls with the Treasuries 
+8.  MIS 
+15 e-Challan 
+1.  Online Collection of all government receipts, Taxes, duties, 
+penalties and cess 
+2.  Site to site integration with other department's web site 
+3.  Online reconciliation of receipts collected through e-Challan 
+4.  Online Generation of e-stamp to pay stamp duty 
+5.  MIS 
+16 Registration 
+1.  Online Application Submission for Registration & Renewal of 
+Societies & chits firms 
+2.  Online Collection of fees 
+3.  Online additional information required it, form applicant 
+4.  Online information to applicant about issuing of certificates 
+5.  Online appointment for Applicants 
+6.  Data entry for Registration & Renewal 
+7.  Duplicity check 
+8.  Name matching 
+9.  Generation of Registration & Renewal Certificates 
+10.  Digitization of records 
+11.  Generation of Amendments requests 
+12.  MIS 
+17 Pension Sanction 
+1.  Online submission of pension documents by DDO to pe nsion 
+Director 
+2.  Online submission of PPO to Treasuries & Sub Treasu ries using 
+Digital Signature 
+3.  Online Pension Sanctioning 
+4.  Generation of PPO, GPO, CPO 
+5.  Online Calculation of Pension 
+6.  Online Calculation of revised Pension 
+7.  Electronic routing of application for necessary approval 
+8.  Integration of email and SMS gateway 
+9.  Monthly pension payment analysis vis-à-vis sanctions 
+10.  MIS 
+11.  Digitization of records 
+18 GIS 
+1.  Online Account preparation from payments made by treasuries 
+2.  Online analysis of payment made by treasuries 
+3.  Online maintenance of AIS (All India Services) acco unts 
+4.  Online payment of the premium 
+5.  Online request for claims from AIS accounts 
+6.  MIS 
+19 IRLA 
+1.  Maintenance of Service History and Service Book of entitled 
+officers 
+2.  Generation of Pay slip 
+3.  Online application for issuance of Pay Slips 
+4.  MIS 
+
+Appendices 
+45 
+Sl. No. Module Proposed Functionality Requirements 
+20 NPS 
+1.  Maintenance of Master of NPS Employees 
+2.  Online Claim Processing 
+3.  Online Contribution Matching based on the data rece ived from the 
+Treasuries 
+4.  Online uploading of the monthly CPSN using FUV to N SDL 
+website 
+5.  MIS 
+21 Budget 
+Preparation 
+1.  Entry of Gazetted and Non-Gazetted Posts Details (Volume 6) 
+2.  Entry of Expenditure detail (Volume 5) 
+3.  Actual Expenditure 
+4.  Deduct & refund 
+5.  Revised estimates 
+6.  Entry of State Receipt details (Volume 4) 
+7.  Contingency & Public Accounts 
+8.  Generation of Vote on Account 
+9.  Updation of Vote on Account 
+10.  Details of Supplementary Budget 
+11.  Entry of New Demands 
+12.  Online submission of estimates using the web based interface 
+13.  Inbuilt rules, checks and the request would automatically get routed 
+for approval 
+14.  Provision for providing online comments and remarks  
+15.  Comments and editing done during the approval proce ss would be 
+visible till finalization 
+16.  System would assist Budget Department in scrutinizing the 
+estimates on the basis of state resource plan and past data available 
+17.  Integration with Resource planning module 
+18.  Generation of alerts on irregularities like unexpected variation in 
+estimates 
+19.  Online submission of budget estimates by DDO to HOD  
+20.  Online submission of budget estimates by HOD to Adm inistrative 
+Department 
+21.  Online submission of budget estimates by Administrative 
+Department to Finance Section 
+22.  Online submission by Finance Department to Budget Department 
+22 Budget 
+Disbursement 
+1.  Records Head-wise Government Approved budget as rec eived from 
+State Government 
+2.  Records the Allocation Authority related data as re ceived from State 
+Government 
+3.  Records the New expenditure related data for the current Financial year 
+4.  Reports 
+5.  DDO-wise Head-wise budget allocation 
+6.  Treasury-wise consolidated budget allocation 
+7.  Re-appropriation budget 
+8.  Surrender of Budget 
+9.  Budget Control Register (BM-10) 
+10.  Import/ Enter Monthly Expenditure Register (BM-4) o f the DDO 
+11.  Register of Expenditure (BM-6) 
+12.  Statement of Progressive Expenditure (BM-8) 
+13.  Exceptional Reporting Head-wise for unutilized heads 
+14.  Online Grant distributions to Admin Dept., their controlling officers 
+and Drawing and disbursement officers within the limit of approved 
+budget 
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022 
+46 
+Sl. No. Module Proposed Functionality Requirements 
+15.  MIS for monitoring of expenditure w.r.t Allocated Grant and budget 
+23 Budget 
+Maintenance 
+1.  Amendment in 15 digit code 
+2.  Maintenance of profile like User, Admin etc. 
+3.  Upload data 
+4.  Integration and up gradation to a web enabled appli cation 
+24 CPSMS 
+1.  Integrate the Central Plan Schemes Monitoring Syste m with the 
+Treasury Portal to exchange the data between Central and State 
+2.  MIS 
+25 AG Module 
+1.  Online verification of data processed by Treasuries on various 
+parameters 
+2.  Preparation of State Classified Account 
+3.  Online processing and Sanctioning of GPF to State government 
+employees 
+4.  Accounting of GPF and Loan disbursed to the government 
+employees 
+5.  Online processing and Sanctioning of Pensions of other state 
+pensioners 
+6.  Calculation of interest on GPF, loans and advances 
+7.  Online Reimbursement and Accounting of other state pension claims 
+paid from state treasuries 
+8.  Compilation and preparation of works account submitted by works 
+Department like PWD, Irrigation, Forest etc. 
+9.  Online payments of various payments on behalf of State 
+Government 
+10.  Online reconciliation of budget, releases and expenditure 
+ 
+
+Abbreviations  
+
+47 
+List of Abbreviations 
+ 
+Sl. No.  Abbreviation  Description of Abbreviated Term  
+1.   A&E  Accounts and Entitlement  
+2.   AC Bill  Abstract  Contingency Bill  
+3.   ACR  Annual Character Reports  
+4.   ACST  Account Statement  
+5.   AG  Accountant General  
+6.   AIS  All India Services  
+7.   API  Application Programming Interface  
+8.   BCP  Business Continuity Plan  
+9.   BE  Budget Estimates  
+10.   BPR  Business process Re -engineering  
+11.   CA  Cash Account  
+12.   CCL  Cash Credit Limit  
+13.   CDAC  Centre for Development of Advanced Computing  
+14.   CPO  Commutation Payment Orders  
+15.   CPSMS  Central Plan Scheme Monitoring System   
+16.   CTS  Core Treasury System  
+17.   DBA  Database Administrator  
+18.   DC Bill  Detailed Contingency Bill  
+19.   DCL  Deposit Credit Limit  
+20.   DDO  Drawing and Disbursing Officer  
+21.   DN  Debit Note  
+22.   DPR  Detailed Project Report  
+23.   DR  Disaster Recovery  
+24.   DTPE  Director, Treasury, Pension and Entitlement  
+25.   FD  Finance Department  
+26.   FDC  Finance Data Centre  
+27.   FRS  Functional Requirement Specifications  
+28.   GIS  Group Insurance Scheme  
+29.   GO  Government Orders  
+30.   GoI  Government of India  
+31.   GoU  Government of Uttarakhand  
+32.   GPF  General Provident Fund  
+33.   GPO  Gratuity Payment Orders  
+34.   GST  Goods and Service Tax  
+35.   GSTN  Goods and Service Tax Network  
+36.   HBA  House Building Advance  
+37.   HLD  High Level Design  
+38.   HOD  Head of Department  
+39.   ID  Identity Document  
+40.   IFMS  Integrated Financial Management System  
+41.   IFSC  Indian Financial System Code  
+42.   IPS  Intrusion Prevention System  
+43.   IRLA  Individual Running Ledger Account  
+44.   IT  Information Technology  
+
+Performance Audit Report on Integrated Financial Management System for the year ended 31 March 2022  
+48 
+45.   ITDA  Information Technology Development Agency  
+46.   IWS  Indus Web Solutions Private Limited  
+47.   LLD  Low Level Design  
+48.   LOP  List of Payment  
+49.   LPC  Last Pay Certificate  
+50.   LTC  Leave Travel Concession  
+51.   MIS  Management Information System  
+52.   MMP  Mission Mode Project  
+53.   MoU  Memorandum of Understanding  
+54.   NeGP  National e -Governance Plan  
+55.   NIC  National Informatics Centre  
+56.   NPCI  National Payment Corporation of India  
+57.   NPS  National Pension System  
+58.   NSDL  National Securities Depository Limited  
+59.   OPGM  Online PRAN Generation Module  
+60.   OTP  One Time Password  
+61.   PAO  Pay and Account Office  
+62.   PSARA  Private Security Agency Regulation Act  
+63.   PDF  Portable Document Format  
+64.   PFMS  Public Financial Management System  
+65.   PLA  Personal Ledger Account  
+66.   PPO  Pension Pay Orders  
+67.   PRAN  Permanent Retirement  Account Number  
+68.   PWD  Public Works Department  
+69.   RBD  Reserve for Bad Debt  
+70.   RBI  Reserve Bank of India  
+71.   RFP  Request for proposal  
+72.   RN  Return Note  
+73.   SBI  State Bank of India  
+74.   SDC  State Data Centre  
+75.   SDLC  Software Development Lifecycle  
+76.   SFTP  Secure File Transfer Protocol  
+77.   SGHS  State Government Health Scheme  
+78.   SHCIL  Stock  Holding Corporation of India Limited  
+79.   SMS  Short Messaging System  
+80.   SOP  Standard Operating Procedure  
+81.   SoR  Schedule of Receipts  
+82.   SPeMT  State Project e -Mission Team  
+83.   SRS  Software Requirement Specifications  
+84.   STQC  Standardizations Testing Quality Certification  
+85.   TAN  Tax Collection Account Number  
+86.   TBIL  Techno Brain India Private Limited  
+87.   UAT  User Acceptance testing  
+88.   UKSWAN  Uttarakhand State Wide Area Network  
+89.   UTR  Unique Transaction Reference   
+90.   VLC  Voucher Level Computerisation  
+ 
