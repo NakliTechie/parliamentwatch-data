@@ -1,0 +1,81 @@
+name: Bills (sansad-side) derive (index shards + manifest + bundle + index + meta)
+
+# Single-owner regeneration of Bills's derived files (index-shard-*.json,
+# index-meta.json, manifest.json, meta.json, search-bundle-*.json,
+# search-index-*.json). Triggered by every successful Bills primary write
+# (bills-sansad.yml, bills-backfill.yml), plus a 30-min cron backstop,
+# plus manual workflow_dispatch.
+#
+# Sibling of cag-derive.yml + drsc-derive.yml — same pattern, same
+# rationale. See CONV.md "Split-phase scraping pattern".
+#
+# Bills is fast to derive (re-fetches records from sansad.in's getBills
+# API in ~17-35s, plus the local rebuild of bundle/index from text/).
+# Total run time typically under 90 seconds.
+
+on:
+  workflow_run:
+    workflows:
+      - "Bills (sansad-side) scrape and publish"
+      - "Bills (sansad-side) backfill (4-hourly, until corpus full)"
+    types: [completed]
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bills-derive
+  cancel-in-progress: true
+
+jobs:
+  derive:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build Bills derived files
+        env:
+          BUILD_PHASE: 'derive'
+        run: python build_bills_sansad.py
+
+      - name: Commit and push derived files
+        # Narrow git add to derived files only. Primary files
+        # (text/, .scraper_state.json) are owned by writer workflows.
+        # Push retry: re-derive on rebase failure, retry up to 3 times.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/bills/manifest.json docs/bills/meta.json \
+                  docs/bills/index-*.json \
+                  docs/bills/search-bundle-*.json docs/bills/search-index-*.json
+          git diff --cached --quiet && echo "no derived changes" && exit 0
+          git commit -m "Auto-rebuild Bills derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "attempt $attempt failed; rebuilding derived files on the rebased state"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            BUILD_PHASE=derive python build_bills_sansad.py
+            git add docs/bills/manifest.json docs/bills/meta.json docs/bills/index-meta.json \
+                    docs/bills/index-*.json \
+                    docs/bills/search-bundle-*.json docs/bills/search-index-*.json
+            git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
+            git commit -m "Auto-rebuild Bills derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          done
+          echo "exceeded 3 push attempts; giving up — next derive run will catch up"
+          exit 1

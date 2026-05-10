@@ -44,8 +44,12 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build Bills (sansad-side) backfill data
+      - name: Build Bills (sansad-side) primary data (extract phase, backfill mode)
+        # Split-phase: writers commit text/ + scraper-state only. Derived
+        # files arrive in a separate commit from bills-derive.yml.
+        # See CONV.md "Split-phase scraping pattern".
         env:
+          BUILD_PHASE:             'extract'
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
           EXTRACT_WORKERS:         '4'
@@ -53,12 +57,12 @@ jobs:
           JITTER_MAX_MS:           '500'
         run: python build_bills_sansad.py
 
-      - name: Commit and push
+      - name: Commit and push primary changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git diff --cached --quiet && echo "no changes" && exit 0
-          git commit -m "Auto-update Bills (sansad) data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git add docs/bills/text/ docs/bills/.scraper_state.json
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update Bills (sansad) primary data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

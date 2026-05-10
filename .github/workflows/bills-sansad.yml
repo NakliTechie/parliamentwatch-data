@@ -51,8 +51,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build Bills (sansad-side) static data
+      - name: Build Bills (sansad-side) primary data (extract phase only)
+        # Split-phase: writers commit text/<id>.txt + .scraper_state.json
+        # only. Derived files (manifest/meta/index-shards/bundle/index)
+        # are owned by bills-derive.yml — single owner, cancel-in-progress,
+        # never races. See CONV.md "Split-phase scraping pattern".
         env:
+          BUILD_PHASE:             'extract'
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
           EXTRACT_WORKERS:         '4'
@@ -60,15 +65,16 @@ jobs:
           JITTER_MAX_MS:           '500'
         run: python build_bills_sansad.py
 
-      - name: Commit and push
-        # `pull --rebase` before push handles the human-vs-bot race when
-        # someone pushes to main mid-run. Same pattern as scrape.yml /
-        # cag.yml.
+      - name: Commit and push primary changes
+        # Narrow git add to primary files only — text/ + scraper state.
+        # Derived files (manifest, meta, index shards, search-bundle,
+        # search-index) are excluded; bills-derive.yml regenerates them
+        # after this commit lands.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git diff --cached --quiet && echo "no changes" && exit 0
-          git commit -m "Auto-update Bills (sansad) data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git add docs/bills/text/ docs/bills/.scraper_state.json
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update Bills (sansad) primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

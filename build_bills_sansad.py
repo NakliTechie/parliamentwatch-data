@@ -347,7 +347,7 @@ def write_index_meta(records: list[dict], shard_entries: list[dict]) -> None:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
 
-def write_manifest(records: list[dict], extract_status: dict) -> None:
+def write_manifest(records: list[dict]) -> None:
     """Build manifest.json with deeper stats + per-bill `texts` map.
 
     The `texts` map is keyed by compositeId and used by the app to know
@@ -355,6 +355,10 @@ def write_manifest(records: list[dict], extract_status: dict) -> None:
     as DRSC's manifest.texts and CAG's manifest.texts. Without it, the
     app's "with text" count stays at 0 even when text/<id>.txt files exist
     on the mirror.
+
+    Pure function of disk state (text/) + the API-fetched records list.
+    Owned by bills-derive.yml under the split-phase pattern; the writer
+    workflows (bills-sansad.yml, bills-backfill.yml) do not call it.
     """
     from collections import Counter
     by_status = Counter(r.get("status") or "(null)" for r in records)
@@ -394,7 +398,6 @@ def write_manifest(records: list[dict], extract_status: dict) -> None:
             "min": min(by_year) if by_year else None,
             "max": max(by_year) if by_year else None,
         },
-        "this_run": extract_status,
         "texts": texts,
     }
     with open(MANIFEST_JSON, "w", encoding="utf-8") as f:
@@ -629,23 +632,28 @@ def build_search_index(records: list[dict]) -> Optional[dict]:
     }
 
 
-def write_meta(records: list[dict], extract_status: dict, state: dict,
+def write_meta(records: list[dict], state: dict,
                bundle_stats: Optional[dict] = None,
                index_stats: Optional[dict] = None) -> None:
     """Build meta.json — small status JSON for chip status display + the
     search_bundle / search_index shard listings the app needs to fetch the
-    sharded deep-search artefacts."""
+    sharded deep-search artefacts.
+
+    Split-phase: pure function of disk state + state.json's cooldown info.
+    Per-run extract counters (last_run_status, this_run_extracted) live
+    only in workflow logs now — putting them in derived files coupled the
+    derive phase to extract-time state and reintroduced the rebase race.
+    See CONV.md "Split-phase scraping pattern".
+    """
     in_cooldown, remaining = _is_in_cooldown(state)
     with_text = sum(1 for r in records if (TEXT_DIR / f"{r['compositeId']}.txt").exists())
     meta = {
         "scraper_version": SCRAPER_VERSION,
         "last_update": _now_iso(),
-        "last_run_status": "rate_limited" if extract_status.get("rate_limited") else "ok",
         "total": len(records),
         "with_text": with_text,
         "in_rate_limit_cooldown": in_cooldown,
         "cooldown_remaining_seconds": int(remaining) if remaining else None,
-        "this_run_extracted": extract_status.get("extracted", 0),
         "search_bundle": bundle_stats,   # None if no extracted texts yet
         "search_index":  index_stats,
     }
@@ -655,11 +663,16 @@ def write_meta(records: list[dict], extract_status: dict, state: dict,
 
 # ── Main ───────────────────────────────────────────────────────────────────
 
-def main() -> int:
-    print(f"[bills/sansad] starting — {SCRAPER_VERSION}")
+def phase_extract() -> int:
+    """Phase 1 — produce primary files: text/<compositeId>.txt extracted
+    via PDF download + parse, plus .scraper_state.json (cooldown bookkeeping).
+
+    Bills has no `records.json` analogue — the records list is fetched from
+    sansad.in's getBills API every run. That API call is cheap (~17-35s)
+    and re-runs in the derive phase too, so we don't need to persist it.
+    """
     state = _load_state()
 
-    # Phase 1: refresh index. Cheap (~17-35s) — always do this.
     print("  Building bill index from getBills API ...")
     t0 = time.time()
     records, duplicates = collect_records()
@@ -667,30 +680,43 @@ def main() -> int:
           f"({duplicates} composite-id collisions dropped) "
           f"in {time.time()-t0:.1f}s")
 
-    # Phase 2: extract canonical text for missing bills, within budget.
     in_cooldown, remaining = _is_in_cooldown(state)
     if in_cooldown:
         print(f"  Skipping extraction phase — rate-limit cooldown active "
               f"({int(remaining)}s remaining)")
-        extract_status = {"extracted": 0, "failed": 0, "rate_limited": True,
-                          "elapsed": 0.0, "skipped_due_to_cooldown": True}
-    else:
-        candidates = select_candidates(records)
-        print(f"  Candidates needing text extraction: {len(candidates)}")
-        extract_status = run_extractions(candidates, state)
-        print(f"  Extraction: {extract_status['extracted']} extracted, "
-              f"{extract_status['failed']} failed, "
-              f"rate_limited={extract_status['rate_limited']}, "
-              f"elapsed={extract_status['elapsed']:.1f}s")
+        return 0
 
-    # Phase 3: outputs.
+    candidates = select_candidates(records)
+    print(f"  Candidates needing text extraction: {len(candidates)}")
+    extract_status = run_extractions(candidates, state)
+    print(f"  Extraction: {extract_status['extracted']} extracted, "
+          f"{extract_status['failed']} failed, "
+          f"rate_limited={extract_status['rate_limited']}, "
+          f"elapsed={extract_status['elapsed']:.1f}s")
+    return 0
+
+
+def phase_derive() -> int:
+    """Phase 2 — regenerate derived files (sharded index, index-meta.json,
+    manifest.json, search-bundle-*.json, search-index-*.json, meta.json)
+    from the on-disk primary state (text/) plus the API-fetched records list.
+
+    Owned by bills-derive.yml; one run at a time via `cancel-in-progress: true`.
+    """
+    state = _load_state()
+
+    print("  Building bill index from getBills API ...")
+    t0 = time.time()
+    records, duplicates = collect_records()
+    print(f"  Index: {len(records)} records "
+          f"({duplicates} composite-id collisions dropped) "
+          f"in {time.time()-t0:.1f}s")
+
+    print("  Writing sharded index + index-meta.json + manifest.json...")
     shard_entries = write_sharded_index(records)
     write_index_meta(records, shard_entries)
-    write_manifest(records, extract_status)
+    write_manifest(records)
 
-    # Phase 4: deep-search artefacts (sharded bundle + sharded body-token index).
-    # Both honour the same _DOCS_PER_SHARD as DRSC + CAG so cross-corpus search
-    # in v2 has uniform shard granularity to merge against.
     print("  Building search bundle (title + first 5K chars per bill, sharded)...")
     bundle_stats = build_search_bundle(records)
     if bundle_stats:
@@ -710,8 +736,39 @@ def main() -> int:
     else:
         print("    skipped — no extracted texts yet")
 
-    write_meta(records, extract_status, state, bundle_stats, index_stats)
+    write_meta(records, state, bundle_stats, index_stats)
     print(f"  Wrote {len(shard_entries)} index shard(s) + index-meta.json + manifest.json + meta.json + search artefacts")
+    return 0
+
+
+def main() -> int:
+    """Dispatch to extract / derive / both based on BUILD_PHASE.
+
+    BUILD_PHASE=extract — for bills-sansad.yml + bills-backfill.yml. Produces
+                          only text/<compositeId>.txt + .scraper_state.json.
+    BUILD_PHASE=derive  — for bills-derive.yml. Reads disk state + re-fetches
+                          records from API, regenerates all derived files.
+    BUILD_PHASE=all     — legacy / local-dev convenience.
+
+    See CONV.md "Split-phase scraping pattern" for the full architecture.
+    """
+    phase = os.environ.get("BUILD_PHASE", "all").lower()
+    if phase not in ("extract", "derive", "all"):
+        print(f"BUILD_PHASE={phase!r} is not one of extract|derive|all — aborting.", file=sys.stderr)
+        return 2
+
+    print(f"[bills/sansad] starting — {SCRAPER_VERSION} (BUILD_PHASE={phase})")
+
+    if phase in ("extract", "all"):
+        rc = phase_extract()
+        if rc != 0:
+            return rc
+
+    if phase in ("derive", "all"):
+        rc = phase_derive()
+        if rc != 0:
+            return rc
+
     return 0
 
 
