@@ -71,8 +71,16 @@ INDEX_META_JSON = DOCS / "index-meta.json"
 MANIFEST_JSON   = DOCS / "manifest.json"
 META_JSON       = DOCS / "meta.json"
 STATE_JSON      = DOCS / ".scraper_state.json"   # cooldown bookkeeping
+SEARCH_BUNDLE_JSON = DOCS / "search-bundle.json"
 
 LEGACY_INDEX_JSON = DOCS / "index.json"  # superseded by sharded layout
+
+# How many chars of extracted text to put in each search-bundle entry.
+# 5,000 matches CAG's bundle convention. Bundle for 1.5k bills × 5KB ≈ 7.5 MB
+# (CF gzip serves ~30%, app caches in IDB). At 9.9k bills with text the
+# bundle would be ~50 MB — at that point we shard like CAG's
+# search-bundle-NN.json, but we're well below that today.
+SEARCH_BUNDLE_HEAD_CHARS = int(os.environ.get("BILLS_SEARCH_BUNDLE_HEAD", "5000"))
 
 # ── Per-run budget ─────────────────────────────────────────────────────────
 
@@ -374,6 +382,43 @@ def write_manifest(records: list[dict], extract_status: dict) -> None:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
 
 
+def write_search_bundle(records: list[dict]) -> int:
+    """Build search-bundle.json — flat list of {key, title, head} entries for
+    every bill that has extracted text. App-side deep search scans
+    bundle.map.get(key).head + the in-memory cached text + the title for
+    matches. Entries built only for bills with on-disk text/<id>.txt; bills
+    without extracted text contribute only via title scan.
+
+    Single file at this corpus size (1-10 MB depending on backfill progress).
+    Shard like CAG's search-bundle-NN.json if it ever exceeds ~20 MB.
+    """
+    entries = []
+    for r in records:
+        cid = r["compositeId"]
+        text_path = TEXT_DIR / f"{cid}.txt"
+        if not text_path.exists():
+            continue
+        try:
+            with open(text_path, "r", encoding="utf-8") as f:
+                head = f.read(SEARCH_BUNDLE_HEAD_CHARS)
+        except OSError:
+            continue
+        entries.append({
+            "key":   f"bills|{cid}",
+            "title": r.get("billName") or "",
+            "head":  head,
+        })
+    bundle = {
+        "generated_at": _now_iso(),
+        "head_chars":   SEARCH_BUNDLE_HEAD_CHARS,
+        "total":        len(entries),
+        "entries":      entries,
+    }
+    with open(SEARCH_BUNDLE_JSON, "w", encoding="utf-8") as f:
+        json.dump(bundle, f, ensure_ascii=False)   # no indent — keep it tight
+    return len(entries)
+
+
 def write_meta(records: list[dict], extract_status: dict, state: dict) -> None:
     """Build meta.json — small status JSON for chip status display."""
     in_cooldown, remaining = _is_in_cooldown(state)
@@ -427,7 +472,8 @@ def main() -> int:
     write_index_meta(records, shard_entries)
     write_manifest(records, extract_status)
     write_meta(records, extract_status, state)
-    print(f"  Wrote {len(shard_entries)} shard(s) + index-meta.json + manifest.json + meta.json")
+    bundle_count = write_search_bundle(records)
+    print(f"  Wrote {len(shard_entries)} shard(s) + index-meta.json + manifest.json + meta.json + search-bundle.json ({bundle_count} entries)")
     return 0
 
 

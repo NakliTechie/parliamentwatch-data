@@ -1,0 +1,64 @@
+name: Bills (sansad-side) backfill (4-hourly, until corpus full)
+
+on:
+  schedule:
+    # Every 4 hours at :17 — gentler cadence than CAG's hourly backfill
+    # (per Chirag 2026-05-10: bills are not time-critical, no rush).
+    # 6 runs/day × MAX_EXTRACTIONS_PER_RUN budget = backfill rate.
+    # At 200/run × 6 runs/day = 1200/day; remaining ~6,000 missing texts
+    # complete in ~5 days. Off-hour minute :17 (same as DRSC + CAG) to
+    # dodge GH scheduler congestion at top-of-hour. Identical concurrency
+    # group as bills-sansad.yml means daily + backfill queue safely.
+    - cron: '17 */4 * * *'
+  workflow_dispatch:
+    inputs:
+      max_extractions:
+        description: 'Max PDFs to extract this run (politeness budget)'
+        default: '200'
+      max_run_seconds:
+        description: 'Hard wall-clock cap for the extraction phase, seconds'
+        default: '1800'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Shared with bills-sansad.yml (the daily). Avoids racing on the same
+  # docs/bills/text/* tree — both write extracted-text files and would
+  # produce add/add conflicts on rebase otherwise. Same pattern as the
+  # CAG concurrency group shared by cag.yml + cag-backfill.yml + cag-ocr.yml.
+  group: bills-sansad
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build Bills (sansad-side) backfill data
+        env:
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
+        run: python build_bills_sansad.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "Auto-update Bills (sansad) data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git pull --rebase origin main
+          git push
