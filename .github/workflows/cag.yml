@@ -48,8 +48,13 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Build CAG static data
+      - name: Build CAG primary data (extract phase only)
+        # Split-phase: writers commit reports.json + text/<id>.txt only.
+        # Derived files (manifest/bundle/index/meta) are owned by
+        # cag-derive.yml — single owner, cancel-in-progress, never races.
+        # See CONV.md "Split-phase scraping pattern" for the full rationale.
         env:
+          BUILD_PHASE:             'extract'
           MAX_LISTING_PAGES:       ${{ inputs.max_listing_pages || '' }}
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions   || '100' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds   || '1800' }}
@@ -58,14 +63,18 @@ jobs:
           JITTER_MAX_MS:           '500'
         run: python build_cag.py
 
-      - name: Commit and push
-        # `pull --rebase` before push handles the human-vs-bot race when
-        # someone pushes to main mid-run. Same pattern as scrape.yml.
+      - name: Commit and push primary changes
+        # Narrow git add to primary files only — reports.json + text/.
+        # Derived files (manifest, meta, bundle, index) are intentionally
+        # excluded; cag-derive.yml will regenerate them after this commit.
+        # `pull --rebase` is still here as a belt-and-suspenders against
+        # rare reports.json races (deterministic content, mergeable in
+        # almost all cases).
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git diff --cached --quiet && echo "no changes" && exit 0
-          git commit -m "Auto-update CAG data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git add docs/cag/reports.json docs/cag/text/
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update CAG primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

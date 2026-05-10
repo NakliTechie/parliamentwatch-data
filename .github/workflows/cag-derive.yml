@@ -1,0 +1,104 @@
+name: CAG derive (manifest + bundle + index + meta)
+
+# Single-owner regeneration of CAG's derived files (manifest.json,
+# meta.json, search-bundle-*.json, search-index-*.json). Triggered by
+# any successful CAG primary write (cag.yml, cag-backfill.yml,
+# cag-ocr.yml), plus a 30-min cron backstop in case workflow_run events
+# get dropped, plus manual workflow_dispatch for ad-hoc rebuilds.
+#
+# This workflow is the entire reason for the split-phase architecture:
+# derived files are a pure function of disk state (reports.json + text/),
+# but EVERY writer regenerating them races with every other writer on
+# git. By giving derived files a single owner (this workflow) with
+# `cancel-in-progress: true`, only the latest derive ever commits, and
+# its rebase target only ever has primary-file changes (which auto-merge
+# safely on different filenames).
+#
+# See CONV.md "Split-phase scraping pattern" for the full rationale, the
+# concrete failure mode it fixes (run 25623916615 lost 28 text files to
+# manifest/bundle/meta merge conflicts), and why this beats the obvious
+# alternative of just rebasing harder.
+
+on:
+  workflow_run:
+    workflows:
+      - "CAG scrape and publish"
+      - "CAG backfill (hourly, until corpus full)"
+      - "CAG OCR slow-lane"
+    types: [completed]
+  schedule:
+    # Every 30 min — backstop for dropped workflow_run events (GH Actions
+    # has occasionally lost these in the wild) and for the case where a
+    # writer commits but doesn't trigger a workflow_run for some reason.
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # cancel-in-progress: TRUE for the derive group — older derive runs
+  # produce stale derived files (they'd be missing whatever primary
+  # writes landed in the meantime), so cancelling them in favor of a
+  # newer derive is strictly better. Net effect: at most one derive
+  # runs at a time, and it always sees the latest primary state.
+  group: cag-derive
+  cancel-in-progress: true
+
+jobs:
+  derive:
+    # Skip if the triggering workflow itself failed — no fresh primary
+    # data, no point spending compute on a derive. (Manual dispatches and
+    # cron firings have github.event.workflow_run == null, so they always
+    # run.)
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build CAG derived files
+        env:
+          BUILD_PHASE: 'derive'
+        run: python build_cag.py
+
+      - name: Commit and push derived files
+        # Narrow git add to derived files only. Primary files (reports.json,
+        # text/) are owned by writer workflows; this workflow never touches
+        # them.
+        #
+        # If the rebase fails (concurrent derive squeezing through despite
+        # cancel-in-progress, or another derive triggered by a fresh writer
+        # commit between our checkout and push), we re-run the derive on
+        # the rebased state and try the push again. Re-deriving is cheap
+        # (~30s for current corpus size) and idempotent.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/cag/manifest.json docs/cag/meta.json \
+                  docs/cag/search-bundle-*.json docs/cag/search-index-*.json
+          git diff --cached --quiet && echo "no derived changes" && exit 0
+          git commit -m "Auto-rebuild CAG derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "attempt $attempt failed; rebuilding derived files on the rebased state"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            BUILD_PHASE=derive python build_cag.py
+            git add docs/cag/manifest.json docs/cag/meta.json \
+                    docs/cag/search-bundle-*.json docs/cag/search-index-*.json
+            git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
+            git commit -m "Auto-rebuild CAG derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          done
+          echo "exceeded 3 push attempts; giving up — next derive run will catch up"
+          exit 1

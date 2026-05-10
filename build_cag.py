@@ -543,27 +543,21 @@ def build_search_index(docs_per_shard: int = DOCS_PER_SHARD) -> dict | None:
 # ── Phase 7: meta ──────────────────────────────────────────────────────────
 
 def write_meta(*, total_reports: int, total_with_text: int,
-               extract_stats: dict, bundle_stats: dict | None,
+               bundle_stats: dict | None,
                index_stats: dict | None) -> dict:
+    """Write meta.json — purely a function of disk state (no extract-time
+    counters). The split-phase architecture separates extraction (writers)
+    from derivation (this function's caller); per-run extract counts live
+    in workflow logs, not in meta.
+    """
     meta = {
         "version":      "1.0",
         "corpus":       "cag",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "max_extractions_per_run": MAX_EXTRACTIONS_PER_RUN,
-        "extract_workers":         EXTRACT_WORKERS,
         "total_reports":   total_reports,
         "total_with_text": total_with_text,
-        "extract_stats": {
-            "extracted":     len(extract_stats.get("extracted", [])),
-            "failed":        len(extract_stats.get("failed", [])),
-            "rate_limited":  extract_stats.get("rate_limited", False),
-            "budget_hit":    extract_stats.get("budget_hit", False),
-            "candidates_remaining_after_run": max(
-                0, extract_stats.get("candidates_total", 0) - len(extract_stats.get("extracted", []))
-            ),
-        },
-        "search_bundle": bundle_stats,
-        "search_index":  index_stats,
+        "search_bundle":   bundle_stats,
+        "search_index":    index_stats,
     }
     with open(META_JSON, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2)
@@ -572,72 +566,112 @@ def write_meta(*, total_reports: int, total_with_text: int,
 
 # ── Main ────────────────────────────────────────────────────────────────────
 
-def main():
-    print("=== ParliamentWatch CAG static builder ===")
-    print(f"DOCS                    : {DOCS}")
-    print(f"MAX_LISTING_PAGES       : {MAX_LISTING_PAGES or '(walk to empty)'}")
-    print(f"MAX_EXTRACTIONS_PER_RUN : {MAX_EXTRACTIONS_PER_RUN}")
-    print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
-    print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
-
-    # Unified deadline across phases so backfill runs that hit the GH
-    # Actions 60-min runner timeout stop cleanly mid-phase, commit
-    # whatever they've gathered, and let the next cron pick up.
-    overall_deadline = time.monotonic() + MAX_RUN_SECONDS
-
-    print("\n[1/7] Walking cag.gov.in listing pages...")
+def phase_extract() -> None:
+    """Phase 1 — produce primary files (reports.json + text/<id>.txt).
+    No derived files. Safe to run concurrently with other extract-phase
+    workflows; auto-merge handles different text/<id>.txt additions and
+    reports.json is deterministic given upstream content.
+    """
+    print("\n[Extract 1/3] Walking cag.gov.in listing pages...")
     all_ids = enumerate_ids(max_pages=MAX_LISTING_PAGES)
 
-    print("\n[2/7] Loading existing metadata + fetching new detail pages...")
+    print("\n[Extract 2/3] Loading existing metadata + fetching new detail pages...")
     reports = load_existing_reports()
     cleaned = cleanup_html_entities(reports)
     if cleaned:
         print(f"  cleaned {cleaned} entries with HTML-entity-encoded fields (one-shot fix)")
+    overall_deadline = time.monotonic() + MAX_RUN_SECONDS
     new_meta = fetch_new_metadata(set(reports.keys()), all_ids, deadline=overall_deadline)
     reports.update(new_meta)
     save_reports(reports)
     print(f"  reports.json: {len(reports)} total ({len(new_meta)} new this run)")
 
-    print("\n[3/7] Extracting missing texts (priority: newest first)...")
+    print("\n[Extract 3/3] Extracting missing texts (priority: newest first)...")
     extract_stats = extract_missing_texts(reports, deadline=overall_deadline)
     print(f"  extracted={len(extract_stats['extracted'])} "
           f"failed={len(extract_stats['failed'])} "
           f"rate_limited={extract_stats.get('rate_limited', False)} "
-          f"budget_hit={extract_stats.get('budget_hit', False)}")
+          f"budget_hit={extract_stats.get('budget_hit', False)} "
+          f"remaining_after={max(0, extract_stats.get('candidates_total', 0) - len(extract_stats.get('extracted', [])))}")
 
-    print("\n[4/7] Building manifest.json...")
+
+def phase_derive() -> None:
+    """Phase 2 — regenerate derived files (manifest.json, search-bundle-*.json,
+    search-index-*.json, meta.json) from the on-disk primary state.
+    Pure function of reports.json + text/. Owned by cag-derive.yml; one
+    run at a time via `cancel-in-progress: true` on the cag-derive group.
+    """
+    reports = load_existing_reports()
+
+    print("\n[Derive 1/4] Building manifest.json...")
     manifest = build_manifest()
     with open(MANIFEST_JSON, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
     n_with_text = len(manifest["texts"])
     print(f"  manifest: {n_with_text} reports with extracted text")
 
-    print("\n[5/7] Building search-bundle.json (title + first 5K chars per report)...")
+    print("\n[Derive 2/4] Building search-bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle(reports)
     if bundle_stats:
         mb = bundle_stats["size_bytes"] / (1024 * 1024)
-        print(f"  search-bundle.json: {bundle_stats['total']} entries · {mb:.1f} MB raw")
+        print(f"  search-bundle: {bundle_stats['total']} entries across {bundle_stats['shard_count']} shards · {mb:.1f} MB raw")
     else:
         print("  no extracted texts yet — skipping bundle build")
 
-    print("\n[6/7] Building search-index.json (inverted token index, full body)...")
+    print("\n[Derive 3/4] Building search-index (inverted token index, full body)...")
     index_stats = build_search_index()
     if index_stats:
         mb = index_stats["size_bytes"] / (1024 * 1024)
-        print(f"  search-index.json: {index_stats['report_count']} docs, "
+        print(f"  search-index: {index_stats['report_count']} docs across {index_stats['shard_count']} shards, "
               f"vocab={index_stats['vocab_size']}, postings={index_stats['total_postings']} · {mb:.1f} MB raw")
     else:
         print("  no extracted texts yet — skipping index build")
 
-    print("\n[7/7] Writing meta.json...")
+    print("\n[Derive 4/4] Writing meta.json...")
     meta = write_meta(
         total_reports=len(reports),
         total_with_text=n_with_text,
-        extract_stats=extract_stats,
         bundle_stats=bundle_stats,
         index_stats=index_stats,
     )
     print(json.dumps(meta, indent=2))
+
+
+def main():
+    """Dispatch to extract / derive / both based on BUILD_PHASE.
+
+    BUILD_PHASE=extract — for cag.yml, cag-backfill.yml writers. Produces only
+                          reports.json + text/<id>.txt; never touches derived
+                          files. Multiple writers can race-safely commit because
+                          their changes are on different filenames.
+    BUILD_PHASE=derive  — for cag-derive.yml. Reads disk state, regenerates
+                          manifest.json + search-bundle-*.json +
+                          search-index-*.json + meta.json. Single owner of
+                          derived files (concurrency cancel-in-progress: true).
+    BUILD_PHASE=all     — legacy / local-dev convenience. Runs both phases in
+                          one process; same output as a writer + derive run
+                          back-to-back. Don't use in CI — the split-phase
+                          workflows exist precisely to avoid this race.
+    """
+    phase = os.environ.get("BUILD_PHASE", "all").lower()
+    if phase not in ("extract", "derive", "all"):
+        print(f"BUILD_PHASE={phase!r} is not one of extract|derive|all — aborting.", file=sys.stderr)
+        sys.exit(2)
+
+    print("=== ParliamentWatch CAG static builder ===")
+    print(f"BUILD_PHASE             : {phase}")
+    print(f"DOCS                    : {DOCS}")
+    if phase in ("extract", "all"):
+        print(f"MAX_LISTING_PAGES       : {MAX_LISTING_PAGES or '(walk to empty)'}")
+        print(f"MAX_EXTRACTIONS_PER_RUN : {MAX_EXTRACTIONS_PER_RUN}")
+        print(f"MAX_RUN_SECONDS         : {MAX_RUN_SECONDS}")
+        print(f"EXTRACT_WORKERS         : {EXTRACT_WORKERS}")
+
+    if phase in ("extract", "all"):
+        phase_extract()
+
+    if phase in ("derive", "all"):
+        phase_derive()
 
     print("\nDone.")
 
