@@ -1,18 +1,9 @@
 {
   "version": "1.0",
   "corpus": "cag",
-  "generated_at": "2026-05-10T08:31:45Z",
-  "max_extractions_per_run": 200,
-  "extract_workers": 4,
+  "generated_at": "2026-05-10T09:20:54Z",
   "total_reports": 2701,
   "total_with_text": 349,
-  "extract_stats": {
-    "extracted": 55,
-    "failed": 17,
-    "rate_limited": false,
-    "budget_hit": true,
-    "candidates_remaining_after_run": 2345
-  },
   "search_bundle": {
     "shard_count": 1,
     "shards": [
