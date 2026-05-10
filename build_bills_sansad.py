@@ -70,6 +70,7 @@ PDFS_DIR.mkdir(parents=True, exist_ok=True)
 INDEX_META_JSON = DOCS / "index-meta.json"
 MANIFEST_JSON   = DOCS / "manifest.json"
 META_JSON       = DOCS / "meta.json"
+RECORDS_JSON    = DOCS / "records.json"          # mirrored sansad.in getBills snapshot
 STATE_JSON      = DOCS / ".scraper_state.json"   # cooldown bookkeeping
 
 LEGACY_INDEX_JSON          = DOCS / "index.json"           # pre-sharding
@@ -144,6 +145,94 @@ def _load_state() -> dict:
 def _save_state(state: dict) -> None:
     with open(STATE_JSON, "w") as f:
         json.dump(state, f, indent=2)
+
+
+def load_existing_records() -> list[dict]:
+    """Read the persisted records snapshot from docs/bills/records.json.
+
+    Returns [] on first run. Used by both phases — extract merges fresh
+    API data into the existing snapshot before saving back; derive reads
+    from disk and never touches the API. The persisted snapshot makes
+    the mirror self-contained: derive runs work even when sansad.in is
+    down, and the records snapshot at any point in time is recoverable
+    from git history.
+
+    Same-shape aligned with DRSC's reports.json and CAG's reports.json
+    in spirit (a primary file scraped from upstream + persisted), though
+    the on-disk format here is a JSON object keyed by `compositeId` for
+    cleaner auto-merges across concurrent writer commits — appending or
+    updating one record doesn't shift line positions of other records.
+    """
+    if not RECORDS_JSON.exists():
+        return []
+    try:
+        with open(RECORDS_JSON, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"  warning: failed to load {RECORDS_JSON}: {e} — starting fresh")
+        return []
+    if isinstance(data, dict):
+        # Either {"<compositeId>": <record>, ...} or a wrapper {"records": [...]}.
+        if "records" in data and isinstance(data["records"], list):
+            return data["records"]
+        return list(data.values())
+    if isinstance(data, list):
+        return data
+    return []
+
+
+def save_records(records: list[dict]) -> None:
+    """Persist records list to docs/bills/records.json keyed by compositeId.
+
+    Sorted-key dict format minimises spurious diffs on auto-merge between
+    concurrent writer commits — fresh records and updates land at stable
+    positions. Excludes any volatile / per-run metadata (timestamps live
+    in derived meta.json, not in the records snapshot).
+    """
+    by_id: dict[str, dict] = {}
+    for r in records:
+        cid = r.get("compositeId")
+        if cid is None:
+            continue
+        by_id[cid] = r
+    sorted_dict = dict(sorted(by_id.items()))
+    with open(RECORDS_JSON, "w", encoding="utf-8") as f:
+        json.dump(sorted_dict, f, ensure_ascii=False, indent=2)
+
+
+def merge_records(existing: list[dict], fresh: list[dict]) -> tuple[list[dict], dict]:
+    """Merge a fresh API snapshot into the persisted on-disk records.
+
+    Behavior:
+      - Same compositeId in both: fresh wins (handles upstream corrections).
+      - Old compositeIds not in fresh: kept (handles sansad.in delisting,
+        and the archival promise — once a bill is mirrored we never lose
+        it, even if upstream removes it).
+      - New compositeIds in fresh: added.
+
+    Returns (merged_records, stats).
+    """
+    by_id: dict[str, dict] = {r["compositeId"]: r for r in existing if r.get("compositeId")}
+    new_count = 0
+    updated_count = 0
+    for r in fresh:
+        cid = r.get("compositeId")
+        if cid is None:
+            continue
+        if cid in by_id:
+            if by_id[cid] != r:
+                updated_count += 1
+            by_id[cid] = r
+        else:
+            new_count += 1
+            by_id[cid] = r
+    fresh_ids = {r["compositeId"] for r in fresh if r.get("compositeId")}
+    kept_legacy = sum(1 for cid in by_id if cid not in fresh_ids)
+    return list(by_id.values()), {
+        "new": new_count,
+        "updated": updated_count,
+        "kept_legacy": kept_legacy,
+    }
 
 
 def _is_in_cooldown(state: dict) -> tuple[bool, Optional[float]]:
@@ -664,21 +753,35 @@ def write_meta(records: list[dict], state: dict,
 # ── Main ───────────────────────────────────────────────────────────────────
 
 def phase_extract() -> int:
-    """Phase 1 — produce primary files: text/<compositeId>.txt extracted
-    via PDF download + parse, plus .scraper_state.json (cooldown bookkeeping).
+    """Phase 1 — produce primary files: records.json (merged sansad.in
+    snapshot), text/<compositeId>.txt extracted via PDF download + parse,
+    and .scraper_state.json (cooldown bookkeeping).
 
-    Bills has no `records.json` analogue — the records list is fetched from
-    sansad.in's getBills API every run. That API call is cheap (~17-35s)
-    and re-runs in the derive phase too, so we don't need to persist it.
+    The records.json mirror means our pipeline is self-contained: derive
+    runs and partial recovery don't depend on sansad.in being live, and
+    once a bill is mirrored we never lose it (kept across upstream
+    delistings).
     """
     state = _load_state()
 
-    print("  Building bill index from getBills API ...")
+    print("  Loading existing records snapshot from disk...")
+    existing = load_existing_records()
+    print(f"  Existing: {len(existing)} records on disk")
+
+    print("  Fetching fresh records from getBills API ...")
     t0 = time.time()
-    records, duplicates = collect_records()
-    print(f"  Index: {len(records)} records "
+    fresh, duplicates = collect_records()
+    print(f"  API: {len(fresh)} records "
           f"({duplicates} composite-id collisions dropped) "
           f"in {time.time()-t0:.1f}s")
+
+    records, merge_stats = merge_records(existing, fresh)
+    print(f"  Merged: {len(records)} total — "
+          f"{merge_stats['new']} new, "
+          f"{merge_stats['updated']} updated, "
+          f"{merge_stats['kept_legacy']} kept legacy (delisted upstream but retained)")
+    save_records(records)
+    print(f"  Saved {RECORDS_JSON.relative_to(ROOT)}")
 
     in_cooldown, remaining = _is_in_cooldown(state)
     if in_cooldown:
@@ -699,18 +802,21 @@ def phase_extract() -> int:
 def phase_derive() -> int:
     """Phase 2 — regenerate derived files (sharded index, index-meta.json,
     manifest.json, search-bundle-*.json, search-index-*.json, meta.json)
-    from the on-disk primary state (text/) plus the API-fetched records list.
+    from the on-disk primary state.
 
-    Owned by bills-derive.yml; one run at a time via `cancel-in-progress: true`.
+    Reads records from records.json (NOT from the live API) so derive
+    works even when sansad.in is down, and so the manifest/bundle/meta
+    we publish are always reproducible from a git checkout. Owned by
+    bills-derive.yml; one run at a time via `cancel-in-progress: true`.
     """
     state = _load_state()
 
-    print("  Building bill index from getBills API ...")
-    t0 = time.time()
-    records, duplicates = collect_records()
-    print(f"  Index: {len(records)} records "
-          f"({duplicates} composite-id collisions dropped) "
-          f"in {time.time()-t0:.1f}s")
+    print("  Loading records snapshot from disk...")
+    records = load_existing_records()
+    print(f"  Loaded {len(records)} records from {RECORDS_JSON.relative_to(ROOT)}")
+    if not records:
+        print("  No records on disk yet — derive needs at least one extract run first. Exiting cleanly.")
+        return 0
 
     print("  Writing sharded index + index-meta.json + manifest.json...")
     shard_entries = write_sharded_index(records)

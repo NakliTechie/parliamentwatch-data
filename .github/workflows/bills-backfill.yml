@@ -61,7 +61,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/bills/text/ docs/bills/.scraper_state.json
+          git add docs/bills/records.json docs/bills/text/ docs/bills/.scraper_state.json
           git diff --cached --quiet && echo "no primary changes" && exit 0
           git commit -m "Auto-update Bills (sansad) primary data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
