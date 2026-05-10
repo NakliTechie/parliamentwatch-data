@@ -351,12 +351,28 @@ def build_manifest() -> dict:
     return {"texts": manifest}
 
 
-# ── Phase 5: search bundle ─────────────────────────────────────────────────
+# ── Phase 5+6: search bundle + index, BOTH SHARDED (v1.0c) ────────────────
+#
+# Same architecture as DRSC's build_static.py: split outputs into N shards
+# by sorted reportKey range so no single file exceeds CF Workers' 25 MiB
+# per-asset cap. Bundle shards each carry a slice of entries; index shards
+# carry full vocab + slice of report_keys + slice of postings (postings
+# indices are local to the shard, app applies offsets when merging).
 
-def build_search_bundle(reports: dict[int, dict]) -> dict | None:
-    """Title + first 5K chars per report. Replaces deep-search per-text fan-out."""
+DOCS_PER_SHARD = 2500
+
+
+def _delete_legacy(path: Path) -> None:
+    if path.exists():
+        path.unlink()
+
+
+def build_search_bundle(reports: dict[int, dict],
+                        docs_per_shard: int = DOCS_PER_SHARD) -> dict | None:
+    """Title + first N chars per report, sharded."""
     if not TEXT_DIR.exists():
         return None
+
     entries = []
     truncated = 0
     for rid, meta in reports.items():
@@ -370,43 +386,60 @@ def build_search_bundle(reports: dict[int, dict]) -> dict | None:
         head = text[:_HEAD_CHARS]
         if len(text) > _HEAD_CHARS:
             truncated += 1
-        entries.append({
-            "key":   f"cag|{rid}",
-            "title": meta.get("title", ""),
-            "head":  head,
-        })
+        entries.append({"key": f"cag|{rid}", "title": meta.get("title", ""), "head": head})
 
     if not entries:
         return None
 
-    bundle = {
-        "version":      1,
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "head_chars":   _HEAD_CHARS,
-        "total":        len(entries),
-        "truncated":    truncated,
-        "entries":      entries,
-    }
-    with open(BUNDLE_JSON, "w", encoding="utf-8") as f:
-        json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+    entries.sort(key=lambda e: e["key"])
+    n_shards = max(1, (len(entries) + docs_per_shard - 1) // docs_per_shard)
+    shard_size = (len(entries) + n_shards - 1) // n_shards
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
+
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, len(entries))
+        slc   = entries[start:end]
+        bundle = {
+            "version":      2,
+            "generated_at": generated_at,
+            "shard":        shard_idx,
+            "shard_count":  n_shards,
+            "head_chars":   _HEAD_CHARS,
+            "total":        len(slc),
+            "entries":      slc,
+        }
+        fname = f"search-bundle-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "entries": len(slc)})
+
+    _delete_legacy(BUNDLE_JSON)
+
     return {
-        "total":      len(entries),
-        "truncated":  truncated,
-        "head_chars": _HEAD_CHARS,
-        "size_bytes": BUNDLE_JSON.stat().st_size,
+        "shard_count":     n_shards,
+        "shards":          [s["name"] for s in shards_meta],
+        "shard_sizes":     {s["name"]: s["size_bytes"] for s in shards_meta},
+        "total":           len(entries),
+        "truncated":       truncated,
+        "head_chars":      _HEAD_CHARS,
+        "size_bytes":      total_size_bytes,
+        "max_shard_bytes": max((s["size_bytes"] for s in shards_meta), default=0),
     }
 
 
-# ── Phase 6: search index (inverted token index over full body) ────────────
-
-def build_search_index() -> dict | None:
-    """Identical shape to DRSC's index. Same tokeniser, stopwords, cutoffs,
-    delta-encoded postings — so v2 cross-corpus search can union both."""
+def build_search_index(docs_per_shard: int = DOCS_PER_SHARD) -> dict | None:
+    """Inverted token index over full body, sharded. Each shard carries the
+    full vocab; postings are doc-local within the shard."""
     if not TEXT_DIR.exists():
         return None
 
-    report_keys: list[str] = []
-    doc_token_sets: list[set[str]] = []
+    docs: list[tuple[str, set[str]]] = []
     df: dict[str, int] = {}
 
     for text_file in sorted(TEXT_DIR.glob("*.txt")):
@@ -422,12 +455,11 @@ def build_search_index() -> dict | None:
             if t.isdigit() or t in _STOPWORDS: continue
             tokens.add(t)
             if len(tokens) >= 50000: break
-        report_keys.append(f"cag|{rid}")
-        doc_token_sets.append(tokens)
+        docs.append((f"cag|{rid}", tokens))
         for t in tokens:
             df[t] = df.get(t, 0) + 1
 
-    n_docs = len(report_keys)
+    n_docs = len(docs)
     if n_docs == 0:
         return None
 
@@ -436,14 +468,11 @@ def build_search_index() -> dict | None:
     keep_tokens = sorted(t for t, c in df.items() if low <= c <= high)
     token_to_idx = {t: i for i, t in enumerate(keep_tokens)}
 
-    raw_postings: list[list[int]] = [[] for _ in keep_tokens]
-    for doc_idx, tokens in enumerate(doc_token_sets):
-        for t in tokens:
-            ti = token_to_idx.get(t)
-            if ti is not None:
-                raw_postings[ti].append(doc_idx)
+    docs.sort(key=lambda d: d[0])
 
-    total_postings = sum(len(p) for p in raw_postings)
+    n_shards = max(1, (n_docs + docs_per_shard - 1) // docs_per_shard)
+    shard_size = (n_docs + n_shards - 1) // n_shards
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     def _delta(lst: list[int]) -> list[int]:
         if not lst: return lst
@@ -451,29 +480,61 @@ def build_search_index() -> dict | None:
         for x in lst[1:]:
             out.append(x - prev); prev = x
         return out
-    postings = [_delta(p) for p in raw_postings]
 
-    index = {
-        "version":          2,
-        "encoding":         "delta",
-        "generated_at":     datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+    total_postings = 0
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
+
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, n_docs)
+        slc   = docs[start:end]
+
+        raw_postings: list[list[int]] = [[] for _ in keep_tokens]
+        for local_idx, (_key, tokens) in enumerate(slc):
+            for t in tokens:
+                ti = token_to_idx.get(t)
+                if ti is not None:
+                    raw_postings[ti].append(local_idx)
+
+        total_postings += sum(len(p) for p in raw_postings)
+        postings = [_delta(p) for p in raw_postings]
+        shard_keys = [k for k, _ in slc]
+
+        index = {
+            "version":          3,             # sharded
+            "encoding":         "delta",
+            "generated_at":     generated_at,
+            "shard":            shard_idx,
+            "shard_count":      n_shards,
+            "report_count":     len(slc),
+            "vocab_size":       len(keep_tokens),
+            "freq_cutoff_low":  low,
+            "freq_cutoff_high": high,
+            "stopwords_count":  len(_STOPWORDS),
+            "report_keys":      shard_keys,
+            "vocab":            keep_tokens,
+            "postings":         postings,
+        }
+        fname = f"search-index-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "report_count": len(slc)})
+
+    _delete_legacy(INDEX_JSON)
+
+    return {
+        "shard_count":      n_shards,
+        "shards":           [s["name"] for s in shards_meta],
+        "shard_sizes":      {s["name"]: s["size_bytes"] for s in shards_meta},
         "report_count":     n_docs,
         "vocab_size":       len(keep_tokens),
         "total_postings":   total_postings,
-        "freq_cutoff_low":  low,
-        "freq_cutoff_high": high,
-        "stopwords_count":  len(_STOPWORDS),
-        "report_keys":      report_keys,
-        "vocab":            keep_tokens,
-        "postings":         postings,
-    }
-    with open(INDEX_JSON, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
-    return {
-        "report_count":   n_docs,
-        "vocab_size":     len(keep_tokens),
-        "total_postings": total_postings,
-        "size_bytes":     INDEX_JSON.stat().st_size,
+        "size_bytes":       total_size_bytes,
+        "max_shard_bytes":  max((s["size_bytes"] for s in shards_meta), default=0),
         "freq_cutoff_low":  low,
         "freq_cutoff_high": high,
     }

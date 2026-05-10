@@ -294,16 +294,32 @@ def build_committees_index():
         json.dump(out, f, indent=2, ensure_ascii=False)
 
 
-# Single search bundle the app fetches once and caches in IDB. Replaces the
-# per-text-file fan-out the original SansadLocal-era "deep search" toggle
-# did. Each entry is the report's metadata key, title, and the first N
-# characters of the extracted text — enough for substring matching across
-# the corpus's scope / intro / findings without paying for the full
-# ~500 MB body corpus.
+# Search bundle: title + first N chars per extracted report. Used by the
+# app for substring matching across the corpus scope / intro / findings,
+# and as the snippet source in result rows.
 #
-# Bundle lives at docs/drsc/search-bundle.json (post-Phase-2 layout).
-# Output path is implicit via the DOCS constant above.
-def build_search_bundle(head_chars=5000):
+# v1.0c: SHARDED. CF Workers + Static Assets has a 25 MiB per-asset hard
+# limit. At ~5 KB/doc the unsharded bundle crosses 25 MiB around 5,000
+# reports — this corpus is heading to 13k+. We split into N shards by
+# sorted reportKey range; each shard <= DOCS_PER_SHARD reports, each
+# file <= ~15 MiB. App fetches all shards in parallel, merges entries
+# into one Map.
+#
+# Output: docs/drsc/search-bundle-00.json, search-bundle-01.json, ...
+# Old single-file `search-bundle.json` is removed when present so it
+# doesn't keep blocking the deploy.
+
+DOCS_PER_SHARD = 2500   # safe ceiling: 2500 × 5 KB ≈ 12.5 MiB per bundle shard
+
+
+def _delete_legacy(path: Path) -> None:
+    """Drop a pre-sharding single file if it's still around — otherwise
+    it stays in docs/ and keeps tripping the 25 MiB asset check."""
+    if path.exists():
+        path.unlink()
+
+
+def build_search_bundle(head_chars=5000, docs_per_shard=DOCS_PER_SHARD):
     reports = load_existing_reports()
     text_root = DOCS / "text"
     if not text_root.exists():
@@ -311,7 +327,6 @@ def build_search_bundle(head_chars=5000):
 
     entries = []
     truncated = 0
-    total_text_bytes = 0
 
     for committee_key, committee_reports in reports.items():
         for r in committee_reports:
@@ -332,33 +347,55 @@ def build_search_bundle(head_chars=5000):
             head = text[:head_chars]
             if len(text) > head_chars:
                 truncated += 1
-            total_text_bytes += len(head.encode("utf-8"))
             key = f"{committee_key}|{ls if ls is not None else ''}|{num}"
-            entries.append({
-                "key":   key,
-                "title": r.get("title", ""),
-                "head":  head,
-            })
+            entries.append({"key": key, "title": r.get("title", ""), "head": head})
 
-    bundle = {
-        "version":      1,
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "head_chars":   head_chars,
-        "total":        len(entries),
-        "truncated":    truncated,
-        "entries":      entries,
-    }
-    out_path = DOCS / "search-bundle.json"
-    # ensure_ascii=False so Hindi/Devanagari stays one byte per char (gzip
-    # handles utf-8 better than \uXXXX escapes). separators tightens the JSON.
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+    if not entries:
+        return None
+
+    # Sort by key for stable, deterministic shard composition. With sorted
+    # input each shard's keys form a contiguous lexical range — useful for
+    # at-a-glance debugging of which reports landed where.
+    entries.sort(key=lambda e: e["key"])
+
+    n_shards = max(1, (len(entries) + docs_per_shard - 1) // docs_per_shard)
+    shard_size = (len(entries) + n_shards - 1) // n_shards
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
+
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, len(entries))
+        slc   = entries[start:end]
+        bundle = {
+            "version":      2,
+            "generated_at": generated_at,
+            "shard":        shard_idx,
+            "shard_count":  n_shards,
+            "head_chars":   head_chars,
+            "total":        len(slc),
+            "entries":      slc,
+        }
+        fname = f"search-bundle-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "entries": len(slc)})
+
+    _delete_legacy(DOCS / "search-bundle.json")
 
     return {
-        "total":      len(entries),
-        "truncated":  truncated,
-        "head_chars": head_chars,
-        "size_bytes": out_path.stat().st_size,
+        "shard_count":   n_shards,
+        "shards":        [s["name"] for s in shards_meta],
+        "shard_sizes":   {s["name"]: s["size_bytes"] for s in shards_meta},
+        "total":         len(entries),
+        "truncated":     truncated,
+        "head_chars":    head_chars,
+        "size_bytes":    total_size_bytes,
+        "max_shard_bytes": max((s["size_bytes"] for s in shards_meta), default=0),
     }
 
 
@@ -405,7 +442,14 @@ _FREQ_CUTOFF_LOW  = 2
 _MAX_TOKEN_LEN    = 25   # 25+ char tokens are essentially always OCR junk
 
 
-def build_search_index():
+# v1.0c: SHARDED. Same per-asset 25 MiB ceiling as the bundle. We split
+# by sorted reportKey range. Each shard carries the FULL vocabulary
+# (~1.5-3 MiB) but only its slice's report_keys + postings. App keeps
+# shards separate at query time and unions doc-key results across them.
+# Vocab duplication adds ~10% disk overhead vs unsharded; clean code
+# wins.
+
+def build_search_index(docs_per_shard=DOCS_PER_SHARD):
     reports = load_existing_reports()
     text_root = DOCS / "text"
     if not text_root.exists():
@@ -413,9 +457,8 @@ def build_search_index():
 
     # First pass: collect (report_key, set_of_tokens) per doc. Sets dedupe
     # within-doc — we don't store positions or counts, just presence.
-    report_keys = []        # parallel array — index → "<committee>|<ls>|<num>"
-    doc_token_sets = []     # parallel array — index → set of tokens in that doc
-    df = {}                 # token → document frequency (int count of docs containing it)
+    docs: list[tuple[str, set[str]]] = []   # (report_key, tokens)
+    df: dict[str, int] = {}
 
     for committee_key, committee_reports in reports.items():
         for r in committee_reports:
@@ -433,16 +476,9 @@ def build_search_index():
                 text = text_path.read_text(encoding="utf-8", errors="replace")
             except Exception:
                 continue
-            # Lowercase + tokenize. Cap token count per doc as a defensive
-            # measure against pathological PDFs (text extraction sometimes
-            # produces millions of single-char tokens from scanned junk).
-            tokens = set()
+            tokens: set[str] = set()
             for m in _TOKEN_RE.finditer(text.lower()):
                 t = m.group(0)
-                # Junk filters: too short / too long / pure-numeric / stopword.
-                # Pure-numeric drops "144" etc — not ideal but the alternative
-                # is indexing every page number and date. Revisit if real
-                # numeric queries become a thing.
                 if len(t) < 2 or len(t) > _MAX_TOKEN_LEN:
                     continue
                 if t.isdigit() or t in _STOPWORDS:
@@ -450,70 +486,93 @@ def build_search_index():
                 tokens.add(t)
                 if len(tokens) >= 50000:
                     break
-            report_keys.append(f"{committee_key}|{ls if ls is not None else ''}|{num}")
-            doc_token_sets.append(tokens)
+            key = f"{committee_key}|{ls if ls is not None else ''}|{num}"
+            docs.append((key, tokens))
             for t in tokens:
                 df[t] = df.get(t, 0) + 1
 
-    n_docs = len(report_keys)
+    n_docs = len(docs)
     if n_docs == 0:
         return None
 
-    # Frequency cutoff: drop tokens that are too common to discriminate
-    # (>90%) AND drop singletons (<2 docs — usually OCR errors or
-    # report-specific identifiers that won't be queried).
+    # Frequency cutoffs (corpus-wide — applied once across all shards so
+    # vocab is consistent everywhere, app can search uniformly).
     high = int(n_docs * _FREQ_CUTOFF_HIGH)
     low  = _FREQ_CUTOFF_LOW
     keep_tokens = sorted(t for t, c in df.items() if low <= c <= high)
     token_to_idx = {t: i for i, t in enumerate(keep_tokens)}
 
-    # Build postings: for each kept token, the sorted list of doc indices
-    # that contain it. Delta-encode the sorted list so consecutive small
-    # deltas dominate the JSON — gzip handles that pattern much better than
-    # large absolute IDs (saves ~25% on the wire).
-    raw_postings = [[] for _ in keep_tokens]
-    for doc_idx, tokens in enumerate(doc_token_sets):
-        for t in tokens:
-            ti = token_to_idx.get(t)
-            if ti is not None:
-                raw_postings[ti].append(doc_idx)
+    # Sort docs by key for stable, deterministic shard composition.
+    docs.sort(key=lambda d: d[0])
 
-    total_postings = sum(len(p) for p in raw_postings)
+    n_shards = max(1, (n_docs + docs_per_shard - 1) // docs_per_shard)
+    shard_size = (n_docs + n_shards - 1) // n_shards
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     def _delta(lst):
         if not lst:
             return lst
-        out = [lst[0]]
-        prev = lst[0]
+        out = [lst[0]]; prev = lst[0]
         for x in lst[1:]:
-            out.append(x - prev)
-            prev = x
+            out.append(x - prev); prev = x
         return out
 
-    postings = [_delta(p) for p in raw_postings]
+    total_postings = 0
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
 
-    index = {
-        "version":         2,                 # bumped: postings are delta-encoded
-        "encoding":        "delta",           # app reverses with cumulative sum
-        "generated_at":    datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "report_count":    n_docs,
-        "vocab_size":      len(keep_tokens),
-        "total_postings":  total_postings,
-        "freq_cutoff_low":  low,
-        "freq_cutoff_high": high,
-        "stopwords_count": len(_STOPWORDS),
-        "report_keys":     report_keys,
-        "vocab":           keep_tokens,
-        "postings":        postings,
-    }
-    out_path = DOCS / "search-index.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, n_docs)
+        slc   = docs[start:end]
+
+        # Per-shard postings: doc indices are LOCAL to this shard
+        # (0..len(slc)-1). App applies per-shard offsets when merging.
+        raw_postings: list[list[int]] = [[] for _ in keep_tokens]
+        for local_idx, (_key, tokens) in enumerate(slc):
+            for t in tokens:
+                ti = token_to_idx.get(t)
+                if ti is not None:
+                    raw_postings[ti].append(local_idx)
+
+        total_postings += sum(len(p) for p in raw_postings)
+        postings = [_delta(p) for p in raw_postings]
+        shard_keys = [k for k, _ in slc]
+
+        index = {
+            "version":          3,             # sharded
+            "encoding":         "delta",
+            "generated_at":     generated_at,
+            "shard":            shard_idx,
+            "shard_count":      n_shards,
+            "report_count":     len(slc),
+            "vocab_size":       len(keep_tokens),
+            "freq_cutoff_low":  low,
+            "freq_cutoff_high": high,
+            "stopwords_count":  len(_STOPWORDS),
+            "report_keys":      shard_keys,
+            "vocab":            keep_tokens,
+            "postings":         postings,
+        }
+        fname = f"search-index-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "report_count": len(slc)})
+
+    _delete_legacy(DOCS / "search-index.json")
+
     return {
-        "report_count":    n_docs,
-        "vocab_size":      len(keep_tokens),
-        "total_postings":  total_postings,
-        "size_bytes":      out_path.stat().st_size,
+        "shard_count":      n_shards,
+        "shards":           [s["name"] for s in shards_meta],
+        "shard_sizes":      {s["name"]: s["size_bytes"] for s in shards_meta},
+        "report_count":     n_docs,
+        "vocab_size":       len(keep_tokens),
+        "total_postings":   total_postings,
+        "size_bytes":       total_size_bytes,
+        "max_shard_bytes":  max((s["size_bytes"] for s in shards_meta), default=0),
         "freq_cutoff_low":  low,
         "freq_cutoff_high": high,
     }
