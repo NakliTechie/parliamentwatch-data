@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-10T09:12:54Z",
+  "scraped_at": "2026-05-10T09:31:27Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9913,
@@ -29,12 +29,6 @@
   "year_range": {
     "min": 1952,
     "max": 2026
-  },
-  "this_run": {
-    "extracted": 0,
-    "failed": 0,
-    "rate_limited": false,
-    "elapsed": 0.0
   },
   "texts": {
     "XXXVIII_2019_R": {
