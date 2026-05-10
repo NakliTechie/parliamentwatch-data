@@ -1,32 +1,32 @@
 {
   "version": "1.2",
-  "generated_at": "2026-05-09T21:19:36Z",
+  "generated_at": "2026-05-10T04:03:46Z",
   "lok_sabhas": [
     18
   ],
   "max_extractions_per_run": 400,
   "extract_workers": 4,
   "total_reports": 14707,
-  "total_with_text": 4870,
+  "total_with_text": 5099,
   "extract_stats": {
-    "extracted": 279,
-    "failed": 121,
+    "extracted": 196,
+    "failed": 204,
     "rate_limited": false,
     "budget_hit": false,
-    "candidates_remaining_after_run": 9886
+    "candidates_remaining_after_run": 9641
   },
   "search_bundle": {
-    "total": 4870,
-    "truncated": 4645,
+    "total": 5099,
+    "truncated": 4841,
     "head_chars": 5000,
-    "size_bytes": 25248506
+    "size_bytes": 26353842
   },
   "search_index": {
-    "report_count": 4870,
-    "vocab_size": 289996,
-    "total_postings": 10054393,
-    "size_bytes": 27398738,
+    "report_count": 5099,
+    "vocab_size": 326509,
+    "total_postings": 10586401,
+    "size_bytes": 29241379,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 4383
+    "freq_cutoff_high": 4589
   }
 }
