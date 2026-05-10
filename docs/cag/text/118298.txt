@@ -1,0 +1,3346 @@
+ 
+ 
+ 
+ 
+Report of the 
+Comptroller and Auditor General of India 
+ 
+ 
+on 
+ 
+ 
+Status of Direct Benefit Transfer  
+of Social Security Pension Schemes in Himachal Pradesh 
+ 
+ 
+ 
+ 
+ 
+ 
+for the year ended 31 March 2021
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Government of Himachal Pradesh 
+Report No. 3 of the year 2022
+
+i 
+Table of Contents 
+Description Reference to 
+Paragraph  Page No.  
+Preface iii 
+Executive Summary v-vii 
+Chapter-I: Introduction 
+Overview of Social Security Pension Schemes in Hima chal 
+Pradesh 
+1.1 1 
+Organisational set up 1.2 1-2 
+Eligibility criteria for Social Security Pension Schemes 1.3 2-3 
+Identification of beneficiaries 1.4 3-4 
+Process and Mode of Disbursement 1.5 4-5 
+Chapter-II: Audit Approach 
+Audit Objectives 2.1 7 
+Audit Criteria 2.2 7 
+Scope and Methodology of Audit 2.3 7-9 
+Acknowledgement 2.4 9 
+Organisation of Audit findings 2.5 9 
+Chapter-III: Coverage and Financial Management 
+Database of eligible persons 3.1 11-12 
+Target and coverage of beneficiaries 3.2 12-13 
+Pendency of cases 3.3 13-15 
+Budget allocation and expenditure 3.4 15 
+Blocking of social security pension funds 3.5 15-16  
+Chapter-IV: Compliance with Direct Benefit Transfer (DBT) framework  
+Comparison of existing system with DBT framework 4. 1 18-20 
+Chapter-V: Process of Social Security Pension Schemes’ Implementation 
+Uniqueness of beneficiaries 5.1 21-24 
+Scrutiny and processing of applications 5.2 24-27 
+Selection of beneficiaries 5.3 27-31 
+Disbursement of Pension 5.4 31-34 
+Confirmation of existing beneficiaries 5.5 34-36 
+ Chapter-VI: Analysis of Information Technology (IT ) application 
+System/ user manuals 6.1 39 
+Accessibility to e-Kalyan 6.2 39-40 
+Reliability of e-Kalyan database 6.3 40-41 
+Convergence with guidelines / rules 6.4 41-42 
+Generation of reports 6.5 42 
+User access and feedback 6.6 43 
+Chapter-VII: Organization and management of Direct Benefit Transfer 
+State Direct Benefit Transfer Cell 7.1 45 
+Departmental Direct Benefit Transfer Cell/ Committee 7.2 46 
+
+ii 
+Description Reference to 
+Paragraph  Page No.  
+Robust Governance Framework 7.3 46 
+Training and support to State officials on Direct Benefit Transfer  7.4 46-47 
+State Direct Benefit Transfer Portal 7.5 47 
+Other deficiencies in the State Direct Benefit Transfer Portal 7.6 47-48 
+Identification and onboarding of schemes on State D irect Benefit 
+Transfer Portal 
+7.7 48 
+Disaster Recovery and Business Continuity Plan 7.8 48-49 
+Management Information System 7.9 49 
+Variation in figures available on Direct Benefit Tr ansfer Portal 
+and supplied by the Department 
+7.10 49-50 
+Adoption of Public Financial Management System 7.11  50-52 
+Chapter-VIII: Human Resource Management and Monitoring 
+Staff position 8.1 55 
+e-Kalyan user manual and capacity building 8.2 55-5 6 
+State and District Level Committees 8.3 56 
+Vigilance and Monitoring Committees 8.4 56-57 
+Social Audit 8.5 57 
+Grievance redressal mechanism 8.6 57 
+Chapter-IX: Conclusion 
+Conclusion  59-61 
+ 
+Appendices 
+Appendix 
+No. 
+Particulars Reference to 
+Paragraph  Page No.  
+1 Timelines in respect of scale of assistance under 
+various social security pension schemes in 
+Himachal Pradesh 
+1.3 
+Chapter-III  
+63 
+2 Criteria to fix priority of applications 1.4 64 
+3 Category-wise detail of number of beneficiaries in 
+selected Gram Panchayat s and beneficiaries 
+surveyed 
+2.3 65-66 
+4 Statement showing district-wise and scheme- wise 
+number of beneficiaries targeted for the year 2020-
+21 and beneficiaries in waiting list as of March 
+2021 
+3.2 67 
+5 Outstanding amount of pension benefits under 
+Social Security Pension Schemes 
+3.5 68 
+6 Detail regarding missing functionalities in the 
+State Direct Benefit Transfer portal 
+7.5 69 
+
+iii 
+ 
+PREFACE 
+This Report of the Comptroller and Auditor General of India for the year ended 
+31 March 2021 has been prepared for submission to the Governor of the State of Himachal 
+Pradesh under Article 151 (2) of the Constitution of India. 
+The Report contains significant results of performa nce audit of Status of Direct Benefit 
+Transfer of Social Security Pension Schemes in the State of Himachal Pradesh conducted 
+in terms of the Comptroller and Auditor General of India (Duties, Powers and Conditions 
+of Services) Act, 1971. 
+The audit has been conducted in conformity with the  Auditing Standards issued 
+(March 2017) by the Comptroller and Auditor General of India. 
+
+Executive Summary 
+
+v 
+Executive Summary 
+Performance Audit on Status of Direct Benefit Transfer (DBT) of Social Security Pension 
+Schemes in Himachal Pradesh was conducted for the p eriod 2017-21 to assess whether 
+disbursement of benefits to beneficiaries was done as per scheme guidelines and whether 
+the system(s) of disbursement of benefits was in compliance with the DBT framework as 
+prescribed by Government of India. Six schemes were selected for the performance audit: 
+three Government of India schemes under National So cial Assistance Programme 
+(NSAP), viz.  Indira Gandhi National Old Age Pension Scheme (IGN OAPS), Indira 
+Gandhi National Widow Pension Scheme (IGNWPS), Indi ra Gandhi National Disability 
+Pension Scheme (IGNDPS); and three State Government schemes, viz.  Old Age Pension 
+(OAP), Widow Pension Scheme (WPS), and Disability R elief Allowance (DRA). All 
+these six selected schemes were to be implemented t hrough DBT, for which process 
+re-engineering was to be done in line with the prescribed DBT framework. 
+The implementation of social security pension schemes involved various steps / processes 
+such as beneficiary application submission, applica tion scrutiny, processing, pension 
+authorisation, payment, etc. All the six selected schemes were being implemented using a 
+mix of manual and IT systems. Processes such as app lication submission, scrutiny, 
+verification, payment order related file transfers, payment processing feedback, etc., were 
+being undertaken manually. Application processing a nd authorisation were being 
+undertaken on an IT software called “e-Kalyan” since 2008; this was a client-server 
+software (software was hosted on standalone systems at the district-level and used locally) 
+until October 2020, when it was upgraded to a web-b ased integrated software (software 
+was hosted on the internet and used by various authorised users online).  
+Audit observed that implementation was not in consonance with the DBT framework – a 
+number of processes which were required to be done using IT systems were being done 
+manually; further, there were also deviations from scheme guidelines in the manual 
+processes being undertaken.  
+With regard to scheme coverage, Audit observed that the department had not maintained 
+any comprehensive database of eligible families / i ndividuals which led to exclusion 
+errors. Further, there were shortfalls in coverage of beneficiaries against target, even 
+though funds remained unspent at the end of respective financial years. Upon approval of 
+application by the DWO concerned, the applicant was added to the waiting list and though 
+eligible to be get the benefits under the schemes, were covered only upon availability of 
+vacancy / slot under relevant scheme. As of 31 Marc h 2021, there were 31,396 eligible 
+beneficiaries in the waiting list. 
+There were significant irregularities in the proces ses of application scrutiny and 
+verification. Incomplete application forms without obtaining requisite documents had 
+been processed, age of applicants manually entered on e-Kalyan software was found to 
+differ from actual/physical records, and ineligible applications were processed for various 
+schemes - underage applicants were allowed to avail benefits, male applicants were given 
+the benefit of widow pension, applications not meet ing stipulated disability criteria were 
+
+vi 
+allowed to avail disability benefits, non-BPL applicants were given benefit under schemes 
+meant only for BPL category, and benefits were allowed to applicants not meeting family 
+income criteria. Further, the department had not en visaged any mechanism for ensuring 
+uniqueness of an applicant, and even though Aadhar number was being collected from 
+applicants, the same was not being used to ensure u nique identification of beneficiaries 
+and prevent duplicate applications / applicants; no  other unique number / identifier was 
+being used to ensure uniqueness of the applicant. A s such, it was found that Aadhar 
+numbers had been used multiple times or entered incorrectly and duplicate entries existed 
+for the same name and other beneficiary details. It  was also observed that applications 
+were not being verified within stipulated timelines , whereas no timelines had been 
+prescribed for processing / approval of pension cases by district-level field functionaries. 
+These issues were evidence not only of deficient sc rutiny and processing of applications 
+by field functionaries, but also showed that the e -Kalyan  software lacked validation 
+checks to prevent ineligible / incorrect applications from being entered and processed.  
+With regard to disbursement of pension, for certain  categories of beneficiaries, doorstep 
+delivery of pension through post offices was mandated. In this regard, it was observed that 
+82 per cent  of surveyed beneficiaries reported that they were not receiving pension at 
+doorstep. For the three selected NSAP schemes, payment through PFMS had been started 
+only from October 2020 instead of the stipulated da te of April 2015, Aadhar Payment 
+Bridge system was not being used, and the schemes h ad not been integrated with the 
+NSAP portal of Government of India. For the three S tate Government schemes, funds 
+were first being transferred into bank accounts of district-level field functionaries and 
+cheques issued to banks / post offices for further transfer to beneficiary accounts. Thus, 
+for all the six selected schemes, the process of pe nsion disbursement was not being done 
+automatically through e-Kalyan  software or PFMS, but rather involved manual transfer of 
+payment files from e-Kalyan  to PFMS / banks / post offices. There was also no system of 
+feedback (through SMS, etc.) for informing benefici aries about transfer of pension 
+benefits to their account. The lack of validation checks in e-Kalyan  software and non-use 
+of Aadhar / other identifier for unique beneficiary identification was reflected in duplicate 
+bank / postal account numbers being linked with ben eficiaries leading to duplicate 
+disbursement of pension.  
+In addition to the lack of validation checks on the  e-Kalyan  software, there were other 
+issues relating to the use of this IT system: docum entation regarding system design and 
+user manual was not available and training had not been imparted to field-functionaries, 
+the system was vulnerable to unauthorised access as user and password management was 
+weak, the system had neither been integrated with P FMS nor with other existing IT 
+systems viz. e-pariwar  portal of panchayats and post office / bank portal s for real-time 
+verification of beneficiary data and pension paymen t status, and there was no Disaster 
+Recovery and Business Continuity Plan for the  software. 
+Monitoring / verification regarding change in benef iciary eligibility status, i.e., expiry, 
+re-marriage, employment, income, etc., was to be done by the department. In this regard, 
+it was observed that there was significant delay in such verification of eligibility status of 
+beneficiaries resulting in cases of disbursement of  pension to expired / underage / 
+
+vii 
+re-married beneficiaries. State / district-level vi gilance / monitoring committees had not 
+been constituted, and there was no dedicated grievance redressal mechanism. Further, no 
+steps had been taken for formulating a mechanism of  social audit for the social security 
+pension schemes. 
+In view of the range of deficiencies observed in bo th manual and IT processes involved 
+in the implementation of the selected social security pension schemes, it was clear that the 
+schemes were not being implemented as “direct benefit transfer” schemes in terms of the 
+DBT framework prescribed by Government of India, ev en though the State Government 
+had listed these schemes as such.  
+Audit recommendations include improvements in both manual and IT related aspects. The 
+department should initiate proactive and periodic i dentification of prospective 
+beneficiaries, create database of eligible populati on, periodically review targets, fix 
+timelines for pension approval / sanction, consider  involving Common Service Centres 
+(CSCs) for application submission, and ensure time- bound verification / scrutiny of 
+applications and beneficiary status. The e-Kalyan  software needs to be redesigned in 
+accordance with the DBT framework prescribed by Gov ernment of India so as to 
+incorporate validation checks, ensure applicant / b eneficiary uniqueness, and ensure 
+automated fund transfer into beneficiary accounts without manual intervention, along with 
+system of feedback on payment status both for the department and the beneficiary.  
+ 
+  
+
+Chapter-I 
+Introduction 
+
+1 | P a g e  
+Chapter-I 
+Introduction 
+The Directive Principles of the State Policy in the  Constitution of India enjoin upon the 
+State to undertake welfare measures within its mean s, targeting the poor and destitute in 
+particular. Article 41 of the Constitution of India  directs the State to provide public 
+assistance to its citizens in case of unemployment,  old age, sickness and disablement 
+within the limit of the State's economic capacity. 'Social Security' is covered under entry 
+No. 23 and 24 of the concurrent list under the Seve nth Schedule of the Constitution of 
+India. 
+1.1 Overview of Social Security Pension Schemes in Himachal Pradesh 
+Government of India (GoI) launched (August 1995) th e National Social Assistance 
+Programme (NSAP) as a fully funded Centrally Sponso red Scheme targeting the 
+destitutes. In the year 2007 and 2009, the programm e was expanded to cover all eligible 
+persons Below Poverty Line (BPL) and more vulnerabl e groups such as widows and 
+disabled persons. NSAP includes five sub-schemes as its components. Of these, three are 
+pension schemes (i) Indira Gandhi National Old Age Pension Scheme (IGNOAPS), 
+(ii) Indira Gandhi National Widow Pension Scheme (I GNWPS), and (iii) Indira Gandhi 
+National Disability Pension Scheme (IGNDPS). The ot her two sub-schemes (i) National 
+Family Benefit Scheme 1 and (ii) Annapurna scheme 2 are not pension schemes. 
+Two State sponsored social security pension schemes  namely Old Age Pension and 
+Disability Relief Allowance were being implemented in the State since November 1971. 
+Subsequently, in April 1986, April 1994 and April 2017 three more social security pension 
+schemes namely Widow / Divorced / Single Women Pens ion Scheme, Rehabilitation 
+Allowance to Lepers and Pension for Transgender were launched in Himachal Pradesh. 
+Thus, Himachal Pradesh is implementing eight social  security pension schemes 
+(GoI schemes: three and State schemes: five). These  schemes are being implemented by 
+the Empowerment of   Scheduled Castes, Other Backward Classes, Minorities Affairs and 
+the Specially Abled (ESOMSA) Directorate. According  to the State Government, these 
+schemes have been onboarded on (Direct Benefit Transfer) DBT platform for delivery of 
+benefits. 
+1.2 Organizational set up 
+At the Central level, Ministry of Rural Development  (MoRD) exercises overall control 
+over implementation of the NSAP. The responsibility  of implementation of all pension 
+schemes including those under NSAP in the State is vested with the Empowerment 
+of   Scheduled Castes, Other Backward Classes, Mino rities Affairs and the Specially 
+Abled (ESOMSA) Directorate.  The ESOMSA Directorate functions under the overall 
+administrative control of the Additional Chief Secr etary (Social Justice and 
+Empowerment) to the Government of Himachal Pradesh.  The Director, ESOMSA is 
+assisted by two Joint Directors, one Assistant Cont roller (Finance & Accounts) and one 
+(District Welfare Officer)  DWO at the Directorate level and 12 DWOs at distric t level. 
+DWOs at district level implement various schemes wi th the help of (Tehsil Welfare 
+                                                           
+1 A one-time assistance to the bereaved family in th e event of death of the breadwinner. 
+2 Food security to the eligible old aged persons who  remained uncovered under IGNOAPS. 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+2 | P a g e  
+Officers) TWOs, who function at tehsil level. Organizational structure of the Directorate 
+is shown below: 
+ 
+1.3 Eligibility criteria for Social Security Pensio n Schemes 
+Eligibility criteria for various pension schemes as of March 2021, as per NSAP guidelines, 
+2014 (revised) and Himachal Pradesh Social Security  Pension Rules, 2010, and scale of 
+assistance as of March 2021 are given in Table-1.1 below: 
+Table-1.1: Eligibility criteria and scale of assistance under various social security pension 
+schemes in Himachal Pradesh as of March 2021 
+Scheme Eligibility Scale of assistance as of March 
+2021 
+Indira Gandhi 
+National Old Age 
+Pension Scheme 
+(IGNOAPS) 
+Category – BPL 
+Eligible age – 60 years and above 
+(Persons with age more than 80 years 
+are eligible for enhanced pension) 
+60 – 69 years -- ₹ 850 (GoI share - 
+ 
+₹ 200) 
+70 – 79 years -- ₹ 1500 (GoI share -  
+₹ 200) 
+80 years and above -- ₹ 1500 (GoI 
+share - ₹ 500) 
+Indira Gandhi 
+National Widow 
+Pension Scheme 
+(IGNWPS) 
+Category – BPL 
+Eligible age – 40 years and above 
+₹ 1000 (GoI share - ₹ 300) 
+80 years and above -- ₹ 1500 (GoI 
+share - ₹ 500) 
+Indira Gandhi 
+National Disability 
+Pension Scheme 
+(IGNDPS) 
+Category – BPL 
+Eligible age – 18 years and above 
+Disability - severe disability i.e. 80 
+per cent  or more as per section 56 (4) 
+of Persons with Disability Act, 1995 
+₹ 1500 (GoI share - ₹ 300) 
+80 years and above -- ₹ 1500 (GoI 
+share - ₹ 500) 
+ 
+Old Age Pension 
+Scheme (State 
+scheme) 
+ 
+ 
+ 
+ 
+ 
+Eligible age – 60 years and above 
+Income criteria – family income 
+should not be more than ₹ 35,000 per 
+annum 
+(Persons with age more than 70 
+years are eligible for enhanced 
+pension irrespective of income 
+criteria) 
+60 – 69 years -- ₹ 850 
+70 years and above -- ₹ 1500 
+
+
+Chapter-I: Introduction  
+3 | P a g e  
+Pension Scheme for 
+Widow / Divorced / 
+Single Women 
+(State scheme) 
+Eligible age – 45 years for single 
+women and no age bar for widow / 
+divorced women 
+Income criteria – family income 
+should not be more than ₹ 35,000 per 
+annum 
+₹ 1000 
+ 
+70 years and above -- ₹ 1500 
+Disability Relief 
+Allowance (State 
+scheme) 
+Income criteria – family income 
+should not be more than ₹ 35,000 per 
+annum 
+Disability – 40 per cent and above  
+(Persons with more than 70 per cent  
+disability are eligible for enhanced 
+pension irrespective of income 
+criteria) 
+40 to 69 per cent  disability -- ₹ 1000 
+ 
+70 per cent  or above disability --  
+₹ 1500 
+Rehabilitation 
+Allowance to 
+Lepers (State 
+scheme) 
+Eligible age – No age bar 
+Income criteria – No income criteria 
+₹ 850 
+Pension for 
+Transgender (State 
+scheme) 
+Eligible age – No age bar 
+Income criteria – No income criteria 
+(Medical certificate required from 
+State / district level medical board) 
+₹ 850 
+Scale of assistance under various social security p ension schemes since inception is 
+detailed in Appendix-1. Targets of coverage under  various schemes are fixed by the State 
+Government every year on the basis of number of app licants pending for sanction of 
+pension in the previous quarter and availability of funds. Scheme-wise target and coverage 
+of beneficiaries under above mentioned eight scheme s as of March 2021 is detailed in 
+Table-1.2  below: 
+Table-1.2: Scheme-wise target and coverage of beneficiaries under social security pension 
+schemes in Himachal Pradesh as of March 2021 
+Name of scheme Target Coverage for the 
+quarter January-
+March 2021 (Active 
+beneficiaries) 
+Indira Gandhi National Old Age Pension Scheme 10072 2 98601 
+Indira Gandhi National Widow Pension Scheme 24008 2 3715 
+Indira Gandhi National Disability Pension Scheme 11 18 1080 
+Old age pension scheme 290194 285588 
+Pension Scheme for Widow / Divorced / Single Women  96903 95970 
+Disability Relief Allowance  63027 62499 
+Rehabilitation Allowance to Lepers  1482 1001 
+Pension for Transgender  150 03 
+Total: 577604 568457 
+1.4 Identification of beneficiaries 
+The beneficiaries are identified by the gram pancha yats (GPs) / municipalities in gram / 
+ward sabha meetings and applications of the prospective beneficiaries are submitted / sent 
+to the Tehsil Welfare Officer (TWO) / District Welf are Officer (DWO) for processing. 
+The applications are verified by departmental functionaries in offices of the TWO / DWO 
+to check for eligibility. After verification of doc uments, the details of eligible applicants 
+are uploaded on a software / system called e-Kalyan . The software was developed by 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+4 | P a g e  
+National Informatics Centre (NIC) and made functional in October 2008 as a client-server 
+software (hosted on individual computer(s) of each DWO without access to network). In 
+October 2020 , the e-Kalyan software was modified into an integra ted web-based 
+application (application is hosted on the internet; user access is provided to departmental 
+functionaries at various levels in Tehsil and District Welfare Offices). Once the applicant 
+details are entered into e-Kalyan, applicant is add ed to waiting list after scrutiny and 
+approval by DWO. Upon creation of vacancy, the appl icant is added to active pensioner 
+list. The software is programmed to fix priority of the applicants automatically on the basis 
+of criteria fixed by State Government ( Appendix-2). The Social Security Pension is 
+sanctioned by the concerned Deputy Commissioner (DC ) and other designated officer to 
+specific areas. The process of identification, appr oval and sanction of social security 
+pension is depicted below: 
+Flow chart – Addition of new beneficiary 
+ 
+ 
+ 
+1.5 Process and Mode of Disbursement 
+After sanction of pension, the pension is disbursed to the beneficiaries on quarterly basis 
+(on half yearly basis in tribal areas of the State) . The pension is disbursed directly into 
+postal / bank savings accounts of the beneficiaries. The State Government has entered into 
+a Memorandum of Understanding (MoU) on 1 June 2017 with the Department of Posts 
+according to which disbursement of social security pension is to be made into the postal 
+savings account of the beneficiaries. Further, post al authorities are to ensure doorstep 
+delivery of pension to all pensioners aged 80 years  and above or with disability above 
+70 per cent . Also, the field functionaries of the postal depar tment shall upon physical 
+verification or otherwise inform department about r emarriage of widow beneficiaries, 
+
+
+Chapter-I: Introduction  
+5 | P a g e  
+death of pensioner, shifting of beneficiary to othe r place, etc. For these services, 
+commission of 1.5 per cent  of the actual pension disbursed is paid to the postal authorities. 
+No such arrangement has been made with the banking system. 
+Payment through Public Financial Management System (PFMS) had been started for 
+schemes under NSAP only, from October 2020 onwards.  
+In respect of NSAP schemes, list of beneficiaries extracted from the e-Kalyan is converted 
+manually into compatible mode with PFMS and payment  is pushed into the accounts of 
+the beneficiaries from scheme wise nodal bank accounts of the Directorate through PFMS 
+after validation of account numbers of beneficiaries. However, there is no linkage between 
+NSAP portal with e-Kalyan and disbursement module of social security pension schemes 
+and acknowledgment push (confirmation of depositing of benefit in beneficiary account) 
+in the e-Kalyan is not automated. 
+For State schemes, funds are drawn from treasury by  preparation of bills through IFMS 
+and are credited in the bank account of the DWO. Th ereafter funds are sent to the PO / 
+Banks through cheque by the DWO for credit into the accounts of the beneficiaries as per 
+list extracted from the e-Kalyan. However, there is  no automation of interface between 
+e-Kalyan, IFMS and accounts of the beneficiaries. A lso, no acknowledgement regarding 
+confirmation of transfer of benefits to eligible be neficiary accounts is automatically 
+pushed back to e-Kalyan. The process of disbursement of pension (NSAP: 22 per cent  and 
+State schemes; 78 per cent ) is depicted below: 
+ 
+ 
+  
+List of beneficiaries and 
+cheque are manually sent to 
+post office/banks by DWO 
+List of beneficiaries and 
+cheque are  manually 
+sent to post 
+office/banks by DWO  
+
+Chapter-II 
+Audit Approach 
+
+7 | P a g e  
+Chapter-II 
+Audit approach 
+The social security pension schemes envisioned unde r the NSAP framework and 
+supplemented by the schemes of the State Government have varied eligibility criteria  and 
+scale of assistance. Further identification of beneficiaries, processing of applications, and 
+disbursement of pension in a time bound manner have inherent design and implementation 
+challenges. The annual allocation for social securi ty pension schemes is increasing over 
+the years. Considering the criticality of achieving intended outcomes and relative impact 
+of pension schemes, which aim to provide financial support to alleviate economic 
+deprivation, performance audit of Direct Benefit Tr ansfer (DBT) of social security 
+pension schemes being implemented in the State was conducted with a view to assess 
+outcomes of the schemes and process of benefit transfer to the beneficiaries. 
+2.1 Audit objectives 
+Performance audit of Status of Direct Benefit Trans fer of Social Security Pension 
+Schemes in Himachal Pradesh was carried out to assess whether: 
+• benefits under Social Security Pension Schemes have  been disbursed to eligible 
+beneficiaries in a transparent and timely manner, 
+• implementation of Social Security Pension schemes was in accordance with DBT 
+guidelines with particular reference to - 
+(a)  fulfilment of pre-requisites for DBT; 
+(b)  transfer of funds to beneficiaries in accordance wi th DBT guidelines/ 
+notifications; and 
+(c)  design and process flow of e-Kalyan software. 
+2.2 Audit criteria 
+Audit findings were benchmarked against the criteria sourced from the following: 
+• National Social Security Assistance Programme, 2014 (revised); 
+• Himachal Pradesh Social Security Pension Rules, 2010; 
+• Himachal Pradesh Financial Rules, 2009; 
+• Standard Operating Procedure for direct benefit transfer; and 
+• Instructions issued by GoI and State Government from time to time. 
+2.3 Scope and Methodology of Audit 
+To assess efficiency and adequacy in identification, implementation and disbursement of 
+social security pension under DBT system, the records of previous four years (2017-18 to 
+2020-21) in respect of six 
+1 (Central schemes: all three and State schemes: thr ee) Social 
+Security Pension schemes were selected based upon h ighest expenditure incurred during 
+2017-21 for detailed scrutiny during October 2020 a nd March 2021. Records of the 
+                                                           
+1 IGNOAPS, IGNWPS, IGNDPS, Old Age Pension (OAP), Wi dow Pension, and Disability Relief 
+Allowance (DRA) 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+8 | P a g e  
+Director (ESOMSA), four 2 (33 per cent ) out of 12 DWOs, and 11 TWOs 3 out of 31 under 
+selected DWOs were test-checked in Audit. A total of 59 gram panchayats  (Appendix-3) 
+falling under 11 TWOs were selected randomly for te st check of record related to social 
+security pension schemes and for beneficiary survey . A total of 595 beneficiaries 4 were 
+surveyed for assessment of end point delivery of so cial security pension. Pictorial 
+depiction of selected districts and tehsils is shown below: 
+ 
+Analysis of data dump of client-server-based e-Kaly an software (Data of active 
+beneficiaries since adoption including legacy data) provided by the Department was also 
+carried out in respect of all 12 districts of the State.  
+In addition to this, analysis of four test checked districts 5 was done in the web-based 
+e-Kalyan software (October 2020 - March 2021) by running queries to assess selection of 
+beneficiaries and disbursement of pension as per eligibility. Record in the State DBT Cell 
+was also scrutinized to assess disbursement of pension as per DBT protocol. 
+An Entry Conference was held on 10 December 2020 with the Additional Chief Secretary 
+(Social Justice and Empowerment) and Director (ESOM SA) wherein audit objectives, 
+criteria, methodology, scope, and sample for the pe rformance audit were discussed. An 
+                                                           
+2 Kinnaur, Mandi, Shimla and Solan; selected on the basis of judgmental sampling (in the proximity 
+of Shimla district due to spread of COVID pandemic) 
+3 Kinnaur: Nichar at Bhabanagar & Sangla; Mandi: Cha chyot, Mandi Sadar & Sundarnagar; Shimla: 
+Chopal, Rampur, Theog & Shimla - Rural; and Solan: Arki & Solan selected through random 
+sampling in IDEA (Interactive Data Extraction and A nalysis - software for data analysis and 
+sampling) 
+4 Kinnaur: 108, Mandi: 212, Shimla: 147 and Solan: 1 28 
+5  Kinnaur, Mandi, Shimla, and Solan 
+
+
+Chapter-II: Audit approach  
+9 | P a g e  
+Exit Conference with the Additional Chief Secretary  (Social Justice and Empowerment) 
+was held on 13 April 2022, wherein audit findings and recommendations were discussed. 
+Views and replies of the Department wherever appropriate, have been incorporated in the 
+report. 
+2.4 Acknowledgement 
+The office of the Principal Accountant General (Audit), Himachal Pradesh, acknowledges 
+the co-operation and assistance extended by the dep artmental functionaries / authorities 
+and beneficiaries at gram panchayat level during Audit. 
+2.5 Organization of audit findings 
+The audit findings and recommendations are contained in seven chapters: 
+• Chapter-III  deals with findings related to Coverage and Financial 
+Management . 
+• Chapter-IV  contains findings in respect of Compliance with Direct Benefit 
+Transfer framework. 
+• Chapter-V and Chapter-VI contain findings related to Process of Social 
+Security Pension Schemes' Implementation and Analysis of IT application . 
+• Findings related to setting up of  Organization and management of Direct 
+Benefit Transfer have been discussed in Chapter-VII . 
+• Issues related to Human Resource Management  and Monitoring are given in 
+Chapter-VIII . 
+• Chapter-IX contains Audit Conclusion . 
+
+Chapter-III 
+Coverage and Financial 
+Management 
+
+11 | P a g e  
+Chapter-III 
+Coverage and Financial Management 
+For NSAP schemes in Himachal Pradesh, an estimated / ceiling number 1 of beneficiaries 
+was conveyed by GoI (Ministry of Rural Development) in November 2012. Annual targets 
+for coverage of beneficiaries under six Social Security Pension schemes are decided each 
+year by the Department based on number of applicants in waiting list at close of previous 
+financial year.  As per NSAP guidelines, allocation of funds is made by GoI according to 
+the ceiling number of beneficiaries approved by GoI  and  expenditure on additional 
+number of beneficiaries  over and above the same is borne by the State Gover nment. GoI 
+releases funds to the State Government as a single allocation  for NSAP with flexibility to 
+the State Government to allocate funds to various s chemes under NSAP as per 
+requirement.  
+As per NSAP guidelines, States may provide additional amount to the beneficiaries under 
+central schemes (over and above the amount fixed by  GoI) so that they can get a 
+reasonable level of assistance. In Himachal Pradesh, pension to different categories under 
+NSAP schemes is being provided by way of supplement ing the central assistance from 
+State budget to bring the overall assistance at par  with that of State schemes. Thus, 
+although the pension rates for the same category of  schemes under NSAP are lower than 
+those for State schemes, the beneficiaries under bo th NSAP and State schemes get equal 
+pension  amounts. Scale of assistance of GoI and State Gover nment under various social 
+security pension schemes is detailed in Appendix-1. 
+3.1 Database of eligible persons 
+Para 5.2.2 of the revised NSAP guidelines, 2014 emp hasizes upon maintenance of 
+database of eligible beneficiaries and uploading of  the same in the public domain. The 
+beneficiary data should include details of the bene ficiaries eligible for pension schemes 
+under NSAP. The following observations were made during Audit: 
+• The Department had conducted various Information, E ducation and 
+Communication (IEC) activities for all welfare schemes alongwith social security 
+pension schemes by way of prachar  through GPs, print and electronic media, 
+awareness camps, etc. Against budget provision of 
+₹ 1.62 crore for IEC activities 2, 
+an expenditure of ₹ 0.88 crore had been incurred during 2017-21.  
+• The Department had not maintained category-wise or age-wise database of eligible 
+beneficiaries / population through mechanisms such as proactive periodic surveys 
+or obtaining statistics from field level offices.  
+• The data of beneficiaries was entered in e-Kalyan S oftware from the application 
+forms received from the applicants. However, this d ata was not actively updated 
+as change in eligibility status of beneficiary was to be reported by GP/Post Offices 
+and departmental functionaries had to verify the sa me within prescribed time. 
+These cases were verified/ confirmed after delay, as indicated in Para 5.5.1.  
+                                                           
+1  Calculated on the basis of Census 2001 figures of R egistrar General of India and Poverty Ratio 
+estimates 2004-05 of Planning Commission (whichever was less)  
+2  Budget: ₹ 1.62 crore and expenditure: ₹ 0.88 crore during 2017-21 under head advertisement  and 
+publicity 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+12 | P a g e  
+• In the absence of database, submission of pension a pplications was entirely 
+dependent on the initiative of beneficiaries or gram panchayat representatives. 
+In this regard, Audit test-checked record of 826 BPL households 3 of 11 test-checked GPs 
+of three selected TWOs (Arki, Mandi-Sadar and Shimla Rural). It was noticed that due to 
+non-preparation of database of eligible beneficiari es as detailed above, 29 BPL persons 
+(six 4 GPs) of these families were not covered under any scheme although their age was 
+above 60 years as per record of GPs. This was contrary to NSAP guidelines and Himachal 
+Pradesh Social Security Pension Rules which emphasi ze coverage of BPL persons and  
+stipulates that BPLs should be given priority in sanction of pension. 
+With regard to beneficiaries not covered under any scheme, the concerned TWOs stated 
+that pension could not be sanctioned in the absence of any application from these persons; 
+however, to cover eligible beneficiaries, regular c oordination was being made with the 
+GPs concerned.  
+In the exit conference, the Department stated that panchayats/ urban local bodies will be 
+asked to identify prospective persons likely to be eligible under the scheme so that the 
+Department is ready with list of people who will be  eligible in future or turning 60 years 
+of age. 
+3.2 Target and coverage of beneficiaries  
+Every year, based on number of pending applications , the State Government accords 
+approval for revision/ enhancement of targets of be neficiaries to be covered under each 
+scheme, and budgetary provision is made accordingly . District-wise and scheme-wise 
+number of beneficiaries targeted for the year 2020-21 is given in Appendix-4.  The social 
+security pensions are disbursed on quarterly / half yearly basis. 
+Upon approval of application by the DWO concerned, the applicant is added to the waiting 
+list and though eligible to be get the benefits und er the schemes, are covered only upon 
+availability of vacancy / slot under relevant schem e. As of 31 March 2021, there were 
+31,396 eligible beneficiaries in the waiting list. Every quarter / half-year, ineligible 
+beneficiaries are removed (suppression) from the ac tive pensioners list and are replaced 
+(substitution) by prospective beneficiaries from th e waiting list. Post Offices (POs) and 
+Gram Panchayats (GPs) are required to report about pensioners becoming ineligible to the 
+department as per MoU and rules. On the basis of such report from the above sources, the 
+department temporarily suppresses the pensioner and  has to confirm such report within 
+one month. Upon confirmation (TWOs send the confirm ation report to DWOs and 
+supporting documents are maintained in the office o f TWOs) either the pensioner is 
+suppressed permanently, or suppression is revoked. DWOs have access to list of 
+temporarily / permanent suppressed pensioners on e-Kalyan. In the data dump there were 
+2.24 lakh temporarily suppressed cases due to death, employment, remarriage, etc. Details 
+regarding these cases is given in Para 5.5. Suppression and substitution of beneficiaries is 
+a continuous exercise every quarter / half year. 
+Target of beneficiaries during 2017-21 under select ed schemes and overall coverage of 
+beneficiaries thereagainst during concerned quarters is given in following tables: 
+ 
+                                                           
+3  Arki: Hatkot - 35; Kothi - 104; Kunihar - 123; an d Palog: 76; Mandi Sadar: Bari Gumanu - 35;  
+Nasloh - 138; Sadyana - 52; and Takoli – 43: Shimla Rural: Anandpur – 78; Jalel – 83 and Thari - 59 
+4 Arki: Kothi - 03; Kunihar - 07; and Palog: 02; Man di Sadar: Nasloh-13; and Takoli – 03; and 
+Shimla Rural: Thari - 01 
+
+Chapter-III: Coverage and Financial Management  
+13 | P a g e  
+Table-3.1: Year-wise target of beneficiaries in the State  under selected schemes 
+Pension scheme 2017-18 2018-19 2019-20 2020-21  
+IGNOAPS 94120 98145 99204 100722 
+IGNWPS 22020 23210 23551 24008 
+IGNDPS 929 1039 1114 1118 
+Old Age 165865 240083 257359 290194 
+Widow 80688 89449 92267 96903 
+DRA 48743 57578 59451 63027 
+Total: 412365 509504 532946 575972 
+Source: Data supplied by the Department. 
+Table-3.2: Detail of active pensioners in selected social security pension schemes  
+Year Target  No. of active pensioners  Shortfall  
+(2-6)  1st  quarter 2nd  quarter 3rd quarter 4th  quarter 
+1. 2. 3. 4. 5. 6. 7. 
+2017-18 412365 404600 404600 404600 406853 5512 
+2018-19 509504  436535 428348 480415 501915 7589 
+2019-20 532946  502349 524000 526132 528584 4362 
+2020-21 575972  568081 568250 568979 567453 8519 
+Source: Data supplied by the Department. 
+From the above tables it can be seen that: 
+• There was continuous increase in targeted pensioners in the last four years.  
+• Increase in number of beneficiaries under old age p ension (State scheme) during 
+2017-18 and 2020-21 was 75 per cent . This was due to lowering the age for old 
+age pension with no income criteria from 80 years t o 70 years by the State 
+Government in January 2018.  
+• Targets were not achieved fully during 2017-21 and there was shortfall in coverage 
+of beneficiaries against targets at the end of each  financial year ranging between 
+4362 and 8519. This was inspite of funds remaining unspent at the end of 
+respective financial years (Para 3.5) and applicant s remaining pending in the 
+waiting list (Para 3.3). This was attributable to d elay in verification of temporary 
+suppressed pensioners, thereby not creating vacancy in the active pensioner list by 
+removing ineligible pensioners (Para 5.5.1). 
+3.3 Pendency of cases 
+Upon approval of the application by the DWO concern ed, the applicant is added to the 
+waiting list and on availability of vacancy / slot under relevant scheme, the applicant is 
+added in the active list for disbursement of benefits. 
+Pension is being sanctioned to the persons in the w aiting list after suppression (i.e. 
+stoppage - pension is stopped temporarily on report ing of ineligibility of the beneficiary 
+and stopped / revoked permanently on physical verif ication by the departmental 
+authorities) of ineligible beneficiaries or after enhancement of targets. 
+The State Government had not fixed any time schedul e for sanction of pension after 
+receipt of applications. Scrutiny of record reveale d considerable number of cases in the 
+waiting list and abnormal time taken for sanction of pension after receipt of applications. 
+Details regarding number of applications pending in  waiting list, at the end of each 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+14 | P a g e  
+financial year under selected pension schemes as of  March 2021 in the State is given 
+below: 
+Table-3.3: Number of applications pending under selected schemes at the end of each 
+financial year during 2017-21 
+Scheme 2017-18 2018-19 2019-20 2020-21 
+Target Waiting  
+(in number) 
+(per cent in 
+brackets ) 
+Target Waiting  
+(in number) 
+(per cent in 
+brackets ) 
+Target Waiting  
+(in number) 
+(per cent in 
+brackets ) 
+Target Waiting  
+(in number) 
+(per cent in 
+brackets ) 
+IGNOAPS 94120  2204 (2)  98145  1059 (1)  99204  1518 (2)  100722  1087 (1)  
+IGNWPS 22020  407 (2)  23210  341 (1)  23551  457 (2)  24008  390 (2)  
+IGNDPS 929  72 (8)  1039  75 (7)  1114  04 (0)  1118  10 (1)  
+Old Age 165865  21312 (13)  240083  17276 (7)  257359  32835 (13)  290194  23990 (8)  
+Widow 80688  4313 (5)  89449  2818 (3)  92267  4636 (5)  96903  4042 (4)  
+DRA 48743  4500 (9)  57578  1873 (3)  59451  3576 (6)  63027  1877 (3)  
+Total: 412365  32808 (8)  509504  23442 (5)  532946  43026 (8)  575972  31396 (5)  
+Source: Data supplied by the Department.   Note: Figure in parenthesis denote percentage to targets. 
+It could be seen from the tables above that: 
+• Number of prospective beneficiaries in the waiting list was between five and eight 
+per cent of the overall target during 2017-21 in the State. 
+• Pendency of cases under old age pension scheme was highest during 2017-21 in 
+the State ranging between seven to 13 per cent  of the target. 
+• There were 31,396 beneficiaries in the waiting list  as of March 2021 in the State 
+under selected schemes. 
+• Feedback mechanism in respect of approval or reject ion of application, to the 
+applicants was not in place. 
+Non-fixation of time schedule for sanction of pensi on had resulted in huge number of 
+cases in the waiting list and inordinate delay in sanction of pension inspite of availability 
+of funds leading to delay in coverage and receipt o f timely benefits under social security 
+pension schemes.  
+Analysis of data dump in 12 districts revealed that: 
+• 8717 applications 
+5 (out of 4.42 lakh in waiting list) of six social s ecurity pension 
+remained in the waiting list before final sanction of pension for more than one 
+year. Age-wise analysis of waiting period in these cases is given below: 
+Number of 
+applications 
+Waiting period 
+More than 1 year 2 to 3 years 3 to 4 years more than 4 years  
+8717 8280 390 43 04 
+• Of these cases, 329 applicants 6 in eight districts passed away while in the waiting 
+list, of which 29 beneficiaries expired after more than one year from the date of 
+addition in the waiting list. 
+                                                           
+5 Bilaspur: 581; Chamba: 1062; Hamirpur: 276; Kangra : 2695; Kinnaur: 102; Kullu: 1141; L&S: 10; 
+Mandi: 888; Shimla: 1240; Sirmaur: 435; and Solan: 287 
+6 Bilaspur: 18; Chamba: 01; Hamirpur: 08; Kangra: 23 ; Kullu: 18; Mandi: 229; Shimla: 07; and 
+Sirmaur: 03 and Una: 22 
+
+Chapter-III: Coverage and Financial Management  
+15 | P a g e  
+The Department should have ensured timely verificat ion of temporarily suppressed 
+beneficiaries for removal of ineligible beneficiaries and on boarding of eligible applicants 
+in the waiting list. 
+DWO (HQs) also confirmed that specific time schedule for grant of social security pension 
+after receipt of applications had not been fixed by the State Government. 
+3.4 Budget allocation and expenditure 
+Year-wise detail of financial outlay allocated by t he State Government and expenditure 
+incurred there against during 2017-18 and 2020-21 is shown in Table-3.4 below: 
+Table-3.4: Funds allocated and expenditure there against for selected pension schemes 
+(₹ in crore) 
+Pension 
+scheme 
+2017-18 2018-19 2019-20 2020-21 Grand Total 
+Budget  Expenditure  Budget  Expenditure  Budget  Expenditure  Budget  Expenditure  Budget Expenditure  
+IGNOAPS  43.41 42.17 47.36 46.94 50.01  48.81 63.93  63.45 204.71  201.37 
+IGNWPS 10.55 10.28 11.43 11.33 12.12  11.84 14.56  14.52 48.66 47.97 
+IGNDPS 0.72 0.65 1.35 1.22 1.42 1.09 1.37 1.34 4.86 4.30 
+Old Age 217.39  214.61 346.00  345.61 437.48  435.71 546.92  546.63 1547.79  1542.56 
+Widow 123.41  121.46 125.57  125.42 141.60  141.08 144.25  144.18 534.83  532.14 
+DRA 45.93 45.36 48.88 48.83 71.87  71.68 88.47  88.40 255.15  254.27 
+Total: 441.41  434.53 580.59  579.35 714.50 710.21 859.50 858.52 2596.00  2582.61 
+Source: Data supplied by the Department. 
+It can be seen from the table above that against available budget of ₹ 2596.00 crore under 
+selected pension schemes during 2017-21, expenditur e on these schemes was ₹ 2582.61 
+crore, leaving ₹ 13.39 crore as unutilized. 
+3.5 Blocking of social security pension funds 
+Rule 183 of Himachal Pradesh Treasury Rules, 2017 s tipulates that it is not permissible 
+to withdraw funds from the treasury unless it is re quired for immediate disbursement. 
+Further, Para 10(4) of Himachal Pradesh Social Secu rity Pension Rules, 2010 stipulates 
+that undisbursed amount in respect of expired/ inel igible persons for a particular quarter 
+would be adjusted in the next quarter by way of short withdrawal. 
+Against the annual budgetary provision made by the State Government for 
+implementation of social security pension schemes, the Director allocates budget to the 
+DWOs on the basis of number of beneficiaries. DWOs draw the funds from the Treasury 
+and transfer the same to a designated savings bank account from which pension payments 
+to the beneficiaries are disbursed. 
+Scrutiny of records of the four selected DWOs revea led that funds ranging between 
+₹ 12.34 lakh and ₹ 1436.87 lakh drawn from treasury during 2017-21 for disbursement of 
+pension benefits were lying unspent at the end of e ach quarter in bank accounts of the 
+three 7 selected DWOs, as detailed in Appendix-5. 
+Unspent balances at the end of each quarter were in dicative of the fact that withdrawals 
+had been made without requirement and that the unsp ent amounts had not been adjusted 
+in the next quarters, in violation of Himachal Pradesh Social Security Pension Rules. The 
+                                                           
+7 Mandi: ₹ 66.21 lakh to ₹ 1436.87 lakh, Shimla: ₹ 18.88 lakh to ₹ 149.77 lakh and Solan: ₹ 12.34 
+lakh to ₹ 124.65 lakh (cases not noticed in Kinnaur) 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+16 | P a g e  
+amount could have been utilized for sanction of pen sion to prospective beneficiaries in 
+the waiting list as discussed in Para 3.3 and towards other welfare activities.  
+The DWOs concerned stated that the outstanding amount was due to undisbursed pension 
+of expired beneficiaries returned by the post offic e / bank; however, in future the 
+outstanding amount would be adjusted by way of short drawal from the treasury. Replies 
+are not acceptable as persistent balances at the en d of each quarter indicates that funds 
+were not adjusted by the DWOs through short drawal. 
+Summary – 
+ 
+• Though expenditure of ₹ 0.88 crore was incurred on IEC activities for welfare schemes 
+during 2017-21, exclusion of eligible persons was noticed. 
+• Of 826 BPL households in 11 test-checked GPs (under  TWOs Arki and Mandi-Sadar 
+and Shimla rural), 29 BPLs persons of these familie s were not covered  under any 
+scheme although their age was above 60 years.  
+• In an adhoc survey of 10 out of aforesaid mentioned  persons, it was noticed that only 
+one person was unaware of social security pension s chemes. Eight persons reported 
+that they had not applied for pension schemes at th e time of audit and have 
+subsequently applied. 
+• Category-wise or age-wise database of eligible population through proactive periodic 
+surveys or data from field offices was not maintain ed. In the absence of which, 
+submission of pension applications was entirely dep endent on the initiative of 
+beneficiaries or gram panchayat representatives. 
+• There was shortfall in coverage of beneficiaries ag ainst targets at the end of each 
+financial year ranging between 4362 and 8519. 
+• Funds were unspent at the end of respective financi al years and applicants remained 
+in the waiting list. In three (Mandi, Shimla and Solan) selected districts, funds ranging 
+between ₹ 12.34 lakh and ₹ 1436.87 lakh were lying unspent at the end of each quarter 
+in the bank accounts of concerned DWOs. 
+• Time schedule for finalization of pension cases had  not been fixed. Huge number of 
+cases ranging between 23,442 and 43,026 during 2017 -21 were lying pending at the 
+end of each financial year due to delay in verifica tion of temporarily suppressed 
+beneficiaries and onboarding of waitlisted applicants on active pensioners list. 
+ 
+Recommendations – The State Government may:  
+• Put in place robust mechanism for identification of  prospective beneficiaries and to 
+create age-wise or category-wise database of eligible population.  
+• Ensure coverage of beneficiaries as per targets and availability of funds. 
+• The targets should be reviewed periodically, sancti on of pensions and verification of 
+beneficiaries reported as ineligible should be carried out in time-bound manner. 
+
+Chapter-IV 
+Compliance with Direct Benefit 
+Transfer (DBT) framework 
+
+17 | P a g e  
+Chapter-IV 
+Compliance with Direct Benefit Transfer (DBT) framework 
+From 1 January 2013, the GoI started Direct Benefit  Transfer (DBT) of benefits to 
+beneficiaries with the aim to reform the Government  delivery system by re-engineering 
+the existing process in welfare schemes for simpler and faster flow of information  / funds 
+and to ensure accurate targeting of the beneficiaries, de-duplication and reduction of fraud. 
+DBT in respect of 27 GoI schemes was launched in 121 districts of the country including 
+all 12 districts of Himachal Pradesh. The State Gov ernment has included 135 more 
+schemes under DBT programme up to June 2021. 
+A total of 62 schemes including six selected social  security pension schemes had been 
+onboarded on State DBT portal as of June 2021.Vario us departments of the State 
+Government transferred benefits of 
+₹ 4,646.91 crore electronically under these 
+62 schemes including six selected social security p ension schemes during the period 
+2017-21. However, Audit noticed that no scheme out of six selected schemes was 
+implemented as per ibid  instructions and DBT guidelines as discussed in su cceeding 
+paragraphs of this chapter. 
+In the budget speech (March 2013) for the financial  year 2013-14, the Chief Minister 
+announced transfer of benefits to beneficiaries und er all welfare schemes through DBT 
+facility. 
+Scrutiny of records showed that the Department had launched DBT in respect of NSAP 
+beneficiaries in July 2013. It was, however, notice d that DBT process was not followed 
+as even after announcement made by CM in budget spe ech, the client server-based 
+e-Kalyan was not re-engineered in line with DBT fra mework and the following requisite 
+changes were not made: 
+• The disbursement process was not integrated with th e e-Kalyan software and 
+involved manual intervention as beneficiary list (t hrough e-mail/ pen drive) 
+generated from e-Kalyan as MS-excel sheet along with cheque was sent to bank / 
+post office for credit into savings postal/ bank account of beneficiaries  
+• Identification of beneficiaries with Aadhar or any other unique ID was not ensured, 
+absence of which led to duplicate payments to the s ame person as indicated in 
+Para 5.4.1. 
+• Feedback loop for informing beneficiaries through S MS or otherwise about 
+transfer of benefits to their postal/ bank account was not available. 
+Comparison of existing disbursement process under social security pension schemes with 
+DBT framework has been detailed in Para 4.2 below. 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+18 | 
+P a g e  
+4.1 Comparison of existing system with DBT framewor k 
+Comparative study of existing process vis-à-vis sta ndard operating procedure (SOP) for 
+DBT payments is as under: 
+Particulars DBT Framework Existing system 
+Addition of 
+beneficiary 
+• During the addition of beneficiary, 
+Bank account/ postal account details 
+• l account details shall be entered 
+alongwith Aadhar seeding, 
+validation and authentication. 
+• Upon manual verification and 
+approval of the beneficiary 
+application, the details of the 
+beneficiary, along with bank / 
+postal account are entered in the 
+system without validation and 
+authentication by Aadhar 
+seeding or any other unique ID. 
+Validation of 
+Aadhar and 
+bank account 
+after 
+approval of 
+application 
+and 
+registration 
+on PFMS 
+• Beneficiary name, savings account 
+details and Aadhar are pushed from 
+scheme-management system to 
+PFMS or directly entered in PFMS. 
+• Data is subjected to Internal 
+validation checks in PFMS (If 
+incorrect, rejected within eight 
+business hours) 
+• Aadhar Payment Bridge (APB) 
+verification on Aadhar mapper of 
+NPCI (if Aadhar number seeded with 
+bank account) or bank account 
+validation from beneficiary’s bank 
+(if bank account provided). 
+• Response from Bank/ NPCI to PFMS 
+– PFMS awaits response from both 
+Bank and NPCI. In case, there is 
+delay of more than seven days in 
+response from bank, validation is 
+rejected by PMFS (separate tag for 
+these cases) and Department is 
+requested to reprocess the same. 
+• Sharing of registration with scheme- 
+software by PFMS – PFMS submits 
+detailed response file to Department 
+in rejected/ successful cases and 
+stores the responses for payment file 
+processing. 
+• No such validation at application 
+stage is available in the e-Kalyan 
+software. 
+• Only in October 2020 PFMS 
+registration in respect of NSAP 
+schemes had been completed and 
+transfer of benefits using PFMS 
+had been started. 
+• Benefits of State social security 
+pension schemes were not routed 
+through PFMS/ IFMS. 
+ 
+Pension 
+disbursement 
+ 
+• Department to create payment files 
+after verification and place them on 
+PFMS. 
+• Authoriser to approve the payment 
+files and digitally sign them on 
+PFMS 
+• PFMS to validate and send payment 
+files to bank/ treasury. 
+• Bank to transfer payment to 
+beneficiary accounts.  
+• All transactions to be routed through 
+NPCI. 
+• Beneficiary list is generated (soft 
+copy – MS Excel Sheet) from 
+e-Kalyan software. 
+• In case of NSAP schemes, list is 
+converted into compatible format 
+with PFMS (as Hindi font of 
+e-Kalyan is not compatible with 
+PFMS) and uploaded on PFMS. 
+Then benefits are transferred 
+directly in the savings account of 
+the 
+beneficiaries . Due  to non-
+integration of PFMS with the 
+NSAP portal through Aadhar 
+
+Chapter-IV: Compliance with Direct Benefit Transfer (DBT) framework  
+19 | P a g e  
+• Amount transferred to beneficiaries' 
+account. 
+Payment Bridge system, NSAP 
+portal is showing zero 
+transaction through DBT in the 
+State. 
+• In case of State schemes, 
+beneficiary list (through e-mail / 
+pen drive) alongwith cheque is 
+sent to bank / post office for 
+credit in the savings account of 
+beneficiaries. 
+Feedback 
+loop 
+• Bank to share payment status 
+response file with PFMS. 
+• PFMS to share the payment response 
+with Department. 
+• Feedback to beneficiaries through 
+SMS alerts. 
+• No SMS mechanism/ feedback 
+loop is available for the 
+beneficiary. 
+• For NSAP schemes through 
+PFMS acknowledgment push in 
+the e-Kalyan is not available due 
+to non-integration with PFMS. 
+Source: Standard Operating Procedure for DBT payments and e-Kalyan software 
+As can be seen from above comparison, the e-Kalyan was not compliant with the guiding 
+principles contained in Standard Operating Procedure for DBT.  Due to non- adherence to 
+DBT framework and the risk of manual intervention, the existing system cannot be termed 
+as Direct Benefit Transfer. 
+The procedure implemented by the Department is not in consonance with the DBT 
+framework, which should involve transfer of benefit s directly to the beneficiaries.  The 
+procedure can be termed as benefit transfer, but not as “direct” benefit transfer, since funds 
+are not transferred directly to the beneficiaries ( as is being done by some other States/ 
+Government of India) but funds are transferred into  the bank account of the DWO and 
+then cheques are issued for further transfer to the beneficiary bank accounts. 
+Further, as described in para 1.5, the drawal of funds from IFMS and their credit into the 
+DWO’s bank account is a separate activity; the tran sfer of funds through banks/ post 
+offices for credit to the accounts of the beneficia ries is an entirely delinked activity; the 
+third important step – viz. acknowledgement/ non-ac knowledgement of credit to the 
+beneficiary accounts from the banks/ POs is not don e in an IT driven manner, but done 
+manually. The fourth step of automated recording of  the acknowledged payments in 
+e-Kalyan against each beneficiary was not done at all. This resulted in a systemic problem 
+of unspent balances in the bank accounts of DWOs as also detailed in Para 3.5. 
+Even for the NSAP scheme payments, although the DBT Module of PFMS served as the 
+automated funds transfer platform, there was no automated pushing of files/ funds transfer 
+orders from e-Kalyan to PFMS, and no pushing back of beneficiary-wise acknowledgment/ 
+failure data files from PFMS back to e-Kalyan . 
+In the exit conference, on the aspect of integratio n of e-Kalyan with PFMS / IFMS, the 
+Department stated that treasuries were now fully au tomated and necessary action would 
+be taken for seamless transfer of benefits and inti mation thereof to beneficiaries. It was 
+further stated that the same would be initiated after discussion with HP-NIC. 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+20 | 
+P a g e  
+Shortcomings in payment of pension amount and duplicate cases were noticed in Audit as 
+detailed in Chapter - V. Thus e-Kalyan is merely a beneficiaries’ database management 
+system which is not functioning as per DBT framewor k. The following case was 
+documented by DWO Mandi which highlights the implications of non-implementation of 
+DBT. 
+Implications of  non-implementation of Direct Benefit Transfer 
+Under DWO, Mandi in TWO Jogindernagar office, a cas e of embezzlement in welfare 
+funds including social security pension funds, was reported. An amount of ₹ 1.10 crore 
+pertaining to social security pension schemes was drawn in cash and was shown disbursed 
+in cash. List of beneficiaries and receipt acknowledgments of beneficiaries were not found 
+on record. Departmental enquiry for the period from June 2012 to August 2017 was under 
+way.  Had the Department implemented DBT in disburs ement of social security pension 
+schemes in time, irregularities in disbursement of funds could have been avoided.  
+Summary – 
+ 
+• The Department had not followed DBT process in soci al security pension schemes 
+despite directions of the GoI.  
+• DBT process was not followed as the client server-b ased e-Kalyan was not 
+re-engineered in line with DBT framework. The disbu rsement process was not 
+integrated with the e-Kalyan software and involved manual intervention. Uniqueness 
+of beneficiaries with Aadhar or any other unique ID was not ensured. 
+• Guiding principles contained in standard operating procedure for DBT payments such 
+as interface with State treasury/ postal department / banks, validation, disbursement 
+through PFMS (in case of state schemes) and feedback mechanism were not complied 
+with. 
+• Acknowledgment push in e-Kalyan is not available du e to its non-integration with 
+PFMS and Fund Transfer Orders with beneficiary deta ils are not automatically 
+generated. 
+ 
+Recommendations – The State Government may consider: 
+ 
+• Implementing DBT for all schemes across departments as per DBT framework. 
+• e-Kalyan and IFMS/ PFMS should be integrated to ens ure direct transfer into bank 
+accounts of the beneficiaries, as per DBT framework. 
+• Guiding principles contained in standard operating procedure for DBT payments may 
+be adopted scrupulously. 
+• To upgrade and interface e-Kalyan and IFMS (or othe r platform e.g. PFMS that the 
+State Government may identify for automatic funds transfer, and not through cheques 
+from the DWO’s bank account) to ensure (a) automati c generation of funds transfer 
+orders and subsequent transmission, (b) single nodal bank account at the State level is 
+sed with minimal transient cash balances and (c) au tomated intimation of 
+acknowledgement (or failure) to each beneficiary through an SMS portal.
+
+Chapter-V 
+Process of Social Security Pension 
+Schemes’ Implementation 
+
+21 | P a g e  
+Chapter-V 
+Process of Social Security Pension Schemes' Implementation 
+Audit analyzed data dump of the client server e-Kal yan software in respect of all 12 
+districts of Himachal Pradesh. Queries were run on the integrated web-based application 
+of the e-Kalyan software (October 2020) to check fo r persisting irregularities in respect 
+of four selected districts. Audit also scrutinized records related to manual processing of 
+applications, and records related to social securit y pension schemes in 59 selected GPs. 
+Audit noticed shortcomings in processing of applica tions, irregularities in selection of 
+beneficiaries, cases of duplicate pension, etc., as detailed in succeeding paragraphs. 
+5.1 Uniqueness of beneficiaries 
+Pension rules permit only single social security pension to a beneficiary. Persons receiving 
+pension / allowance from other department or organi zation are not eligible for social 
+security pension. Uniqueness of beneficiaries is re quired to be ascertained in order to 
+ensure weeding out of duplicate beneficiaries. Further, Standard Operating Procedure for 
+DBT payments provides that registration of benefici aries in PFMS is to be done after 
+successful validation of at least one of the following: 
+1.  Bank account / postal account validation. 
+2.  Aadhar number on National Payment Corporation of In dia (NPCI) Aadhar 
+mapper. 
+Audit findings in this respect are detailed below: 
+5.1.1 Use of Aadhar for identification 
+As per GoI circular (September 2016) the State Governments can mandate use of Aadhar 
+authentication for the beneficiaries under section 7 of the Aadhar Act 2016 in those 
+schemes which are funded by the Consolidated fund o f the State. In order to do so the 
+State Governments are required to identify and notify such schemes under section 7 of the 
+Aadhar Act before seeking permission from authentic ation division of the UIDAI 
+1. The 
+notification shall also list alternate documents and verification methodologies to confirm 
+the identity of the beneficiary applicant to whom A adhaar has not been assigned for 
+delivery of benefits, subsides or services, till such time Aadhaar is assigned. 
+Section C of Chapter-4 of the SOP Modules for DBT s tipulates that for the purpose of 
+seeding Aadhar details of the beneficiaries, one-ti me consent for use of their Aadhar 
+numbers may be obtained. Integrity of data captured and veracity of bank accounts/ IFSC 
+codes, Aadhar etc. need to be ensured. Further, as per section 8(2) of the Aadhar Act, 2016 
+consent of an individual before collecting his iden tity information for the purpose of 
+authentication must be secured. 
+Audit noticed that: 
+• The State Government had not notified the social security pension schemes under 
+section 7 of the Aadhar Act 2016, for use of Aadhar  for identification of 
+beneficiaries. 
+                                                           
+1 Unique Identification Authority of India 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+22 | 
+P a g e  
+• Aadhar numbers were obtained at the time of applica tion from the applicants in 
+the State for verification purpose only and were stored in the client server e-Kalyan 
+software without consent of the beneficiaries. Data  dump analysis showed that 
+Aadhar numbers of 5.01 lakh active beneficiaries we re stored in the e-Kalyan 
+software without encryption and in unmasked format,  in violation of UIDAI 
+guidelines, which entails the risk of security of data being compromised. 
+• Out of total 2.07 lakh 2 beneficiaries in four test-checked districts, Aadhar number 
+in case of 1.92 lakh 3 beneficiaries had been obtained at the time of application and 
+stored in client server e-Kalyan. Further, data entry of Aadhar number on the client 
+server e-Kalyan system had been checked for accuracy (with hard copy of Aadhar) 
+in case of only 0.73 lakh 4 beneficiaries by the Department. Further validatio n of 
+Aadhar numbers through UIDAI web services was not done. 
+• Though Aadhar of beneficiaries were stored, the sam e was not used for 
+identification and weeding of duplicate entries. Th is had resulted in cases of 
+duplicate pension payments as detailed in Para 5.4.1 (i). 
+• Analysis of data dump in respect of client server-based software (for all 12 districts 
+of the State) revealed that -  
+o 4251 Aadhar numbers 5 had been used multiple times (two to five times) 
+in 9078 cases 6 (out of total 5.01 lakh active beneficiaries with Aadhar). 
+The newly implemented (October 2020) web-based e-Ka lyan software 
+did not have the field for Aadhar number. 
+o Aadhar is 12 digit unique number. In 5061 cases (ou t of 5.01 lakh active 
+beneficiaries with Aadhar) Aadhar number 7 had not been entered correctly 
+in the database (less than 12 digits or left blank). 
+This indicated lack of validation checks in the sof tware and failure of the Department in 
+ascertaining uniqueness of beneficiaries, which cou ld lead to duplicate beneficiaries as 
+also noticed during Audit {Para 5.4.1 (i)}. 
+The DWO, Shimla while accepting the facts stated th at in the absence of any directions 
+about obtaining consent of the beneficiaries in the rules, the same had not been obtained 
+and de-duplication checks had been exercised by the  departmental authorities by way of 
+downloading the list of pensioners before disbursem ent of pension in each quarter. The 
+reply was not acceptable as not obtaining of consen t from the beneficiaries was in 
+violation of the SOP and manual de-duplication exer cise proved insufficient as cases of 
+duplicate beneficiaries were noticed as detailed in Para 5.4.1 (i).  
+                                                           
+2 Kinnaur: 6169; Mandi: 104296; Shimla: 62492 and So lan: 33962 
+3 Kinnaur: 5361; Mandi: 96901; Shimla: 56973 and Sol an: 32684 
+4 Kinnaur: 5361, Mandi: 86, Shimla: 56973 and Solan:  10747 
+5  Bilaspur: 411; Chamba: 381; Hamirpur: 209; Kangra : 748; Kinnaur: 34; Kullu: 316; L&S: 37; 
+Mandi: 813; Shimla: 517; Sirmaur: 314; Solan: 57; and Una: 414 
+6 Bilaspur: 838; Chamba: 780; Hamirpur: 427; Kangra:  1643; Kinnaur: 69; Kullu: 640; L&S: 74; 
+Mandi: 1710; Shimla: 1087; Sirmaur: 644; Solan: 116; and Una: 1050 
+7 Bilaspur: 73; Chamba: 404; Hamirpur: 76; Kangra: 1 438; Kinnaur: 05; Kullu: 41; L&S: 03; Mandi: 
+365; Shimla: 2320; Sirmaur: 36; Solan: 26; and Una: 274 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+23 | P a g e  
+In the exit conference, the Department stated that use of Aadhar for identification of 
+beneficiaries in Social Security Pension schemes ha d now been notified under section 7 
+of Aadhaar Act and Aadhar seeding of all the benefi ciaries would be done in e-kalyan. 
+Further, the current e-Kalyan version did not have the functionality of feeding Aadhar 
+number, this functionality would be added and neces sary further action would be taken. 
+Also, it was stated that demographic authentication of all beneficiaries would be done with 
+the help of UIDAI to weed out ineligible beneficiaries. 
+5.1.2 Use of other fields and validation controls f or unique identification 
+Inbuilt controls to identify and prevent duplicate entries should be there in the system 
+itself. Analysis of other fields available in the e-Kalyan revealed the followings:  
+Personal Ledger Account number: Depending upon enhancement of target or vacation 
+of a slot in a scheme, the slot having a Personal L edger account Number, is issued to a 
+new applicant from the waiting list. PLA number (slot number) to a beneficiary is allotted 
+against the slot available under a particular pension scheme.  
+Analysis of data dump revealed that: 
+• PLA number could not be used to ascertain uniquenes s of a beneficiary; rather it 
+only uniquely identifies pension slot.  
+• Analysis of temporarily suppression cases available in the data dump showed that 
+there were 4403 cases 8 (out of 2.24 lakh cases suppressed) of duplicate pensioners 
+who were reported by the field functionaries to be occupying more than one slot / 
+PLA number. In these cases, double pension was allotted to these beneficiaries. 
+Unique ID: A unique ID  is allotted to the applicants of social security pe nsion schemes 
+and it is unique for every applicant. Analysis of unique ID revealed that: 
+• Unique ID was being generated (system generated) in the e-Kalyan software at the 
+time of data entry for each application which canno t be repeated for other 
+applications. 
+• The unique ID was not helpful in detecting duplicate applicants/ beneficiaries as a 
+new unique ID can be allotted to an applicant, even if details of beneficiary existed 
+in the system and they were entered again (in cases  where multiple application 
+were received from the same person). 
+Thus, due to lack of validation controls in the e-K alyan software unique ID could not be 
+used to weed out duplicate beneficiaries. 
+Detection of duplicate data : Inbuilt checks (in the form of pop up or suggesti ons / 
+notification) to detect duplicate data entry agains t name and other details of beneficiary 
+had not been provided to avoid duplicate sanction o f pension in the client server version 
+of the e-Kalyan. This irregularity is persisting in the web-based e-Kalyan software. 
+Thus, functionalities to check / detect duplicate entry of applicants at the time of data entry 
+were not provided in the e-Kalyan software. 
+                                                           
+8 Bilaspur: 561; Chamba: 222; Hamirpur: 64; Kangra: 1760; Kinnaur: 23; Kullu: 242; L&S: 10; 
+Mandi: 480; Shimla: 608; Sirmaur: 227; Solan: 03; and Una: 203 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+24 | 
+P a g e  
+Above analysis showed that sufficient validation ch ecks / controls were not available in 
+the e-Kalyan software. 
+In the exit conference, the Department stated that possibility to link PLA with Aadhar 
+number will be explored and necessary validation checks would be enabled to stop this in 
+future. 
+5.2 Scrutiny and processing of applications 
+Applications received from the gram panchayats / mu nicipalities are scrutinized and 
+verified by the departmental functionaries 
+ (TWO/DWO) and after completion/ 
+verification the beneficiary details are entered in  the e-Kalyan software for further 
+processing.  
+5.2.1 Scrutiny of applications 
+Para 8 (7) of the HPSSP Rules 2010 provides that the concerned TWOs after verification 
+of correctness of particulars furnished by the applicant will forward application to DWOs 
+concerned alongwith their verification report and other prescribed documents such as copy 
+of pariwar register, BPL list, GP resolution, eligi bility certificate (death/ disability/ 
+divorce/ ekal nari / income), etc. The DWOs shall re-verify eligibilit y of applicant and 
+return incomplete applications to TWOs concerned. 
+i.  Audit scrutinized 1175 application forms (selected randomly) received by the four 
+selected DWOs pertaining to 2017-21. In 204 cases 
+9  (17 per cent ), incomplete 
+application forms without obtaining requisite docum ents (copy of pariwar  register / 
+GP resolution / ration card/ death certificate of h usband / disability certificate) were 
+processed by the DWOs which indicates that these ap plications were processed 
+without basic record. 
+DWO Mandi stated that format for availing benefits includes all essential information 
+required as per schemes. Other test checked DWOs admitted the facts and stated that 
+cases would be looked into. The fact however remain s that departmental authorities 
+were not in position to verify the applications in the absence of basic record indicating 
+that scrutiny and verification of applications was not being done as per rules / 
+guidelines 
+ii.  Variation in age of beneficiaries  - Panchayat records pertaining to 9196 beneficiaries 
+of six selected schemes in 59 test-checked GPs were compared with details entered in 
+e-Kalyan and it was observed that – 
+• There were cases of variation in age of 776 benefic iaries 10  (cases with 
+difference of more than one year were considered).  
+- Of these cases, 294 were with variation 11  where age in the e-Kalyan 
+software was shown less, as compared with original record at the GP level. 
+                                                           
+9  Kinnaur: 40 / 240; Mandi: 39 / 469: Shimla: 43 / 200; and Solan: 82 / 266  
+10  Kinnaur: 135; Mandi: 343; Shimla: 159; and Solan: 139 
+11   Kinnaur: 38; Mandi: 153; Shimla: 52; and Solan: 5 1 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+25 | P a g e  
+- Remaining 482 cases were with variation 12  where age in the e-Kalyan 
+software was shown more, as compared with original record at the GP 
+level. 
+Variation in age / data of beneficiaries in the database of e-Kalyan and as per record at GP 
+level is indicative of lack of scrutiny of applicat ion forms and lack of verification by the 
+departmental functionaries. 
+iii.  Discrepancies in data fed in the e-Kalyan software 
+Audit compared information provided in 173 applicat ions forms (selected randomly 
+13 )  
+with the data entered in the e-Kalyan software. Dis crepancies were noticed in 129 
+(75 per cent ) cases as detailed below: 
+• In 22 cases account number furnished in application  form by the beneficiary was 
+not matching with data fed in e-Kalyan software. 
+• In 19 cases variation in date of birth was noticed as per information supplied in 
+application form and as per data entered in e-Kalyan. 
+• In 88 cases information regarding number of childre n of the applicant as per 
+application form was incorrectly entered in the e-Kalyan software. 
+This was indicative of wrong data entry in the e-kalyan software and thus data may not be 
+reliable. 
+In the exit conference, the Department stated that they would depute officials who will be 
+tasked with uploading the documents attached with a pplication forms and the possibility 
+of providing interface to beneficiaries for filling the form online would be explored. 
+5.2.2 Processing and approval of applications  
+Para 8(4) of HPSSP Rules 2010 stipulates that it is responsibility of the TWOs concerned 
+to verify the application of the beneficiaries appr oved by gram sabha within one month 
+and send the same alongwith verification report to the DWO. Further, Para 8(6) stipulates 
+that the concerned TWOs would prepare a category wise (for Old age, widow/single nari, 
+disabled, etc.) register of applications received serially as per date of receipt. Information 
+to the beneficiary and the GP concerned is to be co nveyed in the form of sanction order 
+regarding approval / sanction of pension. The GPs c oncerned are required to display list 
+of beneficiaries publicly. Verification process is illustrated below:  
+ 
+                                                           
+12   Kinnaur: 97; Mandi: 190; Shimla: 107; and Solan: 88 
+13   Due to maintenance of record in haphazard manner in the field offices of the Department 
+
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+26 | 
+P a g e  
+Scrutiny of manual record of the selected TWOs / DW Os and analysis of data dump for 
+the entire State showed that: 
+• Processing by TWOs – 
+o Register containing category-wise information of ap plicants is not being 
+maintained in the format provided under the rules. Date of receipt of 
+application, name, and date of birth of applicant, name of GPs/ MCs, 
+resolution number/ date, date of application forwar ding to the DWO and 
+date of informing GPs of approval of pension had no t been recorded for a 
+large proportion of applications in the test-checked TWOs. In these cases, 
+Audit could not ascertain time taken for verification of applications by the 
+TWOs concerned. 
+o In six out of 11 TWOs, Audit randomly test-checked details of receipt of 
+837 applications received during April 2014 and Jun e 2020 from the 
+dispatch register where details of receipt and disp atch of application to 
+DWOs after TWOs verification was available and noti ced that there was 
+delay (beyond one month) ranging between 34 days an d more than one 
+year in processing of 126 applications 14  (15 per cent ). 
+o Analysis of data dump showed that 161397 cases 15  out of 371723 under 
+State pension schemes and 38726 cases 16  out of 83343 under NSAP 
+schemes had not been verified (gap between application date and entry date 
+on e-Kalyan) within stipulated period of one month and two weeks 
+respectively. 
+• Processing / Approval by DWO –  
+o No timeframe for approval of pension cases by the D WOs after receipt 
+from the TWOs had been prescribed in the rules. 
+o Time taken for approval of cases after receipt of applications by the DWOs 
+was found more than one month (gap between entry da te and approval 
+date) in 33532 cases 17  out of 83343 under NSAP schemes and 146075 
+cases 18  out of 371723 under State schemes as per data dump. 
+o It was further noticed that none of the test checked DWOs were conveying 
+approval/ rejection to the beneficiaries in any form to the beneficiary or GP 
+concerned. In the absence of any communication from the Department, the 
+beneficiaries were not aware about the status of th eir application and GPs 
+were not able to display the list of approved beneficiaries publicly. 
+                                                           
+14  Nichar at Bhabanagar: 39 / 280 and Sundernagar: 87  / 557 
+15  Bilaspur: 3897; Chamba: 6409; Hamirpur: 9950; Kang ra: 20679; Kinnaur: 2596; Kullu: 21683; 
+L&S: 911; Mandi: 23945; Shimla: 28800; Sirmaur: 10595; Solan: 17131; and Una: 14801 
+16  Bilaspur: 1159; Chamba: 5222; Hamirpur: 4232; Kang ra: 4165; Kinnaur: 320; Kullu: 1628; L&S: 
+170; Mandi: 2629; Shimla: 9657; Sirmaur: 2582; Solan: 3213; and Una: 3749 
+17  Bilaspur: 2250; Chamba: 4007; Hamirpur: 1428; Kang ra: 11578; Kinnaur: 106; Kullu: 644; L&S: 
+13; Mandi: 3502; Shimla: 3654; Sirmaur: 1049; Solan: 2495; and Una: 2806 
+18  Bilaspur: 18476; Chamba: 8226; Hamirpur: 3857; Kan gra: 39109; Kinnaur: 1568; Kullu: 9734; 
+L&S: 155; Mandi: 26703; Shimla: 12301; Sirmaur: 9941; Solan: 6156; and Una: 9849 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+27 | P a g e  
+This indicated non-adherence to rules by the departmental authorities resulting in delay in 
+approval of social security pension to the intended  beneficiaries. There was lack of 
+transparency in communication about beneficiary application status. 
+The concerned DWOs attributed delay in processing o f applications to shortage of staff 
+in clerical cadre while test-checked Panchayat Secr etaries confirmed that intimation 
+regarding rejection or approval of application to a  beneficiary was not being shared by 
+the Department. 
+In the exit conference, the Department stated that the matter will be looked into and the 
+department has also initiated Social Audit at the Panchayat levels. 
+5.3 Selection of beneficiaries 
+The beneficiaries are identified by the GPs / municipalities in gram / ward sabha meetings 
+and applications of the prospective beneficiaries a re sent to the Department for further 
+processing. The TWOs are required to verify the age  from record (copy of pariwar  
+register, etc.) of GP or urban local body. 
+Audit test-checked record related to beneficiaries of social security pension schemes viz. 
+pariwar register, death register, etc. in 59 GPs of  11 test-checked TWOs and compared 
+the basic record at GP level with that entered in t he e-Kalyan software. In addition, 
+analysis of data dump was carried out and queries w ere run on web-based e-Kalyan to 
+ascertain selection of beneficiaries as per eligibi lity criterion. It was observed that 
+validation controls in respect of various scheme related guidelines were not present in the 
+e-Kalyan software. Audit findings in this regard are detailed in succeeding paragraphs. 
+5.3.1 Old age pension and IGNOAP schemes  
+Selection of underage beneficiaries : As per Himachal Pradesh Social Security Pension 
+Rules, 2010 and NSAP guidelines, 2014 assistance under old age pension and IGNOAPS 
+schemes is admissible to persons aged 60 years and above. 
+Analysis of data revealed that: 
+• 210 beneficiaries 19  out of total 0.98 lakh active beneficiaries under IGNOAP as of 
+December 2020 were below the age of 60 years. 
+• 365 beneficiaries 20  out of total 2.63 lakh active beneficiaries under old age pension 
+scheme as of December 2020 were below the age of 60 years. 
+Running queries on web-based e-Kalyan in respect of four test-checked districts revealed 
+that– 
+• 117 (Mandi: 88 and Shimla: 29) beneficiaries under IGNOAPS in two test checked 
+districts were below 60 years in violation of scheme guidelines, as of March 2021. 
+• Out of 90,467 beneficiaries, 298 beneficiaries  (Mandi: 283 and Shimla: 15)  under 
+old age pension schemes in two test checked distric ts were below 60 years, in 
+contravention of Himachal Pradesh Social Security P ension Rules, 2010, as of 
+March 2021. 
+                                                           
+19  Bilaspur: 02; Chamba: 08; Hamirpur: 16; Kangra: 37 ; Kullu: 14; Mandi: 92; Shimla: 30;  
+Sirmaur: 09; and Una: 02 
+20  Bilaspur: 06; Chamba: 02; Hamirpur: 22; Kangra: 15 ; Kullu: 07; Mandi: 289; Shimla: 15;  
+Sirmaur: 02; Solan: 01; and Una: 06 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+28 | 
+P a g e  
+Above indicated that even the web-based software wa s not designed to eliminate the 
+existing irregularities and ineligible beneficiaries continued to get pension in violation of 
+scheme guidelines / rules.  
+In this regard, manual examination of records of 7996 beneficiaries pertaining to IGNOAP 
+and old age pension schemes in 59 selected GPs show ed that six out of aforementioned 
+beneficiaries 
+21  in selected GPs, were below 60 years as per basic record though it was 
+shown more than 60 in e-Kalyan. This indicated defi ciency in manual scrutiny of 
+applications.  
+In addition to the above, manual examination furthe r revealed that 57 other beneficiaries 
+were below 60 years as per basic record at GP level  as of March 2021; however, in the 
+e-Kalyan software, their age was shown as above 60 years. This indicated either manual 
+error at the time of data entry or deliberate wrong entry into the e-Kalyan software to give 
+benefit to ineligible applicants. Thus, there is no  integrity of data and selection of 
+beneficiaries based on this data may lead to irregular sanction of pension. 
+It was noticed that pension to above mentioned 63 beneficiaries was being paid for periods 
+ranging between six months to 11 years. An excess p ayment of 
+₹ 55.21 lakh 22  had been 
+paid to these beneficiaries upto March 2021.  
+In Mandi district, during field audit it was observ ed that an 18 year old beneficiary was 
+selected under old age pension in 2009 due to incor rect entry of his date of birth (1930 
+instead of 1991). The beneficiary himself requested  for suppression of pension in 
+November 2020, which was effected in January 2021 which indicated lack of scrutiny and 
+monitoring on the part of the department. Pension o f 
+` 1.08 lakh was disbursed to the 
+beneficiary till December 2020. 
+TWOs concerned stated that due to shortage of staff  and non-availability of automatic 
+verification of panchayat record, these cases may h ave happened, however, corrective 
+action in this regard would be taken. Further earne st efforts to detect such cases were 
+being made. Details regarding date of birth were entered as per data supplied by the GPs 
+concerned in the absence of copy of pariwar registe r. Replies are not acceptable as the 
+onus of completion of all codal formalities and its verification rests with the departmental 
+authorities. The DWOs / TWOs had not checked the el igibility of applicants as per 
+panchayat record, resulting in selection of ineligible beneficiaries. 
+In the exit conference, the Department stated that it could be due to wrong entry of data 
+of age at the time of approval, which will be rectified subsequently.  
+5.3.2 Widow / divorced / single pension and IGNWP s chemes 
+IGNWPS to underage beneficiaries: NSAP guidelines provide for social security pension 
+under IGNWPS to beneficiaries above 40 years. 
+ 
+                                                           
+21   Only six beneficiaries were overlapping with data  dump analysis. This is due to reducing sample 
+size as audit had checked record in 59 GPs only as compared to whole State. Further audit had also 
+observed data variation as per e-Kalyan and GP record as also discussed in Para 5.2.1 (ii) 
+22  Kinnaur: ₹ 3.32 lakh (06); Mandi: ₹ 19.10 lakh (21); Shimla: ₹ 30.51 lakh (30); and  
+Solan: ₹ 2.28 lakh (06) 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+29 | P a g e  
+Scrutiny of data dump revealed seven cases in Mandi  district (out of 23294 active 
+beneficiaries in the State) of selection of underag e beneficiaries under IGNWPS. These 
+seven beneficiaries were also captured under IGNWPS  in web-based e-Kalyan software, 
+which indicated that benefits were still being give n to ineligible beneficiaries as on date 
+of Audit. 
+Widow pension to male beneficiaries: As per para 4(3) of Himachal Pradesh Social 
+Security Pension Rules, 2010, widow pension is admissible only to female beneficiaries. 
+Scrutiny of data dump revealed eight cases (Mandi: 06 & Shimla: 02) out of 92252 active 
+beneficiaries in the State where male beneficiaries  under widow pension scheme were 
+selected. Out of these, four beneficiaries were also captured under IGNWPS in web-based 
+e-Kalyan software, in four-test checked districts w hich indicated that benefits were still 
+being given to ineligible beneficiaries as on date of Audit.   
+Ineligible ekal nari  beneficiaries: As per Himachal Pradesh Social Security Pension 
+Rules, 2010 under ekal nari  (single women) category, the female beneficiary sh ould be 
+above the age of 45 years.  
+Analysis of data dump revealed 48 cases 
+23  (out of 1489 active ekal naris  in the State) in 
+nine districts where ekal naris below the age of 45 years were selected.  
+Of these 48 beneficiaries, 30 (Mandi: 21, Shimla: 0 8 and Solan: 01) in test checked 
+districts were also captured as ekal nari  in web-based e-Kalyan software which indicated 
+that benefits were still being given to ineligible beneficiaries as on date of Audit. An 
+amount of ₹ 19.83 lakh (Mandi: ₹ 15.55 lakh, Shimla: ₹ 3.94 lakh and Solan: ₹ 0.34 lakh) 
+had been paid to these beneficiaries between April 2009 and March 2021.  
+Physical record (applications) of above-mentioned cases was sought (January 2022) from 
+the departmental authorities concerned for scrutiny with data fed into the system, however, 
+the same had not been supplied as of April 2022. 
+In the exit conference, the Department assured that  suitable steps would be taken for 
+recovery of the amount paid to ineligible beneficiaries. 
+5.3.3 Disability relief allowance and IGNDP schemes  
+Disability relief allowance: As per para 4(2) of Himachal Pradesh Social Security Pension 
+Rules, 2010 Disability Relief Allowance (DRA) is admissible to persons with 40 per cent  
+and above disability. 
+• Analysis of data dump revealed selection of 21 bene ficiaries (Chamba: 12; 
+Kangra: 01; Mandi: 05; and Una: 03) out of 60379 active beneficiaries under DRA 
+in the State where disability percentage captured w as below 40 per cent, which 
+was against scheme guidelines. 
+o Five out of the aforementioned beneficiaries in Man di district were also 
+captured under Disability Relief Allowance scheme w ith disability below  
+40 per cent  in web-based e-Kalyan software which indicated that benefits were 
+still being given to ineligible beneficiaries as on date of Audit.   
+                                                           
+23  Bilaspur: 01; Hamirpur: 01; Kangra: 17; Kullu: 02;  Mandi: 21; Shimla: 02; Sirmaur: 01; Solan: 02; 
+and Una: 01 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+30 | 
+P a g e  
+IGNDPS: NSAP guidelines provide for social security allowan ce under IGNDPS to 
+beneficiaries above 18 years and disability above 80 per cent . 
+• Analysis of data dump revealed five cases (Kangra: 02 and Mandi: 03) out of 1018 
+active beneficiaries under IGNDPS in the State with disability below 80 per cent . 
+o Four out of the aforementioned beneficiaries  in Mandi district were also 
+captured under IGNDPS with disability below 80 per cent  in web-based 
+e-Kalyan software which indicated that benefits wer e still being given to 
+ineligible beneficiaries. 
+• Data dump analysis revealed selection of one benefi ciary in Mandi district out of 
+1018 active beneficiaries in the State below the age of 18 years. 
+o The beneficiary  was also captured under IGNDPS with age below 18 years in 
+web-based e-Kalyan software which indicated that be nefits were still being 
+given to above mentioned ineligible beneficiary. 
+Above cases of ineligible selection of beneficiarie s in contravention of guidelines and 
+rules are indicative of lack of scrutiny by the departmental authorities and non-designing 
+of e-Kalyan software as per guidelines / rules. Fur ther, even the web-based e-Kalyan 
+software failed in detection of ineligible benefici aries due to lack of validation checks 
+indicating lapses in user testing before the web-based software was made operational. 
+While admitting the facts the DWOs concerned stated that feeding in the software is done 
+only for three categories viz. old age, widow / sin gle / divorced and disabled at the time 
+of entry. Thereafter sanction of pension under particular scheme is automatic. Replies are 
+indicative of the fact that design of the e-Kalyan software is not in consonance with 
+guidelines / rules. 
+In the exit conference, the Department assured that  the amount already paid to ineligible 
+persons would be recovered. 
+5.3.4 Inadequate validation controls in respect of Scheme guidelines  
+It was observed that the validation controls viz. eligibility age of beneficiary, selection of 
+only BPL persons in NSAP schemes were not present a s discussed in succeeding 
+paragraphs: .  
+(A)  Selection of Non-BPLs under NSAP scheme:  When the applicants are moved in the 
+e-Kalyan software from waiting list to the active pensioner list, the software automatically 
+allots them under either the NSAP or State scheme of the respective category, depending 
+on where the slot is vacant. However, during such a llotment, the e-Kalyan system does 
+not validate whether the applicants meet the eligibility criteria for the respective scheme. 
+Below Poverty Line beneficiaries are to be selected  under NSAP schemes. 
+ Analysis of 
+data dump revealed selection of 28,419 non-BPL bene ficiaries 24  out of 1.22 lakh active 
+beneficiaries under NSAP schemes, in violation of g uidelines. In the four test checked 
+districts 9575 beneficiaries 25  (30 per cent ) out of 32298 under IGNOAPS (in web based 
+e-Kalyan) did not belong to BPL category. 
+                                                           
+24  Bilaspur: 1795; Chamba: 1011; Hamirpur: 1925; Kang ra: 8959; Kinnaur: 166; Kullu: 1493; L&S: 
+44; Mandi: 2932; Shimla: 5940; Sirmaur: 1345; Solan: 912; and Una: 1897 
+25  Kinnaur: 149, Mandi: 2854, Shimla: 5683; and Solan : 889 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+31 | P a g e  
+This indicated that the e-Kalyan software had not been designed to ensure categorization 
+of applicants as per eligibility and lack of scrutiny on the part of departmental authorities. 
+Concerned TWOs stated that selection of ineligible beneficiaries was due to negligence 
+on the part of the GPs concerned. Selection under NSAP or State schemes was done in the 
+e-Kalyan automatically based upon data entered by the departmental authorities in three 
+categories (old age, widow and disabled) only. The replies are indicative of lack of 
+monitoring and co-ordination by the departmental au thorities and non-designing of the 
+e-Kalyan software as per prevailing rules. 
+(B) Inclusion of ineligible beneficiaries : As per State Government notification 
+(April 2014), for availing benefits of the social s ecurity pension schemes, family income 
+of the beneficiary (except for 70 years and above or with disability 70 per cent  and above) 
+should not be more than 
+₹ 35000 per annum from all sources (excluding income  under 
+MGNREGA 26 ). 
+Analysis of data dump revealed 1286 cases 27  in nine out of 12 districts where family 
+income of the beneficiary (less than 70 years and l ess than 70 per cent  disability) was 
+more than ₹ 35000 per annum. This indicated sanction of pensio n to ineligible 
+beneficiaries. 
+5.4 Disbursement of Pension 
+Pension is credited into postal/ bank accounts of t he beneficiaries. MoU with the postal 
+authority 
+ had been entered into (June 2017) by the Department for: 
+• Smooth disbursal of pension in the accounts of the beneficiaries, 
+• Doorstep delivery of pension to above 80 years and above 70 per cent  disabled 
+beneficiaries, 
+• Intimation of beneficiaries becoming ineligible due to death / remarriage, etc., 
+• Service charges at the rate of 1.5 per cent  of the pension disbursed is paid to the 
+postal authority. 
+No such arrangement had been made with the banking system. 
+An amount of ₹ 1894.29 crore had been disbursed to the postal dep artment and 
+₹ 423.04 crore through banks during January 2018 to March 2021. Audit findings relating 
+to disbursement of pension are detailed below: 
+5.4.1  (i) Duplicate disbursement of pension of ₹ 47.24 lakh 
+In the absence of Aadhar linking and other validation checks, Audit analyzed bank / postal 
+account numbers in web-based e-Kalyan with a view t o detect duplicate beneficiaries. 
+Analysis revealed 248 cases (Mandi: 178, Shimla: 56  and Solan: 14) of duplicate bank / 
+postal account numbers linked with 124 beneficiarie s out of 206115 beneficiaries of 
+selected pension schemes in the four test-checked districts. 
+                                                           
+26  Mahatma Gandhi National. Rural Employment Guarantee Act, 2005  
+27  Bilaspur: 40; Chamba: 39; Hamirpur: 24; Kinnaur: 8 4; Kullu: 35; Mandi: 120; Shimla: 07; Sirmaur: 
+934; and Solan: 03 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+32 | 
+P a g e  
+ Detailed analysis of these 248 cases revealed the following 28 : 
+•  118 cases (Mandi: 84, Shimla: 24 and Solan: 10) were found duplicate with same / 
+similar name and details; in which pension was bein g disbursed in 59 savings 
+accounts (same account number in two cases each). A n amount of ₹ 14.59 lakh 
+(Mandi: ₹ 13.31 lakh, Shimla: ₹ 0.90 lakh and Solan: ₹ 0.38 lakh) had been paid in 
+addition to eligible amount to these beneficiaries during overlapping 29  period in 
+which double pension was credited into their accounts (July 2016 to March 2021). 
+• 130 cases (Mandi: 94, Shimla: 32 and Solan: 04) wer e found with different details 
+but same savings account numbers. Pension was being  disbursed in 65 savings 
+accounts (same account number in two cases each). T hus, double benefit to one 
+person was paid and no benefit to the other were given. An amount of ₹ 32.65 lakh 
+(Mandi: ₹ 27.63 lakh, Shimla: ₹ 4.82 lakh and Solan: ₹ 0.20 lakh) had been paid in 
+excess to these beneficiaries during overlapping period in which double pension was 
+credited into their accounts (July 2009 to March 2021). 
+Above cases of duplicate bank / post office savings  account numbers were indicative of 
+lack of scrutiny of applications by the departmental authorities, lack of validation checks/ 
+automatic checks in the e-Kalyan software, and lack  of co-ordination between the 
+Department with the postal authorities and gram panchayats concerned.  
+Above cases are those where same savings account numbers had been used. In the absence 
+of any unique number for identification of benefici aries (Para 5.1), chances of duplicate 
+beneficiaries with different savings account numbers cannot be ruled out. 
+Above discrepancies could have been avoided had Aad har number been used for 
+unique identification of beneficiaries.  
+While admitting the facts the DWOs stated that due to lack of validation checks in the 
+e-Kalyan software, shortage of staff and huge numbe r of cases, these cases remained 
+undetected despite scrutiny by the Department. It was further stated that these cases would 
+be scrutinized, and double payment would be recover ed and deposited with the actual 
+beneficiaries. Replies are not acceptable as the de partmental authorities failed in 
+detecting duplicate payment cases and e-Kalyan software had not been designed to detect 
+and weed out duplicate cases. 
+In the exit conference, the Department assured that excess amount paid to the beneficiaries 
+would be recovered. 
+5.4.1 (ii) Disbursement of pension to multiple beneficiaries in same savings account 
+As per para B(a)(i) of the MoU, the postal Departme nt on receipt of beneficiary details 
+from the Department shall open savings bank account in respect of each beneficiary. 
+In the web-based e-Kalyan it was, however, observed  that in 118 cases (Mandi: 88, 
+Shimla: 12 and Solan: 18) pension was disbursed to husband and wife or father and son 
+                                                           
+28   Payment made to the beneficiary added / linked to  the account number later had been calculated 
+for overlapping period for calculation of excess pa yment as per beneficiary details extracted from 
+the web-based e-Kalyan software 
+29   If one person is getting pension from 2010 and ot her is getting from 2015 in the same account, then 
+overlapping period is from 2015 to 2020, for which amount has been calculated only for the person 
+getting lesser benefits during this period 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+33 | P a g e  
+in the same savings account. Pension was being disb ursed in 59 savings accounts (same 
+account number in two cases each). Further, postal authorities may not be in position to 
+inform the department about any one out of the two becoming ineligible, as money can 
+continue to be drawn by the other beneficiary. Also , the postal and Departmental 
+authorities failed in fulfilling its commitments to wards opening of savings account for 
+each beneficiary as per the ibid provisions of the MoU. 
+5.4.2 Non-delivery of doorstep benefits to eligible  beneficiaries 
+For doorstep delivery to the eligible beneficiaries, the Department of Posts was to provide 
+necessary facilities for making payment at doorsteps. In the test-checked districts, 54430 
+beneficiaries 30  were eligible for doorstep delivery of pension benefits. 
+Scrutiny of record of the selected DWOs showed that – 
+• Details regarding number of beneficiaries to whom p ension was delivered at 
+doorstep had not been shared by the postal authorit ies with the Department, in the 
+absence of which extent of doorstep disbursement co uld not be ascertained by the 
+Department.  
+• In the beneficiary survey conducted by Audit, 112 ( 82 per cent ) out of 137 
+beneficiaries eligible for doorstep delivery report ed that they were not receiving 
+pension at doorstep. 
+• Records at the DWO level showed that there were let ters of complaint from the 
+beneficiaries regarding non-delivery of pension at doorstep.  
+The above points indicated that payment of pension at doorstep of the beneficiaries aged 
+80 years and above and with 70 per cent  and above disability was not being provided to 
+all the eligible beneficiaries by the postal author ities. It was further observed that the 
+Department had not undertaken any correspondence wi th the postal authorities to ensure 
+adherence to the provisions of the MoU in this regard. 
+The DWOs concerned accepted the facts and stated (M ay 2021) that postal authorities 
+had been requested time and again for ensuring door step delivery to the intended 
+beneficiaries and supply such detail to the Department. However, neither was any record 
+of correspondence observed during audit, nor was th e same furnished by the DWOs to 
+substantiate the contention.  
+In the exit conference, it was stated that the matter will be looked into and suitable action 
+will be taken. 
+5.4.3 Usage of money order mode for pension disburs ement 
+Instructions issued (July 2017) by the Directorate provides that the DWOs shall credit 
+pension only in the savings postal/ bank accounts of the beneficiaries. Further, as per MoU 
+with Postal Department, on receipt of beneficiary d ata, the Post Office shall facilitate 
+beneficiaries to open savings postal account.  
+Analysis of data dump revealed 17371 transactions 
+31  through money orders  (out of total 
+41.47 lakh transactions) during 2018-21. Such trans actions were maximum in district 
+                                                           
+30  Kinnaur: 1803; Mandi: 28965; Shimla: 16464; and So lan: 7198 
+31  Bilaspur: 91; Chamba: 3264; Kangra: 7720; Kinnaur:  424; Kullu: 193; L&S: 77; Mandi: 2989; 
+Shimla: 1915; Sirmaur: 526; Solan: 23; and Una: 149 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+34 | 
+P a g e  
+Kangra (7720). Age-wise analysis of transactions th rough money orders during 2018-20 
+is given below: 
+Year  2018 2019 2020 
+No. of money order 
+transactions  
+14781 2144 446 
+Thus, a small percentage (0.4 per cent ) was still being undertaken through money orders 
+entailing the risk of human interference in the pro cess of pension disbursement. The 
+decreasing trend of money order transactions is ind icative of the improvement in 
+disbursement of pension in savings accounts of the beneficiaries, by the Department. 
+DWOs accepted the facts and stated that pension of those beneficiaries whose savings 
+account numbers were not fed in the e-Kalyan softwa re had been sent through money 
+orders.  
+5.4.4 Pension disbursement status  
+Details in respect of pension amount disbursed unde r various schemes and pension 
+amount sent for disbursement to the individuals are  available in the e-Kalyan. Although, 
+status of pension sent for disbursal to an individu al is available under individual query, 
+status of actual disbursement is not available. Pro vision for entering such details is not 
+available in the web-based e-Kalyan software. This may be attributed to lack of integration 
+of e-Kalyan with the post office / banks module for real time disbursement status. 
+It was further observed that post office / banks share detail of pensioners to whom amount 
+could not be transferred, and detail of successful transactions is not being shared. In the 
+absence of transaction IDs and acknowledgement of m oney orders for successful 
+transactions, assurance regarding successful paymen ts was not available with the 
+Department. Department should ensure report in resp ect of successful transaction also 
+alongwith transaction IDs and such details should b e automatically pushed into the 
+e-Kalyan software.  
+5.5 Confirmation of existing beneficiaries 
+As per Para 3.1.2 of the NSAP guidelines, States sh all constitute Special Verification 
+Teams 
+32  to confirm existing beneficiaries. Para 13 of the HPSSP Rules, 2010 stipulates 
+that Gram Sabha would identify and report ineligibl e beneficiaries to DWOs who would 
+stop the pension temporarily. The status of the beneficiaries would be verified by the TWO 
+concerned within one month and report on the same is to be finalized by DWO.  
+5.5.1  Delay in verification of ineligible benefici aries 
+Scrutiny of records and analysis of data dump showed that – 
+• The Department had not constituted any Special Veri fication Teams to confirm the 
+existing beneficiaries. In the test checked distric ts, confirmation of existing 
+beneficiaries was being done by the TWOs concerned. 
+• The data dump contained 2211 cases 33  where pension was temporarily suppressed  
+(out of total suppression of 2.24 lakh cases) with reason “expired” but revoked 
+subsequently (2139 cases revoked within one year an d 72 cases revoked after more 
+                                                           
+32  Authorised officer of the department, representati ves of locally active NGOs, etc. 
+33  Bilaspur: 56; Chamba: 260; Hamirpur: 178; Kangra: 100; Kinnaur: 05; Kullu: 49; L&S: 18; 
+Mandi:716; Shimla: 265; Sirmaur: 246; Solan: 31; and Una: 287 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+35 | P a g e  
+than one year). This had resulted in non-receipt of pension by the beneficiaries during 
+the intervening period. 
+• The data dump also contained 3041 cases 34  (out of total suppression of 2.24 lakh 
+cases) where pension was temporarily suppressed wit h reason ‘under enquiry’. Of 
+these cases: 
+o 571 cases were revoked in 11 districts. Out of thes e, 228 cases were revoked 
+after more than one year. 
+o In 2470 cases revocation period / year had not been mentioned which indicated 
+that either these cases were lying pending for veri fication or entries had not 
+been updated in the software. 
+The above findings indicated that the TWOs / DWOs w ere taking inordinately long time 
+for verification of suppression cases, resulting no t only in denial of benefits to genuine 
+beneficiaries but also in delay in sanction of benefits to other prospective beneficiaries in 
+the waiting list. 
+While confirming the facts the DWOs concerned state d that verification of beneficiaries 
+had been done by the TWOs concerned with the help o f GP representatives. The fact 
+however remains that confirmation was not done as p er guidelines and there was delay 
+in confirmation of beneficiaries which had resulted in suppression of eligible beneficiaries 
+for prolonged periods. 
+5.5.2 Disbursement of pension to expired beneficiar ies resulting in irregular 
+payment of ₹ 60.73 lakh 
+Audit compared the list of active beneficiaries on the e-Kalyan software with the records 
+of death cases in the GPs concerned. Out of 9196 be neficiaries pertaining to selected 
+pension schemes in the 59 test-checked GPs, Audit found 255 cases where the beneficiary 
+had expired since three months to five years. Howev er, payment of pension amount 
+continued to be made into the accounts of these exp ired beneficiaries - an amount of 
+₹ 60.73 lakh 35  had been paid to these expired beneficiaries durin g the period after expiry 
+upto March 2021. This indicated lack of coordination and verification by the departmental 
+authorities. 
+TWOs concerned stated that efforts for detection of ineligible beneficiaries had been made 
+by the Department. Further as per MoU postal authorities were required to intimate about 
+ineligibility of the beneficiaries and matter had been taken up with them. The fact however 
+remains that cases of payment to expired beneficiar ies’ accounts indicated that the 
+verification / confirmation mechanism was not working properly. 
+5.5.3 Information regarding remarriage, employment,  and life certificate  
+As per Para 15(3) of HPSSP Rules, 2010 widow/ divor ced/ ekal nari  beneficiaries are to 
+submit certificate regarding non-remarriage from concerned GPs to the Department before 
+10 th  April of every financial year. Further as per MoU,  the postal Department will also 
+provide information regarding remarriage of widow a nd life certificate of the 
+                                                           
+34  Bilaspur: 18; Chamba: 13; Hamirpur: 114; Kangra: 5 93; Kinnaur: 08; L&S: 48; Mandi: 445; 
+Shimla: 1245; Sirmaur: 504; and Una: 53 
+35  Kinnaur: ₹ 0.70 lakh (06); Mandi: ₹ 21.78 lakh (86); Shimla: ₹ 32.45 lakh (131); and Solan: ₹ 5.80 
+lakh (32) 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+ 
+36 | 
+P a g e  
+beneficiaries. Further, GPs are also required to se nd information regarding death of 
+pensioner or beneficiaries becoming ineligible to t he TWO concerned promptly as per 
+rules, so that pension could be stopped and substitution may be effected. Postal authorities 
+are also required to send such information to the Department immediately as per MoU. 
+Scrutiny of records of the four selected DWOs showed the following –  
+• The required non-remarriage certificate from the co ncerned widow / divorced / 
+ekal nari  beneficiaries had not been obtained during 2017-21.  
+• Life certificate of beneficiaries through postal department was being obtained only 
+in Mandi district, though not regularly. No information from the postal department 
+regarding life certificate of beneficiaries was being received in the other three test-
+checked districts 
+. 
+• GPs were also not sending the requisite information regarding expiry / ineligibility 
+of beneficiaries to the departmental authorities. T his may be attributed to non-
+sharing of sanction order or pensioners' list by the Department with the GPs. 
+• Test check of records of DWO, Solan showed that due  to delay in reporting of 
+change in eligibility status by the GPs / postal au thorities, there was delay in 
+suppression of benefits to 20 pensioners who were e mployed or taking pension 
+benefits from other sources and five re-married ben eficiaries, ranging between 
+nine months and 13 years from the date of employmen t or re-marriage. Delay in 
+suppression of these cases had resulted in undue be nefit of ₹ 3.62 lakh to the 
+beneficiaries concerned and blocking of pension slo t for such period to other 
+persons in waiting list. 
+The concerned DWOs confirmed the facts and stated that due to inadequate staff requisite 
+information / certificates could not be obtained. H owever, report in respect of expired 
+beneficiaries was being obtained from the postal au thorities and other information / 
+certificates would be ensured in future. The reply is not acceptable as rules were not 
+complied with to ensure payment of pension to eligible beneficiaries only.  
+5.5.4 Inspection of beneficiaries 
+As per Para 15(1) of Himachal Pradesh Social Securi ty Pension Rules, 2010, the DWOs 
+and TWOs concerned were required to inspect, the beneficiaries of social security pension 
+schemes periodically about their eligibility. The D WOs and TWOs were to inspect 
+10 per cent and 25 per cent of the beneficiaries of the district/ tehsil respectively annually. 
+Test-checked DWOs and TWOs were required to conduct  20692 and 26249 inspections 
+during 2019-20, as per rules ibid . Scrutiny however revealed that record related to 
+inspections conducted by the selected DWOs and TWOs had not been maintained. In the 
+absence of any reporting mechanism of inspections b y DWO / TWO, audit could not 
+ascertain that inspections had been carried out by the departmental authorities and its 
+outcomes, if inspections were carried out. 
+Concerned departmental authorities stated that requisite inspections could not be carried 
+out due to shortage of staff. It was further stated  that general verification of the 
+beneficiaries was done during field visit of GPs ho wever record in this regard had not 
+been maintained. Record maintenance in this regard would be ensured in future. 
+
+Chapter-V: Process of Social Security Pension schemes’ implementation 
+37 | P a g e  
+Summary –  
+• Social security pension schemes have not been notif ied  under section 7 of the Aadhar 
+Act, 2016 for use of Aadhar number as unique identification and to weed out duplicate 
+beneficiaries. 
+• Functionalities to check / detect duplicate entry w ere not enabled / provided in the 
+e-Kalyan software. 
+• Instances of incomplete application forms without r equisite certificates, and delay in 
+processing of applications and verification of bene ficiaries were noticed in test 
+checked DWOs / TWOs. 
+• Analysis of e-Kalyan software revealed irregularities in selection of beneficiaries and 
+duplicate / excess payment of ₹ 47.24 lakh indicating lack of monitoring by the 
+departmental authorities. 
+• Cross verification of pensioners’ record in e-Kalya n software with basic record at 
+panchayat level in 59 GPs revealed cases of variati on in age of 776 beneficiaries, 
+selection of 63 underage beneficiaries under IGNOAP  and old age pension schemes 
+resulting in irregular payment of ₹ 55.21  lakh and disbursement of pension to 255 
+expired beneficiaries resulting in overpayment of ₹ 60.73 lakh. 
+• There were deficiencies in payment of pension throu gh department of posts such as 
+non-delivery of doorsteps benefits to eligible bene ficiaries, non-obtaining of required 
+certificates, and usage of money order mode for payment of pension. 
+• There was lack of co-ordination between the Departm ent, postal authorities and GPs 
+resulting in non-sharing of information about beneficiaries rendering ineligible under 
+various Social Security Pension Schemes.  
+Recommendations - The State Government may consider: 
+• Use of unique identification (like Aadhar number or  bank/ postal account number) 
+linked to beneficiary to weed out duplicate cases. 
+• Fixing accountability of the functionaries responsi ble for incorrect/overpayment of 
+benefits and recover the amount paid to the ineligible beneficiaries.  
+• Involvement of Common Service Centres in applicatio n process of social security 
+pension schemes. 
+• Processing and verification of pension applications in a time bound manner. 
+• Robust mechanism to verify eligibility of beneficia ries as per records at panchayat 
+level to avoid payment of benefits to ineligible beneficiaries. 
+• The deficiencies observed during audit may be reviewed and necessary controls be put 
+in place to ensure seamless delivery of benefits to eligible beneficiaries. 
+• Implementation of provisions of the MoU with the postal department about delivery of 
+doorsteps benefits, undertaking field level enrolments, etc., scrupulously. 
+• Regular co-ordination of the Department with the postal and GP authorities for smooth 
+implementation of the scheme.
+
+Chapter-VI 
+Analysis of Information 
+Technology (IT) application 
+
+39 | P a g e  
+Chapter-VI 
+Analysis of Information Technology (IT) application 
+e-Kalyan software was developed by National Informa tics Center - Himachal Pradesh 
+(NIC-HP) during 2006-08 for sanction and disburseme nt of social security pension 
+applications and the software had been adopted by the Department since 2008. 
+Audit analyzed e-Kalyan software with a view to ascertain design sufficiency as per rules/ 
+guidelines and efficient service delivery. Following observations were made: 
+6.1 System/ user manuals 
+As per para 2.6 of the e-Kalyan Project Management Plan, 2006 (PMP-2006), NIC-HP 
+was to prepare Software Requirement System (SRS) wi thin one month and Software 
+Design Document (SDD) after the preparation of SRS within one month. Further, as per 
+point 6.2 of the PMP-2006 relating to project deliv erables, the software application was 
+to be delivered along with the User manual (for dep artmental users) and System manual 
+(for internal staff of NIC-HP). 
+Audit, however, noticed that SRS, SDD, user manual and system manual were not 
+prepared by NIC-HP inspite of lapse of more than 13 years after implementation of Social 
+Security Pension schemes through e-Kalyan software in 2008. In the absence of SRS and 
+SDD there is lack of clarity of documented requirements of the Department for e-Kalyan 
+software, issues in mapping of rules, the presence of bugs and porting of legacy data into 
+e-Kalyan. 
+While admitting the facts, the Deputy Director (ESO MSA) stated (October 2020) that no 
+separate SRS, SDD, User and System manual were prep ared as no major difficulty was 
+faced by the Department. The reply is not tenable, as in the absence of these, there were 
+deficiencies noticed as pointed out in previous chapters and succeeding paras.  
+6.2 Accessibility to e-Kalyan 
+To ensure accountability and data authenticity, accessibility of e-Kalyan software should 
+be with authorized persons only at various levels, to avoid unauthorized access and 
+security breach. Analysis of data dump revealed the following: 
+Access of data by multiple users  - Scrutiny of data dump revealed creation of 211 
+multiple 
+1 user IDs at various levels . Out of these, 141 user IDs (DWO: 21; Supervisor / 
+Superintendent: 28; TWO: 09; and others: 83) were s hown active in the data dump. As 
+the access to system was only at district level, cr eation of IDs for TWOs was irregular 
+which indicated that the software was being handled by unauthorized users.  
+Password policy  – The purpose of a password policy is to establish a standard for creation 
+of strong passwords, protection of those passwords,  and frequency of change of the 
+passwords. All user-level passwords should be changed periodically. Password should be 
+enforced to be of a certain minimum length and comprising of mix of alphabets, numbers, 
+and special characters. 
+                                                           
+1 Bilaspur: 15; Chamba: 10; Hamirpur: 26; Kangra: 39 ; Kinnaur: 05; Kullu: 12; L&S: 04; Mandi: 
+26; Shimla: 27; Sirmaur: 22; Solan: 10; and Una: 15  
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+40 | P a g e  
+Audit observed that password with a combination of upper/ lower case-numeric-special 
+characters had not been made mandatory. It was further noticed that all the 211 passwords 
+were stored without encryption in database which wa s fraught with risk of unauthorized 
+access and security breach.  
+Storage of password without encryption might result  in unauthorized access to user IDs 
+and passwords and breach of security. 
+Login by different users from same PC / IP address  - Scrutiny of data dump revealed use 
+of different user logins from the same PC / IP addr ess by different users in all districts. 
+This indicated that the e-Kalyan software had been accessed by different users from same 
+PC / IP while processing of pension applications, w hich was fraught with risk of 
+unauthorized access of IDs / passwords.  
+As indicated in above, user IDs with different roles were used in same PC and IP address, 
+which indicates sharing of user IDs/ passwords with  different users. Use of multi factor 
+authentication to lower such risks should have been considered.   
+6.3 Reliability of e-Kalyan database 
+Audit observations arising out of analysis of data dump related to reliability of e-Kalyan 
+database are detailed below: 
+Manipulation of data / dates - Pension applications are sanctioned by the sanction ing 
+authority as per Himachal Pradesh Social Security Pension Rules, 2010. Applications are 
+scrutinised at various levels (DEO, Supervisor and DWO) to ascertain eligibility of the 
+applicants. Process of sanctioning the applications is given below: 
+ 
+Analysis of data dump revealed mismatch in timelines in processing of applications (total 
+7.06 lakh applications) as detailed below: 
+Supervisor submission date 
+before application date 
+Supervisor submission date 
+before entry date 
+Supervisor submission date 
+after final approval date 
+1961 2 1143 3 3843 4 
+Pension disbursement start date had been captured before date of sanction of the pension 
+in 1515 cases 5. In addition to these, 50 cases 6 pertaining to eight districts, were captured 
+where invalid pension start date (dates before star t of pension schemes) was mentioned. 
+This was indicative of either irregularity in appro val of applications or incorrect feeding 
+of these dates and lack of validation checks in the software.  
+                                                           
+2  Mandi: 286; Sirmaur: 1629; Solan: 45 and Una: 01 
+3  Kangra: 54; L&S: 03; Mandi: 1084 and Una: 02 
+4  Mandi 
+5 Bilaspur: 23; Chamba: 05; Hamirpur: 68; Kangra: 55 8; Kinnaur: 07; Kullu: 17; L&S: 04; Mandi: 13; 
+Shimla: 745; Sirmaur: 12; Solan: 21 and Una: 42 
+6 Bilaspur: 01; Hamirpur: 30; Kangra: 01; Kinnaur: 0 5; Kullu: 02; L&S: 03; Mandi: 01; and Shimla: 07 
+
+
+Chapter-VI: Analysis of Information Technology (IT) application 
+41 | P a g e  
+Above irregularities indicated that these dates wer e being fed manually / manipulated in 
+the absence of validation checks.  
+Pension sanction date and order number - Pension sanction date and order number after 
+sanction of social security pension were to be ente red in the respective fields of the 
+e-Kalyan application. 
+Analysis of data dump revealed that pension sanction date and order number had not been 
+entered / captured in the e-Kalyan application (eit her left blank or -) in case of 117786 
+beneficiaries 
+7 of eight districts which indicated failure of the department to either perform 
+the necessary process of sanction or failure to fee d the necessary details regarding the 
+same. 
+Incomplete credentials  - Details of the beneficiaries viz.  name and father’s name are to 
+be filled in the respective field. 
+Analysis of data dump revealed six cases where afor esaid mentioned fields were left 
+blank, while in 104834 cases 
+8 either one of these fields was left blank or impro perly 
+entered (contained random values) out of total 7.06 lakh applications. This had resulted in 
+processing of applications without complete details  due to absence of validation checks 
+as such name field could not be left blank. 
+Applications rejected due to incorrect entries  - At the time of data entry, correct 
+credentials should be entered to avoid rejection of applications at later stage. Audit noticed 
+that after data entry, editing tools for correction  in detail of beneficiaries had not been 
+made available to the officials of next levels. 
+Analysis of data dump revealed that in six districts 25 out of total 7.06 lakh applications 
+9 
+of social security pension were rejected due to incorrect feeding / entry. In the absence of 
+editing tools for changes / correction of beneficia ries' credentials after data entry level, 
+these applications were rejected by the DWOs concer ned and processing of these 
+applications had to be re-started. 
+6.4 Convergence with guidelines / rules 
+Selection of beneficiaries for sanction of pension from the waiting list is automatic. Design 
+of the e-Kalyan software should be as per prevailing rules / guidelines. Observations with 
+respect to design of e-Kalyan software as per guidelines / rules are detailed below: 
+Validation checks  – Inbuilt validation check in the software for dat a were missing. This 
+had resulted in selection of ineligible beneficiaries and double payment of pension under 
+various schemes {Para 5.4.1(i)}. Further, option fo r editing details of a beneficiary after 
+data entry are not available at subsequent levels. In case of errors noticed after data entry, 
+details are required to be entered afresh, after rejecting the previous application. Different 
+unique IDs are allotted in these cases. 
+                                                           
+7 Chamba: 15759; Kinnaur: 01; Kullu: 13681; Mandi: 4 9545; Shimla: 21428; Sirmaur: 15020; 
+Solan: 02 and Una: 2350 
+8 Bilaspur: 1565; Chamba: 1348; Hamirpur: 19223; Kan gra: 977; Kinnaur: 2172; Kullu: 17991; 
+L&S: 1228; Mandi: 42745; Shimla: 12510; Sirmaur: 2947; Solan: 2124; and Una: 04 
+9 Bilaspur: 02; Kangra: 02; Kullu: 01; Mandi: 15; Sh imla: 01; and Solan: 04 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+42 | P a g e  
+Integration with other modules  – Integration of the e-Kalyan with other existing modules 
+viz. e-pariwar  portal of panchayats and municipal/civil records ( death etc.) for real time 
+verification of beneficiaries and post office / ban k portal for status of pension 
+disbursement had not been done. Feasibility of integration of various existing modules for 
+real time verification and tracking of pension disb ursement status for efficient 
+implementation of social security pension schemes m ay be considered and adopted 
+accordingly.  
+Thus, non-convergence of web-based e-Kalyan software with the guidelines / rules had 
+resulted in selection of ineligible beneficiaries. This also indicates that irregularities are 
+persisting even after shift towards web-based software and even basic validation checks 
+had not been introduced / made active in the web-based e-Kalyan software. 
+The Deputy Director (ESOMSA) stated that the web-ba sed e-Kalyan software is in 
+developing phase and possibility of integration of existing modules with the e-Kalyan 
+could be explored in future. 
+6.5 Generation of reports  
+Various reports viz.  sanction list, waiting list, suppression list, dis bursement list, etc. 
+related to social security pension in respect of active quarter can be generated in the web-
+based e-Kalyan software. It was noticed that: 
+Previous quarter reports  - Reports related to previous single quarter were extractable in 
+the previous client server-based e-Kalyan software;  however, these reports could not be 
+extracted in the current web-based e-Kalyan software and departmental functionaries had 
+to go through manual files (which is susceptible to  errors) or approach NIC for the same 
+when required. Further, it was also noticed that details regarding number of beneficiaries 
+suppressed or substituted in the previous quarters or a particular financial year could not 
+be extracted from the e-Kalyan and these are to be consolidated manually. 
+Generation of reports under widow / divorced / sing le woman category  – Consolidated 
+report for widow / divorced / single woman category  pensioners can be extracted in the 
+e-Kalyan; however, category-wise reports in respect of widow, divorced or single woman 
+cannot be extracted, and these reports are required to be segregated manually. 
+General query –General query report based on income of the benefi ciaries had not been 
+made active in the e-Kalyan, in the absence of whic h general verification regarding 
+eligibility of beneficiaries on the basis of income  criteria cannot be done by the 
+departmental functionaries. 
+Non-incorporation of above-mentioned queries/report s in the e-Kalyan meant that the 
+benefits of IT-enabled tools in processing of socia l security pension applications and 
+reduction of manual work were not being realized to  the fullest extent. Test-checked 
+DWOs / TWOs also stated that functions related to generation of previous quarters' reports 
+should be there in the software. Above detailed functionalities may be incorporated in the 
+e-Kalyan software for its optimum utilization. 
+Thus, non-availability of above mentioned processes , defeated the purpose of swift 
+extraction and analysis of data and also rendered the data analysis prone to manual errors. 
+
+Chapter-VI: Analysis of Information Technology (IT) application 
+43 | P a g e  
+6.6 User access and feedback 
+For optimum utilization of the e-Kalyan software an d transparency, access to end user 
+(applicant / beneficiary) in respect of online appl ication, application status tracking, 
+pension disbursement status, etc. should be provided. It was noticed that:  
+End user access 
+ – In the web-based version of e-Kalyan, access is ava ilable only to the 
+departmental functionaries and end-user i.e.  applicant / beneficiary had not been given 
+any access. In the absence of this, facility of app lication submission by the applicant, 
+application status tracking, etc. is not available to the applicant / beneficiary. 
+Feedback loop  – Feedback mechanism in the form of electronic intimation about pension 
+application status, sanction of pension and transfer of pension benefits has not been put in 
+place, in the absence of which beneficiaries had to  make personal enquiry or 
+correspondence to get status of their applications or transfer of pension. 
+Above detailed functionalities could be added for b etter implementation of the schemes 
+and optimum utilization of IT enabled tools. 
+Summary – 
+• Software Requirement System, Software Design Docume nt, user manual and system 
+manual for ease to manage and use the e-kalyan soft ware had not been prepared by 
+the HP-NIC. 
+• Basic checks to prevent unauthorized access to e-Ka lyan and auto validation of data 
+entered in e-Kalyan were not available. 
+• e-Kalyan software had not been designed in converge nce with guidelines / rules of 
+social security pension schemes. 
+• Software had not been integrated with other existing modules such as e-pariwar portal 
+of panchayat and post office / bank portal for real  time beneficiary' verification and 
+status of pension disbursement.   
+• Facility for generation of previous quarters' repor ts and access to end user had not 
+been provided in the web-based e-Kalyan software. 
+ 
+Recommendations – The State Government may consider:  
+• To prepare requisite System and user manuals for ease to manage and use software by 
+the departmental authorities and users. 
+• Incorporating basic checks to prevent unauthorized access and auto validation of data 
+entered in revamped e-Kalyan.  
+• Designing of the e-Kalyan software as per prevailin g guidelines / rules and 
+incorporation of validation checks as per eligibili ty criteria so that benefits are 
+transferred to eligible persons only. 
+• Multi factor authentication for login in the e-Kalyan to lower risk of security breach of 
+data. 
+• Devising a suitable mechanism for allotment of sanction order in serial automatically 
+through the e-Kalyan software with the facility of sanctioning of new cases by the 
+Deputy Commissioner in the software itself. 
+• Enabling extraction of pervious quarters' reports, integration with existing modules 
+and access to end user for optimum utilization of the e-Kalyan.  
+
+Chapter-VII 
+Organisation and management of 
+Direct Benefit Transfer  
+
+45 | P a g e  
+Chapter-VII 
+Organization and management of Direct Benefit Transfer 
+The State Government has designated Himachal Prades h Information Technology (IT) 
+Department as State Nodal Agency for organization a nd management of DBT process in 
+the State. Audit findings in this regard are given in succeeding paragraphs: 
+7.1 State DBT Cell 
+As per DBT guidelines, a State Direct Benefit Transfer Cell is to be constituted as a one-
+stop point for coordinating and implementing variou s schemes. The Direct Benefit 
+Transfer Cell is to have Advisory Board 
+1, State Direct Benefit Transfer Coordinator 2 and 
+Implementation Support Layer 3. The Advisory board is required to meet quarterly or other 
+regular intervals and shall provide holistic, advis ory, and strategic inputs for delivering 
+benefits in a more effective way.  The Direct Benefit Transfer Coordinator shall coordinate 
+and liaison with various departments to work toward s DBT across schemes.  
+Implementation support layer of the DBT cell was to  develop an IT based system utility 
+to provide a coherent centralized workflow engine f or field functionaries, officials and 
+beneficiaries; and enable report generation, dynamic update of data and daily tracking of 
+progress. 
+Scrutiny of record showed that State DBT Cell was c onstituted in August 2018. It was 
+however, noticed that no meeting of the Advisory Bo ard had been conducted since its 
+constitution in August 2018 till September 2021. Fu nctions related to consolidation and 
+uploading of various reports related to status of t ransfer of benefits after obtaining the 
+same manually was being carried out by the DBT Cell . Consequently, functions of the 
+DBT Cell as mentioned above were not being undertaken as envisaged. 
+In the absence of any meeting of the Advisory Board , holistic, advisory, and strategic 
+inputs for benefits delivery was not ascertained, a nd State DBT Coordinator and 
+Implementation Support Layer did not carried out en visaged activities. Further, due to 
+lack of monitoring by the DBT Cell as envisaged, e- Kalyan software had also not been 
+integrated with the DBT portal and progress of pens ion benefits being paid to the 
+beneficiaries through a standalone mode could not be monitored effectively. 
+The Director (IT) stated that meeting of Advisory b oard has now been convened on 
+19 October 2021 and decisions taken inter alia incl ude notification of all identified 
+schemes under Section 7 of the Aadhar Act, end to end digitization of identified schemes, 
+reporting of all DBT transactions through State DBT  portal and PFMS integration for 
+cash-based schemes. This is in line with the findings highlighted in the Report. 
+                                                           
+1 Comprising of representatives from various enabler s and stakeholders of Direct Benefit Transfer 
+as well as from multi-lateral agencies like World Bank, Asian Development Bank etc. 
+2 Principal Secretary (Planning/IT/Finance) or equiv alent level officer can be nominated as 
+Coordinator who shall act as nodal officer for DBT related matters of the State 
+3 Consists of three coordinators of Director or Offi cers on Special Duty (OSD) rank personnel 
+responsible for technical, non-technical and finance & admin support to operations of the Cell 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+46 | P a g e  
+7.2 Departmental DBT Cell / Committee 
+Paragraph 2.1 of Protocol Documents on DBT in State s provides that apart from State 
+DBT Cell, individual departments shall also constit ute a DBT Cell/ Committee within 
+each department, to ensure that DBT framework is adopted in implementation of schemes. 
+Audit noticed that information regarding constituti on of DBT Cell/ Committees by the 
+individual departments was not available with the S tate DBT Cell, which is expected to 
+be the one-stop point for coordinating all efforts for bringing and implementing schemes 
+on to DBT. Departmental DBT Cell/ Committee had not  been established by the 
+Directorate of ESOMSA. Thus, adoption of DBT framew ork in implementation of 
+schemes was not ensured. 
+The Director (IT) stated that no action has been taken by the State DBT cell for setting up 
+of DBT cell/ Committees by the individual departmen ts as no protocol document was 
+received in this regard. The reply is not justified  as every department was to constitute 
+departmental DBT Cell/ Committee to work towards implementation of DBT in identified 
+schemes. 
+7.3 Robust Governance Framework  
+Paragraph 2.4 of the Protocol Document on DBT in St ates (June 2017) provides for a 
+robust governance framework at the State level to c ontinuously monitor the readiness of 
+schemes and programmes.  The Governance framework w ould operate under State DBT 
+Cell and shall be responsible for (i) DBT applicabi lity assessment of schemes and 
+programmes; (ii) consultations with stakeholders on  DBT; (iii) beneficiary digitisation 
+analysis and recommendations; (iv) DBT on-boarding of schemes and programmes; (v) 
+monitoring scheme on-boarding progress; and (vi) pr oviding programme management 
+support.   
+Audit noticed that robust governance framework to continuously monitor the readiness of 
+schemes and programmes was lacking at State level. Except two review meetings of the 
+status of implementation of DBT, two workshops and one meeting on Aadhaar based DBT 
+through PFMS, no other workshop, seminar, meeting, etc., (on beneficiary digitization 
+analysis, providing programme management support, e tc) to operationalize DBT was 
+conducted either by the State DBT Cell or the Depar tment during 2017-21. 
+Implementation of outcomes of above meetings/ works hop held was also not supplied to 
+audit.  
+The Director (IT) stated that above-mentioned works hops/ meetings were conducted 
+during 2017-19 to train officials of departments to  implement DBT through PFMS. 
+However, progress of implementation of DBT by various departments is not available.  
+7.4 Training and support to State officials on DBT 
+Guidelines for State DBT Cell issued by DBT Mission , GoI stipulate that as a part of 
+implementation support, the State DBT Cell shall provide training and support in capacity 
+building of State officials on DBT. The guidelines further provide for organising exposure 
+visits for the State/district officials in DBT progressive States for familiarising them with 
+model practices, besides, conducting bench-marking studies on best practices, running 
+innovations in the State through pilots/ experiment s and developing roadmap to 
+incorporate those practices in State operations. Audit noticed that: 
+
+Chapter-VII: Organization and management of Direct Benefit Transfer 
+47 | P a g e  
+• Neither any training calendar was prepared nor was any training on DBT provided 
+to State officials by the State DBT Cell. 
+• No exposure visits for State/district officials in DBT progressive States were 
+arranged by the State DBT Cell for familiarising the officials with model practices 
+being adopted by those States. 
+• Neither any benchmark studies were conducted on bes t practices for developing 
+roadmap to incorporate those practices in State operations nor was any innovation 
+in the State through pilots/experiments carried out by the State DBT Cell. 
+In the absence of proper training/ exposure visits/  benchmark studies, proper monitoring 
+and control over DBT operations  could not ensured in the State. 
+The Director (IT) stated that no external visit was  arranged as no proposal came up 
+during above period. It was further stated that off icials of the State DBT cell visited 
+various departments to provide support in implement ation/ reporting of DBT. The reply 
+is not acceptable as no supporting document in support of above claim has been provided 
+to Audit. 
+7.5 State DBT Portal 
+Paragraph 2.2(4) of Protocol Document on DBT in Sta tes provides that the State DBT 
+Portal is to be conceptualised and implemented to a ggregate State level information on 
+benefit transfers. Further, Para 3.2 of Protocol Do cument on DBT in states also provides 
+that State DBT Portal shall have role-based access where different kind of roles are 
+defined to access portal based on different privile ges. Portal also has anonymous access 
+for public to know about DBT and its progress in th e State and it should have 
+functionalities for public viz.  Home Page, About Us, Schemes, Multimedia, DBT Cell , 
+Documents, Success Story, Contact Us, Right to Info rmation (RTI), Frequently Asked 
+Questions (FAQs), Feedback and Download.  
+Scrutiny of State DBT Portal showed that above ment ioned functionalities are either not 
+available or provided partially to public on the Po rtal as detailed in Appendix-6. 
+Non-availability of required functionalities on Sta te DBT portal deprived the public of 
+necessary information on benefit transfers. 
+The Director (IT) stated that technical team is in the process of updating the State DBT 
+portal as per Standard Operating Procedure for State DBT portal. 
+7.6 Other deficiencies in the State DBT Portal  
+The Information Technology Department being the adm inistrative department for State 
+DBT Cell, is hosting the HP DBT Portal (http://dbtportal.hp.gov.in) , which became 
+operational from August 2017. The GoI issued (Janua ry 2009 and February 2018) 
+Guidelines for Indian Government Websites (GIGW). The guidelines recommend policies 
+and guidelines for Indian Government Websites and P ortals, at any organizational level 
+and belonging to both Central Government as well as State/UT Governments for making 
+Government websites citizen centric and visitor friendly.  
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+48 | P a g e  
+Audit noticed that State DBT Portal  had been integrated with DBT Bharat Portal 
+(https://dbtbharat.gov.in).  However, the following  inconsistencies in maintenance of 
+State DBT Portal by the IT Department were noticed: 
+(i)  Website Quality Certification was not obtained from  Standardisation Testing 
+Quality Certification (STQC) - an organization of M inistry of Electronics and 
+Information Technology (MeitY), GoI, as required under Paragraph 1.4 of GIGW. 
+(ii)  Neither Web Information Manager nor was Technical M anager had been 
+appointed to ensure proper flow and quality of content to the site, as per Paragraphs 
+10.1.1 and 10.1.2 of GIGW. 
+(iii)  No Content Contribution, Moderation and Approval Policy to ensure authenticity 
+of data and responsibility, authorization and workf low details with regard to 
+content publishing on State DBT Portal was framed, as required under Paragraph 
+5.2 of GIGW. 
+(iv)  No Website Monitoring Policy was formulated to addr ess and fix the quality and 
+compatibility issues, as per Paragraph 10.3 of GIGW. 
+(v)  No provision for regional (Hindi) language content on State DBT portal was made, 
+as required under Paragraph 5.7 of GIGW. 
+The Director (IT) stated that technical team is in the process of updating the State DBT 
+portal as per Guidelines for Indian Government Websites. 
+7.7 Identification and onboarding of schemes on Sta te DBT Portal 
+GoI instructed (March 2018) the States for identifi cation and onboarding of schemes 
+implemented by the States on State DBT portal and r eporting monthly progress of 
+beneficiaries' data digitization, authenticated Aad har seeding, data validation, funds 
+transfer through DBT mode and savings on account of  removal of duplicate and fake/ 
+non-existent beneficiaries, etc., to the concerned Departments. 
+Scrutiny of records showed that as of June 2021 out of 162 schemes  identified by the State 
+Government for DBT, only 62 schemes (39 p er cent ) including six selected social security 
+pension schemes were onboarded on State DBT portal during 2017-18 with respect to 
+funds transferred to beneficiaries and reporting mo nthly progress under respective 
+scheme. No further action as per ibid  instructions has been taken in respect of above 
+schemes even after lapse of more than three years.  
+The Director (IT) stated (June 2021) that the conce rned departments are implementing 
+DBT schemes at their own level. The reply should be seen in light of fact that 61 per cent 
+schemes have not been onboarded on State DBT portal which reflects poor monitoring of 
+DBT processes in the State by the State Nodal (IT) Department.  
+7.8 Disaster Recovery and Business Continuity Plan 
+Paragraph 8.3.4 of GIGW provides that there could be circumstances wherein due to some 
+natural calamity, the entire data center where the website is being hosted gets destroyed 
+or ceases to exist. A well-planned contingency mech anism has to be in place for such 
+eventualities wherein it should be ensured that the  Hosting Service Provider has a 
+
+Chapter-VII: Organization and management of Direct Benefit Transfer 
+49 | P a g e  
+‘Disaster Recovery Centre (DRC)’ set up at a geogra phically remote location and the 
+website is switched over to the DRC with minimum delay and restored on the web.  
+Audit noticed that the State did not have any Disas ter Recovery  and Business Continuity 
+Plan (DRBCP) for e-Kalyan software and State DBT Po rtal being maintained locally at 
+National Informatics Centre (NIC) and Directorate o ffice of Information Technology 
+respectively.  Thus, recovery of data with minimum delay in case of any eventuality was 
+not ensured.  
+While accepting the facts, the Director (ESOMSA) st ated that no back-up and recovery 
+plan for data has been implemented. The Director (I T) stated that Disaster Recovery 
+Centre for State DBT Portal is located in Delhi. Th e reply is not acceptable as e-Kalyan 
+software has not been integrated with the State/ Bharat DBT portal and back-up/ recovery 
+plan for its data has not been ensured. 
+7.9 Management Information System 
+The Standard Operating Procedure 
+ (SOP) for DBT Bharat Portal (States/ UTs) and SOP 
+Modules for DBT issued by GoI provides for creation and maintenance of real time MIS 
+portal. 
+Audit noticed that no mechanism existed for real time capturing of beneficiaries’ data and 
+benefits transferred on State DBT portal. This info rmation is collected manually by the 
+DBT Cell from various departments and uploaded on D BT Portal, however, any 
+subsequent modification in number of beneficiaries covered/ benefits transferred is not 
+updated on State DBT portal.   
+While admitting the facts, the Director (IT) stated  that to capture real time data of 
+beneficiaries, the end-to-end digitisation of state schemes is under progress. 
+7.10 Variation in figures available on DBT Portal a nd supplied by the Department 
+Paragraph 1.2 of SOP on “DBT Bharat Portal” for Sta tes/UTs issued by DBT Mission, 
+GoI provides that since the data provided on DBT Po rtal is available in public domain, 
+State DBT Cell Coordinators are to validate and con firm before entering any details on 
+the Portal. The ownership of all State specific inf ormation will be of States. State DBT 
+Nodal Officer  is to nominate Departmental officers who would be responsible for the entry 
+and correctness of monthly data of each scheme. 
+Audit noticed variation in amount transferred to beneficiaries supplied by the Department 
+and that uploaded on the DBT portal ranging between  
+₹ 0.56 crore to ₹ 106.31 crore for 
+the period 2019-20 and 2020-21 under selected schemes (figures of 2017-18 and 2018-19 
+are not available on DBT portal) as detailed in Table-7.1 : 
+ 
+ 
+ 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+50 | P a g e  
+Table-7.1: Detail showing variation in data as per State DBT portal and as per data 
+supplied by the Department 
+(₹ in crore) 
+Name of the Scheme Year Amount 
+transferred as 
+per DBT Portal  
+Amount 
+transferred as 
+per Department  
+Variation in 
+figures  
+Old Age Pension 2019-20 384.50  435.71  51.21  
+2020-21 444.15  546.63  102.48  
+Pension scheme for Widow 2019-20 103.08  141.08  38.00  
+2020-21 124.68  144.18  19.50  
+Disabled Relief Allowance 2019-20 76.05  71.68  4.37  
+2020-21 89.21  88.40  0.81  
+IGNOAPS 
+2019-20 155.12  48.81  106.31  
+2020-21 148.49  63.45  85.04  
+IGWPS 2019-20 28.31  11.84  16.47  
+2020-21 31.93  14.52  17.41  
+IGDPS 2019-20 1.83  1.09  0.74  
+2020-21 1.90  1.34  0.56  
+Source: Figures supplied by the Department and available on DBT portal. 
+Variation in data supplied by the Department and reflected on the portal indicates that data 
+is not being validated before entry on the portal. 
+The Director (IT) stated that DBT reports as receiv ed from concerned departments are 
+uploaded on State DBT Portal. The reply is not acceptable as correctness of data of each 
+scheme is to be ensured by departmental and State DBT Nodal officers. 
+7.11 Adoption of Public Financial Management System  
+Ministry of Finance, GoI decided on mandatory use o f Public Financial Management 
+System (PFMS) for payment, accounting and reporting  under DBT and directed 
+(December 2014) to ensure that no payments under DB T schemes were to be processed 
+unless the electronic files for such payments were received through PFMS from 
+1 April 2015 onwards. Further, part D of SOP module s for DBT stipulates that the 
+registration of beneficiary in PFMS is to be done a fter successful validation of bank / 
+postal account and validation of Aadhar number. In case of payment to Aadhar linked 
+bank accounts, the Aadhar numbers (after initial level format checking in PFMS) are sent 
+to National Payments Corporation of India  (NPCI) for verification. After validation, both 
+banks and NPCI have to share the validation respons e with PFMS. On receipt of bank 
+confirmation, the checker will approve the benefici ary on PFMS. Amount is credited in 
+the validated account of the beneficiary after appr oval and payment status response files 
+are shared with PFMS. Individual acknowledgements f or both successful and 
+unsuccessful transaction are received on PFMS and f eedback is shared with the 
+beneficiaries through SMS alerts. 
+In this context audit observed that:  
+i.  For transferring benefits under five State social s ecurity pension schemes, neither 
+PFMS nor Himkosh (Integrated Financial Management Information System  - a 
+Receipts Accounting System of State Government) had  been adopted as of 
+March 2021. Under these five schemes, benefits are thus being transferred with 
+manual intervention at various stages leading to de ficiencies in the pension 
+disbursement process as discussed in Chapter-5. 
+
+Chapter-VII: Organization and management of Direct Benefit Transfer 
+51 | P a g e  
+ii.  In respect of social security pension schemes under  NSAP, disbursement is being 
+made through PFMS from October 2020 only i.e. after more than five years from the 
+scheduled date. However, audit observed the following deviations: 
+• List of beneficiaries is extracted from the e-Kalya n and converted manually in 
+format compatible (as per template) with PFMS and t hen uploaded on PFMS. 
+There is no automatic pushing of files from e-Kalya n to PFMS. Thus, risk of 
+tampering of beneficiary list cannot be ruled out. This may be attributed to 
+non-integration of e-Kalyan with PFMS.  
+• Validation of Aadhar numbers of the beneficiaries is not being done. Only savings 
+accounts of the beneficiaries are validated and suc cessful validated beneficiaries 
+are approved on PFMS. Name of the beneficiary regis tered under scheme and as 
+per bank / PO are displayed on PFMS for verificatio n before initiating the 
+payment. However, this validation of name is to be done manually in the absence 
+of flagging of difference in name using any fuzzy l ogic. After checking and 
+rectifying any error noticed, payment is initiated by the DWO, however chances 
+of omission errors cannot be ruled out . 
+• Individual acknowledgment in respect of payments (s uccessful as well as 
+unsuccessful) are received on the PFMS. It was furt her noticed that in successful 
+transactions there is no acknowledgment push of tra nsactions back to e-Kalyan 
+from PFMS. In case of failed transactions, reasons for failure are manually fed in 
+the e-Kalyan, in the absence of integration of e-Kalyan with PFMS . 
+• Mechanism for feedback to beneficiaries through SMS  or any other mode 
+regarding payment of pension was not in place. Thus , feedback mechanism was 
+not activated . 
+• Further, due to non-integration of PFMS with the NS AP portal through Aadhar 
+Payment Bridge system, NSAP portal is showing zero transaction through DBT in 
+the State. 
+From the above, it is clear that PFMS had not been adopted for State schemes, though 
+adopted for NSAP schemes from October 2020 onwards after a period of more than five 
+years from the scheduled PFMS adoption date. Howeve r, payment through PFMS for 
+NSAP schemes involved lacunas viz. manual intervent ion, absence of automatic push of 
+electronic files due to non-integration of e-Kalyan  with PFMS, absence of feedback 
+mechanism etc. as detailed above. 
+Even for the NSAP scheme payments, although the DBT  Module of PFMS serves as the 
+automated funds transfer platform, there is no auto mated pushing of files/ funds transfer 
+orders from e-Kalyan to PFMS, and no pushing back o f beneficiary-wise 
+acknowledgment/ failure data files from PFMS back to e-Kalyan. Audit recommends that 
+this payment process also needs to be automated wit hout manual intervention through 
+PFMS or any other automated funds transfer platform. 
+The Director (IT) stated (June 2021) that State DBT  cell is in regular coordination with 
+all concerned departments and had requested them to use PFMS portal in DBT schemes. 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+52 | P a g e  
+The reply should be seen in the light of fact that PFMS is not being used for transferring 
+benefits under social security pension schemes of the State Government and validation of 
+Aadhar numbers of the beneficiaries was not done in  respect of NSAP schemes. Further 
+State DBT Cell had also not coordinated as envisage d with the departments for 
+implementing the same. 
+In the exit conference, the Department assured to l ook into the matter and take suitable 
+action accordingly. 
+Summary - 
+• DBT Cell was not discharging its duties of co-ordin ating with departments and 
+implementing DBT in various schemes. Meetings of Ad visory Board to guide and 
+monitor various departments in adopting DBT had not been conducted. 
+• DBT Cell had not provided training and support in capacity building on DBT to State 
+officials. 
+• The Department did not have any disaster recovery and business continuity plan. 
+• There was variation in data on benefit transfer under social security pension schemes 
+supplied by the Department and reflected on the State DBT portal.   
+• PFMS had been introduced in the NSAP schemes after delay of more than six years 
+and Aadhar validation on NPCI Aadhar mapper had not been done. Further PFMS for 
+State schemes had not been commenced yet. 
+• There is no automatic pushing of files from e-kalya n to PFMS as font of beneficiaries 
+list extracted from the e-Kalyan software is not re cognised in the PFMS portal. 
+Validation of beneficiary is done manually in the a bsence of flagging of difference of 
+name using fuzzy logic.  
+• There is no acknowledgment push of transactions in the e-kalyan from PFMS. For 
+failed transactions, reasons are manually fed in th e e-kalyan.  Unsuccessful 
+transactions are recorded manually in the e-kalyan.  
+• Due to non-integration of PFMS with the NSAP portal  through Aadhar Payment 
+Bridge system, NSAP portal is showing zero transaction through DBT in the State. 
+• The procedure implemented by the Department is not in consonance with the DBT 
+framework, which should involve transfer of benefits directly to the beneficiaries. 
+• The procedure can be termed as benefit transfer, bu t not as “direct” benefit transfer, 
+since funds are not transferred directly to the ben eficiaries but funds are transferred 
+into the bank account of the DWO and then cheques a re issued for further transfer to 
+the beneficiary bank accounts. 
+ 
+Recommendations – The State Government may consider:  
+• Ensuring functioning of State DBT Cell in guiding a nd monitoring of DBT 
+implementation in various departments. 
+
+Chapter-VII: Organization and management of Direct Benefit Transfer 
+53 | P a g e  
+• Providing training and support on DBT to State officials for capacity building. 
+• Integration of social security pension schemes with the State DBT portal. 
+• Preparing disaster recovery and business continuity plan and maintenance of real time 
+MIS portal. 
+• Reconciliation of data on benefit transfer in order to depict true picture.    
+• Using PFMS alongwith validation of Aadhar and posta l/ bank account numbers 
+mandatorily for transfer of benefits as per DBT gui delines for all schemes and 
+identification of difference in names should be aut omatic using fuzzy logic, so that 
+manual intervention may be reduced. 
+
+Chapter-VIII 
+Human Resource Management 
+and Monitoring 
+
+55 | P a g e  
+Chapter-VIII 
+Human Resource Management and Monitoring 
+Human resource management and monitoring are import ant for ensuring smooth 
+implementation of a scheme. It also ensures that system for scrutiny of applications, timely 
+sanction and remittance of pension, etc., has been put in place and is functioning properly. 
+8.1 Staff position 
+To execute functions envisaged in the Himachal Prad esh Social Security Pension Rules, 
+2010 and NSAP (revised) guidelines, 2014 such as verification and processing of pension 
+applications, inspections of beneficiaries, monitor ing, etc., requisite staff strength is 
+essential. Category-wise sanctioned strength and persons-in-position in respect of DWOs / 
+TWOs and ministerial staff in the State is detailed below: 
+Table-8.1: Position of Staff Strength and Persons-in-Position 
+(In numbers) 
+Category of staff Sanctioned Strength Persons-in-Position Shortfall 
+DWO 13 11 02 (15) 
+TWO 91 83 08 (09) 
+Ministerial staff 1 192 117 75 (39) 
+Total 296 211 85 (29) 
+Source: Information supplied by the Department. Note: Figures in the parenthesis denotes percentage 
+It can be seen from the above that there was shorta ge of manpower in each category, 
+hampering smooth implementation of social security pension schemes in the State as basic 
+checks could not be exercised which resulted in rec eipt of incomplete application forms 
+without requisite certificates, delays in processin g of applications, variation in age of 
+beneficiaries with actual records, selection of und erage beneficiaries, disbursement of 
+pension to expired beneficiaries, selection of non-BPL pensioners under NSAP schemes, 
+extension of benefits to ineligible beneficiaries, etc. 
+DWO Mandi stated that adequate and trained staff as per number of pension cases should 
+be deployed for smooth implementation of social security pension schemes. 
+8.2 e-Kalyan user manual and capacity building 
+e-Kalyan software had been developed by NIC for san ction and disbursement of social 
+security pensions in Himachal Pradesh. The software  is used by the departmental 
+functionaries for processing of pension applications. For the purpose of using the software 
+for the intended purpose, departmental functionarie s should be aware of its utilities and 
+functionalities and were required to be trained through user manual or special training for 
+capacity building. 
+Audit noticed that training in respect of utilities  and functionalities of the e-Kalyan 
+software had not been imparted to the departmental functionaries for capacity building. 
+Further, no user manual in this regard had been supplied to the departmental functionaries 
+by the NIC for better understanding of the software utilities. In the absence of user manual 
+and training to the user group, optimum utilization of the software was not ensured by the 
+Department. 
+                                                           
+1 Superintendent (Gr.-I), Superintendent (Gr.-II), S r. Assistant, Statistical Assistant, Clerk, Steno, 
+and Computer Operator 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+56 | P a g e  
+The DWOs concerned admitted the facts and stated th at no special training for handling 
+the pension work or functioning of e-Kalyan had been imparted to the concerned officials. 
+DWO (HQs) confirmed the facts and stated that the new web-based e-Kalyan software is 
+an upgraded version of previous software with new features and officials are familiar with 
+its workflow. It was further stated that the softwa re is in developing phase, and user 
+manual and training would be imparted through NIC f or better understanding of the 
+software, after the same will be completely develop ed. The reply is not acceptable as 
+supply of user manual and training to the user grou p in the development phase would 
+have helped them in understanding functionalities o f the software for better 
+implementation of the schemes and suggestions / comments of the user group would have 
+been helpful in developing the software for its optimum utilization.  
+8.3 State and District Level Committees 
+As per para 6.1.2 of the NSAP guidelines (revised),  2014 State Level Committee headed 
+by Chief Secretary and other members 
+2 was to be constituted. The Committee would be 
+responsible for implementation, monitoring and evaluation of the programme and matters 
+concerned therewith and to report to the GoI. State  level committee should meet at least 
+twice a year. Further as per para 3.6.1 of the guid elines, for effective implementation, 
+review and evaluation of the schemes, district leve l committees are to be constituted by 
+the State Government. 
+Audit observed that State level committee had not been constituted by the Department for 
+NSAP. However, for monitoring of various schemes in cluding social security pension 
+schemes a State Level Committee (DISHA 
+3) had been constituted by the Department of 
+Rural Development under the Chairmanship of the Chief Minister. It was further noticed 
+that district level welfare committees had been constituted at district levels for monitoring 
+of all welfare schemes. However, record relating to  follow up action taken on the 
+recommendations of the committee had not been maint ained by the Department, in the 
+absence of which extent of effective monitoring could not be ascertained in Audit.  
+The Deputy Director (ESOMSA) stated that monitoring of social security pension schemes 
+under NSAP and State schemes was being done through  DISHA committee and District 
+Level Welfare committees. 
+8.4 Vigilance and Monitoring Committees 
+Para 6.8 of the NSAP guidelines (revised), 2014 conceptualises Vigilance and Monitoring 
+Committees at the State and District levels as a fo rum to review implementation of the 
+programme. 
+Scrutiny of record showed that State and district l evel Vigilance and Monitoring 
+committees as a forum to review implementation of N SAP programme had not been 
+constituted. In the absence of Vigilance and Monitoring committees as envisaged, review 
+of the NSAP programme was not ensured by the State Government. 
+                                                           
+2 Secretaries of concerned departments (Finance, Rur al Development, Panchayati Raj, Municipal 
+Affairs, Social Welfare, Health, Revenue, Women & Child Development, etc.), two representatives 
+of Bank / Post Office, Deputy Commissioners of four districts in rotation, four independent experts 
+and representatives of Non-Government Organizations (NGOs) 
+3 District Development, Coordination and Monitoring Committee 
+
+Chapter-VIII: Human Resource management and monitoring  
+57 | P a g e  
+The Deputy Director (ESOMSA) stated that monitoring of social security pension schemes 
+was being done through DISHA committee and District Level Welfare committees. Reply 
+is not acceptable as in the absence of vigilance an d monitoring committees, effective 
+review of the programme was not ensured. 
+8.5 Social Audit  
+Rule 6.10.1 and 6.10.2 of NSAP guideline  states that social audit by the gram sabha / ward 
+committees is essential in implementation and monit oring of the schemes. Social Audit 
+under NSAP should be held at least once in every six months. 
+Test-check of selected DWOs showed that social audi t mechanism for social security 
+pensions schemes had not been established, as requi red under guidelines. In the absence 
+of social audit, monitoring of the schemes at grass  root level was not ensured by the 
+Department. 
+Deputy Director (ESOMSA) stated that instructions f or conduct of social audit had been 
+issued to all DWOs. Test-checked DWOs stated that social audit had not been conducted 
+however verification of pensioners was being done b y the departmental authorities and 
+gram sabha meetings were being attended by the depa rtmental functionaries. The fact 
+however remains that monitoring of schemes through representation of grass root level 
+functionaries was not ensured in the absence of soc ial audit. Secretaries of test-checked 
+GPs also confirmed that social audit of pension schemes was not being done. 
+8.6 Grievance redressal mechanism 
+Para 6.9 of NSAP guidelines provides that the State  Government should put in place a 
+grievance redressal system at various levels and de signate an officer for redressal of 
+grievances. Timelines for dealing with grievances s hould be fixed and the complainant 
+must be given a receipt, indicating timelines for redressal. The departmental functionaries 
+must keep record of complaints received, action tak en and outcome. The complainant 
+must be informed in writing about the action taken.  
+Scrutiny of records of the Director, ESOMSA and tes t checked DWOs revealed that 
+grievance redressal mechanism in respect of social security pension schemes had not been 
+established. Details indicating receipt, disposal, and level of grievances had not been 
+maintained at Directorate or DWO level. It was also noticed that the Department had not 
+fixed any timelines for redressal of grievances related to social security pension schemes. 
+In the absence of any mechanism, redressal of public grievances in a timely manner could 
+not be ascertained in Audit. 
+In Mandi, a dedicated helpline number mechanism for  redressal of complaints related to 
+welfare schemes had been put in place; however, rec ord in this regard had not been 
+maintained.  
+The Deputy Director (ESOMSA) stated that grievances  received through e-Samadhan, 
+CM Sewa Sankalp, and Jan Manch programmes were bein g redressed accordingly. 
+Complaints received by the DWOs / TWOs were being r edressed as per rules by them. 
+Reply is not acceptable as redressal mechanism with  clear timelines and maintenance of 
+related record had not been established. DWOs concerned admitted the facts. 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+58 | P a g e  
+Summary – 
+• There was shortage of manpower in each category, ha mpering smooth functioning of 
+social security pension schemes in the State.  
+• Training in respect of utilities and functionalitie s of the e-Kalyan software and user 
+manual had not been provided to the officials deali ng with implementation of social 
+security pension schemes. 
+• Grievance redressal and social audit mechanism had not been established. 
+• Monitoring in the Department is ineffective due to which deficiencies like delay in 
+sanctioning the pension, sanctioning / payment of d uplicate pension, sanction of 
+pension to ineligible persons, non-verification of pension disbursement, allotment of 
+duplicate ID numbers, etc., were noticed in the implementation of the scheme. 
+ 
+Recommendations - The State Government may consider:  
+• To provide training to staff about utilities / functionalities of the e-Kalyan for effective 
+implementation of social security pension schemes. 
+• Establishment of grievance redressal, monitoring, a nd social audit mechanism as 
+envisaged in the guidelines. 
+
+Chapter-IX 
+Conclusion 
+
+59 | P a g e  
+Chapter-IX 
+Conclusion 
+Though the State Government has made paradigm shift towards transfer of social security 
+pension in savings postal / bank accounts of the be neficiaries, still DBT in pension 
+schemes had not been ensured. The Department has made e-Kalyan software from a client 
+server to a web-based; however, delivery of benefit s was not efficient and effective as 
+summarized below: 
+Coverage and Financial Management  
+Inspite of substantial expenditure on Information Education Communication activities for 
+welfare schemes during 2017-21, exclusion of eligib le persons was noticed. Category-
+wise or age-wise database of eligible population th rough proactive periodic surveys or 
+obtaining statistics from field offices was not mai ntained. Submission of pension 
+applications was entirely dependent on the initiati ve of beneficiaries or gram panchayat 
+representatives. The target of pensioners was incre ased commensurate with lowering the 
+age for Old Age Pension beneficiaries with no income criteria from 80 years to 70 years. 
+However, the targets were not achieved fully during  2017-21 inspite of availability of 
+funds. In the absence of specific time schedule for  finalization of pension, huge number 
+of cases continued to remain in the waiting list an d there was abnormal time taken for 
+sanction of pension after receipt of applications. Applicants remained lying in waiting list 
+for period of more than two years due to non-fixati on of any timeline for finalization of 
+pension cases. 
+Comparison of Social Security Pension implementation with DBT framework 
+The Department had not implemented DBT in social se curity pension schemes despite 
+directions of the GoI and announcement made in budg et speech. DBT process was not 
+followed as the client server-based e-Kalyan was no t re-engineered in line with DBT 
+framework. The disbursement process was not integrated with the e-Kalyan software and 
+involved manual intervention. Uniqueness of benefic iaries with Aadhar or any other 
+unique ID was not ensured. Guiding principles contained in Standard Operating Procedure 
+for DBT payments had not been taken care of while u pgrading e-Kalyan software. 
+Mechanism for feedback in the form of electronic in timation to the beneficiaries had not 
+been introduced. Acknowledgment push in e-Kalyan is  not available due to its 
+non-integration with PFMS and Fund Transfer Orders with beneficiary details are not 
+automatically generated. 
+Process of Social Security Pension Schemes' Implementation 
+Aadhar had not been notified for identification of beneficiaries to check duplicity. Aadhar 
+number had been used repeatedly in multiple cases a nd had not been entered / seeded 
+correctly in the database in huge number of cases.  In spite of availability of dedicated 
+field for Aadhar number in client server e-Kalyan software; the field had not been enabled 
+to detect duplicate cases.  Instances of receipt of  incomplete application forms without 
+requisite certificates and delays in processing of applications were noticed in test checked 
+DWOs/ TWOs. Allotment of double personnel ledger ac count (PLA) indicated that 
+applications were not verified properly and lack of  validation checks. Cross check of 
+pensioners’ record in e-Kalyan with panchayat  record revealed cases of variation in age 
+of beneficiaries, selection of underage beneficiari es, disbursement of pension to expired 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021 
+60 | P a g e  
+beneficiaries, selection of non-BPL pensioners unde r NSAP schemes and extension of 
+benefits to ineligible beneficiaries. Benefits were  transferred to multiple beneficiaries 
+through same account number. The department had not  constituted Special Verification 
+Teams to confirm the existing beneficiaries. Pensio n disbursement was captured before 
+sanction of pension by the sanctioning authority. There was delay in verification of under 
+enquiry cases and revoking the benefits to eligible  beneficiaries. Benefits were extended 
+to beneficiaries not fulfilling income criteria, underage and other ineligible beneficiaries. 
+There were deficiencies in payment of pension throu gh postal department such as 
+non-delivery of door-step benefits to eligible beneficiaries and usage of money order mode 
+despite departmental instructions to credit pension  in the savings postal / bank accounts. 
+Sizeable pensioners above 80 years of age and pensioners with severe disability surveyed 
+have reported non-receipt of pension at doorstep.  
+Analysis of Information Technology application 
+Various system and user manuals to manage and use e -Kalyan software by the 
+departmental authorities and users have not been pr epared. Analysis of data dump of 
+e-Kalyan software showed deficiencies including cre ation of multiple user logins at 
+various levels, entry of incomplete credentials of beneficiaries and use of different user 
+logins from the same PC/ IP address by different us ers. Functionalities to check / detect 
+duplicate entry of applicants at the time of data e ntry had not been provided. Web-based 
+e-Kalyan software had not been designed as per guid elines / rules and inherent 
+irregularities of client server e-Kalyan are contin uing. Important functionalities to 
+facilitate user using the software about generation  of various reports have not been 
+provided. The software lacked in access to beneficiaries and any feedback loop. 
+Organization, and Management of Direct Benefit Transfer 
+DBT Cell was not discharging its duties of coordina ting with departments and 
+implementing DBT in various schemes. Meetings of Advisory Board to guide and monitor 
+various departments to adopt DBT under various sche mes had not been conducted. DBT 
+Cell had not provided training and support in capacity building on DBT to State officials. 
+The Department did not have any disaster recovery a nd business continuity plan and 
+maintenance of real time MIS portal was not ensured . There was variation in data on 
+benefit transfer under social security pension sche mes supplied by the Department and 
+reflected on the State DBT portal. PFMS had been introduced in the NSAP schemes after 
+delay of more than six years and Aadhar validation in the same had not been done. Further 
+PFMS for State schemes had not commenced yet. There  is no automatic pushing of files 
+from e-Kalyan to PFMS as font of beneficiaries list extracted from the e-Kalyan software 
+is not recognised in the PFMS portal. Validation of  beneficiary is done manually in the 
+absence of flagging of difference of name using fuzzy logic. There is no acknowledgment 
+push of transactions in the e-Kalyan from PFMS. For  failed transactions, reasons are 
+manually fed in the e-Kalyan.  Unsuccessful transac tions are recorded manually in the 
+e-Kalyan. Due to non-integration of PFMS with the NSAP portal through Aadhar Payment 
+Bridge system, NSAP portal is showing zero transact ion through DBT in the State. The 
+procedure implemented by the Department is not in consonance with the DBT framework, 
+which should involve transfer of benefits directly to the beneficiaries. The procedure can 
+be termed as benefit transfer, but not as “direct” benefit transfer, since funds are not 
+
+Chapter-IX: Conclusion  
+61 | P a g e  
+transferred directly to the beneficiaries but funds are transferred into the bank account of 
+the DWO and then cheques are issued for further transfer to the beneficiary bank accounts. 
+Human Resource Management and Monitoring 
+There was shortage of manpower in each category, hampering smooth functioning of 
+schemes in the State. Training in respect of utilities or functioning of the e-Kalyan 
+software had not been provided to departmental officials. Grievance redressal and social 
+audit mechanism had not been established. Monitoring in the Department is ineffective 
+due to which deficiencies like delay in sanctioning the pension, sanctioning / payment of 
+duplicate pension, sanction of pension to ineligible persons, non-verification of pension 
+disbursement, and allotment of duplicate ID numbers were noticed in implementation of 
+the social security pension schemes. 
+                                                    (RITU DHILLON) 
+Shimla                                                                       Principal Accountant General (Audit) 
+The        Himachal Pradesh 
+Countersigned 
+(GIRISH CHANDRA MURMU)       
+New Delhi                                                          Comptroller and Auditor General of India 
+The 
+ 
+  
+
+Appendices 
+
+63 | P a g e  
+Appendices 
+ 
+Appendix-1 
+(Refer para 1.3 and Chapter-III) 
+Timelines in respect of scale of assistance under various social security pension schemes in 
+Himachal Pradesh  
+Date of 
+commencement  
+Old age/ 
+IGNOAPS 
+(including 
+GoI share)  
+Old age/ 
+IGNOAPS 
+(above 70/80 
+years 
+including 
+GoI share) 
+DRA/ 
+IGNDPS 
+(including 
+GoI 
+share) 
+DRA/ 
+IGNDPS 
+(70% 
+disability 
+and above) 
+including 
+GoI share) 
+Widow/ 
+IGNWPS 
+(including 
+GoI 
+share) 
+Leper  Transgender  
+01.11.1971 25 - 25 - - - - 
+01.04.1973 40 - 40 - - - - 
+01.04.1974 50 - 50 - - - - 
+01.04.1986 60 - 60 - 60 - - 
+01.04.1994 100 - 100 - 100 120 - 
+01.08.1998 150 - 150 - 150 170 - 
+01.08.2002 200 - 200 - 200 200 - 
+01.01.2008 300 - 300 - 300 300 - 
+01.01.2009 330 - 330 - 330 330 - 
+01.04.2012 400 600* 400 - 400 400 - 
+01.09.2012 450 800* 450 - 450 450 - 
+01.04.2013 500 1000* 500 - 500 500 - 
+01.04.2014 550 1000* 550 750 550 550 - 
+01.04.2015 600 1100* 600 1100 600 600 - 
+01.04.2016 650 1200* 650 1200 650 650 - 
+01.04.2017 700 1250* 700 1250 700 700 700 
+01.04.2018 750 1300** 750 1300 750 750 750 
+01.07.2019 850 1500** 850 1500 850 850 850 
+01.04.2020 850 1500** 1000 1500 1000 850 850 
+GOI share for pension schemes under NSAP  
+Date of 
+commencement 
+IGNOAP IGNOAP (80+) IGNWP IGNDRA 
+15.08.1995 75 - 75 75 
+01.04.2006 200 - 200 200 
+01.04.2011 200 500 200 200 
+01.04.2012 200 500 200 200 
+* Enhanced rate of pension to beneficiaries above 80 years. 
+** Enhanced rate of pension to beneficiaries above 70 years . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021  
+64 | P a g e  
+ 
+Appendix-2 
+(Refer para 1.4) 
+Criteria to fix priority of applicants 
+ Category - Old Age  
+1. Inmates of Ashrams/ Homes/ Sadans of State are t o be given Top Priority 
+2. BPL + Oldest person who is issueless having lowe st income 
+3. BPL + Oldest person having minor children and lo west income 
+4. BPL + Oldest Person having lowest income includi ng sons/ unmarried daughter 
+5. Oldest person who is issueless having lowest inc ome 
+6. Oldest person having minor children and lowest i ncome 
+7. Oldest person having lowest income including son s/ unmarried daughter 
+ Category – Handicapped 
+1. Inmates of Ashrams/ Homes/ Sadans of State are t o be given Top Priority 
+2. BPL, application date if same then percentage of Di sability if both are same then 
+Application date if same then elder in age if same then unique Id 
+ For all other categories 
+1. Inmates of Ashrams/ Homes/ Sadans of State are t o be given Top Priority. 
+2. BPL, ascending order of Application date, if sam e then elder in age if same then 
+Unique Id. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Appendices  
+65 | P a g e  
+ 
+Appendix-3 
+(Refer para 2.3) 
+Category-wise detail of number of beneficiaries in selected GPs and beneficiaries surveyed  
+Sl.  
+No.  
+Tehsil Gram 
+Panchayat 
+IGNOAPS  IGNWPS  IGNDPS  OAP  Widow  DRA  Total  No. of 
+beneficiaries 
+surveyed 
+District Kinnaur 
+1. 
+  
+  
+Sangla 
+  
+  
+Kamru 5 3 0 56 39 11 114 7 
+Chitkul 5 2 0 16 3 1 27 6 
+Raksham 15 1 1 26 4 4 51 6 
+2. 
+  
+  
+  
+  
+  
+  
+Nichar 
+  
+  
+  
+  
+  
+  
+Yangpa 5 6 0 83 31 12 137 17 
+Katgaon 10 2 1 72 32 13 130 18 
+Kafnu 5 2 0 42 12 2 63 18 
+Sungra 13 2 0 67 19 24 125 7 
+Taranda 9 2 0 69 13 18 111 9 
+Ponda 10 1 0 50 18 9 88 15 
+Nichar 15 6 0 118 47 17 203 5 
+District Shimla 
+3. 
+  
+  
+  
+  
+Shimla 
+Rural 
+  
+  
+  
+  
+Jalel 23 10 0 32 14 9 88 13 
+Thadi 27 6 1 88 31 11 164 16 
+Anandpur 33 8 0 103 32 20 196 5 
+Kot 27 10 0 71 16 11 135 0 
+Dhalli 18 8 0 48 15 13 102 0 
+4. 
+  
+  
+  
+  
+  
+Theog 
+  
+  
+  
+  
+  
+Basa Theog 
+ 26 6 0 76 23 11 142 10 
+Kotshilaroo  51 11 0 106 32 18 218 9 
+Cheog 28 16 0 93 43 23 203 11 
+Roni 
+Matyana 
+10 2 0 33 6 8 59 8 
+Kalinda 
+Matyana 
+23 6 0 41 16 9 95 10 
+Kalzar 
+Matyana 
+13 1 0 32 7 3 56 6 
+5. 
+  
+  
+  
+  
+Chopal 
+  
+  
+  
+  
+Chanju 
+Chopal 
+63 9 1 59 26 17 175 3 
+Dhawas 61 12 0 98 29 27 227 1 
+Nerwa 92 11 0 155 65 32 355 1 
+Thana 31 6 0 23 9 12 81 0 
+MC Chopal  4 1 0 12 23 7 47 2 
+6. 
+  
+  
+  
+  
+Rampur 
+  
+  
+  
+  
+Lalsa 23 4 0 76 11 16 130 0 
+Sarahan 34 16 0 145 59 25 279 13 
+Dutt Nagar 24 11 0 61 19 9 124 11 
+Nirath 33 9 0 41 16 9 108 15 
+Taklech 78 17 0 91 32   24 242 13 
+District Mandi 
+7 Sunder 
+Nagar 
+Kanaid 21 19 1 137 43 26 247 14 
+Chhatar 12 4 0 175 63 28 282 12 
+Bhaur 14 9 0 81 26 16 146 10 
+Kapahi 16 5 1 92 28 18 160 14 
+Upper Behli  17 8 0 183 76 38 322 13 
+8. 
+  
+  
+  
+  
+  
+Chachyot  
+  
+  
+  
+  
+  
+Basa 15 7 2 107 43 19 193 12 
+Chail 
+Chowk 
+17 5 2 117 45 26 212 11 
+Gohar 35 7 2 280 65 67 456 14 
+Chachyot 26 13 0 109 67 22 237 14 
+Delagtikkri 6 6 1 74 39 19 145 13 
+Noun 20 5 1 167 37 31 261 12 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021  
+66 | P a g e  
+9. 
+  
+  
+Mandi 
+Sadar 
+  
+  
+  
+  
+  
+Kataula 36 12 1 181 67 52 349 11 
+Jhiri 6 1 0 56 64 4 131 15 
+Takoli 5 0 0 63 19 10 97 13 
+Sadhyana 12 2 0 86 46 23 169 10 
+Nasloh 25 3 0 72 14 16 130 12 
+Bari 
+Gumanu 
+9 2 0 61 32 9 113 12 
+District Solan 
+10.  
+  
+  
+  
+  
+Solan 
+  
+  
+  
+  
+Anji 9 4 1 59 9 13    95 11 
+Saproon 1 7 1 34 25 16 84 11 
+Parag 19 11 0 75 17 13 135 12 
+Barog 14 8 2 44 28 13 109 11 
+Shamti 6      8 0 53 14 6 87 11 
+11.  
+  
+  
+  
+  
+  
+Arki 
+  
+  
+  
+  
+  
+Batal 14 7 1 60 12 12 106 12 
+Deora 21 8 0 61 18 16 124 12 
+Hatkot 8 3 0 34 17 11 73 8 
+Kothi 33 3 0 86 31 20 173 14 
+Kunihar 21 13 0 78 24 16 152 14 
+Palog 28 10 0 84 29 22 173 12 
+ Total:  60 1683 502 19 6313  2380 1310  9196  595 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Appendices  
+67 | P a g e  
+Appendix-4 
+(Refer para 3.2) 
+Statement showing district-wise and scheme-wise number of beneficiaries targeted for the 
+year 2020-21 and beneficiaries in waiting list as of March 2021 
+District IGNOAPS IGNWPS IGNDPS OAP Widow DRA Total Waiting  
+Bilaspur 5747  1477  36  23080  5549  3979  39868  794  
+Chamba 13549  2779  140  16375  8869  4654  46366  2195  
+Hamirpur 8394  2167  142  16939  5326  4169  37137  1342  
+Kangra 23593  4187  236  58949  21112  14897  122974  8662  
+Kullu 4830  1252  32  21727  7423  4579  39843  5008  
+Mandi 10503  3028  244  61586  18455  10808  104624  2660  
+Shimla 15788  3043  38  28881  9452  6150  63352  2699  
+Sirmaur 4895  1487  44  19570  7400  4573  37969  2804  
+Solan 5760  1962  112  16973  5481  3652  33940  2135  
+Una 6240  2202  58  21419  6059  4571  40549  2930  
+Kinnaur 907  272  16  3372  1248  626  6441  149  
+L&S 516  152  20  1323  529  369  2909  18  
+Total 100722  24008  1118  290194  96903  63027  575972  
+31396 
+Waiting 1087  390  10  23990  4042  1877   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Audit Report of the Comptroller and Auditor General of India for the year ended 31 March 2021  
+68 | P a g e  
+Appendix-5 
+(Refer para 3.5) 
+Outstanding amount of pension benefits under Social Security Pension Schemes 
+(₹ in lakh) 
+District Year 
+Balance at the end of each quarter 
+1st  quarter  
+(30 June) 
+2nd  quarter 
+(30 September) 
+3rd  quarter 
+(31 December) 
+4th  quarter 
+(31 March) 
+Mandi 2017-18  96.55  194.69  336.21  257.76  
+2018-19  421.20  1436.87  553.52  360.80  
+2019-20  66.21  98.60  139.83  188.28  
+2020-21  221.42  141.44  207.23  270.99  
+Shimla 2017-18  119.43  149.77  21.08  40.26  
+2018-19  45.36  38.33  18.88  70.02  
+2019-20  33.33  76.26  39.12  34.50  
+2020-21  51.45  88.20  30.61  65.67  
+Solan 2017-18  19.65  18.37  21.50  52.92  
+2018-19  56.14  53.91  41.75  73.08  
+2019-20  45.11  43.87  12.34  50.28  
+2020-21  66.96  82.18  19.83  124.65  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Appendices  
+69 | P a g e  
+Appendix-6 
+(Refer para 7.5) 
+Detail regarding missing functionalities in the State DBT portal 
+Functionality Feature(s) / information not available / provided 
+Home Various features viz.  Header, Sidebar, Content, Dr opdown Menu 
+options, Navigation tools, Footer etc. 
+About Us Status of constitution of advisory board a nd DBT Cell. 
+Multimedia Image Gallery, Video Gallery and press release pertaining to DBT in 
+the State. 
+DBT Cell Information pertaining to constitution of DBT cell/ committee by the 
+individual departments. 
+Documents Provision of guidelines to departments on DBT Stand ard Operating 
+Procedure (SOP). No documents such as circulars, reports, events etc. 
+have been uploaded. 
+Success Story State initiatives on DBT success related to control  leakages, savings 
+and removal of duplication story in a department or  across 
+departments in State. 
+Download Section where department can refer for location master which is LGD 
+(Local Government Directory) and State DBT MIS inte gration 
+approach document as developer toolkit having web service signature 
+or predefined file format for data exchange with State DBT portal. 
+RTI Details of CPIO and FAA of DBT cell of the Stat e. 
+FAQs This feature has not been provided. 
+Feedback No provision for feedback. 
+Terms and conditions Terms and conditions alongwith  disclaimer certificate. 
+Website policy 
+These functionalities are not available on State DBT Portal. 
+ 
+Copyright policy 
+Hyperlink policy 
+Privacy policy 
+Sitemap 
+Source: State DBT portal available at http:// dbtportal.hp.gov.in 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
