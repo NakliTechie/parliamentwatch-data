@@ -1,0 +1,3698 @@
+ 
+Report of the Comptroller and Auditor 
+General of India 
+ 
+ 
+ 
+ 
+ 
+IT Audit of Indian Customs Electronic Data 
+Interchange System (ICES) 1.5 
+ 
+Union Government 
+Department of Revenue-Indirect Taxes (Customs) 
+No. 14 of 2023 
+ 
+ 
+                                                                     Laid on the table of Lok Sabha and Rajya Sabha …………….  
+
+                    Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+ 
+  
+ 
+Contents  Pages 
+Preface  i 
+Executive Summary  iii 
+Recommendations   vi 
+Glossary  ix 
+Chapter 1: Indian Customs EDI System (ICES): 
+An overview 
+1 
+Chapter 2 Audit findings: Core ICES 17 
+Chapter 3: Interfaces with other applications 37 
+Chapter 4: IT Governance and Management 47 
+Annexure  59 
+ 
+ 
+ 
+ 
+TABLE OF CONTENTS 
+
+ 
+i 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Report has been prepared for submission to the President of India under 
+Article 151(1) of the Constitution of India. 
+The Report contains significant results of the Information Technology ( IT) 
+Audit of Indian Customs Electronic Data Interchange System (ICES 1.5).  
+The instances included mentioned in this Report are those which came to 
+notice in the course of test audit conducted during December 2020 to May 
+2022 covering the period 2015-16 to 2019-20. 
+The audit has been conducted in conformity with the Auditing Standards 
+issued by the Comptroller and Auditor General of India. 
+Audit wishes to acknowledge the co-operation received from the Ministry of 
+Finance, Department of Revenue and the Ministry of Commerce and 
+Industry, Department of Commerce, and its field formations at each stage of 
+the audit process. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PREFACE 
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+ 
+iii 
+ 
+ 
+About the IT Audit 
+The Customs Computerisation project was started in 1992, at a number of 
+Customs Houses throughout the country with the assistance of National 
+Informatics Centre (NIC), a Government of India entity, when after a detailed 
+study, the requirement of Electronic Data Interchange (EDI) was felt.  The 
+pilot project was launched in the year 1994-95 at Delhi Customs House which 
+included EDI as a key element for connecting all the players involved in 
+international trade with Customs House electronically. After the successful 
+implementation at Delhi Customs House, the Customs Department decided 
+to extend the service to other Customs Houses in a phased manner since 
+1997-98. 
+ICES was developed as the core Information & Communication Technology 
+system through which import and export documents viz. Bills of Entry (BsE), 
+Shipping Bills (SBs), Import General Ma nifests (IGMs) and Export General 
+Manifests (EGMs) were to be processed. It receives and processes all 
+incoming messages and generates all outgoing messages automatically at 
+the appropriate stage of the clearance process. 
+ICES has been developed with the help of NIC since its inception and it is also 
+responsible for its maintenance. The Directorate General of Systems and 
+Data Management (DG Systems) at New Delhi has been entrusted with the 
+implementation of ICES. Initially, ICES 1.0 application was developed and 
+implemented in distributed environment (separate servers at various 
+locations).  During 2009 -10, ICES 1.0 application was migrated from a host 
+based architecture to a three tier architecture. This version is referred  to as 
+ICES 1.5 and is deployed in the current centralised architecture under the 
+database consolidation of Central Board of Ind irect Taxes and Customs 
+(CBIC). 
+Accordingly, Customs ICT systems and the ICES application have been 
+modified from time to time i n accordance with the operational 
+requirements of Department and changes in the Customs Act and allied 
+Acts, Rules and Regulations. Although the core ICES application has been 
+migrated from decentralised to centralised environment from the year 
+2009-10, subsequently, there were several changes in the underlying ICT 
+infrastructure, work flow, data transfer and storage, security, etc. 
+The IT Audit of ICES 1.5 application was conducted during December 2020 to 
+May 2022  covering the period 2015 -16 to 2019 -2020.  The a udit scope 
+intended to examine the functionalities of import and export modules, 
+interface with other IT applications viz. DGFT, SEZ, Bank, RBI etc. and IT 
+EXECUTIVE SUMMARY 
+ 
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+ 
+iv 
+ 
+Governance issues such as  - Organisation and management, IT governance 
+and management, and effectiveness of Change Management.  
+For the examination of functionalities, the audit focus was more on major 
+changes/new functionalities added in the ICES application during 2015 to 
+2020. 
+Action taken on the previous audit findings reported in the CAG’s Report on 
+ICES 1.5 (No. 11 of 2014) was re-examined in this audit and it was noticed 
+that the Department had taken remedial action to address many of the 
+earlier audit observations/recommendations. Audit also noticed that some of 
+the previous audit findings/recommendations had lost their relevance and 
+thus rendered redundant due to change in the Customs Act and allied Acts, 
+Rules and Regulations.    
+(i) Audit reviewed the Customs EDI System for the first time in the 
+year 2000 -01 (Report No. 10 of 2002 -Customs). The review was 
+focused on procurement and software development.  
+(ii) ICES 1.0 was again reviewed in the year 2008 (PA Report No. 24 of 
+2009-10 Customs), primarily to verify whether it had mapped the 
+processes &  provisions of the Customs Act and allied rules & 
+regulations effectively.  
+(iii) ICES 1.5, an upgraded version of the original ICES 1.0 was rolled 
+out in a phased manner across various C ustoms locations from 
+June 2009. The audit of the upgraded version i.e., IC ES 1.5 was 
+done in 2013 and its finding reported in CAG’s Report No.11 of 
+2014 (Performance Audit).    
+The previous audits pointed out some systemic issues and issues involving 
+deficiencies in designing various business rules in the system, as per the 
+rules/Acts in force at that time.  
+The details of previous audit findings with the action taken/current status are 
+given in Annexure I. 
+Structure of the Report 
+This report is divided into four chapters. Chapter 1 present an overview of 
+Indian Customs EDI System (ICES) and indicates the audit objectives, scope, 
+sample, audit criteria and audit methodology used for conduct of this ‘IT 
+Audit of ICES 1.5’ . Chapters 2 , 3 and 4 cover the audit findings, conclusions 
+and recommendations pertaining  to this IT Audit. This report contains 24 
+audit observations, including sub -paragraphs, and 16 recommendations. 
+Responses were received for 20 observations, out of  which 15 have been 
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+ 
+v 
+ 
+fully/partially accepted and five have not been accepted.  No response was 
+received in respect of four audit observations.  
+Summary of Audit Findings 
+Chapter 2: Core ICES 
+Audit noticed that: 
+(a) Lack of certain validation controls in ICES Import module resulted in (i) Late 
+fee wrongly levied, collected and waived off , (ii) Short/excess levy of duty 
+under Notification 46/2011 -Customs, (iii)  Working of Risk Management 
+System for Import, (iv) Lack of control in ICES regarding levy of duty in the 
+case of BE filed prior to date of entry inwards and (v) Country of Origin not 
+identical at BE level and Item level, 
+(b) Lack of validation in ICES Export module caused (i) Non  - alignment of DBK 
+Serial number with RITC (Export validation) (ii) Acceptance of negative FOB 
+value of exported goods, 
+(c) Partial automation of Shipping Bills and drawback claims under Section 74 
+of the Customs Act 1962, 
+(d) Delay in implementation of Post Clearance Audit for RMS Export module, 
+(e) Non-Automation of closure of IGM, 
+(f) Non-automation of Refund process, 
+(g) Non- auto reversal of duty in case of double payment, 
+(h) Responses on the status of the implementation of the recommendations of 
+the Time Release Study (TRS) Committee Report 2022 were awaited. 
+Chapter 3: Interfaces with other applications 
+The Interfaces of ICES with other stake holders IT applications is not fully 
+implemented to address their requirements with regard to Linking of ICES 
+with Banks , Sharing of RBI Export Outstanding Statement (XOS) data/ 
+Caution list with ICES and Integration of SEZ Online with Customs ICES. 
+Chapter 4: IT Governance and Management 
+Audit noticed gaps in the governance and management of the ICES 
+application especially (i) updation of Software Requirements Specification 
+(SRS) and Software Design Document (SDD), (ii) Non -updation of User 
+Manuals, (iii) Directory Change Management, (iv ) Structural Change 
+Management and (v) Help desk and end-user support system. 
+  
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+vi 
+ 
+ 
+ 
+1. The Ministry should ensure that necessary validation checks in ICES 
+regarding levying, collection and wavier of late fees are implemented, 
+duly mapped and functioning correctly. It may also be ensured that in 
+case of wavier of late fees, the reasons are also recorded. 
+(Paragraph 2.2.1) 
+2. The Ministry should ensure necessary validation checks in ICES so that 
+Customs duty rates are correctly reflected based on Country codes read 
+with exemption notifications, and not solely based on self-declaration. 
+(Paragraph 2.2.2) 
+3. The Ministry should ensure proper validation in ICES that in cases 
+wherein a Bill of Entry is taken up for examination by the Risk 
+Management System, the field relating to examination report should not 
+be null. 
+(Paragraph 2.2.3) 
+4. The Ministry should ensure that the notifications are updated in a timely 
+manner and invariably before the effective date.  The delay in updation 
+by DMS sites should be viewed seriously and necessary action taken in 
+cases of delay. DMS sites must comply with the existing SOP and this 
+should be verified and ensured by DG (System). 
+(Paragraph 2.2.4) 
+5. The Ministry should ensure necessary validation in ICES export module 
+so that the FOB value after deducting insurance and freight is not 
+negative. 
+(Paragraph 2.3.2) 
+6. RMS for exports for selection of Shipping Bills for Post Clearance Audit 
+(PCA) should be made operational at the earliest for increased 
+transparency and targeting using a risk based approach. 
+(Paragraph 2.5) 
+7. The module for daily updating of exchange rate may be made 
+operational at the earliest. 
+(Paragraph 2.6) 
+8. The Ministry may take necessary steps so that the IGMs filed in ICES are 
+closed electronically and all goods are duly accounted for. Efforts may 
+also be made to manually close all the open IGMs. Ministry should also 
+RECOMMENDATIONS 
+
+                    Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+vii 
+ 
+decide and prescribe a time limit for th e closure of IGMs  as undue 
+delay/non-reconciliation is fraught with the risk of revenue leakage. 
+(Paragraph 2.7) 
+9. The Ministry may consider having online workflow for capturing and 
+processing refund s on the lines of the GSTN System  so that the 
+Department is able to electronically keep track of BEs against which 
+refund has been applied for. This would make the monitoring of refund 
+cases more efficient, effective and transparent. 
+(Paragraph 2.8) 
+10. Ministry may expedite the development of APIs for sharing of 
+challans/warehouse details between ICES and ICEGATE in a time bound 
+manner. 
+(Paragraph 3.2) 
+11. Ministry may explore mapping/cross -verifying of RBI XOS data with 
+caution list maintained by CBIC for identifying default cases for effective 
+monitoring of export proceeds realisation. 
+(Paragraph 3.3) 
+12. Ministry should integrate SEZ Online with ICES at the earliest for better 
+monitoring of SEZ operations (both EXIM and DTA transactions) and for 
+ease of doing business in SEZs. 
+(Paragraph 3.4) 
+13. In addition to immediate updating of SRS and SDD, the Ministry should 
+also ensure that SRS and SDD is kept up to date at regular intervals to 
+factor all the important changes made in the application. 
+(Paragraph 4.1.1) 
+14. The updating of user manuals consistent with changes should be 
+regularly carried out in a time bound manner to avoid accumulation of 
+requirements. 
+(Paragraph 4.1.2) 
+15. Ministry must ensure that protocols are properly and completely 
+followed at the time of sig n off of any change management. They must 
+ensure that all changes including testing and approval of such changes 
+are properly documented. 
+(Paragraph 4.2.2) 
+16. Ministry may prescribe: 
+(a) Time limits for resolving or escalating the complaints, 
+(b) Average time, for resolution with useful/suitable details of tickets 
+which take unduly long time be captured and monitored. 
+(Paragraph 4.3) 
+  
+
+ 
+ix 
+ 
+ 
+Abbreviation Expanded form 
+ACC Air Cargo Complex 
+ADG Additional Director General 
+ADD Anti-Dumping Duty 
+API Application Programming Interface 
+BCD Basic Customs Duty 
+BsE Bills of Entry 
+BRC Bank Realisation Certificate 
+CBIC Central Board of Indirect Taxes and Customs 
+CCR Compulsory Compliance Requirements 
+CETH Central Excise Tariff Heading 
+CGM Consol General Manifest 
+CHA Customs House Agent 
+CIF Cost, Insurance, Freight 
+CIS Customs Integrated System 
+CRCL Central Revenues Control Laboratory 
+CA Customs Act, 1962 
+COO Country of Origin 
+CTH Customs Tariff Heading 
+CVD Counter Vailing Duty 
+DGARM Directorate General of Analytics and Risk Management 
+DGCIS Directorate General of Central Intelligence and Statistics 
+DGoS/DG Systems Directorate General of Systems and Data Management 
+DGFT Director General of Foreign Trade 
+DGoV Director General of Valuation 
+DMS Directory Management Site 
+DoC Department of Commerce 
+DoR Department of Revenue 
+DRI Directorate of Revenue Intelligence 
+DTR Module Daily Trade Return 
+DBK Duty Drawback 
+EDI Electronic Data Interchange 
+EGMs Export General Manifests 
+EDPMS Export Data Processing and Monitoring System 
+EDD Extra Duty Deposit 
+EODC Export Obligation Discharge 
+FOB Free on Board 
+FTA Foreign Trade Agreement 
+GSTN Goods and Services Tax Network 
+ICES Indian Customs EDI System 
+ICD Inland Container Depot 
+ICEGATE Indian Customs Electronic Gateway 
+IEC Importer Exporter Code 
+IGST Integrated Goods & Service Tax 
+IGMs Import General Manifests 
+GLOSSARY OF TERMS AND ABBREVIATIONS 
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+ 
+x 
+ 
+LEO Let Export Order 
+MCD Manifest Clearing Department 
+MoU Memorandum of Understanding 
+MEIS/SEIS Merchandise/Service Exports from India Scheme 
+NCTF National Committee on Trade Facilitation 
+NIC National Informatics Centre 
+NICSI National Informatics Centre Service Incorporated 
+NACIN National Academy of Customs, Indirect Taxes & Narcotics 
+NCH New Customs House 
+OOC Out of Charge 
+PAO Pay & Accounts Office 
+PA Performance Audit 
+PGA Partner Government Agency 
+PRS Peer Review Site 
+Pr.CCA Principal Chief Controller of Accounts 
+PCCC Personal customs clearance code  
+RBI Reserve Bank of India 
+RMS Risk Management System 
+RoSL Rebate of State Levies 
+RITC Revised Indian Trade Classification 
+SCMTR Sea Cargo Manifest and Transhipment Regulations 
+SRS Software Requirements Specification 
+SDD Software Design Document 
+SoP Standard Operating Procedures 
+SEZ Special Economic Zone 
+SBs Shipping Bills 
+SION Standard Input Output Norms 
+SQL Structured Query Language 
+TRS Time Release Study 
+UAT User Acceptance Test 
+UTIITSL UTI Infrastructure Technology and Services Limited 
+WH Warehouse 
+XOS Export Outstanding Statement 
+ 
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+1 
+ 
+Chapter 1 
+Indian Customs EDI System (ICES): An overview 
+ 
+1. Introduction 
+The Customs Computerisation project was started in 1992 , at a number of 
+Customs Houses throughout the country with the assistance of National 
+Informatics Centre (NIC), a Government of India entity, when after a detailed 
+study, the requirement of Electronic Data Interchange (EDI) was felt.  The 
+pilot project was launched in the year 1994-95 at Delhi Customs House which 
+included EDI as a key element for connecting a ll the players involved in 
+international trade with Customs House electronically. After the successful 
+implementation at Delhi Customs House, the Customs Department decided 
+to extend the service to other Customs Houses in a phased manner from 
+1997-98. 
+1.1 Indian Custom automation has three major Systems as 
+components: 
+1.1.1 The Indian Customs EDI System (ICES) 
+ICES was developed as the core Information & Communication Technology 
+system through which import and export documents viz. Bills of Entry (BsE), 
+Shipping Bills (SBs), Import General Manifests (IGMs) and Export General 
+Manifests (EGMs) were to be processed. It receives and processes all 
+incoming messages and generates all outgoing messages automatically at 
+the appropriate stage of the clearance process. 
+ICES has been developed with the help of NIC since its inception and  NIC is 
+also responsible for its maintenance. The Directorate General of Systems and 
+Data Management (DG (Systems)) in the Central Board of Indirect Taxes and 
+Customs (CBIC) at New Delhi has been entrusted with the implementation of 
+ICES. Initially, ICES 1.0 application was developed and implement ed in a 
+distributed environment (separate serve rs at various locations).  During 
+2009-10, ICES 1.0 application was migrated from a host based architecture 
+to a three tier architecture. This version is referred to as ICES 1.5 and is 
+deployed in the current centralised architecture under the database 
+consolidation of CBIC. 
+In June 2012, a new tripartite M emorandum of Understanding (MoU) was 
+agreed amongst CBIC, NIC  and National Informatics Centre Service 
+Incorporated (NICSI - a Government of India entity). As per the 2012 MoU, 
+National Informatics Centre Service Incorporated (NICSI) was to handle 
+administrative aspects related to deployment of hired personnel so that NIC 
+could focus on software related issues. 
+ 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+2 
+ 
+The scope of work to be carried out under the MoU inter-alia included: 
+• Requirement study and preparation of Software Requirement 
+Specifications (SRS) for new modules for ICES; Design and development 
+of application as per the approved SRS. 
+• Maintenance of ICES application by providing software updates along 
+with installation scripts for the existing ICES modules and Change 
+Management policy agreed between NIC and CBIC. 
+• Documentation for the ICES including the requirement specifications, 
+technical documents, user manuals and test cases. 
+• Establishing application level linkages between ICES and any other in -
+house application being developed by CBIC through any vendor. 
+• Design of EDI m essages in consultation with the stakeholders for 
+integration with ICES, preparation of detailed Message 
+Implementation guidelines for ICEGATE and stakeholders. 
+• Provide Level-2 and Level-3 support to the ICES users for resolution of 
+problems escalated by the Level-1 Helpdesk team. 
+• Place technical manpower at the Customs locations for support to the 
+ICES users. 
+• Conduct training programs and workshops for ICES Users. 
+• Design/development and maintenance of remote EDI System 
+packages. 
+• Maintain version control of ICES version 1.5 application. 
+ICES is currently running at 262 Custom sites on pan-India basis and handles 
+more than 99  per cent of Customs Revenue. The main features of the ICES 
+1.5, which runs in a consolidated environment as a centralised application, 
+are as follows: 
+a. Multi-location functionality 
+b. Single database with partitions for users to access data only for their 
+location 
+c. Centralized maintenance and updating of software  
+d. Faster and better communication with external stakeholders, Banks, 
+DGFT, etc. 
+e. Integration with ICEGATE in central environment leading to better 
+response times in case troubleshooting is required. 
+1.1.2  The Indian Customs Electronic Gateway (ICEGATE) 
+ICEGATE application has been functioning since 2007 for providing various 
+online e-services to the trade.  ICEGATE is the front-end interface of ICES with 
+the external world which caters to different stakeholders in the export and 
+import trade to file BsE and SBs, C ustoms manifests and declarations, track 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+3 
+ 
+and trace documents, online payment of duties and interfaces with all other 
+concerned agencies like Director General of Foreign Trade (DGFT),  Director 
+General of Valuation (DGoV), Special Economic Zone (SEZ), Bank s, Reserve 
+Bank of India (RBI) , Central Revenues Control Laboratory (CRCL), Pay & 
+Accounts Office (PAO) etc. The ICEGATE contract was awarded to M/S Wipro 
+Limited in June 2008 and till 2019 , M/S Wipro  Limited was providing its 
+services to CBIC.  
+In 2018, CBIC decided to implement Customs Integrated System (CIS) with 
+the intention to update and revamp the three applications of ICES, ICEGATE 
+and RMS.  As part of (CIS) Phase I im plementation, ICEGATE 1.0 was to be 
+revamped to ICEGATE 2.0 with a range of new services and features.  The 
+focus of ICEGATE 2.0 was on building an ecosystem for efficient, transparent, 
+contactless and paperless trade. 
+Request for Proposal (RFP) for CIS Phase I was issued in January 2019.  After 
+conducting pre-bid workshop, technical bid, financial bid evaluation and 
+commercial bid processes (during January 2019 to December 2019) etc. , 
+administrative approval and financial sanction were issued in February 2020. 
+After issuance of Letter of Award in March 2020, the Board signed the Master 
+Service Level Agreement in May 2020 with M/s Infosys Limited for designing 
+and development of Customs Integration System Phase I.  
+The process of vendor selectio n could not be fully examined now, as only 
+partial records were provided to Audit.  This will be taken up as a separate 
+Audit. 
+1.1.3  Risk Management System (RMS) 
+RMS is the third component of Indian Custom automation which facilitates 
+compliant trade, segregating  using a risk based approach , with certain 
+transactions requiring deeper scrutiny by Customs officers. It profiles risk and 
+paves the way for facilitation towards clearance through green and red 
+channels. RMS is functioning under the Directorate General of Analytics and 
+Risk Management (DGARM) wing of CBIC. 
+The c ontract for the software development, maintenance and support of 
+RMS was awarded to M/s Birlasoft Limited in August 2004 . RMS for import 
+and export mo dules were implemented in December 2005 and July 2013 
+respectively.  From June 2016, M/s UTI Infrastructure Technology  and 
+Services Limited  (UTIITSL) has bee n associated with CBIC for the s oftware 
+development, maintenance and support of RMS. 
+The following diagram provides a view of the ICES system and its interactions 
+with the various internal/external stakeholders: 
+ 
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+4
+Diagram 1
+Source: SRS (Version 1.0-2010)
+According to the Ministry 1 RMS does not carry out assessment of imports 
+and so there is no provision for mapping all the conditions of a plethora of 
+levy and exemption notifications. If RMS or ICES considers validating each 
+condition of several notifications claimed in a Bill of Entry, it will significantly 
+increase the interdiction level and processing time of bills. RMS is a targeting 
+system that interdicts risky bills based on a host of dynamic risk parameters. 
+It adopts a multi-layered process that includes the following (but not limited 
+to):
+• Selection of containers for scanning, based on risk criteria, utilising IGM 
+declaration for examination of suspicious containers,
+• interdiction of risky bills on the submission of a bill of entry for the 
+verification by an officer, based on th e self -assessed declaration data 
+contained therein,
+• providing decision support in the form of appraising and examining 
+instructions, as well as past bills of entry for identical consignments,
+• raising live alerts in respect of high-risky bills,
+• issuing comp ulsory compliance requirement for each bill regardless of 
+facilitation status, based on CTH, IEC and Notifications etc. for the 
+verification prior to OOC, and
+• selection of bills (largely from the facilitation pool) for post clearance audit.
+1 Submitted by the Ministry during the study visit of the Public Accounts Committee (2022-
+23) to Raipur and Hyderabad from 26 th to 30th August 2022 for discussion on the subject 
+“Non-compliance to Provisions of Customs Act, Customs Tariff Notifications” the following 
+was submitted by the Ministry with regards to RMS.
+
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+5 
+ 
+Thus, interdiction of the Bill of Entry by RMS for verification by an assessing 
+officer is only one layer of the risk identification and mitigation process. 
+Given the increased focus of the Government on ease of doing business and 
+enhanced trade facilitation, a small percentage of bills of entry are marked 
+to assessing officers for verification in a live processing environment. 
+However, risk identification and compliance verification is a continued 
+process until out -of-charge and even thereafter through post -clearance 
+audit. 
+CBIC has taken several measures, post audit period 2017 -18, to further 
+strengthen compliance management including risk -based selection of bills 
+for verification by officers. Some of the main measures are outlined below: 
+• RMS/RMCC has been upgraded to Na tional Customs Targeting Centre 
+(NCTC) as of 1st January, 2020, with enhanced capabilities and 
+technological tools. 
+• Machine learning enabled of interdictions of risky importer consignment 
+was introduced in 2019/2020. This has enhanced the precision and 
+accuracy of interdictions for effectively tackling risk related to 
+classification, value, rate of duty, exemption notifications, anti -dumping 
+duty, safeguard duty and IGST, by utilising historical database of 
+identical/similar goods. 
+• Automated risk management  through predictive modelling has been 
+introduced; it utilises various data sources across the supply chain 
+continuum, including those from other government agencies. 
+• Risk rules and targets are refined regularly based on data analysis, 
+feedback from field formations and outcomes/observations of Audit. 
+• In addition to RMS targeting, the Bills of Entry, related documents and 
+associated entities in the supply chain are analysed by NCTC officers in  a 
+real time environment to raise specific alerts in respect of highly risky bills 
+(2021). 
+  
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+6 
+ 
+1.1.4 Information on transactions handled by ICES 
+A summary of the numbers of Bills of Entry 2 (BsE), Shipping Bills 3 (SBs), 
+Import General Manifest 4 (IGM), Export General Manifest 5 (EGM), Consol  
+General Manifest 6 (CGM) filed, Duty Collected, Drawback/Rebate of State 
+Levies7 (RoSL)/Integrated Goods & Service Tax8 (IGST) disbursed etc., during 
+the period from 2015-16 to 2019-20 through ICES are as under: 
+Table No. 1.1: Average transactions handled by ICES 
+(Amount in ` crore) 
+Period No. of 
+BsE filed 
+No. of 
+IGM 
+filed 
+No. of 
+CGMs 
+filed 
+Amount 
+of Duty 
+Collected  
+No. of SBs 
+filed 
+No. of 
+EGMs 
+filed 
+Amount 
+of 
+Drawback 
+disbursed  
+Amount 
+of RoSL 
+Disbursed 
+Amount of 
+IGST 
+Disbursed 
+2015-16 3970261 337588 ... 214758 7045363 351725 31919 .... ... 
+2016-17 4333342 373926 ... 228231 7366681 401586 30891 614 ... 
+2017-18 4202592 306269 62465 331347 7612039 307376 15612 3062 9583 
+2018-19 4307097 312572 66576 414468 7648051 298278 11198 2280 56200 
+2019-20 4490063 352379 59624 384300 7336468 260275 17908 ... 59965 
+Total 21303355 1682734 188665 1573104 37008602 1619240 107528 5956 125748 
+ 
+Source: ICEGATE Annual Reports available on the CBIC website. 
+From the above, Audit noted that on an average 31 ,952 consignments 
+(Import and Export) and 1 ,981 IGM/EGM/CGM were handled daily by ICES 
+during the period from 2015-16 to 2019-20. Besides, on an average, Customs 
+ 
+2A bill of entry is a legal document that is filed by importers or Customs clearance agents on 
+or before the arrival of imported goods. It is submitted to the Customs department as a part 
+of the Customs clearance procedure. Once this is done, the importer w ill be able to claim 
+Input Tax Credit (ITC) on the goods. 
+3The Shipping Bill is  an essential document issued by the Customs Service Centre  after the 
+exporter applies to acquire this bill. This bill facilitates the exporter to get Customs 
+clearance, load the goods, and claim duty drawback etc. 
+4The IGM helps ensure that all the import cargo carried by a vessel has been reported, the 
+carrier has followed all statutory requirements, and that the ship is carrying all required and 
+complete documents for import. 
+5Export General Manifest is a mandatory legal document to be filed by the carrier of goods 
+with the Customs Department . This document is used by government authorities as proof 
+of export. The Customs officials certify proof of export on shipping documents to exporters 
+on the basis of EGM. 
+6Consol Import General Manifest is filed by the consol agent who acts as carrier of cargo . If 
+any cargo is co -loaded with a freight forwarder, he needs to file consol manifest with 
+Customs on arrival of goods. Based on suc h consol manifest, the importer files import 
+documents for clearance procedures to take delivery of goods. 
+7In the ROSL scheme, the Central Govt. provided rebate of State levies comprising of State 
+VAT/CST on inputs including packaging, fuel, duty on elect ricity generation and duties and 
+charges on purchase of grid power, as accumulated through the stages of production from 
+yarn to finished garments. The scheme has since been discontinued from March 2019. 
+8Integrated goods and services tax (IGST) means  the tax levied under the IGST Act on the 
+supply of any goods and / or services by the Central Government and for matters connected 
+therewith or incidental thereto in the course of inter -state trade or commerce . Integrated 
+GST also applies to import of goods and services into India. 
+
+                      Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+7 
+ 
+Duty amounting to ` 861.97 crore w as collected and Duty Drawback 
+amounting to ` 58.92 crore, IGST amounting to ` 125.37 crore and RoSL 
+amounting to ` 6.52 crore were disbursed daily by ICES during the 
+corresponding period. 
+1.2. Audit Objectives 
+The IT Audit of ICES 1.5 has been conducted to gain an assurance that:  
+i. The functionalities of ICES have been developed as envisaged and 
+the intended benefits have been achieved , including ease of tax 
+administration; 
+ii. ICES has effective interfaces with other IT Applications  
+iii.       IT governance is adequate and effective. 
+1.3. Audit Criteria 
+The following are the sources of criteria for this audit:  
+• The Customs Act, 1962, 
+• Customs Tariff Act, 1975 
+• Customs Manual 
+• Various Customs Rules and Regulations 
+• Circulars and notifications of CBIC which were issued from time to 
+time and are effective during the period of audit 
+• MoU signed amongst CBIC, NIC and NICSI  
+• Software Requirements Specification (SRS), Software Design 
+Document (SDD)and User Manuals 
+• Contract/agreement made with various vendors 
+1.4. Audit scope 
+The IT Audit of ICES 1.5 application was conducted during December 2020 to 
+May 2022 covering the period 2015 -16 to 2019 -2020.  The a udit scope 
+intended to examine the functionalities of import and export modules, 
+interface with other IT applications viz.  DGFT, DGoV, SEZ, Bank, RBI, CRCL, 
+PAO etc. and IT Governance issues such as - Organisation and management, 
+IT governance and management and effectiveness of Change Management. 
+For the examination of functionalities, the audit focus was more on major 
+changes/new functionalities added in  the ICES application during 2015 to 
+2020, especially the following: 
+(i) Project Import module 
+(ii) Module for Provisional Assessment 
+(iii) Automated out of charge of BsE 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+8 
+ 
+(iv) Manual BE/SB Module 
+(v) GST related changes after introduction of GST 
+(vi) Deferred payment module 
+(vii) Implementation of the RMS module for export 
+(viii) Changes due to levy of Social Welfare Surcharge in lieu of education 
+cess 
+(ix) Changes due to introduction of new State codes 
+(x) Changes due to uploading of documents of import and export through 
+e-Sanchit 
+(xi) Changes on account of flow of data of paperless licences of Advance 
+Authorisation and EPCG schemes. 
+The IT Audit did not cover a detailed examination of RMS or of ICEGATE. 
+1.5. Audit Methodology 
+The audit methodology was broadly as follows: 
+• Review of Documents related to rollout of the ICES application; 
+• Review and analysis of Software Requirement Specifications (SRS s), 
+Software Design Documents (SDDs) and other documents related to 
+the design and implementation of ICES with reference to the 
+provisions of Act/Rules/notification as amended; 
+• Testing in User A cceptance Test environment (UAT) and auditee 
+assisted production environment , where necessary , to check the 
+validations/audit checks relating to functionalities of ICES; 
+• Extraction of data by querying on ICES database and further analysis 
+of such data; 
+• Discussion and structured interviews with Stakeholders and replies 
+from DG (Systems), CBIC. 
+1.6. Previous Audit Reports 
+The Customs ICT systems and the ICES application have been modified 
+from time to time in accordance with the operational requirements of 
+Department and changes in the Customs Act and allied Acts, Rules and 
+Regulations. Although the core ICES application ha s been migrated from 
+decentralised to centralised environment from the year 2009 -10, 
+subsequently, there were several changes in the underlying ICT 
+infrastructure, work flow, data transfer and storage, security, etc. 
+Action taken on the previous audit findings reported in the CAG’s Report on 
+ICES 1.5 (No. 11 of 2014) was re-examined in this audit and  it was noticed 
+that the Department had taken remedial action to address many of the 
+earlier audit observations/recommendations. Audit also noticed that some of 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+9 
+ 
+the previous audit findings/recommendations had lost their relevance and 
+thus rendered redundant, due to change in the Customs Act and allied Acts, 
+Rules and Regulations.    
+(i) Audit reviewed the Customs EDI System for the first time in the 
+year 2000-01 (Report No. 10 of 2002 -Customs). The review was 
+focused on procurement and software development.  
+(ii) ICES 1.0 was again reviewed in the year 2008 (PA Report No. 24 of 
+2009-10 Customs), primarily to verify whether it had mapped the 
+processes & provisio ns of the Customs Act and allied rules & 
+regulations effectively.  
+(iii) ICES 1.5, an upgraded version of the original ICES 1.0 was rolled 
+out in a phased manner across various C ustoms locations from 
+June 2009. The audit of the upgraded version i.e. , ICES 1.5 wa s 
+done in 2013 and its finding reported in CAG’s Report No.11 of 
+2014 (Performance Audit).    
+The previous audits pointed out some systemic issues and issues involving 
+deficiencies in designing various business rules in the system, as per  the 
+rules/Acts in force at that time.  
+The details of previous audit findings with the action taken/current status are 
+given in Annexure I. 
+  
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+10 
+ 
+1.7. Understanding the process flow for Import and Export in ICES 
+Application  
+1.7.1. Process Flow for Imports: 
+Flow Chart 1 
+ 
+  
+
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+11 
+ 
+1.7.2. Process Flow for Exports: 
+Flow Chart 2
+ 
+1.8. Constraints faced by Audit 
+1.8.1 Non-updation of documents 
+Basic documents like SRSs and SDDs provided to Audit were dating back to 
+2010 and the same were not updated thereafter. SDDs in respect of only 9 
+stakeholders out of 16 (Sea line/Ports, Air/Airline-console, DGFT, DGoV, SEZ, 
+Bank, RBI, CRCL, PAO, ICD, CHA, Pr.CCA, DRI, DGCIS, e -Sanchit & PGA) have 
+been received from DG (Systems) till date. The H andbook for Customs 
+officers, published in August 2013, which gives details of how to operate the 
+ICES system and acts as a guide/manual for Customs Officers has also not 
+been updated since August 2013 , even though substantial changes 
+happened in duty structure and process flow, particularly after the 
+introduction (July 2017) of GST regime in India.  
+Further, the SDDs provided to Audit, have only structural information of data 
+tables and control tables for various messages. The detailed description of 
+the fields for the tables and features and functionality of each of the 
+messages and the specific requirement for the messages were not available 
+in the given SDDs.  
+
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+12 
+ 
+Consequently, this constrained the conduct of this Audit and findings arising 
+therefrom. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the issue has already been taken up with NIC for early completion of the 
+documentation, in terms of the MoU. Action has been initiated for hiring 
+team of competent resources to complete the said task. As and when 
+documents are completed, the same will be shared. 
+1.8.2 Non-availability of documentation of new modules/functionalities 
+Regarding rec ords related to whole development cycle for each 
+change/module including details of testing by Department etc., it was stated 
+by the DG (Systems) that communication amongst stakeholders i.e.,  DG 
+(Systems), NIC, technical team and operation team etc. is bei ng done using 
+e-mails and hence no physical records is available.  However, even  the trail 
+of mails has also not been made available to Audit. In the absence of SRSs 
+and SDDs of new modules and functionalities added in ICES and records 
+relating to the various stages of whole development of these changes, Audit 
+was constrained. 
+On being pointed out (August 2022), the Ministry stated (November 2022 ) 
+that the point is noted for compliance. 
+1.8.3 Non-furnishing of records relating to updating of directories 
+Records related to updating of directories consequent upon the issue of 
+various notifications relating to change of duty/exemption and exchange 
+rate etc. by Data Management Sites (DMS) and peer reviews done by Peer 
+Review Sites were not provided to Audit.  Hence, to check the timely 
+updation of change of duty/exemption and exchange rate, Audit issued data 
+queries relating to a few notifications. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that as already submitted, role of DG (Systems) comes into play when DMS 
+finds any technical difficulties in updation of the Notification due to system 
+error. Inaccuracy in updation of Notification is communicat ed by Peer 
+Review Site ( PRS) to DMS for necessary action at their end. Remedial 
+measures in case of delay / inaccuracy in updation of the Notification are 
+carried out by the System Manager (DMS). 
+The Ministry has furnished only a list of notification with date of notification 
+and date on which these notifications entered in ICES but records of e-mails 
+related to updation of directories by Directory Management Sites and review 
+done by Peer Review Sites was not provided to Audit as per the stipulated 
+SoP. This constrained the conduct of this Audit. 
+
+                    Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+13 
+ 
+1.8.4 Non-furnishing of records relating to grievances/problems faced by 
+ICES users and stakeholders 
+No physical records relating to suggestions/problems received from Customs 
+House Agents, Importers, Exporters, Customs Officers and stakeholders 
+which are the end users of ICES application and action taken on the same by 
+DG (Systems)/Board were made available to Audit. 
+On being pointed out (August 2022), the Ministry furnished details of 
+number of tickets raised, number of tickets resolved, number of tickets 
+escalated to next level and average time taken for resolution. 
+However, the Ministry did not furnish details/parameters fixed for time 
+prescribed for resolutions of ticket raised under L1, L2 and L3 supports. In the 
+absence of this, Audit cannot verify the efficiency of help desk and user 
+support system. 
+1.8.5 Constraints relating to furnishing of data dump and slow execution 
+of data queries 
+In the entry conference (July 2020), it was clearly stated by Audit that Data 
+dump (at least of one-year duration) would be crucial for checking contro ls 
+and validations and unless data is provided, audit may not progress much.   
+In response,  ADG (Systems) stated that there might be some issues in 
+providing data dump.  In such situation it was decided that Audit w ould 
+provide the data queries in simple E nglish and the same will be run on  the 
+whole data (on PAN India basis) in the presence of audit personnel and 
+results of the queries provided to audit. 
+Audit issued 81 data queries to DG (Systems), results/replies to 55 queries 
+were provided as of June 2022. Audit could cross verify the results of BsE/SBs 
+of only those Customs sites for which they have access as the audit team had 
+no access to view the SBs/BsE  for all locations and was completely 
+dependent on DG (Systems)  to verify such records.  Results/replies to 26 
+queries (which were not run in the presence of audit)  were provided in 
+September 2022.  Analysis of responses to 26 queries is indicated in 
+Annexure II. The final resolution of the queries could not be completed by 
+Audit at the time of finalisation of this audit, and will be pursued through 
+subsequent audits. 
+The data log, which would have helped us to study/analyse the data flow 
+between the stakehol ders and enable us to highlight the lacunae of the 
+transmission mechanism with the various stakeholders, w as not available, 
+either at the local level, with the Customs Department, nor with the various 
+stakeholders.  Sample of data related to message exchange for the month of 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+14 
+ 
+March 2021 exchanged between ICES and all stakeholders was called for, but 
+not provided. 
+1.8.6 Limitation in User Acceptance Testing (UAT) environment 
+To check the various validations and controls relating to filing of BsE and SBs 
+the DG (Systems)  provided Single Sign -On IDs (SSOIDs) in the UAT 
+environment which is pre-production environment for testing purpose. The 
+validations were tested as per the 201 0 version of SRS and SDD on pre -
+production environment. 
+However, the filing of BE and SB processes could not be completed on the 
+pre-production environment due to the following constraints: 
+• IGM filed for BE and EGM filed for SB in UAT is not being accepted by 
+the system.  
+• Absence of E-Sanchit documents (digitally signed documents). 
+Further, modules related to sea-ports were also test checked in ICEGATE with 
+required inputs.  However, BEs of seaport could not be checked due to error 
+in the first stage itself  (Incorrect Terminal Operator Code – F7 for list). i.e., 
+the list of Terminal operator code could not be generated, due to which 
+further process of filing of BsE could not be carried out.  Besides, the 
+following modules of BsE were also not made available: 
+(i) Item_Export – containing IGM Airlines, Status Date, SION group, ITC HS 
+Code, etc. 
+(ii) Item_Import – containing License details, IGM Airlines, Status Date, ITC 
+HS Code, etc. 
+(iii) Supporting Manufacturers – containing Status date, Manufacturer 
+details, etc. 
+Documents relating to application/module to capture basic data of manual 
+BsE, which is required for validation with GSTN on imports , were not 
+provided to Audit. 
+Moreover, Data dictionary related to available Tables and various fields of 
+ICES database was not furnished to audit.  In the absence of these documents 
+and constraints faced , Audit could only furnish limited assurance regarding 
+validation controls at the time of filing BE/SB. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the issue has already been taken up with NIC for early completion of the 
+documentation, in terms of the MoU. Action has been initiated for hiring 
+team of competent resources to complete the said task. As and when 
+documents are completed, the same will be shared. 
+Ministry’s reply is not relevant as the stated constraint is about limitation in 
+User Acceptance Testing (UAT) environment provided to audit during the 
+course of audit.
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+15 
+ 
+ 
+1.8.7 Slow pace in providing replies/records to Audit Requisitions 
+Pace of providing replies/records to Audit Requisitions was very slow. Audit 
+issued 81 data queries to DG (Systems), results/replies to 55 queries were 
+provided as of June 2022. Audit could cross verify the results of BsE/SBs of 
+only those Customs sites for which they h ave access as the audit team had 
+no access to view the SBs/BsE for all locations and was completely 
+dependent on DG (Systems) to verify such records. 
+Audit from time to time issued various communications and held meetings 
+with the DG (Systems) regarding furnishing of r ecords/replies at various 
+level; however, even after repeated pursuance, response to our requests 
+was not satisfactory. After protracted pursuance , results/replies to the 
+remaining 26 queries (which were not run in the presence of audit) were 
+provided only in September 2022. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that they are taking up the matter with other verticals such as NIC, ICEGATE, 
+System Integration etc to fetch the required data. Therefore,  all the 
+remaining Audit requisitions are either at different stages of 
+completion/under process. This office is in constant touch on priority basis 
+with the respective verticals/agency to get the desired data for finalising the 
+audit requisitions. 
+1.8.8 Constraints relating to furnishing of records related to ICEGATE 
+Records related to ICEGATE project , selection of new vendor (M/s. Infosys 
+Ltd.) starting from proposal to change of vendor, issue of RFP till finalisation 
+of Vendor for ICEGATE were requisitioned, but not furnished to audit. 
+The Department, though, furnished (Novemb er 2022) copy of RFP (CIS 
+Phase I - ICEGATE RFP Vol 1, 2 and 3). However, related records viz Master 
+Level Service Agreement of M/s Wipro Limited, document s related to sign-
+off on the successful knowledge transition between the vendors which 
+include knowledge transfer, class room training on system and applications, 
+hands on training, handing over application documentation, hand -holding 
+during transition phase etc. have not been furnished. 
+  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+17 
+ 
+Chapter 2 
+Audit Findings: Core ICES 
+2.1 Audit examination of functionalities/modules of ICES 
+To examine and understand the functionalities/modules currently 
+functioning in ICES 1.5, Data Dump (at least of one year duration) was 
+requisitioned (July 2020) from DG (Systems). The same was not provided to 
+Audit.  In February 2021, the Department provided a list of changes made in 
+ICES 1.5 application along with advisories issued between 2017 to 2020, and 
+in October 2021 the list of patches (however, with very little description for 
+the changes) implemented in the application during the period 2015 to 2016.  
+However, no corresponding and latest SRSs and SDDs were made available 
+to Audit till date. The base documents - SRSs and SDDs, provided to Audit 
+were dating back to 2010. Also, the UAT environment (NACEN Training 
+Module), which is a p re-production environment, provided to Audit by the 
+DG (Systems) did not contain any test data.  
+Hence, to test the validation controls/functionalities of ICES, test data was 
+created by Audit by filing a few test Shipping Bills for Export and Bills of Entry 
+for Import based on data fields of SRS 2010. This study was thus limited and 
+based on the available information, as the data dictionary and structures of 
+the fields to be captured in the latest ICES version, were not provided to 
+Audit. 
+To check that the ICES application prompts at appropriate instances to 
+facilitate data entry and minimize errors, various validations available and 
+already existing in ICES for Export/Import were checked using UAT 
+environment and Audit noticed that without input of mandator y fields and 
+proper validations, the system does not allow the user to proceed further. 
+It was further noticed that on entering CTH inputs, Unit Price, Customs Tariff 
+Notification details, Quantity, Unit Quantity Code, the system automatically 
+and correctly picked the correct rate of Basic Customs Duty (BCD) IGST, Anti-
+Dumping Duty etc., in case of Import and RITC (Revised Indian Trade 
+Classification), Drawback Serial Number, Scheme Code, Invoice Value etc. in 
+case of Export same. Further, the mandatory documents viz. invoice, packing 
+list etc. are being uploaded in the system with digital signature through 
+ICEGATE and the checks for validity of digital signature quality of scanned/ 
+PDF documents are automatically checked in e -Sanchit (e -Storage and 
+Computerised Handling of Indirect Tax Documents) application. 
+It was also noticed through UAT environment (NACEN Training Module), that 
+all the roles and functionalities allotted to various Customs officers viz. 
+relating to Appraising, Examination, Stuffing, Drawback processing, Customs 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+18 
+ 
+Duty calculation, BRC operations, DTR Module to record duty paid through 
+manual challans etc. and Paperless Licenses  / Authorizations through All 
+India License View were functioning. 
+For validations related to processing whi ch could not be checked through 
+UAT environment or to re -confirm the process controls, 81 data queries 
+related to Export and Import in simple English were also issued (February -
+June 2021) to DG (Systems).  DG (Systems), in turn forwarded these data 
+queries to NIC for making queries in SQL format and the queries were run by 
+the Department on the system available at Data Centre of CBIC. 
+Results/replies to 55 queries were provided of June 2022. Audit could cross 
+verify the results of BsE/SBs of only those Customs sites for which they have 
+access as the audit team had no access to view the SBs/BsE for all locations 
+and was completely dependent on DG (Systems) to verify such records.  
+Results/replies to 26 queries (which were not run in the presence of audit) 
+were provided in September 2022. 
+Audit also requisitioned (December 2020) the records for the period 2015 -
+2020 relating to suggestions/problems received from Customs House 
+Agents, Importers, Exporters and Customs Officers who are the end users of 
+ICES application and action taken on the same by DG (Systems) /Board. 
+Records were not made available for the same to audit. 
+In the absence of updated documents of SRSs/SDDs, non -availability of 
+SRSs/SDDs of new modules and functionalities added or removed in ICES 
+after 2010, non-availability of sufficient data in UAT environment and non-
+furnishing of records related to suggestions / problems received from ICES 
+application users etc, Audit was constrained. 
+2.2. Audit Findings 
+Lack of certain validation controls constrained in ICES Import module 
+2.2.1 Late fee wrongly levied, collected and waived off 
+As per the extant rules, the authorized person shall file the BE before the end 
+of the next day following the day (excluding holidays) on which the aircraft 
+or vessel or vehicle carrying the goods arrives at a Customs station at which 
+such goods are to be cleared for home consumption or warehousing. Where 
+the BE is not filed within the time specified and the proper officer of Customs 
+is satisfied that there was no sufficient cause for such delay, the importer 
+shall be liable to pay charges for late presentation of the BE under Section 46 
+(3) of the Customs Act, 1962.  Further, as per para 4 (3) of Notification 
+36/2018 dated 11.05.2018, late fee charges are leviable @ ` 5,000/- per day 
+for the initial three days of default and @ ` 10,000 per day for each day of 
+default thereafter, provided that where the proper officer is satisfied with 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+19 
+ 
+the reasons for delay, he may waive the charges referred to in the second 
+proviso to sub-Section (3) of Section 46. 
+Further, the late presentation charges in respect of any BE shall not exceed 
+the duty payable in respect of that particular BE and where the duty or any 
+other charges in respect of any BE are not payable for any reason like 
+exemption or otherwise, the late presentation charges shall not exceed 
+` 50,000/-. 
+Import data query was sought for the period from 1 October 2019 to 31  
+March 2020  for late filing of BsE for which Department furnished data of 
+83,884 records. On an analysis of the said data, the following observations 
+are made: 
+(a) In respect of 1,354 BEs, data shows that an amount of ` 19.29 crore 
+was levied as late fee out of which ` 3.39 crore was paid by importers 
+and ` 15.90 crore was waived off.  Similarly, i n respect of 3,659 BsE, 
+an amount of ` 9.55 crore was levied as late fee and the entire 
+amount of late fee was waived off.   Audit noticed that  the reasons 
+for waiver were not recorded under the “REASON” field of data and 
+only “BE Late filed” was mentioned there.  
+(b) In respect of 854 B sE,  Audit noticed that though the total duty paid 
+was Nil (which may be on account of exemption or otherwise) , ICES 
+has levied late fee in excess of ` 50,000/ contrary to the provisions 
+mentioned above. In respect of 854 BsE, the amount / range of extant 
+of late fees levied was between ₹ 55,000 and ₹ 20,95,000. 
+(c) In respect of 3,507 BEs,  it was noticed that late fee has been collected 
+in excess of the duty contrary to the provision as the late fee cannot 
+be more than the duty payable. Such excess late fee was collected to 
+the extent of ₹ 6.47 crore. 
+(d) In five cases (BE Nos. 6340683 dated 3 January 2020, 5641358 dated 
+11 November 2019, 7366935 dated 28  March 2020, 7367077 dated 
+28 March 2020 and BE No 7363793 dated 27 March 2020) where late 
+fee was levied amounting to ` 11,323/-, the field relating to reasons 
+was found empty.  
+This indicates deficiencies in certain validations in the ICES Import Module 
+for levy of late fee. 
+Late fee is being calculated by the ICES system and the reasons for waiver 
+are to be entered in the system and approved by an officer not below the 
+rank of Joint Commissioner/ Additional Commissioner of Customs. If 
+necessary validation controls as pointed out above are inserted, they are 
+likely to reduce the chances of errors. Lack of proper validations may lead to 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+20 
+ 
+unnecessary difficulties and harassment for importers and exporters, and 
+possibilities of delay in processing of the documents and locking up of funds. 
+Specifically, BE should not be processed further until the reason for waiver 
+of late fee in case of such waiver is entered by the competent officer. 
+On being pointed out ( August 2022), the Ministry stated (November 2022) 
+that its t echnical team is working on development of necessary checks / 
+validation on the issue and shortly Audit will be updated on the issue. 
+Recommendation 1: The Ministry should ensure that necessary validation 
+checks in ICES regarding levying, collection and wavier of late fees are 
+implemented, duly mapped and functioning correctly. It may also be 
+ensured that in case of wavier of late fees, the reasons are also recorded. 
+2.2.2 Short/excess levy of duty under Notification 46/2011 
+As per Notification No.46 of 2011 dated 1 June 2011, as amended from time 
+to time, goods imported from the countries listed in Appendix I (viz. 
+Malaysia, Singapore, Indonesia, Vietnam etc.) of the notification are 
+exempted from so much of duty of Customs leviable thereon in excess of the 
+amount calculated at the rate specified in column (4) of the table in the 
+notification and goods imported from Philippines, which is listed in Appendix 
+II of the notification, are exempted from so much duty of Customs leviable 
+thereon as is in excess of the amount calculated at the rate specified in 
+column (5) of the table in the notification.  
+From analysis of data for the period 2019 -20, on the goods imported under 
+Notification 46/2011, Audit observed that: 
+(a) 18 items (vide six consignments), having assessable value of 
+` 1.86 crore, were imported from Philippines and assessed to BCD at 
+the rate mentioned in column (4) instead of column (5) of the 
+notification ibid which resulted in short levy of duty. 
+(b) 15 items (vide six consignments), having assessable value of 
+` 1.40 crore, were imported from Indonesia and Vietnam and 
+assessed BCD at the rate mentioned in column (5) instead of column 
+(4) of the notification ibid which resulted in excess levy of duty. 
+The above cases indicate deficiencies in validation controls in ICES regarding 
+levying of Customs duty under Notification No. 46/2011 , resulting in 
+short/excess levy of duty. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that as per Customs  Act, 1962, l evy of duty is based on self -declaration of 
+importer and the exemption Notification(s) claimed, during self -declaration 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+21 
+ 
+is subject to verification as envisaged in Section 17 of Customs Act, 1962. 
+ICES transaction is based on the extant legal provisions. 
+The reply is not tenable as t he difference in levy of duty arises only due to 
+Country of import. The countries are specified via codes in ICES. Accordingly, 
+the rate should have been applied based on Country codes read with 
+exemption notification rather than relying solely on self-declaration. If such 
+checks are not incorporated in the system , there will be possibilities of 
+incorrect levy of duties. 
+Recommendation 2: The Ministry should ensure necessary validation 
+checks in ICES so that Cu stoms duty rates are correctly reflected based on 
+Country codes read with exemption notifications, and not solely based on 
+self-declaration. 
+2.2.3 Working of Risk Management System for Import 
+As per Board’s (CBIC) Circulars 43/2005 dated 24  November 2005 regarding 
+Introduction of Risk Management System (RMS) in Imports, BsE and IGMs 
+filed electronically into ICES through the Service Centre or ICEGATE will be 
+transmitted by ICES to the RMS.  The RMS will process the data through a 
+series of steps and p roduce an electronic output for ICES. This output will 
+determine whether the BE will be taken -up for action (appraisement or 
+examination or both) or be cleared after payment of duty and Out of Charge 
+directly, without any assessment and examination. Also, where necessary, 
+RMS will provide instructions for  the Appraising Officer, the Examining 
+Officer or the Out-of-Charge Officer. It needs to be noted that the decisions 
+communicated by the RMS on the need for assessment and/or examination 
+and the appraising and examination instructions communicated by the RMS 
+have been complied with by the field formations. 
+This implies that, if the BE is selected by RMS for examination, the field 
+relating to examination report should not be null. 
+Import data query was sought for the period from 1 October 2019 to 31  
+March 2020 for BsE selected by RMS for examination and where the field 
+relating to examination report is null.  The Department furnished data of six 
+records for this query.  The details of these six BsE are as under: 
+Table No.2.1: Details of BsE selected for examination but examination 
+report is null 
+Sl No CUS_SITE BE_NO BE_DT TYPE TOT_ASS_VAL (in `.) TOT_DUTY (in `.) 
+1 INWFD6 5179475 04.10.2019 H 34532686 19393556 
+2 INFBD6 5337697 17.10.2019 H 1388036 581769 
+3 INCCU1 5500992 31.10.2019 H 13084625 833797 
+4 INPAV1 6114210 17.12.2019 H 8738633 1572954 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+22 
+ 
+Source: Data furnished by DG (Systems) 
+The cases mentioned in the above table indicate lack of validation in ICES 
+relating to essentiality of examination report if the BE is selected by RMS for 
+examination. 
+On being pointed out (August 2022), the Ministry stated (November 2022)  
+that it is confirmed by the technical team that check exists in the system if 
+examination report is not entered in the system in view of RMS instruction, 
+the BE will not move forward to the next officer’s queue. The technical team 
+is assigned to check the cause of irregular movement and rectify the same. 
+Recommendation 3: The Ministry should ensure proper validation in ICES 
+that in cases wherein a Bill of Entry is taken up for examination by the Risk 
+Management System, the field relating to examination report should not 
+be null. 
+2.2.4 Lack of control in ICES regarding levy of duty in the case of BE filed 
+prior to the date of entry inwards 
+As per  Section 15 of Customs Act 1962, the rate of duty and tariff valuation, 
+if any, applicable to any imported goods, shall be the rate and valuation in 
+force, in the case of goods entered for home consumption under Section 46, 
+on the date on which a bill of entry in respect of such goods is presented 
+under that section; provided that if a bill of entry has been presented before 
+the date of entry inwards of the vessel or the arrival of the aircraft by which 
+the goods are imported, the bill of entry shall be deemed to have been 
+presented on the date of such entry inwards or the arrival, as the case may 
+be. 
+Notification 50/2017 -Customs, dated 30  June 2017, was amended vide 
+Notification No.17/2019-Customs, dated 15 June 2019, where in three new 
+serial numbers (24AA, 32B and 177A) related to goods originating in or 
+exported from the United States of America (USA) were inserted.  The 
+notification was effective from 16 June 2019. 
+Import data  query was sought for the period from 13  June 2019 to 17 June 
+2019 r elated to goods imported under C ustoms notification No.17/2019 
+dated 15 June 2019 and where the country of origin was USA for which the 
+Department furnished data of 345 records. On an analysis of the said data, 
+Audit noticed that  six importers imported 33 items under CTH 08081000 
+from USA vide 9 BsE.  These BsE were filed during 12  June 2019 to 15 June 
+2019 and entry inward date of these BsE was between 16 June 2019 and 19 
+Sl No CUS_SITE BE_NO BE_DT TYPE TOT_ASS_VAL (in `.) TOT_DUTY (in `.) 
+5 INCBDB 7124340 05.03.2020 H 2196673 263601 
+6 INNSA1 7142830 06.03.2020 H 8290376 0 
+
+                      Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+23 
+ 
+June 2019.  As per the proviso of Section 15 of Customs Act these BsE are 
+deemed to be presented during 16  June 2019 to 19 June 2019 and BCD on 
+these goods was to be levied @ 70  per cent {as per Sl. No.32B of Customs 
+notification No.17/2019 dated 15 June 2019} instead of at the rate of 50 per 
+cent which resulted in short levy of duty of ` 38.17 lakh. 
+Further, the above cases also indicate that there is lack of control in ICES 
+regarding levy of duty in the case of BE filed prior to the entry inward date. 
+If such checks are not incorporated in the system, there will be a possibility 
+of incorrect levy of duties. In the instant case, the Department levied duty at 
+50 per cent instead of 70 per cent. The delay in updation by DMS sites should 
+be viewed seriously and necessary action taken. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the logic exists in the ICES system for prior BE whenever there is a 
+change in levy of duty due to notification, the BE is moved for re-assessment. 
+However, if inadvertently the N otification updating takes place after the 
+effective date then the earlier duty structure before updation of Notification 
+will apply. The concerned DMS sites have been sensitized to follow the SOP. 
+The Department has not furnished the actual date of updation of Notification 
+No.17/2019-Customs, dated 15 June 2019 and action taken on the cases 
+(Nine BsE) pointed out by Audit. 
+Recommendation 4: The Ministry should ensure that the notifications are 
+updated in a timely manner and invariably before the effective date. The 
+delay in updation by DMS sites should be viewed seriously and necessary 
+action taken in cases of delay. DMS sites must comply with the existing SOP 
+and this should be verified and ensured by DG (System). 
+2.2.5 Country of Origin is not identical at BE Level and Item level 
+For Bill of Entry (BE) which contains single invoice and having single item , 
+logically both fields, Country of Origin at the BE level and Country of Origin 
+at the item level, should be identical. 
+Import data  query was sought for the period from 1 October 2019 to 31  
+March 2020 (6 months) related to goods imported  where there is single 
+invoice having single item and where country of origin differs at the BE level 
+and Item, for which the Department furnished data of 38,930 records.  On 
+an analysis of the said data, the following observations are made: 
+(a) Out of these 38,930 BsE, in respect of 28,758 BsE having single invoice 
+and single item, the Country of Origin at the BE level and Country of 
+Origin at the item level are different. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+24 
+ 
+(b) In respect of the other 10,172 BsE, the country of origin at t he item 
+level was found “blank”. 
+This indicates lack of validation in the ICES where the data fields for capturing 
+the same data viz. Country of origin in separate tables are holding different 
+data, leading to scope for incorrect availing of concessions under the various 
+Country of Origin based exemption notifications or non-levy of anti-dumping 
+duty. 
+A s imilar observation relating to mismatch of “ Country-of-origin” data in 
+different ICES table was earlier reported in Pa ragraph 3.11.4 of the 
+Performance Audit Report No.24 of 2009-10 and in Paragraph 3.9 of the 
+Performance Audit Report No.11 of 2014.  
+On being pointed out (August 2022), the Ministry stated (November 2022)  
+that as per Customs Act, 1962, levy of duty is based on self -declaration of 
+importer, which is subject to verification as envisaged in Section 17 of 
+Customs Act, 1962.  ICES transaction is based on the extant legal provisions. 
+Patch no. 113 dated 07-10-2022 has been implemented in the system in case 
+of a single item of BE. This will be reviewed in future audits. 
+If the Country of Origin is not captured correctly there could be a risk of non-
+levy of Anti Dumping Duty due to mismatch of ‘Country of Origin’ in different  
+ICES tables. Also, there could be scope for incorrect availing of concession 
+under various country of origin based exemption notifications. 
+2.3 Lack of validation in ICES Export module 
+2.3.1 Non-alignment of DBK Serial number with RITC (Export validation) 
+The Government of India from time to time determines the All Industry Rates 
+of duty drawback of various exported goods by issuing Drawback Schedule.  
+The tariff items and descriptions of goods in the Drawback Schedule are 
+aligned with the tariff items and descriptions o f goods with the Revised 
+Indian Trade Classification (RITC) of First Schedule to the Customs Tariff Act, 
+1975 (51 of 1975) at the four-digit level only. The descriptions of goods given 
+at the six digit or eight digit or modified six or eight digits in the said Schedule 
+are in several cases not aligned with the descriptions of goods given in the 
+First Schedule to the Customs Tariff Act, 1975. 
+During test check of regular compliance audit of SBs at Customs ports, it was 
+observed that there were cases where  Drawback Sr. No. as per drawback 
+schedule of the goods exported did not match with the RITC as per First 
+Schedule to the Customs Tariff Act, 1975 (51 of 1975) up to four -digit level, 
+though they were matching up to two-digit level. 
+This indicates that the ICES 1.5 application lacked input controls/validations 
+to ensure matching of declaration of Drawback serial number  as per 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+25 
+ 
+drawback schedule with the tariff items and descriptions of goods in the First 
+Schedule to the Customs Tariff Act, 1975 (51 of 1975) u p to the four -digit 
+level. This may lead to incorrect calculation of duty drawback and 
+short/excess payment of duty drawback to exporters. 
+These facts were communicated (September 2020 and May 2021) to the 
+DG (Systems) and data was requisitioned for cases of SBs in which Drawback 
+Sr. No. does not match with RITC code up to the four-digit level for the period 
+from 2015 -16 to 2019 -20.  Department furnished (March 2022) data of 
+3,25,005 records in which Drawback Sr. No. does not match with RITC code 
+up to the four-digit level. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that alignment of both RITC and DBK Serial No. upto  four digits has been 
+enabled on 07-01-2022 in the ICES system. 
+2.3.2 Acceptance of negative FOB value of exported goods 
+For claims under Section 75 of Customs Act 1962, drawback is allowed on ad 
+valorem basis on the FOB value of exported goods.  Wherever transa ction 
+value is inclusive of freight and insurance cost, the freight and insurance 
+component is reduced from the transaction value and drawback is paid on 
+the FOB value.  Further, the FOB value could only be a positive figure as items 
+exported would definitely have some value.   
+A data  query was sought for the period from 01 .10.2019 to 31.03.2020 for 
+SBs where the FOB value of the exported goods is zero or negative . The 
+DG (Systems) furnished (September 2021) d ata of 14 records for the same. 
+The details are as under: 
+Table No.2.2: Details of SBs having negative FOB value 
+SB No. SB Date IEC Exporter Name Port code FOB Value 
+in  `. 
+7408006 05.10.2019 388215747 M/s A Silk Mills Limited INBOM4 -1,530.79 
+7420634 05.10.2019 397015283 M/s B International Pvt. Ltd. INVTZ1 -8,27,083 
+7520298 11.10.2019 588107760 M/s C Ferro Alloys LLP INVTZ1 -1,74,152 
+7634052 16.10.2019 314065458 M/s D Fine Foods LLP INVTZ1 -2,15,647 
+7758461 22.10.2019 314065458 M/s D Fine Foods LLP INVTZ1 -4,32,284 
+7750743 22.10.2019 899007473 M/s E Chemical INSBI6 -5,996.76 
+7893762 26.10.2019 388066415 M/s F Industries Ltd. INSBI6 -72,021.9 
+7945429 31.10.2019 593046765 M/s G Biotec Ltd. INDEL4 -7,031.76 
+8500488 25.11.2019 2214005889 M/s H Life Science Pvt.Ltd. INDEL4 -81,800.70 
+9407439 03.01.2020 391146670 M/s I Exports ( India) Pvt Ltd INLKO4 -60,669.30 
+9721763 17.01.2020 488025702 M/s J Marine Products Pv.t Ltd. INTUT1 -1,39,890 
+1662444 25.02.2020 888038241 M/s K Pharmaceuticals Ltd. INDEL4 -3,57,983 
+1715839 27.02.2020 388061111 M/s L Natural Fibre & Fabrics India 
+Pvt.Ltd. 
+INBOM4 -5,453.01 
+1799897 29.02.2020 DLGPA1579G M/s M Imports and Exports INCJB4 -2,412.30 
+Source: Data furnished by DG (Systems) 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+26 
+ 
+Out of the above mentioned 14 cases in the table , Audit verified three SBs 
+pertaining to the port INDEL4 and it was noticed that the terms of invoice in 
+these SBs were CIF. The reasons for the negative value of FOB was that the 
+exporters declared the freight value in two SBs at 97 per cent and 98 per cent 
+of the CIF value and Insurance value in one SB which is more than CIF value 
+of exported goods, consequently resulting in nil drawback to the exporters. 
+Acceptance of negative FOB value of the exported goods indicates that 
+there is lack of control in ICES regarding calculation of FOB value. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that basic formulation has been stated in the earlier reply “where the invoice 
+is on the CIF basis, such FOB value is calculated by deriving it  by deducting 
+the amount of freight and insurance cost from the invoice value. Drawback, 
+where it is allowed on an ad valorem basis, is also calculated similarly on the 
+FOB value of exported goods. This is consistent with the policy provisions”. 
+It cannot be inferred that as aforesaid formulation will not apply to 14 cases 
+under reference, in so far as, design of ICES transactional design is 
+concerned. 
+The reply is not tenable as the FOB value cannot be negative after deducting 
+the amount of freight and insurance cost from the invoice value which is on 
+CIF basis. Proper validation should be done in ICES so that negative FOB value 
+are brought to the notice of Customs officers for detailed examination to 
+safeguard revenue implications . Acceptance of negativ e FOB value of 
+exported goods may deprive exporters of the benefits of various export 
+promotion schemes. If any Duty Drawback has been given in any such case, 
+necessary action may be taken. 
+Recommendation 5: The Ministry should ensure necessary validation in 
+ICES export module so that the FOB value after deducting insurance and 
+freight is not negative. 
+2.4 Partial automation of Shipping Bills and drawback claims under 
+Section 74 
+As per Annexure -F of the Memorandum of Understanding (MoU) amongst 
+CBIC, NIC and NICSI, which was signed on 21 December 2018, automation of 
+Shipping Bills and claims under Section 74 of CA 1962 (Re-export) was one of 
+the expected modules for development and implementation during t he 
+period of the MoU. 
+Audit noticed that the Shipping Bills along with drawback claims under 
+Section 74 of CA 1962 (Re-export) are being filed electronically through ICES 
+under Scheme code 19 with drawback Sr. No. 9801 by furnishing details of 
+import, such as Bill of Entry No. and date, quantity imported, value, duty paid 
+
+                    Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+27 
+ 
+etc. in the field “item details” of Shipping Bills (refer to Facilitation No. 
+09/2019 dated 3 September 2019 issued by ACC (Export)/NCH New Delhi).   
+Audit noticed that after electronically filing the Shipping Bill under Section 
+74, settlement of drawback is being processed manually.  Hence, complete 
+Workflow automation of Shipping Bills and processing of drawback claims 
+under Section 74 has not taken place. This indicates lack  of adequate 
+automation of Shipping Bills in ICES 1.5. 
+DG (Systems) replied (January 2022 ) that automation of SBs under Section 
+74 cannot be done like the automatic grant of drawback with respect to Duty 
+Drawback Schedule and Brand rate fixed by the authority , as no rate 
+schedule is prescribed for Section 74 as the two processes are legally distinct. 
+The SB processed under Section 74 of The Customs Act, 1962 resides in the 
+database and does not show, " Duty Drawback is still pend ing". In fact, like 
+any other post c learance action, the processed SBs are taken up for refund 
+claims under Section 74 of the Customs Act , 1962 following the graded 
+system for grant of drawback  in such cases depending on the period for 
+which goods have been used , whether goods are used or unused etc . 
+Additionally, as informed, determination of the depreciated value of the  
+goods is to be done by the Government approved valuer for which a general 
+logic cannot be applied in the system. 
+The reply is not tenable as the Department has not prepared a separate 
+Workflow automation module for claiming and processing of Duty Drawback 
+under Section 74 by mapping all the fields related to used/unused goods, 
+period of use, deprec iated value etc. Claims are being filed electronically 
+through ICES under Scheme code 19 with drawback Sr. No.  9801 by 
+furnishing details of import, such as Bill of Entry No. and date, quantity 
+imported, value, duty paid etc. in the field “item details” of Shipping Bills 
+which is specifically framed for claiming drawback of exported goods under 
+Section 75. But, processing of claims is being manually handled. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the processing for such scenario is enabled on the ICES transactional 
+platform. The audit observation for a separate module will be examined. 
+2.5 Working of Risk Management System for Export 
+Department of Revenue, CBIC vide Circular No.23/2013 -Customs dated 24  
+June 2013 had introduced Risk Management Systems (RMS) in Export. With 
+the introduction of the RMS in exports, the practice of routine verification of 
+self-assessment and examination of SBs was discontinued and the focus is on 
+quality assessment, examination and Post Clearance Audit (PCA) of SBs 
+selected by the Risk Management System.  
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+28 
+ 
+As per ibid circular, the Board had decided to implement RMS in export in 
+two phases. In the first phase, the RMS would process the data and provide 
+the output to ICES only up to goods examination stage. In the second phase, 
+the RMS would also process the Shipping Bill data after the Exp ort General 
+Manifest (EGM) is filed electronically and provide output to ICES for selection 
+of Shipping Bills for Drawback scrutiny and Post Clearance Audit (PCA). 
+To know the effectiveness of RMS Export Module introduced by Board in 
+2013, Audit requisitioned the information relating to details of Customs sites 
+at wh ich RMS for Exports is operational, Pan -India based number of RMS 
+facilitated SBs, related targets  fixed by Board to facilitate SBs and 
+study/analysis, if any conducted to analyze the efficiency of RMS for Exports. 
+The information related to RMS facilitated SBs, related targets fixed by Board 
+to facilitate SBs and study/analysis were not furnished to Audit. 
+DG (Systems) stated (June 2021) that out of 252 EDI operational Customs 
+Sites, in 250 Customs Sites, RMS for export was functioning. 
+Further, DG (Systems) also stated that the development of the second phase 
+of the RMS Export is completed for processing of Drawback and is under 
+testing between RMS and ICES. Once the same is implemented, development 
+work for Export PCA will be initiated in coordination with RMS and added 
+that RMS is a different app lication and maintained by a different entity or 
+team. Details of study/analysis for efficiency of the RMS for Export are not 
+available.  
+On being pointed out (August 2021), D GoS stated (July 2022) that RMS in 
+exports is available at all EDI sites except f or two sites (PCCC, Mumbai – 
+INPDC4 and Surat Hira Bourse -INHIR6) where RMS is not enabled. These two 
+sites handle precious cargo, and such precious cargo is assessed and 
+examined under different norms as per policy, hence, at present, RMS 
+Exports is not launched at these sites. Regarding development/progress of 
+the second phase of RMS which was under testing stage between RMS and 
+ICES, DGoS did not furnish any information. 
+However, Audit noticed that processing of Duty Drawback Claims, which was 
+part of the second phase, had been implemented through RMS in July 2021. 
+Thus, after lapse of more than eight years from the decision taken by the 
+Board, the second phase of RMS regarding selection of Shipping Bills for 
+Drawback scrutiny was implemented. However, Post Clearance Audit (PCA) 
+for Exports has not been implemented. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that RMS for  Exports is enabled for Shipping Bill processing and Drawback 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+29 
+ 
+processing and based on the output of RMS akin to Import  PCA, Export PCA 
+will function. 
+Generally, in the absence of RMS based selection for exports, there is lack of 
+transparency and arbitrariness through manually selection for PCA. 
+Recommendation 6: RMS for exports for selection of Shipping Bills for Post 
+Clearance Audit (PCA) should be made operational at the earliest for 
+increased transparency and targeting using a risk based approach. 
+2.6 Inordinate delay in implementation of module for daily updation of 
+exchange rate 
+In response to Para 3.4 of CAG’s Audit Report No. 11 of 2014  - Performance 
+Audit on Customs EDI system, the Board stated (February 2014) that testing 
+of a module for daily update of exchange rate through message exchange 
+with State Bank of India (SBI) had been completed and commissioning of the 
+same can be decided onl y after the technical issues with the State B ank of 
+India (SBI) get resolved. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that as directed by the Board, ICEGATE developed the module for secure and 
+automatic update of the exchange rate directory in the ICES and 
+CBIC/ICEGATE website. A demonstration of the module was made before the 
+Board on 27 July 2021. The Board suggested some changes and directed the 
+redesign of the module. Accordingly, the module has been redesigned.  As 
+per current status the UAT testing has been completed for both API 1 9 and 
+API 210. Final Go-Live prerequisites are being completed by SBI. 
+The C BIC determines th e rate of exchange of conversion of major 
+transactional foreign currencies generally after every 14 days on a regular 
+basis and issues Notifications (Non -Tariff).  Based on these Exchange Rate 
+Notifications, the Directory Officer after getting the approval  of Directory 
+Manager of Directory Management Site (which is ICD, Patparganj) makes 
+changes in ICES. 
+If import and export are made at rates other than the foreign currencies 
+mentioned in the Notification, then importer/exporter has to produce 
+certificate of exchange rate on the day filing of BE/SB from the Bank (SBI). 
+Implementation of a system which captures daily fluctuation in the exchange 
+rate, will minimise the undue benefit or loss to importers and exporters and 
+correspondingly to the Department. 
+ 
+9 Exchange rates are pushed by SBI to ICEGATE for Imports and Exports 
+10 Exchange rates received through API 1 shall be fetched by ICES for rounding -off and 
+subsequently updating ICEGATE website and ICES directory 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+30 
+ 
+Recommendation 7: The module for daily updati ng of exchange rate may 
+be made operational at the earliest. 
+2.7 Non-Automation of closure of IGM 
+Import General Manifest (IGM) required to be filed under Section 30 of the 
+Customs Act 1962 is a statutory declaration and every Vessel or Aircraft or a 
+vehicle, which enters Indian territory with the intention of discharging cargo, 
+the person -in-charge or any other person as specified by the Central 
+Government is bound to deliver this document. The purpose of filing IGM is 
+to ensure that all imported goods brought in the carrier have been duly 
+accounted for. A person filing declaration under this section has to declare 
+the truthfulness of contents as it has legal consequences, wh ich bind the 
+carrier. Any mis-declaration in this document will attract the penal provisions 
+of Section 111 (f) and Section 112. The carrier / shipping lines are required 
+to declare details of cargo, shipper, consignee, number of packages, kind of 
+packages, description of goods, bill of lading number and date, vessel details 
+etc. in the IGM. 
+Further, as per Standing Order No.2/2018 dated 30.1.2018 issued by the 
+Office of the Pr. Commissionerate of Customs (Import), NCH, New Delhi, the 
+custodian will provide  details of IGMs (Import General Manifests) of 
+imported goods, which may contain one or more than one lines, within 7 
+days of filing to the Manifest Clearing Department (MCD) Section. According 
+to this order the following cases may arise with respect to imported goods: 
+Table No.2.3: Details regarding action required in respect of IGM 
+Sl. 
+No. 
+Case Action required to be taken 
+(i) Where BsE  have been filed 
+against line Nos. of IGM and 
+goods were cleared in full 
+manifested quantity. 
+The respective line No. of the IGM may be 
+treated as closed. 
+(ii) Where BsE  have been filed 
+against line Nos. of IGM and 
+goods were cleared in part 
+of manifested quantity. 
+The appropriate reasons and break-up for 
+the same may be ascertained and 
+amendment in IGM or action as per 
+Section 45 (3) or Section 116 of the 
+Customs Act, 19 62 for pilferage of goods 
+after arrival or short landed goods 
+respectively may be taken.  
+(iii) Where BsE have been filed, 
+but goods remained un -
+cleared for home 
+consumption. 
+Necessary action as per Section 48 of the 
+Customs Act, 1962 to be taken by 
+custodian for disposal of goods after 
+obtaining NOC from Customs. (iv) Where no BE has been filed 
+and goods remained un -
+cleared. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+31 
+ 
+Sl. 
+No. 
+Case Action required to be taken 
+(v) Where Warehouse (WH) BE 
+has been filed. 
+Verify the details of ex -bond BE with 
+reference to WH BE from Bond Section of 
+the Customs House . If the whole 
+manifested quantity as mentioned in WH 
+BE is accounted for , the relevant line no. 
+shall be treated as closed. 
+(vi) Where transhipment of 
+goods has been allowed. 
+The line nos., which are referred as 
+transhipped by the custodian, shall be 
+treated as closed. 
+Source: Standing Order No.2/2018 dated 30.1.2018 issued by the Office of the Pr. 
+Commissionerate of Customs (Import), NCH, New Delhi 
+Once all the Line Nos. of IGMs are accounted for, the Inspector (MCD) shall 
+make necessary endorsement of closure of IGM and put up the same to the 
+Supdt./Appraiser (MCD), who after scrutinizing the same, shall put up the 
+case to Assistant Commissioner/Dy. Commissioner (MCD) f or approval of 
+closure of IGM. 
+Audit observed that even though the ICES application of Customs introduced 
+in 1998 provided for the facility to file IGM electronically, the ICES application 
+did not have the functionality for closure of IGM electronically and the same 
+was being done manually during the audit period 2015-16 to 2019-20. 
+Audit noticed that 16,82,734 IGMs were filed in Pan-India during the period 
+from 2015-16 to 2019-20. DG (Systems) was requisitioned in January 2021 to 
+arrange to provide the details  of IGMs filed during this period on P an-India 
+basis against which IGMs are still to be closed but no details were furnished 
+to Audit. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the details of IGMs closed against the IGMs filed is a jurisdictional matter 
+since in the current module, IGM closure does not get a perfect match with 
+IGM filed on account of complexity of the movement of goods covered in the 
+IGM. It is gathered that action related to monitoring and closure is currently 
+undertaken by the IGM Cell or Depar tment of Commissionerate. The 
+Department is seized of the issue and on implementation of the above 
+mentioned module as well as Sea Cargo Manifest and Transshipment 
+Regulations (SCMTR), the desired objective of correctly matching is hoped to 
+be achieved. 
+The purpose of closure of IGM is to ensure that all imported goods brought 
+through the carrier have been duly accounted for and applicable duties have 
+been levied. Non automation of closure of IGM leads to lack of proper 
+reconciliation and accounting for all imported goods brought through the 
+carrier and a built up of pendency which will be difficult to resolve as time 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+32 
+ 
+goes by. There is no compulsion on the jurisdictional officers to close all the 
+IGMs. 
+Recommendation 8: The Ministry may take necessary steps so that the 
+IGMs filed in ICES are closed electronically and all goods are duly accounted 
+for.  Efforts may also be made to manually close all the open IGMs. Ministry 
+should also decide and prescribe a time limit  for the closure of IGMs  as 
+undue delay/non-reconciliation is fraught with the risk of revenue leakage. 
+2.8 Non-automation of Refund process 
+According to Customs Act, 1962 (CA) any person who has paid Customs duty 
+or paid any interest, could claim for its refund in the following circumstances: 
+(a) When the goods are exported after payment of the export duty/cess 
+and the exported goods are returned to the exporter otherwise than 
+by way of resale and the goods are re -imported within one year 
+(Section 26 of CA). 
+(b) When the imported goods are found to be defective or otherwise not 
+in conformity with the specification agreed upon between the 
+importer and t he supplier of goods and the imported goods are 
+exported as such (Section 26A of CA). 
+(c) Any person who has paid duty on assessment of imported goods and 
+applies for refund of duty consequent on (i) remission /abatement of 
+duty due to pilferage of goods, dama ge of goods, and deterioration 
+in the value of goods, goods lost or destroyed, (ii) finalization of 
+provisional assessment where the duty is refundable (iii) cash 
+Security Deposit on the finalization of project import,(iv) modification 
+of an adjudication order or decision of lower authority in an appeal 
+case or revision,(v) reduction of duty on reassessment due to wrong 
+application of rate of duty, incorrect classification, adoption of higher 
+valuation (Section 27 of CA). 
+Audit observed that t hough the ICES application of Customs introduced in 
+1998, provided for the facility to file and process BsE and SBs electronically 
+but till date , the ICES application does not have functionality for refund of 
+Customs duty and the same is being done manually. 
+On being enquired whether any need/requests have been received from 
+Customs field formation regarding electronic processing and refund of 
+Customs duty, DG (Systems) stated (June 2021) that as per available records, 
+no such request seems to have been received from Customs field formations 
+and added that the requirement of enabling online refund under Customs 
+law is a policy matter.  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+33 
+ 
+Further, ICES presently has also no provisions for capturing data regarding 
+details of refund of Customs duty made against particular BE/SBs. 
+Audit is of the view that incorporation of module for refund of Customs duty 
+for processing refunds electronically through ICES would eliminate the need 
+to file a copy of BE with refund application as well as help the Department in 
+keeping record of BEs against which refund has been granted and would 
+make the monitoring mechanism of refund cases more efficient.  Further, it 
+would increase transparency in the refund process. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the ICES transactional platform is designed for linear processing in a time 
+stamp manner and the current design is not suited to back and forth 
+movement of a Bill of Entry after Out of Charge. It is reiterated that the 
+refund process cannot be automated as processing of refund may be related 
+to post -adjudication, post -Appeal etc. and amount may be reduced or be 
+sanctioned to Consumer Protection Welfare Fund, if there is unjust 
+enrichment etc. 
+The reply is not tenable as refund is mostly associated with a partic ular BE 
+and at least online workflow automation of refund process could lead to 
+more optimal automation with increased transparency. 
+In Audit’s opinion, the w ork flow related to capturing and processing of 
+refund claims needs to be automated  on the lines of the G STN System. 
+Decision of refund taking into considerations various factors like post -
+adjudication, post-Appeal, double duty refund, refund due to re-assessment 
+of duty etc could be taken by the competent authority online, with work flow 
+automation. This will lead to effective monitoring and increase transparency. 
+Recommendation 9: The Ministry may consider having online workflow for 
+capturing and processing refunds on the lines of the GSTN System  so that 
+the Department is able to electronically keep track of BEs against which 
+refund has been applied for . This would make the monitoring of refund 
+cases more efficient, effective and transparent. 
+2.9 Non-auto reversal of duty in case of double payment  
+ICEGATE is internally linked with multiple partner agencies including RBI, 
+Banks, DGFT, DGCIS, Ministry of Steel, Directorate of Valuation and other 
+various Partner Government Agencies involved in EXIM trade enabling faster 
+Customs clearance. All electronic documents / messages being handled by 
+ICEGATE are processed at the Customs' end by the Indian Customs EDI 
+System (ICES).  Any person having net banking facility in the designated bank 
+can proceed for the payment of Customs Duty through ICEGATE. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+34 
+ 
+It was observed during audit of refund claims,  that several times due to 
+technical error at the time of payment of duty, the duty amount gets debited 
+but the same does not get reflected on ICEGATE. Under such circumstances, 
+the party has to make duty payment agai n, which results in payment of 
+Customs duty twice.  
+Audit noticed that the ICEGATE/ICES does not refund the duty automatically 
+to the importer’s bank account from which the duty was erroneously paid 
+and the importer has to manually claim refund of duty pai d twice as the 
+refund module is still not automated.  Further, the double duty payment 
+does not get reflected in ICES for which confirmation of double duty payment 
+is sought from e-PAO office. 
+Hence, manual process of refund of double duty and its cross ch ecking of 
+with e-PAO office requires extra amount of resources besides blockage of 
+capital of importers. 
+Audit inquired from the Department in January 2021 to arrange to furnish 
+the reasons for non -reflection of double duty in ICES/ICEGATE and total 
+number of cases related to double payment of Customs duty due to technical 
+error during the period from 2015 -16 to 2019-20 but no reply was received 
+as of June 2021. 
+On being pointed out (August 2022), the Ministry stated (November 2022) a 
+functionality is being developed in API based Customs duty payment module 
+for ICEGATE to avoid double duty payment. The process is as under:  
+(i) Once a payment has been initiated through Net banking, the selected 
+challan(s) will be locked for initiation of another transaction for a 
+period of 2 hours. After the period of 2 hours, the lock on the challan 
+will be lifted and the user can initiate a fresh transaction with the same 
+set of unpaid challans or a new group of challans.  
+(ii) After every transaction, a Double verification API will be invoked to 
+reconfirm the transaction status before updating the transaction 
+details at ICEGATE. The response of double verification API will be 
+treated as the final and valid response.  
+(iii) These transactions are completed in real time. After the completion of 
+browser based request and Double Verification API , the transactions 
+are considered complete. 
+This will be verified in future audits. 
+2.10 Dwell Time 
+Dwell time is the measure of the time elapsed from the time the cargo arrives 
+in the port to the time the goods leave the port premises after all permits 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+35 
+ 
+and clearances have been obtained. To examine the same (dwell time of 
+export and import consignments),  Audit called for (September 2020) 
+information relating to year-wise Time Release data for Import Cargo and 
+Export Cargo of various categories of BsE and SBs for the period from 2015 -
+16 to 2019-20 mentioning various stages of consignments.  However, related 
+information was also not made available to Audit.  
+DGoS replied (June 2022) that the Time Release Study (TRS) is conducted by 
+National Committee on Trade Facilitation (NCTF) Secretariat as mandated by 
+Board. DGoS provides data in respect of 15 ports to National Committee and 
+data as requested by Audit in the format sent is being extracted in 
+consultation with NIC.  
+Audit further called for Pan India information relating to year -wise Time 
+Release data for Import Cargo and Export Cargo of various categories of BsE 
+and SBs for the period from 2015 -16 to 2019-20 mentioning various stages 
+of consignments. However, related period information was not made 
+available to Audit.  
+Department has provided a copy of report of National Committee on Trade 
+Facilitation (NCTF) Secretariat conducts the Time Release Study (TRS) for the 
+year 2022. This study covers the B ills of Entry (for import) and Shipping 
+documents (exports) filed during the first week of January  2022 for cargo 
+clearance through 15 major Customs formations, which were tracked till 
+February 7, 2022. 
+Audit noticed that the Committee on TRS for the year 2022 had made 
+following recommendations: 
+i. NTRS 2022 had identified two ‘impact dissipating’ actions namely, delays 
+in payment of duty after assessment and increase in Bills of Entry 
+involving amendment that need to be resolved through appropriate mix 
+of Policy cum administrative actions which need to be addressed in a 
+multi-pronged initiative for achievement of the NTFAP targets in a time 
+bound manner (sub-para 12.3 of TRS). 
+ii. The study has also highlighted further examination of lack of appetite by 
+the trade for Authorised Economic Operator (AEO) programme in terms 
+of share of Bills of Entry filed, despit e clear evidence of its benefits in 
+terms of higher facilitation and lower average release time taking into 
+account granular data at the IEC level (sub-para 12.4 of TRS). 
+iii. Further streamlining of faceless assessments to minimise the time taken 
+at the assessment stage, which has been noted to have increased from 
+NTRS 2021 to NTRS 2022 (sub-para 12.5 of TRS). 
+iv. It is felt that it is possible to use TRS tool for assessing the performance 
+of various custodians, including private terminal operators, ICDs and 
+CFSs using more sophisticated tools. Such a quantitative analysis would 
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+36 
+ 
+enable the government to draw up an evidence -based plan to 
+incentivise cum nudge the concerned stakeholders to enhance their 
+trade facilitation performance (sub-para 12.6 of TRS). 
+v. On the export front, even as the sample size for the study has increased 
+considerably collating the data from the Customs automated system and 
+the concerned custodians, issues relating to data insufficiency and 
+reconciliation were found in case of many Shipping B ills. This has 
+resulted in a large number of Shipping Bills to be excluded from the 
+sample. It is expected that these issues would be further ironed out 
+before the conduct of next NTRS (sub-para 12.7 of TRS). 
+vi. As regards the average export release time, there is a need to focus on 
+the larger logistics issues that take considerable time after the grant of 
+LEO, which continues to remain high despite compression of the time 
+taken in regulatory clearance, as reflected in reduction in the time taken 
+from arrival of the cargo to grant of LEO (sub-para 12.8 of TRS). 
+vii. Strengthening the infrastructure and manpower, along with setting up 
+of more and modern testing labs across the country and closer to 
+seaports, ICDs and specifically Inland Customs Ports (ICPs)  would go a 
+long way in facilitating export cargo (sub-para 12.9 of TRS). 
+Responses from the Ministry/CBIC/DGFT on the current status of the 
+implementation of the recommendations made by the TRS Committee 2022 
+were awaited (January 2023). 
+ 
+  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+37 
+ 
+Chapter 3 
+Interfaces with other applications 
+ 
+3. Interfaces with other applications 
+ICES captures data related to exports and imports. Various other IT 
+applications interact with ICES on a periodic basis. The audit scope here was 
+to seek assurance on the effectiveness of the interface of ICES with the other 
+applications of various stakeho lders.  Software Design Documents ( SDDs), 
+which were of 2010 version, in respect of only 9 out of 16  stakeholders11 
+were received from DG (Systems) .  However, related Functional 
+Requirement Specification (FRS)/SRSs and Service Level Agreements and the 
+latest user manuals for testing of message exchange between ICES and all 
+stakeholders were not made available to Audit. 
+Further, the SDDs provided to Audit have only structural information of data 
+tables and control tables for various messages. The detailed  description of 
+the fields for the tables and features & functionality of each of the messages, 
+the specific requirement for the messages were not available in the given 
+SDDs.  
+Sample Data log, which might help us to study/analyse the data flow 
+between the  stakeholders and enable us to highlight the lacunae of the 
+transmission mechanism with the various stakeholders, were not available, 
+either at the local level, with the Customs Department, or with the various 
+stakeholders.   
+Sample of data related to mess age exchange for the month of March 2021 
+exchanged between ICES and all stakeholders was called for , but not 
+provided. 
+The details of interactions with major stakeholders are given below: 
+3.1 Message exchange between Customs and DGFT 
+DGFT is under the Ministry of Commerce and Industry. The Regional Offices 
+of DGFT collect the data from offices under their jurisdiction and transmit it 
+centrally to Customs through ICEGATE. The messages are then integrat ed 
+with ICES 1.5.  The data exchange between the ICES and DGFT applications 
+are crucial in the implementation and monitoring of all DGFT export 
+promotion schemes. The SDD, Vol. VI -Part 6  (EDI.DGFT, Version 1.0  
+ 
+11Sealine/Ports, Air/Airline -console, DGFT, DGoV, SEZ, Bank, RBI, CRCL, PAO, Inland 
+Container Depot (ICD), Customs House Agent (CHA), Principal Chief Controller of Accounts 
+(Pr.CCA), Directorate of Revenue Intelligence (DRI), Directorate General of Central 
+Intelligence and Statistics (DGCIS), e-Sanchit & Partner Government Agency (PGA) 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+38 
+ 
+September 2010) outlined a total number of 13 messages to be exchanged 
+between ICES 1.5 and DGFT through EDI. 
+Out of 13 number of messages listed to be exchanged between ICES and 
+DGFT, DG (Systems)  confirmed (March 2021)  that only 5 numbers of 
+messages, as enumerated bel ow, were operational/ functional during the 
+year 2019-20:  
+Table No.  3.1: Messages in operation between ICES and DGFT 
+Sl. No. Message Description From  To  
+1. IE (Importer/Exporter) Code Directory DGFT  Customs  
+2. IE Code Acknowledgement Customs  DGFT  
+3. License Information DGFT  Customs  
+4. License Acknowledgement Customs  DGFT  
+5 Shipping Bill Data Customs  DGFT  
+Source: SDD, Vol. VI -Part 6 (EDI.DGFT, Version 1.0, September 2010) 
+A total of eight message exchanges, between the ICES and DGFT, were not 
+operational/functional during the year 2019-20, as enumerated below: 
+Table No. 3.2: Messages not in operation between ICES and DGFT 
+Sl. No. Message Description From To 
+1. Notification Directory Customs DGFT 
+2. Export Obligation Discharge (EODC) Certificate DGFT Customs 
+3. Acknowledgement of EODC Certificate  Customs DGFT 
+4. SB Acknowledgement DGFT Customs 
+5. Non receipt of SB  message Customs DGFT 
+6. Non receipt of acknowledgement from DGFT Customs DGFT 
+7. Bill of Entry Data Customs DGFT 
+8. BE Acknowledgement DGFT Customs 
+Source: SDD, Vol. VI -Part 6  (EDI.DGFT, Version 1.0, September 2010 ) and 
+DG (Systems) reply 
+The following were envisaged as the key advantages in ICES 1.5: 
+i) Centralized Directory Management, Centralized License and Bond 
+Management, reduced interface between officers and trade, 
+ii) Reduction in manual administrative processes, resulting in f ewer 
+errors and no duplication, 
+iii) SMS/ Email based update on status of document to 
+Importers/Exporters etc. 
+Automated transmission of SB, BE data and its acknowledgements are 
+necessary for timely issue of l icenses, calculation of export obligations on 
+basis of duty exemptions and automated message transmission of EODC will 
+make the recovery of duty from  defaulters timely and ensure better 
+coordination between DGFT and Customs.  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+39 
+ 
+Absence of Notification Directory may lead to irregular benefits to traders, 
+and manual discharge of Export Obligation Discharge Certificate may result 
+in undue delay in recovery of duty from defaulters.  Further, if all messages 
+are operational or functional , there will be better coordination between 
+Customs and DGFT. 
+It needs to be highlighted that in the absence of necessary documents such 
+as SLA, SRS, FRS, any sample data of me ssages exchange between ICES and 
+DGFT applications and due to non -possibility of verifying the exchange of 
+messages through UAT, assurance could not be derived on the effectiveness 
+of message exchanges. 
+The e arlier Audit Reports /Paras that mentioned non -integration with 
+Customs EDI systems are summarised below: 
+i) Performance Audit Report No. 13 of 2015 mentioned non-integration 
+of the various stakeholders EDI applications viz., ICES, DGFT EDI 
+System, SEZ Online, wherein it was recommended to improve 
+interconnectivity with other agencies and the Department replied 
+that online EODC work is underway with DGFT to finalize the message 
+format for online receipt of EODC from DGFT , but results are yet to 
+be observed.  
+ii) Para 2.3 of the same Report revealed that the exchange rates were 
+incorrectly adopted which was a result of delay in updation of 
+notifications. 
+iii) In Para 2.1.2 of the Performance Audit Report on MEIS/SEIS No. 5 of 
+2020, Audit observed that most of the delay in issue of the scrips was 
+due to non-integration of SEZ exports module with the Customs ICES 
+network. The non -integration resulted in non -receipt of SB data of 
+SEZs in the DGFT Shipping Bill Repository. 
+iv) Para 2.1.2 of the Compliance Audit Report No.4 1 of 2017 revealed 
+that irregular registration of licence for imports without Standard 
+Input Output (SION) norms had resulted in loss of revenue. 
+v) Similarly, Para 4.1 of Compliance Audit Report No.1 of 2017 revealed 
+excess utilization of duty credit in resp ect of instruments issued 
+under Chapter 3 of Foreign Trade Policy through manipulation of 
+registration of scrip/use of scrip. A robust EDI communication 
+between DGFT and Customs might have prevented huge loss of 
+revenue to Government exchequer. 
+On being pointed out (August 2022), the Ministry stated (November 2022) in 
+respect of N otification Directory that API was not to be developed , as 
+discussed in the meeting held with DGFT on 11.12.2020 and Notification 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+40 
+ 
+Directory shall be shared on email within the Depa rtments. On Export 
+Obligation Discharge (EODC) Certificate and ACK , API has been made live 
+through which EODC details are received by DGFT since December 2020. On 
+SB Acknowledgement, the Ministry stated that SB API is live between DGFT 
+and Customs and ACK for the same is shared as response from DGFT for the 
+SB API since December 2020. 
+With regards to non -receipt APIs, it was stated that it was not part of the 
+Technical Document Phase 1 or 2. For Bill of Entry API and ACK, API has been 
+made live where Cu stoms shares BE list for Licenses issued till T -1 day 
+through post BE API and DGFT calls get BE API with BE number to fetch BE 
+details for any particular BE. 
+DGFT, New Delhi , in response regarding the status of message exchanges 
+between Customs and DGFT wh ich were specified by the DG (Systems) to 
+have been made live, stated (March 2023) that out of 17 message exchanges 
+including four 12 additional messages, 14 are active except the remaining 
+three messages {(i) Notification Directory, (ii) Non-Receipt of SB Message and 
+(iii) Non-receipt of Acknowledgement from DGFT}. However, DGFT further 
+stated (March 2023) that there were issues in respect of six active messages 
+detailed below: 
+Table 3.3: Issues faced by the DGFT with existing Messages 
+Sl. 
+No.  
+Message 
+Description 
+From  To  Issue 
+1 Shipping Bill 
+Data 
+Customs DGFT 1. Old records are still being set through 
+MFTP. 
+2. Records are not transmitted to DGFT 
+but shown on Public enquiry that the 
+data has been sent. 
+3. Amendment of shipping bill not 
+transmitted to DGFT. It is issued in 
+physical letter, which is then updated 
+in DGFT systems manually. 
+2 Get 
+Shipping Bill 
+Data 
+Customs DGFT API does not give output to records more 
+than two weeks old. 
+3 Bill of Entry 
+Data 
+Customs  DGFT 1. Duty saved value is not coming in 
+case of EPCG licenses. 
+2. Item wise ITCHS code is not available 
+for debited item. 
+3. Debit for TRQ licenses is exceeding 
+allowed quantity. 
+4. Online Debit of Post Export EPCG not 
+happening for EDI ports 
+ 
+12 Four additional message exchanges  (i) Port Details, (ii) EDPMS Data (iii) Get Bill of Entry 
+and (iv) Get Shipping Bill 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+41 
+ 
+Sl. 
+No.  
+Message 
+Description 
+From  To  Issue 
+5. Bill of Entry quantity is found to be 
+missing in get Bill of Entry API for TRQ 
+schemes 
+4 Port Details Customs DGFT EDI/Non- EDI ports are shared but SEZ 
+ports are not  shared as part of this 
+message exchange. 
+5 Licence 
+information 
+DGFT Customs SEIS and MEIS are still being sent through 
+file based method rather than API. 
+6 EODC DGFT Customs Public enquiry portal is not available at 
+ICEGATE; hence it becomes tough for 
+exporters to show EODC status to Port 
+officer. 
+Source: Ministry of Commerce and Industry, DGFT, New Delhi letter dated 27 March 2023 
+3.2 Linking of ICES with Banks 
+Options for e -payment and payment through any designated bank branch 
+are available through the Customs EDI System.   The Importer/Exporter can 
+make the duty/ cess payment through the designated bank branches or -
+payment through any of the designated bank branches. After the assessment 
+of the BE/SB, the challan information is made available to the Bank, the 
+Customs House and at the EDI System. The SDD, Vol. VI -Part 5 (EDI-Bank, 
+Version 1.0 September 2010) outlined a total number of 13 messages to be 
+exchanged between Customs and Banks through EDI (ICES 1.5). 
+Out of the 13 messages mentioned to have been exchanged between the 
+Bank and ICES, DG (Systems), stated (December 2020) that only five numbers 
+of messages are exchanged between ICES and Bank as detailed below. It was 
+noted that an additional two number of messages (Sl. No 6 and 7), other than 
+those mentioned in SDD, were being exchanged between ICES and Bank. 
+Table No. 3.4: Messages in operation between ICES and Bank 
+Sl. 
+No. Message Description  From  To  
+1. Challan Message  Customs Bank 
+2. Challan Message after receipt of Duty Bank  Customs 
+3. Challan Summary Statement at the End of Day Bank Customs 
+4. End-of-day Challan summary Message Customs  Bank 
+5. Drawback Scrolls Customs Bank 
+6. Cess Challan Message Customs Bank 
+7. Receipt of Cess payments  Bank Customs 
+Source: SDD, Vol. VI -Part 5 (EDI. Bank, Version 1.0, September 2010) 
+A total of eight message exchanges, between the ICES and Banks, were not 
+operational/functional during the year 2019-20, as enumerated below: 
+ 
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+42 
+ 
+Table No. 3.5: Messages not in operation between ICES and Bank 
+Sl. No. Message Description From To 
+1. End-of-day Cess summary message Customs  Bank 
+2. IE Code information   Customs  Bank 
+3. Non - receipt of Challan Information by bank Customs  Bank 
+4. Confirmation of non-payment of Duty Bank Customs 
+5. Scroll after remittance of Drawback proceeds Bank Customs 
+6. Non - acceptance of Scroll Bank Customs 
+7. Non - credit of Drawback Bank Customs 
+8. Allotment of Account Number Bank Customs 
+Source: SDD, Vol. VI -Part 5 (EDI.Bank, Version 1.0, September 2010)  and DG 
+(Systems) reply. 
+Messages such as ‘scroll after remittance of drawback proceeds’, ‘non-credit 
+of drawback’, IEC, confirmation on non -payment of duty  etc. are not 
+exchanged through ICES. This calls for manual administrative processes for 
+manual checking of required documents resulting in increased risk of error, 
+delayed proces sing, deficient interaction between exporters and 
+government agencies etc. which were all designed to be mitigated through 
+ICES.  This may also lead to incorrect calculation of drawback, short/excess 
+payment of duty drawback to exporters and non -recovery of export benefit 
+granted to defaulter exporters and thereby revenue loss to the Government 
+exchequer. 
+It needs to be highlighted that in the absence of necessary documents such 
+as SLA, SRS, FRS, any sample data of messages exchange between ICES and 
+Banks applications and due to non-possibility of verifying the exchange of 
+messages through UAT, assurance could not be derived on the effectiveness 
+of message exchanges. 
+On being pointed out (August 20 22), the Ministry stated (November 2022) 
+that ICES shall share challan/transaction details with ICEGATE through APIs 
+which shall be on real time basis. These APIs are to be developed by ICES and 
+ICEGATE and the same are under discussion. 
+Recommendation 10: Ministry may expedite the development of APIs for 
+sharing of challans/warehouse details between ICES and ICEGATE in a time 
+bound manner. 
+3.3 Sharing of RBI Export Outstanding Statement (XOS) data/caution 
+list with ICES 
+Export Data Processing and Monitoring System (EDPMS) is an online system, 
+launched by RBI, on March 1, 2014, for monitoring all export activities in 
+India. With this system, all banks have come on a single platform, thus 
+bringing uniformity in the modus operandi on exports related transactions in 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+43 
+ 
+India.  One of the benefits of EDPMS is integration of banks with the RBI 
+system, giving ease of the following: 
+a. Handling of Shipping Bills 
+b. Unravelling delayed utilisation of advance received for exports 
+c. Detect Export Outstanding Statement (XOS)/Caution (Export 
+Outstanding ) list 
+d. Simplifying overall process as everything is online. 
+SB data/BE data is matched with the data on inward remittance of export 
+proceeds from the exporters so as to immediately track  the status of each 
+consignment exported with all instruments and also allows exporters to 
+claim benefits faster. RBI stipulates that exporters whose data are not 
+captured by the software will figure in a Caution List and shall be denied 
+packing credit whi ch hampers their exports and it also leads to non -
+negotiation of ‘non-letter of credit bills’. So even if the goods reach the buyer 
+on time, the banking documents get delayed which will lead to extra cost and 
+demurrage charges to be paid by the exporters. 
+There are seven message exchanges between Customs and the Reserve Bank 
+of India (RBI) in ICES which are functional/operational as shown below. 
+Table No. 3.6: Messages in operation between ICES and RBI 
+S. No. Message ID Description 
+1 CHRBE01 SB information on Let Export Order (LEO) 
+2 RBCHE01A SB – Acknowledgement 
+3 CHRBE02 SB Cancellation 
+4 RBCHE02A SB Cancellation -Acknowledgement 
+5 RBCHE03 FE Realization Report 
+6 CHRBE03A FE Realization Report .-Acknowledgement 
+7 CHRBI01 BE Information 
+Source: Reply received from DG (Systems) in reference to AR No.11 of 2014 
+There is no message exchange with ICES relating to generation of XOS 
+data/information and caution list maintained by RBI. 
+Thus, ICES is incapable of flagging further exports/imports by 
+exporter/importer included in XOS information/caution list maintained b y 
+RBI, and to detect Defaulter Exporters who have not realised the export 
+proceedings within stipulated time allotted in RBI Guidelines resulting in 
+non-recovery of export benefits granted. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that in respect of message exchange with ICES relating to generation of XOS 
+data/information and caution list maintained by RBI, the prospects will be 
+explored in consultation with RBI. 
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+44 
+ 
+Recommendation 11: Ministry may explore mapping/cross-verifying of RBI 
+XOS data with caution list maintained by CBIC for identifying default cases 
+for effective monitoring of export proceeds realisation. 
+3.4 Integration of Special Economic Zones (SEZ) online with Customs 
+ICES 
+Special Economic Zones (SEZs) are significant for the Customs Department 
+because they promote exports of goods and services and generate 
+employment opportunities for the population. There are various benefits of 
+SEZs viz. they create an e conomic enclave to cater to overseas markets, 
+promote investment, both domestic and foreign, help earn significant 
+Foreign Exchange through exports and can help develop world class 
+infrastructure facilities. 
+With the combined efforts of the Ministry of Commerce and Industries and 
+Ministry of Finance, an initiative ha d been taken from August 2015, to 
+integrate SEZ Online System with EDI System of CB IC commissioned at 
+Airports and Sea Ports across India so as to facilitate smoother clearance of 
+cargo for SEZ Units, reducing manual interface, automatic acknowledgement 
+of receipt of cargo at SEZ, System based Closure of IGM lines and marking of 
+shipment success etc. and thereby developing  co-ordination and controls 
+over movement of goods between SEZ and Custom Ports. Also with the 
+automated process of generation of EGM in EDI System, which provide the 
+EGM information for SEZ Exports to SEZ Online system, the need for manual 
+process of bringing EGM from Port, submitting shipment status to Customs 
+for verification and verification of proof of export by Customs c ould be 
+dispensed with. 
+It was also noted that data in respect of BsE in the SEZ Online system are not 
+correlated with IGM data. As was confirmed (March 2021) by DG (Systems), 
+5,90,253 number of IGM data were transmitted to SEZ Online from ICES but 
+only 2,13,699 numbers of BsE were integrated with IGM data transmitted to 
+ICES for the period 2019-20. 
+ICES application also does not have  the functionality for closure of IGM 
+electronically and the same is being done manually, which otherwise could 
+have enhanced the effectiveness of the System . Manual intervention may 
+result in non -timely closure of IGM which may lead to non -recovery of 
+duty/charges from importers who have filed BEs beyond permissible time. 
+DG (Systems) also mentioned that there were no data transmission for SBs 
+and ‘Let Export Order’ (LEO) in ICES 1.5. i.e., there were no message 
+exchanges in respect of SB data, from SEZ Online to ICES. 
+
+  Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+45 
+ 
+The absence of automated transmission of SBs from SEZ, may result in delay 
+in export procedure i.e., delay in the process of cargo release, increase in 
+processing time, increased error possibilities and lead to increase of export 
+cost in form of demurrage charges, rent and rates charged by the port 
+authority. Manual administrative processes may also lead to delayed 
+payment of Duty Drawback to exporters.  
+In Para 2.1.2 of Performance Audit Report No. 5 of 2020 on MEIS/SEIS, Audit 
+observed that most of the delay in issue of the scrips was due to non -
+integration of SEZ exports module with the Customs ICES network. 
+Further in Para 1.20. 1 of Compliance Audit Report No.5  of 2016,  it was 
+mentioned that audit of the SEZ online system application revealed that the 
+data captured was incomplete, inconsistent and at times incorrect without a 
+linkage with the ICES system of the CB IC. DoC and D evelopment 
+Commissioners of SEZ also could not avail of the system as its Dashboard and 
+MIS.  
+Though the Department committed to rectify the deficiencies/lacuna in the 
+system, the follow up audits revealed that the deficiencies still persist. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that migration of SEZ operations to Customs has been proposed to be done. 
+Registration module for SEZ Units has been developed and is under testing. 
+Audit had inter -alia recommended in PA No. 19 of 2022 – ‘Working of 
+Customs Bonded warehouse and Free Trade Warehous ing Zones’ about 
+having a time bound plan for devising an IT strategy for 
+integration/reconciliation of ICES with SEZ online. 
+Recommendation 12: Ministry should integrate SEZ Online with ICES at the 
+earliest for better monitoring of SEZ operations (both EXIM and DTA 
+transactions) and for the ease of doing business in SEZs. 
+  
+
+                                                                       Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+47 
+ 
+Chapter 4 
+IT Governance and Management 
+4.1 System documentation of ICES project 
+As per para 3 of Part A of the MoU, the scope of work under the project of 
+ICES clearly states the documentation for the ICES which includes requirement 
+specifications, technical documents, user manuals and test cases.  Accordingly, 
+the scope of work included preparation o f Software Requirements 
+Specification (SRS), Software Design Document (SDD) and User Manuals for 
+the following Customs functional areas: 
+(i) Service Centre (Import and Export); 
+(ii) Imports Declaration Processing; 
+(iii) Exports Declaration Processing; 
+(iv) Information / Message interchange between internal and external 
+stakeholders (DGFT, CHA, Banks, RBI, Custodian, DGCIS, etc.); 
+(v) Interface requirements with external applications (ICEGATE, RMS) 
+Audit observations on this aspect are as under: 
+4.1.1 Updation of SRS and SDD 
+The Software Requirements Specification (SRS) provides detailed mapping of 
+the Customs business processes through various modules / functionalities of 
+software application  - ICES. Similarly, Software Design Document (SDD) 
+describes the architecture and system design of the ICES and User Manual 
+describes information on 'how to use a product' to end-users. 
+Audit scrutiny revealed that the SRS and SDDs were last documented in 2010. 
+These documents were not updated even though many changes had taken 
+place since then. The documentation of such changes at regular intervals in 
+the main document is crucial to run the IT project smoothly as envisaged in 
+MoU. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the issue has already been taken up with NIC for early completion of the 
+documentation, in terms of the MoU. Action has been initiated  for hiring 
+team of competent resources to complete the said task. As and when 
+documents are completed, the same will be shared. 
+As per para 3 of Part A of the MoU, the scope of work under the project of ICES 
+clearly states the documentation for ICES which  includes requirement 
+specifications, technical documents, user manuals and test cases. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+48 
+ 
+Further, in terms of Para 2 of point no. 11 of clause A read with point no. 12 
+of Clause B of the 2012 MoU, NIC is responsible for preparing/updating the 
+documentation of SRSs, SDDs etc. and NICSI is entrusted with the 
+responsibility for providing the skilled technical resources under the 
+guidance of NIC development team for documentation assignment. 
+Updated and complete documentation helps keep track of all aspects of the 
+application and helps in identifying and tracking the changes in the software. 
+Recommendation 13: In addition to immediate updating of SRS and SDD, 
+the Ministry should also ensure that SRS and SDD is kept up to date at 
+regular intervals to factor all the important changes made in the 
+application. 
+4.1.2 Non-updation of User Manuals 
+Similarly, User Manuals of ICES published in 2010 to 2013, were not updated 
+thereafter, even though there were substantial changes that occurred in the 
+structure of the database and duty component, particularly after the 
+introduction (July 2017) of GST regime in India.   The details of these manuals 
+are as under: - 
+Table No. 4.1: List of user manuals & their latest date of publication 
+Sl. 
+No. 
+User Manual Last Published Purpose  
+1. ICES Service 
+Centre – Imports 
+Version 1.1 
+1st June 2013 This document describes the process of entering/ 
+modifying documents related to imports namely 
+Bill of Entry (BE), Import General Manifest (IGM) 
+and Console Manifest. 
+2. ICES Service 
+Centre – Exports 
+Version 1.1 
+1st June 2013 This document describes the process of 
+entering/modifying documents related to 
+Exports. 
+3. ICES Primary 
+Processing – 
+Imports Version 
+1.1 
+11th May 2013 This document describes the process of entering 
+/ modifying documents related to imports 
+namely BE, Import General Manifest (IGM) an d 
+Console Manifest. 
+4. ICES Primary 
+Processing – 
+Exports Version 
+1.1 
+15th July, 2011 The purpose of this document is to describe the 
+process of entering / modifying documents 
+related to Exports namely Shipping Bill (SB) and 
+Export General Manifest (EGM). 
+5. Directory 
+Management 
+Version 1.0 
+20th 
+November, 
+2010 
+The purpose of this document is to describe the 
+process of Directory Management. 
+Source: Users-Manual provided by DG (Systems) 
+On being pointed out by Audit, DG (Systems) stated (March 2021) that these 
+documents (SRS, SDD and Manuals)  were prepared when the entire ICES 
+application was going through an overhaul and migration from 1.0 to 1.5 
+version. All the subsequent changes are documented in the patch file, patch 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+49 
+ 
+mail as well as in a detailed Patch Tracker, even if the terminology as SDD or 
+SRS is not used as such. However, details of the said patch file/patch mail and 
+related records has not been made available to Audit. 
+DG (Systems) informed (June 2021) Audit, while confirming that these are 
+the latest version of SRSs, SDDs and User Manuals, that in terms of para 2 of 
+point no. 11 of clause A read with point no. 12 of Clause B of MoU , NIC is 
+responsible for preparing/updating the documentation of SRSs, SDD s etc. 
+and NICSI is entrusted with the responsibility for providing the skilled 
+technical resources under the guidance of NIC development team for 
+documentation assignment. 
+For a vast and critical application like ICES 1.5, which deals with massive 
+information on a daily basis, updation of document of SRSs, SDDs and User 
+Manuals is a must. The presence of updated documentation helps keep track 
+of all aspects of the application and helps in identifying the changes in the 
+quality of a software product.  Successful documentation will make 
+information easily accessible, help new users learn quickly, simplify the 
+product and help cut support costs. 
+Updated user manuals also provide details of changes in the ICES application 
+to users and guides them to use the application in a secure manner. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+that the issue has already been taken up with NIC for early completion of the 
+documentation, in terms of the MoU. Action has been initiated for hiring 
+team of competent resources to complete the said task. As and when 
+documents are completed, the same will be shared. 
+Recommendation 14: The updating of user manuals consistent with 
+changes, should be regularly carried out in a time bound manner to avoid 
+accumulation of requirements. 
+4.2 Change Management 
+In ICES application, changes can be categorized into: 
+(i) Routine changes due to issuance of Notifications relating to changes 
+in duty rates of BCD, IGST, Antidumping duty, Cess etc. (Directory Change 
+Management) 
+(ii) Structural change in ICES application due to introduction of new 
+modules and functionalities added in it. (Structural Change Management) 
+4.2.1 Directory Change Management 
+The master data information is common to various modules of ICES ; hence 
+there are separate tables referred to as Directories.  All applications 
+implemented on the centralized system of CBIC, namely – ICES, Automation 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+50 
+ 
+of Central Excise and Service Tax (ACES) and RMS access these Directories for 
+its processing.  Directory management can be summarized as follows: 
+(i) National System Manager (NSM) at the highest level assigns 
+directories to different sites which are responsible for maintenance 
+of these Directories. 
+(ii) System Manager at each site assigns the roles of Directory Offic er 
+(DIROFF) and Directory Manager (DIRMGR) to the users to perform 
+operations on the Directories assigned to their site.  
+(iii) DIROFF: Directory Officer has the privilege to make new entries in the 
+directories assigned for the role, modify these entries, genera te 
+checklist and submit these entries to the Directory Manager for 
+approval. 
+(iv) DIRMGR: Directory Manager has the privilege to approve the entries 
+thereby making them available to external users, reverting entries to 
+DIROFF in case the entries are not correct , and modify the entries if 
+required. 
+The Board has issued (June 2015) a Standard Operating Procedure to 
+Directory Management Site (DMS) for updation of directories pursuant to 
+any changes and has also approved (March 2017) a system of Peer Review of 
+Directory updation after appointing nodal officers for such review.  As per 
+this SOP, the nodal officer of the concerned Peer Review Site (PRS) shall 
+review the directory to ensure that the notification has been updated 
+correctly and in time. E -mail intimation to this effect shall be sent to the 
+nodal officer in the Board, National System Manager, DG (Systems) and the 
+DMS. 
+In case the PRS identifies any inaccuracy in the updation of the notification, 
+the nodal office shall contact the DMS immediately to resolve the issue. In 
+case the issue remains unresolved, the same shall be brought to the notice 
+of NSM, DG (Systems) and nodal officer in Board. 
+In case of delay in updation, the PRS shall follow the same procedure and 
+further advise the DMS to inform System Managers regarding the delay so 
+that the latter can take rectification action. 
+Whenever there is a delay/inaccuracy in updation of ICES directory for any  
+reasons, the list of the affected BsE/SBs are taken immediately after 
+updation and circulated to Customs sites for recovery of shortfall of revenue, 
+if any. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+51 
+ 
+Details of various directories assigned to different sites by National System 
+Manager for updation , modification and removal of entries etc. , are as 
+under: 
+Table No. 4.2: Details of Directory Management Site (DMS) and Peer 
+Review Site (PRS) 
+DMS Name of Directories PRS 
+Chennai Customs 
+House 
+(INMAA1) 
+Antidumping Directory, 
+Tariff Value, Notification 
+Directory, Safeguard Duty, 
+RITC (HS) Directory 
+Vishakhapatnam Custom 
+House 
+(INVTZ1) 
+JNCH, Nhava Sheva 
+(INNSA1) 
+BCD Directory, Custom 
+Cess, CVD Directory, CE 
+Cess, RSP Directory 
+ACC, Delhi 
+(INDEL4) 
+ICD, Patparganj 
+(INPPG6) 
+Cess Directory, Exchange 
+Rate Directory, Drawback 
+Directory 
+Bengaluru Custom House 
+(INBLR4) 
+Source: Reply furnished by DG (Systems) 
+In response to an audit query (December 2020) , DG (Systems)  informed 
+(March 2021) that all Customs Notifications, related to General Exemptions, 
+FTAs and Export Promotion Schemes, ADD and Safeguards are mapped in the 
+ICES and there is no delay and no inaccuracy communicat ed by PRS in 
+updation of exchange rate/Customs/IGST/Central Excise Exemption 
+notifications and duty rate directories etc.  
+Audit called (March 2021) for the records of e -mails related to updation of 
+Directories by DMSs and review done by PRSs but the same was not provided 
+to Audit.  To verify the claim of DG (Systems) that there were no delay and 
+no inaccuracy in updation of various types of Directories, Audit requisitioned 
+the data dump of at least one year, which was not provided to Audit. 
+On being pointed out (August 2022), the Ministry furnished only the list of 
+notifications with date of notification and date on which these notifications 
+were entered in ICES (November 2022). 
+However, records of e-mails related to updation of directories by Directory 
+Management Sites and review done by Peer Review Sites was not provided 
+to Audit as per the stipulated SoP. In the absence of the same, Audit cannot 
+derive assurance as to the timely and correct updation of Directories. 
+  
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+52 
+ 
+4.2.2 Structural Change Management 
+As per Memorandum of Understanding (MoU) between CBIC, NIC and NICSI 
+dated 21.12.2018, vide clause ‘A’ Scope of work to be carried under the 
+project, (under para 2), the ICES application is required to be maintained by 
+providing software updates along with installation scripts for the existing ICES 
+modules as per the specifications received from CBIC and Ch ange 
+Management Policy agreed between NIC and CBIC. 
+Further, as per para 5 (D) of ibid MoU, it is the responsibility of the 
+Department to get  the application audit done through a third party for all 
+aspects of ICES and software updates and analyse the recommendations and 
+communicate to NIC in writing for implementation of the recommendations. 
+On being asked (February 2021) regarding Change Management Procedure 
+Document, DG (Systems) informed (March 2021) that ICES application has 
+been designed, developed and maintained as per the tripartite MoU signed 
+amongst CBIC, NIC and NICSI and explained the detailed procedure followed 
+from the stage of design of the module, development, testing , and 
+implementation in the system . However, the Change Management 
+Procedure Document was not provided to Audit. The stages of the same, as 
+detailed by DG (Systems) are as under: 
+Stage 1:  Whenever there is a requirement of adding or changing any 
+functionality in the ICES as per the evolving legal mandate such as Customs 
+Act/ Notifications / Regulations / Circulars /Instructions, it is discussed with 
+the development team. Depending on the merit of the case and depending 
+on the complexity, the development team is given an approach paper either 
+through email or an approach paper describing the software requirements.  
+Stage 2:  Accordingly, the changes/modifications are undertaken by the 
+development team. The changes are given in the form of a software patch. 
+The development team does not have any rights or access to execute the 
+patch either in pre -production or in production environment. Only the 
+development environment is available to them. The software patch is 
+uploaded by the Development team on FTP to be executed by the Operations 
+Team. Each patch file also has a readme document which enlists the changes 
+being done by the patch. 
+Stage 3:  Once the software patch incorporating the required changes is 
+uploaded by the Development team on the FTP, an email is s ent to 
+DG (Systems) officers for approval. The approval is given by the DG (Systems) 
+officers (of the rank of Assistant Director or above) to the Operation Team to 
+download the patch file from FTP and execute it.  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+53 
+ 
+Stage 4: The patches are applied in pre -production first and are tested by 
+some ICES users in test environment. Subsequently, the approval is given for 
+executing in production. 
+Hence, DG (Systems) implements the changes through patch files and have 
+no SRS/SDDs of the structural changes/modificatio ns made in the ICES 
+Application after 2010. 
+DG (Systems) also stated (March 2021) that currently the development team 
+of ICES comprises of NIC scientists and NICSI resources engaged as per the 
+tripartite MoU signed amongst CBIC, NIC and NICSI. Further, there is a robust 
+mechanism with defined responsibilities a nd role-based access to carry out 
+any change in the ICES application which has stood the test of time.  It would 
+be incorrect to infer that the essence of having an 'SRS/SDDs' is not being 
+applied and followed.  DG (Systems)  stated that the SRS/SDD documen ts 
+already shared with Audit were prepared when the entire ICES application 
+was going through an overhaul and migration from 1.0 to 1.5 version.  All the 
+subsequent changes are documented in the patch file, patch mail as well as 
+in a detailed Patch Tracker, even if the terminology as SDD or SRS is not used 
+as such. No patch can be applied in pre -production and production without 
+the express approval of DG (Systems) officers. Each patch approval and its 
+execution by the Operations team is recorded in the Patch Tracker shared by 
+the Operation team on a daily basis with the DG (Systems) officers and the 
+Development Team.  ICES is an extremely dynamic application where most 
+changes that were required came with pressing timelines.  The above 
+process ensures a tra ck of all the changes along with their approvals while 
+also helping in timely and quick delivery. 
+Audit requisitioned (August 2020 and January 2021) to arrange to provide 
+details/records related to the whole development cycle of new 
+functionalities/module added in ICES during the period from 2015 -16 to 
+2019-20 with details of application audit done through a third party on all 
+aspects of ICES and software updates along with  records of expected 
+modules for development and implementation (i.e. currently in pipeline) and 
+their present status. 
+With regards to structural changes, DG (Systems) provided (February 2021) 
+an ‘Index of Advisories issued by Directorate of Systems with respect to ICES’ 
+during 2017-20 in which 16 changes13 were shown. 
+ 
+13 These included Implementation of ROSL Scrolls, Implementation of changes in ICES for 
+late fees, Alignment of State Codes of ICES with GSTN, Changes in BE/SB, IGST refund for 
+non EDI sites, IGST Refunds for EDI sites in ICES, New Cess applied, Goods Registration online 
+on ICEGATE, UQC, SCMTR, Turant Customs, Border Crossing Report at LCSs for Transshipped 
+Cargo, Project Import, Custodian Code Warehouse Mapping, e -Sanchit and Container 
+Scanning Module. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+54 
+ 
+DG (Systems) also provided (October 2021) a list of ICES patch tracker which 
+included 10 changes in the import module and 10 changes in the export 
+module. 
+But no records relating to development cycle of new module/functionalities 
+added. Further, the details provided do not have details of the stages of the 
+Change Management Procedure as indicated by DG (Systems).   Moreover, 
+the trail of mails has also not been made available to Audit. The Department 
+has also not provided details of  third party audit of ICES and software 
+updates. 
+On being pointed out (August 2022), the Ministry stated (November 2022) 
+the issue has already been taken up with NIC for early completion of the 
+documentation, in terms of the MoU. Action has been initiated for hir ing 
+team of competent resources to complete the said task. As and when 
+documents are completed, the same will be shared. 
+Recommendation 15: Ministry must ensure that protocols are properly and 
+completely followed at the time of sign off of any change manag ement. 
+They must ensure that all changes including testing and approval of such 
+changes are properly documented. 
+4.3 Help desk and end-user support system 
+A help desk is an important component and a multi -dimensional resource, 
+designated to  help in reducing downtime in IT  services and functions and 
+making them available for maximum time. It is specially focused on end user 
+functionality, and, thus, is responsible for quick resolution of immediate 
+needs, incidents and technical issues of end users. 
+Further, as per Memorandum of Understanding (MoU) dated 21.12.2018, 
+vide clause  A (7), the scope of work to be carried out under the project 
+relating to help desk and end user support system is to provide Level -2 
+(provided by Regional Centers Teams regarding  the ICES related problems 
+forwarded by Level -1 help desk)  and Level-3(provided by NIC team of ICES 
+for the modifications of applications as suggested by Level -2 team and 
+approved by CBIC team) support to the ICES users for resolution of problems 
+escalated by Level -1 (refers to  the helpdesk managed by the System 
+Integrator to provide first level technical support to the user) support team. 
+Audit requisitioned (December 2020) from DG (Systems) details regarding:  
+(i) Number of tickets raised for technical support forwarded by L -1 
+service desk to L -2 support team and for technical support requests 
+forwarded by L -2 support team to L -3 support team, number of 
+tickets resolved and average time taken for resolution, 
+
+                      Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+55 
+ 
+(ii) Details of modification of ICES application carried out by L-3 support 
+team as suggested by L-2 support team, and, 
+(iii) The list of all tickets raised from 1st October 2019 to 31stMarch 2020 
+on ICES, 
+(iv) How does DG (Systems) monitor the problems escalated by Level -1 
+Support team till its resolution etc? 
+On being pointed out (August 2022), the Ministry furnished details of 
+number of tickets raised, number of tickets resolved, and number of tickets 
+escalated to next level and average time taken for resolution. 
+However, the Ministry did not furnish details/parameters fixed for time 
+prescribed for resolutions of ticket raised under L1, L2 and L3 supports.  In 
+the absence of which Audit cannot comment on the efficiency of help desk 
+and user support system. 
+Delay by L1, L2 and L3 support  teams in resolving incidents may result in 
+delay in import/export procedures i.e. delay in the process of cargo release, 
+increase in processing time and could lead to increase of export/import cost 
+in the form of demurrage charges, rent and rates charged by the port 
+authority/Custodian etc. 
+Recommendation 16: Ministry may prescribe: 
+(a) Time limits for resolving or escalating the complaints, 
+(b) Average time, for resolution with useful/suitable details of tickets 
+which take unduly long time be captured and monitored. 
+4.4 Internal audit 
+In response to Audit observation relating to lack of Internal Audit system in 
+ICES 1.5 (Para no. 2.6 of Audit Report no. 11 of 2014), DGoS replied that a 
+Working Group has been constituted comprising Officers of the Directorate 
+of Audit and field formations to conduct audit on the functioning of ICES 1.5 
+for detecting deficiencies and suggesting improvement in the application. 
+Audit requisitioned (December 2020) from DG (Systems) about the details of 
+Audit carried out by the “Working Group” constituted as above on the 
+functioning of ICES during the period 2015 -2020 along with the Working 
+Group’s fact finding reports, action taken on deficiencies noticed or 
+suggestions made for its improvement. 
+On being pointed out (August 2022), the Ministry furnished (November 
+2022): 
+a) Audit report of the Working Group 
+b) Action taken on deficiency noticed by the Working Group 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+56 
+ 
+The Working Group Audit report stated that it had studied how to do audit 
+of applications of IT system for detecting deficiencies with an aim to suggest 
+improvements in the ICES application. The previous CAG reports were taken 
+as basic back ground material for the study and recommendations. 
+On the deficiencies noticed by Wo rking Group, an Action Taken rep ort was 
+sent (August 2018) to CBIC. 
+It has been noticed from the DG (Systems)  response of August 2018 that 
+against some of the areas pointed by the Working Group, it was mentioned 
+that these are polic y issues which require further discussion  or that these 
+issues pertains to the ICEGATE. 
+Audit requested DG (Systems) /CBIC that the current status of the action 
+taken on the following issues may be provided. Their response was awaited 
+(January 2023). 
+ 
+Deficiencies noticed by Working Group ATN Status (August 
+2018) 
+Adequacy of Business processes 
+i.  OOC for a BE from a CFS  should be cleared by 
+officer from that CFS only 
+These are p olicy issue s 
+which requires further 
+discussion ii.  Currently CFS code is given at IGM level against 
+Bill of lading only, not in BE include CFS code at 
+BE level also 
+iii.  No effective message exchange with Custodian 
+iv.  Duty reflection on ICEGATE  portal is late and 
+sometimes lead to Double duty payment. 
+Reflection of Duty on ICEGATE portal should be 
+on real time basis. 
+Issue pertains to 
+ICEGATE 
+v.  Timely updation of Notifications: It is suggested 
+that authorities in Board may be asked to 
+directly upload the notification in ICES directory. 
+A mechanism may be implemented by Systems 
+for updating and cross verification of Directory 
+updating. 
+It is a policy issue 
+Improvement and Additional functionalities  
+vi.  License related issues: In many cases, especially 
+involving amendments in licences, old data is 
+transmitted, even after transmission of correct 
+data from DGFT. This creates problem for trade 
+as well as for the Department. 
+Pertains to ICEGATE 
+vii.  One more UQC should be allowed irrespective 
+of the standard UQC provided in the Tariff. 
+Policy issue may be 
+taken up with Board 
+viii.  In-bond sales to the SEZ units are not processed 
+in the ICES 1.5 till date. 
+Need further discussions 
+
+                    Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+57
+Deficiencies noticed by Working Group ATN Status (August 
+2018)
+Adequacy of Business processes
+ix. Identifiers for BsE under investigation. Policy issue may be 
+taken up with Board
+x. There is no provision in export module for 
+electron  filing of SBs.
+Development is under 
+process
+New Delhi                      (Kartikaye Mathur)
+Dated:                                Principal Director (Customs)
+Countersigned
+New Delhi            (Girish Chandra Murmu)
+Dated:           Comptroller and Auditor General of India
+
+
+  
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+59 
+ 
+Annexure I 
+Previous audit findings on ICES and action taken/current status 
+(Refer Para 1.6) 
+ 
+CAG's Report on ICES 1.5  No.11 of 2014 
+S 
+No. 
+Para 
+No. 
+Audit Findings Action Taken/Current Status 
+1 2.1 IS Strategic Plan was not 
+long term 
+A High Powered Committee (HPC) was set 
+up in February 2014 for the  same with the 
+approval of the Hon’ble Finance Minister, 
+for defining an IT strategy for CBIC 
+(Government of India, Ministry of Finance, 
+Department of Revenue, Office 
+Memorandum issued vide  F. No. 
+296/33/2014.Cx.9 dated 27.02.2014 
+constituted Committee.)IT road map of 
+CBIC and the recommendation of the 
+DRISHTI (Driving Information Systems for 
+Holistic Tax Initiatives) related to various IT 
+projects and their implementation is being 
+monitored by the Board. 
+2 2.2 Improper monitoring by 
+Senior Management 
+DG (Systems)  adopted 25 key indicators 
+from system monitoring perspective, some 
+of which are compliance indicators and 
+others are numeric/percentage indicators.  
+These cover availability, incidents, changes, 
+security, user access and business 
+continuity.  
+3 2.3 There was no strategic plan 
+for selection, recruitment 
+and retention of personnel 
+for its ICT Systems 
+Ministry (DoR) stated that DG (Systems)  is 
+providing necessary backup for 
+development of in -house technical 
+expertise for CBIC's IT management.  
+Whenever requi red and seems necessary 
+for work exigencies the workforce for IT 
+related work is being outsourced by the 
+Department.   IS management through 
+recruitment may create cadre related 
+problems of promotion, absorption etc.  
+4 2.4 Department has not 
+imparted any  periodic 
+training on Information 
+Security to CBIC users after 
+2010 
+CBIC stated that training is being imparted 
+to the users from time to time, However, no 
+records were furnished to audit at that 
+time. 
+5 2.5 Some features of 
+operational password policy 
+were different from the 
+documented password 
+policy  
+The password policy related to all verticals 
+of DG (Systems)  including ICES was last 
+reviewed in August 2019 and then again in 
+August 2020. Hence , DG (Systems)  is 
+updating/reviewing the password policy on 
+yearly basis. 
+6 2.6 Internal control and audit Ministry replied that a Working Group has 
+been constituted comprising Officers of the 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+60 
+ 
+Directorate of Audit and field formations to 
+conduct audit on the functioning of ICES 1.5 
+for detecting deficiencies and suggesting 
+improvement in the application. Ministry 
+added that a working group constituted in 
+this regard had submitted  a report which 
+was under examination. 
+7 2.7 CRA module was not 
+according to the 
+requirements of Audit 
+The Department is undertaking changes in 
+CRA module from time to time . However,  
+still the reports available are not according 
+to requirements of Audit. 
+8 2.8 SSOIDs  activity  was  not  
+being  monitored by the 
+System Manager 
+The CBIC, in its reply (February 2014) stated 
+that an electronic User Access Management 
+(UAM) tool has been developed and is being 
+used by the Systems Managers of all field 
+formations. 
+9 2.9 No RMS export module in 
+ICES 
+From July 2013 , RMS export module was 
+implemented. Presently, it is running in 250 
+out of 252 EDI Customs sites.  
+10 2.10 Poor functioning of Post 
+Clearance Audit (PCA) wings 
+of the Commissionerate 
+Ministry stated that Field Formations have 
+been asked to review the performance of 
+Post Clearanc e Audit and Special 
+Investigation and Intelligence Branch (SIIB) 
+and post additional staff after taking into 
+account of overall vacancy position.  From 
+April 2018 , a new Audit Commissionerate 
+was created, which is responsible to 
+conduct Post Clearance Audi t of the BsE 
+cleared through RMS Import. 
+11 2.11 Audit observed poor 
+functioning of LRM at 
+almost all locations in 
+discharging its function to 
+monitor the performance of 
+RMS and PCA 
+CBIC in its reply (February 2014) stated that 
+there will be a local Risk Management 
+System catering to the needs of the 
+Customs Houses. The local Risk 
+Management  System will carry out the live 
+processing of the BEs and IGMs etc. 
+12 3.1 There is an error in the  
+‘program  for  the  
+calculation  of  WH  Interest’  
+in  ICES  1.5  application, 
+which, if not rectified, will 
+result in continued short 
+levies of WH interest 
+Para was not accepted by the Department 
+as the interest calculated as per the 
+contention of the Department is tallying 
+with the actual interest collected.  Since 
+audit has applied direct formula from the 
+interest per day calculated backwards from 
+the duty amount without any rounding off, 
+hence the shortfall.  This formula of reverse 
+calculation by audit is erroneous and 
+produces misleading results. PAC also in its 
+50th Report stated not pursue this para , in 
+view of the reply submitted by the Ministry. 
+13 3.2 Absence of RSP validations 
+to enforce RSP declaration 
+for imports attracting RSP 
+based assessment 
+CBIC in its reply (January 2014), while not 
+accepting the observation stated that that 
+RSP notification is not purely based on 
+Customs Tariff Heading (CTH) Or Central 
+Excise Tariff Heading (CETH), i.e., in most 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+61 
+ 
+cases the goods description under the 
+description column is also relevant.  The 
+goods description , being a non -structured 
+field, cannot be used for validations in an 
+automated system. After introduction of 
+GST, RSP based assessment is abolished. 
+Hence this issue is not relevant in the 
+present context. 
+14 3.3 Absence of validation to 
+check mis -declaration of 
+RSP 
+CBIC in its reply stated (January 2014) that 
+there are no legal provisions empowering 
+the Customs authorities to mandatorily 
+disallow lower RSP based assessment vis -a-
+vis transaction value based assessment. 
+Selling goods at a price lower than the cost 
+may be a purely commercial decision.  After 
+introduction of GST, RSP based assessment 
+is abolished.  Hence this issue is not relevant 
+in present context. 
+15 3.4 Acceptance of multiple rate 
+of exchange rates by the 
+application 
+It was stated (February 2014) that testing of 
+a module for daily update of exchange rate 
+through message exchange with State Bank 
+of India (SBI) had been completed and 
+commissioning of the same can be decided 
+only after the technical issues with State 
+bank of India (SBI) get resolved. DG 
+(Systems) replied in March 2021 that 
+development of the updation of exchange 
+rate through message exchange with SBI is 
+under advance stage of development 
+16 3.5 Failure/Delay  to  update  
+the  Central excise/ 
+Customs/ Special Additional 
+Duty (SAD) Exemption 
+notifications and  duty  rate  
+directories  
+The Board has issued (June 2015) Standard 
+Operating Procedure (SOP) to Directory 
+Management Site (DMS) for updation of 
+directories in pursuant to any changes and 
+has also approved (March 2017) a system of 
+Peer Review of Directory updation after 
+appointing nodal officers for such review. 
+As per this SOP, the nodal officer of the 
+concerned Peer Review Site shall review the 
+directory to ensure that the notification has 
+been updated corr ectly and in time. E -mail 
+intimation to this effect shall be sent to the 
+nodal officer in the Board, National System 
+Manager, DG (Systems) and the DMS. 
+17 3.6 Absence of validations to 
+ensure declaration of 
+unique IEC/PAN 
+CBIC in its reply stated (January 2014) that 
+DGFT is the owner of the IEC data and the 
+responsibility of its accuracy and validity 
+rests with them and the same was sent by 
+CBIC to DGFT for correction at their end.  
+18 3.7 Absence of validations to 
+ensure declaration of same 
+CTH and CETH  
+CBIC while accepting the recommendation 
+stated (January 2014 and February 2014) 
+that validations are yet to be built in to 
+ensure declaration of same CTH and CETH.  
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+62 
+ 
+After introduction of GST from July 2017, 
+CETH are not re quired. Hence this issue is 
+not relevant in present context. 
+19 3.8 Absence of validations to 
+ensure declaration of goods 
+imported under chapter 98 
+of Customs Tariff with 
+corresponding CETH and 
+there is no facility to 
+generate report based on 
+CETHs 
+CBIC in its reply stated (January 2014) that 
+the present request to generate report 
+based on CETHs from audit will be examined 
+for consideration.  After introduction of GST 
+from July 2017, CETH are not required. 
+Hence this issue is not relevant in present 
+context. 
+20 3.9 Country of Origin at the BE 
+level and Country of Origin 
+at the item level were 
+different 
+CBIC stated that before March 2013, direct 
+linkage between the country codes and the 
+preferential tariff notifications were not 
+built in the system due to absence of facility 
+in the directory for such linkage.  System 
+was facilitating capture of Country of Origin 
+for anti -dumping notifications only and 
+validating the same with the COO provided 
+against the relevant item of the Bill of Entry.  
+Since 1st March 2013, such linkage has been 
+provided for all Country of Origin based 
+notifications.  A para regarding the same 
+has been issued as such discrepancy 
+continues to exist in the system. 
+21 3.10 Details of producer of goods 
+not captured in ICES for levy 
+of ADD 
+The field related to name of 
+Producer/Manufacturer details is being 
+displayed in ICES.  
+22 3.11 In ICES, there  were  no  
+validations  or  mapping  of  
+CTH with  the  serial  
+numbers  of  the  
+notification,  either  for  
+conditional  or  for 
+unconditional  exemptions 
+CBIC in its reply stated that the exemption 
+notifications apply BCD rates against CTHs 
+qualified by description, serial no. and the 
+list of conditions.  Both the list of conditions, 
+as well as the description are unstructured 
+fields, and are n ot conducive to 
+automation.  Correct availment could be 
+validated in the system only if the 
+exemption notification was defined on the 
+basis of the CTH.  However, as neither the 
+conditions, nor the description can be 
+quantified/ structured, it is not possib le to 
+build 100 per cent validations with regard to 
+the CTH and the notification duty rates.  It is 
+informed that mapping of tariff items with 
+exemption notifications to the extent 
+possible has been built in the notification 
+directory since 1st March 2013.  
+23 3.12 In ICES, there  was  no  
+validation  or  mapping  of 
+CTH with  the  serial  number  
+of  the  notification  in  the  
+ICES  1.5  application,  to 
+ensure that exemptions 
+After i ntroduction of GST from July 2017 
+IGST is being levied instead of CVD and 
+Additional Customs Duty. Hence this issue is 
+not relevant in present context. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+63 
+ 
+from CVD allowable under 
+the said notification were 
+correctly  claimed 
+24 3.13 The goods were cleared and 
+given OOC on payment of 
+lesser duty. There were not 
+checks in the system  
+CBIC while not accepting the observation 
+stated (January 2014) that duty can be paid 
+through cash payment, as well as through 
+scrips and the cases highligh ted by audit 
+were those where duty debit was made 
+through scrips.  
+25 3.14 Import documents (BEs) as 
+well as export documents 
+(SBs) are  filed manually 
+instead of electronically 
+(through EDI system) 
+Ministry stated that the percentage of 
+manually filed BsE and SBs are quite low and 
+steps are being taken to remove the 
+constraints and further increase the EDI 
+filing to the extent possible. Further, Board 
+has devised Manual BE Module and Manual 
+SB Module in June 2017 and necessary 
+changes have been made in ICES 1.5. Hence, 
+manual filing of BsE/SBs are also being fed 
+in the ICES application through these 
+modules. Audit noticed that total BsE and 
+SBs processed manually during the period 
+2017-18 to 2019-20 was 0.086 per cent and 
+0.126 per cent  of the total BsE and SBs 
+processed through EDI.  
+26 3.15 Absence of linkage with 
+‘sezonline’ portal of MoC  
+Accepted by the Govt. {Ref: ATR (2015 -16) 
+50th Report at page no. 01}.With the 
+combined efforts of Ministry of Commerce 
+& Industries and Ministry of Finance, an 
+initiative has been taken from August 2015, 
+to integrate SEZ Online System with EDI 
+System of CBIC.  However, IGM data not yet 
+correlated with Bills of Entry data in SEZ 
+online and there is no data transmission for 
+Shipping Bill and Let Expo rt Order in ICES 
+1.5. 
+27 3.16 ICES  1.5  does  not  have  
+any  mechanism  to  monitor  
+goods  released  on 
+transhipment 
+CBIC stated that in ICES 1.5, the module for 
+transhipment of goods from Gateway Sea 
+Ports to Inland Container Depots (ICDs) is 
+already functional since the last few years. 
+The Sea to Sea transhipment module has 
+been launched on 7 February 2014. 
+28 3.17 Absence of integration of 
+NIDB and ECDB data with 
+ICES  
+There is no interaction between any active 
+server of ICES and Server of DGoV and NIDB 
+and ECDB are standalone databases and not 
+integrated with ICES 1.5. No development 
+as of yet. 
+29 3.18 Details of ‘i mport against 
+essentiality certificate for 
+project not captured in ICES 
+Ministry has rolled out a Project Import 
+Module in ICES vide Circular No 27/2019 -
+Customs dated 3rd September 2019.   
+30 3.19.1 The information related to 
+Export obligation fulfilment 
+is not collated and utilised 
+As per reply of DG (Systems)  (September 
+2021) ICES is able to generate licence -wise 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs)  
+64 
+ 
+by department through any 
+module/report in the 
+application 
+information under "All lndia License View" 
+role 
+31 3.19.2 No information on 
+finalization of provisional 
+assessments 
+DG (Systems)  had launched a module for 
+finalization of PA Bills of Entry in ICES 1.5 in 
+April 2014 for online finalization of 
+provisionally assessed bills and to monitor 
+the pendency in finalization of provisionally 
+assessed BsE/SBs.  For the finalization of 
+provisionally assessed BEs two new roles 
+viz. FAO for Assessing Officers and FOC for 
+group Asstt./Dy. Commissioner are created. 
+32 3.19.3 No information on action 
+taken in short levy cases 
+Board in its reply (January 2014) stated that 
+the EDI system already provides the facility 
+to capture the details of fine and penalty in 
+their respective columns till the OOC of the 
+BE.  Reference to the file no., show cause 
+notice no. and details of  the  adjudication  
+order  are  captured  in  the  departmental 
+comments  of  the  BE. 
+33 3.19.4 Wherever duty is debited 
+through manual challans, 
+information about such 
+payments is not uploaded 
+into the system 
+The Department in their reply (January 
+2014) stated that in ICES, pr ovision is there 
+to capture payments made against manual 
+BEs in the manual DTR module which is 
+available with all EDI sites. 
+34 3.19.5 There is no facility to levy 
+and collect EDD through 
+ICES application, due to 
+which it has to be collected 
+separately manually 
+The calculation of EDD was integrated in 
+ICES from 1st August 2015. However, Levy of 
+EDD has been discontinued vide Customs 
+circular 05/2016. Hence this issue is not 
+relevant in present context. 
+35 4.1 Under-utilization of Thin 
+Client terminals 
+Ministry stated that DG (Systems) has been 
+informed that new procurement should be 
+commensurate with the actual requirement 
+and manpower availability.  Further, all 
+Chief Commissionerates are directed to 
+ensure that all thin clients are put use. 
+36 4.2 Protection of EDI Hardware, 
+software and Staff from 
+lightning strikes at ICD, 
+Pithampur 
+CBIC stated (2014) that in terms of the 
+extant instructions site preparation is the 
+responsibility of the custodian.  The action 
+taken to resolv e the position will be 
+informed to Audit. Final outcome is not 
+known 
+37 4.3 Limited power back up for 
+working of the EDI system at 
+ICD, Mandideep (Bhopal)  
+ CBIC stated (2014) that under the Local 
+Area Network project only power back up 
+has been provided.   However, site specific 
+requirements will be examined and 
+appropriate action as considered necessary 
+will be taken. Final outcome is not known. 
+38 4.4 Details of manually filed bills 
+were not entered in the ICES 
+CBIC in its reply (January 2014) stated that a 
+utility for entering such data is available. 
+Further, through DTR module manual BE/SB 
+can be entered in ICES. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+65 
+ 
+CAG Report No.24 of 2009-10 
+1 3.11.1 Lack of provision to 
+calculate/classify export 
+duty 
+The software has since been modified and 
+the export duty/cess is being levied 
+correctly by the system. 
+2 3.11.2 Non-availability of 
+collections of extra duty 
+deposit (EDD) 
+The calculation of EDD was integrated in 
+ICES from1st August 2015. Further, Levy of 
+EDD has been discontinued vide C ustoms 
+circular 05/2016. Hence this issue is not 
+relevant in present context. 
+3 3.11.3 Incomplete capture of the 
+parameters and manual 
+intervention leading to 
+short levy of BCD 
+The Ministry informed that the design 
+deficiency pointed out by audit regarding 
+system using pre -amended data has been 
+rectified, post audit, through a software 
+patch. 
+4 3.11.4 Data regarding country of 
+origin 
+The Ministry informed that the system has 
+been properly designed by capturing 
+‘country of origin’ at two places and using 
+the value at the ‘item’ level for levy of ADD. 
+Accordingly, any short levy pointed out by 
+audit could be on account of assessment 
+lapse. 
+5 3.11.5 SBs not matched with 
+export general manifest 
+(EGM) on DEPB items 
+The ministry in its reply informed that even 
+after correcting the EGM error, the current 
+status of the SB continued to be shown as 
+mismatched in the system, which was 
+subsequently rectified by NIC. 
+6 3.11.6 Currency of packing charges The Ministry in its reply agreed to make 
+provision in the system for capturing 
+packing charges in Indian Rupees. Test 
+check of Shipping Bills revealed that system 
+is capturing packing charges 
+7 3.11.7 Items imported against 
+licences not checked with 
+revised Indian trade 
+classification code (RITC) 
+Data is being transmitted 
+online/electronically by DGFT containing 
+RITC. However, Department stated that 
+validation relating to matching of RITC in 
+license and in BE will create hardship to the 
+trade. 
+8 3.11.8 Interest on goods cleared 
+from the warehouse was 
+not built into the system 
+Calculation and collection of interest in 
+respect of warehouse goods are being done 
+in ICES 1.5. 
+9 3.12.1 Agency Commission was not 
+restricted to 12.5 per cent of 
+the value of goods 
+The agency commission is being restricted 
+by the System upto 12.5 per cent. 
+10 3.12.2 No amount of drawback 
+shall be allowed, if the 
+amount or rate of drawback 
+is less than one per cent of 
+the FOB value 
+The Ministry in its reply assured that the 
+necessary corrections in the logic built in 
+the system will be done. Further, this 
+restriction has been removed in drawback 
+schedule from 2017 onwards. 
+11 3.12.3 Abatement of CVD in 
+respect of impor ted 
+footwear was not mapped 
+correctly in the system 
+RSP calculation has been abolished since 
+the introduction of GST. Hence this issue is 
+not relevant in present context. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+66 
+ 
+12 3.13.1
+.1.i 
+Incorrect computation of 
+assessable value. 
+Acceptance of zero or null 
+values in respect of 
+freight/insurance  
+The Ministry, while agreeing with the 
+observation, informed that the defect has 
+since been rectified by implementation of a 
+software patch. 
+13 3.13.1
+.1.ii 
+Acceptance of lesser 
+percentage values against 
+freight /insurance 
+The Ministry stated that, there was no bar 
+in accepting lesser percentage of 
+freight/insurance, if documentary evidence 
+to that effect exists and these documents 
+are subject to verification by the Customs 
+officers. 
+14 3.13.1
+.2 
+Benefits of notification Ministry stated that 100% validation with 
+regard to Notification/CTH, CETH not  
+possible. 
+15 3.13.1
+.3 
+Debiting of licences under 
+multiple schemes 
+Ministry stated that the validation is now 
+done of scheme code instead of scheme 
+codes grouping by implementation of 
+software patch. 
+16 3.13.1
+.4 
+Grant of exemption of 
+special CVD 
+Special CVD has been abolished since 
+introduction of GST. Hence this issue is not 
+relevant in present context. 
+17 3.13.1
+.5 
+CVD based on RSP RSP based assessment has been abolished 
+since introduction of GST. Hence this issue 
+is not relevant in present context. 
+18 3.14.1 Change management 
+control- Non-matching of 
+the CTH and CETH 
+CETH has been abolished since introduction 
+of GST. Hence this issue is not relevant in 
+present context. 
+19 3.14.2 Non-updating of 
+notification master tables 
+This issue has been addressed in ICES 1.5. 
+All directories are updated centrally and are 
+available to all sites immediately. 
+20 3.14.3 Incorrect updating of 
+drawback schedule 
+The Ministry in its reply agreed that due to 
+the large number of the entries in the 
+drawback schedule some discrepancies may 
+creep in during updation and these 
+discrepancies are rectified on such 
+discrepancies being reported. Test check 
+revealed that the system is fetching the 
+details of drawback schedule rates as 
+prescribed. 
+21 3.15.1 Difference between the 
+assessment and collection 
+files  
+The Ministry stated that it was possible that 
+the amount collected was less (upto rupees 
+nine) than the duty assessed, as the system 
+accepts duty payment, if the amount paid is 
+matching upto ‘tens’ level. It further stated 
+that duty can be recalculated for BEs taken 
+up for post clearance audit, etc. However, 
+the inconsistency is not due to any design 
+deficiency. 
+22 3.15.2 In Ex -bond BE, the interest 
+for delayed payment of duty  
+was not calculated by the 
+system 
+This para was settled by Audit in November 
+2009. Moreover, the interest is being 
+calculated by the system. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+67 
+ 
+23 3.15.3 Calculation of duty foregone 
+item-wise was in negative 
+figure 
+The problem was rectified by the 
+department. 
+24 3.16.i Database not utilised to its 
+potential - Maintenance of 
+bond register 
+Bond registers are being maintained in ICES 
+1.5. Whenever, audit sought data in respect 
+of Bonds, the reports are generated and 
+furnished. 
+25 3.16.ii Levy of bond interest for 
+delayed clearance of goods 
+was calculated and 
+collected manually 
+The levy of interest, calculation and 
+collection are being processed through ICES 
+1.5. 
+26 3.16.iii Finalisation of the 
+provisional assessment 
+were being finalised 
+manually 
+Module has been added in ICES for 
+finalization of Provisional Assessment. 
+27 3.17 Non updation of 
+documentation 
+SRS/SDD was last updated in 2010 and 
+Customs user manual was also last updated 
+2013. These are the latest versions available 
+with the Department.  
+28 3.18 Business Continuity 
+Planning 
+The Ministry in its reply stated that 
+instructions for safe keeping of backup 
+tapes/cartridges to field formations would 
+be reiterated. It further informed that a 
+data centre at Delhi and disaster recovery 
+centre at Chennai have been set up and 
+gradually the existing ICES locations will 
+migrate to the data centre. Further, it  is a 
+part of the System Integrator’s work and is 
+being done by SI Contract Audit team. 
+ 
+  
+
+Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+68 
+ 
+Annexure II 
+Constraints relating to furnishing of data dump and slow execution of 
+data queries     (Refer Para 1.8.5) 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+69 
+ 
+Sl.
+No Description of Data Query 
+Whether 
+data 
+received 
+from DG 
+(Systems)  
+Details in brief 
+6 Details  of Shipping Bills in which 
+sample was drawn and EGM was 
+given without/before entering test 
+report during the period  from 
+01/10/2019 to 31/03/2020 (six 
+months) 
+Yes Passed DG (Systems) furnished 456 records.  
+On analysis, it was found that date of 
+sampled data was correctly entered 
+before date of EGM. 
+7 Report the electronically amended 
+IGM cases where fees are not paid 
+from 01/10/2019 to 31/03/2020 (six 
+months) 
+Query 
+could not 
+developed
+ 
+Not 
+Applicable 
+Department intimated that no such fee 
+was levied in ICEGATE for electronically 
+amended IGM cases w here fees were 
+not paid. 
+8 For all import c ases to be reported 
+where field relating to 'BE Selected by 
+RMS' is null from 01/10/2019 to 
+31/03/2020 (six months) 
+Yes Failed Audit observation was issued in 
+respect of 10,309 records (March 
+2023); response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+9 Details of Home consumption BE data 
+where rate of duty / Tariff value is not 
+equal to rate of duty/ Tariff value 
+prevailing on BE filing date from 
+01/10/2019 to 31/03/2020 (six 
+months) 
+Yes Failed Audit observation was issued in 
+respect of 2,352 BEs (March 2023); 
+response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+10 Details of Ex-bond BE data cleared 
+under Section 68 where rate of duty / 
+Tariff value is not equal to rate of 
+duty/ Tariff value prevailing on Ex -
+Bond BE date from 01/10/2019 to 
+31/03/2020 (six months) 
+Yes Failed Audit observation was issued in 
+respect of 151 records  (March 2023); 
+response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+11 Details of cases of Advance/Prior BEs 
+filed where tariff  value is different on 
+the date of filing BE and date of entry 
+inwards of the goods in respect of 
+from 01/10/2019 to 31/03/2020 ( six 
+months) 
+Yes Passed No cases were noticed. 
+12 Details of Warehousing BE data and 
+corresponding Ex-Bond BE where the 
+total item wise quantity is not equal 
+to item wise Warehousing BE 
+Yes Passed On an analysis no discrepancy 
+observed in the data provided. 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+70 
+ 
+Sl.
+No Description of Data Query 
+Whether 
+data 
+received 
+from DG 
+(Systems)  
+Details in brief 
+Quantity from 01/10/2019 to 
+31/03/2020 (six months) 
+13 Detail of SBs where commission 
+added in FOB value is  more than 12.5 
+per cent  of invoice value for the 
+period 01/03/2020 to 31/03/2020 
+Yes Not 
+Applicable 
+To know details of SBs where 
+commission added in FOB value is 
+more than 12.5  per cent  of invoice 
+value, a query was run by the 
+department and 159 records were 
+retrieved. On analysis, it was found 
+that the columns FOB value in foreign 
+currency, FOB value in INR and 
+Drawback paid were not available. 
+14 Detail of SBs where drawback paid is 
+more than drawback calculated on 
+drawback cap per unit for the period 
+01/03/2020 to 31/03/2020 
+Yes Not 
+Applicable 
+A query was run by the Department 
+and 5 ,88,210 records were retrieved.  
+On analysis, it was found that data was 
+furnished at SB level instead of item 
+level. 
+15 Detail of SBs where net weight is 
+more than gross weight for the 
+period 01/03/2020 to 31/03/2020 
+Yes Passed A query was run by the Department 
+and 12 records were retrieved. On 
+analysis, it was noticed that these 
+Shipping Bills were amended Shipping 
+Bills. Accordingly, there was no 
+observation. 
+16 Details of goods imported under 
+Customs Notification No. 16/2019 
+(dated 15/06/2019) with CTH 0713 
+40 00, 2810 00 20  and 3822 00 90 
+from 13/06/2019 to 17/06/2019 
+Yes Not 
+Applicable 
+Data was provided for Out of charge 
+date instead of BE date . Further, the 
+data provided was of BE date prior to 
+date of notification (15 June 2019). 
+17 Details of goods imported under 
+Customs Notification No. 02/2019 
+(dated 29/01/2019) with CTH 8507 
+60 00, 8517 62 90 and 8517 69 90 
+from 28/01/2019 to 01/02/2019 
+Yes Passed Data was provided of Out of charge 
+date instead of BsE date. Data of 530 
+records was  furnished. Fourteen 
+records were checked and found 
+correct. 
+18 Details of goods imported under 
+Customs Notification No. 36/2001 
+(Customs – NT) as amended 
+01/10/2019 to 31/03/2020 (six 
+months) 
+No Not 
+Applicable 
+Data was not received. 
+
+                     Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+71 
+ 
+Sl.
+No Description of Data Query 
+Whether 
+data 
+received 
+from DG 
+(Systems)  
+Details in brief 
+19 Details of goods imported where 
+Anti-Dumping Duty/Safe Guard Duty 
+has been levied 01/10/2019 to 
+31/03/2020 (six months) 
+No Not 
+Applicable 
+Data was not received. 
+20 Details of  cases in which Out of 
+Charge BEs which are ordered for 
+examination (FIRST CHECK) from 
+01/10/2019 to 31/03/2020 (6 
+months).  
+No Not 
+Applicable 
+Data was not received. 
+21 Details of BEs where duty were paid 
+after one day (excluding holidays)  of 
+the assessment for the period 
+01/11/2019 to 31/03/2020 ( five 
+months) 
+Yes Failed Audit observation was issued (March 
+2023); response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+22 To check that RMS Exports is not 
+selecting SBs for examination where 
+the Exports Goods are factory stuffed 
+under the supervision of Central 
+Excise Officers. Details of SB  where  
+goods are factory stuffed and RMS 
+marked for examination during the 
+period from 01/10/2019 to 
+31/03/2020 (six months) 
+Yes Passed DG (System) furnished 1 ,000 records 
+related to 18 SBs.  On analysis, it came 
+to notice that Factory stuffed 
+consignments were also being selected 
+by RMS. 
+23 Details in respect of Amended Bill of 
+Entries from 01/10/2019 to 
+31/03/2020 (six months) 
+Yes Not 
+Applicable 
+Data furnished could not be examined, 
+because of format issues. 
+24 Details in respect of Bill of Entries 
+where duty paid is   less than the duty 
+assessed/payable from 01/10/2019 
+to 31/03/2020 (six months). 
+Yes Failed Audit observation was issued in 
+respect of 11,214 records (March 
+2023); response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+25 Details of Warehousing and 
+corresponding ex -bond BE data for 
+the period 01 /04/2018 to 
+31/03/2020 to verify the correctness 
+of the web ledger of the goods 
+Yes Not 
+Applicable 
+Only sample data has been given. 
+Less than 90 days - 631 
+More than 90 days - 363 
+ 
+The Department has given only 
+sample data of 1,000 each at WBE 
+
+ Report No. 14 of 2023 – Union Government (Indirect Taxes – Customs) 
+72 
+ 
+Sl.
+No Description of Data Query 
+Whether 
+data 
+received 
+from DG 
+(Systems)  
+Details in brief 
+imported and cleared thereon along 
+with interest levied/paid 
+Item level and Ex-BE level in respect of 
+three ports (INAKV6 - Ankaleshwar 
+(Gujarat), INAPL6 - Dadri-ACPL CFS, 
+INAMD4 - Ahmedabad). 
+Whether the interest was calculated, 
+levied and collected correctly could 
+not be ascertained, since the details of 
+duty are not captured in the data. 
+26 Data in respect of  Re-export BEs and 
+corresponding SBs to verify whether 
+conditions prescribed in the various 
+re-export Notifications are fulfilled or 
+not for the period 01 /04/2018 to 
+31/03/2020 
+Yes Failed Audit observation was issued (March 
+2023); response of the Department is 
+awaited. This will be pursued in future 
+audits. 
+ 
