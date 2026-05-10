@@ -29,9 +29,18 @@ permissions:
   contents: write
 
 concurrency:
-  # Independent of the `cag` group used by the daily scraper, so a long-
-  # running OCR run doesn't block a daily cron firing nor vice versa.
-  group: cag-ocr
+  # Same group as cag.yml + cag-backfill.yml. Earlier rationale for a
+  # separate `cag-ocr` group claimed OCR writes "disjoint text/*.txt
+  # additions" — that was wrong. Both the backfill (pypdf) and OCR
+  # (tesseract) target the same `text/<id>.txt` paths for the same
+  # "missing-text" candidate set, so they race on git: a parallel OCR
+  # run finished its work and got an add/add merge conflict on every
+  # file the backfill committed in the meantime (run 25621177677,
+  # 4 OCRs lost). Serialise via shared `cag` group instead. OCR is
+  # ~weekly cadence; daily/hourly CAG runs aren't blocked enough to
+  # matter, and OCR's candidate list is cleaner after the backfill
+  # has had its turn.
+  group: cag
   cancel-in-progress: false
 
 jobs:
