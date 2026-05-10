@@ -1,0 +1,2858 @@
+45
+AS INTRODUCED IN LOK SABHA
+THE PERSONAL DA TA AND INFORMATION PRIVACY CODE BILL, 2019
+By
+DR. D. RA VIKUMAR, M.P.
+——————
+ARRANGEMENT OF CLAUSES
+——————
+CLAUSES
+CHAPTER 1
+PRELIMINARY
+1. Short title, extent and commencement.
+2. Definitions.
+CHAPTER II
+RIGHT TO PRIV ACY
+3. Principles applicable to protecting privacy.
+4. Right to privacy.
+5. Exemption to this Act.
+CHAPTER III
+P
+ROTECTION OF PERSONAL DATA
+PART A
+NOTICE BY DATA CONTROLLERS
+6. Transparency in form and substance in all communications by Data Controllers.
+PART B
+CONSENT OF DATA SUBJECTS
+7. Prior consent necessary to the collection of data.
+8. Special provisions in respect of data subjects lacking legal capacity to give consent.
+9. Special provisions in respect to the processing of personal data of children.
+10. Special provisions in respect of data subjects unable to give consent.
+11. Collection of personal data.
+12. Collection of personal data without prior consent.
+13. Special provisions in respect of data collected prior to the commencement of this
+Act.
+PART C
+F
+URTHER LIMITA TIONS ON DATA CONTROLLERS
+14. Bar on denial of subsidies, benefits and entitlements.
+15. Storage and destruction of personal data.
+16. Processing of personal data.
+17. Security of personal data and duty of confidentiality.
+Bill No. 183 of  2019
+
+18. Transfer of personal data outside the territory of India.
+19. Disclosure of personal data.
+20. Special provisions for sensitive personal data.
+21. Special provisions for data impact assessment.
+PART D
+R
+IGHTS OF A DATA SUBJECT
+22. Right to access for data subject.
+23. Right to rectification for data subjects and obligations of data controllers.
+24. Right to destruction of personal data.
+25. Right to restriction of processing.
+26. Right to object.
+27. Right to portability of personal data.
+28. Right to seek exemption from automated decision-making.
+CHAPTER IV
+I
+NTERCEPTION AND SURVEILLANCE
+29. Special provisions for competent organizations.
+30. Bar against interception of communications.
+31. Prior authorisation by the appropriate Surveillance and Interception Review Division.
+32. Authorisation by the Home Secretary in emergent circumstances.
+33. Duration of interception.
+34. Duty to inform the person concerned.
+35. Security and duty of data security and privacy.
+36. Disclosure of intercepted communications.
+37. Storage and destruction of intercepted communications.
+38. Bar against surveillance.
+39. Surveillance by the State.
+40. Surveillance by private persons or entities.
+41. Duration of surveillance.
+42. Duty to inform the person concerned.
+43. Security and duty of confidentiality and secrecy.
+44. Disclosure of surveillance.
+45. Storage and destruction of surveillance.
+46. Exception regarding reporting of violation of provisions of this Act.
+CHAPTER V
+T
+HE PRIV ACY COMMISSION
+47. Constitution of the Privacy Commission.
+48. Appointment and Qualifications of Privacy Commissioners of Privacy Commission.
+49. Composition of the Office for Data Protection of the Privacy Commission.
+50. Composition of the Office for Surveillance and Interception Reform of the Privacy
+Commission.
+(ii)
+C
+LAUSES
+
+51. Officers and other employees of the Privacy Commission.
+52. Term of office, conditions of service, etc. of Privacy Commissioners and Offices
+constituted under the Commission.
+53. Removal of Chief Privacy Commissioners and Privacy Commissioners.
+54. Functions of the Privacy Commission.
+55. Salaries, etc. to be defrayed out of the Consolidated Fund of India.
+56. Vacancies, etc. not to invalidate proceedings of the Privacy Commission.
+57. Chief Privacy Commissioners, Privacy Commissioners and employees of the Privacy
+Commission to be public servants.
+58. Location of the Privacy Commission.
+59. Jurisdiction of the Privacy Commission.
+60. Procedure to be followed by the Privacy Commission.
+61. Power relating to inquiries.
+62. Decisions of the Privacy Commission.
+63. Proceedings before the Privacy Commission to be judicial proceedings.
+64. Appeals.
+CHAPTER VI
+S
+TATE PRIVACY COMMISSIONS
+65. State Privacy Commissions.
+66. Jurisdiction of the State Privacy Commissions.
+67. Appeals.
+68. Procedure.
+69. Power to make rules.
+CHAPTER VII
+S
+URVEILLANCE AND INTERCEPTION REVIEW DIVISIONS
+70. Surveillance and Interception Review Divisions.
+71. Appointment, terms of service, etc.
+72. Jurisdiction of the Surveillance and Interception Divisions.
+73. Appeals.
+CHAPTER VIII
+O
+FFENCES AND PENALTIES
+74. Punishment for offences related to personal data.
+75. Punishment for offences related to interception of communication.
+76. Punishment for offences related to surveillance.
+77. Abetment and offenders.
+78. Offences by companies.
+79. Cognizance.
+80. General penalty for failure to comply with notice or order issued under this Act.
+81. Punishment to be without prejudice to any other action.
+(iii)
+C
+LAUSES
+
+CLAUSES
+CHAPTER IX
+MISCELLANEOUS
+82. Power to make rules.
+83. Bar of  jurisdiction.
+84. Protection of action taken in good faith.
+85. Power to remove difficulties.
+86. Act to have overriding effect.
+S
+CHEDULE
+(iv)
+
+1
+THE PERSONAL DA TA AND INFORMATION PRIVACY CODE BILL, 2019
+By
+DR. D. RA VIKUMAR, M.P.
+A
+BILL
+to establish an effective regime to protect, promote and fulfil the fundamental right to
+privacy of all natural persons and protect personal data concerning them, to set out
+conditions upon which surveillance of natural persons and interception of
+communications may be carried out, to constitute a Privacy Commission,
+and for matters connected therewith or incidental thereto.
+WHEREAS the right to privacy is an inalienable fundamental right of all natural persons
+indispensable to the preservation of human dignity, personal autonomy and the exercise of
+constitutional liberties;
+A
+ND WHEREAS the need to protect privacy has only increased in the digital age, with the
+emergence technologies such of big data analytics;
+AND WHEREAS the delivery of goods and provision of services often entails the
+collection, storage, processing and disclosure, including international transfers of personal
+data;
+Bill No. 183 of  2019
+AS INTRODUCED IN LOK SABHA
+
+2
+AND WHEREAS good governance requires that all interception of communications and
+surveillance must be conducted with due process strictly in accordance with law, in
+consonance with the rights to freedoms and privacy under Part III of the Constitution and
+only upon establishing the need for the same;
+A
+ND WHEREAS it is necessary to harmonise any conflicting interests and competing
+legislation;
+NOW, THEREFORE, it is expedient to provide for an enforceable means to protect the
+informational privacy of natural persons.
+BE it enacted by Parliament in the Seventieth Year of the Republic of India as follow:—
+CHAPTER I
+PRELIMINARY
+1. (1) This Act may be called the Personal Data and Information Privacy Code Act,
+2019.
+(2) It extends to the whole of India and, save as otherwise provided in this Act, it
+applies also to any offence or contravention hereunder committed outside India by any
+person, wherever located.
+(3) It shall come into force on such date as the Central Government may, by notification
+in the Official Gazette, appoint.
+2. (1) In this Act unless the context otherwise requires,—
+(a) “aggregate”, with its grammatical variations and cognate expressions, in
+relation to personal data, means adding, removing, filtering, mixing, combining or
+recombining records of data;
+(b) “anonymise” means, in relation to personal data, the irreversible removal or
+alteration of all data that may, whether directly or indirectly in conjunction with any
+other data, be used to identify a natural person or data subject;
+(c) “appropriate Government” means, in relation to the Central Government or a
+Union territory Administration, the Central Government; in relation to a State
+Government, that State Government; and, in relation to a public authority which is
+established, constituted, owned, controlled or substantially financed by funds provided
+directly or indirectly:—
+(i) by the Central Government or a Union territory Administration, the
+Central Government;
+(ii) by a State Government, that State Government;
+(d) “authorised officer” means an officer of a competent organization, not below
+the rank of a Gazetted Officer of an All India Service or a Central Civil Service, as the
+case may be, who is empowered by the Central Government, by notification in the
+Official Gazette, to intercept the communications of another person or carry out any
+surveillance of another person under this Act;
+(e) “biometric data” means any data relating to the physical, physiological or
+behavioural characteristics of a natural person which allows the verification or
+authentication of that person's identity including, but not restricted to, facial images,
+fingerprints, hand prints, foot prints, iris recognition, handwriting, typing dynamics,
+gait analysis and speech recognition;
+(f) “Chief Privacy Commissioner” and “Privacy Commissioner” mean the Chief
+Privacy Commissioner and Privacy Commissioners appointed under section 48;
+(g) “collect”, with its grammatical variations and cognate expressions, means, in
+relation to personal data, any action or activity that results in a person obtaining, or
+coming into the knowledge or possession of, any personal data of another person,
+whether directly or indirectly;
+Short title,
+extent and
+commencement.
+Definitions.
+5
+10
+15
+20
+25
+30
+35
+40
+
+3
+(h) “communication” means a word, signs, gestures, spoken, written or indicated,
+in any form, manner or language, encrypted or unencrypted, meaningful or otherwise,
+and includes visual representations of words, ideas, symbols and images, and the
+metadata in relation whether transmitted or not transmitted and, if transmitted,
+irrespective of the medium of transmission;
+(i) “competent organisation” means an or ganisation authorised by an Act of
+Parliament to carry out surveillance and/or interception, and includes a public authority
+as listed in the Schedule.
+(j) “consent” means it is free, informed and unambiguous indication of a data
+subject's agreement;
+(k) “data” means shall have some meaning as assigned in it section 2(o) of the
+Information Technology Act, 2000;
+(l) “data controller” means any person including appropriate Government who,
+either alone, or jointly, or in concert with other persons, determines the purposes for
+which and the manner in which any personal data is processed;
+(m) “data processor” means any person including appropriate Government who
+processes any personal data on behalf of a data controller;
+(n) “data subject” means a natural person who is a citizen under the  Citizenship
+Act, 1955 or who has resided in India for a period of one hundred and eighty two days
+or more in the twelve months preceding the previous year.
+(o) “deoxyribonucleic acid data” means all information, of whatever type,
+concerning the characteristics of a natural person that are inherited or acquired during
+early prenatal development;
+(p) “destroy”, with its grammatical variations and cognate expressions, means,
+in relation to personal data, to cease the existence of, by deletion, erasure or otherwise,
+any personal data which becomes irretrievable in whole or in part, including information
+about the existence of such data itself;
+(q) “disclose”, with its grammatical variations and cognate expressions, means,
+in relation to personal data, any action or activity that results in a person coming into
+the knowledge or possession of any personal data of another person;
+(r) “interception” or “intercept” means any activity intended to capture, read,
+listen to or understand the communication of a person;
+(s) “officer-in-charge of a police station” shall have the meaning ascribed to it
+under clause (o) of section 2 of the Code of Criminal Procedure, 1973;
+(t) “person” includes a natural person or legal person including a company, a
+firm, an association of persons, a public authority or a body of individuals, wherever
+located, whether incorporated or not;
+(u) “personal data” means any data which relates to a natural person if that
+person can, whether directly or indirectly in conjunction with any other data, be identified
+or identifiable from it and includes sensitive personal data:
+Provided that the term “personal data” shall not include data which is a matter of
+public record except details of victims in cases of sexual assault, kidnapping or
+abduction.
+(v) “prescribed” means prescribed by rules and regulations made under this Act;
+(w) “Privacy Commission” means the body constituted under sub-section (1) of
+section 47;
+(x) “Privacy Officer” means the Privacy Officer designated under sub-section (3)
+of section 36 and sub-sections (3) and (4) of section 43;
+21 of 2000.
+57 of 1955.
+2 of 1974.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+4
+(y) “process”, with its grammatical variations and cognate expressions, means,
+in relation to personal data, any action or operation which is performed upon personal
+data of another person, whether or not by automated means including, but not restricted
+to, collection, aggregation, organisation, structuring, adaptation, modification, retrieval,
+consultation, use, alignment or destruction;
+(z) “public authority” shall have the meaning assigned to it under clause (h) of
+section 2 of the Right to Information Act, 2005;
+(za) “receive”, with its grammatical variations and cognate expressions, means,
+in relation to personal data, to come into the knowledge or possession of any personal
+data of another person;
+(zb) “sensitive personal data” means data or metadata as to a person's—
+(i) biometric data;
+(ii) deoxyribonucleic acid data;
+(iii) identification number, or any identity attributes;
+(iv) location data;
+(v) sexual preferences and practices;
+(vi) medical history and health information;
+(vii) political affiliation or opinions;
+(viii ) present and past membership of a political, cultural, social
+organisations including but not limited to a trade union as defined under
+section 2(h) of the Trade Union Act, 1926;
+(ix) ethnicity, religion, race or caste; and
+(x) financial and credit information, including financial history and
+transactions except in cases of public officials or when such information is
+considered as a public record or its disclosure is made under any law.
+(zc) “State Privacy Commission” means the body constituted under
+sub-section (1) of section 65;
+(zd) “Surveillance and Interception Review Division” means the bodies
+constituted under sub-section (1) of section 70;
+(ze) “store”, with its grammatical variations and cognate expressions, means, in
+relation to personal data, to retain, in any form or manner and for any purpose or
+reason, any personal data of another person;
+(zf) “surveillance” means any activity, directly or indirectly intended to watch,
+monitor, record or collect, or to enhance the ability to watch, record or collect, any
+information, images, signals, data, movement, behaviour or actions, of a person, a
+group of persons, a place or an object, for the purpose of obtaining information about
+a person and their private affairs, including:
+(i) directed surveillance that is covert surveillance undertaken for a specific
+investigation or operation even if the person surveilled was not specifically
+identified in relation to the surveillance operation;
+(ii) inclusive surveillance which is covert surveillance carried out by an
+individual or surveillance device in relation to anything taking place in any
+private premises or private vehicle;
+(ii) covert human intelligence gathering which is information obtained by
+a person who establishes or maintains a personal or other relationship with a
+person for a covert purpose of using it to obtain access to any personal
+information about that individual;
+22 of 2005.
+16 of 1926.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+5
+(iv) surveillance undertaken through installation and use of CCTV and
+other system which capture audio-visual information to identify or monitor
+individuals; but does not include collection of personal data under sections 7,
+11 and 12.
+(2) All other words expressions used herein but not defined and defined in the General
+Clauses Act, 1897 or the Code of Criminal Procedure, 1973 as the case may be, shall have the
+same meanings as assigned to them in those Acts.
+CHAPTER II
+R
+IGHT TO PRIV ACY
+3. In exercising the powers conferred by this Act, regard shall be had to the following
+considerations, namely:—
+(1) that the right to privacy is a fundamental right essential to the maintenance of
+a democratic, open society and is recognised as a fundamental human right mentioned
+in Part III of the Constitution and in international treaties to which India is a party;
+(2) that personal data with its attributes belongs solely to the natural person to
+whom it pertains who are referred to as the data subjects for the purposes of this Act;
+(3) that personal data of data subjects shall be processed fairly and lawfully and
+in no circumstance shall be processed unless the conditions under this Act are met
+and subject to conditions under this Act are fulfilled;
+(4) that intrusions into privacy shall, be for lawful purposes, measured by principles
+of legality, necessity and proportionality;
+(5) that unless as otherwise expressly provided the consent of data subject for
+a specific purpose shall be a mandatory condition prior to storage and processing of
+his personal data;
+(6) that personal data is required by data controllers, and data processors, to
+enable good governance and the delivery of goods and provision of services without
+undue delay which may be provided by a meaningful, revocable and accountable
+notice and consent framework;
+(7) that the right to privacy shall not be used to limit or fetter the fundamental
+right to freedom of speech and expression of journalists and the press or accountability
+of the Government and public institutions under the Right to Information Laws;
+(8) that privacy shall be upheld by a statutory body which is independent,
+impartial, well resourced and free from influence and extraneous pressure.
+4. (1) Without prejudice to the generality of the provisions contained herein, all natural
+persons shall have a right to privacy which shall be implemented as per principles laid down
+in section 3.
+(2) For the purpose of sub-section (1) no person shall collect, store, process, disclose
+or otherwise handle any personal data of a natural person, intercept any communication of
+another person or carry out surveillance of another person except in accordance with the
+provisions of this Act.
+5. Nothing in this Act shall apply to —
+(1) the collection, storage, processing or dissemination of his own personal data
+by a natural person; or
+(2) surveillance by a resident of his own residential property, or
+(3) subject to obtaining the Privacy Commission's exemption under sub-section
+(3) of section 16, the collection, storage or processing of anonymised data for non-
+commercial purposes or by any entity for academic, journalistic, research, statistical or
+archival purposes as required under the provisions of any other law for the time being
+in force.
+10 of 1897.
+2 of 1974.
+Principles
+applicable to
+protecting
+privacy.
+Right to
+privacy.
+Exemption.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+6
+Explanation.—For the purposes of this section, “non-commercial purposes”
+means permissible acts and omissions done in public interest which may be prescribed
+by the Privacy Commission through processes of public consultation with due regard
+to academics, civil society, experts and professional bodies.
+CHAPTER III
+P
+ROTECTION OF PERSONAL DATA
+PART A
+NOTICE BY DATA CONTROLLERS
+6. (1) All communications by data controllers shall be complied with in the following
+manner:
+(a) in a concise, transparent, intelligible and easily accessible form, using clear
+and plain language, graphics and illustrations in particular for any information addressed
+specifically to a person below thirteen years of age;
+(b) information shall be provided in writing, or by other means, including, where
+appropriate, by electronic means and when requested by the data subject, may be
+provided orally when deemed appropriate as per regulations that may be made by the
+Privacy Commission;
+(c) requests for information by data subjects to data controllers shall be complied
+with promptly, ideally within a period of two working days noting acknowledgment of
+receipt and communicating the timelines for compliance that shall have a limit of one
+month from the date of receipt of the request for information:
+Provided that all communications by the data controllers including but not limited
+to the rights of data subjects under this Part may be refused when the data controller
+may refuse to supply information to a data subject if he is unable to identify or has a
+well founded basis for reasonable doubt as to the identity of the data subject or are
+manifestly unfounded, excessive and repetitive, with respect to the information sought
+by the data subject:
+Provided further that the data controller shall, while refusing to part away any
+information under foregoing provisions, provide reasons thereof;
+(d) if the data controller refuses or fails to provide information, he shall specify
+reasons thereof along with remedies including appeal as provided under provisions of
+this Act.
+(e) information shall include with a specific reference to the rights and remedies,
+include availability of measures for rectification, restriction and erasure as provided to
+data subjects under this Act.
+(2) The Privacy Commission, shall take special measures to ensure that information to
+be provided by the data controllers is accessible to all data subjects, including those who -
+(a) are illiterate;
+(b) suffer impaired or total lack of vision or hearing; and
+(c) fall into any other category requiring special measures, as may be prescribed
+by the Privacy Commission:
+Provided that, in case of any dispute, ambiguities in the terms of the notice and
+any privacy policies that apply shall be resolved in favour of the data subject.
+(3) The Privacy Commission may frame regulations to ensure compliance by data
+controllers of the rights to transparency and modalities of data subjects.
+Transparency
+in form and
+substance in
+all
+communications
+by data
+controllers.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+7
+PART B
+CONSENT OF DATA SUBJECTS
+7. (1) Every Data Controller shall collect data from a data subject with his prior consent.
+(2) The consent of a data subject under sub-section (1) shall be deemed to have been
+validly effected only if it is —
+(a) obtained from a person competent to contract in terms of section 11 of the
+Indian Contract Act, 1872;
+(b) obtained in a free manner, in the terms of section 14 of the Indian Contract
+Act, 1872;
+(c) informed and made with full knowledge of risks involved and the alternatives
+available;
+(d) obtained prior to all data collection, except in the cases expressly excluded by
+section 12;
+(e) voluntarily given through an express and affirmative Act and is recorded in
+modes including writing, audio, and visual media, which may be used in isolation or in
+conjunction;
+Provided that effective consent shall be deemed to have been obtained where
+the written declaration of consent was given in a manner where it also concerned other
+matters, the request for consent shall be presented in a manner that is clearly
+distinguishable from the other matters in an intelligible and easily accessible form,
+using clear and plain language;
+(f) a conspicuous means for its withdrawal is made available to the data subject;
+and
+(g) withdrawn by the same means which were employed to obtain consent;
+(3) Obtaining consent of data subject for specific and limited as to purpose and duration,
+and;
+(4) Obtaining consent of data Subject for collection of data in a manner as prescribed
+by the Privacy Commission.
+Explanation 1.— Consent shall be deemed to be limited only if it is obtained in respect
+of the purposes and duration strictly necessary to provide the product or service in relation
+to which personal data is sought to be collected, processed or disclosed.
+Explanation 2.— When the purposes for which personal data was collected are
+materially altered or expanded subsequent to its collection, consent shall be deemed to be
+specific only if it is obtained afresh in respect of that alteration or expansion—
+(a) after duly informing the data subject of the alteration or expansion in purpose;
+and
+(b) prior to any use of that data for such expanded purposes; and
+(c) in a manner as prescribed by the Privacy Commission.
+8. (1) The consent in relation to personal data relating to data subject of unsound mind
+shall be effective only if it is obtained from a legal guardian, or such other person expressly
+empowered to act on behalf of such data subject under any law for the time being in force, or
+if it is in consonance with decision making capacity as laid down in section 4 of the Mental
+Healthcare Act, 2017:
+Provided that where the unsoundness of mind is temporary, the data subject shall
+entitle to withdraw consent given on his behalf during the period of such unsoundness of
+mind.
+Prior consent
+necessary to
+the collection
+of data.
+Special
+provisions in
+respect of
+data subjects
+lacking legal
+capacity to
+give consent.
+10 of 2017.
+9 of 1872.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+8
+(2) The consent in relation to personal data relating to data subjects of any other class
+of natural persons identified by the Privacy Commission shall be effective only if it satisfies
+all conditions set out in rules framed by the Privacy Commission.
+(3) All rights and entitlements conferred on data subjects under this Act shall be
+deemed to accrue to data subject as per consent on behalf of such persons.
+Explanation.—Where no person acting on behalf of a data subject falling into any of
+the classes covered by this section can be identified despite the best efforts of the data
+controller or data processor, the State Privacy Commission, being accountable in a fiduciary
+capacity to the data subject, shall Act on behalf of such data subject.
+9. (1) The processing of personal data of a child by a data controller or data processor
+shall be lawful if it is in a manner that does not violate the stipulations prescribed in this
+section.
+(2) In respect of minors below the age of thirteen years, consent is to be obtained from
+a parent, legal guardian, or such other person acting in loco parentis as the case may be, after
+the minor is informed by the data controller in a simple and explanatory manner of the need
+for care in handling data concerning himself.
+(3) Upon attaining age of majority, the data subject shall be entitled to:—
+(a) be duly informed of the terms upon which personal data relating to his has
+been collected;
+(b) alter or rescind the terms on consent; and
+(c) require the destruction of all personal data relating to his.
+(4) The data controller or data processor shall make reasonable efforts, proportionate
+to the available technologies, to ensure that notice of the fiduciary's activities is served to
+the parent or legal guardian of a child of the processing of personal information of a child.
+(5) The notice under sub-section ( 4) shall be provided in the same manner for any
+material changes to processing priorly consented to.
+(6) The data controller or data processor shall make reasonable efforts, proportionate
+to the available technologies in obtaining verifiable parental consent.
+(7) The Data Fiduciary shall adopt appropriate methods for verifying parental consent
+on the basis of the following factors:—
+(a) volume of personal data processed;
+(b) proportion of such personal data likely to be that of children;
+(c) possibility of harm to children arising out of processing of personal data; and
+(d) such other factors as may be relevant.
+(8) The existing methods to obtain verifiable parental consent may include but not
+limited to—
+(a) in making available a consent form to be signed by the parent and returned to
+the operator by postal mail, facsimile, electronic scan or through other means available;
+(b) permitting the use of a credit card/debit card/other online payment means
+with further verification through a confirmation call/other means to a parent/legal
+guardian/other for the purpose of a monetary transaction;
+(c) obtaining consent through a parent confirmation call on a toll-free telephone
+number staffed by trained personnel;
+(d) obtaining consent through a parent confirmation call to a trained personnel
+via video-conference:
+Provided that, a data controller or data processor that does not disclose a child’s
+personal information may use email or an inbuilt messaging function with additional steps to
+confirm that the person providing the consent is the parent:
+Special
+provisions in
+respect to the
+processing of
+personal data
+of children.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+9
+Provided further that the information shall be provided to the parent so that consent
+may be revoked by using the same or other means in the future.
+(7) The data controllers or data processors shall ensure that there is no profiling,
+tracking, or behavioural monitoring of, or targeted advertising directed at children and
+undertaking any other processing of personal data that may cause significant harm to the
+child.
+10. (1) The consent in relation to personal data relating to data subjects who are
+competent but temporarily unable due to any reason or circumstances to give consent shall
+be effective only if such consent is obtained in relation to purposes which are strictly
+necessary to uphold or advance the interests of the data subject or to the interests of the
+public, and the following conditions are fulfilled:—
+(a) in respect of data subjects who are declared missing under law and for the
+period they are missing, it is obtained from their nearest living relative, and where all
+reasonable means to contact their nearest living relative have been demonstrably
+exhausted, it is obtained from any person legally empowered to act on their behalf, or
+as a last resort, the appropriate State Privacy Commission in whose jurisdiction he was
+last resident;
+(b) in respect of data subjects who are detained, where all reasonable means to
+contact them, their nearest living relative have been demonstrably exhausted, it is
+obtained from any person legally empowered to act on their behalf, or as a last resort,
+the appropriate State Privacy Commission in whose jurisdiction he was last resident;
+(c) in respect of data subjects who are temporarily incapable for medical reasons
+and for the duration of their temporary incapacity, it shall be obtained from their
+nearest living relative, and where all reasonable means to contact their nearest living
+relative have been demonstrably exhausted or obtained from any person legally
+empowered to act in their behalf, or as a last resort, the appropriate State Privacy
+Commission in whose jurisdiction he was last resident:
+Provided that when the inability to consent passes and where the personal data
+collected during the period of inability has not been anonymised, the data subject is
+entitled to—
+(i) alter or rescind the consent given on his behalf in all cases, and
+(ii) request the destruction of all records of personal data relating to him.
+(2) The consent in relation to personal data relating to data subjects who are unable,
+for reasons of death, and have not named a nominee to give, shall be effective only if it is
+obtained from—
+(a) the nearest living relative; or
+(b) where all reasonable measures to identify nearest living relative fail, the State
+Privacy Commission of the State in which the person last resided.
+11. (1) No person, including a data controller and data processor, shall collect any
+personal data without obtaining the consent of the data subject to whom it pertains.
+(2) Subject to sub-section (1), no person shall collect any personal data which is not
+necessary for the achievement of a purpose that is connected to a stated function of the
+person seeking its collection.
+(3) A person seeking to collect any personal data shall, prior to its collection and as
+prescribed by the Privacy Commission, inform the data subject without any direct or indirect
+charges, to whom such data pertains of the following details in respect of their personal data,
+namely —
+(a) when it shall be collected;
+(b) its content and nature;
+Special
+provisions in
+respect of
+data subjects
+unable to give
+consent.
+Collection of
+personal data.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+10
+(c) the purpose of its collection;
+(d) the purpose and manner in which it shall be used;
+(e) the persons to whom it shall be made available;
+(f) the duration for which it shall be stored;
+(g) the manner in which it may be accessed, checked and modified;
+(h) the security practices and other safeguards, if any, to which it shall be subject;
+(i) the privacy policies and other policies, if any, that shall protect it;
+(j) whether, and the conditions and procedure upon which, it may be disclosed
+to others;
+(k) the criteria, time and manner under which the personal data collected from the
+data subject shall be destroyed;
+(l) the time and manner under which the personal data collected from the data
+subject shall be destroyed on withdrawal of consent;
+(m) the process, procedure and ability for a meaningful recourse in case of any
+grievance in relation to it; and
+(n) the identity and contact details of the data controller and data processor.
+(4) The personal data collected in pursuance of a grant of consent by the data subject
+to whom it pertains shall, if that consent is subsequently withdrawn for any reason, be
+destroyed forthwith:
+Provided that the person who collected the personal data in respect of which consent
+is subsequently withdrawn may, only if the personal data is necessary for the delivery of any
+good or the provision of any service, except where it is an essential service as provided
+under section 14, or the fulfillment of a lawful contract, not deliver that good or deny that
+service or fulfill that contract to the data subject who withdrew the grant of consent easily
+and at any point during the duration of a service.
+12. (1) The data collector may collect or receive the personal data of a data subject
+from a third party without the prior consent of the data subject concerned only if it is—
+(a) necessary for the provision of an emergency medical service or essential
+services as provided under section 14 to the data subject;
+(b) strictly necessary to prevent, investigate or prosecute a cognizable offence
+as per process initiated, under the Code of Criminal Procedure, 1973 or by a law made
+through an Act of Parliament or State Legislature.
+(c) exempted by the Privacy commission as per provisions relating to interception
+and surveillance under this Act:
+Provided that for sub-sections (a) and (b) the data subject shall be duly informed in
+simple language and through a medium perfectly accessible to him, in a manner as prescribed
+by the Privacy Commission, at the earliest possible opportunity of the extent of personal
+data collected, and the processing and uses that it was put to in the course of meeting the
+purpose of the collection.
+(2) All personal data collected without prior consent under this section shall be
+destroyed as soon as the purpose for which it was collected is over :
+Provided that where effective consent is obtained in terms and as per the safeguards
+under the Act at the earliest possible opportunity and not later than seven days from the date
+of the collection of the personal data, such personal data may continue to be stored and
+processed.
+Collection of
+personal data
+without prior
+consent.
+2 of 1974.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+11
+13. (1) All data collected, processed and stored by data controllers and data processors
+prior to coming into force of this Act shall be destroyed within a period of two years from the
+date of coming into force of this Act.
+(2) Nothing in sub-section (1) shall apply where—
+(a) consent in terms which satisfies all the requirements as provided for under
+this Act and is obtained afresh within the aforementioned period of two years; or
+(b) The personal data collected prior to the commencement of this Act was
+anonymised in such a manner as to make re-identification of the data subject absolutely
+impossible.
+Explanation.—For the purpose of this section 'consent' shall be deemed to have been
+obtained if the data subject does not explicitly withdraw consent, on the basis of a specific
+notification in this regard, issued by data controller to the data subject, in a manner as
+prescribed by the Privacy Commission, within the aforementioned period of two years.
+PART C
+F
+URTHER LIMITATIONS ON DATA CONTROLLERS
+14. (1) No essential services, shall be withheld on the ground that consent to share
+personal data in a particular manner for the purpose of identification, has not been obtained
+or has been withheld or such data has not been collected at the time the data subject claims
+the service:
+Provided that the data subject shall be entitled to damages where an essential service
+has been denied:
+Provided further that the data controller or data processor shall accept any alternate
+means for identification, wherever available as per the choice of the data subject:
+Provided also that the data subject shall be entitled to exemplary damages where an
+essential service has been denied despite the existence of pre-existing alternative means of
+identifying the data subject.
+(2) An essential service includes the following, namely:—
+(a) subsidies, benefits and entitlements which are provided on establishing the
+identity of an individual under the Aadhaar Act, 2016;
+(b) entitlements under the Public Distribution System including but not limited
+to the provisions under the National Food Security Act, 2013;
+(c) the provision of medical care to minors, expectant mothers or those requiring
+emergent or life-saving care;
+(d) social security benefits, including pension, gratuity and provident fund;
+(e) benefits under the Mahatma Gandhi National Rural Employment Guarantee
+Act, 2005;
+(f) services provided to effectuate the provisions of Part III or Part IV of the
+Constitution;
+(g) any other service additionally prescribed by the appropriate Government by
+notification in the Official Gazette or by way of a public proclamation;
+(3) Where an essential service is provided under sub-section ( 1) and the service
+provider of the said service provider suffers grave and irreparable injury arising directly from
+the unavailability of personal data in respect of which consent was sought under this Act,
+such service provider may approach the Privacy Commission for relief or seeking exemption.
+15. (1) No person shall store any personal data for a period longer than is necessary to
+achieve the purpose for which it was collected or received, or, if that purpose is achieved or
+ceases to exist for any reason, for any period following such achievement or cessation.
+Special
+provisions in
+respect of
+data collected
+prior to the
+commencement
+of this Act.
+Bar on denial
+of subsidies,
+benefits and
+entitlements.
+18 of 2016.
+20 of 2013.
+42 of 2005.
+Storage and
+destruction of
+personal data.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+12
+(2) Save as provided in sub-section ( 3), any personal data collected or received in
+relation to the achievement of a purpose shall, if that purpose is achieved or ceases to exist
+for any reason, be destroyed forthwith:
+Provided that where the purpose of collection is the provision of essential services
+under section 14 of the Banking Regulation Act, 1949 or of banking as provided under
+section 5 (b) of the Banking Regulation Act, 1949, the data subject shall be duly informed in
+terms to be prescribed by the Privacy Commission of the impending destruction of the data.
+(3) Notwithstanding anything contained in this section, any personal data may be
+stored for a period longer than is necessary to achieve the purpose for which it was collected
+or received, or, if that purpose has been achieved or ceases to exist for any reason, for any
+period following such achievement or cessation, if—
+(a) the data subject to whom it pertains grants their effective consent to such
+storage prior to the purpose for which it was collected or received being achieved or
+ceased to exist;
+(b) it is adduced for an evidentiary purpose in a legal proceeding; or
+(c) it is required to be stored for historical, statistical or research purposes under
+the provisions of an Act of Parliament and specified in a manner as prescribed by the
+Privacy Commission:
+Provided that only such amount of personal data that is necessary to achieve the
+purpose of storage under this sub-section shall be stored and any personal data that is not
+required to be stored for such purpose shall be destroyed forthwith:
+Provided further that any personal data stored under this sub-section shall, to the
+extent possible, be anonymised.
+16. (1) Save as provided in sub-section (2), no person shall process any personal data
+that is not necessary for the achievement of the purpose for which it was collected or
+received.
+(2) Notwithstanding anything contained in this section, any personal data may be
+processed for a purpose other than the purpose for which it was collected or received only
+if —
+(a) the data subject grants his effective consent to the processing and only that
+amount of personal data that is necessary to achieve such other purpose is processed;
+(b) it is necessary to perform a contractual duty to the data subject;
+(c) it is necessary to prevent an imminent threat to the security of the State or
+public order and the fact of such threat is recorded in writing by a competent
+organization which anticipates such a threat; or
+(d) it is necessary to prevent, investigate or prosecute a cognizable offence.
+(3) Notwithstanding anything contained in this section personal data may be
+anonymized, as a measure to enhance the security of the data and the privacy of the data
+subject:
+Provided that anonymized data may be processed or disseminated only if the data
+controller has ensured the Privacy Commission that it is impossible to identify the data
+subject to whom it relates and sought exemption:
+Provided further that where the Privacy Commission is satisfied that the personal data
+has been satisfactorily anonymized, the Privacy Commission may grant an extension on the
+permissible period of storage and disclosures for specified purposes in addition to those in
+respect of which effective consent was obtained.
+17. (1) No person shall collect, receive, store, process or otherwise handle any personal
+data without implementing measures, including, but not restricted to, technological, physical
+and administrative measures, adequate to secure its confidentiality, secrecy, integrity and
+safety, including from theft, loss, damage or destruction.
+Processing of
+personal data.
+Security of
+personal data
+and duty of
+confidentiality.
+10 of 1949.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+50
+
+13
+(2) Any person who collects, receives, stores, processes or otherwise handles any
+personal data shall maintain confidentiality and secrecy in respect of data collected, received,
+stored, processed or in their possession.
+(3) It shall be the duty of the data controllers and data processors to maintain
+confidentiality and secrecy in respect of personal data in their possession or control.
+(4) Without prejudice to the generality of the foregoing provisions of this section and
+notwithstanding any law for the time being in force, any person who collects, receives,
+stores, processes or otherwise handles any personal data shall, if its confidentiality, secrecy,
+integrity or safety is violated by theft, loss, negligence, damage or destruction, or as a result
+of any collection, processing or disclosure contrary to the provisions of this Act, or for any
+other reason whatsoever, as soon as he becomes aware of such violation, notify the person
+to whom it pertains, the Privacy Commission and any other agencies as may be designated
+for the purpose by the Central Government in such form and manner as may be prescribed.
+(5) Any person, who collects, receives, stores, processes, or otherwise handles any
+personal data shall report all violations of provisions of this Chapter to the Privacy Commission,
+that are brought to its notice, or are reasonably expected to be known to such persons.
+18. (1) Subject to the provisions of this section, personal data that has been collected
+according to this Act may be transferred by a data controller to a data processor located in
+India, if the transfer is pursuant to an agreement that  demonstrably and expressly binds the
+data processor to same or stronger  conditions and measures in respect of the storage,
+processing, destruction, disclosure and other handling of the personal data as are contained
+in this Act.
+(2) No data controller shall transfer personal data outside the territory of India or to an
+international organisation unless any one of the following conditions is fulfilled—
+(a) the Central Government has issued a notification indicating it has decided
+that the country, territory, or international organization in question agrees to ensure an
+adequate level of protection of privacy and personal data in a manner which is in no
+way incompatible with the privacy principles contained in section 3:
+Provided that any such notification of an adequacy decision shall only be issued by
+the Central Government after due consultation with the Privacy Commission and its Office of
+data protection, and after having taken inputs from such stakeholders and experts as the
+later may recommend; or
+(b) The transfer by the data controller to a data processor located outside India
+is pursuant to an agreement that binds the recipient of the personal data to the strict
+conditions and measures in respect of the storage, processing, destruction, disclosure,
+and other handling of the personal data as contained in this Act; or
+(c) The data controller shall assess all the circumstances relating to transfer of
+personal data in question to the third country, territory, or international organization
+and concluded that appropriate legal instruments and safeguards exist to protect the
+data, and inform the Office of data protection of the Privacy Commission of such
+transfers of data:
+Provided that while informing the transfer of personal data to the Privacy Commission,
+the data controller shall maintain following details, namely:—
+(i) the date and time of the transfer;
+(ii) the name of other pertinent information about the data processor;
+(iii) the justification for the transfer;
+(iv) a description of the personal data transferred; and
+(v) the existing legal instruments and safeguards for data protection by which
+the data processor is bound.
+Transfer of
+personal data
+outside the
+territory of
+India.20
+25
+30
+35
+40
+45
+5
+15
+10
+
+14
+(3) No data processor shall process any personal data transferred under this section
+except to achieve the purpose for which it was collected.
+(4) Any data controller who transfers personal data under this section shall be
+responsible to the data subject for the actions of the data processor.
+(5) Any data controller who transfers personal data outside the territory of India shall
+comply with the provisions of this Act notwithstanding the fact that the personal data in
+question is being processed outside the country.
+Explanation.—For the purpose of this section, the duties of a data collector shall
+include, but not be limited to:
+(a) ensure that any recipient of such transferred personal data takes appropriate
+steps to ensure compliance with the provisions of this Act;
+(b) report any breach to the Privacy Commission notwithstanding the transfer of
+such data outside the territory of India.
+19. (1) Save as provided in this Chapter, no person including the data controller shall
+disclose, or otherwise cause any other person to receive, the content or nature of any
+personal data, including any other details in respect thereof, except to the person to whom it
+pertains.
+(2) No person including the data controller shall disclose any personal data without
+obtaining the prior effective consent of the data subject:
+Provided that consent of a data subject obtained by way of threat, under duress or
+coercion or denial of service shall not be treated as a valid and effective consent
+(3) For the purpose of sub-section (2), a person including the data controller seeking
+to disclose any personal data shall, prior to its disclosure, inform the data subject of the
+following details in respect of their personal data, namely: —
+(a) when and to whom it shall be disclosed;
+(b) the purpose of its disclosure;
+(c) the security practices and other safeguards, if any, to which personal data
+shall be subject to;
+(d) the privacy policies and other policies, if any, that shall protect personal
+data;
+(e) the procedure for recourse in case of any grievance in relation to personal
+data; and
+(f) any other details prescribed by rules or by the Privacy Commission.
+(4) Notwithstanding anything contained in this section, any person who collects,
+receives, stores, processes or otherwise handles any personal data may disclose it to a
+person other than the data subject, whether located in India or otherwise, for the purpose of
+only processing it to achieve the purpose for which it was collected:
+Provided that in case disclosure is pursuant to an agreement that explicitly binds the
+person receiving it to same or stronger measures in respect of its storage, processing,
+destruction, disclosure or other handling as are contained in this Act.
+(5) Any disclosure of personal data made contrary to the provisions of this Act shall
+be notified to the data subject and Privacy Commission.
+20. (1) Notwithstanding anything contained in this Act and any other law for the time
+being in force —
+(a) no person shall collect sensitive personal data without effective consent
+from the data subject;
+Disclosure of
+personal data.
+Special
+provisions for
+sensitive
+personal data.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+15
+(b) no person shall store sensitive personal data for a period longer than is
+strictly necessary to the purpose for which it was collected or received, or, if that
+purpose has been achieved or ceases to exist for any reason, for any period following
+such achievement or cessation;
+(c) no person shall process sensitive personal data for any purpose other than
+the purpose for which it was collected or received;
+(d) no person shall disclose sensitive personal data to another person, or
+otherwise cause any other person to come into the knowledge or possession of, the
+content or nature of any sensitive personal data, including any other details in respect
+thereof, except the data subject.
+(2) In addition to the requirements set out under sub-clause (1), the Privacy Commission
+shall set out additional protections in respect of:—
+(a) sensitive personal data relating to data subjects who are minors;
+(b) biometric and deoxyribonucleic acid data; and
+(c) financial and credit data.
+21. (1) Where the data controller uses, directly or indirectly any new technology, it
+shall be the duty of data controller to assess the risks involved in using new technology to
+the data protection rights under this Act.
+(2) The data controller shall conduct an internal process of a data protection impact
+assessment which shall include a systematic and extensive evaluation of the personal aspects
+relating to data subjects especially the impact on their legal and human rights which result
+from use of the new technology.
+(3) The assessment shall include—
+(a) a systematic description of the processing operations and the purposes for
+such processing;
+(b) an assessment of compliance with the principles of protecting privacy in
+relation to the purposes;
+(c) an assessment of the impact on the risks to the rights and freedoms of data
+subjects; and
+(d) the safeguards, security measures and mechanisms to address risks to
+protection of personal data.
+(4) All data impact assessment reports shall be submitted periodically to the State
+Privacy Commission as per the rules and regulations made under this Act.
+(5) The State Privacy Commission shall prepare and make public a list of the kind of
+processing operations which are subject to the requirement for a data protection impact assessment.
+(6) The lists prepared under sub-section( 4) shall be communicated to the Office for
+Data Protection of the Privacy Commission for approval prior to adoption.
+Explanation.—The term “new technology” includes any pre-existing technology used
+for a new purpose through an iterative process by which any existing or pre-existing process
+or output is substantially changed.
+PART D
+R
+IGHTS OF A DATA SUBJECT
+22. (1) The data subject shall have the right to obtain from the data controller information
+as to whether any personal data concerning him is collected or processed, and, where any
+such personal data has been collected or processed by the data controller, access to the
+personal data shall be granted along with the following information—
+(a) the purposes of the storage and processing personal data;
+Special
+provisions for
+data impact
+assessment.
+Right to
+access for data
+subject.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+16
+(b) the categories of the personal data concerned;
+(c) the recipients or categories of recipients to whom the personal data have
+been or shall be disclosed, in particular to determine that period;
+(d) the existence of the right to request from the controller rectification or erasure
+of personal data or restriction of processing of personal data concerning the data
+subject or to object to such processing;
+(e) the right to lodge a complaint with a supervisory authority;
+(f) where the personal data are not collected from the data subject, any available
+information as to their source;
+(g) the existence of automated decision making, including profiling.
+(2) When the personal data is transferred to a third country or to an international
+organisation, the data subject shall have the right to be informed of the safeguards as per
+provisions of this Act.
+(3) The data controller shall provide a single copy of the personal data undergoing
+processing to the data subject and additional copies may be subject to additional charges on
+a concessional and reasonable basis.
+(4) The right to access data by a data subject shall be in addition to the notifications
+and existing obligations of data controllers not limited to, but including the right to seek
+information of security breaches to their personal data.
+23. (1) The data subject shall have the right to obtain from the data controller promptly
+the rectification of inaccurate information in his personal data.
+(2) Any data controller who collects, receives, stores, processes or otherwise handles
+any personal data shall, to the extent possible, ensure that it is accurate and, where necessary,
+is kept up to date.
+(3) No data controller who collects, receives, stores, processes or otherwise handles
+any personal data shall deny, to the data subject, the opportunity to review and obtain a
+copy of such data and, where necessary, rectify anything that is inaccurate or not up to date.
+(4) The data controller shall issue special notice to the data subject of any rectification
+of personal data pertaining to the data subject unless such a move proves impossible or
+involves disproportionate effort.
+24. (1) The data subject shall have a right to request destruction of data at any time,
+and data controllers and processors shall comply with such requests, within a timeframe,
+manner and mode to be prescribed by the Privacy Commission.
+(2) The data subject shall have the right to obtain from the data controller the erasure
+of his personal data without any delay and the Data Controller shall have duty to erase
+personal data without undue delay where one of the following grounds are applicable:
+(a) the personal data is no longer necessary in relation to the purposes for which
+it was collected or processed and causes actual harm;
+(b) the data subject withdraws consent as per the provisions of this Act and no
+other legal ground for processing continues to exist;
+(c) the personal data has been unlawfully processed.
+(3) The provisions of this section shall not apply when the storage or processing is
+determined by the Privacy Commission to be:
+(a) for exercising the right of speech and freedom of expression which includes
+the right to receive information, especially about public personalities, officials or matters
+of public interest.
+Right to
+rectification
+for data
+subjects and
+obligations of
+Data
+controllers.
+Right to
+destruction of
+personal data.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+17
+(b) for archiving purposes in the public interest, scientific or historical research
+purposes or statistical purposes and the erasure is likely to be or render impossible or
+seriously impair such objectives.
+(c) for the establishment, exercise or defense of any legal proceedings.
+(d) as per the provisions of this Act including but not limited to anonymised data
+as contained under section 16.
+(4) The data controller shall issue special notice to the data subject of any destruction
+of his personal data unless such a move proves impossible or involves disproportionate
+effort.
+25. (1) The data subject shall have the right to obtain from the data controller restriction
+of processing of personal data where one of the following applies—
+(a) the accuracy of the personal data is contested by the data subject, for a
+period enabling the data controller to verify the accuracy of the personal data;
+(b) the processing is unlawful and the data subject opposes the erasure of the
+personal data and requests the restriction of its use instead;
+(c) the data controller no longer needs the personal data for the purposes of the
+processing, but they are required by the data subject for the establishment, exercise or
+defense in legal proceedings;
+(d) the data subject has objected to processing pending verification whether the
+legitimate grounds of the data controller override those of the data subject.
+(2) When the processing has been restricted under this provision, such personal data
+shall, with the exception of storage, only be processed with the data subject's consent or for
+the establishment, exercise or defense in legal proceedings or for the protection of the rights
+of another natural person.
+(3) A data subject who has obtained restriction of processing pursuant to this section
+shall be informed by the data controller before the restriction of processing is removed.
+26. (1) The data subject shall have the right to object, on grounds relating to his
+particular situation, at any time to processing of personal data concerning him which is
+based on the principles for the protection of privacy as provided under section 3 of the Act.
+(2) The data controller shall in addition to its other obligations, for communication of
+notices to the data subject under this Act shall at the latest at the time of the first communication
+with the data subject provide notice to the data subject of its right to object, clearly and
+separately from other information.
+27. (1) The data subject shall have the right to receive all personal data concerning him
+from any data controller within a reasonable time and in a structured, commonly used and
+machine-readable format upon request.
+(2) Except where it is expressly precluded by any law for the time being in force, the
+data subject shall have the additional right to receive the output of all processing of his
+personal data within a reasonable time.
+(3) The data controller shall not hinder in any manner the transfer by the data subject,
+of the personal data, to any other person.
+(4) The data subject shall have the right to request that the personal data be transmitted
+directly from one controller to another, in all instances where it is technically feasible, and the
+data subject be informed upon the completion of the such transmission:
+Provided that no transmission shall be deemed to be complete until all records of the
+data so transmitted as per the instructions of the data subject are then destroyed by the data
+controller to whom request is made.
+Right to
+restriction of
+processing.
+Right to
+object.
+Right to
+portability of
+personal data.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+18
+(5) Where the data controller claims that it is not technically feasible to transfer data in
+the manner provided for under sub-section (4) and the data subject challenges such a claim
+in terms of rules prescribed by the Privacy Commission in this regard, the burden to prove a
+lack of technical feasibility to transfer falls upon the data controller.
+28. ( 1) The data subject in addition to other rights with respect to processing of
+personal data shall specifically have the right to seek exemption from decisions based solely
+on automated processing including profiling, which produces legal effects concerning or
+significantly affecting including but not limited to when it causes demonstrable harm or
+injury.
+(2) The provisions of sub-section (1) shall not apply, if the automated decision:—
+(a) is necessary for entering into, or performance of, a contract between the data
+subject and a data controller;
+(b) is based on the data subject's express and explicit consent;
+(c) is provided a case by case exemption in cases by the Privacy Commission
+having regard to the principles as provided under section 3.
+Explanation.— The term “case by case exemption” applies to an individual person
+but does not include a category or a class of personal data.
+(3) The data controller shall provide additional safeguards with specific provisions for
+the right of the data subject on the part of the Data controller for providing an effective
+process of hearing and contesting decisions.
+(4) All decisions made by way of automated decision by data controllers shall be open
+to legal remedies including appeals as provided under this Act.
+CHAPTER IV
+I
+NTERCEPTION AND SURVEILLANCE
+29. (1) All provisions of Chapter III shall apply to personal data collected, processed,
+stored, transferred or disclosed by competent organizations unless specifically provided or
+exempted under this Chapter;
+(2) A competent organization seeking to exclude the application of provisions of
+Chapter III with respect to all categories of personal data collected, processed, stored,
+transferred or disclosed by itself, shall prefer an application with the Privacy Commission, in
+a manner prescribed by the Privacy Commission.
+(3) An application under sub-section (2) shall specify—
+(a) the specific personal data sought to be exempted from provisions of Chapter III
+of this Act;
+(b) the reasons as to why surveillance under this provision is necessary to
+prevent a reasonable threat to security of the State or public order :
+Provided that the reasons shall also state why the data covered under the request for
+exemption has a reasonable, proximity and direct nexus with the threat:
+Provided further that the reasons shall specify why a lesser restrictive measure may
+not be taken; and
+(c) the specific time period during which the exemption is sought.
+(4) No competent organisation shall process or store any personal data without
+implementing measures to ensure that the number of persons within that intelligence
+organisation to whom it is made available, and the extent to which it is copied, is limited to the
+minimum that is necessary to fulfill the purpose for which it is processed or stored, as the
+case may be.
+Right to seek
+exemption
+from
+automated
+decision
+making.
+Special
+provisions for
+competent
+organizations.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+19
+(5) Notwithstanding any provisions of the Indian Evidence Act, 1872 any personal
+data collected, processed, stored, transferred or disclosed by a competent organization in
+contravention of this Act shall be inadmissible in legal proceedings before any court of law.
+30. (1) Notwithstanding anything contained in any other law for the time being in
+force, but save as provided in this chapter, no person shall intercept, or cause to be intercepted,
+any communication of another person except in pursuance of an order by the appropriate
+Surveillance and Interception Review Division.
+(2) No interception of any communication shall be ordered or carried out  that is not
+necessary to achieve the purpose for which the interception is sought.
+31. (1) An authorised officer of a competent organisation seeking to intercept any
+communication of another person shall prefer an application, in  such form and manner as
+may be prescribed by the Central Government in consultation with the Privacy Commission,
+to the appropriate Surveillance and Interception Review Division.
+(2) The appropriate Surveillance and Interception Review Division may, if it is satisfied
+that the interception is necessary to prevent a reasonable threat to security of the State or
+public order, or prevent, investigate or prosecute a cognisable offence, order the interception
+of communications by recording reasons in writing.
+(3) The appropriate Surveillance and Interception Review Division shall, prior to issuing
+an order for interception of any communication, satisfy itself that all other lawful means to
+acquire the information sought to be intercepted have been exhausted and that the proposed
+interception is necessary and proportionate, reasonable and not excessive.
+(4) Any interception of any communication ordered, authorised or carried out prior to
+the commencement of this Act shall, immediately upon the constitution of the Privacy
+Commission, be reported to the Office for Surveillance Reform of the Privacy Commission.
+(5) Any interception involving the infringement of the privacy of individuals who are
+not the subject of the intended interception, or where communications relate to journalistic,
+activism related to fundamental and constitutional rights, parliamentary or legally privileged
+material is involved, it shall satisfy additional conditions including the provision of specific
+prior justification in writing to the Office for Surveillance Reform of the Privacy Commission
+as to the necessity for the interception and the safeguards providing for minimizing the
+material intercepted to the greatest extent possible and the destruction of all such material
+that is not strictly necessary for the purpose of the interception.
+32. (1) Notwithstanding anything contained in section 31, if the Home Secretary of the
+appropriate Government is satisfied that an imminent grave threat to the security of the State
+or public order exists, he may, for reasons to be recorded in writing, order the interception of
+any communication.
+(2) No order for interception of any communication made under this section shall be
+valid upon the expiry of a period of seven days from the date of the order.
+(3) Before the expiry of a period of seven days under this section, the person who
+carried out the interception of communication shall notify the appropriate Surveillance and
+Interception Review Division of the fact of such interception, the name and address of the
+person whose communication is being intercepted, and the duration of the interception and,
+furthermore, shall furnish a copy of the order of the Home Secretary authorising the
+interception.
+(4) The surveillance and Interception Review Division may, upon receipt of notification
+under sub-section (3), recall the order on grounds of lack of an imminent and grave threat to
+the security of State or public order, or on absence of ground mentioned in sub-section (2) of
+section 31, and may also order for damages in case of abuse to be paid to the individual/
+natural person whose communication was intercepted under the order so recalled.
+1 of 1872.
+Bar against
+interception
+of
+communications.
+Prior
+authorisation
+by the
+appropriate
+Surveillance
+and
+Interception
+Review
+Division.
+Authorisation
+by the Home
+Secretary in
+emergent
+circumstances.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+20
+33. (1) An order for interception of any communication shall specify the period of its
+validity and upon the expiry of the period of validity of all interception carried out in relation
+to that order shall cease forthwith:
+Provided that no order for interception of any communication shall be valid upon the
+expiry of a period of thirty days from the date of the order.
+(2) The appropriate Surveillance and Interception Review Division, may, upon receipt
+of an application from an authorised officer in such form and manner as may be prescribed by
+the Central Government in consultation with the Privacy Commission, renew, for a period not
+exceeding thirty days, any order for interception of any communication if it is satisfied that
+the conditions upon which the original order was issued continue to exist:
+Provided that where interception of communication, under orders passed under this
+Chapter, including orders for renewal, has been carried out for a cumulative period of six
+months, whether in succession or not, any application for further renewal, shall be accepted,
+if in addition to the ground mentioned in this sub-section, the competent organization is able
+to demonstrate the need for such continued interception.
+34. (1) Subject to sub-section (2), before the expiry of a period of thirty days from the
+conclusion of any interception of communication ordered or carried out under this Act or
+any interception of communication carried out before the Act came into force, the authorised
+officer who carried out the interception of communication shall, in writing in such form and
+manner as may be prescribed by the Central Government in consultation with the Privacy
+Commission, notify, with reference to the relevant order of the Surveillance and Interception
+Review Division, each person whose communication was intercepted of the fact of such
+interception and duration thereof.
+(2) The Surveillance and Interception Review Division may, on an application made by
+an authorised officer in such form and manner as may be prescribed, if he is satisfied that the
+person(s) specified in notification under sub-section ( 1) poses a reasonable threat to the
+security of the State or public order or adversely affect the prevention, investigation or
+prosecution of a cognisable offence, for reasons to be recorded in writing addressed to the
+authorised officer, order that such person(s) whose communication was intercepted not be
+notified of the fact of such interception or the duration thereof:
+Provided that any order passed preventing disclosure of interception under section (2)
+shall not operate in infinity and shall record reasons in writing with the period till when the
+reasonable threat is anticipated to extend, on cessation of which the duty to inform under
+sub-section (1) shall operate.
+35. (1) Any person who carries out any interception of any communication, or who
+obtains any information, including personal data, as a result of an interception of
+communication, shall have a duty of data security and privacy with respect to it.
+(2) No person shall intercept any communication of another person without
+implementing measures, including, but not restricted to, technological, physical and
+administrative measures, to secure the data security and privacy of all information obtained
+as a result of an interception of communication, including from theft, negligence, loss or
+unauthorised disclosure.
+(3) Every competent organisation shall, before the expiry of a period of one hundred
+days from the enactment of this Act, designate as many officers as it deems fit as Privacy
+Officers who shall be administratively responsible for ensuring that all interceptions of
+communications carried out by that competent organisation are in compliance with the
+provisions of this Chapter.
+36. (1) In addition to the existing obligations and duties for lawful interception, no
+person shall disclose to any person, other than the person whose communication has been
+intercepted, or otherwise cause any other person to come into the knowledge or possession
+of, the content or nature of any information, including personal data, obtained as a result of
+Duration of
+interception.
+Duty to
+inform the
+person
+concerned.
+Security and
+duty of data
+security and
+privacy.
+Disclosure of
+intercepted
+communications.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+50
+
+21
+an interception of any communication including the fact that the interception of communication
+was carried out.
+(2) Notwithstanding anything contained in this section, if the disclosure of any
+information, including personal data, obtained as a result of an interception of any
+communication is necessary to prevent a reasonable threat to the security of the State or
+public order, or prevent, investigate or prosecute a cognisable offence, an authorised officer
+may disclose the information, including personal data, obtained as a result of the interception
+of any communication to any authorised officer of any other competent organization:
+Provided that no authorised officer shall disclose any information, including personal
+data, obtained as a result of the interception of any communication that is not necessary to
+achieve the purpose for which the disclosure is sought.
+37. (1) Subject to sub-section (2), no person shall store any data, including personal
+data, obtained as a result of an interception of any communication for a period longer than
+one hundred and eighty days from the date on which the last order for interception of the
+communication to which the obtained information pertains expired and upon expiry of such
+period, shall destroy the data so stored.
+(2) The Surveillance and Interception Review Division may, on an application made in
+such form and manner as may be prescribed by the Privacy Commission, if it is satisfied that
+it is necessary to—
+(a) prevent a reasonable threat to the security of the State; or
+(b) maintain public order; or
+(c) prevent, investigate or prosecute a cognisable offence in an ongoing legal
+proceeding and is authorized by a court order to that effect;
+for reasons to be recorded in writing, order that any information, including personal data,
+obtained as a result of an interception of any communication may be stored for a period
+longer than one hundred and eighty days from the date on which the last order for interception
+of the communication to which the obtained information pertains expired and shall not be
+destroyed.
+(3) Any data obtained as a result of interception of any communication shall be stored
+in a manner that complies with the provisions of section 15 with respect to such data.
+38. (1) Notwithstanding anything contained in any other law for the time being in
+force, but save as provided in this chapter, no person shall order or carry out, or cause or
+assist the ordering or carrying out of, any surveillance of another person.
+(2) The appropriate Surveillance and Interception Review Division shall have the
+power to issue appropriate directions, including for cessation of any activity, being carried
+out by a person, including a statutory authority, which is in contravention of the proviso to
+sub-section (1).
+39. (1) No member of a competent organization shall order or carry out, or cause to be
+ordered or carried out, any surveillance of another person save in  pursuance of an order by
+the appropriate Surveillance and Interception Review Division.
+(2) No surveillance shall be ordered or carried out that is not necessary to achieve the
+purpose for which the surveillance is sought.
+(3) An authorised officer seeking to carry out any surveillance of another person shall
+prefer an application, in such form and manner as may be prescribed by the Central Government
+in consultation with the Privacy Commission, to the Surveillance and Interception Review
+Division.
+(4) The Surveillance and Interception Review Division may, if it is satisfied that the
+surveillance is necessary to prevent a reasonable threat to the security of the State or public
+order, or to prevent, investigate or prosecute a cognisable offence, for reasons to be recorded
+in writing addressed to the authorised officer, order the surveillance.
+Storage and
+destruction of
+intercepted
+communications.
+Bar against
+surveillance.
+Surveillance
+by the State.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+50
+
+22
+40. (1) Notwithstanding anything contained in any other law for the time being in
+force, and without prejudice to the provisions of section 37 of this Act, no person other than
+a member of a competent organization shall carry out, or cause to be carried out, any
+surveillance in any public place or in any property or premises that is not in his possession.
+(2) Without prejudice to sub-section (1), any person who carries out any surveillance
+under this section shall be subject to a duty to inform, in such manner as may be prescribed
+by the Central Government in consultation with the Privacy Commission, members of the
+public of such surveillance.
+41. (1) An order for surveillance shall specify the period of its validity and, upon the
+expiry of the validity of the order, all surveillance carried out in relation to that order shall
+cease forthwith:
+Provided that no order for surveillance shall be valid upon the expiry of a period of
+thirty days from the date of the order.
+(2) The Surveillance and Interception Review Division, may, upon receipt of an
+application from an authorised officer in such form and manner as may be prescribed by the
+Central Government in consultation with the Privacy Commission, renew any order for
+surveillance if it is satisfied that the conditions upon which the original order was issued
+continue to exist:
+Provided that where surveillance, under orders passed under this Chapter, including
+orders for renewal, has been carried out for a cumulative period of six months, whether in
+succession or not, any application for further renewal, shall be accepted, if in addition to the
+ground mentioned in this sub-section, the competent organization is able to demonstrate the
+need for such continued surveillance.
+42. (1) Subject to sub-section (2), before the expiry of a period of thirty days from the
+conclusion of any surveillance ordered or carried out under this Act or any surveillance
+carried out before this Act came into operation, the authorised officer who carried out the
+surveillance shall, in writing in such form and manner as may be prescribed by the Central
+Government in consultation with the Privacy Commission, notify, with reference to the relevant
+order of the Surveillance and Interception Review Division, each person in respect of whom
+surveillance was carried out of the fact of such surveillance and duration thereof.
+(2) The appropriate Surveillance and Interception Review Division may, on an
+application made by an authorised officer in such form and manner as may be prescribed by
+the Central Government in consultation with the Privacy Commission, if it is satisfied that the
+persons notified under sub-section ( 1) presents a reasonable threat to the security of the
+State or public order, or adversely affect the prevention, investigation or prosecution of a
+cognisable offence, for reasons to be recorded in writing addressed to the authorised officer,
+order that such person not to be notified of the fact of such surveillance or the duration
+thereof:
+Provided any order passed preventing disclosure of surveillance under section ( 2)
+shall not operate indefinitely and contain reasons in writing with the period till when the
+reasonable threat is anticipated to extend, on cessation of which the duty to inform under
+sub-section (1) shall operate.
+43. (1) Any person who carries out any surveillance, or who lawfully obtains any
+information, including personal data, as a result of surveillance, shall be subject to a duty of
+confidentiality and secrecy in respect of it.
+(2) No person shall carry out any surveillance of another person without implementing
+measures, including, but not restricted to, technological, physical and administrative
+measures, to secure the confidentiality and secrecy of all information obtained as a result of
+surveillance, including from theft, loss or unauthorised disclosure.
+Surveillance
+by private
+persons or
+entities.
+Duration of
+surveillance.
+Duty to
+inform the
+person
+concerned.
+Security and
+duty of
+confidentiality
+and secrecy.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+23
+(3) Every competent organization shall, before the expiry of a period of one hundred
+days from coming into force of this Act, designate as many officers as it deems fit as Privacy
+Officers who shall be administratively responsible for ensuring that all surveillance carried
+out by the Competent Organization are in compliance with the provisions of this Chapter:
+Provided that a public authority that does not order or carry out surveillance shall not
+be required to designate any Privacy Officers under this sub-section.
+(4) Every person who is not a member of a competent organization and who seeks to
+carry out any surveillance shall, at least seven days before the surveillance is first carried
+out, designate or appoint as many persons as it deems fit as Privacy Officers who shall be
+responsible for ensuring that all surveillance carried out is in compliance with the provisions
+of this Chapter:
+Provided that where surveillance is carried out by a single person, that person shall be
+deemed to be a Privacy Officer.
+44. (1) In addition to the existing obligations and duties for lawful surveillance, no
+person shall disclose to any person, other than the person who is being surveilled, or
+otherwise cause any other person to come into the knowledge or possession of, the content
+or nature of any information, including personal data, obtained as a result of any surveillance
+including the fact that the surveillance was carried out.
+(2) Notwithstanding anything contained in this section, if the disclosure of any
+information, including personal data, obtained as a result of surveillance is necessary to
+prevent a reasonable threat to the security of the State or public order, or prevent, investigate
+or prosecute a cognisable offence, that information, including personal data, obtained as a
+result of surveillance may be disclosed to an authorized officer of a competent organization
+only:
+Provided that no person shall disclose any information, including personal data,
+obtained as a result of surveillance that is not necessary to achieve the purpose for
+which the disclosure is sought.
+45. (1) Subject to sub-section ( 2), no person shall store any information, including
+personal data, obtained as a result of surveillance for a period longer than one hundred and
+eighty' days from the date on which the surveillance to which the obtained information
+pertains ceased, and upon expiry of such period, shall destroy the data so stored.
+(2) The appropriate Surveillance and Interception Review Division may, on an
+application made in such form and manner as may be prescribed by the Central Government
+in consultation with the Privacy Commission, if it is satisfied that it is necessary to—
+(a) prevent a reasonable threat to the security of the State; or
+(b) public order; or
+(c) prevent, investigate or prosecute a cognisable offence in an ongoing legal
+proceeding and is authorized by a court order to that effect;
+for reasons to be recorded in writing, order that any information, including personal data,
+obtained as a result of surveillance may be stored for a period longer than one hundred and
+eighty days from the date on which the last order for surveillance to which the obtained
+information pertains expired and shall not be destroyed.
+(3) Any data obtained as a result of surveillance shall be stored in a manner that
+complies with the provisions of sub-section (3) of section 14 with respect to such data.
+Disclosure of
+surveillance.
+Storage and
+destruction of
+surveillance.
+20
+25
+30
+35
+40
+5
+15
+10
+
+24
+46. Any communication, complaint, or evidence thereunder alleging violation of the
+provisions of this Act or other applicable law , if made to the Privacy Commission, the
+Surveillance and Interception Review Divisions and their legal counsel, or to the Supreme
+Court, shall not be treated as a violation of this Act and applicable provisions of the Information
+Technology Act, 2000.
+CHAPTER V
+T
+HE PRIV ACY COMMISSION
+47. (1) The Central Government shall, by notification, issued within six months of
+coming into force of this Act, constitute, with immediate effect, a body to be called the
+Privacy Commission, by warrant under its hand and seal, to exercise the jurisdiction and
+powers and discharge the functions and duties conferred or imposed upon it by or under
+this Act.
+(2) The Privacy Commission shall be consisted of at least three Privacy
+Commissioners, to be appointed by the President.
+(3) The Privacy Commission shall consist of two co-ordinate offices, namely the
+Office for data Protection and the Office for Surveillance and Interception Reform, and
+such officers, other employees, and experts as may be appointed in accordance with the
+provisions of this Act.
+(4) The Privacy Commission shall be autonomous, independent, and free from external
+interference and shall be provided with sufficient operational resources including human,
+technical, and financial for the effective discharge of its duties and exercise of its powers.
+(5) The exercise of financial powers shall be subject to audit by the Comptroller and
+Auditor General of India.
+48. (1) The Privacy Commission shall consist of one Chief Privacy Commissioner
+and two or more than two Privacy Commissioners as may be deemed necessary:
+Provided that at least one Privacy Commissioner shall be a person who has been a
+Judge of the Supreme Court or has been a Chief Justice or Acting Chief Justice of a High
+Court:
+Provided further that at least one or more Privacy Commissioner shall be a woman or a
+member of the third gender, or a transgender:
+Provided also that at least one or more Privacy Commissioner shall belong to a —
+(i) socially or educationally backward classes; or
+(ii) Scheduled Caste; or
+(iii) Scheduled Tribe; or
+(iv) minority.
+(2) The Chief Privacy Commissioner and the Privacy Commissioners shall be persons
+of outstanding ability, impeccable integrity and standing and who have special knowledge
+of, technical expertise in, and professional or academic experience, of not less than ten years
+cumulatively, in any one or more of the following domains—
+(a) privacy law and policy;
+(b) business and human rights;
+(c) civil liberties;
+(d) engineering, technology, design and ethics; or
+(e) data collection, storage and protection practices, including emerging
+technologies.
+(3) The Central Government shall issue a public advertisement inviting applications
+to fill all vacancies in the Privacy Commission.
+Exception
+regarding
+reporting of
+violation of
+provisions of
+this Act. 21 of 2000.
+Constitution
+of the
+Privacy
+Commission.
+Appointment
+and
+qualifications
+of Privacy
+Commissioners
+of Privacy
+Commission.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+25
+(4) The selection committee for the appointment of the members of the Privacy
+Commission, shall be constituted by the President of India and the selection panel shall
+consist of the following, namely :—
+(a) collegium of the Supreme Court of India;
+(b) the Law Minister;
+(c) the Leader of the Opposition in Lok Sabha or of the single largest opposition
+party being one with the greatest numerical strength in the Lok Sabha;
+(d) Director of Indian Institute of Science;
+(e) Director of an Indian Institute of Technology as appointed by the IIT Council;
+(f) one eminent person representing the private sector; and
+(g) one eminent person representing the civil society.
+Explanation .—The term 'civil society' mean non-Governmental and non-profit
+organisations that engage in the general upliftment and interests of the people in the field of
+privacy and is independent of Government funding, interference or influence.
+(5) All proceedings of the selection committee shall be matters of public record and
+subject to pro-active disclosures under the Right to Information Act, 2005.
+(6) No Members of Parliament or Members of the Legislature of any State or Union
+territory having Legislative Assembly or a member of any political party shall be eligible for
+selection or appointment as a Chief Privacy Commissioner or Privacy Commissioner:
+Provided that persons holding any other office of profit or carrying on any business or
+practising any profession, before he enters upon this office, shall be eligible for appointment
+or selection as Chief Privacy Commissioner or Privacy Commissioner, as the case may be,
+if—
+(a) he holds any office of trust or profit, resigns from such office; or
+(b) he is carrying on any business, severs his connection with the conduct and
+management of such business; or
+(c) she is practising any profession, ceases to practise such profession.
+49. (1) The office for Data Protection of the Privacy Commission shall be consisted of
+a Director General of Data Protection, to be appointed by Privacy Commission through a
+notification, who shall be a person of standing, ability and integrity, qualified in the field of
+law and with professional experience of not less than five years, cumulatively, in one or more
+of the following domains:
+(a) investigation;
+(b) criminal procedure;
+(c) cybercrime and cyber forensics; and
+(d) privacy and transparency law and policy.
+(2) The number of other Additional Director General, Joint Director- General, Deputy
+Director-General or Assistant Directors General or such officers or other employees in the
+office of Data Protection, under the Director General, and the manner of their appointments,
+shall be such as may be prescribed by the Privacy Commission.
+(3) Every Additional Director General, Joint Director-General, Deputy Director-General
+and Assistant Directors General or such officers or other employees, shall exercise such
+powers, and discharge functions, subject to the general control, supervision and direction of
+the Director General.
+(4) The Additional Director General, Joint Director-General, Deputy Director-General
+or Assistant Directors General or such officers of other employees, shall be appointed from
+Composition
+of the Office
+for Data
+Protection of
+the Privacy
+Commission.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+26
+amongst persons of integrity, ability and standing, and who have experience in law,
+investigation, public administration, economics and possess such other qualifications as
+may be prescribed by the Privacy Commission.
+50. (1) The Office for Surveillance and Interception Reform of the Privacy Commission
+shall consist of a Director General of Surveillance and Interception Reform, to be appointed
+by the Privacy Commission through a notification, who shall be a person of ability, integrity
+and standing, qualified in law and with professional experience of not less than five years,
+cumulatively, in any or more of the following domains —
+(a) civil liberties;
+(b) criminal procedure;
+(c) Governmental transparency, oversight and accountability;
+(d) police reforms.
+(2) The number of other Additional Director General, Joint Director General, Deputy
+Director General or Assistant Directors General or such officers or other employees in the
+Office of Data Protection, under the Director General, and the manner of their appointments,
+shall be such as may be prescribed by the Privacy Commission.
+(3) Every Additional Director General, Joint Director General, Deputy Director General
+and Assistant Directors General or such officers or other employees, shall exercise his powers,
+and discharge his functions, subject to the general control, supervision and direction of the
+Director General.
+(4) The Additional Director General, Joint Director General, Deputy Director General or
+Assistant Directors General or such officers of other employees, shall be appointed from
+amongst persons of integrity, ability and standing, and who have experience in law,
+investigation, public administration, economics and such other qualifications as may be
+prescribed by the Privacy Commission.
+51. (1) The Privacy Commission may appoint such officers and other employees as it
+considers necessary for its efficient functioning under this Act.
+(2) The Privacy Commission may engage such number of experts and professionals
+of integrity and outstanding ability, who have special knowledge of, and experience in, data,
+transparency, information, law, technology, economics or such other disciplines related to
+privacy, as it deems necessary to assist the Commission in the discharge of its functions
+under this Act.
+(3) The salaries and allowances payable to and other terms and conditions of service
+of the officers and other employees of the Commission and the number of such officers and
+other employees shall be such as may be prescribed by the Privacy Commission.
+52. (1) Before appointing any person as a Chief Privacy Commissioner or Privacy
+Commissioner, the President shall satisfy himself that the person does not, and shall not
+have any such financial or other interest as is likely to affect prejudicially their functions as
+such Chief Privacy Commissioner or Privacy Commissioner.
+(2) The Chief Privacy Commissioner and every Privacy Commissioner shall hold office
+for such period, not exceeding five years, as may be specified by the President in the order of
+his appointment, but shall be eligible for reappointment:
+Provided that no person shall hold office as a Chief Privacy Commissioner or Privacy
+Commissioner for more than two terms:
+Provided further that no person shall hold office as a Chief Privacy Commissioner or
+Privacy Commissioner, as the case may be, after he has attained the age of seventy-five
+years.
+Composition
+of the Office
+for
+Surveillance
+and
+Interception
+Reform of the
+Privacy
+Commission.
+Officers and
+other
+employees of
+the Privacy
+Commission.
+Term of
+office,
+conditions of
+service, etc.
+of Privacy
+Commissioners
+and Offices
+constituted
+under the
+Commission.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+27
+(3) Notwithstanding anything contained in sub-section ( 2), a Chief Privacy
+Commissioner or any Privacy Commissioner may —
+(a) by writing under his hand and addressed to the President resign his office at
+any time;
+(b) be removed from office in accordance with the provisions of section 53 of
+this Act.
+(4) A vacancy caused by the resignation or removal of a Chief Privacy Commissioner
+or Privacy Commissioner under sub-section (3) shall be filled by fresh appointments.
+(5) In the event of the occurrence of a vacancy in the office of a Chief Privacy
+Commissioner, such one of the Privacy Commissioners as the President may, on the advice of
+the selection committee under section 48(3), by notification, authorise in this behalf, shall act
+as the Chief Privacy Commissioner till the date on which a new Chief Privacy Commissioner,
+is appointed in accordance with the provisions of this Act, to fill such vacancy, enters upon
+his office.
+(6) When a Chief Privacy Commissioner is unable to discharge his functions owing to
+absence, illness or any other cause, such one of the Privacy Commissioners as the Chief
+Privacy Commissioner may authorise in writing in this behalf shall discharge the functions of
+the Chief Privacy Commissioner, till the date on which the Chief Privacy Commissioner
+resumes his duties.
+(7) The salaries and allowances payable to and the other terms and conditions of
+service of a Chief Privacy Commissioner and Privacy Commissioners shall be the same as
+that of the Chief Election Commissioner and Election Commissioners respectively:
+Provided that neither the salary and allowances nor the other terms and conditions of
+service of a Chief Privacy Commissioner or any Privacy Commissioner shall be varied to their
+disadvantage after their appointment.
+(8) The salaries and allowances payable to and the other terms and conditions of
+service of the Director General of Data Protection, the Director General of Surveillance, any
+Additional Director General, Joint Director General, Deputy Director General or Assistant
+Director General, Secretary, officer, employee appointed or expert or professional engaged
+shall be such as may be prescribed by the Privacy Commission.
+(9) The Chief Privacy Commissioners and Privacy Commissioners on ceasing to hold
+office as such shall not hold any appointment under the Government of India or under the
+Government of any State for a period of ten years from the date on which they cease to hold
+such office.
+53. (1) The President may remove from office the Chief Privacy Commissioner or any
+Privacy Commissioner, who —
+(a) is adjudged an insolvent; or
+(b) engages during his term of office in any paid employment outside the duties
+of his office; or
+(c) is unfit to continue in office by reason of infirmity of mind or body; or
+(d) is of unsound mind and stands so declared by a competent court; or
+(e) is convicted for an offence which in the opinion of the President involves
+moral turpitude; or
+(f) has acquired such financial or other interest as is likely to affect prejudicially
+his functions as a Chief Privacy Commissioner or Privacy Commissioner, or cause
+Removal of
+Chief Privacy
+Commissioners
+and Privacy
+Commissioners.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+28
+some conflict of interest including benefits directly or indirectly to relatives or family
+members, or
+(g) has so abused his position as to render him continuance in office prejudicial
+to the public interest.
+(2) Notwithstanding anything contained in sub-section ( 1), neither a Chief Privacy
+Commissioner nor any Privacy Commissioner shall be removed from his office on the ground
+specified in clause ( f) or clause ( g) of that sub-section unless the Supreme Court on a
+reference being made to it in this behalf by the President, has on an inquiry held by it in
+accordance with such procedure as it may specify in this behalf, reported that the Chief
+Privacy Commissioner or Privacy Commissioner ought, on such grounds, to be removed.
+54. (1) The Privacy Commission may, through decisions arrived at by a simple majority
+of its members present and voting as set out in section 59(1) of this Act, authorize, review,
+investigate, make an inquiry, and/or monitor, suo motu or on a petition presented to it by any
+person, group of persons or by someone acting on his or their behalf, the implementation
+and application of this Act and give such directions or pass such orders as are necessary for
+reasons to be recorded in writing.
+(2) Without prejudice to the generality of the foregoing provision, the Privacy
+Commission shall perform the following functions, namely —
+(a) review the safeguards provided under this Act or under other laws for the
+time being in force for the protection of personal data and recommend measures for
+their effective implementation or amendment, as may be necessary from time to time;
+(b) review and/or monitor any measures taken by any competent organization,
+company, person or other entity for the protection of privacy and take such further
+action as it deems fit;
+(c) authorize, review and/or monitor any action, code, certification, policy or
+procedure of any competent organisation, company, person or other entity to ensure
+compliance with the provisions of this Act and rules made hereunder;
+(d) enforce the provisions of this Act at its own or on the basis of complaints
+received by it or by way of issuing of appropriate orders and directions, the pursuit of
+binding settlements with offending persons and the levy of fines;
+(e) formulate, through transparent, inclusive and pervasive public consultations
+with experts, other stakeholders, and the general public, norms and rules for the effective
+protection of privacy by competent organisations, companies, persons or other entities;
+(f) promote awareness and knowledge of personal data protection through any
+means necessary and to all stakeholders with special attention to children, including
+providing information to any data subject regarding their rights under this Act as
+requested and undertaking training and knowledge building for data controllers,
+including those involved in the provision of essential services and law enforcement;
+(g) undertake and promote research in the field of protection of personal data
+and privacy;
+(h) encourage the efforts of non-Governmental organisations and institutions
+working in the field of personal data protection and privacy;
+(i) ensure the speedy and efficient redressal of all complaints, whether made by
+a data subject or a group of data subjects or on their behalf, whose cause of action
+arises on implementation of this Act;
+(j) undertake efforts to facilitate international co-operation with regards to data
+protection, and allied subjects, including enforcement;
+(k) advise the Central Government on the grant of adequacy status in respect of
+cross border data flows;
+Functions of
+the Privacy
+Commission.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+29
+(1) co-ordinate in writing across State Privacy Commissions, State Governments
+and regulatory bodies including the Bureau of Indian Standards which may also be
+concerned with data protection in order to harmonize and classify standards for data
+including open data sets which contain personal data;
+(m) such other functions as it may consider necessary for the protection of
+privacy, personal data, the prevention of the abuse of the criminal process, both
+investigatory and judicial, by the State, and enforcement of this Act;
+(n) make a public, freely available publication of annual reports providing
+description of performance, findings, conclusions or recommendations of any or all of
+the functions assigned to the Privacy Commission in this Chapter.
+(3) Without prejudice to the generality of the foregoing provision, the Office of Data
+Protection within the Privacy Commission shall perform the following functions, namely:—
+(a) investigate data controllers and processors, whether initiated on complaint
+of a data subject or a group of them or on their behalf or on direction of the Privacy
+Commission or suo motu , for the purpose of identifying activities which are in
+contravention of the provisions of this Act, either at its own instance or upon receipt
+of credible information or complaint;
+(b) obtain access from data controllers and processors, to all personal data and
+to all information necessary for the performance of its tasks.
+(c) publish and make publicly available periodic reports concerning the incidence
+of compliance including violations of this Act and data breaches as reported under
+this Act;
+(d) assist the Privacy Commission in policy formulation and other activities for
+effective protection of privacy;
+(e) coordinate with the office for Surveillance and Interception Reform in such
+manner as is necessary or may be useful to the achievement of the purposes of this
+Act;
+(4) Without prejudice to the generality of the foregoing provision, the Office for
+Surveillance and Interception Reform in the Privacy Commission shall perform the following
+functions, namely:
+(a) assist the Privacy Commission in the formulation of policy and other activities
+for bringing about reforms in carrying out interception and surveillance by competent
+organization, companies, persons or other entities;
+(b) collection of data from competent organizations on interception and
+surveillance carried out by those and analyze the same for the purpose of preparing
+periodic reports on compliance with provisions of this Act, including comprehensive
+data concerning violations of the processes of interception of communications and
+surveillance;
+(c) advise on appointments of Public Advocates, as provided under sub-section
+(4) of section 70, for the purpose of defending the person being surveilled or intercepted
+before the Surveillance and Interception Review Division;
+(d) to appear before a Surveillance and Interception Review Divisions to provide
+expert evidence and testimony;
+(e) ensure the speedy and efficient redressal of all complaints, whether made by
+a data subject or a group of data subjects or in their behalf, whose cause of action
+arises from this Act;
+(f) co-ordinate with the office of Data Protection in such manner as is necessary
+or may be useful to the achievement of the purposes of this Act;
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+30
+(5) The Periodic Reports published by the Privacy Commission, stipulated under sub-
+section 3(c) of section 54, shall be tabled before both Houses of Parliament during the
+Parliamentary Session that succeeds the publication of any Periodic Report and the same
+shall be made publicly available, immediately thereafter.
+(6) The Chief Privacy Commissioners, Privacy Commissioners and Directors General
+shall appear before a special ad hoc Committee, constituted by the Speaker of the Lok Sabha
+and comprising of members from both the governing and the opposition parties from both
+Houses of Parliament, on a quarterly basis and the ad hoc Committee shall—
+(a) be empowered to review the functioning of the Privacy Commission, and may
+ask the Chief Privacy Commissioners and the Privacy Commissioners any questions in
+this regard, as per procedure of the functioning of the Committee.
+(b) prepare and present periodic reports to both Houses of Parliament in a manner
+regulated by the Committee; and
+(c) held its sitting in public in order to ensure transparency and inclusive
+participation.
+(7) Subject to the provisions of any rules prescribed in this behalf by the Central
+Government, the Privacy Commission shall have the power to review any decision, judgment,
+decree or order made by it.
+(8) In the exercise of its functions under this Act, the Privacy Commission shall give
+such directions or pass such orders as are necessary for reasons to be recorded in writing.
+(9) The Privacy Commission may, in its own name, sue or be sued.
+55. The salaries and allowances payable to the Chief Privacy Commissioners, Privacy
+Commissioners, Director Generals, any Additional Director General, Joint Director
+General, Deputy Director General or Assistant Director General, Secretary, officer,
+employee appointed or expert or professionals engaged and the administrative expenses of
+the Privacy Commission shall be defrayed out of the Consolidated Fund of India.
+56. No Act or proceeding of the Privacy Commission shall be questioned on the
+ground merely of the existence of any vacancy or defect in the constitution of the Privacy
+Commission or any defect in the appointment of a person Acting as the Chief Privacy
+Commissioner or Privacy Commissioner.
+57. The Chief Privacy Commissioners and Privacy Commissioners and other employees
+of the Privacy Commission shall be deemed to be public servants within the meaning of
+section 21 of the Indian Penal Code, 1860.
+58. The Privacy Commission shall be located in New Delhi or at such other places as
+directed by the Chief Privacy Commissioner in consultation with the Central Government.
+59. (1) The Privacy Commission shall cause the investigations suo motu  or on
+complaints made by any person, group of persons or anyone on their behalf or take action
+for enforcement in respect of cases involving—
+(a) data collection or processing by or on behalf of the Central Government;
+(b) a conflict between two State Privacy Commissions; or
+(c) extra-territorial transfers of data pertaining to Indian data subjects.
+Salaries, etc.
+to be defrayed
+out of the
+Consolidated
+Fund of India.
+Vacancies,
+etc. not to
+invalidate
+proceedings
+of the
+Privacy
+Commission.
+Chief Privacy
+Commissioners,
+Privacy
+Commissioners
+and
+employees of
+the Privacy
+Commission
+to be public
+servants.
+Location of
+the Privacy
+Commission.
+Jurisdiction of
+the Privacy
+Commission.
+20
+25
+30
+35
+40
+5
+15
+10
+
+31
+(2) Any disputes as to jurisdiction shall be resolved in a manner that accords the data
+subject the most timely and cost-effective access to redress, or promote the most timely and
+cost effective enforcement of the provisions of this Act.
+60. (1) Subject to the provisions of this Act, the Privacy Commission, in coordination
+with offices constituted under it, shall have power to make rules to prescribe—
+(a) the procedure and conduct of its business; and
+(b) the delegation to one or more Privacy Commissioners of such powers or
+functions as the Privacy Commission may specify.
+(2) In particular and without prejudice to the generality of the foregoing provisions,
+the powers of the Privacy Commission shall include the power to determine the extent to
+which persons interested or claiming to be interested in the subject-matter of any proceeding
+before it may be allowed to be present or to be heard, either by themselves or by their
+representatives or to cross-examine witnesses or otherwise take part in the proceedings:
+Provided that any such procedure as may be prescribed or followed shall be guided by
+the principles of natural justice.
+(3) Nothing in this section shall prevent either office in the Privacy Commission from
+making rules in respect of matters of procedure exclusively concerning it.
+61. (1) The Privacy Commission, including offices constituted under it, shall, for the
+purposes of any inquiry or for any other purpose under this Act, have the same powers as
+vested in a civil court under the Code of Civil Procedure, 1908 while trying suits in respect of
+the following matters, namely—
+(a) the summoning and enforcing the attendance of any person from any part of
+India and examining his on oath;
+(b) the discovery and production of any document or other material object
+producible as evidence;
+(c) the reception of evidence on affidavit;
+(d) the requisitioning of any public record from any court or office;
+(e) the issuing of any commission for the examination of witnesses; and
+(f) any other matter which may be prescribed by the Central Government.
+(2) The Privacy Commission shall have power to require any person, subject to any
+privilege which may be claimed by that person under any law for the time being in force, to
+furnish information on such points or matters as, in the opinion of the Privacy Commission,
+may be useful for, or relevant to, the subject-matter of an inquiry and any person so required
+shall be deemed to be legally bound to furnish such information within the meaning of
+section 176 and section 177 of the Indian Penal Code, 1860.
+(3) The Privacy Commission or any other officer, not below the rank of a Gazette
+Officer, specially authorized in this behalf by the Privacy Commission may enter any building
+or place where the Privacy Commission has reason to believe that any document relating to
+the subject-matter of the inquiry may be found, and may seize any such document or take
+extracts or copies therefrom subject to the provisions of section 100 of the Code of Criminal
+Procedure, 1973, in so far as it may be applicable.
+(4) The Privacy Commission shall be deemed to be a civil court and when any offence
+as is described in section 175, section 178, section 179, section 180 or section 228 of the
+Indian Penal Code, 1860 is committed in the view or presence of the Privacy Commission, the
+Privacy Commission may, after recording the facts constituting the offence and the statement
+of the accused as provided for in the Code of Criminal Procedure, 1973, forward the case to
+a Magistrate having jurisdiction to try the same and the Magistrate to whom any such case
+is forwarded shall proceed to hear the complaint against the accused as if the case had been
+forwarded to him under section 346 of the Code of Criminal Procedure, 1973.
+Procedure to
+be followed by
+the Privacy
+Commission.
+Power
+relating to
+inquiries.5 of 1908.
+2 of 1974.
+45 of 1860.
+2 of 1974.
+2 of 1974.
+45 of 1860.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+32
+62. (1) The decisions of the Privacy Commission shall be taken by majority and be
+binding and enforceable as a decree of a court as per the provisions of the Code of Civil
+Procedure, 1908.
+(2) In its decisions, the Privacy Commission shall have the power to —
+(a) require a competent organisation, company, person or other entity to take
+such steps as may be necessary to secure compliance with the provisions of this Act;
+(b) require a competent organisation, company, person or other entity to
+compensate any person for any loss or detriment suffered; and
+(c) impose penalties.
+63. The Privacy Commission shall be deemed to be a civil court for the purposes of
+section 195 and Chapter XXVI of the Code of Criminal Procedure, 1973 and every proceeding
+before the Privacy Commission shall be deemed to be a judicial proceeding within the meaning
+of section 193 and section 228 and for the purposes of section 196 of the Indian Penal
+Code, 1860.
+64. Subject to any conditions prescribed by rules made in this regard by the Central
+Government, in consultation with the Attorney General of India and the Chief Justice of
+India, all appeals from Privacy Commission shall lie to a Bench of the Supreme Court,
+specifically designated by the Chief Justice of India for the purpose.
+CHAPTER VI
+S
+TATE PRIVACY COMMISSIONS
+65. (1) Every State Government shall, within a year of coming into force of this Act, by
+notification in the Official Gazette, with immediate effect, constitute a body to be known as
+the (name of the State) Privacy Commission to exercise the powers conferred on, and to
+perform the functions assigned to, it under this Act.
+(2) Every State Privacy Commission shall consist of at least one Privacy Commissioner,
+to be appointed by the Governor of that State.
+(3) Every State Government shall issue a public advertisement inviting applications to
+fill all vacancies in the State Privacy Commission.
+(4) The selection committee for the appointment of the members of the State Privacy
+Commission shall be constituted by the Governor of that State and shall comprise of the—
+(a) the Chief Justice and two senior most judges of the State High Court;
+(b) the Law Minister of the State Government;
+(c) the Leader of the Opposition or the Leader of the single largest opposition
+party with the greatest numerical strength in the Legislative Assembly of the State;
+(d) one eminent person with experience in technology and academic or public
+interest research;
+(e) representing the private sector; and
+(f) one eminent person representing the civil society.
+(5) All proceedings of the selection committee shall be matters of public record.
+Explanation.—The term 'Civil Society' means non-Governmental and non-profit
+organisations that engage in the activities for the general upliftment and interests of the
+people in the field of privacy and is independent of Government funding, interference or
+influence.
+(4) No Members of Parliament or Members of the Legislature of any State or Union
+territory having Legislative Assembly or a member of any political party shall be eligible for
+selection or appointment as a State Privacy Commissioner and persons holding any other
+office of profit or carrying on any business or practicing any profession, before he enters
+upon this office, may be selected or appointed as State Privacy Commissioner, as the case
+may be, if—
+Decisions of
+the Privacy
+Commission. 5 of 1908.
+Proceedings
+before the
+Privacy
+Commission
+to be judicial
+proceedings.
+2 of 1974.
+45 of 1860.
+Appeals.
+State Privacy
+Commissions.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+33
+(a) he holds any office of trust or profit, resigns from such office; or
+(b) he is carrying on any business, severs his connection with the conduct and
+management of such business; or
+(c) he is practicing any profession, ceases to practice such profession.
+(5) 'Except as provided for expressly under this Act, a State Privacy Commission shall
+have powers and functions coequal and identical to those of the Privacy Commission in all
+respects.
+(6) A State Privacy Commission may appoint such officers and other employees, or
+engage any professional or expert, as it considers necessary for the efficient performance
+of its functions under this Act.
+(7) Every State Privacy Commission shall be autonomous, independent, and free from
+external interference and shall be provided with sufficient operational resources including
+human, technical, and financial for the effective discharge of its duties and exercise of its
+powers.
+(8) The financial power of Privacy Commission shall be subject to audit by the
+Comptroller and Auditor General of India.
+(9) The salaries and allowances payable to and the other terms and conditions of
+service of State Privacy Commissioners shall be the same as that of the Chief Secretary to
+the State Government.
+(10) The salaries and allowances payable to and the other terms and conditions of
+service of any officer, employee appointed or expert or professional engaged shall be such as
+may be prescribed by the State Privacy Commission.
+66. (1) Investigations or actions for enforcement may be instituted in the State Privacy
+Commission, suo motu or on complaints made by, any person, group of persons or anyone
+on their behalf, within the local limits of whose jurisdiction—
+(a) the complainant or data subject Actually and voluntarily resides;
+(b) where the data controller or data processor is physically located or  principally
+carries out business; or
+(c) the cause of action, wholly or in part, arises.
+(2) Any disputes as to jurisdiction shall be resolved in a manner that accords the data
+subject the most timely and cost-effective access to redress, or promote the most timely and
+cost effective enforcement of the provisions of this Act.
+67. (1) Subject to any conditions prescribed by rules made in this regard  by appropriate
+State Government, all appeals from a State Privacy Commission shall lie to a Bench of the
+respective High Court, specifically designated by the Chief Justice for the purpose.
+(2) Notwithstanding sub-section (1), appeals from a State Privacy Commission shall lie
+to the Privacy Commission where—
+(a) there is a dispute as to jurisdiction between two or more State Privacy Commissions;
+or
+(b) two or more State Privacy Commissions have passed orders or directions or otherwise
+taken any action in respect of the same cause of action:
+Provided that in any such appeal, the Privacy Commission shall be included as a
+necessary party.
+68. The State Government shall, in consultation with its Advocate General, the Chief
+Justice of its High Court and the Privacy Commission, prescribe rules governing the
+procedures to be followed:
+(a) by and before the State Privacy Commission, and
+Jurisdiction of
+the State
+Privacy
+Commissions.
+Appeals.
+Procedure.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+34
+(b) in respect of appeals to its High Court in terms of sub-section ( 1) of
+section 67.
+69. Subject to the provisions of this Act, every State Government may, in consultation
+with the State Privacy Commission, by notification in the Official Gazette, prescribe rules in
+order to bring into effect any of the provisions of this Chapter of the Act.
+CHAPTER VII
+S
+URVEILLANCE AND INTERCEPTION REVIEW DIVISIONS
+70. (1) The Central Government shall, by notification in the Official Gazette, constitute,
+within a period of six months from the enactment of this Act, a division in every High Court
+to be known as the Surveillance and Interception Review Division, hereinafter referred to as
+the Division:
+Provided that if the Division is not constituted within the stipulated time period, no
+order for interception or surveillance issued after a period of ninety days from the date of the
+stipulated time period for constitution of the Division gets over, shall be valid and any
+interception or surveillance carried out under such an order shall be a violation of the
+provisions of this Act:
+Provided further that if the Division is not constituted within the stipulated time period
+and till the time it is constituted, no existing order of surveillance or interception can be
+renewed.
+(2) The Central Government shall appoint, for a period of two years or till the retirement
+of the Judge so appointed, whichever is earlier, two or more Judges of the High Court, as
+publicly designated by the Chief Justice of that High Court in consultation with the appropriate
+State Government, as the Division.
+(3) The Central Government shall make available to the Division such information as
+may be necessary for the discharge of its functions under this Act.
+(4) Subject to the provisions of this Act, one or more Public Advocates, shall be
+appointed by the Chief Justice of the High Court of that State, in consultation with the Office
+for Surveillance and Interception Reform of the Privacy Commission, the respective State
+Privacy Commission, the State Legal Services Authority, and the Bar Council of that State,
+for the purpose of defending the interests of the person being surveilled or intercepted,
+ensuring compliance with the provisions of this Act, and advancing legal arguments that
+further the protection of privacy and other fundamental rights under the Constitution:
+Provided that while in appointing one or more Public Advocates, the Chief Justice of
+the High Court of the State shall do so after issuing public notice inviting applications of
+interest and a person shall be qualified to be appointed a Public Advocate to the Division if
+he—
+(a) is a citizen of India, qualified to practice law with at least seven years' experience
+at the bar; and
+(b) has experience with litigation on fundamental rights, criminal law and
+procedure, military and policing powers and oversight, and communications and
+information technology laws;
+(5) The Public Advocate appointed, sub-section (4), shall—
+(a) be provided copies of all ordinary applications made to and Government
+orders shared with the Division under this Act, including their supporting documents
+and filings;
+(b) have a right to attend, be heard, and to file briefs and other filings before all
+proceedings of the Division; and
+(c) be empowered to file appeals with respect to orders of the Division to the
+Supreme Court as provided for under this Act:
+Power to
+make rules.
+Surveillance
+and
+Interception
+Review
+Divisions.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+35
+Provided that any decision not to file an appeal shall be made only after a legal opinion
+on the merits of the case and the decision for reasons recorded in writing which shall be made
+available along with the complete case files including all pleadings and materials when the
+disclosure of the orders of the Surveillance and Interception Review Division are made as per
+the provisions under the Act.
+(6) All expenses incurred in connection with the Division shall be defrayed out of the
+Consolidated Fund of India.
+(7) Subject to any rules made in this regard by the Central Government, in consultation
+with the Privacy Commission, the Division shall have power to regulate its own procedure in
+all matters arising out of the discharge of its functions including.
+(8) The rules framed under sub-section (7), may provide for inner-camera proceedings
+of the Division, the manner in which third parties interested in the matter may make application
+for attending the hearings before the Division, for making the decisions of the Division
+public after a stipulated time period not exceeding one year since the date of the order and
+other incidental matters.
+(9) The Division shall, for the purpose of making an inquiry under this Act, have the
+same powers as are vested in a Civil Court under the Code of Civil Procedure,1908 while
+trying a suit, in respect of the following matters, namely:—
+(a) the summoning and enforcing the attendance of any witness and examining
+him on oath;
+(b) the discovery and production of any document or other material object
+producible as evidence;
+(c) the reception of evidence on affidavits;
+(d) the requisitioning of any public record from any court or office;
+(e) the issuing of any commission for the examination of witnesses.
+(10) Any proceeding before the Division shall be deemed to be a judicial  proceeding
+within the meaning of sections 193 and 228 of the Indian Penal Code, 1860 and the Division
+shall be deemed to be a civil court for the purposes of section 195 and Chapter XXVI of the
+Code.
+(11) Subject to provisions of this Act, the Director General of Surveillance and
+Interception Reform constituted under the Privacy Commission, shall have access to the
+proceedings of the Division in order to assist the Division by providing expert evidence,
+legal arguments, and testimony.
+71. The terms of service, removal and allied matters relating to persons appointed to
+the Division shall be governed by rules made in this regard by the Central Government, in
+consultation with the Privacy Commission and appropriate State Government:
+Provided that no terms and conditions of service of persons appointed to the Division
+shall be varied to their disadvantage after their appointment.
+72. Subject to the provisions of Chapter IV of this Act, the Divisions, shall review,
+renew or take any other action with respect to orders of surveillance or interception, within
+the local limits of whose jurisdiction—
+(a) the person to be surveilled or intercepted actually and voluntarily resides;
+(b) where the competent organization seeking to undertake surveillance or
+interception is physically located; or
+(c) where the actual Act of interception or surveillance is to be carried out.
+5 of 1908.
+45 of 1860.
+Appointment,
+terms of
+service, etc.
+Jurisdiction of
+the
+Surveillance
+and
+Interception
+Divisions.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+36
+73. Subject to such conditions as may be prescribed by rules made in this regard by
+the Central Government, in consultation with the Privacy Commission, and the appropriate
+State Governments, all appeals from any of the Divisions shall lie to a Bench of the Supreme
+Court, specifically designated by the Chief Justice of India in that regard.
+CHAPTER VIII
+O
+FFENCES AND PENALTIES
+74. (1) Whoever, except in conformity with the provisions of this Act, collects, receives,
+stores, processes, discloses or otherwise handles any personal data shall be liable to fine
+which may extend up to one hundred crore rupees based on the proportionality of the harm
+caused.
+(2) Whoever commits the offence under sub-section (1) either intentionally, or with
+reckless disregard, he shall be liable for a term of imprisonment extending upto three years,
+and shall also be liable to fine:
+Provided further that in case of companies, the penalty shall be governed by section 78.
+(3) Whoever attempts to commit any offence under sub-section (1) shall be liable in
+the manner and to the extent provided for such offence under that sub-section.
+(4) Whoever, except in conformity with the provisions of this Act, collects, receives,
+stores, processes, discloses or otherwise handles any sensitive personal data shall be liable
+to fine which may extend to two hundred crore rupees:
+Provided that whoever commits the offence either intentionally, or with reckless
+disregard, he shall be liable for a term of imprisonment extending upto five years, and shall
+also be liable to fine:
+Provided further that in case of offence committed by companies, the penalty shall be
+governed by section 78.
+(5) Whoever attempts to commit any offence under sub-section (3) shall be punished
+with imprisonment and fine as provided for such offence in that section.
+75. (1) Whoever, except in conformity with the provisions of this Act, intercepts, or
+causes the interception of, any communication of another person shall be liable to a fine
+which may extend to one hundred crore rupees:
+Provided that whoever commits the offence under sub-section (1) either intentionally,
+or with reckless disregard, shall be liable for a term of imprisonment extending up to three
+years, and shall also be liable to fine.
+(2) Whoever attempts to commit any offence under sub- section (1) shall be punished
+with imprisonment and fine as provided in that sub-section.
+76. (1) Whoever, except in conformity with the provisions of this Act, orders or carries
+out, or causes the ordering or carrying out, of any surveillance of another person shall be
+liable to a fine which may extend to ten crore rupees:
+Provided that whoever commits the offence defined above eithis intentionally, or with
+reckless disregard, shall be liable for a term of imprisonment extending upto five years, and
+shall also be liable to fine.
+(2) Whoever attempts to commit any offence under sub- section (1) shall be punished
+with imprisonment and fine as provided in that section.
+77. Whoever abets any offence punishable under this Act shall be punished with
+imprisonment or fine, as the case may be, provided for that offence.
+78. (1) Where an offence under this Act has been committed by a company, every
+person who, at the time of the offence was committed, was in charge of, and was responsible
+to, the company for the conduct of the business of the company, as well as the company
+Appeals.
+Punishment
+for offences
+related to
+personal data.
+Punishment
+for offences
+related to
+interception
+of
+communication.
+Punishment
+for offences
+related to
+surveillance.
+Abetment and
+offenders.
+Offences by
+companies.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+37
+shall be deemed to be guilty of the offence and shall be liable to be proceeded against and
+punished accordingly:
+Provided that nothing contained in this sub-section shall render any such person
+liable to any punishment, if he proves that the offence was committed without his knowledge
+or that he had exercised all due diligence to prevent the commission of such offence.
+(2) Notwithstanding anything contained in sub-section (1), where any offence under
+this Act has been committed by a company and it is proved that the offcnce has been
+committed with the consent or connvance of, or is attributable to any neglect on the part of
+any director, manager, secretary or other officer of the company, such director, manager,
+secretary or other officer shall be deemed to be guilty of that offence, and shall be liable to be
+proceeded against and punished accordingly.
+79. Notwithstanding anything contained in the Code of Criminal Procedure, 1973, the
+offences under this chapter shall be cognizable and non-bailable.
+80. Whoever, in any case in which a penalty is not expressly provided by this Act, fails
+to comply with any notice or order issued under any provisions thereof, including an order
+of the Chief Privacy Commissioner or otherwise contravenes any of the provisions of this
+Act, shall be punishable with fine which may extend to one crore rupees, and, in the case of
+subsequent contravention, with an additional fine which may extend to ten lakh rupees for
+every day.
+81. The punishment for an offence under this Act shall be without prejudice to any
+other action which has been or which may be taken under this Act with respect to such
+contravention.
+CHAPTER  IX
+M
+ISCELLANEOUS
+82. (1) The Central Government may, by notification in the Official Gazette, make rules
+to carry out the provisions of this Act until such time as the Privacy Commission is constituted.
+(2) The Privacy Commission may, by notification in the Official Gazette, make rules to
+carry out the provisions of this Act:
+Provided that where the Privacy Commission makes rules upon a subject already
+covered by the Central Government, it shall ensure that protections accorded to data subjects
+by its rules are maintained or improved.
+(3) In particular, and without prejudice to the generality of the foregoing powers, such
+rules may provide for such measures as may be necessary to secure—
+(a) all personal data related to data subjects located in India; and
+(b) any personal data flowing into and out of, exported or imported out of India;
+(c) the notification of theft, loss or damage under sub-section (4) of section 17;
+(d) the notification of disclosure under sub-section (5) of section 19;
+(e) the application by an intelligence organisation under sub-section ( 1) of
+section 31;
+(f) the application to intercept a communication under sub-section (1) of  section 28;
+(g) the application to renew an interception of communication under
+sub-section (2) of section 33;
+(h) the notification of an interception of communication under sub-section (1) of
+section 34;
+(i) the application to not inform under sub-section (2) of section 34;
+Cognizance.2 of 1974.
+General
+penalty for
+failure to
+comply with
+notice or
+order issued
+under this
+Act.
+Punishment
+to be without
+prejudice to
+any other
+action.
+Power to
+make rules.
+20
+25
+30
+35
+40
+5
+15
+10
+45
+
+38
+(j) the application to store information obtained as a result of any interception of
+communication under sub-section (2) of section 37;
+(k) the application to carry out surveillance under sub-section (3) of section 39;
+(l) notification to the general public under sub-section ( 2) of section 40; the
+application to renew surveillance under sub-section (2) of section 41;
+(m) the notification of surveillance under sub-section (1) of section 42;
+(n) the application to not inform under sub-section (2) of section 42;
+(o) the application to store information obtained as a result of surveillance under
+sub-section (2) of section 45;
+(p) salaries, allowances and other terms and conditions of service of the Chief
+Privacy Commissioner, Privacy Commissioners, Secretaries and other members, staff
+and employees of the Privacy Commission;
+(q) procedure to be followed by the Privacy Commission;
+(r) powers and duties of Secretaries, officers and other employees of the Privacy
+Commission; and
+(s) the effective implementation of this Act.
+(4) Every rule made under this Act shall be laid, as soon as may be after it is made,
+before each House of Parliament while it is in session for a period of thirty days which may
+be comprised in one session or in two successive sessions and if before the expiry of the
+session in which it is so laid or the session immediately following, both Houses agree in
+making any modification in the rule, or both Houses agree that the rule should not be made,
+the rule shall thereafter have effect only in such modified form or be of no effect, as the case
+may be, so however, that any such modification or annulment shall be without prejudice to
+the validity of anything previously done under that rule.
+(5) Every rule made by the Central Government under sub-section ( 1) shall require
+express assent of both Houses of Parliament:
+Provided that where assent under sub-section ( 5) is not obtained, the rules shall not
+be valid.
+83. (1) On and from the appointed day, courts or authorities shall have, or be entitled
+to exercise jurisdiction with respect to remedies provided for data subjects and against data
+subjects under this Act with respect:
+Provided that legal proceedings for relief in the nature of interim injunctions or
+mandatory injunctions shall not be initiated against the authorities provided for under this
+Act including but not limited to the State Privacy Commission and the Privacy Commission:
+Provided that further provisions of the Arbitration and Conciliation Act, 1996 shall not
+bar the Privacy Commission or the State Privacy Commission or any other body from exercising
+jurisdiction under the provisions of this Act.
+(2) No order passed under this Act shall be appealable except as provided therein and
+no injunction shall be granted by any court or Division to any authority established under
+this Act in respect of any action taken or to be taken in pursuance of any power conferred by
+or under this Act.
+84. (1) No suit or other legal proceeding shall lie against the Central Government, State
+Government, Privacy Commission, Chief Privacy Commissioner, Privacy Commissioner or
+any person Acting under the direction either of the Central Government, State Government,
+Privacy Commission, Chief Privacy Commissioner or Privacy Commissioner in respect of
+anything which is in good faith done or intended to be done in pursuance of this Act or of
+any rules or any order made thereunder.
+Bar of
+jurisdiction.
+26 of 1996.
+Protection of
+action taken
+in good faith.
+20
+25
+30
+35
+40
+45
+5
+15
+10
+
+39
+(2) Notwithstanding anything inconsistent therewith contained in any other law for
+the time being in force, any communication or complaint made in good faith made by any
+person alleging a violation of the provisions of this Act, if made to the Privacy Commission,
+the Surveillance and Interception Review Divisions and their Public Advocates, or to any
+High Court or the Supreme Court, shall not be treated as a violation of this Act or any other
+law.
+85. (1) If difficulties arise in giving effect to the provisions of this Act, the Central
+Government may, by order, published in the Official Gazette, make such provisions, not
+inconsistent with the provisions of this Act, as appears to it to be necessary or expedient for
+removing the difficulty:
+Provided that no such order shall be made under this section after the expiry of a
+period of three years from the commencement of this Act.
+(2) The provisions of sub-section ( 1) shall only apply in instances when it is with
+respect to conflict between this Act and any existing law;
+(3) Every order made under this section shall be laid, as soon as may be after it is made,
+before each House of Parliament.
+86. (1) Except as otherwise provided in this Act, the provisions of this Act shall have
+effect notwithstanding anything inconsistent therewith contained in any other law for the
+time being in force, including provisions in—
+(a) sections 43A, 69, 69B, 72 and 72A of the Information Technology Act, 2000;
+and
+(b) sections 7, 28, 29, 30, 31, 32, 33 and 47 of the Aadhaar (Targeted Delivery of
+Financial and other Subsidies, Benefits and Services) Act, 2016; and
+(c) section 5(2) of the Indian Telegraph Act, 1885; and
+(d) section 21 of the Prevention of Money Laundering Act, 2002; and The Census
+Act, 1948.
+(2) Nothing contained in sub-section ( 1) shall apply to the provisions of the
+Representation of the People Act, 1951 and the Right to Information Act, 2005.
+(3) Where the provisions of any law in force provide for additional safeguards that are
+not inconsistent with the present Act, those provisions shall continue to apply and the Act
+shall not be considered in derogation of such provisions.
+Power to
+remove
+difficulties.
+Act to have
+overriding
+effect.
+21 of 2000.
+18 of 2016.
+13 of 1885.
+15 of 2003.
+3 of 1948
+43 of 1951.
+22 of 2005.
+20
+25
+30
+5
+15
+10
+
+40
+SCHEDULE
+COMPETENT ORGANISATIONS
+[See section 2(i)]
+(1) 'Armed force' to mean any body raised or constituted pursuant to or in connection
+with, or presently governed by, the Army Act, 1950 (46 of 1950), the Indian Reserve Forces
+Act, 1888 (4 of 1888), the Territorial Army Act, 1948 (6 of 1948), the Navy Act, 1957 (62 of
+1957), the Air Force Act, 1950 (45 of 1950), the Reserve and Auxiliary Air Forces Act, 1952 (62
+of 1952), the Coast Guard Act, 1978 (30 of 1978) or the Assam Rifles Act, 2006 (47 of 2006).
+(2) 'Intelligence Organisation' to mean an intelligence organisation under the Intelligence
+Organisations (Restriction of Rights) Act, 1985 (58 of 1985) as on the date of this Act receiving
+Presidential assent.
+(3) 'Police Force' mean
+(a) any body raised or constituted by the appropriate Government for the
+preservation of law and order and enforcement of laws related to customs, revenue,
+foreign exchange, excise, income tax and narcotics;
+(b) the bodies raised or constituted pursuant to or in connection with, or
+presently governed by, the Police Act, 1861 (5 of 1861), the Central Reserve Police
+Force Act, 1949 (66 of 1949), the Border Security Force Act, 1968 (47 of 1968), the Indo-
+Tibetan Border Police Force Act, 1992 (35 of 1992), the Sashastra Seema Bal Act, 2007
+(53 of 2007), the Central Industrial Security Force Act, 1968 (50 of 1968), the Railway
+Protection Force Act, 1957 (23 of 1957) and the National Security Guard Act, 1986 (47 of
+1986);
+(c) the bodies raised or constituted pursuant to or in connection with, or presently
+governed by, the Delhi Special Police Establishment Act, 1946 (25 of 1946), the Income
+Tax Act, 1961 (43 of 1961), the National Investigation Agency Act, 2008 (34 of 2008) and
+the Central Vigilance Commission Act, 2003 (45 of 2003);
+(d) The National Investigation Agency constituted under sub-section ( 1) of
+section 3 of the National Investigation Agency Act, 2008 (34 of 2008).
+(e) Any police forces raised or constituted by the States, armed or otherwise.
+
+41
+STA TEMENT OF OBJECTS AND REASONS
+The Supreme Court, in a landmark judgment has affirmed the fundamental right to
+privacy. Such a verdict requires a comprehensive law to safeguard the privacy of citizens.
+In his notes accompanying the clauses of a draft Bill of Rights, Dr. Ambedkar noted
+that:
+“The purpose is to protect the liberty of the individual from invasion by other
+individuals which is the object of enacting fundamental rights. The connection between
+individual liberty and the shape and form of the economic structure of society may not
+be apparent to everyone. Nonetheless the connection between the two is real. It shall
+be apparent if the following considerations are borne in mind. Political democracy
+rests on four premises which may be set out in the following terms:—
+1. the individual is an end in himself;
+2. that the individual has certain inalienable rights which must be guaranteed to him by
+the Constitution;
+3. that the individual shall not be required to relinquish any of his constitutional rights
+as a condition precedent to the receipt of a privilege; and
+4. that the State shall not delegate powers to private persons to govern others.’’
+The Bill covering data protection and surveillance reform empowers citizens by providing
+autonomy and dignity through the right to privacy. The Bill creates a strong and independent
+Privacy Commission to enforce the right to privacy via investigation, rule-making and
+adjudication.
+This Bill has been drafted keeping in mind global best practices, report of the
+Justice A.P. Shah Committee of Experts and submissions by multiple lawyers to the Justice
+Srikrishna Committee of Experts. The Bill has been significantly updated and incorporated
+best practices from international texts such as the European Union's General Data Protection
+Regulation.
+The Bill is based on principles of individual rights, data protection, user privacy,
+surveillance reform, and a free and open internet. The respect for individual rights is at the
+core of the Personal Data and Information Privacy Code Bill, which maintains access Right to
+Information while also enabling citizens to safeguard their privacy.
+N
+EW DELHI; D. RAVIKUMAR
+June 26, 2019.
+
+42
+FINANCIAL MEMORANDUM
+Clause 47 of the Bill provides that the Central Government shall constitute a Privacy
+Commission to perform the functions and duties assigned to it under this Act. Clause 48(1)
+provides for appointment of Privacy Commissioners to the Privacy Commission. Clause 48(3)
+provides for the appointment of a Selection Committee to fill the vacancies in the Privacy
+Commission. Clause 51(1) provides for appointment of officers and employees by the Central
+Government to the Privacy Commission. Clause 51(2) provides for salaries and allowances
+payable to such employees or officers of the Privacy Commission. Clause 52(7) provides for
+salaries and allowances payable to Chief Privacy Commissioners and Privacy Commissioners
+of the Privacy Commission. Clause 55 provides for Central Government to provide requisite
+funds to the Privacy Commission through the Consolidated Fund of India.
+Clause 65 provides for constitution of State Privacy Commission by the State
+Governments. Clause 65(6) provides for appointment of officers and employees by the State
+Government to the State Privacy Commission. Clause 65(7) provides for State Government to
+provide requisite funds to the State Privacy Commission. The expenditure relating to States
+shall be borne out of the Consolidated Funds of State Governments concerned. Clause 65(9)
+provides for salaries and allowances payable to State Chief Privacy Commissioners and
+Privacy Commissioners of the State Privacy Commission.
+However, the expenditure relating to Union territories shall be borne out of the
+Consolidated Fund of India. The Bill, therefore, if enacted would involve expenditure from
+the Consolidated Fund of India. It is estimated that a recurring expenditure of about rupees
+five hundred crore per annum would involve from the Consolidated Fund of India.
+A non-recurring expenditure of about rupees two hundred crore is also likely to be
+involved.
+
+43
+MEMORANDUM REGARDING DELEGATED LEGISLATION
+Clause 82 of the Bill empowers the appropriate Government to make rules for carrying
+out the purposes of the Bill. As the rules will relate to matters of detail only, the delegation of
+legislative power is of a normal character.
+
+LOK  SABHA
+————
+A
+BILL
+to establish an effective regime to protect, promote and fulfil the fundamental right to
+privacy of all natural persons and protect personal data concerning them, to set out
+conditions upon which surveillance of natural persons and interception of
+communications may be carried out, to constitute a Privacy Commission,
+and for matters connected therewith or incidental thereto.
+————
+(Dr. D. Ravikumar, M.P.)
+MGIPMRND—1502LS(S3)—17-07-2019.
