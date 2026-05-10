@@ -1,20 +1,11 @@
 {
   "version": "1.2",
-  "generated_at": "2026-05-10T06:07:13Z",
+  "generated_at": "2026-05-10T09:25:01Z",
   "lok_sabhas": [
     18
   ],
-  "max_extractions_per_run": 400,
-  "extract_workers": 4,
   "total_reports": 14707,
   "total_with_text": 5745,
-  "extract_stats": {
-    "extracted": 319,
-    "failed": 81,
-    "rate_limited": false,
-    "budget_hit": false,
-    "candidates_remaining_after_run": 8966
-  },
   "search_bundle": {
     "shard_count": 3,
     "shards": [
