@@ -1,0 +1,74 @@
+name: Bills (sansad-side) scrape and publish
+
+on:
+  schedule:
+    # Daily at 06:23 UTC (= 11:53 IST). Bills publish at the same cadence
+    # as CAG audit reports — handful per week during sessions, often quiet
+    # for weeks between. Daily covers normal cadence; manual
+    # workflow_dispatch is the escape hatch for ad-hoc backfills.
+    #
+    # Off-hour minute (:23) deliberately — top-of-hour is GH's busiest slot
+    # for scheduled jobs and runs get delayed up to an hour or sometimes
+    # dropped entirely. :23 also avoids the CAG :17 slot — different
+    # concurrency groups so they could run simultaneously, but spacing
+    # keeps GH scheduler noise lower.
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_extractions:
+        description: 'Max PDFs to extract this run (politeness budget)'
+        default: '200'
+      max_run_seconds:
+        description: 'Hard wall-clock cap for the extraction phase, seconds'
+        default: '1800'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Don't let two Bills (sansad-side) runs ever overlap — they would race
+  # on the on-disk text cache and produce a noisy git diff. Independent of
+  # the `scrape` (DRSC) and `cag` (CAG / CAG-OCR) groups, so all three
+  # corpora can run concurrently.
+  group: bills-sansad
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # 90 min ceiling: scheduled runs (200 extractions in ~15 min) finish well
+    # under, but manual workflow_dispatch with larger budgets (1500-2000)
+    # needs the headroom. Hard wall-clock cap inside the script via
+    # MAX_RUN_SECONDS keeps any single run from approaching this.
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build Bills (sansad-side) static data
+        env:
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
+        run: python build_bills_sansad.py
+
+      - name: Commit and push
+        # `pull --rebase` before push handles the human-vs-bot race when
+        # someone pushes to main mid-run. Same pattern as scrape.yml /
+        # cag.yml.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet && echo "no changes" && exit 0
+          git commit -m "Auto-update Bills (sansad) data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git pull --rebase origin main
+          git push

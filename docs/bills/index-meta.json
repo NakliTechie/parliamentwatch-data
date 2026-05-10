@@ -1,0 +1,73 @@
+{
+  "scraper_version": "bills.sansad.scraper/0.2",
+  "scraped_at": "2026-05-10T08:19:55Z",
+  "source": "https://sansad.in/api_rs/legislation/getBills",
+  "shard_size": 1000,
+  "totals": {
+    "bills": 9913,
+    "with_canonical_pdf": 7492,
+    "with_text": 6
+  },
+  "shards": [
+    {
+      "file": "index-00.json",
+      "count": 1000,
+      "newest_billYear": 2026,
+      "oldest_billYear": 2021
+    },
+    {
+      "file": "index-01.json",
+      "count": 1000,
+      "newest_billYear": 2021,
+      "oldest_billYear": 2017
+    },
+    {
+      "file": "index-02.json",
+      "count": 1000,
+      "newest_billYear": 2017,
+      "oldest_billYear": 2015
+    },
+    {
+      "file": "index-03.json",
+      "count": 1000,
+      "newest_billYear": 2015,
+      "oldest_billYear": 2010
+    },
+    {
+      "file": "index-04.json",
+      "count": 1000,
+      "newest_billYear": 2010,
+      "oldest_billYear": 2004
+    },
+    {
+      "file": "index-05.json",
+      "count": 1000,
+      "newest_billYear": 2004,
+      "oldest_billYear": 1999
+    },
+    {
+      "file": "index-06.json",
+      "count": 1000,
+      "newest_billYear": 1999,
+      "oldest_billYear": 1991
+    },
+    {
+      "file": "index-07.json",
+      "count": 1000,
+      "newest_billYear": 1991,
+      "oldest_billYear": 1979
+    },
+    {
+      "file": "index-08.json",
+      "count": 1000,
+      "newest_billYear": 1979,
+      "oldest_billYear": 1964
+    },
+    {
+      "file": "index-09.json",
+      "count": 913,
+      "newest_billYear": 1964,
+      "oldest_billYear": 1952
+    }
+  ]
+}
