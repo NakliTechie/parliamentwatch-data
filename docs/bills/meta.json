@@ -1,10 +1,40 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "last_update": "2026-05-10T09:03:42Z",
+  "last_update": "2026-05-10T09:12:57Z",
   "last_run_status": "ok",
   "total": 9913,
   "with_text": 1492,
   "in_rate_limit_cooldown": false,
   "cooldown_remaining_seconds": null,
-  "this_run_extracted": 0
+  "this_run_extracted": 0,
+  "search_bundle": {
+    "shard_count": 1,
+    "shards": [
+      "search-bundle-00.json"
+    ],
+    "shard_sizes": {
+      "search-bundle-00.json": 7157545
+    },
+    "total": 1492,
+    "truncated": 1109,
+    "head_chars": 5000,
+    "size_bytes": 7157545,
+    "max_shard_bytes": 7157545
+  },
+  "search_index": {
+    "shard_count": 1,
+    "shards": [
+      "search-index-00.json"
+    ],
+    "shard_sizes": {
+      "search-index-00.json": 1854498
+    },
+    "report_count": 1492,
+    "vocab_size": 20714,
+    "total_postings": 634741,
+    "size_bytes": 1854498,
+    "max_shard_bytes": 1854498,
+    "freq_cutoff_low": 2,
+    "freq_cutoff_high": 1342
+  }
 }

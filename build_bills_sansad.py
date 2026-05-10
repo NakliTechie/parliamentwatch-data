@@ -71,16 +71,35 @@ INDEX_META_JSON = DOCS / "index-meta.json"
 MANIFEST_JSON   = DOCS / "manifest.json"
 META_JSON       = DOCS / "meta.json"
 STATE_JSON      = DOCS / ".scraper_state.json"   # cooldown bookkeeping
-SEARCH_BUNDLE_JSON = DOCS / "search-bundle.json"
 
-LEGACY_INDEX_JSON = DOCS / "index.json"  # superseded by sharded layout
+LEGACY_INDEX_JSON          = DOCS / "index.json"           # pre-sharding
+LEGACY_SEARCH_BUNDLE_JSON  = DOCS / "search-bundle.json"   # pre-sharding (single-file v1.1.a session 2)
+LEGACY_SEARCH_INDEX_JSON   = DOCS / "search-index.json"    # never existed for bills, defensive
 
-# How many chars of extracted text to put in each search-bundle entry.
-# 5,000 matches CAG's bundle convention. Bundle for 1.5k bills × 5KB ≈ 7.5 MB
-# (CF gzip serves ~30%, app caches in IDB). At 9.9k bills with text the
-# bundle would be ~50 MB — at that point we shard like CAG's
-# search-bundle-NN.json, but we're well below that today.
-SEARCH_BUNDLE_HEAD_CHARS = int(os.environ.get("BILLS_SEARCH_BUNDLE_HEAD", "5000"))
+# ── Search constants (shape-aligned with CAG / DRSC for cross-corpus v2) ──
+# Tokenisation + freq cutoffs duplicated from build_cag.py per Independence
+# Principle, NOT imported. Same values so cross-corpus search in v2 doesn't
+# have to reconcile two different vocabs.
+
+import re
+
+_STOPWORDS = frozenset("""
+a an and the of to in on at by for with from is are was were be been being
+this that these those it its they them their there as or but if then so
+not no nor have has had do does did will would should could may might must
+can shall about above after again against all am any because before below
+between both each few further here how i me my myself we our ours ourselves
+you your yours yourself yourselves he him his himself she her hers herself
+itself which who whom whose what when where why off out over under up down
+into through during until while above below between because such own same
+""".split())
+
+_TOKEN_RE         = re.compile(r"\w+", re.UNICODE)
+_FREQ_CUTOFF_HIGH = 0.9
+_FREQ_CUTOFF_LOW  = 2
+_MAX_TOKEN_LEN    = 25
+_HEAD_CHARS       = 5000
+_DOCS_PER_SHARD   = 2500
 
 # ── Per-run budget ─────────────────────────────────────────────────────────
 
@@ -382,45 +401,240 @@ def write_manifest(records: list[dict], extract_status: dict) -> None:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
 
 
-def write_search_bundle(records: list[dict]) -> int:
-    """Build search-bundle.json — flat list of {key, title, head} entries for
-    every bill that has extracted text. App-side deep search scans
-    bundle.map.get(key).head + the in-memory cached text + the title for
-    matches. Entries built only for bills with on-disk text/<id>.txt; bills
-    without extracted text contribute only via title scan.
+def _delete_legacy(path: Path) -> None:
+    if path.exists():
+        try:
+            path.unlink()
+        except OSError:
+            pass
 
-    Single file at this corpus size (1-10 MB depending on backfill progress).
-    Shard like CAG's search-bundle-NN.json if it ever exceeds ~20 MB.
+
+def build_search_bundle(records: list[dict]) -> Optional[dict]:
+    """Build sharded search-bundle-NN.json — title + first _HEAD_CHARS chars
+    per bill that has extracted text. Sharded by sorted-key range so no shard
+    exceeds CF Workers' 25 MiB cap. Mirrors build_cag.py's pattern (v1.0c).
+
+    Returns shard-stats dict (used by meta.json), or None if no texts yet.
     """
+    if not TEXT_DIR.exists():
+        return None
+
     entries = []
+    truncated = 0
     for r in records:
         cid = r["compositeId"]
         text_path = TEXT_DIR / f"{cid}.txt"
         if not text_path.exists():
             continue
         try:
-            with open(text_path, "r", encoding="utf-8") as f:
-                head = f.read(SEARCH_BUNDLE_HEAD_CHARS)
-        except OSError:
+            text = text_path.read_text(encoding="utf-8", errors="replace")
+        except Exception:
             continue
+        head = text[:_HEAD_CHARS]
+        if len(text) > _HEAD_CHARS:
+            truncated += 1
         entries.append({
             "key":   f"bills|{cid}",
             "title": r.get("billName") or "",
             "head":  head,
         })
-    bundle = {
-        "generated_at": _now_iso(),
-        "head_chars":   SEARCH_BUNDLE_HEAD_CHARS,
-        "total":        len(entries),
-        "entries":      entries,
+
+    if not entries:
+        return None
+
+    entries.sort(key=lambda e: e["key"])
+    n_shards = max(1, (len(entries) + _DOCS_PER_SHARD - 1) // _DOCS_PER_SHARD)
+    shard_size = (len(entries) + n_shards - 1) // n_shards
+    generated_at = _now_iso()
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
+
+    # Clean previous shards (the count may have shrunk if records dropped).
+    import glob as _glob
+    for p in _glob.glob(str(DOCS / "search-bundle-*.json")):
+        try:
+            os.remove(p)
+        except OSError:
+            pass
+
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, len(entries))
+        slc   = entries[start:end]
+        bundle = {
+            "version":      2,
+            "generated_at": generated_at,
+            "shard":        shard_idx,
+            "shard_count":  n_shards,
+            "head_chars":   _HEAD_CHARS,
+            "total":        len(slc),
+            "entries":      slc,
+        }
+        fname = f"search-bundle-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(bundle, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "entries": len(slc)})
+
+    _delete_legacy(LEGACY_SEARCH_BUNDLE_JSON)
+
+    return {
+        "shard_count":     n_shards,
+        "shards":          [s["name"] for s in shards_meta],
+        "shard_sizes":     {s["name"]: s["size_bytes"] for s in shards_meta},
+        "total":           len(entries),
+        "truncated":       truncated,
+        "head_chars":      _HEAD_CHARS,
+        "size_bytes":      total_size_bytes,
+        "max_shard_bytes": max((s["size_bytes"] for s in shards_meta), default=0),
     }
-    with open(SEARCH_BUNDLE_JSON, "w", encoding="utf-8") as f:
-        json.dump(bundle, f, ensure_ascii=False)   # no indent — keep it tight
-    return len(entries)
 
 
-def write_meta(records: list[dict], extract_status: dict, state: dict) -> None:
-    """Build meta.json — small status JSON for chip status display."""
+def build_search_index(records: list[dict]) -> Optional[dict]:
+    """Build sharded search-index-NN.json — inverted token index over the
+    full body of every extracted-text bill. Each shard carries the FULL
+    vocabulary + a slice of report_keys + per-token postings (delta-encoded,
+    doc-local within the shard). Mirrors build_cag.py's pattern (v1.0c).
+
+    Token rules: \\w+ regex (Unicode), 2-25 chars, lowercased, drop digits +
+    stopwords. Tokens kept iff they appear in [_FREQ_CUTOFF_LOW,
+    _FREQ_CUTOFF_HIGH × n_docs] documents — knock out hapax-legomena
+    typos and corpus-wide near-stopwords.
+
+    Returns shard-stats dict, or None if no texts yet.
+    """
+    if not TEXT_DIR.exists():
+        return None
+
+    # composite-id → record (for billName lookups not used here, but cheap).
+    records_by_cid = {r["compositeId"]: r for r in records}
+
+    docs: list[tuple[str, set[str]]] = []
+    df: dict[str, int] = {}
+
+    for text_file in sorted(TEXT_DIR.glob("*.txt")):
+        cid = text_file.stem
+        if cid not in records_by_cid:
+            # Stale text file — bill was removed from the index. Skip.
+            continue
+        try:
+            text = text_file.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            continue
+        tokens: set[str] = set()
+        for m in _TOKEN_RE.finditer(text.lower()):
+            t = m.group(0)
+            if len(t) < 2 or len(t) > _MAX_TOKEN_LEN:
+                continue
+            if t.isdigit() or t in _STOPWORDS:
+                continue
+            tokens.add(t)
+            if len(tokens) >= 50000:
+                break  # defensive: pathological PDF, skip the long tail
+        docs.append((f"bills|{cid}", tokens))
+        for t in tokens:
+            df[t] = df.get(t, 0) + 1
+
+    n_docs = len(docs)
+    if n_docs == 0:
+        return None
+
+    high = int(n_docs * _FREQ_CUTOFF_HIGH)
+    low  = _FREQ_CUTOFF_LOW
+    keep_tokens = sorted(t for t, c in df.items() if low <= c <= high)
+    token_to_idx = {t: i for i, t in enumerate(keep_tokens)}
+
+    docs.sort(key=lambda d: d[0])
+
+    n_shards = max(1, (n_docs + _DOCS_PER_SHARD - 1) // _DOCS_PER_SHARD)
+    shard_size = (n_docs + n_shards - 1) // n_shards
+    generated_at = _now_iso()
+
+    def _delta(lst: list[int]) -> list[int]:
+        if not lst:
+            return lst
+        out = [lst[0]]
+        prev = lst[0]
+        for x in lst[1:]:
+            out.append(x - prev)
+            prev = x
+        return out
+
+    # Clean previous shards.
+    import glob as _glob
+    for p in _glob.glob(str(DOCS / "search-index-*.json")):
+        try:
+            os.remove(p)
+        except OSError:
+            pass
+
+    total_postings = 0
+    shards_meta: list[dict] = []
+    total_size_bytes = 0
+
+    for shard_idx in range(n_shards):
+        start = shard_idx * shard_size
+        end   = min(start + shard_size, n_docs)
+        slc   = docs[start:end]
+
+        raw_postings: list[list[int]] = [[] for _ in keep_tokens]
+        for local_idx, (_key, tokens) in enumerate(slc):
+            for t in tokens:
+                ti = token_to_idx.get(t)
+                if ti is not None:
+                    raw_postings[ti].append(local_idx)
+
+        total_postings += sum(len(p) for p in raw_postings)
+        postings = [_delta(p) for p in raw_postings]
+        shard_keys = [k for k, _ in slc]
+
+        index = {
+            "version":          3,
+            "encoding":         "delta",
+            "generated_at":     generated_at,
+            "shard":            shard_idx,
+            "shard_count":      n_shards,
+            "report_count":     len(slc),
+            "vocab_size":       len(keep_tokens),
+            "freq_cutoff_low":  low,
+            "freq_cutoff_high": high,
+            "stopwords_count":  len(_STOPWORDS),
+            "report_keys":      shard_keys,
+            "vocab":            keep_tokens,
+            "postings":         postings,
+        }
+        fname = f"search-index-{shard_idx:02d}.json"
+        out_path = DOCS / fname
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
+        size = out_path.stat().st_size
+        total_size_bytes += size
+        shards_meta.append({"name": fname, "size_bytes": size, "report_count": len(slc)})
+
+    _delete_legacy(LEGACY_SEARCH_INDEX_JSON)
+
+    return {
+        "shard_count":      n_shards,
+        "shards":           [s["name"] for s in shards_meta],
+        "shard_sizes":      {s["name"]: s["size_bytes"] for s in shards_meta},
+        "report_count":     n_docs,
+        "vocab_size":       len(keep_tokens),
+        "total_postings":   total_postings,
+        "size_bytes":       total_size_bytes,
+        "max_shard_bytes":  max((s["size_bytes"] for s in shards_meta), default=0),
+        "freq_cutoff_low":  low,
+        "freq_cutoff_high": high,
+    }
+
+
+def write_meta(records: list[dict], extract_status: dict, state: dict,
+               bundle_stats: Optional[dict] = None,
+               index_stats: Optional[dict] = None) -> None:
+    """Build meta.json — small status JSON for chip status display + the
+    search_bundle / search_index shard listings the app needs to fetch the
+    sharded deep-search artefacts."""
     in_cooldown, remaining = _is_in_cooldown(state)
     with_text = sum(1 for r in records if (TEXT_DIR / f"{r['compositeId']}.txt").exists())
     meta = {
@@ -432,6 +646,8 @@ def write_meta(records: list[dict], extract_status: dict, state: dict) -> None:
         "in_rate_limit_cooldown": in_cooldown,
         "cooldown_remaining_seconds": int(remaining) if remaining else None,
         "this_run_extracted": extract_status.get("extracted", 0),
+        "search_bundle": bundle_stats,   # None if no extracted texts yet
+        "search_index":  index_stats,
     }
     with open(META_JSON, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
@@ -471,9 +687,31 @@ def main() -> int:
     shard_entries = write_sharded_index(records)
     write_index_meta(records, shard_entries)
     write_manifest(records, extract_status)
-    write_meta(records, extract_status, state)
-    bundle_count = write_search_bundle(records)
-    print(f"  Wrote {len(shard_entries)} shard(s) + index-meta.json + manifest.json + meta.json + search-bundle.json ({bundle_count} entries)")
+
+    # Phase 4: deep-search artefacts (sharded bundle + sharded body-token index).
+    # Both honour the same _DOCS_PER_SHARD as DRSC + CAG so cross-corpus search
+    # in v2 has uniform shard granularity to merge against.
+    print("  Building search bundle (title + first 5K chars per bill, sharded)...")
+    bundle_stats = build_search_bundle(records)
+    if bundle_stats:
+        print(f"    {bundle_stats['shard_count']} shard(s), "
+              f"{bundle_stats['total']} entries, "
+              f"max shard {bundle_stats['max_shard_bytes'] // 1024} KB")
+    else:
+        print("    skipped — no extracted texts yet")
+
+    print("  Building search index (full-body inverted token index, sharded)...")
+    index_stats = build_search_index(records)
+    if index_stats:
+        print(f"    {index_stats['shard_count']} shard(s), "
+              f"{index_stats['report_count']} docs, "
+              f"vocab={index_stats['vocab_size']}, "
+              f"max shard {index_stats['max_shard_bytes'] // 1024} KB")
+    else:
+        print("    skipped — no extracted texts yet")
+
+    write_meta(records, extract_status, state, bundle_stats, index_stats)
+    print(f"  Wrote {len(shard_entries)} index shard(s) + index-meta.json + manifest.json + meta.json + search artefacts")
     return 0
 
 
