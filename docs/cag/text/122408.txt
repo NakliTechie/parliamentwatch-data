@@ -1,0 +1,3053 @@
+ 
+ 
+Report of the 
+Comptroller and Auditor General of India 
+for the year ended March 2024 
+ 
+ 
+ 
+ 
+ 
+Performance Audit Report on  
+E-Way Bill System under GST 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Union Government 
+Department of Revenue 
+(Indirect Taxes – Goods and Services Tax) 
+Report No. 12 of 2025 
+ 
+ 
+Laid on the table of Lok Sabha and Rajya Sabha on……………………….. 
+Report of the 
+Comptroller and Auditor General of India 
+for the year ended March 2024 
+ 
+ 
+ 
+ 
+ 
+Performance Audit Report on 
+E-Way Bill System under GST 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Union Government 
+Department of Revenue 
+(Indirect Taxes – Goods and Services Tax) 
+Report No. 12 of 2025 
+ 
+ 
+Laid on the table of Lok Sabha and Rajya Sabha on……………………….. 
+ 
+
+Report No.___ of 2024 (Performance Audit) 
+(2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+(i) 
+Table of Contents 
+Content Page No. 
+Preface (i) 
+Executive Summary (iii) 
+Chapter – 1:  Introduction 1-6 
+1.1 Introduction to EWB 1 
+1.2 Organisational structure of the Department 2 
+1.3 Information Systems used for EWBs 2 
+1.4 Processes involved in the EWB System 2 
+1.4.1 Enrolment in the Portal 4 
+1.4.2 Generation of EWBs 4 
+1.4.3 ‘Bill to Ship to’ Transactions 5 
+1.4.4 Validity of EWBs 5 
+1.4.5 Extension of EWBs 5 
+1.4.6 Cancellation of EWBs 5 
+1.4.7 Rejection of EWBs 5 
+Chapter – 2:  Audit Objectives, Criteria, Scope and 
+Sampling Methodology 
+7-11 
+2.1 Audit Objectives 7 
+2.2 Audit Criteria 7 
+2.3 Audit Scope 7 
+2.4 Audit Sampling Methodology 8 
+2.5 Audit Constraints 9 
+Chapter – 3: Trends and Insights of EWB data 13-16 
+3.1 Trend Analysis of EWBs 13 
+Chapter – 4:  Effectiveness of EWB System 17-42 
+4.1 Whether EWB mechanism was effective in 
+protecting revenue interest of the 
+Government 
+17 
+4.1.1 Results of Audit 17 
+4.1.2 Non/short discharge of tax liability 19 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+(ii) 
+Content Page No. 
+4.1.3 Discrepancies identified through analysis of 
+EWB data  
+33 
+4.1.4 Wilful suppression of turnover by a group of 
+taxpayers 
+34 
+4.1.5 Discrepancies noticed in availing of ITC  38 
+4.1.6 Miscellaneous issues 40 
+Chapter – 5:  Preventive functions of the Department 43-55 
+5.1 Efficiency and effectiveness of the 
+preventive/enforcements activities of the 
+Department in enforcing EWB provisions 
+43 
+5.1.1 Operational Preparedness of the Department 44 
+5.1.2 Effectiveness of Anti-evasion measures 49 
+5.1.3 EWB of more than threshold limit generated 
+by unregistered taxpayers 
+54 
+5.2 Impact on State Goods and Services Tax 55 
+Chapter – 6:  Conclusion and recommendations 57-58 
+6.1 Conclusion 57 
+6.2 Recommendations 57 
+Appendices 59-65 
+Appendix-I Threshold limit for intra-State EWBs 59 
+Appendix-II Key Problem Areas 61 
+Appendix-III Impact on State Goods and Services Tax 62 
+Glossary 66-67 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+(i) 
+Preface 
+This Report has been prepared for submission to the President of India under 
+Article 151 of the Constitution of India. 
+The Report contains significant results of the Performance Audit on “E-Way Bill 
+(EWB) System under GST”  and covers  results of audit verification on tax 
+compliance by the taxpayers with reference to EWBs generation and 
+Preventive functions of the department in enforcing EWB provisions.  
+The instances mentioned in this Report are those, which came to notice in the 
+course of test audit conducted during the period from February 2023 to July 
+2023 for which responses were sought and partly received from the CBIC. 
+The audit has been conducted in conformity with the Auditing Standards 
+issued by the Comptroller and Auditor General of India. 
+Audit wishes to acknowledge the cooperation received from the Department 
+of Revenue, CBIC and its field formations at each stage of the audit process. 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+(ii) 
+ 
+  
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+(iii) 
+Executive Summary 
+Introduction 
+In the GST tax regime, E -Way bill (EWB) is a document required for the 
+movement of goods and is designed to capture details of goods before being 
+moved. The EWB has been introduced with effect from 1 April 2018. 
+Automation and standardisation of the entire process was intended to help 
+check tax evasion and sh ore up GST collections.  EWB is also designed to 
+dissolve the non-trade barriers, so that transit time is reduced and supply chain 
+efficiency is improved. 
+The Performance Audit (PA) on EWB System under GST had objectives  to 
+examine effectiveness of EWB mechanism in protecting revenue interest of the 
+Government and to evaluate efficiency and effectiveness of the preventive 
+activities of the Department in enforcing EWB provisions.  EWB transactions 
+pertaining to the period from 1 April 2018 to 31 March 2022 were covered in 
+this PA and the audit was conducted from February 2023 to July 2023. 
+A risk based approach has led this PA and samples were selected based on the 
+Key Problem Areas (KPAs) identified  - 2,244 EWBs relating to 956 taxpayers  
+and 50 per cent of preventive units for the two objectives, respectively.    
+Limitation of scope due to non-production of records 
+In order to verify 2,244 selected EWBs, audit requisitioned records in respect 
+of 956 selected taxpayers (with reference to corresponding 2,244 EWBs) for 
+the period from 2018-19 to 2021-22.  However, records were not produced in 
+respect of 108 taxpayers and only partial records were produced in respect of 
+334 taxpayers.   Similarly in respect of records relating to booked cases of EWB 
+verifications, though records relating to 1,559 booked cases pertaining to 58 
+Commissionerates were called for, the documents for 1 53 cases wer e not 
+produced by 13 Commissionerates. 
+(Paragraphs 2.5 and 5.1.2.1) 
+Audit findings 
+Summary of the major audit findings: 
+1. Non/short discharge of tax liability 
+(i) Audit observed that 36 taxpayers under Composition Levy scheme 
+(CLS) pertaining to 24 Commissionerates had generated EWBs for effecting 
+inter-State outward supplies or/and their turnover had crossed the threshold 
+limit thereby violating the conditions spec ified for composition scheme. The 
+
+Report No. 12 of 2025 (Performance Audit) 
+(iv) 
+short payment of tax noticed in these cases was ₹ 6.74 crore alongwith interest 
+of ₹ 0.51 crore.  
+(Paragraph 4.1.2(a)) 
+(ii) Audit observed that 103 taxpayers pertaining to 37 Commissionerates 
+who had effected  outward supplies for ₹ 2,285.23 crore from April 2018 to 
+March 2022 supported by EWBs either did not file their return or did not report 
+the turnover in their returns. The amount of tax involved in these cases worked 
+out to ₹ 307.37 crore alongwith interest of ₹ 3.25 crore. 
+(Paragraph 4.1.2(b)) 
+(iii) Audit observed that 4 3 taxpayers pertaining to 2 4 Commissionerates 
+had generated EWBs for effecting outward supplies for ₹ 152.60 crore from 
+April 2018 to March 2022 after the effective date of cancellation of their 
+registration. Tax liability of ₹ 23.56 crore is recoverable in these cases 
+alongwith interest of ₹ 0.94 crore.     
+(Paragraph 4.1.2(c)) 
+(iv) Audit observed that 71 taxpayers falling under 3 3 Commissionerates 
+reporting Nil turnover in their returns actually effected outward supplies, as 
+ascertained from EWBs, amounting to ₹ 340.42 crore.  The amount of tax 
+recoverable worked out to ₹ 50.41 crore alongwith interest of ₹ 3.69 crore. 
+(Paragraph 4.1.2(e)) 
+(v) Audit also observed that 1 74 taxpayers pertaining to 53 
+Commissionerates had effected outward supplies of ₹ 1,750.87 crore from 
+April 2018 to March 2022 without discharging tax liability of ₹ 168.06 crore 
+recoverable with interest of ₹ 9.29 crore on these supplies.   
+(Paragraph 4.1.2(f)) 
+2. Discrepancies identified through analysis of EWB data  
+Through analysis of EWB data, Audit noticed discrepancies in tax compliance 
+by the taxpayers. The data w as forwarded to the Department for taking 
+remedial action at system level at their end. 
+(Paragraph 4.1.3) 
+3. Wilful suppression of turnover by a group of taxpayers  
+Audit observed that 18 taxpayers pertaining to three Commissionerates had 
+generated 3,137 EWBs for outward supplies of ₹ 168.21 crore.  The taxpayers 
+did not discharge the tax liability of ₹ 81.11 crore with interest of ₹ 45.19 crore 
+
+Report No. 12 of 2025 (Performance Audit) 
+(v) 
+due to either non-filing of returns or non/short reporting the turnover in their 
+returns. 
+(Paragraph 4.1.4) 
+4. Discrepancies noticed in availing of ITC   
+Audit observed that 72 taxpayers pertaining to 28 Commissionerates had 
+availed ITC of ₹ 1,357.89 crore through GSTR-3B, however, ITC available as per 
+GSTR-2A was ₹ 1,202.48 crore. Thus , there was mismatch between ITC 
+available as per GSTR -2A and that availed by the taxpayers through GSTR -3B 
+to a tune of ₹ 155.41 crore.  
+(Paragraph 4.1.5(a)) 
+5.  Use of Analytical Reports on EWBs generated by NIC 
+NIC is generating 97 Analytical Reports on EWB transactions, and it shares the 
+same through the NIC-EWB Portal with the GST Departments under Centre and 
+State formations for their use.   
+Out of 58 selected Commissionerates, 4 6 Commissionerates stated that they 
+were not using the reports for the purpose  of planning of interception of 
+vehicles.   
+(Paragraph 5.1.1.5(ii)) 
+6. Non/short creation of demand for tax and penalty during EWB 
+verification 
+Scrutiny of 1,405 booked cases pertaining to 58 Commissionerates revealed 
+that in respect of 20 0 cases, vehicles were released without creating demand 
+of ₹ 2.60 crore. Further, in respect of 93 cases, there was short demand of  
+₹ 0.79 crore. 
+(Paragraph 5.1.2.2) 
+7. EWB of more than threshold limit generated by unregistered 
+taxpayers  
+Unregistered persons generated 3,585 EWBs exceeding threshold limit of  
+₹ 40 lakh in each EWB prescribed for registration under the CGST Act.  
+(Paragraph 5.1.3) 
+8. Recommendations 
+(1) Department may incorporate validation controls in the EWB system to: 
+
+Report No. 12 of 2025 (Performance Audit) 
+(vi) 
+(a) alert the CLS taxpayer , as well as the departmental officer , about 
+crossing of the threshold limit and for generating EWB for inter-
+State supply. 
+(b) identify the taxpayers generating high value EWBs but not 
+discharging tax liability and reporting such taxpayers to the Proper 
+officers. 
+(c) alert taxpayer and departmental officer on generation of multiple 
+EWBs with single invoice/similar invoice.   
+(d) alert taxpayers whenever EWB is generated for movement of 
+banned goods. 
+(e) red flag/ prevent abnormally high value and inconsistent data in 
+EWBs.    
+(2) Department may consider issuing suitable instructions to the proper 
+officers for considering EWBs generated by the taxpayer before cancelation of 
+registration retrospectively and taking action for recovery of tax wherever 
+applicable. 
+(3) Department may consider to ensure availability of manpower and 
+patrolling vehicles for adequacy and effectiveness of EWB verification to 
+protect revenue. 
+(4) Department may consider issuing suitable instructions for using NIC 
+Analytical reports on EWBs for planning, execution and monitoring the 
+interception of vehicles. 
+(5) Department may consider incorporati ng validation control in EWB 
+system to restrict generation of EWBs of more than threshold limit where the 
+suppliers were unregistered persons. 
+(Paragraph 6.2)
+
+Report No. 12 of 2025 (Performance Audit) 
+1 
+Chapter-1: Introduction 
+ 
+1.1 Introduction to EWB 
+Goods and Services Tax (GST) has been introduced with effect from 1 July 2017, 
+subsuming a wide range of Indirect Taxes based on the paradigm of ‘One 
+Nation One Tax’. One of the intended objectives of GST regime was to improve 
+efficiency in the movement of goods and services by reducing process-related 
+time delays.  
+Waybill was a feature present even in pre-GST regimes wherein movement of 
+goods was administered through manually governed (revenue) check posts. 
+Goods entering a particular State were levied an ‘Entry Tax’ which ha s since 
+been subsumed under GST. EWB is conceived as a shift from a Government-
+monitored tax administration model to a self-reporting model by the taxpayer. 
+EWB is a document required for the movement of goods and is designed to 
+capture details of goods before being moved. Automation and standardisation 
+of the entire process was intended to help check tax evasion and shore up GST 
+collections.  EWB is also designed to dissolve the non -trade barriers, so that 
+transit time is reduced and supply chain efficiency is improved. 
+The EWB was introduced with effect from 1  April 2018 for all inter -State 
+movement of goods having a value exceeding  ₹ 50,000. For intra -State 
+movements, EWB was made mandatory, in phases, with the threshold limit  
+(Appendix-I ) as may be prescribed by the concerned State Governments.  
+Rules 138 and 138A to E of Central Goods and Services Tax Rules (CGST Rules), 
+2017 (as amended from time to time) provides for the EWB mechanism. The 
+information on the consignment is to be furnished prior to movement of goods 
+and it is to be issued irrespective of whether the movement is in relation to 
+supply or for reasons other than supply.  
+EWBs generated for outward supplies are supported by ‘Invoices’ and the 
+invoice details are required to be reported in the GSTR -1 by the regular 
+taxpayers.  The summary details of such supplies are required to be reported 
+by the composition taxpayers in GS TR-4/CMP-08.  As per the instructions 1 
+issued by the CBIC, the Proper Officer may rely upon the data/details available 
+in EWB Portal at the time of scrutiny of returns. 
+ 
+1  Para 6.1 of Standard Operating Procedure (SOP) for Scrutiny of GST Returns for Financial Year 
+(FY) 2017-18 and 2018-19 issued vide CBIC Instruction No.2/2022-GST, dated 22 March 2022 
+and Para No.5.1 of SOP for Scrutiny of GST Returns for FY 2019-20 onwards issued vide CBIC 
+Instruction No.2/2023-GST, dated 26 May 2023. 
+
+Report No. 12 of 2025 (Performance Audit) 
+2 
+1.2 Organisational structure of the Department 
+The Central Board of Indirect Taxes and Customs (CBIC), working under the 
+aegis of the Ministry of Finance, is the apex body implementing GST for 
+Centrally administered taxpayers across the country. There are 21 GST Zones 
+and thereunder, 107 GST Taxpayer S ervice Commissionerates (Executive 
+Commissionerates), 48 Audit Commissionerates and 49 Appeal 
+Commissionerates.   
+Each Commissionerate  has dedicated Preventive formations which perform 
+functions relating to anti-evasion, including verification of EWBs. 
+1.3 Information Systems used for EWBs 
+The EWB Common portal is managed by National Informatics Centre (NIC) and 
+is integrated with the VAHAN 2 system of the Ministry of Road Transport and 
+Highways, so that vehicle registration number can be v erified at the time of 
+generating EWB. FASTag system had been integrated with the EWB system 
+with effect from  1 January 2021. On the EWB Common Portal, one -time 
+registration of the taxpayer is required for  the purpose of generation, 
+extension, cancellation and rejection of EWBs. 
+The Proper Officers (both Centre and State/UT) can access the EWB Portal 
+through two means: - (i) Logging into EWB Common Portal through a web 
+browser using the login credentials provided or (ii) Logging into the GST EWB 
+System Mobile App . The functions performed by the proper officer are 
+Verification of EWBs, Unblocking of EWB generation, Viewing and accessing 
+Management Information System (MIS) reports etc.  
+1.4 Processes involved in the EWB System  
+The EWB system includes various processes such as the Enrolment of the 
+required persons in the portal, Generation of EWB, Extension, Cancellation and 
+Rejection of the EWBs generated, etc. The entire process flow of EWB system 
+under GST is depicted in the following flowchart (Figure-1).  
+  
+ 
+2  VAHAN is a system that takes care of all the activities of Vehicle Registration. 
+
+Report No. 12 of 2025 (Performance Audit) 
+3 
+                     
+             Figure 1: E-Way Bill mechanism - Process Flow Chart 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+No 
+Yes 
+Intra-state transport 
+distance between Consignor 
+and Transporter premise/ 
+Transporter and Consignee 
+premise is ≤ 50 km 
+Consignor / 
+Transporter to          
+Fill Part B of EWB-01 
+• EWB valid only after Part B 
+is filled 
+• Part A of EWB-01 cannot be 
+altered after Part B is filled 
+EWB 
+generated 
+EWB details 
+communicated          
+to supplier / 
+Recipient on the 
+EWB Portal 
+Recipient to Accept/ 
+Reject EWB within 
+72 hours of 
+communication / 
+receipt of goods 
+whichever is earlier 
+Filling Part B of EWB-01 is 
+not mandatory 
+Information for enrollment 
+• GSTIN 
+• PAN 
+• Mobile Number 
+• e-mail 
+Unique 
+number 
+generated 
+Valid for    
+15 days 
+Transport of goods 
+ E-Way Bill portal 
+(https://ewaybillgst.gov.in) 
+Consignor / Transporter/     
+Consignee /  
+Unregistered Persons to 
+enroll in e-way Bill Portal 
+Fill Part A of 
+EWB-01 prior     
+to movement 
+of goods 
+     Transporter to carry 
+• Invoice/ Bill of Supply / 
+Delivery Challan 
+• Copy of EWB-Physical/ 
+Electronic form/ EWB 
+mapped to RFID 
+ 
+Goods in 
+transit 
+Receipt of Specific 
+Information/       
+Data Analytics by 
+Proper Officer on 
+tax evasion 
+Interception, Inspection and 
+verification of EWB and 
+Goods by Proper Officer 
+Transport of 
+goods not 
+compliant 
+Transport of goods 
+being compliant 
+File Summary Report 
+(Part A-EWB-03) 
+File Final Report 
+(Part B-EWB-03) 
+ 
+Faster and seamless 
+Transport of goods 
+• Detention of Vehicle 
+• Confiscation of Goods 
+• Demand DRC 07 
+raised 
+Within 24 hours 
+of inspection 
+Within 3 days 
+of inspection 
+Accept 
+ No Action 
+ Reject 
+ 
+Movement 
+of Goods 
+Goods not transported / 
+not transported as per 
+details in EWB 
+Goods not transported 
+within EWB validity 
+Cancellation 
+of EWB 
+Extend validity 
+of EWB 
+Within 24 hours of 
+generation of EWB 
+Within 8 hours 
+from expiry of EWB 
+Yes 
+No 
+No 
+
+Report No. 12 of 2025 (Performance Audit) 
+4 
+The process involved in generation , cancellation and extension of EWBs and 
+important terminologies used in the EWB System are discussed in the following 
+paragraphs:  
+1.4.1 Enrolment in the Portal 
+As per the provisions of Rule 138 of the CGST Rules, every person who causes 
+movement of goods of consignment value exceeding the prescribed limit shall 
+generate an EWB by providing required details in EWB-01.   
+For generation of EWBs, GST Registered Persons, Transporters (GST Registered 
+or Unregistered) and Citizens/Unregistered persons 3 are required to enrol 
+themselves in the EWB portal by providing necessary details such as State, 
+Goods and Services Tax Identification Number ( GSTIN), Legal Name, 
+Permanent Account Number ( PAN), Mobile Number etc. The transporters, 
+who may not be registered under the GST but cause movement of goods for 
+their clients, need to enrol on the EWB portal and get 15 -digit Unique 
+Transporter ID.   
+1.4.2 Generation of EWBs 
+As per Rul e 138 of the CGST Rules, EWB can be generated electronically by 
+furnishing details in Part A (once submitted cannot be edited) of the Form GST 
+EWB-01 by any of the following persons: 
+• the Consignor 
+• the Transporter 
+➢ in the case of authorization by the Consignor or 
+➢ if the Consignor is an unregistered person, 
+• the Consignee  
+Details of the consignments viz. GSTIN of Supplier, Place of Dispatch, GSTIN of 
+Recipient, Place of delivery, Document Number, Document Date, Value of 
+Goods, Harmonised System of Nomenclature ( HSN) Code and Reason for 
+transportation are available in Part-A of the EWB-01. In Part-B, Vehicle Number 
+for consignment by road and Transport document number are provided.  
+Furnishing details of vehicle number is not mandatory for intra -state/Union 
+Territory transactions with a distance upto 50 km when the goods are moved 
+from premises of consignor to that of transporter or from the premises of 
+ 
+3  Fourth proviso inserted with effect from 10 July 2024 under rule 138(3) of CGST Rules, 2017 
+provides that an un-registered person required to generate EWB shall submit the details on 
+the common portal in Form GSTR ENR -03 and upon validation of the details a unique 
+enrolment number shall be generated. 
+
+Report No. 12 of 2025 (Performance Audit) 
+5 
+transporter and that of consignee.  Consolidated EWBs can be generated in 
+Form GST EWB -02, in the case of multiple EWBs generated for multiple 
+consignments but transported in a single vehicle. 
+1.4.3 ‘Bill to Ship to’ Transactions 
+In ‘Bill to Ship to’ transactions, three persons are involved viz. Supplier, Buyer 
+and Recipient.  T he goods are purchased by the buyer  and transported from 
+the place of supplier to the place of recipient on behalf of the buyer.   In these 
+transactions, EWB can be generated either by the Supplier or by the Buyer.  
+Buyer orders the Supplier to supply the Goods to the recipient on behalf of the 
+Buyer.  In this transaction, two supplies and two invoices are involved.  
+1.4.4 Validity of EWBs 
+As per Rule 138(10) of the CGST Rules , the validity of the EWB depends upon 
+the distance and the type of shipment.  Validity is calculated from the date on 
+which the EWB had been generated (relevant date) and the period of validity 
+shall commence from the midnight of the generation of EWB. 
+The validity period is one day for 200 km in respect of consignment other than 
+over dimensional cargo and one additional day for every 200 km or part 
+thereof with effect from 1 January 2021.  Before that date, validity period was 
+one day for 100 km and one additional day for every 100 km or part thereof.   
+In respect of over dimensional cargo, it is one day for 20 km and one additional 
+day for every 20 km or part thereof. 
+1.4.5 Extension of EWBs 
+As per Proviso-3 of the Rule 138(10) of the CGST Rules, the validity of the EWB 
+can be extended by the transporter under circumstances of an exceptional 
+nature where the goods cannot be transported within the original validity 
+period of the EWB after updating the details in Part B of form GST EWB-01, 
+within eight hours from the time of its expiry.  Further, in terms of Proviso-1 of 
+the Rules ibid, the validity of EWB can be extended by the Commissioner for 
+certain categories of specified goods on the recommendation of the Council. 
+1.4.6 Cancellation of EWBs 
+As per Rule 138(9) of the CGST Rules , where an EWB is generated, the same 
+may be cancelled electronically on the common portal within 24 hours of 
+generation.  However, an EWB cannot be cancelled if it ha d been verified in-
+transit. 
+1.4.7 Rejection of EWBs 
+As per Rul e 138(11) and (12) of the CGST Rules , the details of the EWB 
+generated will be communicated electronically to the Recipient , and he is 
+
+Report No. 12 of 2025 (Performance Audit) 
+6 
+required to communicate his acceptance or rejection of the goods being 
+transported. If the recipient does not communicate his acceptance or rejection 
+within 72 hours of the details being communicated to him or the time of 
+delivery of goods whichever is earlier, the E WB shall be deemed to be 
+accepted. 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+7 
+Chapter-2: Audit Objectives, Criteria, Scope and 
+Sampling Methodology 
+ 
+The Audit Objectives, Criteria, Scope and Sampling methodology determined 
+for conducting the Performance Audit on EWB System under GST (PA on EWB) 
+are discussed in the following paragraphs. 
+2.1 Audit Objectives 
+The audit objectives of the Performance Audit (PA) were to examine: 
+1. Whether EWB mechanism was effective in protecting revenue interest 
+of the Government; and 
+2. Whether the Preventive/Enforcement activities of the Department in 
+enforcing EWB provisions were efficient and effective.  
+2.2 Audit Criteria 
+The PA on EWB System under GST had been evaluated against the following 
+audit criteria: 
+» Central Goods and Services Tax Act, 2017 (CGST Act) 
+» Central Goods and Services Tax Rules, 2017 (CGST Rules) 
+» Notifications / Circulars / Instructions issued by CBIC 
+» Advisories / Standard Operating Procedures issued by NIC/CBIC 
+2.3 Audit Scope 
+EWB transactions of the persons registered in the EWB portal pertaining to the 
+period between 1 April 2018 and 31 March 2022 were covered in this PA.  Audit 
+examined the overall performance of EWB System under the GST regime with 
+reference to the Audit objectives. EWB data (generated) for the audit period 
+had been obtained from Goods and Services Tax Network (GSTN) and had been 
+analysed. Movement of conveyances by roadways alone have been considered 
+for this Audit and Railway/Airway/Seaway EWBs have been excluded from the 
+scope of this Audit. 
+The scope of audit also involved evaluation of the preventive functions of the 
+Department with reference to EWBs, viz., interception of vehicles, verification 
+of documents, inspection of goods and action taken thereof. 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+8 
+2.4 Audit Sampling Methodology 
+A risk based approach had been attempted for this PA as EWB generation is 
+necessary to cause any movement of goods  subject to the threshold limit .  
+Samples for Audit Objective-1 were evolved based on  the Key Problem Areas 
+(KPAs) identified.  The KPAs are listed in Appendix-II. 
+The basic unit of sampling for Audit Objective -1 is EWB identified by the risk 
+model designed for this purpose.   This risk model  works on Total Weighted 
+Score attached to each EWB.  It involves allocation of weightage (W) for various 
+KPAs between 1 to 10; where the highest risk will receive 10.  A Weighted Score 
+(WS) was calculated for each of EWB falling under such KPA  by adding 
+Normalised Assessable Value (AV(n)) 4 to the weightage of the particular Risk.  
+The sum of weighted score was then computed for each EWB and t he EWBs 
+were selected based on w eighted score.  Eighty per cent of the sample w as 
+centrally determined and remaining 20  per cent was selected by Field Audit 
+Offices from the buffer sample provided.  
+Based on the above methodology, Audit selected 2,244 EWBs relating to 956 
+taxpayers as sample cases for conducting Substantive Audit5 on the basis of 
+various risks through data analysis.   Apart from this, Audit selected 19 
+taxpayers6 as additional samples for verification.  During the Audit conducted 
+between February 2023 and July 2023, while examining records relating to the 
+selected taxpayers,  Audit examined transactions relating to  EWBs and 
+discharge of tax liability by these taxpayers with reference to GST returns and 
+other records available in CBIC-GST Application.   
+Audit Objective -2 evaluat ed the problems associated with enforcement/  
+preventive activities  viz. Operational Preparedness, Effectiveness of Anti -
+Evasion measures and Intra-Department and Inter-Department co-ordination.  
+For Audit Objective -2, 50 per cent of the preventive units were selected as 
+sample, on the basis of stratified sampling method.  For this, the preventive 
+units were stratified into two  parts based on the median number of EWBs 
+verified by the Department. From each stratum, 50  per cent  preventive 
+formations were randomly selected.   
+ 
+4  AV (n) was computed by using a formula viz.  𝐴𝑉(𝑛) =
+AV−AV (minimum)
+AV (maximum)− AV (minimum) 
+5  Substantive Audit: Detailed verification of transactions covered by EWBs with reference to 
+Returns filed by the respective taxpayers and their books of accounts (wherever required) to 
+ascertain the extent of tax compliance. 
+6  Nineteen taxpayers were identified as additional samples. Seventeen taxpayers were 
+identified during audit of one taxpayer, who were involved in evasion of tax as a group and 
+four taxpayers were selected by Chandigarh Audit Office, out of taxpayers dealing in evasion 
+prone commodities. 
+
+Report No. 12 of 2025 (Performance Audit) 
+9 
+In the selected Preventive Units, sub-samples were selected on booked cases.  
+If the number of b ooked cases in any Preventive Unit were 50 cases or less, 
+then all cases were selected as sub -sample.  In case, where the number of 
+booked cases exceeded 50 cases, then 50 cases were selected on the basis of 
+stratified sampling method by dividing total cases in two strata 7 and selecting 
+25 cases from each stratum.  
+Based on the above methodology,  Audit called for information on E WB 
+verifications and booked cases from the selected 58 Commissionerates. On the 
+basis of details provided by these 58 Commissionerates, booked cases were 
+requisitioned for verification. 
+An Entry Conference was conducted with the CBIC on  27 February 2023  and 
+during the conference audit objectives and scope of this Performance Audit 
+were discussed. The draft PA Report was issued to the Ministry on 11 July 2024.   
+Exit Conference was conducted  on 14 November 2024;  wherein Member 
+(CBIC), CEO (GSTN) and their teams and DDG, NIC participated.  During the 
+Conference, the audit observations  and related recommendations were 
+deliberated. The reply of the Ministry was received on 21 October 2024 and 25 
+November 2024.  The replies received from the  Ministry on the audit 
+observations and their response to Audit recommendations  have been  
+incorporated suitably in the Report, wherever required.     
+We acknowledge the co -operation extended by the CBIC and its subordinate 
+formations in providing the necessary records for the conduct of this 
+Performance Audit. 
+2.5 Audit Constraints 
+Section 16 of the CAG’s DPC Act 1971 lays down the Audit Mandate of the CAG 
+regarding Audit of receipts. Further, Section 18(2) of the CAG’s DPC Act, 1971 
+imposes a statutory duty on Offices/Departments to comply with the requests 
+for information in comple te form as far as possible and with all reasonable 
+expedition.  
+In this regard, the Chairman, CBIC had also issued instructions vide Board’s DO 
+letter F.No.232/Misc. DAP/2018 -CX-7, dated 26 April 2018 regarding 
+cooperation with the C&AG audit team by procuring and providing complete 
+and comprehensive information. 
+During this PA, audit requisitioned information and records related to 2,244 
+selected EWBs and GST returns for the period 2018 -19 to 2021-22 in respect 
+of 956 taxpayers.  Further additional records like Annual Accounts, Purchase, 
+ 
+7  on the basis of amount of tax and penalty. 
+
+Report No. 12 of 2025 (Performance Audit) 
+10 
+Sales registers etc. pertaining to sampled taxpayers were also sought for. In 
+spite of requisitions and follow up, records were not produced in respect of 
+108 taxpayers and partial records were produced in respect of 334 taxpayers.  
+In some of the cases, Department stated that they had sought the records from 
+the taxpayers and the same was awaited. 
+Due to non-production of records, Audit could not ascertain tax compliance by 
+the taxpayers and also the extent of correctness of the action taken by 
+Department in respect of cases booked while interception of vehicles and 
+verification of EWBs. 
+Jurisdictional Zone -wise non/partial production of records is summarised in 
+Table-1 below.   
+Table-1: Non/partial production of records 
+Zone Total No of 
+sample 
+taxpayers 
+No. of taxpayers where records 
+Produced Not produced Partially produced 
+Ahmedabad 29 29 0 0 
+Bengaluru 51 0 0 51 
+Bhopal 95 23 52 20 
+Bhubaneswar 48 7 1 40 
+Chandigarh 56 16 0 40 
+Chennai 97 47 13 37 
+Delhi 53 36 2 15 
+Guwahati 45 35 0 10 
+Hyderabad 19 12 7 0 
+Jaipur 53 22 0 31 
+Kolkata 58 46 1 11 
+Lucknow 30 4 13 13 
+Meerut 40 9 8 23 
+Mumbai  44 32 0 12 
+Nagpur 21 18 0 3 
+Panchkula 25 20 0 5 
+Pune  15 14 0 1 
+Ranchi 83 61 0 22 
+Thiruvananthapuram 44 44 0 0 
+Vadodara 20 20 0 0 
+Vishakhapatnam 30 19 11 0 
+Grand Total 956 514 108 334 
+On this being pointed out (July 2024), the Ministry replied (October 2024) that 
+in respect of 19 cases relating to non -production of records and in 107 cases 
+relating to partial production of records, requisite records have since also been 
+
+Report No. 12 of 2025 (Performance Audit) 
+11 
+produced to Audit. It was further stated that all supporting documents 
+requested by Audit may involve calling for the same from the taxpayers. Field 
+formations have been advised to ensure expeditious completion of this cycle.  
+As the Field visits for the PA have already been completed by the Audit, the 
+documents which were subsequently produced could not be subjected to 
+examination.  Ministry may issue suitable instructions to the field formations 
+for timely production of records to Audit. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+12 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+13 
+Chapter-3: Trends and Insights of EWB data 
+ 
+The generation of EWB before causing the movement of goods was made 
+mandatory for all inter -State supplies exceeding threshold limit with effect 
+from 1 April 2018 and extended to intra-State supplies also in phased manner. 
+The Trends and Insights of EWB data are depicted in the following infographics. 
+3.1 Trend Analysis of EWBs 
+The trend on usage of EWBs with reference to number of EWBs generated, 
+number of unique GSTINs involved and the value of consignments relating to 
+the Audit period pertaining to CBIC Taxpayers is given in the following graphical 
+presentation: 
+Graph-1:  EWBs generated (Centre jurisdiction) and GSTINs involved - year-wise 
+distribution 
+Source: Data made available by GSTN 
+The above infographic image illustrates the year -wise distribution of total 
+number of EWBs generated for supplies and GSTINs involved in the generation.   
+There was eight  per cent increase in the number of unique GSTINs generating 
+EWBs from the fiscal year 2018-19 to 2021-22, while there is 37 per cent surge 
+in the total number of EWBs generated for the fiscal year 2021 -22 when 
+compared to 2018-19.  
+1100000
+1120000
+1140000
+1160000
+1180000
+1200000
+1220000
+1240000
+1260000
+1280000
+TOTAL NO. OF GSTINS GENERATING 
+EWBS
+1165016
+1274411
+1232725
+1257295
+GSTINs generating EWBs 
+2018-19 2019-20 2020-21 2021-22
+0
+50000
+100000
+150000
+200000
+250000
+300000
+350000
+TOTAL NO. OF EWBS GENERATED (IN 
+THOUSANDS)
+249607.51
+287624.07
+280188.43
+341532.23
+EWBs generated 
+2018-19 2019-20 2020-21 2021-22
+
+Report No. 12 of 2025 (Performance Audit) 
+14 
+Graph-2:  Transaction type distribution of EWBs generated 
+(Numbers in crore) 
+Source: Data made available by GSTN 
+Above infographic indicates the distribution of EWBs among different kinds of 
+consignments for the period from 2018 -19 to 2021 -22. As may be seen from 
+the trend, ‘Supply’ ha d taken the lead position and there was 3 2 per cent  
+increase in generation of EWBs in this category in 2021-22 (29.02 crore) when 
+compared to 2018 -19 ( 21.94 crore). EWB generation for the transactions 
+relating to ‘Exports/Imports’ increased by 21 per cent. While transactions for 
+‘Job work’ increased by 14 per cent, in respect of transactions re lating to ‘for 
+own use’ it increased by 48 per cent . Miscellaneous kinds of consignments 
+categorised as ‘Others’ ha d seen an increase of 1 58 per cent  over the four 
+years.  
+ 
+ 
+ 
+ 
+ 
+
+
+Report No. 12 of 2025 (Performance Audit) 
+15 
+Graph-3: Inter-State vs Intra-State EWB8 generation - CBIC Zone-wise (Numbers in crore) 
+Source: Data made available by GSTN 
+The above Infographic represents distribution of EWBs generated for Inter -
+State and Intra -State transactions by the taxpayers under the jurisdiction of 
+CBIC zone during the period 2018 -19 to 202 1-22. The number of EWB s for 
+Intra-State transactions were more than Inter-state transactions in respect of 
+all Zones except Vadodara, Panchkula, Delhi, Jaipur and Mumbai. 
+Graph-4: Details of EWBs generated - Transportation Mode-wise 
+Source: Data made available by GSTN 
+ 
+8  EWBs generated for the purpose of supplies by the taxpayers pertaining to Central  
+jurisdiction were considered here.   
+1%1%
+98%
+0%
+Air Rail Road Ship
+
+Report No. 12 of 2025 (Performance Audit) 
+16 
+Transportation by Road constitutes major part of consignments supported by 
+EWBs as it constitutes 98  per cent of total EWBs generated during the period 
+from 2018-19 to 2021-22.  The other mode of transports played minor role as 
+their share is only two per cent. 
+ 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+17 
+Chapter-4: Effectiveness of EWB System 
+ 
+The PA on EWB commenced with data analysis of EWBs generated during the 
+period from 2018 -19 to 2021 -22.  Based on K PAs identified during data 
+analysis, sample EWBs were identified and detailed verification of connected 
+records were conducted at fie ld formations of the Department.  During the 
+field visit, the records and information required for audit scrutiny were called 
+for and examined . In respect of certain samples , taxpayers’ records, viz., 
+Financial Accounts , Purchase/Sales Registers, Stock accounts, etc.  were also 
+called for through the Department.  Audit findings are detailed in the following 
+paragraphs. 
+4.1 Whether EWB mechanism was effective in protecting revenue 
+interest of the Government 
+During the Audit conducted between February 2023 and July 2023, based on 
+initial examination, Audit further examined transactions relating to the above 
+taxpayers with reference to GST returns and other records available in CBIC 
+GST Application.  For this purpose, periodical returns , viz., GSTR-1, GSTR-3B, 
+GSTR-4, GSTR -9 and Statement CMP-08 relating to the taxpayers were 
+downloaded from CBIC-GST Application.  Further, GSTR-2A and details of EWB 
+transactions were requisitioned from the Department.  The taxpayers’ records, 
+viz., Annual Financial Statements, Stock Accounts, Purchase/Sales Registers 
+were also called for from the taxpayers through the Department, wherever 
+required.  Verification of these records revealed deficiencies in tax compliance 
+and the same are discussed in the following paragraphs. 
+4.1.1 Results of Audit 
+The extent of deficiencies noticed while undertaking the detailed scrutiny of 
+the sampled cases during Substantive Audit are summarised in Table-2 below 
+and are discussed in the following paragraphs. 
+Table-2: Summary of observations noticed during Substantive Audit 
+Sl. 
+No. Details No. of Audit 
+observations 
+Money value 
+involved9 
+(₹ in crore) 
+1 Non/Short discharge of tax liability 
+ a) By the Composition taxpayers 36 7.25 
+ b) By the taxpayers who did not file returns 103 310.62 
+ 
+c) By the taxpayers who generated EWBs 
+after cancellation of Registration 
+Certificate (RC) 
+43 24.50 
+ 
+9  The amount of tax involved in the audit observations mentioned in Sl.No.1 to 3 relates to the 
+transactions pertaining to the EWBs and records made available by the Department.  
+
+Report No. 12 of 2025 (Performance Audit) 
+18 
+Sl. 
+No. Details No. of Audit 
+observations 
+Money value 
+involved 
+(₹ in crore) 
+ 
+d) By the taxpayers who have generated 
+multiple EWBs on the basis of single/same 
+Invoice 
+43 3.04 
+ e) By the taxpayers who filed ‘Nil’ returns 71 54.10 
+ f) By the taxpayers with respect to other 
+KPAs10     174 177.35 
+2 Evasion of Tax by group of taxpayers 
+ a) Non/short discharge of tax liability 18 126.30 
+ b)      Mismatch in availing of ITC 1 6.39 
+3 Discrepancies noticed in availing of ITC 
+ (i) Mismatch in availing of ITC       72 155.41 
+ (ii) Availing of ineligible ITC 2 1.63 
+Sub-total 563 866.59 
+4 Department functioning on Interception of vehicles 
+ (i) Demand was not created during 
+interception of vehicles 200 2.60 
+ (ii) Short-creation of demand for either tax or 
+penalty 93 0.79 
+Sub-total 293 3.39 
+Grand total 856 869.98 
+The jurisdictional Office-wise details of sample EWBs allotted, number of EWBs 
+verified and deficiencies pointed out are given in following Table-3. 
+Table-3: Results of Audit 
+Zone 
+AO-1 AO-2 
+No of 
+EWBs 
+selected 
+(as per 
+sample) 
+No. of 
+tax-
+payers 
+No. of tax-
+payers 
+(addl. 
+Samples) 
+Money 
+value (₹ in 
+crore) 
+Money 
+value (₹ in 
+crore) 
+Ahmedabad 115 29 0 18.75 0.06 
+Bengaluru 138 51 0 8.57 0.03 
+Bhopal 225 95 0 28.39 0.72 
+Bhubaneswar 94 48 0 96.64 0 
+Chandigarh 127 56 2 63.21 0.00 
+Chennai 145 97 9 72.05 0.80 
+Delhi 141 53 8 238.25 0 
+Guwahati 99 45 0 14.96 0.39 
+Hyderabad 65 19 0 13.19 0.08 
+Jaipur 137 53 0 3.76 0.04 
+Kolkata 179 58 0 51.36 0.45 
+Lucknow 118 30 0 17.59 0.07 
+Meerut 63 40 0 111.81 0.03 
+ 
+10  Pertaining to various KPAs mentioned in Appendix -II, excluding cases mentioned in serial 
+No. 1(a) to (e) in Table -2 above were included under this category. These taxpayers also 
+have observations on KPAs at serial No. 1(a) to (e) above. 
+
+Report No. 12 of 2025 (Performance Audit) 
+19 
+Zone 
+AO-1 AO-2 
+No of 
+EWBs 
+selected 
+(as per 
+sample) 
+No. of 
+tax-
+payers 
+No. of tax-
+payers 
+(addl. 
+Samples) 
+Money 
+value (₹ in 
+crore) 
+Money 
+value (₹ in 
+crore) 
+Mumbai 85 44 0 21.14 0.10 
+Nagpur 54 21 0 0.58 0.01 
+Panchkula 25 25 2 1.55 0.11 
+Pune 19 15 0 0.02 0 
+Ranchi 186 83 0 81.11 0.50 
+Thiruvananthapuram 92 44 0 10.57 0 
+Vadodara 24 20 0 3.88 0 
+Visakhapatnam 113 30 0 9.21 0 
+Total 2,244 956 21 866.59 3.39 
+The deficiencies are discussed in detail in the following paragraphs: 
+4.1.2 Non/short discharge of tax liability 
+(a) Non/short-discharge of tax liability by Composition taxpayers 
+Section 10 (1) of the CGST Act provides that a registered person whose 
+aggregate turnover in the preceding financial year did not exceed the 
+threshold limit11 may opt to pay tax under composition scheme.  Section 
+10(2)(c) of the Act ibid, however, imposes a restriction that the taxpayer shall 
+not be eligible to opt for composition scheme if he is engaged in making any 
+inter-State outward supplies of goods. Rule 6(2) of the CGST Rules provides 
+that the composition taxpayer shall be liable to pay tax under regular rate from 
+the day he ceases to satisfy the condition and he shall intimate for withdrawal 
+from the composition scheme through Common Portal within seven days of 
+the occurrence of such event.  
+Based on data analysis, 47 taxpayers were identified as having contravened the 
+conditions12 governing the applicability of the Composition Scheme.  These 
+cases were taken up for Substantive Audit and it was observed that 36 
+taxpayers pertaining to 24 Commissionerates had generated EWBs for 
+effecting inter-State outward supplies or/and their turnover had crossed the 
+threshold limit (25 taxpayers effected inter-State supplies, five taxpayers had 
+crossed threshold limit and six taxpayers contravened both the conditions) .  
+ 
+11  Threshold limit per year for becoming eligible for composition scheme was ₹ 75 lakh for 
+the period upto 31 March 2019 and ₹ 1.5 crore thereafter.  In respect of Special Category 
+States, it was ₹ 50 lakh for the period upto 31 March 2019 and ₹ 75 lakh thereafter. 
+12  Composition taxpayers generating EWBs for inter -State supplies and Composition 
+taxpayers who exceeded threshold limit. 
+
+Report No. 12 of 2025 (Performance Audit) 
+20 
+The outward supplies effected by these taxpayers during the period from April 
+2018 to March 2022 amounted to ₹ 53.82 crore.   
+Further examination revealed the following. 
+➢ Out of the 36 taxpayers, 1 1 taxpayers pertaining to nine 
+Commissionerates were still continuing to be under Composition 
+Scheme despite the non -fulfilment of the conditions governing the 
+scheme; 
+➢ Six taxpayers pertaining to five Commissionerates did not file returns 
+for continuous period of six months.  However, the Department failed 
+to take action to cancel the registration; and    
+➢ Two taxpayers pertaining to  two Commissionerates had generated 
+EWBs after the dates of cancellation of their registration. The 
+Department, however, did not take any action to recover the tax 
+liability.   
+The short payment of tax noticed in these cases was ₹ 6.74 crore which was 
+recoverable alongwith an interest of ₹ 0.51 crore.  
+On this being pointed out (between April 2023 and August 2023), the 
+Department/Ministry accepted the audit observations in 24 cases pertaining 
+to 17 Commissionerates involving money value of ₹ 6.04 crore. In respect of 
+one case pertaining to Shimla Commissionerate, the Department stated that 
+the turnover of the taxpayer was lesser than threshold limit of ₹ 1.5 crore and 
+as such Audit observation was not accepted. The reply of the department was 
+not tenable as the EWB details  indicated that the taxpayer effected outward 
+supplies for ₹ 1.85 crore.  Department needs to verify the EWB transactions 
+with reference to the transactions reported in returns. 
+Reply of Department/Ministry in respect of remaining 11 cases was awaited 
+(November 2024). 
+Two illustrative cases are discussed in the following paragraphs:  
+1. A Composition Taxpayer  (GSTIN 24 XXXXXXXXXX1ZW), falling under 
+Gandhinagar Commissionerate, got registered on 19  February 2019 and its 
+registration was cancelled suo-moto with effect from 29 September 2021. The 
+taxpayer had generated 46 EWBs for inter -State supplies of ₹ 8.94 crore, 
+involving tax of ₹ 60.04 lakh during March 2019 and April 2019, which is in 
+contravention of the provisions of Section 10 of the CGST Act.  The taxpayer 
+did not file returns during the said period and hence did not discharge tax 
+liability. The tax of ₹ 60.04 lakh on the inter -State supplies was recoverable 
+alongwith interest of ₹ 44.80 lakh. On this being pointed out (June 2023), the 
+
+Report No. 12 of 2025 (Performance Audit) 
+21 
+Ministry accepted (October 2024) the observation stating that SCN had been 
+issued in the case.  
+ 
+2. A Composition taxpayer (GSTIN 21 XXXXXXXXXX1Z3), falling under 
+Bhubaneswar Commissionerate got registered on 31  January 2018 and their 
+registration was cancelled on application of the taxpayer  with effect from  
+1 April 2022.  The taxpayer had filed CMP-08 upto March 2022 and paid tax at 
+concessional rate of tax under composition scheme.   For the year 2019 -20, it 
+was noticed that the taxpayer had declared its turnover to the tune of ₹ 1.70 
+crore and paid tax of ₹ 1.70 lakh. However, as the taxpayer violated the 
+threshold provisions of Section 10 and exceeded the turnover of ₹ 1.50 crore, 
+he was liable to pay tax at normal rate on the turnover exceeded ₹ 1.50 crore.  
+During the year 2020 -21, the taxpayer had generated 39 EWBs for outward 
+supplies with assessable value of ₹ 2.90 crore but have declared supplies of 
+only ₹ 1.50 crore and paid tax at concessional rate. Further, the taxpayer 
+declared turnover of ₹ 1.50 crore in his CMP -08 and also paid tax at 
+concessional value for the year 2021-22 also.  Though the taxpayer had already 
+violated the provisions of the composition scheme in 2019-20, it continued to 
+avail the scheme and paid tax at concessional rate on the turnover of ₹ 1.50 
+crore declared. As the taxpayer became ineligible for composition scheme in 
+2019-20 itself, he was required to pay tax for the entire turnover at the normal 
+rate after crossing the threshold limit.  
+The taxpayer was required to pay tax  of ₹ 84.27 lakh for the year 2019 -20 to 
+2021-22. He paid ₹ 4.70 lakh only through composition scheme during these 
+years. Hence, the short-payment of tax was worked out to ₹ 79.58 lakh; which 
+was recoverable alongwith interest. On this being pointed out (June 2023), the 
+Ministry replied (October 2024) that the SCN issued to this taxpayer had been 
+adjudicated (July 2024). 
+Audit observed that there was no mechanism in the system to alert the 
+Composition Levy Scheme ( CLS) taxpayers and departmental officer for 
+crossing threshold limit or generating EWB for inter-State supply. 
+Recommendation 1: Department may incorporate validation control in the 
+EWB system to alert the CLS taxpayer , as well as the departmental officer , 
+about crossing the threshold limit and for generating E WB for inter -State 
+supply.    
+The Ministry replied (November 2024) that a check ha d been incorporated in 
+EWB System, in August 2020, to block the composition taxpayers from 
+generating EWBs for inter-State supplies.  Further, Analytical Report was also 
+provided to the tax officers listing out the composition taxpayers whose value 
+
+Report No. 12 of 2025 (Performance Audit) 
+22 
+of supply on the basis of EWBs had exceeded the threshold limit. In addition, 
+error message was provided to the composition taxpayer when t he turnover 
+declared in CMP-08 crosses ₹ 1.50 crore.  Thus, both tax officers and taxpayers 
+are suitably alerted.   
+The reply indicated that error messages were displayed in GSTN Portal to the 
+taxpayers with reference to CMP -08 return and not on the basis of EWBs.  
+Ministry may issue instructions to ensure proper utilisation of NIC Reports  by 
+tax officers .  Ministry may also consider to provide error messages  to the 
+taxpayers as well as tax officers on the basis of transactions reported in EWBs. 
+(b) Non/short- discharge of tax liability by the taxpayers identified as 
+Non-filers 
+ 
+As per Section 37 of the CGST Act read with Rule 59 of the CGST Rules, regular 
+taxpayers shall furnish the details of outward supplies in GSTR -1.  Further, in 
+accordance with Section 39 of the CGST Act read with Rule 61 of the CGST 
+Rules, they are required to furnish a return in GSTR-3B declaring the details of 
+inward and outward supplies of goods or services or both, ITC availed, tax 
+payable, tax paid.  The summary details of such supplies are required to be 
+reported by the composition taxpayers in GSTR -4/CMP-08, as per Rule 62 of 
+CGST Rules.  
+Rule 138E of CGST Rules13 restricts the generation of EWB by the taxpayer who 
+had not filed relevant GST Returns for two consecutive tax periods14.   
+(i) Audit observed that 103 taxpayers pertaining to 37 Commissionerates 
+had effected outward supplies of ₹ 2,285.23 crore during the period from April 
+2018 to March 2022 .  On verification of records, it was noticed that t he 
+taxpayers did not discharge their tax liability either due to non -filing of their 
+returns or non-reporting the turnover in their returns .  Out of the above 103 
+taxpayers who did not discharge tax liability , 30 taxpayers filed their GSTR-1 
+for the respective period reporting their outward supplies and thereby passed 
+on the Input Tax Credit (ITC) of ₹ 110.60 crore. The amount recoverable on 
+account of non-discharge of tax liability worked  out to  
+₹ 307.37 crore alongwith interest of ₹ 3.25 crore. 
+On these being pointed out (between March  2023 and August 2023), the 
+Department/Ministry accepted the audit observations in 64 cases, pertaining 
+ 
+13  Rule 138E was introduced vide Notification No.74/2018, dated 31 December 2018. The 
+Rule was given effect from 21 November 2019 vide Notification No.36/2019, dated 20 
+August 2019. 
+14  Form GST -CMP-08 for two consecutive quarters in respect of persons paying tax under 
+Section 10 of the CGST Act ibid and GSTR-3B for normal taxpayers for two consecutive tax 
+periods as applicable.  
+
+Report No. 12 of 2025 (Performance Audit) 
+23 
+to 25 Commissionerates, involving money value of ₹ 125.73 crore.  In respect 
+of one case, t he department stated (July 2024) that the taxpayer intimated 
+that he had not generated any EWB and his GSTIN was being misused by some 
+unknown person and his registration was also cancelled (February 2023) . 
+However, the Department did not intimate further action taken to identify the 
+person who generated EWB. Further progress was awaited.   
+The reply in respect of remaining 38 cases was awaited (November 2024). 
+Two illustrative cases are given below: 
+1. A taxpayer (GSTIN 05XXXXXXXXXX1Z8) under Dehradun 
+Commissionerate, was registered as a regular GST taxpayer with effect from 
+26 July 2019 and its registration was cancelled suo -moto on 29 August 2019. 
+Audit noticed that the taxpayer had generated 1 ,534 Outward EWBs with an 
+assessable value of ₹ 560.78 crore during the month of August 2019. Thus, the 
+taxpayer generated high value EWBs within the short period of two months 
+from the registration. The taxpayer had neither filed GSTR-1 nor GSTR-3B and 
+hence, did not discharge the tax liability of ₹ 67.29 crore ; which was 
+recoverable alongwith applicable interest. 
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+the taxpayer could not be traced during physical verification and , therefore, 
+action for recovery of demand was being initiated by issuing SCN. 
+ 
+2. A taxpayer (GSTIN-07XXXXXXXXXX1ZA) pertaining to Delhi West 
+Commissionerate, was registered as a regular GST taxpayer with effect from 8 
+January 2018 and their registration was cancelled suo -moto on 7 October 
+2019.  Audit observed that the taxpayer had filed GSTR-1 returns upto October 
+2019 with tax value of ₹ 32.47 crore and thereby passing on ITC of ₹ 32.47 
+crore.  However, the taxpayer did not file GSTR -3B for the said period.   This 
+resulted in non -payment of tax on the outward supplies reported in GSTR -1, 
+which worked out to ₹ 32.47 crore .  The same  was recoverable alongwith 
+applicable interest.  
+On this being pointed out (August 2023), the Ministry accepted (October 2024) 
+the observation stating that SCN was under process. 
+(ii) Audit further noticed that the registration of these 103 taxpayers were 
+cancelled by the Department. Registrations of three taxpayers were cancelled 
+from the date of registration itself and in respect of remaining 10 0 taxpayers, 
+the registrations were cancelled within the range of one to 1 ,647 days from 
+the data of the registration. O ut of the above 103 taxpayers, the registration 
+of 17 taxpayers were cancelled within six months from the date of registration. 
+These taxpayers conducted the business for a short span of time of less than 
+180 days; but did not pay tax or made short-payment of tax for their outward 
+
+Report No. 12 of 2025 (Performance Audit) 
+24 
+supplies.  The details of validity of registration of these taxpayers are provided 
+in the following Table-4: 
+Table-4: Taxpayers who generated high money value EWBs within six months 
+Period of  registration validity Number of 
+taxpayers 
+Assessable 
+value of 
+EWB 
+generated15 
+(in crore) 
+Tax 
+involved 
+(in crore) 
+Upto one month 8 27.57 8.14 
+More than one month but upto three 
+months 
+4 622.67 81.80 
+More than three months but upto six 
+months 
+5 168.40 18.99 
+Total 17 818.64 108.93 
+It ha d also been observed that t here was no mechanism to identify such 
+taxpayers, who generate high money value EWBs within six months of their 
+registration, and reporting the  details to the proper officers for necessary 
+action. 
+Recommendation 2: Department may incorporate validation control in the 
+EWB system to identify the taxpayers generating high value EWBs but not 
+discharging tax liability and reporting such taxpayers to the proper officers. 
+The Ministry replied (October 2024 and November 2024) that NIC is generating 
+Analytical Reports on this issue and sharing with jurisdictional tax officers. 
+DGARM also generates report on taxpayers, generating high value EWBs and 
+not discharging tax liability and shared with field formations.   
+Ministry may issue instructions to ensure proper utilisation of NIC /DGARM 
+Reports. 
+(c) Non/short-discharge of tax liability by the taxpayers who had 
+generated EWBs after cancellation of registration 
+ 
+As per Section 63 of the CGST Act, in respect of  a taxable person whose 
+registration ha d been cancelled but remains liable to pay tax, the Proper 
+Officer may proceed to assess the tax liability of such taxable person to the 
+best of his judgement.  
+Audit observed that 4 3 taxpayers pertaining to 24 Commissionerates had 
+generated EWBs for effecting outward supplies o f ₹ 152.60 crore during the 
+period from April 2018 to  March  2022 after  the  effective date  of  cancellation 
+of their registration. The taxpayers, however, failed to discharge the tax 
+ 
+15  Assessable value/Money value involved is as per the information filled in by the taxpayers 
+in EWBs. 
+
+Report No. 12 of 2025 (Performance Audit) 
+25 
+liability of ₹ 23.56 crore; which was recoverable alongwith an interest of ₹ 0.94 
+crore. 
+On this being pointed out (between April  2023 and August 2023), the 
+Department/Ministry accepted the audit observations in 23 cases, pertaining 
+to 16 Commissionerates, involving money value of ₹ 22.32 crore.  Further, in 
+respect of six cases, the Department replied that the EWBs were generated 
+after the effective date of cancellation but before the issue of order for 
+cancellation of registration.  Hence, there was no irregularity. The reply 
+revealed the futility of passing an order of cancellation with a retrospective 
+date since business was already conducted and it was silent on the raising of a 
+demand and recovery of tax for such transactions, as pointed out by Audit.    
+In respect of one case, the Department stated that letter addressed to the 
+taxpayer was not delivered to the addressee and physical verification at 
+principal place of business revealed that no such taxpayer was found. The 
+Department further stated that on being called upon through mobile number 
+it was informed by the son of the taxpayer that the taxpayer expired and he 
+did not know about the business of his father. The reply was not acceptable as 
+the Department  was required to initiate action for raising th e demand and 
+collection thereof.  
+The reply in respect of remaining 13 cases was awaited (November 2024). 
+Two illustrative cases are discussed below: 
+1. A taxpayer (GSTIN 03XXXXXXXXXX1Z1) pertaining to Ludhiana 
+Commissionerate had taken the registra tion on 18  September 2020 and the 
+same was suo -moto cancelled with effect from 21  September 2020. The 
+taxpayer had generated 81 EWBs during the period of November 2020 for 
+outward supplies of ₹ 6.23 crore involving tax of ₹ 1.04 crore.  However, he did 
+not file GSTR-1 and GSTR-3B for the month of November 2020 and thus did not 
+discharge his tax liability to that extent.  
+Further, during the months of December 2020 and January 2021, the taxpayer 
+generated 359 EWBs involving outward supplies of ₹ 26.48 crore. Audit noticed 
+that the tax payer declared outward supplies of ₹ 26.67 crore in his GSTR-1 for 
+the same period. But, he did not file GSTR-3B returns for these months also.  
+Thus, the taxpayer did not file the GSTR-3B for the period from November 2020 
+to January 2021 and did not discharge tax liability of ₹ 5.70 crore which was 
+recoverable with applicable interest.  
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+SCN had been issued to the taxpayer. 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+26 
+2. A taxpayer (GSTIN 19XXXXXXXXXX1Z0) pertaining to Kolkata North 
+Commissionerate had taken registration on 19  March 2020; which was suo -
+moto cancelled with effect from 1  April 2020.  However, the taxpayer 
+generated 334 EWBs for ₹ 28.84 crore during the period from October 2020 to 
+December 2020. The taxpayer had filed its GSTR -1 returns upto December 
+2020 but filed GSTR -3B for the month of March 2020 only. As a result, there 
+was non-payment of tax of ₹ 5.38 crore by the taxpayer which was recoverable 
+with applicable interest. 
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+action for recovery of dues had been initiated. 
+Recommendation 3: Department may consider issu ing suitable instructions 
+to the proper officers for considering EWBs generated by the taxpayer before 
+cancellation of registration retrospectively and taking action for recovery of 
+tax wherever applicable. 
+The Ministry replied (October 2024) that the Act provides cancellation of 
+registration if the taxpayer fails to furnish the returns for a specified period. 
+The Act also provides for taking action by the proper officer to assess the tax 
+dues to the best of his judgement taking into account all the material available 
+with him. It also stated that instructions had been issued (October 2024) to the 
+field formations in this regard.  
+(d) Short discharge of tax liability by the taxpayers identified as having 
+generated multiple EWBs using same invoice 
+As per Rule 46(b) of CGST Rules, a tax invoice shall be issued by the registered 
+person containing consecutive serial number, not exceeding sixteen 
+characters, unique for a financial year. 
+As per Para 5 -1 of the User Manual issued by the NIC, the taxpayer while 
+generating the EWB is required to enter the Document Number relating to the 
+consignment.  The Document Number entered should be unique. Invoice 
+Number is the Document Number in respect of consignments relating to 
+supplies. Hence, only one EWB is required to be generated based on each 
+invoice16. 
+Audit observed  that 43 taxpayers pertaining to 23 Commissionerates, had 
+generated multiple EWBs using single invoice during the period between April 
+ 
+16  In case of multiple consignments based on single Invoice (for sending goods in Semi 
+Knocked Down (SKD) and Completely Knocked Down (CKD) conditions or supply of large 
+quantity of goods under single invoice) the EWB shall be generated for each of such 
+consignment separately based on the delivery challans issued for that portion of the 
+consignment. Each Delivery Challan should have a reference to the particular Invoice. 
+
+Report No. 12 of 2025 (Performance Audit) 
+27 
+2018 and March 2022.  The taxpayers generated 685 EWBs on the basis of 278 
+Invoices and the multiple or ratio ranged from 2 to 22.  The taxpayers, instead 
+of disclosing all consignments, either reported a single consignment in GSTR-1 
+return or did not report any consignment therein. Thus, there was  under-
+reporting of turnover of ₹ 22.75 crore in the returns and consequential short 
+discharge of tax liability of ₹ 2.46 crore; which was recoverable alongwith an 
+interest of ₹ 0.58 crore. 
+Generation of multiple EWBs based on single/same invoice indicated lack of 
+validation in the EWB Common Portal to prevent generation of multiple EWBs 
+using similar/same invoices. 
+On this being pointed out (between April  2023 and August 2023) the 
+Department/Ministry accepted the audit observations in 17 cases, pertaining 
+to 12 Commissionerates, involving money value of ₹ 0.59 crore.  The 
+Department did not accept the audit observations in respect of three cases 
+stating that the second EWB was generated by the concerned transporter by 
+mistake.  As both the EWBs were active and not cancelled by the respective 
+consignor, the department may examine the genuineness of the contention of 
+the taxpayer to ensure that there was no multip le movements of goods with 
+single invoice.    
+In one case, it was stated that the EWBs were generated by different divisions 
+of the taxpayer company and there was a practice of numbering the invoices 
+starting from ‘1’ by each division.  Because of this practice, same invoice 
+number was declared in the  multiple EWBs generated by the different 
+divisions.   However, all the invoices were declared in the GSTR -1.   Reply was 
+not acceptable since as per Rule 46(b) tax invoice should have consecutive 
+serial number.   Hence to ensure the genuineness of the claim of the taxpayer, 
+the department may examine the case with reference to relevant documents.     
+In another case, the department forwarded the reply of the taxpayer who 
+claimed that multiple EWBs were generated by mistake. The department may 
+examine the claim of the taxpayer to ensure protection of revenue. In respect 
+of another case, department replied that as per taxpayer’s contention the 
+taxpayer was a dealer in vehicles and the vehicles were transferred to sub -
+dealers on stock transfer using EWBs.  The reply was not acceptable as Audit 
+pointed out short -reporting of taxable turnover in the returns only after 
+excluding stock transfer transactions.  In respect of another case, the Ministry 
+replied (October 2024 ) that the details were sent to Audit  (October 2024) .  
+However, it was found that the details were related to documents requisition 
+during Field visit and not to the audit observation. 
+Reply in respect of remaining 19 cases was awaited (November 2024). 
+
+Report No. 12 of 2025 (Performance Audit) 
+28 
+Two illustrative cases are discussed below: 
+1. A taxpayer (GSTIN 33XXXXXXXXXE1Z6) pertaining to Salem 
+Commissionerate got registered on 1 July 2017.  Audit observed that the 
+taxpayer generated 191 EWBs during the period from April 2018 to March 
+2019 using 5 0 similar invoices more than once.  The multiplicity of EWBs 
+against each invoice is in the range of 2 to 22.  Out of 191 EWBs, 146 EWBs 
+were generated with assessable value of ₹ 3.50 crore involving tax of ₹ 20.02 
+lakh using 39 similar invoices . These 39 invoices with assessable value of  
+₹ 96.52 lakh were reported in GSTR -1 once; thus remaining 107 EWBs were 
+not reported.  Further out of 191 EWBs, 45 EWBs with assessable value ₹ 1.17 
+crore involving tax of ₹ 8.14 lakh, generated using 1 1 invoices were not 
+reported in GSTR-1 even once. 
+Thus, the transactions made through 152 EWBs with assessable value of   
+₹ 3.71 crore involving a tax of ₹ 22.43 lakh were not reported in the GSTR -1; 
+which resulted in short-discharge of tax liability to an extent of ₹ 22.43 lakh.  
+The same was recoverable alongwith an interest of ₹ 18.42 lakh. 
+On this being pointed out (July 2023), the Department replied (January 2024) 
+that the reasons attributed for generation of multiple EWBs were (i) raising 
+invoices using the same series of numbers by their divisions at different places 
+and entering all transactions in GSTR -1 by prefixing different alphabets to the 
+invoice numbers.  Other reasons were EWBs generated for returning empty 
+gas cylinders, transferring exempted goods etc.  Reply of the department was 
+not tenable as Rule 46 (b)  provides that the  tax invoice should contain a 
+consecutive serial number not exceeding sixteen characters.  Further, audit has 
+duly considered the inclusion of the transactions bearing invoices with 
+alphabets prefixed in their numbers in the GSTR-1.   The Department needs to 
+examine the correctness and genuineness of claim of the taxpayer by verifying 
+the books of accounts viz. stock account, Outward supply register, Inward 
+supply register, etc.  
+ 
+2. A taxpayer (GSTIN 33XXXXXXXXXP1Z6) pertaining to Salem 
+Commissionerate got registered on 1 July 2017. The taxpayer generated 638 
+EWBs during the period from April 2018 to March 2019. During verification, 
+Audit noticed that taxpayer generated 36 EWBs using 18 similar invoices using 
+each invoice twice during April 2018 and May 2018. Out of 36 EWBs, 18 EWBs 
+generated based on 18 invoices were reported by the taxpayer in his GSTR -1 
+of the respective months and tax was paid through GSTR -3B.  However, the 
+transactions relating to remaining 18  EWBs with assessable value of ₹ 3.24 
+crore involving a tax of ₹ 16.18 lakh were not reported in the GSTR -1.  Thus, 
+
+Report No. 12 of 2025 (Performance Audit) 
+29 
+the taxpayers short -discharged his tax liability to an extent  of ₹ 16.18 lakh, 
+which was recoverable alongwith an interest of ₹ 14.07 lakh.  
+On t his being pointed out  (August 2023) , the Department forwarded 
+(December 2023) the reply of the taxpayer in which it was stated that the 
+transporter while changing the vehicles midway had generated new EWBs.  
+Supporting documents to verify taxpayer’s claim were not provided.  
+To the audit contention that the Department may consider including suitable 
+validation control in the EWB System to prevent use of same/similar invoice in 
+generation of multiple EWBs , the Ministry replied (November 2024) that an 
+Analytical Report is available in NIC Portal; the tax officer c an view the report 
+on EWB cases with duplicate invoice numbers and take action accordingly.   
+Further, building a hard control in the portal to block generation of EWB in 
+these cases may not be appropriate as GST Rules allows generation of multiple 
+EWBs in certain situations like goods supplied in lots. 
+Recommendation 4: Department may incorporate validation control in the 
+EWB system to alert taxpayer and departmental officer on generation of 
+multiple EWBs with single invoice/similar invoice.   
+(e) Non/short discharge of tax liability by the taxpayers identified as Nil 
+filers 
+As per Section 37 of the CGST Act read with Rule 59 of the CGST Rules, regular 
+taxpayers shall furnish the details of outward supplies in GSTR -1.  Further, in 
+accordance with Section 39 of the CGST Act read with Rule 61 of the CGST 
+Rules, they are required to furnish a return in GSTR-3B declaring the details of 
+inward and outward supplies of goods or services or both, ITC availed, tax 
+payable, tax paid.  Under Section 61 of the CGST Act, various returns filed by 
+the taxpayers have to be scrutinised by the proper officer to veri fy the 
+correctness of the returns, and suitable action had to be taken. 
+Audit observed that during the period April 2018 to March 2022, 71 taxpayers 
+falling under 3 3 Commissionerates effected outward supplies, by generating 
+EWBs, amounting to ₹ 340.42 crore involving tax of ₹ 50.41 crore.  The 
+taxpayers, however, did not report the turnover in their GSTR -3B returns and 
+failed to discharge the tax liability thereon . The amount of tax recoverable 
+worked out to ₹ 50.41 crore alongwith interest of ₹ 3.69 crore. 
+Non-reporting of EWB transactions indicates that though the EWB Portal ha d 
+been integrated with GSTN Portal with effect from December 2019, EWB 
+transactions are not linked with the returns filed by the taxpayers. 
+
+Report No. 12 of 2025 (Performance Audit) 
+30 
+On this being pointed out (April 2023 to August 2023), the 
+Department/Ministry accepted the audit observations in 43 cases, pertaining 
+to 33 Commissionerates, involving money value of ₹ 33.28 crore.   
+In one case, the Department replied that some transactions related to job work 
+and other transactions related to supply made to SEZ. Hence, there was no tax 
+liability.  Audit could not verify the reply as supporting documents were not 
+provided. In respect of another case, the Ministry replied (October 2024) that 
+the details were sent to Audit in September 2024.  However, it was found that 
+the details were related to documents requisitioned during Field visit and not 
+to the audit observation. 
+Reply in respect of remaining 26 cases was awaited (November 2024). 
+Two illustrative cases are discussed in the following paragraphs: 
+1. A taxpayer (GSTIN 21XXXXXXXXXX1ZU) pertaining to Bhubaneshwar 
+Commissionerate got registered on 27 December 2019 and its registration was 
+suo-moto cancelled with effect from 1 February 2020.  Audit observed that the 
+taxpayer had generated 190 EWBs for outward supplies with assessable value 
+of ₹ 44.02 crore during the period from September 2020 to March 2022. 
+However, the taxpayer did not report the turnover in GSTR -3B as he filed Nil 
+returns for the period from September 2019 to December 2021 and did not 
+file returns for the months of January 2022 and  February 2022. This resulted 
+in non-payment of tax on the outward supplies involved in 190 EWBs, which 
+worked out to ₹ 7.92 crore.  The same was recoverable alongwith applicable 
+interest.  
+On this being pointed out (May 2023), the Ministry replied (October 2024) that 
+SCN had been issued to the taxpayer. 
+ 
+2. A taxpayer (GSTIN 07XXXXXXXXXX1ZC) pertaining to Delhi North 
+Commissionerate got registered on 10 August 2017 and its registration was 
+suo-moto cancelled with effect from 10 August 2017. Audit observed that the 
+taxpayer had effected outward supplies of ₹ 22.85 crore through 132 EWBs 
+during the months of July 2018 and August 2018. The taxpayer reported these 
+transaction in GSTR -1; however he filed GSTR -3B with Nil turnover.  Audit 
+further observed that the taxpayer filed GSTR-1 for the period from April 2018 
+to September 2018 with a tax value of ₹ 6.89 crore and thereby passed on ITC 
+of ₹ 6.89 crore. However, the taxpayer filed GSTR-3B with Nil turnover for the 
+entire period (from April 2018 to September 2018).  This resulted in non -
+payment of tax on the outward supplies reported in GSTR-1 for the period from 
+April 2018 to September 2018 , which worked out to ₹ 6.89 crore.  The same 
+was recoverable alongwith applicable interest.  
+
+Report No. 12 of 2025 (Performance Audit) 
+31 
+On this being pointed out (May 2023), the Ministry replied (October 2024) that 
+SCN had been issued . 
+ 
+(f) Non/Short-discharge of tax liability by the taxpayers with respect to 
+other KPAs17 
+ 
+As per Section 37 of the CGST Act read with Rule 59 of the CGST Rules, regular 
+taxpayers shall furnish the details of outward supplies in GSTR -1. Further, in 
+accordance with Section 39 of the CGST Act read with Rule 61 of the CGST 
+Rules, they are required to furnish a return in GSTR-3B declaring the details of 
+inward and outward supplies of goods or services or both, ITC availed, tax 
+payable, tax paid.  The summary details of such supplies are required to be 
+reported by the composition taxpayers in GSTR -4/CMP-08 as per Rule 62 of 
+CGST Rules.   
+(i) Audit observed that 174 taxpayers pertaining to 53 Commissionerates 
+had effected outward supplies of ₹ 1,750.87 crore during the period from April 
+2018 to March 2022 . On comparison of details of outward supplies with 
+respective GST returns , viz., GSTR-1 and GSTR-3B, it was noticed that the 
+taxpayers did not discharge the tax liability on these supplies. The tax amount 
+of ₹ 168.06 crore was recoverable alongwith an interest of ₹ 9.29 crore. 
+On this being pointed out (April 2023 to August 2023), the 
+Department/Ministry accepted the audit observations in 85  cases pertaining 
+to 33 Commissionerates, involving, money value of ₹ 69.75 crore. 
+In two cases, the Department replied that the transactions were relating to 
+purchase return of the goods.    The reply could not be verified as supporting 
+documents were not provided to audit. In respect of another two cases, it was 
+replied that there was n o short-payment of tax.  The reply was not accepted 
+as there was short-payment of tax for the month of September 2018 in respect 
+of one case and in another supporting documents were not provided.  Further, 
+in another case it was replied that the transactio ns related to Domestic Tariff 
+Area (DTA) sales and taxes were paid through TR -6 challans.  The reply could 
+not be verified as documents in support of payment of tax were not made 
+available to Audit for verification. 
+In respect of four cases, the Ministry replied that the details were sent to Audit.  
+However, it was found that in respect of three cases, the details related to 
+ 
+17  Pertaining to various KPAs mentioned in Appendix -II, excluding cases mentioned in serial 
+No. 1(a) to (e) in Table -2 were included under this category. These taxpayers also have 
+observations on KPAs at serial No. 1(a) to (e). 
+
+Report No. 12 of 2025 (Performance Audit) 
+32 
+documents requisition during Field visits and not for the audit observation and 
+in respect of another case no reply was received from the Department. 
+In respect of one case, the Ministry’s reply is detailed in illustration (1) below. 
+The reply in respect of remaining 79 cases was awaited (November 2024). 
+Two illustrative cases are discussed below: 
+1. A taxpayer (GSTIN 21 XXXXXXXXXX1ZG) under Rourkela 
+Commissionerate got registered under GST on 1 July 2017. Audit observed that 
+the taxpayer generated 243 EWBs against sing le invoice and 77 more EWBs 
+against another invoice with total assessable value of ₹ 386.66 crore involving  
+of ₹ 19.33 crore in the month of January 2020.  It was further observed that 
+the taxpayer reported ₹ 2.49 crore, involving tax of ₹ 12.47 lakh, relating to  
+two transactions supported by two invoices in his GSTR -1 for the month of 
+January 2020 and paid tax through GS TR-3B.  However, the taxpayer did not 
+report the remaining 318 EWBs with turnover of ₹ 384.17 crore in GSTR-1 and 
+consequently failed to discharge the tax liability of ₹ 19.21 crore; which was 
+recoverable alongwith applicable interest. 
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+the taxpayer supplied iron ore on the basis of two invoices to the two 
+consignees through Railways. The recipients further transported the goods to 
+various dealers using the invoice issued by the taxpayer and there was no tax 
+evasion. As noticed from the reply , the goods were moved from the place of 
+Railways by the consignees and subsequently transported to several taxpayers 
+by road.  However, EWBs were generated using the invoices issued by  the 
+taxpayer.   As the subsequent supplies were also taxable, the department 
+needs to examine the case to ensure discharge of  tax liability on subsequent 
+supplies. 
+ 
+2. A taxpayer (GSTIN 07XXXXXXXXXX1Z9), under Delhi West 
+Commissionerate got registered under GST on 2  February 2019 and their 
+registration was suo -moto cancelled on 16  August 2019.  Audit noticed that 
+they had generated 20 EWBs of ₹ 83.00 crore involving tax of ₹ 15.15 crore in 
+the month of June 2019 for the invoices issued during May 2019.  However as 
+noticed from CBIC ACES-GST Application, the taxpayer filed GSTR-1 and GSTR-
+3B upto the month of April 2019 only; but did not file them thereafter.  Thus, 
+the taxpayer failed to discharge the tax liability of ₹ 15.15 crore. 
+On this being pointed out (May 2023), the Ministry replied (October 2024) that 
+issuance of SCN was under process. 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+33 
+(ii) Use of risky vehicles in generating EWBs  
+Audit further observed that out of the above 1 74 taxpayers, 35 taxpayers 
+pertaining to 23 Commissionerates had used risky vehicles (vehicles identified 
+from VAHAN database, as stolen vehicles, suspended vehicles, surrendered 
+vehicles, scrapped vehicles, RC cancelled vehicles and two wheelers) for 
+transportation of goods. Though, the EWB system was integrated with VAHAN 
+database, the system was unable to identify and prevent use of such vehicles 
+for generation of EWBs and transportation of goods by such vehicles.  
+This was pointed out (between March 2023 and September 2023) and the 
+reply was awaited (November 2024). 
+4.1.3  Discrepancies identified through analysis of EWB data   
+Audit analysed the data on EWBs generated during the period from April 2018 
+to March 2022 on the basis of KPAs and observed that discrepancies in tax 
+compliance by the taxpayers could be ascertained directly in respect of certain 
+KPAs.  The data extracted under these KPAs, excluding samples selected for 
+Substantive Audit, were forwarded to  the Department during the period 
+between July 2023 and August 2023 for considering further course of remedial 
+action at their end. Issues involved in these observations have also been 
+examined by Audit in substantive audit of sample taxpayers and the 
+observations are included in the paragraphs 4.2.2 (a) to (d).    
+The details of observations, shared with the Department are depicted in the 
+following Table-5: 
+Table-5:  Details of Observations identified through data analysis 
+Sl. 
+No. 
+Nature of observations No. of 
+taxpayers 
+(TPs) 
+No. of 
+EWBs 
+ 
+1 Generation of Inter -State EWBs by Composition 
+taxpayers 
+2,585 41,524 
+2 Generation of EWBs by Composition taxpayers who had 
+crossed prescribed threshold limit 
+59 9,168 
+3 Generation of EWBs by Non-filers of GST Returns  38,758 7,77,684 
+4 Generation of EWBs by Cancelled taxpayers  6,657 2,56,357 
+5 Generation of multiple EWBs using same Invoice  88,235 4,15,400 
+The observations were forwarded to the Department (July and August 2023) 
+for verification and taking suitable actions at their end and giving a summary 
+reply of the actions taken. The summary reply was awaited ( October 2024). 
+Department may also take suitable action to address these issue at system 
+level.  
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+34 
+4.1.4 Wilful suppression of turnover by a group of taxpayers 
+During the examination of records of a taxpayer (GSTIN  33XXXXXXXXXX1ZW), 
+pertaining to Salem Commissionerate, Audit initially observed that the 
+taxpayer had transacted with four traders and one among them was a distinct 
+person18 (person having same PAN Registration located in Delhi).  Audit 
+noticed similarities in these five cases as regards to the nature of commodities 
+dealt with by them and their return filing pattern.  Though they generated 
+EWBs for outward supplies, they defa ulted in filing of returns and the 
+registrations of all of the taxpayers were cancelled suo-moto by the respective 
+jurisdictional officers.  As Audit noticed evasion of tax in all these five cases, 
+Audit further analysed all inward and outward transactions supported by EWBs 
+pertaining to all these five taxpayers which led to identification of other 
+taxpayers with whom they had transacted with. In this exercise, Audit could 
+identify 26 taxpayers, under different jurisdictional control of Union and State 
+Governments, involved in this supply chain who failed to discharge their tax 
+liability. 
+The analysis of their GST registrations and return filing status of the above 26 
+taxpayers revealed the following details as given in Table-6: 
+Table-6: Analysis of Taxpayers’ profile and their return filing pattern 
+Sl. No. Details No. of taxpayers 
+1 Having more than one Registration against 
+same PAN 
+16 (8 taxpayers was having two 
+registrations each) 
+2 Active Registration period  
+ < one month 6 
+ one month to three months 3 
+ > 3 months to 1 year 9 
+ >1 year 8 
+3 Place of business having same address 3 taxpayers having same address  
+4 Return filing  
+ Non-filers 15 
+ Return filed initially but not filed 
+subsequently 3 
+From the above table, following points were noticed:  
+• Eight taxpayers had taken two registrations in two different 
+States/UTs with single PAN.  
+ 
+18  As per Section 25 of CGST Act, 2017, a person having multiple places of business in a State 
+or Union territory may be granted a separate registration for each such place of business, 
+subject to such conditions as may be prescribed and such person shall, in respect of each 
+such registration, be treated as distinct persons for the purposes of this Act. 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+35 
+• Three taxpayers were operating from the same address.  
+• 18 taxpayers had valid registration for the period less than one year; 
+out of which registrations of six taxpayers were cancelled within one 
+month. 
+• 15 taxpayers did not file returns for any period whereas 3 taxpayers 
+though filed returns during the initial period of their registration, failed 
+to file the returns subsequently even though they effected 
+transactions. 
+The above findings point strongly about heavy risk of possible collusion 
+amongst themselves in tax evasion.  Out of these 26 taxpayers, 18 taxpayers 
+are pertaining to central jurisdictions and remaining eight taxpayers fall under 
+State/UT jurisdictions and the details are provided below: 
+The 26 taxpayers are pertaining to two CBIC zones and three State 
+jurisdictions; the details of which are provided below in Table-7: 
+Table-7:  Jurisdictional details of the taxpayers 
+Sl. No. Jurisdiction Number of Taxpayers 
+CBIC Jurisdiction 
+1 Chennai Zone 10 
+2 Delhi Zone 8 
+State/UT Jurisdiction 
+3 Tamil Nadu 2 
+4 Puducherry 2 
+5 Delhi 4 
+  Total 26 
+Out of the 26 taxpayers, 18 taxpayers pertained to Central jurisdiction under 
+two zones ( three Commissionerates 19). The deficiencies in tax compliance 
+pertaining to these 18 taxpayers are discussed in the following paragraphs: 
+(i) Non/short discharge of tax liability  
+ 
+As per Section 37 of the CGST Act read with Rule 59 of the CGST Rules regular 
+taxpayers shall furnish the details of outward supplies in GSTR -1.  Further in 
+accordance with Section 39 of the CGST Act read with Rule 61 of the CGST 
+Rules, they are required to furnish a return in GSTR-3B declaring the details of 
+inward and outward supplies of goods or services or both, ITC availed, tax 
+payable, tax paid. 
+Audit scrutiny revealed that these 18 taxpayers pertaining to three 
+Commissionerates had generated 3,137 EWBs in respect of outward supplies 
+ 
+19  Delhi North, Puducherry and Salem. 
+
+Report No. 12 of 2025 (Performance Audit) 
+36 
+valued at ₹ 168.21 crore during the period from March 2019 to September 
+2020.  Tax including Cess involved in respect of these outward supplies 
+amounted to ₹ 81.11 crore. The taxpayers, however, had either failed to file 
+returns and pay tax for the period for which they had generated EWBs or short-
+reported the value of outward supplies in the returns filed by them. The 
+non/short reporting of turnover consequently resulted in non/short discharge 
+of tax liability amounting to ₹ 81.11 crore which was recoverable alongwith 
+interest of ₹ 45.19 crore. 
+On this being pointed out (August 2023), the Department/Ministry accepted 
+the audit observations in 11 cases pertaining to two Commissionerates, 
+involving money value of ₹ 85.57 crore.  In respect of one case, the Department 
+replied that an SCN had already been issued and it was also subsequently 
+adjudicated.   However, Audit observed from the adjudication order  that the 
+SCN was dropped stating that the matter was required to be handled by other 
+central Government agency as areas of investigations were quit e widespread 
+beyond the jurisdiction of Puducherry CGST Commissionerate. Department 
+needs to take action accordingly and intimate to Audit.  
+Reply in respect of remaining six cases was awaited (November 2024). 
+An illustrative case is discussed below: 
+A taxpayer (GSTIN 33XXXXXXXXXX1ZW), falling under Salem Commissionerate 
+got GST registration on 6 July 2019 and his registration was cancelled with 
+effect 14 November 2019.  Audit noticed that he had effected outward supplies 
+during the period from August 2019 to October 2019 through 187 EWBs with 
+assessable value of ₹ 12.07 crore involving tax amounting to ₹ 7.33 crore 
+(inclusive of cess). 
+However, the taxpayer filed GSTR-3B Return only for the month of August 2019 
+and reported a turnover of ₹ 8.82 crore in GSTR -3B including the transaction 
+covered by 130 EWBs having assessable value of ₹ 8.55 crore.  He did not file 
+GSTR-3B returns thereafter.  Thus, the non-filing of returns for September and 
+October 2019 resulted in non -reporting of transactions covered by 57 EWB, 
+involving turnover of ₹ 3.53 crore and consequent non -payment of tax 
+(including cess) amounting to ₹ 5.79 crore, which was recoverable alongwith 
+interest of ₹ 3.59 crore. 
+This was pointed out to the Department/Ministry (August 2023/July 2024), the 
+reply was awaited (November 2024). 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+37 
+(ii) Mismatch of ITC between GSTR-3B and GSTR-2A 
+ 
+As per Section 16 of the CGST Act, every registered person shall be entitled to 
+take credit of input tax (ITC) charged on any supply of goods or services or both 
+to him which are used or intended to be used in the course or furtherance of 
+his business and the said amount shall be credited to the electronic credit 
+ledger of such person.    
+According to Rule 36 of CGST Rules, the ITC shall be availed only on the basis 
+of certain documents and one of the documents prescribed is invoices issued 
+by the supplier of goods or services. As per Section 37 of the CGST Act read 
+with Rule 59 of the CGST Rules, every registered person other than 
+composition taxpayers shall furnish the details of outward supplies of goods or 
+services or both effected during a tax period in GSTR-1. 
+Audit observed that a taxpayer ( GSTIN 33XXXXXXXXXX1ZW), falling under 
+Salem Commissionerate had availed ITC of ₹ 7.23 crore through GSTR-3B filed 
+for the month of August 2019. The taxpayer discharged the tax liability of  
+₹ 1.59 crore for the month of August 2019 utilising ITC.  However, the eligible 
+claim of ITC as noticed from GSTR -2A for the month was ₹ 84.27 lakh.  Thus, 
+the taxpayer had claimed excess ITC of ₹ 6.39 crore as compared to ITC 
+available in GSTR-2A.  This mismatch was required to be examined and excess 
+ITC, if any, was recoverable from the taxpayer alongwith  applicable interest. 
+This was pointed out to the Department/Ministry (August 2023/July 2024).  
+The reply was awaited (November 2024). 
+In respect of the taxpayers falling under State jurisdictions, the matter had 
+been taken up with State authorities by the respective State Audit Offices. As 
+multi-jurisdictional taxpayers are involved in these transactions, Department 
+may investigate the matter to identify all the taxpayers involved in this supply 
+chain and to take remedial action. 
+(iii) Movement of banned products 
+Audit further noticed that the major commodities moved from Delhi to Tamil 
+Nadu/Puducherry by five taxpayers, under Delhi Zone were tobacco related 
+products.  It is pertinent to mention that Gutkha, Pan -Masala and any other 
+food products containing tobacco  are banned in Tamil Nadu and Puducherry 
+under the Food Safety and Standards Act (FSSA), 2006. This indicates that 
+there was no mechanism to prevent transportation of banned goods in EWB 
+system. 
+Recommendation 5: Department may incorporate validation control in the 
+EWB system to alert taxpayers whenever EWB is generated for movement 
+of banned goods.  
+
+Report No. 12 of 2025 (Performance Audit) 
+38 
+The Ministry replied (November 2024) that no validation was available to 
+prevent supply of banned goods through EWBs since data differs from State to 
+State i.e. Gutkha, Pan Masala are banned in certain states only. Also, blocking 
+EWBs would lead to movement going undercover which would not be in favour 
+of revenue. 
+The Department may consider generating alerts to tax officers and taxpayers 
+whenever EWBs are generated for movement of banned goods. 
+4.1.5 Discrepancies noticed in availing of ITC 
+ 
+(a) Mismatch in availing of ITC 
+ 
+As per Section 16 of the CGST Act, every registered person shall be entitled to 
+take ITC charged on any supply of goods or services or both to him which are 
+used or intended to be used in the course or furtherance of his business and 
+the said amount shall be credited to the electronic credit ledger of such person.    
+During the audit of taxpayers selected for examination of EWB System , 
+correctness of availment of ITC  in respect of sample taxpayers  was also 
+examined. The claim of ITC as per GSTR -3B/GSTR- 9 was correlated with ITC 
+available under GSTR-2A returns.  Audit observed that 72 taxpayers pertaining 
+to 28 Commissionerates had availed ₹ 1,357.89 crore; even though ITC 
+available as per GSTR-2A was only ₹ 1,202.48 crore.  Thus, there was mismatch 
+between ITC available as per GSTR -2A and that of availed by the taxpayers 
+through their GSTR -3B.  The amount  of mismatch worked out to  ₹ 155.41 
+crore.  Department may verify the detail and recover the excess ITC claimed, if 
+any, alongwith interest applicable. 
+On this being pointed out (between March 2023 and September 2023), the 
+Department/Ministry accepted the audit observations in 44 cases, pertaining 
+to 25 Commissionerates, involving money value of ₹ 99.76 crore.  In respect of 
+two cases, the Department/ Ministry replied that there was no discrepancy in 
+the ITC claim.   However no supporting documents were furnished to Audit to 
+verify the claim in respect of one case and in respect of another, it was noticed 
+from the reconciliation statement provided by the taxpayer that ITC of ₹ 15.85 
+lakh was claimed in excess as compared to GSTR-2A. In respect of another case, 
+the department replied that as per the contention of the taxpayer there was 
+no excess claim of ITC.  The department may examine the contention of the 
+taxpayer with relevant documents and forward the result of examination with 
+supporting documents.   
+Reply in respect of remaining 25 cases was awaited (November 2024). 
+Two illustrative cases are as follows:   
+
+Report No. 12 of 2025 (Performance Audit) 
+39 
+1. A taxpayer  (GSTIN 07XXXXXXXXXX1ZP), pertaining to Delhi North 
+Commissionerate, got registered under GST on 14 September 2018 and his 
+registration was cancelled on 3 May 2021 with retrospective effect from 13 
+February 2019 on the basis of physical verification of business premises 
+conducted on 13 February 2019.  Audit noticed that the taxpayer had claimed 
+ITC of ₹ 7.30 crore through GSTR -3B during the year 2018 -19. However, the 
+ITC available was only ₹ 45 lakh in GSTR-2A for the corresponding period.  Thus, 
+there was a mismatch between the ITC available in GSTR -2A and that of 
+claimed by the taxpayer which worked out to ₹ 6.85 crore.   
+Audit further noticed that physical verification of the business premises was 
+conducted on 13 February 2019 and based on that the registration of the  
+taxpayer was cancelled suo-moto by proper officer on 3 May 2021.  However, 
+during the intervening period of conducting physical verification and 
+cancellation of registration, the taxpayer had availed ITC of ₹ 14.49 crore 
+during years 2019-20 and 2020-21 through GSTR-3B; however the ITC available 
+in GSTR- 2A was only ₹ 13.73 lakh. Thus, there was a mismatch between the 
+ITC available in GSTR -2A and that of claimed by the taxpayer to a tune of 
+₹ 14.36 crore. In total, there was a mismatch between ITC availed and ITC 
+available for the period from 2018 -19 to 2020-21 to an extent of worked out 
+to ₹ 21.21 crore which was recoverable alongwith applicable interest.   
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+issuance of SCN was under process. 
+ 
+2. A taxpayer  (GSTIN 07XXXXXXXXXX1ZY), pertaining to Delhi East 
+Commissionerate, got registered on 7  March 2020 and his registration was 
+cancelled suo-moto with effect from 7  March 2020 itself. Audit noticed that 
+the taxpayer had claimed ITC of ₹ 17.13 crore through GSTR -3B during the 
+period 2020 -21. However, as noticed from GSTR -2A for the corresponding 
+period, the ITC available was Nil. Thus, the taxpayer had claimed excess ITC of 
+₹ 17.13 crore  as compared to ITC available in GSTR -2A. This mismatch was 
+required to be examined and excess ITC, if any, was recoverable from the 
+taxpayer alongwith applicable interest.  
+On this being pointed out (July 2023), the Ministry replied (October 2024) that 
+the matter was being investigated further and action was being taken. 
+ 
+(b) Availing of ineligible ITC 
+ 
+As per Section 16(2)(c) of the CGST Act, ITC is not eligible unless the tax charged 
+in respect of corresponding supplies ha d been actually paid to the 
+Government. 
+
+Report No. 12 of 2025 (Performance Audit) 
+40 
+Audit observed that two taxpayers of two Commissionerates had claimed ITC 
+of ₹ 1.46 crore during the period July 2018 to March 2022 , however, the 
+suppliers of the taxpayers had not filed their returns and thereby did not pay 
+tax on the outward supplies.  As the tax on supplies was not paid to 
+Government by the suppliers, the taxpayers were not eligible to claim ITC of  
+₹ 1.46 crore.  The ineligible ITC of ₹ 1.46 crore was recoverable with interest 
+of ₹ 0.17 crore. 
+On this being pointed out (March 2023 and June 2023), the Department 
+accepted the audit observations in both the cases, pertaining to two 
+Commissionerates, involving money value of ₹ 1.64 crore.  
+An illustrative case is given below: 
+A taxpayer (GSTIN 33XXXXXXXXXX1Z7), under the jurisdiction of Coimbatore 
+Commissionerate, got registered under GST on 22  November 2021 and his 
+registration was cancelled, suo -moto, with effect from 23  November 2022. 
+Audit noticed that the taxpayer had claimed ITC of ₹ 1.58 crore and adjusted 
+the ITC of ₹ 1.58 crore against his tax liability for the period from December 
+2021 to March 2022.   On further verification it was observed that out of the 
+ITC claim of ₹ 1.58 crore, ₹ 1.31 crore pertained to ITC passed on by a single 
+supplier, taxpayer, (GSTIN 33XXXXXXXXXX1ZX), whose registration had been 
+cancelled with effect from 1 September 2021 due to filing of GSTR-3B without 
+inputs in GSTR-2A. As a result, the  ITC passed on by him became invalid. The 
+supplier had discharged his entire tax liabilities of ₹ 3.53 crore through ITC only 
+during the period from November 2021 to March 2022 . Thus, ITC of ₹ 1.31 
+crore by the taxpayer  was ineligible; which ha d to be re versed alongwith 
+applicable interest.   
+On this being pointed out (March 2023), the Ministry accepted the audit 
+observation (October 2024) and stated that the taxpayer was fake entity and 
+in order to safeguard revenue, issuance of SCN was in process. 
+ 
+4.1.6 Miscellaneous issues  
+(i)  Non-initiation of a ction on alert circulars issued for disallow ance of 
+irregular ITC 
+During the verification of tax compliance in respect of two sample taxpayers 
+pertaining to Kolkata North Commissionerate , Audit observed that the 
+Commissionerate had already  identified these two taxpayers as non-existent 
+during physical verification  and t he two  taxpayers had passed on ITC for 
+₹ 26.36 crore to their recipients during the period 2018 -19 and 2019 -20.  In 
+
+Report No. 12 of 2025 (Performance Audit) 
+41 
+this regard, t he Commissionerate had issued ‘Alert Circulars’ 20 to the 
+jurisdictional officers regarding the ITC passed on by these  two taxpayers. 
+Audit noticed that  no further development had taken place on these alert 
+circulars. 
+An illustrative case is mentioned below: 
+In the case of a taxpayer (GSTIN 19XXXXXXXXXX1Z9) falling under the 
+jurisdiction of Kolkata North Commissionerate, it was observed that the 
+taxpayer had made taxable supply during FY 2018 -19 without discharging the 
+applicable tax. The Department conducted a physical verification in November 
+2019 and found the taxpayer to be non -existent. The registration of the 
+taxpayer was cancelled suo -moto on 16 December 2019 for not filing the 
+returns. Subsequently, the Department issued an ‘Alert Circular’ in February 
+2020 enlisting 172 recipients, who had received the invoices without involving 
+supply of goods from the above taxpayer and asking the concerned 
+jurisdictions to initiate action against them for recovery of irregular ITC availed. 
+The total ITC passed on fraudulently by the taxpayer as per ‘Alert Circular’ was 
+₹ 19.03 crore. Out of the above 172 taxpayers, 30 recipients, who had received 
+ITC of ₹ 1.82 crore were falling under the jurisdiction of Kolkata North 
+Commissionerate itself.  However, no action had been initiated by the proper 
+officers on the alert notices received to recover the ITC claimed by the 
+taxpayers under their jurisdiction (July 2023).  
+On this being pointed out (July 2024), the Ministry replied (October 2024) that 
+out of 172 recipients who had received the invoices without supply of goods 
+from taxpayer, 11 taxpayers are under the administrative control of Kolkata 
+North Commissionerate.  Out of these 11 cases, SCN had been issued in three 
+cases. Details on action taken in respect of other cases were awaited 
+(November 2024). 
+ 
+(ii) Abnormally high value EWBs generated by taxpayers 
+Through data analysis, A udit identified that 19 taxpayers pertaining to 1 4 
+Commissionerates had generated 4 2 EWBs with abnormally very high 
+assessable value i.e. value exceeding ₹ 10,000 crore.  The generation of EWBs 
+with abnormally high value was reported (May to  August 2023)  to the 
+Department to ascertain the  veracity o f the ‘Assessable value’ mentioned 
+therein. 
+On this being pointed out, the Department/Ministry replied ( between July 
+2023 and October 2024) that assessable values were wrongly mentioned in 19 
+ 
+20  Internal communication issued by Kolkata North Commissionerate to respective GST 
+Commissionerates/Units. 
+
+Report No. 12 of 2025 (Performance Audit) 
+42 
+EWBs due to data entry error. In respect of remaining 2 3 cases, reply  was 
+awaited (November 2024).  
+One case is illustrated below: 
+A taxpayer (GSTIN 36XXXXXXXXXX1ZT), pertaining to Hyderabad 
+Commissionerate generated five EWBs with high money value; out of which, 
+an EWB (No.121446807120, dated 10 March 2022) was generated for outward 
+supply of  ₹ 7,97,90,480.32 crore (₹ 79,79,04,80,32,54,452).   As the value of 
+the EWB was abnormally high, this was pointed  out to the Department (May 
+2023) to examine the case .  The Department replied ( October 2023 ), that it 
+was due to clerical error while entering the value in EWB Bill portal.  The reply 
+indicates that there is no validation control in the EWB system to prevent such 
+data entry errors.   
+Recommendation 6: Department may incorporate validation control in the 
+EWB system to red flag/prevent abnormally high value and inconsistent data 
+in EWBs.    
+The Ministry replied (November 2024) that Alert messages are provided when 
+EWBs having value of more than ₹ 10 crore are being generated. The taxpayers 
+receive SMS messages on details of EWBs generated in their GSTIN as supplier 
+as well as recipient.  Analytical report in respect of abnormal high value EWBs 
+are also available to the tax officer. 
+ 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+43 
+Chapter 5: Preventive functions of the Department 
+ 
+The Commissioner or an Officer empowered by  her/him in this behalf may 
+authorise any officer to intercept any conveyance to verify the EWB.  CBIC had 
+issued detailed instructions 21 elaborating the procedure for interception of 
+conveyances for inspection of goods in movement, detention, release and 
+confiscation of goods and conveyances for contravening the provisions of 
+Act/Rules relating to EWB.  A summary report of every inspection  of goods in 
+transit shall be recorded online by the proper officer in Part A of Form EWB-03 
+within 24 hours of inspection and the final report in Part B of Form EWB -03 
+shall be recorded within three days of such inspection. 
+Once physical verification of goods being transported on any conveyance ha d 
+been done during transit at one place within the State or Union Territory or in 
+any other State or Union Territory, no further physical verification of the said 
+conveyance shall be carried out again in the State or Union Territory, unless a 
+specific information relating to evasion of tax is made available subsequently. 
+Where a vehi cle had been intercepted and detained for a period exceeding 
+thirty minutes, the transporter may upload  the said information in Form GST 
+EWB-04 on the common portal.  
+Audit sought to review whether the preventive activities of the Department in 
+enforcing EWB provisions were efficient and effective. For this purpose, 5 8 
+Commissionerates, being 50 per cent of the preventive units  under the 
+jurisdiction of Field Audit Offices, were taken as sample on stratified sampling 
+method.  
+5.1 Efficiency and effectiveness of the preventive/enforcement 
+activities of the Department in enforcing EWB provisions 
+Audit examined EWB related functions of the Preventive Units of the Central 
+formations with specific focus on (i) Operational Preparedness, (ii) 
+Effectiveness of Anti -Evasion Measures and (iii) Intra -Departmental 
+Coordination in monitoring EWB related transactions. For this purpose, Audit 
+selected Preventive Units of 58 Commissionerates . During verification, Audit 
+noticed several deficiencies in the activities of the Preventive Wings; which are 
+detailed in the following paragraphs: 
+Section 68(1) of the CGST Act stipulates that the person in charge of a 
+conveyance carrying any consignment of goods of value exceeding a specified 
+amount shall carry with him the documents and devices prescribed in this 
+ 
+21  Circulars no. 41/15/2018 -GST dated 13 April 2018, 49/23/2018 -GST dated 21 June 2018 
+and 64/38/2018-GST dated 14 September 2018. 
+
+Report No. 12 of 2025 (Performance Audit) 
+44 
+behalf. As per Sub -section (3) of the Section, ibid, where any conveyance 
+referred to above can be intercepted by the proper officer at any place and he 
+may require the person in charge of the conveyance to produce the documents 
+for verification, and the said person shall be liable to produce the documents  
+and also allow the inspection of goods.  
+Further, Section 129 of the CGST Act provides for detention, seizure and 
+release of goods and conveyances in transit where any person transports any 
+goods in contravention of the provisions of this Act.  According to Rule 138 of 
+the CGST Rules, in case of transportation of goods an EWB is required to be 
+generated before the commencement of movement of the consignment.   
+For verification of EWBs, the CBIC had issued instructions vide Circular Nos. 41, 
+49 and 64 of 2018 , cited above,  where procedure for interception of 
+conveyances for inspection of goods and action to be taken by the proper 
+officers are enumerated.  
+5.1.1 Operational Preparedness of the Department 
+In order to assess adequacy and effectiveness of preventive function , Audit 
+examined Department preparedness in respect of dedicated preventive setup, 
+adequacy of manpower, adequacy of patrolling vehicles, and target and 
+achievements in respect of interception of vehicles and examination of EWB 
+during transit. The findings are discussed below: 
+5.1.1.1  Dedicated setup/unit 
+A dedicated Unit for EWB related enforcement activities like verification of 
+EWBs during interception of vehicles and follow up action wherever required, 
+utilizing EWB Analytical Reports in planning the EWB verification, etc. can 
+improve the efficiency of preventive functions. When the details regarding the 
+position of existence of dedicated setup/unit was requisitioned from 58 
+selected Commissionerates, three Commissionerates did not provide any 
+information. Only Rohtak Commissionerate intimated that dedicated mobile 
+squads were constituted for conducting EWB verification.  Fifty three other 
+Commissionerates intimated tha t no dedicated setups were formed for 
+conducting EWB related enforcement  activities. Pune -II Commissionerate 
+intimated that dedicated unit existed till 2019; but no dedicated unit existed 
+afterwards. The Commissionerate further stated that the exiting Preventive 
+Units / Anti Evasion Branches are entrusted with the verification of EWB 
+functions.   
+On this being pointed out (September 2023 and October 2023), the Ministry 
+replied (October 2024) that dedicated set -ups exist in three more 
+Commissionerates.   
+
+Report No. 12 of 2025 (Performance Audit) 
+45 
+5.1.1.2 Adequacy of manpower 
+Details of existing manpower were ascertained from Preventive Units of the 
+58 selected Commissionerates.  Thirty five Commissionerates did not provide 
+information on the manpower availability. Twenty two Commissionerates also 
+did not give details of manpower, but stated that they are having in adequate 
+manpower in their Preventive Units.  Bolpur Commissionerate intimated that 
+adequate manpower was available in their Preventive Units to conduct the 
+EWB verification.  
+Non-availability of dedicated set -up coupled with vacancies in staff strength 
+may affect EWB related preventive functions. 
+On this being pointed out (September 2023 and October 2023), the Ministry 
+replied (October 2024) that four Commissionerates 22 have adequate 
+manpower to conduct the EWB verification. Ministry may instruct the field 
+formations to maintain adequate manpower for conducting EWB verification.    
+5.1.1.3 Lack of sufficient patrolling vehicles 
+Details of availability of patrolling vehicles exclusively for EWB verification 
+functions were called for from the 58 selected Commissionerates. Four 
+Commissionerates did not provide information.  54 Commissionerates 
+intimated that exclusive patrol vehicles were not available.   In these 
+formations, the verifications were conducted using the vehicles available at the 
+Commissionerates whenever verifications are planned.   
+Availability of sufficient patrolling vehicles for EWB verification is important for 
+effective and timely interception and verification of goods in transit. 
+On this being pointed out (September 2023 and October 2023), the Ministry 
+replied (October 2024) that sufficient patrol vehicles are available in eight 
+Commissionerates23.  
+Ministry may consider deploying adequate p atrol vehicles at all the  field 
+formations exclusively for conducting EWB verification. 
+5.1.1.4 Targets and achievements 
+Audit called for the details of targets fixed by the Board/Zone/  
+Commissionerate for verification of EWBs through vehicle interceptions and 
+achievements against them, from the selected Preventive units.  Preventive 
+Units of 39 Commissionerates intimated that there were no specific targets for 
+verification of EWBs. Information on targets were not provided by remaining 
+four Commissionerates. 
+ 
+22  Delhi West, Nagpur, Puducherry and Rourkela. 
+23  Alwar, Belapur, Delhi West, Mangaluru, Kanpur, Pune-II, Rourkela and Udaipur. 
+
+Report No. 12 of 2025 (Performance Audit) 
+46 
+This was pointed out to the Department/Ministry (September 2023 and 
+October 2023/ July 2024) and their reply was awaited (November 2024). 
+In respect of 10 Commissionerates, it was intimated that month-wise internal 
+targets were prescribed.  However, audit could not examine achievement/  
+shortfall against these targets as month-wise data were not provided by these 
+units.  In respect of other five Commissionerates 24, targets fixed were not 
+achieved as against the target of  verification of 1,13,400 EWBs , only 6 ,129 
+EWBs (5.4 per cent) were verified. 
+On this being  pointed out (March 2023 to July 2023/July 2024 ), three 
+Commissionerates25 replied (between March 2023 and August 2023) that due 
+to restrictions on account of Covid -19 pandemic, the verification process was 
+discontinued for some time and the same resumed when the restrictions were 
+relaxed.  Reply from other Commissionerates /Ministry was awaited 
+(November 2024). 
+Recommendation 7: Department may c onsider to ensure availability of 
+manpower and patrolling vehicles for adequacy and effectiveness of EWB 
+verification to protect revenue. 
+The Ministry stated (November 2024) that t he EWB related preventive 
+measures are being taken by the field formations based on DGARM reports. 
+Further, it was decided in the Chief Commissioners/ Director Generals 
+Conferences held in September 2024 and October 2024 that road patrolling 
+and checks in respect of EWBs shall be done in cases which are based on 
+specific intelligence. 
+5.1.1.5 Use of Analytical Reports on EWBs generated by NIC 
+NIC is generating 97 Analytical Reports on EWB transactions and it shares the 
+same through the NIC-EWB Portal with the GST Departments under Centre and 
+State formations for their use.  The Manual on t he Comprehensive Analytics 
+on EWB issued by the NIC provides the nature of each report and its usage. 
+These reports help the Proper Officers in identifying cases of fake invoices, tax 
+evasion, recycling etc. by using the vehicle movement information.   
+Audit examined the extent to which these reports were utilized by the 
+Preventive Formations in 58 Commissionerates  for planning the verifications 
+of EWBs. The results are as follows: 
+ 
+ 
+24  Bolpur, Haldia, Howrah, Kolkata North and Rourkela. 
+25  Bolpur, Kolkata North and Rourkela. 
+
+Report No. 12 of 2025 (Performance Audit) 
+47 
+(i) Access to the Analytical reports 
+Preventive Units of 3 8 Commissionerates stated that they have at least one 
+User ID with access to the analytical reports with preferential access to 
+Assistant Commissioner and above. Preventive Unit s of 15 Commissionerates 
+stated that they do not have access to the analytical reports. Details from five 
+Commissionerates were awaited. 
+(ii) Use of Analytical reports  
+Regarding usage of analytical reports for planning vehicle interception, four 
+Commissionerates stated that they were using the analytical reports for 
+planning purposes and Mangaluru Commissionerate intimated that it sparingly 
+used the Reports. 4 6 Commissionerates stated that they were not using the 
+reports for the planning purpose.  Details from seven Commissionerates are 
+awaited.   
+(iii) Sharing of Analytical reports  
+Audit ascertained w hether the Analytical Reports were forwarded to field 
+formations for using them in process of s crutiny of Returns.    In respect of 
+sharing the analytical reports with the jurisdictional Officers, t hree 
+Commissionerates stated that they are sharing the information on analytical 
+reports with the jurisdictional Officers. 49 Commissionerates were not sharing 
+with the jurisdictional officers for using them in scrutiny of Returns. Reply was 
+still awaited from six Commissionerates. 
+(iv) Making request for requirement of additional reports 
+NIC receives requests from the officers of Central and State GST Departments 
+for new reports and NIC designs and develops the new analytical reports. 
+When ascertaining whether any requirements for new Analytical/MIS reports 
+were made to NIC, it was noticed that no requisitions were made in respect of 
+41 Commissionerates.  Reply was awaited from 17 Commissionerates. 
+This was pointed out to the Department (September 2023 and October 2023) 
+and to Ministry (July 2024) and their reply was awaited (November 2024). 
+During the Exit Conference (November 2024), the Member (GST) informed that 
+instructions were issued to field formations for utilisation of the analytical 
+report.  The CEO, GSTN intimated that several reports are being generated and 
+shared with the Officers at field level.   
+Though several Analytical reports are generated and shared by the NIC, poor 
+usage of these reports by the field formations warrants devising suitable 
+monitoring mechanism.   
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+48 
+5.1.1.6 Analytical reports on movement of vehicles 
+Out of the Analytical reports available, Audit examined reports relating to 
+movement of vehicles and the findings are detailed below:  
+(i) Monitoring non-movement of goods 
+One of the Analytical Reports created by the NIC  is the Report on Non -
+movement of Vehicles (B -1 Report) on which EWBs were generated. During 
+Audit, Preventive Units of 50 Commissionerates replied that they are not using 
+the report on non-movement of goods. Puducherry Commissionerate stated 
+that there was  no case of non -movement of goods by registered suppliers, 
+hence no case was booked using the said report. Preventive Unit of Delhi South 
+Commissionerate stated that they were using the Report for gathering 
+evidence. In respect of remaining s ix Commissionerates, information was 
+awaited (July 2024).  
+This was pointed out to the Department (September 2023 and October 2023) 
+and their reply was awaited (July 2024). 
+Based on the above Analytical Report generated by the NIC, Audit identified 
+40 taxpayers pertaining to nine Commissionerates and selected 1,942 EWBs 
+for verification. Out of 1,942 EWBs, Audit noticed that 1, 593 EWBs were 
+reported in GSTR-1 by the consignors.  As there was no movement of vehicles 
+in respect of these EWBs, there was possibility of generating invoices without 
+actual supply of goods. All the cases were reported to the Department to verify 
+the details and to ascertain whether ITC was passed on to the recipients 
+without actual supply of goods. The remaining 349 EWBs were not reported in 
+GSTR-1. As the EWBs generated were not cancelled, Audit referred these cases 
+to the Department to examine whether there was any movement of goods 
+involving non-payment of tax due on the outward supplies.  
+On this being pointed this out to (between July 2023 and September 2023), the 
+Ministry accepted ( October 202 4) the observation in five cases stating that 
+SCNs were issued.  Reply in respect of other cases was awaited (November 
+2024). 
+(ii) Report on multiple movements of vehicles 
+NIC is generating other two Reports26 on multiple movements of vehicles. The 
+details on usage of these reports were also called for from the selected 
+Commissionerates. Fifty one Commissionerates intimated that they did not use 
+the report on multiple movement of goods. The Puducherry Commissionerate 
+stated that they are monitoring misuse of same EWB for multiple 
+ 
+26  B4 Report on ‘Multiple movement of same vehicle’ and B5 Report on ‘Multiple ovements 
+in other vehicles’. 
+
+Report No. 12 of 2025 (Performance Audit) 
+49 
+consignments; but no case was booked so far. In respect of six 
+Commissionerates, information was awaited (July 2024). 
+This was pointed out to the Department/Ministry (September 2023 to October 
+2023/ July 2024). Reply of the Department/Ministry was awaited (November 
+2024). 
+Recommendation 8: Department may consider issuing suitable instructions 
+for using NIC A nalytical reports on EWBs for planning, execution and 
+monitoring the interception of vehicles. 
+The Ministry replied (October 2024) that CBIC Zones have been directed to use 
+NIC Analytical reports on EWBs for planning, execution and monitoring the 
+interception of vehicles to verify compliance of EWB provisions.  
+Department may consider devising suitable mechanism for monitoring 
+compliance of these instructions. 
+5.1.2 Effectiveness of Anti-Evasion measures 
+Section 16 of the CAG’s DPC Act 1971 lay down the audit mandate of the CAG 
+regarding audit of receipts. Further, Section 18(2) of the CAG’s DPC Act 1971 
+imposes a statutory duty on Offices/Departments to comply with the requests 
+for information in as complete as far as possible and with all reasonable 
+expedition.  
+According to Rule 138 of the CGST Rules, in case of transportation of goods an 
+EWB is required to be generated before the commencement of movement of 
+the consignment. For conducting verification of EWBs, the CBIC  had issued 
+instructions27; where procedure for interception of conveyances for inspection 
+of goods and action to be taken by the proper officers were discussed. 
+Audit examined effectiveness of the interception activities of the Department 
+and verified cases booked by the Department during interception of vehicles. 
+The results are below: 
+5.1.2.1 Scope limitation due to documents not produced 
+(i) Audit called for information on E WB verifications and booked cases 
+(reference number and amount of tax /penalty) from the selected 58 
+Commissionerates. Out of 58 Commissionerates,  eight Commissionerates did 
+not provide the details of booked cases, though the number of booked cases 
+was provided.  In the absence of details of cases booked, Audit could not select 
+the sample for audit.  In these eight Commissionerates, Audit called for 243 
+ 
+27  Circulars no. 41/15/2018 -GST dated 13 April 2018, 49/23/2018 -GST dated 21 June 2018 
+and 64/38/2018-GST dated 14 September 2018. 
+
+Report No. 12 of 2025 (Performance Audit) 
+50 
+booked cases out of 584 cases.  However, the Department produced only 146 
+cases (60 per cent) and 97 cases were not produced.   
+Further, out of remaining 50 Commissionerates who produced the list of 
+booked cases, Audit called for 1 ,315 cases out of 2,444 booked cases. As 
+against 1,315 booked cases called for , 1,259 cases were produced . Five 
+Commissionerates did not produce 56 cases.   
+The details of non-production of files relating to booked cases are provided in  
+Table-8: 
+Table-8: Details of non-production of documents/files 
+Sl. 
+No. 
+Commissionerate Total 
+number of 
+cases 
+booked 
+Sample  No of 
+cases 
+produced 
+Non 
+production 
+List not provided 
+1 Agartala 39 39 37 2 
+2 Ahmedabad North 12 12 6 6 
+3 Delhi West 16 16 0 16 
+4 Lucknow 4 4 2 2 
+5 Madurai 44 44 36 8 
+6 Pune-I 28 28 9 19 
+7 Vadodara -II 112 50 46 4 
+8 Surat 329 50 10 40 
+Sub-total 584 243 146 97 
+List provided 
+9 Rohtak 56 50 23 27 
+10 Mysuru 36 36 30 6 
+11 Panchkula 72 49 46 3 
+12 Medchal 86 48 29 19 
+13 Puducherry 8 8 7 1 
+Sub-total 258 191 135 56 
+Total 842 434 281 153 
+Non-production of records in respect of 153 cases resulted in audit not being 
+able to derive conclusion on preventive aspects/issues involved in such cases.  
+This was pointed out to the Department /Ministry (March 2023 to September 
+2023/July 2024). Reply of the Department/Ministry was awaited (November 
+2024). 
+(ii) Further, documents provided relating to 309 booked cases pertaining 
+to 16 Commissionerates were not complete as all the GSTR forms/documents 
+
+Report No. 12 of 2025 (Performance Audit) 
+51 
+were not made available28 in these cases. The summary details are given in the 
+following Table-9.   
+Table-9: Details of Partial-production of documents 
+Sl. No. Commissionerate No. of cases where 
+documents produced 
+No of cases where records 
+produced partially 
+1 Agartala 37 8 
+2 Bengaluru East 50 50 
+3 Bhavnagar 50 2 
+4 Bhopal 46 1 
+5 Bolpur 50 24 
+6 Guwahati 50 7 
+7 Ludhiana 9 8 
+8 Madurai 36 34 
+9 Mangaluru 6 5 
+10 Mysuru 30 30 
+11 Panchkula 46 35 
+12 Patna-I 50 47 
+13 Puducherry 7 4 
+14 Rohtak 23 23 
+15 Salem 50 13 
+16 Udaipur 50 18 
+ Total 590 309 
+Due to partial production of files, Audit could not examine the effectiveness of 
+action taken and correctness of tax and penalty demanded in these cases. 
+This was pointed out to the Department /Ministry (March 2023 to September 
+2023/July 2024). Reply of the Department/Ministry was awaited (November 
+2024). 
+5.1.2.2  Non/short creation of demand for tax and penalty during EWB 
+verification 
+ 
+As per Section 129 (1) of CGST Act, when the goods and vehicle are detained 
+for any contravention of the provisions of the Act, then the same shall be 
+released on payment of the applicable tax and equal amount of penalty (upto 
+31 December 2021). With effect from 1 January 2022, penalty at 200 per cent 
+of the applicable tax alone was required to be collected. 
+According to the Guidelines issued by the Board 29, the proper officer shall 
+upload demand order (MOV-09) on the common portal and demand accruing 
+from the proceedings shall be added in the Electronic Liability Register and the 
+payment made shall be credited to such electronic liability register by debiting 
+ 
+28  Audit noticed that some of the prescribed documents like MOV -3, MOV-4, MOV-5, MOV-
+6, MOV-8, etc., used during the interception of vehicles for verification of EWBs, were not 
+available in the records produced to Audit. 
+29  Para 2(h) of Circular 41/15/2018-GST dated 13 April 2018.  
+
+Report No. 12 of 2025 (Performance Audit) 
+52 
+the electronic cash ledger or the electronic credit ledger of the concerned 
+person.   
+Scrutiny of 1, 405 booked cases pertaining to 58 Commissionerates revealed 
+that in respect of 200 cases, though vehicles were release d but demand of  
+₹ 2.60 crore was not created. 
+Further in respect of 93 cases, there was short demand of ₹ 0.79 crore; the 
+details of which are provided below in Table-10.   
+Table-10: Non/Short creation of demand 
+(₹ in crore) 
+Sl. 
+No. 
+Gist of 
+discrepancies 
+noticed 
+Details No. of 
+cases 
+Amount involved 
+Tax Penalty Fine Total 
+1 Demand was not 
+created during 
+interception of 
+vehicles 
+Vehicle released 
+without creating 
+the demand of 
+tax and penalty in 
+the system 
+200 1.17 1.43 0 2.60 
+2 Short-creation of 
+demand for either 
+tax or penalty 
+Short-collection 
+and short -
+creation of 
+demand for 
+tax/penalty 
+93 0.41 0.31 0.07 0.79 
+Total 293 1.58 1.74 0.07 3.39 
+On this being pointed out (between  2023 March and August 2023),  the 
+Department/Ministry accepted the audit observations in 61 cases, involving 
+money value of ₹ 0.65 crore.  The Department/Ministry in respect of 61 cases 
+stated that EWB System was newly introduced at the time and functionalities 
+for raising DRC-3 and DRC-7 were not available and in some cases the persons 
+involved were unregistered under GST and ra ising the demand was not 
+required and therefore the vehicles were released on collection of tax/penalty.   
+In respect of one  case, it was replied that DRC -3 challan was forwarded; 
+however, the same was not received in Audit. 
+Moreover, action to protect the revenue in these cases was not intimated.  
+Department needs to examine these cases and ensure recovery of revenue in 
+all the cases. 
+The reply in respect of remaining 170 cases was awaited (November 2024). 
+ 
+ 
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+53 
+5.1.2.3 Non-adherence to Guidelines for interception of vehicles 
+ 
+The CBIC had provided guidelines, vide three Circulars30, on the procedure for 
+interception of conveyances for inspection of goods in movement, and 
+detention, release and confiscation of such goods and conveyances. Audit 
+examined the extent of adherence to the procedures prescribed by the CBIC.  
+Audit observed procedural deviations in 17 cases  as given in Table-11 below: 
+Table-11: Procedural lapses by the departmental officer 
+Details of deficiencies 
+noticed 
+No. of 
+Commissi-
+onerates 
+Total 
+No. of 
+Booked 
+cases 
+No. of 
+Booked 
+cases 
+selected as 
+Sample 
+No. of 
+Booked 
+cases 
+verified 
+No. of 
+Booked 
+cases in 
+which 
+deficiency 
+noticed 
+Improper follow up of 
+procedure (during 
+interception of vehicles, MOV 
+forms were not used, instead, 
+summons were issued under 
+Section 70 of the CGST Act  
+and tax and penalty were 
+collected for deficiencies) 
+1 99 50 50 6 
+Improper procedure followed 
+(Orders singed by 
+Superintendent instead of 
+Assistant Commissioner, 
+Forms not signed, etc.) 
+5 475 230 205 11 
+On this being pointed  out (between March 2023 and August 2023) the 
+Department/Ministry accepted the audit observations in eight cases.  In 
+respect of three cases, it was replied that the transactions related to imports 
+and no suppression of tax was observed and hence penalty under section 122 
+of the CGST Act was levied. The reply was not acceptable as for non-generation 
+of EWB, action was required to be initiated under section 129 of the CGST Act 
+demanding the applicable tax and equal amount of penalty . In respect of 
+another case, it was replied that the vehicle was released after payment of Tax 
+& penalty by the taxpayer. The reply was silent on non -adherence of the 
+prescribed procedure (form MOV-05 was not available and form MOV-06 was 
+not signed by the proper officer) . In respect of another case, the Ministry 
+replied that the payment of penalty was made through DRC-03 and therefore, 
+MOV-10 was not issued. The reply was not accepted as the payment was made 
+only after the prescribed period; for which action was requited to be taken to 
+confiscate the goods by issuing MOV-10.    
+ 
+30  Circular No. 41/15/2018-GST dated 13 April 2018, Circular No. 49/23/2018-GST dated 21 
+June 2018 and Circular No.64/38/2018-GST dated 14 September 2018. 
+
+Report No. 12 of 2025 (Performance Audit) 
+54 
+Reply in respect of remaining four cases was awaited (November 2024). 
+5.1.3 EWB of more than threshold limit generated by unregistered 
+taxpayers  
+ 
+As per Section 22 of the CGST Act, every supplier shall be liable to be registered 
+under the Act in the State or Union territory, other than special category 
+States, from where he makes a taxable supply of goods or services or both, if 
+his aggregate turnover in a financial year exceeds 20 lakh rupees. The limit was 
+increased to  ₹ 40 lakh 31 from 1  April 2019. An unregistered person can 
+generate EWB by registering himself to the EWB system. 
+During the data analysis, Audit identified 3 ,585 EWBs relating to supplies 
+where the suppliers were unregistered persons. The value of the transactions 
+in each EWB exceeded the threshold limit of ₹ 40 lakh, prescribed for 
+registration under the CGST Act. Thus, these taxpayers should have been 
+registered under GST. Further, the EWB system did not prevent unregistered 
+persons taxpayers to generate EWB exceeding the threshold limit. 
+The details were shared with 20 Zones ( between June 2023 and September 
+2023) for examining and taking remedial action. Reply for the same was 
+awaited (November 2024).   
+Recommendation 9: Department may consider incorporati ng validation 
+control in EWB system to restrict generation of EWBs of more than threshold 
+limit where the suppliers were unregistered persons. 
+The Ministry stated (October 2024 and November 2024) that on 
+recommendation of GST Council a fourth proviso to sub -rule (3) of 138 of the 
+CGST Rules was being inserted and the said amendment ha d not yet been 
+notified32.   ENR -0333 facility was being introduced and the same will address 
+this issue.  Unregistered persons who are required to generate EWB must 
+submit their details electronically using Form GST -ENR-03.  On submission, a 
+unique enrolment number will be issued. This facility aims to enable 
+unregistered persons to generate EWBs and enhance transparency in 
+movement of goods. Further, GSTN had been entrusted for developing the 
+functionality for the same on the common portal.    
+The Ministry replied (November 2024) that the cases are being shared with 
+field formations for taking action. 
+ 
+31  The limit is ₹ 20 lakh for special category States. 
+32  Since notified by notification No.12/2024 - Central Tax dated 10 July 2024. 
+33   Form for application of enrolment by the unregistered persons. 
+
+Report No. 12 of 2025 (Performance Audit) 
+55 
+5.2 Impact on State Goods and Services Tax 
+GST payments includes various components such as CGST, IGST, SGST, etc. and 
+impact the revenue of both Union and the States/UTs. For the audit 
+observations highlighted in this report, the monetary impact of findings on the 
+revenue of the States/UTs is given in Appendix-III.  
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+56 
+  
+ 
+ 
+
+Report No. 12 of 2025 (Performance Audit) 
+57 
+Chapter 6: Conclusion and Recommendations 
+ 
+6.1 Conclusion 
+During the Performance Audit of EWB System under GST, Audit observed 
+deficiencies in effectiveness of EWB system and noticed instances of 
+composition taxpayers generating EWBs for inter-State supplies, generating 
+EWBs crossing threshold limit of composition scheme, taxpayers generating 
+EWBs but filing nil returns, taxpayers generating EWBs but not filing returns, 
+taxpayers generating EWB after the cancellation of registration and taxpayers 
+using single invoice for generating multiple EWBs. Audit observed 563 
+instances involving tax effect /mis-match of ITC ₹ 866.59 crore (inclusive of 
+interest). Out of this, the Ministry/Department  accepted 313 observations 
+with money value of ₹ 444.68 crore. Further, the Ministry/Department 
+reported recovery of ₹ 7.98 crore in 23 cases. 
+In respect of preventive functions of the Department, Audit observed 
+administrative deficiencies such as not having dedicated setup for verification 
+of EWBs, insufficient patrolling vehicles, in adequate manpower, not having 
+targets or insufficient verification of EWBs against the targets and insufficient 
+use of analytical reports of NIC on EWBs.   Audit also observed deficiencies in 
+interception of vehicles by the Department, involving non/short collection of 
+tax and penalty and non /short creation of demand in the system. 
+Discrepancies observed in 293 instances involved tax effect of ₹ 3.39 crore. 
+6.2 Recommendations 
+Recommendation 1 : Department may incorporate validation control in the 
+EWB system to alert the CLS taxpayer, as well as the departmental officer, 
+about crossing the threshold limit and for generating EWB for inter -State 
+supply.    
+Recommendation 2 : Department may incorporate validation control in the 
+EWB system to identify the taxpayers generating high value EWBs but not 
+discharging tax liability and reporting such taxpayers to the proper officers. 
+Recommendation 3: Department may consider issuing suitable instructions to 
+the proper officers for considering EWBs generated by the taxpayer before 
+cancellation of registration retrospectively and taking action for recovery of tax 
+wherever applicable. 
+Recommendation 4 : Department may incorporate validation control in the 
+EWB system to alert taxpayer and departmental officer on generation of 
+multiple EWBs with single invoice/similar invoice.   
+
+Report No. 12 of 2025 (Performance Audit) 
+58 
+Recommendation 5 : Department may incorporate validation control in the 
+EWB system to alert taxpayers whenever EWB is generated for movement of 
+banned goods.  
+Recommendation 6 : Department may incorporate validation control in the 
+EWB system to red flag/prevent abnormal ly high value and inconsistent data 
+in EWBs.    
+Recommendation 7 : Department may consider to ensure availability of 
+manpower and patrolling vehicles for adequacy and effectiveness of EWB 
+verification to protect revenue. 
+Recommendation 8: Department may consider issuing suitable instructions for 
+using NIC Analytical reports on EWBs for planning, execution and monitoring 
+the interception of vehicles. 
+Recommendation 9: Department may consider incorporating validation 
+control in EWB system to restrict generation of EWBs of more than threshold 
+limit where the suppliers were unregistered persons. 
+New Delhi (SMITA GOPAL) 
+Dated: 19 June 2025 Principal Director (Goods and Services Tax) 
+Countersigned 
+New Delhi (K. SANJAY MURTHY) 
+Dated: 23 June 2025 Comptroller and Auditor General of India 
+
+
+ 
+Appendices 
+
+Report No. 12 of 2025 (Performance Audit) 
+59 
+Appendix-I 
+Threshold limit for intra-State EWBs 
+(Refer paragraph 1.1) 
+ 
+Sl. No. Name of the State Threshold Limit 
+1 Andhra Pradesh ₹ 50,000 
+2 Andaman and Nicobar Islands ₹ 50,000 
+3 Arunachal Pradesh ₹ 50,000 
+4 Assam ₹ 50,000 
+5 Bihar ₹ 1,00,000 
+6 Chhattisgarh ₹ 50,000 
+7 Chandigarh ₹ 50,000 
+8 Dadra Nagar Haveli ₹ 50,000 
+9 Delhi ₹ 1,00,000 
+10 Goa ₹ 50,000 
+11 Gujarat ₹ 50,000 
+12 Haryana ₹ 50,000 
+13 Himachal Pradesh ₹ 50,000 
+14 Jammu & Kashmir ₹ 50,000 
+15 Jharkhand ₹ 1,00,000 
+16 Karnataka ₹ 50,000 
+17 Kerala ₹ 50,000 
+18 Ladakh ₹ 50,000 
+19 Lakshadweep ₹ 50,000 
+20 Madhya Pradesh ₹ 1,00,000 
+21 Maharashtra ₹ 1,00,000 
+22 Manipur ₹ 50,000 
+23 Meghalaya ₹ 50,000 
+24 Mizoram ₹ 50,000 
+25 Nagaland ₹ 50,000 
+26 Odisha ₹ 50,000 
+
+Report No. 12 of 2025 (Performance Audit) 
+60 
+Sl. No. Name of the State Threshold Limit 
+27 Puducherry ₹ 50,000 
+28 Punjab ₹ 50,000 
+29 Rajasthan ₹ 1,00,000 / 2,00,000* 
+30 Sikkim ₹ 50,000 
+31 Tamil Nadu ₹ 50,000 
+32 Telangana ₹ 50,000 
+33 Tripura ₹ 50,000 
+34 Uttar Pradesh ₹ 50,000 
+35 Uttarakhand ₹ 50,000 
+36 West Bengal ₹ 50,000 
+*  Upto 31 March 2022, the threshold limit for EWB in respect of intra -State 
+transactions was ₹ 1 lakh.  With effect from 1 April 2022, the threshold limited 
+was increased to ₹ 2 lakh in respect of movement of goods commences and 
+terminates within the area of same city without crossing the city. In respect 
+of intra-State transactions, the threshold limit is ₹ 1 lakh. 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+61 
+Appendix-II 
+Key Problem Areas 
+(Refer paragraph 2.4) 
+ 
+Sl. No. KPA Details 
+1 Taxpayers with only outward supply EWBs 
+2 EWBs generated by Nil filers 
+3 EWBs generated by return defaulters (non-filers) 
+4 EWBs generated after cancellation of registration of the taxpayer 
+5 High value EWBs generated within six months of GST registration 
+6 EWBs of Hi -risk taxpayers identified by Maharashtra Tax Authority and 
+Directorate General of Analytics and Risk Management (DGARM) 
+7 EWBs of taxpayers whose registration was subsequently cancelled 
+8 Composition Taxpayers generating EWBs for inter State supply 
+9 Composition Taxpayers who exceeded threshold limit 
+10 Generation of multiple EWBs with single Invoice 
+11 EWBs of Directorate General of Foreign Trade (DGFT) blacklisted entities. 
+12 EWBs of taxpayers having disproportionate inward-outward supply ratio. 
+13 EWBs with high distance from PIN to PIN 
+14 EWBs subsequently rejected by the recipient 
+15 EWBs with dis-proportionate outward Supply ratio 
+16 EWBs using Invalid Pin codes 
+17 EWBs  extended beyond eight hours 
+18 EWB generated with Registration Numbers of Vehicles whose registration 
+had been cancelled  
+19 EWB generated using Numbers of two wheeler vehicles 
+20 EWB generated with Registration Numbers of Surrendered vehicles 
+21 EWB generated and later on cancelled 
+22 EWBs generated with Registration Numbers of Scrapped vehicles 
+23 Registration Numbers of Stolen vehicles used in generation EWBs 
+24 EWBs belonging to Ministry of Corporate Affairs (MCA) Defaulters 
+25 EWB generated with Registration Numbers of Suspended vehicles  
+26 EWB generated by Income Tax defaulters 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+62 
+Appendix - III 
+Impact on State Goods and Service Tax 
+(Refer Paragraph 5.2) 
+Amount in ₹ Crore 
+State/UT 
+Para Number 
+SGST Amount 
+involved 
+SGST Amount 
+accepted 
+SGST Amount 
+recovered 
+Andhra Pradesh 0.37 0.34 0.00 
+4.1.2 (b) 0.01 0.01 0.00 
+4.1.2 (c) 0.32 0.32 0.00 
+4.1.2 (d) 0.00 0.00 0.00 
+4.1.2 (a) 0.00 0.00 0.00 
+4.1.4 (a) 0.04 0.00 0.00 
+Assam 0.30 0.00 0.00 
+4.1.2 (b) 0.03 0.00 0.00 
+4.1.2 (e) 0.05 0.00 0.00 
+4.1.2 (f) 0.04 0.00 0.00 
+4.1.4 (a) 0.15 0.00 0.00 
+5.1.2.2 0.02 0.00 0.00 
+Bihar 0.28 0.00 0.00 
+4.1.2 (c) 0.04 0.00 0.00 
+4.1.2 (d) 0.01 0.00 0.00 
+4.1.2 (e) 0.00 0.00 0.00 
+4.1.2 (f) 0.17 0.00 0.00 
+4.1.2 (a) 0.02 0.00 0.00 
+5.1.2.2 0.05 0.00 0.00 
+Chhattisgarh 0.18 0.10 0.02 
+4.1.2 (c) 0.02 0.02 0.00 
+4.1.2 (d) 0.05 0.01 0.00 
+4.1.2 (f) 0.05 0.05 0.00 
+5.1.2.2 0.05 0.02 0.02 
+Delhi 64.40 51.63 0.00 
+4.1.2 (b) 28.70 28.70 0.00 
+4.1.2 (d) 0.20 0.03 0.00 
+4.1.2 (e) 6.55 5.88 0.00 
+4.1.2 (f) 6.88 5.56 0.00 
+4.1.4 (a) 22.07 11.47 0.00 
+Gujarat 9.43 9.43 0.00 
+4.1.2 (b) 0.05 0.05 0.00 
+4.1.2 (c) 0.67 0.67 0.00 
+4.1.2 (e) 1.64 1.64 0.00 
+4.1.2 (f) 4.58 4.58 0.00 
+4.1.4 (a) 2.47 2.47 0.00 
+5.1.2.2 0.03 0.03 0.00 
+
+Report No. 12 of 2025 (Performance Audit) 
+63 
+State/UT 
+Para Number 
+SGST Amount 
+involved 
+SGST Amount 
+accepted 
+SGST Amount 
+recovered 
+Haryana 0.01 0.00 0.00 
+4.1.2 (f) 0.01 0.00 0.00 
+Himachal Pradesh 0.00 0.00 0.00 
+4.1.2 (a) 0.00 0.00 0.00 
+Jharkhand 4.38 4.12 3.50 
+4.1.2 (b) 0.07 0.07 0.00 
+4.1.2 (e) 0.74 0.63 0.00 
+4.1.2 (f) 3.52 3.51 3.50 
+5.1.2.2 0.05 0.01 0.00 
+Karnataka 0.46 0.15 0.00 
+4.1.2 (c) 0.01 0.01 0.00 
+4.1.2 (e) 0.05 0.05 0.00 
+4.1.2 (f) 0.40 0.09 0.00 
+4.1.2 (a) 0.00 0.00 0.00 
+5.1.2.2 0.00 0.00 0.00 
+Kerala 0.28 0.10 0.00 
+4.1.2 (c) 0.01 0.01 0.00 
+4.1.2 (d) 0.02 0.01 0.00 
+4.1.2 (f) 0.25 0.09 0.00 
+4.1.4 (a) 0.00 0.00 0.00 
+Madhya Pradesh 1.96 0.43 0.00 
+4.1.2 (b) 0.02 0.02 0.00 
+4.1.2 (c) 0.00 0.00 0.00 
+4.1.2 (d) 0.00 0.00 0.00 
+4.1.2 (f) 1.25 0.21 0.00 
+4.1.2 (a) 0.35 0.00 0.00 
+4.1.4 (a) 0.20 0.20 0.00 
+5.1.2.2 0.13 0.00 0.00 
+Maharashtra 8.37 6.94 0.00 
+4.1.2 (b) 6.51 5.29 0.00 
+4.1.2 (c) 0.04 0.04 0.00 
+4.1.2 (d) 0.01 0.00 0.00 
+4.1.2 (e) 0.83 0.83 0.00 
+4.1.2 (f) 0.79 0.79 0.00 
+4.1.4 (a) 0.17 0.00 0.00 
+5.1.2.2 0.04 0.00 0.00 
+Manipur 0.96 0.00 0.00 
+4.1.2 (f) 0.96 0.00 0.00 
+Orissa 18.88 11.27 0.00 
+4.1.2 (b) 1.45 1.45 0.00 
+4.1.2 (d) 0.00 0.00 0.00 
+
+Report No. 12 of 2025 (Performance Audit) 
+64 
+State/UT 
+Para Number 
+SGST Amount 
+involved 
+SGST Amount 
+accepted 
+SGST Amount 
+recovered 
+4.1.2 (e) 3.01 3.00 0.00 
+4.1.2 (f) 1.14 0.22 0.00 
+4.1.2 (a) 0.58 0.58 0.00 
+4.1.4 (a) 12.69 6.02 0.00 
+Puducherry 0.00 0.00 0.00 
+5.1.2.2 0.00 0.00 0.00 
+Punjab 31.05 31.02 0.00 
+4.1.2 (b) 7.33 7.33 0.00 
+4.1.2 (c) 4.77 4.77 0.00 
+4.1.2 (e) 0.76 0.76 0.00 
+4.1.2 (f) 0.98 0.96 0.00 
+4.1.4 (a) 17.21 17.21 0.00 
+Rajasthan 1.64 1.64 0.01 
+4.1.2 (b) 0.52 0.52 0.00 
+4.1.2 (c) 0.04 0.04 0.00 
+4.1.2 (f) 0.01 0.01 0.00 
+4.1.2(a) 0.00 0.00 0.01 
+4.1.4 (a) 1.07 1.07 0.00 
+Tamil Nadu 14.84 10.63 0.10 
+ 4.1.4 (b) 6.70 6.70 0.00 
+4.1.2 (b) 4.08 3.57 0.07 
+4.1.2 (c) 0.00 0.00 0.00 
+4.1.2 (d) 0.18 0.12 0.00 
+4.1.2 (e) 0.00 0.00 0.00 
+4.1.2 (f) 1.73 0.21 0.02 
+4.1.4 (a) 1.22 0.00 0.00 
+4.1.5 (ii) 0.79 0.00 0.00 
+5.1.2.2 0.13 0.02 0.01 
+Telangana 0.20 0.18 0.01 
+4.1.2 (b) 0.17 0.17 0.00 
+5.1.2.2 0.03 0.01 0.01 
+Tripura 0.02 0.00 0.00 
+4.1.2 (b) 0.01 0.00 0.00 
+5.1.2.2 0.01 0.00 0.00 
+Uttar Pradesh 9.12 0.51 0.00 
+4.1.2 (b) 0.97 0.51 0.00 
+4.1.2 (e) 0.05 0.00 0.00 
+4.1.2 (f) 7.02 0.00 0.00 
+4.1.2 (a) 0.01 0.00 0.00 
+4.1.4 (a) 1.06 0.00 0.00 
+5.1.2.2 0.00 0.00 0.00 
+
+Report No. 12 of 2025 (Performance Audit) 
+65 
+State/UT 
+Para Number 
+SGST Amount 
+involved 
+SGST Amount 
+accepted 
+SGST Amount 
+recovered 
+Uttarakhand 46.35 0.00 0.00 
+4.1.2 (b) 37.08 0.00 0.00 
+4.1.2 (d) 0.01 0.00 0.00 
+4.1.2 (f) 9.26 0.00 0.00 
+West Bengal 16.30 2.70 0.01 
+4.1.2 (b) 10.78 0.00 0.00 
+4.1.2 (c) 3.44 2.69 0.00 
+4.1.2 (e) 0.00 0.00 0.00 
+4.1.2 (f) 0.63 0.00 0.00 
+4.1.4 (a) 1.32 0.00 0.00 
+5.1.2.2 0.12 0.01 0.01 
+Grand Total 229.80 131.30 3.65 
+ 
+  
+
+Report No. 12 of 2025 (Performance Audit) 
+66 
+Glossary 
+ACES-GST Automation of Central Excise and Service Tax – Goods and 
+Services Tax 
+ADVAIT Advanced Analytics in Indirect Taxation 
+AO Audit Objective 
+AV Assessable Value 
+CAG Comptroller and Auditor General of India 
+CAG’s (DPC 
+Act, 1971) 
+Comptroller and Auditor General’s (Duties, Powers and 
+Conditions of Service) Act, 1971 
+CBIC Central Board of Indirect Taxes and Customs 
+CEO Chief Executive Officer 
+CGST Central Goods and Services Tax 
+CKD Completely Knocked Down 
+CLS Composition Levy Scheme 
+DDG Deputy Director General 
+DGARM Directorate General of Analytics and Risk Management 
+DGFT Directorate General of Foreign Trade 
+DO Demi Official 
+DRC Demand and Recovery Certificate 
+DTA Domestic Tariff Area 
+EWB E-Waybill 
+FASTag Radio Frequency Identification Technology Tag for toll payments 
+FSSA Food Safety and Standards Act 
+FY Financial Year 
+GST Goods and Services Tax 
+GSTIN Goods and Services Tax Identification Number 
+GSTN Goods and Services Tax Network 
+GSTR Goods and Services Tax Return 
+HSN Harmonised System of Nomenclature 
+
+Report No. 12 of 2025 (Performance Audit) 
+67 
+ID Identification 
+IGST Inter-state Goods and Services Tax 
+ITC Input Tax Credit 
+KPA Key Problem Area 
+MIS Management Information System 
+MCA Ministry of Corporate Affairs 
+MOV MOV forms are used in Inspection, Verification and Detention of 
+goods in transit 
+MV Money Value 
+NIC National Informatics Centre 
+OIO Order-in-Original 
+PA Performance Audit 
+PAN Permanent Identification Number 
+RC Registration Certificate 
+SCN Show Cause Notice 
+SEZ Special Economic Zone 
+SGST State Goods and Services Act 
+SKD Semi-Knocked Down  
+SOP Standard Operating Procedure 
+SSO-ID Single Sign-On Identification 
+UT Union Territory   
+VAHAN Portal maintained by Ministry of Road Transport & Highways  
+URP Un-Registered Person 
+WS Weighted Score 
+ 
