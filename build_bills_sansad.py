@@ -321,19 +321,32 @@ def write_index_meta(records: list[dict], shard_entries: list[dict]) -> None:
 
 
 def write_manifest(records: list[dict], extract_status: dict) -> None:
-    """Build manifest.json with deeper stats. Diagnostics-oriented; the app
-    reads index-meta.json + meta.json instead. This stays as a human-readable
-    snapshot of the scrape."""
+    """Build manifest.json with deeper stats + per-bill `texts` map.
+
+    The `texts` map is keyed by compositeId and used by the app to know
+    which bills have extracted text without per-bill probing — same shape
+    as DRSC's manifest.texts and CAG's manifest.texts. Without it, the
+    app's "with text" count stays at 0 even when text/<id>.txt files exist
+    on the mirror.
+    """
     from collections import Counter
     by_status = Counter(r.get("status") or "(null)" for r in records)
     by_type   = Counter(r.get("billType") or "(null)" for r in records)
     by_year   = Counter(r.get("billYear") for r in records if r.get("billYear"))
     with_intro_pdf      = sum(1 for r in records if r.get("billIntroducedFile"))
     with_canonical_pdf  = sum(1 for r in records if _has_any_canonical_pdf(r))
-    with_text           = sum(1 for r in records if (TEXT_DIR / f"{r['compositeId']}.txt").exists())
     became_law          = sum(1 for r in records if r.get("actNo"))
     with_report_link    = sum(1 for r in records if r.get("reportFile"))
     with_gazette_link   = sum(1 for r in records if r.get("billGazettedFile"))
+
+    # Per-bill texts map. Walk the records once + check existence per id.
+    texts: dict = {}
+    for r in records:
+        cid = r["compositeId"]
+        text_file = TEXT_DIR / f"{cid}.txt"
+        if text_file.exists():
+            texts[cid] = {"url": f"text/{cid}.txt"}
+    with_text = len(texts)
 
     manifest = {
         "scraper_version": SCRAPER_VERSION,
@@ -355,6 +368,7 @@ def write_manifest(records: list[dict], extract_status: dict) -> None:
             "max": max(by_year) if by_year else None,
         },
         "this_run": extract_status,
+        "texts": texts,
     }
     with open(MANIFEST_JSON, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)

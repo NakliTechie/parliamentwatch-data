@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-10T08:41:34Z",
+  "scraped_at": "2026-05-10T08:54:28Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9913,
@@ -31,9 +31,4487 @@
     "max": 2026
   },
   "this_run": {
-    "extracted": 1486,
-    "failed": 14,
+    "extracted": 0,
+    "failed": 0,
     "rate_limited": false,
-    "elapsed": 1049.6181287765503
+    "elapsed": 0.0
+  },
+  "texts": {
+    "XXXVIII_2019_R": {
+      "url": "text/XXXVIII_2019_R.txt"
+    },
+    "XXXVIII_2021_R": {
+      "url": "text/XXXVIII_2021_R.txt"
+    },
+    "XXXVIII_2022_R": {
+      "url": "text/XXXVIII_2022_R.txt"
+    },
+    "XXXVIII_2023_R": {
+      "url": "text/XXXVIII_2023_R.txt"
+    },
+    "XXXVIII_2024_R": {
+      "url": "text/XXXVIII_2024_R.txt"
+    },
+    "XXXVIII_2025_R": {
+      "url": "text/XXXVIII_2025_R.txt"
+    },
+    "XXXVII_2019_R": {
+      "url": "text/XXXVII_2019_R.txt"
+    },
+    "XXXVII_2021_R": {
+      "url": "text/XXXVII_2021_R.txt"
+    },
+    "XXXVII_2022_R": {
+      "url": "text/XXXVII_2022_R.txt"
+    },
+    "XXXVII_2023_R": {
+      "url": "text/XXXVII_2023_R.txt"
+    },
+    "XXXVII_2024_R": {
+      "url": "text/XXXVII_2024_R.txt"
+    },
+    "XXXVII_2025_R": {
+      "url": "text/XXXVII_2025_R.txt"
+    },
+    "XXXVII_2026_R": {
+      "url": "text/XXXVII_2026_R.txt"
+    },
+    "XXXVI_2019_R": {
+      "url": "text/XXXVI_2019_R.txt"
+    },
+    "XXXVI_2021_R": {
+      "url": "text/XXXVI_2021_R.txt"
+    },
+    "XXXVI_2023_R": {
+      "url": "text/XXXVI_2023_R.txt"
+    },
+    "XXXVI_2024_R": {
+      "url": "text/XXXVI_2024_R.txt"
+    },
+    "XXXVI_2025_R": {
+      "url": "text/XXXVI_2025_R.txt"
+    },
+    "XXXV_2019_R": {
+      "url": "text/XXXV_2019_R.txt"
+    },
+    "XXXV_2021_R": {
+      "url": "text/XXXV_2021_R.txt"
+    },
+    "XXXV_2022_R": {
+      "url": "text/XXXV_2022_R.txt"
+    },
+    "XXXV_2024_R": {
+      "url": "text/XXXV_2024_R.txt"
+    },
+    "XXXV_2025_R": {
+      "url": "text/XXXV_2025_R.txt"
+    },
+    "XXXIX_2019_R": {
+      "url": "text/XXXIX_2019_R.txt"
+    },
+    "XXXIX_2021_R": {
+      "url": "text/XXXIX_2021_R.txt"
+    },
+    "XXXIX_2022_R": {
+      "url": "text/XXXIX_2022_R.txt"
+    },
+    "XXXIX_2024_R": {
+      "url": "text/XXXIX_2024_R.txt"
+    },
+    "XXXIX_2025_R": {
+      "url": "text/XXXIX_2025_R.txt"
+    },
+    "XXXIV_2019_R": {
+      "url": "text/XXXIV_2019_R.txt"
+    },
+    "XXXIV_2021_R": {
+      "url": "text/XXXIV_2021_R.txt"
+    },
+    "XXXIV_2022_R": {
+      "url": "text/XXXIV_2022_R.txt"
+    },
+    "XXXIV_2023_R": {
+      "url": "text/XXXIV_2023_R.txt"
+    },
+    "XXXIV_2024_R": {
+      "url": "text/XXXIV_2024_R.txt"
+    },
+    "XXXIV_2025_R": {
+      "url": "text/XXXIV_2025_R.txt"
+    },
+    "XXXIV_2026_R": {
+      "url": "text/XXXIV_2026_R.txt"
+    },
+    "XXXIII_2019_R": {
+      "url": "text/XXXIII_2019_R.txt"
+    },
+    "XXXIII_2021_R": {
+      "url": "text/XXXIII_2021_R.txt"
+    },
+    "XXXIII_2022_R": {
+      "url": "text/XXXIII_2022_R.txt"
+    },
+    "XXXIII_2023_R": {
+      "url": "text/XXXIII_2023_R.txt"
+    },
+    "XXXIII_2024_R": {
+      "url": "text/XXXIII_2024_R.txt"
+    },
+    "XXXIII_2025_R": {
+      "url": "text/XXXIII_2025_R.txt"
+    },
+    "XXXIII_2026_R": {
+      "url": "text/XXXIII_2026_R.txt"
+    },
+    "XXXII_2019_R": {
+      "url": "text/XXXII_2019_R.txt"
+    },
+    "XXXII_2020_R": {
+      "url": "text/XXXII_2020_R.txt"
+    },
+    "XXXII_2021_R": {
+      "url": "text/XXXII_2021_R.txt"
+    },
+    "XXXII_2022_R": {
+      "url": "text/XXXII_2022_R.txt"
+    },
+    "XXXII_2023_R": {
+      "url": "text/XXXII_2023_R.txt"
+    },
+    "XXXII_2024_R": {
+      "url": "text/XXXII_2024_R.txt"
+    },
+    "XXXII_2025_R": {
+      "url": "text/XXXII_2025_R.txt"
+    },
+    "XXXII_2026_R": {
+      "url": "text/XXXII_2026_R.txt"
+    },
+    "XXXI_2020_R": {
+      "url": "text/XXXI_2020_R.txt"
+    },
+    "XXXI_2021_R": {
+      "url": "text/XXXI_2021_R.txt"
+    },
+    "XXXI_2022_R": {
+      "url": "text/XXXI_2022_R.txt"
+    },
+    "XXXI_2023_R": {
+      "url": "text/XXXI_2023_R.txt"
+    },
+    "XXXI_2024_R": {
+      "url": "text/XXXI_2024_R.txt"
+    },
+    "XXXI_2025_R": {
+      "url": "text/XXXI_2025_R.txt"
+    },
+    "XXXI_2026_R": {
+      "url": "text/XXXI_2026_R.txt"
+    },
+    "XXX_2019_R": {
+      "url": "text/XXX_2019_R.txt"
+    },
+    "XXX_2020_R": {
+      "url": "text/XXX_2020_R.txt"
+    },
+    "XXX_2021_R": {
+      "url": "text/XXX_2021_R.txt"
+    },
+    "XXX_2022_R": {
+      "url": "text/XXX_2022_R.txt"
+    },
+    "XXX_2023_R": {
+      "url": "text/XXX_2023_R.txt"
+    },
+    "XXX_2024_R": {
+      "url": "text/XXX_2024_R.txt"
+    },
+    "XXX_2025_R": {
+      "url": "text/XXX_2025_R.txt"
+    },
+    "XXX_2026_R": {
+      "url": "text/XXX_2026_R.txt"
+    },
+    "XXVIII_2019_R": {
+      "url": "text/XXVIII_2019_R.txt"
+    },
+    "XXVIII_2020_R": {
+      "url": "text/XXVIII_2020_R.txt"
+    },
+    "XXVIII_2021_R": {
+      "url": "text/XXVIII_2021_R.txt"
+    },
+    "XXVIII_2023_R": {
+      "url": "text/XXVIII_2023_R.txt"
+    },
+    "XXVIII_2024_R": {
+      "url": "text/XXVIII_2024_R.txt"
+    },
+    "XXVIII_2025_R": {
+      "url": "text/XXVIII_2025_R.txt"
+    },
+    "XXVII_2019_R": {
+      "url": "text/XXVII_2019_R.txt"
+    },
+    "XXVII_2020_R": {
+      "url": "text/XXVII_2020_R.txt"
+    },
+    "XXVII_2022_R": {
+      "url": "text/XXVII_2022_R.txt"
+    },
+    "XXVII_2023_R": {
+      "url": "text/XXVII_2023_R.txt"
+    },
+    "XXVII_2024_R": {
+      "url": "text/XXVII_2024_R.txt"
+    },
+    "XXVII_2025_R": {
+      "url": "text/XXVII_2025_R.txt"
+    },
+    "XXVII_2026_R": {
+      "url": "text/XXVII_2026_R.txt"
+    },
+    "XXVI_2019_R": {
+      "url": "text/XXVI_2019_R.txt"
+    },
+    "XXVI_2020_R": {
+      "url": "text/XXVI_2020_R.txt"
+    },
+    "XXVI_2021_R": {
+      "url": "text/XXVI_2021_R.txt"
+    },
+    "XXVI_2022_R": {
+      "url": "text/XXVI_2022_R.txt"
+    },
+    "XXVI_2023_R": {
+      "url": "text/XXVI_2023_R.txt"
+    },
+    "XXVI_2024_R": {
+      "url": "text/XXVI_2024_R.txt"
+    },
+    "XXVI_2025_R": {
+      "url": "text/XXVI_2025_R.txt"
+    },
+    "XXV_2019_R": {
+      "url": "text/XXV_2019_R.txt"
+    },
+    "XXV_2020_R": {
+      "url": "text/XXV_2020_R.txt"
+    },
+    "XXV_2021_R": {
+      "url": "text/XXV_2021_R.txt"
+    },
+    "XXV_2022_R": {
+      "url": "text/XXV_2022_R.txt"
+    },
+    "XXV_2023_R": {
+      "url": "text/XXV_2023_R.txt"
+    },
+    "XXV_2024_R": {
+      "url": "text/XXV_2024_R.txt"
+    },
+    "XXV_2025_R": {
+      "url": "text/XXV_2025_R.txt"
+    },
+    "XXV_2026_R": {
+      "url": "text/XXV_2026_R.txt"
+    },
+    "XXIX_2019_R": {
+      "url": "text/XXIX_2019_R.txt"
+    },
+    "XXIX_2020_R": {
+      "url": "text/XXIX_2020_R.txt"
+    },
+    "XXIX_2021_R": {
+      "url": "text/XXIX_2021_R.txt"
+    },
+    "XXIX_2022_R": {
+      "url": "text/XXIX_2022_R.txt"
+    },
+    "XXIX_2025_R": {
+      "url": "text/XXIX_2025_R.txt"
+    },
+    "XXIX_2026_R": {
+      "url": "text/XXIX_2026_R.txt"
+    },
+    "XXIV_2019_R": {
+      "url": "text/XXIV_2019_R.txt"
+    },
+    "XXIV_2020_R": {
+      "url": "text/XXIV_2020_R.txt"
+    },
+    "XXIV_2022_R": {
+      "url": "text/XXIV_2022_R.txt"
+    },
+    "XXIV_2024_R": {
+      "url": "text/XXIV_2024_R.txt"
+    },
+    "XXIV_2025_R": {
+      "url": "text/XXIV_2025_R.txt"
+    },
+    "XXIII_2019_R": {
+      "url": "text/XXIII_2019_R.txt"
+    },
+    "XXIII_2021_R": {
+      "url": "text/XXIII_2021_R.txt"
+    },
+    "XXIII_2022_R": {
+      "url": "text/XXIII_2022_R.txt"
+    },
+    "XXIII_2023_R": {
+      "url": "text/XXIII_2023_R.txt"
+    },
+    "XXIII_2024_R": {
+      "url": "text/XXIII_2024_R.txt"
+    },
+    "XXIII_2025_R": {
+      "url": "text/XXIII_2025_R.txt"
+    },
+    "XXII_2019_R": {
+      "url": "text/XXII_2019_R.txt"
+    },
+    "XXII_2020_R": {
+      "url": "text/XXII_2020_R.txt"
+    },
+    "XXII_2021_R": {
+      "url": "text/XXII_2021_R.txt"
+    },
+    "XXII_2022_R": {
+      "url": "text/XXII_2022_R.txt"
+    },
+    "XXII_2024_R": {
+      "url": "text/XXII_2024_R.txt"
+    },
+    "XXII_2026_R": {
+      "url": "text/XXII_2026_R.txt"
+    },
+    "XXI_2019_R": {
+      "url": "text/XXI_2019_R.txt"
+    },
+    "XXI_2020_R": {
+      "url": "text/XXI_2020_R.txt"
+    },
+    "XXI_2021_R": {
+      "url": "text/XXI_2021_R.txt"
+    },
+    "XXI_2022_R": {
+      "url": "text/XXI_2022_R.txt"
+    },
+    "XXI_2023_R": {
+      "url": "text/XXI_2023_R.txt"
+    },
+    "XXI_2024_R": {
+      "url": "text/XXI_2024_R.txt"
+    },
+    "XXI_2025_R": {
+      "url": "text/XXI_2025_R.txt"
+    },
+    "XX_2019_R": {
+      "url": "text/XX_2019_R.txt"
+    },
+    "XX_2020_R": {
+      "url": "text/XX_2020_R.txt"
+    },
+    "XX_2021_R": {
+      "url": "text/XX_2021_R.txt"
+    },
+    "XX_2022_R": {
+      "url": "text/XX_2022_R.txt"
+    },
+    "XX_2023_R": {
+      "url": "text/XX_2023_R.txt"
+    },
+    "XX_2024_R": {
+      "url": "text/XX_2024_R.txt"
+    },
+    "XX_2025_R": {
+      "url": "text/XX_2025_R.txt"
+    },
+    "XX_2026_R": {
+      "url": "text/XX_2026_R.txt"
+    },
+    "XVIII_2019_R": {
+      "url": "text/XVIII_2019_R.txt"
+    },
+    "XVIII_2020_R": {
+      "url": "text/XVIII_2020_R.txt"
+    },
+    "XVIII_2021_R": {
+      "url": "text/XVIII_2021_R.txt"
+    },
+    "XVIII_2022_R": {
+      "url": "text/XVIII_2022_R.txt"
+    },
+    "XVIII_2023_R": {
+      "url": "text/XVIII_2023_R.txt"
+    },
+    "XVIII_2024_R": {
+      "url": "text/XVIII_2024_R.txt"
+    },
+    "XVIII_2026_R": {
+      "url": "text/XVIII_2026_R.txt"
+    },
+    "XVII_2019_R": {
+      "url": "text/XVII_2019_R.txt"
+    },
+    "XVII_2020_R": {
+      "url": "text/XVII_2020_R.txt"
+    },
+    "XVII_2022_R": {
+      "url": "text/XVII_2022_R.txt"
+    },
+    "XVII_2023_R": {
+      "url": "text/XVII_2023_R.txt"
+    },
+    "XVII_2026_R": {
+      "url": "text/XVII_2026_R.txt"
+    },
+    "XVI_2019_R": {
+      "url": "text/XVI_2019_R.txt"
+    },
+    "XVI_2020_R": {
+      "url": "text/XVI_2020_R.txt"
+    },
+    "XVI_2022_R": {
+      "url": "text/XVI_2022_R.txt"
+    },
+    "XVI_2024_R": {
+      "url": "text/XVI_2024_R.txt"
+    },
+    "XVI_2025_R": {
+      "url": "text/XVI_2025_R.txt"
+    },
+    "XVI_2026_R": {
+      "url": "text/XVI_2026_R.txt"
+    },
+    "XV_2019_R": {
+      "url": "text/XV_2019_R.txt"
+    },
+    "XV_2021_R": {
+      "url": "text/XV_2021_R.txt"
+    },
+    "XV_2022_R": {
+      "url": "text/XV_2022_R.txt"
+    },
+    "XV_2023_R": {
+      "url": "text/XV_2023_R.txt"
+    },
+    "XV_2024_R": {
+      "url": "text/XV_2024_R.txt"
+    },
+    "XV_2025_R": {
+      "url": "text/XV_2025_R.txt"
+    },
+    "XV_2026_R": {
+      "url": "text/XV_2026_R.txt"
+    },
+    "XLVIII_2019_R": {
+      "url": "text/XLVIII_2019_R.txt"
+    },
+    "XLVIII_2022_R": {
+      "url": "text/XLVIII_2022_R.txt"
+    },
+    "XLVIII_2023_R": {
+      "url": "text/XLVIII_2023_R.txt"
+    },
+    "XLVIII_2024_R": {
+      "url": "text/XLVIII_2024_R.txt"
+    },
+    "XLVIII_2025_R": {
+      "url": "text/XLVIII_2025_R.txt"
+    },
+    "XLVII_2019_R": {
+      "url": "text/XLVII_2019_R.txt"
+    },
+    "XLVII_2022_R": {
+      "url": "text/XLVII_2022_R.txt"
+    },
+    "XLVII_2023_R": {
+      "url": "text/XLVII_2023_R.txt"
+    },
+    "XLVII_2024_R": {
+      "url": "text/XLVII_2024_R.txt"
+    },
+    "XLVII_2025_R": {
+      "url": "text/XLVII_2025_R.txt"
+    },
+    "XLVI_2019_R": {
+      "url": "text/XLVI_2019_R.txt"
+    },
+    "XLVI_2022_R": {
+      "url": "text/XLVI_2022_R.txt"
+    },
+    "XLVI_2023_R": {
+      "url": "text/XLVI_2023_R.txt"
+    },
+    "XLVI_2024_R": {
+      "url": "text/XLVI_2024_R.txt"
+    },
+    "XLVI_2025_R": {
+      "url": "text/XLVI_2025_R.txt"
+    },
+    "XLV_2019_R": {
+      "url": "text/XLV_2019_R.txt"
+    },
+    "XLV_2022_R": {
+      "url": "text/XLV_2022_R.txt"
+    },
+    "XLV_2025_R": {
+      "url": "text/XLV_2025_R.txt"
+    },
+    "XLIX_2019_R": {
+      "url": "text/XLIX_2019_R.txt"
+    },
+    "XLIX_2022_R": {
+      "url": "text/XLIX_2022_R.txt"
+    },
+    "XLIX_2023_R": {
+      "url": "text/XLIX_2023_R.txt"
+    },
+    "XLIX_2024_R": {
+      "url": "text/XLIX_2024_R.txt"
+    },
+    "XLIX_2025_R": {
+      "url": "text/XLIX_2025_R.txt"
+    },
+    "XLIV_2019_R": {
+      "url": "text/XLIV_2019_R.txt"
+    },
+    "XLIV_2022_R": {
+      "url": "text/XLIV_2022_R.txt"
+    },
+    "XLIV_2024_R": {
+      "url": "text/XLIV_2024_R.txt"
+    },
+    "XLIV_2025_R": {
+      "url": "text/XLIV_2025_R.txt"
+    },
+    "XLIII_2021_R": {
+      "url": "text/XLIII_2021_R.txt"
+    },
+    "XLIII_2022_R": {
+      "url": "text/XLIII_2022_R.txt"
+    },
+    "XLIII_2023_R": {
+      "url": "text/XLIII_2023_R.txt"
+    },
+    "XLIII_2024_R": {
+      "url": "text/XLIII_2024_R.txt"
+    },
+    "XLIII_2025_R": {
+      "url": "text/XLIII_2025_R.txt"
+    },
+    "XLII_2019_R": {
+      "url": "text/XLII_2019_R.txt"
+    },
+    "XLII_2021_R": {
+      "url": "text/XLII_2021_R.txt"
+    },
+    "XLII_2022_R": {
+      "url": "text/XLII_2022_R.txt"
+    },
+    "XLII_2023_R": {
+      "url": "text/XLII_2023_R.txt"
+    },
+    "XLII_2024_R": {
+      "url": "text/XLII_2024_R.txt"
+    },
+    "XLII_2025_R": {
+      "url": "text/XLII_2025_R.txt"
+    },
+    "XLI_2021_R": {
+      "url": "text/XLI_2021_R.txt"
+    },
+    "XLI_2022_R": {
+      "url": "text/XLI_2022_R.txt"
+    },
+    "XLI_2023_R": {
+      "url": "text/XLI_2023_R.txt"
+    },
+    "XLI_2025_R": {
+      "url": "text/XLI_2025_R.txt"
+    },
+    "XLI_2026_R": {
+      "url": "text/XLI_2026_R.txt"
+    },
+    "XL_2019_R": {
+      "url": "text/XL_2019_R.txt"
+    },
+    "XL_2021_R": {
+      "url": "text/XL_2021_R.txt"
+    },
+    "XL_2022_R": {
+      "url": "text/XL_2022_R.txt"
+    },
+    "XL_2023_R": {
+      "url": "text/XL_2023_R.txt"
+    },
+    "XL_2024_R": {
+      "url": "text/XL_2024_R.txt"
+    },
+    "XL_2025_R": {
+      "url": "text/XL_2025_R.txt"
+    },
+    "XIX_2019_R": {
+      "url": "text/XIX_2019_R.txt"
+    },
+    "XIX_2020_R": {
+      "url": "text/XIX_2020_R.txt"
+    },
+    "XIX_2022_R": {
+      "url": "text/XIX_2022_R.txt"
+    },
+    "XIX_2023_R": {
+      "url": "text/XIX_2023_R.txt"
+    },
+    "XIX_2024_R": {
+      "url": "text/XIX_2024_R.txt"
+    },
+    "XIX_2025_R": {
+      "url": "text/XIX_2025_R.txt"
+    },
+    "XIV_2019_R": {
+      "url": "text/XIV_2019_R.txt"
+    },
+    "XIV_2020_R": {
+      "url": "text/XIV_2020_R.txt"
+    },
+    "XIV_2021_R": {
+      "url": "text/XIV_2021_R.txt"
+    },
+    "XIV_2022_R": {
+      "url": "text/XIV_2022_R.txt"
+    },
+    "XIV_2023_R": {
+      "url": "text/XIV_2023_R.txt"
+    },
+    "XIV_2024_R": {
+      "url": "text/XIV_2024_R.txt"
+    },
+    "XIV_2025_R": {
+      "url": "text/XIV_2025_R.txt"
+    },
+    "XIV_2026_R": {
+      "url": "text/XIV_2026_R.txt"
+    },
+    "XIII_2019_R": {
+      "url": "text/XIII_2019_R.txt"
+    },
+    "XIII_2022_R": {
+      "url": "text/XIII_2022_R.txt"
+    },
+    "XIII_2023_R": {
+      "url": "text/XIII_2023_R.txt"
+    },
+    "XIII_2024_R": {
+      "url": "text/XIII_2024_R.txt"
+    },
+    "XIII_2025_R": {
+      "url": "text/XIII_2025_R.txt"
+    },
+    "XIII_2026_R": {
+      "url": "text/XIII_2026_R.txt"
+    },
+    "XII_2019_R": {
+      "url": "text/XII_2019_R.txt"
+    },
+    "XII_2020_R": {
+      "url": "text/XII_2020_R.txt"
+    },
+    "XII_2021_R": {
+      "url": "text/XII_2021_R.txt"
+    },
+    "XII_2022_R": {
+      "url": "text/XII_2022_R.txt"
+    },
+    "XII_2023_R": {
+      "url": "text/XII_2023_R.txt"
+    },
+    "XII_2024_R": {
+      "url": "text/XII_2024_R.txt"
+    },
+    "XII_2026_R": {
+      "url": "text/XII_2026_R.txt"
+    },
+    "XI_2019_R": {
+      "url": "text/XI_2019_R.txt"
+    },
+    "XI_2021_R": {
+      "url": "text/XI_2021_R.txt"
+    },
+    "XI_2022_R": {
+      "url": "text/XI_2022_R.txt"
+    },
+    "XI_2023_R": {
+      "url": "text/XI_2023_R.txt"
+    },
+    "XI_2025_R": {
+      "url": "text/XI_2025_R.txt"
+    },
+    "XI_2026_R": {
+      "url": "text/XI_2026_R.txt"
+    },
+    "XCVIII_2022_R": {
+      "url": "text/XCVIII_2022_R.txt"
+    },
+    "XCVIII_2024_R": {
+      "url": "text/XCVIII_2024_R.txt"
+    },
+    "XCVII_2022_R": {
+      "url": "text/XCVII_2022_R.txt"
+    },
+    "XCVII_2024_R": {
+      "url": "text/XCVII_2024_R.txt"
+    },
+    "XCVI_2022_R": {
+      "url": "text/XCVI_2022_R.txt"
+    },
+    "XCV_2022_R": {
+      "url": "text/XCV_2022_R.txt"
+    },
+    "XCV_2024_R": {
+      "url": "text/XCV_2024_R.txt"
+    },
+    "XCIX_2022_R": {
+      "url": "text/XCIX_2022_R.txt"
+    },
+    "XCIX_2024_R": {
+      "url": "text/XCIX_2024_R.txt"
+    },
+    "XCIV_2024_R": {
+      "url": "text/XCIV_2024_R.txt"
+    },
+    "XCIII_2022_R": {
+      "url": "text/XCIII_2022_R.txt"
+    },
+    "XCIII_2024_R": {
+      "url": "text/XCIII_2024_R.txt"
+    },
+    "XCII_2022_R": {
+      "url": "text/XCII_2022_R.txt"
+    },
+    "XCII_2024_R": {
+      "url": "text/XCII_2024_R.txt"
+    },
+    "XCI_2022_R": {
+      "url": "text/XCI_2022_R.txt"
+    },
+    "XCI_2024_R": {
+      "url": "text/XCI_2024_R.txt"
+    },
+    "XC_2022_R": {
+      "url": "text/XC_2022_R.txt"
+    },
+    "XC_2024_R": {
+      "url": "text/XC_2024_R.txt"
+    },
+    "X_2019_R": {
+      "url": "text/X_2019_R.txt"
+    },
+    "X_2020_R": {
+      "url": "text/X_2020_R.txt"
+    },
+    "X_2022_R": {
+      "url": "text/X_2022_R.txt"
+    },
+    "X_2023_R": {
+      "url": "text/X_2023_R.txt"
+    },
+    "X_2024_R": {
+      "url": "text/X_2024_R.txt"
+    },
+    "X_2025_R": {
+      "url": "text/X_2025_R.txt"
+    },
+    "X_2026_R": {
+      "url": "text/X_2026_R.txt"
+    },
+    "VIII_2019_R": {
+      "url": "text/VIII_2019_R.txt"
+    },
+    "VIII_2020_R": {
+      "url": "text/VIII_2020_R.txt"
+    },
+    "VIII_2021_R": {
+      "url": "text/VIII_2021_R.txt"
+    },
+    "VIII_2022_R": {
+      "url": "text/VIII_2022_R.txt"
+    },
+    "VIII_2023_R": {
+      "url": "text/VIII_2023_R.txt"
+    },
+    "VIII_2024_R": {
+      "url": "text/VIII_2024_R.txt"
+    },
+    "VIII_2025_R": {
+      "url": "text/VIII_2025_R.txt"
+    },
+    "VIII_2026_R": {
+      "url": "text/VIII_2026_R.txt"
+    },
+    "VII_2019_R": {
+      "url": "text/VII_2019_R.txt"
+    },
+    "VII_2020_R": {
+      "url": "text/VII_2020_R.txt"
+    },
+    "VII_2022_R": {
+      "url": "text/VII_2022_R.txt"
+    },
+    "VII_2023_R": {
+      "url": "text/VII_2023_R.txt"
+    },
+    "VII_2025_R": {
+      "url": "text/VII_2025_R.txt"
+    },
+    "VII_2026_R": {
+      "url": "text/VII_2026_R.txt"
+    },
+    "VI_2019_R": {
+      "url": "text/VI_2019_R.txt"
+    },
+    "VI_2020_R": {
+      "url": "text/VI_2020_R.txt"
+    },
+    "VI_2021_R": {
+      "url": "text/VI_2021_R.txt"
+    },
+    "VI_2022_R": {
+      "url": "text/VI_2022_R.txt"
+    },
+    "VI_2023_R": {
+      "url": "text/VI_2023_R.txt"
+    },
+    "VI_2024_R": {
+      "url": "text/VI_2024_R.txt"
+    },
+    "VI_2025_R": {
+      "url": "text/VI_2025_R.txt"
+    },
+    "VI_2026_R": {
+      "url": "text/VI_2026_R.txt"
+    },
+    "V_2019_R": {
+      "url": "text/V_2019_R.txt"
+    },
+    "V_2020_R": {
+      "url": "text/V_2020_R.txt"
+    },
+    "V_2021_R": {
+      "url": "text/V_2021_R.txt"
+    },
+    "V_2023_R": {
+      "url": "text/V_2023_R.txt"
+    },
+    "V_2024_R": {
+      "url": "text/V_2024_R.txt"
+    },
+    "V_2025_R": {
+      "url": "text/V_2025_R.txt"
+    },
+    "V_2026_R": {
+      "url": "text/V_2026_R.txt"
+    },
+    "LXXXVIII_2022_R": {
+      "url": "text/LXXXVIII_2022_R.txt"
+    },
+    "LXXXVIII_2024_R": {
+      "url": "text/LXXXVIII_2024_R.txt"
+    },
+    "LXXXVII_2024_R": {
+      "url": "text/LXXXVII_2024_R.txt"
+    },
+    "LXXXVI_2022_R": {
+      "url": "text/LXXXVI_2022_R.txt"
+    },
+    "LXXXVI_2024_R": {
+      "url": "text/LXXXVI_2024_R.txt"
+    },
+    "LXXXV_2022_R": {
+      "url": "text/LXXXV_2022_R.txt"
+    },
+    "LXXXV_2024_R": {
+      "url": "text/LXXXV_2024_R.txt"
+    },
+    "LXXXIX_2022_R": {
+      "url": "text/LXXXIX_2022_R.txt"
+    },
+    "LXXXIV_2022_R": {
+      "url": "text/LXXXIV_2022_R.txt"
+    },
+    "LXXXIV_2024_R": {
+      "url": "text/LXXXIV_2024_R.txt"
+    },
+    "LXXXIII_2022_R": {
+      "url": "text/LXXXIII_2022_R.txt"
+    },
+    "LXXXIII_2024_R": {
+      "url": "text/LXXXIII_2024_R.txt"
+    },
+    "LXXXII_2022_R": {
+      "url": "text/LXXXII_2022_R.txt"
+    },
+    "LXXXII_2024_R": {
+      "url": "text/LXXXII_2024_R.txt"
+    },
+    "LXXXI_2022_R": {
+      "url": "text/LXXXI_2022_R.txt"
+    },
+    "LXXXI_2024_R": {
+      "url": "text/LXXXI_2024_R.txt"
+    },
+    "LXXX_2022_R": {
+      "url": "text/LXXX_2022_R.txt"
+    },
+    "LXXVIII_2024_R": {
+      "url": "text/LXXVIII_2024_R.txt"
+    },
+    "LXXVII_2024_R": {
+      "url": "text/LXXVII_2024_R.txt"
+    },
+    "LXXVI_2022_R": {
+      "url": "text/LXXVI_2022_R.txt"
+    },
+    "LXXVI_2024_R": {
+      "url": "text/LXXVI_2024_R.txt"
+    },
+    "LXXV_2022_R": {
+      "url": "text/LXXV_2022_R.txt"
+    },
+    "LXXV_2024_R": {
+      "url": "text/LXXV_2024_R.txt"
+    },
+    "LXXIX_2024_R": {
+      "url": "text/LXXIX_2024_R.txt"
+    },
+    "LXXIV_2022_R": {
+      "url": "text/LXXIV_2022_R.txt"
+    },
+    "LXXIV_2024_R": {
+      "url": "text/LXXIV_2024_R.txt"
+    },
+    "LXXIV_2025_R": {
+      "url": "text/LXXIV_2025_R.txt"
+    },
+    "LXXIII_2019_R": {
+      "url": "text/LXXIII_2019_R.txt"
+    },
+    "LXXIII_2022_R": {
+      "url": "text/LXXIII_2022_R.txt"
+    },
+    "LXXIII_2024_R": {
+      "url": "text/LXXIII_2024_R.txt"
+    },
+    "LXXIII_2025_R": {
+      "url": "text/LXXIII_2025_R.txt"
+    },
+    "LXXII_2019_R": {
+      "url": "text/LXXII_2019_R.txt"
+    },
+    "LXXII_2022_R": {
+      "url": "text/LXXII_2022_R.txt"
+    },
+    "LXXII_2024_R": {
+      "url": "text/LXXII_2024_R.txt"
+    },
+    "LXXII_2025_R": {
+      "url": "text/LXXII_2025_R.txt"
+    },
+    "LXXI_2019_R": {
+      "url": "text/LXXI_2019_R.txt"
+    },
+    "LXXI_2022_R": {
+      "url": "text/LXXI_2022_R.txt"
+    },
+    "LXXI_2024_R": {
+      "url": "text/LXXI_2024_R.txt"
+    },
+    "LXXI_2025_R": {
+      "url": "text/LXXI_2025_R.txt"
+    },
+    "LXX_2019_R": {
+      "url": "text/LXX_2019_R.txt"
+    },
+    "LXX_2022_R": {
+      "url": "text/LXX_2022_R.txt"
+    },
+    "LXX_2023_R": {
+      "url": "text/LXX_2023_R.txt"
+    },
+    "LXX_2024_R": {
+      "url": "text/LXX_2024_R.txt"
+    },
+    "LXX_2025_R": {
+      "url": "text/LXX_2025_R.txt"
+    },
+    "LXVIII_2019_R": {
+      "url": "text/LXVIII_2019_R.txt"
+    },
+    "LXVIII_2022_R": {
+      "url": "text/LXVIII_2022_R.txt"
+    },
+    "LXVIII_2023_R": {
+      "url": "text/LXVIII_2023_R.txt"
+    },
+    "LXVIII_2024_R": {
+      "url": "text/LXVIII_2024_R.txt"
+    },
+    "LXVIII_2025_R": {
+      "url": "text/LXVIII_2025_R.txt"
+    },
+    "LXVII_2019_R": {
+      "url": "text/LXVII_2019_R.txt"
+    },
+    "LXVII_2022_R": {
+      "url": "text/LXVII_2022_R.txt"
+    },
+    "LXVII_2024_R": {
+      "url": "text/LXVII_2024_R.txt"
+    },
+    "LXVII_2025_R": {
+      "url": "text/LXVII_2025_R.txt"
+    },
+    "LXVI_2019_R": {
+      "url": "text/LXVI_2019_R.txt"
+    },
+    "LXVI_2022_R": {
+      "url": "text/LXVI_2022_R.txt"
+    },
+    "LXVI_2023_R": {
+      "url": "text/LXVI_2023_R.txt"
+    },
+    "LXVI_2024_R": {
+      "url": "text/LXVI_2024_R.txt"
+    },
+    "LXVI_2025_R": {
+      "url": "text/LXVI_2025_R.txt"
+    },
+    "LXV_2019_R": {
+      "url": "text/LXV_2019_R.txt"
+    },
+    "LXV_2022_R": {
+      "url": "text/LXV_2022_R.txt"
+    },
+    "LXV_2023_R": {
+      "url": "text/LXV_2023_R.txt"
+    },
+    "LXV_2024_R": {
+      "url": "text/LXV_2024_R.txt"
+    },
+    "LXV_2025_R": {
+      "url": "text/LXV_2025_R.txt"
+    },
+    "LXIX_2019_R": {
+      "url": "text/LXIX_2019_R.txt"
+    },
+    "LXIX_2022_R": {
+      "url": "text/LXIX_2022_R.txt"
+    },
+    "LXIX_2023_R": {
+      "url": "text/LXIX_2023_R.txt"
+    },
+    "LXIX_2024_R": {
+      "url": "text/LXIX_2024_R.txt"
+    },
+    "LXIX_2025_R": {
+      "url": "text/LXIX_2025_R.txt"
+    },
+    "LXIV_2019_R": {
+      "url": "text/LXIV_2019_R.txt"
+    },
+    "LXIV_2022_R": {
+      "url": "text/LXIV_2022_R.txt"
+    },
+    "LXIV_2023_R": {
+      "url": "text/LXIV_2023_R.txt"
+    },
+    "LXIV_2024_R": {
+      "url": "text/LXIV_2024_R.txt"
+    },
+    "LXIV_2025_R": {
+      "url": "text/LXIV_2025_R.txt"
+    },
+    "LXIII_2019_R": {
+      "url": "text/LXIII_2019_R.txt"
+    },
+    "LXIII_2022_R": {
+      "url": "text/LXIII_2022_R.txt"
+    },
+    "LXIII_2024_R": {
+      "url": "text/LXIII_2024_R.txt"
+    },
+    "LXIII_2025_R": {
+      "url": "text/LXIII_2025_R.txt"
+    },
+    "LXII_2019_R": {
+      "url": "text/LXII_2019_R.txt"
+    },
+    "LXII_2022_R": {
+      "url": "text/LXII_2022_R.txt"
+    },
+    "LXII_2023_R": {
+      "url": "text/LXII_2023_R.txt"
+    },
+    "LXII_2024_R": {
+      "url": "text/LXII_2024_R.txt"
+    },
+    "LXII_2025_R": {
+      "url": "text/LXII_2025_R.txt"
+    },
+    "LXI_2019_R": {
+      "url": "text/LXI_2019_R.txt"
+    },
+    "LXI_2022_R": {
+      "url": "text/LXI_2022_R.txt"
+    },
+    "LXI_2023_R": {
+      "url": "text/LXI_2023_R.txt"
+    },
+    "LXI_2025_R": {
+      "url": "text/LXI_2025_R.txt"
+    },
+    "LX_2019_R": {
+      "url": "text/LX_2019_R.txt"
+    },
+    "LX_2022_R": {
+      "url": "text/LX_2022_R.txt"
+    },
+    "LX_2024_R": {
+      "url": "text/LX_2024_R.txt"
+    },
+    "LX_2025_R": {
+      "url": "text/LX_2025_R.txt"
+    },
+    "LVIII_2019_R": {
+      "url": "text/LVIII_2019_R.txt"
+    },
+    "LVIII_2022_R": {
+      "url": "text/LVIII_2022_R.txt"
+    },
+    "LVIII_2023_R": {
+      "url": "text/LVIII_2023_R.txt"
+    },
+    "LVIII_2024_R": {
+      "url": "text/LVIII_2024_R.txt"
+    },
+    "LVIII_2025_R": {
+      "url": "text/LVIII_2025_R.txt"
+    },
+    "LVII_2019_R": {
+      "url": "text/LVII_2019_R.txt"
+    },
+    "LVII_2022_R": {
+      "url": "text/LVII_2022_R.txt"
+    },
+    "LVII_2023_R": {
+      "url": "text/LVII_2023_R.txt"
+    },
+    "LVII_2024_R": {
+      "url": "text/LVII_2024_R.txt"
+    },
+    "LVII_2025_R": {
+      "url": "text/LVII_2025_R.txt"
+    },
+    "LVI_2019_R": {
+      "url": "text/LVI_2019_R.txt"
+    },
+    "LVI_2022_R": {
+      "url": "text/LVI_2022_R.txt"
+    },
+    "LVI_2023_R": {
+      "url": "text/LVI_2023_R.txt"
+    },
+    "LVI_2024_R": {
+      "url": "text/LVI_2024_R.txt"
+    },
+    "LVI_2025_R": {
+      "url": "text/LVI_2025_R.txt"
+    },
+    "LV_2019_R": {
+      "url": "text/LV_2019_R.txt"
+    },
+    "LV_2022_R": {
+      "url": "text/LV_2022_R.txt"
+    },
+    "LV_2023_R": {
+      "url": "text/LV_2023_R.txt"
+    },
+    "LV_2024_R": {
+      "url": "text/LV_2024_R.txt"
+    },
+    "LV_2025_R": {
+      "url": "text/LV_2025_R.txt"
+    },
+    "LIX_2019_R": {
+      "url": "text/LIX_2019_R.txt"
+    },
+    "LIX_2022_R": {
+      "url": "text/LIX_2022_R.txt"
+    },
+    "LIX_2023_R": {
+      "url": "text/LIX_2023_R.txt"
+    },
+    "LIX_2024_R": {
+      "url": "text/LIX_2024_R.txt"
+    },
+    "LIX_2025_R": {
+      "url": "text/LIX_2025_R.txt"
+    },
+    "LIV_2019_R": {
+      "url": "text/LIV_2019_R.txt"
+    },
+    "LIV_2022_R": {
+      "url": "text/LIV_2022_R.txt"
+    },
+    "LIV_2023_R": {
+      "url": "text/LIV_2023_R.txt"
+    },
+    "LIV_2024_R": {
+      "url": "text/LIV_2024_R.txt"
+    },
+    "LIV_2025_R": {
+      "url": "text/LIV_2025_R.txt"
+    },
+    "LIII_2019_R": {
+      "url": "text/LIII_2019_R.txt"
+    },
+    "LIII_2022_R": {
+      "url": "text/LIII_2022_R.txt"
+    },
+    "LIII_2023_R": {
+      "url": "text/LIII_2023_R.txt"
+    },
+    "LIII_2024_R": {
+      "url": "text/LIII_2024_R.txt"
+    },
+    "LIII_2025_R": {
+      "url": "text/LIII_2025_R.txt"
+    },
+    "LII_2019_R": {
+      "url": "text/LII_2019_R.txt"
+    },
+    "LII_2022_R": {
+      "url": "text/LII_2022_R.txt"
+    },
+    "LII_2023_R": {
+      "url": "text/LII_2023_R.txt"
+    },
+    "LII_2024_R": {
+      "url": "text/LII_2024_R.txt"
+    },
+    "LII_2025_R": {
+      "url": "text/LII_2025_R.txt"
+    },
+    "LI_2019_R": {
+      "url": "text/LI_2019_R.txt"
+    },
+    "LI_2022_R": {
+      "url": "text/LI_2022_R.txt"
+    },
+    "LI_2024_R": {
+      "url": "text/LI_2024_R.txt"
+    },
+    "LI_2025_R": {
+      "url": "text/LI_2025_R.txt"
+    },
+    "L_2019_R": {
+      "url": "text/L_2019_R.txt"
+    },
+    "L_2022_R": {
+      "url": "text/L_2022_R.txt"
+    },
+    "L_2023_R": {
+      "url": "text/L_2023_R.txt"
+    },
+    "L_2024_R": {
+      "url": "text/L_2024_R.txt"
+    },
+    "L_2025_R": {
+      "url": "text/L_2025_R.txt"
+    },
+    "IX_2019_R": {
+      "url": "text/IX_2019_R.txt"
+    },
+    "IX_2020_R": {
+      "url": "text/IX_2020_R.txt"
+    },
+    "IX_2022_R": {
+      "url": "text/IX_2022_R.txt"
+    },
+    "IX_2023_R": {
+      "url": "text/IX_2023_R.txt"
+    },
+    "IX_2024_R": {
+      "url": "text/IX_2024_R.txt"
+    },
+    "IX_2025_R": {
+      "url": "text/IX_2025_R.txt"
+    },
+    "IX_2026_R": {
+      "url": "text/IX_2026_R.txt"
+    },
+    "IV_2019_R": {
+      "url": "text/IV_2019_R.txt"
+    },
+    "IV_2020_R": {
+      "url": "text/IV_2020_R.txt"
+    },
+    "IV_2021_R": {
+      "url": "text/IV_2021_R.txt"
+    },
+    "IV_2023_R": {
+      "url": "text/IV_2023_R.txt"
+    },
+    "IV_2024_R": {
+      "url": "text/IV_2024_R.txt"
+    },
+    "IV_2025_R": {
+      "url": "text/IV_2025_R.txt"
+    },
+    "IV_2026_R": {
+      "url": "text/IV_2026_R.txt"
+    },
+    "III_2019_R": {
+      "url": "text/III_2019_R.txt"
+    },
+    "III_2020_R": {
+      "url": "text/III_2020_R.txt"
+    },
+    "III_2022_R": {
+      "url": "text/III_2022_R.txt"
+    },
+    "III_2023_R": {
+      "url": "text/III_2023_R.txt"
+    },
+    "III_2025_R": {
+      "url": "text/III_2025_R.txt"
+    },
+    "III_2026_R": {
+      "url": "text/III_2026_R.txt"
+    },
+    "II_2019_R": {
+      "url": "text/II_2019_R.txt"
+    },
+    "II_2020_R": {
+      "url": "text/II_2020_R.txt"
+    },
+    "II_2021_R": {
+      "url": "text/II_2021_R.txt"
+    },
+    "II_2022_R": {
+      "url": "text/II_2022_R.txt"
+    },
+    "II_2023_R": {
+      "url": "text/II_2023_R.txt"
+    },
+    "II_2024_R": {
+      "url": "text/II_2024_R.txt"
+    },
+    "II_2025_R": {
+      "url": "text/II_2025_R.txt"
+    },
+    "II_2026_R": {
+      "url": "text/II_2026_R.txt"
+    },
+    "I_2019_R": {
+      "url": "text/I_2019_R.txt"
+    },
+    "I_2020_R": {
+      "url": "text/I_2020_R.txt"
+    },
+    "I_2021_R": {
+      "url": "text/I_2021_R.txt"
+    },
+    "I_2022_R": {
+      "url": "text/I_2022_R.txt"
+    },
+    "I_2023_R": {
+      "url": "text/I_2023_R.txt"
+    },
+    "I_2024_R": {
+      "url": "text/I_2024_R.txt"
+    },
+    "I_2025_R": {
+      "url": "text/I_2025_R.txt"
+    },
+    "I_2026_R": {
+      "url": "text/I_2026_R.txt"
+    },
+    "CXI_2022_R": {
+      "url": "text/CXI_2022_R.txt"
+    },
+    "CX_2022_R": {
+      "url": "text/CX_2022_R.txt"
+    },
+    "CVIII_2022_R": {
+      "url": "text/CVIII_2022_R.txt"
+    },
+    "CVII_2022_R": {
+      "url": "text/CVII_2022_R.txt"
+    },
+    "CVI_2022_R": {
+      "url": "text/CVI_2022_R.txt"
+    },
+    "CV_2022_R": {
+      "url": "text/CV_2022_R.txt"
+    },
+    "CIX_2022_R": {
+      "url": "text/CIX_2022_R.txt"
+    },
+    "CIV_2022_R": {
+      "url": "text/CIV_2022_R.txt"
+    },
+    "CIII_2022_R": {
+      "url": "text/CIII_2022_R.txt"
+    },
+    "CII_2022_R": {
+      "url": "text/CII_2022_R.txt"
+    },
+    "CII_2024_R": {
+      "url": "text/CII_2024_R.txt"
+    },
+    "CI_2022_R": {
+      "url": "text/CI_2022_R.txt"
+    },
+    "C_2022_R": {
+      "url": "text/C_2022_R.txt"
+    },
+    "C_2024_R": {
+      "url": "text/C_2024_R.txt"
+    },
+    "99_2019_L": {
+      "url": "text/99_2019_L.txt"
+    },
+    "99_2020_L": {
+      "url": "text/99_2020_L.txt"
+    },
+    "99_2021_L": {
+      "url": "text/99_2021_L.txt"
+    },
+    "99_2022_L": {
+      "url": "text/99_2022_L.txt"
+    },
+    "99_2023_L": {
+      "url": "text/99_2023_L.txt"
+    },
+    "99_2024_L": {
+      "url": "text/99_2024_L.txt"
+    },
+    "99_2025_L": {
+      "url": "text/99_2025_L.txt"
+    },
+    "98_2019_L": {
+      "url": "text/98_2019_L.txt"
+    },
+    "98_2020_L": {
+      "url": "text/98_2020_L.txt"
+    },
+    "98_2022_L": {
+      "url": "text/98_2022_L.txt"
+    },
+    "98_2023_L": {
+      "url": "text/98_2023_L.txt"
+    },
+    "98_2024_L": {
+      "url": "text/98_2024_L.txt"
+    },
+    "98_2025_L": {
+      "url": "text/98_2025_L.txt"
+    },
+    "97_2019_L": {
+      "url": "text/97_2019_L.txt"
+    },
+    "97_2020_L": {
+      "url": "text/97_2020_L.txt"
+    },
+    "97_2022_L": {
+      "url": "text/97_2022_L.txt"
+    },
+    "97_2024_L": {
+      "url": "text/97_2024_L.txt"
+    },
+    "97_2026_L": {
+      "url": "text/97_2026_L.txt"
+    },
+    "96_2019_L": {
+      "url": "text/96_2019_L.txt"
+    },
+    "96_2020_L": {
+      "url": "text/96_2020_L.txt"
+    },
+    "96_2022_L": {
+      "url": "text/96_2022_L.txt"
+    },
+    "96_2025_L": {
+      "url": "text/96_2025_L.txt"
+    },
+    "95_2019_L": {
+      "url": "text/95_2019_L.txt"
+    },
+    "95_2020_L": {
+      "url": "text/95_2020_L.txt"
+    },
+    "95_2021_L": {
+      "url": "text/95_2021_L.txt"
+    },
+    "95_2022_L": {
+      "url": "text/95_2022_L.txt"
+    },
+    "95_2024_L": {
+      "url": "text/95_2024_L.txt"
+    },
+    "95_2025_L": {
+      "url": "text/95_2025_L.txt"
+    },
+    "94_2019_L": {
+      "url": "text/94_2019_L.txt"
+    },
+    "94_2020_L": {
+      "url": "text/94_2020_L.txt"
+    },
+    "94_2022_L": {
+      "url": "text/94_2022_L.txt"
+    },
+    "94_2023_L": {
+      "url": "text/94_2023_L.txt"
+    },
+    "94_2024_L": {
+      "url": "text/94_2024_L.txt"
+    },
+    "94_2025_L": {
+      "url": "text/94_2025_L.txt"
+    },
+    "93_2019_L": {
+      "url": "text/93_2019_L.txt"
+    },
+    "93_2020_L": {
+      "url": "text/93_2020_L.txt"
+    },
+    "93_2022_L": {
+      "url": "text/93_2022_L.txt"
+    },
+    "93_2023_L": {
+      "url": "text/93_2023_L.txt"
+    },
+    "92_2019_L": {
+      "url": "text/92_2019_L.txt"
+    },
+    "92_2020_L": {
+      "url": "text/92_2020_L.txt"
+    },
+    "92_2021_L": {
+      "url": "text/92_2021_L.txt"
+    },
+    "92_2022_L": {
+      "url": "text/92_2022_L.txt"
+    },
+    "92_2023_L": {
+      "url": "text/92_2023_L.txt"
+    },
+    "92_2024_L": {
+      "url": "text/92_2024_L.txt"
+    },
+    "92_2025_L": {
+      "url": "text/92_2025_L.txt"
+    },
+    "91_2019_L": {
+      "url": "text/91_2019_L.txt"
+    },
+    "91_2020_L": {
+      "url": "text/91_2020_L.txt"
+    },
+    "91_2021_L": {
+      "url": "text/91_2021_L.txt"
+    },
+    "91_2022_L": {
+      "url": "text/91_2022_L.txt"
+    },
+    "91_2023_L": {
+      "url": "text/91_2023_L.txt"
+    },
+    "91_2024_L": {
+      "url": "text/91_2024_L.txt"
+    },
+    "90_2019_L": {
+      "url": "text/90_2019_L.txt"
+    },
+    "90_2020_L": {
+      "url": "text/90_2020_L.txt"
+    },
+    "90_2021_L": {
+      "url": "text/90_2021_L.txt"
+    },
+    "90_2022_L": {
+      "url": "text/90_2022_L.txt"
+    },
+    "90_2023_L": {
+      "url": "text/90_2023_L.txt"
+    },
+    "90_2024_L": {
+      "url": "text/90_2024_L.txt"
+    },
+    "90_2025_L": {
+      "url": "text/90_2025_L.txt"
+    },
+    "9_2019_L": {
+      "url": "text/9_2019_L.txt"
+    },
+    "9_2020_L": {
+      "url": "text/9_2020_L.txt"
+    },
+    "9_2022_L": {
+      "url": "text/9_2022_L.txt"
+    },
+    "9_2023_L": {
+      "url": "text/9_2023_L.txt"
+    },
+    "89_2019_L": {
+      "url": "text/89_2019_L.txt"
+    },
+    "89_2020_L": {
+      "url": "text/89_2020_L.txt"
+    },
+    "89_2021_L": {
+      "url": "text/89_2021_L.txt"
+    },
+    "89_2022_L": {
+      "url": "text/89_2022_L.txt"
+    },
+    "89_2024_L": {
+      "url": "text/89_2024_L.txt"
+    },
+    "89_2025_L": {
+      "url": "text/89_2025_L.txt"
+    },
+    "88_2019_L": {
+      "url": "text/88_2019_L.txt"
+    },
+    "88_2020_L": {
+      "url": "text/88_2020_L.txt"
+    },
+    "88_2021_L": {
+      "url": "text/88_2021_L.txt"
+    },
+    "88_2022_L": {
+      "url": "text/88_2022_L.txt"
+    },
+    "88_2024_L": {
+      "url": "text/88_2024_L.txt"
+    },
+    "88_2025_L": {
+      "url": "text/88_2025_L.txt"
+    },
+    "87_2019_L": {
+      "url": "text/87_2019_L.txt"
+    },
+    "87_2020_L": {
+      "url": "text/87_2020_L.txt"
+    },
+    "87_2021_L": {
+      "url": "text/87_2021_L.txt"
+    },
+    "87_2022_L": {
+      "url": "text/87_2022_L.txt"
+    },
+    "87_2023_L": {
+      "url": "text/87_2023_L.txt"
+    },
+    "87_2024_L": {
+      "url": "text/87_2024_L.txt"
+    },
+    "86_2019_L": {
+      "url": "text/86_2019_L.txt"
+    },
+    "86_2020_L": {
+      "url": "text/86_2020_L.txt"
+    },
+    "86_2022_L": {
+      "url": "text/86_2022_L.txt"
+    },
+    "86_2023_L": {
+      "url": "text/86_2023_L.txt"
+    },
+    "86_2024_L": {
+      "url": "text/86_2024_L.txt"
+    },
+    "85_2019_L": {
+      "url": "text/85_2019_L.txt"
+    },
+    "85_2021_L": {
+      "url": "text/85_2021_L.txt"
+    },
+    "85_2022_L": {
+      "url": "text/85_2022_L.txt"
+    },
+    "85_2023_L": {
+      "url": "text/85_2023_L.txt"
+    },
+    "85_2024_L": {
+      "url": "text/85_2024_L.txt"
+    },
+    "85_2025_L": {
+      "url": "text/85_2025_L.txt"
+    },
+    "85_2026_L": {
+      "url": "text/85_2026_L.txt"
+    },
+    "84_2019_L": {
+      "url": "text/84_2019_L.txt"
+    },
+    "84_2020_L": {
+      "url": "text/84_2020_L.txt"
+    },
+    "84_2021_L": {
+      "url": "text/84_2021_L.txt"
+    },
+    "84_2022_L": {
+      "url": "text/84_2022_L.txt"
+    },
+    "84_2023_L": {
+      "url": "text/84_2023_L.txt"
+    },
+    "84_2024_L": {
+      "url": "text/84_2024_L.txt"
+    },
+    "83_2019_L": {
+      "url": "text/83_2019_L.txt"
+    },
+    "83_2020_L": {
+      "url": "text/83_2020_L.txt"
+    },
+    "83_2021_L": {
+      "url": "text/83_2021_L.txt"
+    },
+    "83_2022_L": {
+      "url": "text/83_2022_L.txt"
+    },
+    "83_2023_L": {
+      "url": "text/83_2023_L.txt"
+    },
+    "83_2024_L": {
+      "url": "text/83_2024_L.txt"
+    },
+    "83_2025_L": {
+      "url": "text/83_2025_L.txt"
+    },
+    "82_2019_L": {
+      "url": "text/82_2019_L.txt"
+    },
+    "82_2020_L": {
+      "url": "text/82_2020_L.txt"
+    },
+    "82_2021_L": {
+      "url": "text/82_2021_L.txt"
+    },
+    "82_2022_L": {
+      "url": "text/82_2022_L.txt"
+    },
+    "82_2023_L": {
+      "url": "text/82_2023_L.txt"
+    },
+    "82_2024_L": {
+      "url": "text/82_2024_L.txt"
+    },
+    "82_2025_L": {
+      "url": "text/82_2025_L.txt"
+    },
+    "82_2026_L": {
+      "url": "text/82_2026_L.txt"
+    },
+    "81_2019_L": {
+      "url": "text/81_2019_L.txt"
+    },
+    "81_2020_L": {
+      "url": "text/81_2020_L.txt"
+    },
+    "81_2021_L": {
+      "url": "text/81_2021_L.txt"
+    },
+    "81_2022_L": {
+      "url": "text/81_2022_L.txt"
+    },
+    "81_2023_L": {
+      "url": "text/81_2023_L.txt"
+    },
+    "81_2024_L": {
+      "url": "text/81_2024_L.txt"
+    },
+    "81_2025_L": {
+      "url": "text/81_2025_L.txt"
+    },
+    "80_2020_L": {
+      "url": "text/80_2020_L.txt"
+    },
+    "80_2021_L": {
+      "url": "text/80_2021_L.txt"
+    },
+    "80_2022_L": {
+      "url": "text/80_2022_L.txt"
+    },
+    "80_2023_L": {
+      "url": "text/80_2023_L.txt"
+    },
+    "80_2024_L": {
+      "url": "text/80_2024_L.txt"
+    },
+    "80_2025_L": {
+      "url": "text/80_2025_L.txt"
+    },
+    "8_2019_L": {
+      "url": "text/8_2019_L.txt"
+    },
+    "8_2021_L": {
+      "url": "text/8_2021_L.txt"
+    },
+    "8_2022_L": {
+      "url": "text/8_2022_L.txt"
+    },
+    "8_2025_L": {
+      "url": "text/8_2025_L.txt"
+    },
+    "79_2019_L": {
+      "url": "text/79_2019_L.txt"
+    },
+    "79_2020_L": {
+      "url": "text/79_2020_L.txt"
+    },
+    "79_2021_L": {
+      "url": "text/79_2021_L.txt"
+    },
+    "79_2022_L": {
+      "url": "text/79_2022_L.txt"
+    },
+    "79_2024_L": {
+      "url": "text/79_2024_L.txt"
+    },
+    "79_2025_L": {
+      "url": "text/79_2025_L.txt"
+    },
+    "79_2026_L": {
+      "url": "text/79_2026_L.txt"
+    },
+    "78_2019_L": {
+      "url": "text/78_2019_L.txt"
+    },
+    "78_2020_L": {
+      "url": "text/78_2020_L.txt"
+    },
+    "78_2021_L": {
+      "url": "text/78_2021_L.txt"
+    },
+    "78_2022_L": {
+      "url": "text/78_2022_L.txt"
+    },
+    "78_2023_L": {
+      "url": "text/78_2023_L.txt"
+    },
+    "78_2024_L": {
+      "url": "text/78_2024_L.txt"
+    },
+    "78_2025_L": {
+      "url": "text/78_2025_L.txt"
+    },
+    "77_2019_L": {
+      "url": "text/77_2019_L.txt"
+    },
+    "77_2020_L": {
+      "url": "text/77_2020_L.txt"
+    },
+    "77_2021_L": {
+      "url": "text/77_2021_L.txt"
+    },
+    "77_2022_L": {
+      "url": "text/77_2022_L.txt"
+    },
+    "77_2023_L": {
+      "url": "text/77_2023_L.txt"
+    },
+    "77_2025_L": {
+      "url": "text/77_2025_L.txt"
+    },
+    "76_2019_L": {
+      "url": "text/76_2019_L.txt"
+    },
+    "76_2021_L": {
+      "url": "text/76_2021_L.txt"
+    },
+    "76_2022_L": {
+      "url": "text/76_2022_L.txt"
+    },
+    "76_2023_L": {
+      "url": "text/76_2023_L.txt"
+    },
+    "76_2024_L": {
+      "url": "text/76_2024_L.txt"
+    },
+    "76_2025_L": {
+      "url": "text/76_2025_L.txt"
+    },
+    "75_2019_L": {
+      "url": "text/75_2019_L.txt"
+    },
+    "75_2021_L": {
+      "url": "text/75_2021_L.txt"
+    },
+    "75_2022_L": {
+      "url": "text/75_2022_L.txt"
+    },
+    "75_2024_L": {
+      "url": "text/75_2024_L.txt"
+    },
+    "75_2025_L": {
+      "url": "text/75_2025_L.txt"
+    },
+    "74_2019_L": {
+      "url": "text/74_2019_L.txt"
+    },
+    "74_2020_L": {
+      "url": "text/74_2020_L.txt"
+    },
+    "74_2021_L": {
+      "url": "text/74_2021_L.txt"
+    },
+    "74_2022_L": {
+      "url": "text/74_2022_L.txt"
+    },
+    "74_2024_L": {
+      "url": "text/74_2024_L.txt"
+    },
+    "73_2019_L": {
+      "url": "text/73_2019_L.txt"
+    },
+    "73_2020_L": {
+      "url": "text/73_2020_L.txt"
+    },
+    "73_2021_L": {
+      "url": "text/73_2021_L.txt"
+    },
+    "73_2022_L": {
+      "url": "text/73_2022_L.txt"
+    },
+    "73_2023_L": {
+      "url": "text/73_2023_L.txt"
+    },
+    "73_2025_L": {
+      "url": "text/73_2025_L.txt"
+    },
+    "72_2019_L": {
+      "url": "text/72_2019_L.txt"
+    },
+    "72_2020_L": {
+      "url": "text/72_2020_L.txt"
+    },
+    "72_2021_L": {
+      "url": "text/72_2021_L.txt"
+    },
+    "72_2023_L": {
+      "url": "text/72_2023_L.txt"
+    },
+    "72_2024_L": {
+      "url": "text/72_2024_L.txt"
+    },
+    "72_2026_L": {
+      "url": "text/72_2026_L.txt"
+    },
+    "71_2019_L": {
+      "url": "text/71_2019_L.txt"
+    },
+    "71_2020_L": {
+      "url": "text/71_2020_L.txt"
+    },
+    "71_2021_L": {
+      "url": "text/71_2021_L.txt"
+    },
+    "71_2022_L": {
+      "url": "text/71_2022_L.txt"
+    },
+    "71_2024_L": {
+      "url": "text/71_2024_L.txt"
+    },
+    "70_2019_L": {
+      "url": "text/70_2019_L.txt"
+    },
+    "70_2020_L": {
+      "url": "text/70_2020_L.txt"
+    },
+    "70_2021_L": {
+      "url": "text/70_2021_L.txt"
+    },
+    "70_2022_L": {
+      "url": "text/70_2022_L.txt"
+    },
+    "70_2023_L": {
+      "url": "text/70_2023_L.txt"
+    },
+    "70_2024_L": {
+      "url": "text/70_2024_L.txt"
+    },
+    "7_2021_L": {
+      "url": "text/7_2021_L.txt"
+    },
+    "7_2022_L": {
+      "url": "text/7_2022_L.txt"
+    },
+    "69_2019_L": {
+      "url": "text/69_2019_L.txt"
+    },
+    "69_2020_L": {
+      "url": "text/69_2020_L.txt"
+    },
+    "69_2021_L": {
+      "url": "text/69_2021_L.txt"
+    },
+    "69_2022_L": {
+      "url": "text/69_2022_L.txt"
+    },
+    "69_2024_L": {
+      "url": "text/69_2024_L.txt"
+    },
+    "69_2025_L": {
+      "url": "text/69_2025_L.txt"
+    },
+    "68_2019_L": {
+      "url": "text/68_2019_L.txt"
+    },
+    "68_2020_L": {
+      "url": "text/68_2020_L.txt"
+    },
+    "68_2022_L": {
+      "url": "text/68_2022_L.txt"
+    },
+    "68_2024_L": {
+      "url": "text/68_2024_L.txt"
+    },
+    "68_2025_L": {
+      "url": "text/68_2025_L.txt"
+    },
+    "67_2019_L": {
+      "url": "text/67_2019_L.txt"
+    },
+    "67_2022_L": {
+      "url": "text/67_2022_L.txt"
+    },
+    "67_2023_L": {
+      "url": "text/67_2023_L.txt"
+    },
+    "67_2024_L": {
+      "url": "text/67_2024_L.txt"
+    },
+    "66_2019_L": {
+      "url": "text/66_2019_L.txt"
+    },
+    "66_2020_L": {
+      "url": "text/66_2020_L.txt"
+    },
+    "66_2021_L": {
+      "url": "text/66_2021_L.txt"
+    },
+    "66_2022_L": {
+      "url": "text/66_2022_L.txt"
+    },
+    "66_2023_L": {
+      "url": "text/66_2023_L.txt"
+    },
+    "66_2025_L": {
+      "url": "text/66_2025_L.txt"
+    },
+    "65_2019_L": {
+      "url": "text/65_2019_L.txt"
+    },
+    "65_2020_L": {
+      "url": "text/65_2020_L.txt"
+    },
+    "65_2021_L": {
+      "url": "text/65_2021_L.txt"
+    },
+    "65_2022_L": {
+      "url": "text/65_2022_L.txt"
+    },
+    "65_2023_L": {
+      "url": "text/65_2023_L.txt"
+    },
+    "65_2025_L": {
+      "url": "text/65_2025_L.txt"
+    },
+    "64_2019_L": {
+      "url": "text/64_2019_L.txt"
+    },
+    "64_2020_L": {
+      "url": "text/64_2020_L.txt"
+    },
+    "64_2021_L": {
+      "url": "text/64_2021_L.txt"
+    },
+    "64_2022_L": {
+      "url": "text/64_2022_L.txt"
+    },
+    "64_2023_L": {
+      "url": "text/64_2023_L.txt"
+    },
+    "64_2024_L": {
+      "url": "text/64_2024_L.txt"
+    },
+    "63_2019_L": {
+      "url": "text/63_2019_L.txt"
+    },
+    "63_2020_L": {
+      "url": "text/63_2020_L.txt"
+    },
+    "63_2022_L": {
+      "url": "text/63_2022_L.txt"
+    },
+    "63_2023_L": {
+      "url": "text/63_2023_L.txt"
+    },
+    "63_2024_L": {
+      "url": "text/63_2024_L.txt"
+    },
+    "63_2025_L": {
+      "url": "text/63_2025_L.txt"
+    },
+    "62_2019_L": {
+      "url": "text/62_2019_L.txt"
+    },
+    "62_2020_L": {
+      "url": "text/62_2020_L.txt"
+    },
+    "62_2021_L": {
+      "url": "text/62_2021_L.txt"
+    },
+    "62_2023_L": {
+      "url": "text/62_2023_L.txt"
+    },
+    "62_2025_L": {
+      "url": "text/62_2025_L.txt"
+    },
+    "61_2019_L": {
+      "url": "text/61_2019_L.txt"
+    },
+    "61_2020_L": {
+      "url": "text/61_2020_L.txt"
+    },
+    "61_2021_L": {
+      "url": "text/61_2021_L.txt"
+    },
+    "61_2022_L": {
+      "url": "text/61_2022_L.txt"
+    },
+    "61_2023_L": {
+      "url": "text/61_2023_L.txt"
+    },
+    "61_2024_L": {
+      "url": "text/61_2024_L.txt"
+    },
+    "60_2019_L": {
+      "url": "text/60_2019_L.txt"
+    },
+    "60_2020_L": {
+      "url": "text/60_2020_L.txt"
+    },
+    "60_2021_L": {
+      "url": "text/60_2021_L.txt"
+    },
+    "60_2022_L": {
+      "url": "text/60_2022_L.txt"
+    },
+    "60_2024_L": {
+      "url": "text/60_2024_L.txt"
+    },
+    "60_2025_L": {
+      "url": "text/60_2025_L.txt"
+    },
+    "6_2019_L": {
+      "url": "text/6_2019_L.txt"
+    },
+    "6_2022_L": {
+      "url": "text/6_2022_L.txt"
+    },
+    "59_2019_L": {
+      "url": "text/59_2019_L.txt"
+    },
+    "59_2020_L": {
+      "url": "text/59_2020_L.txt"
+    },
+    "59_2022_L": {
+      "url": "text/59_2022_L.txt"
+    },
+    "59_2023_L": {
+      "url": "text/59_2023_L.txt"
+    },
+    "59_2024_L": {
+      "url": "text/59_2024_L.txt"
+    },
+    "59_2025_L": {
+      "url": "text/59_2025_L.txt"
+    },
+    "58_2019_L": {
+      "url": "text/58_2019_L.txt"
+    },
+    "58_2020_L": {
+      "url": "text/58_2020_L.txt"
+    },
+    "58_2022_L": {
+      "url": "text/58_2022_L.txt"
+    },
+    "58_2023_L": {
+      "url": "text/58_2023_L.txt"
+    },
+    "58_2024_L": {
+      "url": "text/58_2024_L.txt"
+    },
+    "57_2019_L": {
+      "url": "text/57_2019_L.txt"
+    },
+    "57_2020_L": {
+      "url": "text/57_2020_L.txt"
+    },
+    "57_2022_L": {
+      "url": "text/57_2022_L.txt"
+    },
+    "56_2019_L": {
+      "url": "text/56_2019_L.txt"
+    },
+    "56_2020_L": {
+      "url": "text/56_2020_L.txt"
+    },
+    "56_2021_L": {
+      "url": "text/56_2021_L.txt"
+    },
+    "56_2024_L": {
+      "url": "text/56_2024_L.txt"
+    },
+    "55_2019_L": {
+      "url": "text/55_2019_L.txt"
+    },
+    "55_2020_L": {
+      "url": "text/55_2020_L.txt"
+    },
+    "55_2021_L": {
+      "url": "text/55_2021_L.txt"
+    },
+    "55_2022_L": {
+      "url": "text/55_2022_L.txt"
+    },
+    "55_2024_L": {
+      "url": "text/55_2024_L.txt"
+    },
+    "54_2019_L": {
+      "url": "text/54_2019_L.txt"
+    },
+    "54_2020_L": {
+      "url": "text/54_2020_L.txt"
+    },
+    "54_2021_L": {
+      "url": "text/54_2021_L.txt"
+    },
+    "54_2022_L": {
+      "url": "text/54_2022_L.txt"
+    },
+    "54_2024_L": {
+      "url": "text/54_2024_L.txt"
+    },
+    "54_2025_L": {
+      "url": "text/54_2025_L.txt"
+    },
+    "53_2019_L": {
+      "url": "text/53_2019_L.txt"
+    },
+    "53_2020_L": {
+      "url": "text/53_2020_L.txt"
+    },
+    "53_2021_L": {
+      "url": "text/53_2021_L.txt"
+    },
+    "53_2022_L": {
+      "url": "text/53_2022_L.txt"
+    },
+    "53_2023_L": {
+      "url": "text/53_2023_L.txt"
+    },
+    "53_2024_L": {
+      "url": "text/53_2024_L.txt"
+    },
+    "52_2019_L": {
+      "url": "text/52_2019_L.txt"
+    },
+    "52_2020_L": {
+      "url": "text/52_2020_L.txt"
+    },
+    "52_2021_L": {
+      "url": "text/52_2021_L.txt"
+    },
+    "52_2022_L": {
+      "url": "text/52_2022_L.txt"
+    },
+    "52_2023_L": {
+      "url": "text/52_2023_L.txt"
+    },
+    "52_2024_L": {
+      "url": "text/52_2024_L.txt"
+    },
+    "52_2025_L": {
+      "url": "text/52_2025_L.txt"
+    },
+    "51_2019_L": {
+      "url": "text/51_2019_L.txt"
+    },
+    "51_2020_L": {
+      "url": "text/51_2020_L.txt"
+    },
+    "51_2021_L": {
+      "url": "text/51_2021_L.txt"
+    },
+    "51_2022_L": {
+      "url": "text/51_2022_L.txt"
+    },
+    "51_2024_L": {
+      "url": "text/51_2024_L.txt"
+    },
+    "51_2025_L": {
+      "url": "text/51_2025_L.txt"
+    },
+    "50_2019_L": {
+      "url": "text/50_2019_L.txt"
+    },
+    "50_2020_L": {
+      "url": "text/50_2020_L.txt"
+    },
+    "50_2024_L": {
+      "url": "text/50_2024_L.txt"
+    },
+    "5_2019_L": {
+      "url": "text/5_2019_L.txt"
+    },
+    "5_2022_L": {
+      "url": "text/5_2022_L.txt"
+    },
+    "49_2019_L": {
+      "url": "text/49_2019_L.txt"
+    },
+    "49_2021_L": {
+      "url": "text/49_2021_L.txt"
+    },
+    "49_2022_L": {
+      "url": "text/49_2022_L.txt"
+    },
+    "49_2023_L": {
+      "url": "text/49_2023_L.txt"
+    },
+    "49_2024_L": {
+      "url": "text/49_2024_L.txt"
+    },
+    "48_2019_L": {
+      "url": "text/48_2019_L.txt"
+    },
+    "48_2020_L": {
+      "url": "text/48_2020_L.txt"
+    },
+    "48_2021_L": {
+      "url": "text/48_2021_L.txt"
+    },
+    "48_2022_L": {
+      "url": "text/48_2022_L.txt"
+    },
+    "48_2023_L": {
+      "url": "text/48_2023_L.txt"
+    },
+    "48_2024_L": {
+      "url": "text/48_2024_L.txt"
+    },
+    "48_2025_L": {
+      "url": "text/48_2025_L.txt"
+    },
+    "47_2019_L": {
+      "url": "text/47_2019_L.txt"
+    },
+    "47_2020_L": {
+      "url": "text/47_2020_L.txt"
+    },
+    "47_2021_L": {
+      "url": "text/47_2021_L.txt"
+    },
+    "47_2022_L": {
+      "url": "text/47_2022_L.txt"
+    },
+    "47_2023_L": {
+      "url": "text/47_2023_L.txt"
+    },
+    "47_2024_L": {
+      "url": "text/47_2024_L.txt"
+    },
+    "46_2019_L": {
+      "url": "text/46_2019_L.txt"
+    },
+    "46_2020_L": {
+      "url": "text/46_2020_L.txt"
+    },
+    "46_2021_L": {
+      "url": "text/46_2021_L.txt"
+    },
+    "46_2022_L": {
+      "url": "text/46_2022_L.txt"
+    },
+    "46_2023_L": {
+      "url": "text/46_2023_L.txt"
+    },
+    "46_2024_L": {
+      "url": "text/46_2024_L.txt"
+    },
+    "46_2025_L": {
+      "url": "text/46_2025_L.txt"
+    },
+    "45_2019_L": {
+      "url": "text/45_2019_L.txt"
+    },
+    "45_2020_L": {
+      "url": "text/45_2020_L.txt"
+    },
+    "45_2021_L": {
+      "url": "text/45_2021_L.txt"
+    },
+    "45_2022_L": {
+      "url": "text/45_2022_L.txt"
+    },
+    "44_2019_L": {
+      "url": "text/44_2019_L.txt"
+    },
+    "44_2020_L": {
+      "url": "text/44_2020_L.txt"
+    },
+    "44_2022_L": {
+      "url": "text/44_2022_L.txt"
+    },
+    "44_2023_L": {
+      "url": "text/44_2023_L.txt"
+    },
+    "44_2024_L": {
+      "url": "text/44_2024_L.txt"
+    },
+    "43_2019_L": {
+      "url": "text/43_2019_L.txt"
+    },
+    "43_2020_L": {
+      "url": "text/43_2020_L.txt"
+    },
+    "43_2022_L": {
+      "url": "text/43_2022_L.txt"
+    },
+    "43_2024_L": {
+      "url": "text/43_2024_L.txt"
+    },
+    "43_2025_L": {
+      "url": "text/43_2025_L.txt"
+    },
+    "42_2019_L": {
+      "url": "text/42_2019_L.txt"
+    },
+    "42_2020_L": {
+      "url": "text/42_2020_L.txt"
+    },
+    "42_2022_L": {
+      "url": "text/42_2022_L.txt"
+    },
+    "42_2023_L": {
+      "url": "text/42_2023_L.txt"
+    },
+    "42_2024_L": {
+      "url": "text/42_2024_L.txt"
+    },
+    "42_2025_L": {
+      "url": "text/42_2025_L.txt"
+    },
+    "41_2019_L": {
+      "url": "text/41_2019_L.txt"
+    },
+    "41_2020_L": {
+      "url": "text/41_2020_L.txt"
+    },
+    "41_2021_L": {
+      "url": "text/41_2021_L.txt"
+    },
+    "41_2023_L": {
+      "url": "text/41_2023_L.txt"
+    },
+    "41_2024_L": {
+      "url": "text/41_2024_L.txt"
+    },
+    "40_2019_L": {
+      "url": "text/40_2019_L.txt"
+    },
+    "40_2020_L": {
+      "url": "text/40_2020_L.txt"
+    },
+    "40_2021_L": {
+      "url": "text/40_2021_L.txt"
+    },
+    "40_2022_L": {
+      "url": "text/40_2022_L.txt"
+    },
+    "40_2024_L": {
+      "url": "text/40_2024_L.txt"
+    },
+    "40_2025_L": {
+      "url": "text/40_2025_L.txt"
+    },
+    "4_2019_L": {
+      "url": "text/4_2019_L.txt"
+    },
+    "4_2021_L": {
+      "url": "text/4_2021_L.txt"
+    },
+    "4_2022_L": {
+      "url": "text/4_2022_L.txt"
+    },
+    "4_2023_L": {
+      "url": "text/4_2023_L.txt"
+    },
+    "39_2019_L": {
+      "url": "text/39_2019_L.txt"
+    },
+    "39_2020_L": {
+      "url": "text/39_2020_L.txt"
+    },
+    "39_2021_L": {
+      "url": "text/39_2021_L.txt"
+    },
+    "39_2022_L": {
+      "url": "text/39_2022_L.txt"
+    },
+    "39_2023_L": {
+      "url": "text/39_2023_L.txt"
+    },
+    "39_2024_L": {
+      "url": "text/39_2024_L.txt"
+    },
+    "39_2025_L": {
+      "url": "text/39_2025_L.txt"
+    },
+    "38_2019_L": {
+      "url": "text/38_2019_L.txt"
+    },
+    "38_2020_L": {
+      "url": "text/38_2020_L.txt"
+    },
+    "38_2022_L": {
+      "url": "text/38_2022_L.txt"
+    },
+    "38_2025_L": {
+      "url": "text/38_2025_L.txt"
+    },
+    "376_2019_L": {
+      "url": "text/376_2019_L.txt"
+    },
+    "375_2019_L": {
+      "url": "text/375_2019_L.txt"
+    },
+    "374_2019_L": {
+      "url": "text/374_2019_L.txt"
+    },
+    "373_2019_L": {
+      "url": "text/373_2019_L.txt"
+    },
+    "372_2019_L": {
+      "url": "text/372_2019_L.txt"
+    },
+    "371_2019_L": {
+      "url": "text/371_2019_L.txt"
+    },
+    "370_2019_L": {
+      "url": "text/370_2019_L.txt"
+    },
+    "37_2019_L": {
+      "url": "text/37_2019_L.txt"
+    },
+    "37_2020_L": {
+      "url": "text/37_2020_L.txt"
+    },
+    "37_2021_L": {
+      "url": "text/37_2021_L.txt"
+    },
+    "37_2022_L": {
+      "url": "text/37_2022_L.txt"
+    },
+    "37_2023_L": {
+      "url": "text/37_2023_L.txt"
+    },
+    "37_2024_L": {
+      "url": "text/37_2024_L.txt"
+    },
+    "37_2025_L": {
+      "url": "text/37_2025_L.txt"
+    },
+    "369_2019_L": {
+      "url": "text/369_2019_L.txt"
+    },
+    "368_2019_L": {
+      "url": "text/368_2019_L.txt"
+    },
+    "367_2019_L": {
+      "url": "text/367_2019_L.txt"
+    },
+    "366_2019_L": {
+      "url": "text/366_2019_L.txt"
+    },
+    "365_2019_L": {
+      "url": "text/365_2019_L.txt"
+    },
+    "364_2019_L": {
+      "url": "text/364_2019_L.txt"
+    },
+    "363_2019_L": {
+      "url": "text/363_2019_L.txt"
+    },
+    "362_2019_L": {
+      "url": "text/362_2019_L.txt"
+    },
+    "361_2019_L": {
+      "url": "text/361_2019_L.txt"
+    },
+    "360_2019_L": {
+      "url": "text/360_2019_L.txt"
+    },
+    "36_2019_L": {
+      "url": "text/36_2019_L.txt"
+    },
+    "36_2020_L": {
+      "url": "text/36_2020_L.txt"
+    },
+    "36_2021_L": {
+      "url": "text/36_2021_L.txt"
+    },
+    "36_2022_L": {
+      "url": "text/36_2022_L.txt"
+    },
+    "36_2023_L": {
+      "url": "text/36_2023_L.txt"
+    },
+    "36_2024_L": {
+      "url": "text/36_2024_L.txt"
+    },
+    "36_2025_L": {
+      "url": "text/36_2025_L.txt"
+    },
+    "359_2019_L": {
+      "url": "text/359_2019_L.txt"
+    },
+    "356_2019_L": {
+      "url": "text/356_2019_L.txt"
+    },
+    "355_2019_L": {
+      "url": "text/355_2019_L.txt"
+    },
+    "354_2019_L": {
+      "url": "text/354_2019_L.txt"
+    },
+    "353_2019_L": {
+      "url": "text/353_2019_L.txt"
+    },
+    "352_2019_L": {
+      "url": "text/352_2019_L.txt"
+    },
+    "351_2019_L": {
+      "url": "text/351_2019_L.txt"
+    },
+    "350_2019_L": {
+      "url": "text/350_2019_L.txt"
+    },
+    "35_2019_L": {
+      "url": "text/35_2019_L.txt"
+    },
+    "35_2020_L": {
+      "url": "text/35_2020_L.txt"
+    },
+    "35_2021_L": {
+      "url": "text/35_2021_L.txt"
+    },
+    "35_2022_L": {
+      "url": "text/35_2022_L.txt"
+    },
+    "35_2023_L": {
+      "url": "text/35_2023_L.txt"
+    },
+    "35_2025_L": {
+      "url": "text/35_2025_L.txt"
+    },
+    "349_2019_L": {
+      "url": "text/349_2019_L.txt"
+    },
+    "347_2019_L": {
+      "url": "text/347_2019_L.txt"
+    },
+    "346_2019_L": {
+      "url": "text/346_2019_L.txt"
+    },
+    "345_2019_L": {
+      "url": "text/345_2019_L.txt"
+    },
+    "344_2019_L": {
+      "url": "text/344_2019_L.txt"
+    },
+    "343_2019_L": {
+      "url": "text/343_2019_L.txt"
+    },
+    "342_2019_L": {
+      "url": "text/342_2019_L.txt"
+    },
+    "341_2019_L": {
+      "url": "text/341_2019_L.txt"
+    },
+    "340_2019_L": {
+      "url": "text/340_2019_L.txt"
+    },
+    "34_2019_L": {
+      "url": "text/34_2019_L.txt"
+    },
+    "34_2020_L": {
+      "url": "text/34_2020_L.txt"
+    },
+    "34_2021_L": {
+      "url": "text/34_2021_L.txt"
+    },
+    "34_2022_L": {
+      "url": "text/34_2022_L.txt"
+    },
+    "34_2023_L": {
+      "url": "text/34_2023_L.txt"
+    },
+    "34_2024_L": {
+      "url": "text/34_2024_L.txt"
+    },
+    "34_2025_L": {
+      "url": "text/34_2025_L.txt"
+    },
+    "339_2019_L": {
+      "url": "text/339_2019_L.txt"
+    },
+    "337_2019_L": {
+      "url": "text/337_2019_L.txt"
+    },
+    "336_2019_L": {
+      "url": "text/336_2019_L.txt"
+    },
+    "335_2019_L": {
+      "url": "text/335_2019_L.txt"
+    },
+    "334_2019_L": {
+      "url": "text/334_2019_L.txt"
+    },
+    "331_2019_L": {
+      "url": "text/331_2019_L.txt"
+    },
+    "330_2019_L": {
+      "url": "text/330_2019_L.txt"
+    },
+    "33_2019_L": {
+      "url": "text/33_2019_L.txt"
+    },
+    "33_2020_L": {
+      "url": "text/33_2020_L.txt"
+    },
+    "33_2022_L": {
+      "url": "text/33_2022_L.txt"
+    },
+    "33_2023_L": {
+      "url": "text/33_2023_L.txt"
+    },
+    "33_2024_L": {
+      "url": "text/33_2024_L.txt"
+    },
+    "33_2025_L": {
+      "url": "text/33_2025_L.txt"
+    },
+    "33_2026_L": {
+      "url": "text/33_2026_L.txt"
+    },
+    "328_2019_L": {
+      "url": "text/328_2019_L.txt"
+    },
+    "327_2019_L": {
+      "url": "text/327_2019_L.txt"
+    },
+    "324_2019_L": {
+      "url": "text/324_2019_L.txt"
+    },
+    "323_2019_L": {
+      "url": "text/323_2019_L.txt"
+    },
+    "322_2019_L": {
+      "url": "text/322_2019_L.txt"
+    },
+    "321_2019_L": {
+      "url": "text/321_2019_L.txt"
+    },
+    "320_2019_L": {
+      "url": "text/320_2019_L.txt"
+    },
+    "32_2019_L": {
+      "url": "text/32_2019_L.txt"
+    },
+    "32_2020_L": {
+      "url": "text/32_2020_L.txt"
+    },
+    "32_2021_L": {
+      "url": "text/32_2021_L.txt"
+    },
+    "32_2022_L": {
+      "url": "text/32_2022_L.txt"
+    },
+    "32_2023_L": {
+      "url": "text/32_2023_L.txt"
+    },
+    "32_2024_L": {
+      "url": "text/32_2024_L.txt"
+    },
+    "32_2025_L": {
+      "url": "text/32_2025_L.txt"
+    },
+    "319_2019_L": {
+      "url": "text/319_2019_L.txt"
+    },
+    "318_2019_L": {
+      "url": "text/318_2019_L.txt"
+    },
+    "317_2019_L": {
+      "url": "text/317_2019_L.txt"
+    },
+    "316_2019_L": {
+      "url": "text/316_2019_L.txt"
+    },
+    "315_2019_L": {
+      "url": "text/315_2019_L.txt"
+    },
+    "314_2019_L": {
+      "url": "text/314_2019_L.txt"
+    },
+    "313_2019_L": {
+      "url": "text/313_2019_L.txt"
+    },
+    "312_2019_L": {
+      "url": "text/312_2019_L.txt"
+    },
+    "311_2019_L": {
+      "url": "text/311_2019_L.txt"
+    },
+    "310_2019_L": {
+      "url": "text/310_2019_L.txt"
+    },
+    "31_2019_L": {
+      "url": "text/31_2019_L.txt"
+    },
+    "31_2020_L": {
+      "url": "text/31_2020_L.txt"
+    },
+    "31_2021_L": {
+      "url": "text/31_2021_L.txt"
+    },
+    "31_2022_L": {
+      "url": "text/31_2022_L.txt"
+    },
+    "31_2023_L": {
+      "url": "text/31_2023_L.txt"
+    },
+    "31_2024_L": {
+      "url": "text/31_2024_L.txt"
+    },
+    "308_2019_L": {
+      "url": "text/308_2019_L.txt"
+    },
+    "307_2019_L": {
+      "url": "text/307_2019_L.txt"
+    },
+    "306_2019_L": {
+      "url": "text/306_2019_L.txt"
+    },
+    "305_2019_L": {
+      "url": "text/305_2019_L.txt"
+    },
+    "304_2019_L": {
+      "url": "text/304_2019_L.txt"
+    },
+    "303_2019_L": {
+      "url": "text/303_2019_L.txt"
+    },
+    "301_2019_L": {
+      "url": "text/301_2019_L.txt"
+    },
+    "300_2019_L": {
+      "url": "text/300_2019_L.txt"
+    },
+    "30_2019_L": {
+      "url": "text/30_2019_L.txt"
+    },
+    "30_2020_L": {
+      "url": "text/30_2020_L.txt"
+    },
+    "30_2021_L": {
+      "url": "text/30_2021_L.txt"
+    },
+    "30_2022_L": {
+      "url": "text/30_2022_L.txt"
+    },
+    "30_2023_L": {
+      "url": "text/30_2023_L.txt"
+    },
+    "30_2024_L": {
+      "url": "text/30_2024_L.txt"
+    },
+    "30_2025_L": {
+      "url": "text/30_2025_L.txt"
+    },
+    "3_2019_L": {
+      "url": "text/3_2019_L.txt"
+    },
+    "3_2020_L": {
+      "url": "text/3_2020_L.txt"
+    },
+    "3_2021_L": {
+      "url": "text/3_2021_L.txt"
+    },
+    "3_2022_L": {
+      "url": "text/3_2022_L.txt"
+    },
+    "3_2023_L": {
+      "url": "text/3_2023_L.txt"
+    },
+    "3_2026_L": {
+      "url": "text/3_2026_L.txt"
+    },
+    "299_2019_L": {
+      "url": "text/299_2019_L.txt"
+    },
+    "299_2022_L": {
+      "url": "text/299_2022_L.txt"
+    },
+    "298_2019_L": {
+      "url": "text/298_2019_L.txt"
+    },
+    "297_2019_L": {
+      "url": "text/297_2019_L.txt"
+    },
+    "296_2019_L": {
+      "url": "text/296_2019_L.txt"
+    },
+    "296_2022_L": {
+      "url": "text/296_2022_L.txt"
+    },
+    "295_2019_L": {
+      "url": "text/295_2019_L.txt"
+    },
+    "294_2019_L": {
+      "url": "text/294_2019_L.txt"
+    },
+    "294_2022_L": {
+      "url": "text/294_2022_L.txt"
+    },
+    "293_2019_L": {
+      "url": "text/293_2019_L.txt"
+    },
+    "293_2022_L": {
+      "url": "text/293_2022_L.txt"
+    },
+    "292_2019_L": {
+      "url": "text/292_2019_L.txt"
+    },
+    "292_2022_L": {
+      "url": "text/292_2022_L.txt"
+    },
+    "291_2019_L": {
+      "url": "text/291_2019_L.txt"
+    },
+    "291_2022_L": {
+      "url": "text/291_2022_L.txt"
+    },
+    "290_2019_L": {
+      "url": "text/290_2019_L.txt"
+    },
+    "290_2022_L": {
+      "url": "text/290_2022_L.txt"
+    },
+    "29_2019_L": {
+      "url": "text/29_2019_L.txt"
+    },
+    "29_2020_L": {
+      "url": "text/29_2020_L.txt"
+    },
+    "29_2021_L": {
+      "url": "text/29_2021_L.txt"
+    },
+    "29_2022_L": {
+      "url": "text/29_2022_L.txt"
+    },
+    "29_2023_L": {
+      "url": "text/29_2023_L.txt"
+    },
+    "29_2024_L": {
+      "url": "text/29_2024_L.txt"
+    },
+    "29_2025_L": {
+      "url": "text/29_2025_L.txt"
+    },
+    "289_2019_L": {
+      "url": "text/289_2019_L.txt"
+    },
+    "289_2022_L": {
+      "url": "text/289_2022_L.txt"
+    },
+    "288_2019_L": {
+      "url": "text/288_2019_L.txt"
+    },
+    "287_2019_L": {
+      "url": "text/287_2019_L.txt"
+    },
+    "287_2022_L": {
+      "url": "text/287_2022_L.txt"
+    },
+    "286_2019_L": {
+      "url": "text/286_2019_L.txt"
+    },
+    "286_2022_L": {
+      "url": "text/286_2022_L.txt"
+    },
+    "285_2019_L": {
+      "url": "text/285_2019_L.txt"
+    },
+    "285_2022_L": {
+      "url": "text/285_2022_L.txt"
+    },
+    "284_2019_L": {
+      "url": "text/284_2019_L.txt"
+    },
+    "284_2022_L": {
+      "url": "text/284_2022_L.txt"
+    },
+    "281_2022_L": {
+      "url": "text/281_2022_L.txt"
+    },
+    "280_2022_L": {
+      "url": "text/280_2022_L.txt"
+    },
+    "28_2020_L": {
+      "url": "text/28_2020_L.txt"
+    },
+    "28_2021_L": {
+      "url": "text/28_2021_L.txt"
+    },
+    "28_2022_L": {
+      "url": "text/28_2022_L.txt"
+    },
+    "28_2023_L": {
+      "url": "text/28_2023_L.txt"
+    },
+    "28_2024_L": {
+      "url": "text/28_2024_L.txt"
+    },
+    "28_2025_L": {
+      "url": "text/28_2025_L.txt"
+    },
+    "279_2022_L": {
+      "url": "text/279_2022_L.txt"
+    },
+    "279_2024_L": {
+      "url": "text/279_2024_L.txt"
+    },
+    "277_2022_L": {
+      "url": "text/277_2022_L.txt"
+    },
+    "277_2024_L": {
+      "url": "text/277_2024_L.txt"
+    },
+    "276_2022_L": {
+      "url": "text/276_2022_L.txt"
+    },
+    "276_2024_L": {
+      "url": "text/276_2024_L.txt"
+    },
+    "275_2022_L": {
+      "url": "text/275_2022_L.txt"
+    },
+    "275_2024_L": {
+      "url": "text/275_2024_L.txt"
+    },
+    "274_2024_L": {
+      "url": "text/274_2024_L.txt"
+    },
+    "273_2022_L": {
+      "url": "text/273_2022_L.txt"
+    },
+    "273_2024_L": {
+      "url": "text/273_2024_L.txt"
+    },
+    "272_2022_L": {
+      "url": "text/272_2022_L.txt"
+    },
+    "272_2024_L": {
+      "url": "text/272_2024_L.txt"
+    },
+    "271_2022_L": {
+      "url": "text/271_2022_L.txt"
+    },
+    "271_2024_L": {
+      "url": "text/271_2024_L.txt"
+    },
+    "270_2024_L": {
+      "url": "text/270_2024_L.txt"
+    },
+    "27_2020_L": {
+      "url": "text/27_2020_L.txt"
+    },
+    "27_2021_L": {
+      "url": "text/27_2021_L.txt"
+    },
+    "27_2022_L": {
+      "url": "text/27_2022_L.txt"
+    },
+    "27_2023_L": {
+      "url": "text/27_2023_L.txt"
+    },
+    "27_2024_L": {
+      "url": "text/27_2024_L.txt"
+    },
+    "27_2025_L": {
+      "url": "text/27_2025_L.txt"
+    },
+    "269_2022_L": {
+      "url": "text/269_2022_L.txt"
+    },
+    "269_2024_L": {
+      "url": "text/269_2024_L.txt"
+    },
+    "266_2022_L": {
+      "url": "text/266_2022_L.txt"
+    },
+    "265_2024_L": {
+      "url": "text/265_2024_L.txt"
+    },
+    "264_2022_L": {
+      "url": "text/264_2022_L.txt"
+    },
+    "263_2022_L": {
+      "url": "text/263_2022_L.txt"
+    },
+    "263_2024_L": {
+      "url": "text/263_2024_L.txt"
+    },
+    "261_2022_L": {
+      "url": "text/261_2022_L.txt"
+    },
+    "260_2022_L": {
+      "url": "text/260_2022_L.txt"
+    },
+    "260_2024_L": {
+      "url": "text/260_2024_L.txt"
+    },
+    "26_2020_L": {
+      "url": "text/26_2020_L.txt"
+    },
+    "26_2022_L": {
+      "url": "text/26_2022_L.txt"
+    },
+    "26_2023_L": {
+      "url": "text/26_2023_L.txt"
+    },
+    "26_2024_L": {
+      "url": "text/26_2024_L.txt"
+    },
+    "26_2025_L": {
+      "url": "text/26_2025_L.txt"
+    },
+    "259_2022_L": {
+      "url": "text/259_2022_L.txt"
+    },
+    "259_2024_L": {
+      "url": "text/259_2024_L.txt"
+    },
+    "258_2024_L": {
+      "url": "text/258_2024_L.txt"
+    },
+    "257_2022_L": {
+      "url": "text/257_2022_L.txt"
+    },
+    "256_2022_L": {
+      "url": "text/256_2022_L.txt"
+    },
+    "255_2022_L": {
+      "url": "text/255_2022_L.txt"
+    },
+    "254_2022_L": {
+      "url": "text/254_2022_L.txt"
+    },
+    "254_2024_L": {
+      "url": "text/254_2024_L.txt"
+    },
+    "253_2022_L": {
+      "url": "text/253_2022_L.txt"
+    },
+    "252_2024_L": {
+      "url": "text/252_2024_L.txt"
+    },
+    "251_2022_L": {
+      "url": "text/251_2022_L.txt"
+    },
+    "250_2022_L": {
+      "url": "text/250_2022_L.txt"
+    },
+    "25_2020_L": {
+      "url": "text/25_2020_L.txt"
+    },
+    "25_2022_L": {
+      "url": "text/25_2022_L.txt"
+    },
+    "25_2024_L": {
+      "url": "text/25_2024_L.txt"
+    },
+    "248_2022_L": {
+      "url": "text/248_2022_L.txt"
+    },
+    "247_2022_L": {
+      "url": "text/247_2022_L.txt"
+    },
+    "247_2024_L": {
+      "url": "text/247_2024_L.txt"
+    },
+    "246_2022_L": {
+      "url": "text/246_2022_L.txt"
+    },
+    "245_2022_L": {
+      "url": "text/245_2022_L.txt"
+    },
+    "245_2024_L": {
+      "url": "text/245_2024_L.txt"
+    },
+    "244_2024_L": {
+      "url": "text/244_2024_L.txt"
+    },
+    "243_2022_L": {
+      "url": "text/243_2022_L.txt"
+    },
+    "241_2022_L": {
+      "url": "text/241_2022_L.txt"
+    },
+    "24_2022_L": {
+      "url": "text/24_2022_L.txt"
+    },
+    "24_2024_L": {
+      "url": "text/24_2024_L.txt"
+    },
+    "24_2025_L": {
+      "url": "text/24_2025_L.txt"
+    },
+    "239_2022_L": {
+      "url": "text/239_2022_L.txt"
+    },
+    "238_2022_L": {
+      "url": "text/238_2022_L.txt"
+    },
+    "237_2022_L": {
+      "url": "text/237_2022_L.txt"
+    },
+    "235_2022_L": {
+      "url": "text/235_2022_L.txt"
+    },
+    "234_2022_L": {
+      "url": "text/234_2022_L.txt"
+    },
+    "233_2022_L": {
+      "url": "text/233_2022_L.txt"
+    },
+    "232_2024_L": {
+      "url": "text/232_2024_L.txt"
+    },
+    "231_2022_L": {
+      "url": "text/231_2022_L.txt"
+    },
+    "231_2024_L": {
+      "url": "text/231_2024_L.txt"
+    },
+    "230_2024_L": {
+      "url": "text/230_2024_L.txt"
+    },
+    "23_2020_L": {
+      "url": "text/23_2020_L.txt"
+    },
+    "23_2021_L": {
+      "url": "text/23_2021_L.txt"
+    },
+    "23_2022_L": {
+      "url": "text/23_2022_L.txt"
+    },
+    "23_2023_L": {
+      "url": "text/23_2023_L.txt"
+    },
+    "23_2024_L": {
+      "url": "text/23_2024_L.txt"
+    },
+    "23_2025_L": {
+      "url": "text/23_2025_L.txt"
+    },
+    "229_2022_L": {
+      "url": "text/229_2022_L.txt"
+    },
+    "228_2022_L": {
+      "url": "text/228_2022_L.txt"
+    },
+    "227_2022_L": {
+      "url": "text/227_2022_L.txt"
+    },
+    "227_2024_L": {
+      "url": "text/227_2024_L.txt"
+    },
+    "226_2022_L": {
+      "url": "text/226_2022_L.txt"
+    },
+    "224_2022_L": {
+      "url": "text/224_2022_L.txt"
+    },
+    "223_2022_L": {
+      "url": "text/223_2022_L.txt"
+    },
+    "222_2022_L": {
+      "url": "text/222_2022_L.txt"
+    },
+    "220_2022_L": {
+      "url": "text/220_2022_L.txt"
+    },
+    "22_2020_L": {
+      "url": "text/22_2020_L.txt"
+    },
+    "22_2021_L": {
+      "url": "text/22_2021_L.txt"
+    },
+    "22_2023_L": {
+      "url": "text/22_2023_L.txt"
+    },
+    "22_2024_L": {
+      "url": "text/22_2024_L.txt"
+    },
+    "22_2025_L": {
+      "url": "text/22_2025_L.txt"
+    },
+    "219_2022_L": {
+      "url": "text/219_2022_L.txt"
+    },
+    "218_2022_L": {
+      "url": "text/218_2022_L.txt"
+    },
+    "218_2024_L": {
+      "url": "text/218_2024_L.txt"
+    },
+    "217_2022_L": {
+      "url": "text/217_2022_L.txt"
+    },
+    "217_2024_L": {
+      "url": "text/217_2024_L.txt"
+    },
+    "216_2022_L": {
+      "url": "text/216_2022_L.txt"
+    },
+    "215_2022_L": {
+      "url": "text/215_2022_L.txt"
+    },
+    "215_2024_L": {
+      "url": "text/215_2024_L.txt"
+    },
+    "214_2022_L": {
+      "url": "text/214_2022_L.txt"
+    },
+    "212_2022_L": {
+      "url": "text/212_2022_L.txt"
+    },
+    "212_2024_L": {
+      "url": "text/212_2024_L.txt"
+    },
+    "211_2022_L": {
+      "url": "text/211_2022_L.txt"
+    },
+    "21_2021_L": {
+      "url": "text/21_2021_L.txt"
+    },
+    "21_2022_L": {
+      "url": "text/21_2022_L.txt"
+    },
+    "21_2023_L": {
+      "url": "text/21_2023_L.txt"
+    },
+    "21_2024_L": {
+      "url": "text/21_2024_L.txt"
+    },
+    "209_2022_L": {
+      "url": "text/209_2022_L.txt"
+    },
+    "209_2024_L": {
+      "url": "text/209_2024_L.txt"
+    },
+    "208_2022_L": {
+      "url": "text/208_2022_L.txt"
+    },
+    "206_2022_L": {
+      "url": "text/206_2022_L.txt"
+    },
+    "205_2022_L": {
+      "url": "text/205_2022_L.txt"
+    },
+    "203_2022_L": {
+      "url": "text/203_2022_L.txt"
+    },
+    "203_2024_L": {
+      "url": "text/203_2024_L.txt"
+    },
+    "202_2022_L": {
+      "url": "text/202_2022_L.txt"
+    },
+    "201_2022_L": {
+      "url": "text/201_2022_L.txt"
+    },
+    "200_2022_L": {
+      "url": "text/200_2022_L.txt"
+    },
+    "200_2025_L": {
+      "url": "text/200_2025_L.txt"
+    },
+    "20_2021_L": {
+      "url": "text/20_2021_L.txt"
+    },
+    "20_2022_L": {
+      "url": "text/20_2022_L.txt"
+    },
+    "20_2023_L": {
+      "url": "text/20_2023_L.txt"
+    },
+    "20_2024_L": {
+      "url": "text/20_2024_L.txt"
+    },
+    "20_2025_L": {
+      "url": "text/20_2025_L.txt"
+    },
+    "2_2021_L": {
+      "url": "text/2_2021_L.txt"
+    },
+    "2_2022_L": {
+      "url": "text/2_2022_L.txt"
+    },
+    "2_2023_L": {
+      "url": "text/2_2023_L.txt"
+    },
+    "2_2025_L": {
+      "url": "text/2_2025_L.txt"
+    },
+    "199_2022_L": {
+      "url": "text/199_2022_L.txt"
+    },
+    "199_2024_L": {
+      "url": "text/199_2024_L.txt"
+    },
+    "198_2022_L": {
+      "url": "text/198_2022_L.txt"
+    },
+    "197_2022_L": {
+      "url": "text/197_2022_L.txt"
+    },
+    "197_2025_L": {
+      "url": "text/197_2025_L.txt"
+    },
+    "196_2024_L": {
+      "url": "text/196_2024_L.txt"
+    },
+    "196_2025_L": {
+      "url": "text/196_2025_L.txt"
+    },
+    "195_2022_L": {
+      "url": "text/195_2022_L.txt"
+    },
+    "195_2024_L": {
+      "url": "text/195_2024_L.txt"
+    },
+    "195_2025_L": {
+      "url": "text/195_2025_L.txt"
+    },
+    "194_2022_L": {
+      "url": "text/194_2022_L.txt"
+    },
+    "194_2023_L": {
+      "url": "text/194_2023_L.txt"
+    },
+    "194_2025_L": {
+      "url": "text/194_2025_L.txt"
+    },
+    "193_2022_L": {
+      "url": "text/193_2022_L.txt"
+    },
+    "193_2024_L": {
+      "url": "text/193_2024_L.txt"
+    },
+    "193_2025_L": {
+      "url": "text/193_2025_L.txt"
+    },
+    "192_2022_L": {
+      "url": "text/192_2022_L.txt"
+    },
+    "191_2022_L": {
+      "url": "text/191_2022_L.txt"
+    },
+    "190_2022_L": {
+      "url": "text/190_2022_L.txt"
+    },
+    "19_2020_L": {
+      "url": "text/19_2020_L.txt"
+    },
+    "19_2021_L": {
+      "url": "text/19_2021_L.txt"
+    },
+    "19_2022_L": {
+      "url": "text/19_2022_L.txt"
+    },
+    "19_2024_L": {
+      "url": "text/19_2024_L.txt"
+    },
+    "189_2022_L": {
+      "url": "text/189_2022_L.txt"
+    },
+    "188_2024_L": {
+      "url": "text/188_2024_L.txt"
+    },
+    "187_2022_L": {
+      "url": "text/187_2022_L.txt"
+    },
+    "187_2024_L": {
+      "url": "text/187_2024_L.txt"
+    },
+    "186_2022_L": {
+      "url": "text/186_2022_L.txt"
+    },
+    "185_2022_L": {
+      "url": "text/185_2022_L.txt"
+    },
+    "184_2022_L": {
+      "url": "text/184_2022_L.txt"
+    },
+    "183_2022_L": {
+      "url": "text/183_2022_L.txt"
+    },
+    "183_2024_L": {
+      "url": "text/183_2024_L.txt"
+    },
+    "182_2022_L": {
+      "url": "text/182_2022_L.txt"
+    },
+    "182_2024_L": {
+      "url": "text/182_2024_L.txt"
+    },
+    "181_2022_L": {
+      "url": "text/181_2022_L.txt"
+    },
+    "180_2022_L": {
+      "url": "text/180_2022_L.txt"
+    },
+    "180_2024_L": {
+      "url": "text/180_2024_L.txt"
+    },
+    "18_2020_L": {
+      "url": "text/18_2020_L.txt"
+    },
+    "18_2021_L": {
+      "url": "text/18_2021_L.txt"
+    },
+    "18_2022_L": {
+      "url": "text/18_2022_L.txt"
+    },
+    "18_2023_L": {
+      "url": "text/18_2023_L.txt"
+    },
+    "18_2024_L": {
+      "url": "text/18_2024_L.txt"
+    },
+    "179_2022_L": {
+      "url": "text/179_2022_L.txt"
+    },
+    "178_2022_L": {
+      "url": "text/178_2022_L.txt"
+    },
+    "177_2022_L": {
+      "url": "text/177_2022_L.txt"
+    },
+    "177_2024_L": {
+      "url": "text/177_2024_L.txt"
+    },
+    "176_2022_L": {
+      "url": "text/176_2022_L.txt"
+    },
+    "176_2023_L": {
+      "url": "text/176_2023_L.txt"
+    },
+    "175_2022_L": {
+      "url": "text/175_2022_L.txt"
+    },
+    "175_2023_L": {
+      "url": "text/175_2023_L.txt"
+    },
+    "174_2022_L": {
+      "url": "text/174_2022_L.txt"
+    },
+    "174_2023_L": {
+      "url": "text/174_2023_L.txt"
+    },
+    "173_2022_L": {
+      "url": "text/173_2022_L.txt"
+    },
+    "173_2023_L": {
+      "url": "text/173_2023_L.txt"
+    },
+    "173_2024_L": {
+      "url": "text/173_2024_L.txt"
+    },
+    "172_2022_L": {
+      "url": "text/172_2022_L.txt"
+    },
+    "172_2023_L": {
+      "url": "text/172_2023_L.txt"
+    },
+    "171_2022_L": {
+      "url": "text/171_2022_L.txt"
+    },
+    "171_2023_L": {
+      "url": "text/171_2023_L.txt"
+    },
+    "170_2022_L": {
+      "url": "text/170_2022_L.txt"
+    },
+    "17_2020_L": {
+      "url": "text/17_2020_L.txt"
+    },
+    "17_2021_L": {
+      "url": "text/17_2021_L.txt"
+    },
+    "17_2022_L": {
+      "url": "text/17_2022_L.txt"
+    },
+    "17_2023_L": {
+      "url": "text/17_2023_L.txt"
+    },
+    "169_2022_L": {
+      "url": "text/169_2022_L.txt"
+    },
+    "168_2022_L": {
+      "url": "text/168_2022_L.txt"
+    },
+    "168_2024_L": {
+      "url": "text/168_2024_L.txt"
+    },
+    "168_2025_L": {
+      "url": "text/168_2025_L.txt"
+    },
+    "167_2022_L": {
+      "url": "text/167_2022_L.txt"
+    },
+    "167_2024_L": {
+      "url": "text/167_2024_L.txt"
+    },
+    "167_2025_L": {
+      "url": "text/167_2025_L.txt"
+    },
+    "166_2022_L": {
+      "url": "text/166_2022_L.txt"
+    },
+    "166_2025_L": {
+      "url": "text/166_2025_L.txt"
+    },
+    "165_2022_L": {
+      "url": "text/165_2022_L.txt"
+    },
+    "165_2025_L": {
+      "url": "text/165_2025_L.txt"
+    },
+    "164_2022_L": {
+      "url": "text/164_2022_L.txt"
+    },
+    "164_2024_L": {
+      "url": "text/164_2024_L.txt"
+    },
+    "164_2025_L": {
+      "url": "text/164_2025_L.txt"
+    },
+    "163_2021_L": {
+      "url": "text/163_2021_L.txt"
+    },
+    "163_2022_L": {
+      "url": "text/163_2022_L.txt"
+    },
+    "163_2024_L": {
+      "url": "text/163_2024_L.txt"
+    },
+    "163_2025_L": {
+      "url": "text/163_2025_L.txt"
+    },
+    "162_2021_L": {
+      "url": "text/162_2021_L.txt"
+    },
+    "162_2022_L": {
+      "url": "text/162_2022_L.txt"
+    },
+    "161_2021_L": {
+      "url": "text/161_2021_L.txt"
+    },
+    "161_2022_L": {
+      "url": "text/161_2022_L.txt"
+    },
+    "161_2024_L": {
+      "url": "text/161_2024_L.txt"
+    },
+    "160_2021_L": {
+      "url": "text/160_2021_L.txt"
+    },
+    "160_2022_L": {
+      "url": "text/160_2022_L.txt"
+    },
+    "160_2024_L": {
+      "url": "text/160_2024_L.txt"
+    },
+    "160_2025_L": {
+      "url": "text/160_2025_L.txt"
+    },
+    "16_2021_L": {
+      "url": "text/16_2021_L.txt"
+    },
+    "16_2022_L": {
+      "url": "text/16_2022_L.txt"
+    },
+    "16_2025_L": {
+      "url": "text/16_2025_L.txt"
+    },
+    "159_2022_L": {
+      "url": "text/159_2022_L.txt"
+    },
+    "159_2023_L": {
+      "url": "text/159_2023_L.txt"
+    },
+    "159_2024_L": {
+      "url": "text/159_2024_L.txt"
+    },
+    "158_2021_L": {
+      "url": "text/158_2021_L.txt"
+    },
+    "158_2022_L": {
+      "url": "text/158_2022_L.txt"
+    },
+    "158_2023_L": {
+      "url": "text/158_2023_L.txt"
+    },
+    "158_2024_L": {
+      "url": "text/158_2024_L.txt"
+    },
+    "158_2025_L": {
+      "url": "text/158_2025_L.txt"
+    },
+    "157_2022_L": {
+      "url": "text/157_2022_L.txt"
+    },
+    "157_2023_L": {
+      "url": "text/157_2023_L.txt"
+    },
+    "157_2024_L": {
+      "url": "text/157_2024_L.txt"
+    },
+    "157_2025_L": {
+      "url": "text/157_2025_L.txt"
+    },
+    "156_2022_L": {
+      "url": "text/156_2022_L.txt"
+    },
+    "156_2023_L": {
+      "url": "text/156_2023_L.txt"
+    },
+    "156_2024_L": {
+      "url": "text/156_2024_L.txt"
+    },
+    "156_2025_L": {
+      "url": "text/156_2025_L.txt"
+    },
+    "155_2022_L": {
+      "url": "text/155_2022_L.txt"
+    },
+    "154_2022_L": {
+      "url": "text/154_2022_L.txt"
+    },
+    "154_2025_L": {
+      "url": "text/154_2025_L.txt"
+    },
+    "153_2022_L": {
+      "url": "text/153_2022_L.txt"
+    },
+    "152_2021_L": {
+      "url": "text/152_2021_L.txt"
+    },
+    "152_2022_L": {
+      "url": "text/152_2022_L.txt"
+    },
+    "152_2025_L": {
+      "url": "text/152_2025_L.txt"
+    },
+    "151_2021_L": {
+      "url": "text/151_2021_L.txt"
+    },
+    "151_2022_L": {
+      "url": "text/151_2022_L.txt"
+    },
+    "151_2024_L": {
+      "url": "text/151_2024_L.txt"
+    },
+    "151_2025_L": {
+      "url": "text/151_2025_L.txt"
+    },
+    "150_2022_L": {
+      "url": "text/150_2022_L.txt"
+    },
+    "150_2025_L": {
+      "url": "text/150_2025_L.txt"
+    },
+    "15_2020_L": {
+      "url": "text/15_2020_L.txt"
+    },
+    "15_2021_L": {
+      "url": "text/15_2021_L.txt"
+    },
+    "15_2022_L": {
+      "url": "text/15_2022_L.txt"
+    },
+    "15_2023_L": {
+      "url": "text/15_2023_L.txt"
+    },
+    "15_2024_L": {
+      "url": "text/15_2024_L.txt"
+    },
+    "15_2025_L": {
+      "url": "text/15_2025_L.txt"
+    },
+    "149_2022_L": {
+      "url": "text/149_2022_L.txt"
+    },
+    "149_2024_L": {
+      "url": "text/149_2024_L.txt"
+    },
+    "149_2025_L": {
+      "url": "text/149_2025_L.txt"
+    },
+    "148_2021_L": {
+      "url": "text/148_2021_L.txt"
+    },
+    "148_2022_L": {
+      "url": "text/148_2022_L.txt"
+    },
+    "148_2024_L": {
+      "url": "text/148_2024_L.txt"
+    },
+    "147_2021_L": {
+      "url": "text/147_2021_L.txt"
+    },
+    "147_2022_L": {
+      "url": "text/147_2022_L.txt"
+    },
+    "147_2024_L": {
+      "url": "text/147_2024_L.txt"
+    },
+    "146_2021_L": {
+      "url": "text/146_2021_L.txt"
+    },
+    "146_2022_L": {
+      "url": "text/146_2022_L.txt"
+    },
+    "146_2024_L": {
+      "url": "text/146_2024_L.txt"
+    },
+    "145_2022_L": {
+      "url": "text/145_2022_L.txt"
+    },
+    "145_2024_L": {
+      "url": "text/145_2024_L.txt"
+    },
+    "145_2025_L": {
+      "url": "text/145_2025_L.txt"
+    },
+    "144_2021_L": {
+      "url": "text/144_2021_L.txt"
+    },
+    "144_2022_L": {
+      "url": "text/144_2022_L.txt"
+    },
+    "144_2024_L": {
+      "url": "text/144_2024_L.txt"
+    },
+    "144_2025_L": {
+      "url": "text/144_2025_L.txt"
+    },
+    "143_2021_L": {
+      "url": "text/143_2021_L.txt"
+    },
+    "143_2022_L": {
+      "url": "text/143_2022_L.txt"
+    },
+    "143_2025_L": {
+      "url": "text/143_2025_L.txt"
+    },
+    "142_2021_L": {
+      "url": "text/142_2021_L.txt"
+    },
+    "142_2022_L": {
+      "url": "text/142_2022_L.txt"
+    },
+    "142_2024_L": {
+      "url": "text/142_2024_L.txt"
+    },
+    "142_2025_L": {
+      "url": "text/142_2025_L.txt"
+    },
+    "141_2022_L": {
+      "url": "text/141_2022_L.txt"
+    },
+    "141_2023_L": {
+      "url": "text/141_2023_L.txt"
+    },
+    "141_2024_L": {
+      "url": "text/141_2024_L.txt"
+    },
+    "140_2021_L": {
+      "url": "text/140_2021_L.txt"
+    },
+    "140_2022_L": {
+      "url": "text/140_2022_L.txt"
+    },
+    "140_2024_L": {
+      "url": "text/140_2024_L.txt"
+    },
+    "140_2025_L": {
+      "url": "text/140_2025_L.txt"
+    },
+    "14_2020_L": {
+      "url": "text/14_2020_L.txt"
+    },
+    "14_2021_L": {
+      "url": "text/14_2021_L.txt"
+    },
+    "14_2022_L": {
+      "url": "text/14_2022_L.txt"
+    },
+    "14_2023_L": {
+      "url": "text/14_2023_L.txt"
+    },
+    "14_2024_L": {
+      "url": "text/14_2024_L.txt"
+    },
+    "14_2025_L": {
+      "url": "text/14_2025_L.txt"
+    },
+    "139_2021_L": {
+      "url": "text/139_2021_L.txt"
+    },
+    "139_2022_L": {
+      "url": "text/139_2022_L.txt"
+    },
+    "139_2024_L": {
+      "url": "text/139_2024_L.txt"
+    },
+    "138_2021_L": {
+      "url": "text/138_2021_L.txt"
+    },
+    "138_2022_L": {
+      "url": "text/138_2022_L.txt"
+    },
+    "137_2022_L": {
+      "url": "text/137_2022_L.txt"
+    },
+    "137_2024_L": {
+      "url": "text/137_2024_L.txt"
+    },
+    "136_2021_L": {
+      "url": "text/136_2021_L.txt"
+    },
+    "136_2022_L": {
+      "url": "text/136_2022_L.txt"
+    },
+    "136_2025_L": {
+      "url": "text/136_2025_L.txt"
+    },
+    "135_2022_L": {
+      "url": "text/135_2022_L.txt"
+    },
+    "134_2021_L": {
+      "url": "text/134_2021_L.txt"
+    },
+    "134_2022_L": {
+      "url": "text/134_2022_L.txt"
+    },
+    "134_2024_L": {
+      "url": "text/134_2024_L.txt"
+    },
+    "133_2021_L": {
+      "url": "text/133_2021_L.txt"
+    },
+    "133_2022_L": {
+      "url": "text/133_2022_L.txt"
+    },
+    "133_2024_L": {
+      "url": "text/133_2024_L.txt"
+    },
+    "132_2022_L": {
+      "url": "text/132_2022_L.txt"
+    },
+    "131_2021_L": {
+      "url": "text/131_2021_L.txt"
+    },
+    "131_2022_L": {
+      "url": "text/131_2022_L.txt"
+    },
+    "130_2022_L": {
+      "url": "text/130_2022_L.txt"
+    },
+    "13_2020_L": {
+      "url": "text/13_2020_L.txt"
+    },
+    "13_2021_L": {
+      "url": "text/13_2021_L.txt"
+    },
+    "13_2022_L": {
+      "url": "text/13_2022_L.txt"
+    },
+    "13_2023_L": {
+      "url": "text/13_2023_L.txt"
+    },
+    "129_2022_L": {
+      "url": "text/129_2022_L.txt"
+    },
+    "128_2021_L": {
+      "url": "text/128_2021_L.txt"
+    },
+    "128_2022_L": {
+      "url": "text/128_2022_L.txt"
+    },
+    "128_2024_L": {
+      "url": "text/128_2024_L.txt"
+    },
+    "127_2021_L": {
+      "url": "text/127_2021_L.txt"
+    },
+    "127_2022_L": {
+      "url": "text/127_2022_L.txt"
+    },
+    "126_2021_L": {
+      "url": "text/126_2021_L.txt"
+    },
+    "126_2022_L": {
+      "url": "text/126_2022_L.txt"
+    },
+    "125_2021_L": {
+      "url": "text/125_2021_L.txt"
+    },
+    "125_2022_L": {
+      "url": "text/125_2022_L.txt"
+    },
+    "124_2020_L": {
+      "url": "text/124_2020_L.txt"
+    },
+    "124_2021_L": {
+      "url": "text/124_2021_L.txt"
+    },
+    "124_2022_L": {
+      "url": "text/124_2022_L.txt"
+    },
+    "124_2023_L": {
+      "url": "text/124_2023_L.txt"
+    },
+    "124_2024_L": {
+      "url": "text/124_2024_L.txt"
+    },
+    "124_2025_L": {
+      "url": "text/124_2025_L.txt"
+    },
+    "123_2020_L": {
+      "url": "text/123_2020_L.txt"
+    },
+    "123_2021_L": {
+      "url": "text/123_2021_L.txt"
+    },
+    "123_2022_L": {
+      "url": "text/123_2022_L.txt"
+    },
+    "123_2023_L": {
+      "url": "text/123_2023_L.txt"
+    },
+    "123_2025_L": {
+      "url": "text/123_2025_L.txt"
+    },
+    "122_2020_L": {
+      "url": "text/122_2020_L.txt"
+    },
+    "122_2021_L": {
+      "url": "text/122_2021_L.txt"
+    },
+    "122_2022_L": {
+      "url": "text/122_2022_L.txt"
+    },
+    "122_2023_L": {
+      "url": "text/122_2023_L.txt"
+    },
+    "121_2020_L": {
+      "url": "text/121_2020_L.txt"
+    },
+    "121_2021_L": {
+      "url": "text/121_2021_L.txt"
+    },
+    "121_2022_L": {
+      "url": "text/121_2022_L.txt"
+    },
+    "121_2023_L": {
+      "url": "text/121_2023_L.txt"
+    },
+    "121_2024_L": {
+      "url": "text/121_2024_L.txt"
+    },
+    "120_2020_L": {
+      "url": "text/120_2020_L.txt"
+    },
+    "120_2021_L": {
+      "url": "text/120_2021_L.txt"
+    },
+    "120_2022_L": {
+      "url": "text/120_2022_L.txt"
+    },
+    "120_2023_L": {
+      "url": "text/120_2023_L.txt"
+    },
+    "12_2020_L": {
+      "url": "text/12_2020_L.txt"
+    },
+    "12_2021_L": {
+      "url": "text/12_2021_L.txt"
+    },
+    "12_2022_L": {
+      "url": "text/12_2022_L.txt"
+    },
+    "12_2023_L": {
+      "url": "text/12_2023_L.txt"
+    },
+    "119_2021_L": {
+      "url": "text/119_2021_L.txt"
+    },
+    "119_2022_L": {
+      "url": "text/119_2022_L.txt"
+    },
+    "119_2023_L": {
+      "url": "text/119_2023_L.txt"
+    },
+    "118_2020_L": {
+      "url": "text/118_2020_L.txt"
+    },
+    "118_2022_L": {
+      "url": "text/118_2022_L.txt"
+    },
+    "118_2024_L": {
+      "url": "text/118_2024_L.txt"
+    },
+    "118_2025_L": {
+      "url": "text/118_2025_L.txt"
+    },
+    "117_2020_L": {
+      "url": "text/117_2020_L.txt"
+    },
+    "117_2021_L": {
+      "url": "text/117_2021_L.txt"
+    },
+    "117_2022_L": {
+      "url": "text/117_2022_L.txt"
+    },
+    "116_2020_L": {
+      "url": "text/116_2020_L.txt"
+    },
+    "116_2021_L": {
+      "url": "text/116_2021_L.txt"
+    },
+    "116_2022_L": {
+      "url": "text/116_2022_L.txt"
+    },
+    "116_2024_L": {
+      "url": "text/116_2024_L.txt"
+    },
+    "116_2025_L": {
+      "url": "text/116_2025_L.txt"
+    },
+    "115_2020_L": {
+      "url": "text/115_2020_L.txt"
+    },
+    "115_2021_L": {
+      "url": "text/115_2021_L.txt"
+    },
+    "115_2022_L": {
+      "url": "text/115_2022_L.txt"
+    },
+    "115_2023_L": {
+      "url": "text/115_2023_L.txt"
+    },
+    "114_2020_L": {
+      "url": "text/114_2020_L.txt"
+    },
+    "114_2022_L": {
+      "url": "text/114_2022_L.txt"
+    },
+    "114_2023_L": {
+      "url": "text/114_2023_L.txt"
+    },
+    "113_2020_L": {
+      "url": "text/113_2020_L.txt"
+    },
+    "113_2021_L": {
+      "url": "text/113_2021_L.txt"
+    },
+    "113_2022_L": {
+      "url": "text/113_2022_L.txt"
+    },
+    "113_2023_L": {
+      "url": "text/113_2023_L.txt"
+    },
+    "113_2024_L": {
+      "url": "text/113_2024_L.txt"
+    },
+    "113_2025_L": {
+      "url": "text/113_2025_L.txt"
+    },
+    "112_2020_L": {
+      "url": "text/112_2020_L.txt"
+    },
+    "112_2021_L": {
+      "url": "text/112_2021_L.txt"
+    },
+    "112_2022_L": {
+      "url": "text/112_2022_L.txt"
+    },
+    "112_2023_L": {
+      "url": "text/112_2023_L.txt"
+    },
+    "112_2024_L": {
+      "url": "text/112_2024_L.txt"
+    },
+    "112_2025_L": {
+      "url": "text/112_2025_L.txt"
+    },
+    "111_2020_L": {
+      "url": "text/111_2020_L.txt"
+    },
+    "111_2024_L": {
+      "url": "text/111_2024_L.txt"
+    },
+    "111_2025_L": {
+      "url": "text/111_2025_L.txt"
+    },
+    "110_2020_L": {
+      "url": "text/110_2020_L.txt"
+    },
+    "110_2021_L": {
+      "url": "text/110_2021_L.txt"
+    },
+    "110_2022_L": {
+      "url": "text/110_2022_L.txt"
+    },
+    "110_2023_L": {
+      "url": "text/110_2023_L.txt"
+    },
+    "110_2024_L": {
+      "url": "text/110_2024_L.txt"
+    },
+    "110_2025_L": {
+      "url": "text/110_2025_L.txt"
+    },
+    "11_2020_L": {
+      "url": "text/11_2020_L.txt"
+    },
+    "11_2021_L": {
+      "url": "text/11_2021_L.txt"
+    },
+    "11_2022_L": {
+      "url": "text/11_2022_L.txt"
+    },
+    "11_2023_L": {
+      "url": "text/11_2023_L.txt"
+    },
+    "109_2020_L": {
+      "url": "text/109_2020_L.txt"
+    },
+    "109_2023_L": {
+      "url": "text/109_2023_L.txt"
+    },
+    "109_2024_L": {
+      "url": "text/109_2024_L.txt"
+    },
+    "109_2025_L": {
+      "url": "text/109_2025_L.txt"
+    },
+    "109_2026_L": {
+      "url": "text/109_2026_L.txt"
+    },
+    "108_2020_L": {
+      "url": "text/108_2020_L.txt"
+    },
+    "108_2021_L": {
+      "url": "text/108_2021_L.txt"
+    },
+    "108_2023_L": {
+      "url": "text/108_2023_L.txt"
+    },
+    "108_2024_L": {
+      "url": "text/108_2024_L.txt"
+    },
+    "108_2025_L": {
+      "url": "text/108_2025_L.txt"
+    },
+    "108_2026_L": {
+      "url": "text/108_2026_L.txt"
+    },
+    "107_2020_L": {
+      "url": "text/107_2020_L.txt"
+    },
+    "107_2022_L": {
+      "url": "text/107_2022_L.txt"
+    },
+    "107_2025_L": {
+      "url": "text/107_2025_L.txt"
+    },
+    "107_2026_L": {
+      "url": "text/107_2026_L.txt"
+    },
+    "106_2020_L": {
+      "url": "text/106_2020_L.txt"
+    },
+    "106_2021_L": {
+      "url": "text/106_2021_L.txt"
+    },
+    "106_2022_L": {
+      "url": "text/106_2022_L.txt"
+    },
+    "106_2024_L": {
+      "url": "text/106_2024_L.txt"
+    },
+    "106_2025_L": {
+      "url": "text/106_2025_L.txt"
+    },
+    "105_2021_L": {
+      "url": "text/105_2021_L.txt"
+    },
+    "105_2022_L": {
+      "url": "text/105_2022_L.txt"
+    },
+    "105_2023_L": {
+      "url": "text/105_2023_L.txt"
+    },
+    "105_2024_L": {
+      "url": "text/105_2024_L.txt"
+    },
+    "105_2025_L": {
+      "url": "text/105_2025_L.txt"
+    },
+    "105_2026_L": {
+      "url": "text/105_2026_L.txt"
+    },
+    "104_2020_L": {
+      "url": "text/104_2020_L.txt"
+    },
+    "104_2021_L": {
+      "url": "text/104_2021_L.txt"
+    },
+    "104_2022_L": {
+      "url": "text/104_2022_L.txt"
+    },
+    "104_2024_L": {
+      "url": "text/104_2024_L.txt"
+    },
+    "104_2025_L": {
+      "url": "text/104_2025_L.txt"
+    },
+    "104_2026_L": {
+      "url": "text/104_2026_L.txt"
+    },
+    "103_2020_L": {
+      "url": "text/103_2020_L.txt"
+    },
+    "103_2021_L": {
+      "url": "text/103_2021_L.txt"
+    },
+    "103_2022_L": {
+      "url": "text/103_2022_L.txt"
+    },
+    "103_2023_L": {
+      "url": "text/103_2023_L.txt"
+    },
+    "103_2025_L": {
+      "url": "text/103_2025_L.txt"
+    },
+    "102_2020_L": {
+      "url": "text/102_2020_L.txt"
+    },
+    "102_2021_L": {
+      "url": "text/102_2021_L.txt"
+    },
+    "102_2022_L": {
+      "url": "text/102_2022_L.txt"
+    },
+    "102_2023_L": {
+      "url": "text/102_2023_L.txt"
+    },
+    "102_2024_L": {
+      "url": "text/102_2024_L.txt"
+    },
+    "101_2020_L": {
+      "url": "text/101_2020_L.txt"
+    },
+    "101_2021_L": {
+      "url": "text/101_2021_L.txt"
+    },
+    "101_2022_L": {
+      "url": "text/101_2022_L.txt"
+    },
+    "101_2023_L": {
+      "url": "text/101_2023_L.txt"
+    },
+    "101_2024_L": {
+      "url": "text/101_2024_L.txt"
+    },
+    "101_2025_L": {
+      "url": "text/101_2025_L.txt"
+    },
+    "100_2020_L": {
+      "url": "text/100_2020_L.txt"
+    },
+    "100_2021_L": {
+      "url": "text/100_2021_L.txt"
+    },
+    "100_2022_L": {
+      "url": "text/100_2022_L.txt"
+    },
+    "100_2023_L": {
+      "url": "text/100_2023_L.txt"
+    },
+    "100_2024_L": {
+      "url": "text/100_2024_L.txt"
+    },
+    "10_2021_L": {
+      "url": "text/10_2021_L.txt"
+    },
+    "10_2022_L": {
+      "url": "text/10_2022_L.txt"
+    },
+    "10_2025_L": {
+      "url": "text/10_2025_L.txt"
+    },
+    "1_2020_L": {
+      "url": "text/1_2020_L.txt"
+    },
+    "1_2021_L": {
+      "url": "text/1_2021_L.txt"
+    },
+    "1_2022_L": {
+      "url": "text/1_2022_L.txt"
+    },
+    "1_2023_L": {
+      "url": "text/1_2023_L.txt"
+    },
+    "1_2025_L": {
+      "url": "text/1_2025_L.txt"
+    }
   }
 }
