@@ -1,0 +1,3481 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Report of the Comptroller and Auditor General of India  Performance Audit on Implementation of eProcurement system in Tamil Nadu          Government of Tamil Nadu Report No. 4 of the year 2023 
+
+
+Report of the 
+Comptroller and Auditor General of India  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Performance Audit on Implementation of 
+eProcurement system in Tamil Nadu 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Government of Tamil Nadu 
+Report No. 4 of the year 2023 
+
+i 
+ 
+ Paragraph  Page 
+Preface v 
+Executive Summary   vii 
+CHAPTER I - INTRODUCTION   
+Introduction 1.1 1 
+Objectives of eProcurement system 1.2 1 
+System description 1.3 2 
+Modules of GePNIC 1.4 2 
+Workflow of the eProcurement system 1.5 3 
+Audit objectives 1.6 3 
+Audit criteria 1.7 4 
+Audit scope and methodology 1.8 4 
+Acknowledgement 1.9 5 
+Report Structure 1.10 5 
+CHAPTER II - PORTAL IMPLEMENTATION    
+Introduction 2.1 7 
+Partial implementation of eProcurement portal 2.2 7 
+Utilisation of eProcurement portal by procuring 
+entities 
+2.3 8 
+Status of updation of published tenders in comparison 
+with other State Governments using GePNIC 
+2.4 11 
+Management of Earnest Money Deposit in the 
+eProcurement portal 
+2.5 12 
+Imparting of training and awareness about 
+eProcurement portal 
+2.6 13 
+Level of competition 2.7 14 
+Time taken for processing of tenders 2.8 15 
+Conclusion 2.9 16 
+Recommendations 2.10 16 
+TABLE OF CONTENTS 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ii 
+ 
+CHAPTER III - DEFICIENCIES IN THE 
+APPLICATION SOFTWARE 
+  
+Introduction 3.1 17 
+Non-mapping of Business Rules 3.2 17 
+Inadequate controls in the system 3.3 22 
+Other issues in eProcurement system 3.4 32 
+Conclusion 3.5 35 
+Recommendations 3.6 36 
+CHAPTER IV - TENDER PROCESSING   
+Introduction 4.1 37 
+Bid submission 4.2 38 
+Evaluation of tenders 4.3 40 
+Conclusion 4.4 45 
+Recommendations 4.5 46 
+CHAPTER V - COLLUSIVE BIDDING AND 
+CARTELISATION IN TENDERING 
+  
+Introduction 5.1 47 
+Analysis of number of bids received for a tender 5.2 48 
+Bidders becoming L1 on rotation (Bid rotation) 5.3 49 
+Bidders with family relationship 5.4 51 
+Bid participation by the same group of companies 5.5 53 
+Inconsistent bidding patterns noticed from IP address 5.6 54 
+Bidding patterns noticed from EMD payments 5.7 56 
+Conclusion 5.8 58 
+Recommendations 5.9 59 
+ 
+  
+
+Table of Contents  
+iii 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix 
+No. 
+Details Page 
+1.1 List of sampled procuring entities in sampled districts. 61 
+1.2 Risk parameters considered in the sampling of tenders 62 
+2.1 Details of discontinuance in usage of eProcurement portal by 
+procuring entities 
+63 
+2.2 Status of updation of published tenders by GoTN in 
+comparison with other State Governments using GePNIC 
+64 
+3.1 Details of procuring entity-wise tenders published with less 
+than the prescribed time for bid submission 
+65 
+5.1 Details of procuring entities where bids were submitted from 
+same IP address 
+67 
+5.2 Details of procuring entities where bidders had submitted bids 
+with consecutive EMD instrument numbers 
+68 
+ Glossary of abbreviations 69 
+ 
+APPENDICES 
+
+v 
+ 
+PREFACE 
+ 
+This Report for the year ended March 2022 has been 
+prepared for submission to the Governor of Tamil Nadu 
+under Article 151 (2) of the Constitution of India, for 
+being laid before the State Legislature. 
+The Report of the Comptroller and Auditor General of 
+India contains the results of Performance Audit of 
+Implementation of eProcurement System in Tamil Nadu 
+covering the period from 2016-22. 
+The instances mentioned in the Report are those, which 
+came to notice in the course of the performance audit 
+conducted during June 2022 to November 2022.  Matters 
+relating to the periods outside the audit period have also 
+been reported in places where they were found necessary.  
+The Audit has been conducted in conformity with the 
+Auditing Standards issued by the Comptroller and 
+Auditor General of India. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+v 
+
+  
+EXECUTIVE SUMMARY 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+vii 
+ 
+EXECUTIVE SUMMARY 
+ 
+Why we did this Audit? 
+To enhance the efficiency of project management processes in various 
+departments and speed up the implementation of projects, Government of Tamil 
+Nadu envisioned an ambitious comprehensive Project Formulation, Execution 
+and Management System to integrate and computerise the entire process of 
+projects and works implementation in the State.  This system also envisaged an 
+eProcurement portal and the adoption of electronic tendering procedures in 
+Government.  
+To achieve this, Government of Tamil Nadu implemented an eProcurement 
+System (GePNIC Portal) through Finance Department. The system was 
+conceptualised to reduce the tendering cycle time, the indirect costs and for 
+enhancing the transparency in the procurement process.  The eProcurement 
+System enables the tenderers to download the Tender Schedule free of cost and 
+then submit the bids online through the eProcurement portal. 
+Considering the importance of the eProcurement system for bringing in more 
+transparency and efficiency in procurements by the State Government and State 
+Public Sector entities, CAG took up this Performance Audit covering the 
+activities during 2016-22 with a focus on the functioning of the eProcurement 
+Portal (GePNIC) and on evaluation and finalisation of tenders based on the data 
+for the period 2016-22 and the physical tender documents. All the envisaged 
+eight modules were fully functional.  The objectives of this Audit were to assess 
+whether (1) the eProcurement system was effectively implemented and 
+efficiently utilised to achieve its objectives of promoting competition, 
+transparency, and accountability; (2) the business rules were adequately mapped 
+into the system and (3) adequate controls were built into the system to ensure the 
+completeness, integrity and reliability of data in the system. 
+What we found? 
+In the absence of specific Government instructions mandating all procuring 
+entities in the State to carry out procurements through GePNIC portal, user 
+departments, including procurement entities which use eProcurement portal, 
+adopted differing/alternate modes of procurement viz., manual purchase, GeM 
+(Government eMarket place), MSTC etc.  There was no ‘Centre of 
+responsibility’ to co-ordinate and monitor the functions of the eProcurement 
+portal. Seventy four per cent of the procuring entities did not utilise the 
+eProcurement portal even after a lapse of 15 years since inception. 
+Non-uploading of tender evaluation reports renders the eProcurement system 
+incomplete affecting transparency and objectivity of the tender process and 
+perpetuates dependence on manual records.  Even after 15 years since inception, 
+GoTN stands eleventh with respect to updation of the stages of tender processes 
+in GePNIC portal when compared to 15 other State Governments.   
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu  
+viii 
+  
+Though online EMD collection was enabled in December 2017, EMD was 
+collected through offline mode.  This led to delayed refunding of EMD to the 
+unsuccessful bidders. 
+No steps were taken by Finance Department or the user Departments to create 
+awareness about the eProcurement portal among the bidders and to encourage 
+them to register on the eProcurement portal. The envisaged centralised open 
+online workflow model of registration of vendor was yet to be implemented 
+resulting in failure to broaden the bidder base and enhance vendor participation. 
+The prescribed timelines as per Tamil Nadu Transparency in Tender Rules, 2000 
+(TNTIT Rules) were not followed by the departments and the software was not 
+designed to incorporate the timeline related provisions of TNTIT Rules. 
+The system does not cater to the provisions of TNTIT Rules for providing 
+purchase preference to domestic enterprises. Similarly, there was no provision in 
+the software to capture details of purchase order(s) issued during the rate contract 
+period. 
+The system lacked provisions for negotiation with L1 bidder after generation of 
+Bill of Quantities and for situations where participating bidders quoted the same 
+price necessitating manual intervention. 
+The eProcurement portal did not ensure that only ‘non-zero’ values were allowed 
+for EMD and Tender values, which resulted in 10 percent of published tenders 
+exhibiting EMD value or Tender value as ‘zero’.  There were discrepancies in 
+mandatory fields and NULL values in name fields due to lack of input controls in 
+the system. 
+Bids submitted for the same tender were decrypted on different dates in 
+contravention of TNTIT Rules. The Bill of Quantities comparative chart in  
+buy-back cases added the buy-back amount to the quoted amount instead of 
+reducing the same in three instances. 
+Discrepancies were noticed in role creation by user Departments. There was no 
+processing control as the organisations created multiple Nodal officers and 
+blocked tenderers and blocked Department users had participated in the tender 
+process during the blocked period. 
+Patterns of bidding viz., bid rotation, bidders with family relationship, bid 
+submission from procuring entity computers, different bidders placing bids for a 
+tender from the same IP address, double EMD, coded intimation by bidders and 
+consecutive EMD instrument numbers indicative of bid rigging and cartelisation 
+were noticed. These fraudulent practices among the bidders and the failure on the 
+part of the officials involved in the evaluation and approval of the tenders 
+derailed the efforts of GoTN in increasing participation, reducing costs, 
+enhancing transparency and improving the procurement system. 
+  
+
+Executive Summary 
+ 
+ix 
+  
+Data analysis of 1.34 lakh tenders for which valid bids were received revealed 
+that 444 bids submitted in 208 tenders were received from bidders having the 
+same address registered in the eProcurement portal and were submitted from the 
+same IP address. 
+The above instances point to collusive bidding as either (i) the bidders from 
+different geographical locations of the State submit the bids from the same IP 
+address or (ii) submit the bids from the Department’s premises indicating that the 
+Department was a party to it.  This shows that the L1 is not decided by the 
+system or the Department concerned but is pre-determined by the participating 
+bidders.  Thus, the envisaged objectives of eProcurement system viz., promoting 
+competition and transparency in the procurement process was not achieved. 
+What we recommend? 
+We have made 17 recommendations as given below: 
+PORTAL IMPLEMENTATION: 
+ Government should come up with a comprehensive solution to address 
+the technical and procedural shortcomings on priority. 
+ GoTN should issue orders to all the procuring entities to mandatorily use 
+the eProcurement portal for all procurement activities. 
+ Procuring entities should update the tender stages in the eProcurement 
+portal immediately on completion of every stage and the same should be 
+monitored by the Nodal Officers of the department using the 
+Management Information System (MIS) reports available in the 
+eProcurement portal. 
+ Government should fix responsibility for the diversion of EMD funds and 
+bring in a mechanism so that offline payments are authorised by an 
+authority higher than the publisher of the Tender. 
+ Government should speed up the process to implement the centralised 
+open online workflow model of registration. 
+ Government should chart out and implement a structured training 
+programme for effective utilisation of the eProcurement portal by 
+officials of procuring entities and should take steps to achieve improved 
+bidder participation through help desk, hand holding and pre-bid meeting 
+activities. 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu  
+x 
+ 
+ 
+DEFICIENCIES IN THE APPLICATION SOFTWARE: 
+ Government should incorporate suitable provisions in the software, in 
+line with TNTIT Rules, in consultation with the Finance Department, 
+should provide suitable input controls in the eProcurement portal during 
+capture of the registration information of the departmental users/bidders, 
+should provide necessary validation controls and customise the 
+eProcurement portal for Tamil Nadu to ensure transparency, impartial 
+decision making and confidentiality. 
+ Government should take steps for the public to easily access  
+non-sensitive information in the eProcurement portal without any 
+restriction for a truly transparent system. 
+ 
+TENDER PROCESSING: 
+ Government should establish a Centre of responsibility to escalate 
+eProcurement portal issues to NIC for appropriate resolution.   
+ Government should instruct the procuring entities to evaluate the tenders 
+only based on the documents uploaded by the bidders to the 
+eProcurement portal. 
+ Government should fix responsibility on the tender inviting authorities 
+and officers involved in the tender process for discrepancies in tender 
+processing. 
+ Government should consider introducing a feature in the system for 
+fixing responsibility on the tender evaluator and for breaking down bid 
+conditions into its components and generate an automatic inviolable 
+checklist for the tender evaluation. 
+ Government, through NIC, should take steps to map the policies relating 
+to SSIs/MSMEs bidders in the eProcurement portal to ensure a holistic 
+tender evaluation. 
+ Government should ensure that the bidders who indulge in malpractices 
+are blacklisted. 
+ Nodal Officers of procuring departments should ensure that all evaluation 
+reports are uploaded in the eProcurement portal in complete shape for 
+transparency in tender processing. 
+COLLUSIVE BIDDING AND CARTELISATION IN TENDERING: 
+ Government should redesign the system to flag bids submitted by bidders 
+from the same registered address and/or the same IP address. 
+ Government should conduct enquiry and fix responsibility for collusive 
+bidding and cartelisation instances pointed out by Audit. 
+
+Executive Summary 
+ 
+xi 
+  
+ Officials involved in the evaluation and finalisation of tenders should 
+carefully examine the documents uploaded in the eProcurement portal 
+using ‘Tender Discursive Report’ available in MIS, which provides all 
+the information about the bid viz., IP Address, EMD, GST etc. to guard 
+against collusive practices by the bidders.  The procuring entities should 
+not allow the bidders to access their office computer systems for 
+submission of bids. 
+Government’s response to audit recommendations 
+Government while responding to the Audit observations raised, assured 
+necessary corrective action wherever required.  Government has also taken steps 
+for procurement by public procuring entities of the Government of Tamil Nadu 
+through the online eProcurement portal from 1 April 2023.  Audit acknowledges 
+and appreciates the corrective action taken/proposed by the Government to bring 
+required controls and facilities in the eProcurement system to address issues 
+pointed out in this report. 
+
+CHAPTER I 
+INTRODUCTION 
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+1 
+CHAPTER I 
+ 
+INTRODUCTION 
+ 
+ 
+1.1 Introduction 
+The Department of Finance (DoF), Government of Tamil Nadu (GoTN), with 
+a view to implement e-tendering process in a phased manner, issued orders1 
+for e-submission of tenders exceeding ₹10 lakh in value from  
+October 2007 on a pilot basis in major infrastructure departments2.  On 
+successful completion of the pilot phase, it was extended to all the procuring 
+entities under the Tamil Nadu/Transparency in Tenders (TNTIT) Act, 1998 
+from January 20083 onwards in a designated eProcurement portal.  
+Government eProcurement system of National Informatics Centre (GePNIC), 
+the designated eProcurement portal was developed by National Informatics 
+Centre (NIC) as a product in consultation with the Department of Expenditure, 
+Ministry of Finance, Government of India (GoI) for facilitating electronic 
+procurement in Government. The GePNIC portal was modified as per the 
+requirement of GoTN and was implemented from the financial year  
+2008-2009.  The eProcurement portal was provided to GoTN by NIC free of 
+cost. 
+Subsequently, the TNTIT Rules, 2000 was amended incorporating changes in 
+the relevant sub-rules on publication of tenders on the website, electronic 
+submission of tenders, opening of e-submitted tenders and authentication of 
+documents by digital signature. 
+As on December 2022, 2.97 lakh tenders amounting to ₹2,92,050 crore were 
+published on this eProcurement portal (https://tntenders.gov.in,) from the date 
+of inception. 
+1.2 Objectives of eProcurement system 
+The following are the benefits envisaged from the eProcurement system. 
+⮚ Expanding the accessibility of Tender Notices/Advertisement. 
+⮚ Non-discrimination amongst bidders and promoting competition. 
+⮚ Enhanced transparency. 
+                                                                 
+Abbreviations used in this report are listed in the Glossary at Page 69. 
+1 Vide G.O. Ms. No. 471 Finance (Salaries) Department dated 30-09-2007. 
+2 Public Works, Highways, Rural Development, Municipal Administration,  
+Tamil Nadu Electricity Board, Tamil Nadu Water Supply and Drainage Board, 
+Chennai Metro Water Supply and Sewerage Board and Tamil Nadu Medical Services 
+Corporation. 
+3 Vide G.O. Ms. No. 599 Finance (Salaries) Department dated 28-12-2007. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+2 
+⮚ Compliance with Government regulations and guidelines like 
+General Financial Rules 2017, Central Vigilance Commission, 
+World Bank, Asian Development Bank etc. 
+⮚ Secure Bid Submission using Public Key Infrastructure 
+Technology. 
+⮚ Accountability of all activities. 
+1.3 System description 
+The eProcurement portal was developed by NIC using Java/JEE technology 
+working on Linux OS with Open-Source PostgreSQL database. Currently, the 
+size of the database for TN Tenders site is about 14 TB including the 
+associated documents storage.  NIC at the National Data Centre at Shastri 
+Park, New Delhi is the Primary site of the eProcurement portal and as per the 
+NIC-Business Continuity Plan, if the Primary site is completely down, the 
+same will be made available from the Disaster Recovery site at the National 
+Data Centre, Hyderabad. 
+1.4 Modules of GePNIC 
+The following eight modules are available in GePNIC: 
+⮚ Registration Module: Registration/Enrolment of Government 
+officials & bidders with Digital Signature Certificate (only these 
+users are authenticated to login to the system and participate in the 
+tender process) and without DSC (to view MIS Reports). 
+⮚ Publishing of tender: Tender creation and publishing, publishing 
+of corrigendum, publishing of pre-bid meeting documents, 
+clarification on the tenders published. 
+⮚ Bid submission: Online bid submission/re-submission as many 
+times as required (the latest bid before closing of bid submission 
+will be the final bid), freezing of bids, facility for online payment 
+collection through bank payment gateway, encryption of bids 
+submitted by the bidder, facility for single/multiple cover bid 
+system. 
+⮚ Tender opening: The bids submitted for a tender, are opened 
+online by the authorised bid openers, who have been configured at 
+the time of tender creation. 
+⮚ Technical evaluation: Downloading of documents submitted by 
+the bidder through eProcurement portal and manual evaluation 
+thereof. The results on selection of bidders and date of financial bid 
+opening to be uploaded in the system.  
+⮚ Financial bid opening: Only the technically qualified bids of the 
+bidders for the tender, are opened online again by the authorised bid 
+openers configured in the system during tender creation. 
+
+Chapter I - Introduction 
+3 
+⮚ Financial evaluation: Evaluation of the financial bid through automatic comparison of Bill of Quantity (BoQ) and selection of L1 bidder. The financial evaluation committee goes through the price bids and the comparative chart. The results are updated into the system along with the selection of the bidders, the member details, and the report of the recommendation. 
+⮚ Award of Contract (AoC): Letter of Acceptance (LoA) issued to a successful bidder (L1).  The Tender Inviting Authority (TIA), based on the recommendations of the financial evaluation committee, and after getting approval, prepares the order manually and then updates the order, along with the contract details. 1.5 Workflow of the eProcurement system The workflow of the GePNIC software is depicted in Exhibit 1.1. 
+Exhibit 1.1: Workflow of the GePNIC software 
+1.6 Audit objectives The objectives of audit are to assess: 
+⮚ Whether the eProcurement system has been effectively implemented and efficiently utilised to achieve its objectives of promoting competition, transparency and accountability. 
+⮚ Whether the business rules have been adequately mapped into the system. 
+⮚ The completeness, integrity and reliability of data in the system and to evaluate whether adequate controls have been built into the system. 
+  
+
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+4 
+1.7 Audit criteria 
+The criteria adopted to arrive at the audit conclusion are: 
+⮚ Tamil Nadu Transparency in Tenders (TNTIT) Act 1998. 
+⮚ Tamil Nadu Transparency in Tenders Rules 2000. 
+⮚ Government orders, circulars and guidelines issued by the State 
+Government relating to procurement. 
+⮚ eProcurement guidelines issued by Standardisation Testing and 
+Quality Certification (STQC) Directorate, Department of 
+Information Technology, Government of India. 
+⮚ Guidelines issued by Central Vigilance Commission (CVC), 
+Government of India on e-tendering solutions. 
+1.8 Audit scope and methodology 
+The Information Technology (IT) Audit was conducted from June 2022 to 
+November 2022 covering the period 2016-2022 with focus on functioning of 
+the GePNIC modules based on the data furnished by NIC. The Audit 
+methodology included - 
+⮚ Analysis of documents uploaded in the eProcurement portal, as well 
+as the manual documents related to tender processing in the 
+sampled units. 
+⮚ Analysis of Application controls. 
+⮚ Analysis of data from the GePNIC database. 
+The Audit plan, including audit objectives, audit criteria and audit coverage 
+was shared with GoTN through an Entry Conference held on 26 July 2022. 
+The field work included scrutiny of related files, collection of documentary 
+and electronic evidence.  An Exit Conference to discuss the audit findings 
+with the Government was held on 15 February 2023. 
+As on date, 53 Departments/Organisations (procuring entities) under the 
+GoTN have published tenders in the eProcurement portal during the last  
+six years. The entire data dump covering the period 2016-17 to 2021-22 
+involving 1.78 lakh tenders relating to all procuring entities under GoTN 
+which had implemented eProcurement were analysed with reference to the 
+Audit Objectives for checking adequacy of validation controls with reference 
+to provisions of the TNTIT Rules, tender conditions of the user departments 
+and to bring out the bidding patterns to check bid rigging and cartelisation, if 
+any.  Further, field visit was done in respect of selected tenders (sampling 
+explained below) to corroborate the results of data analysis with available 
+manual documents and to understand the field level issues in use of the 
+eProcurement portal. 
+ 
+
+Chapter I - Introduction 
+5 
+Sampling was done in three stages:  
+(i) Sampling of procuring entities: Fourteen procuring entities were 
+selected (Appendix 1.1) based on the number of tenders published viz., seven 
+from procuring entities which published more than or equal to 500 tenders and 
+seven procuring entities which published less than 500 tenders, by random 
+sampling method.  The 53 procuring entities using the eProcurement portal 
+had published 1.78 lakh tenders online (Total tender value: ₹2,15,060 crore) as 
+of December 2022.  Based on this, the selected 14 procuring entities represent 
+76 per cent (1.32 lakh tenders) of the published tenders and  
+71 per cent of the total tender value (₹1.52 lakh crore).  
+(ii) Sampling of tenders: Twelve risk parameters were considered and 
+were grouped into three categories and weightage assigned based on (a) bids 
+received; (b) IP address and (c) financial parameters. The risk score for each 
+risk parameter is given in Appendix 1.2.  Tenders falling under the above risk 
+parameters were identified using a set of PostgreSQL queries and 25 per cent 
+of the tenders published (subject to a maximum of 100 tenders) by each of the 
+sampled 14 procuring entities viz., 1,183 tenders4 were selected. 
+(iii) Sampling of districts: Seven districts viz., Chennai, Coimbatore, 
+Salem, Thanjavur (Top 4) and Karur, Krishnagiri and Perambalur (Bottom 3) 
+based on the volume of district-wise transactions of the procuring entities, 
+were selected for field visit by random sampling method. 
+1.9 Acknowledgement 
+Audit acknowledges the overall cooperation extended by Government of 
+Tamil Nadu, DoF, NIC and the sampled field units in conducting the IS Audit. 
+1.10 Report Structure 
+The audit findings are grouped under the following Chapters: 
+⮚ Chapter II : Portal implementation 
+⮚ Chapter III :  Deficiencies in the application software 
+⮚ Chapter IV :  Tender processing 
+⮚ Chapter V :  Collusive bidding and cartelisation in tendering 
+                                                                 
+4 A total of 1,260 tenders were verified during field visit which included 1,183 sampled tenders 
+and 77 tenders related to the sampled tenders. 
+
+CHAPTER II 
+PORTAL 
+IMPLEMENTATION  
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+7 
+CHAPTER II 
+ 
+PORTAL IMPLEMENTATION 
+ 
+ 
+Government failed to make the procurement of goods and services only 
+through eProcurement portal mandatory for all procuring entities in the 
+State.  There was no ‘Centre of responsibility’ to co-ordinate and monitor 
+the functions of the eProcurement portal despite a lapse of more than  
+15 years since its implementation. This resulted in partial/non-utilisation 
+of the eProcurement portal defeating the envisaged objective of 
+transparency in the tender process. 
+2.1 Introduction 
+Though eProcurement was initiated in October 2007, the successive 
+Government Orders had not clarified its mandatory adoption by all procuring 
+entities under the GoTN.  ‘Centre of responsibility’ did not exist at the 
+State/Department level for ensuring adherence to the instructions issued by 
+GoTN.   
+User departments directly interacted with NIC to resolve the technical issues 
+in publishing and processing their tenders in the eProcurement portal. The 
+administrator of the eProcurement portal (DoF) was not involved in this 
+process and hence was not aware of the issues in the eProcurement portal and 
+its utilisation. 
+These issues were due to both technical and procedural shortcomings and 
+appropriate comments highlighting such shortcomings are discussed in 
+Chapters III and IV.  Rectification of the deficiencies/glitches and automated 
+validation checks for financial and technical evaluation requires a 
+comprehensive technical and procedural solution involving Business Process 
+Re-engineering, time locks/time stamps etc. 
+The problems in the implementation and utilisation of the eProcurement 
+system at the level of procuring entities, user departments and DoF are 
+brought out in the succeeding paragraphs and chapters of the Report.  These 
+are mainly attributable to weak administrative and regulatory framework and 
+also poor planning and initiation of the Project by GoTN. 
+2.2 Partial implementation of eProcurement portal 
+On successful completion of pilot phase in October 2007, eProcurement 
+facility through the designated eProcurement portal viz., GePNIC was 
+extended to all procuring entities under the Tamil Nadu/Transparency in 
+Tenders (TNTIT) Act, 1998 from January 2008 onwards.  The Department of 
+Finance (DoF) is the Administrator for the implementation of eProcurement 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+8 
+portal and the procuring entities in the eProcurement system are independent 
+procurement centres.  It was noticed that 
+ 148 out of 201 procuring entities did not use the eProcurement 
+portal as of December 2022. 
+ Data analysis for the period 2016-17 to 2021-22 disclosed that  
+18 out of the 53 procuring entities that were procuring goods and 
+services through the eProcurement portal, subsequently 
+discontinued using the eProcurement portal (Appendix 2.1).  
+Thus, non-utilisation of the eProcurement portal by 74 per cent of procuring 
+entities, even after a lapse of 15 years since inception of eProcurement portal,  
+points to the failure of GoTN to make mandatory all procurements exceeding 
+₹10 lakh despite the clear instructions in the Government order issued in 
+December 2007 that specifically stated, “procuring entities shall provide for 
+submission of tenders by electronic mode also for all tenders exceeding  
+₹10 lakh in value from 1-1-2008”. This merely made the eProcurement portal 
+an additional mode for procurement.  The said Government order did not 
+provide for a ‘Centre of responsibility’ to resolve issues.  
+DoF stated (December 2022) that GoTN had issued orders (February 2016) 
+regarding adoption of eProcurement and informed that the eProcurement 
+System will be made mandatory from April 2023 onwards. This reply was 
+endorsed (February 2023) by Government during the Exit meeting. 
+The fact remains that despite issuance of orders in February 2016 regarding 
+implementation of eProcurement, no significant progress has been made in 
+this regard.  The lacunae in the implementation of procurement process 
+through the eProcurement portal, noticed through data analysis and sampled 
+manual records, are discussed below and in the succeeding Chapters. 
+2.3 Utilisation of eProcurement portal by procuring entities 
+As of December 2022, the 53 procuring entities that utilised the GePNIC 
+portal during 2016-22 published 1.78 lakh tenders with a total value of 
+₹2,15,060 crore.  However, it was seen that even among the 53 procuring units 
+that took to GePNIC, the utilisation of the eProcurement portal was only 
+partial.  In six selected units, only 21.06 per cent (₹1,255.54 crore) of the total 
+procurement (₹5,959.70 crore) was carried out through the eProcurement 
+portal during 2019-22. The Government did not issue specific instructions 
+requiring the procuring entities in the State to carry out all procurements 
+through GePNIC portal. Therefore, the procuring entities that used the 
+eProcurement portal, also adopted alternate modes of procurement viz., 
+manual purchase, GeM (Government e Market place), MSTC etc. In view of 
+the above Audit studied the level and effectiveness of eProcurement portal 
+utilisation by the procuring entities through data analysis and scrutiny of 
+records.  The findings in this regard are discussed below: 
+ 
+
+Chapter II – Portal implementation  
+9 
+To be opened(51,354 tenders; 29 per cent)Technical Bid Opening(37,738 tenders; 21 per cent) Technical Evaluation (24,685 tenders; 14 per cent)Financial Bid Opening(32,425 tenders; 18 per cent)Financial Evaluation(10,853 tenders; 6 per cent)Award of Contract(20,758 tenders; 12 per cent)(a) Non-updating of tender processing status in the eProcurement portal As discussed in Paragraph 1.5, GePNIC workflow envisages a sequential step-by-step progress through different stage of tender, culminating in Award of Contract (AoC) to the successful bidder.  Thus, reaching the AoC stage in the online tender process is an indicator of the complete and effective use of GePNIC portal.  Data analysis revealed that only 12 per cent (20,758 out of 1.78 lakh) of the tenders published in the eProcurement portal during 2016-22 reached the AoC stage. The percentage of tenders at various stages of processing as per eProcurement portal data is depicted in Exhibit 2.1.  
+Exhibit 2.1: Percentage of tenders at various stages of processing 
+All the tenders were past their bid validity period indicating that the eProcurement portal did not reflect their actual status.   Scrutiny of manual records of 1,260 sampled tenders revealed that despite 643 tenders being awarded the contract, only 404 tenders reached the AoC stage in the eProcurement portal. This indicated that once bid documents and system-generated price bid comparative statement for a tender was downloaded, the tender was processed manually till AoC, without updating the corresponding stages on the eProcurement portal. When this was pointed out, the user Departments attributed (October 2022) the non-updation in the eProcurement portal to lack of awareness among the department’s users and shortage of manpower. It was also stated that the eProcurement portal could not be updated subsequently due to transfer/retirement of the officials concerned and expiry of the validity of Digital Signature Certificates. In the Exit Meeting (February 2023), Government replied that the issue would not arise in future as Award of Contract will be done only online in the new eProcurement portal proposed from April 2023. Thus, though the procuring entities had switched to the eProcurement mode, in respect of a majority of the tenders published online they were switching to the manual mode of processing tenders at different stages of the tender process resulting in partial/ineffective use of the eProcurement portal.  This defeated the envisaged objective of transparency in tender process.  The discrepancies in manual evaluation of tenders noticed during scrutiny of tenders documents in the selected procuring units are discussed in Chapter IV of this report. (b) Non-uploading of tender summary reports in the eProcurement portal The eProcurement portal provides for uploading of summary reports at each stage of the tender process as detailed in Table 2.1. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+10 
+Table 2.1: Details of summary reports to be uploaded 
+Stage Activity to be carried out 
+Summary 
+to be 
+uploaded 
+Details in the summary 
+Bid opening Bids opened online, number of 
+bids and payment details checked. 
+Bid opening 
+summary 
+Number of bids and other details 
+as necessary, minutes of bid 
+opening. 
+Technical 
+evaluation 
+Bids checked against the 
+technical criteria specified in the 
+tender document. 
+Technical 
+evaluation 
+summary 
+List of qualified bidders whose 
+bids will be eligible for opening 
+of financial bid along with 
+reasons of bids accepted/rejected 
+in technical evaluation. 
+Financial bid 
+opening 
+Opening of bids of technically 
+qualified bidders.   
+Financial 
+bid opening 
+summary 
+Overall summary about the 
+opening of the financial bids, 
+minutes of bid opening. 
+Financial 
+Evaluation 
+The Bill of Quantity (BoQ) of 
+each bidder opened and the L1 
+bidder identified from the system 
+generated BoQ comparative chart. 
+Financial 
+evaluation 
+summary 
+The position of the bidders (L1, 
+L2 etc.) is to be uploaded. 
+Award of 
+Contract 
+After identification of L1 bidder, 
+contract value and the date of 
+contract are entered in the system. 
+AoC 
+Summary 
+Letter of Acceptance (LoA)/work 
+order is to be uploaded. 
+(Source: System Requirement Specification) 
+All the above processes are to be followed so that the details of each stage of 
+the tender are available in the eProcurement portal at any point of time for 
+transparency in the tender process and for future reference.  On the 
+eProcurement portal, the next stage in the tender process can be 
+enabled/accessed only on completion of the preceding stage and uploading of 
+the related summary report. Lapses noticed in uploading of evaluation 
+summary reports are detailed below: 
+(i)  Data analysis showed that summary reports for various stages of 
+tender processing were not uploaded to the eProcurement portal as detailed in 
+Table 2.2. 
+ Table 2.2: Non-uploading of summary reports to eProcurement portal 
+Particulars 
+Total number of 
+tenders in this 
+stage 
+Number of tenders (out 
+of col. (2)) without 
+summary reports 
+Compliance 
+percentage 
+(1) (2) (3) (4) 
+Technical bid opening summary 1,26,459 29,742 76  
+Technical evaluation summary 88,721 33,867 62  
+Financial bid opening summary 64,036 28,376 56  
+Financial evaluation summary 31,611 9,759 69  
+AoC (Award of Contract) 20,758 1,513 93  
+(Source: Database of eProcurement portal) 
+To cite an instance, in one of the selected procuring unit viz., DRDA, Karur 
+data analysis of 858 tenders published during 2016-21 revealed that technical 
+evaluation summary uploaded in respect of 781 tenders contained only the list 
+of committee members. 
+
+Chapter II – Portal implementation  
+11 
+(ii) Audit analysed the eProcurement portal data of selected DRDAs 
+and compiled the details on number of days taken for completing the 
+‘Technical Evaluation’ and ‘Price Bid Opening’ from the date of the opening 
+of the tender as shown in Table 2.3. 
+Table 2.3: Time taken to process and upload tenders at various stages  
+Sampled 
+Units under 
+DRDA 
+Total 
+number 
+of 
+tenders 
+Number of tenders for which 
+Technical 
+evaluation summary 
+uploaded within 24 
+hours of opening of 
+tender 
+Technical evaluation 
+summary uploaded 
+within one hour from 
+time of opening of 
+tender 
+Price bid 
+opened within 
+24 hours of 
+opening of 
+tender 
+Price bid 
+opened within 
+one hour from 
+time of opening 
+of tender 
+Coimbatore 970 400 212 113 0 
+Karur 781 591 333 141 15 
+Krishnagiri 1,457 1,015 909 133 5 
+Perambalur 318 55 41 0 0 
+Salem 1,781 278 11 7 0 
+Thanjavur 808 141 41 1 0 
+(Source: Database of eProcurement portal) 
+From Table 2.3 it is evident that summaries were uploaded in the 
+eProcurement portal before completion of a tender stage and did not reflect the 
+correct stages of the tender process as preparing and uploading the technical 
+evaluation summary followed by opening of the price bid within 24 hours is 
+unrealistic considering that most of the tenders relate to works contract 
+requiring reasonable time to evaluate the bids received. 
+On this being pointed out, DRDA, Krishnagiri accepted the observation and 
+stated (November 2022) that after the bid was opened, only the list of Tender 
+Committee members was uploaded as technical/financial evaluation summary 
+and that technical/financial evaluation was actually done based on the manual 
+documents submitted by the bidder. It was further stated that the 
+technical/financial evaluation reports were kept only in manual records and 
+were not uploaded to the eProcurement portal.  
+Non-uploading of the evaluation reports renders the IT system incomplete, 
+affecting transparency and objectivity of the tender process and perpetuates 
+dependence on manual records.  Moreover, evaluation of tenders based on 
+manual documents submitted outside the eProcurement portal by bidders 
+points to deliberate by-passing of the envisaged eProcurement process. 
+During the Exit Meeting (February 2023) Government stated that training 
+would be given to familiarise user departments with tender conditions and all 
+departments will be brought under eProcurement. 
+2.4 Status of updation of published tenders in comparison with 
+other State Governments using GePNIC 
+A comparison of tenders published vis-à-vis updation of their AoC status in 
+the eProcurement portal by GoTN and other State Governments who 
+published more than 10,000 tenders in each of the years 2020-21 and 2021-22 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+12 
+was carried out using the data available in the eProcurement Dashboard (Appendix 2.2).  The outcome of the comparison is depicted in Exhibit 2.2.  
+(Source: Dashboard of GePNIC) 
+It can be seen from Exhibit 2.2 that out of the 15 States, Tamil Nadu stood at the eleventh position as it has updated only 11.27 per cent of the tenders published in the eProcurement portal, though 15 years had passed since its implementation in 2008. Even after completion of 15 years since inception, GoTN stands in eleventh position with respect to updation of the stages of tender processes up to Award of Contract in GePNIC portal when compared to other 15 State Governments. 2.5 Management of Earnest Money Deposit in the eProcurement portal Earnest Money Deposit (EMD) is the amount required to be remitted by a tenderer along with his bid indicating his willingness to implement the contract.  The eProcurement portal facilitates online collection of EMD and its prompt refund to the unsuccessful bidder without manual intervention. A Memorandum of Understanding between GoTN and State Bank of India (SBI) provided for a payment gateway viz., Multi Option Payment System for online collection of EMD and Security Deposit (SD) for tendering. A Pooling Bank Account (SBI, Chennai) was opened for this purpose and GoTN issued orders (December 2017) for the on-line collection and refund of EMD and SD.  The bidders submit the original financial instruments1 for the prescribed amount to the tendering office and upload its copy in the eProcurement portal along with their bid, failing which the bid will be considered as unresponsive and rejected. The EMD so received is deposited into an account maintained by the procuring entity and subsequently refunded to the unsuccessful bidder. 
+                                                                 
+1  Demand Draft, Bankers Cheque, Fixed Deposit Receipts, etc. 
+68.6651.4746.2445.3945.3543.3942.1937.4525.2216.1011.274.153.953.692.1001020304050607080Exhibit 2.2: Percentage of published tenders for which contract was awarded as per eProcurement Dashboard for the years 2020-22
+
+Chapter II – Portal implementation  
+13 
+Data analysis revealed that for 0.98 lakh tenders out of 1.34 lakh tenders 
+(73.13 per cent), EMD totaling ₹3,328.49 crore was collected from 2.17 lakh 
+bidders through offline mode. 
+Though online EMD collection was enabled in December 2017, collection of 
+EMD in offline mode and non-refunding of the EMD in time to the 
+unsuccessful bidders results in accumulation of funds not belonging to the 
+procuring entity in the bank accounts maintained by them.   
+It was further noticed that DRDAs, Salem and Perambalur diverted  
+₹16.93 crore out of ₹31.40 crore collected as EMD to meet administrative 
+expenditure.  In reply (September 2022), the DRDAs stated that due to 
+shortage of funds, moneys from the EMD account was utilised as a temporary 
+measure. 
+The reply was not acceptable as the purpose of the EMD account is to deposit 
+and refund the money collected from the contractors/vendors and diversion of 
+funds not belonging to the Department for other purpose was not in order. 
+In the Exit Meeting (February 2023), Government replied that henceforth, 
+online EMD collection would be mandatory.  It was also stated that diversion 
+of funds from EMD account would not be possible in future as the new 
+eProcurement portal is designed to refund EMD of rejected bidders 
+automatically on the 30th day after AoC and the reason for non-refunding of 
+EMD would also be recorded. 
+2.6 Imparting of training and awareness about eProcurement 
+portal 
+GoTN issued (February 2016) orders for constituting an inter-departmental 
+sub-committee, headed by the Additional Chief Secretary to Government, 
+Finance Department.  This sub-committee was tasked with carrying out work 
+relating to validation and recommendation of registration of vendors in the 
+common eProcurement portal to assign Unique Identification Number for each 
+vendor. 
+The inter-departmental sub-committee, was however convened only once in 
+June 2016 and decided that a centralised open online workflow model of 
+registration of vendor was to be undertaken and Unique Identification Number 
+assigned to each vendor.  
+NIC was entrusted (February 2016) with the preparation of eBidding manual 
+and with imparting department-wise training, both for officials and bidders at 
+ELCOT/Anna Institute of Management, Chennai.  During 2019-21,  
+NIC imparted training for a duration of 1-2 days to 732 (6 per cent) of the 
+13,081 registered officials in the procuring entities.   
+To an audit enquiry, the sampled units replied that no action was taken to 
+create awareness among the bidders about the switch over to the eProcurement 
+system and no drive conducted to register all the existing bidders (in the 
+manual system) in the eProcurement portal.    
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+14 
+No action was taken by Department of Finance (DoF) or user Departments to 
+create awareness among the bidders and encourage them to register in  
+eProcurement portal. The envisaged centralised open online workflow model 
+of registration of vendor was yet to be implemented resulting in failure to 
+broaden the bidder base and enhance vendor participation. 
+Inadequate training and consequent lack of awareness was one of the reasons 
+attributed by the sampled entities for non-updation of stages of tender process 
+in the eProcurement portal.  As no effective steps were taken by the DoF and 
+the procuring entities to create awareness among the prospective bidders, the 
+bidder base has not increased, and the vendor participation has also not 
+improved for obtaining competitive rates. 
+In the Exit Meeting (February 2023), Government stated that registration of 
+contractors is proposed to be done through e-Sevai Maiyam (Common Service 
+Centre) and that registration of Metro Water and Public Works Department 
+contractors was currently being done.  It was also stated that bidders will be 
+assured of a fair platform to give them the confidence that rejection for flimsy 
+reasons would not occur.  NIC added that they were also planning to train all 
+district-level officers and to hold weekly Video Conference sessions to discuss 
+the training and that training has been planned for all the Secretariat 
+Departments and bidders, along with Audio-Video sessions of Training in 
+offline mode and accepted Audit’s suggestion to include Self Learning 
+Modules in future, which were being followed in many IT systems for easy 
+access to different types of users. 
+2.7 Level of competition 
+One of the prime objectives of an eProcurement system is to increase 
+competition.  Data analysis of 1.34 lakh tenders revealed that the number of 
+bids received for each tender ranged from one bid to 89 bids as detailed in 
+Table 2.4. 
+Table 2.4: Details of number of bids received for each tender 
+Number of bids received Number of Tenders Percentage 
+Single bid 22,338 16.62 
+Two bids 61,533 45.77 
+Three bids 23,542 17.51 
+More than 3 bids 27,016 20.10 
+Total 1,34,429*  
+* Including 17,212 tenders in which bidders from outside Tamil Nadu also participated 
+ (Source: Database of eProcurement portal) 
+Analysis of eProcurement portal data revealed that in 0.84 lakh tenders  
+(62.39 per cent) out of 1.34 lakh tenders which received valid bids, only one 
+or two bids were received  indicating poor bidder participation.   
+To ascertain if there was an increase in bidder participation after introduction 
+of eProcurement system compared to the manual tendering system,  
+
+Chapter II – Portal implementation  
+15 
+Audit called for the details of bidders who participated in manual tendering 
+prior to switching over to eProcurement portal from the sampled units.  The 
+sampled units, however did not furnish the information. Hence, 
+increase/decrease in competition on implementing the eProcurement system 
+could not be verified by Audit.  
+2.8 Time taken for processing of tenders  
+Reduction in tender processing time is also one of the main objectives of the 
+eProcurement system. Data analysis revealed that 88 per cent (1.57 lakh out of 
+1.78 lakh) of the published tenders were not updated with details of award of 
+contract.  In the absence of relevant details the actual time taken for processing 
+the 1.57 lakh tenders could not be verified in Audit.  However, when the time 
+taken for processing of tenders from bid opening date to award of contract for 
+the remaining 20,758 tenders was analysed, in 5,726 tenders it was found that 
+it exceeded the tender validity period from 3 to more than 36 months as 
+detailed in Table 2.5: 
+Table 2.5: Delay in processing of tenders 
+Sl. No. Delay in months Number of tenders 
+1 Up to 3 months 693 
+2 4 to 6 months 2,425 
+3 7 to 12 months 1,640 
+4 13 to 24 months 714 
+5 25 to 36 months 197 
+6 More than 36 months 57 
+  Total 5,726 
+(Source: Database of eProcurement portal) 
+The delay ranged from 9 days to 1,552 days in 5,726 tenders indicating that 
+adoption of eProcurement did not result in reduction of the processing time. 
+The eProcurement system lacked a provision to promptly flag instances of 
+inordinate delays in tender processing.  The reasons for the same could be 
+attributed to the fact that critical activities like technical evaluation, financial 
+evaluation and award of contract were done manually outside the system.  
+The eProcurement portal, though implemented in the year 2008, was utilised 
+only by 53 out of 201 procuring entities as it was not made mandatory by 
+GoTN. Thus, the overall deficiencies noticed in the implementation and 
+utilisation of eProcurement portal is due to (i) Government’s failure to make it 
+mandatory for all procuring entities in the State to procure goods and services 
+only through GePNIC and (ii) the absence of a ‘Centre of responsibility’ to  
+co-ordinate and monitor the functions of the eProcurement portal. 
+During the Exit Meeting (February 2023), Government stated that alerts on bid 
+validity to bidders and procuring entities would be incorporated in the 
+software, to process the tenders within the specified timelines. It was also 
+stated that accountability will be ensured by making it mandatory for 
+capturing the reasons for extending the bid validity. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+16 
+Government while assuring that all Audit recommendations will be covered in 
+the new eProcurement portal to be implemented from 1 April 2023, added that 
+the work of developing a comprehensive software for (i) estimate preparation 
+and (ii) digital M-Book has been entrusted to TNeGA and that it was planned 
+to have a Common Schedule of Rates for all departments.  
+2.9 Conclusion  
+Government failed to make the procurement of goods and services only 
+through eProcurement portal mandatory for all procuring entities in the State.  
+There was no ‘Centre of responsibility’ to co-ordinate and monitor the 
+functions of the eProcurement portal despite a lapse of more than 15 years 
+since its implementation. This resulted in partial/non-utilisation of the 
+eProcurement portal defeating the envisaged objective of transparency in the 
+tender process. 
+2.10 Recommendations  
+ Government should come up with a comprehensive solution to 
+address the technical and procedural shortcomings on priority. 
+ Government should issue orders to all the procuring entities to 
+mandatorily use the eProcurement portal for all procurement 
+activities. 
+ Procuring entities should update the tender stages in the 
+eProcurement portal immediately on completion of every stage and 
+the same should be monitored by the Nodal Officers of the 
+department using the Management Information System reports 
+available in the eProcurement portal.  Nodal officers of the 
+procuring entities should ensure that the complete evaluation reports 
+are uploaded to the eProcurement portal at the appropriate stages 
+without fail and should ensure that all tenders are processed and 
+finalised based on bid documents submitted through the 
+eProcurement portal. 
+ Government should fix responsibility for the diversion of EMD 
+funds and bring in a mechanism so that offline payments are 
+authorised by an authority higher than the publisher of the Tender. 
+ Government should speed up the process to implement the 
+centralised open online workflow model of registration. 
+ Government should chart out and implement a structured training 
+programme for effective utilisation of the eProcurement portal by 
+officials of procuring entities and should take steps to achieve 
+improved bidder participation through help desk, hand holding and 
+pre-bid meeting activities. 
+
+CHAPTER III 
+DEFICIENCIES IN 
+THE APPLICATION 
+SOFTWARE 
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+17 
+CHAPTER III 
+ 
+DEFICIENCIES IN THE APPLICATION SOFTWARE 
+ 
+ 
+The software was not designed to incorporate the timeline related 
+provisions of TNTIT Rules. There were no provision in the eProcurement 
+system to capture details of item-wise EMD payments and for extending 
+purchase preference to domestic enterprises. Departments resorted to 
+manual tender processing in cases where multiple bidders quoted the 
+same price.  The system lacked provisions for negotiation with L1 bidder 
+after generation of Bill of Quantities and for situations where 
+participating bidders quoted the same price necessitating manual 
+intervention.  ‘NULL’, duplicate and erroneous values were noticed in 
+mandatory fields.  Bids of the same tender were decrypted on different 
+dates in contravention of TNTIT Rules.  Discrepancies were noticed in 
+role creation by user departments, as key roles of an organisation were 
+created by other department users. 
+3.1 Introduction 
+Government organisations procure a wide variety of goods and services and 
+undertake execution of works in pursuance of their duties and responsibilities. 
+With a view to improving transparency in decision making in public 
+procurement and reducing the scope for subjectivity, the Tamil Nadu 
+Transparency in Tenders Act, 1998 was enacted and the Tamil Nadu 
+Transparency in Tender Rules, 2000 (TNTIT Rules) thereunder made for 
+procurement of goods, execution of works and hiring of consultants.  Audit 
+checked whether the timelines and instructions mentioned in the TNTIT Rules 
+were mapped in the application software and necessary validation controls 
+existed in the system for ensuring the integrity of the data. The points noticed 
+in this regard are brought out in the following paragraphs. 
+3.2 Non-mapping of Business Rules  
+3.2.1 Non-mapping of prescribed timelines in the system 
+(i) Prescribed minimum number of days between ‘date of publishing 
+of tender’ and ‘bid submission closing date’ not followed 
+Rule 20 of TNTIT Rules, prescribes minimum number of days between date 
+of publishing of tender and last date for submission of tenders based on the 
+value of the tender. On data analysis, it was observed that in 1.22 lakh tenders 
+published between April 2016 and March 2022, the number of days between 
+‘date of publishing of tender’ and ‘bid submission closing date’, was less than 
+the prescribed number of days, as listed in Table 3.1.  Department wise details 
+are given in Appendix 3.1. 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+18 
+Table 3.1: Tenders published with less than prescribed number of days 
+Value of Tender Prescribed 
+number of days 
+Number of tenders published 
+with less than prescribed 
+number of days 
+Up to ₹2 crore 15 1,16,109 
+More than ₹2 crore 30 5,480 
+Total  1,21,589 
+(Source: Data Analysis of eProcurement portal data) 
+(ii) Prescribed minimum number of days between ‘Seek clarification 
+end date’ and ‘bid opening date’ not followed 
+Rule 17 (2) of TNTIT Rules states that at the time of publishing of a tender, 
+the last date for clarification must be at least 48 hours (2 days) before opening 
+of the tender. During data analysis, it was observed that out of 1.78 lakh 
+published tenders, the number of days between ‘seek clarification end date’ 
+and ‘bid opening date’ was less than the prescribed two days in 18,923 tenders 
+(10.64 per cent).   
+Thus, the prescribed timelines as per TNTIT Rules were not followed by the 
+departments and the software was not designed to incorporate the timeline 
+related provisions of TNTIT Rules.  
+While Tamil Nadu Civil Supplies Corporation, Thanjavur replied  
+(December 2022) that tenders were published with lesser than the prescribed 
+period due to urgency to complete the work, sampled institutions of the 
+Directorate of Technical Education (DoTE) replied (November 2022) that this 
+was due to urgent need and that timelines would be followed in future. 
+There was no provision in the application software to handle cases of urgent 
+requirements with authentication/approval by an appropriate authority higher 
+than the tender publishing authority and to capture and store details of such 
+instances. 
+In this connection, NIC replied (December 2022) that the minimum number of 
+days was mapped against individual organisation in the recent version of the 
+software and that provision had been given to capture the reason for tenders 
+with short bid submission period. 
+Reply is not acceptable as Audit verified (December 2022) the claim of NIC 
+and found that provision is still not available in the current software version 
+(Version 1.09.16). 
+During Exit Meeting (February 2023), Government stated that the timeline 
+issues are addressed in the new eProcurement portal and that a provision to 
+capture reasons for resorting to shorter tender will also be incorporated. 
+3.2.2 Lack of provision in the system for item-wise EMD payment 
+In case of tenders with multiple items, where the bidder can choose to quote 
+for selected items only, the EMD has to be paid only for the items quoted by 
+him and not for the whole tender. 
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+19 
+Audit scrutinised a tender comprising multiple items published (March 2022) 
+by the Director of Sericulture, Salem wherein the EMD amount fixed for the 
+tender as a whole was ₹23,700.  A bidder (Lawrence and Mayo India Private 
+Limited) had quoted for only one item (Microscope) for which the EMD value 
+was ₹900. 
+In this instance, though the bidder submitted a Demand Draft for ₹900 as 
+EMD, he had to enter the EMD paid value as ₹23,700 (i.e. EMD fixed for the 
+whole tender) in the column ‘Offline EMD Fee Payment Details_Amount in 
+Rupees’ as the system did not allow inputting of item-specific EMD amount.  
+In this regard, Director of Sericulture stated (September 2022) that the system 
+did not have a provision for entering item-wise EMD paid by the bidders. 
+Due to the lack of a provision for capturing item-wise EMD, the system 
+captured and stored incorrect information about the actual EMD remitted by 
+the bidders who quoted for selected items only.  
+NIC replied (November 2022) that there was a workaround in the software 
+wherein by enabling the provision for EMD exemption at the time of online 
+tender creation, the system would allow the bidder to input an amount lesser 
+than the total EMD value for the tender. The bidder, could then upload a 
+statement detailing the number of items for which he is participating, in the 
+provision meant for uploading document as proof of EMD exemption.   
+Reply is not acceptable since EMD exemption relates to bidders with SSI/ 
+MSME Certification cases only and item-wise EMD payment cannot be 
+equated to EMD exemption. 
+Government replied (Exit Meeting held on February 2023) that NIC will be 
+instructed to provide separate provision in the eProcurement system for  
+item-wise EMD payment and NIC informed that the issue will be addressed. 
+3.2.3 Lack of provision in the system to handle purchase preference 
+for domestic enterprises 
+As per Rule 30-A of TNTIT Rules, purchase preference is to be given to 
+domestic enterprises in case of procurement of goods or services, where it is 
+possible for the procuring entity to divide the award of tenders to more than 
+one supplier or service provider.  The tender document should clearly indicate 
+that up to 25 per cent of the total requirement in the procurement may be 
+awarded to domestic enterprise, not being the lowest tender, in respect of only 
+goods manufactured or produced or services provided or rendered by them, if 
+(a) the lowest tender is not a domestic enterprise, (b) the preferential award 
+shall extend only to the lowest tender among the domestic enterprises, who are 
+substantially responsive and technically qualified and (c) such domestic 
+enterprise is willing to match the price of the lowest tender. 
+Audit observed that, though there was a checkbox i.e. ‘Allow Preferential 
+Bidder’, (Exhibit 3.1) it does not cater to the provisions of Section 30-A of 
+TNTIT Rules for purchase preference to domestic enterprises. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+20 
+Exhibit 3.1: Checkbox viz., ‘Allow Preferential Bidder’ provided in the system for 
+uploading of tender 
+(Source: eProcurement portal user manual) 
+NIC replied (November 2022) that the present system was being refined to handle the domestic enterprises option as per Section 30-A of TNTIT Rules and development was in progress. Audit observed that the tenders involving preferential bidders can be processed by the departments, only outside the eProcurement portal, till incorporation of this feature. In the Exit Meeting (February 2023), NIC stated that the issue has been addressed in the new eProcurement portal. 3.2.4 Lack of provision in the system for capturing purchase value in Rate Contract tenders As per Rule 31-A of TNTIT Rules, Fixed Rate Contract would be through a process like open tender. The Tender Acceptance Committee (TAC) determines and notifies an appropriate rate, as the fixed rate, after negotiating with the lowest tenderer for further reduction and/or considering other relevant factors viz., prevailing market rate and rates of previous period.  All eligible suppliers who accept the fixed rate should be enlisted by the procuring entity for delivery of services or goods and orders would be placed on need basis after finalising the tender and awarding the contract. Audit noticed that there is no provision in the software to capture details of purchase order(s) issued during the rate contract period. Hence, only the finalised rate value of a rate contract tender is shown in the eProcurement portal and not the value of purchases made during the rate contract period.  On this being pointed out, NIC replied (November 2022) that the option was not available in the system and added that this issue would be discussed with the Finance Department. 
+  
+
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+21 
+In the Exit Meeting (February 2023), Government stated that this feature will 
+be considered in consultation with NIC. 
+3.2.5 Lack of provision in the system to enforce password policy  
+Password policy of Ministry of Electronics and Information Technology 
+(MeitY), Government of India, mandates that all user-level passwords  
+(e.g., email, web, desktop computer, etc.) shall be changed periodically (i.e. at 
+least once every three months).  Users shall not be able to reuse previous 
+passwords. 
+In the eProcurement portal, after registering, users can login using the User 
+ID, Password, and the Digital Signature Certificate (DSC).  Passwords are 
+encrypted at the database level and known only to the users.  In data analysis, 
+the following points were noticed: 
+ As of 31 March 2022, Audit found that in 62,274 out of 68,484 user 
+records, the password had not been changed for more than 90 days. 
+ Out of these, in 17,233 cases, the latest login date was more than 
+ 90 days after the date of last change of password. 
+Non-enforcement of password policy could result in misuse by unauthorised 
+persons and pose a threat to data security.  
+NIC replied (December 2022) that the eProcurement portal had implemented 
+two factor authentication (Password and DSC) to gain access to the 
+eProcurement portal.  DSC, being the second authentication factor, will not 
+allow access to unauthorised users.  
+Reply is not acceptable as departmental users without DSC can still login and 
+download bid documents through the Management Information System (MIS) 
+reports feature, even before completion of tender process.  This affects the 
+confidentiality of the process. There should be an automatic alert after lapsing 
+of 90 days for change in password system. 
+During the Exit Meeting (February 2023), Government replied that password 
+policy will be enforced in the new eProcurement portal and that two factor 
+authentication has been adopted now for Reports Module also. 
+3.2.6 Requisite features not available in eProcurement portal 
+Rule 29(3) of TNTIT Rules provides for negotiations with tenderer and  
+Rule 29(4) spells out the methodology for identifying the lowest tenderer in 
+the event two or more tenderers make the same financial bid. 
+The BoQ comparative chart containing information on the L1 bidder, is 
+generated by the system during the financial evaluation stage. However, Audit 
+noticed that manual intervention was resorted to for finalising the L1 and 
+Award of Contract (AoC) in certain circumstances viz., (a) When the same 
+price was quoted by more than one bidder, (b) Negotiation was done with L1 
+and (c) Comparison of Bidder Rates with the Estimates prepared by the 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+22 
+Departments for Works tenders (Buildings and Roads). This rendered the 
+system generated BoQ ineffective.  
+In DRDA, Coimbatore it was noticed that the BoQ comparative chart was 
+downloaded from the eProcurement portal and compared manually with the 
+estimates. The Department then negotiated with L1 bidder for further price 
+reduction. The negotiated reduced rates were entered manually in an Excel 
+Sheet and used for finalising the tender.  DRDA, Salem stated  
+(November 2022) that there is no provision in the software to deal with 
+instances of same price quoted by more than one bidder. 
+NIC replied (December 2022) that the system identified the L1 bidder among 
+bidders who quoted the same price, based on who had quoted the value first 
+(up to milliseconds) and that the module for negotiation was under 
+development. Further, NIC accepted that provision for comparison of bidders’ 
+rates with estimate was not available. NIC further stated that eProcurement 
+portal for Tamil Nadu was being redesigned as per TNTIT Rules and would be 
+implemented from the financial year 2023-24 with the required provisions. 
+NIC’s reply is not acceptable since identifying L1 among bidders who quoted 
+same price, solely on the basis of who quoted the value first, is not in line with 
+TNTIT Rules. Lack of essential provisions impacts the effectiveness of the 
+eProcurement portal. 
+In the Exit Meeting (February 2023), NIC stated that provisions have been 
+made in the eProcurement portal for (a) and (b) situations mentioned above 
+and that provision for comparison of bidder rates with estimates will be 
+incorporated in the eProcurement portal after discussion with the Finance 
+Department and procuring entities. 
+3.3 Inadequate controls in the system 
+In order to ensure data integrity, suitable controls are to be incorporated in the 
+system, viz., input control, validation control etc. Audit checked whether the 
+application software possessed the required controls to check errors in the 
+database. 
+Lack of input controls 
+3.3.1 Tender details not entered  
+(i) EMD Value entered as ‘zero’: Rule 14 of TNTIT Rules,  
+stipulates “tender documents shall require all tenderers without exception to 
+pay an Earnest Money Deposit (EMD) ordinarily not exceeding one per cent 
+of the value of the procurement by means of electronic mode of payment or in 
+the form of a demand draft, banker’s cheque, specified small savings 
+instruments or where the procuring entity deems fit, irrevocable bank 
+guarantee in a prescribed form”.  The tender documents shall clearly state that 
+any tender submitted without the EMD in the approved form shall be 
+summarily rejected. 
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+23 
+The eProcurement portal, however, has no provision to ensure only ‘non-zero’ values are allowed for EMD, which resulted in data of 17,082 tenders out of 1.78 lakh tenders published during 2016-22 exhibiting EMD value as ‘zero’. (ii) Tenders with ‘zero’ value:  In the front-end screen of GePNIC web application software, the estimated value of the tender, is indicated as a mandatory information to be provided. The Department has the option to choose if the Tender value is to be displayed in public domain by selecting the option ‘Yes’ or ‘No’ under ‘Show Tender value in Public Domain’  (Exhibit 3.2). When ‘No’ is chosen, though the value of the tender is captured and stored in the database, it will not be visible in the public domain.  
+Exhibit 3.2:  Provision in eProcurement portal for display of tender value in  
+Public Domain 
+ 
+(Source: eProcurement portal user manual) 
+The system also provides for an eProcurement dashboard that displays information relating to the procurements based on inputs at the time of publishing in the eProcurement portal, viz., year-wise number of tenders and total value of tenders published. Data analysis revealed that out of 1.78 lakh tenders published, the tender value was ‘zero’ in 17,036 tenders. This results in incorrect depiction of the total value of tenders published through the eProcurement portal in the eProcurement dashboard. Sampled institutions of Directorate of Technical Education replied  (October 2022) that the tender value would be captured in future with option ‘No’ so that it is not viewable in the public domain.  NIC replied  (December 2022) that tender value may be zero in cases where financial quote is invited in the first stage of tenders i.e. ‘Request for Proposal/Expression of Interest’.   Reply is not acceptable since there is no provision in the system to capture Tender Value/EMD value based on the type of tender.  Further, the instances pointed out by Audit do not relate to ‘Request for Proposal/Expression of Interest’ invitations indicating lack of input controls in the tender value field.  In the Exit Meeting (February 2023), NIC stated that the software has been fixed to not allow ‘zero’ values. 
+
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+24 
+3.3.2 Lack of input controls in mandatory fields  
+Audit Scrutiny of the registered users’ data revealed that there were  
+45,000 DSCs registered users in the eProcurement portal as on 1 April 2022.  
+Of these, 31,728 users were registered during 2016-22.  Discrepancies noticed 
+in mandatory fields are tabulated in Table 3.2. 
+Table 3.2: Discrepancies in mandatory fields 
+Nature of 
+discrepancy in the 
+mandatory field 
+Number of cases where discrepancy 
+was noticed 
+Number of cases where discrepancy 
+was noticed in registration made in 
+the Audit period 
+Invalid mobile 
+numbers 
+837 users 
+(479 users had ‘9999999999’  
+139 users had ‘0000000000’) 
+46 users  
+ 
+Duplicate mobile 
+Numbers 
+13,788 users 
+(146 users had ‘9842815073’) 
+8,322 users  
+Different users with 
+the same alternate 
+email ID 
+5,367 users 
+223 users had ‘bhaaskaar@gmail.com’ 
+as their alternate email ID.  
+3,607 users  
+209 users had ‘bhaaskaar@gmail.com’ 
+as their alternate email ID 
+Users without 
+Permanent Account 
+Number (PAN) 
+88 users 80 users 
+Different users with 
+the same PAN 
+15,812 users  
+(‘AESTG2458A’, which was given as 
+an example in the online enrolment 
+form of corporate/bidder - 405 users; 
+‘TEMPZ9999Z’ - 301 users; 
+‘ACUPK7945G’ - 25 users) 
+9,895 users  
+(‘AESTG2458A’, which was given as 
+an example in the online enrolment 
+form of corporate/bidder - 87 users; 
+‘TEMPZ9999Z’ - 126 users; 
+‘ACUPK7945G’ - 24 users) 
+Null values in 
+mandatory fields 
+10,300 users with null values in 
+Registration number, city and postal 
+code and State 
+80 users with null values in State field 
+(Source: Data analysis of the registered users’ data) 
+The above discrepancies point to lack of input control in mandatory fields 
+which affects the data integrity of the system. 
+NIC replied (December 2022) that necessary validations would be 
+incorporated in the system to ensure PAN is mandatory. In respect of multiple 
+PANs, NIC stated that as a business requirement multiple users from the same 
+company could have the same PAN in the system. In respect of ‘NULL’ 
+values, NIC stated (December 2022) that these records relate to the period 
+prior to 2015 and necessary input control has been incorporated subsequently.   
+Reply is not acceptable since the number of duplicates are high in some cases 
+indicating that it cannot be related to the number of users of the same 
+company.  Besides, the company names, registered addresses and corporate 
+addresses differ.   In so far as reply furnished by NIC for ‘NULL’ values, it 
+was verified and found that ‘NULL’ entries in the State field persisted even 
+after 2015 indicating lack of input control. 
+  
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+25 
+In the Exit Meeting (February 2023) NIC stated that these issues will be addressed and Goods and Services Tax (GST) validation will be made mandatory in the new eProcurement portal. Lack of processing/validation controls 3.3.3 Different decryption dates for the same packet of a tender  In the eProcurement portal, departmental user should have a valid email ID as the login ID of the System with valid password and DSC for opening the Technical and Financial Bids. The tender to be opened should be selected by entering the Tender ID.  After this, on clicking ‘Decrypt’ button, the Packet Name, Bid IDs are displayed as a list.  Again, on clicking ‘Proceed’ button, a message is displayed viz., ‘Decryption completed successfully’ along with decryption status in the list.  Snapshot of the decryption process is depicted in Exhibit 3.3. 
+Exhibit 3.3: Snapshot of the decryption process 
+  
+  
+On data analysis, it was observed that in 1,220 instances1, the decryption date differs for the same Packet ID of a tender i.e. bids of the same tender decrypted on different dates. These instances have 2, 3 and 5 different decryption dates ranging from difference of one day to many days.  Two illustrative cases are given in Table 3.3. 
+  
+                                                                 
+1 2,471 distinct decryption dates involving 5,632 records. 
+
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+26 
+Table 3.3: Illustrative cases of instances with different decryption dates 
+Sample case number 1 
+Bid ID Packet ID Decryption Date Decrypted 
+by (ID) 
+Work Item 
+ID (Tender) 
+102279 92960 04-07-2016 12:56 21882 81828 
+102260 92960 04-07-2016 12:55 21882 81828 
+102036 92960 04-07-2016 12:52 21882 81828 
+102279 92961 01-07-2016 12:17 21882 81828 
+102260 92961 01-07-2016 12:15 21882 81828 
+102036 92961 30-06-2016 15:40 21853 81828 
+In this instance, the packet was decrypted with one day difference 
+ 
+Sample case number 2 
+Bid ID Packet ID Decryption Date Decrypted 
+by (ID) 
+Work Item 
+ID (Tender) 
+102928 93237 27-07-2016 16:44 22322 82044 
+102910 93237 27-07-2016 16:42 22322 82044 
+103321 93238 26-07-2016 16:03 22322 82044 
+102928 93238 20-07-2016 16:31 16460 82044 
+102910 93238 20-07-2016 16:34 16460 82044 
+In this instance, the packet was decrypted with six days difference  
+(Source: Data analysis of the eProcurement data) 
+It is seen from Table 3.3 that technical bids for the same tender were opened 
+on different dates. 
+NIC replied (December 2022) that during Bid opening, GePNIC decrypts the 
+bid documents in two steps viz., (i) retrieval of the original key for decryption 
+(ii) decrypting documents using the key by clicking on the ‘Lock’ icon against 
+the individual bids. The system allows department user to open the decrypted 
+bid documents at any time once the decryption keys are retrieved.   
+Reply is not acceptable since TNTIT Rules state that all tenders received by 
+the TIA shall be opened at the time and venue specified in the Notice Inviting 
+Tender. Allowing department users to decrypt bid documents at any point of 
+time once the decryption keys were retrieved is in contravention of TNTIT 
+Rules and impacts transparency, impartial decision making and 
+confidentiality. 
+In the Exit Meeting (February 2023), NIC accepted that the decryption was 
+done bidder-wise in the eProcurement portal and agreed to take remedial 
+action so that decryption is done bid-wise. 
+  
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+27 
+3.3.4 Issues in Bill of Quantities comparative charts generated in  
+buy-back cases 
+During 2016-22, 253 tenders were published with a condition for buy-back in 
+the eProcurement portal by various Departments of the State.  The BoQ 
+comparative chart in buy-back cases added the buy-back amount to the quoted 
+amount instead of reducing the same. This was observed in three instances2 
+relating to purchase of batteries and UPS involving buy-back.  Due to this 
+discrepancy, the user departments manually identified the Ll bidder after 
+making necessary corrections in the system generated BoQ comparative chart.   
+NIC replied (November 2022) that the BoQ template used for buy-back 
+tenders was not designed as per the requirement by the Tender Inviting 
+Authority and the above mentioned tenders had used the normal Item Rate 
+BoQ template and that department users were instructed to contact NIC for 
+assistance in case of requirement for new logic in the system. 
+In the Exit Meeting (February 2023), Government accepted the audit 
+observation and said that provision for separate BoQ template for handling 
+such cases will be made available in the new eProcurement portal. 
+3.3.5 Gaps in system generated Row ID numbers 
+All the tables in the eProcurement database carry a column named ‘ID’, which 
+is a system generated sequential number whenever a record is added to that 
+table and it is a primary field (no duplicates allowed).  It serves as linking 
+information for validating, joining related tables and fetching information.  An 
+analysis of the important tables indicated that there were gaps in the ‘ID’ 
+column.  In the table containing details of all the bids received for the tenders, 
+there were 218 missing IDs for the period from 01/04/2016 to 31/03/2022 in 
+the ID numbers ranging from 101710 to 502687.  
+NIC replied (December 2022) that the ‘row ID’ numbers were generated using 
+sequence.  While adding a record, the sequence would get incremented even 
+when the insert statement was not executed due to constraints like query 
+exceptions, issues from load balancers, etc. and the missing sequences were 
+not due to deletion of records. 
+Reply is not acceptable since there is no trail for details of events which led to 
+missing sequences. This impacts data security and data completeness.   
+In the Exit Meeting (February 2023), NIC stated that, to overcome the above 
+issues, provision for audit trail including timestamp will be included in the 
+new eProcurement portal. 
+3.3.6 Tender status not updated by the system 
+In the eProcurement database, the database table relating to tender details, 
+contains a column named ‘packetsnum’ which stores the value ‘1’ or ‘2’ for 
+single cover tender and two cover tender respectively.  The decryption date, 
+                                                                 
+2 January, September and October 2019 – Directorate of Technical Education - 
+Government College of Engineering, Salem. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+28 
+details of work including the tender status3 and tender stage4 are captured and 
+stored in two separate database tables. Analysis of the related tables in the 
+database revealed the following:  
+ In 12,501 tenders with one packet (single cover), though the bids 
+were decrypted, the tender status of the tender was stored as ‘To be 
+Opened’ in the database table relating to work items of a tender and 
+also displayed as ‘To be Opened’ in the Tender Status in the 
+eProcurement portal. 
+ Similarly, in 2,679 tenders with 2 packets (2 cover), though the bids 
+were decrypted, the tender status of the tender was stored as ‘To be 
+Opened’ in the database table relating to work items of a tender and 
+also displayed as ‘To be Opened’ in the Tender Status in the 
+eProcurement portal.  
+Thus, the tender status was misleading and did not show the correct status of 
+the tender indicating lack of process control in the application software.  
+NIC replied (December 2022) that the stage of the tender is updated only 
+when the particular stage is completed/concluded and not at the beginning of 
+the stage. For instance, when a tender was published, the stage of the tender 
+remained as ‘To-be-opened’ until the technical cover opening summary was 
+uploaded.   It was a business requirement that the status of each bid for the 
+stage should be revealed only after the stage was completed since department 
+users could change the bidder status from ‘Accepted’ to ‘Rejected’ or vice 
+versa until the opening and evaluation stage was completed. Hence, the stage 
+was updated once each stage was completed i.e. once the Technical Opening 
+Summary was uploaded. 
+Reply is not acceptable as once the bid is decrypted, the technical bid opening 
+stage is complete. In this case, storing the tender status as ‘To-be-Opened’ is 
+misleading. 
+In the Exit Meeting (February 2023), NIC while acknowledging the issues 
+pointed out in Audit, stated that this issue will be addressed. 
+3.3.7 Deficiencies noticed in use of Digital Signature Certificate  
+Each user in the eProcurement system has to register with an email id as 
+his/her user ID, which is mapped with the DSC to perform vital activities like 
+tender creation, publishing, opening, updation etc. (department user) and for 
+submitting bids etc. (corporate user).  
+On data analysis, it was observed that the name of the user was not validated 
+at the time of renewal of DSC and different names were captured against the 
+same user ID in 147 cases.  In one instance, six DSCs were mapped against 
+the same user ID 43748 in the application software during the period from  
+                                                                 
+3 Published, Open, Expired, Retender and Cancelled. 
+4 To be Opened, Bid Opened 1, Evaluated Technical, Bid Opened 2, Evaluated 
+ Financial and AoC. 
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+29 
+20 April 2021 to 27 December 2021.  DSC with the same name was mapped 
+with different user IDs in 591 cases. In another instance, DSC with the name 
+‘SHANKAR SANDHYA’ was mapped with five different User IDs (30359, 
+30361, 54178, 54755 and 62765).  These five bidders had submitted 35 bids 
+for 18 tenders during the period from 12 October 2017 to 11 January 2022.   
+The above deficiencies indicated that lack of validation control resulted in 
+improper mapping of DSC with the user ID due to which the legal sanctity of 
+DSC and legitimacy of bids could not be ensured. 
+NIC replied (December 2022) that the system did not validate the name of the 
+DSC holder with the profile name, since the profile name could be company’s 
+name whereas DSC would be issued to the individual bidder as per the name 
+in the ID proof submitted by him.  
+Reply is not acceptable since the registered DSC should be used only by the 
+bidder. Also, DSC once mapped to an account cannot be remapped to any 
+other account and can only be inactivated. Suitable control is required to have 
+similar ID proof for DSC and registration in the eProcurement portal. 
+In the Exit Meeting (February 2023), NIC stated that this problem arises when 
+an official in the procuring entity with DSC leaves the organisation and the 
+organisation fails to update the DSC with the new incumbent.  Audit contends 
+that the DSC should be revoked once the official leaves the organisation. 
+3.3.8 Discrepancies noticed in role assignments to users 
+An effective IT system should enforce segregation of duties through the use of 
+pre-programmed user and group security profiles, so that proper checks and 
+balances on the activities of officials involved is maintained.  Rights/Roles 
+allocations are done to ensure only authorised personnel perform the tasks. 
+The software is a role-based access system and even menus are enabled by 
+roles.  The Nodal Officer, a key role, is designated by the user department and 
+created by NIC.  He creates users for his organisation and is responsible for 
+overall user management including assignment/re-assignment of various roles 
+viz., Tender Creator, Tender Publisher, Tender Opener and Tender Evaluator 
+as per need.  The department users have different access roles and perform 
+their duties with Login ID and DSC. 
+It has been observed that the roles of Super Admin, System Admin and 
+Application Admin were performed only by NIC.  The DoF (Administrator) 
+neither used these roles nor had access to eProcurement portal data.  On data 
+analysis, the following observations were made: 
+(i) 14,184 users had multiple roles (66,017 roles were mapped to  
+14,184 users). 
+(ii) 125 organisations had multiple Nodal Officers (ranging from 2 to 51).  
+NIC replied (December 2022) that, in cases where the number of tender 
+processing officials in the organisation chain was less, the Nodal Officer may 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+30 
+require other roles also.  Hence the form was designed with options for 
+multiple roles. 
+Reply is not acceptable since assigning certain roles like Tender Creator and 
+Tender Publisher to one and the same person indicates that segregation of 
+duties is not followed, and hence, the risk of errors being carried through 
+different stages without being verified and rectified, is high.   
+In one instance in DRDA, Salem, Audit found that 34 tenders were cancelled 
+due to mistakes while uploading the document. The creator and publisher of 
+these tenders was the same user. Non-segregation of the roles of creator and 
+publisher resulted in the error going unnoticed before publishing. An amount 
+of ₹54,332 was incurred on advertisement expenses for retender which was a 
+wasteful expenditure. 
+(iii) Discrepancies were noticed in role creation by user Departments viz., 
+Nodal Officer role created by departmental users, departmental roles created 
+by users other than Nodal Officers, etc. The instances noticed are given in 
+Table 3.4. 
+Table 3.4: Discrepancies noticed in role creation for departmental users 
+Discrepancy Number of instances 
+Nodal Officer role created by Nodal Officers 4 
+Nodal Officer role created by Department users 308 
+Department users created by Department users of similar roles 6,250 
+(Source: Data analysis) 
+NIC replied (December 2022) that Nodal Officer role was created by NIC with 
+reference to the signed request from the user department and that these Nodal 
+Officers could also create further Nodal Officers and Department users.  
+Further, in respect of the instances of user creation by users other than Nodal 
+Officers, it stated that, at the time of creating the Nodal Officer/Other 
+Department users, the user would have had the role of Nodal Officer.  
+Subsequently, the departmental Nodal Officer role might have been removed 
+from that user.  Reply is not acceptable since trail is not available in the 
+database to justify the reply. Also, hierarchy would not be maintained when a 
+Nodal role is able to create a similar role. 
+(iv) In 6,394 records (1,611 user IDs), officials with designations like 
+Assistant, Junior Assistant, Clerk and Typist were assigned key roles in tender 
+processing viz., Nodal Officer, Procurement Officer Evaluator, Procurement 
+Officer Opener, Procurement Officer Publisher, Procurement Officer Admin 
+and Auditor. 
+In NIC’s reply (December 2022), it was stated that the GePNIC system is a 
+role based system which does not have any connectivity to the actual 
+designation of the department user. Audit observes that assignment of vital 
+roles in the tender process to lower-level officials by the user departments 
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+31 
+without following the hierarchy would compromise the confidentiality and 
+objectivity of the tender process. 
+These discrepancies indicated lack of processing control and failure in 
+ensuring accountability, reliability and data security. Moreover, users with 
+multiple roles imply lack of segregation of duties and assignment of multiple 
+responsibilities to one user. 
+Government accepted the observation during the Exit Meeting  
+(February 2023) and stated that during training for new eProcurement portal, 
+the procuring entities have been instructed to adopt proper role assignment. 
+3.3.9 Blocked users participating in tender process 
+Blocking of users from logging into GePNIC portal is done (i) for users who 
+retired from service or transfer, (ii) based on mail request, (iii) due to 
+administrative reasons, (iv) wrongly created user, etc.  Analysis of data 
+disclosed the following: 
+(i) In database table relating to blocked users, out of 6,631 records,  
+3,548 records had User Status as ‘Blocked’, out of which, 3,424 records had 
+Reject Reason as ‘NULL’.  
+(ii) In database table relating to details about blocking users, with  
+5,281 records (3,676 user IDs), the fields given in Table 3.5 had ‘NULL’ 
+value though the information in these fields about the blocked period, the 
+authorised person doing the blocking/unblocking, grounds on which blocking 
+is done viz., for Item/Tender/Department or Login Security/Disciplinary action 
+are mandatory. 
+Table 3.5: Number of records with ‘NULL’ value in the fields of Blocked users table 
+Fields Number of Records with ‘NULL’ Value 
+‘BlockedTo’ 4,451 
+‘BlockedBy’ 3,426 
+‘BlockedReason’  5,047 
+‘UnblockedDate’ 598 
+‘UnblockedReason’ 4,732 
+‘UnblockedBy’ 3,176 
+(Source: Data analysis of eProcurement data) 
+The missing information is due to lack of input control rendering the database 
+incomplete and unreliable. Due to lack of transparency and trail, it may not be 
+possible to fix responsibility.   
+(iii) It was observed that blocked tenderers and blocked Department users 
+had participated in the tender process during the blocked period. The details 
+are listed in Table 3.6. 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+32 
+Table 3.6: Number of blocked users who participated in tender process 
+Table name Field name Number 
+of blocked 
+users 
+Number of 
+tenders 
+processed by 
+blocked users 
+Blocked tenderers 
+Gep_Bids TendererID, BidPlacedDate 3 227 
+Blocked Department users 
+Gep_Bid_Decrypted DecryptedBy, DecryptedDate 3 41 
+Gep_Tender_Basic_Details CreatedBy, CreatedDate 15 227 
+Gep_Tender_Basic_Details UpdatedBy, UpdatedDate 15 225 
+Gep_Tender_Work_Items CreatedBy, CreatedDate 14 213 
+Gep_Tender_Work_Items UpdatedBy, UpdatedDate 14 215 
+Gep_Bid_Packet_Documents EvaluatedBy, EvaluatedDate 3 74 
+Gep_Tender_Evaluation UploadedBy, UploadedDate 3 40 
+(Source: Data analysis of eProcurement data) 
+(iv)  Two blocked users created 3,652 users and 12 blocked users updated 
+1,169 users during the blocked period. 
+This renders the database unreliable and lacking in security since ineligible 
+tenderers and Department users had participated in the tender process.  It is 
+evident that there is lack of input/processing control and referential integrity.  
+NIC replied (December 2022) that in the earlier system, when there were three 
+continuous failed login attempts, then the user got blocked by the system with 
+the blocked reason as ‘NULL’.  The user had to unblock himself using the 
+option provided in the eProcurement portal. In the present version, after three 
+failed login attempts, the system-generated OTP is sent to the user to login to 
+the eProcurement portal.   
+Notwithstanding the reasons put forth by NIC, blocked and unblocked details 
+should be stored in the system for audit trail, failing which the database will be 
+incomplete and unreliable. Further, NIC is silent about the observation that 
+blocked tenderers and blocked department users have participated during the 
+tender process during blocked period.  
+In the Exit Meeting (February 2023), NIC assured that this issue will be 
+addressed and streamlined in the new eProcurement portal. 
+3.4 Other issues in eProcurement system 
+3.4.1 Non-refund of EMD collected online 
+The eProcurement portal has facility for online collection of Tender Fee and 
+EMD. When EMD is paid online by the bidder, it is automatically refunded to 
+the unsuccessful bidder in the technical and financial evaluation stage and to 
+the L1 bidder after AoC.   
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+33 
+On data analysis, it was observed that in 968 out of 4,630 instances relating to 
+the period 2016-22, the EMD collected online was not refunded to the bidders 
+though the system provided for automatic refund. 
+In reply (December 2022), NIC stated that for the online EMD remitted for 
+tenders, the refund of fee is initiated only on completion of the appropriate 
+stage in the eProcurement portal by the department user. The different stages 
+of the tender processing are said to be completed only on uploading the 
+summary details at each stage. Audit observed that failure of the user 
+departments to upload the summaries resulted in non-refund of EMD. 
+In the Exit Meeting (February 2023), Government stated that the new 
+eProcurement portal is designed to refund EMD of rejected bidders 
+automatically on the 30th day after Award of Contract. 
+3.4.2 Different Bill of Quantities (BoQ) comparative charts on 
+different dates 
+After decryption of financial bids of technically responsive bidders, the system 
+automatically generates the ‘BoQ comparative chart’ listing the rates quoted 
+by the bidders side-by-side and based on the quoted rates, L1 bidder name and 
+amount is identified by the system. 
+On downloading the BoQ comparative charts for selected tenders from MIS 
+reports of the eProcurement portal, it was observed that in some instances, 
+only one bidder’s rates were listed irrespective of number of technically 
+responsive bidders.  However, BoQ with rates quoted by all the technically 
+responsive bidders had been generated earlier and downloaded by the 
+Department during tender evaluation.  Thus, different BoQ comparative charts 
+were generated on different dates. This was noticed in 14 sampled tenders 
+during field visit.  
+To cite an illustration, in one Tender (May 2018), out of four bidders, two 
+bidders viz., M/s Jawahar Constructions and M/s Vetri Constructions, were 
+found technically responsive for opening of price bids.  However, in the BoQ 
+comparative chart generated by system (December 2018), it was observed that 
+only one bidder’s (M/s Jawahar Constructions) quotes was listed and 
+identified as Ll.   During the scrutiny of tender files of the Water Resources 
+Department, it was noticed that the copy of the system generated BoQ 
+comparative chart downloaded (August 2018) and placed in file had the rates 
+quoted by both the technically responsive bidders.  This indicated that the 
+system had generated two different BoQ comparative charts for the same 
+tender four months apart.  
+NIC replied (November 2022), that at the time of financial bid opening, the 
+system generates the BoQ comparative chart with technically accepted 
+bidders. Due to storage space constraints, tenders that had completed AoC 
+stage were archived temporarily. Since the files were temporarily moved, 
+GePNIC generated the comparative chart again with currently accepted 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+34 
+bidders available in AoC alone. NIC further stated that these are a few specific 
+cases for which the issue has been fixed subsequently. 
+Reply is not acceptable as audit verified that in these specific cases, the system 
+continued (January 2023) to generate BoQ comparative charts with only the 
+bidders, who were given the AoC, which is misleading.  
+In the Exit Meeting (February 2023), NIC stated this problem occurred due to 
+a bug in the program and assured that steps would be taken to resolve the 
+issue.  
+3.4.3 Standardisation, Testing and Quality Certification 
+Standardisation, Testing and Quality Certification (STQC) ensures quality 
+assurance services in the area of Electronics and Information Technology.  It 
+aims to help in hardening of websites from a wide range of Security threats, 
+increasing accessibility, assuring commitment to services and ensuring 
+compliance to the requirements of Guidelines for Indian Government 
+Websites (GIGW - 2018).  It carries a validity of three years from the date of 
+issue subject to satisfactory findings during surveillances. 
+As per STQC guidelines, during the three-year period of validity, at the end of 
+first and second year, ‘Surveillance Audit’ covering the activities of (i) EPS  
+(eProcurement System) and related documentation, (ii) Application Security 
+and Network Security Assessment, (iii) List of clients, (iv) Details of feedback 
+or complaint received and (v) Review of state of continuation of ISO 27001 
+certificate for the system has to be carried out. Only on a satisfactory report 
+from STQC testing laboratory, a statement of ‘Continuity of Certificate’ shall 
+be issued by STQC. 
+STQ Certificate for the software was issued (December 2020) with validity for 
+three years with effect from 21/12/2020 for the eTendering application - 
+version 1.09.08 subject to STQC guidelines on ‘Surveillance Assessment’.  It 
+was also mentioned that in case of major changes in eTendering application -
+GePNIC or hosting infrastructure, it should be re-certified.  However, the 
+present version of https://tntenders.gov.in eProcurement portal is 1.09.15 dated  
+27 July 2022 which was seven versions viz., 1.09.09, 1.09.10, 1.09.11, 
+1.09.12, 1.09.13, 1.09.14 and 1.09.15, after the issuance of STQC.  
+NIC replied (December 2022), that there were only minor changes in the 
+software and hence the need for re-certification of STQC was not felt and that 
+a fresh Audit with STQC has been planned as soon as they complete the major 
+requirements in GePNIC. 
+NIC, however, did not furnish specific reply regarding ‘Surveillance 
+Assessment’ at the end of first and second year and issuance of statement of 
+‘Continuity of Certificate’ for STQC. 
+In the Exit Meeting (February 2023), NIC, while noting the issues pointed out 
+in Audit, stated that the new eProcurement portal will undergo a fresh audit 
+certification. 
+
+Chapter III - Deficiencies in the application software  
+ 
+ 
+35 
+3.4.4 Non-provision for general public to view tender documents 
+after the ‘Document download/sale end date’ 
+The eProcurement portal has a provision for the general public to view the 
+tender status of each tender published in the eProcurement portal, to ensure 
+transparency in the tender process.  Tender Summary Reports containing the 
+details and documents uploaded by the department relating to the stage-wise 
+Opening Summary, Evaluation Summary, BoQ comparative chart and AoC 
+for each tender were also available in the eProcurement portal for viewing and 
+downloading by the general public. 
+Audit, however, noticed that the tender documents containing the scope and 
+details of work were available for public viewing and downloading only for a 
+limited period viz., from the ‘Publish date’ till the ‘Document download/sale 
+end date’.   
+The general public/bidders interested in tracking the works or comparing the 
+outcome with the tender specifications, were unable to do so due to  
+non-availability of the tender documents beyond the limited period.   
+This restriction on accessing the Tender Documents which become 
+non-sensitive documents once published, defeats one of the basic objectives of 
+the eProcurement portal i.e. transparency. 
+When this was pointed out, NIC replied (December 2022), that the prospective 
+tenderers and general public would be interested to download the tender 
+documents only during the bid submission date and after it, would be 
+interested to know only the status of the tender process. NIC further stated that 
+persons requiring the tender document could obtain it by approaching the 
+department. 
+Reply is not acceptable since in a transparent system, non-sensitive 
+information in the eProcurement portal should be made easily accessible to the 
+public without any restriction. 
+In the Exit Meeting (February 2023), NIC stated that this issue will be 
+addressed. 
+3.5 Conclusion 
+The software was not designed to incorporate the timeline related provisions 
+of TNTIT Rules. There were no provision in the eProcurement system to 
+capture details of item-wise EMD payments and for extending purchase 
+preference to domestic enterprises. Departments resorted to manual tender 
+processing in cases where multiple bidders quoted the same price.  The system 
+lacked provisions for negotiation with L1 bidder after generation of Bill of 
+Quantities and for situations where participating bidders quoted the same price 
+necessitating manual intervention.   ‘NULL’, duplicate and erroneous values 
+were noticed in mandatory fields.  Bids of the same tender were decrypted on 
+different dates in contravention of TNTIT Rules.  Discrepancies were noticed 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+36 
+in role creation by user departments, as key roles of an organisation were 
+created by other department users. 
+3.6 Recommendations 
+ Government should incorporate suitable provisions in the software, 
+in line with TNTIT Rules, in consultation with the Finance 
+Department, should provide suitable input controls in the 
+eProcurement portal during capture of the registration information 
+of the departmental users/bidders, should provide necessary 
+validation controls and customise the eProcurement portal for Tamil 
+Nadu to ensure transparency, impartial decision making and 
+confidentiality.  
+ Government should take steps for the public to easily access  
+non-sensitive information in the eProcurement portal without any 
+restriction for a truly transparent system. 
+ 
+
+CHAPTER IV 
+TENDER 
+PROCESSING  
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+37 
+CHAPTER IV  TENDER PROCESSING 
+ 
+ 
+Provisions available in the eProcurement portal for submission of bid documents and for calling missing bid documents within a stipulated time were not utilised and manually submitted documents were relied upon, defeating the objective of transparency in tender processing.  Deficiencies in designing the BoQ template, awarding of contracts without ensuring compliance to bid conditions and inconsistencies in bid evaluation impaired the objectivity of the tender evaluation process besides depriving the legitimate bidders from being awarded the contract.  Government accepted (February 2023), the observations and stated that the inputs will be useful for the new eProcurement portal to be implemented from 1 April 2023. 4.1 Introduction Section 2(f) of the TNTIT Act, 1998 defines ‘Tender’ as the formal offer made by any means including electronic mode in pursuance of an invitation by the procuring entity.  The tender process consists of the following stages: The eProcurement portal has provisions enabling the procuring entities to publish the tender documents and the template for Bill of Quantities (BoQ).  The bidders have to upload the required documents and quote their rates in the BoQ template.  As per System Requirement Specifications (SRS) the bids submitted for a tender are opened online by the officials who have been assigned with the role of bid opener at the time of tender creation. The bid documents are to be downloaded for technical evaluation purposes and the results on the selection of the bidders and the date of financial bid opening are updated into the system. At the time of financial bid opening, the system automatically generates the BoQ comparative statement identifying the L1 bidder. The Tender Inviting Authority (TIA), based on the recommendations of the financial evaluation committee, prepares the Award of Contract (AoC) manually and then updates the order along with contract details.  Since the evaluation process of tenders is a combination of manual verification of documents, automatic comparison of price bids by the system and AoC, audit verified the tender processes through scrutiny of manual documents, Management Information System (MIS) reports and analysis of data. 
+(1)  Publishing of Notice Inviting Tender(2)  Bid Submission(3) Bid Opening(4) Bid Evaluation(5) Award of Contract
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+38 
+The issues noticed in respect of bid submission and bid evaluation in the 
+eProcurement portal among the 1,260 sampled tenders are discussed in the 
+following paragraphs. 
+4.2 Bid Submission  
+(a) Mandatory documents not uploaded by bidders 
+Uploading of requisite tender documents1 by bidders in support of fulfilling 
+the laid down eligibility criteria, technical conditions, commercial conditions 
+etc. is stipulated in the Notice Inviting Tenders (NIT).  Only, the Earnest 
+Money Deposit (EMD) instrument and affidavit(s) in original were to be 
+submitted manually to the TIA.  
+Analysis of MIS reports relating to sampled tenders, revealed that bidders 
+have not uploaded the mandatory documents in 94 tenders, as detailed in 
+Table 4.1 and two cases are illustrated below: 
+Table 4.1: Mandatory documents not uploaded by bidders  
+Sl. No. Sampled Office Number of tenders in 
+which mandatory 
+documents not uploaded 
+1 Directorate of Sericulture, Salem 1 
+2 District Rural Development Agency, Coimbatore 28 
+3 District Rural Development Agency, Thanjavur 37  
+4 District Rural Development Agency, Krishnagiri 10 
+5 District Rural Development Agency, Karur 18 
+ Total 94 
+(Source: eProcurement portal) 
+(i)  In 10 sampled tenders 2 relating to District Rural Development 
+Agency (DRDA), Krishnagiri, the bidders have not uploaded the mandatory 
+documents such as PAN, annual turnover certificate, list of similar works 
+executed, affidavit, undertaking to abide by the terms of contract etc. 
+(ii)  In the eight sampled tenders3 relating to DRDA, Karur the bidders 
+have not uploaded any of the mandatory documents except the EMD 
+document. 
+DRDAs replied (December 2022), that though the mandatory documents were 
+not uploaded in the eProcurement portal, the tender evaluation was carried out 
+based on the manually submitted documents.  
+                                                                 
+1   Scanned copies of Demand Draft towards the EMD, copy of PAN, contractor 
+registration certificate and live certificate, evidence of access to line of credit, annual 
+turnover certificate from Chartered Accountant, breakup of civil works and total 
+works in each financial year, affidavit regarding correctness of certificates, list of 
+similar nature of works executed, list of works in hand, list of machineries 
+owned/brought on hire etc. 
+2  Tenders for ‘Renovation or Rejuvenation of Ponds and Ooranies from State Finance 
+Commission Grants 2019-20’. 
+3  Tenders for ‘Functional Household Tap connection to Rural Households under the 
+Jal Jeevan Mission Scheme’. 
+
+Chapter IV – Tender Processing 
+39 
+The reply was not acceptable as bid submissions were accepted in violation of 
+the stipulated NIT conditions.   
+(b) Calling for shortfall documents in the Bid  
+The eProcurement portal provides a menu option, viz., ‘Shortfall of Tech 
+documents’ enabling the TIA to call for any shortfall documents from specific 
+bidder during the technical evaluation.  The menu also facilitates stipulating a 
+time schedule to upload the called for documents. If the bidder fails to provide 
+the documents within the stipulated time, the bid may be rejected. 
+In the following instances (Table 4.2), it was noticed that documents which 
+were to be uploaded at the time of bid submission were subsequently called 
+for through email after opening the bid. 
+Table 4.2: Calling for missing documents 
+Sl. No. Sampled procuring entities Number of tenders in 
+which missing documents  
+were called for 
+1 Tamil Nadu Medical Services Corporation (TNMSC) 1 
+2 
+O/o the Superintending Engineer, Water Resources 
+Department, Ground Water Circle, Taramani, 
+Chennai (World Bank tenders) 
+27 
+ Total 28 
+(Source: Records of selected procuring entities) 
+Analysis of the correspondence made in this regard revealed the following: 
+(i) The NIT pertaining to a tender published (February 2022), by 
+TNMSC stipulated that bid submitted in manual mode would not be 
+considered.  TNMSC, however, while seeking clarification prior to financial 
+bid opening (July 2022), also required the single bidder to submit mandatory 
+documents viz., EMD details, Annual Sales Turnover, signatory copy of bid 
+document etc.  Based on the documents submitted (July 2022) by the bidder, 
+the tender was finalised and AoC was awarded. 
+Audit observed that TNMSC failed to utilise the provision available in the 
+eProcurement portal to call for ‘Shortfall documents’ and accepted submission 
+of bid documents outside the eProcurement portal which was in violation of 
+NIT.   
+TNMSC stated (December 202) that though the bidder had uploaded the 
+documents as per the schedule, due to technical issues, the bid could not be 
+opened and hence the documents were called for through email. 
+Reply was not acceptable as the actions of TNMSC was in violation of NIT 
+and  the reply did not specify the action taken by TNMSC to escalate the 
+technical issues to NIC authorities for clarification/rectification.  
+(ii) The technical evaluation of 27 World Bank Tenders published by 
+Water Resources Department (WRD), Ground Water Circle (GWC) Chennai, 
+was based on the submission of requisite documents by the bidders in response 
+to the requisition made through email.    
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+40 
+Superintending Engineer, WRD, GWC in reply (December 2022), stated that 
+the eProcurement portal provides the option for calling for ‘Shortfall 
+documents’ only once during the technical evaluation and any further 
+requirement of submission of clarification at the review or approval stage 
+would not be possible.  Hence clarifications during technical evaluation were 
+being sought through email.  
+During the Exit meeting (February 2023), NIC stated that provision has been 
+made in the new eProcurement portal to call for missing documents more than 
+once. 
+Despite availability of provisions in the eProcurement portal for submission of 
+bid documents and calling for missing documents within a stipulated time, 
+continuous dependence on manual documents defeats the objective of 
+transparency in tender processing. 
+4.3  Evaluation of tenders 
+As per SRS, the bid documents submitted online are to be opened, printed, 
+signed and submitted to the committee for technical evaluation purposes. 
+In the above context, Audit noticed discrepancies in 79 tenders as detailed in 
+Table 4.3 and some of the instances are elaborated below: 
+Table 4.3: Discrepancies noticed in evaluation of sampled tenders  
+Sl. 
+No. 
+Selected procuring entity Number of tenders in 
+which discrepancies were 
+noticed in evaluation 
+1 Directorate of Sericulture, Salem 9 
+2 District Rural Development Agency, Coimbatore 34 
+3 District Rural Development Agency, Thanjavur 10 
+4 District Rural Development Agency, Krishnagiri 1 
+5 District Rural Development Agency, Karur 16 
+6 Tamil Nadu Medical Services Corporation 4 
+7 O/o Superintending Engineer, Water Resources 
+Department, Ground Water Circle, Taramani, Chennai 5 
+ Total 79 
+(Source: Records of respective procuring entities) 
+(i) Wrong identification of L1: The price bid details of a tender 
+published (October 2021) by Director of Sericulture (DoS) for supply of  
+35 KVA Generator is given in Table 4.4.  
+  
+
+Chapter IV – Tender Processing 
+41 
+Table 4.4: Details of bids with different GST rates for same item 
+Bidder Rate 
+without 
+tax  
+(₹) 
+GST 
+percentage
+quoted by 
+bidder 
+Rate with 
+quoted GST  
+(₹) 
+Bid 
+Rank 
+Rate with 
+correct GST 
+of 18 per cent 
+(₹) 
+Chennai Diesel 
+Private Limited. 
+4,11,111 12 4,60,444.32 L1 4,85,111 
+Madras Power 
+Corporation 
+4,06,800 18 4,80,024.00 L2 4,80,024 
+Sri Lakshmi 
+Agencies 
+4,02,000 21.73 4,89,360.00 L3 4,74,360 
+The Precision 
+Scientific Company 
+4,40,000 18 5,19,200.00 L4 5,19,200 
+(Source: Records of Directorate of Sericulture) 
+Though the GST rate for 35 KVA Generator was 18 per cent, the bidders have 
+submitted the bids with different rates of GST.  Consequently, Chennai Diesel 
+Private Limited was shortlisted as L1 bidder in the system generated BoQ 
+comparative chart based on their quoted rate inclusive of incorrect GST at the 
+lesser rate of 12 per cent. The Department thus incorrectly finalised Chennai 
+Diesel Private Limited as L1 bidder.  
+DoS, accepted (October 2022), that the tender was finalised as per the system 
+generated BoQ and AoC was issued for a negotiated sum of ₹4.48 lakh.  
+The reply points to the failure of DoS in designing the BoQ template duly 
+incorporating the correct GST rate to avoid quoting of different GST rates for 
+the same item by the bidders.  
+(ii) Discrepancies in technical specifications submitted online  
+vis-à-vis manual records:  Tender document pertaining to a tender published 
+(August 2019) by DRDA, Krishnagiri for work of installation of 35 Reverse 
+Osmosis (RO) plants had stipulated certain conditions for submission of 
+technical specifications by a bidder who is an authorised dealer viz., (i) 
+documentary evidence issued by the manufacturer that the bidder is a dealer, 
+(ii) bidder should have supplied a cumulative of minimum 50 number of RO 
+plants during the past three years, (iii) in the event of being technically 
+qualified,  inspection report of the original manufacturing unit to be obtained 
+from the Executive Engineer (EE), DRDA and submitted before price bid 
+opening etc.  
+Scrutiny of manual records and bid documents uploaded to eProcurement 
+portal vis-a-vis tender evaluation carried out by DRDA, Krishnagiri with 
+reference to the above eligibility criteria are detailed in Table 4.5. 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+42 
+Table 4.5: Details of technical evaluation of bids received for installation of RO plants 
+Name of the technically 
+qualified bidder out of 
+four bids received 
+Qualification 
+criteria required as 
+per bid document 
+As per the manual 
+evaluation 
+summary 
+As per the documents 
+uploaded by bidders in 
+the eProcurement portal 
+M/s Sky Traders, Salem Dealer Certificate Dealer of IIROS 
+Water purifiers 
+Authorised dealer of 
+‘Battery operated electrical 
+vehicles for various 
+models’ 
+Details of execution 
+of similar nature of 
+work 
+Stated as enclosed-
+details not available 
+Supplied Electric Cart 
+Battery vehicle 
+M/s Anbu Agencies, 
+Dharmapuri 
+Dealer Certificate Dealer of IIROS 
+Water purifiers 
+Authorised dealer of ‘LED 
+lights, Solar systems and 
+Electric vehicles’ 
+Details of execution 
+of similar nature of 
+work 
+Stated as enclosed-
+details not available 
+Supplied Electric Cart 
+Battery vehicle 
+The mandatory inspection report of EE/DRDA to be obtained prior to opening of price bid was not 
+available 
+(Source: eProcurement database and records of DRDA, Krishnagiri) 
+Despite the above discrepancies, the price bid was opened (October 2019) and 
+the work was awarded (November 2019) to M/s Sky Traders, Salem.   
+DRDA, Krishnagiri accepted (December 2022) that the mandatory inspection 
+of manufacturing unit had not been conducted and that action will be initiated 
+against the tenderer as per tender conditions. Reply was not acceptable as 
+awarding of contract without ensuring the completeness of bid documents is in 
+violation of tender conditions. 
+Tender evaluation process is vital in identifying the bidder who meets the 
+criteria fixed for the work for early/effective completion of work. Deficiencies 
+in designing the BoQ template which is relied upon for selection of lowest 
+bidder and awarding of contract without ensuring compliance to bid conditions 
+contributes to deficient/delayed completion of works. 
+(iii) GST Registration: TNMSC published (July 2021) a tender for 
+supply of Dual Chamber Temporary Pacing Machine. One of the conditions 
+specified in the bid document was furnishing of GST registration number for 
+supply and services along with the Harmonised System of Nomenclature 
+(HSN) code4 of the item in the price schedule. The GST Registration of  
+M/s Swastika Medical Center, the successful bidder related only to 
+Medicaments, Sprays and Deodorants and not to Pacing Machine.  
+TNMSC replied (December 2022), that the item procured was an imported one 
+and the supplier can supply with the existing GST registration number itself.  
+The reply is not acceptable as it violates the tender condition.  Also, the HSN 
+Code (‘90215000’) quoted by the bidder in the price schedule appended to the 
+                                                                 
+4  Harmonised System of Nomenclature meant for systemic classification of goods based 
+on which GST rates are levied. 
+
+Chapter IV – Tender Processing 
+43 
+NIT does not figure in the HSN number pertaining to the GST Registration of 
+M/s Swastika Medical Center.    
+(iv) ISO Certification - Director of Sericulture (DoS), Salem published 
+a tender for the supply of ‘Silkworm rearing bed disinfectant’ (Ankush).  The 
+Condition No. 5(b) for the bidders in the NIT stipulates that the entity must 
+have ISO certification.  Audit, however, observed that the ISO certification of 
+M/s SR Systems, Salem, the successful bidder, related only to IT 
+Infrastructure and not to the disinfectant Ankush.  
+DoS accepted (September 2022), that the Tender Scrutiny Committee verified 
+ISO certification of the bidders but failed to verify the goods and services for 
+which it was given and further stated that such verification will be ensured in 
+future. 
+Awarding contracts without appropriate GST registration / ISO certification is 
+not in order and could result in non-execution of the contract.  
+(v) Non-exemption of EMD for SSI/MSME bidders: GoTN 
+exempted (September 2013) Small Scale Industries (SSIs) located outside the 
+State and registered with National Small Industries Corporation (NSIC) from 
+payment of EMD/SD in respect of items manufactured by them. The 
+eProcurement portal provides for such exemption for SSIs/ Micro, Small and 
+Medium Enterprises (MSMEs) and the documents in support of the exemption 
+are to be uploaded in the eProcurement portal. 
+In two sampled tenders published (February/March 2022) by TNMSC, the 
+bidders5 were not granted EMD exemption though they had uploaded 
+necessary documents on the grounds that they were not domestic enterprises. 
+Details of bids received in one of the tenders and in the retender consequent on 
+cancellation of the first tender are given in Table 4.6. 
+Table 4.6: Details of bids received  
+Tender ID Name of bidder Price 
+quoted 
+Remarks 
+2022_TNMSC_222594_1 M/s Analytical 
+Technologies 
+Limited, Baroda 
+₹20 lakh Bid rejected as he claimed EMD 
+exemption under NSIC.  
+M/s Spincotech 
+Private Limited 
+₹35 lakh Since the quote exceeded the threshold 
+limit of ₹25 lakh for limited tender, the 
+tender was cancelled. 
+2022_TNMSC_230305_1 M/s Analytical 
+Technologies 
+Limited, Baroda 
+₹35 lakh In the retender, incorporating the EMD 
+exemption for domestic enterprise clause, 
+two bidders remitted EMD and qualified 
+for the price bid. Since the prices 
+exceeded the limited tender threshold, 
+corrigendum was published on 
+05/07/2022 for cancellation of Tender. 
+M/s Spincotech 
+Private Limited 
+₹35 lakh 
+(Source: Records of TNMSC) 
+                                                                 
+5  M/s Quality Scientific & Mechanical Works, Haryana and M/s Analytical 
+ Technologies Limited, Baroda. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+44 
+Scrutiny of records revealed that M/s Analytical Technologies Limited, being 
+aware of the higher price quoted by M/s Spincotech Private Limited in the  
+first tender, quoted their price higher by ₹15 lakh.  The limited tender was 
+however, cancelled subsequently and it was decided to float open tender 
+online.  
+Audit observes that if the EMD exemption had been considered during the 
+first Tender, M/s Analytical Technologies Limited would have been L1 within 
+the threshold limit of limited tender.   
+TNMSC replied (December 2022) that the criteria that EMD exemption is 
+only for domestic enterprises and not for non-domestic units had been 
+incorporated in all subsequent tenders.  The reply is not acceptable as the 
+action of TNMSC in failing to extend exemption from payment of EMD/SD to 
+SSIs located outside the State is in contravention of Government orders that 
+was meant to encourage SSIs. 
+(vi) Different procedures for similar tenders: For impartial evaluation 
+of all tenders, the procuring departments should follow uniform methods while 
+evaluating the bid documents submitted by the bidders.  It was, however, 
+noticed that in three instances involving seven tenders, the evaluation differed 
+for same criteria in similar tenders and for same bidders too. In this regard, 
+illustrative cases noticed in tenders published by Director of Sericulture, 
+Salem are discussed in Table 4.7. 
+Table 4.7: Illustrative cases of different procedure adopted in tenders for procuring 
+machineries/equipment 
+Sl. 
+No. 
+Tender ID 
+(Name of the bidder) 
+Tender status Audit observation on tender evaluation 
+Case 1: 
+1 2018_SERI_114430_1 
+(M/s Star Associated 
+Traders, Pollachi) 
+The bid was accepted 
+and contract awarded 
+(February 2019). 
+In both the tenders the Test report (Birsa 
+Agricultural University, Ranchi) was 
+furnished by the bidder without rectification 
+documents.  However, while the first tender 
+was accepted the second tender was rejected 2 2020_SERI_188007_1 
+(M/s Star Associated 
+Traders, Pollachi) 
+The bid was rejected 
+(January 2021) in 
+technical evaluation. 
+Case 2: 
+3 2018_SERI_114430_1 
+(M/s Fortune Agro 
+Impex, Bangalore) 
+The bid was rejected 
+(January 2019) in 
+technical evaluation. 
+Bid was rejected due to submission of 
+tampered/manipulated document in another 
+tender 2018_SERI_114568_1 (January 
+2019). However, the bidder had not been 
+blacklisted. 
+4 2021_SERI_211898_1 
+(M/s Fortune Agro 
+Impex, Bangalore) 
+The bid was accepted 
+(November 2021) and 
+qualified for price bid 
+opening. 
+Bid accepted without considering that the 
+bidder had submitted tampered/ manipulated 
+documents in an earlier bid. 
+(Source: Records of Directorate of Sericulture, Salem) 
+DoS stated (December 2022) that in Case 1 (Table 4.7), the test report 
+submitted by the bidder for the second tender was thoroughly verified and then 
+rejected for the second tender as the test report was not updated / rectified for 
+more than 3 years.  In  respect of Case 2 (Table 4.7), it was stated that the bid 
+
+Chapter IV – Tender Processing 
+45 
+for the second tender was accepted as the previous performances of the bidder 
+was good and that in future, firms submitting manipulated records would be 
+recommended to Government for blacklisting at least for a year. The reply is 
+not acceptable since Department was inconsistent in verifying the test reports 
+and in evaluating the bids and also failed to blacklist the bidder who submitted 
+tampered documents so that he would not be considered for future bids.  
+(vii) Bidder rejected by TSC but approved by TAC: In WRD, PWD, 
+Chennai in the following two instances, the bidders who were rejected in the 
+technical evaluation by the Tender Scrutiny Committee (TSC) were awarded 
+the contract by the Tender Acceptance Committee (TAC) without recording 
+the justification. 
+In one tender, three bids were received from M/s Vetri Constructions (B1), 
+M/s Vishnu Infrastructures (B2) and M/s Jawahar Constructions (B3).  The 
+TSC pre-qualified B1 observing that he alone fulfilled all criteria while the 
+other two bidders (B2 and B3) did not qualify in the ‘Tools and Plant’ criteria.  
+Subsequently, the TAC decided that B3 alone satisfied all qualification criteria 
+and rejected the bids of B1 and B2 on the grounds that they did not fulfill the 
+‘Tools and Plant’ criteria.  Consequently, the tender was finalised and the 
+contract awarded to B3.  
+In another tender bids were received from seven tenderers viz., KKS &  
+Co (B1), VNS Constructions (B2), Dharani Hitech Projects Private Limited 
+(B3), Vetri Constructions (B4), V.Meenal (B5), P.Angamuthu (B6) and PRG 
+Constructions (B7). As per TSC report, all seven bidders did not  
+pre-qualify as they failed to satisfy the Class-I Live Certificate criteria.  TAC, 
+however, decided that three bidders viz., B1, B4 and B5 satisfied all criteria 
+including the Class-I Live Certificate criteria and evaluated their price bids 
+and awarded the contract to the shortlisted L1 bidder i.e. B5.  
+It was observed in Audit that though TAC is empowered to overrule the 
+decision of TSC, the reasons for the same should be recorded and uploaded in 
+the eProcurement portal which was not done in the above two cases. The 
+deficiencies brought out above impair the objectivity of the evaluation process 
+besides depriving the legitimate bidders from being awarded the contract. 
+4.4  Conclusion 
+Provisions available in the eProcurement portal for submission of bid 
+documents and for calling missing bid documents within a stipulated time 
+were not utilised and manually submitted documents were relied upon, 
+defeating the objective of transparency in tender processing.  Deficiencies in 
+designing the BoQ template, awarding of contracts without ensuring 
+compliance to bid conditions and inconsistencies in bid evaluation impaired 
+the objectivity of the tender evaluation process besides depriving the 
+legitimate bidders from being awarded the contract.  Government accepted 
+(February 2023) the observations and stated that the inputs will be useful for 
+the new eProcurement portal to be implemented from 1 April 2023. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+46 
+4.4  Recommendations 
+ Government should establish a ‘Centre of responsibility’ to escalate 
+eProcurement portal issues to NIC for appropriate resolution.   
+ Government should instruct the procuring entities to evaluate the 
+tenders only based on the documents uploaded by the bidders to the 
+eProcurement portal. 
+ Government must fix responsibility on the tender inviting 
+authorities and officers involved in the tender process for 
+discrepancies in tender processing. 
+ Government should consider introducing a feature in the system for 
+fixing responsibility on the tender evaluator and for breaking down 
+bid conditions into its components and generate an automatic 
+inviolable checklist for the tender evaluation. 
+ Government, through NIC, should take steps to map the policies 
+relating to SSIs/MSMEs bidders in the eProcurement portal to 
+ensure a holistic tender evaluation. 
+ Government should ensure that the bidders who indulge in 
+malpractices are blacklisted. 
+ Nodal Officers of procuring departments should ensure that all 
+evaluation reports are uploaded in the eProcurement portal in 
+complete shape for transparency in tender processing. 
+ 
+
+CHAPTER V 
+COLLUSIVE BIDDING 
+AND 
+CARTELISATION IN 
+TENDERING 
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+47 
+CHAPTER V 
+ 
+COLLUSIVE BIDDING AND CARTELISATION IN 
+TENDERING 
+ 
+ 
+Collusive bidding or bid rigging counteracts the purpose of tendering and 
+is inherently anti-competitive.  Scrutiny of selected tenders, revealed 
+patterns of bidding viz., bid rotation, bidders with family relationship, bid 
+submission from procuring entity computer, different bidders placing 
+bids for a tender from the same IP address, double EMD, coded 
+intimation by bidders and consecutive EMD instrument numbers, 
+indicative of bid rigging and cartelisation. These fraudulent practices by 
+bidders and failure of tender evaluating/approving officials, derail 
+Government’s efforts to increase bidder participation, reduce costs and 
+enhance transparency in the procurement system.  Government accepted 
+(February 2023) the observations and stated that the inputs will be useful 
+for the new eProcurement portal to be implemented from 1 April 2023. 
+5.1 Introduction 
+Tender process is intended to enable the procurement of goods or services on 
+the most favourable terms and conditions. But this intention is defeated if 
+prospective bidders collude or act in agreement. Such collusive bidding or bid 
+rigging counteracts the purpose of tendering and is inherently  
+anti-competitive.  
+‘Bid rigging’ is defined as any agreement, between enterprises or persons 
+engaged in identical or similar production or trading of goods or provision of 
+services, which has the effect of eliminating or reducing competition for bids 
+or adversely affecting or manipulating the process for bidding1. 
+‘Cartel’ includes an association of producers, sellers, distributors, traders or 
+service providers who, by agreement amongst themselves, limit, control or 
+attempt to control the production, distribution, sale or price of or trade in 
+goods or provision of services2. 
+One or more bidding patterns noticed in the same tender is an indicator of 
+organised limited participation of bidders preventing healthy competition.  
+Scrutiny of 1,260 sampled tenders in the selected procuring units and data 
+analysis revealed seven patterns of bidding viz., bid rotation, bidders with 
+family relationship, bid submission from procuring entity computer, different 
+bidders placing bids for a tender from the same IP address, double EMD, 
+coded intimation by bidders and consecutive EMD instrument numbers 
+indicative of bid rigging and cartelisation. Further, at least one pattern 
+indicating collusive bidding was noticed in 347 tenders as depicted in the 
+Exhibit 5.1. 
+                                                                 
+1 The Explanation to Section 3(3) of the Competition Act, 2002. 
+2  As defined in Section 2(c) of the Competition Act, 2002. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+48 
+ The above mentioned bidding patterns indicate collusion between the procuring entity and the bidders and is a form of assuring the bidders that they would get the contract before submission of bid.  It also points to failure on the part of the officials involved in the evaluation and approval of the tenders which derails the Government’s efforts to improve the procurement system by increasing participation, reducing costs and enhancing transparency.  Deficiencies noticed in this regard are discussed below. 5.2 Analysis of number of bids received for a tender The eProcurement system does not restrict prospective eligible bidders from bidding for a tender published in the eProcurement portal. Data analysis of 1.34 lakh tenders published in the eProcurement portal between April 2016 and March 2022 disclosed that 0.62 lakh tenders (46.27 per cent) received only two bids.  Details of such limited bidding in the selected procuring units are given in Table 5.1. 
+Table 5.1: Tenders with same pair of bidders in sampled procuring entities 
+Sl. 
+No. 
+Office Number of  Percentage of 
+pairs in 
+column (e) to 
+pairs in 
+column (d)  
+Percentage 
+of tenders 
+for pairs in 
+column (f) to 
+column (c) 
+Tenders 
+with two 
+bids 
+Pairs of 
+bidders 
+Pairs of 
+bidders placed 
+bids for 10 or 
+more tenders 
+Tenders 
+participated 
+by bidders in 
+column (e) 
+(a) (b) (c) (d) (e) (f) (g) = ((e)/(d)) 
+x 100 
+(h) = ((f)/(c)) x 
+100 
+1 Greater Chennai 
+Corporation 
+7,607 2,102 158 3,658 7.51 48.09 
+2 DRDA, Coimbatore 918 168 26 543 15.48 59.15 
+3 DRDA, Karur 724 146 21 375 14.38 51.80 
+4 DRDA, Krishnagiri 1,216 202 28 758 13.86 62.34 
+5 DRDA, Perambalur 299 63 6 169 9.52 56.52 
+6 Tamil Nadu Electricity 
+Board 
+11,303 4,061 213 4,267 5.25 37.75 
+7 DRDA, Salem 1,647 302 46 1,057 15.23 64.18 
+8 DRDA, Thanjavur 681 159 15 366 9.43 53.74 
+9 TNCSC 346 100 6 113 5.94 32.66 
+(Source: Data analysis of tender data) 
+120 (35 per cent)175 (50 per cent)52 (15 per cent)Exhibit 5.1: Tenders with number of collusive bidding patterns
+One pattern
+Two Patterns
+Three Patterns
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+49 
+It is seen from Table 5.1 that: 
+ Five to sixteen per cent pair of bidders participated in 33 to  
+64 per cent of tenders indicating limited participation of bidders and 
+the likelihood of collusive bidding by participating bidders. 
+ In DRDA, Perambalur and TNCSC, six pairs participated in  
+169 and 113 tenders respectively.  In these tenders, the contracts 
+were shared between the two participating bidders in the ratio of 
+50:50 in DRDA, Perambalur and 55:45 in TNCSC. 
+In the sampled procuring entities where more than 300 tenders were received 
+with only two bids, it was noticed that the same pairs of bidders bid for a large 
+number of tenders and cornered the lion’s share of contracts. 
+5.3 Bidders becoming L1 on rotation (Bid rotation) 
+Bid rotation is the arrangement among bidders to determine bid winners in 
+advance on a rotational basis and is one of the methods adopted for bid 
+rigging. Scrutiny of sampled tenders in two selected procuring units revealed 
+occurrence of Bid rotation in 20 tenders as discussed below: 
+(i) TNCSC, Chennai published 15 tenders (January 2019) for the work 
+of ‘Re-construction of 5,000 MT Godowns’ in Nagapattinam District. While 
+eight tenders received three bids each, the remaining seven tenders received 
+two bids each.  In the eight tenders with three bids, one bidder in each case 
+had not paid EMD which indicated that it was a non-serious bid/dummy bid 
+bound to be disqualified. Hence, effectively there were only two eligible 
+bidders for each of the fifteen tenders. In total, ten bidders submitted bids for 
+the fifteen tenders.   
+Scrutiny of tender documents along with the bidding pattern showed that the 
+above mentioned 10 bidders emerge as five distinct pairs. Each of the five 
+pairs always bid for the same tender and come out successful in half the 
+number of tenders they bid for as shown in Table 5.2. 
+Table 5.2: Details of bids submitted and the outcome in 15 tenders 
+Pair 
+No. 
+Bidder Bids 
+submitted 
+Bids as 
+L1 
+Bids as L2 
+1 Chinnasamy Builders, Thanjavur 4 2 2 
+RK Engineering, Chennai 4 2 2 
+2 S. Sambasivam, Thanjavur  4 2 2 
+P. Muthuvel, Thiruvarur 4 2 2 
+3 Himeshwar Engineering, Thiruvarur 3 2 1 
+MSG Infra, Thiruvarur 3 1 2 
+4 G. Jeshpal, Needamangalam 2 1 1 
+M/s Senthur Infratech and Builders, Erode  2 1 1 
+5 S. Nallathambi, Thanjavur 2 1 1 
+M/s U.G. Construction, Thanjavur 2 1 1 
+(Source: Records furnished by TNCSC) 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+50 
+It was seen from Table 5.2 that:  
+ All bids were submitted on the same day within 5 to 10 hours 
+though the bidders were from different geographical locations3.  
+While six of the ten bidders submitted their bids from the IP address 
+117.241.31.37 the remaining bidders submitted their bids from the 
+IP address 117.241.91.82. 
+ Though the work is of the same type, in the same place and the 
+department estimated item rates are same for all tenders, all the ten 
+bidders have consistently submitted higher bids for tenders in which 
+they are L2 bidders compared to their bids submitted for tenders in 
+which they are L1 bidders. 
+(ii) In another work viz., ‘Providing of 10 numbers, 20 numbers and  
+20 numbers Portable Paddy covered shed by using Pre-fabricated Galvalume 
+sheet shelter with movable type to open plinth cap paddy storage’ in 
+Nagapattinam, Thanjavur and Thiruvarur Districts respectively TNCSC, 
+Chennai published three tenders (November 2020).  The Bill of Quantities 
+(BoQ) of all three tenders carried the same 30 items and estimated item rate. 
+The details of bids received and the outcome of the tenders are given in  
+Table 5.3. 
+Table 5.3: Details of bidders in three tenders of TNCSC 
+Sl. 
+No. 
+Tender Id and 
+Tender value 
+District Number 
+of Works 
+Number of 
+bidders 
+L1 L2 
+1 2020_TNCSC_184349_1
+₹1,00,00,000 
+Nagapattinam 10 2 P.Muthuvel Himeshwar 
+Engineering 
+2 2020_TNCSC_184370_1
+₹2,00,00,000 
+Thanjavur 20 2 Himeshwar 
+Engineering P.Muthuvel 
+3 2020_TNCSC_184403_1
+₹2,00,00,000 
+Thiruvarur 20 2 Himeshwar 
+Engineering P.Muthuvel 
+(Source: Records furnished by TNCSC) 
+It is seen from Table 5.4 below, which brings out the similarities in the  
+item-wise rates quoted by the bidders, that the two participating bidders 
+quoted the same lower rate in tenders where they were shortlisted as L1 and 
+the same higher rate in the tenders where they were unsuccessful (L2).  
+Table 5.4: Details of rates quoted for items of works 
+Item of Work 2020_TNCSC_184370_1 2020_TNCSC_184403_1 2020_TNCSC_184349_1 
+Himeshwar 
+Engineering 
+(L1) 
+P.Muthuvel 
+(L2) 
+Himeshwar 
+Engineering 
+(L1) 
+P.Muthuvel  
+(L2) 
+P.Muthuvel  
+(L1) 
+Himeshwar 
+Engineering 
+(L2) 
+(In ₹) 
+Cutting and levelling 
+the earth using JCB 
+990.00 1,008.00 990.00 1,008.00 990.00 1,008.00 
+Earth Work excavation 
+for foundation 
+205.25 209.00 205.25 209.00 205.25 209.00 
+Cement Concrete 
+1:5:10 for foundation 
+5,352.90 5,450.00 5,352.90 5,450.25 5,352.90 5,450.00 
+(Source: Records furnished by TNCSC) 
+                                                                 
+3  Chennai, Erode, Needamangalam, Thanjavur and Thiruvarur.  
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+51 
+Moreover, the address of the two bidders registered in the eProcurement portal 
+and in the documents submitted online for other tenders is Door No. 10/30, 
+Balan Street, Vaduvur and Door No. 10/31, Balan Street, Vaduvur 
+respectively.  This indicates that the bidders were in a position to influence the 
+other bidder in placing their bids and carried out collusive bidding.  
+(iii) In DRDA, Perambalur, tenders for 22 works were called  
+(November 2019) in 19 packages through eProcurement system for 
+implementation of Village Panchayat and Panchayat Union road improvement 
+works under Tamil Nadu Rural Roads Improvement Scheme - 2019-20. The 
+item of works mentioned in the technical specification and the price estimated 
+for each item of work were similar in nature for all packages. 
+Four bidders, (two pairs) participated in 12 packages and the pattern of 
+awarding of contract is shown in Table 5.5.  
+Table 5.5: Pattern of awarding of contract for 22 works in DRDA, Perambalur 
+Name of the Contractor (Shri) Number of packages 
+Participated L1 in L2 in 
+Pair 1 Pannerselvam 7 4 3 
+Krishnasamy 7 3 4 
+Pair 2 Janarthanan 5 3 2 
+Senthilkumar, Siruvayalur 5 2 3 
+(Source: Records furnished by DRDA, Perambalur) 
+These four bidders uploaded tender documents for 12 packages (24 bids) from 
+two IP addresses (223.182.214.145 and 45.126.252.194).  In 6 of the  
+12 packages bids of Pair 1 (Table 5.5) were uploaded from the IP address 
+45.126.252.194. 
+Further analysis of system generated comparative statements of BoQ 
+submitted by Pair 1 (Table 5.5) in two packages it was seen that the rates 
+quoted by the bidders were not same and the bidders quoted lesser price in all 
+items of work in the package in which they were L1 and higher price for the 
+same items of work in the package where they were L2. The similarities in the 
+item wise rates quoted by the bidders indicate that the bidders were aware of 
+the rates quoted by each other and point to collusive bidding. 
+5.4 Bidders with family relationship 
+Possibility of bid rigging is high when competing bidders have a family 
+relationship as one bidder would be able to influence another bidder.   Bidding 
+for the same tender by bidders having family relationship was noticed in  
+35 tenders sampled in the selected procuring entities as detailed in Table 5.6.  
+Two such cases are illustrated below: 
+ 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+52 
+Table 5.6: Procuring entity-wise details of participation by bidders from same family  
+Sl. 
+No. 
+Sampled Office Number of tenders with 
+bidders with family 
+relationship 
+1 Executive Engineer, Public Works Department, 
+WRO , GWC, Salem (World Bank tenders) 6 
+2 District Rural Development Agency, Salem 1 
+3 District Rural Development Agency, Coimbatore 27 
+4 NABARD and Rural Road Circle, Highways 
+Department, Salem 1 
+ Total 35 
+(Source: Records furnished by respective sample units) 
+(i) Water Resources Department, Ground Water Division, Salem, 
+published six tenders for World Bank Assisted works under National 
+Hydrology Project.  The Notice Inviting Tender (NIT) stipulates that a bidder 
+may be considered to have a conflict of interest for the purpose of this bidding 
+process, if the bidder “has a relationship with another bidder, directly or 
+through common third parties, that puts it in a position to influence the bid of 
+another bidder or influence the decisions of the employer regarding this 
+bidding process”.  Also, as per World Bank policy participating firm shall not 
+have conflict of interest4.  However, in violation of NIT and World Bank 
+policy, the bids submitted by two bidders with family relationship (Father/Son 
+in one tender and Husband/Wife in five tenders) were evaluated and the 
+tenders were finalised.   
+The Department accepted the observation and replied (September 2022) that 
+the bids were evaluated by following the due procedure and contract awarded 
+to the lowest bidder and the point raised by Audit has been noted for future 
+compliance. 
+(ii) Two bidders viz., Mallaiyan Infrastructures and M. Doraisamy were 
+registered in the eProcurement portal with the same address and mobile 
+number.  These bidders participated in 27 tenders published by DRDA, 
+Coimbatore and in all the tenders Mallaiyan Infrastructure was shortlisted as 
+L1.  Scrutiny of tender documents revealed that the proprietor of Mallaiyan 
+Infrastructures (D. Jayakumar) is the son of M. Doraisamy.  While submitting 
+bids for 27 tenders, both bidders uploaded the prerequisite documents of  
+Shri M. Doraisamy in the eProcurement portal.   In 20 of the 26 tenders the bid 
+submission was done from the same IP address.  Thus, it is construed in Audit, 
+that collusive bidding had taken place in the above tenders. 
+On this being pointed out DRDA, Coimbatore accepted the observation and 
+replied (October 2022) that Technical Evaluation Committee carried out the 
+                                                                 
+4 Clauses 1.6 and 1.7 of the World Bank’s Guidelines: Procurement of Goods, Works 
+and Non-Consulting Services under IBRD Loans and IDA Credits and Grants by 
+World Bank Borrowers, January 2011, revised July 2014. 
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+53 
+technical evaluation of bids only with the manual documents submitted by the 
+bidders and not with the documents uploaded online. Technical evaluation in 
+cases pointed out by Audit was erroneous and caution will be taken to avoid 
+such mistakes in future. 
+The reply of the Department is not acceptable since World Bank policy on 
+conflict of interest was not considered during evaluation of the tenders. 
+(iii) Para 103.16 of TN Highways Manual Part-I stipulates that a bidder 
+will be considered for disqualification when submitting “more than one tender 
+for the same work, from an individual, firm or company in which any one of 
+them have interest in any capacity as individual firm or company”.   
+NABARD and Rural Road Circle, Highways Department, Salem published a 
+tender for ‘Upgradation of Panchayat and Panchayat Union Roads  
+(3 Works)’. Two bidders viz., M/s P. Rayin Constructions Company Private 
+Limited and Shri P. Rayin participated in the bidding. The work was awarded 
+(August 2020) to M/s P. Rayin Constructions Company Private Limited (L1) 
+for a value of ₹5.70 crore. Scrutiny of documents uploaded in the 
+eProcurement portal revealed that the Managing Director (Shri P. Rahim) of 
+L1 is the son of Shri P. Rayin (L2).  
+The Department replied that the two bidders in the above mentioned tender are 
+registered separately as individual contractor and as a firm. It was further 
+stated that most contractors are not interested in participating in works in hill 
+areas, which is the case in the above tender, and as such tender is awarded to 
+the lowest bidder among participating bidders.   
+Reply is not acceptable as Department did not take into consideration the ibid 
+rules while finalising the tenders.  
+5.5 Bid participation by the same group of companies 
+In Greater Chennai Corporation, tender for the work of Annual Maintenance 
+of Effluent Treatment plant at Villivakkam slaughterhouse at a cost of
+₹10.55 lakh per year was published in June 2021.  Three bidders participated 
+in the tender and details are shown in Table 5.7. 
+Table 5.7: Details of bidder participation  
+Sl. 
+No. 
+Name of the bidder Quoted amount  
+(₹in lakh) 
+Ranking 
+Per month Per year 
+1 M/s CPC Green Energy Engineering Private 
+Limited 
+0.90 10.80 L1 
+2 M/s Cryogenic Process Controls (CPC) 0.95 11.40 L2 
+3 M/s Sree Venkateshwara Construction 1.10 13.20 L3 
+(Source: Records of Greater Chennai Corporation) 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+54 
+The maintenance work was awarded (June 2021) after negotiation to L1 
+bidder at a cost of ₹10.55 lakh. The work was completed, and the contractor 
+was paid in August 2022.  It was seen from the contractor’s work completion 
+report that M/s CPC Green Energy Engineering Limited (L1) is a unit of 
+Cryogenic Process Controls (L2).  Further analysis of bid documents 
+submitted by L1 and L2 revealed that (i) both firms had the same address,  
+(ii) both firms had submitted their bids from same IP address (117.221.22.178) 
+within four minutes of each other’s submission and (iii)  EMD instrument of 
+both firms were drawn by the same individual on the same day (24/06/2021) 
+with consecutive numbers. 
+Thus, participation of two firms (L1 and L2) who are sister companies 
+(belonging to the same group of companies) and one of them becoming L1 
+indicates collusion among the bidders. 
+Data analysis of 1.34 lakh tenders for which valid bids were received revealed 
+that 444 bids submitted in 208 tenders were received from bidders having the 
+same address registered in the eProcurement portal and were submitted from 
+the same IP address. 
+The above instances point to collusive bidding as either (i) the bidders from 
+different geographical locations of the State submit the bids from the same  
+IP address or (ii) submit the bids from the Department’s premises indicating 
+that the Department was a party to it.  This shows that the L1 is not decided by 
+the system or the Department concerned but is pre-determined by the 
+participating bidders.  Thus, the envisaged objectives of eProcurement system 
+viz., promoting competition and transparency in the procurement process was 
+not achieved.  
+5.6 Inconsistent bidding patterns noticed from IP address 
+Internet Protocol (IP) address, is a series of numbers that identifies any device 
+on a network. Computers use IP addresses to communicate with each other 
+both over the internet as well as on other networks. 
+The eProcurement system captures the IP Address of the computer from which 
+a bid is placed.  Placing of more than one bid for the same tender from the 
+same IP address more often than not shows that the same computer was used 
+to place the bids and is an indicator for collusion among bidders. Likelihood of 
+collusion between bidders and department officials is all the more if bids are 
+placed from IP addresses of procuring entity. Such cases are discussed in the 
+following paragraphs. 
+5.6.1 Bidding using computers of the procuring entity 
+In DRDA, Salem, 73 per cent of tenders (1,265 out of 1,741 tenders) which 
+reached the financial evaluation stage in the eProcurement system during 
+2016-22, were uploaded from the IP addresses of DRDA, Salem (Table 5.8). 
+  
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+55 
+Table 5.8: Details of tenders uploaded using same IP address 
+IP address Number of tenders uploaded 
+45.116.113.120 879 
+45.116.113.121 259 
+45.116.114.129 89 
+45.116.114.15 38 
+Total 1,265 
+(Source: eProcurement portal data) 
+As the eProcurement portal envisages a secured Public Key Infrastructure 
+encrypted system, submission of bids using the computers of procuring entity 
+in its premises undermines data secrecy and confidentiality. 
+When this was pointed out, the procuring entity replied (November 2022) that 
+submission of bids by bidders was permitted in DRDA premises to guide new 
+contractors for uploading bid documents to the eProcurement portal and that 
+instructions were issued to desist from this practice in future.  
+Reply of the Department is not acceptable as processing of tenders and 
+submission of 73 per cent of bids from DRDA premises indicates collusion 
+among bidders and staff of the procuring entity and is an anti-competitive 
+practice.  
+In the Exit Meeting (February 2023), Government stated that the procuring 
+entity’s response was not appropriate. 
+5.6.2 Bidding for a tender by different bidders from same IP address 
+Submission of bids for a tender from the same IP address by different bidders 
+from different geographical locations within a short span of time is indicative 
+of collusive bidding and cartelisation. 
+Data analysis of tenders processed through the eProcurement system revealed 
+that out of 1.34 lakh tenders published in the eProcurement portal, in 0.44 lakh 
+tenders (33 per cent) the number of bids submitted from the same IP address 
+for a tender ranged from 2 to 33. 
+In the sampled procuring entities, bids for each tender were uploaded from the 
+same IP Address in 232 sampled tenders, the details are shown in  
+Appendix 5.1 and two cases are illustrated below: 
+In DRDA, Salem, 33 tenders (31 with two bids each and two with four bids 
+each) were published for execution of water, wall and road works in various 
+Blocks under the Infrastructure Gap Filling Fund - 2016-17. In 29 of the  
+33 tenders the bids (more than one) received for each tender were uploaded 
+from the same IP address and out of the 70 bids received for these tenders,  
+35 bids were uploaded from the IP address 27.62.119.224. In DRDA, 
+Coimbatore, 33 tenders for various works in which two bidders i.e.  
+Shri K. Selvaraj and Shri R. Rajendran had participated were scrutinised.  
+In 22 of the 33 tenders the two bids received for each tender were uploaded 
+from the same IP address. 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+56 
+DRDA, Salem accepted the observation and stated (November 2022) that all 
+the bidders upload their documents from the same browsing centre and so bid 
+submission was consecutive.  It was also stated that due to workload and lack 
+of manpower, they could not verify the documents uploaded online by the 
+bidders. Further DRDA, Salem in its reply (December 2022) accepted the 
+observation and stated that such lapses will not occur in future.  In this regard, 
+DRDA, Coimbatore replied (October 2022) that they did not verify the 
+documents uploaded online by the bidder and that submission of bids from the 
+same IP and existence of cartelisation among bidders could not be verified and 
+assured that such lapses will not occur in future. 
+During the Exit Meeting (February 2023) Government stated that a detailed 
+reply has been called from NIC regarding the pattern of collusive bidding 
+emerging from analysis of eProcurement portal data vis-à-vis IP address. 
+5.7 Bidding patterns noticed from EMD payments 
+Earnest Money Deposit (EMD) is the amount remitted by a bidder along with 
+his bid indicating his willingness to implement the contract.  The tender 
+documents shall require all bidders without exception to pay  
+EMD ordinarily not exceeding one per cent of procurement value5.  As 
+guarantee for contract performance, a Security Deposit (SD) not exceeding 
+five per cent of the value of the orders placed shall be taken from the 
+successful bidder6. 
+In the selected procuring entities of DRDA, EMD is accepted through offline 
+mode wherein the bidder submits the original EMD instrument to the 
+procuring entity before opening of the bid in addition to uploading copy of the 
+same in the eProcurement portal along with the bid documents.  Patterns 
+indicating bidder collusion observed on scrutiny of EMD instruments are 
+discussed below: 
+5.7.1 Bidders confident of award of contract before bidding 
+Tender conditions of District Rural Development Agencies stipulates that each 
+bidder shall furnish EMD which is one per cent of the tender value and the 
+successful bidder shall furnish SD equivalent to two per cent of the contract 
+value, which includes EMD already paid, within 15 days from the date of 
+letter of acceptance. Data analysis of EMD paid by bidders revealed the 
+following: 
+ Out of 29,284 tenders published by DRDAs during 2016-22, in 
+2,213 tenders the bidders who had remitted exactly twice the EMD 
+amount were finalised as L1 in the respective tenders and the 
+contract was awarded to them. 
+ Out of the above 2,213 tenders, in 1,472 tenders both L1 and L2 
+bidders submitted their bids from the same IP address. 
+                                                                 
+5 Rule 14(1) of TNTIT Rules, 2000. 
+6 Rule 14(3) of TNTIT Rules, 2000. 
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+57 
+It is evident from the above that the bidder who furnished twice the EMD 
+amount had prior knowledge of bagging the contract and the likelihood of 
+collusive bidding in all these cases cannot be ruled out. In reply, DRDA, 
+Coimbatore (47 cases) stated (October 2022) that such cases will not be 
+allowed in future. 
+5.7.2 Submission of coded EMD document in eProcurement portal by 
+bidders 
+From the MIS reports of the eProcurement portal and scrutiny of sampled 
+tenders in selected units, it was observed that the name of the document 
+containing the scanned image of the EMD instrument uploaded by the L1 and 
+L2 bidders contained letters such as ‘L1’, ‘ori’, ‘orginal’, ‘DDO’ and ‘L2’, 
+‘dum’, ‘dummy’, ‘DDD’ respectively. 
+Analysis of eProcurement portal data revealed that EMD document uploaded 
+in 1,917 out of 61,533 tenders, which received two bids during 2016-22, 
+contained such letters. 
+Uploaded EMD files carrying names like ‘L1’, ‘orginal’, ‘L2’, ‘dummy’, etc., 
+amounts to coded communication by bidder conveying that he/she is the  
+L1 (original) / L2 (dummy) bidder and does not rule out collusion among 
+bidders and officials of procuring entity. 
+On this being pointed out DRDA, Karur accepted the observation and replied 
+(December 2022) that the registered contractors/bidders need to be rigorously 
+trained regarding uploading of the tender documents and such practices will be 
+viewed seriously by blacklisting the bidders concerned in the eProcurement 
+portal, in future. 
+5.7.3 EMD instruments with consecutive numbers 
+In offline mode of EMD submission, the EMD instrument should be scanned 
+and uploaded to the eProcurement portal in the Fee/PreQual/Technical packet 
+of the bid. From the MIS reports of the eProcurement portal and scrutiny of 
+sampled tenders in selected units, it was observed that bidders had furnished 
+EMD instruments with consecutive numbers issued by the same branch of a 
+bank in 76 sampled tenders (Appendix 5.2). This is an indication of collusive 
+bidding by the bidders.  Two such cases are illustrated below: 
+ In 37 works7 related tenders published by DRDA, Salem the same 
+pair of bidders participated and furnished EMD in the form of DDs 
+with consecutive numbers issued by the same bank branch. In all 
+these tenders, the two bids received for each tender was uploaded 
+from the same IP address (21 bids from IP 45.116.113.120 and  
+17 bids from IP 45.116.114.15) which are also the IP addresses of 
+                                                                 
+7  Implementation of Jal Jeevan Mission for providing functional household tap 
+connection to rural households.  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+58 
+the procuring entity.  Analysis of the prices quoted by the  
+two bidders revealed that the variation in respective tenders ranged 
+from 0.02 to 0.47 per cent. 
+ Scrutiny of 19 sampled tenders relating to various schemes in 
+DRDA, Coimbatore revealed that in four tenders, the  
+two competing bidders had furnished EMD in the form of DDs with 
+consecutive numbers issued on the same day by the same bank 
+branch. In three of the four tenders the two bids received for each 
+tender was uploaded from the same IP address. 
+When the above inconsistencies were pointed out, DRDA, Salem accepted the 
+observation and stated (December 2022) that such lapses will not occur in 
+future and DRDA, Coimbatore stated (October 2022) that payment of 
+DDs/FDs submitted by the bidders with consecutive numbers in same bank on 
+the same day could not be verified due to workload and assured that in future, 
+such lapses will not occur. 
+5.7.4 L1 furnishing EMD of L2 for adjustment against SD 
+Manual scrutiny of tender documents in one of the selected procuring entities 
+viz., DRDA, Salem revealed that in 31 tenders the EMD instrument returned to 
+the unsuccessful L2 bidders was resubmitted by the L1 bidders as adjustment 
+against his/her SD for the same tender/other tender. This indicates the 
+collusive practice amongst the bidders. 
+DRDA, Salem while accepting (December 2022) that EMD instrument of  
+L2 bidder is used by L1 bidder for adjustment against Security Deposit stated 
+that this could be due to emergency purpose and added that they will ensure 
+that such lapses do not occur in future. 
+5.8 Conclusion 
+Collusive bidding or bid rigging counteracts the purpose of tendering and is 
+inherently anti-competitive.  Scrutiny of selected tenders, revealed patterns of 
+bidding viz., bid rotation, bidders with family relationship, bid submission 
+from procuring entity computer, different bidders placing bids for a tender 
+from the same IP address, double EMD, coded intimation by bidders and 
+consecutive EMD instrument numbers, indicative of bid rigging and 
+cartelisation. These fraudulent practices by bidders and failure of tender 
+evaluating/approving officials, derail Government’s efforts to increase bidder 
+participation, reduce costs and enhance transparency in the procurement 
+system.  Government accepted (February 2023) the observations and stated 
+that the inputs will be useful for the new eProcurement portal to be 
+implemented from 1 April 2023. 
+  
+
+Chapter V – Collusive bidding and Cartelisation in tendering 
+ 
+59 
+5.9 Recommendations  Government should redesign the system to flag bids submitted by bidders from the same registered address and/or the same  IP address.  Government should conduct enquiry and fix responsibility for collusive bidding and cartelisation instances pointed out by Audit.  Officials involved in the evaluation and finalisation of tenders should carefully examine the documents uploaded in the eProcurement portal using ‘Tender Discursive Report’ available in MIS, which provides all the information about the bid viz.,  IP address, EMD, GST etc., to guard against collusive practices by the bidders.  The procuring entities should not allow the bidders to access their office computer systems for submission of bids.         (C. NEDUNCHEZHIAN) Chennai  Principal Accountant General (Audit-I), The 10 May 2023                         Tamil Nadu    Countersigned 
+ 
+    (GIRISH CHANDRA MURMU) New Delhi                 Comptroller and Auditor General of India 
+The 11 May 2023 
+ 
+
+
+APPENDICES 
+ 
+  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+61 
+Appendix 1.1  
+(Reference: Paragraph 1.8 (i); Page 5) 
+List of sampled procuring entities in sampled districts.  
+Sl. No. Name of the procuring entity Number of 
+tenders 
+published 
+1 Greater Chennai Corporation 
+More than 500 
+2 Directorate of Technical Education 
+3 Directorate of Town Panchayats 
+4 Highways Department 
+5 Rural Development and Panchayat Raj Department 
+6 Tamil Nadu Civil Supplies Corporation 
+7 Tamil Nadu Electricity Board 
+8 Information Technology and Digital Services Department 
+Less than 500 
+9 Micro, Small and Medium Enterprises Department 
+10 Public Works Department 
+11 Public Works Department – World Bank Tenders 
+12 Registrar of Co-operative Societies (Housing) 
+13 Sericulture Department 
+14 Tamil Nadu Medical Services Corporation 
+ 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+62 
+Appendix 1.2  
+(Reference: Paragraph 1.8 (ii); Page 5) 
+Risk parameters considered in the sampling of tenders  
+Risk 
+Category 
+Category 
+weightage 
+Risk parameter Risk 
+score 
+Bids 50 
+Only Single Bid 15 
+Only Two Bids 12 
+Cancelled/retender tenders 10 
+Latest Bid becoming L1 7 
+Bidders getting maximum contracts 
+AOC 4 
+Same set of bidders in an 
+organisation - Top 5 2 
+IP Address 30 
+Tenders with Bids from the IP of the 
+Department 20 
+Tenders with Bids from Same IP 10 
+Financial 20 
+For tenders more than ₹2 crore - less 
+than or equal to 15 days (norm 30 
+days) between date of publication and 
+date of submission 
+8 
+For tenders less than ₹2 crore - less 
+than or equal to 7 days (norm 15 
+days) between date of publication and 
+date of submission 
+6 
+Tender value More than ₹1 crore 4 
+Tender value Less than ₹1 crore 2 
+Total 100  100 
+ 
+  
+
+Appendices 
+ 
+63 
+Appendix 2.1 
+(Reference: Paragraph 2.2; Page 8) 
+Details of discontinuance in usage of eProcurement portal by procuring entities 
+Sl. 
+No. 
+Name Date of first 
+tender 
+published 
+Date of last 
+tender 
+published 
+Number 
+of 
+months 
+utilised 
+Number 
+of 
+tenders 
+published 
+1 Industries Department 10/02/2020 10/02/2020 0 1 
+2 Tamil Nadu Cooperative Union, 
+Chennai 23/09/2016 23/09/2016 0 1 
+3 Tamil Nadu Minerals Limited 20/04/2018 08/05/2018 1 2 
+4 Metropolitan Transport Corporation 
+(Chennai) Limited 13/11/2021 13/12/2021 1 4 
+5 State Express Transport Corporation 
+Tamil Nadu Limited 08/11/2021 09/12/2021 1 6 
+6 Tamil Nadu Industrial Development 
+Corporation Limited 18/10/2021 27/11/2021 1 2 
+7 State Project Management Unit-Jal 
+Jeevan Mission 27/08/2021 01/11/2021 2 3 
+8 Hindu Religious Charitable 
+Endowments, Chennai  13/08/2019 22/02/2020 6 10 
+9 Civil Supplies &Consumer Protection 
+Department, Chennai 28/05/2018 01/02/2019 8 2 
+10 Tamil Nadu National Law University 13/08/2019 10/06/2020 10 5 
+11 Public Works Department  21/02/2018 15/02/2019 12 88 
+12 
+Tamil Nadu Road Infrastructure 
+Development Corporation (TNRIDC) - 
+World Bank / MDB Tenders 
+29/09/2020 30/12/2021 15 14 
+13 Chennai Central Cooperative Bank 
+Limited, Chennai 07/02/2018 17/10/2019 20 2 
+14 Police Department 14/02/2020 30/12/2021 23 5 
+15 Anna Institute of Management, 
+Chennai 19/05/2017 27/10/2020 41 3 
+16 Tamil Nadu Road Sector Project 05/07/2017 22/01/2021 43 34 
+17 Tamil Nadu Agricultural University 17/07/2017 08/02/2021 43 173 
+18 Registrar of Housing Cooperative 
+Societies 11/10/2017 30/12/2021 51 56 
+ 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+64 
+ 
+Appendix 2.2 
+(Reference: Paragraph 2.4; Page 12) 
+Status of updation of published tenders by GoTN in comparison with other State 
+Governments using GePNIC 
+ 
+Sl.No. Name of the State Number of 
+tenders 
+published during 
+2020-22 
+Number of 
+tenders updated 
+to AoC during 
+2020-22 
+Percentage of 
+tenders updated to 
+AoC 
+1 Tripura 17,740 12,181 68.66 
+2 Kerala 1,89,509 97,541 51.47 
+3 West Bengal 1,99,341 92,184 46.24 
+4 Madhya Pradesh 1,20,959 54,908 45.39 
+5 Maharashtra 3,44,790 1,56,370 45.35 
+6 Punjab 88,147 38,243 43.39 
+7 Haryana 1,07,815 45,492 42.19 
+8 Odisha 72,732 27,237 37.45 
+9 Himachal Pradesh 33,299 8,398 25.22 
+10 Uttar Pradesh 3,98,625 64,187 16.10 
+11 Tamil Nadu 71,372 8,041 11.27 
+12 Uttarkhand 21,490 891 4.15 
+13 NCT of Delhi 43,014 1,697 3.95 
+14 Rajasthan 1,48,029 5,456 3.69 
+15 Jharkhand 18,151 382 2.10 
+ 
+  
+
+Appendices 
+ 
+65 
+Appendix 3.1 
+(Reference: Paragraph 3.2.1 (i); Page 17) 
+Details of procuring entity-wise tenders published with less than the prescribed time for bid 
+submission  
+Sl. 
+No. 
+Procuring entity Department wise details of tenders  
+(value <= ₹2 crore) published with period of bid 
+submission less than the prescribed time (15 
+days) 
+Department wise details of tenders  
+(value > ₹2 crore) published with period of 
+bid submission less than the prescribed time 
+(30 days) 
+Number 
+tenders 
+Value  
+(₹ in 
+crore) 
+Maximum 
+number of 
+bids 
+received 
+for a 
+tender 
+Minimum 
+number 
+of bids 
+received 
+for a 
+tender 
+Number 
+of 
+tenders 
+Value 
+(₹ in 
+crore) 
+Maximum 
+number of 
+bids 
+received 
+for a 
+tender 
+Minimum 
+number 
+of bids 
+received 
+for a 
+tender 
+1 Anna University, Chennai 8 1.42 4 1 2 18.50 7 3 
+2 CMWSS Board 280 200.69 15 1 51 3,238.77 8 1 
+3 Greater Chennai Corporation  18,370 1,824.22 19 1 1,030 8,644.98 14 1 
+4 Department of Information 
+Technology 3 0.00 6 2 1 4.00 3 3 
+5 Department of Sericulture 4 1.83 13 3 1 3.20 6 6 
+6 
+Department of Sugar 
+(Division of TN Co-operative 
+Sugar Federation Limited) 
+10,595 69.61 22 1 75 1,618.47 19 1 
+7 Directorate of Technical 
+Education 4,615 7.14 25 1 0 0.00 0 0 
+8 Directorate of Town 
+Panchayats 6,600 1,193.64 6 1 144 502.11 3 1 
+9 Greater Chennai Corporation – 
+ADB Tenders 0 0.00 0 0 1 53.82 0 0 
+10 ELCOT 5 0.00 5 2 0 0.00 0 0 
+11 Highways 393 300.52 11 1 1,057 8,481.38 12 1 
+12 Hindu Religious and Charitable 
+Endowments Department 3 1.72 6 2 2 8.49 6 4 
+13 Industries Department 0 0.00 0 0 1 10.76 35 35 
+14 Municipal Administration and 
+Water Supply Department 22,551 3,088.08 19 1 1,654 11,528.89 8 1 
+15 Metropolitan Transport 
+Corporation(Chennai) Limited 4 0.00 66 3 0 0.00 0 0 
+16 Micro Small and Medium 
+Enterprises 74 27.95 18 1 5 63.95 5 2 
+17 NIC TNSU 1 0.11 2 2 1 10.00 3 3 
+18 Police Department 0 0.00 0 0 1 4.80 4 4 
+19 Public Works Department 
+(PWD) 33 36.09 8 2 46 290.98 8 1 
+20 PWD - WB / MDB Tenders 22 2.16 5 1 0 0.00 0 0 
+21 Registrar of Housing 
+Cooperative Societies 21 10.66 5 2 2 9.88 4 4 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+66 
+Sl. 
+No. 
+Procuring Entity Department wise details of tenders  
+(value <= ₹2 crore) published with period of bid 
+submission less than the prescribed time (15 
+days) 
+Department wise details of tenders  
+(value > ₹2 crore) published with period of 
+bid submission less than the prescribed time 
+(30 days) 
+Number 
+tenders 
+Value  
+(₹ in 
+crore) 
+Maximum 
+Number 
+of bids 
+received 
+for a 
+tender 
+Minimum 
+Number 
+of bids 
+received 
+for a 
+tender 
+Number 
+of 
+tenders 
+Value 
+(₹ in 
+crore) 
+Maximum 
+Number 
+of bids 
+received 
+for a 
+tender 
+Minimum 
+Number 
+of bids 
+received 
+for a 
+tender 
+22 O/o the Superintendent 
+Engineer, Rural Development 23,871 9,901.53 14 1 627 3,363.39 12 1 
+23 
+State Express Transport 
+Corporation Tamilnadu 
+Limited 
+6 1.44 41 6 0 0.00 0 0 
+24 State Project Management 
+Unit-Jal Jeevan Mission 3 0.47 4 3 0 0.00 0 0 
+25 Tamil Nadu Agricultural 
+University 43 26.07 9 1 1 3.25 2 2 
+26 Tamil Nadu Magnesite Limited 0 0.00 0 0 1 35.00 12 12 
+27 Tamil Nadu Minerals Limited 2 1.25 6 4 12 88.00 9 1 
+28 Tamil Nadu Police Housing 
+Corporation 476 348.06 15 1 154 1,303.28 15 1 
+29 Tamil Nadu Veterinary and 
+Animal Sciences University 237 43.51 12 1 7 70.28 9 2 
+30 Tamil Nadu Co-operative Milk 
+Producers Federation Limited 137 78.12 19 1 46 464.44 7 1 
+31 Tamil Nadu Medical Services 
+Corporation 55 8.64 11 1 8 1,470.50 17 1 
+32 
+Tamil Nadu Road 
+Development Company 
+Limited 
+7 5.00 8 2 1 3.40 5 5 
+33 Tamil Nadu Warehousing 
+Corporation 0 0.00 0 0 16 87.11 5 1 
+34 Tidel Park Ltd Chennai 1 1.55 6 6 3 34.70 6 3 
+35 Tamil Nadu Cements 
+Corporation 214 88.49 30 1 63 1,769.33 40 1 
+36 Tamil Nadu Civil Supplies 
+Corporation 536 66.36 8 1 44 419.66 6 1 
+37 Tamil Nadu Electricity Board 
+(TNEB)  26,731 2,145.51 33 1 396 13,617.41 93 1 
+38 TNEB - WB / MDB Tenders 1 0.00 2 2 0 0.00 0 0 
+39 Tamil Nadu Water Supply and 
+Drainage Board 207 21.90 8 1 27 1,101.04 7 1 
+ Total 1,16,109    5,480    
+ 
+  
+
+Appendices 
+ 
+67 
+ 
+Appendix 5.1 
+(Reference: Paragraph 5.6.2; Page 55) 
+Details of procuring entities where bids were submitted  
+from same IP address  
+Sl. No. Sampled office Number of tenders 
+with bids from 
+same IP Address 
+1 District Rural Development Agency, Salem 76 
+2 District Rural Development Agency, Coimbatore 92 
+3 District Rural Development Agency, Thanjavur 2 
+4 District Rural Development Agency, Krishnagiri 17 
+5 District Rural Development Agency, Karur 24 
+6 District Rural Development Agency, Perambalur 6 
+7 Tamil Nadu Civil Services Corporation, Chennai 10 
+8 Greater Chennai Corporation  5 
+ Total 232 
+ 
+  
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+68 
+Appendix 5.2 
+(Reference: Paragraph 5.7.3; Page 57) 
+Details of procuring entities where bidders had submitted bids with  
+consecutive EMD instrument numbers 
+Sl. No. Sampled office Number of tenders for 
+which bids received with 
+consecutive EMD 
+instrument numbers 
+1 Executive Engineer, Public Works Department, 
+WRO , GWC Salem (World Bank tenders) 2 
+2 District Rural Development Agency, Salem 59 
+3 District Rural Development Agency, Coimbatore 4 
+4 District Rural Development Agency, Krishnagiri 5 
+5 District Rural Development Agency, Karur 3 
+6 Greater Chennai Corporation 3 
+ Total 76 
+ 
+  
+
+Appendices 
+ 
+69 
+Glossary of abbreviations 
+Abbreviations Full Form 
+AoC Award of Contract 
+BoQ Bill of Quantities 
+CPC Cryogenic Process Controls 
+CVC Central Vigilance Commission 
+DoF Department of Finance 
+DoS Director of Sericulture 
+DoTE Directorate of Technical Education 
+DRDA District Rural Development Agency 
+DSC Digital Signature Certificate 
+EE  Executive Engineer 
+EMD Earnest Money Deposit 
+e-Sevai Maiyam Common Service Centre 
+GeM Government eMarket place 
+GePNIC Government eProcurement system of National Informatics 
+Centre 
+GIGW – 2018 Guidelines for Indian Government Websites 
+GoI Government of India 
+GoTN Government of Tamil Nadu 
+GWC Ground Water Circle 
+HSN Harmonised System of Nomenclature 
+IP Internet Protocol 
+IT Information Technology 
+L1 successful bidder 
+LoA Letter of Acceptance 
+MeitY Ministry of Electronics and Information Technology 
+MIS Management Information System 
+MSMEs Micro, Small and Medium Enterprises 
+NIC National Informatics Centre 
+NIT Notice Inviting Tender 
+NSIC National  Small Industries Corporation 
+
+Performance Audit on Implementation of eProcurement system in Tamil Nadu 
+ 
+70 
+Abbreviations Full Form 
+PAN Permanent Account Number 
+SBI State Bank of India 
+SD Security Deposit 
+SRS System Requirement Specifications 
+SSIs Small Scale Industries 
+STQC Standardisation, Testing and Quality Certification 
+TAC Tender Acceptance Committee 
+TIA  Tender Inviting Authority 
+TNTIT Rules Tamil Nadu Transparency in Tender Rules, 2000 
+TSC Tender Scrutiny Committee 
+WRD Water Resources Department 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+© COMPTROLLER AND 
+AUDITOR GENERAL OF INDIA 
+www.cag.gov.in 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+http://www.cag.gov.in/ag1/tamil-nadu/en 
