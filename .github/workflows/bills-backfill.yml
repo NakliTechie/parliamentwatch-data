@@ -37,6 +37,12 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Configure git identity for in-flight checkpoint commits
+        # See CONV.md "Per-file checkpoint pattern".
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Build Bills (sansad-side) primary data (extract phase, backfill mode)
         # Split-phase: writers commit text/ + scraper-state only. Derived
         # files arrive in a separate commit from bills-derive.yml.

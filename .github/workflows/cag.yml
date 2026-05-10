@@ -39,6 +39,17 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Configure git identity for in-flight checkpoint commits
+        # build_cag.py performs incremental commits + pushes during the
+        # extraction loop (every CHECKPOINT_EVERY_N successful PDFs OR
+        # CHECKPOINT_EVERY_S seconds, whichever first), so a runner-killed
+        # mid-stream run doesn't lose all its work. The user identity has
+        # to be set BEFORE the build step, not just before the final
+        # commit step. See CONV.md "Per-file checkpoint pattern".
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Build CAG primary data (extract phase only)
         # Split-phase: writers commit reports.json + text/<id>.txt only.
         # Derived files (manifest/bundle/index/meta) are owned by

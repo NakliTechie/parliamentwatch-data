@@ -48,6 +48,59 @@ META_JSON     = DOCS / "meta.json"
 BUNDLE_JSON   = DOCS / "search-bundle.json"
 INDEX_JSON    = DOCS / "search-index.json"
 
+
+# ── In-flight checkpointing ────────────────────────────────────────────────
+#
+# OCR is slow (3-8 min per PDF). A runner-killed mid-stream OCR run that
+# only commits at the end loses N-1 OCRs of work. With per-OCR checkpoints,
+# we commit each successful OCR before starting the next. Worst case
+# loss = at most one OCR's worth of work.
+#
+# Lower default than the extract scripts (N=2 vs 25) because OCR's
+# per-unit cost is so high — we want commits as close to per-PDF as the
+# git-overhead-vs-loss tradeoff allows.
+
+import subprocess
+
+CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "2"))
+CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
+
+
+def _git(*args) -> tuple[int, str, str]:
+    p = subprocess.run(
+        ["git", *args], capture_output=True, text=True, check=False,
+    )
+    return p.returncode, p.stdout, p.stderr
+
+
+def checkpoint_commit(message: str, paths: list[str]) -> bool:
+    """Stage `paths`, commit, pull-rebase, push. Best-effort; failures log
+    but never abort the OCR loop. Caller's next checkpoint trigger retries.
+    """
+    rc, _, err = _git("add", "--", *paths)
+    if rc != 0:
+        print(f"  [checkpoint] git add failed: {err.strip() or 'unknown'}")
+        return False
+    rc, _, _ = _git("diff", "--cached", "--quiet")
+    if rc == 0:
+        return True
+    rc, _, err = _git("commit", "-m", message)
+    if rc != 0:
+        print(f"  [checkpoint] git commit failed: {err.strip()}")
+        return False
+    rc, _, err = _git("pull", "--rebase", "origin", "main")
+    if rc != 0:
+        print(f"  [checkpoint] git pull --rebase failed: {err.strip()} — aborting rebase")
+        _git("rebase", "--abort")
+        return False
+    rc, _, err = _git("push")
+    if rc != 0:
+        print(f"  [checkpoint] git push failed: {err.strip()}")
+        return False
+    print(f"  [checkpoint] pushed: {message}")
+    return True
+
+
 # ── Per-run budget ─────────────────────────────────────────────────────────
 
 # How many scanned PDFs to OCR per weekly run. Default 5 — at ~8 min each
@@ -189,6 +242,10 @@ def main():
     failed: list[int] = []
     timed_out: list[int] = []
 
+    # In-flight checkpointing — see CHECKPOINT_EVERY_N / CHECKPOINT_EVERY_S.
+    last_checkpoint_at = time.monotonic()
+    units_since_checkpoint = 0   # successes + tombstones (both are commit-worthy)
+
     print("\n[2/3] Downloading + OCR'ing...")
     # Lazy-import the scraper's downloader (handles jitter + rate-limit).
     from cag.scraper import download_pdf as _download_pdf, RateLimited
@@ -224,21 +281,46 @@ def main():
             tombstone.parent.mkdir(parents=True, exist_ok=True)
             tombstone.write_text(f"OCR error: {e}\n", encoding="utf-8")
             failed.append(rid)
-            continue
-        elapsed = time.time() - t0
-        if text is None:
-            print(f"    EMPTY OCR after {elapsed:.0f}s — writing tombstone, won't retry")
-            tombstone = TEXT_DIR / f"{rid}.ocr-failed"
-            tombstone.parent.mkdir(parents=True, exist_ok=True)
-            tombstone.write_text("OCR returned empty\n", encoding="utf-8")
-            failed.append(rid)
-            continue
-        text_path = TEXT_DIR / f"{rid}.txt"
-        text_path.parent.mkdir(parents=True, exist_ok=True)
-        text_path.write_text(text, encoding="utf-8")
-        kb = len(text) / 1024
-        print(f"    OK in {elapsed:.0f}s · wrote {kb:.0f} KB to text/{rid}.txt")
-        succeeded.append(rid)
+            units_since_checkpoint += 1
+        else:
+            elapsed = time.time() - t0
+            if text is None:
+                print(f"    EMPTY OCR after {elapsed:.0f}s — writing tombstone, won't retry")
+                tombstone = TEXT_DIR / f"{rid}.ocr-failed"
+                tombstone.parent.mkdir(parents=True, exist_ok=True)
+                tombstone.write_text("OCR returned empty\n", encoding="utf-8")
+                failed.append(rid)
+                units_since_checkpoint += 1
+            else:
+                text_path = TEXT_DIR / f"{rid}.txt"
+                text_path.parent.mkdir(parents=True, exist_ok=True)
+                text_path.write_text(text, encoding="utf-8")
+                kb = len(text) / 1024
+                print(f"    OK in {elapsed:.0f}s · wrote {kb:.0f} KB to text/{rid}.txt")
+                succeeded.append(rid)
+                units_since_checkpoint += 1
+
+        # Checkpoint after each commit-worthy event (text or tombstone).
+        # OCR is the slowest extractor — per-2-PDFs default keeps loss
+        # bounded at one OCR's worth of work even on runner kill.
+        now = time.monotonic()
+        if (units_since_checkpoint >= CHECKPOINT_EVERY_N or
+            (units_since_checkpoint > 0 and now - last_checkpoint_at >= CHECKPOINT_EVERY_S)):
+            ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+            checkpoint_commit(
+                f"Auto-checkpoint CAG OCR data (succeeded={len(succeeded)}, failed={len(failed)} this run) [{ts}]",
+                ["docs/cag/text/"],
+            )
+            units_since_checkpoint = 0
+            last_checkpoint_at = now
+
+    # Final checkpoint of post-loop residue (anything since the last trigger).
+    if units_since_checkpoint > 0:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        checkpoint_commit(
+            f"Auto-checkpoint CAG OCR data (final, succeeded={len(succeeded)}, failed={len(failed)} this run) [{ts}]",
+            ["docs/cag/text/"],
+        )
 
     print(f"\n  succeeded: {len(succeeded)} · failed (tombstoned): {len(failed)} · timed out: {len(timed_out)}")
 

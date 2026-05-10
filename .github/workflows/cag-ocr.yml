@@ -67,6 +67,15 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Configure git identity for in-flight checkpoint commits
+        # build_cag_ocr.py commits per-OCR (CHECKPOINT_EVERY_N=2 default,
+        # tuned for OCR's 3-8 min per-PDF cost) so a runner-killed mid-OCR
+        # run loses at most one OCR's worth of work. See CONV.md
+        # "Per-file checkpoint pattern".
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: OCR scanned PDFs
         env:
           MAX_OCR_PER_RUN:    ${{ inputs.max_ocr_per_run    || '5' }}

@@ -56,6 +56,56 @@ RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", 
 LOK_SABHAS = [int(x) for x in os.environ.get("LOK_SABHAS", "18").split(",")]
 
 
+# ── In-flight checkpointing ────────────────────────────────────────────────
+#
+# Layer 1 crash-safety: periodically commit + push the in-flight extracted
+# text files DURING the run. A runner-killed mid-stream backfill (60-min
+# GH Actions cap) loses at most CHECKPOINT_EVERY_N PDFs of work instead of
+# the full run. Best-effort: failures log but never abort the loop.
+# See CONV.md "Per-file checkpoint pattern" for the rationale.
+
+import subprocess
+
+CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "25"))
+CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
+
+
+def _git(*args) -> tuple[int, str, str]:
+    p = subprocess.run(
+        ["git", *args], capture_output=True, text=True, check=False,
+    )
+    return p.returncode, p.stdout, p.stderr
+
+
+def checkpoint_commit(message: str, paths: list[str]) -> bool:
+    """Stage `paths`, commit if non-empty, pull-rebase, push. Best-effort —
+    any failure is logged and returned as False; the caller continues
+    extracting and the next checkpoint trigger retries.
+    """
+    rc, _, err = _git("add", "--", *paths)
+    if rc != 0:
+        print(f"  [checkpoint] git add failed: {err.strip() or 'unknown'}")
+        return False
+    rc, _, _ = _git("diff", "--cached", "--quiet")
+    if rc == 0:
+        return True   # nothing staged, no-op
+    rc, _, err = _git("commit", "-m", message)
+    if rc != 0:
+        print(f"  [checkpoint] git commit failed: {err.strip()}")
+        return False
+    rc, _, err = _git("pull", "--rebase", "origin", "main")
+    if rc != 0:
+        print(f"  [checkpoint] git pull --rebase failed: {err.strip()} — aborting rebase")
+        _git("rebase", "--abort")
+        return False
+    rc, _, err = _git("push")
+    if rc != 0:
+        print(f"  [checkpoint] git push failed: {err.strip()}")
+        return False
+    print(f"  [checkpoint] pushed: {message}")
+    return True
+
+
 def _safe_num(report_num):
     """Filesystem-safe encoding of a report number (without LS prefix)."""
     if report_num is None:
@@ -232,6 +282,10 @@ def extract_missing_texts():
         except Exception as e:
             return c, None, e
 
+    # In-flight checkpointing — see CHECKPOINT_EVERY_N / CHECKPOINT_EVERY_S.
+    last_checkpoint_at = time.monotonic()
+    extracted_since_checkpoint = 0
+
     with ThreadPoolExecutor(max_workers=EXTRACT_WORKERS) as ex:
         futures = {ex.submit(_do, c): c for c in target}
         for fut in as_completed(futures):
@@ -247,15 +301,34 @@ def extract_missing_texts():
                 break
             elif text:
                 extracted.append(label)
+                extracted_since_checkpoint += 1
             else:
                 failed.append(label)
-            if time.monotonic() > deadline:
+            now = time.monotonic()
+            if (extracted_since_checkpoint >= CHECKPOINT_EVERY_N or
+                (extracted_since_checkpoint > 0 and now - last_checkpoint_at >= CHECKPOINT_EVERY_S)):
+                ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+                checkpoint_commit(
+                    f"Auto-checkpoint DRSC primary data (extracted={len(extracted)} this run) [{ts}]",
+                    ["docs/drsc/reports.json", "docs/drsc/text/"],
+                )
+                extracted_since_checkpoint = 0
+                last_checkpoint_at = now
+            if now > deadline:
                 print(f"  [BUDGET] wall-clock budget hit after {len(extracted)} extractions")
                 budget_hit = True
                 for f in futures:
                     if not f.done():
                         f.cancel()
                 break
+
+    # Final checkpoint of post-loop residue.
+    if extracted_since_checkpoint > 0:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        checkpoint_commit(
+            f"Auto-checkpoint DRSC primary data (final, extracted={len(extracted)} this run) [{ts}]",
+            ["docs/drsc/reports.json", "docs/drsc/text/"],
+        )
 
     return {
         "extracted": extracted,

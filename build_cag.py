@@ -77,6 +77,77 @@ DETAIL_WORKERS          = int(os.environ.get("DETAIL_WORKERS", "4"))
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
 
 
+# ── In-flight checkpointing ────────────────────────────────────────────────
+#
+# Layer 1 crash-safety: periodically commit + push the in-flight extracted
+# text files DURING the run (not just at the end) so a runner-killed mid-
+# stream backfill doesn't lose all its work. Trigger: every
+# CHECKPOINT_EVERY_N successful extractions OR CHECKPOINT_EVERY_S wallclock
+# seconds since the last checkpoint, whichever comes first.
+#
+# Best-effort: a checkpoint failure (network blip, race against another
+# writer's commit, transient git error) is logged and the extraction loop
+# continues. The next checkpoint trigger retries. The workflow's final
+# commit-and-push step is still the backstop for anything not yet
+# checkpointed.
+#
+# Why not commit per-PDF? Each commit + pull-rebase + push round-trip is
+# ~10s of overhead. At 25 extractions per checkpoint we amortise that down
+# to <0.5s per PDF, while bounding the worst-case loss to ~25 PDFs of work
+# if the runner gets killed.
+
+import subprocess
+
+CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "25"))
+CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
+
+
+def _git(*args) -> tuple[int, str, str]:
+    """Run a git command. Returns (returncode, stdout, stderr)."""
+    p = subprocess.run(
+        ["git", *args], capture_output=True, text=True, check=False,
+    )
+    return p.returncode, p.stdout, p.stderr
+
+
+def checkpoint_commit(message: str, paths: list[str]) -> bool:
+    """Stage `paths`, commit if there's something to commit, pull-rebase, push.
+
+    Returns True on a successful push (or a no-op when nothing was staged).
+    Best-effort: failures log to stdout but DO NOT raise — the caller
+    continues extracting and the next checkpoint retries. Never abort
+    a backfill mid-stream because of a checkpoint hiccup.
+    """
+    rc, _, err = _git("add", "--", *paths)
+    if rc != 0:
+        print(f"  [checkpoint] git add failed: {err.strip() or 'unknown'}")
+        return False
+
+    rc, _, _ = _git("diff", "--cached", "--quiet")
+    if rc == 0:
+        # No staged changes; nothing to commit.
+        return True
+
+    rc, _, err = _git("commit", "-m", message)
+    if rc != 0:
+        print(f"  [checkpoint] git commit failed: {err.strip()}")
+        return False
+
+    rc, _, err = _git("pull", "--rebase", "origin", "main")
+    if rc != 0:
+        print(f"  [checkpoint] git pull --rebase failed: {err.strip()} — aborting rebase")
+        _git("rebase", "--abort")
+        return False
+
+    rc, _, err = _git("push")
+    if rc != 0:
+        print(f"  [checkpoint] git push failed: {err.strip()}")
+        return False
+
+    print(f"  [checkpoint] pushed: {message}")
+    return True
+
+
 # ── Search bundle + index ──────────────────────────────────────────────────
 
 # Tokenizer + index params live alongside the DRSC implementation in
@@ -294,6 +365,10 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
     rate_limited = False
     budget_hit = False
 
+    # In-flight checkpointing — see CHECKPOINT_EVERY_N / CHECKPOINT_EVERY_S.
+    last_checkpoint_at = time.monotonic()
+    extracted_since_checkpoint = 0
+
     def _do(rid_url):
         rid, url = rid_url
         try:
@@ -316,14 +391,38 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
                 break
             elif text:
                 extracted.append(rid)
+                extracted_since_checkpoint += 1
             else:
                 failed.append(rid)
-            if time.monotonic() > deadline:
+            now = time.monotonic()
+            # Checkpoint trigger: enough extractions OR enough wallclock
+            # since last checkpoint. Done outside the rate-limit / budget
+            # paths because we want the residue committed even on early exit.
+            if (extracted_since_checkpoint >= CHECKPOINT_EVERY_N or
+                (extracted_since_checkpoint > 0 and now - last_checkpoint_at >= CHECKPOINT_EVERY_S)):
+                ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+                checkpoint_commit(
+                    f"Auto-checkpoint CAG primary data (extracted={len(extracted)} this run) [{ts}]",
+                    ["docs/cag/reports.json", "docs/cag/text/"],
+                )
+                extracted_since_checkpoint = 0
+                last_checkpoint_at = now
+            if now > deadline:
                 print(f"  [BUDGET] wall-clock budget hit after {len(extracted)} extractions")
                 budget_hit = True
                 for f in futures:
                     if not f.done(): f.cancel()
                 break
+
+    # Final checkpoint of any post-loop residue. The workflow's "Commit and
+    # push primary changes" step would also catch this, but a final in-script
+    # push means even rate-limited / budget-hit exits leave nothing behind.
+    if extracted_since_checkpoint > 0:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        checkpoint_commit(
+            f"Auto-checkpoint CAG primary data (final, extracted={len(extracted)} this run) [{ts}]",
+            ["docs/cag/reports.json", "docs/cag/text/"],
+        )
 
     return {
         "extracted": extracted,

@@ -115,6 +115,56 @@ EXTRACT_WORKERS         = int(os.environ.get("EXTRACT_WORKERS", "4"))
 # after a rate-limit before attempting again.
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
 
+
+# ── In-flight checkpointing ────────────────────────────────────────────────
+#
+# Layer 1 crash-safety: periodically commit + push extracted text + records
+# DURING the run, not just at the end. A runner-killed mid-stream backfill
+# now loses at most CHECKPOINT_EVERY_N PDFs of work instead of the full
+# run. See CONV.md "Per-file checkpoint pattern".
+
+import subprocess
+
+CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "25"))
+CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
+
+
+def _git(*args) -> tuple[int, str, str]:
+    p = subprocess.run(
+        ["git", *args], capture_output=True, text=True, check=False,
+    )
+    return p.returncode, p.stdout, p.stderr
+
+
+def checkpoint_commit(message: str, paths: list[str]) -> bool:
+    """Stage `paths`, commit if non-empty, pull-rebase, push. Best-effort —
+    failures log but never abort the extraction loop. Caller's next
+    checkpoint trigger retries.
+    """
+    rc, _, err = _git("add", "--", *paths)
+    if rc != 0:
+        print(f"  [checkpoint] git add failed: {err.strip() or 'unknown'}")
+        return False
+    rc, _, _ = _git("diff", "--cached", "--quiet")
+    if rc == 0:
+        return True
+    rc, _, err = _git("commit", "-m", message)
+    if rc != 0:
+        print(f"  [checkpoint] git commit failed: {err.strip()}")
+        return False
+    rc, _, err = _git("pull", "--rebase", "origin", "main")
+    if rc != 0:
+        print(f"  [checkpoint] git pull --rebase failed: {err.strip()} — aborting rebase")
+        _git("rebase", "--abort")
+        return False
+    rc, _, err = _git("push")
+    if rc != 0:
+        print(f"  [checkpoint] git push failed: {err.strip()}")
+        return False
+    print(f"  [checkpoint] pushed: {message}")
+    return True
+
+
 # ── Sharding ───────────────────────────────────────────────────────────────
 
 # Records per index shard. 1000 → ~1 MB per shard at current schema density.
@@ -318,6 +368,10 @@ def run_extractions(candidates: list[dict], state: dict) -> dict:
 
     print(f"  Extracting up to {submit_budget} bills (workers={EXTRACT_WORKERS}, deadline={MAX_RUN_SECONDS}s)")
 
+    # In-flight checkpointing — see CHECKPOINT_EVERY_N / CHECKPOINT_EVERY_S.
+    last_checkpoint_at = time.monotonic()
+    extracted_since_checkpoint = 0
+
     with ThreadPoolExecutor(max_workers=EXTRACT_WORKERS) as ex:
         futures = {
             ex.submit(_process_one, candidates[i]): candidates[i]
@@ -341,8 +395,27 @@ def run_extractions(candidates: list[dict], state: dict) -> dict:
                 continue
             if ok:
                 extracted += 1
+                extracted_since_checkpoint += 1
             else:
                 failed += 1
+            now = time.monotonic()
+            if (extracted_since_checkpoint >= CHECKPOINT_EVERY_N or
+                (extracted_since_checkpoint > 0 and now - last_checkpoint_at >= CHECKPOINT_EVERY_S)):
+                ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+                checkpoint_commit(
+                    f"Auto-checkpoint Bills primary data (extracted={extracted} this run) [{ts}]",
+                    ["docs/bills/records.json", "docs/bills/text/", "docs/bills/.scraper_state.json"],
+                )
+                extracted_since_checkpoint = 0
+                last_checkpoint_at = now
+
+    # Final checkpoint of post-loop residue.
+    if extracted_since_checkpoint > 0:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        checkpoint_commit(
+            f"Auto-checkpoint Bills primary data (final, extracted={extracted} this run) [{ts}]",
+            ["docs/bills/records.json", "docs/bills/text/", "docs/bills/.scraper_state.json"],
+        )
 
     if rate_limited:
         _mark_rate_limited(state, rate_limit_msg)
