@@ -25,8 +25,8 @@ on:
   workflow_dispatch:
     inputs:
       lok_sabhas:
-        description: 'LS terms to walk (CSV, default = LS-13..18)'
-        default: '13,14,15,16,17,18'
+        description: 'LS terms to walk (CSV, default = LS-14..18 to match DRSC depth)'
+        default: '14,15,16,17,18'
       max_extractions:
         description: 'Max records to extract this run. Keep ≤50 per Politeness policy.'
         default: '50'
@@ -68,7 +68,7 @@ jobs:
         # "Split-phase scraping pattern".
         env:
           BUILD_PHASE:             'extract'
-          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '13,14,15,16,17,18' }}
+          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '14,15,16,17,18' }}
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '50' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
           EXTRACT_WORKERS:         '4'

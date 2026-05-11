@@ -36,10 +36,13 @@ BASE_URL = "https://sansad.in"
 SEARCH_API  = f"{BASE_URL}/api_ls/debate/debate-search"
 DETAILS_API = f"{BASE_URL}/api_ls/debate/debate-details"
 
-# Lok Sabha terms covered. Pre-LS-13 not available via this API
-# (returns errors). Extending back is a v1.x task — would require a
-# different mechanism (digitized PDF route).
-DEFAULT_LOK_SABHAS = [13, 14, 15, 16, 17, 18]
+# Lok Sabha terms covered. Matches DRSC's LS-14..18 depth for cross-
+# corpus consistency. LS-13 (1999-2004) IS available via this API (recon
+# verified ~7,616 records) but excluded for symmetry with DRSC; one env
+# var change to bring it back. Pre-LS-13 NOT available via API (returns
+# errors) — would require a separate scraper for the digitized PDF
+# route. Defer that to v1.x.
+DEFAULT_LOK_SABHAS = [14, 15, 16, 17, 18]
 
 _HEADERS = {
     "User-Agent": "Mozilla/5.0",
