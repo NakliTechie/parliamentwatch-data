@@ -131240,23 +131240,6 @@
     {
       "house": "rs",
       "session": 269,
-      "date": "10/12/2025",
-      "date_iso": "2025-12-10",
-      "file_versions": [
-        {
-          "version": "floor",
-          "url": "https://cms.rajyasabha.nic.in/UploadedFiles/Debates/OfficialDebatesDatewise/Floor/269/4122025/04122025.pdf"
-        },
-        {
-          "version": "part1",
-          "url": "https://cms.rajyasabha.nic.in/UploadedFiles/Debates/OfficialDebatesDatewise/Part-1QuestionAnswers/269/4122025/20251204.pdf"
-        }
-      ],
-      "title": "Rajya Sabha · Session 269 · 10/12/2025"
-    },
-    {
-      "house": "rs",
-      "session": 269,
       "date": "09/12/2025",
       "date_iso": "2025-12-09",
       "file_versions": [
