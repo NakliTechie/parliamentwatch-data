@@ -61,12 +61,14 @@ INDEX_JSON        = DOCS / "search-index.json"
 
 # ── Per-run budget ─────────────────────────────────────────────────────────
 
-# How many missing PDFs to extract per run. The full LC corpus is ~280
-# reports — 3 daily runs at 100 each clears the historical backlog
-# completely. After that the daily run is a near-no-op until the active
-# Commission submits something new.
-MAX_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_EXTRACTIONS_PER_RUN", "100"))
-MAX_RUN_SECONDS         = int(os.environ.get("MAX_RUN_SECONDS", "1800"))   # 30 min
+# How many missing PDFs to extract per run. The full LC corpus is ~290
+# reports. We run lc.yml 6×/day (every 4h) at MAX_EXTRACTIONS_PER_RUN=25
+# = 150 PDFs/day → ~2 days to clear the historical backlog. Smaller
+# bursts are friendlier to the WordPress / S3WaaS upstream than a single
+# 100-in-one-shot daily run. After backlog clear, each run is a near-
+# no-op until a new Commission report is submitted.
+MAX_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_EXTRACTIONS_PER_RUN", "25"))
+MAX_RUN_SECONDS         = int(os.environ.get("MAX_RUN_SECONDS", "900"))    # 15 min
 EXTRACT_WORKERS         = int(os.environ.get("EXTRACT_WORKERS", "4"))
 
 # Cooldown after a 429 / 403 — defensive. Upstream doesn't enforce a rate

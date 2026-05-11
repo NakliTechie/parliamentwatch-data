@@ -1,6 +1,6 @@
 name: LC scrape and publish
 
-# Daily walk of the 22 Law-Commission-term pages on
+# 6×/day walk of the 22 Law-Commission-term pages on
 # lawcommissionofindia.nic.in. Walks the listing, merges into reports.json,
 # extracts text from missing PDFs up to MAX_EXTRACTIONS_PER_RUN.
 #
@@ -9,26 +9,29 @@ name: LC scrape and publish
 # S3WaaS upstream). See plan/law-commission-recon-001.md + lc/scraper.py
 # archive_pdf() for the rationale.
 #
-# No separate backfill workflow — the LC corpus is ~290 reports total,
-# so MAX_EXTRACTIONS_PER_RUN=100 catches the whole historical backlog
-# in three daily cycles. If you ever need a one-shot full backfill,
-# workflow_dispatch this with max_extractions=500.
+# Cadence rationale: every 4 hours, 25 PDFs per run = 150/day. Smaller
+# bursts are friendlier to the WordPress / S3WaaS upstream than 100-in-
+# one-shot, and 150/day clears the ~290-report backlog in ~2 days. No
+# separate backfill workflow — at this cadence the daily firings catch
+# the backlog faster than a dedicated backfill would. If you ever need a
+# one-shot full backfill, workflow_dispatch this with max_extractions=500.
 #
 # Off-hour minute (:23 UTC) deliberately, off-cluster from existing
-# crons (DRSC=:17, CAG=:17, Bills=:17). Same hour band (06 UTC) — early
-# morning IST window when traffic to gov sites is low.
+# crons (DRSC=:17, CAG=:17, Bills=:17). 02:23 UTC anchor lands the first
+# of the day's runs in the IST early-morning low-load window
+# (07:53 IST); subsequent firings are spread evenly across the day.
 
 on:
   schedule:
-    - cron: '23 6 * * *'
+    - cron: '23 2,6,10,14,18,22 * * *'
   workflow_dispatch:
     inputs:
       max_extractions:
         description: 'Max PDFs to extract this run (politeness budget)'
-        default: '100'
+        default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap for the extraction phase, seconds'
-        default: '1800'
+        default: '900'
 
 permissions:
   contents: write
@@ -115,8 +118,8 @@ jobs:
         # the archive repo.
         env:
           BUILD_PHASE:             'extract'
-          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '100' }}
-          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '25' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
           EXTRACT_WORKERS:         '4'
           JITTER_MIN_MS:           '250'
           JITTER_MAX_MS:           '500'
