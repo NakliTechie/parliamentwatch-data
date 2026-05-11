@@ -1,19 +1,19 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-11T09:53:12Z",
+  "scraped_at": "2026-05-11T10:06:23Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
-    "bills": 9913,
+    "bills": 9914,
     "with_intro_pdf": 7463,
     "with_canonical_pdf": 7492,
-    "with_text": 2232,
+    "with_text": 2416,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
   },
   "by_status": {
     "Lapsed": 4615,
-    "Assented": 3391,
+    "Assented": 3392,
     "Pending": 718,
     "(null)": 394,
     "Withdrawn": 363,
@@ -23,7 +23,7 @@
   },
   "by_type": {
     "Private Member": 5495,
-    "Government": 4417,
+    "Government": 4418,
     "(null)": 1
   },
   "year_range": {
@@ -31,6 +31,9 @@
     "max": 2026
   },
   "texts": {
+    "100_2017_L": {
+      "url": "text/100_2017_L.txt"
+    },
     "100_2018_L": {
       "url": "text/100_2018_L.txt"
     },
@@ -51,6 +54,9 @@
     },
     "100_2024_L": {
       "url": "text/100_2024_L.txt"
+    },
+    "101_2017_L": {
+      "url": "text/101_2017_L.txt"
     },
     "101_2019_L": {
       "url": "text/101_2019_L.txt"
@@ -73,6 +79,9 @@
     "101_2025_L": {
       "url": "text/101_2025_L.txt"
     },
+    "102_2017_L": {
+      "url": "text/102_2017_L.txt"
+    },
     "102_2018_L": {
       "url": "text/102_2018_L.txt"
     },
@@ -94,6 +103,9 @@
     "102_2024_L": {
       "url": "text/102_2024_L.txt"
     },
+    "103_2017_L": {
+      "url": "text/103_2017_L.txt"
+    },
     "103_2019_L": {
       "url": "text/103_2019_L.txt"
     },
@@ -111,6 +123,9 @@
     },
     "103_2025_L": {
       "url": "text/103_2025_L.txt"
+    },
+    "104_2017_L": {
+      "url": "text/104_2017_L.txt"
     },
     "104_2019_L": {
       "url": "text/104_2019_L.txt"
@@ -132,6 +147,9 @@
     },
     "104_2026_L": {
       "url": "text/104_2026_L.txt"
+    },
+    "105_2017_L": {
+      "url": "text/105_2017_L.txt"
     },
     "105_2018_L": {
       "url": "text/105_2018_L.txt"
@@ -157,6 +175,9 @@
     "105_2026_L": {
       "url": "text/105_2026_L.txt"
     },
+    "106_2017_L": {
+      "url": "text/106_2017_L.txt"
+    },
     "106_2018_L": {
       "url": "text/106_2018_L.txt"
     },
@@ -178,6 +199,9 @@
     "106_2025_L": {
       "url": "text/106_2025_L.txt"
     },
+    "107_2017_L": {
+      "url": "text/107_2017_L.txt"
+    },
     "107_2018_L": {
       "url": "text/107_2018_L.txt"
     },
@@ -195,6 +219,9 @@
     },
     "107_2026_L": {
       "url": "text/107_2026_L.txt"
+    },
+    "108_2017_L": {
+      "url": "text/108_2017_L.txt"
     },
     "108_2018_L": {
       "url": "text/108_2018_L.txt"
@@ -220,6 +247,9 @@
     "108_2026_L": {
       "url": "text/108_2026_L.txt"
     },
+    "109_2017_L": {
+      "url": "text/109_2017_L.txt"
+    },
     "109_2018_L": {
       "url": "text/109_2018_L.txt"
     },
@@ -241,6 +271,9 @@
     "109_2026_L": {
       "url": "text/109_2026_L.txt"
     },
+    "10_2017_L": {
+      "url": "text/10_2017_L.txt"
+    },
     "10_2018_L": {
       "url": "text/10_2018_L.txt"
     },
@@ -252,6 +285,9 @@
     },
     "10_2025_L": {
       "url": "text/10_2025_L.txt"
+    },
+    "110_2017_L": {
+      "url": "text/110_2017_L.txt"
     },
     "110_2018_L": {
       "url": "text/110_2018_L.txt"
@@ -277,6 +313,9 @@
     "110_2025_L": {
       "url": "text/110_2025_L.txt"
     },
+    "111_2017_L": {
+      "url": "text/111_2017_L.txt"
+    },
     "111_2018_L": {
       "url": "text/111_2018_L.txt"
     },
@@ -291,6 +330,9 @@
     },
     "111_2025_L": {
       "url": "text/111_2025_L.txt"
+    },
+    "112_2017_L": {
+      "url": "text/112_2017_L.txt"
     },
     "112_2018_L": {
       "url": "text/112_2018_L.txt"
@@ -316,6 +358,9 @@
     "112_2025_L": {
       "url": "text/112_2025_L.txt"
     },
+    "113_2017_L": {
+      "url": "text/113_2017_L.txt"
+    },
     "113_2018_L": {
       "url": "text/113_2018_L.txt"
     },
@@ -340,6 +385,9 @@
     "113_2025_L": {
       "url": "text/113_2025_L.txt"
     },
+    "114_2017_L": {
+      "url": "text/114_2017_L.txt"
+    },
     "114_2018_L": {
       "url": "text/114_2018_L.txt"
     },
@@ -354,6 +402,9 @@
     },
     "114_2023_L": {
       "url": "text/114_2023_L.txt"
+    },
+    "115_2017_L": {
+      "url": "text/115_2017_L.txt"
     },
     "115_2018_L": {
       "url": "text/115_2018_L.txt"
@@ -372,6 +423,9 @@
     },
     "115_2023_L": {
       "url": "text/115_2023_L.txt"
+    },
+    "116_2017_L": {
+      "url": "text/116_2017_L.txt"
     },
     "116_2019_L": {
       "url": "text/116_2019_L.txt"
@@ -403,6 +457,9 @@
     "117_2022_L": {
       "url": "text/117_2022_L.txt"
     },
+    "118_2017_L": {
+      "url": "text/118_2017_L.txt"
+    },
     "118_2018_L": {
       "url": "text/118_2018_L.txt"
     },
@@ -421,6 +478,9 @@
     "118_2025_L": {
       "url": "text/118_2025_L.txt"
     },
+    "119_2017_L": {
+      "url": "text/119_2017_L.txt"
+    },
     "119_2018_L": {
       "url": "text/119_2018_L.txt"
     },
@@ -435,6 +495,9 @@
     },
     "119_2023_L": {
       "url": "text/119_2023_L.txt"
+    },
+    "11_2017_L": {
+      "url": "text/11_2017_L.txt"
     },
     "11_2018_L": {
       "url": "text/11_2018_L.txt"
@@ -454,6 +517,9 @@
     "11_2023_L": {
       "url": "text/11_2023_L.txt"
     },
+    "120_2017_L": {
+      "url": "text/120_2017_L.txt"
+    },
     "120_2018_L": {
       "url": "text/120_2018_L.txt"
     },
@@ -471,6 +537,9 @@
     },
     "120_2023_L": {
       "url": "text/120_2023_L.txt"
+    },
+    "121_2017_L": {
+      "url": "text/121_2017_L.txt"
     },
     "121_2019_L": {
       "url": "text/121_2019_L.txt"
@@ -490,6 +559,9 @@
     "121_2024_L": {
       "url": "text/121_2024_L.txt"
     },
+    "122_2017_L": {
+      "url": "text/122_2017_L.txt"
+    },
     "122_2018_L": {
       "url": "text/122_2018_L.txt"
     },
@@ -507,6 +579,9 @@
     },
     "122_2023_L": {
       "url": "text/122_2023_L.txt"
+    },
+    "123_2017_L": {
+      "url": "text/123_2017_L.txt"
     },
     "123_2018_L": {
       "url": "text/123_2018_L.txt"
@@ -528,6 +603,9 @@
     },
     "123_2025_L": {
       "url": "text/123_2025_L.txt"
+    },
+    "124_2017_L": {
+      "url": "text/124_2017_L.txt"
     },
     "124_2018_L": {
       "url": "text/124_2018_L.txt"
@@ -553,6 +631,9 @@
     "124_2025_L": {
       "url": "text/124_2025_L.txt"
     },
+    "125_2017_L": {
+      "url": "text/125_2017_L.txt"
+    },
     "125_2018_L": {
       "url": "text/125_2018_L.txt"
     },
@@ -564,6 +645,9 @@
     },
     "125_2022_L": {
       "url": "text/125_2022_L.txt"
+    },
+    "126_2017_L": {
+      "url": "text/126_2017_L.txt"
     },
     "126_2018_L": {
       "url": "text/126_2018_L.txt"
@@ -589,6 +673,9 @@
     "127_2022_L": {
       "url": "text/127_2022_L.txt"
     },
+    "128_2017_L": {
+      "url": "text/128_2017_L.txt"
+    },
     "128_2018_L": {
       "url": "text/128_2018_L.txt"
     },
@@ -604,6 +691,9 @@
     "128_2024_L": {
       "url": "text/128_2024_L.txt"
     },
+    "129_2017_L": {
+      "url": "text/129_2017_L.txt"
+    },
     "129_2018_L": {
       "url": "text/129_2018_L.txt"
     },
@@ -612,6 +702,9 @@
     },
     "129_2022_L": {
       "url": "text/129_2022_L.txt"
+    },
+    "12_2017_L": {
+      "url": "text/12_2017_L.txt"
     },
     "12_2018_L": {
       "url": "text/12_2018_L.txt"
@@ -628,6 +721,9 @@
     "12_2023_L": {
       "url": "text/12_2023_L.txt"
     },
+    "130_2017_L": {
+      "url": "text/130_2017_L.txt"
+    },
     "130_2018_L": {
       "url": "text/130_2018_L.txt"
     },
@@ -636,6 +732,9 @@
     },
     "130_2022_L": {
       "url": "text/130_2022_L.txt"
+    },
+    "131_2017_L": {
+      "url": "text/131_2017_L.txt"
     },
     "131_2018_L": {
       "url": "text/131_2018_L.txt"
@@ -649,6 +748,9 @@
     "131_2022_L": {
       "url": "text/131_2022_L.txt"
     },
+    "132_2017_L": {
+      "url": "text/132_2017_L.txt"
+    },
     "132_2018_L": {
       "url": "text/132_2018_L.txt"
     },
@@ -657,6 +759,9 @@
     },
     "132_2022_L": {
       "url": "text/132_2022_L.txt"
+    },
+    "133_2017_L": {
+      "url": "text/133_2017_L.txt"
     },
     "133_2021_L": {
       "url": "text/133_2021_L.txt"
@@ -762,6 +867,9 @@
     },
     "139_2024_L": {
       "url": "text/139_2024_L.txt"
+    },
+    "13_2017_L": {
+      "url": "text/13_2017_L.txt"
     },
     "13_2018_L": {
       "url": "text/13_2018_L.txt"
@@ -1818,6 +1926,9 @@
     },
     "19_2024_L": {
       "url": "text/19_2024_L.txt"
+    },
+    "1_2017_L": {
+      "url": "text/1_2017_L.txt"
     },
     "1_2018_L": {
       "url": "text/1_2018_L.txt"
@@ -3169,20 +3280,44 @@
     "320_2019_L": {
       "url": "text/320_2019_L.txt"
     },
+    "321_2016_L": {
+      "url": "text/321_2016_L.txt"
+    },
     "321_2019_L": {
       "url": "text/321_2019_L.txt"
+    },
+    "322_2016_L": {
+      "url": "text/322_2016_L.txt"
     },
     "322_2019_L": {
       "url": "text/322_2019_L.txt"
     },
+    "323_2016_L": {
+      "url": "text/323_2016_L.txt"
+    },
     "323_2019_L": {
       "url": "text/323_2019_L.txt"
+    },
+    "324_2016_L": {
+      "url": "text/324_2016_L.txt"
     },
     "324_2019_L": {
       "url": "text/324_2019_L.txt"
     },
+    "325_2016_L": {
+      "url": "text/325_2016_L.txt"
+    },
+    "326_2016_L": {
+      "url": "text/326_2016_L.txt"
+    },
+    "327_2016_L": {
+      "url": "text/327_2016_L.txt"
+    },
     "327_2019_L": {
       "url": "text/327_2019_L.txt"
+    },
+    "328_2016_L": {
+      "url": "text/328_2016_L.txt"
     },
     "328_2019_L": {
       "url": "text/328_2019_L.txt"
@@ -3231,6 +3366,9 @@
     },
     "339_2019_L": {
       "url": "text/339_2019_L.txt"
+    },
+    "33_2016_L": {
+      "url": "text/33_2016_L.txt"
     },
     "33_2017_L": {
       "url": "text/33_2017_L.txt"
@@ -3286,6 +3424,9 @@
     "349_2019_L": {
       "url": "text/349_2019_L.txt"
     },
+    "34_2016_L": {
+      "url": "text/34_2016_L.txt"
+    },
     "34_2017_L": {
       "url": "text/34_2017_L.txt"
     },
@@ -3336,6 +3477,9 @@
     },
     "359_2019_L": {
       "url": "text/359_2019_L.txt"
+    },
+    "35_2016_L": {
+      "url": "text/35_2016_L.txt"
     },
     "35_2017_L": {
       "url": "text/35_2017_L.txt"
@@ -3391,6 +3535,9 @@
     "369_2019_L": {
       "url": "text/369_2019_L.txt"
     },
+    "36_2016_L": {
+      "url": "text/36_2016_L.txt"
+    },
     "36_2017_L": {
       "url": "text/36_2017_L.txt"
     },
@@ -3439,6 +3586,9 @@
     "376_2019_L": {
       "url": "text/376_2019_L.txt"
     },
+    "37_2016_L": {
+      "url": "text/37_2016_L.txt"
+    },
     "37_2017_L": {
       "url": "text/37_2017_L.txt"
     },
@@ -3466,6 +3616,9 @@
     "37_2025_L": {
       "url": "text/37_2025_L.txt"
     },
+    "38_2016_L": {
+      "url": "text/38_2016_L.txt"
+    },
     "38_2017_L": {
       "url": "text/38_2017_L.txt"
     },
@@ -3483,6 +3636,9 @@
     },
     "38_2025_L": {
       "url": "text/38_2025_L.txt"
+    },
+    "39_2016_L": {
+      "url": "text/39_2016_L.txt"
     },
     "39_2017_L": {
       "url": "text/39_2017_L.txt"
@@ -3535,6 +3691,9 @@
     "3_2026_L": {
       "url": "text/3_2026_L.txt"
     },
+    "40_2016_L": {
+      "url": "text/40_2016_L.txt"
+    },
     "40_2017_L": {
       "url": "text/40_2017_L.txt"
     },
@@ -3580,6 +3739,9 @@
     "41_2024_L": {
       "url": "text/41_2024_L.txt"
     },
+    "42_2016_L": {
+      "url": "text/42_2016_L.txt"
+    },
     "42_2017_L": {
       "url": "text/42_2017_L.txt"
     },
@@ -3604,6 +3766,9 @@
     "42_2025_L": {
       "url": "text/42_2025_L.txt"
     },
+    "43_2016_L": {
+      "url": "text/43_2016_L.txt"
+    },
     "43_2017_L": {
       "url": "text/43_2017_L.txt"
     },
@@ -3624,6 +3789,9 @@
     },
     "43_2025_L": {
       "url": "text/43_2025_L.txt"
+    },
+    "44_2016_L": {
+      "url": "text/44_2016_L.txt"
     },
     "44_2017_L": {
       "url": "text/44_2017_L.txt"
@@ -3646,6 +3814,9 @@
     "44_2024_L": {
       "url": "text/44_2024_L.txt"
     },
+    "45_2016_L": {
+      "url": "text/45_2016_L.txt"
+    },
     "45_2017_L": {
       "url": "text/45_2017_L.txt"
     },
@@ -3663,6 +3834,9 @@
     },
     "45_2022_L": {
       "url": "text/45_2022_L.txt"
+    },
+    "46_2016_L": {
+      "url": "text/46_2016_L.txt"
     },
     "46_2017_L": {
       "url": "text/46_2017_L.txt"
@@ -3691,6 +3865,9 @@
     "46_2025_L": {
       "url": "text/46_2025_L.txt"
     },
+    "47_2016_L": {
+      "url": "text/47_2016_L.txt"
+    },
     "47_2017_L": {
       "url": "text/47_2017_L.txt"
     },
@@ -3714,6 +3891,9 @@
     },
     "47_2024_L": {
       "url": "text/47_2024_L.txt"
+    },
+    "48_2016_L": {
+      "url": "text/48_2016_L.txt"
     },
     "48_2017_L": {
       "url": "text/48_2017_L.txt"
@@ -3742,6 +3922,9 @@
     "48_2025_L": {
       "url": "text/48_2025_L.txt"
     },
+    "49_2016_L": {
+      "url": "text/49_2016_L.txt"
+    },
     "49_2017_L": {
       "url": "text/49_2017_L.txt"
     },
@@ -3762,6 +3945,9 @@
     },
     "49_2024_L": {
       "url": "text/49_2024_L.txt"
+    },
+    "4_2016_L": {
+      "url": "text/4_2016_L.txt"
     },
     "4_2017_L": {
       "url": "text/4_2017_L.txt"
@@ -3793,6 +3979,9 @@
     "50_2024_L": {
       "url": "text/50_2024_L.txt"
     },
+    "51_2016_L": {
+      "url": "text/51_2016_L.txt"
+    },
     "51_2017_L": {
       "url": "text/51_2017_L.txt"
     },
@@ -3816,6 +4005,9 @@
     },
     "51_2025_L": {
       "url": "text/51_2025_L.txt"
+    },
+    "52_2016_L": {
+      "url": "text/52_2016_L.txt"
     },
     "52_2017_L": {
       "url": "text/52_2017_L.txt"
@@ -3844,6 +4036,9 @@
     "52_2025_L": {
       "url": "text/52_2025_L.txt"
     },
+    "53_2016_L": {
+      "url": "text/53_2016_L.txt"
+    },
     "53_2017_L": {
       "url": "text/53_2017_L.txt"
     },
@@ -3864,6 +4059,9 @@
     },
     "53_2024_L": {
       "url": "text/53_2024_L.txt"
+    },
+    "54_2016_L": {
+      "url": "text/54_2016_L.txt"
     },
     "54_2017_L": {
       "url": "text/54_2017_L.txt"
@@ -3889,6 +4087,9 @@
     "54_2025_L": {
       "url": "text/54_2025_L.txt"
     },
+    "55_2016_L": {
+      "url": "text/55_2016_L.txt"
+    },
     "55_2017_L": {
       "url": "text/55_2017_L.txt"
     },
@@ -3910,6 +4111,9 @@
     "55_2024_L": {
       "url": "text/55_2024_L.txt"
     },
+    "56_2016_L": {
+      "url": "text/56_2016_L.txt"
+    },
     "56_2017_L": {
       "url": "text/56_2017_L.txt"
     },
@@ -3925,6 +4129,9 @@
     "56_2024_L": {
       "url": "text/56_2024_L.txt"
     },
+    "57_2016_L": {
+      "url": "text/57_2016_L.txt"
+    },
     "57_2017_L": {
       "url": "text/57_2017_L.txt"
     },
@@ -3939,6 +4146,9 @@
     },
     "57_2022_L": {
       "url": "text/57_2022_L.txt"
+    },
+    "58_2016_L": {
+      "url": "text/58_2016_L.txt"
     },
     "58_2017_L": {
       "url": "text/58_2017_L.txt"
@@ -3960,6 +4170,9 @@
     },
     "58_2024_L": {
       "url": "text/58_2024_L.txt"
+    },
+    "59_2016_L": {
+      "url": "text/59_2016_L.txt"
     },
     "59_2017_L": {
       "url": "text/59_2017_L.txt"
@@ -3985,6 +4198,9 @@
     "59_2025_L": {
       "url": "text/59_2025_L.txt"
     },
+    "5_2016_L": {
+      "url": "text/5_2016_L.txt"
+    },
     "5_2017_L": {
       "url": "text/5_2017_L.txt"
     },
@@ -3993,6 +4209,9 @@
     },
     "5_2022_L": {
       "url": "text/5_2022_L.txt"
+    },
+    "60_2016_L": {
+      "url": "text/60_2016_L.txt"
     },
     "60_2017_L": {
       "url": "text/60_2017_L.txt"
@@ -4018,6 +4237,9 @@
     "60_2025_L": {
       "url": "text/60_2025_L.txt"
     },
+    "61_2016_L": {
+      "url": "text/61_2016_L.txt"
+    },
     "61_2017_L": {
       "url": "text/61_2017_L.txt"
     },
@@ -4042,6 +4264,9 @@
     "61_2024_L": {
       "url": "text/61_2024_L.txt"
     },
+    "62_2016_L": {
+      "url": "text/62_2016_L.txt"
+    },
     "62_2017_L": {
       "url": "text/62_2017_L.txt"
     },
@@ -4062,6 +4287,9 @@
     },
     "62_2025_L": {
       "url": "text/62_2025_L.txt"
+    },
+    "63_2016_L": {
+      "url": "text/63_2016_L.txt"
     },
     "63_2017_L": {
       "url": "text/63_2017_L.txt"
@@ -4108,6 +4336,9 @@
     "64_2024_L": {
       "url": "text/64_2024_L.txt"
     },
+    "65_2016_L": {
+      "url": "text/65_2016_L.txt"
+    },
     "65_2017_L": {
       "url": "text/65_2017_L.txt"
     },
@@ -4131,6 +4362,9 @@
     },
     "65_2025_L": {
       "url": "text/65_2025_L.txt"
+    },
+    "66_2016_L": {
+      "url": "text/66_2016_L.txt"
     },
     "66_2017_L": {
       "url": "text/66_2017_L.txt"
@@ -4156,6 +4390,9 @@
     "66_2025_L": {
       "url": "text/66_2025_L.txt"
     },
+    "67_2016_L": {
+      "url": "text/67_2016_L.txt"
+    },
     "67_2017_L": {
       "url": "text/67_2017_L.txt"
     },
@@ -4173,6 +4410,9 @@
     },
     "67_2024_L": {
       "url": "text/67_2024_L.txt"
+    },
+    "68_2016_L": {
+      "url": "text/68_2016_L.txt"
     },
     "68_2017_L": {
       "url": "text/68_2017_L.txt"
@@ -4195,6 +4435,9 @@
     "68_2025_L": {
       "url": "text/68_2025_L.txt"
     },
+    "69_2016_L": {
+      "url": "text/69_2016_L.txt"
+    },
     "69_2017_L": {
       "url": "text/69_2017_L.txt"
     },
@@ -4216,6 +4459,9 @@
     "69_2025_L": {
       "url": "text/69_2025_L.txt"
     },
+    "6_2016_L": {
+      "url": "text/6_2016_L.txt"
+    },
     "6_2017_L": {
       "url": "text/6_2017_L.txt"
     },
@@ -4227,6 +4473,9 @@
     },
     "6_2022_L": {
       "url": "text/6_2022_L.txt"
+    },
+    "70_2016_L": {
+      "url": "text/70_2016_L.txt"
     },
     "70_2017_L": {
       "url": "text/70_2017_L.txt"
@@ -4252,6 +4501,9 @@
     "70_2024_L": {
       "url": "text/70_2024_L.txt"
     },
+    "71_2016_L": {
+      "url": "text/71_2016_L.txt"
+    },
     "71_2017_L": {
       "url": "text/71_2017_L.txt"
     },
@@ -4272,6 +4524,9 @@
     },
     "71_2024_L": {
       "url": "text/71_2024_L.txt"
+    },
+    "72_2016_L": {
+      "url": "text/72_2016_L.txt"
     },
     "72_2017_L": {
       "url": "text/72_2017_L.txt"
@@ -4297,6 +4552,9 @@
     "72_2026_L": {
       "url": "text/72_2026_L.txt"
     },
+    "73_2016_L": {
+      "url": "text/73_2016_L.txt"
+    },
     "73_2017_L": {
       "url": "text/73_2017_L.txt"
     },
@@ -4317,6 +4575,9 @@
     },
     "73_2025_L": {
       "url": "text/73_2025_L.txt"
+    },
+    "74_2016_L": {
+      "url": "text/74_2016_L.txt"
     },
     "74_2017_L": {
       "url": "text/74_2017_L.txt"
@@ -4339,6 +4600,9 @@
     "74_2024_L": {
       "url": "text/74_2024_L.txt"
     },
+    "75_2016_L": {
+      "url": "text/75_2016_L.txt"
+    },
     "75_2017_L": {
       "url": "text/75_2017_L.txt"
     },
@@ -4359,6 +4623,9 @@
     },
     "75_2025_L": {
       "url": "text/75_2025_L.txt"
+    },
+    "76_2016_L": {
+      "url": "text/76_2016_L.txt"
     },
     "76_2017_L": {
       "url": "text/76_2017_L.txt"
@@ -4384,6 +4651,9 @@
     "76_2025_L": {
       "url": "text/76_2025_L.txt"
     },
+    "77_2016_L": {
+      "url": "text/77_2016_L.txt"
+    },
     "77_2017_L": {
       "url": "text/77_2017_L.txt"
     },
@@ -4407,6 +4677,9 @@
     },
     "77_2025_L": {
       "url": "text/77_2025_L.txt"
+    },
+    "78_2016_L": {
+      "url": "text/78_2016_L.txt"
     },
     "78_2017_L": {
       "url": "text/78_2017_L.txt"
@@ -4435,6 +4708,9 @@
     "78_2025_L": {
       "url": "text/78_2025_L.txt"
     },
+    "79_2016_L": {
+      "url": "text/79_2016_L.txt"
+    },
     "79_2017_L": {
       "url": "text/79_2017_L.txt"
     },
@@ -4462,6 +4738,9 @@
     "79_2026_L": {
       "url": "text/79_2026_L.txt"
     },
+    "7_2016_L": {
+      "url": "text/7_2016_L.txt"
+    },
     "7_2017_L": {
       "url": "text/7_2017_L.txt"
     },
@@ -4470,6 +4749,9 @@
     },
     "7_2022_L": {
       "url": "text/7_2022_L.txt"
+    },
+    "80_2016_L": {
+      "url": "text/80_2016_L.txt"
     },
     "80_2017_L": {
       "url": "text/80_2017_L.txt"
@@ -4494,6 +4776,9 @@
     },
     "80_2025_L": {
       "url": "text/80_2025_L.txt"
+    },
+    "81_2016_L": {
+      "url": "text/81_2016_L.txt"
     },
     "81_2017_L": {
       "url": "text/81_2017_L.txt"
@@ -4521,6 +4806,9 @@
     },
     "81_2025_L": {
       "url": "text/81_2025_L.txt"
+    },
+    "82_2016_L": {
+      "url": "text/82_2016_L.txt"
     },
     "82_2017_L": {
       "url": "text/82_2017_L.txt"
@@ -4552,6 +4840,9 @@
     "82_2026_L": {
       "url": "text/82_2026_L.txt"
     },
+    "83_2016_L": {
+      "url": "text/83_2016_L.txt"
+    },
     "83_2017_L": {
       "url": "text/83_2017_L.txt"
     },
@@ -4579,6 +4870,9 @@
     "83_2025_L": {
       "url": "text/83_2025_L.txt"
     },
+    "84_2016_L": {
+      "url": "text/84_2016_L.txt"
+    },
     "84_2017_L": {
       "url": "text/84_2017_L.txt"
     },
@@ -4602,6 +4896,9 @@
     },
     "84_2024_L": {
       "url": "text/84_2024_L.txt"
+    },
+    "85_2016_L": {
+      "url": "text/85_2016_L.txt"
     },
     "85_2017_L": {
       "url": "text/85_2017_L.txt"
@@ -4630,6 +4927,9 @@
     "85_2026_L": {
       "url": "text/85_2026_L.txt"
     },
+    "86_2016_L": {
+      "url": "text/86_2016_L.txt"
+    },
     "86_2017_L": {
       "url": "text/86_2017_L.txt"
     },
@@ -4650,6 +4950,9 @@
     },
     "86_2024_L": {
       "url": "text/86_2024_L.txt"
+    },
+    "87_2016_L": {
+      "url": "text/87_2016_L.txt"
     },
     "87_2017_L": {
       "url": "text/87_2017_L.txt"
@@ -4675,6 +4978,9 @@
     "87_2024_L": {
       "url": "text/87_2024_L.txt"
     },
+    "88_2016_L": {
+      "url": "text/88_2016_L.txt"
+    },
     "88_2017_L": {
       "url": "text/88_2017_L.txt"
     },
@@ -4698,6 +5004,9 @@
     },
     "88_2025_L": {
       "url": "text/88_2025_L.txt"
+    },
+    "89_2016_L": {
+      "url": "text/89_2016_L.txt"
     },
     "89_2017_L": {
       "url": "text/89_2017_L.txt"
@@ -4723,6 +5032,9 @@
     "89_2025_L": {
       "url": "text/89_2025_L.txt"
     },
+    "8_2016_L": {
+      "url": "text/8_2016_L.txt"
+    },
     "8_2017_L": {
       "url": "text/8_2017_L.txt"
     },
@@ -4740,6 +5052,9 @@
     },
     "8_2025_L": {
       "url": "text/8_2025_L.txt"
+    },
+    "90_2016_L": {
+      "url": "text/90_2016_L.txt"
     },
     "90_2017_L": {
       "url": "text/90_2017_L.txt"
@@ -4765,6 +5080,9 @@
     "90_2025_L": {
       "url": "text/90_2025_L.txt"
     },
+    "91_2016_L": {
+      "url": "text/91_2016_L.txt"
+    },
     "91_2017_L": {
       "url": "text/91_2017_L.txt"
     },
@@ -4788,6 +5106,9 @@
     },
     "91_2024_L": {
       "url": "text/91_2024_L.txt"
+    },
+    "92_2016_L": {
+      "url": "text/92_2016_L.txt"
     },
     "92_2017_L": {
       "url": "text/92_2017_L.txt"
@@ -4816,6 +5137,9 @@
     "92_2025_L": {
       "url": "text/92_2025_L.txt"
     },
+    "93_2016_L": {
+      "url": "text/93_2016_L.txt"
+    },
     "93_2017_L": {
       "url": "text/93_2017_L.txt"
     },
@@ -4833,6 +5157,9 @@
     },
     "93_2023_L": {
       "url": "text/93_2023_L.txt"
+    },
+    "94_2016_L": {
+      "url": "text/94_2016_L.txt"
     },
     "94_2017_L": {
       "url": "text/94_2017_L.txt"
@@ -4858,6 +5185,9 @@
     "94_2025_L": {
       "url": "text/94_2025_L.txt"
     },
+    "95_2016_L": {
+      "url": "text/95_2016_L.txt"
+    },
     "95_2017_L": {
       "url": "text/95_2017_L.txt"
     },
@@ -4879,6 +5209,9 @@
     "95_2025_L": {
       "url": "text/95_2025_L.txt"
     },
+    "96_2016_L": {
+      "url": "text/96_2016_L.txt"
+    },
     "96_2017_L": {
       "url": "text/96_2017_L.txt"
     },
@@ -4896,6 +5229,9 @@
     },
     "96_2025_L": {
       "url": "text/96_2025_L.txt"
+    },
+    "97_2016_L": {
+      "url": "text/97_2016_L.txt"
     },
     "97_2017_L": {
       "url": "text/97_2017_L.txt"
@@ -4917,6 +5253,9 @@
     },
     "97_2026_L": {
       "url": "text/97_2026_L.txt"
+    },
+    "98_2016_L": {
+      "url": "text/98_2016_L.txt"
     },
     "98_2017_L": {
       "url": "text/98_2017_L.txt"
@@ -4941,6 +5280,9 @@
     },
     "98_2025_L": {
       "url": "text/98_2025_L.txt"
+    },
+    "99_2016_L": {
+      "url": "text/99_2016_L.txt"
     },
     "99_2017_L": {
       "url": "text/99_2017_L.txt"
@@ -4968,6 +5310,9 @@
     },
     "99_2025_L": {
       "url": "text/99_2025_L.txt"
+    },
+    "9_2016_L": {
+      "url": "text/9_2016_L.txt"
     },
     "9_2017_L": {
       "url": "text/9_2017_L.txt"
@@ -5029,6 +5374,9 @@
     "C_2024_R": {
       "url": "text/C_2024_R.txt"
     },
+    "III_2016_R": {
+      "url": "text/III_2016_R.txt"
+    },
     "III_2017_R": {
       "url": "text/III_2017_R.txt"
     },
@@ -5052,6 +5400,9 @@
     },
     "III_2026_R": {
       "url": "text/III_2026_R.txt"
+    },
+    "II_2016_R": {
+      "url": "text/II_2016_R.txt"
     },
     "II_2017_R": {
       "url": "text/II_2017_R.txt"
@@ -5083,6 +5434,9 @@
     "II_2026_R": {
       "url": "text/II_2026_R.txt"
     },
+    "IV_2016_R": {
+      "url": "text/IV_2016_R.txt"
+    },
     "IV_2017_R": {
       "url": "text/IV_2017_R.txt"
     },
@@ -5109,6 +5463,9 @@
     },
     "IV_2026_R": {
       "url": "text/IV_2026_R.txt"
+    },
+    "IX_2016_R": {
+      "url": "text/IX_2016_R.txt"
     },
     "IX_2017_R": {
       "url": "text/IX_2017_R.txt"
@@ -5137,6 +5494,9 @@
     "IX_2026_R": {
       "url": "text/IX_2026_R.txt"
     },
+    "I_2016_R": {
+      "url": "text/I_2016_R.txt"
+    },
     "I_2017_R": {
       "url": "text/I_2017_R.txt"
     },
@@ -5164,6 +5524,9 @@
     "I_2026_R": {
       "url": "text/I_2026_R.txt"
     },
+    "LIII_2016_R": {
+      "url": "text/LIII_2016_R.txt"
+    },
     "LIII_2018_R": {
       "url": "text/LIII_2018_R.txt"
     },
@@ -5182,6 +5545,9 @@
     "LIII_2025_R": {
       "url": "text/LIII_2025_R.txt"
     },
+    "LII_2016_R": {
+      "url": "text/LII_2016_R.txt"
+    },
     "LII_2019_R": {
       "url": "text/LII_2019_R.txt"
     },
@@ -5196,6 +5562,9 @@
     },
     "LII_2025_R": {
       "url": "text/LII_2025_R.txt"
+    },
+    "LIV_2016_R": {
+      "url": "text/LIV_2016_R.txt"
     },
     "LIV_2018_R": {
       "url": "text/LIV_2018_R.txt"
@@ -5215,6 +5584,9 @@
     "LIV_2025_R": {
       "url": "text/LIV_2025_R.txt"
     },
+    "LIX_2016_R": {
+      "url": "text/LIX_2016_R.txt"
+    },
     "LIX_2018_R": {
       "url": "text/LIX_2018_R.txt"
     },
@@ -5233,6 +5605,9 @@
     "LIX_2025_R": {
       "url": "text/LIX_2025_R.txt"
     },
+    "LI_2016_R": {
+      "url": "text/LI_2016_R.txt"
+    },
     "LI_2018_R": {
       "url": "text/LI_2018_R.txt"
     },
@@ -5247,6 +5622,9 @@
     },
     "LI_2025_R": {
       "url": "text/LI_2025_R.txt"
+    },
+    "LVIII_2016_R": {
+      "url": "text/LVIII_2016_R.txt"
     },
     "LVIII_2018_R": {
       "url": "text/LVIII_2018_R.txt"
@@ -5266,6 +5644,9 @@
     "LVIII_2025_R": {
       "url": "text/LVIII_2025_R.txt"
     },
+    "LVII_2016_R": {
+      "url": "text/LVII_2016_R.txt"
+    },
     "LVII_2018_R": {
       "url": "text/LVII_2018_R.txt"
     },
@@ -5283,6 +5664,9 @@
     },
     "LVII_2025_R": {
       "url": "text/LVII_2025_R.txt"
+    },
+    "LVI_2016_R": {
+      "url": "text/LVI_2016_R.txt"
     },
     "LVI_2018_R": {
       "url": "text/LVI_2018_R.txt"
@@ -5302,6 +5686,9 @@
     "LVI_2025_R": {
       "url": "text/LVI_2025_R.txt"
     },
+    "LV_2016_R": {
+      "url": "text/LV_2016_R.txt"
+    },
     "LV_2018_R": {
       "url": "text/LV_2018_R.txt"
     },
@@ -5320,6 +5707,9 @@
     "LV_2025_R": {
       "url": "text/LV_2025_R.txt"
     },
+    "LXIII_2016_R": {
+      "url": "text/LXIII_2016_R.txt"
+    },
     "LXIII_2019_R": {
       "url": "text/LXIII_2019_R.txt"
     },
@@ -5331,6 +5721,9 @@
     },
     "LXIII_2025_R": {
       "url": "text/LXIII_2025_R.txt"
+    },
+    "LXII_2016_R": {
+      "url": "text/LXII_2016_R.txt"
     },
     "LXII_2019_R": {
       "url": "text/LXII_2019_R.txt"
@@ -5347,6 +5740,9 @@
     "LXII_2025_R": {
       "url": "text/LXII_2025_R.txt"
     },
+    "LXIV_2016_R": {
+      "url": "text/LXIV_2016_R.txt"
+    },
     "LXIV_2019_R": {
       "url": "text/LXIV_2019_R.txt"
     },
@@ -5361,6 +5757,9 @@
     },
     "LXIV_2025_R": {
       "url": "text/LXIV_2025_R.txt"
+    },
+    "LXIX_2016_R": {
+      "url": "text/LXIX_2016_R.txt"
     },
     "LXIX_2019_R": {
       "url": "text/LXIX_2019_R.txt"
@@ -5377,6 +5776,9 @@
     "LXIX_2025_R": {
       "url": "text/LXIX_2025_R.txt"
     },
+    "LXI_2016_R": {
+      "url": "text/LXI_2016_R.txt"
+    },
     "LXI_2018_R": {
       "url": "text/LXI_2018_R.txt"
     },
@@ -5391,6 +5793,9 @@
     },
     "LXI_2025_R": {
       "url": "text/LXI_2025_R.txt"
+    },
+    "LXVIII_2016_R": {
+      "url": "text/LXVIII_2016_R.txt"
     },
     "LXVIII_2019_R": {
       "url": "text/LXVIII_2019_R.txt"
@@ -5407,6 +5812,9 @@
     "LXVIII_2025_R": {
       "url": "text/LXVIII_2025_R.txt"
     },
+    "LXVII_2016_R": {
+      "url": "text/LXVII_2016_R.txt"
+    },
     "LXVII_2019_R": {
       "url": "text/LXVII_2019_R.txt"
     },
@@ -5418,6 +5826,9 @@
     },
     "LXVII_2025_R": {
       "url": "text/LXVII_2025_R.txt"
+    },
+    "LXVI_2016_R": {
+      "url": "text/LXVI_2016_R.txt"
     },
     "LXVI_2019_R": {
       "url": "text/LXVI_2019_R.txt"
@@ -5434,6 +5845,9 @@
     "LXVI_2025_R": {
       "url": "text/LXVI_2025_R.txt"
     },
+    "LXV_2016_R": {
+      "url": "text/LXV_2016_R.txt"
+    },
     "LXV_2019_R": {
       "url": "text/LXV_2019_R.txt"
     },
@@ -5449,6 +5863,9 @@
     "LXV_2025_R": {
       "url": "text/LXV_2025_R.txt"
     },
+    "LXXIII_2016_R": {
+      "url": "text/LXXIII_2016_R.txt"
+    },
     "LXXIII_2019_R": {
       "url": "text/LXXIII_2019_R.txt"
     },
@@ -5460,6 +5877,9 @@
     },
     "LXXIII_2025_R": {
       "url": "text/LXXIII_2025_R.txt"
+    },
+    "LXXII_2016_R": {
+      "url": "text/LXXII_2016_R.txt"
     },
     "LXXII_2019_R": {
       "url": "text/LXXII_2019_R.txt"
@@ -5473,6 +5893,9 @@
     "LXXII_2025_R": {
       "url": "text/LXXII_2025_R.txt"
     },
+    "LXXIV_2016_R": {
+      "url": "text/LXXIV_2016_R.txt"
+    },
     "LXXIV_2022_R": {
       "url": "text/LXXIV_2022_R.txt"
     },
@@ -5484,6 +5907,9 @@
     },
     "LXXIX_2024_R": {
       "url": "text/LXXIX_2024_R.txt"
+    },
+    "LXXI_2016_R": {
+      "url": "text/LXXI_2016_R.txt"
     },
     "LXXI_2019_R": {
       "url": "text/LXXI_2019_R.txt"
@@ -5566,6 +5992,9 @@
     "LXXX_2022_R": {
       "url": "text/LXXX_2022_R.txt"
     },
+    "LXX_2016_R": {
+      "url": "text/LXX_2016_R.txt"
+    },
     "LXX_2019_R": {
       "url": "text/LXX_2019_R.txt"
     },
@@ -5581,6 +6010,9 @@
     "LXX_2025_R": {
       "url": "text/LXX_2025_R.txt"
     },
+    "LX_2016_R": {
+      "url": "text/LX_2016_R.txt"
+    },
     "LX_2018_R": {
       "url": "text/LX_2018_R.txt"
     },
@@ -5595,6 +6027,9 @@
     },
     "LX_2025_R": {
       "url": "text/LX_2025_R.txt"
+    },
+    "L_2016_R": {
+      "url": "text/L_2016_R.txt"
     },
     "L_2018_R": {
       "url": "text/L_2018_R.txt"
@@ -5613,6 +6048,9 @@
     },
     "L_2025_R": {
       "url": "text/L_2025_R.txt"
+    },
+    "VIII_2016_R": {
+      "url": "text/VIII_2016_R.txt"
     },
     "VIII_2017_R": {
       "url": "text/VIII_2017_R.txt"
@@ -5644,6 +6082,9 @@
     "VIII_2026_R": {
       "url": "text/VIII_2026_R.txt"
     },
+    "VII_2016_R": {
+      "url": "text/VII_2016_R.txt"
+    },
     "VII_2017_R": {
       "url": "text/VII_2017_R.txt"
     },
@@ -5667,6 +6108,9 @@
     },
     "VII_2026_R": {
       "url": "text/VII_2026_R.txt"
+    },
+    "VI_2016_R": {
+      "url": "text/VI_2016_R.txt"
     },
     "VI_2017_R": {
       "url": "text/VI_2017_R.txt"
@@ -5694,6 +6138,9 @@
     },
     "VI_2026_R": {
       "url": "text/VI_2026_R.txt"
+    },
+    "V_2016_R": {
+      "url": "text/V_2016_R.txt"
     },
     "V_2017_R": {
       "url": "text/V_2017_R.txt"
@@ -5776,6 +6223,9 @@
     "XC_2024_R": {
       "url": "text/XC_2024_R.txt"
     },
+    "XIII_2016_R": {
+      "url": "text/XIII_2016_R.txt"
+    },
     "XIII_2017_R": {
       "url": "text/XIII_2017_R.txt"
     },
@@ -5799,6 +6249,9 @@
     },
     "XIII_2026_R": {
       "url": "text/XIII_2026_R.txt"
+    },
+    "XII_2016_R": {
+      "url": "text/XII_2016_R.txt"
     },
     "XII_2017_R": {
       "url": "text/XII_2017_R.txt"
@@ -5826,6 +6279,9 @@
     },
     "XII_2026_R": {
       "url": "text/XII_2026_R.txt"
+    },
+    "XIV_2016_R": {
+      "url": "text/XIV_2016_R.txt"
     },
     "XIV_2017_R": {
       "url": "text/XIV_2017_R.txt"
@@ -5857,6 +6313,9 @@
     "XIV_2026_R": {
       "url": "text/XIV_2026_R.txt"
     },
+    "XIX_2016_R": {
+      "url": "text/XIX_2016_R.txt"
+    },
     "XIX_2017_R": {
       "url": "text/XIX_2017_R.txt"
     },
@@ -5880,6 +6339,9 @@
     },
     "XIX_2025_R": {
       "url": "text/XIX_2025_R.txt"
+    },
+    "XI_2016_R": {
+      "url": "text/XI_2016_R.txt"
     },
     "XI_2017_R": {
       "url": "text/XI_2017_R.txt"
@@ -5905,6 +6367,9 @@
     "XI_2026_R": {
       "url": "text/XI_2026_R.txt"
     },
+    "XLIII_2016_R": {
+      "url": "text/XLIII_2016_R.txt"
+    },
     "XLIII_2017_R": {
       "url": "text/XLIII_2017_R.txt"
     },
@@ -5925,6 +6390,9 @@
     },
     "XLIII_2025_R": {
       "url": "text/XLIII_2025_R.txt"
+    },
+    "XLII_2016_R": {
+      "url": "text/XLII_2016_R.txt"
     },
     "XLII_2017_R": {
       "url": "text/XLII_2017_R.txt"
@@ -5950,6 +6418,9 @@
     "XLII_2025_R": {
       "url": "text/XLII_2025_R.txt"
     },
+    "XLIV_2016_R": {
+      "url": "text/XLIV_2016_R.txt"
+    },
     "XLIV_2017_R": {
       "url": "text/XLIV_2017_R.txt"
     },
@@ -5968,6 +6439,9 @@
     "XLIV_2025_R": {
       "url": "text/XLIV_2025_R.txt"
     },
+    "XLIX_2016_R": {
+      "url": "text/XLIX_2016_R.txt"
+    },
     "XLIX_2018_R": {
       "url": "text/XLIX_2018_R.txt"
     },
@@ -5985,6 +6459,9 @@
     },
     "XLIX_2025_R": {
       "url": "text/XLIX_2025_R.txt"
+    },
+    "XLI_2016_R": {
+      "url": "text/XLI_2016_R.txt"
     },
     "XLI_2017_R": {
       "url": "text/XLI_2017_R.txt"
@@ -6007,6 +6484,9 @@
     "XLI_2026_R": {
       "url": "text/XLI_2026_R.txt"
     },
+    "XLVIII_2016_R": {
+      "url": "text/XLVIII_2016_R.txt"
+    },
     "XLVIII_2018_R": {
       "url": "text/XLVIII_2018_R.txt"
     },
@@ -6025,6 +6505,9 @@
     "XLVIII_2025_R": {
       "url": "text/XLVIII_2025_R.txt"
     },
+    "XLVII_2016_R": {
+      "url": "text/XLVII_2016_R.txt"
+    },
     "XLVII_2018_R": {
       "url": "text/XLVII_2018_R.txt"
     },
@@ -6042,6 +6525,9 @@
     },
     "XLVII_2025_R": {
       "url": "text/XLVII_2025_R.txt"
+    },
+    "XLVI_2016_R": {
+      "url": "text/XLVI_2016_R.txt"
     },
     "XLVI_2017_R": {
       "url": "text/XLVI_2017_R.txt"
@@ -6064,6 +6550,9 @@
     "XLVI_2025_R": {
       "url": "text/XLVI_2025_R.txt"
     },
+    "XLV_2016_R": {
+      "url": "text/XLV_2016_R.txt"
+    },
     "XLV_2017_R": {
       "url": "text/XLV_2017_R.txt"
     },
@@ -6078,6 +6567,9 @@
     },
     "XLV_2025_R": {
       "url": "text/XLV_2025_R.txt"
+    },
+    "XL_2016_R": {
+      "url": "text/XL_2016_R.txt"
     },
     "XL_2017_R": {
       "url": "text/XL_2017_R.txt"
@@ -6103,6 +6595,9 @@
     "XL_2025_R": {
       "url": "text/XL_2025_R.txt"
     },
+    "XVIII_2016_R": {
+      "url": "text/XVIII_2016_R.txt"
+    },
     "XVIII_2017_R": {
       "url": "text/XVIII_2017_R.txt"
     },
@@ -6127,6 +6622,9 @@
     "XVIII_2026_R": {
       "url": "text/XVIII_2026_R.txt"
     },
+    "XVII_2016_R": {
+      "url": "text/XVII_2016_R.txt"
+    },
     "XVII_2017_R": {
       "url": "text/XVII_2017_R.txt"
     },
@@ -6147,6 +6645,9 @@
     },
     "XVII_2026_R": {
       "url": "text/XVII_2026_R.txt"
+    },
+    "XVI_2016_R": {
+      "url": "text/XVI_2016_R.txt"
     },
     "XVI_2017_R": {
       "url": "text/XVI_2017_R.txt"
@@ -6172,6 +6673,9 @@
     "XVI_2026_R": {
       "url": "text/XVI_2026_R.txt"
     },
+    "XV_2016_R": {
+      "url": "text/XV_2016_R.txt"
+    },
     "XV_2017_R": {
       "url": "text/XV_2017_R.txt"
     },
@@ -6195,6 +6699,9 @@
     },
     "XV_2026_R": {
       "url": "text/XV_2026_R.txt"
+    },
+    "XXIII_2016_R": {
+      "url": "text/XXIII_2016_R.txt"
     },
     "XXIII_2017_R": {
       "url": "text/XXIII_2017_R.txt"
@@ -6220,6 +6727,9 @@
     "XXIII_2025_R": {
       "url": "text/XXIII_2025_R.txt"
     },
+    "XXII_2016_R": {
+      "url": "text/XXII_2016_R.txt"
+    },
     "XXII_2017_R": {
       "url": "text/XXII_2017_R.txt"
     },
@@ -6243,6 +6753,9 @@
     },
     "XXII_2026_R": {
       "url": "text/XXII_2026_R.txt"
+    },
+    "XXIV_2016_R": {
+      "url": "text/XXIV_2016_R.txt"
     },
     "XXIV_2017_R": {
       "url": "text/XXIV_2017_R.txt"
@@ -6289,6 +6802,9 @@
     "XXIX_2026_R": {
       "url": "text/XXIX_2026_R.txt"
     },
+    "XXI_2016_R": {
+      "url": "text/XXI_2016_R.txt"
+    },
     "XXI_2017_R": {
       "url": "text/XXI_2017_R.txt"
     },
@@ -6316,6 +6832,9 @@
     "XXI_2025_R": {
       "url": "text/XXI_2025_R.txt"
     },
+    "XXVIII_2016_R": {
+      "url": "text/XXVIII_2016_R.txt"
+    },
     "XXVIII_2017_R": {
       "url": "text/XXVIII_2017_R.txt"
     },
@@ -6339,6 +6858,9 @@
     },
     "XXVIII_2025_R": {
       "url": "text/XXVIII_2025_R.txt"
+    },
+    "XXVII_2016_R": {
+      "url": "text/XXVII_2016_R.txt"
     },
     "XXVII_2017_R": {
       "url": "text/XXVII_2017_R.txt"
@@ -6424,6 +6946,9 @@
     "XXV_2026_R": {
       "url": "text/XXV_2026_R.txt"
     },
+    "XXXIII_2016_R": {
+      "url": "text/XXXIII_2016_R.txt"
+    },
     "XXXIII_2017_R": {
       "url": "text/XXXIII_2017_R.txt"
     },
@@ -6447,6 +6972,9 @@
     },
     "XXXIII_2026_R": {
       "url": "text/XXXIII_2026_R.txt"
+    },
+    "XXXII_2016_R": {
+      "url": "text/XXXII_2016_R.txt"
     },
     "XXXII_2017_R": {
       "url": "text/XXXII_2017_R.txt"
@@ -6502,6 +7030,9 @@
     "XXXIV_2026_R": {
       "url": "text/XXXIV_2026_R.txt"
     },
+    "XXXIX_2016_R": {
+      "url": "text/XXXIX_2016_R.txt"
+    },
     "XXXIX_2017_R": {
       "url": "text/XXXIX_2017_R.txt"
     },
@@ -6522,6 +7053,9 @@
     },
     "XXXIX_2025_R": {
       "url": "text/XXXIX_2025_R.txt"
+    },
+    "XXXI_2016_R": {
+      "url": "text/XXXI_2016_R.txt"
     },
     "XXXI_2017_R": {
       "url": "text/XXXI_2017_R.txt"
@@ -6550,6 +7084,9 @@
     "XXXI_2026_R": {
       "url": "text/XXXI_2026_R.txt"
     },
+    "XXXVIII_2016_R": {
+      "url": "text/XXXVIII_2016_R.txt"
+    },
     "XXXVIII_2017_R": {
       "url": "text/XXXVIII_2017_R.txt"
     },
@@ -6573,6 +7110,9 @@
     },
     "XXXVIII_2025_R": {
       "url": "text/XXXVIII_2025_R.txt"
+    },
+    "XXXVII_2016_R": {
+      "url": "text/XXXVII_2016_R.txt"
     },
     "XXXVII_2017_R": {
       "url": "text/XXXVII_2017_R.txt"
@@ -6601,6 +7141,9 @@
     "XXXVII_2026_R": {
       "url": "text/XXXVII_2026_R.txt"
     },
+    "XXXVI_2016_R": {
+      "url": "text/XXXVI_2016_R.txt"
+    },
     "XXXVI_2017_R": {
       "url": "text/XXXVI_2017_R.txt"
     },
@@ -6621,6 +7164,9 @@
     },
     "XXXVI_2025_R": {
       "url": "text/XXXVI_2025_R.txt"
+    },
+    "XXXV_2016_R": {
+      "url": "text/XXXV_2016_R.txt"
     },
     "XXXV_2017_R": {
       "url": "text/XXXV_2017_R.txt"
@@ -6670,6 +7216,9 @@
     "XXX_2026_R": {
       "url": "text/XXX_2026_R.txt"
     },
+    "XX_2016_R": {
+      "url": "text/XX_2016_R.txt"
+    },
     "XX_2017_R": {
       "url": "text/XX_2017_R.txt"
     },
@@ -6699,6 +7248,9 @@
     },
     "XX_2026_R": {
       "url": "text/XX_2026_R.txt"
+    },
+    "X_2016_R": {
+      "url": "text/X_2016_R.txt"
     },
     "X_2017_R": {
       "url": "text/X_2017_R.txt"
