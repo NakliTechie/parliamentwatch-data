@@ -1,20 +1,29 @@
 name: FC scrape and publish
 
-# Daily walk of the 3 Lok-Sabha Financial Committees (PAC, Estimates,
+# 6×/day walk of the 3 Lok-Sabha Financial Committees (PAC, Estimates,
 # COPU) via sansad.in's api_ls/committee/lsRSAllReports endpoint.
 # Walks the API, merges into reports.json, extracts text from missing
 # PDFs up to MAX_EXTRACTIONS_PER_RUN.
 #
-# Cadence: daily at 06:23 UTC (off-cluster from DRSC=:17, CAG=:17,
-# Bills=:17, LC=:23 across 6 hours). Total volume across LS-14..18 is
-# ~800 reports; backfill via one-shot workflow_dispatch with
-# LOK_SABHAS=14,15,16,17,18 and max_extractions=1000.
+# Cadence rationale: every 4 hours, 25 PDFs/run = 150/day. Backfill
+# of the ~800-report historical corpus (LS-14..18) clears in ~5-6
+# days via small bursts. POLITENESS POLICY (see plan/adding-a-new-
+# corpus.md §"Politeness policy"): never issue large one-shot
+# dispatches; backfills always run through the same gentle cron the
+# steady-state uses. Small bursts × many runs is the only acceptable
+# scaling lever — runner-minute cost is trivial vs the risk of an
+# upstream IP ban.
 #
-# Steady-state default `LOK_SABHAS=18` — only the current LS term
-# accrues new reports; historical LSes are stable and don't need
-# re-walking each day. The merge logic in build_fc.py preserves
-# historical entries when LOK_SABHAS is narrow (treats them as
-# "wasn't queried", not "delisted").
+# LOK_SABHAS defaults to '14,15,16,17,18' so each cron firing walks
+# the full 5-LS-term API space (15 cheap API calls), and the merge
+# logic in build_fc.py preserves historical entries across runs.
+# This keeps the backfill model honest: catch up via the cron, never
+# through a high-budget dispatch.
+#
+# Off-hour minute (:23 UTC) off-cluster from existing crons
+# (DRSC=:17, CAG=:17, Bills=:17, LC=:23 same minute but different
+# hours). FC fires on the 01/05/09/13/17/21 odd-hour cycle to land
+# in the windows LC leaves empty.
 #
 # No archive sidecar (sansad.in is the most-stable upstream we mirror
 # — DRSC + Bills are already there with no archive). See
@@ -22,14 +31,14 @@ name: FC scrape and publish
 
 on:
   schedule:
-    - cron: '23 5 * * *'
+    - cron: '23 1,5,9,13,17,21 * * *'
   workflow_dispatch:
     inputs:
       lok_sabhas:
-        description: 'LS terms to walk (CSV, e.g. "14,15,16,17,18" for backfill or "18" for daily)'
-        default: '18'
+        description: 'LS terms to walk (CSV, default = current 5 terms)'
+        default: '14,15,16,17,18'
       max_extractions:
-        description: 'Max PDFs to extract this run (politeness budget). Use 1000+ for backfill.'
+        description: 'Max PDFs to extract this run. Keep small (≤50) — never use this for one-shot backfills; that scales by cron firings, not by burst size.'
         default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap for the extraction phase, seconds'
@@ -71,7 +80,7 @@ jobs:
         # pattern" for the rationale.
         env:
           BUILD_PHASE:             'extract'
-          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '18' }}
+          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '14,15,16,17,18' }}
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '25' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
           EXTRACT_WORKERS:         '4'
