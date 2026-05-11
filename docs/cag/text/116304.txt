@@ -1,0 +1,2780 @@
+Report of the 
+Comptroller and Auditor General of India 
+on Performance Audit of  
+Direct Benefit Transfer 
+(Cash Transfer) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Government of Punjab 
+Report No. 1 of the year 2022 
+
+i 
+Table of Contents 
+ 
+Description Reference to 
+Paragraph  Page 
+Preface  v 
+Executive Summary  vii-xii 
+Chapter-I: Introduction 
+Background 1.1 1-2 
+Pre-requisites of Direct Benefit Transfer 1.2 2-3 
+Status of Direct Benefit Transfer in the State 1.3 3-5 
+Chapter-II: Audit Framework 
+Selection of Department 2.1 7 
+Organisational set-up 2.2 7-8 
+Brief description of selected schemes 2.3 8-10 
+Audit objectives 2.4 10 
+Audit scope and methodology 2.5 10-11 
+Audit criteria 2.6 12 
+Organisation of audit findings 2.7 12 
+Acknowledgement 2.8 12 
+Chapter-III: Process re-engineering for implementation of  
+Direct Benefit Transfer 
+Financial management 3.1 13-14 
+Direct Benefit Transfer framework 3.2 15-18 
+Migration of legacy data 3.3 18-19 
+Input and validation controls 3.4 19-21 
+Inadmissible payment of financial assistance due to  
+duplicate records in database 3.5 21-23 
+Non-exclusion of ineligible beneficiaries 3.6 24-25 
+Disbursement of financial assistance to female 
+beneficiaries under both OAP and FAWDW 
+Schemes 
+3.7 25-26 
+Non-recovery of inadmissible payment of financial 
+assistance 3.8 27-28 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+ii 
+Description Reference to 
+Paragraph  Page 
+Denial of financial assistance to eligible 
+beneficiaries 3.9 28-30 
+Delay in sanction/payment of financial assistance to 
+beneficiaries 3.10 30-31 
+Modification in master database 3.11 31-32 
+Non-verification of eligibility criteria for 
+disbursement of financial assistance 3.12 32 
+Identification of deceased beneficiaries 3.13 32-33 
+Other points 3.14 33-35 
+Scheme design 3.15 36 
+Conclusions 3.16 36-37 
+Recommendations 3.17 38 
+Chapter-IV: Infrastructure, organisation and management of  
+Direct Benefit Transfer  
+State Direct Benefit Transfer Cell 4.1 39-42 
+Hosting of State Direct Benefit Transfer Portal 4.2 42-44 
+Non-provision of real time capturing of beneficiary 
+data 4.3 44-45 
+Mismatch of data in Social Security Schemes 4.4 45-46 
+Disaster Recovery and Business Continuity Plan 4.5 46 
+Password Policy 4.6 47 
+Conclusions 4.7 47-48 
+Recommendations 4.8 48-49 
+ 
+ 
+
+Table of Contents 
+iii 
+ 
+Appendices  
+ 
+Description Reference to 
+Appendix Page 
+Department-wise details of total number of 
+schemes, beneficiaries covered and expenditure 
+incurred under DBT (cash transfer) during  
+2017-2021 (up to July 2020) 
+1.1 51-52 
+Details of schemes under DBT (cash transfer) 
+being implemented by Department of Social 
+Security and Women and Child Development 
+during 2017-2021 (up to July 2020) 
+2.1 53-54 
+ 
+
+v 
+Preface  
+This Report of the Comptroller and Auditor General of India for the 
+period April 2017 to July 2020 has been prepared fo r submission to the 
+Governor of the State of Punjab under Article 151(2 ) of the 
+Constitution of India.   
+The Report contains the results of performance audi t of Direct Benefit 
+Transfer (Cash Transfer) in respect of the social s ecurity schemes 
+being implemented by the Department of Social Secur ity and Women 
+and Child Development, Government of Punjab, in coo rdination with 
+the State Direct Benefit Transfer Cell under the co ntrol of the 
+Department of Governance Reforms and Public Grievan ces, 
+Government of Punjab, for the period April 2017 to July 2020. 
+The audit has been conducted in conformity with the  Auditing 
+Standards issued by the Comptroller and Auditor Gen eral of India. 
+Audit wishes to acknowledge the cooperation receive d from the 
+Department of Social Security and Women and Child D evelopment, 
+and the Department of Governance Reforms and Public  Grievances. 
+
+Executive Summary 
+
+vii 
+Executive Summary 
+The Report contains significant results of the perf ormance audit of Direct 
+Benefit Transfer (Cash Transfer) in the Department of Social Security and 
+Women and Child Development, and Department of Gove rnance Reforms and 
+Public Grievances, Government of Punjab, covering t he period from 
+April 2017 to July 2020. 
+Introduction 
+Direct Benefit Transfer (DBT) is a major reform ini tiative launched by 
+Government of India on 1 January 2013 to re-enginee r the existing 
+cumbersome delivery processes using modern Informat ion and 
+Communication Technology (ICT) applications.  The s cope of DBT has 
+expanded since inception to now include benefits un der (i) Cash Transfers; 
+(ii) In-kind Transfers; and (iii) Other Transfers.  DBT aims to transform the 
+manner in which social welfare schemes and programm es are implemented 
+across the nation by using Aadhaar as a unique iden tifier as well as an 
+individual beneficiaries’ financial address.  This marks a paradigm-shift in the 
+process of delivering benefits like wage payments, fuel subsidies, foodgrain 
+subsidies, etc. directly into the bank accounts of the beneficiaries, removing 
+leakages and enhancing financial inclusion.   
+After implementation (March 2017) of DBT in the Sta te of Punjab, coverage 
+in number of schemes (cash transfer) under DBT incr eased from 51 schemes 
+in 2017-18 to 94 schemes in 2020-21 (up to July 2020). 
+Audit framework 
+Considering the criticality of achieving its intend ed outcomes, escalating 
+financial outlays and relative impact of social sec urity schemes, which aim to 
+provide monthly financial support to alleviate econ omic deprivation, three 
+schemes viz.  Old Age Pension (OAP), Financial Assistance to Wid ows and 
+Destitute Women (FAWDW) and Financial Assistance to  Dependent Children 
+(FADC) being implemented by the Department of Social Security and Women 
+and Child Development (DSSWCD) were selected taking  into account highest 
+expenditure incurred thereunder for conducting the performance audit of DBT 
+(cash transfer) covering the period April 2017 to J uly 2020. Besides, 
+records/data being maintained by the Department of Governance Reforms and 
+Public Grievances (DGRPG) on State DBT Portal and P ension Beneficiary 
+Management System (PBMS) were also test-checked.  
+The audit objectives for carrying out the performan ce audit of selected social 
+security schemes under DBT (cash transfer) were to ascertain: (i) Whether 
+necessary process re-engineering was done for imple mentation of DBT so as 
+to minimise intermediary levels, delay in payments to intended beneficiaries 
+and pilferage and duplication; and (ii) Whether the  infrastructure, organisation 
+and management of DBT were adequate and effective.   
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+viii 
+The audit findings, conclusions and recommendations  relating to each of the 
+two audit objectives have been reported in two dist inct chapters viz.  
+Chapters III and IV to facilitate easy comprehension and follow up. 
+Process re-engineering for implementation of Direct  Benefit 
+Transfer  
+The procedure implemented by the Department was not  in consonance with 
+the spirit of the DBT framework whereby transfer of  benefits should be done 
+directly to the beneficiaries. The procedure can be  termed as benefit transfer, 
+but not as “direct” benefit transfer. Despite lapse  of more than three years 
+from the decision (March 2017) of the State Government to bring all the social 
+security schemes under DBT, the DSSWCD could reduce  only one 
+intermediary level (payment through Gram Panchayat’ s Bank Account) in 
+disbursing the financial assistance under the social security schemes.   
+[Paragraph 3.2.1] 
+Though Aadhaar numbers of 92 per cent  of the digitised beneficiaries had 
+been captured in six test-checked districts, system  of transfer of financial 
+assistance directly to the Aadhaar linked bank acco unts of the beneficiaries by 
+generation of payment files instructions in Public Financial Management 
+System (PFMS)/through State treasury account was not ensured.  
+[Paragraph 3.2.2] 
+After porting the beneficiaries’ data in PBMS, neit her any review to check the 
+completeness, authenticity and correctness of the l egacy data was conducted 
+nor were any instructions passed on to DSSWCD to ge t the data verified at 
+their level, as Audit noticed duplicate Pension Led ger Account numbers in 
+204-4,736 cases; beneficiaries’ age less/more than the prescribed limit in  
+661-6,498 cases; and acceptance of gender as male f or the scheme meant for 
+female beneficiaries (FAWDW) in 5,205 cases, under three selected schemes 
+in six test-checked districts. 
+[Paragraphs 3.3 and 3.4] 
+In six test-checked districts, the DSSWCD weeded ou t (January 2018- 
+July 2020) 8,256 records of duplicate beneficiaries  under three selected social 
+security schemes.  However, no action had been take n for recovery of 
+probable excess financial assistance of ` 9.89 crore paid (April 2017-
+July 2020) to these duplicate beneficiaries. Furthe r, Audit noticed 
+941 duplicate/ineligible records of beneficiaries u nder three selected schemes 
+in six test-checked districts.  The probable excess  financial assistance paid 
+(April 2017-July 2020) to these beneficiaries worke d out to ` 1.82 crore.  
+Besides, financial assistance of ` 0.72 crore was also paid to 651 children 
+beyond the prescribed age of 21 years, in contraven tion of the FADC Scheme 
+guidelines. 
+[Paragraphs 3.5 and 3.6]  
+
+Executive Summary 
+ix 
+In 213 cases, the financial assistance was provided to same beneficiaries under 
+two different social security schemes viz. OAP and FAWDW in six  
+test-checked districts, in contravention of the gui delines of the State 
+Government to provide financial assistance only in one type of social security 
+scheme. The excess financial assistance in these ca ses worked out to 
+` 0.37 crore. 
+[Paragraph 3.7] 
+Excess financial assistance amounting to ` 26.87 crore (out of ` 27.20 crore) 
+was recoverable (as of July 2021) in respect of 10, 327 duplicate/ineligible 
+beneficiaries weeded out by DSSWCD during the verif ication process 
+conducted between May 2017 and November 2017 under three selected 
+schemes in six test-checked districts. 
+[Paragraph 3.8] 
+In six test-checked districts, active beneficiaries  were denied financial 
+assistance of ` 277.96 crore in three selected schemes during the p eriod from 
+April 2017 to July 2020. Besides, in 8,371 cases, t he financial assistance was 
+sanctioned with a delay up to 1,432 days beyond the  prescribed time period of 
+30 days in four test-checked districts. Whereas, th e delay in sending payment 
+files to banks ranged up to 245 days from the sixth  day of the succeeding 
+month in which the financial assistance was due in six test-checked districts. 
+[Paragraphs 3.9 and 3.10] 
+Modification in master database i.e. change in bank account numbers of 
+beneficiaries, etc. was being done by DSSOs without  any authority or request 
+of applicant on record. Dissemination of informatio n through SMS about 
+payment of financial assistance to beneficiaries an d regulation of failed 
+transactions received from the respective banks was also lacking. 
+[Paragraphs 3.11, 3.14.2 and 3.14.3]  
+No mechanism existed in DSSWCD for identification o f deceased 
+beneficiaries through the Registrar General of Indi a to ensure discontinuance 
+of financial assistance to the deceased. Requisite Committees as initiated by 
+the Department for periodical review/identification  of eligible/ineligible 
+beneficiaries had not been formed at block levels, in spite of detecting 
+substantial number of ineligible beneficiaries duri ng a review conducted by 
+the State Government in June 2017.  
+[Paragraphs 3.13 and 3.14.1] 
+Recommendations 
+In the light of the audit findings, the State Government may consider: 
+ taking appropriate steps to eliminate the existing intervening layers as 
+per Standard Operating Procedure of DBT Manual, bes ides adopting 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+x 
+the system of transfer of financial assistance directly to Aadhaar linked 
+bank accounts of beneficiaries by generation of pay ment files 
+instructions in PFMS/through State treasury account  for making the 
+flow of funds faster, secure and curbing pilferage/ duplication in 
+payments; 
+ carrying out a comprehensive review of the benefici aries’ data 
+including the legacy data already ported in PBMS to  ensure its 
+completeness, authenticity and correctness; 
+  putting in place adequate input and validation con trols in PBMS 
+application so as to curb duplicate, unauthentic an d invalid data, 
+thereby capturing data in respect of eligible benef iciaries as per 
+provisions of the respective rules of the social se curity schemes under 
+DBT; 
+  putting in place mechanism for modification in beneficiaries’ database 
+on the basis of authentic records; dissemination of information through 
+SMS about payment of financial assistance to benefi ciaries; and 
+regulation of failed transactions received from respective banks;  
+  integration of beneficiaries’ data with the death data available with the 
+Registrar General of India for identification of de ceased beneficiaries 
+to ensure discontinuance of financial assistance to  the deceased, 
+besides, adoption of mechanism at block levels for periodical 
+review/identification of eligible/ineligible benefi ciaries so as to ensure 
+payment of financial assistance to bona fide beneficiaries; and 
+ making strenuous efforts for effecting recovery of inadmissible/excess 
+payment of financial assistance from the ineligible  beneficiaries, 
+besides fixing responsibility for inaction by the authorities concerned. 
+Infrastructure, organisation and management of Direct Benefit 
+Transfer  
+The State Advisory Board (SAB) had been constituted  (November 2017) in 
+the State of Punjab.  However, no meeting of SAB to  provide the Cell's 
+executive body, a holistic and well-rounded advisor y and consulting inputs, 
+was held during the audit period.   
+[Paragraph 4.1.1] 
+Implementation Support Layer consisting of three co ordinators of the rank of 
+Director or Officer on Special Duty (OSD), responsi ble for technical,  
+non-technical, and finance and administration suppo rt to Cell’s operations for 
+eliciting cooperation and participation from the gr ass-root levels had not been 
+constituted in line with the Guidelines for State D BT Cell.  Neither any 
+training calendar was prepared nor was any training  on DBT provided to State 
+officials by the State DBT Cell.  No exposure visit s for State/district officials 
+
+Executive Summary 
+xi 
+in DBT progressive States were arranged by the Stat e DBT Cell for 
+familiarising the officials with model practices be ing adopted by those States.  
+Neither any benchmark studies were conducted on Bes t Practices for 
+developing roadmap to incorporate those practices i n State operations nor was 
+any innovation in the State through pilots/experime nts carried out by the State 
+DBT Cell. 
+[Paragraph 4.1.2] 
+Robust governance framework was lacking at State le vel to continuously 
+monitor the readiness of schemes and programmes.  N o workshop, seminar, 
+etc. to operationalise DBT was conducted either by the State DBT Cell or 
+DSSWCD.  Besides, the departmental DBT Cell/Committ ee to ensure 
+adoption of DBT framework in implementation of sche mes, as per Protocol 
+Document on DBT in States, was not constituted in DSSWCD. 
+[Paragraphs 4.1.3 and 4.1.4] 
+The State DBT Portal was integrated with DBT Bharat  Portal 
+(https://dbtbharat.gov.in) and information related to all identified schemes in 
+the State was displayed on the Portal.  However, We bsite Quality Certification 
+was not obtained from Standardisation Testing Quali ty Certification; Web 
+Information Manager and Technical Manager were not appointed in line with 
+the Guidelines for Indian Government Websites (GIGW ) to ensure proper 
+flow and quality of content to the site; Content Co ntribution, Moderation and 
+Approval Policy to ensure authenticity of data and responsibility, authorisation 
+and workflow details with regard to content publish ing on State DBT Portal 
+was not framed; provision for regional language con tent on State DBT Portal 
+was not made; and various important information wit h regard to Portal 
+functionalities like About Us, Scheme, Multimedia, Documents, Success 
+Story, Download, etc. were not made available on State DBT Portal.  
+[Paragraph 4.2] 
+There was a variation ranging between ` 34.00 crore and ` 4,555.58 crore in 
+respect of the amount of cash transferred to the be neficiaries in three selected 
+schemes viz.  OAP, FAWDW and FADC under DBT during the period  
+2017-2021 (up to July 2020), uploaded on the DBT Portal and that supplied by 
+DSSWCD. 
+[Paragraph 4.4] 
+The DSSWCD and DGRPG did not have any Disaster Recovery and Business 
+Continuity Plan for State DBT Portal and Password P olicy both for State DBT 
+Portal and PBMS application. 
+[Paragraphs 4.5 and 4.6] 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+xii 
+Recommendations 
+In the light of the audit findings, the State Government may consider: 
+ conducting periodical meetings of SAB for providing  DBT Cell, a 
+holistic and well-rounded advisory and consulting inputs;  
+ strengthening governance framework including consti tution of internal 
+DBT Cell/Committee in each department, in line with  the Guidelines 
+for State DBT Cell to ensure adoption of DBT framew ork in 
+implementation of schemes; 
+ hosting of State DBT Portal in accordance with the Guidelines for 
+Indian Government Websites and Standard Operating P rocedure and 
+User Manual on State DBT Portal, besides, depicting  authentic data 
+on State DBT Portal with regard to benefits transfe rred to the 
+beneficiaries in respective schemes under DBT; and 
+ putting in place Disaster Recovery and Business Continuity Plan and 
+Password Policy to ensure safety and smooth functio ning of State DBT 
+Portal and PBMS application.  
+
+Chapter-I 
+Introduction 
+
+1 
+Chapter-I 
+ 
+Introduction 
+ 
+1.1 Background 
+Social Security is an integral part of the developm ent process and is designed 
+to guarantee long term sustenance with a special fo cus on the vulnerable and 
+marginal sections of the society.  Article 41 of th e Constitution of India 
+directs the State to provide public assistance to i ts citizens in the case of 
+unemployment, old age, sickness and disablement wit hin the limit of the 
+State's economic capacity and development. 
+Direct Benefit Transfer (DBT) is a major reform ini tiative launched by the 
+Government of India on 1 January 2013 to re-enginee r the existing 
+cumbersome delivery processes using modern Informat ion and 
+Communication Technology (ICT) applications.   
+DBT is an attempt for a better and timely delivery of benefits to the people 
+through cash transfer, in-kind transfer and other t ransfers by using Aadhaar 
+number as a unique identifier ensuring greater tran sparency, curbing 
+middleman role, greater accountability, identificat ion of eligible beneficiary 
+and removal of ineligible beneficiary of the scheme s.  Cash transfers refer to 
+money being electronically remitted directly into a beneficiaries’ bank account 
+from departments.  In-kind transfers refer to physi cal transfer of benefits 
+(such as food grains, books, kits, etc.) upon Aadha ar based authentication of 
+the beneficiary at the time of benefit transfer. Ot her transfers refer to money 
+being electronically remitted to an individual service provider/enabler (such as 
+ASHA workers, Aanganwadi workers, etc.) directly in to their bank account 
+(preferably Aadhaar linked).  
+In a nutshell, the vision of DBT is “a governance r egime which ensures a 
+simple and user-friendly Government to People (G2P)  interface and directly 
+delivers entitlement to eligible individuals and ho useholds in a fair, 
+transparent, efficient and reliable manner.” Thus, DBT entails leveraging 
+modern technology and IT tools to realise the dream  of ‘Maximum 
+Governance’ and ‘Minimum Government’. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+2 
+Figure 1.1: DBT Framework 
+ 
+ 
+Source: DBT User Manual 
+1.2 Pre-requisites of Direct Benefit Transfer 
+The principal objective of DBT is to facilitate dir ect processing and credit of 
+payments to the legitimate beneficiary in right acc ount and in right time i.e.  
+without undue delay. The pre-requisites of DBT are: 
+ Digitisation of database of beneficiaries; 
+ Opening of bank accounts of beneficiaries; and 
+ Enrolment of beneficiaries for generation of Aadhaar number. 
+Figure 1.2: Pre-requisites of DBT 
+ 
+Source: DBT Mission document of GoI 
+DBT framework has a multi-stakeholder architecture which capitalises on the 
+competencies of various departments and institution s to deliver benefits to 
+beneficiaries in a timely and effective manner. A c oordinated effort between 
+the Centre and the State will enable faster decisio n-making, eliminate 
+duplication of efforts and smoothen out differences , if any, hence fostering an 
+Ministry/Department  Intermediary level  Beneficiary  
+
+Chapter-I: Introduction 
+3 
+easier transition of schemes on to DBT. The desired  map of Centre-State 
+co-ordination with DBT Cell in States is depicted in Figure 1.3 . 
+Figure 1.3: Centre-State Coordination with DBT Cell in States 
+ 
+Source: Guidelines for State DBT Cell 
+1.3 Status of Direct Benefit Transfer in the State 
+In accordance with DBT Mission guidelines and in order to enable adoption of 
+the DBT framework at the State level, a DBT Cell wa s constituted (July 2017) 
+under the Department of Governance Reforms and Publ ic Grievances 
+(DGRPG) to monitor the progress of implementation o f various DBT schemes 
+in Punjab.  As per guidelines for State DBT Cell, t he proposed architecture of 
+the State DBT Cell is depicted in Chart 1.1 . 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+4 
+Chart 1.1: Proposed Architecture of State DBT Cell 
+ 
+Source: Guidelines for State DBT Cell 
+In the State of Punjab, State Advisory Board to DBT  Cell under the 
+chairmanship of Chief Secretary was constituted in November 2017. The 
+Additional Secretary-cum-Director, DGRPG is the Nod al Officer and the 
+Punjab State e-Governance Society (PSeGS) is the im plementing agency for 
+the State DBT Cell.  Implementing departments of th e State Government 
+were also required to form their internal DBT Cells  to consolidate the DBT 
+related activities of their respective departments. 
+The primary objective of the DBT Cell is to aggregate and assess information of 
+all schemes with beneficiaries; analyse and identif y DBT applicable schemes 
+and programmes being implemented at State level; an d monitor the status of 
+implementation/adoption/on-boarding of the scheme/p rogramme on DBT 
+framework.  As of July 2020, as many as 274.84 lakh  beneficiaries were 
+covered under 127 different schemes across 17 departments/entities under DBT 
+(both cash and in-kind transfer).  Of these, 49.23 lakh beneficiaries were 
+covered under 94 schemes across 13 departments unde r DBT (cash transfer).  
+Year-wise and department-wise details of total numb er of schemes, 
+beneficiaries covered and expenditure incurred unde r DBT (cash transfer) 
+during 2017-2021 (upto July 2020) are given in Table 1.1 and  Appendix 1.1  
+respectively.  
+Table 1.1: Number of schemes, beneficiaries covered and expenditure incurred 
+under DBT (cash transfer) during 2017-2021 (up to July 2020) 
+Year Number of 
+schemes 
+Number of beneficiaries  
+(in lakh) 
+Expenditure  
+(`` `` in crore) 
+2017-18 51 45.27  6,085.83 
+2018-19 71 44.95 2,491.58 
+2019-20 81 56.42 3,565.89 
+2020-21 (up to July 2020) 94 49.23 2,289.49 
+Total 14,432.79 
+Source: Information provided by State DBT Cell 
+
+Chapter-I: Introduction 
+5 
+Table 1.1 shows that after implementation of DBT in the State  of Punjab, 
+coverage in number of schemes (cash transfer) under  DBT increased from 
+51 schemes in 2017-18 to 94 schemes in 2020-21 (up to July 2020). Reasons for 
+decrease in the expenditure during 2018-19 over the  preceding year 2017-18 
+have been discussed in Chapter-IV (Paragraph 4.4) of the Report.  
+
+Chapter-II 
+Audit Framework 
+
+7 
+Chapter-II 
+ 
+Audit Framework 
+ 
+2.1 Selection of Department 
+The Government of Punjab (GoP) had transferred an a mount of 
+` 14,432.79 crore under 94 different schemes across 13 departments through 
+DBT (cash transfer) during the period from April 20 17 to July 2020.  Of this, 
+60 per cent  of the amount (i.e. ` 8,674.43 crore) was transferred under 
+18 schemes through DBT being implemented by the Dep artment of Social 
+Security and Women and Child Development (DSSWCD), of which 
+` 7,672.62 crore (i.e. 88 per cent of ` 8,674.43 crore) was transferred by the 
+Department under three schemes viz.  (i) Old Age Pension (OAP); 
+(ii) Financial Assistance to Widows and Destitute W omen (FAWDW); and 
+(iii) Financial Assistance to Dependent Children (F ADC) during the same 
+period (Appendix 2.1). 
+Considering the criticality of achieving its intend ed outcomes, escalating 
+financial outlays and relative impact of social sec urity schemes, which aim to 
+provide monthly financial support to alleviate econ omic deprivation, three 
+schemes viz.  OAP, FAWDW and FADC being implemented by DSSWCD 
+were selected taking into account highest expenditu re incurred thereunder for 
+conducting the performance audit of DBT (cash transfer). 
+2.2 Organisational set-up 
+The Department of Social Security and Women and Chi ld Development 
+(DSSWCD), Punjab works for the welfare of widows an d destitute women; 
+the elderly; persons with disabilities 1; and orphaned and dependent children 
+including Integrated Child Development Services and  nutrition and health 
+services to the pregnant and lactating mothers. The  organisational structure of 
+DSSWCD is given in Chart 2.1 . 
+                                                                 
+1 As specified in the Rights of Persons with Disabili ties Act, 2016. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+8 
+Chart 2.1: Organisational chart of Department of Social Security and  
+Women and Child Development 
+ 
+Source: Website of Department (http://sswcd.punjab.gov.in) 
+2.3 Brief description of selected schemes  
+As per the prevalent rules 2 for three selected social security schemes viz. OAP, 
+FAWDW and FADC being implemented in DSSWCD, financi al assistance of 
+` 500/- per month (up to June 2017) and ` 750/- per month (from July 2017 
+onwards) was to be provided to the eligible beneficiaries. The eligibility criteria 
+prescribed for each of three schemes is depicted in Table 2.1 .  
+Table 2.1: Eligibility criteria for providing financial assistance under the  
+selected social security schemes 
+Sr. 
+No. 
+Description OAP FAWDW  FADC  
+1. Age 65 years or above for 
+male and 58 years or 
+more for female. 
+Widow or destitute women 
+(including women whose 
+husband is mentally or 
+physically disabled) of age 
+below 58 years or unmarried 
+women above the age of 
+30 years 
+Maximum two children 
+having age less than 
+21 years whose parents 
+have died/are disabled/ 
+unable to earn their 
+livelihood 
+Verification Date of Birth Proof In case of widow, death 
+certificate of husband, 
+affidavit for unmarried 
+women, disability certificate 
+from Government Medical 
+Officer and Date of Birth 
+Proof 
+Death certificate of 
+parents, Disability 
+certificate from 
+Government Medical 
+Officer and Date of Birth 
+Proof 
+                                                                 
+2  (i) Punjab Old Age Pension Rules, 1996; (ii) Finan cial Assistance to Widows and Destitute Women 
+in Punjab Rules, 1996; and (iii) Financial Assistanc e to Dependent Children in Punjab Rules, 1996, 
+amended from time to time. 
+
+Chapter-II: Audit Framework 
+9 
+Sr. 
+No. 
+Description OAP FAWDW  FADC  
+2. Annual income 
+ceiling Less than ` 60,000/- per annum (Self declaration) 
+3. Period of 
+residence 
+Resident of Punjab since last three years immediate ly 
+before applying for benefits (self-declaration) 
+Not applicable 
+4. Land   
+For Rural 
+beneficiaries 
+Having not more than 
+2.5 acre agriculture 
+land or not more than 
+5 acre of non- 
+agriculture land Not applicable Not applicable 
+For Urban 
+beneficiaries 
+Residential house less 
+than 200 sq mtr 
+Verification Verification report 
+from Patwari/EO, MC 
+Source: Social Security Schemes Rules 
+The procedure for sanction of financial assistance to beneficiaries under the 
+social security schemes in DSSWCD is given in Chart 2.2 . 
+Chart 2.2: Work flow showing procedure for sanction of financial assistance  
+to beneficiaries 
+ 
+Source: Departmental information 
+Digitisation of beneficiaries 
+It has been observed from the data supplied by DSSW CD in respect of 
+selected social security schemes that as of July 20 20, details of 21.93 lakh 
+beneficiaries had been digitised, of which Aadhaar numbers of 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+10 
+19.51 lakh (88.96 per cent ) beneficiaries were captured in the Pension 
+Beneficiary Management System 3 (PBMS), as detailed in Chart 2.3.  
+Chart 2.3: Details of beneficiaries digitised vis-à-vis  Aadhaar numbers captured 
+under the selected social security schemes in the State 
+ 
+ Source: Departmental data 
+2.4  Audit objectives 
+The audit objectives for carrying out the performan ce audit of selected social 
+security schemes under DBT (cash transfer) were to ascertain: 
+ Whether necessary process re-engineering was done for implementation of 
+DBT so as to minimise - 
+a)   intermediary levels, 
+b)   delay in payments to intended beneficiaries and  
+c)   pilferage and duplication; and 
+ Whether the infrastructure, organisation and manage ment of DBT were 
+adequate and effective. 
+2.5  Audit scope and methodology 
+The performance audit of three selected social secu rity schemes viz.  OAP, 
+FAWDW and FADC being implemented in DSSWCD under DB T 
+(cash  transfer) covering the period from April 201 7 to July 2020 was 
+                                                                 
+3 PBMS is a web-based software developed by DSSWCD to  capture the details of the beneficiary in 
+respect of social security schemes being implemented in the State of Punjab.  
+
+Chapter-II: Audit Framework 
+11 
+conducted (October 2020 - March 2021) in six (out o f 22) selected districts, as 
+shown in the map of the State of Punjab, below: 
+Map of State of Punjab showing six districts selected for the performance audit 
+ 
+Further, two blocks in each of the six districts we re selected 4 for test-check of 
+records. Besides, records/data being maintained by the Department of 
+Governance Reforms and Public Grievances (DGRPG) we re also 
+test-checked. 
+An entry conference in respect of the performance a udit was held 
+(December 2020) with the Principal Secretary to Gov ernment of Punjab, 
+DSSWCD and Special Secretary, DGRPG, wherein the au dit methodology, 
+scope, objectives and criteria were discussed. The audit findings were 
+discussed with the Departments concerned in the exi t conference held in 
+July 2021 and the replies furnished by them have been suitably incorporated in 
+the Report. 
+                                                                 
+4 (i) Fatehgarh Sahib (Amloh and Bassi Pathana); (ii)  Ludhiana (Doraha and Khanna); (iii) Patiala 
+(Rajpura and Patiala-Urban); (iv) Rupnagar (Morinda and Chamkaur Sahib); (v) SBS Nagar (Aur and 
+Balachaur); and (vi) SAS Nagar (Majri and Kharar), selected on judgemental basis due to COVID-19 
+pandemic scenario. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+12 
+2.6  Audit criteria 
+The audit criteria were derived from the following sources: 
+ Standard Operating Procedures, Protocol Document on  DBT in States, 
+Handbook on DBT, Guidelines for State DBT Cell, etc . issued by DBT 
+Mission, Government of India (GoI); 
+ Guidelines for Indian Government Websites and vario us instructions 
+regarding maintenance of database, generation of va rious reports and IT 
+controls; 
+ Guidelines, rules and orders related to selected sc hemes viz.  'Old Age 
+Pension', 'Financial Assistance to Widows and Desti tute Women' and 
+'Financial Assistance to Dependent Children', issue d by the State 
+Government from time to time; and  
+ Punjab Budget Manual and other circulars, orders, i nstructions and 
+notifications issued by DBT Mission, GoI and the State Government.  
+2.7  Organisation of audit findings 
+The audit findings, conclusions and recommendations  relating to each of the 
+two audit objectives have been reported in two dist inct chapters viz.  
+Chapters III and IV to facilitate easy comprehension and follow up. 
+2.8 Acknowledgement 
+Audit acknowledges the cooperation and assistance e xtended by the State 
+Government, Department of Social Security and Women  and Child 
+Development, Department of Governance Reforms and P ublic Grievances, 
+and all the test-checked District Social Security O fficers and Child 
+Development Project Officers in conducting the performance audit. 
+
+Chapter-III 
+Process re-engineering for 
+implementation of  
+Direct Benefit Transfer 
+
+13 
+Chapter-III 
+ 
+Process re-engineering for implementation of  
+Direct Benefit Transfer 
+ 
+3.1 Financial management 
+ 
+3.1.1 Budget and expenditure 
+The details of budget and expenditure in respect of  three selected social 
+security schemes viz.  Old Age Pension (OAP); Financial Assistance to 
+Widows and Destitute Women (FAWDW); and Financial A ssistance to 
+Dependent Children (FADC) during the period 2017-20 21 (up to July 2020) 
+are given in Table 3.1. 
+Table 3.1: Details of budget and expenditure under three selected schemes 
+during the period 2017-2021 (up to July 2020) 
+(`` ``    in crore) 
+Name of 
+Scheme 
+Year Budget Expenditure Savings Percentage 
+Savings 
+OAP 
+2017-18 1,230.45 687.34 543.11 44.14 
+2018-19 1,185.70 1,179.04 6.66 0.56 
+2019-20 1,402.30 1,399.26 3.04 0.22 
+2020-21  
+(up to July 2020) 1,558.11 629.93 -- -- 
+Total  5,376.56 3,895.57 -- -- 
+FAWDW 
+2017-18 221.22 197.95 23.27 10.52 
+2018-19 338.84 336.02 2.82 0.83 
+2019-20 389.70 388.58 1.12 0.29 
+2020-21  
+(up to July 2020) 428.06 172.65 -- -- 
+Total   1,377.82 1,095.20 -- -- 
+FADC 
+2017-18 78.11 68.66 9.45 12.10 
+2018-19 117.00 114.51 2.49 2.13 
+2019-20 132.70 132.13 0.57 0.43 
+2020-21  
+(up to July 2020) 145.71 58.07 -- -- 
+Total 473.52 373.37 -- -- 
+Grand Total 7,227.90 5,364.14 -- -- 
+Source: Departmental data 
+Table 3.1  shows that against the release of ` 1,529.78 crore, expenditure of 
+` 953.95 crore was incurred by DSSWCD during 2017-18,  thereby resulting 
+into savings of ` 575.83 crore, ranging between 11 per cent  and 44 per cent  
+under three selected social security schemes. Audit , however, noticed that 
+during the period April 2017 to July 2020, adequate funds were provided by the 
+State Government for providing financial assistance  to the beneficiaries under 
+the social security schemes. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+14 
+During exit conference, the Director, DSSWCD attrib uted (July 2021) the 
+reasons for less utilisation of funds during 2017-1 8 to verification process 
+initiated by the State Government to identify ineligible beneficiaries. The reply 
+of the Department was not acceptable as Audit noticed that despite availability 
+of funds during 2017-18, no payment was made to the  beneficiaries found 
+eligible during the verification process for the pe riod May 2017 to 
+November 2017, except for the beneficiaries residing in Municipal Corporation 
+(MC) area of ten districts 1, as discussed in paragraph 3.9.  The Department 
+further stated (July 2021) that the Finance Department had been approached to 
+release ` 726.19 crore for making payments to the beneficiar ies found eligible 
+during verification process. 
+3.1.2 Non-reconciliation of payment of financial as sistance with banks 
+Rule 12.3(3) of the Punjab Budget Manual provides t hat in respect of the 
+withdrawal from the treasury/bank during a month, a  certificate in prescribed 
+form is required to be prepared by the department for Treasury Officer’s (bank) 
+signature so as to reach him by 2 nd  of the following month. On receipt of 
+certificate referred to above, the Treasury Officer (bank) will verify the entries 
+with the register of expenditure maintained in the office and the same duly 
+verified will be returned to the head of the office  concerned by 5 th  of the 
+following month.  
+Examination of records in six test-checked district s revealed that in four 
+districts, reconciliation was not made with the res pective banks in respect of 
+financial assistance amounting to 
+` 758.40 crore 2 disbursed by the concerned 
+DSSOs under three selected social security schemes, to the beneficiaries during 
+the period from April 2017 to July 2020, in contravention of the rules ibid .  In 
+the absence thereof, the actual expenditure incurre d by these four districts for 
+the purpose could not be verified in audit.  
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+necessary instructions had been issued to DSSOs for compliance.  It was added 
+that the financial assistance was being made throug h PFMS Portal in two 
+districts (Sangrur and Rupnagar) as a pilot project .  Thereafter, PFMS would 
+be implemented in all the districts of Punjab by De cember 2022 and the issue 
+regarding reconciliation would be resolved.  Thus, the fact remains that the 
+codal provisions ibid  were not being complied with by the Department. 
+                                                                 
+1  (i) Gurdaspur (payment made for the months of Jul y and August 2017); (ii) Amritsar; (iii) Bathinda; 
+(iv) Hoshiarpur; (v) Jalandhar; (vi) Ludhiana; (vii ) Moga; (viii) Pathankot; (ix) Phagwara; and 
+(x) SAS Nagar (payment made for the months of May to September 2017). 
+2  (i) Patiala ( ` 398.96 crore); (ii) Rupnagar ( ` 131.78 crore); (iii) SAS Nagar ( ` 90.83 crore); and 
+(iv) SBS Nagar (` 136.83 crore). 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+15 
+3.2 Direct Benefit Transfer framework 
+ 
+3.2.1 Reduction in intermediary levels 
+The aim of Direct Benefit Transfer (DBT) is to tran sfer the benefits and 
+subsidies of various social welfare schemes directl y in the bank/postal account 
+of the beneficiary on time by bringing efficiency, effectiveness, transparency; 
+and also to eliminate the existing intervening laye rs and there shall be no 
+intermediary accounts/layers. 
+According to Rule 87 of the GoI’s General Financial  Rules, 2017, "transfer of 
+benefits should be done directly to beneficiaries u nder various Government 
+Schemes and Programmes using Information and Commun ication Technology 
+(ICT). Necessary process re-engineering to minimise intermediary levels and to 
+reduce delay in payments to intended beneficiaries with the objective of 
+minimising pilferage and duplication should be done”. 
+The Government of Punjab (GoP) decided (March 2017)  that all subsidies, 
+pensions and other pro-poor schemes such as Aashirw ad, Atta Dal, etc. would 
+be targeted towards genuine beneficiaries through D BT. The concerned 
+departments would make necessary amendments in the schemes and ensure 
+their immediate implementation. 
+The process for cash transfer of benefits under social security schemes through 
+DBT as per Standard Operating Procedure (SOP) Modul es for DBT vis-à-vis  
+process being adopted by the State Government befor e and after issue of 
+notification in June 2017 is detailed as under: 
+As per SOP Modules of DBT Before GoP’s notification  
+(June 2017) 
+After GoP’s notification  
+(June 2017) 
+Finance Department 
+(Budget allocation to DSSWCD) 
+Finance Department  
+(Budget allocation to DSSWCD) 
+DSSWCD 
+(Budget allocation to District Social 
+Security Officers (DSSOs)) 
+DSSWCD 
+(Budget allocation to DSSOs) 
+Generation of payment file 
+instruction in Public Financial 
+Management System (PFMS)/other 
+payment system adopted by State 
+Government and payment to 
+beneficiary’s bank account directly 
+(DSSOs) 
+DSSOs 
+(Submission of monthly bills  
+to treasury) 
+- 
+District Treasury Officer 
+(Pass the Bill and credit the funds in the designated bank account 
+of DSSO through Electronic Clearing System) 
+- 
+DSSO 
+(Funds transferred in the bank 
+account of Gram Panchayat for 
+beneficiaries in rural areas; and for 
+the beneficiaries in urban areas, 
+benefit transferred from the bank 
+account of DSSO) 
+DSSO 
+(Benefit transferred to the 
+bank account of 
+beneficiaries) 
+- 
+Gram Panchayat 
+(Amount disbursed to beneficiaries 
+through GP/Panchayat Secretary in 
+rural areas) 
+- 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+16 
+After notification (June 2017), the steps involved in beneficiary identification, 
+enrolment and funds transfer under the selected sch emes of the Department of 
+Social Security and Women and Child Development (DSSWCD), Punjab are as 
+under: 
+• The applicant submits his/her request for sanctioni ng of pension/financial 
+assistance either to the Sewa Kendra (SK) or directly to Child Development 
+Project Officer (CDPO) by providing required detail s along with the 
+supporting documents. The data is entered in the e-District Portal by the SK 
+operator. The operator hands over the acknowledgeme nt receipt number 
+generated by the e-District Portal under his/her si gnature to the applicant 
+after registration. 
+• Thereafter, CDPO processes all the applications rec eived via e-District 
+Portal as well as directly from the applicants for verification through 
+e-District Portal and offline (manual applications)  respectively for further 
+submission to DSSO. 
+• The DSSO after re-verifying the details of applican ts processed through 
+e-District Portal and offline mode (forwarded by CD PO), sanctions the 
+pension.  For the applications processed via e-Dist rict Portal, an SMS alert 
+is sent to the applicant and the offline applications received from the CDPO 
+are entered in PBMS at this stage.  Subsequently, t he data verified through 
+e-District Portal is pushed to the PBMS. 
+• On the basis of eligible beneficiaries derived from  the database maintained 
+in PBMS, DSSO after ensuring necessary budget provi sion from 
+Directorate level, submits a bill for a consolidate d amount to District 
+Treasury through ‘Integrated Financial Management S ystem’ (IFMS) and 
+after passing of the respective bills, the funds ar e credited into the bank 
+account of the DSSO.  
+• The DSSO then submits the list of beneficiaries alo ng with the assistance 
+amount to the designated banks in an Excel file gen erated by PBMS via 
+email/CD. Subsequently, the bank disburses the pens ion/financial 
+assistance to the beneficiaries directly into their  bank accounts and shares 
+the data related to the failed transactions in an Excel file through email with 
+the respective DSSOs, along with the reasons for the failure. 
+Audit observed that despite the decision (March 201 7) and notification 
+(June 2017):   
+• The procedure implemented by the Department was not in consonance with 
+the spirit of the DBT framework whereby transfer of  benefits should be 
+done directly to the beneficiaries. The procedure c an be termed as benefit 
+transfer, but not as “direct” benefit transfer.  In  Audit’s opinion, once the 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+17 
+up-to-date list of eligible beneficiaries is maintained and managed in PBMS 
+(with all necessary validations/ verifications), th e bill (or at the very least, 
+the detailed statement for the bill) should be auto matically generated from 
+PBMS, and the payment into the bank accounts of the  beneficiaries should 
+go directly from IFMS, and not through the bank acc ounts of the DSSO, 
+using MS Excel spreadsheets which are open to error  or manipulation, 
+besides time lag/delay in payment of financial assistance to the beneficiaries, 
+as discussed in Paragraph 3.10(ii). Some States hav e gone further and 
+implemented the system of a single DDO for making p ayment of old age 
+pensions, whereby the entire generation of pension bills for the State is done 
+centrally and presented centrally to one Treasury; this further minimises 
+manual intervention.  
+• The Department could reduce only one intermediary l evel (payment 
+through Gram Panchayat’s Bank Account) in disbursin g the financial 
+assistance under the social security schemes through DBT. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that all the 
+intermediary levels would be eliminated after the a doption of PFMS in all the 
+districts of Punjab by the end of December 2022 and  the financial assistance 
+would be disbursed as per DBT framework. The adopti on of PFMS for direct 
+payments will be reviewed in future audits. 
+3.2.2 Aadhaar seeding with beneficiaries’ bank acco unts 
+Aadhaar based DBT is a significant governance refor m to ensure greater 
+transparency and accountability in public service delivery through effective use 
+of technology.  The Protocol Document for DBT in St ates also provides for 
+beneficiaries digitisation viz.  validated Aadhaar seeding of beneficiary database 
+so that benefit could be transferred directly into beneficiaries’ bank account, 
+preferably Aadhaar linked bank account. 
+Examination of the data in respect of three selecte d schemes viz.  OAP, 
+FAWDW and FADC in six test-checked districts reveal ed that as against the 
+digitisation of details of 5.87 lakh beneficiaries, Aadhaar numbers of 5.41 lakh 
+(92.16 per cent ) beneficiaries had been captured as of July 2020, as detailed in 
+Table 3.2 . However, the DSSOs of six test-checked districts di d not have any 
+mechanism/information regarding Aadhaar seeding wit h beneficiaries’ bank 
+accounts for ensuring transfer of financial assista nce directly to the Aadhaar 
+linked bank accounts of the beneficiaries. 
+ 
+ 
+ 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+18 
+Table 3.2: Details of beneficiaries digitised vis-à-vis  Aadhaar numbers captured 
+in the selected schemes in six test-checked districts 
+(Numbers in lakh) 
+Sr.  
+No. 
+Name of 
+district 
+OAP FAWDW FADC Total 
+Beneficiaries 
+digitised 
+Aadhaar 
+captured 
+Beneficiaries 
+digitised 
+Aadhaar 
+captured 
+Beneficiaries 
+digitised 
+Aadhaar 
+captured 
+Beneficiaries 
+digitised 
+Aadhaar 
+captured 
+Percentage 
+1. Fatehgarh Sahib 0.36 0.35 0.11 0.11 0.02 0.02 0. 49 0.48 97.96 
+2. Ludhiana 1.50 1.41 0.50 0.44 0.08 0.08 2.08 1.93  92.79 
+3. Patiala 1.29 1.13 0.34 0.29 0.07 0.06 1.70 1.48 87.06 
+4. Rupnagar 0.41 0.38 0.13 0.12 0.03 0.03 0.57 0.53  92.98 
+5. SAS Nagar 0.31 0.29 0.11 0.10 0.03 0.03 0.45 0.4 2 93.33 
+6. SBS Nagar 0.41 0.40 0.14 0.14 0.03 0.03 0.58 0.5 7 98.28 
+Total 4.28 3.96 1.33 1.20 0.26 0.25 5.87 5.41 92.16 
+Source: Departmental data 
+Thus, due to non-adoption of system of direct transfer of benefit in the Aadhaar 
+linked bank account of the beneficiary by generatio n of payment files 
+instructions in PFMS/through State treasury account , the payment of financial 
+assistance under DBT Schemes to the bona fide  beneficiaries could not be 
+ensured, besides possibility of leakage of financia l assistance to ineligible 
+beneficiaries. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+strenuous efforts were being made to capture the Aa dhaar numbers of 
+remaining beneficiaries enrolled under social security schemes.  It was further 
+stated (September 2021) that Aadhaar number was not  mandatory to avail the 
+benefits under the social security schemes. However, after adopting PFMS in all 
+the districts and capturing 100 per cent  Aadhaar numbers, payment through 
+Aadhaar linked bank accounts would be considered. 
+3.3  Migration of legacy data  
+The Pension Beneficiary Management System 3 (PBMS) became operational in 
+the year 2015 and the whole legacy data of the bene ficiaries of social security 
+schemes in respect of the entire State was ported t o PBMS up to the year 2018 
+by the Department of Governance Reforms and Public Grievances (DGRPG).  
+It was, however, observed that neither any review t o check the completeness, 
+authenticity and correctness of the legacy data (e. g. migration of all eligible 
+beneficiaries to PBMS, ineligibility due to death, remarriage, etc.) was 
+conducted nor were any instructions passed on to DS SWCD to get the data 
+verified at their level.  Further, periodical revie w/updation of beneficiaries’ 
+data was also not being done, as discussed in Paragraph 3.14.1.  It was noticed 
+in six selected districts that payments to benefici aries were being made by 
+DSSOs on the basis of the details captured in the m aster database being 
+                                                                 
+3 A web-based application/software developed to capt ure the details of beneficiaries in respect of 
+social security schemes being implemented in the State of Punjab. 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+19 
+maintained in PBMS, which was not cent per cent  accurate.  Thus, payment of 
+due financial assistance to the eligible beneficiar ies could not be authenticated 
+in audit, as discussed in the Report. 
+During exit conference, the Director, DGRPG stated (July 2021) that DSSOs 
+were informed about the completion of import process and to validate the same 
+at their level.  The Director, DSSWCD stated (Janua ry 2022) that the exercise 
+to check the completeness, authenticity and correct ness of the legacy data 
+would be conducted in consultation with DGRPG. 
+3.4 Input and validation controls 
+Input controls are the application controls which s eek to minimise the risk of 
+incorrect data entry by making validation checks, d uplicate checks and other 
+related controls.  The accuracy of data input to a system can be controlled by 
+imposing a number of computerised validity checks on the data presented to the 
+system.  These provide the earliest opportunity to detect and correct possible 
+mistakes.   
+The DSSWCD operationalised PBMS in the year 2015, w hich was developed 
+in-house by the State DBT Cell.  Analysis of data i n respect of three selected 
+social security schemes viz.  OAP, FAWDW and FADC, supplied by DSSWCD 
+and being maintained by the State DBT Cell (DGRPG) in PBMS revealed the 
+following inconsistencies in application controls i .e. input and validation 
+controls: 
+3.4.1 Old Age Pension Scheme 
+The Punjab Old Age Pension Rules, 1996 inter alia  provide for financial 
+assistance of 
+` 500/- per month (up to June 2017) and ` 750/- per month (from 
+July 2017 onwards) to male beneficiaries aged 65 ye ars or above and female 
+beneficiaries aged 58 years or above. 
+Audit analysis of master data (16,63,646 cases as o f July 2020) in respect of 
+active beneficiaries under OAP Scheme being maintai ned in PBMS showed 
+that: 
+• A unique Pension Ledger Account (PLA) number was to  be assigned 
+to each beneficiary. However, in 19,798 cases (incl uding 4,736 cases 
+4 
+in six test-checked districts), duplicate PLA numbers were found. 
+• In 1,09,204 cases (male beneficiaries: 50,053 and f emale beneficiaries: 
+59,151) including 6,498 cases 5 in six selected districts, the age (date of 
+birth) was found lower than the prescribed age. In 76,848 (out of 
+1,09,204) cases, the date of birth field was blank. 
+                                                                 
+4 (i) Fatehgarh Sahib (593 cases); (ii) Ludhiana (670  cases); (iii) Patiala (2,892 cases); 
+(iv) Rupnagar (248 cases); (v) SBS Nagar (241 cases); and (vi) SAS Nagar (92 cases).  
+5 (i) Fatehgarh Sahib (male: 491 and female: 112); (i i) Ludhiana (male: 2,080 and female: 212); 
+(iii) Patiala (male: 975 and female: 99); (iv) Rupna gar (male: 470 and female: 154); (v) SBS Nagar 
+(male: 208 and female: 97); and (vi) SAS Nagar (male: 909 and female: 691).  
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+20 
+3.4.2 Financial Assistance to Widows and Destitute Women 
+The Financial Assistance to Widows and Destitute Wo men in Punjab 
+Rules, 1996 inter alia  provide for financial assistance of ` 500/- per month 
+(up to June 2017) and ` 750/- per month (from July 2017 onwards) to widows  
+and destitute women of less than 58 years of age or  unmarried destitute 
+women above 30 years of age. 
+Audit analysis of master data (4,30,138 cases as of  July 2020) in respect of 
+active beneficiaries under FAWDW Scheme being maint ained in PBMS 
+showed that: 
+• In 11,913 cases (including 1,264 cases 
+6 in six test-checked districts), 
+duplicate PLA numbers were found. 
+• In 12,047 cases (including 5,205 cases 7 in six test-checked districts), 
+‘Gender’ field was depicting as Male, whereas FAWDW  scheme is 
+meant for female beneficiaries only. 
+• In 23,754 cases (including 661 cases 8 in five test-checked districts), 
+the age was found less than 18 years, thus, were no t eligible 9 for 
+financial assistance under this scheme.  In 21,253 cases (out of 23,754) 
+including 251 cases 10  in four test-checked districts, the date of birth 
+field was blank. 
+3.4.3 Financial Assistance to Dependent Children 
+The Financial Assistance to Dependent Children in P unjab Rules, 1996 
+inter alia  provide for financial assistance of 
+` 500/- per month (up to 
+June 2017) and ` 750/- per month (from July 2017 onwards) to maximu m two 
+children having age less than 21 years whose parent s have died/are 
+disabled/unable to earn their livelihood. 
+Audit analysis of master data (99,459 cases as of J uly 2020) in respect of 
+active beneficiaries under FADC Scheme being mainta ined in PBMS showed 
+that: 
+• In 737 cases 
+11  (including 204 cases 12  in six test-checked districts), 
+duplicate PLA numbers were found. 
+                                                                 
+6 (i) Fatehgarh Sahib (20 cases); (ii) Ludhiana (122  cases); (iii) Patiala (912 cases); 
+(iv) Rupnagar (44 cases); (v) SBS Nagar (94 cases); and (vi) SAS Nagar (72 cases).  
+7 (i) Fatehgarh Sahib (620 cases); (ii) Ludhiana (3,1 13 cases); (iii) Patiala (255 cases); 
+(iv) Rupnagar (714 cases); (v) SBS Nagar (87 cases); and (vi) SAS Nagar (416 cases).  
+8 (i) Ludhiana (247 cases); (ii) Patiala (01 case); (iii) Rupnagar (49 cases); (iv) SBS Nagar (06 cases); 
+and (v) SAS Nagar (358 cases). No such cases were noticed in district Fatehgarh Sahib.  
+9  Taking into account minimum age of 18 years for m arriage of a woman. 
+10   (i) Ludhiana (55); (ii) Rupnagar (03); (iii) SBS Na gar (03); and (iv) SAS Nagar (190). No such cases 
+were noticed in districts Fatehgarh Sahib and Patiala. 
+11  No case of duplicate PLA was found in two district s viz. (i) Gurdaspur; and (ii) Pathankot. 
+12  (i) Fatehgarh Sahib (12 cases); (ii) Ludhiana (12 c ases); (iii) Patiala (144 cases); 
+(iv) Rupnagar (14 cases); (v) SBS Nagar (12 cases); and (vi) SAS Nagar (10 cases).  
+
+Chapter-III: Process re-engineering for implementation of DBT 
+21 
+• In 10,269 cases (including 3,124 cases 13  in six test-checked districts), 
+date of birth and/or names of first child and/or se cond child were not 
+present. In the absence of such data, veracity of t ransactions could not 
+be ascertained. 
+• In 13,223 cases in 21 districts barring Fatehgarh S ahib (including 
+1,803 cases 14  in five districts), age of guardian/parents was de picted 
+less than 18 years. 
+Audit conducted a sample check of 438 application f orms in respect of three 
+selected schemes (OAP: 55; FAWDW: 273; and FADC: 110) made available  in 
+four test-checked districts 15  to verify the beneficiary details available online  
+with the available physical application forms.  It was noticed that as per 
+application forms, though the beneficiaries were eligible for financial assistance 
+under the respective Schemes, data thereof was not fed correctly in the PBMS.  
+This indicated that system was not having adequate input and validation 
+controls, which could lead to irregular payment of financial assistance to 
+ineligible beneficiaries under the social security schemes, as discussed in the 
+Paragraphs 3.5 to 3.13. 
+On this being pointed out in audit, the Director, DSSWCD attributed (July 2021) 
+the discrepancies to the deficiency in system softw are and stated that matter 
+would be taken up with DGRPG for further necessary action.  It was added that 
+instructions to all the DSSOs would be issued to ma ke necessary corrections, 
+after checking the credentials of the beneficiaries.  The Director, DGRPG also 
+assured to look into the matter and to make necessa ry amendments in the 
+software as required.   
+3.5 Inadmissible payment of financial assistance du e to 
+duplicate records in database 
+(i)   Examination of master data being maintained in PB MS, as provided by 
+DSSWCD, containing the list of beneficiaries in res pect of three selected 
+schemes, revealed that records of 46,146 beneficiar ies 16  being duplicate were 
+weeded out by DSSWCD, between the period January 20 18 17  and July 2020.  
+However, action taken, if any, for recovery of exce ss payment made to these 
+beneficiaries by DSSWCD, was awaited (June 2021). 
+                                                                 
+13  (i) Fatehgarh Sahib (54 cases); (ii) Ludhiana (12 c ases); (iii) Patiala (995 cases); 
+(iv) Rupnagar (435 cases); (v) SBS Nagar (475 cases); and (vi) SAS Nagar (1,153 cases).  
+14   (i) Ludhiana (1,253 cases); (ii) Patiala (01 case);  (iii) Rupnagar (16 cases); (iv) SBS Nagar 
+(08 cases); and (v) SAS Nagar (525 cases). No such cases were noticed in district Fatehgarh Sahib.  
+15  No physical forms were available in Rupnagar and SBS  Nagar districts as the applications were being 
+received through online mode only. 
+16   OAP (35,647 records); FAWDW (7,931 records); and FADC (2,568 records). 
+17  Excluding 68,307 beneficiaries flagged inactive pr ior to January 2018 under three selected social 
+security schemes by the Department, for which actio n to recover the excess financial assistance had 
+already been initiated, as discussed in paragraph 3.8. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+22 
+Out of the above 46,146 beneficiaries, in six test-checked districts, the position 
+of duplicate records flagged inactive between the p eriod January 2018 and 
+July 2020, in respect of three selected schemes, is detailed in Table 3.3. 
+Table 3.3:  Details of duplicate records flagged in active from January 2018 to 
+July 2020 in respect of selected schemes in test-checked districts 
+(`` `` in crore)  
+Sr. 
+No. 
+Name of 
+district 
+OAP FAWDW FADC Total 
+No. of 
+benefi- 
+ciaries 
+flagged 
+inactive 
+Amount*  No. of 
+benefi- 
+ciaries 
+flagged 
+inactive 
+Amount*  No. of 
+benefi- 
+ciaries 
+flagged 
+inactive 
+Amount*  
+ 
+No. of 
+benefi- 
+ciaries 
+flagged 
+inactive 
+Amount*  
+ 
+1. Fatehgarh Sahib 170 0.09 51 0.05 27 0.07 248 0.2 1 
+2. Ludhiana 567 0.24 224 0.13 92 0.11 883 0.48 
+3. Patiala 1,387 2.61 207 0.39 73 0.14 1,667 3.14 
+4. Rupnagar 2,887 3.28 858 1.06 236 0.44 3,981 4.78 
+5. SBS Nagar 188 0.18 103 0.08 28 0.04 319 0.30 
+6. SAS Nagar 1,064 0.86 43 0.05 51 0.07 1,158 0.98 
+Total 6,263 7.26 1,486 1.76 507 0.87 8,256 9.89 
+Source: Departmental data 
+* Amount calculated for the period from April 2017 to July 2020. 
+The probable excess financial assistance paid (Apri l 2017-July 2020) to 
+8,256 duplicate beneficiaries flagged inactive (Jan uary 2018-July 2020) in 
+respect of three selected social security schemes i n six test-checked districts 
+worked out to ₹ 9.89 crore.  
+(ii) During  analysis of PBMS data containing the list of active  
+beneficiaries in respect of three selected schemes,  Audit noticed (apart from 
+the duplicate records weeded out by DSSWCD itself, as detailed in preceding 
+paragraph), 7,420 number of duplicate records 18  of beneficiaries residing in 
+same village, block and district and were having sa me name, father’s name, 
+Aadhaar number and/or bank account number (last 4 digits). 
+On being enquired whether these 7,420 duplicate rec ords were having same 
+Aadhaar numbers and/or bank account numbers, DGRPG confirmed that in 
+4,902 cases, the Aadhaar numbers and bank account n umbers were same. In 
+remaining 2,518 cases, since Aadhaar/bank account n umbers were not 
+available/ matched 19  with the database, the duplication could not be ve rified.  
+However, reply in this regard was awaited from DSSW CD.  Thus, the 
+possibility of fraud due to payment of financial as sistance against duplicate 
+entries could not be ruled out in audit. 
+In six test-checked districts, Audit found 581 dupl icate records (out of the 
+above 7,420 cases) of beneficiaries having same name, father’s name, Aadhaar 
+number and/or bank account number (last 4 digits), as detailed in Table 3.4 . 
+Out of these 581 cases, 383 duplicate records were confirmed by DGRPG. 
+                                                                 
+18  OAP (2,421 records); FAWDW (4,267 records); and FADC (732 records).  
+19   Observation regarding modification in database ha s been discussed in paragraph 3.11. 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+23 
+Table 3.4:  Details of duplicate records noticed by  Audit in respect of selected 
+schemes in test-checked districts 
+(`` `` in crore)  
+Sr. 
+No. 
+Name of 
+district 
+OAP FAWDW FADC Total 
+No. of 
+duplicate 
+benefi- 
+ciaries 
+Amount*  No. of 
+duplicate 
+benefi- 
+ciaries 
+Amount*  No. of 
+duplicate 
+benefi- 
+ciaries 
+Amount*  
+ 
+No. of 
+duplicate 
+benefi- 
+ciaries 
+Amount*  
+ 
+1. Fatehgarh Sahib 26 0.05 4 0.01 - 0.00 30 0.06 
+2. Ludhiana 49 0.10 9 0.02 - 0.00 58 0.12 
+3. Patiala 114 0.23 123 0.22 29 0.07 266 0.52 
+4. Rupnagar 62 0.04 41 0.05 5 0.01 108 0.10 
+5. SBS Nagar 29 0.06 62 0.04 - 0.00 91 0.10 
+6. SAS Nagar 6 0.01 22 0.03 - 0.00 28 0.04 
+Total 286 0.49 261 0.37 34 0.08 581 0.94 
+Source: Departmental data 
+* Amount calculated for the period from April 2017 to July 2020. 
+The probable excess financial assistance paid (Apri l 2017-July 2020) to 
+581 duplicate beneficiaries in respect of three sel ected social security schemes 
+in six test-checked districts worked out to ` 0.94 crore 20 . The DSSO, 
+Fatehgarh Sahib admitted to have made double paymen t to 13 beneficiaries in 
+OAP Scheme and to 03 beneficiaries in FAWDW Scheme and stated 
+(April 2021) that duplicate entries had now been de leted and recovery would 
+be initiated from these beneficiaries. In remaining  cases, system was showing 
+duplicate records due to some technical problem.  H owever, no supporting 
+documents in this regard was provided to Audit.  Th e DSSOs of remaining 
+test-checked districts stated (November 2020-March 2021) that requisite 
+action would be taken after verifying the records under intimation to Audit.  
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+duplicate records in the master database was a seri ous issue and all the DSSOs 
+had been instructed to check duplicity of beneficia ries in master database to 
+avoid excess payment. The Director, DSSWCD also ass ured to issue recovery 
+notices to the beneficiaries to whom excess payment  had been made. The 
+DSSWCD further attributing the reasons for discrepa ncies in the data to 
+deficiency in system software, stated that the matt er would be taken up with 
+DGRPG for further necessary action. 
+ 
+                                                                 
+20  In the absence of payment records/files with the D epartment, actual amount of financial assistance 
+paid to these beneficiaries could not be ascertained in audit. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+24 
+3.6 Non-exclusion of ineligible beneficiaries 
+Audit analysis of master data being maintained in P BMS in respect of three 
+selected social security schemes revealed as under: 
+(i)  The DSSWCD stopped (May 2016-July 2020) the financ ial 
+assistance to 4,762 beneficiaries (OAP: 4,330 and F AWDW: 432), including 
+360 beneficiaries (OAP: 302 and FAWDW: 58) in six test-checked districts on 
+the ground of death and other reasons viz.  verification failed, found ineligible, 
+etc.  Audit, however, noticed that these beneficiar ies continued to avail the 
+financial assistance, as there were duplicate entri es of the same beneficiaries 
+which remained flagged as active as of July 2020. T he financial assistance 
+against both the entries was sanctioned, before the  date of deletion against one 
+entry.  As a result, these ineligible beneficiaries  continued to draw financial 
+assistance against the second entry. The probable f inancial assistance paid to 
+302 ineligible beneficiaries under OAP Scheme and 5 8 ineligible beneficiaries 
+under FAWDW Scheme in six test-checked districts du ring the period from 
+April 2017 to July 2020, worked out to ` 73.99 lakh and ` 13.54 lakh, as 
+detailed in Table 3.5(a) and Table 3.5(b) respectively. 
+Table 3.5(a): Details of ineligible beneficiaries to whom financial assistance was paid 
+against duplicate entry under OAP Scheme from April 2017 to July 2020 
+Sr. No. Name of 
+district 
+No. of duplicate beneficiaries  Amount  
+(`` `` in 
+lakh) 
+Period when FA 
+stopped Death 
+cases 
+Others Total 
+1. Fatehgarh Sahib 7 13 20 4.78 May 2016 –  
+May 2020 
+2. Ludhiana 36 120 156 40.50 August 2016 -  
+August 2019 
+3. Patiala 14 0 14 1.65 April  2017 – 
+May 2020 
+4. Rupnagar 1 28 29 7.10 March 2017 -  
+April 2020 
+5. SBS Nagar 10 32 42 10.16 December 2017 -  
+July 2019 
+6. SAS Nagar 0 41 41 9.80  October 2017 – 
+February 2020 
+Total 68 234 302 73.99  
+Source: Departmental data 
+Table 3.5(b): Details of ineligible beneficiaries to whom financial assistance was paid 
+against duplicate entry under FAWDW Scheme from April 2017 to July 2020 
+Sr. No. Name of 
+district 
+No. of duplicate beneficiaries Amount  
+(`` `` in 
+lakh) 
+Period when 
+FA stopped Death 
+cases 
+Others Total 
+1. Fatehgarh Sahib 3 1 4 0.98 October 2016 – 
+December 2018 
+2. Ludhiana 3 29 32 8.10 August 2016 – 
+August 2019 
+3. Patiala 4 0 4 0.24 September 2019 
+– May 2020 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+25 
+Sr. No. Name of 
+district 
+No. of duplicate beneficiaries Amount  
+(`` `` in 
+lakh) 
+Period when 
+FA stopped Death 
+cases 
+Others Total 
+4. Rupnagar 1 7 8 1.96 March 2017 – 
+November 2017 
+5. SBS Nagar 0 5 5 1.23 December 2017 
+– January 2018 
+6. SAS Nagar 0 5 5 1.03 October 2017 – 
+July 2020 
+Total 11 47 58 13.54  
+Source: Departmental data 
+The DSSO, Fatehgarh Sahib stated (April 2021) that the above cases were 
+inadvertently shown as death cases on the portal. H owever, no documents in 
+support of the reply were furnished to Audit, besid es not furnishing the reply 
+in respect of other duplicate cases. The DSSOs of r emaining test-checked 
+districts stated (November 2020-March 2021) that re quisite reply/action/ 
+recovery would be effected after verifying the facts. 
+(ii)   The Financial Assistance to Dependent Children in  Punjab Rules, 1996 
+inter alia  provide for financial assistance of ` 500/- per month (up to 
+June 2017) and ` 750/- per month (from July 2017 onwards) to maximu m two 
+children having age less than 21 years whose parent s have died/are disabled/ 
+unable to earn their livelihood. 
+Examination of data in respect of FADC Scheme in si x test-checked districts 
+revealed that in 651 cases shown active in four tes t-checked districts, financial 
+assistance amounting to 
+` 72.12 lakh 21  had been disbursed (April 2017 to 
+July 2020) even after attaining the age of 21 years , in contravention of the 
+rules ibid .  The concerned DSSOs stated (November 2020-March 2021) that 
+requisite reply/action/recovery would be effected after verifying the facts.   
+During exit conference, the Director, DSSWCD stated  (July 2021) that all 
+DSSOs had been instructed to check duplicate record s in master database of 
+beneficiaries to avoid excess payment and correct t he discrepancies 
+immediately.  It was added that after the implementation of PFMS Portal, cases 
+of duplicate/ghost beneficiaries would be eliminated. 
+3.7 Disbursement of financial assistance to female 
+beneficiaries under both OAP and FAWDW Schemes 
+The guidelines formulated by the State envisage tha t an applicant would be 
+entitled to receive only one type of social securit y pension and the applicants 
+need to opt for the scheme they are applying for.   
+Examination of master data being maintained in PBMS  revealed that 
+2,226 female beneficiaries residing in same village , block and district having 
+                                                                 
+21  (i)  Patiala: ` 44.06 lakh (295 cases); (ii) Rupnagar:  ` 5.97 lakh (144 cases); (iii) SAS Nagar: 
+` 0.98 lakh (04 cases); and (iv) SBS Nagar:  ` 21.11 lakh (208 cases). No such cases were noticed in 
+two districts viz.  Fatehgarh Sahib and Ludhiana.  
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+26 
+same name, father’s name, Aadhaar numbers and/or bank account numbers (last 
+four digits only) were taking the benefit of financial assistance in both OAP and 
+FAWDW schemes, in contravention of provisions ibid .  The financial 
+assistance in these cases was sanctioned between January 1996 and June 2020.  
+This shows that requisite validation controls in th e application were lacking to 
+restrict financial assistance to same beneficiary i n another social security 
+scheme. 
+In six test-checked districts, the probable disbursement of financial assistance to 
+213 female beneficiaries under both OAP and FAWDW schemes for the period 
+ranging between 01 and 38 months worked out to 
+` 37.32 lakh during the period 
+from April 2017 to July 2020, as detailed in Table 3.6 . 
+Table 3.6: Details of female beneficiaries who were  provided financial assistance 
+in both OAP and FAWDW schemes in six test-checked districts during 
+the period from April 2017 to July 2020 
+Sr. 
+No. 
+Name of district No. of 
+beneficiaries 
+Period 
+(In months) 
+Amount  
+(` in lakh) 
+1. Fatehgarh Sahib 20 4-33 4.37 
+2. Ludhiana 37 4-38 6.49 
+3. Patiala 124 1-33 19.42 
+4. Rupnagar 11 7-33 2.33 
+5. SBS Nagar 14 4-33 3.18 
+6. SAS Nagar 7 10-33 1.53 
+Total 213 1-38 37.32 
+Source: Departmental data 
+The DSSO, Fatehgarh Sahib while confirming the fact s in respect of 13 cases 
+stated (April 2021) that requisite action in this regard was being taken.  It was 
+added that 07 cases were being shown as duplicate d ue to technical error, but 
+these actually belonged to different persons.  Howe ver, no supporting 
+documents in this regard were produced to Audit.  T he DSSOs of the 
+remaining test-checked districts stated (November 2020-March 2021) that reply 
+would be given after verifying the facts.  
+During exit conference, the Director, DSSWCD stated  (July 2021) that all 
+DSSOs had been instructed to check duplicate record s in master database of 
+beneficiaries to avoid excess payment and correct t he discrepancies 
+immediately.  It was added that after the implementation of PFMS Portal, cases 
+of duplicate/ghost beneficiaries would be eliminated. 
+The DSSWCD may ensure incorporating requisite valid ation controls in 
+the application to restrict financial assistance to  same beneficiary in 
+another social security scheme. 
+ 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+27 
+3.8 Non-recovery of inadmissible payment of financi al 
+assistance  
+Government of Punjab (GoP) instructed (June 2017) a ll the Deputy 
+Commissioners of the State to review eligibility of  all beneficiaries covered 
+under revised guidelines/eligibility conditions of social security schemes viz.  
+OAP, FAWDW, FADC and FADP 22 .  Further, notification issued (June 2017) 
+by DSSWCD inter alia  provided that if the credentials of beneficiaries were 
+found to be incorrect, then recovery would be effec ted from the beneficiaries 
+under the Land Revenue Act, besides, taking appropr iate action against the 
+concerned officers/officials and the ineligible beneficiaries. 
+Audit observed that after conducting review of the beneficiaries in accordance 
+with GoP’s instructions (June 2017), the DSSWCD found 70,137  beneficiaries 
+ineligible 23  under four social security schemes pointing out re covery  of 
+` 162.35 crore. Of these, 68,307 ineligible beneficia ries with recoverable 
+amount of ` 157.17 crore pertained to three selected schemes. As of July 2021, 
+out of the inadmissible amount of financial assista nce of ` 157.17 crore 
+recoverable from 68,307 ineligible beneficiaries, o nly 0.52 per cent  
+(i.e. ` 0.81 crore) had been recovered, leaving ` 156.36 crore still to be 
+recovered. However, action taken, if any, against t he concerned 
+officers/officials and ineligible beneficiaries, as  per notification (June 2017), 
+was not intimated by the Department (July 2021). 
+In six test-checked districts, as of July 2021, out of the inadmissible amount of 
+financial assistance of 
+` 27.20 crore recoverable from 10,327 ineligible 
+beneficiaries, only 1.21 per cent  of the amount (i.e. ` 0.33 crore) had been 
+recovered, leaving ` 26.87 crore still to be recovered under three selected social 
+security schemes, as discussed in Table 3.7.  
+Table 3.7: Amount of inadmissible financial assistance in respect of three selected 
+social security schemes recoverable from ineligible  beneficiaries in six 
+test-checked districts 
+(`` `` in crore) 
+Sr. 
+No. 
+Name of 
+district 
+No. of 
+ineligible 
+beneficiaries 
+Amount 
+recoverable 
+Amount 
+recovered 
+(per cent ) 
+Amount 
+outstanding 
+1. Fatehgarh 
+Sahib 469 0.93 0.12 (12.90) 0.81 
+2. Ludhiana 1,871 4.25 0.08 (1.88) 4.17 
+3. Patiala 6,456 19.40 0.01 (0.05) 19.39 
+4. Rupnagar 629 1.66 0.05 (3.01) 1.61 
+5. SBS Nagar 204 0.65 0.05 (7.69) 0.60 
+6. SAS Nagar 698 0.31 0.02 (6.45) 0.29 
+Total 10,327 27.20 0.33 (1.21) 26.87 
+Source: Departmental data 
+                                                                 
+22  Financial Assistance to Disabled Persons. 
+23   Age less than the age prescribed under rules (36,617 cases); income more than the income prescribed 
+under rules (7,852 cases); and possession of land m ore than the land prescribed under rules 
+(25,668 cases). 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+28 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+instructions had been issued to DSSOs for speedy re covery of dues and the 
+compliance in this regard was being monitored. 
+3.9 Denial of financial assistance to eligible bene ficiaries 
+As per the prevalent rules 24  for three selected social security schemes viz.  OAP, 
+FAWDW and FADC being implemented in DSSWCD, financi al assistance of 
+` 500/- per month (up to June 2017) and ` 750/- per month (from July 2017 
+onwards) was to be provided to the eligible beneficiaries.   
+(i)  Audit observed that as a result of verification of  beneficiaries in 
+accordance with the GoP’s instructions (June 2017),  as mentioned in the 
+preceding paragraph, none of the eligible beneficia ries was provided financial 
+assistance under any of the social security schemes  in the State, except for 
+Municipal Corporation (MC) area of ten districts 25 , during the period from 
+May to November 2017. 
+Examination of master data being maintained in PBMS  of three selected 
+schemes revealed that none of the eligible beneficiaries were provided financial 
+assistance in six test-checked districts (except fo r MC area of two districts viz.  
+Ludhiana and SAS Nagar, where payment was made for the months from May 
+to September 2017) during the verification period from May to November 2017, 
+which worked out to 
+` 204.03 crore, as detailed in Table 3.8 . 
+Table 3.8: Beneficiaries deprived of financial assi stance under three selected 
+schemes in six test-checked districts during May to November 2017 
+(`` `` in crore)  
+Sr. 
+No. 
+Name of district No. of 
+beneficiaries* 
+(Range) 
+Financial 
+assistance 
+payable 
+Financial 
+assistance 
+paid 
+Outstanding  
+amount 
+1. Fatehgarh Sahib 40,110 – 41,538 19.44 0.00 19.44  
+2. Ludhiana 1,64,125 – 1,69,035  79.64 16.33 63.31 
+3. Patiala 1,19,162 – 1,32,271  58.59 0.00 58.59 
+4. Rupnagar 48,919 – 50,743 23.78 0.00 23.78 
+5. SBS Nagar 48,055 – 49,225 23.06 0.00 23.06 
+6. SAS Nagar 37,095 – 37,600 16.48 0.63 15.85 
+Total 37,095 – 1,69,035 220.99 16.96 204.03 
+Source: Departmental data 
+* Range of total beneficiaries under the three sele cted schemes month-wise for the period 
+May to November 2017, subject to the audit observat ions on the eligibility of 
+beneficiaries, as pointed out in paragraphs 3.5 to 3.7.  
+                                                                 
+24   (i) Punjab Old Age Pension Rules, 1996; (ii) Finan cial Assistance to Widows and Destitute Women 
+in Punjab Rules, 1996; and (iii) Financial Assistanc e to Dependent Children in Punjab Rules, 1996, 
+amended from time to time. 
+25   (i) Gurdaspur (payment made for the months of Jul y and August 2017); (ii) Amritsar; (iii) Bathinda; 
+(iv) Hoshiarpur; (v) Jalandhar; (vi) Ludhiana; (vii ) Moga; (viii) Pathankot; (ix) Phagwara; and 
+(x) SAS Nagar (payment made for the months of May to September 2017). 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+29 
+During exit conference, the Director, DSSWCD stated  (July 2021) that the 
+Finance Department had been approached to release ` 726.19 crore for making 
+payments to the beneficiaries found eligible during  verification process and 
+payment would be made to the beneficiaries within 2 -3 months.  Further 
+reply/action of the Department was awaited (October 2021).  
+(ii) Examination of the master data maintained in PBMS containing list 
+of active beneficiaries (after taking into account addition and deletion) and lists 
+of beneficiaries sent to banks (in Excel format) fo r payment as of July 2020 in 
+respect of three selected schemes in six test-checked districts revealed that apart 
+from the active beneficiaries, who were not provided financial assistance during 
+the seven months’ period from May-November 2017, as discussed in preceding 
+paragraph, an average of 1,715 26  beneficiaries (ranging between 06 and 37,485 
+beneficiaries) remained deprived of the financial a ssistance during the audit 
+period from April 2017 to July 2020, which worked o ut to ` 73.93 crore, as 
+detailed in Table 3.9 .  
+Table 3.9: Beneficiaries deprived of financial assi stance under three selected 
+schemes in six test-checked districts during April 2017 to July 2020 
+(excluding May to November 2017, as pointed out in Table 3.8) 
+(`` `` in crore)  
+Sr. 
+No. 
+Name of 
+district 
+OAP FAWDW FADC Total 
+No. of 
+beneficiaries*
+(Range) 
+FA  
+not  
+paid 
+No. of 
+beneficiaries* 
+(Range) 
+FA  
+not 
+paid 
+ 
+No. of 
+beneficiaries* 
+(Range) 
+FA  
+not 
+paid 
+ 
+No. of 
+beneficiaries* 
+(Range) 
+FA  
+not 
+paid 
+ 
+1. Fatehgarh 
+Sahib 
+172-3,685 1.30 30-1,181 0.38 10-300 0.16 10-3,685 1 .84 
+2. Ludhiana 7,562-25,985 30.29 529-8,660 6.01 170-1 ,381 0.96 170-25,985 37.26 
+3. Patiala 233-37,485 10.24 141-11,598 3.73 112-2,6 71 2.16 112-37,485 16.13 
+4. Rupnagar 27-5,271 3.70 19-1,800 1.55 26-649 0.11 19-5,271 5.36 
+5. SBS Nagar 128-4,146 3.01 22-12,683 2.32 18-1,049 0.56 18-12,683 5.89 
+6. SAS Nagar 106-11,758 4.26 216-5,711 2.70 6-1,091  0.49 06-11,758 7.45 
+Total  52.80  16.69  4.44 6-37,485 73.93 
+Source: Departmental data 
+* Subject to the audit observations on the eligibil ity of beneficiaries, as pointed out in paragraphs 3.5 to 3.7 .  
+On this being pointed out in audit, the Director, D SSWCD stated (July 2021) 
+that the payment to the beneficiaries could not be made as there were no 
+provision for payment of arrear for the period for which financial assistance was 
+withheld/stopped for reasons viz.  minimum balance in bank not maintained, 
+dormant account, etc.  It was added that non-provis ion for payment of arrear 
+was a serious issue and assured that a Standard Ope rating Procedure in this 
+regard would be formulated to streamline the paymen t to the eligible 
+beneficiaries in such cases. 
+                                                                 
+26  OAP: 3,688 beneficiaries; FAWDW: 1,150 beneficiaries; and FADC: 307 beneficiaries on average in 
+respect of six test-checked districts.  
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+30 
+Thus, poor and needy people of the society for whom  the social security 
+schemes were initiated, remained deprived of the fi nancial assistance, thereby 
+defeating the objectives of the schemes. 
+The DSSWCD may consider opening of zero balance bank accounts of the 
+beneficiaries so as to minimise the failed transact ions on account of 
+minimum balance not being maintained. 
+3.10 Delay in sanction/payment of financial assista nce to 
+beneficiaries 
+(i)  As per notification issued (June 2017) by DSSWCD, the applications 
+for sanction of financial assistance to the beneficiaries may be processed within 
+30 days of their receipt under the social security schemes. 
+Examination of data being maintained in PBMS in res pect of three selected 
+schemes in six test-checked districts revealed that  out of total 5,87,732 cases, 
+the date of receipt of application from Child Devel opment and Project Officer 
+(CDPO) was filled in 37,393 cases 27  in respect of four districts only.  Of these, 
+in 8,371 cases 28 , the financial assistance was sanctioned (as of Ju ly 2020) with 
+an average delay of 61 days (with maximum delay of 1,432 days) beyond the 
+prescribed time period of 30 days in four test-checked districts.  In the absence 
+of payment records/files with the Department, the a ctual date of payment of 
+financial assistance to beneficiaries could not be ascertained in audit. 
+It was further noticed that in three selected distr icts 29 , the financial assistance 
+was sanctioned before receipt of applications from CDPO in 1,147 cases, with 
+an average time difference of 44 days (with maximum difference of 1,097 days).  
+The DSSO, Fatehgarh Sahib attributed (April 2021) t he reason for this to 
+clerical mistake in mentioning the date of receipt of application, but no 
+supporting document in support of the reply was furnished to Audit.  Replies in 
+respect of remaining two test-checked districts viz.  Ludhiana and SBS Nagar 
+were awaited (June 2021). 
+(ii)   The respective rules in respect of three selected  social security schemes 
+provide for payment of financial assistance to the beneficiaries every month.  
+Further, as per Standard Operating Procedure (SOP),  DBT payments being 
+processed by other implementing agencies through PF MS or other payments 
+systems will also adhere to the timelines and processes mentioned in this SOP. 
+                                                                 
+27  Requisite data i.e. date of receipt of application from CDPO was maintained/available in PBMS in 
+four test-checked districts viz . (i) Fatehgarh Sahib (2,225 out of 49,472 cases); (ii) Ludhiana (31,490 
+out of 2,08,115 cases); (iii) SBS Nagar (32 out of 58,042 cases); and (iv) SAS Nagar (3,646 out of 
+45,144 cases). Requisite data in respect of two dist ricts- Patiala and Rupnagar, was not present in 
+data provided. 
+28  (i) Fatehgarh Sahib (01-1,432 days in 174 out of 2, 225 cases); (ii) Ludhiana (31-585 days in 8,134 
+out of 31,490 cases); (iii) SBS Nagar (60-93 days in 03 out of 32 cases); and (iv) SAS Nagar (02-184 
+days in 60 out of 3,646 cases).  
+29  (i) Fatehgarh Sahib (05-1,097 days in 26 cases); ( ii) Ludhiana (01-425 days in 1,113 cases); and 
+(iii) SBS Nagar (02-147 days in 08 cases). No such d iscrepancy was noticed in three districts viz.  
+Patiala, Rupnagar and SAS Nagar. 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+31 
+The maximum total time for receiving payments respo nse: success or failure 
+(with reasons) is T+4 working days, where T is the day of transaction.   
+Audit observed that the system of direct transfer of benefit in the bank account 
+of the beneficiary by generation of payment files instructions in PFMS/through 
+State treasury account had not been developed, as p er DBT framework.  
+However, it was observed in six test-checked districts that there was a delay in 
+sending payment files to banks by respective DSSOs with an average delay of 
+33 days (with maximum delay of 245 days) from the sixth day of the succeeding 
+month in which the financial assistance was due dur ing 2017-2021 (up to 
+July 2020), as detailed in Table 3.10 . 
+Table 3.10: Delay in payment of financial assistance to beneficiaries  
+during 2017-2021 (up to July 2020) 
+Sr. 
+No.  
+Name of 
+district 
+No. of months in 
+which 
+Delay in 
+days 
+Amount disbursed  
+(`` `` in crore) 
+Payment 
+made 
+Payment 
+delayed 
+Total with 
+delay 
+Percen- 
+tage 
+1. Fatehgarh Sahib 33* 31 1 to 237 114.77 106.50 92 .79 
+2. Ludhiana 38 36 3 to 225 473.23 441.58 93.31 
+3. Patiala 33* 30 1 to 245 398.96 357.55 89.62 
+4. Rupnagar 33* 31 1 to 223 131.78 122.71 93.12 
+5. SBS Nagar 33* 31 2 to 229 136.83 126.98 92.80 
+6. SAS Nagar 38 35 3 to 224 90.83 78.72 86.67 
+Total    1,346.40 1,234.04 91.65 
+Source: Departmental data 
+* Payment for the period May to September 2017 was made in MC Area of Ludhiana and 
+SAS Nagar districts only. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+instructions had been issued to all the DSSOs to sanction the pension in timely 
+manner and the Deputy Commissioners had also been a sked to monitor the 
+compliance in their districts.  It was added that a  ‘Review Performa’ had also 
+been prepared to check the time taken by DSSOs to s anction the financial 
+assistance and to release the same to the beneficiaries for the first time. 
+3.11  Modification in master database 
+Pension Beneficiary Management System (PBMS) is a w eb-based software 
+developed by DSSWCD to capture the beneficiary deta ils in respect of social 
+security schemes being implemented in the State of Punjab.   
+During test-check of records (i.e. master data main tained in PBMS and list of 
+files submitted to respective banks in MS-Excel for mat during April 2017 to 
+July 2020) in six test-checked districts, it was ob served that bank account 
+numbers of beneficiaries in the master database wer e changed at the level of 
+DSSOs without any authority or request of the appli cant found on record 30 .  
+                                                                 
+30  Audit substantiated the discrepancy from 84 applic ation forms (OAP-16; FAWDW-37; and 
+FADC-31) in the test-checked districts. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+32 
+Moreover, the data in respect of changed records (b ank account numbers) was 
+not being maintained/retained. Thus, the possibility of fraud and embezzlement 
+of Government money could not be ruled out. 
+During exit conference, the Director, DSSCWD stated  (July 2021) that 
+instructions had been issued to DSSOs to keep the r ecord of changes made in 
+the database. The Director, DGRPG admitted that the  software overwrote the 
+older values with the new values in the master database.  It was added that after 
+implementation of PFMS in the State, all the necessary modifications would be 
+stored in the portal/system.  The replies were not acceptable as due to 
+non-retention/non-availability of the changed recor ds (i.e. old bank account 
+numbers), genuineness of payments made during the p eriod 2017-2021 (up to 
+July 2020) to the beneficiaries whose record had be en updated/changed, could 
+not be verified in audit.   
+3.12 Non-verification of eligibility criteria for d isbursement of 
+financial assistance 
+The provisions of Punjab OAP Rules, 1996 and FAWDW in Punjab 
+Rules, 1996 and subsequent amendments thereto inter alia  provide that the 
+beneficiaries are eligible for financial assistance31  under the respective schemes 
+if they are residing in the State of Punjab for the  last three years.  The rules 
+further provide that to continue to draw pension/fi nancial assistance, the 
+beneficiary should have a good character otherwise sanctioning authority has 
+right to stop or suspend the pension/financial assistance. 
+Test-check of records in six test-checked districts revealed that: 
+•  Self-declaration/confirmation regarding stay of be neficiaries in the 
+State of Punjab for the last three years was neithe r obtained from the 
+beneficiaries nor any verification report from dist rict/block was found 
+attached with the application form. 
+•  No mechanism existed to verify the character of th e beneficiaries 
+receiving pension/financial assistance.   
+Thus, non-verification of the eligibility criteria under the rules ibid  by the 
+authorities concerned could lead to payment of financial assistance to ineligible 
+beneficiaries. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+necessary columns would be added in the pension application form as per rules. 
+3.13  Identification of deceased beneficiaries 
+The DBT Mission, GoI recommended that database of b eneficiaries being 
+maintained by the respective departments under DBT schemes needs to be 
+                                                                 
+31  ` 500/- per month up to June 2017 and ` 750/- per month from July 2017 onwards. 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+33 
+dynamic and linked to death registrations.  The SOP  Modules for DBT also 
+envisaged DBT framework as a multi-stakeholder arch itecture which 
+capitalises on the competencies of various departme nts including Registrar 
+General of India to deliver benefits to beneficiari es in a timely and effective 
+manner for successful implementation of DBT system. 
+Audit observed in six test-checked districts that n o mechanism to identify 
+deceased beneficiaries from the death registrations, Local Bodies, Hospitals, etc. 
+was in place to ensure discontinuance of financial assistance to the deceased. 
+The Department depended only on the information pro vided by Aanganwadi 
+workers, Sarpanches of Gram Panchayats, banks in wh ich financial assistance 
+of beneficiaries was being transferred, etc. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that the 
+integration of social security portal with Birth an d Death Registrar was under 
+process in consultation with DGRPG. 
+3.14 Other points 
+ 
+3.14.1  Review/updation of beneficiaries’ data 
+Standard Operating Procedure for DBT payments provi des that steps involved 
+in beneficiary’s identification and enrolment are to be carried out in respective 
+DBT Scheme software.  It further provides for the M inistry/Department to 
+evolve their own process to ensure outreach and com munication for timely 
+updating of beneficiary records including financial  address (bank 
+account/Aadhaar).  Further, respective rules of thr ee selected schemes provide 
+that all the cases in which the beneficiaries remained out of State for more than 
+one year would not be eligible to draw financial assistance. 
+The DSSWCD asked (September 2017) all the Deputy Co mmissioners of the 
+State to form a three-member Committee comprising A anganwadi worker 
+(from CDPO office), ASHA worker (in coordination wi th Civil Surgeon) and 
+Patwari (in coordination with District Revenue Offi cer) which would identify 
+the eligible beneficiaries to whom pension was not being sanctioned and 
+ineligible beneficiaries who were irregularly drawi ng financial assistance so 
+that the financial assistance could be provided to only needy and authentic 
+beneficiaries.  The Committee would prepare a quart erly report of identified 
+eligible beneficiaries and weed out ineligible bene ficiaries and send it to the 
+DSSO of the district through BDPO of the concerned block.  The list of 
+beneficiaries would be updated every quarter by del eting ineligible 
+beneficiaries and updating eligible beneficiaries. 
+Examination of records revealed that no quarterly r eport of identified 
+eligible/ineligible beneficiaries including benefic iaries who remained out of 
+State for more than one year was being maintained/available with the respective 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+34 
+DSSOs of the six test-checked districts. Regarding formation of requisite 
+Committee in test-checked districts, the DSSOs Ludh iana, Rupnagar and 
+SBS Nagar stated (January-March 2021) that no such Committee for the 
+purpose had been formed at block level. The DSSOs, SAS Nagar and Patiala 
+stated (November 2020 and February 2021) that records would be verified and 
+intimated to Audit.  The DSSO, Fatehgarh Sahib stat ed (April 2021) that the 
+respective CDPOs were requested to form the requisite Committee. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that all 
+DSSOs had been instructed to constitute the Committ ee.  It was further stated 
+that action would be taken to stop the financial as sistance to the beneficiaries 
+who were out of station for more than one year. 
+Thus, the fact remains that requisite action requir ed under the provisions ibid  
+had not been taken by DSSWCD for review/updation of  beneficiaries’ data 
+under the social security schemes. Periodic review/ updation assumes greater 
+importance in light of the fact that ineligible ben eficiaries had been identified 
+during the verification process initiated during Ju ne 2017 (as discussed in 
+Paragraph 3.8). Further, Audit also noticed various  discrepancies in the 
+beneficiaries’ data, to whom payment of undue financial assistance could not be 
+ruled out, as discussed in this Report. 
+3.14.2 SMS alerts to beneficiaries  
+As per Standard Operating Procedures for DBT, establishment of feedback loop 
+has to be an integral part of the IT platform. Apar t from the feedback given to 
+the beneficiaries through SMS (Short Message Servic e) alerts regarding 
+transaction by corresponding bank, scheme-wise paym ent details will be 
+intimated to the beneficiaries by PFMS/Programme Division through SMS. 
+Audit observed that there was no mechanism to disse minate the information 
+about payment of financial assistance under DBT to the beneficiaries through 
+SMS, apart from the SMS alerts regarding sanction o f pension/financial 
+assistance under DBT at initial stage only. It was further noticed that even the 
+initial SMS alert was being sent to only those beneficiaries, whose applications 
+were received through online mode, and this facility was not being provided to 
+the beneficiaries submitting their applications thr ough offline mode. Audit 
+noticed that out of 1,83,591 beneficiaries who were  sanctioned financial 
+assistance in six test-checked districts with respect to the three selected schemes 
+under DBT during 2017-2021 (up to July 2020), 1,58, 568 beneficiaries 
+(86.37 per cent ) in four selected districts 32  had submitted their applications 
+through offline mode, to whom SMS alert regarding s anction of financial 
+assistance under DBT schemes was not sent. The applications in Rupnagar and 
+SBS Nagar were being received through online mode. Thus, due to inadequate 
+                                                                 
+32  (i) Fatehgarh Sahib (13,261); (ii) Ludhiana (85,36 7); (iii) Patiala (50,607); and 
+(iv) SAS Nagar (9,333). 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+35 
+provision of SMS alerts, the beneficiaries would be  unable to receive a 
+confirmation of the payment of monthly assistance under the selected schemes. 
+As such, in case of transfer of financial assistanc e to unauthorised persons, the 
+beneficiaries may not confirm/enquire about the san ction/payment of financial 
+assistance from the department, and the transfer may go undetected. 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+respective banks of the beneficiaries might have se nt the SMS alert regarding 
+credit of financial assistance in their bank accoun ts. The reply of the 
+Department was not in line with the provisions ibid . The Director further stated 
+that as and when payment through PFMS was made functional, SMS alerts with 
+respect to sanction of payment would be sent to the beneficiaries. 
+3.14.3 Management of failed transactions 
+As per Standard Operating Procedures Modules for DB T (Section 7), payment 
+for failed transactions would be re-initiated by the department after carrying out 
+the required modification/rectification. 
+Audit observed in six test-checked districts that t hough the information/list of 
+failed transactions was being sent by the respectiv e banks to DSSOs, there 
+existed no system in four test-checked districts viz.  Patiala, Rupnagar, 
+SBS Nagar and SAS Nagar to re-initiate the failed t ransactions.  During the 
+period 2017-2021 (upto July 2020), an amount of 
+` 20.68 crore on account of 
+failed transactions in respect of four test-checked  districts was deposited into 
+treasury, as detailed in Table 3.11 . 
+Table 3.11: Amount on account of failed transactions deposited in treasury 
+during 2017-2021 (upto July 2020) 
+(`` `` in crore) 
+Name of district 2017-18 2018-19 2019-20 2020-21 (upto 
+July 2020) 
+Total 
+Patiala 3.75 3.04 1.63 0.50 8.92 
+Rupnagar 0.48 1.95 3.50 0.86 6.79 
+SBS Nagar 0.24 0.22 0.05 0.08 0.59 
+SAS Nagar 0.01 3.68 0.55 0.14 4.38 
+Total 4.48 8.89 5.73 1.58 20.68 
+Source: Departmental data 
+On this being pointed out in audit, the Director, D SSWCD stated (July 2021) 
+that instructions had been issued to all the DSSOs to regulate the failed 
+transactions so that financial assistance could be provided to the beneficiaries at 
+the earliest.  It was added that after implementation of PFMS Portal in the State, 
+the failed transactions would be re-initiated in a timely manner.  The fact 
+remains that non-regulation of failed transactions could lead to deprivation of 
+financial assistance to the needy and poor people u nder the social security 
+schemes. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+36 
+3.15 Scheme design 
+As per notification issued (June 2017) by DSSWCD, t he financial assistance 
+under the social security schemes would be approved  by the concerned DSSO 
+within one month from the date of receipt of applic ation and the financial 
+assistance/pension would be sanctioned/started quar terly.  Prior to this, the 
+financial assistance was being sanctioned/started i n the same month if the 
+beneficiary applied for the same by 20 th  of the month, otherwise it was provided 
+from the next month. 
+With regard to the three selected social security s chemes in six test-checked 
+districts, it was noticed that the financial assist ance to beneficiaries were 
+sanctioned in the first or second month of each qua rter during the period 
+April 2017 to June 2020. However, payment to these beneficiaries was made 
+from the first month of the succeeding quarter from  the month in which 
+financial assistance was approved by the DSSOs.  Th us, the beneficiaries 
+received the financial benefits after a delay of 1- 2 months from the date of 
+sanction.   
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+beneficiaries were provided financial assistance as  per the rules as of now.  It 
+was added that the State Government had launched ‘C ovid Orphan Pension 
+Scheme’, in which the assistance was being provided to all the beneficiaries in 
+the succeeding month from the month in which benefi ciaries had applied.  
+Same methodology for payment of financial assistanc e to the beneficiaries 
+under social security schemes would also be implemented after taking decision 
+at State Government level, being a policy matter.   
+3.16 Conclusions  
+The process re-engineering for implementation of DB T in the State was 
+deficient as is evident from the following inconsis tencies noticed during the 
+performance audit: 
+ The procedure implemented by the Department was not in consonance with 
+the spirit of the DBT framework whereby transfer of benefits should be done 
+directly to the beneficiaries. The procedure can be termed as benefit transfer, 
+but not as “direct” benefit transfer. 
+ Despite lapse of more than three years from the dec ision (March 2017) of 
+the State Government to bring all the social securi ty schemes under DBT, 
+the DSSWCD could reduce only one intermediary level  (payment through 
+Gram Panchayat Bank Account) in disbursing the fina ncial assistance 
+under the social security schemes, thus, not adheri ng to the Standard 
+Operating Procedure of DBT Manual. 
+
+Chapter-III: Process re-engineering for implementation of DBT 
+37 
+ Though Aadhaar numbers of 92 per cent  of the digitised beneficiaries had 
+been captured in six test-checked districts, system  of transfer of financial 
+assistance directly to the Aadhaar linked bank accounts of the beneficiaries 
+by generation of payment files instructions in PFMS/through State treasury 
+account was not ensured. 
+ After porting the beneficiaries’ data in PBMS, neit her any review to check 
+the completeness, authenticity and correctness of t he legacy data was 
+conducted nor were any instructions passed on to DSSWCD to get the data 
+verified at their level, as Audit noticed cases of duplicate PLA numbers, 
+beneficiaries’ age less/more than the prescribed limit, acceptance of gender 
+as ‘Male’ for the scheme meant for female beneficia ries (FAWDW).  
+Besides, cases of duplicate records of beneficiarie s, non-exclusion of 
+ineligible beneficiaries and grant of financial ass istance to same 
+beneficiaries in more than one scheme, etc. were also noticed. 
+ The DSSWCD weeded out 18,583 ineligible beneficiari es under the social 
+security schemes in six test-checked districts.  Ho wever, out of 
+` 37.09 crore, only ` 0.33 crore had been recovered as of July 2021 from  
+them.  On the other hand, financial assistance of ` 277.96 crore was not 
+provided to the eligible beneficiaries of three sel ected schemes in six 
+test-checked districts during April 2017 to July 20 20.  Besides, cases of 
+delayed/advance sanction/payment of financial assis tance were also 
+noticed. 
+ Modification in master database i.e. change in bank account numbers of 
+beneficiaries, etc. was being done by DSSOs without  any authority or 
+request of applicant on record.  Dissemination of i nformation through 
+SMS about payment of financial assistance to benefi ciaries and regulation 
+of failed transactions received from the respective banks was also lacking. 
+ No mechanism existed in DSSWCD for identification o f deceased 
+beneficiaries through the Registrar General of Indi a to ensure 
+discontinuance of financial assistance to the decea sed. Requisite 
+Committees as initiated by the Department for perio dical 
+review/identification of eligible/ineligible benefi ciaries had not been 
+formed at block levels, in spite of detecting subst antial number of 
+ineligible beneficiaries during a review conducted by the State 
+Government in June 2017.   
+ The scheme design deficiencies with regard to chang e in commencement 
+of financial assistance to beneficiaries from the m onth of sanction to first 
+month of the succeeding quarter, led to delay of 1- 2 months in receipt of 
+financial assistance from the date of sanction. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+38 
+3.17 Recommendations 
+In the light of the audit findings, the State Government may consider: 
+(i)   taking appropriate steps to eliminate the existing  intervening layers as 
+per Standard Operating Procedure of DBT Manual, bes ides adopting 
+the system of transfer of financial assistance dire ctly to the Aadhaar 
+linked bank accounts of the beneficiaries by genera tion of payment 
+files instructions in PFMS/through State treasury a ccount for making 
+the flow of funds faster, secure and curbing pilfer age/duplication in 
+payments; 
+(ii)   carrying out a comprehensive review of the benefic iaries’ data 
+including the legacy data already ported in PBMS to  ensure its 
+completeness, authenticity and correctness; 
+(iii)   putting in place adequate input and validation con trols in PBMS 
+application so as to curb duplicate, unauthentic an d invalid data, 
+thereby capturing data in respect of eligible benef iciaries as per 
+provisions of the respective rules of the social se curity schemes under 
+DBT; 
+(iv)   putting in place mechanism for modification in ben eficiaries’ database 
+on the basis of authentic records; dissemination of  information 
+through SMS about payment of financial assistance t o beneficiaries; 
+and regulation of failed transactions received from respective banks;  
+(v)   integration of beneficiaries’ data with the death data available with the 
+Registrar General of India for identification of de ceased beneficiaries 
+to ensure discontinuance of financial assistance to  the deceased, 
+besides, adoption of mechanism at block levels for periodical 
+review/identification of eligible/ineligible benefi ciaries so as to ensure 
+payment of financial assistance to bona fide beneficiaries; and 
+(vi)   making strenuous efforts for effecting recovery of  inadmissible/excess 
+payment of financial assistance from the ineligible  beneficiaries, 
+besides fixing responsibility for inaction by the authorities concerned. 
+ 
+
+Chapter-IV 
+Infrastructure, organisation and 
+management of  
+Direct Benefit Transfer 
+
+39 
+Chapter-IV 
+ 
+Infrastructure, organisation and management of  
+Direct Benefit Transfer 
+ 
+4.1 State Direct Benefit Transfer Cell 
+Paragraph 2.1 of Protocol Document on Direct Benefit Transfer (DBT) in States 
+(June 2017) prescribes for constitution of DBT Cell  at State level to enable 
+adoption and understanding of the DBT framework.  F urther, Guidelines for 
+State DBT Cell issued by DBT Mission, GoI provide t hat DBT Cell in the 
+States is expected to be the one-stop point for coo rdinating all efforts for 
+bringing and implementing schemes on to DBT.  The D BT Cell has been 
+divided into three components namely - (i) Advisory  Board; (ii) State DBT 
+Co-ordinator; and (iii) Implementation Support Layer.   
+The GoP, in order to coordinate the activities of D BT Cell, nominated 
+(July 2017) the Secretary to Government of Punjab, Department of Finance, 
+Directorate of Institutional Finance and Banking as State Nodal Officer of State 
+DBT Cell (State DBT Co-ordinator), the charge of wh ich was transferred 
+(June 2020) to the Additional Secretary-cum-Directo r, Department of 
+Governance Reforms and Public Grievances (DGRPG), GoP.  The activities of 
+State DBT Cell, noticed during the course of audit,  are discussed in the 
+succeeding paragraphs. 
+4.1.1 Constitution of State Advisory Board 
+In accordance with the Guidelines for State DBT Cel l, the Government of 
+Punjab, Department of Finance constituted (November  2017) State Advisory 
+Board (SAB) to DBT Cell having 20 members from vari ous 
+departments/organisations under the chairmanship of  Chief Secretary to 
+Government of Punjab.  As per Guidelines for State DBT Cell, the chief role of 
+SAB was to provide the Cell's executive body, a hol istic and well-rounded 
+advisory and consulting inputs. Since this unit wit nesses the representation 
+from all stakeholders, its advisory shall ensure th at the Cell's operations are 
+not exclusionary and are in sync with the interests  of DBT's various enablers.   
+The guidelines further provide that SAB may meet on ce in a quarter or in any 
+other regular interval, as deemed fit.  However, no  meeting of SAB was held 
+during 2017-2021 (up to July 2020).   
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+40 
+During exit conference, the Director, DGRPG, while apprising about holding of 
+first meeting of SAB in March 2021, stated (July 2021) that meeting would now 
+be held after every six months. 
+4.1.2 Implementation Support Layer 
+(i)  The Implementation Support Layer consisting of thr ee coordinators 
+of the rank of Director or Officer on Special Duty (OSD), responsible for 
+technical, non-technical, and finance and administr ation support to the Cell’s 
+operations for eliciting cooperation and participation from the grass-root levels 
+required to be constituted, as per Guidelines for S tate DBT Cell, had not been 
+constituted (December 2020). 
+During exit conference, the Director, DGRPG stated (July 2021) that Associate 
+Principal Consultant (UID-PMU) had been deputed (Ju ne 2020) as Project 
+Manager for end-to-end operations of the State DBT Cell Project which 
+included technical as well as administrative suppor t and Head of the Finance 
+Branch of the Department i.e. Assistant Controller,  Finance and Accounts 
+(ACFA) could be assumed as Financial Support for th e State DBT Cell as no 
+separate notification was issued in this regard.  I t was added that file for 
+constitution of Implementation Support Layer in lin e with the DBT mission 
+framework would be sent to the Chief Secretary, Gov ernment of Punjab for 
+consideration. 
+(ii)  Guidelines for State DBT Cell issued by DBT Missio n, GoI provide 
+that as a part of implementation support, the State  DBT Cell shall provide 
+training and support in capacity building of State officials on DBT.  The 
+guidelines further provide for organising exposure visits for the State/district 
+officials in DBT progressive States for familiarising them with model practices, 
+besides, conducting bench-marking studies on Best P ractices, running 
+innovations in the State through pilots/experiments and developing roadmap to 
+incorporate those practices in State operations. 
+Audit observed that during the period from 2017-18 to 2020-21 (up to 
+July 2020): 
+• Neither any training calendar was prepared nor was any training on DBT 
+provided to State officials by the State DBT Cell. 
+• No exposure visits for State/district officials in DBT progressive States 
+1 
+were arranged by the State DBT Cell for familiarisi ng the officials with model 
+practices being adopted by those states. 
+                                                                 
+1  Haryana, Uttar Pradesh, Tripura, etc. 
+
+Chapter-IV: Infrastructure, organisation and management of DBT 
+41 
+• Neither any benchmark studies were conducted on Bes t Practices for 
+developing roadmap to incorporate those practices i n State operations nor was 
+any innovation in the State through pilots/experime nts carried out by the State 
+DBT Cell. 
+The DSSWCD admitted (October 2020) the above audit observations.   
+During exit conference, the Director, DGRPG stated (July 2021) that no record 
+on training, exposure visits and benchmark studies arranged before May 2020 
+was found.  However, since reconstitution (July 202 0) of State DBT Cell, 
+regular review meetings were being held with the st akeholder departments for 
+monitoring and compliance purposes.  It was added t hat shortage of manpower 
+and non-provision of separate budget for State DBT cell were major bottlenecks 
+in constitution of Implementation Support Layer in the State DBT cell as per 
+DBT framework.   
+4.1.3 Robust governance framework 
+Paragraph 2.4 of the Protocol Document on DBT in St ates (June 2017) 
+provides for a robust governance framework at the S tate level to continuously 
+monitor the readiness of schemes and programmes.  T he Governance 
+framework would operate under State DBT Cell and sh all be responsible for 
+(i) DBT applicability assessment of schemes and pro grammes; 
+(ii) consultations with stakeholders on DBT; (iii) beneficiary digitisation 
+analysis and recommendations; (iv) DBT on-boarding of schemes and 
+programmes; (v) monitoring scheme on-boarding progress; and (vi) providing 
+programme management support.   
+Audit, however, observed that robust governance fra mework was lacking at 
+State level to continuously monitor the readiness o f schemes and programmes.  
+No workshop, seminar, etc. to operationalise DBT was conducted either by the 
+State DBT Cell or DSSWCD during the period of audit  (up to June 2020), in 
+contravention of the provisions ibid .  
+It was further noticed that all 127 schemes (cash t ransfer: 94; and in-kind 
+transfer/others: 33) across 17 departments/entities  were brought on the DBT 
+platform as of July 2020.  However, Information Com munication Technology 
+(ICT) applications in respect of 42 schemes (cash t ransfer: 33 including 08 in 
+DSSWCD; and in-kind transfer: 09) had only been dev eloped, leaving 
+behind 85 schemes (cash transfer: 61; and in-kind t ransfer/others: 24) of 
+twelve  departments 2 , for which no timeline had been fixed by the 
+                                                                 
+2 (i) Department of Social Justice, Empowerment and Minorities (37); (ii) Department of Animal 
+Husbandry (05); (iii) Department of Defence Services Welfare (10); (iv) Department of Horticulture 
+(01); (v) Punjab Municipal Infrastructure Development Company (01); (vi) Department of Technical 
+Education and Industrial Training (02); (vii) Depar tment of Forests and Wildlife Preservation (01); 
+(viii) Department of Social Security and Women and Child Development (15); (ix) Department of 
+School Education (02); (x) Department of Health and  Family Welfare (05); (xi) Department of 
+Agriculture and Farmers’ Welfare (04); and (xii) Punjab Skill Development Mission (02).  
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+42 
+Department (October 2020), as envisaged in the Guidelines for State DBT Cell 
+issued by DBT Mission (GoI). 
+During exit conference, the Director, DGRPG stated (July 2021) that the SAB 
+in its first meeting (March 2021) had given in-principle approval for building of 
+an integrated DBT solution for the State within a period of 7-9 months.  It was 
+added that non-provision of separate budget for the State DBT cell was a major 
+bottleneck to continuously monitor the readiness of  schemes and programmes.  
+Further, testing of DBT schemes in National Informa tics Centre (NIC) portal 
+had also been taken-up to bring the schemes on NIC platform. 
+4.1.4  Non-constitution of departmental DBT Cell/Co mmittee 
+Paragraph 2.1 of Protocol Document on DBT in States provides that apart from 
+State DBT Cell, individual departments shall also c onstitute a DBT 
+Cell/Committee within each department, so as to ens ure that DBT framework 
+is adopted in implementation of schemes.   
+The State DBT portal displayed information with regard to 127 schemes (cash 
+transfer: 94; and in-kind transfer/others: 33) acro ss 17 departments/entities 
+under DBT. However, it was observed that no interna l DBT Cell/Committee 
+had been constituted in DSSWCD.  It was further not iced that the State DBT 
+Cell under DGRPG, also did not have any information  regarding constitution 
+of DBT Cell/Committee by the individual departments, which is expected to be 
+the one-stop point for coordinating all efforts for  bringing and implementing 
+schemes on to DBT.   
+During exit conference, the Director, DGRPG stated (July 2021) that internal 
+DBT Cell/Committee had been constituted in 08
+3 out of 17 Departments/ 
+entities and confirmation in this regard from remai ning nine Departments/ 
+entities had been sought.  The Director, DSSWCD ass ured to take necessary 
+action in this regard. This showed lack of coordina tion between DGRPG and 
+the implementing departments, as in spite of monthl y review meetings being 
+conducted with the implementing departments by DGRP G from July 2020 
+onwards, the DGRPG was unaware of the establishment  of internal DBT 
+Cells/Committees by the respective departments. 
+4.2 Hosting of State Direct Benefit Transfer Portal  
+(i)  The DGRPG, being the administrative department for  State DBT 
+Cell, is hosting the Punjab’s DBT Portal (http://dbt.punjab.gov.in) , which 
+                                                                 
+3  (i) School Education; (ii) Health and Family Welf are; (iii) Defence Services Welfare; 
+(iv) Agriculture and Farmers’ Welfare; (v) Technical Education and Industrial Training; (vi) Punjab 
+Municipal Infrastructure Development Company; (vii) Food, Civil Supplies and Consumer Affairs; 
+and (viii) Fisheries. 
+
+Chapter-IV: Infrastructure, organisation and management of DBT 
+43 
+became operational from August 2017. The Government  of India (GoI) issued 
+(January 2009 and February 2019) Guidelines for Indian Government Websites 
+(GIGW). The guidelines recommend policies and guide lines for Indian 
+Government Websites and Portals, at any organisational level and belonging to 
+both Central Government as well as State/UT Governm ents for making 
+Government websites citizen centric and visitor friendly.  
+Audit noticed that State DBT Portal was integrated with the DBT Bharat Portal 
+(https://dbtbharat.gov.in), which is an aggregator portal for all DBT related  
+schemes. The State DBT Portal displayed information  with regard to 
+127 schemes across 17 departments in the State.  Ho wever, the following 
+shortcomings were observed in State DBT Portal being maintained by DGRPG: 
+ Website Quality Certification was not obtained from  Standardisation 
+Testing Quality Certification (STQC) - an organisat ion of Ministry of 
+Electronics and Information Technology (MeitY), GoI , as required under 
+Paragraph 1.4 of GIGW guidelines.  During the exit conference, the 
+Director, DGRPG stated that an agency would be enga ged to obtain the 
+requisite certification. 
+ The Web Information Manager and Technical Manager were not appointed 
+to ensure proper flow and quality of content to the  site, as per paragraphs 
+10.1.1 and 10.1.2 of GIGW guidelines.  During exit conference, the 
+Director, DGRPG stated (July 2021) that Associate P rincipal Consultant 
+(UID PMU) had been deputed (June 2020) to look afte r end-to-end 
+operations of the State DBT Cell which included the  responsibility of Web 
+Information Manager and Technical Manager for State  DBT Portal, 
+however, separate orders had not been issued in thi s regard.  The reply of 
+the Department was not in line with the guidelines ibid . 
+ No Content Contribution, Moderation and Approval Po licy to ensure 
+authenticity of data and responsibility, authorisat ion and workflow details 
+with regard to content publishing on State DBT Port al was framed, as 
+required under paragraph 5.2 of GIGW guidelines.  D uring the exit 
+conference, the Director, DGRPG assured to notify the policy at the earliest. 
+ No Website Monitoring Policy was formulated to address and fix the quality 
+and compatibility issues, as per paragraph 10.3 of GIGW guidelines.  
+During the exit conference, the Director, DGRPG sta ted that Website 
+Monitoring Policy had been formulated in January 2021.  Audit, however, 
+observed that no periodicity for monitoring and pla n to address and fix the 
+quality and compatibility issues were incorporated in the said policy. The 
+policy formulated by the Department was merely reit eration of the 
+provisions of the guidelines ibid. 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+44 
+ No provision for regional language content on State DBT Portal was made, 
+as required under paragraph 5.7 of GIGW guidelines.  During the exit 
+conference, the Director, DGRPG assured compliance at the earliest.  
+(ii)  Paragraph 2.2(4) of Protocol Document on DBT in St ates provides 
+that the State DBT Portal would require to be conceptualised and implemented 
+to aggregate State level information on benefit tra nsfers. Portal also has 
+anonymous access for public to know about DBT and i ts progress in the State 
+and it should have functionalities for public viz.  Home Page, About Us, Scheme, 
+Multimedia, DBT Cell, Documents, Success Story, Con tact Us, RTI, FAQ, 
+Feedback and Download. 
+Examination of State DBT Portal revealed that various information, as detailed 
+in Table 4.1, were not made available to public on the Portal. 
+Table 4.1: Information not available to public on State DBT Portal 
+Name of the 
+functionality 
+Information not available to public on Portal 
+About Us Provision of guidelines to departments on DBT Standard Operating 
+Procedure (SOP). 
+Scheme A list of DBT schemes to be on-boarded. 
+Multimedia Images, videos and press articles relate d to DBT in State. 
+Documents Though functionality has been provided bu t no documents such as circulars, 
+reports, event documents, etc. have been uploaded. 
+Success 
+Story 
+State initiatives on DBT success related to control  leakages, savings and 
+removal of duplication story in a department or across departments in State. 
+Download Section where department can refer for loc ation master which is LGD (Local 
+Government Directory) and State DBT MIS integration  approach document 
+as developer toolkit having web service signature o r predefined file format 
+for data exchange with State DBT Portal. 
+Source: Website of State DBT Portal (http://dbt.punjab.gov.in) 
+During exit conference, the Director, DGRPG stated (July 2021) that these 
+sections were kept blank as there was no content av ailable.  The reply of the 
+Department was not convincing as despite making 127  schemes across 
+17 departments/entities functional under DBT, the r equisite information was 
+not made available on the State DBT Portal for general public, as per guidelines 
+ibid .  
+4.3  Non-provision of real time capturing of benefi ciary data 
+The Standard Operating Procedure (SOP) for DBT Bhar at Portal (States/UTs) 
+and SOP Modules for Direct Benefit Transfer issued by GoI provides for 
+creation and maintenance of real time MIS Portal. 
+Audit noticed that no mechanism existed for real ti me capturing of 
+beneficiaries’ data on State DBT Portal.  During ex it conference, the Director, 
+
+Chapter-IV: Infrastructure, organisation and management of DBT 
+45 
+DGRPG stated (July 2021) that the data on State DBT Portal was being depicted 
+as per the monthly progress input by the respective departments.  It was added 
+that the current State DBT Portal, based on the standard DBT Portal framework 
+provided by the DBT Mission did not have any provision for real time capturing 
+of data.  The reply of the Department was not in line with the SOP ibid .  In the 
+absence of real time capturing of data, current pos ition of DBT schemes, 
+beneficiaries covered, financial assistance disburs ed, etc. would not be 
+available on DBT Portal, which may hamper prompt an d efficient decision 
+making and monitoring. 
+4.4 Mismatch of data in Social Security Schemes 
+Paragraph 1.2 of SOP on DBT Bharat Portal for State s/UTs issued by DBT 
+Mission, GoI provides that since the data provided on DBT Portal is available in 
+public domain, State DBT Cell Coordinators are to v alidate and confirm 
+before entering any details on the Portal. It furth er provides that the ownership 
+of all State specific information will lie with the  States.  Further, GoI 
+reiterated (May 2017) that State DBT Nodal Officer would nominate 
+Departmental/Section level officers who would be re sponsible for the entry of 
+the monthly data of each Centrally Sponsored Scheme and would direct them to 
+register themselves in the DBT MIS Portal.  However , responsibility of 
+correctness of data would be with the State DBT Nodal Officer only. 
+Audit observed that there was a variation ranging b etween ` 34.00 crore and 
+` 4,555.58 crore in respect of the amount of cash transferred to the beneficiaries 
+in three selected scheme viz.  OAP, FAWDW and FADC under DBT during the 
+period 2017-2021 (up to July 2020), uploaded on the  DBT Portal and that 
+supplied by DSSWCD, as detailed in Table 4.2 . 
+Table 4.2:  Variation in amount of cash transferred  to the beneficiaries in three 
+  selected schemes during the period 2017-2021 (up to July 2020) 
+(`` `` in crore) 
+Name of the Scheme Year Cash 
+transferred 
+as per DBT 
+Portal 
+Cash 
+transferred 
+as per 
+DSSWCD 
+Variation 
+in figures 
+Old Age Pension (OAP) 
+2017-18 5,242.92 687.34 4,555.58 
+2018-19 262.06 1,179.04 916.98 
+2019-20 246.30 1,399.26 1,152.96 
+2020-21  
+(up to 07/2020) 822.22 629.93 192.29 
+Financial Assistance to 
+Widows and Destitute 
+Women (FAWDW) 
+2017-18 399.88 197.95 201.93 
+2018-19 24.97 336.02 311.05 
+2019-20 102.02 388.58 286.56 
+2020-21  
+(up to 07/2020) 241.74 172.65 69.09 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+46 
+Name of the Scheme Year Cash 
+transferred 
+as per DBT 
+Portal 
+Cash 
+transferred 
+as per 
+DSSWCD 
+Variation 
+in figures 
+Financial Assistance to 
+Dependent Children  
+(FADC) 
+2017-18 206.81 68.66 138.15 
+2018-19 8.58 114.51 105.93 
+2019-20 23.05 132.13 109.08 
+2020-21  
+(up to 07/2020) 92.07 58.07 34.00 
+Source: Departmental information 
+During exit conference, the Director, DSSWCD stated  (July 2021) that 
+reconciliation with the DSSOs at district level wou ld be done to sort out the 
+variation in figures and correct figures would be d epicted on the State DBT 
+Portal.  Whereas, the Director (DGRPG) stated that there was no possibility to 
+check the correctness of the data at the level of S tate DBT Cell, as the data 
+pertaining to the implementation of the schemes was  submitted by the 
+departments concerned after due diligence. It was a dded that the departments 
+had been directed to upload correct data on the web portal. 
+The facts remained that due to lack of monitoring a t DGRPG level and 
+coordination between State DBT Cell and DSSWCD, the  data in respect of 
+amount of cash transferred to the beneficiaries under the selected social security 
+schemes uploaded on the public domain could not be considered as authentic, 
+thereby not adhering to the provisions ibid . 
+4.5 Disaster Recovery and Business Continuity Plan 
+Paragraph 8.3.4 of GIGW guidelines provides that there could be circumstances 
+wherein due to some natural calamity, the entire da ta centre where the website 
+is being hosted gets destroyed or ceases to exist.  A well planned contingency 
+mechanism has to be in place for such eventualities  wherein it should be 
+ensured that the Hosting Service Provider has a ‘Di saster Recovery Centre’ 
+(DRC) set up at a geographically remote location an d the website is switched 
+over to the DRC with minimum delay and restored on the Web. 
+Audit observed that though PBMS had been hosted on Bharat Sanchar Nigam 
+Limited (BSNL) cloud hired by the DSSWCD, the DGRPG  did not have any 
+Disaster Recovery and Business Continuity Plan (DRB CP) for State DBT 
+Portal. This was being maintained locally at State Data Centre (SDC) in 
+Directorate office of DGRPG.   
+During exit conference, the Director, DGRPG stated (July 2021) that 
+negotiations with firms were being made to set up Disaster Recovery Centre as 
+per the GIGW guidelines.   
+
+Chapter-IV: Infrastructure, organisation and management of DBT 
+47 
+4.6 Password Policy 
+The purpose of a password policy is to establish a standard for creation of strong 
+passwords, the protection of those passwords, and t he frequency of change of 
+the passwords.  All user-level passwords should be changed periodically. 
+Password should be enforced to be of a certain minimum length and comprising 
+of mix of alphabets, numbers and special characters. 
+Audit observed that no password policy defining the  structure and length of 
+password, periodicity for changing passwords, etc. had been framed.  In the 
+absence of this, it was not mandatory for DSSOs/users of the application to have 
+a password with a combination of upper/lower case-numeric-special characters.  
+The password was also not being changed by the DSSOs of the selected districts 
+and the users of the application on regular basis r esulting in inadequate access 
+controls.   
+During exit conference, the Director, DGRPG stated (July 2021) that currently 
+there was no formal password policy with respect to  Social Security Pension 
+Beneficiary Management System, but password related  rules such as length 
+(06-12 characters), combination of numerals and alphabets, restriction on use of 
+last 3 passwords while changing password and mandatory password change for 
+every new user on its first login had been implemented. It was admitted that no 
+password expiry rules had been framed so far.  It w as added that formal 
+password policy would be prepared and circulated to the concerned departments.  
+The Director, DSSWCD stated that the efforts would be made to implement the 
+password policy. It was further intimated (February 2022) that a Cyber Security 
+Consultant had been appointed in June 2021.  
+4.7 Conclusions 
+There was scope of improvement in infrastructure, o rganisation and 
+management of DBT as could be seen from the followi ng inconsistencies 
+noticed during the performance audit: 
+ The State Advisory Board (SAB) had been constituted  (November 2017) 
+in the State of Punjab.  However, no meeting of SAB  to provide the Cell's 
+executive body, a holistic and well-rounded advisor y and consulting 
+inputs, was held during the audit period.   
+ Implementation Support Layer consisting of three co ordinators of the rank 
+of Director or Officer on Special Duty (OSD), respo nsible for technical, 
+non-technical, and finance and administration suppo rt to Cell’s operations 
+for eliciting cooperation and participation from th e grass-root levels had 
+not been constituted in line with the Guidelines fo r State DBT Cell.  
+Neither any training calendar was prepared nor was any training on DBT 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+48 
+provided to State officials by the State DBT Cell.  No exposure visits for 
+State/district officials in DBT progressive States were arranged by the 
+State DBT Cell for familiarising the officials with  model practices being 
+adopted by those States.  Neither any benchmark stu dies were conducted 
+on Best Practices for developing roadmap to incorpo rate those practices in 
+State operations nor was any innovation in the Stat e through 
+pilots/experiments carried out by the State DBT Cell. 
+ Robust governance framework was lacking at State le vel to continuously 
+monitor the readiness of schemes and programmes.  N o workshop, 
+seminar, etc. to operationalise DBT was conducted e ither by the State 
+DBT Cell or DSSWCD.  Besides, the departmental DBT Cell/Committee 
+to ensure adoption of DBT framework in implementati on of schemes, as 
+per Protocol Document on DBT in States, was not con stituted in 
+DSSWCD. 
+ The State DBT Portal was integrated with DBT Bharat  Portal 
+(https://dbtbharat.gov.in) and information related to all 127 identified 
+schemes across 17 departments in the State was disp layed on the Portal.  
+However, Website Quality Certification was not obta ined from 
+Standardisation Testing Quality Certification; Web Information Manager 
+and Technical Manager were not appointed in line wi th the GIGW 
+guidelines to ensure proper flow and quality of con tent to the site; Content 
+Contribution, Moderation and Approval Policy to ens ure authenticity of 
+data and responsibility, authorisation and workflow  details with regard to 
+content publishing on State DBT Portal was not fram ed; provision for 
+regional language content on State DBT Portal was n ot made; and various 
+important information with regard to Portal functio nalities viz.  About Us, 
+Scheme, Multimedia, Documents, Success Story, Downl oad, etc. were not 
+made available on State DBT Portal.  There was a mi smatch in the 
+amount of cash transferred to the beneficiaries in three selected schemes 
+under DBT during the period 2017-2021 (up to July 2 020), uploaded on 
+the DBT Portal and that supplied by DSSWCD. 
+ The DSSWCD did not have any Disaster Recovery and B usiness 
+Continuity Plan for State DBT Portal and Password P olicy both for State 
+DBT Portal and PBMS application. 
+4.8 Recommendations 
+In the light of the audit findings, the State Government may consider: 
+(i)   conducting periodical meetings of SAB for providin g DBT Cell, a 
+holistic and well-rounded advisory and consulting inputs; 
+
+Chapter-IV: Infrastructure, organisation and management of DBT 
+49 
+(ii)  strengthening governance framework including constitution of internal 
+DBT Cell/Committee in each department, in line with the Guidelines 
+for State DBT Cell to ensure adoption of DBT framework in 
+implementation of schemes; 
+(iii)  hosting of State DBT Portal in accordance with the Guidelines for 
+Indian Government Websites and Standard Operating Procedure and 
+User Manual on State DBT Portal, besides, depicting authentic data 
+on State DBT Portal with regard to benefits transferred to the 
+beneficiaries in respective schemes under DBT; and 
+(iv)  putting in place Disaster Recovery and Business Continuity Plan and 
+Password Policy to ensure safety and smooth functioning of State DBT 
+Portal and PBMS application. 
+ 
+Chandigarh 
+The  
+(PUNAM PANDEY) 
+Principal Accountant General (Audit), Punjab 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+New Delhi 
+The  
+Countersigned 
+(GIRISH CHANDRA MURMU) 
+Comptroller and Auditor General of India 
+ 
+
+Appendices 
+
+51 
+Appendix 1.1 
+(Referred to in paragraph 1.3; page 4) 
+Department-wise details of total number of schemes, beneficiaries covered and expenditure incurred under DBT (cash transfer)  
+during 2017-2021 (up to July 2020)  
+(`` `` in crore) 
+ Sr. 
+No.  
+Name of 
+department/entity 
+2017-18 2018-19 2019-20 2020-21  (up to 07/2020) Total 
+expendi-
+ture 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+1. 
+Department of 
+Social Security and 
+Women and Child 
+Development 
+13 21,00,281 6,053.70 13 23,75,598 486.78 13 26,90, 956 588.43 18 27,25,384 1,545.52 8,674.43 
+2. 
+Department of Rural 
+Development and 
+Panchayats 
+2 10,35,173 0.00 3 12,08,038 456.63 3 14,19,994 664 .62 3 14,89,666 474.99 1,596.24 
+3. Department of 
+School Education 1 0 0.00 3 45,102 0.00 3 14,214 9.04 2 0 0.00 9.04 
+4. 
+Department of 
+Social Justice, 
+Empowerment and 
+Minorities 
+25 13,77,476 0.00 28 30,290 91.81 25 7,13,856 243.0 6 28 
+199 0.25 335.12 
+5. 
+Department of 
+Health and Family 
+Welfare 
+2 11,988 19.81 2 11,937 107.29 4 66,980 879.14 6 68 ,652 198.01 1,204.25 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+52 
+ Sr. 
+No.  
+Name of 
+department/entity 
+2017-18 2018-19 2019-20 2020-21  (up to 07/2020) Total 
+expendi-
+ture 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+No. of schemes 
+No. of 
+beneficiaries 
+Expenditure 
+6. 
+Department of 
+Animal Husbandry, 
+Dairy Development 
+and Fisheries 
+4 0 0.00 4 74 1.07 5 3,490 0.50 5 3,731 0.00 1.57 
+7. 
+Department of 
+Defence Services 
+Welfare 
+4 1,744 12.32 10 3,292 28.88 10 3,904 20.81 10 3,42 6 21.14 83.15 
+8. Department of 
+Labour -- -- -- 7 6,424 25.86 15 39,141 23.71 16 11,632 13 .40 62.97 
+9. 
+Department of 
+Agriculture and 
+Farmers’ Welfare 
+-- -- -- 1 8,14,551 1,293.26 1 6,07,286 1,110.14 2 6,07,768 1.01 2,404.41 
+10. Department of 
+Horticulture -- -- --  -- -- -- 1 0 0.00 1 287 0.55 0.55 
+11. 
+Punjab Municipal 
+Infrastructure 
+Development 
+Company 
+-- -- --  -- -- -- 1 81,783 26.43 1 7,394 4.86 31.2 9 
+12. 
+Department of 
+Technical Education 
+and Industrial 
+Training 
+-- -- --  -- -- -- -- -- -- 1 282 1.16 1.16 
+13. Punjab State Urban 
+Livelihood Mission -- -- --  -- -- -- -- -- -- 1 4,340 28.61 28.61 
+Total 51 45,26,662 6,085.83 71 44,95,306 2,491.58 81 56,41,604 3,565.88 94 49,22,761 2,289.50 14,432.79 
+Source: Departmental data 
+
+Appendices 
+53 
+ 
+Appendix 2.1 
+ (Referred to in paragraph 2.1; page 7) 
+Details of schemes under DBT (cash transfer) being implemented by Department of Social Security and  
+Women and Child Development during 2017-2021 (up to July 2020) 
+(`` `` in crore) 
+Sr. 
+No. 
+Name of scheme 2017-18 2018-19 2019-20 2020-21  
+(Upto July 2020) 
+Total 
+fund 
+transfer 
+Percentage 
+of total 
+expenditure No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+1. Indira Gandhi National 
+Old Age Pension Scheme  1,56,858 0 1,56,858 0 1,56,858 0 1,03,953 26.66 26. 66 0.31 
+2. Indira Gandhi National 
+Widow Pension Scheme  16,647 0 16,647 0 16,647 0 16,757 5.36 5.36 0.07 
+3. Indira Gandhi National 
+Disability Pension 
+Scheme  
+4,934 0 4,934 0 5,320 0 5,460 1.29 1.29 0.01 
+4. Old Age Pension Scheme 11,98,311 5,242.92 14,51,396 262.06 16,81,304 246.3 0 17,07,291 822.22 6,573.50 75.78 
+5. Financial Assistance to 
+Widows and Destitute 
+Women 
+3,41,482 399.88 4,04,468 24.97 4,58,775 102.02 4,69 ,271 241.74 768.61 8.86 
+6. Financial Assistance to 
+Dependent Children 1,48,206 206.81 94,529 8.58 1,05,285 23.05 1,05,375  92.07 330.51 3.81 
+7. Finance Assistance to 
+Disabled Persons 1,43,861 168.28 1,76,580 11.26 1,99,439 28.46 2,02, 238 121.56 329.56 3.80 
+8. ICDS- Training 3,153 1.03 3,690 10.71 543 0.76 2 0 0.17 12.67 0.15 
+9. Pradhan Mantri Matru 
+Vandana Yojana 34,667 5.95 13,718 60.18 12,420 40.37 9,605 11.88 1 18.38 1.36 
+
+Performance Audit Report on Direct Benefit Transfer (Cash Transfer)  
+54 
+Sr. 
+No. 
+Name of scheme 2017-18 2018-19 2019-20 2020-21  
+(Upto July 2020) 
+Total 
+fund 
+transfer 
+Percentage 
+of total 
+expenditure No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+No. of 
+beneficia-
+ries 
+Expen-
+diture 
+10. Protection and 
+Empowerment of Women-
+Swadhar Greh- Salary to 
+Staff 
+13 0 14 0 14 0 2 0 0 0.00 
+11. Integrated Child 
+Protection Scheme 
+(ICPS)-Salary to staff 
+419 0.57 382 3.71 332 4.17 269 4.02 12.47 0.14 
+12. National Creche Scheme - 
+Honorarium to Workers 416 0 416 0.57 350 0.62 350 1.09 2.28 0.03 
+13. Umbrella ICDS - 
+Aanganwadi Services 
+(Honorarium to AWW 
+and AWH) 
+51,314 28.26 51,966 104.74 53,669 142.68 53,353 156 .04 431.72 4.98 
+14. Protection and 
+Empowerment of Women 
+- National Mission for 
+Empowerment of Women 
+-- -- -- -- -- -- 3 0.08 0.08 0.00 
+15. Child Protection Services 
+- Facilities to 
+Beneficiaries 
+(Sponsorship) 
+-- 
+ --  --  --  --  --  325 0.15 0.15 0.00 
+16. National Family Benefit 
+Scheme 
+--  --  --  --  --  --  592 1.87 1.87 0.02 
+17. One Stop Centre - 
+Payment of Salary of Staff --  --  --  --  --  --  220 0 0 0.00 
+18. Aanganwadi Services - 
+Honorarium to AWW and 
+AWH 
+-- -- -- -- -- -- 50,300 59.32 59.32 0.68 
+Total 21,00,281 6,053.70 23,75,598 486.78 26,90,956 588.43 27,25,384 1,545.52 8,674.43 100.00 
+Source: Departmental data 
