@@ -1,0 +1,3927 @@
+ 
+ 
+ 
+  
+Report of the Comptroller and Auditor 
+G
+eneral of India 
+ 
+ 
+ 
+ 
+ 
+P
+erformance audit  
+ of 
+Direct Benefit Transfer  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Government of Karnataka 
+Report No.2 of the year 2022 
+ 
+
+i 
+ 
+Table of contents 
+ 
+ Preface  v 
+ Executive Summary vii 
+Chapter I  Introduction 
+ 
+1.1 Direct Benefit Transfer 1 
+1.1.1 Organisation structure for implementation 
+of DBT  
+1 
+1.1.2 Stakeholders of DBT 3 
+1.1.3 Types of DBT 3 
+1.2 Audit framework 3 
+1.2.1 Audit objectives 3 
+1.2.2 Audit criteria 4 
+1.2.3 Audit scope and methodology 4 
+1.2.4 Acknowledgement 4 
+Chapter II Implementation and Management 
+of DBT 
+ 
+2.1 Status of onboarding of identified schemes 5 
+2.2 Efficiency of implementation of DBT 6 
+2.2.1 Successful transactions 6 
+2.2.2 Failed transactions 10 
+2.2.3 Pending transactions 11 
+2.2.4 Rejected transactions 11 
+2.2.5 Timely movement of response files 12 
+2.2.6 Processing efficiency of Core DBT Portal 13 
+2.2.7 Absence of validation checks in native 
+applications 
+13 
+2.3 Management of Core DBT Portal 13 
+Paragraph Contents Page 
+Number 
+
+ii 
+ 
+2.3.1 Status of implementation of modules of 
+Core DBT Portal 
+13 
+2.3.2 Status of integration 14 
+2.3.3 State DBT portal not accessible to citizens 15 
+2.3.4 Deficiencies in post payment name match 
+scoring process 
+15 
+2.4 Security and Privacy 16 
+2.4.1 Server certificate/digital signature 16 
+2.4.2 Storing of Aadhaar numbers in  
+departmental databases 
+16 
+2.4.3 Security audit 17 
+2.4.4 Risk Management 17 
+2.4.5 Action taken on audit findings relating to 
+DBT portal 
+18 
+Chapter III Implementation of DBT in selected 
+schemes 
+ 
+3.1 Milk Incentive Scheme 19 
+3.1.1 Release and utilization of funds 19 
+3.1.2 Ksheerasiri application 20 
+3.2 Test-checked DBT schemes of Agriculture 
+Department 
+29 
+3.2.1 Raithasiri scheme 29 
+3.2.2 National Food Security Mission - Frontline 
+Demonstration (DBT component) 
+29 
+3.2.3 Pradhan Mantri Kisan Samman Nidhi (State 
+Share) 
+30 
+Chapter IV Monitoring and Evaluation 
+ 
+4.1 DBT Governance framework 33 
+4.1.1 Advisory Council Meetings not held 33 
+4.1.2 Inadequacies in monitoring of onboarded 
+schemes 
+33 
+Paragraph Contents Page 
+Number 
+
+iii 
+ 
+4.1.3 Inadequate monitoring by DBT Cell 33 
+4.1.4 34 
+4.2 Evaluation of DBT 34 
+4.3 Milk incentive scheme 35 
+4.3.1 Absence of DBT Cell/Committee 35 
+4.3.2 Inadequate monitoring mechanism 35 
+4.3.3 Performance Indicators not specified 36 
+4.3.4 Scheme evaluation not undertaken 36 
+4.3.5 Absence of dedicated grievance redressal 
+mechanism 
+36 
+4.4 Schemes of Agriculture Department 37 
+4.4.2 Absence of MOU with the technological 
+partner 
+37 
+Chapter V  
+ Recommendations 41 
+ Appendices 43 
+ Glossary 60 
+ 
+  
+Beneficiary Grievance Redressal system 
+Conclusion and Recommendations 
+Conclusion 39 
+4.4.1 Data migration under NFSM and 
+Raithasirischemes 
+37
+4.4.3 Inadequate monitoring mechanism 37 
+Paragraph Contents Page 
+Number 
+
+iv 
+ 
+ 
+List of Appendices 
+ 
+Appendix 
+Number Details Page 
+Number 
+2.1 Status of transactions for the period 2018-20 43 
+2.2 DBT Process Flow 46 
+2.3 Timely delivery of services 47 
+2.4 Recorded reasons for failure of transactions 48 
+2.5 Transactions pending at various transaction 
+points 
+49 
+2.6 Reasons for rejected transactions 49 
+2.7 DBT detailed module-wise workflow 50 
+2.8 Integration with State DBT Portal in progress  51 
+2.9 Deficiencies in name matching score 52 
+3.1 Difference in the data of Core DBT and 
+Ksheerasiri application 
+58 
+3.2 Fluctuations noticed in the quantity of milk 
+supplied by the selected pourers 
+59 
+3.3 Over payment due to incorrect mapping of 
+Business Rules 
+59 
+ 
+  
+
+v 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. This Report of the Comptroller and Auditor 
+General of India for the year ended 31 March 
+2021 has been prepared for submission to the 
+Governor of Karnataka under Article 151 (2) of 
+the Constitution to be tabled in the State 
+Legislature. 
+2. The Report covering the period 2018-20 contains 
+the results of performance audit of ‘ Direct 
+Benefit Transfer’. 
+3. Audit has been conducted in conformity with the 
+Auditing Standards issued by the Comptroller 
+and Auditor General of India. 
+ 
+ 
+Preface 
+
+vii 
+ 
+Executive Summary  
+   
+ The State Government introduced Direct Benefit Transfer (DBT) as the 
+disbursal mechanism across the departments and established a DBT 
+Cell consisting of an Advisory Council and a Steering Committee for 
+implementation and monitoring of DBT in the State and coordinating with the 
+user departments. The DBT aimed to disburse payments through an Aadhaar 
+linked bank account of the beneficiary. The Government implemented a 
+centralised Core DBT Portal for de-duplication, identity and financial address 
+validation of the beneficiaries. It envisaged to bring all DBT schemes of 
+different departments in an integrated environment to enable direct system-to-
+system exchange of DBT data from native applications without manual 
+interactions for the payment to the identified beneficiaries.  
+The Performance Audit (PA) attempted to ascertain whether necessary process 
+re-engineering was done for implementation of DBT so as to minimise 
+intermediary levels, delay in payment to intended beneficiaries, pilferage and 
+duplication and whether the infrastructure, organization and management of 
+DBT was adequate and effective. The PA involved data analysis and IT audit 
+of Core DBT Portal and Ksheerasiri application along with data analysis of 
+Pradhan Mantri Kisan Samman Nidhi (State Share), National Food Security 
+Mission (DBT component) and Raithasiri schemes of the Department of 
+Agriculture.  
+Core DBT Portal and DBT Cell 
+The process of onboarding of the schemes onto the Core DBT Portal was slow 
+as only 83 out 239 identified schemes could be onboarded as of April 2021.  
+This slow process resulted in disbursement of benefits worth ₹2,829.02 crore 
+outside Core DBT under 168 schemes by 22 departments. 
+(Paragraph 2.1)  
+While 83 per cent of the overall transactions were successful, 14 per cent of 
+the transactions were rejected. The successful transactions ranged between 57 
+to 97 per cent under the test-checked schemes.  
+(Paragraph 2.2.1)  
+  
+
+
+viii 
+ 
+The timeline for delivery of DBT services across the various transaction points 
+was not fixed resulting in belated delivery of services.  The delays were more 
+at two stages – Scroll/final approval in K2 (75 per cent) and DDO approval (13 
+per cent). 
+(Paragraph 2.2.1.1)  
+Analysis of ‘name match score’ data showed instances of credits to accounts 
+of persons other than the actual beneficiaries.  Though 21 complaints were 
+received for non-credit of benefits during February to October 2020, corrective 
+action was yet to be initiated. 
+ (Paragraph 2.2.1.2) 
+The user departments failed to rectify and reinitiate the failed transactions. 
+There were 91,283 transactions awaiting re-initiation despite a lapse of 30 days 
+from the date of failure and the date of transaction was not captured in the Core 
+DBT portal for 36,824 transactions (29 per cent).  
+(Paragraph 2.2.2) 
+The pendency of transactions ranged from three to 673 days.  Failure to initiate 
+necessary action resulted in 6.67 lakh beneficiaries being deprived of financial 
+benefits of ₹153.30 crore during the period 2018-19 and 2019-20. 
+(Paragraph 2.2.3) 
+There was no mechanism to monitor rejected transactions for further 
+processing.  Corrective action initiated to deliver ₹814.55 crore in respect of 
+42.02 lakh transactions could not be ensured. 
+(Paragraph 2.2.4) 
+There were delays in movement on response files, shortcomings in efficiency 
+of processing the payment files from native application to Core DBT and Core 
+DBT to K2 hampering timely rectification and reinitiation of pending and 
+rejected transactions. 
+ (Paragraphs 2.2.5 and 2.2.6) 
+Integration with native applications and K2 for reconciliation was absent 
+resulting in mismatch in data.   
+ (Paragraph 2.3.2) 
+The payment annexure files were sent for data validation without the Server 
+certificate/digital signature. The departments were storing Aadhaar details in 
+local databases in contravention to the Aadhaar Act and related circulars and 
+guidelines. Security audit undertaken was insufficient as it did not include 
+vulnerability assessment and penetration testing. 
+ (Paragraphs 2.4.1 – 2.4.3)  
+
+ix 
+ 
+Ksheerasiri application and Milk Incentive scheme 
+Inadequate digitisation and lack of uniformity among various standalone 
+applications resulted in absence of automated validation checks.  Absence of 
+input validation controls, non-implementation of exceptional reporting and 
+audit modules coupled with absence of assurance on quality and quantity of 
+milk poured resulted in unauthorised changes and consequent overpayments 
+rendering the quality of data unreliable. 
+(Paragraph 3.1.2.1) 
+Delay in generation of payment annexure files and DDO approvals resulted in 
+delayed delivery of services to the beneficiaries.  An amount of 56.08 lakh in 
+respect of 8,464 milk pourers pending since January 2020 has not been paid. 
+(Paragraph 3.1.2.2)  
+Schemes of Agriculture department 
+DBT payments of 5.94 crore was not routed through Core DBT Portal for 
+National Food Security Mission and Raithasiri schemes despite having 
+onboarded onto the Core DBT portal. 
+ (Paragraphs 3.2.1.1 and 3.2.2.2)  
+DBT payment of 91.99 crore under Pradhan Mantri Kisan Samman Nidhi 
+scheme was pending processing since 2019-20 resulting in depriving the 
+beneficiaries of their benefits. In adequate validations and controls resulted in 
+delivery of benefits to ineligible beneficiaries. 
+ (Paragraphs 3.2.3.1 and 3.2.3.2) 
+Inadequacy in monitoring mechanism such as timeline not fixed for processing 
+of payment files and rectification of those files, post evaluation not done, 
+absence of effective beneficiary grievance redressal mechanism and in-
+adequate IT policies noticed in the implementation of the agriculture schemes. 
+ (Paragraph 4.4.3) 
+Monitoring and Evaluation 
+Centralised public grievance mechanism was not established at DBT Cell to 
+aid the beneficiaries in addressing their grievances across various schemes. 
+(Paragraph 4.1.4) 
+
+
+x 
+ 
+Timelines for carrying out rectifications in respect of failed/rejected/pending 
+transactions were not fixed by the departments resulting in either belated 
+delivery of services or non-delivery of services. 
+(Paragraphs 4.3.2 and 4.4.3) 
+Evaluation and impact assessment of Core DBT portal, Ksheerasiri application 
+and test-checked schemes were not conducted to assess the effectiveness of 
+implementation of DBT. 
+(Paragraphs 4.2, 4.3.4 and 4.4.3) 
+
+Chapter I
+Introduction
+
+ 
+1 
+ 
+ 
+ 
+ 
+ 
+1.1 Direct Benefit Transfer 
+Direct Benefit Transfer (DBT) is a major reform initiative to re-engineer the 
+existing delivery processes of Government benefits using mode rn 
+Information and Communication Technology (ICT).  This program aims to 
+transfer benefits directly into the Aadhaar seeded bank accounts of 
+accurately targeted beneficiaries. 
+The State Government1 accorded (November 2016) in principle sanction to 
+introduce DBT as the disbursal mechanism across departments and to 
+establish a DBT Cell.  It stipulated that Aadhaar card identification would be 
+mandatory for all Central and State Government subsidies and benefits 
+which require funding from the Central/State exchequer.   The transfer of 
+benefits will take place through an Aadhaar linked bank account of the 
+beneficiary.  Subsequently, the State Government prescribed (December 
+2017) the  detailed procedure/protocol to be followed by all the Heads of 
+department concerned and scheme administrators wherever DBT is used for 
+transfer of benefits. 
+1.1.1 Organisation structure for implementation of DBT 
+The Finance Department is the Nodal Department for DBT in the State.  The 
+State DBT Cell established is responsible for implementing and monitoring 
+DBT.  It shall consist of an Advisory Council and a Steering Committee and 
+coordinate all efforts related to DBT for bringing onboard and implementing 
+schemes.   
+The Advisory Council under the Chairmanship of the Chief Secretary would 
+be a high -powered guiding body of DBT Cell to provide intellectual 
+leadership, introducing novel ideas for implementing DBT in a very efficient 
+and effective way and giving strategic inputs.  It consists of Additional Chief 
+Secretary (ACS) and Development Commissioner, ACS (Finance 
+Department (FD)), Principal Secretary (Revenue  Department), Principal 
+Secretary (Planning Department) and Principal Secretary (e-Governance) as 
+its permanent members and ACS/Principal Secretary/Secretary of 
+departments who implement benefit Schemes that fall under the purview of 
+DBT as invitees. 
+ 
+ 
+ 
+1  GoK order No. FD 06 CAM 2013 Dated 23.11.2016 
+Chapter
+ 
+1 
+Introduction 
+
+Chapter 1 Introduction 
+2 
+ 
+The Steering Committee of the DBT Cell headed by the DBT Mission 
+Director consists of three groups as shown below: 
+ 
+ 
+ 
+DBT Mission Director
+ACS (FD)
+Operation Group 
+(under FD)
+ Technical    Group
+ Financial 
+Management Group
+DBT Co-Mission Director
+Principal Secretary 
+(e-Governance)
+Group composition 
+a 
+• Director (AS(FR)) 
+• Joint Director/Joint 
+Controller/Deputy 
+Secretary 
+• Deputy Director/Audit 
+Officer/Under Secretary 
+• Section Officer 
+• Senior/Junior Assistant 
+a 
+• CeG - Karnataka Resident 
+Data Hub (KRDH)) 
+• National Informatics 
+Centre (NIC) 
+•  Unique Identification 
+Authority of India (UIDAI) 
+ 
+a 
+• Treasury and Khajane 2 
+representatives 
+• State Level Bankers 
+Committee (SLBC) 
+• Lead Bank representatives 
+• Reserve Bank of India (RBI) 
+• Telecom Provider 
+Responsibilities of Groups 
+A 
+• Identify departments/ 
+Schemes which fall under 
+purview of DBT.  
+• Collect data from 
+departments. 
+• Set goals and deadlines for 
+onboarding Schemes. 
+• Implement customised ICT 
+applications.  
+• Monitor the progress of 
+each department.  
+• Focus on last mile delivery 
+benefits. 
+• Organise training and 
+capacity building.  
+• Conduct benchmark 
+studies and  
+• Coordinate with technical 
+and financial management 
+group 
+a 
+• Facilitate IT support for 
+implementing DBT. 
+• Develop scheme specific 
+ICT applications. 
+• Interacting and liaisoning 
+with all IT related 
+stakeholders like NIC, 
+telecom service provider 
+etc. 
+• Enable onboarding of all 
+Schemes in the live MIS 
+portal. 
+• Capture mobile numbers in 
+database as a part of JAM 
+initiative. 
+ 
+a 
+• Manage funds flow and 
+transaction flow of DBT 
+transactions across Schemes. 
+• Provide required MIS to all 
+stakeholders. 
+• Provide required NPCI check 
+for routing DBT transactions. 
+
+Introduction  Chapter 1 
+ 
+3 
+ 
+1.1.2  Stakeholders of DBT 
+Implementation of DBT involves the following stakeholders: 
+❑ Native User Departments  - Identify the benefic iaries, prepare the 
+Payment Annexure Files for DBT and push to Core DBT Portal for 
+validations and carry out the rectifications as per the payment response 
+files. 
+❑ Unique Identification Authority of India (UIDAI)  - Core DBT Portal 
+carries out the identity validation of the beneficaries using UIDAI data. 
+❑ National Payments Corporation of India (NPCI) - NPCI mapper is used 
+for Financial Address Validations and making Direct Benefit Transfers 
+to the Aadhaar linked Bank Account of the beneficaries. 
+❑ Khajane 2 (K2) - State DBT has adopted two mode s of payments -K2 
+and Bank Mode.  Under K2 payment, Core DBT Portal pushes the 
+payment files to K2 portal which facilitate the DBT payments and 
+furnish the payment response files to Core DBT Portal. 
+❑ Sponsored banks and Destination banks - Sponsored banks facilitates 
+the payments to the destination banks for credit to beneficiaries’ 
+accounts.   
+❑ National Informatics Centre (NIC)  - the technological partner of Core 
+DBT Portal and the applications of the user departments. 
+ 
+1.1.3 Types of DBT 
+There are three broad types of DBT: 
+a) Cash Transfer to individual beneficiary  - This category includes 
+schemes or components of schemes wherein cash benefits are 
+transferred by the Government to individual beneficiaries.  
+b) In-kind transfer to individual beneficiary  - This category includes 
+schemes or components of schemes where in-kind benefits are given 
+by the Government to individuals through an intermediate agency.  
+c) Other transfers - This category includes transfers made in the f orm 
+of wages, honoraria, incentives, etc., to community workers and 
+non-government organisations, etc., who are the enablers for 
+successful implementation of Government schemes.   
+ 
+1.2 Audit framework 
+1.2.1 Audit objectives 
+The Performance Audit (PA) sought to ascertain whether 
+❑ necessary process re-engineering2 was carried out for implementation of 
+DBT so as to minimise - the intermediary levels, delay in payments to 
+intended beneficiaries, pilferage and duplication; and 
+ 
+2  Bringing IT solutions in DBT processes and connecting DBT platforms with other 
+stakeholders’ platforms to validate the identity and financial address, to de-duplicate the 
+payment files and to make DBT payments in timely manner. 
+
+Chapter 1 Introduction 
+4 
+ 
+❑ the infrastructure, organisation and management of DBT was adequate 
+and effective. 
+1.2.2 Audit criteria 
+The main criteria for the PA were drawn from the following: 
+❑ Standard Operating Procedures, Handbook on DBT and Guidelines for 
+State DBT Cell issued by DBT Mission; 
+❑ Scheme guidelines on process of identification and authentication of 
+beneficiaries and payments; 
+❑ Instructions regarding maintenance of database, generation of various 
+reports and IT controls; and 
+❑ Documents, circulars, orders, instructions and noti fication issued by 
+DBT Mission, Central Ministry and State Government. 
+1.2.3 Audit scope and methodology 
+The PA covering the period 2018-19 and 2019-20 initially involved analysis 
+of data (as on 20 October 2020) of Core DBT Portal 3 and Milk Incentive 
+scheme of the Department of Animal Husbandry and Veterinary Sciences  
+(AH&VS) which was selected based on the highest benefit transfer through 
+State DBT.  An entry conference was held on 14 September 2020 with the 
+ACS to Government, e-Governance to discuss the audit objectives, scope and 
+criteria.  Based on the request of the ACS, the scope of the PA was widened 
+to cover the data analysis of National Food Security Mission (NFSM), 
+Raithasiri and Pradhan Mantri Kisan Sam man Nidhi (PMKSN) schemes  of 
+the Agriculture Department.  The data analysis of PMKSN was restricted to 
+disbursement of benefits by the State Government.  The audit scope also 
+involved conducting IT Audit of Core DBT and Ksheerasiri (native portal for 
+milk incentive scheme) applications. 
+The findings of the PA were discussed with the ACS in the exit conference 
+held on 28 December 2021.  This report takes into consideration the replies 
+furnished (13 December 2021 and 3 January 2022) by the State Government. 
+1.2.4 Acknowledgement 
+Audit acknowledges the cooperation extended by the different departments 
+of the State Government, DBT Cell and K2 in conducting the Performance 
+Audit. 
+ 
+ 
+3  Core CBT Portal is the centralised portal which carries out the validations and de -
+duplication for all transactions.  All the user departments are to process the transactions 
+through it. 
+
+Chapter II
+Implementation & Management 
+of DBT
+
+ 
+5 
+ 
+ 
+ 
+ 
+ 
+2.1 Status of onboarding of identified schemes 
+The State Government ordered (August 2018) the establishment of 
+Integrated DBT platform (Core DBT portal) for all departments to transfer 
+the benefits to the citizens.  The department s were required  to use the 
+centralised Core DBT Portal compulsorily for all fund transfers by the end 
+of 2018 -19.  Further, the treasury shall not accept any other bills of any 
+Drawing and Disbursing Officers (DDOs) of such departments for concerned 
+Schemes/programmes other than  those generated through the centralised 
+Integrated Core DBT portal. 
+The user departments were still in the process of identifying the schemes to 
+be onboarded onto the Core DBT Portal. As of April 2021 , 83 out of 239 
+schemes (35 per cent) implemented by 15 departments were onboarded onto 
+the Core DBT Portal.  The year-wise progress of onboarding of schemes is 
+detailed in Table 2.1.  
+Table 2.1: Status of onboarding of the schemes on to Core DBT Portal 
+Sl. No. Year Number of schemes implemented 
+1. 2018-19 15 
+2. 2019-20 39 
+3. 2020-21 83 
+Source: DBT data furnished by DBT Cell 
+The poor progress resulted in disbursements of benefits outside the DBT 
+portal during the period 2018 -20.  Audit called for information from 42 
+departments to assess the quantum of the benefits outside Core DBT Portal.  
+Information furnished by 22 departments showed that total benefits of 
+₹2,829.02 crore was paid outside Core DBT Portal under 168 schemes. 
+Audit observed that the slow progress in onboarding the schemes by the user 
+departments was due to lack of ICT applications and digitisation of the  
+beneficiaries’ data. Though the Operations Group was responsible for 
+identifying departments/schemes that come under the purview of DBT and 
+ensuring timely onboarding of schemes and Technical Group for developing 
+scheme specific ICT applications where such applications were not 
+available, it was not done.  Consequently, the DBT Cell did not have the 
+information on  
+❑ the number  of schemes which were required to be identified for 
+onboarding;  
+❑ availability of the ICT infrastructure in the departments for the identified 
+schemes; and 
+Chapter
+ 
+2 
+Implementation and 
+Management of DBT 
+
+Chapter 2 Implementation and Management of DBT 
+6 
+ 
+❑ the status of beneficiary database digitisation, seeding of beneficiary 
+database with validated Aadhaar number etc., that are necessary for 
+onboarding. 
+The State Government stated (December 2021) that the delay in onboarding 
+of the schemes was due to the non-availability of IT systems in many of the 
+departments.  It further stated that the user departments could not develop 
+their own IT systems due to lack of  IT skills .  Therefore, the centre for             
+e-Governance has developed a configurable IT system called ‘Suvidha 4’ 
+using which multiple departmental schemes can be onboarded.  The fact 
+remains that the Operations and Technical Groups of the DBT Cell failed to 
+handhold the departments for timely onboarding of the schemes onto the 
+DBT Portal. 
+2.2 Efficiency of implementation of DBT 
+The efficiency of DBT is measured with reference to the extent of successful 
+transactions and timely delivery of services. 
+2.2.1 Successful transactions 
+Analysis of the transactions of Core DBT data (as of 20 October 2020) for 
+the period 2018 -205 showed that the overall success rate was 83 per cent 
+(detailed in Appendix 2.1) and it ranged between 57 to 97 per cent under the 
+test-checked schemes as detailed in Table 2.2. 
+Table 2.2.: Status of transactions for the period 2018-20 
+Sl. 
+No. Scheme Core DBT 
+Portal 
+Milk 
+incentives 
+Raithasiri 
+(State) 
+Raithasiri 
+(Central) NFSM PMKSN 
+1 Total 
+Transactions  
+2,90,49,520 1,01,33,244 52,054 62,037 1,78,535 78,85,464 
+2 Amount 5,883.57 1,198.97 16.08 27.8 60.13 1,577.09 
+3 Successful 
+Transactions 
+2,40,51,851 
+ (83) 
+97,88,078 
+ (97) 
+35,862 
+ (69) 
+45,309 
+  (73) 
+1,46,455 
+ (82) 
+45,28,808 
+ (57) 
+4 Amount 4,679.78 1,164.44 10.99 20.47 51.88 905.76 
+5 Failed 
+Transactions 
+1,28,705 
+(<1) 
+49,419 
+    (<1) 
+235 
+       (<1) 
+107 
+       (<1) 
+410 
+     (<1) 
+10,083 
+   (<1) 
+6 Amount 235.94 6.33 0.05 0.048 0.13 2.01 
+7 Pending 
+Transactions 
+6,66,949 
+  (2) 
+1,21,452 
+    (1) 
+406 
+       (<1) 
+109 
+       (<1) 
+389 
+     (<1) 
+39,491 
+   (<1) 
+8 Amount 153.30 10.92 0.12 0.05 0.13 7.89 
+9 Rejected 
+Transactions 
+42,02,015 
+ (14) 
+1,74,295 
+    (2) 
+15,551 
+   (30) 
+16,512 
+  (27) 
+31,281 
+  (18) 
+33,07,082 
+ (42) 
+10 Amount 814.55 17.26 4.9 7.23 7.98 661.41 
+Transactions are in numbers, Amount in crore and figures in parentheses indicate 
+percentage. 
+Source: Data dump provided by DBT Cell.        
+ 
+4  Suvidha was implemented from 25 November 2021. 
+5  Analysis in respect of selected schemes- Milk incentive, Raithasiri (State & Central) and 
+PMKSN conducted for the year 2019 -20 and NFSM for the period 2018 -20 depending 
+upon the implementation of the selected schemes through DBT during the audit period 
+of 2018-20 
+
+Implementation and Management of DBT Chapter 2 
+  
+7 
+ 
+While the extent of failed transactions was less than one per cent in all the 
+schemes, the rejected transactions ranged between two to 42 per cent in the 
+test-checked schemes.   
+The State Government replied (December 2021) that large number of 
+PMKSN transactions were rejected due to technical issues in the department 
+application.  However, the action taken to set right these issues were not 
+furnished.  Therefore, Audit is unable to comment on the remedial action 
+taken to resolve such issues. 
+2.2.1.1  Timely delivery of services 
+Timely delivery of services is paramount for the success of the DBT scheme. 
+Delivery of services involve different stages for processing the transactions 
+within the overall timeframe as prescribed from time to time.  To ensure that 
+the services are delivered on time, best practices require that timelines be 
+prescribed and adhered to at each stage.  The various transaction points 
+involved in DBT process is shown below.  The detailed DBT process flow is 
+given in Appendix 2.2. 
+ 
+The Department generates the payment annexure files (transaction date) 
+which is submitted to the Core DBT portal for de-duplication, ID validation 
+and passed on to NPCI for checking the status of Aadhaar  seeding.  The 
+transaction is then appr oved by DDO and sub mitted to K2 or Bank for 
+payment processing depending on the mode6 of the payment for the scheme. 
+Audit observed that the State Government had not prescribed any time frame 
+within which a particular transaction was required to be completed.  Hence, 
+Audit analysed the time taken at different stages for seeking assurance on the 
+timely delivery of services, which is the benchmark for the success of DBT 
+payments as per the Government orders and instructions.  Audit adopted the 
+Government of India  benchmark of T+4 days set for PFMS payments to 
+analyse the time taken from the date of scroll /final approval till the date of 
+receipt of response in K2 /DBT.  Accordingly, the transaction points were 
+classified into two stages-Transaction date to Scroll/final approval (Stage 1) 
+and Scroll/final approval to Receipt of bank payment response (Stage 2). 
+ 
+6  There are two payment modes in DBT – K2 mode and Sponsoring Bank mode (SBI). 
+Both K2 and Bank Payment mode is for Aadhaar seeded bank account of the 
+beneficiaries.  
+Receipt 
+of Bank 
+payment 
+response 
+(7)
+K2 / 
+Bank 
+payment
+(6)
+Scroll 
+approval/
+final 
+approval 
+(5)
+DDO 
+approval 
+in DBT
+(4)
+NPCI 
+check (3)
+DBT 
+portal 
+check
+(2)
+Trans-
+action  
+date
+(1)
+
+Chapter 2 Implementation and Management of DBT 
+8 
+ 
+Audit analysis of the successful transactions showed that while the average 
+time taken for the entire process was 45 days, it was 41 days and four days 
+under Stage 1 and Stage 2 respectively .  The extent of time taken at each 
+transaction point is given in Table 2.3. The details of actual time taken is 
+given in Appendix 2.3. 
+Table 2.3:  Statement showing the extent of time taken at each 
+transaction point 
+Sl.
+No. Stage Transaction 
+point 
+Average 
+Time taken 
+(days) 
+Actual time 
+taken range in 
+days 
+Audit Remarks 
+1 Stage 1 NPCI check 1 0-61 60 per cent transactions were 
+processed on the same day. 
+2 DDO 
+approval 
+25 0-274 17 per cent  transactions 
+could be processed on the 
+same day. 
+3 Scroll/Final 
+Approval7 
+- K2 mode 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+- Bank mode 
+ 
+ 
+23 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12 
+ 
+ 
+1-187 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0-268 
+ 
+ 
+Only 0.01 per cent  of the 
+transactions could be 
+processed on the same day 
+and 18 per cent  of the 
+transactions within seven 
+days. 
+28 per cent transactions were 
+processed on the same day 
+4 Stage 2 
+ 
+T+4 days 
+Of PFMS 
+K2/Bank 
+payment 
+3 0-248 As per PFMS-(T+3) 
+83 per cent  transactions 
+could be processed within 3 
+days. 
+5 Movement 
+of response 
+from SBI to 
+K2 
+1 0-361 As per PFMS 1 day. 
+61 per cent  transactions 
+could be processed on the 
+same day. 
+Source: Data dump provided by DBT Cell 
+Detailed analysis showed that delays were more at the stage of Scroll /final 
+approval in K2 (75 per cent) followed by DDO approval stage (13 per cent).  
+In both cases the responsibility lies with the departments for giving approval 
+to the processed payment files.  Failure of the State Government to prescribe 
+specific timelines and not initiating timely action by the user departments 
+resulted in delayed delivery of services and defeated the very purpose of 
+implementation of DBT. 
+The State Government stated (December 2021) that there were issues with 
+NPCI checks initially which were subsequently resolved. The reasons for the 
+delay at other transaction points were not furnished. 
+2.2.1.2   Credit to incorrect accounts 
+The beneficiaries are entitled to receive benefits through DBT only when 
+their bank accounts are linked/seeded with Aadhaar.  Credits to incorrect 
+ 
+7  Scroll approval in respect of K2 payment mode and Final approval for Bank Mode of 
+Payment 
+
+Implementation and Management of DBT Chapter 2 
+  
+9 
+ 
+accounts can occur when the Aadhaar number is mapped to a wrong account.  
+The incorrect mapping occurs at the bank level and hence, banks need to take 
+utmost care while linking/seeding the Aadhaar with the bank accounts of the 
+beneficiaries.   Further the banks are liable to make good such wrong credits 
+to the originatin g departments . NPCI provide s a web service which  just 
+discloses whether a particular Aadhaar is seeded to a bank account or not.  
+However, the bank name is masked in this output.  As a result , the DBT 
+system cannot ascertain whether Aadhaar was seeded to the bank account as 
+indicated by the Department.  The seeding error would be known only when 
+beneficiaries complain of not having received the benefits.   
+Audit noticed that 21 complaints were received (February to October 2020) 
+by DBT Cell from beneficiaries through the departments wherein a total of 
+₹12.95 lakh was not credited to them.  These were credited to incorrect 
+accounts. Action taken in these cases  were not forthcoming. There was no 
+validation check both at the DBT portal and bank level to highlight such 
+errors and this resulted in failed payments. There however, exists a system 
+wherein DBT undertakes a check known as ‘name match score’ after receipt 
+of payment file from K2/Bank.  Name match score is the score assigned to a 
+transaction (ranges from 0 to 100) on comparing the name of the beneficiary 
+as per Aadhaar with the name of the person whose account is actually 
+credited. This score is based on the algorithm formulated by C -DAC, 
+Bengaluru. The deficiencies in this scoring process are detailed in paragraph 
+2.3.4.  
+Audit analysed transactions where the score was between 0 to 20, as  the 
+chance of the benefit accruing to a wrong beneficiary was higher in such 
+cases.  Details are as below: 
+❑ Forty-five per cent of the total 1,22,653 transactions (valuing ₹14.52 
+crore) under Milk incentive scheme  were analysed as the matching 
+was to be performed manually.  It was observed that in 2,499 cases a 
+total amount of ₹30.59 lakh was credited to persons other than the 
+actual beneficiary. 
+❑ Out of 50,000 random cases analysed under Core DBT Portal, 
+incorrect credits were observed in 523 cases amounting to ₹97.14 
+lakh.  
+It is pertinent to state that these incorrect credits are reflected in DBT Portal 
+as successful transactions  which complicates their rectification and 
+grievance redressal. The possibility of withdrawing the money by the 
+incorrect beneficiaries before the rectification of the transactions also cannot 
+be ruled out. 
+The State Government stated (December 2021) that consequent to repeated 
+efforts, NPCI has now provided a web-service where the bank name is shared 
+and the same is being sent to the departmental application as response .  It 
+further stated that DBT Cell as part of the payment file response  shares the 
+name match score with the department which is to be used by the department 
+to verify whether payments were made to the correct beneficiary account.  
+As the departmental applications were not using this informatio n, DBT is 
+
+Chapter 2 Implementation and Management of DBT 
+10 
+ 
+now publishing a report called ‘After Payment Name Match Score Report’ 
+which is available to the department officer in DBT login.  The user 
+department should view the report and take corrective action.   
+The reply highlights the lapse of the Department in taking corrective action.  
+Further the reply does not indicate the action taken to rectify the wrong 
+credits and ensure that the benefits are given to the correct beneficiaries.  
+2.2.2 Failed transactions 
+As could be seen from Table 2. 2, payments  could not be made to 
+beneficiaries in respect of 1,28,705 transactions valuing ₹235.94 crore.  The 
+recorded reasons for failure is shown in Appendix 2.4. 
+Invalid bank identifier, Inactive Aadhaar seeding, Account blocked or frozen 
+and Aadhaar number not mapped to account number were the major reasons 
+for failed transactions under the test -checked schemes. Though the 
+departments were responsible to ensure and facilitate seeding of Aadhaar 
+with bank accounts, failure to ensure necessary seeding by them resulted in 
+non-delivery of the benefits and consequent loss to the eligible beneficiaries.  
+Audit observed  that the failed transactions for the period 2018 -19 and  
+2019-20 could not be re-initiated.  However, the reasons for not re-initiating 
+the transactions were not furnished.   
+Age-wise analysis showed that as many as 91,283 transactions were awaiting 
+re-initiation despite a lapse of 30 days from the date of failure and in respect 
+of 36,824 transactions (29 per cent) amounting to ₹211.30 crore, the date of 
+transaction was not captured in the Core DBT portal as indicated in          
+Chart 2.1. 
+Chart 2.1: Age-wise analysis of failed transactions awaiting re-initiation 
+ 
+Audit further noticed that in 66,494 transactions (52 per cent ), the bank 
+particulars were not captured. Of the balance 48 per cent, 32 per cent of the 
+failed transactions related to Cooperative Banks .  This highlights the need 
+for putting in place a well-defined mechanism to capture all necessary details 
+and ensure proper seeding of Aadhaar. 
+0
+10000
+20000
+30000
+40000
+50000
+60000
+Number of Transaction
+No. of days from date of failure of transaction
+
+Implementation and Management of DBT Chapter 2 
+  
+11 
+ 
+The State Government stated (December 2021) that DBT platform had 
+provided the facility to re -push the failed payments and the departmental 
+applications were to send the data to DBT  for payment after rectifying the 
+issue due to which the payment had failed.   The reply, however, does not 
+indicate the corrective action taken to reinitiate the failed transactions and 
+the present status of these transactions. 
+2.2.3 Pending transactions 
+As per Table 2. 2, two per cent  of the total transactions were shown as 
+pending transactions.  Analysis showed that many of the transactions were 
+pending at DDO level and K2 level transaction points in the selected schemes 
+as shown in Appendix 2.5.  The pendency ranged from three days to 673 
+days as detailed in Table 2.4. 
+Table 2.4: Statement showing pendency of transactions 
+Number of days Number of 
+Transactions Amount ( ₹ in crore) 
+0-4 days 4,436 5.14 
+5-7 days 5,071  4.24 
+8-15 days 13,515 11.86 
+16-90 days 1,78,118 74.29 
+91-180 days 64,364 12.10 
+181-365 days 2,33,553 27.73 
+>365 days (max. 673) 1,67,892 17.94 
+Total 6,66,949 153.30 
+Source: DBT data furnished by DBT Cell 
+The DBT Cell which is responsible to monitor the progress of each 
+department and focus on last mile delivery benefits, failed to monitor the 
+transactions pending at various levels and initiate necessary action to address 
+the reasons for pendency.  As a result, 6.67 lakh beneficiaries were deprived 
+of the financial benefit of ₹153.30 crore during the period 2018-19 and 2019-
+20. 
+The State Government stated (December 2021) that it is the responsibility of 
+the user department to monitor this activity for which the required MIS has 
+already been published in the DBT portal.   It further stated that DBT Cell 
+role is to maintain the DBT portal and provide technical help to the 
+department in using the portal.  The reply cannot be accepted as the 
+Operations Group of th e DBT Cell was entrusted with the responsibility of 
+monitoring the progress of each department and ensuring last mile delivery 
+benefits. 
+2.2.4 Rejected transactions 
+Fourteen per cent of the total transactions under Core DBT were rejected at 
+various transaction levels. Analysis showed that the rejections inter se were 
+more at DDO level (60 per cent) and K2 level (38 per cent).  It was observed 
+that “Files pushed back to department” as per their request (57 per cent) was 
+the major reason for the rejected transactions followed by “K2_BMSER-01: 
+
+Chapter 2 Implementation and Management of DBT 
+12 
+ 
+Mapping of given budget line and DDO not available” ( 20 per cent) and 
+“Sanction Order has already been generated for some beneficiaries” ( eight 
+per cent) as indicated in Appendix 2.6. 
+This indicates that the departments concern ed were not ascertaining the 
+availability of the budget provision and the correctness of the payment files 
+before sending for payment.  Further, there exists no mechanism to monitor 
+these rejected transacti ons for further processing of those transactions as a 
+result of which Audit could not ensure whether corrective action was 
+initiated to deliver ₹814.55 crore in respect of 42.02 lakh transactions.  
+The State Government stated (January 2022) that the transa ctions were 
+rejected due to various reasons like validation failures at DBT and K2 level, 
+failure at NPCI level and that DDOs can also reject the records in DBT and 
+K2.  Further it stated that some cases might have been rejected due to non-
+availability of funds and such cases might not be reinitiated.  However, it 
+agreed to create a mechanism to monitor the rejected transactions and stated 
+that it would issue directives to the concerned departments to take corrective 
+measure for reinitiating the rejected transactions.   
+Audit does not accept the reply that the rejected transactions due to non -
+availability of funds might not be reinitiated. While the reply highlights the 
+absence of necessary budget v alidation checks before processing the 
+transactions for payments, not initiating the rejected transactions indicate the 
+failure of the existing mechanism to track and process such transactions for 
+timely delivery of services to the eligible beneficiaries.   
+2.2.5 Timely movement of response files 
+On receipt of the response file from the bank in K2, it is then pushed to Core 
+DBT and further to the native applications.  Audit observed that the average 
+time taken for movement of response files from K2 to Core DBT portal was 
+38 days (ranged between 0 -270 days) and from Core DBT to native 
+application was 21 days (ranged between 0 -367 days).  Only 29 and 18 per 
+cent of the responses could be shared on the same day respectively.  The 
+belated receipt of response fil e by the departments hampers timely 
+rectification and reinitiation of the failed/pending/rejected transactions.  
+The State Government stated (December 2021) that initially DBT platform 
+was sharing file-wise response to the department and due to any delay of one  
+record at any stage the entire file’s response could not be sent.  Therefore, it 
+has now started sharing the record wise response i.e., as and when a payment 
+is done to a beneficiary, the details are sent to the department.  
+The reply does not address the delay in movement of response files from K2 
+to Core DBT Portal and the fact remains that there was delay in movement 
+of files across various stages during the audit period. 
+ 
+ 
+
+Implementation and Management of DBT Chapter 2 
+  
+13 
+ 
+2.2.6 Processing efficiency of Core DBT portal 
+The Core DBT Portal pushes the payment files to K2 after identity and 
+financial address validations.  Audit analysis of 43,3408 payment files 
+pushed by Core DBT Portal to K2 showed that 30,315 files were cleared in 
+initial  file level verification in K2, the processing efficiency being 70 per 
+cent.  Of the 30,315 files, 28,164 files were in active state, 405 files (310 of 
+2019-20, 7 of 2020 -21 and 88 of 2021 -22) were under process and the 
+balance 1,746 files were inactive (this includes files relating to 2018-19 also). 
+Effectively, the processing efficiency was 65 per cent.  Thus, the Core DBT 
+portal was deficient to that extent. 
+2.2.7 Absence of validation checks in native applications 
+The native applications prepare the payment a nnexure files and send it to 
+DBT for further processing.  Analysis of the related data showed that 17 per 
+cent of the files failed the preliminary check at DBT portal during 2019 -20.  
+This increased to 29 per cent during 2021-22.  The major reasons for failure 
+were ‘Input XML file already processed’, ‘Input XML file failed XSD 
+validation’ and ‘duplicate payment record found’.  The increase in failure 
+occurred with the increase in onboarding of the schemes to Core DBT portal.  
+Evidently, there was inadequate check and valiations on the part of the users 
+of the native applications.   
+2.3 Management of Core DBT portal 
+The Core DBT portal integrates various layers of financial transactions of 
+the benefits to streamline workflow, effective fund management, monitoring 
+tools and seamless intake from multiple channels. It enhances the 
+collaboration and integrations by empowering officials and departments, 
+allowing transparent collaboration, better monitoring and fast track of fund 
+flows.  This requires eff icient management of the portal and its seamless 
+integration with the various stake holders applications.  The detailed 
+workflow is shown in Appendix 2.7. 
+2.3.1 Status of implementation of modules of Core DBT Portal 
+The portal has nine modules.  The status of implementation of the modules 
+is given below: 
+Implemented Under pilot 
+implementation Under testing 
+Identity validation   Simple 
+Beneficiary 
+Management 
+system 
+Financial Address 
+Verification 
+(Bank Account 
+Verification) 
+Payment module - 
+• K2 mode 
+• K2 failed payment 
+Payment to 
+institution on 
+behalf of the 
+beneficiary 
+Aadhaar as 
+Service 
+ 
+8  Data as of 22 October 2021. 
+
+Chapter 2 Implementation and Management of DBT 
+14 
+ 
+Implemented Under pilot 
+implementation Under testing 
+• Bank mode 
+Integration Module – 
+• Integration with Native 
+Application 
+• Integration with K2 
+• Integration with SBI (Bank mode 
+payment) 
+ Handling of 
+wrong credits 
+Mobile App for beneficiaries to know 
+their payment, seeding status 
+  
+The State Government stated (December 2021) that all the modules are now 
+live but did not furnish the evidence in this regard. 
+2.3.2 Status of integration 
+The integration module of Core DBT Portal envisaged integrating the DBT 
+platform with native applications on one side and K2 systems/banks for 
+payment on the other side. This facilitates DBT file movement using XML 9 
+from Native application to DBT platform (ID Validation file/FAV File, 
+Payment file) and pushing of XML from DBT platform to K2/Bank.  Once 
+the files are successfully processed in K2/bank, the response is shared back 
+to the native application. The Core DBT Portal  is also integrated to UIDAI 
+and NPCI for the purpose of Identity and Finan cial Address validations 
+respectively.  
+Audit observed that though integration with native applications in respect of 
+XML file movement and sharing of response exists, integration for 
+reconciliation between the two applications was inconsistent as there was no 
+automated process for the consumption of the response files by the native 
+applications which resulted in a mismatch between the transactional data of 
+native application and DBT application as observed in the case of Ksheerasiri 
+as detailed in Table 3.2. 
+Similarly, integration for reconciliation with K2 was also absent. The 
+successful transactions as per K2 was 1,97,44 ,251 whereas it was 
+2,40,51,851 as per Core DBT portal.   As per the information furnished by 
+K2, Core DBT Portal had pushed 35,518 payment files to K2 during the 
+period January 2018 to December 2020.  However, only 31,113 files could 
+be traced in Core DBT Portal and 4,405 files remained untraced.  This could 
+result in issues relating to reconciliation,  de-duplication and matching and 
+rectification of response files. This apart, there were inconsistences  in K2 
+response data as the integration got disrupted during the year 2019-20 due to 
+which the full responses could not be captured. 
+ 
+9  Extensible Markup Language which is a markup language that defines a set of rules for 
+encoding documents in a format that is both human-readable and machine-readable. 
+
+Implementation and Management of DBT Chapter 2 
+  
+15 
+ 
+Further, t he guidelines issued by Government of India required the 
+integration of State DBT Portal with DBT Bharat Portal for seamless 
+exchange of data.  Based on the integration and data exchange, the States are 
+awarded DBT performance ranki ng. Karnataka was ranked 25 out of 28 
+States since inception. This was due to non -integration and absence of data 
+exchange framework from State portal to Bharat portal.  The State DBT had 
+obtained zero score for data reporting and saving reporting complian ce 
+parameters and 50 for portal compliance.  The non -availability of 
+information impacted decision making process and limited the scope of 
+larger publicity of data.  A screen shot indicating that “Integration with State 
+DBT portal is in progress” is shown in Appendix 2.8.   
+The State Government agreed with the audit observation and stated (January 
+2022) that it w ould put in place a mechanism  in DBT Cell to reconcile 
+periodically with user departments and K2.  It further stated that integration 
+with DBT Bharat portal has been initiated and completed (December 2021) 
+and working on the updating the status of the ranking.  It is evident from the 
+reply that integration was still in progress.  
+2.3.3 State DBT portal not accessible to citizens 
+The State DBT por tal contains the features of providing anonymous and 
+privilege access to data. As per the guidelines for State DBT portal, it was to 
+have certain functionalities such as overview of DBT in the State , list of 
+schemes onboarded and to be onboarded, the details of State DBT Cell and 
+persons managing and monitoring the portal along with Standard Operating 
+Procedure for various departments, the details of Right to Information for 
+citizens/beneficiaries, details of Frequently Asked Questions and feedback 
+mechanism. These functionalities were required to enable citizens/public to 
+access the portal without using login. 
+Audit observed that the above functionalities were absent in the State Portal 
+which deprived the citizens/beneficiaries of the required information. Access 
+to information was possible only through login. 
+The State Government stated (January 2022) that the Core DBT portal is 
+primarily for the departmental officers for the purpose of payment.  
+However, it agreed to provide the facility in the DBT portal also for the 
+public. Audit appreciates that the Government has agreed to provide facility 
+for the public. However, the reply that the DBT portal is only for payment 
+purpose is not tenable as State DBT portal was to provide the citizens the 
+umbrella of various schemes and benefits which are available across various 
+departments in the State. 
+2.3.4 Deficiencies in post payment name match scoring process 
+As discussed in paragraph 2.2.1.2, the post payment name match scoring 
+process involves comparison of the name of the beneficiary as per Aadhaar 
+with the name of t he person whose account is actually credited for which a 
+score is assigned. This process is carried out for each and every transaction. 
+Scrutiny of post payment name match scoring process showed that different 
+
+Chapter 2 Implementation and Management of DBT 
+16 
+ 
+scores were awarded  for the same comparison results  for different 
+transactions indicating the inconsistency in the process. A few samples cases 
+are detailed in Appendix 2.9.   
+Further, Audit analysed 22,91,829 transactions having score between 0 -20 
+and noticed significant ga ps in the post payment name matching data as 
+detailed below: 
+✓ 77,148 records did not have beneficiary name;  
+✓ 3,210 records did not have Account Holder Name; 
+✓ 6,567 records did not have bank name; 
+✓ 3,211 records did not have bank account number; and 
+✓ 5,610 records did not have masked Aadhaar number 
+The above gaps indicate the lack of validation input controls and impacts the 
+reliability and integrity of the name matching exercise. 
+The State Government stated (December 2021) that the mismatch could be 
+due to soft ware updates and issues. It further stated that DBT Cell is 
+constantly reviewing the name match score and accordingly suggesting the 
+required changes to C-DAC.   
+Software updates affecting a process indicates the lacunae in the application.  
+Further, the reply does not address the reasons for gaps pointed out by audit 
+and the corrective action taken thereon to avoid such omissions in future. 
+2.4 Security and Privacy 
+2.4.1 Server certificate/digital signature  
+Server Certificate/digital signature ensures the  authenticity of the source of 
+file and provides assurance that the files are not tampered with.  The payment 
+annexure files and the files sent for data validation from the native 
+applications contain sensitive information like payment details, beneficiary  
+details and Aadhaar details etc.  Audit observed that these files did not 
+contain Server Certificate/digital signature of the authorised personnel of the 
+department responsible for uploading them onto the DBT portal.  
+The State Government stated (December 2021) that the DBT Cell was in the 
+process of implementing server based digital signature. 
+2.4.2 Storing of Aadhaar numbers in departmental databases 
+The Aadhaar Act, 2016 and subsequent circulars and guidelines issued by 
+the UIDAI from time to time stipulate that the details of Aadhaar number 
+collected from the beneficiaries have to be stored in a secured environment 
+called “Aadhaar Data Vault”.  The UIDAI further outlined (July 2017) that 
+Aadhaar numbers either in encrypted form or masked form should not be 
+stored in any other storage except Aadhaar Data vault. T he Aadhaar Data 
+Vault should ideally maintain the mapping of the Aadhaar Numbers and 
+
+Implementation and Management of DBT Chapter 2 
+  
+17 
+ 
+corresponding Reference Numbers.  Hence, any access to data vault should 
+only be to refer this mapping. 
+Audit noticed that the departments were storing the Aadhaar details in their 
+databases and interact with the DBT Portal for validation and authentication 
+of t he beneficiaries and payment details by providing the beneficiary 
+Aadhaar details. 
+The State Government stated (December 2021) that Aadhaar as Service was 
+implemented from June 2021 and the beneficiary Aadhaar details are stored 
+in the Aadhaar vault using Hardware Security Module. It further  stated 
+(January 2022)  that after implementation of Unique Vault Reference 
+number, the departments were supposed to delete the Aadhaar in their local 
+database   and DBT Cell would take undertaking from the respective 
+departments for deletion of Aadhaar from their local database.  
+2.4.3 Security audit 
+Section 43 A of  Information Technology Act, 2000 and Rules thereunder 
+require the conduct of security  audit by an independent auditor duly 
+approved by the Central Government at least once a year or as and when 
+significant up -gradation of the infrastructure happens .  Similarly, GoI 
+guidelines stipulate that each website/application must undergo security 
+audit.  
+Audit observed that third party security audit of DBT web application was 
+done on 9 June 2019.  However, it did not include vulnerability assessment 
+and penetration testing, check of integration with other applications and 
+detection of all weakness in controls under its scope. Since the periodicity 
+and coverage of the security audit was insufficient, Audit was not in a 
+position to derive assurance on the robustness of the secu rity controls over 
+the DBT application/portal which is on the public domain. 
+The State Government agreed (January 2022) to take up the penetration 
+testing of the Core DBT Portal. 
+2.4.4 Risk Management 
+Information systems should be categorised based on the potential impact that 
+loss of confidentiality, integrity or availability would have on the operations, 
+assets, or individuals.  Risks should be reassessed on a periodic basis or 
+whenever systems, applications, facilities or other conditions change.  Risk 
+management documentation should include security plans, risk assessments, 
+security test and evaluation results and appropriate management approvals.  
+Changes to systems, facilities or other conditions and identified security 
+vulnerabilities should be analy sed to determine their impact on risk and the 
+risk assessment should be performed or revised as necessary. 
+As per the State Government instructions (August 2018), all DBT schemes 
+were required to be onboarded to Core  DBT Portal.  This required that the 
+Core DBT portal undergo a risk analysis to ensure that its operating efficiency 
+
+Chapter 2 Implementation and Management of DBT 
+18 
+ 
+is maintained in view of future demand of the application. In this connection, 
+Audit noticed that: 
+❑ policies and procedures were yet to be defined and put in place for 
+conducting periodic risk analysis for Core DBT portal. 
+❑ a formal risk assessment was not performed to identify and document 
+information technology systems and resources, vulnerabilities and 
+exposures, policies and c ontrol measures, and management's signed 
+acceptance of unmitigated risks. 
+❑ the DBT Portal did not have a policy for the classification of data of 
+the beneficiaries according to risk and importance to support decisions 
+regarding the appropriate level of data  protection to be employed 
+during systems development and change activities. 
+The State Government agreed (January 2022) to take up a risk assessment of 
+the Core DBT Portal.  
+2.4.5 Action taken on audit findings relating to DBT Portal 
+Audit observed certain issues that were communicated to DBT Cell for 
+response.  The State Government stated (December 2021) that corrective 
+action has been taken.  However, these need to be verified during subsequent 
+audits.  The issues noticed and corrective measures stated to have been taken 
+are detailed below: 
+❑ The Unique Vault reference number for each beneficiary across the 
+schemes was not implemented to enable the departments and the 
+Government to collate the information o f the total bene fits reaching 
+the individual across the scheme.  The Government in its reply 
+(December 2021) stated that  the Unique Vault reference number for 
+each beneficiary across the schemes was i mplemented during 
+November 2021. 
+❑ Biometric authentication module not mapped in Core DB T Portal 
+though stated in the Functional Requirement Specifications .  The 
+Government in its reply (January 2022) stated that Aadhaar as Service 
+has been developed which contains one component Biometric eKYC.  
+When any department seeks this information, the  same would be 
+enabled in Aadhaar as Service.  
+ 
+  
+
+Chapter III
+Implementation of DBT 
+in selected schemes
+
+ 
+19 
+ 
+ 
+ 
+ 
+ 
+The PA focussed on implementation of DBT under the Milk Incentive, 
+Raithasiri, National Food Security Mission  (NFSM) and PMKSN (State 
+component) schemes. This chapter deals with the audit findings observed in 
+these test-checked schemes. 
+3.1 Milk Incentive Scheme 
+The State Government accorded  (September 2008) approval for 
+implementation of the Milk incentive scheme 10, to  be implemented by 
+Department of AH&VS, which aimed to provide incentives to milk pourers 
+for the milk poured to the Milk Cooperative Societies under the Milk Unions.  
+Milk societies used to pay cash to beneficiaries till 31 December 2014.  From 
+1 Jan uary 2015, incentives w ere transferred from Union s to beneficiary 
+accounts through NEFT/RTGS . From 1 Aug ust 2016, incentive was 
+transferred by Unions to Aadhaar based bank accounts of the beneficiaries 
+and from 1 April 2019 onwards the incentive is being paid t hrough 
+“Ksheerasiri Application” (a native portal) and Core DBT Application (State 
+DBT dedicated Portal)” to the Aadhaar seeded bank account of the milk 
+pourers.  
+The data for DBT payments is generated, processed and validated by the 
+Karnataka Milk Federat ion (KMF) through its societies, camp offices and 
+Unions and then submitted to Ksheerasiri application for further processing. 
+The application was operationalized as pilot project for Bengaluru and 
+Mysuru Unions during the year 2017-18. 
+At present, the State Government pays an incentive amount of ₹5 per litre of 
+milk poured by milk pourers provided the quality of milk poured meets the 
+prescribed standards of 3.5 FAT and 8.5 SNF 11.  This incentive amount is 
+over and above the prescribed milk rate paid to the milk pourers per litre of 
+milk which varies across the Unions ( milk dairies) as per the rates notified 
+by each Union to the Milk Societies under their purview. 
+3.1.1 Release and utilisation of funds 
+The status of release and utilisation of funds under the scheme during the 
+period 2018-19 and 2019-20 is given in Table 3.1. 
+ 
+ 
+ 
+ 
+10  GoK: order AHF 53 – 2008 KMF Bangalore dated 08.09.2008 
+11  Solid Not Fat 
+Chapter
+ 
+3 
+Implementation of DBT in 
+selected schemes 
+
+Chapter 3 Implementation of DBT in selected schemes 
+20 
+ 
+Table 3.1: Status of release and utilisation of funds 
+(` in crore) 
+Year Amount released Expenditure incurred Balance 
+2018-19 1,486.22 1,460.19 26.03 
+2019-20 1,336.77 1,260.82 75.94 
+Source: Information furnished by AH&VS department. 
+The non-utilisation of funds can be attributed to the pending and rejected 
+transactions that occurred each year.  Audit observed that the unutilised 
+funds were surrendered by the Department.   
+3.1.2 Ksheerasiri application 
+Ksheerasiri is a native portal of AH&VS Department developed to transfer 
+the incentives to the milk pourers.   The application aimed to include 
+registration of beneficiaries, Aadhaar seeding of beneficiaries, validation of 
+beneficiaries, prevent/reduce data duplication and re -entry at different 
+stages, process beneficiary payment annexure files, monitoring, management 
+and implementation of the schemes etc.  The process flow of this application 
+is shown in Chart 3.1.  
+Chart 3.1: Process flow of Ksheerasiri application 
+ 
+  
+Milk Pourers 
+Local Sales 
+Milk Pourer 
+Cooperative 
+Society 
+CC/BMC 
+Data entry by society in 
+Ksheerasiri Application 
+ Milk Union 
+Data Validation by 
+Camp office 
+Preparation of Payment 
+Annexure File 
+Consumption of Payment 
+Response File at Ksheerasiri 
+Application 
+Payment Annexure File to 
+Core DBT Portal 
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+21 
+ 
+3.1.2.1  Management of Ksheerasiri application 
+The Ksheerasiri application consists of 1 1 modules12 for efficient and 
+effective management of the various functionalities attached to each module.  
+The status of implementation of the modules is as shown in Table 3.2. 
+Table 3.2: Status of modules of Ksheerasiri application 
+Sl.no. Module Functionality Status 
+1  Master Data 
+Creation module 
+Administrator functions Implemented 
+2  Milk pourer 
+Registration 
+Registration of the beneficiary at 
+the Society level and seeding the 
+database with Aadhaar 
+3  Milk pourer 
+collection and local 
+sales data update 
+Monthly update of milk pourers 
+records with eligible quality and 
+quantity 
+Implemented 
+4  Local sales proof 
+upload 
+Proof upload for local sales of 
+milk 
+Not implemented 
+5  Chilling Centre 
+(CC) / Bulk Milk 
+Cooler (BMC) data 
+upload 
+Reconciliation of data on milk 
+collected from the society 
+Not implemented 
+6  Union processing 
+facility data upload 
+Reconciliation of data on milk 
+collected from the CC/BMC 
+Not implemented  
+7  Data validation Validation of the data of Society, 
+CC/BMC and Union level 
+Validations are being 
+done manually. 
+Automated data 
+validation at various 
+stages is absent.  
+8  Exception 
+Reporting 
+To detect and report abnormal 
+trend 
+Not implemented  
+9  Audit Handle audit request raised both 
+automated and manually covering 
+discrepancies, mismatch, 
+exception reporting etc., at the 
+camp and union level 
+Not implemented  
+10  Payment Annexure 
+processing 
+Preparation of payment annexure 
+file to be sent to Core DBT Portal 
+Implemented 
+11  Payment 
+Reconciliation 
+Reconciliation between file sent to 
+DBT and response received from 
+DBT 
+Implemented.  Audit 
+noticed difference of 
+33.96 lakh transactions 
+valuing ₹444.13 crore 
+as detailed in 
+Appendix 3.1. 
+Source: Information furnished by AH&VS department 
+It could be seen from the above that five modules were not implemented.  
+Audit also observed that the modules implemented were also deficient. The 
+impact thereof in implementation of the scheme was as below: 
+ 
+ 
+12  As detailed in the Functional Requirement Specification of the Ksheerasiri application.  
+
+Chapter 3 Implementation of DBT in selected schemes 
+22 
+ 
+❑ Inadequate digitisation and consequent absence of data validation:  
+There are 14,658 milk societies of which 10,275 were adopting 26 different 
+software applications for capturing the data of milk poured, name of the 
+pourer, quality of milk etc.  These standalone applications were not  
+integrated with Ksheerasiri application. Consequently, the data was not being 
+captured on real time basis.    
+The remaining 4,383 societies were still preparing and managing beneficiary 
+data manually resulting in absence of automated validation checks at various 
+levels and payments were based on the only manual validation checks carried 
+out at the Camp office by the Extension Officers and at the Union level .  
+Manual validation carries the risk of erroneous or fraudulent processing and 
+unreliable outputs.  It is pertinent to mention here that 522 Extension Officers 
+have to certify the collection details of 14,658 societies twice daily which is 
+practically difficult and the increases the possibility of errors / fraudulent 
+practices remaining unnoticed.  
+Audit also noticed that the department merely accepts the data furnished by 
+KMF without further checks.  Further, different types of application s 
+complicates the monitoring of those applications in terms of IT security and 
+processing of the transactions.  
+The State Government stated (December 2021) that KMF has sent a proposal 
+to Government of India  for sanctioning of around 2 ,858 Automated Milk 
+Collection Units within two years’ time frame (2021-2023).  It further stated 
+that National Dairy Deve lopment Board is planning  to provide a common 
+software to all societies which would be integrated and implemented to 
+overcome manual entry of data in future.  
+❑ Absence of input validation controls:  
+Analysis of the  master database showed that various fields such as Aadhar 
+consent, number of cattle, cattle type, milk pourer type, mobile number, 
+account number etc., were either blank or ‘0’ as shown below indicating the 
+absence of input validation controls. 
+Field Number of records Audit Remark Blank Zero (0) Others 
+Aadhaar 
+consent 
+66,749    
+Number 
+of cattle 
+ 10,29,049  For ex., there were 658 records with cattle 
+owned as ‘0’ though these pourers had 
+supplied milk more than 25,000 litres. 
+Unrealistic numbers such as  1708101000, 
+1332080, 111950, 133020 were also 
+indicated.  
+Type of 
+cattle 
+ 10,23,229  Impacts the projection of quantity of milk a 
+particular type of cattle might yield. The 
+data was inconsistent as the cattle type 
+captured was undefined. 
+Milk 
+pourer 
+type 
+ 1,02,732  Absence of assurance on fulfilment of 
+eligibility criteria 
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+23 
+ 
+Field Number of records Audit Remark Blank Zero (0) Others 
+Mobile 
+number 
+4,49,360 4,25,825  Any SMS or information cannot be 
+communicated. 
+Account 
+number 
+1,04,478 345   
+Caste 176 14  Affects the utilisation of S pecial 
+Component Plan (SCP) /Tribal Sub Plan 
+(TSP) funds. 
+Aadhaar 
+verified 
+66,473  Shown 
+as ‘No’ 
+in  
+21,959 
+records 
+Due to non -verification of Aadhaar, the 
+department cannot push the data for 
+payment to these milk pourers 
+Source: Data dump of Ksheerasiri Portal provided by AH&VS. 
+Audit observed that many fields in the portal were made optional instead of 
+mandatory. Consequently, the various fields cannot be related for 
+validations. For ex., the quantity of milk supplied by a particular pourer is 
+commensurate with the number of cattle owned cannot be ascertained. Such 
+data raises concern on the integrity, reliability and quality of the database.   
+Case A 
+Though the number of cattle was recorded as three for a milk pourer, 
+payment of `2.17 lakh was made for 43,364 litres during October 2020 which 
+amounts to each cattle giving 480 litres per day. 
+Source: Ksheerasiri portal data 
+The State Government stated (D ecember 2021  and January 2022 ) that 
+various fields in the database would be made mandatory instead optional to 
+fetch all the necessary data for validations from April 2022 onwards.  
+❑ Non-identification of deviations:  
+Non-implementation of exceptional reporting and audit modules  though 
+provided for in the Functional Requirement Specification resulted in absence 
+of mechanism to identify and examine deviations in the implementation of 
+the scheme.  Audit observed that the milk poured by a particular pourer 
+varied significantly between two consequent months / during a period of six 
+months as detailed in Appendix 3.2. 
+The State Government accepted (December 2021) that the rules for 
+exception reporting is not framed and mapped and agreed to take corrective 
+measures. 
+❑ Absence of assurance on the quality and quantity of milk poured:  
+Non-implementation of  local sales proof  upload, CC/BMC data upload, 
+Union processing data upload  and audit module indicate the absence of 
+assurance on the quality and quantity of milk poured and the veracity of the 
+claims made by the societies.   
+Data analysis showed that in 5,504 cases out of 2,48,065 cases, the total local 
+sales per month was greater than the total milk collected in the month. There 
+
+Chapter 3 Implementation of DBT in selected schemes 
+24 
+ 
+were 3,178 and 1,027 such cases during April 2019 and May 2019 months 
+respectively. 
+Audit also observed that the ‘substandard milk quantit y’ and ‘total milk 
+poured’ fields were optional.  Further, the quantity of good quality and sub-
+standard quality of milk supplied by an individual pourer are not entered in 
+the Ksheerasiri directly.  It is entered manually in the register or the native 
+application used by the society and is updated on a monthly basis in 
+Ksheerasiri at the camp office.  As the milk collected in the societies are 
+transferred to a common container and the milk with averag ed fat content 
+would be reaching the CC/BMC/Union, the p ossibility of extending 
+incentives to the ineligible beneficiaries cannot be ruled out. 
+Audit further observed that in respect of one society (Alipura/ 
+Gowribidanur), the Dairy register had recorded local sales of 1975.7 litres 
+during August 2019 whereas the DBT figure was 16,404 litres. In respect of 
+other society (Parandahalli/Bangarpet), the total quantity of milk collected in 
+the society was 72,076 for the month of March 2020 whereas subsidy was 
+reimbursed for 1,34,319.8 litres as seen from Ksheerasiri data. 
+The State Government stated (January 2022) that automated validation of the 
+data at Camp Office and the Union level is not available . It however, stated 
+that when U nion validates before e -signing for a month , the  total good 
+quantity plus the local sales of all the milk societies should be equal or less 
+than the quant ity supplied to the U nion and hence there is no scope for 
+claiming more quantity in a month . The reply does not address the action 
+taken to verify and rectify the discrepancies pointed out by audit.  Moreover, 
+the existing manual checks are inadequate to prohibit such discrepancies.  
+❑ Overpayments and processing of more quantity than prescribed: 
+Under the milk incentive scheme, a milk pourer was eligible for incentive for 
+a maximum of 40,000 litres per month  which amounts to `2 lakh. This rule 
+was incorrectly mapped and the input field was accepting values up to 60,000 
+litres (screen shot shown below). 
+Analysis of the data showed that payment in excess of  `2 lakh was paid 
+during the period March to September 2021 for the milk poured during June 
+2020 to June 2021 in 10 instances as detailed in Appendix 3.3.  In nine other 
+
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+25 
+ 
+instances, claims of 1.28 lakh litres over and above the prescribed limits and 
+amounting to `6.38 lakh was processed by the department for payment.  The 
+Department was yet to confirm whether the payments were actually made.  
+Audit also noticed few instances where the amount pa id for milk pour ed 
+ranged between `6.4 lakh to `9.55 lakh per month during the period April 
+2019 to August 2020.  Providing incentives to such beneficiaries defeats the 
+very purpose of the incentive scheme. 
+ 
+The State Government stated (January 2022) that the Department had fixed 
+the upper limit initially at 40,000 litres per month so that the files are not  
+rejected at K2 .   Further, the Government stated that upper limit was 
+enhanced to 75,000 litres per month in Ksheerasiri and K2 Portal  to make 
+the payment for those milk pourers who poured the milk exceeding 40,000 
+litres after verification.   
+ 
+The reply does not address the vital issue of how the input validation was 
+changed to 60,000 litres per month when upper limit fixed was 40,000 litres 
+per month at that time. This shows the lack of internal controls and proper 
+monitoring existing within the department .  Further, the post facto  
+enhancement of the upper limit was carried out by the Department without 
+the approval the Finance department and the Government.   
+3.1.2.2   Delay in processing of payment files 
+The payment annexure files in XML format are generated by the Department 
+and pushed to the Core DBT portal through the Ksheerasiri application for 
+financial and Aadhaar validations, de -duplication check and further 
+processing and payments.  Analysis of the data furnished by the department 
+pertaining to 11 Milk Unions for the period 2019-20 showed instances of 
+time gaps in generation of payment annexure files after the date of milk 
+collection as indicated in Table 3.3. 
+Table 3.3: Time lag in preparation of payment annexure files 
+From (days) To (days)  Number of records Amount (` in crore)  
+10 15 4,54,825 (11) 53.32 
+16 30 4,55,621 (11) 58.22 
+31 365 32,67,471 (78) 375.14 
+Total 41,77,918 486.68 
+Source: Ksheerasiri data provided by AH&VS department 
+(Percentage to total number of records shown in parenthesis)  
+The delay in generation of payment files delays the entire process leading to 
+delayed delivery of benefits.   
+Case B 
+Payment of ₹56.08 lakh to 8,464 milk pourers for the month of January 2018 
+was generated on 22 January 2020 and pushed to Core DBT Portal.  
+However, this payment was rejected by K2 system as it pertained to the 
+previous financial year.  This payment was still pending res ulting in 
+depriving the benefits to the eligible beneficiaries.   The State Government 
+stated (December 2021) that it would initiate corrective action. 
+Source: Ksheerasiri portal data  
+
+Chapter 3 Implementation of DBT in selected schemes 
+26 
+ 
+Further analysis of the data furnished by the department pertaining to 11 
+Milk Unions for the period 2019-20 showed significant time lag between the 
+date on which the payment annexure files were generated and the date on 
+which the DDO had accorded the approval as indicated in Table 3.4. 
+Table 3.4: Time lag in approving the payment annexure files 
+From (days) To (days)  Number of records Amount (` in crore)  
+0 0 3,08,668 (7) 34.42 
+1 3 18,68,101 (45) 210.04 
+4 7 9,44,577 (23) 109.78 
+8 15 6,31,520 (15) 78.19 
+16 27 4,25,052 (10) 54.25 
+Total 41,77,918 486.68 
+Source: Ksheerasiri data provided by AH&VS department 
+(Percentage to total number of records shown in parenthesis)  
+Audit also observed that the 34 per cent of the files generated and processed 
+during 2019-20 and 2020 -21 failed at Core DBT portal.  The reason in 92 
+per cent of the cases was ‘input XML file already processed’ indicating the 
+absence of validation.  
+The State Government stated (January 2022) that payment files for the initial 
+claims (April 2019 to July 2019) were processed only from August 2019 due 
+to technical issues  and as the personnel were to be trained in use of the 
+application.  As a result, there was some backlog. The reply is not acceptable 
+as audit observed delay s beyond July 2019 in preparation of payment files  
+for 19.23 lakh transactions (46  per cent) amounting to `232.17 crore and 
+such delay ranged up to 360 days.  
+3.1.2.3 Non-existence of budget module and tracking of budget under 
+Special Component Plan/Tribal Sub Plan 
+The budget for the milk incentive scheme is released under three subheads 
+viz., 100, 422 (SCP) and 423 (TSP) of Major Head 2404.  The funds released 
+under 422 and 423 are meant for payment of incentives to milk pourers under 
+Scheduled Caste (SC) and Scheduled Tribe (ST) categories respectively.  
+Though the registration of beneficiary module includes the category column 
+(SC/ST/Others), there was no mechanism to trace the budget flow under 
+these subheads in the Ksheerasiri application. This was important to identify 
+the extent of failed, rejected and pending transactions under SC/ST category 
+of beneficiaries.  Further, in the absence of input validation controls, there 
+was every possibility of the funds under SCP/TSP remaining unutilised.   
+As discussed in paragraph 3.1.1, the Department surrendered the unutilised 
+amount under the scheme including the unspent amount under SCP/TSP.  
+The surrender of funds under SCP/TSP was against the provisions of the 
+Karnataka Sched uled Caste Sub -Allocation and Tribal Sub -Allocation 
+(Planning, Allocation and Utilisation of Financial Resources) Act, 2013 and 
+Rules, 2017 which stipulates that ‘in case of unspent amount out of allocation 
+in a particular financial year, the same may be a dded to the next year 
+allocation but shall not be carried further beyond that year’. 
+The State Government stated (December 2021) that steps would be taken to 
+incorporate the budget module. 
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+27 
+ 
+3.1.2.4   System Requirement Specification and User Acceptance Test 
+The User Acceptance Testing (UAT) determine s whether the application 
+meets all the requirements of the user groups. The essence of UAT is to 
+validate the software to find out whether it meets the busine ss requirements 
+of the client as specified in the Functional Requirement Specifications (FRS) 
+and System Requirement Specifications (SRS) documents.  UAT is the final 
+testing that is carried out before the software is brought on live . The FRS 
+clearly describes the details of the architecture o f the system for 
+implementation.   
+Audit observed that there were no documents to suggest that the SRS was 
+duly prepared/scrutinised and UAT was conducted to ascertain that the 
+Ksheerasiri application fulfilled the user requirements before it was live from 
+April 2019 onwards .  This  carried the risk of possibility of errors in the 
+software going unnoticed  and timely rectification of deficiencies / 
+inconsistencies in application behaviour. 
+The State Government furnished the SRS, SDD and User Manual documents 
+in respect of Ksheerasiri to Audit on 3 January 2022 . Review of the 
+documents showed that these were prepared much later after the Ksheerasiri 
+system went Go-live and after being pointed out by  audit.  The department 
+had accepted (September 2019) that these documents were not prepared and 
+documented. Further, the documents furnished were not approved by the 
+competent authority  and t he documents relating to  User Acceptance Test 
+were not furnished.     
+3.1.2.5   Change Management 
+Any unapproved or accidental changes made in an IT system could have 
+severe risks and financial consequences for the organisation. Departments 
+should follow a defined change management procedure that requires 
+approval from an author ity before changes are being implemented into the 
+operational environment. These changes should be recorded, evaluated, 
+authorized, prioritized, planned, tested, implemented, documented and 
+reviewed in accordance with the documented and approved change 
+management procedures. This would help the systems to continue supporting 
+business operations in  the manner planned, and there should be adequate 
+audit trail to track the changes effected in the system. 
+Audit observed from the information, data and records furnished that there 
+was no change management procedure in place.  In the absence of such a 
+procedure, changes could be made in the system without proper 
+authorisations and approval and is fraught with the risk of deviating from the 
+prescribed stipulations and conditions that can affect the integrity of the 
+existing system.  
+Case C 
+The ceiling for eligibility of subsidy which was initially fixed at 40,000 litres 
+was changed to 60,000 litres and then to 75,000 litres without following any 
+change management procedure.  Audit could not ensure whether the changes 
+adopted were duly authorised by the competent authority. 
+Source: Ksheerasiri portal data 
+
+Chapter 3 Implementation of DBT in selected schemes 
+28 
+ 
+The State Government stated (December 2021) measures would be taken to 
+implement the change management procedure. 
+3.1.2.6   Risk Assessment not carried out 
+As Ksheerasiri application is also an IT system, it was necessary for the 
+department to undertake periodic risk assessment of this application to 
+ensure its operational efficiency.  Audit observed that this was not done.  
+The State Government stated (December 2021) that steps would be taken to 
+carry out periodic risk assessment.  
+3.1.2.7   Third party security audit not done 
+The manual for Central Government websites which also needs to be adopted 
+by the State Government websites, stipulate that “ Each website/application 
+must undergo a security audit from empanelled agencies prior to hosting and 
+after addition of new modules”.  The third party security audit of Ksheerasiri 
+application was not carried out till date.  As a result, the department could 
+not identify risks , if any , and evaluate the impact  of such risks on the 
+application. Consequently, Audit was not in a position  to derive assurance 
+on the robustness of the security controls over the Ksheerasiri application. 
+The State Government stated (December 2021) that it would consider 
+carrying out the third party audit of Ksheerasiri application.  
+3.1.2.8   Absence of agreement 
+Software development project should include the detailed scope of the work, 
+deliverables, timelines (for development, testing, acceptance, roll out, 
+maintenance, handholding, etc.), final testing and signing-off/certification, 
+list of services, project review and management, processes for approval of 
+deliverables, change control procedures, governance schedule, non -
+functional requirements, service levels, creation of internal capacity  
+building, exit management etc.  Audit ascertained that no Memorandum of 
+Understanding (MOU) exists between AH&VS department (the Intellectual 
+property rights holder of the Ksheerasiri data/software), KMF (the 
+Administrative federation under which all the milk Unions in the State 
+function) and National Information Centre (technological partner). 
+The absence of an MoU with clear demarcation of the roles and 
+responsibilities of each stakeholder can give rise to inadequacies in the 
+software / life cycle of the information system  arising from the inadequate 
+understanding of the roles and responsibilities.  This also resulted in failure 
+to take appropriate and timely action on fail ed transactions, wrong credits 
+and pending payments as there is no agreed mechanism available to handl e 
+or rectify such responses  whether by the department or by the unions set 
+under KMF.   
+The State Government stated (December 2021) that action would be initiated 
+to prepare the MOU between AH&VS, KMF and NIC. 
+ 
+ 
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+29 
+ 
+3.2 Test-checked DBT schemes of Agriculture department 
+3.2.1 Raithasiri scheme 
+The State Government launched (2019 -20) the  Raithasiri scheme 13 for 
+providing financial assistance of `10,000 per hectare to millet farmers with 
+the objective of elevating the State’s agricultural sector. 
+3.2.1.1  Payments not routed through DBT 
+The Raithasiri scheme was onboarded onto the DBT Portal with effect from 
+10 December 2019 and accordingly all payments were to be routed through 
+the Core DBT portal as per the Government directions.  Audit observed that 
+benefits amounting to ₹ 2.04 crores for 5,513 beneficiaries was pushed 
+directly to the treasury for making payment through Beneficiary 
+Management System (BMS) module of K2 and not through DBT application 
+during the period 10 December 2019 to 31 March 2020. 
+3.2.2 National Food Security Mission – Frontline Demonstration (DBT 
+component) 
+National Food Security Mission, a Centrally Sponsored Scheme 14 was 
+launched in October 2007 to increase annual production of certain crops such 
+as rice, pulses, coarse cereals, nutri-cereals, cotton, sugarcane, TRFA-Pulses, 
+TRFA-Oil seeds, NFSM -Oil seeds.   Frontline Demonstration (FLD), a 
+component under NFSM involves demonstration of improved package of 
+practices on  farmers’ fields.  The demonstrations should be conducted in 
+cluster approach of at least 10 hectares and one demonstration at individual 
+farmer should never be less than 0.4 hectare and not exceeding one hectare.  
+The assistance of demonstration will be decided upon the area. The rate of 
+assistance is `7500 for Rice, `5000 for Wheat and `5000 for Pulses per 
+demonstration of one hectare respectively. 
+3.2.2.1   Shortfall in payment to identified beneficiaries 
+The department identified total 1 ,62,375 beneficiaries for payment of 
+benefits amounting to ₹57.78 crore but final payment was made for 1,46,865 
+beneficiaries amounting to ₹51.89 crore.  Audit noticed that bills were not 
+created by DDOs for 10,775 beneficiaries and payment in respect of 
+remaining 4,735 beneficiaries were rejected due to technical issues.  This has 
+deprived 15,510 beneficiaries of the eligible benefits of ₹5.74 crore. 
+The State Government agreed (December 2021) with the audit findings and 
+attributed the reasons for rejections to creation of duplicate sanction orders 
+due to server issues. It further stated that bills could not be created by DDOs 
+as the beneficiaries did not produce the required documents. The reply 
+highlights the absence of proper process controls. 
+ 
+ 
+ 
+13  GoK order No. AD 45 APP 2019 Bangalore dated 17.07.2019 
+14  GoK order No. AHD 466 AMS 2007 Bangalore dated 05.10.2007 
+
+Chapter 3 Implementation of DBT in selected schemes 
+30 
+ 
+3.2.2.2   Payments not routed through DBT 
+The NFSM scheme was onboarded onto th e DBT Portal with effect from  
+11 December 2019.  Audit observed that benefits amounting to ₹3.90 crore 
+for 13,132 beneficiaries was pushed directly to the treasury for making 
+payment through Beneficiary Management System (BMS) module of K2 and 
+not through DBT application  during the period 1 1 December 2019 to  
+31 March 2020. 
+3.2.2.3   Mismatch in data 
+Audit analysed a sample of 120 beneficiaries selected at random to ensure 
+fulfilment of eligibility criteria and noticed that in 17 cases, there was a 
+mismatch between the land details of the beneficiaries as per the Karnataka 
+State Remote Sensing Applications Centre (KSRSAC)  data and Bhoomi 
+records for the year 2019-20.  As a result, audit cannot provide assurance on 
+the correctness of the payments made under the scheme. 
+The State Government stated (December 2021)  that the department had 
+verified the records and found to be as per the norms and the difference was 
+in online matching. Audit verified the documents enclosed to the reply and 
+noticed that the differences still existed in name or survey number as per 
+FID/Aadhar and Bhoomi records (RTC) in 14 records. 
+3.2.3 Pradhan Mantri Kisan Samman Nidhi (State share) 
+Government of Karnataka 15 accorded (Augu st 2019) sanction to extend 
+additional financial benefit under State funds for purchase of various 
+agriculture components to all those beneficiaries who are eligible for GoI 
+PM Kisan scheme benefits.  This involved payment of ₹4,000 payable in two 
+instalments of ₹2,000 each to the eligible  beneficiaries in the State through 
+DBT.  The beneficiaries can enrol for the scheme by registering on the 
+FRUITS16-PM-KISAN portal of the State or directly on the PM -KISAN 
+website of GoI. 
+3.2.3.1   Inadequate coverage  
+There were 49,48,039 beneficiaries as per the data obtained from GoI.  
+During the year 2019 -20, the State Government processed payment for 
+45,36,550 beneficiaries (excluding beneficiaries where there was Aadhaar 
+name mismatch, NPCI not seeded etc.).  Audit observed that out of 45,36,550 
+beneficiaries, payments could not be processed for 67,379 and 1,62,370 
+beneficiaries due to Aadhaar name mismatch and non -seeding of Aadhaar 
+and Bank account respectively . Similarly, during 2020 -21, payments could 
+not be processed for 78,288 prospective beneficiaries as they were awaiting 
+Aadhaar name mismatch correction  and for 1,51,912 beneficiaries due to 
+NPCI mapper issue. 
+ 
+15  GoK order No. AD 3 BCF 2019 Bangalore Dated 13.08.2019 
+16  Farmer Registration and Unified Beneficiary Information System 
+
+Implementation of DBT in selected schemes Chapter 3 
+ 
+31 
+ 
+The delay in taking corrective action to set right the deficiencies noticed 
+resulted in depriving th e eligible beneficiaries of benefits of ₹91.99 crore17 
+during the period 2019-20 and 2020-21. 
+3.2.3.2   Extension of benefit to ineligible beneficiaries 
+As per the scheme guidelines, the State Government was to identify the 
+beneficiaries after satisfying that all the conditions of eligibility are fulfilled 
+by a farmer to be eligible for the benefits under the Central as well as State 
+funds.  Some of the important conditions were (i) the farmer should not have 
+been a tax payer in the previous year, (ii) the farmer or his family member 
+should not be a government employee and (iii) the farmer or his family 
+member should be getting pension of less than `10,000 per month.  
+Audit observed that all the conditions as laid down by the GoI (except 
+verification of Bhoomi land data validation)  were not validated by the 
+department either before forwarding the list to GoI  or before extending the 
+benefits under the State funds.  GoI, after release of initial payments , 
+undertook validation of data of beneficiaries with tax payers database and 
+other eligibility criteria and identified 1,99,180 beneficiaries as ineligible 
+under the scheme.  It issued guidelines for recovering the amount of Central 
+share of `122.95 crore from ineligible beneficiaries.  As of 21 October 2021, 
+`81.94 lakh was recovered and refunded to GoI. 
+Audit further observed that  payment of `34.05 crore was made by the 
+department under the State funds to 89,500 of these ineligible beneficiaries 
+and action was yet to be initiated to recover the amount from such 
+beneficiaries. 
+The State Government stated (December 2021) that the recovery was under 
+progress. 
+  
+ 
+17  (67,379+1,62,370 = 2,29,749*`2,000) = `45.95 crore +  
+(78,288+1,51,912 = 2,30,200*`2,000)  =  `46.04 crore  
+
+ 
+  
+ 
+
+Chapter IV
+Monitoring and Evaluation
+
+ 
+33 
+ 
+ 
+ 
+ 
+ 
+The quality of monitoring has a major impact on the extent to which 
+effectiveness, efficiency and data integrity objectives are achieved in a 
+project environment. 
+4.1 DBT Governance framework 
+As already discussed in Chapter 1, the State DBT Cell is responsible for 
+implementing and monitoring DBT.  It shall consist of an Advisory Council 
+and a Steering Committee and coordinate all efforts related to DBT for 
+bringing onboard and implementing schemes. 
+4.1.1 Advisory Council Meetings not held 
+The Advisory Council was formed (2016) under the Chairmanship of the 
+Chief Secretary to Government.  Audit observed that the Advisory Council 
+had not conducted any meetings since 2016 till date.  Consequently, effective 
+implementation of DBT in the State could not be ensured. 
+4.1.2 Inadequacies in monitoring of onboarded schemes 
+With the introduction of the DBT as the disbursal mechanism in the State, 
+the Government prohibited transfer of benefits other than through DBT.  
+Accordingly, the benefit s under the schemes onboarded to DBT shall 
+invariably be routed through Core DBT Portal of the State.  Audit observed 
+that there was no mechanism to monitor whether the user departments were 
+routing the transactions only through the Core DBT.  Instances of  
+transactions being carried outside of Core DBT despite having onboarded 
+onto the portal have been pointed out in paragraphs 3.2.1.1 and 3.2.2.1.   
+Routing transactions outside of Core DBT contravenes the Government 
+directions and resulted in bypassing the mandatory NPCI and de-duplication 
+checks and is fraught with the risk of ineligible beneficiaries getting the 
+benefits.  The DBT Cell accepted that no mechanism exists to check such 
+instances. 
+The State Government stated (December 2021) that DBT portal handles only 
+beneficiary payments and other payments needs to be done directly in K2 by 
+DDOs. Therefore, it is very difficult to electronically control such activities. 
+However, directions have been issued by Finance Department making DDOs 
+responsible for such lapses. 
+4.1.3 Inadequate monitoring by DBT Cell 
+The effectiveness of the implementation of a scheme is gauged in terms of 
+the outcomes, which could be compared against the target fixed for the 
+project.  The Operations Group of the DBT Cell was required t o identify 
+schemes/departments that fall under the purview of DBT, set goals and 
+Chapter
+ 
+4 
+Monitoring and Evaluation 
+
+Chapter 4 Monitoring and Evaluation 
+34 
+ 
+deadlines for onboarding of schemes and monitor the progress of each 
+department.  Though 239 schemes were identified for onboarding, Audit 
+observed that no goals and deadlines  were prescribed by the DBT Cell for 
+onboarding them onto the Core DBT portal.  Consequently, there was no 
+monitoring over the user department progress in this regard. 
+The State Government stated (December 2021) that Government had fixed 
+the targets for on boarding the schemes.  The fact remains that only 35 per 
+cent of the identified schemes were onboarded as of April 2021 despite a 
+lapse of nearly two years from the deadline set by Government indicating the 
+absence of monitoring by the DBT Cell.    
+4.1.4 Beneficiary Grievance Redressal system  
+As per the DBT Bharat guidelines, there is a need for a strong grievance 
+redressal system which can enable incorporating the feedback of the 
+beneficiaries, their experience with DBT and their grievances into the 
+system. This sort of a two -way feedback loop through a process of 
+continuous learning and improvement shall strengthen the DBT framework. 
+Further, Standard Operating Procedure of DBT Bharat states that DBT cell 
+will constitute a dedicated body to deal with  complaints and grievances of 
+beneficiaries in a fair and timely manner. 
+Audit observed that that a centralised public grievance handling mechanism 
+was not established  to aid the beneficiaries in addressing their grievances. 
+Currently the beneficiaries per sonally communicate their grievances in the 
+department implementing specific DBT Schemes.   Further, a beneficiary 
+may be eligible for receipt of more than one benefit but actually not receiving 
+the benefits and the reasons attributed may be  the same across the schemes 
+for which he /she is eligible to. This complicates the grievance redressal as 
+the beneficiaries have to register their complaints with all the departments 
+for the same reasons. Considering the issues in the various layers of the 
+benefit transfer processes, it is imperative to have a centrali sed beneficiary 
+grievance mechanism through which the beneficiaries could seek resolution 
+for their grievances .  This also assumes significance in view of the large 
+number of failed/pending/rejected transacti ons and credit to incorrect 
+accounts as discussed earlier.   
+The State Government stated (December 2021) that the facility for intimating 
+the beneficiaries of update d payment status through Mobile App is already 
+available.  While the M obile App would be ha ndy for the beneficiaries to 
+know the payment status, there was no mechanism  to register 
+complaints/grievances.  
+4.2 Evaluation of DBT  
+The DBT scheme was launched for ensuring a simple and user -friendly 
+Government to People (G2P) interface and delivery of entitlements directly 
+to eligible individuals and households in a fair, transparent, efficient and a 
+reliable manner. It intended to facilitate a paradigm shift in the process of 
+delivering entitlements to all those who are legitimate beneficia ries through 
+accurate identification and targeting of the intended beneficiaries, re -
+
+Monitoring and Evaluation Chapter 4 
+ 
+35 
+ 
+engineering government processes for simpler flow of information and  
+funds, promotion of financial inclusion and setting up of digital platforms 
+that are accessible, scal able and reliable, providing user -friendly interfaces 
+between the Government and the beneficiaries.   
+Audit observed that the State Government was yet to be carry out an 
+evaluation or impact assessment of this paradigm shift on the intended 
+objectives such as timely delivery of services, proper identification of the 
+legitimate beneficiaries etc.  
+The State Government stated (January 2022) that it would take up the 
+evaluation and impact assessment through a third party.  
+4.3 Milk incentive scheme 
+4.3.1 Absence of DBT Cell/Committee 
+The State Protocol document on DBT suggested constitution of a DBT Cell 
+/ Committee to ensure that DBT framework is adopted in implementation of 
+schemes.  The AH&VS department had not established the DBT Cell which 
+resulted in gaps in implementation of the scheme. Audit also noticed that the 
+requisite skills to be possessed by staff presently dealing with DBT related 
+activities within the department (particularly at the societies and camp level) 
+were not assessed to address any shor tcomings and trainings conducted to 
+overcome such shortcomings.  
+The State Government stated (December 2021) that formation of DBT 
+Cell/Committee would be considered. 
+4.3.2 Inadequate monitoring mechanism 
+As discussed earlier, there was numerous instances of DBT transactions 
+getting failed, rejected, pending or credited to an incorrect account.  These 
+transactions need timely corrective action and hence it was imperative to 
+have a suitably structured incident reporting system to identify the errors and 
+to capture the incidents for analysis and report to the competent authorities 
+for rectification or correction.  The results of monitoring activities should be 
+periodically reported to the management for important decision making and 
+corrective measures, if required.  
+Audit observed that no such incident reporting system exists in the 
+department.  Further the department had not fixed any timelines for carrying 
+out the rectifications in respect of failed/rejected/pending transactions which 
+resulted in either belated delivery of services or non-delivery of services. 
+The State Government stated (December 2021) that mechanism exist s to 
+monitor failed records and the payment status.  It further stated that timelines 
+would be put in place and directions would be issued to complete the process 
+within the timelines. The reply is not acceptable as audi t observed that no 
+failed payment could be re -initiated during audit period.  Moreover, delays 
+in preparation of payment files, delay s in DDO approval in Core  DBT and 
+K2, rejected cases at K2 level, failure of the payment files at Core DBT Portal 
+indicate shortcomings in monitoring mechanism. 
+   
+
+Chapter 4 Monitoring and Evaluation 
+36 
+ 
+4.3.3 Performance Indicators not specified 
+Since DBT scheme is beneficiary centric, m easurable objectives and 
+outcome from the results of DBT under the schemes were to be determined, 
+targets fixed accordingly, assess the outcomes against the targets and act for 
+any deviation.  The Performance Indicators vis-a-vis its achievements in 
+terms of the project objectives indicates overall project realisation. 
+The department had neither developed nor adopted any performance 
+indicators for monitoring the various activities of the scheme nor did it 
+conduct any evaluation of the scheme during the implementation stage.   
+The Government stated (January 2022) that the department was monitoring 
+the scheme at various  levels but has formally not set any performance 
+indicators. It further stated that directions for setting the performance 
+indicator and monitoring the achievements under the scheme would be 
+issued.  
+4.3.4 Scheme evaluation not undertaken 
+Evaluation is the quality assurance mechanism that involve an assessment of 
+a planned, ongoing, or completed programme to determine its relevance, 
+efficiency, effectiveness, impact and sustainability.   
+Though the Milk Incentive Scheme was implemented since September 2008 
+and onboarded on to the DBT portal from April 2019, the department had 
+not carried out any evaluation of the implementation of the scheme post 
+onboarding to Core DBT to ascertain the effectiveness and efficiency in 
+delivery of the services.  
+The State Government stated (December 2021) that department of AH&VS 
+is planning to get the entire Milk Incentive Scheme evaluated by Karnataka 
+Evaluation Authority. 
+4.3.5 Absence of dedicated grievance redressal mechanism 
+An effective grievance redressal mechanism would ensure equitable and fair 
+distribution of the scheme benefits, mitigates the hardship of beneficiaries by 
+providing them access to information and prompts the department to initiate 
+appropriate corrective and preventive measures. 
+Audit observed that a dedicated grievance redressal mechanism within the 
+department both to address the grievances and to obtain feedback from the 
+beneficiaries was absent.  As a result, the department could no t assess the 
+impact of post DBT transfers for better appreciation and criticality of 
+implementation of DBT. 
+The State Government stated (December 2021) that a helpline was 
+established recently through which beneficiary grievance s are being 
+addressed.  However, the evidence of such claim was not furnished.  
+ 
+ 
+
+Monitoring and Evaluation Chapter 4 
+ 
+37 
+ 
+4.4 Schemes of Agriculture Department 
+4.4.1 Data migration under NFSM and Raithasiri schemes 
+The Department of Agriculture processed the scheme benefits under the 
+above schemes through KSRAC till 2019-20 and switched over to K-KISAN 
+portal from the year 2020-21.  However, the data available with KSRAC was 
+not migrated to K -KISAN portal.  This resulted in absence of 
+legacy/previous years data with the department.   Audit observed that login 
+access to the data in KSRAC was disabled for the users of the department 
+and hence the department could not access their own data.  Further the 
+absence of legacy data hampers the decision making both at the sanctioning 
+level and the root level and effective monitoring of implementation of the 
+schemes. 
+The State Government stated (December 2021) that the software structure, 
+storage pattern of data would be studied and p lotted to K-KISAN portal for 
+the purpose of the maintaining the legacy data.  
+4.4.2 Absence of MOU with the technological partner 
+An MOU forms the basis for monitoring and controlling the partner against 
+technical and other requirements detailing the roles and responsibilities 
+between the organisation and the service providers, the requirements of the 
+department and monitoring the development against the agreement. MOU is 
+required for the effective implementation of a scheme.  
+Audit observed that the Agriculture Department had not executed any MOU 
+with the technological partner. Consequently,  audit could not ensure the 
+security responsibilities. 
+The State Government stated (December 2021) that MOU would be executed 
+between NIC and the department.  
+4.4.3 Inadequate monitoring mechanism 
+The Agriculture Department had not fixed any timelines for carrying out the 
+rectifications in respect of failed/rejected/pending transactions.  It did not 
+have a dedicated grievance redressal mechanism to address beneficiary 
+grievances and had not conducted any post evaluation of the schemes to 
+ascertain the improvements and effectiven ess in implementation of  the 
+scheme. Further, Audit observed that the department does not have IT 
+policies, procedures and monitoring for processing the transactions which is 
+also evident from the reply of the Government (December 2021) that a large 
+transactions were failed or rejected due to technical issues. 
+The State Government stated (December 2021/ January 2022 ) that timely 
+delivery of benefits was in accordance with budget availability, PM-KISAN 
+help desk was set from February 2019 , evaluation of the schemes was 
+entrusted to Karnataka Evaluation Authority  and agreed to implement IT 
+strategy and policy in future.  The reply is silent on the timelines for 
+rectification in cases of failed, rejected and pending transactions and 
+grievance mechanism in place for the other schemes.
+
+ 
+  
+  
+
+Chapter V
+Conclusion and Recommendations
+
+Conclusions and Recommendations Chapter 5 
+ 
+39 
+ 
+ 
+ 
+ 
+ 
+Conclusion 
+Implementation and Management of DBT 
+Transfer of benefits and delivery of services through Core DBT portal in the 
+State was not encouraging.  Absence of monitoring of the onboarding 
+process by DBT Cell resulted in onboarding of only 35 per cent  of the 
+schemes identified.  Though the success rate of transactions currently stands 
+at 83 per cent, there were significant delays in processing the transactions 
+which resulted in belated delivery of benefits.  Validation checks both at the 
+DBT portal and bank level were deficient resulting in credits t o incorrect 
+accounts.  The failed, pending and rejected transactions remained 
+unaddressed for long periods resulting in non -delivery of benefits to 
+legitimate beneficiaries.  Integration of Core DBT portal with native 
+applications and other stakeholders wa s either deficient or absent. 
+Reconciliation between the Core DBT portal and native applications was not 
+carried out leading to mismatch in data.  Security audit conducted was 
+inadequate and periodic risk analysis of the DBT application was not carried 
+out to identify vulnerabilities and exposures to risk. 
+Implementation of DBT in selected schemes 
+Milk incentive scheme 
+The delivery of benefits under this scheme was carried out through 
+Ksheerasiri, a native application of the department of AH&VS. The 
+application was not complete as five out of eleven modules were not 
+implemented.  Many standalone software applications being used by the 
+societies were yet to be integrated resulting in absence of real time data 
+capture and automated validation process.  M anual interventions in data 
+generation and validation, absence of assurance on quality and quantity of 
+milk supplied and absence of input validation controls raises serious 
+concerns on data integrity and its reliability. The documentation of 
+Ksheerasiri applicat ion is almost non -existent. Absence of change 
+management procedure resulted in unauthorised changes in application.  
+Risk assessment and security audit was not conducted rendering the 
+application vulnerable. 
+Raithasiri, NFSM and PM-KISAN schemes 
+Despite onboarding on to the DBT Portal, benefits worth `5.94 crore were 
+routed outside the Core DBT under Raithasiri and NFSM Schemes from 
+December 2019 to March 2020.  Data validations were absent under NFSM 
+and PM -KISAN schemes resulting in data mismatc h and extension of 
+benefits to ineligible beneficiaries.   There were instances of inadequate 
+coverage and consequent non-delivery of benefits to eligible beneficiaries. 
+Chapter
+ 
+5 
+Conclusion and 
+Recommendations 
+
+Chapter 5 Conclusions and Recommendations 
+40 
+ 
+Monitoring and Evaluation 
+DBT Cell 
+Monitoring for timely onboarding of the identified schemes was absent.  
+There was no mechanism to ensure that transactions were not routed outside 
+the Core DBT Portal after onboarding.  A centralised grievance redressal 
+mechanism was not established to aid beneficiaries for timely redressal of 
+their grievances.  The State Government was yet to evaluate and assess the 
+impact on the efficiency and effectiveness of delivery of benefits/services 
+consequent on implementation of DBT.  
+Milk Incentive scheme 
+The DBT Cell within the department of AH&VS was not established leading 
+to gaps in implementation of the scheme.  Timelines for early rectification 
+of the errors and corrective actions in case of failed, rejected and pending 
+transactions were not fixed which impacted timely delivery of benefits to 
+beneficiaries.  Performance indicators for monitoring the various activities 
+of the scheme was not developed and evaluation of the scheme was not 
+conducted either during the implementation stage or post onboarding to the 
+Core DBT portal to assess the efficiency in implementation of the scheme. 
+Agriculture department 
+The department did not have the legacy data for the period prior to 2019 -20 
+for Raithasiri and NFSM schemes and had not entered into any agreement 
+with the technology partner. It had not fixed any timelines f or carrying out 
+the rectifications in respect of failed/rejected/pending transactions. Post 
+evaluation of the schemes were not carried out. These affected effective 
+monitoring of the implementation of the schemes. 
+  
+
+Conclusions and Recommendations Chapter 5 
+ 
+41 
+ 
+Recommendations 
+AUDIT RECOMMENDS THE FOLLOWING: 
+ 
+State Government 
+The Government should set fresh deadlines for identifying and 
+onboarding of all schemes involving delivery of benefits. 
+The Government should specify timelines for each transaction 
+point and monitor adherence by the user departments.   It 
+should direct the departments to fix timelines for taking 
+corrective action to address failed, pending, rejected 
+transactions and credits to incorrect accounts. 
+DBT Cell 
+The DBT Cell should identify such departments that do not 
+have IT applications and handhold them for development of 
+such applications for timely onboarding of the schemes. 
+Integrations with various stakeholders should be strengthened 
+to ensure periodical reconciliation of data and rectification of 
+differences. 
+The DBT Cell should strengthen the validation checks to 
+increase its processing efficiency for timely delivery of 
+benefits. 
+The DBT Cell should carry out necessary risk assessment and 
+security audit covering all components of the Core DBT portal 
+on priority basis. 
+The DBT Cell should establish a centralised grievance 
+redressal mechanism including provision for feedback to 
+establish two way communication with the beneficiaries.  
+Department of AH&VS 
+The department should take up on priority the integration of 
+Ksheerasiri application with other standalone applications  
+and ensure digitisation of all databases for real time data 
+access and validation and prevent manual interventions in 
+validation process. 
+The department should ensure that all modules are 
+implemented.  It should conduct a risk assessment and security 
+audit of the Ksheerasiri application to identify vulnerabilities 
+and associated risks besides strengthening the input validation 
+controls to avoid unauthorised changes and deviations. 
+
+
+Chapter 5 Conclusions and Recommendations 
+42 
+ 
+The department should ensure that delays in preparation of 
+payment annexure files and approvals at the DDO level are 
+minimised to ensure timely delivery of benefits.   
+The Government should set an upper limit for disbursing the 
+incentives as incentives are meant to improve the financial 
+position of the small and marginal farmers and encourage 
+cattle farming.  
+Department of Agriculture 
+The department should take priority action to get the legacy 
+data transferred from KSRAC. 
+ 
+ 
+ 
+ 
+ 
+ 
+Bengaluru                                                    (S.Shanthi Priya) 
+The                                               Principal Accountant General (Audit-I) 
+                                                                                  Karnataka 
+ 
+ 
+ 
+ 
+ 
+ 
+Countersigned 
+ 
+ 
+ 
+ 
+ 
+ 
+New Delhi                                            (Girish Chandra Murmu) 
+The                                         Comptroller and Auditor General of India 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+Appendices
+
+                                          
+Appendix 
+43 
+Appendix 2.1 
+(Reference : Paragraph 2.2.1, Page 6) 
+Status of transactions for the period 2018-20 
+Sl. 
+No. 
+PAVT 
+Scheme 
+Code 
+Scheme Name Total 
+Transaction 
+Total 
+Amount  (  
+Success 
+Transaction 
+Success Amount  
+(  
+Failure 
+Transaction 
+Failure Amount  
+(  
+Pending 
+Transacti
+on 
+Pending Amount  
+(  
+Rejected 
+Transaction 
+Rejected 
+Amount  (  
+1 3 Milk Incentives To 
+Milk Producers 
+1,01,33,244 11,98,97,04,847 97,88,078 11,64,44,86,043 49,419 6,33,76,821 1,21,452 10,92,11,875 1,74,295 17,26,30,108 
+2 5 Pre-metric 
+Scholarship for 
+OBC 
+24,64,503 2,07,12,39,500 23,49,195 1,96,68,74,750 4,127 34,72,950 17,069 1,40,41,100 94,112 8,68,50,700 
+3 6 Pre-Matric 
+Scholarship (ST) 
+Classes I to VIII 
+7,23,250 80,96,76,000 7,06,871 79,12,00,700 1,733 19,45,800 5,063 56,77,250 9,583 1,08,52,250 
+4 7 Pre-Matric 
+Scholarship (ST) 
+Classes IX to X 
+1,61,461 36,31,48,500 1,25,011 28,11,51,150 425 9,56,250 14,595 3,28,23,600 21,430 4,82,17,500 
+5 8 Pre-Matric 
+Scholarship (SC) 
+Classes I to X 
+19,72,146 2,73,41,90,850 19,29,236 2,67,19,82,000 6,233 87,13,750 17,778 2,51,91,250 18,899 2,83,03,850 
+6 10 Pre-Matric 
+Scholarship (SC) 
+Unclean 
+Occupation 
+659 19,77,000 162 4,86,000 3 9,000 484 14,52,000 10 30,000 
+7 11 Pre-Matric 
+Scholarship for 
+Minorities 
+3,98,531 62,62,10,862 3,65,693 57,12,29,668 2,982 55,52,694 29,856 4,94,28,500 - - 
+8 12 Scheme for 
+development of 
+NT SNT 
+1,48,841 29,75,48,400 1,47,486 29,49,72,000 297 5,94,000 43 86,000 1,015 18,96,400 
+9 13 Chief Minister 
+Maathrushree 
+15,06,197 1,50,61,97,000 8,22,437 82,24,37,000 2,936 29,36,000 3,26,988 32,69,88,000 3,53,836 35,38,36,000 
+10 14 Integrated Farming 
+in Coconut 
+Productivity Imp 
+Program 
+1,88,285 1,46,70,89,600 1,58,259 1,21,50,98,600 888 63,18,400 2,152 1,40,77,200 26,986 23,15,95,400 
+11 15 Pre-Matric 
+Scholarship for 
+Renewal OBC 
+Students 
+5,25,359 49,82,07,600 5,13,160 48,69,58,800 1,154 10,91,050 1,043 9,96,450 10,002 91,61,300 
+12 16 Scheme for 
+development of 
+NT SNT Bank 
+Payment 
+13,318 2,66,36,000 13,197 2,63,94,000 69 1,38,000 52 1,04,000 - - 
+
+Report No 2 of the Year 2022 
+44 
+Sl. 
+No. 
+PAVT 
+Scheme 
+Code 
+Scheme Name Total 
+Transaction 
+Total 
+Amount  (  
+Success 
+Transaction 
+Success Amount  
+(  
+Failure 
+Transaction 
+Failure Amount  
+(  
+Pending 
+Transacti
+on 
+Pending Amount  
+(  
+Rejected 
+Transaction 
+Rejected 
+Amount  (  
+13 17 Pre-Metric 
+Scholarship for 
+Fresh OBC 
+Students 
+8,81,868 73,23,12,200 8,78,526 72,95,03,300 2,846 24,05,450 496 4,03,450 - - 
+14 18 Pre-Matric 
+Scholarship for 
+Renewal OBC 
+Bank Payment 
+1,51,485 12,78,27,550 1,50,441 12,69,50,500 703 5,92,550 341 2,84,500 - - 
+15 19 Price Deficiency 
+Payment System 
+10,735 7,92,78,130 10,699 7,90,27,417 35 2,49,781 1 932 - - 
+16 20 Pradhan Mantri 
+Kisan Samman 
+Nidhi Karnataka 
+78,85,464 15,77,09,28,000 45,28,808 9,05,76,16,000 10,083 2,01,66,000 39,491 7,89,82,000 33,07,082 6,61,41,64,000 
+17 21 Crop Survey 
+Project Karnataka 
+38,169 23,79,37,578 33,972 21,65,29,659 135 8,42,036 401 12,99,739 3,661 1,92,66,144 
+18 23 Raithasiri (State) 52,054 16,08,88,793 35,862 10,99,56,199 235 5,62,190 406 12,88,356 15,551 4,90,82,048 
+19 24 Raithasiri (Central) 62,037 27,80,57,813 45,309 20,47,30,764 107 4,86,911 109 5,02,750 16,512 7,23,37,388 
+20 25 Zero Budget 
+Natural Farming 
+8,335 3,52,32,407 6,913 2,74,61,507 37 1,59,890 4 17,280 1,381 75,93,730 
+21 26 National Food 
+security Mission 
+1,78,535 60,13,80,871 1,46,455 51,88,52,920 410 13,43,443 389 13,16,529 31,281 7,98,67,979 
+22 27 Karavali package 3,659 1,53,31,725 3,521 1,47,36,675 8 66,225 20 76,125 110 4,52,700 
+23 28 Post matric 
+scholarship 
+scheme for SC 
+students 
+5,58,851 3,15,62,06,178 4,64,075 2,29,48,09,222 4,054 4,28,20,567 70,556 75,36,02,469 20,166 6,49,73,920 
+24 29 Vidyasiri FAAS 1,13,260 86,82,79,500 1,12,545 86,17,39,500 254 19,26,000 - - 461 46,14,000 
+25 30 Post-Matric for 
+OBC Students 
+Central 
+1,82,279 41,10,74,300 1,80,491 40,66,63,650 473 11,58,050 1,251 30,92,850 64 1,59,750 
+26 31 Post-matric 
+Scholarship for 
+OBC State 
+2,24,241 50,52,16,000 1,41,934 31,30,40,750 273 6,58,950 37 95,200 81,997 19,14,21,100 
+27 32 Post-matric 
+scholarship for 
+NTSNT 
+8,829 3,11,37,000 97 3,75,000 - - 8,393 2,93,29,000 339 14,33,000 
+28 33 Training 
+Awareness and 
+Incentives to BC 
+students 
+7,954 6,39,51,000 7,931 6,37,54,000 19 1,70,000 - - 4 27,000 
+29 34 Post-matric 
+scholarship for 
+3,760 17,81,69,134 3,745 17,73,69,229 14 7,98,255 1 1,650 - - 
+
+                                          
+Appendix 
+45 
+Sl. 
+No. 
+PAVT 
+Scheme 
+Code 
+Scheme Name Total 
+Transaction 
+Total 
+Amount  (  
+Success 
+Transaction 
+Success Amount  
+(  
+Failure 
+Transaction 
+Failure Amount  
+(  
+Pending 
+Transacti
+on 
+Pending Amount  
+(  
+Rejected 
+Transaction 
+Rejected 
+Amount  (  
+SCST Students 
+DTE 
+30 35 Post-matric 
+scholarships for 
+Defence students 
+723 3,83,25,475 719 3,81,45,265 4 1,80,210 - - - - 
+31 36 Post-matric 
+Scholarship for ST 
+Students 
+2,12,327 1,13,00,42,265 1,91,793 1,00,19,81,839 1,472 1,48,97,537 8,451 7,85,08,629 10,611 3,46,54,260 
+32 37 Decentralised 
+procurement of 
+NFSA Paddy 
+34,718 1,39,28,13,280 22,009 87,72,78,748 12,707 51,54,63,513 2 71,019 - - 
+33 38 Decentralised 
+procurement of 
+NFSA Jowar 
+211 2,22,31,638 207 2,15,77,842 4 6,53,796 - - - - 
+34 39 Decentralised 
+procurement under 
+NFSA Ragi 
+80,453 5,35,35,31,063 56,254 3,70,85,10,943 24,195 1,64,47,85,244 4 2,34,876 - - 
+35 40 MSP for Tur, 
+Markfed 
+77,499 4,17,73,24,566 77,303 4,16,64,87,916 196 1,08,36,650 - - - - 
+36 41 MSP for Tur, Tur 
+Board 
+12,128 69,48,78,450 12,113 69,39,81,750 15 8,96,700 - - - - 
+37 43 Post Matric Fee 
+Reimbursement 
+523 4,46,65,951 517 4,42,33,798 6 4,32,153 - - - - 
+38 55 Post-matric 
+Scholarship for 
+Minorities 
+13,969 10,22,34,066 13,854 10,13,33,938 114 8,90,128 - - 1 10,000 
+39 61 Merit Cum Means 
+Scholarship 
+9,620 22,75,66,376 6,957 16,46,21,262 37 8,48,385 - - 2,626 6,20,96,729 
+40 85 Silk Samagra 40 71,34,087 16 32,30,000 3 49,087 21 38,55,000 - - 
+Total 2,90,49,520 58,83,57,81,555 2,40,51,851 46,79,77,70,304 1,28,705 2,35,94,44,416 6,66,949 1,53,30,39,579 42,02,015 8,14,55,27,256 
+  
+
+Report No 2 of the Year 2022 
+46 
+Appendix 2.2 
+(Reference : Paragraph 2.2.1.1, Page 7) 
+ 
+
+
+Appendix 
+47 
+Appendix 2.3  
+(Reference : Paragraph 2.2.1.1, Page 8) 
+Timely delivery of services 
+Time taken for Overall delivery of services i.e., from transaction date to the response 
+file received from SBI to K2 
+ 
+Scheme Overall 
+DBT 
+Milk 
+Incentive NFSM PMKSN Raithasiri 
+(State) 
+Raithasiri 
+(Central) 
+Total Time 
+Taken For 
+Transaction 
+Number of 
+Transaction 
+Number of 
+Transaction 
+Number of 
+Transaction 
+Number of 
+Transaction 
+Number of 
+Transaction 
+Number of 
+Transaction 
+<=4 10,14,762 0 17 56,615 14 176 
+5 to 7 16,76,958 10 4,864 4,56,375 525 526 
+8 to 15 52,60,344 9,70,791 44,030 12,69,865 16,110 13,852 
+16 to 365 1,60,82,997 88,00,487 97,544 27,45,953 19,213 30,755 
+>365 16,790 16,790 0 0 0 0 
+TOTAL 2,40,51,851 97,88,078 1,46,455 45,28,808 35,862 45,309 
+ 
+Time Taken from transaction date to Final/Scroll approval –Stage 1 
+Total Delay in 
+Scroll/Final 
+approval 
+Overall 
+DBT 
+Milk 
+Incentive NFSM PMKSN Raithasiri 
+(State) 
+Raithasiri 
+(Central) 
+0 to 3 14,80,903 - 45 1,79,319 22 86 
+4 to 7 36,08,758 32,541 12,866 18,16,907 2,209 1,956 
+8 to 15 71,62,234 26,08,369 53,656 16,81,906 16,563 17,828 
+16 to 274 1,17,99,956 71,47,168 79,888 8,50,676 17,068 25,439 
+TOTAL 2,40,51,851 97,88,078 1,46,455 45,28,808 35,862 45,309 
+ 
+Time Taken from Final/Scroll approval date till the response file received from SBI to 
+K2 –Stage 2 
+Total Time 
+Taken For 
+Transaction 
+After 
+Scroll/final 
+Approval 
+Overall 
+DBT 
+Milk 
+Incentive NFSM PMKSN Raithasiri 
+(State) 
+Raithasiri 
+(Central) 
+Negative 544 - - - - - 
+<=4 1,86,70,128 81,19,643 1,27,494 20,96,899 34,494 41,135 
+5 to 7 22,39,582 6,47,011 11,285 7,99,772 1,241 2,811 
+8 to 15 21,14,341 6,29,028 2,240 11,14,179 22 445 
+16 to 363 10,27,256 3,92,396 5,436 5,17,958 105 918 
+TOTAL 2,40,51,851 97,88,078 1,46,455 45,28,808 35,862 45,309 
+ 
+
+Report No 2 of the Year 2022 
+48 
+Appendix 2.4  
+(Reference : Paragraph 2.2.2, Page 10) 
+Recorded reasons for failure of transactions 
+2018-19 and 2019-20 
+Scheme Name Overall DBT Milk Incentive NFSM PMKSN Raithasiri(S) Raithasiri(C) 
+Error 
+code 
+Remarks Number 
+of Trans 
+Aprox. 
+% 
+Number 
+of Trans 
+Aprox. 
+% 
+Number 
+of Trans 
+Aprox. 
+% 
+Number 
+of Trans 
+Aprox. 
+% 
+Number 
+of Trans 
+Aprox. 
+% 
+Number 
+of Trans 
+Aprox. 
+% 
+E47 78-Invalid Bank Identifier 41,368 32 34,494 70 127 31 4,489 45 166 71 14 13 
+E24 95-Inactive Aadhaar 21,753 17 8,391 17 115 28 2,267 22 30 13 37 35 
+E05 68-A/c Blocked or Frozen 11,499 9 1,407 3 78 19 866 9 10 4 10 9 
+E06 01-Account Closed or 
+Transferred 
+8,051 6 2,255 5 21 5 1,180 12 2 - 5 5 
+E23 64-Aadhaar Number not 
+Mapped to Account Number 
+4,780 4 2,087 4 41 10 515 5 18 8 34 32 
+E03 54-Dormant A/c (No 
+Transactions for last 6 
+Months) 
+810 1 209 - 9 2 330 3 6 3 - - 
+ERR Sent to FRUITS due to 
+incorrect amount entry, 
+action taken based on mail 
+from PDDBT on 31st Mar 
+2020/Sent to FRUITS as per 
+dept request, action taken 
+based on mail from PDDBT 
+on 11th April 2020 
+36,287 28 - - - - - - - - - - 
+  Others 4,157 3 750 1 19 5 434 4 3 1 7 6 
+TOTAL 1,28,705 100 49,419 100 410 100 10,083 100 235 100 107 100 
+ 
+
+Appendix 
+49 
+Appendix 2.5  
+(Reference : Paragraph 2.2.3, Page 11) 
+Transactions pending at various transaction points 
+2018-19 and 2019-20 
+Remarks Overall DBT Milk 
+Incentive NFSM PMKSN Raithasiri 
+(S) 
+Raithasiri 
+(C) 
+Pending@NPCI 
+Check 
+3,31,655 
+(50%) 
+6,893 
+(6%) 
+0 54 
+(<1%) 
+0 0 
+Pending@Bank 53,787  
+(8%) 
+0 0 0 0 0 
+Pending@DDO 
+Level 
+2,06,264 
+(31%)
+ 
+74,113 
+(61%) 
+0 39,437 
+(100%) 
+84 
+(21%) 
+69 
+(63%) 
+Pending@K2 75,243 
+(11%) 
+40,446 
+(33%) 
+389 0 322 
+(79%) 
+40 
+(37%) 
+TOTAL 6,66,949 1,21,452 389 39,491 406 109 
+ 
+Appendix 2.6  
+(Reference : Paragraph 2.2.4, Page 12) 
+Reasons for rejected transactions 
+Overall DBT 2018-20 
+Status Reason Number of 
+Transaction 
+Total 
+Amount (  
+RejectedByDDO Pushed back to dept as per mail from PD 
+on 22nd May 2020 
+23,87,320 
+(57%) 
+4,77,51,40,566 
+Rejected@K2 KII_BMSER-01 : Mapping of given 
+budget line and DDO not available 
+8,32,262 
+(20%) 
+1,66,45,24,000 
+Rejected@K2 Sanction Order has already been 
+generated for some beneficiaries 
+3,18,205 (8%) 31,65,87,485  
+Rejected@NPCI I (Inactive Aadhaar Seeding) 89,466 (2%) 11,27,78,771 
+RejectedByDDO Pushed back to dept as per mail from PD 
+on 21st May 2020 
+86,029 (2%) 8,30,62,684  
+Rejected@K2 Budget line not available, based on mail 
+from PDDBT on 20th Feb 2020 
+79,688 (2%) 18,67,37,550 
+Rejected@K2 File detail has been removed from 
+khajane-2 as  per departmental request 
+letter dated 03.03.2020 
+76,962 (2%) 7,22,62,150  
+Rejected@K2 Sanction Order Rejected as part of Year 
+End 
+69,052 (2%) 13,81,04,000 
+Rejected@K2 Others 2,63,031 (5%) 79,63,30,050  
+Total 42,02,015 8,14,55,27,256 
+ 
+
+Report No 2 of the Year 2022 
+50 
+ Appendix 2.7 
+(Reference : Paragraph 2.3, Page 13) 
+ 
+  
+
+Appendix 
+51 
+Appendix 2.8 
+(Reference : Paragraph 2.3.2, Page 15) 
+Integration with State DBT Portal in progress 
+ 
+ 
+
+
+Report No 2 of the Year 2022 
+52 
+Appendix 2.9 
+(Reference : Paragraph 2.3.4, Page 16) 
+Deficiencies in name matching score 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+1 AH&VS MILK 
+INCENTIVES 
+K2 10010010098 95 XXXX-
+XXXX-4195 
+Sharmil Vijayakumar 
+Patil 
+Mrs. SHARAMIL 
+VIJAYAKUMA PATIL 
+18 Karnataka Vikas 
+Grameena Bank 
+XXXXXXX7676 
+2 AH&VS MILK 
+INCENTIVES 
+K2 10010010098 670 XXXX-
+XXXX-4195 
+Sharmil Vijayakumar 
+Patil 
+Mrs. SHARAMIL 
+VIJAYAKUMA PATIL 
+0 Karnataka Vikas 
+Grameena Bank 
+XXXXXXX7676 
+3 AH&VS MILK 
+INCENTIVES 
+K2 10010030014 900 XXXX-
+XXXX-0785 
+G Satyavathi MRS GUBBAL 
+SATHYAVATHI 
+SURYACHANDRARAO 
+19 State Bank of India XXXXXXX6419 
+4 AH&VS MILK 
+INCENTIVES 
+K2 10010030014 1,100 XXXX-
+XXXX-0785 
+G Satyavathi MRS GUBBAL 
+SATHYAVATHI 
+SURYACHANDRARAO 
+0 State Bank of India XXXXXXX6419 
+5 AH&VS MILK 
+INCENTIVES 
+K2 10010070004 55 XXXX-
+XXXX-4518 
+N Padmashree N PADMA W O N 
+SURYA BABU 
+15 Canara Bank XXXXXXXXX1799 
+6 AH&VS MILK 
+INCENTIVES 
+K2 10010070004 155 XXXX-
+XXXX-4518 
+N Padmashree N PADMA W O N 
+SURYA BABU 
+0 Canara Bank XXXXXXXXX1799 
+7 AH&VS MILK 
+INCENTIVES 
+K2 10010070038 215 XXXX-
+XXXX-3484 
+D Padma D PADMAVATHI W O D 
+SRINIVAS 
+15 Canara Bank XXXXXXXXX0153 
+8 AH&VS MILK 
+INCENTIVES 
+K2 10010070038 345 XXXX-
+XXXX-3484 
+D Padma D PADMAVATHI W O D 
+SRINIVAS 
+0 Canara Bank XXXXXXXXX0153 
+9 AH&VS MILK 
+INCENTIVES 
+K2 10010080019 1,090 XXXX-
+XXXX-1309 
+Kuberaddi Malipatil KUBEREDDY S O 
+BHIMARAYAPPA 
+18 The Raichur District 
+Central Coop Bank Ltd 
+Raichur 
+XXXXXXXXXXX6484 
+10 AH&VS MILK 
+INCENTIVES 
+K2 10010080019 765 XXXX-
+XXXX-1309 
+Kuberaddi Malipatil KUBEREDDY S O 
+BHIMARAYAPPA 
+0 The Raichur District 
+Central Coop Bank Ltd 
+Raichur 
+XXXXXXXXXXX6484 
+11 AH&VS MILK 
+INCENTIVES 
+K2 10010090026 415 XXXX-
+XXXX-1737 
+R Syamprasad MR SHAMAPRASAD . 
+S/O 
+VENKATARATHNAM 
+0 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX0366 
+12 AH&VS MILK 
+INCENTIVES 
+K2 10010090026 505 XXXX-
+XXXX-1737 
+R Syamprasad MR SHAMAPRASAD . 
+S/O 
+VENKATARATHNAM 
+18 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX0366 
+13 AH&VS MILK 
+INCENTIVES 
+K2 10010100055 175 XXXX-
+XXXX-4188 
+Parwathi MRS PARVATAMMA V 15 State Bank of India XXXXXXX1714 
+14 AH&VS MILK 
+INCENTIVES 
+K2 10010100055 205 XXXX-
+XXXX-4188 
+Parwathi MRS. PARVATAMMA V 0 State Bank of India XXXXXXX1714 
+
+                                          
+Appendix 
+53 
+53 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+15 AH&VS MILK 
+INCENTIVES 
+K2 10010110016 105 XXXX-
+XXXX-0065 
+K Lakshmi LAXMI WO 
+CHANDRAGOUDA 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX4211 
+16 AH&VS MILK 
+INCENTIVES 
+K2 10010110016 50 XXXX-
+XXXX-0065 
+K Lakshmi LAXMI WO 
+CHANDRAGOUDA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX4211 
+17 AH&VS MILK 
+INCENTIVES 
+K2 10010110019 20 XXXX-
+XXXX-4040 
+Fatima MRS FATHEEMABE 
+MANVI 
+15 State Bank of India XXXXXXX9533 
+18 AH&VS MILK 
+INCENTIVES 
+K2 10010110019 65 XXXX-
+XXXX-4040 
+Fatima MRS FATHEEMABE 
+MANVI 
+0 State Bank of India XXXXXXX9533 
+19 AH&VS MILK 
+INCENTIVES 
+K2 10010120010 275 XXXX-
+XXXX-1739 
+Anitan Sana MRS ANITHA SANA 18 State Bank of India XXXXXXX4775 
+20 AH&VS MILK 
+INCENTIVES 
+K2 10010120010 295 XXXX-
+XXXX-1739 
+Anitan Sana MRS ANITHA SANA 0 State Bank of India XXXXXXX4775 
+21 AH&VS MILK 
+INCENTIVES 
+K2 10010150044 2,065 XXXX-
+XXXX-5112 
+P Brhamayya BRAHMAYYA S/O PI 
+RAMULU  MR 
+18 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX2785 
+22 AH&VS MILK 
+INCENTIVES 
+K2 10010150044 1,120 XXXX-
+XXXX-5112 
+P Brhamayya BRAHMAYYA S/O PI 
+RAMULU  MR 
+0 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX2785 
+23 AH&VS MILK 
+INCENTIVES 
+K2 10010160004 4,530 XXXX-
+XXXX-7332 
+K  Shesharathnam SHESHARATNAM WO 
+KSHESHAGIRI RAO 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8540 
+24 AH&VS MILK 
+INCENTIVES 
+K2 10010160004 3,245 XXXX-
+XXXX-7332 
+K  Shesharathnam SHESHARATNAM WO 
+KSHESHAGIRI RAO 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8540 
+25 AH&VS MILK 
+INCENTIVES 
+K2 10010190088 400 XXXX-
+XXXX-1241 
+M Ananda MR ANAND SO 
+SAVARAPPA 
+19 State Bank of India XXXXXXX6691 
+26 AH&VS MILK 
+INCENTIVES 
+K2 10010190088 440 XXXX-
+XXXX-1241 
+M Ananda MR ANAND SO 
+SAVARAPPA 
+0 State Bank of India XXXXXXX6691 
+
+Report No 2 of the Year 2022 
+54 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+27 AH&VS MILK 
+INCENTIVES 
+K2 10010210046 315 XXXX-
+XXXX-6423 
+Koduru Satyanarayana SATHYANARAYANA  
+KODURI SO RAMA 
+RAO 
+18 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0788 
+28 AH&VS MILK 
+INCENTIVES 
+K2 10010210046 380 XXXX-
+XXXX-6423 
+Koduru Satyanarayana SATHYANARAYANA  
+KODURI SO RAMA 
+RAO 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0788 
+29 AH&VS MILK 
+INCENTIVES 
+K2 10010220043 180 XXXX-
+XXXX-8842 
+Pampanna PAMPAPATHI R SO 
+BIRAPPA 
+15 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1000 
+30 AH&VS MILK 
+INCENTIVES 
+K2 10010220043 20 XXXX-
+XXXX-8842 
+Pampanna PAMPAPATHI R SO 
+BIRAPPA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1000 
+31 AH&VS MILK 
+INCENTIVES 
+K2 10010230016 430 XXXX-
+XXXX-0945 
+L Sitharatnam SEETHA RATHNAM 
+LAKAMSANI WO 
+VENKATESHW 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2239 
+32 AH&VS MILK 
+INCENTIVES 
+K2 10010230016 1,375 XXXX-
+XXXX-0945 
+L Sitharatnam SEETHA RATHNAM 
+LAKAMSANI WO 
+VENKATESHW 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2239 
+33 AH&VS MILK 
+INCENTIVES 
+K2 10010230051 5 XXXX-
+XXXX-8025 
+S SUDHAKAR SUDHAKARA 
+SUNKAVALLI SO 
+NAGABHUSHNAM 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2066 
+34 AH&VS MILK 
+INCENTIVES 
+K2 10010230051 3,950 XXXX-
+XXXX-8025 
+S SUDHAKAR SUDHAKARA 
+SUNKAVALLI SO 
+NAGABHUSHNAM 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2066 
+35 AH&VS MILK 
+INCENTIVES 
+K2 10010230060 2,460 XXXX-
+XXXX-1402 
+K V V Satyanarayana SATHYANARAYANA 
+KODURI 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0961 
+36 AH&VS MILK 
+INCENTIVES 
+K2 10010230060 5 XXXX-
+XXXX-1402 
+K V V Satyanarayana SATHYANARAYANA 
+KODURI 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0961 
+37 AH&VS MILK 
+INCENTIVES 
+K2 10010230087 140 XXXX-
+XXXX-2375 
+M LAKSHMIPATI LAKSHMIPATHI SO 
+SUBBARAO 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0943 
+38 AH&VS MILK 
+INCENTIVES 
+K2 10010230087 5 XXXX-
+XXXX-2375 
+M Lakshmipati LAKSHMIPATHI SO 
+SUBBARAO 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0943 
+
+                                          
+Appendix 
+55 
+55 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+39 AH&VS MILK 
+INCENTIVES 
+K2 10010230099 1,040 XXXX-
+XXXX-4171 
+Venkatesh  Rao VENKATESHWAR RAO 
+SO DORAYYA 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1182 
+40 AH&VS MILK 
+INCENTIVES 
+K2 10010230099 595 XXXX-
+XXXX-4171 
+Venkatesh  Rao VENKATESHWAR RAO 
+SO DORAYYA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1182 
+41 AH&VS MILK 
+INCENTIVES 
+K2 10010230175 1,315 XXXX-
+XXXX-3159 
+Garapati Srinivasu SRINIVAS GARAPATI 
+SO VEERABRAHAM 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0952 
+42 AH&VS MILK 
+INCENTIVES 
+K2 10010230175 760 XXXX-
+XXXX-3159 
+Garapati Srinivasu SRINIVAS GARAPATI 
+SO VEERABRAHAM 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0952 
+43 AH&VS MILK 
+INCENTIVES 
+K2 10010230188 10 XXXX-
+XXXX-3666 
+Vidivad Arun Kumari ARUNAKUMARI WO 
+HARINATH VIDIVAD 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2523 
+44 AH&VS MILK 
+INCENTIVES 
+K2 10010230188 35 XXXX-
+XXXX-3666 
+Vidivad Arun Kumari ARUNAKUMARI WO 
+HARINATH VIDIVAD 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2523 
+45 AH&VS MILK 
+INCENTIVES 
+K2 10010240104 540 XXXX-
+XXXX-7976 
+Garapati   
+Sitaramabosa 
+GARAPATI 
+SITARAMAYYA SO 
+DASHARATHARAMA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1976 
+46 AH&VS MILK 
+INCENTIVES 
+K2 10010240104 75 XXXX-
+XXXX-7976 
+Garapati   
+Sitaramabosa 
+GARAPATI 
+SITARAMAYYA SO 
+DASHARATHARAMA 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX1976 
+47 AH&VS MILK 
+INCENTIVES 
+K2 10010240115 825 XXXX-
+XXXX-1280 
+Hulagappa Javali HULIGEPPA SO 
+NINGAPPA RO 
+GOREBAL CAMP 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8370 
+48 AH&VS MILK 
+INCENTIVES 
+K2 10010240115 3,135 XXXX-
+XXXX-1280 
+Hulagappa Javali HULIGEPPA SO 
+NINGAPPA RO 
+GOREBAL CAMP 
+18 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8370 
+49 AH&VS MILK 
+INCENTIVES 
+K2 10010260010 545 XXXX-
+XXXX-0797 
+A Lokarakshkudu MR 
+LOKARAKSHAKUDU 
+SO VENTATRAO 
+19 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX2062 
+50 AH&VS MILK 
+INCENTIVES 
+K2 10010260010 1,140 XXXX-
+XXXX-0797 
+A Lokarakshkudu MR 
+LOKARAKSHAKUDU 
+SO VENTATRAO 
+0 SUCO SOUHARDA 
+SAHAKARI BANK 
+XXXXXXXX2062 
+
+Report No 2 of the Year 2022 
+56 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+51 AH&VS MILK 
+INCENTIVES 
+K2 10010260164 5,925 XXXX-
+XXXX-2103 
+N Veeraraju VEERARAJ N SO 
+SATYANARAYAN 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2038 
+52 AH&VS MILK 
+INCENTIVES 
+K2 10010260164 6,225 XXXX-
+XXXX-2103 
+N Veeraraju VEERARAJ N SO 
+SATYANARAYAN 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX2038 
+53 AH&VS MILK 
+INCENTIVES 
+K2 10010270055 1,610 XXXX-
+XXXX-8967 
+D Venkatalaxmi WO 
+D Ramakrishna 
+VENKATALAKSHMI 
+WO RAMAKRISHNA RO 
+BHIM 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0542 
+54 AH&VS MILK 
+INCENTIVES 
+K2 10010270055 3,165 XXXX-
+XXXX-8967 
+D Venkatalaxmi WO 
+D Ramakrishna 
+VENKATALAKSHMI 
+WO RAMAKRISHNA RO 
+BHIM 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX0542 
+55 AH&VS MILK 
+INCENTIVES 
+K2 10010280115 1,005 XXXX-
+XXXX-4007 
+Boya Narsappa NARASAPPA WO 
+SAVAREPPA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX3635 
+56 AH&VS MILK 
+INCENTIVES 
+K2 10010280115 1,120 XXXX-
+XXXX-4007 
+Boya Narsappa NARASAPPA WO 
+SAVAREPPA 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX3635 
+57 AH&VS MILK 
+INCENTIVES 
+K2 10010280127 1,185 XXXX-
+XXXX-6362 
+H Venkoba VENKOBH SO 
+SHIVAPPA 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX6707 
+58 AH&VS MILK 
+INCENTIVES 
+K2 10010280127 1,150 XXXX-
+XXXX-6362 
+H Venkoba VENKOBH SO 
+SHIVAPPA 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX6707 
+59 AH&VS MILK 
+INCENTIVES 
+K2 10010290061 1,510 XXXX-
+XXXX-9021 
+Iramma MISS IRAMMAADAPUR 
+TAYAPPAADAPUR 
+14 State Bank of India XXXXXXX9712 
+60 AH&VS MILK 
+INCENTIVES 
+K2 10010290061 2,005 XXXX-
+XXXX-9021 
+Iramma MISS IRAMMAADAPUR 
+TAYAPPAADAPUR 
+0 State Bank of India XXXXXXX9712 
+61 AH&VS MILK 
+INCENTIVES 
+K2 10010340006 2,670 XXXX-
+XXXX-6736 
+M Dhanalakshmi DHANALAXMI   WO 
+NAGESHWAR RAO 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX3023 
+62 AH&VS MILK 
+INCENTIVES 
+K2 10010340006 2,790 XXXX-
+XXXX-6736 
+M Dhanalakshmi DHANALAXMI   WO 
+NAGESHWAR RAO 
+17 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX3023 
+
+                                          
+Appendix 
+57 
+57 
+Sl 
+No Dept Scheme Mode Beneficiary 
+ID 
+Amt  
+(  
+Aadhaar 
+No 
+Beneficiary 
+Name 
+Account Holder 
+Name 
+Name 
+Match 
+Score 
+Bank Name Account Number 
+63 AH&VS MILK 
+INCENTIVES 
+K2 10010370007 235 XXXX-
+XXXX-0783 
+R  Rathnamma MRS RATNAMMA WO 
+RAGHAVULU 
+19 State Bank of India XXXXXXX3259 
+64 AH&VS MILK 
+INCENTIVES 
+K2 10010370007 260 XXXX-
+XXXX-0783 
+R  Rathnamma MRS RATNAMMA WO 
+RAGHAVULU 
+0 State Bank of India XXXXXXX3259 
+65 AH&VS MILK 
+INCENTIVES 
+K2 10010380047 350 XXXX-
+XXXX-6092 
+Srinivasu SRINIVAS EADAL SO 
+GANGARAJU E RO 
+DEVI 
+19 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX4049 
+66 AH&VS MILK 
+INCENTIVES 
+K2 10010380047 685 XXXX-
+XXXX-6092 
+Srinivasu SRINIVAS EADAL SO 
+GANGARAJU E RO 
+DEVI 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX4049 
+67 AH&VS MILK 
+INCENTIVES 
+K2 10010390032 750 XXXX-
+XXXX-6902 
+Vaitli Venkatrao SHRI VENKATRAO 
+VAITLA 
+19 State Bank of India XXXXXXX7986 
+68 AH&VS MILK 
+INCENTIVES 
+K2 10010390032 970 XXXX-
+XXXX-6902 
+Vaitli Venkatrao SHRI VENKATRAO 
+VAITLA 
+0 State Bank of India XXXXXXX7986 
+69 AH&VS MILK 
+INCENTIVES 
+K2 10010400008 430 XXXX-
+XXXX-5938 
+Ereshamma WO 
+Siddayyaswamy 
+EERESHAMMA WO 
+SIDDAYYA RO 
+JAMBHUNATHAN 
+14 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8975 
+70 AH&VS MILK 
+INCENTIVES 
+K2 10010400008 980 XXXX-
+XXXX-5938 
+Ereshamma WO 
+Siddayyaswamy 
+EERESHAMMA WO 
+SIDDAYYA RO 
+JAMBHUNATHAN 
+0 Pragathi Krishna Gramin 
+Bank  
+XXXXXXXXXX8975 
+  
+
+Report No 2 of the Year 2022 
+58 
+ 
+Appendix 3.1 
+(Reference : Paragraph 3.1.2.1, Page 21) 
+Difference in the data of Core DBT and Ksheerasiri application 
+FY 2017-18 2019-20 Total 
+ As per DBT 
+Data 
+As per Data 
+given by 
+AH&VS 
+Difference 
+As per DBT 
+Data 
+As per Data 
+given by 
+AH&VS 
+Difference 
+As per DBT 
+Data 
+As per Data 
+given by 
+AH&VS 
+Difference 
+AHVS 
+data-DBT 
+data 
+AHVS data-
+DBT data 
+AHVS data-
+DBT data 
+Total 
+transaction 
+1,14,199 28,662 85,537 1,01,33,244 1,36,15,354 34,82,110 1,02,47,443 1,36,44,016 33,96,573 
+Total Amount  
+(  
+8,19,78,667 2,13,21,199 6,06,57,468 11,98,97,04,847 16,49,17,61,599 4,50,20,56,752 12,07,16,83,514 16,51,30,82,798 4,44,13,99,284 
+Success 
+transaction 
+58,857 28,437 30,420 97,88,078 1,28,84,246 30,96,168 98,46,935 1,29,12,683 30,65,748 
+Success 
+Amount (  
+4,30,92,781 2,11,48,832 2,19,43,949 11,64,44,86,043 15,66,89,48,733 4,02,44,62,690 11,68,75,78,824 15,69,00,97,565 4,00,25,18,741 
+Failed 
+transaction 
+174 74 100 49,419 69,115 19,696 49,593 69,189 19,596 
+Failed 
+Amount (  
+1,29,569 57,708 71,861 6,33,76,821 7,85,70,855 1,51,94,034 6,35,06,390 7,86,28,563 1,51,22,173 
+Pending/ 
+Rejected 
+transaction 
+55,168 151 55,017 2,95,747 6,61,993 3,66,246 3,50,915 6,62,144 3,11,229 
+Pending/ 
+Rejected 
+Amount (  
+3,87,56,317 1,14,659 3,86,41,658 28,18,41,983 74,42,42,011 46,24,00,028 32,05,98,300 74,43,56,670 42,37,58,370 
+
+Appendix 
+59 
+Appendix 3.2 
+(Reference : Paragraph 3.1.2.1, Page 23) 
+Fluctuations noticed in the quantity of milk supplied by the selected pourers 
+MPCS 
+CODE 
+Milk Pourer 
+CODE Variation in milk supply by largest milk pourers 
+1804166 18041660062 141 (May 2019) to 860.9 (June 2019) 
+2006041 20060410081 29115 (Nov 2019) to 42560 (March 2020) 
+1208042 12080420081 6267 (April 2019) to 24934 (May 2019) 
+1203073 12030730028 24064 (March 2020) to 40000 (December 2019) 
+1303026 13030260009 15859 (Feb 2020) to 22960 (July 2019) 
+2103139 21031390012 10832 (August 2019) to15851 (Feb 2020) 
+1201048 12010480124 4400 (March 2020) to 10500 (August 2019) 
+1906098 19060980189 2119 (August2019) to 18200(June 2019) 
+1206044 12060440133 3613 (Jan 2019) to20696 (April 2019 
+1907160 19071600138 4403 (Feb 2020) to 23364 (May 2019) 
+2007137 20071370046 5140 (April 2019) to 17418 (Sep 2019) 
+1902024 19020240207 16402 (March 2020) to 26894 (July2019) 
+1501033 15010330012 1325 (Nov 2019) to 37684 (May 2019) 
+1210042 12100420048 12221 (March 2020) to 25632 (April 2019) 
+1008019 10080190045 5239 (March 2020) to 20920 (Jan 2020) 
+1501033 15010330057 20523 (May 2020) to 58668 (August2020) 
+1802143 18021430112 22883 (May 2020) to 38556 (August 2020) 
+1005030 10050300115 9540 (May 2019) to 18,200 (November 2019) 
+1811183 18111830129 520 (March 2020) to 40,000 (July 2019) 
+2301109 23011090033 57 (August 2019) to 5339.7 (March 2020) 
+ 
+ 
+Appendix 3.3 
+(Reference : Paragraph 3.1.2.1, Page 24) 
+Over payment due to incorrect mapping of Business Rules 
+Beneficiary ID Period 
+From Period To DBT Beneficiary 
+Amount (  Payment Date K2 Payment ID 
+15010330057 01-05-2021 31-05-2021 2,70,015 16-07-2021 E572E150721001125 
+20010970118 01-10-2020 31-10-2020 2,16,820 01-09-2021 E572E260821000015 
+15010330012 01-05-2021 31-05-2021 2,67,970 16-07-2021 E572E150721001125 
+20010970118 01-03-2021 31-03-2021 2,07,135 14-06-2021 E572E100621000743 
+20060410081 01-08-2020 31-08-2020 2,16,250 09-03-2021 E572E060321000148 
+15010330012 01-06-2021 30-06-2021 2,46,950 25-08-2021 E572E130821001500 
+15010330012 01-09-2020 30-09-2020 2,30,005 15-03-2021 E572E050321002003 
+15010330057 01-09-2020 30-09-2020 2,30,005 15-03-2021 E572E050321002003 
+20060410081 01-06-2020 30-06-2020 2,01,250 01-09-2021 E572E250821001219 
+20060410081 01-07-2020 31-07-2020 2,15,750 01-09-2021 E572E260821001030 
+ 
+
+Report No 2 of the Year 2022 
+60 
+GLOSSARY 
+Glossary of Abbreviations 
+Sl. 
+No. Abbreviation Full Form 
+1. ACS Additional Chief Secretary  
+2. AH&VS Animal Husbandry and Veterinary Sciences 
+3. ASP Active Server Page 
+4. BMS Beneficiary Management System 
+5. BMC Bulk Milk Cooler 
+6. CC Chilling Centre 
+7. CIDR Classless Inter-Domain Routing 
+8. DSC Digital Signature Certificates 
+9. DPAR Department of Personal and Administrative Reform 
+10. EFT/ECS Electronic Fund Transfer / Electronic Clearing System 
+11. FRS Functional Requirement Specification 
+12. ICT Information and Communication Technology 
+13. JAM Jandhan Account, Aadhaar card number and Mobile number 
+14. K2 Khajane 2 
+15. KMF Karnataka Milk Federation 
+16. KRDH Karnataka Resident Data Hub 
+17. KSDC Karnataka State Data Centre 
+18. LoB Line of Business 
+19. MIS Management Information Systems 
+20. MPCS Milk Pourer Co-operative Societies 
+21. NIC National Informatics Centre 
+22. NPCI National Payments Corporation of India 
+23. NFSM National Food Security Mission 
+24. PD Program Director of DBT 
+25. SFTP Secure File Transfer Protocol 
+26. SNF Solid Not Dissolved 
+27. SRS Software Requirements Specification 
+28. UAT User Acceptance Testing 
+29. UIDAI Unique Identification Authority of India 
+  
+
+Glossary 
+61 
+B. Glossary of Terms 
+BHOOMI: Bhoomi is a project jointly funded by the Government of India and the 
+Government of Karnataka to digitize the paper land records and create a 
+software mechanism to control changes to the land registry in Karnataka. 
+BMC (Bulk Milk Cooler): A large storage tank for cooling and holding milk at a 
+cold temperature until it can be picked up by a milk hauler. 
+CC (Chilling Centers): Chilling Centers geographically located in taluka level in 
+order to maintain the quality of the procured milk. The Milk will be chilled at 
+Chilling centers. 
+CIDR: It means a centralised database in one or more locations containing all 
+Aadhaar numbers issued to Aadhaar number holders along with the 
+corresponding demographic information and biometric information of such 
+individuals and other information related thereto. 
+De-duplication: It is the process of using the Demographic and Biometric data 
+collected from an enrollee to check against rest of the data so as to avoid 
+duplicate enrolments. 
+Failed Transaction : The transaction which was failed due to some reason at 
+Destination Bank level. 
+FRS (Functional Requirement Specification): Functional requirements are 
+product features that developers must implement to enable the users to achieve 
+their goals. They define the basic system behavior under specific conditions. 
+ICT (Information and Communications Technology): ICT refers to technologies 
+that provide access to information through telecommunications.  
+JAM (Jan Dhan, Mobile and Aadhaar): It refers to the government of India 
+initiative to link Jan Dhan accounts, mobile numbers and Aadhaar cards of 
+Indians to plug the leakages of government subsidies. 
+K2 (KHAJANE II): Khajane II is an Integrated Financial Management system of 
+Government of Karnataka, implemented with the aim of managing 
+comprehensively the financial business of the Government. 
+KRDH: Karnataka Resident Data Hub (KRDH) is a comprehensive platform for 
+the departments of Government of Karnataka to streamline beneficiary 
+databases, weed out duplicates and bogus entries and linking of all beneficiaries 
+across the departments and geography thus providing exclusion and inclusion of 
+beneficiaries. 
+KSDC: The State Data Center of Government of Karnataka was set up as a core 
+common technology infrastructure, required for consolidating state level 
+applications at a central facility. 
+LoB: Line of business (LOB) is a general term which refers to a product or a set 
+of related products that serve a particular customer transaction or business need. 
+Native Application- The native application refers to the application of the user 
+department which connects with CoreDBT System for DBT transactions.  
+ 
+ 
+
+Report No 2 of the Year 2022 
+62 
+ 
+NPCI (National Payments Corporation of India): NPCI is the specialised division 
+of Reserve Bank of India which is under the jurisdiction of Ministry of Finance, 
+Government of India. It was created by RBI for operating retail payments and 
+settlement systems in India. 
+Pending Transaction: The transaction which is awaiting to be processed at any 
+of the stage prior to the K2/Bank payment. 
+Rejected Transaction : The transaction which was rejected in the process of 
+payment at any of the stage prior to Final Bank Payment.  
+SEEDING: Aadhaar Seeding means linking Aadhaar holder’s unique 12 digit 
+AADHAAR number with their Personal Identification Documents or Benefit 
+Cards. 
+SFTP (Secure File Transfer Protocol): SFTP is a network protocol that 
+provides file access, file transfer, and file management over any reliable data 
+stream. 
+SNF (Solid-Not-Fat): The substances in milk other than water and butterfat are 
+termed as SNF. It is a residual component left after the complete evaporation of 
+water from milk. SNF in milk includes lactose, vitamins, calcium, minerals, fat, 
+protein and other nutrients. 
+SRS (System Requirements Specification): A SRS is a structured collection of 
+information that embodies the requirements of a system. 
+UAT (User Acceptance Testing): UAT is a type of testing performed by the end 
+user or the client to verify/accept the software system before moving the software 
+application to the production environment. UAT is done in the final phase of 
+testing after functional, integration and system testing is done. 
+XML FILES: An XML file is an extensible markup language file, and it is used to 
+structure data for storage and transport. In an XML file, there are both tags and 
+text. The tags provide the structure to the data. The text in the file that you wish 
+to store is surrounded by these tags, which adhere to specific syntax guidelines. 
+ 
+ 
