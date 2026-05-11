@@ -40,6 +40,7 @@ import os
 import random
 import re
 import shutil
+import threading
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -369,6 +370,16 @@ def _sha256_of(path: str) -> str:
     return h.hexdigest()
 
 
+# Process-wide lock around the index.json read/modify/write inside
+# archive_pdf(). build_lc.py uses EXTRACT_WORKERS=4 ThreadPoolExecutor;
+# without this lock, two workers writing index.json concurrently can
+# lose each other's entries (worker A reads, worker B reads, A writes,
+# B writes — A's entry is gone). v0 of the archive feature surfaced
+# this in run 25659927513: extracted=3 on the mirror but only 1 entry
+# in index.json on the archive repo.
+_archive_lock = threading.Lock()
+
+
 def archive_pdf(pdf_path: str, report_number: int, pdf_url: str,
                 *, archive_dir: str) -> bool:
     """Copy a freshly-downloaded PDF into the sansadsaar-lc archive layout.
@@ -410,56 +421,62 @@ def archive_pdf(pdf_path: str, report_number: int, pdf_url: str,
     dest_path = os.path.join(pdfs_subdir, f"{report_number}.pdf")
     index_path = os.path.join(archive_dir, "index.json")
 
-    # Load existing index (best-effort; treat malformed/missing as empty).
-    index_obj: dict = {}
-    if os.path.isfile(index_path):
-        try:
-            with open(index_path, "r", encoding="utf-8") as f:
-                index_obj = json.load(f)
-        except Exception as e:
-            print(f"  [archive] index.json unparseable ({e}); rebuilding from disk")
-            index_obj = {}
-    reports = index_obj.get("reports") or {}
-
     src_size = os.path.getsize(pdf_path)
-    existing = reports.get(str(report_number))
-    if (os.path.isfile(dest_path)
-            and existing
-            and existing.get("size_bytes") == src_size):
-        # Cheap short-circuit: same file already there. Avoid the sha256
-        # cost on every run.
-        return False
 
-    digest = _sha256_of(pdf_path)
-    if (os.path.isfile(dest_path)
-            and existing
-            and existing.get("sha256") == digest
-            and existing.get("size_bytes") == src_size):
-        return False
+    # Serialise the read-modify-write of index.json across all worker
+    # threads. The PDF copy is also done inside the lock — cheap (file
+    # is local, kernel page cache), and keeps the function's contract
+    # simple (return True iff something landed).
+    with _archive_lock:
+        # Load existing index (best-effort; treat malformed/missing as empty).
+        index_obj: dict = {}
+        if os.path.isfile(index_path):
+            try:
+                with open(index_path, "r", encoding="utf-8") as f:
+                    index_obj = json.load(f)
+            except Exception as e:
+                print(f"  [archive] index.json unparseable ({e}); rebuilding from disk")
+                index_obj = {}
+        reports = index_obj.get("reports") or {}
 
-    shutil.copyfile(pdf_path, dest_path)
+        existing = reports.get(str(report_number))
+        if (os.path.isfile(dest_path)
+                and existing
+                and existing.get("size_bytes") == src_size):
+            # Cheap short-circuit: same file already there. Avoid the
+            # sha256 cost on every run.
+            return False
 
-    reports[str(report_number)] = {
-        "report_number": report_number,
-        "sha256":        digest,
-        "size_bytes":    src_size,
-        "archived_at":   datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source_url":    pdf_url,
-    }
-    # Sort by report_number for a deterministic, diff-friendly index.json.
-    sorted_reports = {str(k): reports[str(k)] for k in sorted(
-        (int(k) for k in reports.keys()))}
-    index_obj = {
-        "version":      "1.0",
-        "corpus":       "lc",
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "total":        len(sorted_reports),
-        "reports":      sorted_reports,
-    }
-    # Atomic-ish write: temp + rename. Avoids a half-written index.json on
-    # runner kill mid-update.
-    tmp_path = index_path + ".tmp"
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(index_obj, f, indent=2, ensure_ascii=False)
-    os.replace(tmp_path, index_path)
-    return True
+        digest = _sha256_of(pdf_path)
+        if (os.path.isfile(dest_path)
+                and existing
+                and existing.get("sha256") == digest
+                and existing.get("size_bytes") == src_size):
+            return False
+
+        shutil.copyfile(pdf_path, dest_path)
+
+        reports[str(report_number)] = {
+            "report_number": report_number,
+            "sha256":        digest,
+            "size_bytes":    src_size,
+            "archived_at":   datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "source_url":    pdf_url,
+        }
+        # Sort by report_number for a deterministic, diff-friendly index.json.
+        sorted_reports = {str(k): reports[str(k)] for k in sorted(
+            (int(k) for k in reports.keys()))}
+        index_obj = {
+            "version":      "1.0",
+            "corpus":       "lc",
+            "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "total":        len(sorted_reports),
+            "reports":      sorted_reports,
+        }
+        # Atomic-ish write: temp + rename. Avoids a half-written
+        # index.json on runner kill mid-update.
+        tmp_path = index_path + ".tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(index_obj, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_path, index_path)
+        return True
