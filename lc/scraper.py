@@ -33,12 +33,16 @@ See plan/law-commission-recon-001.md for the full recon writeup.
 
 from __future__ import annotations
 
+import hashlib
 import html
+import json
 import os
 import random
 import re
+import shutil
 import time
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from typing import Iterator, Optional
 
 import requests
@@ -352,3 +356,110 @@ def get_report_text(pdf_url: str, report_number: int, *, text_dir: str, pdfs_dir
     if not pdf_path:
         return None
     return extract_text(pdf_path, report_number, text_dir=text_dir)
+
+
+# ── PDF archive (separate repo: sansadsaar-lc) ─────────────────────────────
+
+
+def _sha256_of(path: str) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def archive_pdf(pdf_path: str, report_number: int, pdf_url: str,
+                *, archive_dir: str) -> bool:
+    """Copy a freshly-downloaded PDF into the sansadsaar-lc archive layout.
+
+    Rationale: lawcommissionofindia.nic.in is on WordPress / S3WaaS — gov-of-
+    India CDN that has occasionally rotated URLs or dropped older content.
+    We snapshot each PDF we fetch into a separate public repo so:
+      - the app can offer an "archive copy" fallback link in the detail panel
+      - the corpus survives an upstream takedown / URL rotation
+      - third-party researchers can pull the whole archive with `git clone`
+
+    Layout written under `archive_dir`:
+      pdfs/<report_number>.pdf
+      index.json   — dict keyed by report_number with {sha256, size_bytes,
+                     archived_at (ISO), source_url}; merge semantics preserve
+                     archive_dir as the source of truth across runs.
+
+    Idempotent: if pdfs/<n>.pdf already exists AND has matching sha256 +
+    size, nothing is rewritten. Returns True when something new was
+    persisted, False otherwise.
+
+    No-op (returns False) when `archive_dir` is falsy or missing — local-dev
+    runs that don't set LC_ARCHIVE_DIR get default behaviour with no
+    archival side effects.
+    """
+    if not archive_dir:
+        return False
+    if not os.path.isdir(archive_dir):
+        # Fail loudly: the workflow sets this to a cloned repo and a missing
+        # dir means the clone step was skipped or failed. Silent skip would
+        # let us silently lose the archival promise.
+        print(f"  [archive] LC_ARCHIVE_DIR={archive_dir!r} doesn't exist; skipping archive of #{report_number}")
+        return False
+    if not pdf_path or not os.path.isfile(pdf_path):
+        return False
+
+    pdfs_subdir = os.path.join(archive_dir, "pdfs")
+    os.makedirs(pdfs_subdir, exist_ok=True)
+    dest_path = os.path.join(pdfs_subdir, f"{report_number}.pdf")
+    index_path = os.path.join(archive_dir, "index.json")
+
+    # Load existing index (best-effort; treat malformed/missing as empty).
+    index_obj: dict = {}
+    if os.path.isfile(index_path):
+        try:
+            with open(index_path, "r", encoding="utf-8") as f:
+                index_obj = json.load(f)
+        except Exception as e:
+            print(f"  [archive] index.json unparseable ({e}); rebuilding from disk")
+            index_obj = {}
+    reports = index_obj.get("reports") or {}
+
+    src_size = os.path.getsize(pdf_path)
+    existing = reports.get(str(report_number))
+    if (os.path.isfile(dest_path)
+            and existing
+            and existing.get("size_bytes") == src_size):
+        # Cheap short-circuit: same file already there. Avoid the sha256
+        # cost on every run.
+        return False
+
+    digest = _sha256_of(pdf_path)
+    if (os.path.isfile(dest_path)
+            and existing
+            and existing.get("sha256") == digest
+            and existing.get("size_bytes") == src_size):
+        return False
+
+    shutil.copyfile(pdf_path, dest_path)
+
+    reports[str(report_number)] = {
+        "report_number": report_number,
+        "sha256":        digest,
+        "size_bytes":    src_size,
+        "archived_at":   datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source_url":    pdf_url,
+    }
+    # Sort by report_number for a deterministic, diff-friendly index.json.
+    sorted_reports = {str(k): reports[str(k)] for k in sorted(
+        (int(k) for k in reports.keys()))}
+    index_obj = {
+        "version":      "1.0",
+        "corpus":       "lc",
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "total":        len(sorted_reports),
+        "reports":      sorted_reports,
+    }
+    # Atomic-ish write: temp + rename. Avoids a half-written index.json on
+    # runner kill mid-update.
+    tmp_path = index_path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(index_obj, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, index_path)
+    return True

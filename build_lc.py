@@ -42,6 +42,7 @@ from lc.scraper import (
     BASE_URL, LISTING_URL,
     LCReport, RateLimited,
     walk_all_commissions, get_report_text,
+    archive_pdf,
 )
 
 # ── Paths ───────────────────────────────────────────────────────────────────
@@ -72,6 +73,18 @@ EXTRACT_WORKERS         = int(os.environ.get("EXTRACT_WORKERS", "4"))
 # limit today, but we adopt the same pattern as DRSC/CAG so future changes
 # upstream don't break the pipeline silently.
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
+
+# PDF archive sidecar. When set, each freshly-downloaded PDF gets copied
+# into this dir (which is expected to be a cloned `sansadsaar-lc` git repo).
+# lc.yml provides this in CI via a checkout of sansadsaar-lc to a sibling
+# path; local-dev runs leave it empty and skip archival.
+#
+# Rationale: lawcommissionofindia.nic.in is on WordPress / S3WaaS, which
+# has a track record of URL rotations + occasional content loss on Indian
+# gov sites. The archive guarantees the corpus survives upstream takedowns
+# and gives the app a fallback "Archive copy" link in detail panels.
+# Implementation in lc/scraper.py:archive_pdf.
+LC_ARCHIVE_DIR = os.environ.get("LC_ARCHIVE_DIR", "")
 
 
 # ── In-flight checkpointing ────────────────────────────────────────────────
@@ -343,6 +356,21 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
         rid, url = rid_url
         try:
             text = get_report_text(url, rid, text_dir=str(TEXT_DIR), pdfs_dir=str(PDFS_DIR))
+            # Archive the PDF if LC_ARCHIVE_DIR is wired. We do this for
+            # ALL successful downloads (not just successful text extracts) —
+            # scanned-only PDFs that pypdf can't read are exactly the
+            # archival use case (fragile WordPress source + harder to
+            # re-derive than text-extractable ones).
+            if LC_ARCHIVE_DIR:
+                pdf_path = str(PDFS_DIR / f"{rid}.pdf")
+                try:
+                    archive_pdf(pdf_path, rid, url, archive_dir=LC_ARCHIVE_DIR)
+                except Exception as ae:
+                    # Best-effort: an archive failure must not break the
+                    # extraction loop. The workflow's final commit-and-push
+                    # step is the backstop; if that also fails the next run
+                    # picks up the same PDF.
+                    print(f"  [archive] failed to archive #{rid}: {ae}")
             return rid, text, None
         except RateLimited as rl:
             return rid, None, rl

@@ -4,7 +4,12 @@ name: LC scrape and publish
 # lawcommissionofindia.nic.in. Walks the listing, merges into reports.json,
 # extracts text from missing PDFs up to MAX_EXTRACTIONS_PER_RUN.
 #
-# No separate backfill workflow — the LC corpus is ~280 reports total,
+# Also archives each freshly-downloaded PDF into the sibling
+# `sansadsaar-lc` repo (durability hedge against the fragile WordPress /
+# S3WaaS upstream). See plan/law-commission-recon-001.md + lc/scraper.py
+# archive_pdf() for the rationale.
+#
+# No separate backfill workflow — the LC corpus is ~290 reports total,
 # so MAX_EXTRACTIONS_PER_RUN=100 catches the whole historical backlog
 # in three daily cycles. If you ever need a one-shot full backfill,
 # workflow_dispatch this with max_extractions=500.
@@ -60,11 +65,54 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Prepare sansadsaar-lc archive working tree
+        # Clone the PDF-archive repo to a sibling path. First-run case:
+        # repo exists but has no `main` branch yet (created empty by hand).
+        # We git-init locally, set the remote with the PAT, fetch if the
+        # remote main exists, otherwise prepare to push a brand-new main.
+        #
+        # The PAT (LC_ARCHIVE_TOKEN) is a fine-grained token scoped to
+        # Contents:write on sansadsaar-lc only. It's masked in workflow
+        # logs by GH Actions' secret redaction.
+        env:
+          LC_ARCHIVE_TOKEN: ${{ secrets.LC_ARCHIVE_TOKEN }}
+        run: |
+          ARCHIVE_DIR="$(pwd)/../sansadsaar-lc"
+          mkdir -p "$ARCHIVE_DIR"
+          cd "$ARCHIVE_DIR"
+          git init -q -b main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          REMOTE_URL="https://x-access-token:${LC_ARCHIVE_TOKEN}@github.com/NakliTechie/sansadsaar-lc.git"
+          if git remote get-url origin >/dev/null 2>&1; then
+            git remote set-url origin "$REMOTE_URL"
+          else
+            git remote add origin "$REMOTE_URL"
+          fi
+          if git ls-remote --exit-code --heads origin main >/dev/null 2>&1; then
+            echo "remote main exists; pulling current state"
+            git fetch --depth=1 origin main
+            git reset --hard FETCH_HEAD
+          else
+            echo "remote main does not exist yet — will create on first push"
+          fi
+          # Seed README.md if missing. We commit/push the README in the
+          # same commit as the first archived PDF so the initial repo
+          # state isn't bare. Subsequent runs see README and leave it.
+          if [ ! -f README.md ]; then
+            cp "$GITHUB_WORKSPACE/lc/templates/archive-README.md" README.md
+          fi
+
       - name: Build LC primary data (extract phase only)
         # Split-phase: writers commit reports.json + text/<id>.txt only.
         # Derived files (manifest/bundle/index/meta) are owned by
         # lc-derive.yml — single owner, cancel-in-progress, never races.
         # See CONV.md "Split-phase scraping pattern" for the full rationale.
+        #
+        # LC_ARCHIVE_DIR enables PDF archival as a side-effect of each
+        # successful download. archive_pdf() in lc/scraper.py is
+        # idempotent (sha256+size short-circuit) so re-runs don't churn
+        # the archive repo.
         env:
           BUILD_PHASE:             'extract'
           MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '100' }}
@@ -72,7 +120,33 @@ jobs:
           EXTRACT_WORKERS:         '4'
           JITTER_MIN_MS:           '250'
           JITTER_MAX_MS:           '500'
+          LC_ARCHIVE_DIR:          ${{ github.workspace }}/../sansadsaar-lc
         run: python build_lc.py
+
+      - name: Commit and push sansadsaar-lc archive
+        # Push BEFORE the parliamentwatch-data commit so an archive push
+        # failure can't leave reports.json + text/ pointing at PDFs that
+        # the archive doesn't have. (We tolerate a temporary divergence
+        # the other direction — archive has PDFs whose text isn't yet on
+        # the mirror — much more easily.)
+        #
+        # `continue-on-error: true` because the archive is a hedge, not
+        # a blocker — if cross-repo auth has a hiccup, the main pipeline
+        # still publishes; the next daily run will catch up the archive.
+        continue-on-error: true
+        run: |
+          ARCHIVE_DIR="$(pwd)/../sansadsaar-lc"
+          cd "$ARCHIVE_DIR"
+          git add .
+          if git diff --cached --quiet; then
+            echo "no archive changes — skipping push"
+            exit 0
+          fi
+          git commit -m "Auto-archive LC PDFs [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          # First push needs -u to set upstream; subsequent runs just push.
+          # `--force-with-lease` would be safer than --force, but plain
+          # push is right here — the workflow is the only writer.
+          git push -u origin main
 
       - name: Commit and push primary changes
         # Narrow git add to primary files only — reports.json + text/.

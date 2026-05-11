@@ -72,6 +72,12 @@ import subprocess
 CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "2"))
 CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
 
+# PDF archive sidecar — see build_lc.py for the full rationale. The OCR
+# slow lane downloads scanned PDFs that pypdf couldn't read; those are
+# exactly the rare / fragile / hardest-to-replace files in the corpus,
+# so we want them archived even more than the text-extractable ones.
+LC_ARCHIVE_DIR = os.environ.get("LC_ARCHIVE_DIR", "")
+
 
 def _git(*args) -> tuple[int, str, str]:
     p = subprocess.run(
@@ -261,8 +267,9 @@ def main():
     units_since_checkpoint = 0   # successes + tombstones (both are commit-worthy)
 
     print("\n[2/3] Downloading + OCR'ing...")
-    # Lazy-import the scraper's downloader (handles jitter + rate-limit).
-    from lc.scraper import download_pdf as _download_pdf, RateLimited
+    # Lazy-import the scraper's downloader (handles jitter + rate-limit)
+    # and the archive helper (no-op when LC_ARCHIVE_DIR is unset).
+    from lc.scraper import download_pdf as _download_pdf, RateLimited, archive_pdf
     for i, (rid, pdf_url) in enumerate(target, start=1):
         if time.monotonic() > deadline:
             print(f"  [BUDGET] wall-clock budget hit after {len(succeeded)} successes")
@@ -278,6 +285,15 @@ def main():
             if not got:
                 print(f"    download failed — skipping (no tombstone; will retry next run)")
                 continue
+        # Archive the PDF on every visit (idempotent — archive_pdf
+        # short-circuits when sha256+size already match). OCR candidates
+        # are by definition the rare, scanned-only PDFs that are hardest
+        # to re-derive if upstream rotates URLs.
+        if LC_ARCHIVE_DIR:
+            try:
+                archive_pdf(str(pdf_path), rid, pdf_url, archive_dir=LC_ARCHIVE_DIR)
+            except Exception as ae:
+                print(f"    [archive] failed to archive #{rid}: {ae}")
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  [{i}/{len(target)}] id={rid} ({size_mb:.1f} MB) — running OCR...", flush=True)
         t0 = time.time()

@@ -74,6 +74,36 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Prepare sansadsaar-lc archive working tree
+        # See lc.yml for the full rationale. OCR-side archival is doubly
+        # important: scanned-only PDFs are the rare / hardest-to-replace
+        # ones in the corpus, and pypdf already confirmed pypdf can't read
+        # them, so the actual byte stream IS the source of truth.
+        env:
+          LC_ARCHIVE_TOKEN: ${{ secrets.LC_ARCHIVE_TOKEN }}
+        run: |
+          ARCHIVE_DIR="$(pwd)/../sansadsaar-lc"
+          mkdir -p "$ARCHIVE_DIR"
+          cd "$ARCHIVE_DIR"
+          git init -q -b main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          REMOTE_URL="https://x-access-token:${LC_ARCHIVE_TOKEN}@github.com/NakliTechie/sansadsaar-lc.git"
+          if git remote get-url origin >/dev/null 2>&1; then
+            git remote set-url origin "$REMOTE_URL"
+          else
+            git remote add origin "$REMOTE_URL"
+          fi
+          if git ls-remote --exit-code --heads origin main >/dev/null 2>&1; then
+            git fetch --depth=1 origin main
+            git reset --hard FETCH_HEAD
+          else
+            echo "remote main does not exist yet — will create on first push"
+          fi
+          if [ ! -f README.md ]; then
+            cp "$GITHUB_WORKSPACE/lc/templates/archive-README.md" README.md
+          fi
+
       - name: OCR scanned PDFs
         env:
           MAX_OCR_PER_RUN:    ${{ inputs.max_ocr_per_run    || '5' }}
@@ -81,7 +111,21 @@ jobs:
           MAX_PAGES_PER_PDF:  ${{ inputs.max_pages_per_pdf  || '400' }}
           RENDER_DPI:         ${{ inputs.render_dpi         || '150' }}
           TESSERACT_LANGS:    'eng+hin'
+          LC_ARCHIVE_DIR:     ${{ github.workspace }}/../sansadsaar-lc
         run: python build_lc_ocr.py
+
+      - name: Commit and push sansadsaar-lc archive
+        continue-on-error: true
+        run: |
+          ARCHIVE_DIR="$(pwd)/../sansadsaar-lc"
+          cd "$ARCHIVE_DIR"
+          git add .
+          if git diff --cached --quiet; then
+            echo "no archive changes — skipping push"
+            exit 0
+          fi
+          git commit -m "Auto-archive LC PDFs (OCR run) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git push -u origin main
 
       - name: Commit and push primary changes
         # OCR is part of the primary-write tier — it produces text/<id>.txt
