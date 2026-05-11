@@ -1,0 +1,10 @@
+{
+  "audited_at": "2026-05-11T10:37:24Z",
+  "totals": {
+    "records": 5328,
+    "with_text": 3,
+    "empty_upstream": 0,
+    "error_retryable": 0,
+    "never_attempted": 5325
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "texts": {
+    "ls": {
+      "LS18_S7_5382": {
+        "size": 1512,
+        "url": "text/ls/LS18_S7_5382.txt"
+      },
+      "LS18_S7_5383": {
+        "size": 2782,
+        "url": "text/ls/LS18_S7_5383.txt"
+      },
+      "LS18_S7_5384": {
+        "size": 1069,
+        "url": "text/ls/LS18_S7_5384.txt"
+      }
+    }
+  }
+}
