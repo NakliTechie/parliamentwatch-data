@@ -200,9 +200,17 @@ def _missing_reports_priority_order():
 
     The on-disk text file path is text/<committee>/LS<n>_<num>.txt, which
     uniquely identifies a single (committee, lok_sabha, report_number) tuple.
+
+    Per-attempt status markers (see CONV.md "Per-attempt status markers"):
+      .txt           → already extracted (skip)
+      .pypdf-empty   → known scanned/encrypted, queued for OCR (skip — wasted bandwidth)
+      .ocr-failed    → OCR permanent tombstone (skip — won't ever succeed)
+      .pypdf-error   → retryable (still attempt; transient failures resolve)
+      (no marker)    → never attempted (default — attempt)
     """
     reports = load_existing_reports()
     candidates = []
+    skipped_marked = 0
     for committee_key, committee_reports in reports.items():
         for report in committee_reports:
             num = report.get("report_number")
@@ -211,8 +219,12 @@ def _missing_reports_priority_order():
             if not num or not url or ls is None:
                 continue
             file_id = _file_id(ls, num)
-            text_path = DOCS / "text" / committee_key / f"{file_id}.txt"
-            if text_path.exists():
+            base = DOCS / "text" / committee_key
+            text_path        = base / f"{file_id}.txt"
+            pypdf_empty_path = base / f"{file_id}.pypdf-empty"
+            ocr_failed_path  = base / f"{file_id}.ocr-failed"
+            if text_path.exists() or pypdf_empty_path.exists() or ocr_failed_path.exists():
+                skipped_marked += 1
                 continue
             candidates.append({
                 "committee_key": committee_key,
@@ -223,6 +235,9 @@ def _missing_reports_priority_order():
             })
     # Most recent first (LS18 before LS17, higher report number first within an LS)
     candidates.sort(key=lambda c: (c["lok_sabha"], c["report_number"]), reverse=True)
+    if skipped_marked:
+        print(f"  candidate selection: skipped {skipped_marked} reports "
+              f"already marked .txt/.pypdf-empty/.ocr-failed")
     return candidates
 
 
@@ -364,6 +379,52 @@ def build_committees_index():
         out[key] = {"name": c["name"], "house": c.get("house", "L")}
     with open(DOCS / "committees.json", "w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
+
+
+def compute_audit():
+    """Walk reports.json + text/ and classify each (committee, ls, num) tuple
+    by its per-attempt status. Pure function of disk state. Output goes to
+    docs/drsc/audit.json. See CONV.md "Periodic audit JSON".
+    """
+    reports = load_existing_reports()
+    counts = {
+        "reports":                    0,
+        "with_text":                  0,
+        "pypdf_empty_awaiting_ocr":   0,
+        "pypdf_error_retryable":      0,
+        "ocr_failed_permanent":       0,
+        "never_attempted":            0,
+        "no_pdf_url":                 0,
+    }
+    text_root = DOCS / "text"
+    for committee_key, committee_reports in reports.items():
+        for r in committee_reports:
+            counts["reports"] += 1
+            num = r.get("report_number")
+            url = r.get("pdf_url")
+            ls  = r.get("lok_sabha")
+            if not url:
+                counts["no_pdf_url"] += 1
+                continue
+            if not num or ls is None:
+                counts["never_attempted"] += 1
+                continue
+            file_id = _file_id(ls, num)
+            base = text_root / committee_key
+            if (base / f"{file_id}.txt").exists():
+                counts["with_text"] += 1
+            elif (base / f"{file_id}.ocr-failed").exists():
+                counts["ocr_failed_permanent"] += 1
+            elif (base / f"{file_id}.pypdf-empty").exists():
+                counts["pypdf_empty_awaiting_ocr"] += 1
+            elif (base / f"{file_id}.pypdf-error").exists():
+                counts["pypdf_error_retryable"] += 1
+            else:
+                counts["never_attempted"] += 1
+    return {
+        "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "totals":     counts,
+    }
 
 
 # Search bundle: title + first N chars per extracted report. Used by the
@@ -725,12 +786,24 @@ def phase_derive():
     else:
         print("  no text/ directory yet — skipping index build")
 
-    print("\n[Derive 4/4] Writing meta.json...")
+    print("\n[Derive 4/4] Writing meta.json + audit.json...")
     reports = load_existing_reports()
     total = sum(len(v) for v in reports.values())
     total_with_text = sum(len(v) for v in manifest.get("texts", {}).values())
     meta = write_meta(total, total_with_text, bundle_stats, index_stats)
     print(json.dumps(meta, indent=2))
+
+    audit = compute_audit()
+    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
+        json.dump(audit, f, indent=2)
+    t = audit["totals"]
+    print(f"\n  audit: with_text={t['with_text']} "
+          f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "
+          f"pypdf_error={t['pypdf_error_retryable']} "
+          f"ocr_failed={t['ocr_failed_permanent']} "
+          f"never_attempted={t['never_attempted']} "
+          f"no_pdf_url={t['no_pdf_url']} "
+          f"(total={t['reports']})")
 
 
 def main():

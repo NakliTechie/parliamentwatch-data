@@ -322,14 +322,25 @@ def _has_any_canonical_pdf(record: dict) -> bool:
 def select_candidates(records: list[dict]) -> list[dict]:
     """Select bills missing extracted text but having ≥1 canonical PDF URL.
     Sorted newest-first so the budget gets spent on the most-recent material.
+
+    Per-attempt status markers (see CONV.md "Per-attempt status markers"):
+      .txt           → already extracted (skip)
+      .pypdf-empty   → known scanned/encrypted, queued for OCR (skip — wasted bandwidth)
+      .ocr-failed    → OCR permanent tombstone (skip)
+      .pypdf-error   → retryable (still attempt)
+      (no marker)    → never attempted (default)
     """
     candidates = []
+    skipped_marked = 0
     for r in records:
         cid = r.get("compositeId")
         if not cid:
             continue
-        text_path = TEXT_DIR / f"{cid}.txt"
-        if text_path.exists():
+        text_path        = TEXT_DIR / f"{cid}.txt"
+        pypdf_empty_path = TEXT_DIR / f"{cid}.pypdf-empty"
+        ocr_failed_path  = TEXT_DIR / f"{cid}.ocr-failed"
+        if text_path.exists() or pypdf_empty_path.exists() or ocr_failed_path.exists():
+            skipped_marked += 1
             continue
         if not _has_any_canonical_pdf(r):
             continue
@@ -338,7 +349,49 @@ def select_candidates(records: list[dict]) -> list[dict]:
         key=lambda r: (r.get("billYear") or 0, r.get("billNumber") or ""),
         reverse=True,
     )
+    if skipped_marked:
+        print(f"  candidate selection: skipped {skipped_marked} bills "
+              f"already marked .txt/.pypdf-empty/.ocr-failed")
     return candidates
+
+
+def compute_audit(records: list[dict]) -> dict:
+    """Walk records + text/ to produce a per-bill status breakdown.
+
+    Pure function of disk state. Used by ops to answer "what's the shape of
+    the gap?" without grovelling through workflow logs. See CONV.md
+    "Periodic audit JSON".
+    """
+    counts = {
+        "bills":                      len(records),
+        "with_text":                  0,
+        "pypdf_empty_awaiting_ocr":   0,
+        "pypdf_error_retryable":      0,
+        "ocr_failed_permanent":       0,
+        "never_attempted":            0,
+        "no_canonical_pdf":           0,
+    }
+    for r in records:
+        cid = r.get("compositeId")
+        if not cid:
+            continue
+        if not _has_any_canonical_pdf(r):
+            counts["no_canonical_pdf"] += 1
+            continue
+        if (TEXT_DIR / f"{cid}.txt").exists():
+            counts["with_text"] += 1
+        elif (TEXT_DIR / f"{cid}.ocr-failed").exists():
+            counts["ocr_failed_permanent"] += 1
+        elif (TEXT_DIR / f"{cid}.pypdf-empty").exists():
+            counts["pypdf_empty_awaiting_ocr"] += 1
+        elif (TEXT_DIR / f"{cid}.pypdf-error").exists():
+            counts["pypdf_error_retryable"] += 1
+        else:
+            counts["never_attempted"] += 1
+    return {
+        "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "totals":     counts,
+    }
 
 
 # ── Extraction phase ───────────────────────────────────────────────────────
@@ -916,6 +969,19 @@ def phase_derive() -> int:
 
     write_meta(records, state, bundle_stats, index_stats)
     print(f"  Wrote {len(shard_entries)} index shard(s) + index-meta.json + manifest.json + meta.json + search artefacts")
+
+    audit = compute_audit(records)
+    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
+        json.dump(audit, f, indent=2)
+    t = audit["totals"]
+    print(f"  audit: with_text={t['with_text']} "
+          f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "
+          f"pypdf_error={t['pypdf_error_retryable']} "
+          f"ocr_failed={t['ocr_failed_permanent']} "
+          f"never_attempted={t['never_attempted']} "
+          f"no_canonical_pdf={t['no_canonical_pdf']} "
+          f"(total={t['bills']})")
+
     return 0
 
 

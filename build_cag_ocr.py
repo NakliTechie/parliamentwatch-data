@@ -142,15 +142,32 @@ def find_ocr_candidates(reports: dict[int, dict]) -> list[tuple[int, str]]:
     On subsequent runs that hit the same PDF (rare — tombstones prevent
     most retries), the cached file is reused.
     """
+    # Per-attempt markers (see CONV.md "Per-attempt status markers"):
+    # an OCR candidate is one where pypdf already confirmed the PDF is
+    # scanned-only or encrypted (the .pypdf-empty marker exists) AND we
+    # haven't already extracted text via tesseract (.txt) or marked it
+    # permanently OCR-failed (.ocr-failed). This narrows the OCR target
+    # set to exactly the population OCR is designed to fix — no wasted
+    # tesseract cycles on PDFs where backfill should be retrying with
+    # pypdf, and no wasted cycles on already-tombstoned PDFs.
+    #
+    # During the migration window (after this code first deploys, before
+    # the hourly backfill has populated .pypdf-empty markers across the
+    # corpus), OCR will find few candidates. That's fine — backfill
+    # populates markers within a few cron ticks and OCR's effective set
+    # converges on the scanned-PDF residue.
     candidates: list[tuple[int, str]] = []
     for rid, meta in reports.items():
         pdf_url = meta.get("pdf_url")
         if not pdf_url:
             continue
-        text_path = TEXT_DIR / f"{rid}.txt"
-        tombstone = TEXT_DIR / f"{rid}.ocr-failed"
-        if text_path.exists() or tombstone.exists():
+        text_path        = TEXT_DIR / f"{rid}.txt"
+        ocr_failed_path  = TEXT_DIR / f"{rid}.ocr-failed"
+        pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
+        if text_path.exists() or ocr_failed_path.exists():
             continue
+        if not pypdf_empty_path.exists():
+            continue   # let backfill try pypdf first
         candidates.append((rid, pdf_url))
     candidates.sort(key=lambda c: -c[0])
     return candidates
@@ -267,6 +284,13 @@ def main():
         size_mb = pdf_path.stat().st_size / (1024 * 1024)
         print(f"  [{i}/{len(target)}] id={rid} ({size_mb:.1f} MB) — running OCR...", flush=True)
         t0 = time.time()
+        # NOTE: stale .pypdf-empty markers from earlier backfill runs are
+        # NOT removed when OCR resolves them. The audit logic in
+        # build_cag.py compute_audit() reads markers in precedence order
+        # (.txt > .ocr-failed > .pypdf-empty > ...) so counts stay
+        # correct. Deleting on disk only would be a no-op for the
+        # published mirror anyway — `git add docs/cag/text/` doesn't
+        # stage deletions of tracked files.
         try:
             text = ocr_pdf(pdf_path, deadline=deadline)
         except TimeoutError as e:

@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/bills/manifest.json docs/bills/meta.json \
+          git add docs/bills/manifest.json docs/bills/meta.json docs/bills/audit.json \
                   docs/bills/index-*.json \
                   docs/bills/search-bundle-*.json docs/bills/search-index-*.json
           git diff --cached --quiet && echo "no derived changes" && exit 0

@@ -82,7 +82,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/cag/manifest.json docs/cag/meta.json \
+          git add docs/cag/manifest.json docs/cag/meta.json docs/cag/audit.json \
                   docs/cag/search-bundle-*.json docs/cag/search-index-*.json
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild CAG derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"

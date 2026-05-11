@@ -353,24 +353,29 @@ def download_all_pdfs(record: dict, pdfs_dir: str) -> dict:
     return out
 
 
-def extract_text_from_pdf(pdf_path: str) -> Optional[str]:
-    """Extract text from a single PDF. Returns the joined text, or None if
-    extraction fails or yields empty text (likely scanned/encrypted PDF).
+class _PypdfEmpty(Exception):
+    """Sentinel: pypdf parsed the file but returned no text (scanned/encrypted)."""
+    pass
+
+
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """Extract text from a single PDF.
+
+    Returns the joined text on success. Raises `_PypdfEmpty` if pypdf
+    returned an empty result (scanned/encrypted PDF, OCR target). Lets
+    any other exception (corrupt file, pypdf bug) propagate so the caller
+    can distinguish empty-but-fine from genuinely-failed.
     """
-    try:
-        reader = PdfReader(pdf_path)
-        parts = []
-        for page in reader.pages:
-            t = page.extract_text()
-            if t:
-                parts.append(t)
-        full = "\n\n".join(parts)
-        if not full.strip():
-            return None
-        return full
-    except Exception as e:
-        print(f"  Failed to extract from {pdf_path}: {e}")
-        return None
+    reader = PdfReader(pdf_path)
+    parts = []
+    for page in reader.pages:
+        t = page.extract_text()
+        if t:
+            parts.append(t)
+    full = "\n\n".join(parts)
+    if not full.strip():
+        raise _PypdfEmpty(f"pypdf returned empty for {pdf_path}")
+    return full
 
 
 def extract_canonical_text(record: dict, pdfs_dir: str, text_dir: str) -> Optional[str]:
@@ -379,9 +384,18 @@ def extract_canonical_text(record: dict, pdfs_dir: str, text_dir: str) -> Option
     Returns the text-file path or None on no-PDF / extraction-failure.
     Idempotent — returns the existing text file if already present.
     RateLimited propagates.
+
+    Per-attempt status markers (see CONV.md "Per-attempt status markers"):
+      .txt           — successful extraction
+      .pypdf-empty   — pypdf returned empty (scanned/encrypted) → OCR target
+      .pypdf-error   — pypdf raised an exception → retryable
+
+    Markers let select_candidates() skip re-downloading known-bad PDFs.
     """
     cid = record["compositeId"]
-    text_path = os.path.join(text_dir, f"{cid}.txt")
+    text_path        = os.path.join(text_dir, f"{cid}.txt")
+    pypdf_empty_path = os.path.join(text_dir, f"{cid}.pypdf-empty")
+    pypdf_error_path = os.path.join(text_dir, f"{cid}.pypdf-error")
     if os.path.exists(text_path):
         return text_path
 
@@ -389,14 +403,26 @@ def extract_canonical_text(record: dict, pdfs_dir: str, text_dir: str) -> Option
     if not pdf_path:
         return None
 
-    full = extract_text_from_pdf(pdf_path)
-    if not full:
-        # Text extraction failed (scanned PDF, encrypted, malformed).
-        # The PDF stays on disk; future runs that improve extraction
-        # (e.g. add OCR) can retry without re-downloading.
+    os.makedirs(text_dir, exist_ok=True)
+    try:
+        full = extract_text_from_pdf(pdf_path)
+    except _PypdfEmpty:
+        # Scanned or encrypted PDF — drop a marker so future backfills
+        # skip it (no point retrying pypdf) and so OCR's slow lane (when
+        # one's added for Bills) can pick it up cleanly.
+        print(f"  pypdf empty for {cid} — marking .pypdf-empty (OCR candidate)")
+        with open(pypdf_empty_path, "w", encoding="utf-8") as f:
+            f.write(f"pypdf returned empty for {cid} at {pdf_path}\n")
+        return None
+    except Exception as e:
+        print(f"  Failed to extract from {pdf_path}: {e} — marking .pypdf-error (retryable)")
+        try:
+            with open(pypdf_error_path, "w", encoding="utf-8") as f:
+                f.write(f"pypdf error for {cid} at {pdf_path}: {e}\n")
+        except Exception:
+            pass
         return None
 
-    os.makedirs(text_dir, exist_ok=True)
     with open(text_path, "w", encoding="utf-8") as f:
         f.write(full)
     return text_path

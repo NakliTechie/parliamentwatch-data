@@ -336,9 +336,19 @@ def download_pdf(pdf_url: str, report_id: int, *, pdfs_dir: str) -> Optional[str
 
 
 def extract_text(pdf_path: str, report_id: int, *, text_dir: str) -> Optional[str]:
-    """Extract text from pdf_path → text_dir/<id>.txt. Idempotent."""
+    """Extract text from pdf_path → text_dir/<id>.txt. Idempotent.
+
+    Per-attempt status markers (sidecar files in text_dir):
+      .txt           — successful extraction (this run or earlier)
+      .pypdf-empty   — pypdf returned empty (scanned/encrypted) → OCR target
+      .pypdf-error   — pypdf raised an exception (corrupt/unusual) → retryable
+    The build script's candidate selection reads these to avoid re-downloading
+    known-bad PDFs every hour. See CONV.md "Per-attempt status markers".
+    """
     os.makedirs(text_dir, exist_ok=True)
-    text_path = os.path.join(text_dir, f"{report_id}.txt")
+    text_path        = os.path.join(text_dir, f"{report_id}.txt")
+    pypdf_empty_path = os.path.join(text_dir, f"{report_id}.pypdf-empty")
+    pypdf_error_path = os.path.join(text_dir, f"{report_id}.pypdf-error")
     if os.path.exists(text_path):
         with open(text_path, "r", encoding="utf-8") as f:
             return f.read()
@@ -351,20 +361,38 @@ def extract_text(pdf_path: str, report_id: int, *, text_dir: str) -> Optional[st
             if t:
                 parts.append(t)
         full = "\n\n".join(parts)
-        # Don't write 0-byte / whitespace-only files. pypdf returns empty
-        # text for scanned-only PDFs, encrypted PDFs, and a few malformed
-        # ones — counting those as "extracted" would lie in manifest /
-        # bundle / index. Returning None lets the caller mark them failed.
-        # The PDF is still cached locally; future runs that improve
-        # extraction (e.g. add OCR) can retry without re-downloading.
         if not full.strip():
-            print(f"  pypdf produced empty text for id={report_id} — likely scanned/encrypted; skipping write")
+            # pypdf returned empty for the whole PDF — likely scanned/encrypted.
+            # Don't write a 0-byte text file (would lie in manifest/bundle/index).
+            # Drop a `.pypdf-empty` marker so this PDF gets queued for OCR
+            # and skipped by future backfills (saves re-download cost).
+            #
+            # Stale `.pypdf-error` markers from prior attempts are left in
+            # place rather than deleted — `git add docs/cag/text/` doesn't
+            # stage deletions of tracked files (would need -A), so deleting
+            # on disk only is a no-op for the published mirror. The audit
+            # logic (compute_audit in build_cag.py) checks markers in
+            # precedence order: .txt > .ocr-failed > .pypdf-empty >
+            # .pypdf-error > never_attempted, so stale lower-priority
+            # markers don't affect counts.
+            print(f"  pypdf produced empty text for id={report_id} — marking .pypdf-empty (OCR candidate)")
+            with open(pypdf_empty_path, "w", encoding="utf-8") as f:
+                f.write(f"pypdf returned empty for id={report_id} at {pdf_path}\n")
             return None
         with open(text_path, "w", encoding="utf-8") as f:
             f.write(full)
         return full
     except Exception as e:
-        print(f"  Failed to extract text from {pdf_path}: {e}")
+        print(f"  Failed to extract text from {pdf_path}: {e} — marking .pypdf-error (retryable)")
+        # Write a `.pypdf-error` marker. Unlike .pypdf-empty, this is a
+        # retryable signal: the next backfill WILL retry (transient corruption,
+        # pypdf bug, etc could resolve itself). The marker is overwritten on
+        # each attempt to capture the latest error message.
+        try:
+            with open(pypdf_error_path, "w", encoding="utf-8") as f:
+                f.write(f"pypdf error for id={report_id} at {pdf_path}: {e}\n")
+        except Exception:
+            pass
         return None
 
 

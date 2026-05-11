@@ -328,17 +328,29 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
                 "budget_hit": False, "skipped_due_to_cooldown": True,
                 "candidates_total": 0}
 
+    # Candidate selection — read per-attempt status markers (see CONV.md
+    # "Per-attempt status markers"). Skip anything already classified:
+    #   .txt           → already extracted (any source)
+    #   .pypdf-empty   → known scanned/encrypted, queued for OCR
+    #   .ocr-failed    → OCR permanent tombstone
+    # Retry .pypdf-error (transient pypdf failure, could re-succeed) and
+    # never-attempted reports.
     candidates = []
+    skipped_marked = 0
     for rid, meta in reports.items():
         if not meta.get("pdf_url"):
             continue
-        text_path = TEXT_DIR / f"{rid}.txt"
-        if text_path.exists():
+        text_path        = TEXT_DIR / f"{rid}.txt"
+        pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
+        ocr_failed_path  = TEXT_DIR / f"{rid}.ocr-failed"
+        if text_path.exists() or pypdf_empty_path.exists() or ocr_failed_path.exists():
+            skipped_marked += 1
             continue
         candidates.append((rid, meta["pdf_url"]))
     # Newest first (highest id wins — CAG IDs are monotonic).
     candidates.sort(key=lambda c: -c[0])
-    print(f"  candidates: {len(candidates)} reports missing extracted text")
+    print(f"  candidates: {len(candidates)} reports missing extracted text "
+          f"({skipped_marked} skipped — already marked .txt/.pypdf-empty/.ocr-failed)")
 
     if not candidates:
         return {"extracted": [], "failed": [], "rate_limited": False,
@@ -447,6 +459,52 @@ def build_manifest() -> dict:
             "url":  f"text/{text_file.name}",   # relative; app prepends 'cag/'
         }
     return {"texts": manifest}
+
+
+def compute_audit(reports: dict[int, dict]) -> dict:
+    """Walk reports + text/ to produce a per-report status breakdown.
+
+    Pure function of disk state. Owned by the derive phase. Used by ops
+    to answer "what's the shape of the gap?" without grovelling through
+    workflow logs.
+
+    Output goes to docs/cag/audit.json. See CONV.md "Per-attempt status
+    markers" and "Periodic audit JSON".
+    """
+    counts = {
+        "reports":                    len(reports),
+        "with_text":                  0,
+        "pypdf_empty_awaiting_ocr":   0,
+        "pypdf_error_retryable":      0,
+        "ocr_failed_permanent":       0,
+        "never_attempted":            0,
+        "no_pdf_url":                 0,
+    }
+    if not TEXT_DIR.exists():
+        counts["never_attempted"] = sum(1 for r in reports.values() if r.get("pdf_url"))
+        counts["no_pdf_url"]      = sum(1 for r in reports.values() if not r.get("pdf_url"))
+        return {
+            "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "totals":     counts,
+        }
+    for rid, meta in reports.items():
+        if not meta.get("pdf_url"):
+            counts["no_pdf_url"] += 1
+            continue
+        if (TEXT_DIR / f"{rid}.txt").exists():
+            counts["with_text"] += 1
+        elif (TEXT_DIR / f"{rid}.ocr-failed").exists():
+            counts["ocr_failed_permanent"] += 1
+        elif (TEXT_DIR / f"{rid}.pypdf-empty").exists():
+            counts["pypdf_empty_awaiting_ocr"] += 1
+        elif (TEXT_DIR / f"{rid}.pypdf-error").exists():
+            counts["pypdf_error_retryable"] += 1
+        else:
+            counts["never_attempted"] += 1
+    return {
+        "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "totals":     counts,
+    }
 
 
 # ── Phase 5+6: search bundle + index, BOTH SHARDED (v1.0c) ────────────────
@@ -725,7 +783,7 @@ def phase_derive() -> None:
     else:
         print("  no extracted texts yet — skipping index build")
 
-    print("\n[Derive 4/4] Writing meta.json...")
+    print("\n[Derive 4/4] Writing meta.json + audit.json...")
     meta = write_meta(
         total_reports=len(reports),
         total_with_text=n_with_text,
@@ -733,6 +791,18 @@ def phase_derive() -> None:
         index_stats=index_stats,
     )
     print(json.dumps(meta, indent=2))
+
+    audit = compute_audit(reports)
+    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
+        json.dump(audit, f, indent=2)
+    t = audit["totals"]
+    print(f"\n  audit: with_text={t['with_text']} "
+          f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "
+          f"pypdf_error={t['pypdf_error_retryable']} "
+          f"ocr_failed={t['ocr_failed_permanent']} "
+          f"never_attempted={t['never_attempted']} "
+          f"no_pdf_url={t['no_pdf_url']} "
+          f"(total={t['reports']})")
 
 
 def main():

@@ -83,9 +83,20 @@ def download_pdf(pdf_url, committee_key, report_number):
 
 
 def extract_text(pdf_path, committee_key, report_number):
+    """Extract text from pdf_path → text/<committee>/<safe_name>.txt.
+
+    Per-attempt status markers (sidecar files in the same dir):
+      .txt           — successful extraction
+      .pypdf-empty   — pypdf returned empty (scanned/encrypted) → OCR target
+      .pypdf-error   — pypdf raised an exception → retryable
+    See CONV.md "Per-attempt status markers". Build-side candidate selection
+    reads these to avoid re-downloading known-bad PDFs every cron tick.
+    """
     ensure_dirs(committee_key)
     safe_name = _safe_name(report_number)
-    text_path = os.path.join(TEXT_DIR, committee_key, f"{safe_name}.txt")
+    text_path        = os.path.join(TEXT_DIR, committee_key, f"{safe_name}.txt")
+    pypdf_empty_path = os.path.join(TEXT_DIR, committee_key, f"{safe_name}.pypdf-empty")
+    pypdf_error_path = os.path.join(TEXT_DIR, committee_key, f"{safe_name}.pypdf-error")
 
     if os.path.exists(text_path):
         with open(text_path, "r") as f:
@@ -99,11 +110,25 @@ def extract_text(pdf_path, committee_key, report_number):
             if page_text:
                 text_parts.append(page_text)
         full_text = "\n\n".join(text_parts)
+        if not full_text.strip():
+            # pypdf returned empty for the whole PDF — likely scanned/encrypted.
+            # Don't write a 0-byte text file (would lie in manifest/bundle/index).
+            # Drop a .pypdf-empty marker so DRSC's OCR slow lane (when added)
+            # can pick this up and the next backfill skips it.
+            print(f"  pypdf produced empty text for {committee_key}/{safe_name} — marking .pypdf-empty")
+            with open(pypdf_empty_path, "w") as f:
+                f.write(f"pypdf returned empty for {committee_key}/{safe_name}\n")
+            return None
         with open(text_path, "w") as f:
             f.write(full_text)
         return full_text
     except Exception as e:
-        print(f"  Failed to extract: {e}")
+        print(f"  Failed to extract: {e} — marking .pypdf-error (retryable)")
+        try:
+            with open(pypdf_error_path, "w") as f:
+                f.write(f"pypdf error for {committee_key}/{safe_name}: {e}\n")
+        except Exception:
+            pass
         return None
 
 
