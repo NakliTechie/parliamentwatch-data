@@ -1,0 +1,1789 @@
+ 
+ 
+Report of the 
+Comptroller and Auditor General 
+of India 
+for the year ended March 2015 
+Working of Automation of  
+Central Excise and Service Tax  
+ 
+Union Government 
+Department of Revenue 
+Indirect Taxes – Central Excise and Service Tax 
+Report No. 46 of 2015 
+Laid on the table of Lok Sabha/Rajya Sabha ____________ 
+
+ 
+ 
+Table of Contents 
+ 
+Contents  Page
+Preface  i 
+Executive summary  iii 
+Chapter 1 : Introduction  1‐4 
+1.1  Background  1 
+1.2  Organisational set‐up  1 
+1.3  Structure and status of working of ACES  2 
+1.4  Why we chose this topic  2 
+1.5  Audit objectives  3 
+1.6  Scope of audit and coverage  3 
+1.7  Audit coverage  3 
+1.8  Acknowledgement  4 
+Chapter 2 : System design  5‐13 
+2.1  System Issues  5 
+2.2  Business Processes Re‐engineering  9 
+Chapter 3 : Observations on Modules  15‐36 
+3.1  Access Control Logic  15 
+3.2  Registration  18 
+3.3  Return  20 
+3.4  Provisional Assessment  24 
+3.5  Export  25 
+3.6  Refund  26 
+3.7  Claims and Intimations  28 
+3.8  Reports  30 
+3.9  Dispute Settlement Resolution  31 
+3.10  Audit  33 
+3.11  General conclusion on modules  36 
+Chapter 4 : Awareness and Evaluation  37‐41 
+4.1  Training  37 
+4.2  Seminars/workshops  37 
+4.3  Working of ACES  38 
+4.4  Evaluation of man hour saving  38 
+4.5  Feedbacks  39 
+4.6  Conclusion  40 
+Abbreviations  43‐44 
+
+Report No. 46 of 2015 (Performance Audit) 
+i 
+Preface 
+This Report has been prepared for submission to the President of India under 
+Article 151 of the Constitution of India. 
+The Report contains significant results of the performance audit on working 
+of Automation of Central Excise and Service Tax and covers the period from 
+December  2008  to  June  2014.  Matters  relating  to  subsequent  periods  have 
+also been included, wherever necessary.  
+The instances mentioned in this Report are those which came to notice in the 
+course of test audit conducted during the period 2014‐15.  
+The  audit  has  been  conducted  in  conformity  with  the  Auditing  Standards 
+issued by the Comptroller and Auditor General of India. 
+Audit wishes to acknowledge the cooperation received from the Department 
+of Revenue, Central Board of Excise and Customs and its field formations at 
+each stage of the audit process. 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+iii 
+ 
+Executive summary 
+We  conducted  the  Performance  Audit  to  seek  an  assurance  whether  the 
+objectives of Automation of Central Excise and Service Tax (ACES) framed by 
+the  department  have  been  achieved.   We  also  examined  the  extent  of 
+utilisation  of  ACES  in  the  field  formations  of  the  Board.   The  Performance 
+Audit was conducted in 40 selected Commissionerates apart from the office 
+of the Directorate General of Systems and Data Management. 
+The Performance Audit revealed certain inadequacies both of system as well 
+as compliance issues relating to the working of ACES.  
+a. There  was  no  provision  in  ACES  for  selection  of  returns  for  detailed 
+scrutiny on the basis of in built risk parameters.  Further, no time limit 
+for review of marked returns was inserted in the Return module. 
+(Paragraphs 2.1.3 and 2.1.4) 
+b. There was no provision in ACES to upload/attach any documents and 
+also no provision for digital signature. 
+(Paragraphs 2.1.6 and 2.1.8) 
+c. The role of legal, adjudication, preventive/anti evasion wing etc., were 
+not  mapped  in  33  Commissionerates  out  of  40  selected 
+Commissionerates  and  also  no  access  provided  to  Inspector  level 
+officials. 
+(Paragraphs 2.2.3 and 2.2.4) 
+d. We  observed  that  only  three  modules  (Access  Control  Logic, 
+Registration  and  Return)  out  of  the  ten  modules  in  ACES  are  being 
+utilised by the stake holders. 
+(Chapter 3) 
+e. We  observed  that  a  large  number  of  returns  for  Central  Excise  and 
+Service Tax are being marked for Review and Correction due to small 
+errors which can be addressed by having proper/strong validations. 
+(Paragraph 3.3.3) 
+f. We observed that non‐conducting of trainings, seminars/workshops is 
+one of the main reasons for skewed utilisation of ACES. 
+(Paragraphs 4.1 and 4.2) 
+g. We observed that even after five years of implementation of ACES, no 
+post implementation review of ACES was carried out. 
+
+Report No. 46 of 2015 (Performance Audit) 
+iv 
+(Paragraph 4.6) 
+Summary of Recommendations 
+1.  There  is  a  need  to  simplify  the  cumbersome  procedure  adopted  in 
+respect  of  mapping  of  employees  in  ACES  to  save  man  days  that  go 
+unutilised during the period of assignment of roles in ACES. 
+2.  Provision  for  complete  linking  of  outstanding  liabilities  to  processing 
+surrender  applications  may  be  introduced  by  making  the  liabilities 
+available offline a part of ACES. 
+3.  In view of Ministry’s commitment to grant registration in two days to 
+overcome  delay  in  issue  of  Registration  certificates,  prompt 
+completion of Physical Verification must be ensured. 
+4.  Electronic filing may be made mandatory for compulsory intimations 
+such as Invoice Books and Records maintenance and CLI module may 
+be introduced for ST also so as to ultimately reduce the interface of 
+the assessees with the departmental officers. 
+5.  There is a need to revisit/update the systems to make all the modules 
+operational  so  as  to  generate  required  Management  Information 
+System  from  ACES,  given  that  ACES  is  being  implemented  for  more 
+than five years. 
+6.  In  view  of  a  very  low/partial  utilisation  of  Provisional  Assessment,  
+Export,  Refund,  Claims  and  Intimations,  Dispute  Settlement 
+Resolution  and  Audit  modules  by  department/assessees,  the 
+Department may review the usage of all modules, and take action to 
+identify and remove bottlenecks to make the system user friendly and 
+result oriented. 
+7.  Department  may  make  a  strategic  plan  to  provide  need  based  and 
+structured training to employees and to conduct awareness seminars 
+for assessees and periodically review the same. 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+1 
+Chapter 1: Introduction 
+1.1  Background 
+Automation  of  Central  Excise  and  Service  Tax  (ACES)  is  the  e‐governance 
+initiative  by  Central  Board  of  Excise  and  Customs  (CBEC),  Department  of 
+Revenue, Ministry of Finance.   It is one of the Mission Mode Projects of the 
+Government  of  India  under  National  e‐Governance  Plan.   It  is  a  software 
+application  which  aims  at  improving  tax‐payer  services,  transparency, 
+accountability and efficiency in the indirect tax administration in India.   This 
+application  is  a  web‐based  and  workflow‐based  system  that  has  automated 
+all major procedures in Central Excise (CX) and Service Tax (ST). 
+The ACES application was initially rolled‐out in the Large Tax Payer Unit (LTU) 
+Commissionerate  in  Bengaluru  in  December  2008  and  subsequently 
+implemented across India in phases. 
+The objective of the initiative was to re‐engineer the business processes and 
+transform  the  existing  tax  administration  into  a  modern,  efficient, 
+transparent  system  and  to  strike  an  optimal  balance  between  trade 
+facilitation  and  enforcement  and  to  promote  a  culture  of  voluntary 
+compliance.   Further,  it  is  to  reduce  physical  interface  of  the  assessee  with 
+the  departmental  officers  and  to  provide  a  transparent  and  paper‐less 
+business environment with improved taxpayer services delivered through an 
+automated process. 
+The  ACES  application  has  interface  for  CX  and  ST  assessees  as  well  as 
+Departmental Officers.   It has provision to automate the major processes of 
+CX  and  ST  such  as  registration,  returns,  accounting,  refunds,  dispute 
+settlement  resolution,  audit,  provisional  assessment,  exports,  claims, 
+intimations and permissions.  
+1.2  Organisational set up 
+The CBEC, set up under the Central Boards of Revenue Act, 1963, is a part of 
+the  Department  of  Revenue  under  the  Ministry  of  Finance,  Government  of 
+India.   It  deals  with  the  tasks  of  formulation  of  policy  concerning  levy  and 
+collection  of  Customs,  CX  duties  and  ST,  prevention  of  smuggling  and 
+administration  of  matters  relating  to  Customs,  CX,  ST  and  Narcotics.  The 
+Board  is  the  administrative  authority  for  its  subordinate  organisations, 
+including  Customs  Houses,  CX  and  ST  Commissionerates  and  the  Central 
+Revenues Control Laboratory.   
+
+Report No. 46 of 2015 (Performance Audit) 
+2 
+Office  of  the  Directorate  General  of  Systems  and  Data  Management  {(DG 
+(Systems)} is an attached office of the CBEC which is responsible for design, 
+development,  programming,  testing,  implementation  and  maintenance  of 
+the  ACES  project.   The  Directorate  is  headed  by  Director  General  (Systems 
+and  Data  Management)  assisted  by  Additional  Directors  General  at  the 
+headquarters.   Similarly, at executive level, Chief Commissioners, CX and ST 
+and their field formations are responsible for actual utilisation of ACES. 
+Chart 1 
+ 
+1.3  Structure and status of working of ACES 
+ACES  application  has  been  designed  to  function  as  centralised,  web‐based, 
+workflow‐based  system  to  provide  complete  end‐to‐end  solutions  for 
+covering major processes in CX and ST administration.  Users can access ACES 
+from  https://www.aces.gov.in  website  and  can  choose  between  ST  and  CX 
+options.  ACES application for CX contains ten modules namely Access Control 
+Logic  (ACL),  Registration,  Return,  Provisional  Assessment,  Claims  and 
+intimation  (CLI),  Dispute  Settlement  Resolution,  Refund,  Export,  Audit  and 
+Report.  Similarly, ACES contains eight modules for ST (except CLI and Export). 
+1.4  Why we chose this topic 
+As  is  evident  from  its  introduction,  ACES  has  far  reaching  effect  on  overall 
+method of tax administration in India.   It not only provides electronic means 
+of indirect tax administration in the current tax environment, but it also lays 
+foundation  for  future  shape  of  tax  collection  and  enforcement  mechanism 
+after implementation of GST.  ACES  is designed to help in realising revenues 
+
+Report No. 46 of 2015 (Performance Audit) 
+3 
+in a fair, equitable and efficient manner while facilitating trade and industry 
+by streamlining and simplifying CX and ST processes. 
+In  such  a  scenario,  we  felt  that  an  independent  assessment  of  working  of 
+ACES  was  necessary  to  evaluate  whether  the  system  is  designed  in  strict 
+compliance  to  legal  framework,  contains  correct  features  for  encouraging 
+taxpayers for voluntary compliance, simplifies procedures for taxpayers and 
+departmental users and has the necessary flexibility and scalability to adapt 
+quickly in ever changing environment. 
+1.5  Audit objectives 
+The  performance  audit  was  conducted  to  seek  assurance  whether  the 
+following objectives of ACES have been fulfilled: 
+ To  re‐engineer  the  business  processes  and  turn  the  existing  tax 
+administration into a modern, efficient and transparent system; 
+ Replace manual filing and handling of paper documents by e‐filing and 
+e‐processing  respectively  which  would  reduce  physical  interface  of 
+the business community with the departmental officers; 
+In  addition  to  above,  we  also  examined  the  extent  of  utilisation  of  various 
+modules of ACES in the field formations of the Board. 
+1.6  Audit Scope and selection 
+During  this  Performance  Audit,  we  selected  and  covered  401  out  of  145 
+Commissionerates,  75  out  of  737  divisions,  201  out  of  3,649  ranges  apart 
+from  DG  (Systems).   A  questionnaire  was  circulated  by  email/post  to  420 
+departmental  users  and  543  assessees  to  obtain  feedback  from  a 
+representative sample of assessees of CX and ST under the selected Ranges 
+and departmental users in selected CDRs. 
+1.7  Audit coverage 
+During  the  Performance  Audit,  we  examined  the  implementation  and 
+utilisation  of  ACES  in  Commissionerates,  Divisions  and  Ranges  from  its 
+inception i.e., December 2008 to June 2014.   We also examined the records 
+                                                            
+1   Ahmedabad (ST), Ahmedabad‐II, Allahabad, Bengaluru (LTU), Bengaluru‐I (ST), Bengaluru‐
+I  (CX),  Bhopal,  Bhubaneswar‐II,  Bolpur,  Chandigarh‐I,  Chennai  (LTU),  Chennai‐I  (ST), 
+Coimbatore,  Delhi  (LTU),  Delhi‐II  (CX),  Delhi‐II  (ST),  Guwahati,  Hyderabad‐II,  Hyderabad‐
+IV,  Indore,  Jaipur‐I,  Kanpur,  Cochin,  Kolhapur,  Kolkata‐I  (ST),  Kolkata‐III,  Kolkota‐I, 
+Ludhiana,  Mumbai  (LTU),  Mumbai‐I  (CX),  Mumbai‐I  (ST),  Patna,  Puducherry,  Pune‐I, 
+Raipur, Ranchi, Rohtak, Surat‐II, Vadodara‐II and Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+4 
+at DG (Systems) relating to development and implementation of ACES for the 
+selected period. 
+1.8  Acknowledgement 
+We  acknowledge  the  co‐operation  extended  by  CBEC  and  its  subordinate 
+formations in providing the necessary records for the conduct of this audit. 
+We discussed the audit objectives and scope of the performance audit in an 
+entry conference with CBEC officers on 14 August 2014.   We conducted the 
+Exit Conference with CBEC on 13 October 2015. 
+
+Report No. 46 of 2015 (Performance Audit) 
+5 
+ 
+Chapter 2: System design 
+2.1  System Issues 
+Inclusion of key manual provisions/validations in ACES system 
+2.1.1  Provisions of Information Technology (IT) Act 
+IT  Act,  2008  contains  specific  provisions  for  attribution  of  an  electronic 
+transaction,  time/place  of  despatch/receipt  of  electronic  record.   These 
+provisions  provide  legal  safeguard  for  linking  a  particular  transaction  with  a 
+particular person.   However, during examination, it was observed that ACES 
+does not capture/record signatures (such as IP addresses) of physical location 
+of user computers, and hence does not conform to provisions of the Act. 
+When  we  pointed  this  out  (September  2014),  the  Ministry  while  not 
+accepting  the  observation  stated  (October  2015)  that  an  assessee  or  new 
+applicant  gets  access  to  ACES  only  through  successful  authentication  of 
+his/her  user  account  and  the  departmental  user  is  allotted  a  unique  single 
+sign‐on  ID  (SSOID)  with  a  password.   Hence,  capturing  of  IP  address  is  not 
+required.  
+The reply of the Ministry is not acceptable as capturing of IP address serves 
+the  principle  functions  of  host  and  network  interface  identification  and 
+location  addressing,  which  can  not  be  addressed  by  the  user  name  and 
+password provided by the department.   Further audit suggests that keeping 
+in  view  the  risk  and  frauds  involved  in  the  IT  transactions,  it  is  better  to 
+capture the IP address of the user machines.  This will provide a second level 
+of security check to the system. 
+2.1.2  Surrender of Registration Certificate 
+Rule 9 of Central Excise Rules, 2002 read with notification dated 26 June 2001 
+and  Rule  4  (7)  of  Service  Tax  Rules,  1994  specifies  the  procedure  for 
+surrender of Registration Certificates (RCs) for CX and ST respectively.  Before 
+de‐registering  the  assessees,  the  department  has  to  check  about  the 
+outstanding  liability  against  the  assessee.   Further  the  assessee  is  also 
+required to submit his original RC.  We observed that there is no provision for 
+verifying  outstanding  tax  liability  before  accepting  surrender  application  in 
+ACES and also requirement of surrender of original RC is not being watched 
+through ACES.  These gaps in the procedure are filled by manual methods. 
+
+Report No. 46 of 2015 (Performance Audit) 
+6 
+We  also  noticed  that  in  ACES,  Division/Range  wise  list  of  assessees  whose 
+surrender request is pending only could be viewed. But there is no provision 
+to  generate  list  of  assessees  whose  surrender  request  had  been  accepted.  
+The  Surrender  list  available  in  ACL  module  shows  lists  for  the  whole 
+Commissionerate  and  not  Range/Division  wise  and  also  does  not  show  the 
+date of acceptance of surrender. 
+When  we  pointed  this  out  (May  2015),  the  Ministry  stated  (October  2015) 
+that  ACES  restricts  processing  of  surrender  requests  in  case  of  outstanding 
+liabilities  available  in  ACES  and  the  liabilities  available  outside  ACES  were 
+checked  physically.   Further  it  has  stated  that  there  is  no  requirement  of 
+submission  of  original  RCs  as  the  requirement  of  signed  RC  was  dispensed 
+with effect from 28 February 2015.   In the case of ACES Division/Range wise 
+list  of  assessee  whose  surrender  request  has  been  accepted,  it  has  stated 
+that the issue is under examination.  Audit opines that the liabilities available 
+outside  the  ACES  may  be  made  part  of  ACES  to  ensure  automation  of  the 
+entire working process.  As there is no signature available on the RC, the legal 
+sanctity of the RC is under question.   Further progress is awaited in the case 
+of  ACES  Division/Range  wise  list  of  assessees  whose  surrender  request  has 
+been accepted. 
+Ministry further stated (November 2015) that it may not be practicable since 
+the  status  of  liabilities  handled  outside  the  system,  including  those  in 
+different judicial fora, may change frequently. 
+Audit  further  opines  that  if  there  will  be  frequent  changes  of  liabilities  in 
+different judicial fora then it is better that such data is maintained in system 
+to facilitate better monitoring. 
+2.1.3  Selection of returns for detailed scrutiny 
+Para  4B  read  with  para  4.1A  of  Manual  for  the  Scrutiny  of  Central  Excise 
+Returns,  2008,  provides  for  selection  of  up  to  five  per  cent  of  total  returns 
+received for a detailed scrutiny of assessment on the basis of risk parameters.  
+As large units with total duty payment of more than ` three crore are subject 
+to  mandatory  audit  every  year,  detailed  return  scrutiny  could  focus  on  the 
+returns of non‐mandatory units.  Further sub para 2 of para 3.1.3B of Manual 
+also stipulates that the logic is to select those returns that qualify as risky on 
+some or all of the parameters.  First, all those returns are to be picked up that 
+have  been  proven  ‘risky’  on  all  the  parameters  listed.  If  the  list  yields  less 
+than  2  per  cent  of  the  total  returns  filed  during  that  month,  then  those 
+returns that have been proven ‘risky’ on all but one of the parameters listed 
+are  selected,  and  so  on  till  the  system  identifies  five  per  cent  of  the  total 
+returns submitted during that month as eligible for scrutiny. 
+
+Report No. 46 of 2015 (Performance Audit) 
+7 
+Similar procedures were also laid down in Manual for the Scrutiny of Service 
+Tax  Returns,  2009  for  detailed  scrutiny.   Paragraph  4.2A  of  the  Manual  for 
+Scrutiny of Service Tax Returns, 2009 stipulates that only two per cent of the 
+returns need to be examined in detailed scrutiny.   Board’s circular dated 11 
+May  2009  also  stipulated  that  after  implementation  of  ACES,  returns would 
+be  automatically  listed  in  descending  order  of  risk  and  submitted  to 
+Commissioner for selection.   
+Audit  noticed  that  against  the  above  directions,  Software  Requirement 
+Specification  (SRS)  document  relating  to  application  of  mini‐risk  parameters 
+envisaged selection of only two per cent of the total returns submitted during 
+that month for the purpose of detailed scrutiny on the basis of inbuilt mini‐
+risk  parameters  instead  of  five  per  cent  as  prescribed  in  the  Manual  for 
+Central Excise Returns.   
+Further on test check of the functioning of the module in selected CDRs, we 
+observed that there was no provision in the module for selection of returns 
+for  detailed  scrutiny  on  the  basis  of  inbuilt  risk  parameters  as  per  the 
+directions issued by Board. 
+When we pointed this out (between September 2014 and March 2015), the 
+Ministry  stated  (October  2015)  that  the  selection  of  returns  for  detailed 
+scrutiny,  based  on  risk  parameters  has  not  been  implemented  in  ACES.  
+However,  it  further  stated  that  as  per  circular  dated  21  July  2015,  the 
+functionality of selection of assessees by the Commissionerates for detailed 
+scrutiny shall be based on risk score to be generated from ACES.   However, 
+no reasons were quoted for non‐implementation of this functionality in ACES 
+so far and for envisaging selection of only two per cent returns in SRS against 
+manual provision of two to five per cent.   
+2.1.4  Time‐limit for review of marked returns 
+As per para 2.1A of Manual for the Scrutiny of Central Excise Returns, 2008 
+preliminary scrutiny should be carried out within three months. However, we 
+observed  that  in  SRS  document  relating  to  Review  and  Correction  (RnC),  it 
+was envisaged that the system marks the returns for review which would be 
+rectified  by  the  departmental  officers  after  consulting  with  the  assessee  till 
+the end of the month.  Moreover, this requirement of time limitation was not 
+inserted in the module.   
+When we pointed this out (March 2015), the Ministry stated (October 2015) 
+that initially, a time limit of one month was built in for RnC of returns in ACES, 
+but later on, considering the large number of returns marked for RnC, which 
+was  not  commensurate  with  the  manpower  available  in  the  field,  the  time 
+limit of one month was removed.   
+
+Report No. 46 of 2015 (Performance Audit) 
+8 
+Audit opines that since now the marking of returns for RnC has came down, 
+the time limit may be fixed. 
+2.1.5  Provision for monitoring of finalisation of Provisional assessments 
+As per Rule 7 of the Central Excise Rules, 2002 and Rule 6(4) of the Service 
+Tax Rules, 1994, provisional assessment is required to be finalised within six 
+months  from  the  date  of  filling  request  by  the  assessee  for  assessment  of 
+duty/tax provisionally.  We observed that there was no provision in the ACES 
+module  to  monitor  finalisation  of  provisional  assessment  within  the 
+prescribed time limit. 
+When  we  pointed  this  out  (September  2014),  the  Ministry  stated  (October 
+2015)  that  pendency  of  provisional  assessment  cases  is  displayed  on  the 
+dashboard  of  the  jurisdictional  officer  and   in  the  monthly  performance 
+report  of  each  Commissionerate  and  that   development  of  a  report 
+generation facility to monitor the disposal of provisional assessment cases is 
+under examination. 
+2.1.6  Provision for uploading/attaching documents 
+We  noticed  that  there  was  no  provision  in  ACES  to  upload/attach  any 
+documents which were required for registration, scrutiny of returns, refund, 
+export  etc.   In  the  absence  of  this  facility,  the  assessee  was  required  to 
+submit  all  the  documents  manually/physically.   The  provision  for  calling  of 
+online documents for detailed scrutiny through ACES was also not available.  
+This leads to non‐fulfilment of main objective of ACES i.e. to reduce physical 
+interface. 
+When we pointed this out (December 2014), the Ministry while accepting the 
+observation stated (October 2015) that a proposal is under consideration for 
+upgrading  the  current  infrastructure,  which  will  facilitate  uploading  of 
+scanned  documents  as  the  existing  infrastructure  is  not  adequate  for  the 
+uploading and storage of scanned documents.  
+2.1.7  Updating of notifications/amendments in ACES 
+Audit noticed that though provision to upload notifications/amendments has 
+been  made  in  ACL  module,  but  notifications/circulars  relating  to  CX 
+Acts/Rules  and  ST  Acts/Rules  and  their  amendments  were  not  found 
+uploaded.   Further, there is no mechanism to regularly update budgetary or 
+other changes in notifications/circulars etc., on the ACES.   
+When  we  pointed  this  out  (September  2014),  the  Ministry  stated  (October 
+2015)  that  CX  and  ST  notification  masters  are  maintained  and  periodically 
+updated  before  the  commencement  of  the  return‐filing  period.   However, 
+during  audit,  Delhi  (LTU)  Commissionerate  stated  (October  2014)  non‐
+
+Report No. 46 of 2015 (Performance Audit) 
+9 
+availability  of  active  notifications  in  notification  masters,  implying  delays  in 
+system of updation. 
+2.1.8  Enabling Digital Signature Certificates in ACES 
+The  Indirect  tax  administration  involves  adjudications,  judicial  processes, 
+variable  interpretations  and  obvious  financial  dimensions.  While  such  an 
+administration is provided with the power of information  technology, every 
+activity  through  the  IT  application  should  be  sacrosanct.  Digital  Signature 
+Certificates  provide  for  the  identity  and  authenticity  of  any 
+document/transaction  done  through  e‐governance  projects.  In  absence  of 
+such  an  authenticity,  evolution  of  any  administration  into  IT  might  not  be 
+successful.  
+While all modules of ACES application need authenticity, it is mandatory for 
+the Dispute Settlement Resolution, Refunds, Export and Return modules. 
+Digital  Signature  facility  in  the  ACES  application  provides  legal  sanctity  to 
+every  process  in  ACES,  without  which  orders  made  through  ACES  can  be 
+questioned in a Court of Law. For providing the legal sanctity, the Officers are 
+forced to do manual work which results in duplicity of work (processing the 
+applications  through  both  ACES  and  manual  modes)  and  adds  to  the 
+workload of the Officers and thus the very purpose of the ACES application is 
+compromised.  The  Officers  tend  to  prefer  manual  mode  in  processing  the 
+applications  which  were  received  through  ACES  because  of  the  aforesaid 
+reasons.  
+When  we  pointed  this  out  (May  2015,)  the  Ministry  stated  (October  2015) 
+that initially the ACES was designed to accept digitally signed documents, but 
+considering  the  preparedness  of  the  assessees  and  to  avoid  any 
+inconvenience  to  them  in  transacting  with  the  department  online,  it  was 
+decided to deactivate the functionality and stated that there is no duplicity of 
+work as stated by audit. 
+Audit  suggests  that  in  the  scenario  of  digital  India,  the  provision  for  digital 
+signature may be enabled in ACES so that entire process is automated. 
+2.2  Business Processes Re‐engineering 
+Business  process  reengineering  (BPR)  is  “the  fundamental  rethinking  and 
+radical redesign of business processes to achieve dramatic improvements in 
+critical contemporary measures of performance, such as cost, quality, service, 
+and  speed”.   BPR,  per  se,  involves  analysis  and  re‐design  of  workflows  and 
+business  processes  within  an  organisation  and  it  seeks  to  restructure 
+organisations  by  focusing  on  the  ground‐up  design  of  their  business 
+
+Report No. 46 of 2015 (Performance Audit) 
+10 
+processes.   The  BPR  is  aimed  to  help  organisations  fundamentally  rethink 
+how  they  do  their  work  in  order  to  dramatically  improve  service,  cut 
+operational  costs,  and  adhere  to  standards  of  comparable  world  class 
+organisations.   Without  fundamental  rethinking,  technology  often  merely 
+automates old ways of doing business.  
+During  the  course  of  Audit,  we  attempted  to  ascertain  the  extent  to  which 
+ACES  succeeded  as  an  application  in  completely  re‐engineering  the  manual 
+processes involved in collection of CX and ST and streamlining all the ancillary 
+workflows thereto.   We observed that, although, processes laid down in CX 
+and ST Manual were automated in ACES application, but much more can be 
+done in terms of   "fundamental rethinking and radical redesign" of business 
+processes  in  crucial  aspects  of  functioning  involving  People  (Human 
+Resources) and Processes (work flow and procedures) as discussed below: ‐  
+2.2.1  Human resource management 
+During the course of Audit, we noticed that although the ACL module created 
+roles for all the functions performed by employees within the hierarchy, it did 
+not cover a very important aspect of actually managing human resources for 
+manning identified tasks in a real working situation through the system.  The 
+following crucial processes of HR management continued to function outside 
+the coverage of ACES: ‐ 
+2.2.2  Transfers/Postings 
+The  ACES  has  been  designed  with  an  assumption  that  largely  same  people 
+continue  to  perform  same  tasks  in  designated  domain  which,  after  being 
+mapped  once  in  system,  facilitate  the  smooth  working  of  the  system.  
+However,  in  a  Government  working  setup,  functioning  of  the  departments 
+require  frequent  change  of  roles  of  employees  who  may  have  to  perform 
+different  tasks,  work  on  same  tasks  in  different  domains  upon 
+promotions/transfers  or  simply  to  take  up  work  of  an  absent  employee.  
+During examination it came to notice that there were no provisions of linking 
+transfer/posting orders with mapping of work domain and work privileges to 
+SSOID.  As a result, complicated multi‐level process is required to be followed 
+for  assignment  of  role  to  an  employee  intended  to  work  in  a  vacant  work 
+domain in a Range. 
+ 
+ 
+ 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+11 
+ 
+ 
+ 
+ 
+Chart 2 Procedure for role assignment 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This  cumbersome  process  ultimately  leaves  several  tasks  unmanned  with 
+several employees in transit waiting for data rights to start work.  As a major 
+part  of  process  activities  are  out  of  ambit  of  ACES,  exact  time  taken  for 
+reassigning work to employees after having relieved from one charge 
+cannot 
+be ascertained by examination of data and may result in idling of staff due to 
+manual completion of process which starts from transfer order to taking up 
+of new assignment. 
+When we pointed this out (March 2015), the Ministry stated (October 2015) 
+that  since  the  employee  is  exposed  to  more  than  one  Application  for 
+performing Customs, CX or ST related work, enough flexibility has been built 
+in  to  ACES  to  enable  Com.  Admn./HQ  Admn.  to  assign/modify  the  roles.  To 
+manage these transfer dynamics, it is essential to have defined Protocols so 
+that no confusion in work flow arises and all the stake holders need to follow 
+the defined Protocol. 
+
+
+Report No. 46 of 2015 (Performance Audit) 
+12 
+Audit opines that as the present system of role assignment and reassignment 
+is very cumbersome and involved a number of stake holders, it needs to be 
+simplified. 
+2.2.3  Roles of important Sections in ACES 
+We  enquired  (between  September  2014  and  March  2015)  from  selected 
+CDRs and DG (Systems) regarding defining of role of important sections such 
+as  legal,  tribunal,  technical,  adjudication,  tax  recovery  cell,  preventive/anti‐
+evasion, statistics etc. in ACES.   
+DG (Systems) stated (May 2015) that roles are to be created locally by Com. 
+Admn.   They further stated that ACES does not extend to Tribunal and does 
+not  have  a  functionality  for  tax  recovery  or  technical  wing  officers  while 
+officers dealing with preventive or adjudication functions could be given role 
+to use DSR module. 
+However,  from  the  replies  furnished  (between  September  2014  and  March 
+2015)  by  Commissionerates,  audit  observed  that  the  role  of  legal, 
+adjudication,  preventive/anti  evasion  etc.,  were  not  mapped  in  202 
+Commissionerates. 133 Commissionerates have not furnished any reply.  Only 
+seven4 Commissionerates stated that these sections were mapped in ACES. 
+When we pointed this out (August 2015), the Ministry stated (October 2015) 
+that usage of ACES with regard to assignment of role to important section in 
+ACES varies from place to place and there is a facility to create role activity 
+for all the sections. 
+Contrary  to  the  reply  of  the  Ministry,  audit  observed  that  only  7  out  of  40 
+selected  Commissionerates  informed  the  mapping  of  roles  of  important 
+sections. 
+2.2.4  ACES access to Inspector level officials 
+Inspectors are required to assist Range Officer in all range works and both are 
+jointly responsible for all the functions. The duties, which were carried out by 
+Inspectors  before  introduction  of  ACES,  could  not  be  performed  by  them 
+subsequently as they have no role in the workflow of ACES. Presently, all the 
+duties/responsibilities  are  with  the  Range  Officer,  which  results  in 
+accumulation of work. 
+                                                            
+2   Ahmedabad‐II, Bhopal, Chandigarh‐I, Chennai (LTU), Delhi‐II (CX), Delhi‐II (ST), Delhi (LTU), 
+Guwahati,  Hyderabad‐IV,  Indore,  Jaipur‐I,  Kolhapur,  Ludhiana,  Mumbai‐I  (CX),  Mumbai‐I 
+(ST), Mumbai (LTU), Pune‐I, Ranchi, Rohtak and Vadodara‐II 
+3   Allahabad,  Bengaluru‐I  (CX),  Bengaluru‐I  (ST),  Bengaluru  (LTU),  Bhubaneswar‐II,  Bolpur, 
+Coimbatore, Hyderabad‐II, Kanpur, Kolkata‐I, Kolkata‐III, Patna and Raipur 
+4   Ahmedabad  (ST),  Chennai‐I  (ST),  Cochin,  Kolkata‐I  (ST),  Pudecherry,  Surat‐II  and 
+Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+13 
+When  we  pointed  this  out  (December  2014),  the  Ministry  stated  (October 
+2015) that functionality is being developed for allowing Inspectors to work in 
+ACES. 
+ 
+ 
+2.2.5  Process Designing 
+Processes  to  facilitate  people  to  conveniently  perform  designated  tasks  are 
+the  other  major  area  of  functioning  that  affects  productivity,  quality  of 
+service and 
+costs.  During examination of working of ACES, it was noticed that 
+http://en.wikipedia.org/wiki/Human_resource_management ‐   cite_note‐1despite 
+putting  in  a  lot  of  effort  in  creating  computerised  processes  to  match  legal 
+and procedural requirements, there were some gaps in understanding of user 
+requirements  and  business  environment  while  undertaking  the  process 
+design exercise.   Process designing problems prevalent in different modules 
+are discussed in chapter III. 
+2.2.6  Conclusion 
+Comprehensively looking at the complete BPR exercise, it can be concluded 
+that although it is a great step forward to create a new system for replacing 
+manual  system,  gaps  still  exist  in  re‐designed  process  with  respect  to 
+management of people, processes and provision of technology.   
+Recommendation No.1 
+There is a need to simplify the cumbersome procedure adopted in respect of 
+mapping of employees in ACES to save man days that go unutilised during the 
+period of assignment of roles in ACES.   One of the methodology that can be 
+adopted to achieve this is to incorporate transfer and posting of employees in 
+the ACES system itself. 
+Ministry  in  its  reply  stated  (October  2015)  that  incorporating  transfer  and 
+posting  of  officers  in  the  ACES  is  not  possible,  as  the  ACES  was  not 
+contemplated as a tool to manage Human Resources.  
+Audit further opines that the cumbersome procedure adopted in respect of 
+mapping of employees needs to be simplified.   
+Recommendation No.2 
+Provision  for  complete  linking  of  outstanding  liabilities  to  processing 
+surrender applications may be introduced to make ACES more effective. 
+Ministry  stated  (October  2015)  that  the  system  checks  if  any  amount  is 
+outstanding against the assessee as per information available in ACES.   Pre‐
+
+Report No. 46 of 2015 (Performance Audit) 
+14 
+ACES  dues  in  respect  of  some  assessees,  who  had  migrated  to  ACES  and 
+liabilities that occur in the offline mode during Audit or investigation are not 
+captured in ACES. 
+Audit further suggests that liabilities available offline may be made a part of 
+ACES. 
+
+Report No. 46 of 2015 (Performance Audit) 
+16 
+ 
+Chapter‐3: Observations on Modules 
+The ACES has automated the major processes in the following modules:‐ 
+1.  Access Control of Users (ACL): This module is mainly operated by the 
+Commissionerate  Admn.  For  providing  access  to  the  departmental 
+users.  
+2.  Registration (REG): Registration of assessees through online mode. 
+3.  Returns (RET): Electronic filing of Returns. 
+4.  Refund (REF): Electronic filing of Refund Claims and their processing. 
+5.  Provisional  Assessment  (PRA):  Electronic  filing  of  request  for 
+provisional  assessment  and  its  processing  by  the  departmental 
+officers. 
+6.  Dispute  Settlement  Resolution  (DSR):  Show  Cause  Notices,  Personal 
+Hearing  Memos,  Adjudication  Orders,  Appellate  and  related 
+processes. 
+7.  Audit  Module  (AUD):  This  module  caters  to  the  internal  audit 
+functioning of the department. 
+8.  Report module (REP): For generating reports. 
+9.  Export Module (EXP):  For processing export related documents 
+10.  Claims  Letters  and  intimations  (CLI):  Electronic  filing  of  claims, 
+intimations and permissions by assessees and their processing by the 
+departmental officers. 
+The observations relating to individual modules are discussed in the following 
+paragraphs:‐ 
+3.1  Access Control Logic 
+Departmental users access ACES application through a unique user ID namely 
+SSOID issued by the DG (Systems).  This SSOID remains the same in respect of 
+each  officer  throughout  his  career  in  the  department.   Commissionerate 
+Admn.  (Com.  Admn.)  of  each  Commissionerate  is  created  by  Headquarters 
+Admn.  in  DG  Systems.   The  ACL  Module  is  mainly  operated  by  the  Com. 
+Admn.,  who  activates  departmental  users  and  assigns  responsibilities  and 
+jurisdiction  centrally  in  ACES  through  ACL  Module.   Actual  task  of  providing 
+
+Report No. 46 of 2015 (Performance Audit) 
+17 
+SSOID is handled by System Integrator (SI)5 who is required to raise a change 
+request  and  approve  change  for  mapping  SSOIDs  with  roles  in  case  of 
+transfers outside current Commissionerate/promotions/ new appointment. 
+The ACL module provides interfacing of actual work force of the department 
+with  system  roles  and  plays  a  crucial  role  in  manning  the  tasks  to  be 
+accomplished  by  departmental  users  in  the  ACES.   Working  of  this  module 
+was  examined  in  the  selected  CDRs  and  DG  (System)  to  ascertain  status  of 
+activation and assignment of role/activity to the departmental users (SSOID). 
+During examination, following design bottlenecks were observed: ‐ 
+3.1.1  Activation of SSOIDs 
+To know the time taken in activation at the time of joining the department, 
+we requested the selected CDRs to supply the details regarding time taken in 
+activation  of  SSOIDs.   The  following  observations  have  been  made  on  the 
+basis of reply: ‐  
+No  time  frame  has  been  fixed  by  the  Board  for  activating  and  mapping  the 
+SSOID to the new/existing departmental user.  The information on activation 
+of SSOIDs was supplied by six Commissionerates6 and we observed that out 
+of these, four Commissionerates took time ranging between 7 to 935 days in 
+activation of SSOIDs and assigning role/activity to the departmental users. 
+Twelve7  Commissionerates  stated  (between  September  2014  and  March 
+2015) that the same can not be generated/retrieved from ACES.   Remaining 
+22  Commissionerates  either  provided  incomplete  information  or  did  not 
+furnish the data at all. 
+The  reply  of  these  Commissionerates  is  not  acceptable  since  the  above  six 
+Commissionerates provided the same information. 
+When we pointed this out (August 2015), the Ministry stated (October 2015) 
+that  when  an  officer  is  transferred  from  one  Commissionerate  to  another, 
+the  change  in  mapping  is  done  by  the  SI  team  on  the  request  of  the 
+concerned Com. Admn. in the prescribed template.  Further it stated that the 
+delay is not due to any deficiency in the System related processes, but mostly 
+due  to  the  fact  that  the  Com.  Admn.  send  requests  for  the  mapping  of  the 
+officers  based  on  functional  requirement,  which  again  depends  on  the 
+charges allocated to the officer within the Commissionerate.  The reply of the 
+Ministry is silent on non‐fetching of this information in ACES by the above 12 
+Commissionerates. 
+                                                            
+5   M/s. Tata Consultancy Services acts as System Integrator for ACL module. 
+6   Bhubaneswar‐II, Coimbatore, Kolkata‐I, Puducherry, Ranchi and Vadadora‐II 
+7   Ahmedabad  (ST),  Allahabad,  Delhi  (LTU),  Delhi‐II  (CX),  Hyderabad‐II,  Hyderabad‐IV, 
+Indore, Jaipur‐I, Kanpur, Patna, Raipur and Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+18 
+Audit opines that the individual cases of delays pointed out by audit need to 
+be  examined.   Moreover,  non‐submission  of  data/furnishing  of  incomplete 
+information by 33 commissionerates also needs examination to assess delays 
+occurred, if any, in those Commissionerates.  
+3.1.2  Deactivation of SSOIDs 
+To  know  the  time  taken  in  deactivation  of  the  SSOIDs  due  to  Retirement, 
+Transfer, Suspension, Dismissal by the Commissionerates, we requested the 
+selected  CDRs  to  supply  the  details  regarding  time  taken  in  deactivation  of 
+SSOIDs.  The following observations have been made on the basis of reply: ‐   
+The  information  on  deactivation  of  SSOIDs  was  supplied  by  three 
+Commissionerates8.   Out  of  these  three,  in  two  Commissionerates  we 
+observed  that  in  30  per  cent  of  cases  they  took  more  than  two  days  for 
+deactivation of SSOIDs due to retirement, transfer, suspension, dismissal with 
+maximum delay of 92 days in one case.   The misuse of the SSOIDs after the 
+retirement, transfer, suspension and dismissal cannot be ruled out. 
+Sixteen  Commissionerates9  stated  (between  September  2014  and  March 
+2015)  that  this  information  can  not  be  generated/retrieved  from  ACES.  
+Remaining 21 Commissionerates either provided the information partially or 
+did not furnish any data. 
+The reply of these Commissionerates is not acceptable since the above three 
+Commissionerates provided the same information.  
+When  we  pointed  this  out  (October  2014),  the  Ministry  stated  (October 
+2015)  that  based  on  the  date  of  birth/date  of  retirement,  the  officer  is 
+automatically de‐activated from the system on his/her retirement.  Further, it 
+stated that in the case of the officers suspended/dismissed from service, the 
+mapping  of  the  officers  will  continue  with  the  respective  Commissionerate, 
+but the Com. Admn. will deactivate the role initially assigned to the officer, 
+and  the  officer  cannot  view/process  any  documents.   The  reply  of  the 
+Ministry is silent on non‐fetching of the information in ACES by the above 16 
+Commissionerates.   Non‐submission  of  data/furnishing  of  incomplete 
+information  by  37  commissionerates  needs  examination  to  assess  if  any 
+delays occurred in those Commissionerates.  
+ 
+ 
+                                                            
+8   Bhubneshwar‐II, Guwahati and Kolkata‐I 
+9   Allahabad,  Chandigarh‐I,  Chennai‐I  (ST),  Delhi‐II  (CX),  Delhi  (LTU),  Hyderabad‐II, 
+Hyderabad‐IV, Indore, Jaipur‐I, Kanpur, Cochin, Ludhiana, Patna, Puducherry, Rohtak and 
+Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+19 
+3.1.3  Assignment of role/activity 
+We enquired from the selected CDRs about staff having SSOIDs posted in the 
+various  field  formations  and  mapped  to  roles  in  ACES.  In  response  to  our 
+query, five Commissionerates10 replied (between September 2014 and March 
+2015)  that  there  is  no  provision  for  generation  of  year‐wise  details  of 
+assignment of role/activity to all the entitled officers having SSOIDs. Thirteen 
+Commissionerates11  intimated  (between  September  2014  and  March  2015) 
+that staff having SSOIDs posted in the various field formations are mapped to 
+roles in ACES, wherever warranted.   Remaining 22 Commissionerates either 
+provided incomplete information or did not provide any information.  
+When  we  pointed  this  out  (August  2014),  the  Ministry  stated  (November 
+2015) that all the SSOIDs were mapped to the jurisdiction and actual mapping 
+of role is a need‐based activity decided at the field level. 
+In absence of information, about mapping at field level, Audit was unable to 
+comment  whether  the  role/activity  was  assigned  and  mapped  to  all  the 
+entitled officers. 
+3.1.4  Conclusion 
+In  the  light  of  above  observations,  it  can  be  concluded  that  ACL  module 
+needs fine‐tuning to avoid delays in activation and deactivation. Moreover, it 
+leaves  this  crucial  area  of  operation  in  the  control  of  external  agency  i.e. 
+System Integrator.  
+3.2  Registration (REG) 
+The  Applicant  can  log  on  to  the  system  through  internet  and  get  himself 
+registered with the system by furnishing a self‐chosen user ID and e‐mail ID. 
+The system will then generate a password and send it to him by e‐mail. The 
+user  then  has  to  re‐log‐in  and  proceed  with  the  statutory  registration  with 
+the department by filling‐in required forms.  The registration in ACES is not a 
+statutory registration but only a registration with the System according to the 
+department.   Registration  can  be  done  for  new  assessee,  existing  assessee, 
+LTU assessee and non‐assessee12 through Registration Module. 
+After  application  of  registration  is  filed  by  the  applicant  through  ACES,  the 
+system  would  instantaneously  generate  a  Registration  Certification  (RC) 
+                                                            
+10  Delhi‐II (CX), Delhi (LTU), Hyderabad‐II, Hyderabad‐IV and Jaipur‐I 
+11  Allahabad,  Bhopal,  Bhubaneshwar‐II,  Chennai  (LTU),  Coimbatore,  Guwahati,  Indore, 
+Kolkata‐I, Kanpur, Patna, Puducherry, Ranchi and Visakhapatnam‐I 
+12   Person other than registered assessees such as Merchant Exporters, persons who wish to 
+file  refund  claims,  co‐noticees  in  department  processing,  persons  who  are  required  to 
+tender any payment to the department can get themselves registered as non‐assessees. 
+
+Report No. 46 of 2015 (Performance Audit) 
+20 
+number after which the Registration request goes to AC/DC. AC/DC generates 
+the  RC  and  a  message  to  this  effect  is  sent  to  the  assessee  electronically. 
+Depending on the option chosen by the assessee, the RC can be sent by mail 
+or can be collected in person. The AC/DC then assigns it to the Range Officer 
+(RO) for physical verification (PV) of the unit. The RO submits the PV Report 
+by  confirming  the  registration  or  re‐issuing  the  certificate  based  on 
+amendment or revoking the certificate. 
+3.2.1  Issue of Registration Certification 
+Trends of applications received and RC issued were analysed since inception 
+of ACES.   It was observed that 14,28,917 applications were made online and 
+11,15,156 RC were issued consisting both CX and ST till June 2014. 
+ 
+Chart 3 
+ 
+  Source: Figures furnished by DG (Systems). 
+The  gap  in  applications  filed  and  RC  issued  over  the  years  points  towards 
+delay in issue of RCs and lack of monitoring to watch disposal of applications 
+filed online. Hence department may identify and act on reasons for delay in 
+issue of RCs in REG module. 
+Ministry in its reply (October 2015) stated that to simplify the procedure and 
+improve  ‘ease  of  doing  business’,  a  ‘Two‐Day  Registration’  procedure  has 
+been introduced (March 2015) in respect of both CX and ST assesses and PV 
+made a post registration process.  
+3.2.2  Time limit for issuance of registration 
+As per notification dated 26 June 2001 and 13 December 2011, RC containing 
+registration number shall be granted within seven days of the receipt of the 
+completed application for CX and ST respectively. 
+
+Report No. 46 of 2015 (Performance Audit) 
+21 
+The  following  table  depicts  the  performance  of  ACES  module  as  regards  to 
+registration: ‐  
+Table No.1 
+   No. of Applications 
+for Registration 
+Filed 
+No. of 
+RCs 
+Issued 
+Maximum no. 
+of days taken 
+to issue RC 
+Average No of 
+Days taken to 
+Issue RC 
+CX  1,33,317  1,26,475  1,587  15 
+ST  12,73,762  9,81,991  1,466  14 
+All  India 
+Data 
+Total  14,07,079  11,08,466  	
+CX  49,406  46,789  1,587  17 
+ST  7,32,262  5,56,305  1,466  18 
+Data  of 
+Selected 
+CDRs  Total  7,81,668  6,03,094  	
+Source: Figures furnished by DG (Systems). 
+It  was  observed  that  the  CDRs  took  an  average  of  15  and  14  days  to  a 
+maximum of 1587 and 1466 days in CX and ST respectively for the issuance of 
+RC.   Further  analysis  of  the  extracted  data  of  selected  Commissionerates 
+from the above data revealed that the division/ranges took an average of 17 
+and 18 days to a maximum of 1587 and 1466 days in CX and ST respectively 
+to issue RCs against the prescribed time limit of seven days. 
+Though  the  applications  for  registration  were  received  through  ACES,  there 
+are  inordinate  delays  in  issue  of  RCs.   Audit  is  also  of  the  opinion  that  in 
+certain  tender  processes  mainly  in  Government  supply,  as  the  RC  is  one  of 
+essential documents, such delays needs to be examined. 
+The  issue  was  brought  to  the  notice  of  the  Ministry  in  December  2014  and 
+the reply is still awaited (October 2015). 
+Recommendation No.3 
+In  view  of  Ministry’s  commitment  to  grant  registration  in  two  days  to 
+overcome  delay  in  issue  of  Registration  certificates,  prompt  completion  of 
+Physical Verification must be ensured. 
+3.3  Return (RET) 
+Every assessee shall electronically file CX and ST returns by choosing one of 
+the two facilities offered by the department:  
+(a)  file it online, or 
+(b)  download  the  off‐line  return  utilities,  which  can  be  filled‐in  leisurely 
+and uploaded to the system through the internet, or  
+After  uploading,  the  off‐line  return  is  subject  to  in‐built  validations  of  ACES 
+and  then  ACES  reflects  the  status  of  the  return‐  filed.  The  rejected  return 
+
+Report No. 46 of 2015 (Performance Audit) 
+22 
+shall be resubmitted after making suitable corrections. All the returns would 
+be digitized and stored in the system. The software would then check it for 
+the  correctness  of  the  information  such  as  registration  number  (this 
+validation  is  only  for  the  returns  which  are  filed  through  off‐line  utility), 
+classification,  notification,  rate  of  duty,  challans  used  for  duty  payment  etc. 
+Any discrepancy that has not been resolved by the system would be sent to 
+the RO’s screen for RnC.  
+The returns have to pass through mini risk parameters, based on instructions 
+issued by the Board from time to time and marked as risky or not risky as per 
+SRS. The AC/DC may decide whether to initiate further course of action like 
+subjecting  the  unit  to  audit  or  anti‐evasion  process.  If  as  a  result  of  the 
+scrutiny,  any  differential  duty  is  to  be  collected  by  the  department,  the 
+system would assist the officer in the preparation of the show cause notice 
+through the DSR module. 
+3.3.1  Developing of software as per SRS document with reference to SSI 
+As  envisaged  in  SRS  document,  whenever  a  Small  Scale  Industry  (SSI) 
+assessee  files  ER‐3  return,  the  system  records  the  total  value  of  clearances 
+and  augments  this  sum  when  the  next  returns  come  in.   If  during  one 
+financial year, the aggregate of clearances exceeds ` four crore, the assessee 
+is marked as a non‐SSI unit effective from the next financial year.   From the 
+commencement of the new financial year, the assessee is reminded that he 
+has crossed the threshold limit and that he would have to file an ER‐1 return.  
+However, audit observed that this requirement of availing SSI threshold limit 
+was not available in the module. 
+Cochin  Commissionerate  stated  there  were  occasions,  on  which  assessees 
+filing ER‐3 return change to ER‐1 return and vice versa depending upon the 
+previous year’s turn over.  They also started that during such switching over, 
+ACES will not be able to find the return for the previous period as the system 
+will be searching for the same type of return. The system should search for 
+the  previous  return  (irrespective  of  type  of  return)  in  case  of  switch  over 
+from or to SSI of the same assessee. 
+When we pointed this out (March 2015), the Ministry stated (October 2015) 
+that  Assessee  wise  detailed  report  and  Electronic  Warehouse  Data  requires 
+to be co‐related to check the admissibility of exemption of SSI of a particular 
+assessee. 
+Audit  opines  that  as  the  above  mentioned  details  are  available  in  ER‐3 
+returns within ACES, it is possible to fetch all the details in ACES itself and a 
+switching over from ER‐3 to ER‐1 or vice versa may be notified and co‐related 
+in ACES. 
+
+Report No. 46 of 2015 (Performance Audit) 
+23 
+3.3.2  Designing of Dispute resolution field in ST‐3 form 
+During scrutiny of SRS document relating to filing of ST Return, it was noticed 
+that a field relating to Dispute Resolution containing information of pending 
+refund claim, SCNs, Confirmed Demand, cases of arrears etc. was envisaged 
+in  ST‐3  return  form.   However  this  field  was  not  found  in  the  ST‐3  return 
+forms available in the ACES application as envisaged in SRS document. 
+When we pointed this out (March 2015), the Ministry stated (October 2015) 
+that ST‐3 form is provided as notified by CBEC. 
+The  reply  of  the  Ministry  is  not  accepted  since  Audit  did  not  suggest  to 
+change  the  format  of  ST‐3  return.   On  receipt  of  ST‐3  return  details  of 
+pending refund claim, SCNs, confirmed demand etc., may be picked up from 
+the data available in the ACES as envisaged in SRS document. 
+Ministry  further  stated (November 2015)  that  the  details  of  pending  refund 
+claims,  SCNs,  confirmed  demand,  can  be  generated  from  MIS,  when 
+developed. 
+3.3.3  Selection of returns for Review and Correction  
+As a foolproof system, the return module was required to select only those 
+returns  for  RnC  wherein  some  discrepancies/mismatch  occurs  during 
+preliminary scrutiny done by the module. 
+The  following  table  depicts  the  performance  of  RET  module  of  CX  and  ST 
+returns filed and reviewed during October 2009 to June 2014: ‐  
+Table No.2 
+Duty/ 
+Tax 
+Number  of 
+returns  filed  in 
+ACES 
+Returns marked for R & C  Returns  marked  for  RnC  and 
+pending  for  scrutiny  as  on  30 
+June 2014 
+CX  44,92,327  42,52,888 (94.67 per cent)  11,08,413 (26.06 per cent) 
+ST  55,04,165  29,56,738 (53.72 per cent)  21,80,164 (73.74 per cent) 
+Source: Figures furnished by DG (Systems). 
+It is observed that a large number of returns (95 and 54 per cent) are being 
+marked for RnC for both for CX and ST.  It is also observed that 31,44,475 (CX) 
+and 7,76,574 (ST) returns were carried out in RnC, thus leaving a pendency of 
+26 and 74 per cent of returns marked of CX and ST respectively.   
+The  following  table  depicts  the  performance  of  RET  module  of  CX  and  ST 
+returns filed and reviewed during October 2009 to June 2014 in the selected  
+CDRs: ‐ 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+24 
+Table No.3 
+Duty/ 
+Tax 
+Number  of 
+returns  filed  in 
+ACES 
+Returns marked for R & C  Returns marked for RnC and 
+pending for scrutiny as on 30 
+June 2014 
+CX  16,36,255  15,33,541 (93.72 per cent)  4,53,178 (29.55 per cent) 
+ST  33,49,015  17,98,351 (53.70 per cent)  13,79,980 (76.74 per cent) 
+Source: Figures furnished by DG (Systems). 
+The pendency of huge RnC as shown above may result in time barring of the 
+cases and consequent loss of revenue. 
+Audit  observed  that  the  system  marked  returns  for  RnC  even  on  smallest 
+errors  which  can  be  checked/removed  initially  by  inserting  proper/strong 
+validations.   Audit  identified  the  following  reasons  for  huge  marking  of 
+returns for RnC: 
+(i) The closing balance of the previous month should be opening balance 
+of  current  month.   But  in  ACES,  the  option  for  entering  opening 
+balance  is  given  to  assessee.   Wrong  entries  of  opening  balances  in 
+this account also causes a lot of returns to be marked for RnC. 
+When we pointed this out (March 2015), the Ministry while agreeing 
+with  the  objection  stated  (October  2015)  that  the  same  is  being 
+rectified. 
+(ii) There is also facility of entering interest liability for the assessee even 
+though  the  system  has  the  capacity  to  compute  the  interest 
+automatically on the basis of information available within the system 
+database.   Mismatch on account of interest calculated by system and 
+entered  by  the  assessee  also  results  in  a  large  number  of  returns 
+being marked for RnC. 
+When we pointed this out (March 2015), the Ministry stated (October 
+2015)  that  there  is  no  provision  in  ACES  to  calculate  all  the  interest 
+payable  by  assessees  since  interest  liability  may  arise  in  various 
+situations  such  as  default  in  regular  duty  payments,  payment  of 
+arrears based on orders from judicial forums etc. 
+Audit  opines  that  while  interest  due  to  default  in  payments  can  be 
+calculated  by  ACES,  other  scenarios  of  interest  can  be  captured  by 
+linking DSR module. 
+(iii) During  test  check  of  return  module,  it  was  noticed  that  the  range 
+superintendent  scrutinised  the  CX  returns  marked  for  RnC 
+chronologically.   The  Range  Superintendent  cannot  scrutinise  CX 
+returns  further  unless  AC/DC  clears  the  scrutinised  return  in  their 
+
+Report No. 46 of 2015 (Performance Audit) 
+25 
+system.   Consequently,  returns  for  subsequent  months  are  also  not 
+available  for  scrutiny/review  unless  the  return  of  previous  month  is 
+cleared/scrutinised/reviewed  by  all  the  concerned  authorities, 
+resulting in manifold increase in pendency of returns.   
+When  we  pointed  this  out  (December  2014),  the  Ministry  stated 
+(October 2015) that based on the  recommendations of Committee on 
+RnC, it was decided to delink the AC/DC  from the RnC work flow and 
+the same is being taken up for implementation. 
+However, Audit further suggests that AC/DC may be required to test 
+check returns reviewed by Superintendent randomly to ensure checks 
+and balances. 
+3.4  Provisional Assessment (PRA) 
+In  case  self  assessment  is  not  possible,  the  assessee  can  use  the  feature  in 
+ACES for a request of Provisional Assessment.  Further, the assessee can also 
+make an extension request for a Provisional Assessment Order through ACES. 
+Superintendent  can  also  file  a  Provisional  Assessment  request  on  behalf  of 
+the  assessee.   AC/DC  will  examine the  request  to  ascertain  the  necessity  of 
+Provisional Assessment and create a Provisional Assessment order in the PRA 
+module. He will also specify the bond amount and the security amount.  This 
+Provisional  Assessment  order  has  to  be  finalised  within  six  months.   The 
+assessee  files  a  B‐2  Bond  in  this  regard,  which  is  captured  by  the 
+Superintendent in ACES and approved by the AC/DC.  In case of extension of 
+the  Provisional  Assessment,  it  has  to  be  approved  by  the  Commissioner  for 
+the first time for additional six months and later by the Chief Commissioner 
+and the approval has to be done through ACES. 
+3.4.1  Under‐utilisation of PRA Module 
+It is observed that only 337 (CX) and 2,450 (ST) all over India and only 129 (CX) 
+and  1,640  (ST)  Provisional  assessment  requests  in  selected  Commissionerates 
+were  filed  by  the  assessees  through  ACES  since  its  inception  to  June  2014.  
+However,  none  of  the  provisional  assessments  were  finalised  through  PRA 
+module. 
+When  we  pointed  this  out  (May  2015),  the  Ministry  stated  (October  2015) 
+that the usage of provisional assessment module depends on requirement of 
+assessee and the same is need based and optional. 
+3.4.2  Conclusion 
+Non‐utilisation of this module by the assessees indicates that this module is 
+not  user  friendly.   Further,  the  requests  furnished  by  the  assessees  in  the 
+
+Report No. 46 of 2015 (Performance Audit) 
+26 
+module  were  not  processed  through  ACES  which  also  points  towards  non‐
+acceptability of the module on the departmental user front also. 
+Thus, there is a need to make filing and processing of Provisional Assessment 
+in ACES user friendly and make it mandatory for assessees and department. 
+3.5  Export (EXP) 
+The process of Exports module is executed by four kinds of assessees dealing 
+with export of goods i.e., Manufacturer Exporter, Merchant Exporter, Export 
+Warehouse and Export Oriented Units. 
+A  manufacturer  exporter  is  required  to  file  a  declaration  through  ACES,  on 
+input–output  ratio  in  respect  of  goods  that  would  be  manufactured  and 
+exported with the jurisdictional AC/DC along with ARE‐1 and ARE‐2 forms.  A 
+Merchant  Exporter  is  required  to  file  CT‐1  certificate,  Certificate  of  Ware 
+Housing  (COW)  and  ARE‐1  form  with  the  Superintendent  in  relation  to 
+exports.   An Export Warehouse Exporter is required to file a CT‐2 Certificate 
+and COW with the Superintendent for exports.  An EOU is required to file CT‐
+3 certificate, COW and ARE ‐1 form for exports.  Export warehouse, Exporter 
+and EOU can also file an application of diversion of goods to DTA. 
+There is no export module made available in the case of export of services. 
+3.5.1  Utilisation of Export module 
+The following table depicts the use of export module: ‐  
+Table No.4 
+Status  Period  ARE‐1  ARE‐2  CT‐1  CT‐2  CT‐3  Certificate of 
+Warehousing 
+Total 
+All  India 
+data 
+2009‐10 
+to 06/14 
+4,814  4  104  1  1  1  4,925 
+Selected 
+CDRs 
+2009‐10 
+to 06/14 
+3,491  0  104  1  1  1  3,598 
+Source: Figures furnished by DG (Systems). 
+It  is  observed  that  4,925  and  3,598  different  forms  were  filed  by  the 
+assessees all over India and selected Commissionerates respectively since its 
+inception  to  June  2014  through  ACES.   Since  the  data  did  not  contain  the 
+details  of  action  taken  on  the  above  forms,  audit  is  not  in  a  position  to 
+comment on the performance of departmental users.   
+Detailed scrutiny of the data supplied by the DG (Systems) revealed that in 33 
+out of 34 selected CX Commissionerates, no user availed EXP module facility 
+for  filling  CT‐I,  CT‐2,  CT‐3  and  Certificate  of  Warehousing.   ARE‐2  form  was 
+not filed through ACES in any of the selected Commissionerates.  Similarly, in 
+only  8  Commissionerates,  ARE‐1  form  was  filed.   The  above  data  indicates 
+that this module is used very sparingly. 
+
+Report No. 46 of 2015 (Performance Audit) 
+27 
+When we pointed this out (August 2015), the Ministry stated (October 2015) 
+that the degree of utilisation of EXP module is based on need and willingness 
+of the assessee. 
+Audit  further  suggests  that  the  Ministry  may  look  into  the  reason  for  low 
+utilisation of this module and ensure that the details of export documents are 
+captured in ACES, which facilitates the department to cross verify issues like 
+the DTA clearances by the EOUs at a click. 
+3.5.2  Conclusion 
+Electronic filing still require submission of physical documents and does not 
+provide  for  coordination  between  various  departments.  All  this  make 
+electronic  filing  process  an  additional/optional  procedure  which  could 
+otherwise  be  taken  care  of  in  the  available  manual  processing.  As  a  result 
+there  is  gross  underutilisation  of  EXP  module  in  almost  all  the 
+Commissionerates.   
+Thus there is need to identify and eliminate bottlenecks that dissuade use of 
+Export  module  and  then  make  filing  and  time‐bound  completion  of  all 
+activities  involved  in  the  processing  of  export  documents  though  Export 
+module mandatory. 
+3.6  Refund (REF) 
+There  is  a  provision  in  refund  module  for  assessees  to  file  refund/rebate 
+claims  and  it  appears  in  the  workflow  of  the  Superintendent  who  gives  his 
+comments in Scrutiny report.  The refund application is forwarded, along with 
+the  scrutiny  report  to  AC/DC  for  review.   After  approval,  the  AC/DC  sends 
+back  the  same  to  the  Superintendent.   On  receipt  of  claim,  the 
+Superintendent  creates  a  Case  Portfolio  wherever  necessary  for 
+refund/rebate  claim  using  DSR  module  and  submits  to  AC/DC  who  creates 
+and  approves  a  Refund  order  and  sends  to  Superintendent  (Audit  cell)  for 
+pre‐audit/post  audit  as  per  provisions.   Superintendent  of  the  Audit  Cell 
+prepares the audit report on the refund order issued by jurisdictional AC/DC 
+and  submits  it  to  the  AC/DC  (Audit)  who  gives  his  comments  on  the  Audit 
+Report. 
+
+Report No. 46 of 2015 (Performance Audit) 
+28 
+ 
+3.6.1  Utilisation of Refund Module 
+The following table depicts the performance of refund module: ‐  
+Table No.5 
+CX  ST Jurisdiction 
+Refund 
+request  filed 
+through 
+ACES 
+Refund 
+request 
+processed 
+through 
+ACES 
+Refund 
+request  filed 
+through 
+ACES 
+Refund 
+request 
+processed 
+through 
+ACES 
+All India data  1,40,922  88,590  15,285  112 
+Selected CDRs  22,394  10,875  5,530  105 
+Source: Figures furnished by DG (Systems). 
+It is observed that 1,40,922 (CX) and 15,285 (ST) refund requests were filed 
+by the assessees through ACES since its inception to June 2014.  Out of these, 
+the  department  processed  only  88,590  (62.86  per  cent)  and  112  (0.73  per 
+cent) CX and ST refund cases respectively through Refund Module in ACES.   
+It is also observed that 22,394 (CX) and 10,875 (ST) refund requests were filed 
+by  the  assessees  through  ACES  in  the  selected  CDRs  since  its  inception  to 
+June  2014.   Out  of  these,  the  department  processed  only  5,530  (24.69  per 
+cent)  and  105  (0.97  per  cent)  CX  and  ST  refund  cases  respectively  through 
+Refund Module. 
+During  the  same  period  the  department  sanctioned  refund  in  44,683  and 
+2,566  cases  respectively  for  CX  and  ST  manually  in  selected 
+Commissionerates.   
+A few of the illustrative cases are listed below: ‐  
+(i)  In Kolkata I Commissionerate, no refund application was filed through 
+ACES by the assessees.   
+(ii)  In selected two divisions of Delhi‐II (CX) Commissionerate there were 
+1,033  cases  of  refund  applications  processed  manually  by  the  department.  
+However, only three refund applications were received through ACES.  
+(iii)  In 27 Commissionerates, though 13,215 CX and ST refund applications 
+were filed through the module by the assessee, none of the applications was 
+processed by the departmental users through refund module.   
+In response to our query to the selected Commissionerates regarding receipt 
+and disposal of refund applications through ACES (between September 2014 
+to March 2015), the Bengaluru‐I Commissionerate stated (January 2015) that 
+
+Report No. 46 of 2015 (Performance Audit) 
+29 
+all the assessees are presently not filing the refund application in ACES due to 
+voluminous documents, which the assessees are not able to upload in ACES. 
+When  we  pointed  this  out  (May  2015),  the  Ministry  stated  (October  2015) 
+that  about  1.4  lakh  refund  claims  have  been  filed  in  ACES  and  out  of  these 
+0.88 lakh processed in ACES. Ministry is silent on individual cases. 
+Against 10.5 lakh refund claims requested by the assesses during the review 
+period, only 1.56 lakh refund claims (i.e. 15 per cent) were received in ACES, 
+which  shows  low  utilisation  of  this  module.   Ministry  needs  to  analyse  the 
+reasons for the same. 
+3.6.2  Conclusion 
+Preference  of  the  assessee  to  claim  the  refund  manually  indicates  that  the 
+assessees find the online processes cumbersome. 
+There  is  a  need  to  make  both  filling  of  refund  applications  by  the  assessee 
+and  action  thereon  by  the  departmental  users  in  ACES  mandatory.   The 
+Department  may  educate  assessees  about  benefits  of  filing  refund  claims 
+through ACES to ensure paperless environment and reduced interface of the 
+assessees with the departmental officers. 
+Ministry in its reply stated (October 2015) that the reasons for manual filing 
+may include lack of awareness among assessees, size of the documents to be 
+attached (more than two MB) etc. The attachment size can be increased once 
+DG  (Systems)  upgrades  its  infrastructure  and  increases  the  capacity. 
+However, the recommendations of the Audit about educating the assessees 
+and  sorting  out  any  difficulties  faced  by  the  users  will  be  considered  for 
+implementation. 
+3.7  Claims and Intimations 
+ACES  claims  and  intimations  module  involves  electronic  filing  of  claims, 
+intimations  and  permissions  by  assessees  and  their  processing  by  the 
+departmental  officers.   These  can  be  in  the  form  of  applications  and 
+intimations  made  by  the  assessee  and  some  claims  (Remission  of  duty, 
+Cenvat  Transfer  and  SSI  exemption)  that  are  filed.   This  module  is  available 
+only for CX and not for ST. 
+3.7.1  Utilisation of CLI Module 
+Audit analysed the claims and intimations to be filed through CLI module by 
+each assessee as envisaged in SRS document.  
+The  assessee  is  required  to  intimate  serial  number  of  the  invoices  and 
+number of invoice books to Jurisdiction superintendent of CX before making 
+
+Report No. 46 of 2015 (Performance Audit) 
+30 
+use  of  these  invoices  annually13.   It  implies  that  each  assessee  in  business 
+shall  at  least  file  one  such  intimation  annually.   Analysis  of  data  of  selected 
+CDRs  revealed  that  as  on  31  March  2014,  there  were  91,921  registered 
+assessees who were required to file this annual intimation.  
+Similarly, after registration an assessee is also required to submit list of all the 
+records  prepared  or  maintained  by  him  for  accounting  of  transactions  with 
+regard  to  receipt,  purchase,  manufacture,  storage,  sales  or  delivery  of  the 
+goods  including  inputs  and  capital  goods  and  receipt,  procurement  or 
+payment of input services14.  It implies that each assessee should at least file 
+one  such  intimation  after  registration.   Analysis  of  data  of  selected  CDRs 
+revealed that 9,544 new assessees were registered during 2013‐14 who were 
+required to file this one‐time intimation.  
+However,  we  observed  that  only  35,629  claims  and  intimations  were  filed 
+electronically  during  2013‐14  against  minimal  requirement  of  1,01,465 
+annual and one‐time intimations in the selected CDRs.  
+Further, the all India data of registration furnished by DG (Systems) revealed 
+that there are 4.60 lakh CX registered assessees.  If a minimum criteria of one 
+intimation from each assessee every year is adopted, there should be at least 
+23 lakh CLIs from the assessees during 2009‐10 to 2013‐14.   However, there 
+were  only  2.76  lakh  CLIs  received  in  ACES  during  the  period  2009‐10  to  
+2013‐14.   This indicates that the module was not being utilised to fulfil even 
+statutory  requirements.   Further,  action  taken  on  the  data  furnished  by 
+assessees in CLI module by the department has not been made available.  So, 
+the actual utilisation of this module at department level can not be analysed. 
+3.7.2  Conclusion 
+Audit noticed that despite being a very simple module, the utilisation of CLI 
+module  by  the  assessee/departmental  users  is  minimal.   This  indicates  that 
+the  assessees  were  not  adequately  persuaded  by  the  department  to  file 
+Claims  and  intimations  through  ACES  resulting  in  non  utilisation  of  this 
+module. 
+ 
+ 
+ 
+ 
+                                                            
+13  As per Rule 11 (6) of the Central Excise Rules, 2002 read with Para 3.1 of Chapter 4 of the 
+Central Board of Excise and Customs Manual of Supplementary Instructions, 2005 
+14   As  per  Para  2.1  of  Chapter  6  of  the  Central  Board  of  Excise  and  Customs  Manual  of 
+Supplementary Instructions, 2005 
+
+Report No. 46 of 2015 (Performance Audit) 
+31 
+Recommendation No.4 
+Electronic filing may be made mandatory for compulsory intimations such as 
+Invoice Books, Records maintenance and CLI module may be introduced for 
+ST  also  so  as  to  ultimately  reduce  the  interface  of  the  assessees  with  the 
+departmental officers. 
+Ministry in its reply stated (October 2015) that the utilisation of CLI module 
+depends  on  the  assessees  and  the  audit’s  suggestion  for  making  e‐filing  of 
+certain compulsory intimations mandatory will be examined by the Board for 
+implementation.   Extension  of  CLI  module  for ST  and  development  of  some 
+modules needing upload of documents may be considered after upgradation 
+of the current infrastructure. 
+3.8  Reports (REP) 
+Report  Module  is  available  for  both  CX  and  ST  departmental  user  and  16 
+types of reports can be generated in respect of CX and 8 types of reports can 
+be generated in respect of ST. 
+3.8.1  During test check of working of Report module in the selected CDRs, 
+we observed the following shortcomings:  
+(i)  There  is  no  facility  in  the  module  to  generate  customised  report  at 
+field level.   
+(ii)  The formats of the reports called for by the Board were different from 
+those  generated  in  the  ACES.   Therefore,  some  reports  generated 
+through ACES were not useful for further reporting and as such, these 
+reports were being compiled manually. 
+(iii)  All  the  information  required  to  be  reported  in  Monthly  Technical 
+Report  (MTR)  remains  available  in  ACES  as  all  the  business  is  to  be 
+conducted  through  ACES.   But,  the  users  in  selected  CDRs  were 
+generating MTR reports manually since the prescribed MTR format is 
+not  available  in  ACES.   Also  there  is  no  provision  to  cross  verify  the 
+progress being reported through MTR with data of ACES. 
+(iv)  The  name  of  the  LTU  Commissionerates  is  not  appearing  in  the 
+reporting module of ACES. 
+3.8.2  In Kolkata III Commissionerate, we observed that report on “Revenue 
+from  SSI  and  Non  SSI  and  other  units”  for  the  financial  year  2012‐13 
+generated through system has revealed the following:‐ 
+ 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+32 
+Table No.6 
+Total No. of units  4,605 
+Total No. of Non SSI units  24,518 
+Total No of SSI duty paying units  979 
+Total No. of SSI units availing Exemption  0 
+Total No. of units paying PLA more than ` one crore  41 
+Total No. of EOU  20 
+Total No. of STP units  1 
+It is clear from the table that total number of Non SSI units 24,518 is a junk 
+data  as  it  is  more  than  the  total  number  of  units  (4,605)  of  the 
+Commissionerate.  Thus,  the  system  is  found  to  have  many  deficiencies  and 
+validation inadequacies. 
+When  we  pointed  this  out  (December  2014),  the  department  stated 
+(December  2014)  that  the  DG  (Systems)  was  aware  of  this  and  a  new  MIS 
+report module is under process. 
+Recommendation No.5 
+Provision may be inserted in ACES at field level for generation of customised 
+reports  in  general  and  MTR  in  particular  to  minimise  manual  reporting  and 
+the related discrepancies in reports.  
+Ministry  in  its  reply  stated  (October  2015)  that  unless  completeness  and 
+correctness  of  data  in  all  the  modules  is  ensured,  the  report  generated  in 
+ACES  will  not  be  complete.  The  remedy  lies  in  encouraging  and  convincing 
+the assessees for using all modules of ACES so that relevant data is captured 
+in  the  system.  This  may  also  require  Business  Process  re‐engineering  in 
+certain areas of work after consultation with the trade. 
+Audit opines that since the ACES is under implementation for more than five 
+years, there is a need to revisit/update the systems to make all the modules 
+operational and also generate required MIS from ACES. 
+3.9  Dispute Settlement Resolution (DSR) 
+In ACES application Dispute Case File, called as Case Portfolio, contains a brief 
+of the issue and estimated duty involved, Source Document Number etc.  The 
+case  port  folio  is  created  before  issue  of  Demand  Note,  Show  Cause  Notice 
+(SCN) etc.   Demand Notes are created by the Superintendent.   The assessee 
+may  reply  to  the  Demand  Note  through  ACES  or  manually.  In  case  the 
+
+Report No. 46 of 2015 (Performance Audit) 
+33 
+assessee  replies  manually  to  the  demand  note,  the  Superintendent  has  to 
+capture  the  replies  in  ACES.   Based  on  the  Demand  Note and  replies of  the 
+assessee,  if  any,  the  Superintendent  will  create  a  draft  SCN.   He  can  also 
+create draft SCN without issue of Demand Note.  In addition to the above, the 
+Superintendent  can  create  Recovery  request  for  recovery  of  dues  from  the 
+assessee, write off request in case of any irrecoverable dues, case settlement 
+report in case of finalisation of a case etc.  
+The AC/DC can approve the draft SCN.   He can create Personal Hearing (PH) 
+memo, in respect of all PH through ACES.  He can also create Order in Original 
+(OIO) in respect of all cases where OIO has been issued and forward it to the 
+Review Cell in the Commissionerate.   Once OIO is issued, the Review Cell of 
+the  Commissionerate/Chief  Commissionerate  (CC)  may  review  the  order.  
+Based on the recommendations of the Review Cell, the Commissioner or the 
+CC  will  pass  a  Review  Order  directing  the  Adjudication  Officer  or  any  other 
+authorised officer to file an appeal against the OIO. 
+Aggrieved parties can appeal against an order issued by the department.   If 
+the  assessee  or  a  departmental  official  does  not  accept  the  order  of  the 
+adjudicating  authority,  they  would  file  an  appeal  against  the  OIO.  The  EA‐2 
+Appeal  would  be  created  by  the  AC/DC  and  needs  the  approval  of  the 
+Commissioner.   Commissioner (Appeals) would receive the Appeals through 
+ACES and pass Order in Appeal in it. Before issuing Order in Appeal, he would 
+conduct a PH in the case.   To fix the date and time, he is required to create 
+PH memos through ACES.  For filing an application in CESTAT against an order 
+by  Commissioner  (Appeals),  Commissioner  will  create  Appeal  EA ‐ 5  form  in 
+ACES. 
+3.9.1  Utilisation of DSR module 
+It  was  observed  that  since  inception  to  June  2014  only  10,277  SCNs  were 
+created,  6,161  SCNs  were  issued  and  3,785  Order‐in‐original  issued  all  over 
+India through ACES.   
+The  following  table  depicts  the  use  of  DSR  module  in  the  selected 
+commissionerates: ‐  
+Table No.7 
+  SCN created  SCN issued  OIO issued 
+Central Excise  5,737  4,013  2,938 
+Service Tax  297  231  96 
+TOTAL  6,034  4,244  3,034 
+Source: Figures furnished by DG (Systems). 
+
+Report No. 46 of 2015 (Performance Audit) 
+34 
+Details of SCNs created, SCNs issued and OIOs issued manually was not made 
+available  to  Audit.   Hence,  Audit  could  not  work  out  the  utilisation  of  DSR 
+module in terms of overall workload. 
+It  was  observed  that  out  of  40  selected  Commissionerates,  in  12 
+Commissionerates  no  SCNs  were  created,  in  16  Commissionerates  no  SCNs 
+were issued and in 26 Commissionerates no OIO issued through ACES. 
+It  was  observed  that  utilisation  of  DSR  module  by  departmental  users  was 
+very low. Even in cases where the process involved in DSR is initiated in DSR 
+module by users, the latter stages were handled manually as is evident from 
+difference between number of SCN created and SCN issued and SCN created 
+and OIO issued in ACES. 
+3.9.2  Conclusion 
+Despite automation of DSR module, there is still compulsory requirement of 
+manually  signed  documents  in  the  absence  of  digital  signatures  of 
+departmental  officers.   The  system  also  restricts  uploading  of  voluminous 
+documents.  
+Audit feels that the design of module needs to be rechecked with inputs from 
+officers  using  this  Module  and  bottlenecks  may  be  removed  to  increase 
+acceptance.   
+When  we  pointed  this  out  (June  2015),  the  Ministry  stated  (October  2015) 
+that  DG  (Systems)  has  undertaken  a  study  and  based  on  the  findings,  the 
+required modification will be carried out when the necessary infrastructure is 
+put in place and the new vendor takes charge of the ACES project.  The usage 
+can improve when its usage is made mandatory. 
+3.10  Audit  
+The  Audit  Cell  is  responsible  for  planning,  allocation,  coordination, 
+monitoring  and  evaluation  of  audit.   Audit  Cell also  maintains  the  profile  of 
+each  officer  assigned  to  audit  wing.   In  ACES  audit  module,  as  soon  as  an 
+officer  joins  the  Audit  Wing,  the  Assistant  Commissioner  (Audit  Wing) 
+(ACAW),  has  to  create  a  joining  report  for  the  officer  as  well  as  approve  it 
+duly assigning  reporting officer to Audit Cell or Audit Party or Resource Pool. 
+An Audit Party has to be created by ACAW and it should be approved by Joint 
+Commissioner (Audit Wing) (JCAW) in ACES. 
+Audit  Plan  Register:  This  module  provides  for  creation  of  an  Audit  Plan 
+Register  (APR)  and  selection  of  units  to  be  audited  in  current  financial  year 
+from  the  APR  by  ACAW.   APR  can  also  be  rescheduled.  The  ACAW  then 
+forwards the APR to JCAW. 
+
+Report No. 46 of 2015 (Performance Audit) 
+35 
+Quarterly  Schedule  can  be  prepared  by  ACAW  for  an  approved  APR, 
+allocating units to audit parties with start and end dates of audit and JCAW 
+will approve the quarterly schedule.  
+Before the conduct of audit, the auditor who conducts audit has to create an 
+audit  plan  and  get  it  approved  by  JCAW.   For  creation  of  Audit  Plan,  the 
+details such as Desk Review, Revenue Risk Analysis, Trend Analysis, Financial 
+and Tax Accounting etc. needs to be filled first.   After completion of audit, a 
+Draft Audit Report (DAR) needs to be created and approved through ACES. 
+All DARs approved would be reviewed by the Monitoring Committee through 
+Review  DARs.  The  monitoring  committee  will  then  give  audit  scoring  in 
+respect  of  the  DAR.  On  completion  of  audit  scoring,  a  Final  Audit  Report 
+would automatically be created. 
+Functioning of Audit Module 
+During examination of ACES modules, it was noticed that in certain areas the 
+modules were simply computerised versions of procedures to exactly imitate 
+manual  systems  and  were  very  low  on  usability  quotient.   A  simple  task  of 
+starting audit of an identified unit involves 11 steps and requires filling of 3 to 
+18 different forms in each of the steps before start of actual work of Audit.   
+During  test  check  of  SRS  document  of  Audit  Module  and  view  of  working/ 
+functioning  of  Audit  Module  at  various  field  formations  the  following 
+observations were noticed:‐ 
+3.10.1  Preparation/maintenance of Auditor’s profile 
+As per para 3.2.2 of Central Excise Audit Manual, 2008, the Audit Cell should 
+maintain a profile of each Auditor which should also mention the expertise, if 
+any, of the officer. 
+During  scrutiny  of  SRS  document  of  CX  and  ST  relating  to  Officer  Profile 
+Maintenance (AUD 02 and STX 17), audit noticed that there is a provision for 
+maintaining/ amending the auditor’s profile by Audit Cell Administrator and 
+to create profile automatically by the system on the basis of the information 
+provided  in  the  joining  report.   Similarly,  the  officer’s  profile  can  also  be 
+deactivated at the time of officer’s transfer from the audit cell automatically 
+on  the  basis  of  relieving  order.   However,  whether  this  provision  was 
+designed  or  not,  could  not  be  examined  since  the  audit  module  was  not 
+functional.  Further,  during  test  check  of  working  of  audit  module  at 
+Commissionerate  level, it  was  noticed  that  neither  the  access  was  provided 
+to the officer posted in the Audit Cell nor Audit module was found functional 
+at Commissionerate level offices. 
+
+Report No. 46 of 2015 (Performance Audit) 
+36 
+When we pointed this out (March 2015), the Ministry stated (October 2015) 
+that the SRS of the audit module was prepared under the close supervision of 
+the officials of DG Audit and after the development of the module the same 
+was tested by the officials of DG audit and certified to be in conformity with 
+the  SRS.  The  users  in  some  Commissionerates  have  also  found  it  to  be  in 
+conformity  with  the  EA200015  process  and  further  stated  that  in  each 
+Commissionerate, the Com. Admn. activates the Users and assigns ACES role 
+privileges on a need basis. 
+3.10.2  Utilisation/functional of Audit Module 
+On  enquiry  of  the  utilisation  of  this  module  from  the  selected 
+Commissionerates,  nine  16  Commissionerates,  stated  (between  September 
+2014 and January 2015) that audit module was not activated/functional.  Two 
+Commissionerates17 stated (between November 2014 and January 2015) that 
+separate audit Commissionerates were formed with effect from 15 October 
+2014.  Remaining  29   Commissionerates  stated  (between  September  2014 
+and March 2015) that though the audit module was functional but the same 
+was not utilised by them due to lack of proper awareness and training.   
+When  we  pointed  this  out  (May  2015),  the  Ministry  stated  (October  2015) 
+that awareness and training of Audit Commissionerates and audit cell officers 
+on  the  new  functionality  has  been  conducted  at  Delhi.   The  detailed  audit 
+process  has  been  circulated  to  all  Commissionerates.  The  DGS  Chennai  unit 
+has performed handholding to many Audit Commissionerates through concall 
+/ service desk.  
+Despite Ministry’s claim that audit module is functional, duly certified by the 
+DG  (Audit)  and  the  training  was  imparted  to  the  staff,  the  selected  40 
+Commissionerates  stated  that  either  the  audit  module  was  not 
+active/functional or the same was not utilised by them due to lack of proper 
+awareness and training. 
+3.10.3  Conclusion 
+Audit analysis indicates that non‐utilisation of this module can be attributed 
+to design elements which try to emulate complete manual procedures in the 
+electronic form.  
+ 
+                                                            
+15   Excise  Audit  (EA)  2000  is  the  audit  based  on  the  scrutiny  of  business  records  of  the 
+assessee. 
+16   Ahmedabad‐II,  Ahmedabad  (ST),  Bolpur,  Delhi‐II  (CX),  Delhi  (LTU),  Guwahati,  Jaipur‐I, 
+Kolkata‐I (ST) and Surat‐II 
+17   Delhi‐II (ST) and Vadadora‐II 
+
+Report No. 46 of 2015 (Performance Audit) 
+37 
+The Department may consider structural redesign of module by providing for 
+automatic  import  of  information  from  other  modules,  (e.g.  information  on 
+assessees)  which  will  help  the  audit  party  to  prepare  desk  review  online, 
+making it simple and user friendly. 
+3.11  General conclusion on modules 
+Audit  opines  that  only  three  modules  viz.  ACL,  Registration  and  Returns 
+modules are being used to a certain extent.   
+Recommendation No.6 
+In view of completion of more than five years of implementation of ACES and 
+a very low/partial utilisation of PRA, EXP, REF, CLI, DSR and AUD modules by 
+department/assessees, the Department may review the usage of all modules, 
+and take action to identify and remove bottlenecks to make the system user 
+friendly and result oriented. 
+Ministry  in  its  reply  stated  (October  2015)  that  as  regards  usage  of  the 
+modules, since the usage of many modules have not been made mandatory 
+by  Board,  there  has  not  been  full  usage  of  these  modules.  After  necessary 
+modifications are carried out in the modules, and necessary infrastructure is 
+in place, the usage of the modules will have to be made mandatory by Board, 
+so that the system can function effectively and efficiently. 
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+38 
+ 
+Chapter‐4: Awareness and Evaluation 
+4.1  Training 
+To  impart  training  to  the  human  resources  for  working  on  ACES,  the  DG 
+(System)  jointly  with  NACEN  (National  Academy  of  Central  Excise  and 
+Narcotics) were required to undertake training of trainers (TOT) programme 
+for  officers  of  the  six  initial  pilot  locations.   These  trainers  in  turn  were 
+required  to  train  the  other  officers.   Besides,  for  the  benefit  of  the 
+departmental  officers  and  the  assessees,  DG  (System)  has  developed  a 
+Learning Management Software (LMS) which was a self learning application 
+to be hosted on the website and can also be made available in CDs. 
+We enquired from the 40 selected Commissionerates regarding the emphasis 
+on training by the department for effective implementation of ACES.  On the 
+basis of replies received, the following were noticed:‐ 
+(i)  In six Commissionerate18, no training was imparted 
+(ii)  In 26 Commissionerates19, 458 training programmes were conducted 
+during  December  2009  to  June  2014  and  out  of  8,306  number  of  officials 
+entitled for ACES training, training was imparted to only 3,280 officials (39.49 
+per cent). 
+(iii)  Remaining eight Commissionerates did not provide information. 
+Non‐conducting  of  trainings  for  the  departmental  users  is  one  of  the  main 
+reasons for skewed utilisation of ACES. 
+4.2  Seminars/workshops 
+Though conducting of Seminars/Workshops on regular basis was considered 
+as one of the important tool to sensitize the assessee/departmental users to 
+increase their skills in the usage of ACES in addition to imparting training, we 
+observed that neither DG (System) nor the department tapped this important 
+area of orienting the users in ACES. 
+Test  check  of  selected  Commissionerates  revealed  that  during  the  period 
+December  2009  to  June  2014,  only  82  Seminars  were  conducted  by  nine 
+                                                            
+18   Delhi (LTU), Delhi‐II (ST), Kolkata‐III, Mumbai (LTU), Raipur and Ranchi 
+19   Ahmedabad  (ST),  Allahabad,  Bengaluru‐I,  Bengaluru  (LTU),  Bengaluru  (ST),  Bhopal, 
+Bhubaneswar‐II,  Chandigarh‐I,  Chennai  (LTU),  Coimbatore,  Delhi‐II  (CX),  Guwahati, 
+Hyderabad‐II,  Hyderabad  IV,  Indore,  Jaipur‐I,  Kanpur,  Cochin,  Kolkata‐I,  Ludhiana, 
+Mumbai‐I (CX), Patna, Puducherry, Rohtak, Surat‐II and Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+39 
+Commissionerates20.   Further,  in  18  Commissionerates21  no  seminars/ 
+workshops were conducted whereas 13 Commissionerates22 did not provide 
+information despite our request. 
+4.3  Working of ACES 
+Thin  Client  was  the  main  connectivity  hardware  for  operation  of  ACES.   On 
+test check of records of selected CDRs, we observed following shortcomings:‐ 
+As  per  the  information  furnished  by  DG  (System)  in  March  2015,  the 
+hardware were installed in 1168 out of 1210 field formations.   Further, it is 
+also  observed  that  in  205  out  of  1168  field  formations,  the  hardware  were 
+installed but the same was not utilised. 
+When we pointed this out (August 2015), the Ministry stated (October 2015) 
+that  DG  (System)  has  submitted  a  proposal  to  the  Ministry  for  new 
+infrastructure including PCs and LAN/WAN to all the formations under Board, 
+which  is  expected  to  solve  the  infrastructural  related  problems  being  faced 
+by the field formations. 
+4.4  Evaluation on man hour saving 
+The ACES was implemented from November 2009 onwards and rolling out of 
+ACES aims at the saving of man hours of the departmental users which would 
+be  utilised  for  alternate  purpose.   However,  test  check  of  records  in  the 
+selected  CDRs,  revealed  that  neither  DG  (System)  nor  Commissionerates 
+made any study on the aspect of saving of man hours if any, so far.   During 
+test check of the functioning of ACES in the selected CDRs, we observed that 
+only  the  Registration,  Return  and  ACL  Modules  are  operational  and  as  such 
+most of the work is being done manually and not through ACES. 
+When  we  pointed  this  out  (between  September  2014  and  March  2015), 
+Mumbai  (LTU)  and  Pune‐I  Commissionerates  stated  (between  December 
+2014 and January 2015) that no man hours/time were saved.   Chennai (LTU) 
+stated (November 2014) that the work load has increased due to duplication 
+of work in all modules and lot of man hour was lost due to poor connectivity 
+of ACES. 
+                                                            
+20   Bengaluru  (ST),  Bhubneswar‐II,  Chandigarh‐I,  Chennai  (LTU),  Coimbatore,  Cochin, 
+Kolhapur Puducherry and Pune‐I 
+21   Ahmedabad (ST), Bhopal, Delhi‐II (CX), Delhi (LTU), Delhi‐II (ST), Guwahati, Hyderabad II, 
+Hyderabad‐IV, Indore, Kanpur, Kolkata‐III, Ludhiana, Mumbai‐I (CX), Mumbai (LTU), Patna, 
+Raipur, Ranchi and Rohtak 
+22   Ahmedabad‐II,  Allahabad,  Bengaluru‐I,  Bengaluru  (LTU),  Bolpur,  Chennai‐I  (ST),  Jaipur‐I, 
+Kolkata‐II, Kolkata‐I (ST), Mumbai‐I (ST), Surat‐II, Vadodara‐II, and Visakhapatnam‐I 
+
+Report No. 46 of 2015 (Performance Audit) 
+40 
+When we pointed this out (August 2015), the Ministry stated (October 2015) 
+that they agree with the audit for undertaking periodic survey to improve the 
+performance of ACES. 
+4.5  Feedbacks 
+4.5.1  Departmental Users 
+A  questionnaire  was  designed  to  obtain  the  feedback  of  the  departmental 
+users  on  various  aspects  viz.  work  load  reduction  as  compared  to  manual 
+system,   user‐friendliness  of  various  features  of  ACES,  sufficiency  of  user 
+training,  specific  areas  where  difficulties  exist  in  working,  availability  and 
+quality  of  user  guidance  literature,  and  overall  satisfaction  level  etc.   The 
+questionnaires were issued to 420  departmental users in the selected CDRs 
+and  269  responded.   One  hundred  thirty  five  (50  per  cent)  out  of  the  269 
+departmental  users  expressed  low  level  of  satisfaction  about  ACES  citing 
+following reasons:‐   
+(i)  No noticeable time saving over manual system. 
+(ii)  Electronic procedures not user friendly 
+(iii)  Difficulties  in  performing  routine  tasks  which  were  otherwise 
+conveniently handled in manual system. 
+(iv)  Very slow speed of operation 
+(v)  Frequent connectivity problems with connection drop outs. 
+(vi)  User  guide  does  not  address  specific  routine  issues  faced  by 
+departmental users. 
+4.5.2  Assessees 
+A questionnaire was designed to obtain an independent opinion of registered 
+assessees about the effectiveness of ACES in reducing physical interface with 
+the  department,  increasing  transparency,  providing  user  friendly 
+environment, using paper‐less methods for paper based submissions/returns 
+etc.   The  questionnaires  were  issued  to  543  assessees  in  the  selected  CDRs 
+and  feedback  was  received  from  279  assessees.   The  assessees  generally 
+opined  that  ACES  is  user‐friendly  system  which  succeeded  in  reducing 
+physical  interface  with  department  and  increasing  transparency  to  some 
+extent.   However,  the  following  specific  instances  have  been  noticed  from 
+the feedback:‐ 
+a) One  assessee  in  Bengaluru  stated  that  ACES  did  not  reduce  the 
+interaction with the department.   
+
+Report No. 46 of 2015 (Performance Audit) 
+41 
+b) Two  assessees  in  Bengaluru  stated  that  though  the  software  is  user 
+friendly, its utility for service sector unit is very limited viz. for filing of 
+returns  only  but  there  too,  available  log‐in  time  is  very  short.   While 
+submitting the returns, at times, the system throws ‘time‐out’ message 
+and due to this, all the required details are to be re‐entered which leads 
+to wastage of time.  
+c) One assessee in Bengaluru stated that the ACES does not work on the 
+Internet Explorer 9.0 version and throws error code 500.  
+d) Two  assessees  in  Bengaluru  opined  that  the  cycle  time  of  entering 
+challan details in different pages can be reduced. Further the assessee 
+had opined that the facility of help centres is not sufficient.  
+e) Six  assessees  in  Mumbai  opined  that  though  ACES  was  user‐friendly, 
+there were issues with connectivity and speed while uploading returns 
+in ACES. 
+f) Six  assessees  in  Panipat  stated  that  data  had  to  be  punched  manually 
+and  copy  paste  was  not  possible  and  also  stated  that  they  are  facing 
+problems  due  to  slow  running  and  time  out  after  a  few  minutes.  
+Sometimes  server  of  ACES  does  not  accept  the  information  after 
+showing error. 
+The  general  opinion  of  the  assessees  is  that  ACES  is  user  friendly  though 
+some assessees expressed problems regarding connectivity and time taken to 
+use ACES. 
+Ministry  in  its  reply  stated  (October  2015)  that  constant  efforts  have  been 
+made to improve the status based on the user feedback. 
+4.6  Conclusions 
+(i)  During the study for identifying areas hampering working of ACES, it 
+was a general observation that the training imparted to departmental users is 
+insufficient  and  unstructured.   Moreover,  it  appeared  that  the  assessees 
+were  not  fully  aware  of  all  the  facilities  of  ACES  and  that  they  use  ACES 
+primarily for mandatory tasks. 
+(ii)  We  observed  in  the  selected  CDRs  that  even  after  more  than  five 
+years  after  roll  out  of  ACES,  post  implementation  review  of  ACES  was  not 
+carried  out  to  assess  the  effectiveness  and  efficacy  of  the  development 
+process  of  the  system  and  its  actual  usage  either  at  DG  (System)  or 
+Commissionerate  level  though  it  is  an  important  mission  mode  e‐
+Government Project. 
+
+Report No. 46 of 2015 (Performance Audit) 
+42 
+The  Ministry  in  its  reply  stated  (October  2015)  that  periodical  review 
+meetings on ACES are held by the DGS, at regional and national level, where 
+the efficacy of the system and improvements to be made are discussed and 
+remedial measures decided.  
+Recommendation No.7 
+Department may make a strategic plan to provide need based and structured 
+training to employees and to conduct awareness seminars for assessees and 
+periodically review the same. 
+The Ministry in its reply stated (October 2015) that the Board agrees with the 
+recommendation  of  the  Audit  to  widen  the  coverage  of  the  training 
+programme. 
+ 
+ 
+ 
+ 
+ 
+New Delhi 
+Dated: 
+(HIMABINDU MUDUMBAI)
+Principal Director (Service Tax)
+ 
+ 
+Countersigned 
+ 
+ 
+ 
+ 
+New Delhi 
+Dated: 
+(SHASHI KANT SHARMA)
+Comptroller and Auditor General of India
+ 
+
+Report No. 46 of 2015 (Performance Audit) 
+44 
+ 
+Abbreviations 
+ACES  Automation of Central Excise and Service Tax 
+AC  Assistant Commissioner 
+ACAW  Assistant Commissioner Audit Wing 
+ACL  Access Control Logic 
+ADC  Additional Commissioner 
+APR  Audit Plan Register 
+AWDR  Assessee‐wise detailed report 
+AUD  Audit 
+BPR  Business Process Re‐engineering 
+CBEC  Central Board of Excise and Customs 
+CC  Chief Commissioner 
+CDR  Commissionerate, division and range 
+CESTAT  Customs,  Excise and Service Tax Appellate Tribunal 
+CLI  Claims and Intimations 
+Com. Admn.  Commissionerate Administration 
+COW  Certificate of warehousing 
+CX  Central Excise 
+DAR  Draft Audit Report 
+DC  Deputy Commissioner 
+DG  Director General 
+DGS  Director General, Systems 
+DG (Systems)  Directorate General, Systems and Data Management 
+DSR  Dispute Settlement Resolution 
+EOU  Export Oriented Unit 
+EXP  Export 
+HQ  Headquarters 
+HR  Human Resources 
+IP  Internet Protocol 
+ID  Identification 
+IT  Information Technology 
+JC  Joint Commissioner 
+
+Report No. 46 of 2015 (Performance Audit) 
+45 
+JCAW  Joint Commissioner Audit Wing 
+LAN  Local Area Network 
+LMS  Learning Management Software 
+LTU  Large taxpayer unit 
+MIS  Management Information System 
+MTR  Monthly Technical Report 
+NACEN  National Academy of Central Excise and Narcotics 
+NOC  Nodal Operation Centre 
+OIO  Order in original 
+PC 
+PH 
+Personal Computer 
+Personal Hearing 
+PRA  Provisional Assessment 
+PV 
+P&V 
+Physical Verification 
+Personnel and Vigilance  
+RC  Registration Certificate 
+REG  Registration 
+REF  Refund 
+REP  Report 
+RET  Returns 
+RnC  Review and Correction 
+SCN  Show Cause Notice 
+SI  System Integrator 
+SRS  Software Requirement Specification 
+SSI  Small Scale Industry 
+SSOID  Single sign‐on ID 
+ST  Service Tax 
+STP  Software Technology Park 
+TCS  Tata Consultancy Services 
+TOT  Training of trainers 
+WAN  Wide Area Network 
+ 
+ 
