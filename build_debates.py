@@ -49,20 +49,30 @@ from debates.scrapers.loksabha import (
     file_id as ls_file_id,
     report_key as ls_report_key,
 )
+from debates.scrapers.rajyasabha import (
+    INGESTED_VERSIONS as RS_INGESTED_VERSIONS,
+    RSDebate,
+    walk_rajyasabha,
+    fetch_and_extract as rs_fetch_and_extract,
+    versioned_file_id as rs_versioned_file_id,
+    base_file_id as rs_base_file_id,
+    report_key as rs_report_key,
+)
 
 # ── Paths ───────────────────────────────────────────────────────────────────
 
 ASSETS    = ROOT / "docs"
 DOCS      = ASSETS / "debates"
 TEXT_DIR  = DOCS / "text"
+PDFS_DIR  = DOCS / "pdfs"   # transient RS PDFs — gitignored
 DOCS.mkdir(parents=True, exist_ok=True)
 
 REPORTS_JSON  = DOCS / "reports.json"
 MANIFEST_JSON = DOCS / "manifest.json"
 META_JSON     = DOCS / "meta.json"
 
-# Houses we cover. Phase A is LS-only; phase B adds "rs".
-HOUSES = ["ls"]
+# Houses we cover. Phase B adds "rs" (daily-proceedings PDFs).
+HOUSES = ["ls", "rs"]
 
 # ── Per-run budget ─────────────────────────────────────────────────────────
 #
@@ -71,17 +81,37 @@ HOUSES = ["ls"]
 # records. Per-burst budget = 50 (within Politeness policy upper bound).
 # 12×/day = 2-hour gaps between bursts.
 
+# LS extraction budget (HTML body fetches via debate-details — cheap,
+# ~100-500 ms each).
 MAX_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_EXTRACTIONS_PER_RUN", "50"))
 MAX_RUN_SECONDS         = int(os.environ.get("MAX_RUN_SECONDS", "900"))    # 15 min
 EXTRACT_WORKERS         = int(os.environ.get("EXTRACT_WORKERS", "4"))
 
+# RS extraction budget (PDF downloads — heavier; ~2-5 sec each). Default
+# is smaller than LS because each unit costs more wall-clock + bandwidth.
+# 25 × 12 runs/day = 300 RS PDFs/day → ~12 days to backfill the ~3000
+# Floor+English+Part-1 versions across sessions 189-270.
+MAX_RS_EXTRACTIONS_PER_RUN = int(os.environ.get("MAX_RS_EXTRACTIONS_PER_RUN", "25"))
+
+# Per-PDF wall-clock cap inside the orchestrator. Belt-and-braces; the
+# scraper's http_get also has a 180s timeout.
+RS_PER_PDF_TIMEOUT = int(os.environ.get("RS_PER_PDF_TIMEOUT", "180"))
+
 # LS terms to enumerate this run. Comma-separated env var. Default =
-# all of LS-13..18. The merge-with-existing logic preserves entries
-# from un-enumerated terms across runs, so narrowing LOK_SABHAS to
-# (say) "18" for daily steady-state is safe.
+# LS-14..18 (matching DRSC depth). The merge-with-existing logic
+# preserves entries from un-enumerated terms across runs, so narrowing
+# LOK_SABHAS to (say) "18" for daily steady-state is safe.
 _LS_RAW = os.environ.get("LOK_SABHAS", "").strip()
 LOK_SABHAS = ([int(x) for x in _LS_RAW.split(",") if x.strip()]
               if _LS_RAW else list(DEFAULT_LOK_SABHAS))
+
+# RS sessions to enumerate. Comma-separated env var. Default = all
+# sessions visible to the API (~189-270; the scraper discovers them
+# live so we don't hardcode the range). Use RS_SESSIONS=270 in
+# steady-state daily mode to only walk the current session.
+_RS_RAW = os.environ.get("RS_SESSIONS", "").strip()
+RS_SESSIONS = ([int(x) for x in _RS_RAW.split(",") if x.strip()]
+               if _RS_RAW else None)   # None = all available
 
 # Cooldown after a 429 / 403 — defensive.
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
@@ -140,6 +170,7 @@ def load_existing_reports() -> dict[str, list[dict]]:
 def save_reports(reports: dict[str, list[dict]]) -> None:
     """Sort each house's list deterministically:
        - LS: lok_sabha desc, session desc, db_slno desc (newest first).
+       - RS: session desc, date_iso desc (newest first).
     """
     out = {}
     for h in HOUSES:
@@ -149,6 +180,14 @@ def save_reports(reports: dict[str, list[dict]]) -> None:
                 -int(r.get("lok_sabha") or 0),
                 -int(r.get("session")   or 0),
                 -int(r.get("db_slno")   or 0)))
+        elif h == "rs":
+            items.sort(key=lambda r: (
+                -int(r.get("session") or 0),
+                str(r.get("date_iso") or "")), reverse=False)
+            # The composite of -session asc + date_iso desc is awkward;
+            # easier to just sort twice in a stable way:
+            items.sort(key=lambda r: str(r.get("date_iso") or ""), reverse=True)
+            items.sort(key=lambda r: -int(r.get("session") or 0))
         out[h] = items
     # Preserve any unknown-house keys for forward compatibility.
     for h, items in reports.items():
@@ -175,6 +214,76 @@ def _record_from_lsdebate(d: LSDebate) -> dict:
 
 def _ls_key_tuple(r: dict) -> tuple[int, int, int]:
     return (int(r["lok_sabha"]), int(r["session"]), int(r["db_slno"]))
+
+
+def _rs_record_from(d: RSDebate) -> dict:
+    return {
+        "house":          "rs",
+        "session":        d.session_number,
+        "date":           d.date_raw,         # DD/MM/YYYY — preserved for display
+        "date_iso":       d.date_iso,
+        "file_versions":  [
+            {"version": v, "url": u} for v, u in sorted(d.versions.items())
+        ],
+        # No title upstream; we'll synthesize "Session N · Date" in the app.
+        "title":          f"Rajya Sabha · Session {d.session_number} · {d.date_raw}",
+    }
+
+
+def _rs_key_tuple(r: dict) -> tuple[int, str]:
+    return (int(r["session"]), str(r["date_iso"]))
+
+
+def walk_rs_and_merge(existing: dict[str, list[dict]]) -> tuple[dict[str, list[dict]], dict, set[int]]:
+    """Walk RS sessions, merge into existing reports.json. Returns
+    (merged_reports, walk_stats, walked_sessions_set).
+    """
+    print(f"[Walk RS] sessions={'all available' if RS_SESSIONS is None else RS_SESSIONS}...")
+    t0 = time.time()
+    fresh_rs: dict[tuple[int, str], dict] = {}
+    walked_sessions: set[int] = set()
+    try:
+        for rec in walk_rajyasabha(sessions=RS_SESSIONS):
+            walked_sessions.add(rec.session_number)
+            key = (rec.session_number, rec.date_iso)
+            if key in fresh_rs: continue
+            fresh_rs[key] = _rs_record_from(rec)
+    except RateLimited:
+        raise
+    except Exception as e:
+        print(f"  ERR walk_rajyasabha: {e}")
+    print(f"  walked in {time.time()-t0:.1f}s — {len(fresh_rs)} sitting-day records across "
+          f"{len(walked_sessions)} sessions")
+
+    # Merge with archival promise: existing RS entries in NON-walked
+    # sessions are preserved; existing RS entries in walked sessions that
+    # aren't in fresh are also kept (upstream delisting doesn't drop us).
+    merged: dict[str, list[dict]] = {h: list(existing.get(h, [])) for h in HOUSES}
+    old_rs_by_key = {_rs_key_tuple(r): r for r in merged.get("rs", []) if r.get("date_iso")}
+    new_count = 0; updated_count = 0; kept_legacy = 0
+    out_rs: list[dict] = []
+    combined_keys = set(old_rs_by_key.keys()) | set(fresh_rs.keys())
+    for key in combined_keys:
+        if key in fresh_rs:
+            new_rec = fresh_rs[key]
+            if key in old_rs_by_key:
+                if old_rs_by_key[key] != new_rec: updated_count += 1
+            else:
+                new_count += 1
+            out_rs.append(new_rec)
+        else:
+            if key[0] in walked_sessions:
+                kept_legacy += 1
+            out_rs.append(old_rs_by_key[key])
+    merged["rs"] = out_rs
+    # Preserve LS as-is + any unknown houses
+    for h, items in existing.items():
+        if h != "rs":
+            merged[h] = items
+    stats = {"new": new_count, "updated": updated_count, "kept_legacy": kept_legacy}
+    print(f"  merged: {len(merged.get('rs', []))} total RS records "
+          f"(new={new_count}, updated={updated_count}, kept_legacy={kept_legacy})")
+    return merged, stats, walked_sessions
 
 
 def walk_ls_and_merge(existing: dict[str, list[dict]]) -> tuple[dict[str, list[dict]], dict]:
@@ -396,54 +505,124 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
 
 
 def build_manifest() -> dict:
-    """House-keyed manifest. {texts: {ls: {file_id: {size, url}}, rs: {}}}.
+    """House-keyed manifest.
+
+    LS entries are simple: texts.ls[<file_id>] = {size, url}.
+
+    RS entries are multi-version: texts.rs[<base_id>] = {floor: {size, url},
+    english: {...}, part1: {...}}. Each (session, date) can have up to 3
+    versions; we collapse them under the base_id.
     """
     out: dict[str, dict] = {}
     if not TEXT_DIR.exists():
         return {"texts": out}
-    for h in HOUSES:
-        h_dir = TEXT_DIR / h
-        if not h_dir.exists():
-            continue
-        out[h] = {}
-        for text_file in sorted(h_dir.glob("*.txt")):
+
+    # LS — flat
+    ls_dir = TEXT_DIR / "ls"
+    if ls_dir.exists():
+        out["ls"] = {}
+        for text_file in sorted(ls_dir.glob("*.txt")):
             fid = text_file.stem
-            out[h][fid] = {
+            out["ls"][fid] = {
                 "size": text_file.stat().st_size,
-                "url":  f"text/{h}/{text_file.name}",
+                "url":  f"text/ls/{text_file.name}",
             }
+
+    # RS — group versions under base id (RS<session>_<iso>).
+    rs_dir = TEXT_DIR / "rs"
+    if rs_dir.exists():
+        rs_out: dict[str, dict] = {}
+        # versioned_file_id is "<base_id>_<version>"; reverse it by
+        # finding the trailing _<version> suffix among our known versions.
+        for text_file in sorted(rs_dir.glob("*.txt")):
+            stem = text_file.stem
+            base_id = None; version = None
+            for v in RS_INGESTED_VERSIONS:
+                suffix = f"_{v}"
+                if stem.endswith(suffix):
+                    base_id = stem[:-len(suffix)]; version = v
+                    break
+            if not base_id:
+                # Unknown suffix — keep at top level under its full stem
+                rs_out[stem] = {
+                    "_unknown": {"size": text_file.stat().st_size,
+                                 "url":  f"text/rs/{text_file.name}"}}
+                continue
+            rs_out.setdefault(base_id, {})[version] = {
+                "size": text_file.stat().st_size,
+                "url":  f"text/rs/{text_file.name}",
+            }
+        if rs_out:
+            out["rs"] = rs_out
     return {"texts": out}
 
 
 def compute_audit(reports: dict[str, list[dict]]) -> dict:
-    """Per-record status across the corpus."""
+    """Per-record status across both houses. RS records contribute one
+    audit-status per VERSION (a sitting day with floor+english+part1
+    contributes 3 to the counts), so the totals are version-weighted
+    on the RS side. LS records each contribute 1.
+    """
     counts = {
-        "records":               sum(len(reports.get(h, [])) for h in HOUSES),
-        "with_text":             0,
-        "empty_upstream":        0,
-        "error_retryable":       0,
-        "never_attempted":       0,
+        "ls_records":             len(reports.get("ls", [])),
+        "ls_with_text":           0,
+        "ls_empty_upstream":      0,
+        "ls_error_retryable":     0,
+        "ls_never_attempted":     0,
+        "rs_sitting_days":        len(reports.get("rs", [])),
+        "rs_version_units":       0,   # versions ingested (1-3 per day)
+        "rs_with_text":           0,
+        "rs_pypdf_empty_awaiting_ocr": 0,
+        "rs_pypdf_error_retryable":    0,
+        "rs_ocr_failed_permanent":     0,
+        "rs_never_attempted":          0,
     }
     if not TEXT_DIR.exists():
-        counts["never_attempted"] = counts["records"]
+        counts["ls_never_attempted"] = counts["ls_records"]
+        # No version_units known until we walk file_versions:
+        for r in reports.get("rs", []):
+            counts["rs_version_units"] += len(r.get("file_versions") or [])
+        counts["rs_never_attempted"] = counts["rs_version_units"]
         return {
             "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "totals":     counts,
         }
+
+    # LS audit
     ls_dir = TEXT_DIR / "ls"
     for r in reports.get("ls", []):
         ls = r.get("lok_sabha"); ses = r.get("session"); dn = r.get("db_slno")
-        if ls is None or ses is None or dn is None:
-            continue
+        if ls is None or ses is None or dn is None: continue
         fid = ls_file_id(int(ls), int(ses), int(dn))
         if (ls_dir / f"{fid}.txt").exists():
-            counts["with_text"] += 1
+            counts["ls_with_text"] += 1
         elif (ls_dir / f"{fid}.empty").exists():
-            counts["empty_upstream"] += 1
+            counts["ls_empty_upstream"] += 1
         elif (ls_dir / f"{fid}.error").exists():
-            counts["error_retryable"] += 1
+            counts["ls_error_retryable"] += 1
         else:
-            counts["never_attempted"] += 1
+            counts["ls_never_attempted"] += 1
+
+    # RS audit (version-weighted)
+    rs_dir = TEXT_DIR / "rs"
+    for r in reports.get("rs", []):
+        ses = r.get("session"); iso = r.get("date_iso")
+        if ses is None or iso is None: continue
+        for v in (r.get("file_versions") or []):
+            ver = v.get("version")
+            if ver not in RS_INGESTED_VERSIONS: continue
+            counts["rs_version_units"] += 1
+            fid = rs_versioned_file_id(int(ses), iso, ver)
+            if (rs_dir / f"{fid}.txt").exists():
+                counts["rs_with_text"] += 1
+            elif (rs_dir / f"{fid}.ocr-failed").exists():
+                counts["rs_ocr_failed_permanent"] += 1
+            elif (rs_dir / f"{fid}.pypdf-empty").exists():
+                counts["rs_pypdf_empty_awaiting_ocr"] += 1
+            elif (rs_dir / f"{fid}.pypdf-error").exists():
+                counts["rs_pypdf_error_retryable"] += 1
+            else:
+                counts["rs_never_attempted"] += 1
     return {
         "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "totals":     counts,
@@ -462,12 +641,20 @@ def _delete_legacy(path: Path) -> None:
 
 def build_search_bundle(reports: dict[str, list[dict]],
                         docs_per_shard: int = DOCS_PER_SHARD) -> dict | None:
-    """Title + first 5K chars per record. Sharded by sorted reportKey."""
+    """Title + first 5K chars per record. Sharded by sorted reportKey.
+
+    LS: one entry per debate record.
+    RS: one entry per sitting day (Floor version is the canonical text
+        in the bundle — Part-1 and English are reachable via the
+        manifest but not indexed for search to avoid hit duplication).
+    """
     if not TEXT_DIR.exists():
         return None
     HEAD = 5000
     entries = []
     truncated = 0
+
+    # LS entries
     ls_dir = TEXT_DIR / "ls"
     for r in reports.get("ls", []):
         ls = r.get("lok_sabha"); ses = r.get("session"); dn = r.get("db_slno")
@@ -486,6 +673,27 @@ def build_search_bundle(reports: dict[str, list[dict]],
             "t":    r.get("title", ""),
             "head": head,
         })
+
+    # RS entries — Floor only as the canonical bundle text
+    rs_dir = TEXT_DIR / "rs"
+    for r in reports.get("rs", []):
+        ses = r.get("session"); iso = r.get("date_iso")
+        if ses is None or iso is None: continue
+        floor_fid = rs_versioned_file_id(int(ses), iso, "floor")
+        text_path = rs_dir / f"{floor_fid}.txt"
+        if not text_path.exists(): continue
+        try:
+            text = text_path.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            continue
+        head = text[:HEAD]
+        if len(text) > HEAD: truncated += 1
+        entries.append({
+            "k":    rs_report_key(int(ses), iso),
+            "t":    r.get("title", ""),
+            "head": head,
+        })
+
     entries.sort(key=lambda e: e["k"])
     if not entries:
         return None
@@ -523,42 +731,54 @@ def _tokenize(text: str) -> list[str]:
 
 
 def build_search_index(docs_per_shard: int = DOCS_PER_SHARD) -> dict | None:
-    """Full-body inverted token index, sharded."""
+    """Full-body inverted token index, sharded.
+
+    LS: indexes every record's text.
+    RS: indexes the Floor version's text per sitting day. Part-1 and
+    English are excluded to keep the index lean and avoid duplicate
+    hits across versions of the same sitting day.
+    """
     if not TEXT_DIR.exists():
         return None
     # Gather (report_key, text) in deterministic order.
     docs: list[tuple[str, str]] = []
+
+    # LS
     ls_dir = TEXT_DIR / "ls"
     if ls_dir.exists():
         files = list(ls_dir.glob("*.txt"))
-        def _sort_key(p: Path):
-            stem = p.stem  # "LS18_S7_5183"
-            try:
-                _, ls_part, rest = stem.split("_", 2)
-                ls = int(ls_part.removeprefix("LS")) if False else int(stem[2:stem.find("_")])
-                ses_part, dn_part = rest.split("_", 1)
-                ses = int(ses_part.removeprefix("S"))
-                return (-ls, -ses, -int(dn_part))
-            except Exception:
-                return (0, 0, 0)
-        files.sort(key=_sort_key)
+        files.sort(key=lambda p: p.stem)   # deterministic; shard ranges are reportKey-sorted
         for path in files:
-            stem = path.stem  # "LS18_S7_5183"
-            try:
-                # Parse LS<n>_S<s>_<d>
-                m = re.match(r"LS(\d+)_S(\d+)_(\d+)$", stem)
-                if not m: continue
-                ls, ses, dn = m.group(1), m.group(2), m.group(3)
-                rk = f"debates|ls|{ls}|{ses}|{dn}"
-            except Exception:
-                continue
+            m = re.match(r"LS(\d+)_S(\d+)_(\d+)$", path.stem)
+            if not m: continue
+            ls, ses, dn = m.group(1), m.group(2), m.group(3)
+            rk = f"debates|ls|{ls}|{ses}|{dn}"
             try:
                 text = path.read_text(encoding="utf-8", errors="replace")
             except Exception:
                 continue
             docs.append((rk, text))
+
+    # RS — Floor version only
+    rs_dir = TEXT_DIR / "rs"
+    if rs_dir.exists():
+        files = list(rs_dir.glob("*_floor.txt"))
+        files.sort(key=lambda p: p.stem)
+        for path in files:
+            m = re.match(r"RS(\d+)_(\d{4}-\d{2}-\d{2})_floor$", path.stem)
+            if not m: continue
+            ses, iso = m.group(1), m.group(2)
+            rk = f"debates|rs|{ses}|{iso}"
+            try:
+                text = path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
+            docs.append((rk, text))
+
     if not docs:
         return None
+    # Sort once by reportKey so shard ranges are stable.
+    docs.sort(key=lambda d: d[0])
     token_docs: dict[str, set[int]] = {}
     for i, (_, text) in enumerate(docs):
         for tok in set(_tokenize(text)):
@@ -631,21 +851,160 @@ def write_meta(*, total_records: int, total_with_text: int,
 # ── Main ────────────────────────────────────────────────────────────────────
 
 
+def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) -> dict:
+    """For each RS record, identify versions without text files yet,
+    fetch + extract up to MAX_RS_EXTRACTIONS_PER_RUN PDFs. Priority:
+    newest session → newest date → Floor before English before Part-1.
+    """
+    rs_text_dir = TEXT_DIR / "rs"
+    rs_pdfs_dir = PDFS_DIR / "rs"
+    candidates: list[tuple[int, str, str, str]] = []   # (session, date_iso, version, url)
+    skipped_marked = 0
+    for r in reports.get("rs", []):
+        ses = r.get("session"); iso = r.get("date_iso")
+        if ses is None or iso is None: continue
+        versions = r.get("file_versions") or []
+        # Build per-record version map for stable lookup
+        url_by_v = {v["version"]: v["url"] for v in versions if v.get("version") and v.get("url")}
+        for ver in RS_INGESTED_VERSIONS:
+            url = url_by_v.get(ver)
+            if not url: continue
+            fid = rs_versioned_file_id(int(ses), iso, ver)
+            if (rs_text_dir / f"{fid}.txt").exists():
+                skipped_marked += 1; continue
+            if (rs_text_dir / f"{fid}.pypdf-empty").exists():
+                # OCR slow lane will handle these. Skip from daily.
+                skipped_marked += 1; continue
+            if (rs_text_dir / f"{fid}.ocr-failed").exists():
+                skipped_marked += 1; continue
+            # .pypdf-error is retryable — falls through to candidate
+            candidates.append((int(ses), iso, ver, url))
+
+    # Priority: highest session first, then highest date_iso, then version
+    # order (Floor < English < Part-1 to bias toward the canonical record).
+    _VER_ORDER = {"floor": 0, "english": 1, "part1": 2}
+    candidates.sort(key=lambda c: (-c[0], c[1], _VER_ORDER.get(c[2], 9)), reverse=False)
+    # The above sorts session asc; want desc. Fix:
+    candidates.sort(key=lambda c: (-c[0], -ord(c[1][0]) if c[1] else 0))
+    # Simpler stable approach:
+    candidates.sort(key=lambda c: c[1], reverse=True)        # by date desc
+    candidates.sort(key=lambda c: _VER_ORDER.get(c[2], 9))   # then by version (Floor first)
+    candidates.sort(key=lambda c: -int(c[0]))                # then by session desc (primary)
+    print(f"  RS candidates: {len(candidates)} versions missing text "
+          f"({skipped_marked} skipped — already marked / OCR-pending)")
+
+    if not candidates:
+        return {"extracted": [], "failed": [], "rate_limited": False,
+                "budget_hit": False, "candidates_total": 0}
+
+    remaining = deadline - time.monotonic()
+    if remaining <= 30:
+        print(f"  only {remaining:.0f}s left in budget — skipping RS phase")
+        return {"extracted": [], "failed": [], "rate_limited": False,
+                "budget_hit": True, "candidates_total": len(candidates)}
+
+    target = candidates[:MAX_RS_EXTRACTIONS_PER_RUN]
+    print(f"  RS budget: extracting up to {len(target)} this run "
+          f"(MAX_RS_EXTRACTIONS_PER_RUN={MAX_RS_EXTRACTIONS_PER_RUN}, "
+          f"remaining={remaining:.0f}s, EXTRACT_WORKERS={EXTRACT_WORKERS})")
+
+    extracted: list[tuple[int, str, str]] = []
+    failed: list[tuple[int, str, str]] = []
+    rate_limited = False; budget_hit = False
+    last_checkpoint_at = time.monotonic()
+    extracted_since_checkpoint = 0
+
+    def _do(c):
+        ses, iso, ver, url = c
+        try:
+            text = rs_fetch_and_extract(url, session_no=ses, date_iso=iso,
+                                        version=ver, text_dir=str(rs_text_dir),
+                                        pdfs_dir=str(rs_pdfs_dir), delete_pdf=True)
+            return c, text, None
+        except RateLimited as rl:
+            return c, None, rl
+        except Exception as e:
+            return c, None, e
+
+    with ThreadPoolExecutor(max_workers=EXTRACT_WORKERS) as ex:
+        futures = {ex.submit(_do, c): c for c in target}
+        for fut in as_completed(futures):
+            c, text, err = fut.result()
+            ses, iso, ver, _ = c
+            if isinstance(err, RateLimited):
+                print(f"  [RATE-LIMITED] RS{ses} {iso} {ver}: {err}")
+                rate_limited = True
+                for f in futures:
+                    if not f.done(): f.cancel()
+                break
+            elif text:
+                extracted.append((ses, iso, ver))
+                extracted_since_checkpoint += 1
+            else:
+                # .pypdf-empty or .pypdf-error marker already written
+                failed.append((ses, iso, ver))
+                extracted_since_checkpoint += 1
+            now = time.monotonic()
+            if (extracted_since_checkpoint >= CHECKPOINT_EVERY_N or
+                (extracted_since_checkpoint > 0 and now - last_checkpoint_at >= CHECKPOINT_EVERY_S)):
+                ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+                checkpoint_commit(
+                    f"Auto-checkpoint debates RS data (extracted={len(extracted)} this run) [{ts}]",
+                    ["docs/debates/reports.json", "docs/debates/text/"],
+                )
+                extracted_since_checkpoint = 0
+                last_checkpoint_at = now
+            if now > deadline:
+                print(f"  [BUDGET] wall-clock budget hit after {len(extracted)} RS successes")
+                budget_hit = True
+                for f in futures:
+                    if not f.done(): f.cancel()
+                break
+
+    if extracted_since_checkpoint > 0:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        checkpoint_commit(
+            f"Auto-checkpoint debates RS data (final, extracted={len(extracted)} this run) [{ts}]",
+            ["docs/debates/reports.json", "docs/debates/text/"],
+        )
+
+    return {"extracted": extracted, "failed": failed,
+            "rate_limited": rate_limited, "budget_hit": budget_hit,
+            "candidates_total": len(candidates)}
+
+
 def phase_extract() -> None:
     overall_deadline = time.monotonic() + MAX_RUN_SECONDS
-    print(f"\n[Extract 1/2] Walking LS {LOK_SABHAS}...")
     existing = load_existing_reports()
     print(f"  existing on disk: {sum(len(existing.get(h, [])) for h in HOUSES)} records")
-    merged, walk_stats = walk_ls_and_merge(existing)
+
+    print(f"\n[Extract 1/4] Walking LS {LOK_SABHAS}...")
+    merged, ls_walk_stats = walk_ls_and_merge(existing)
     save_reports(merged)
 
-    print(f"\n[Extract 2/2] Fetching debate-details bodies (priority: newest LS, highest dbSlno)...")
-    stats = extract_missing_bodies(merged, deadline=overall_deadline)
-    print(f"  extracted={len(stats['extracted'])} "
-          f"failed={len(stats['failed'])} "
-          f"rate_limited={stats.get('rate_limited', False)} "
-          f"budget_hit={stats.get('budget_hit', False)} "
-          f"remaining_after={max(0, stats.get('candidates_total', 0) - len(stats.get('extracted', [])) - len(stats.get('failed', [])))}")
+    print(f"\n[Extract 2/4] Fetching LS debate-details bodies (priority: newest LS, highest dbSlno)...")
+    ls_stats = extract_missing_bodies(merged, deadline=overall_deadline)
+    print(f"  LS: extracted={len(ls_stats['extracted'])} "
+          f"failed={len(ls_stats['failed'])} "
+          f"rate_limited={ls_stats.get('rate_limited', False)} "
+          f"budget_hit={ls_stats.get('budget_hit', False)} "
+          f"remaining_after={max(0, ls_stats.get('candidates_total', 0) - len(ls_stats.get('extracted', [])) - len(ls_stats.get('failed', [])))}")
+
+    if ls_stats.get('rate_limited'):
+        print("  [RS skipped because LS rate-limited]")
+        return
+
+    print(f"\n[Extract 3/4] Walking RS sessions...")
+    merged, rs_walk_stats, _ = walk_rs_and_merge(merged)
+    save_reports(merged)
+
+    print(f"\n[Extract 4/4] Downloading + extracting RS PDFs (priority: newest session, newest date, Floor first)...")
+    rs_stats = extract_missing_rs_pdfs(merged, deadline=overall_deadline)
+    print(f"  RS: extracted={len(rs_stats['extracted'])} "
+          f"failed={len(rs_stats['failed'])} "
+          f"rate_limited={rs_stats.get('rate_limited', False)} "
+          f"budget_hit={rs_stats.get('budget_hit', False)} "
+          f"remaining_after={max(0, rs_stats.get('candidates_total', 0) - len(rs_stats.get('extracted', [])) - len(rs_stats.get('failed', [])))}")
 
 
 def phase_derive() -> None:
@@ -685,10 +1044,16 @@ def phase_derive() -> None:
     with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
         json.dump(audit, f, indent=2)
     t = audit["totals"]
-    print(f"\n  audit: with_text={t['with_text']} "
-          f"empty={t['empty_upstream']} "
-          f"error={t['error_retryable']} "
-          f"never_attempted={t['never_attempted']} (total={t['records']})")
+    print(f"\n  audit (LS): with_text={t['ls_with_text']} "
+          f"empty={t['ls_empty_upstream']} "
+          f"error={t['ls_error_retryable']} "
+          f"never={t['ls_never_attempted']} (total={t['ls_records']})")
+    print(f"  audit (RS): with_text={t['rs_with_text']} "
+          f"pypdf_empty={t['rs_pypdf_empty_awaiting_ocr']} "
+          f"pypdf_error={t['rs_pypdf_error_retryable']} "
+          f"ocr_failed={t['rs_ocr_failed_permanent']} "
+          f"never={t['rs_never_attempted']} "
+          f"(sitting_days={t['rs_sitting_days']}, version_units={t['rs_version_units']})")
 
 
 def main():

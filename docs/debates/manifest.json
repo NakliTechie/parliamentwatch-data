@@ -53,6 +53,26 @@
         "size": 1069,
         "url": "text/ls/LS18_S7_5384.txt"
       }
+    },
+    "rs": {
+      "RS269_2025-12-03": {
+        "floor": {
+          "size": 483421,
+          "url": "text/rs/RS269_2025-12-03_floor.txt"
+        }
+      },
+      "RS269_2025-12-04": {
+        "floor": {
+          "size": 541938,
+          "url": "text/rs/RS269_2025-12-04_floor.txt"
+        }
+      },
+      "RS269_2025-12-11": {
+        "floor": {
+          "size": 484323,
+          "url": "text/rs/RS269_2025-12-11_floor.txt"
+        }
+      }
     }
   }
 }
