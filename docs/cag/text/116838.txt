@@ -1,0 +1,2434 @@
+  
+ 
+ 
+ 
+Report of the  
+Comptroller and Auditor General of India  
+ 
+ 
+ 
+ 
+ 
+ 
+Performance Audit  
+on 
+Direct Benefit Transfer  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Government of Haryana 
+Report No. 2 of the year 2022 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+i 
+TABLE OF CONTENTS 
+ Paragraphs  Page(s)  
+Preface  v 
+Executive Summary  vii-x 
+Chapter 1 
+Overview 
+Introduction 1.1 1-2 
+Various Process of Direct Benefit Transfer 1.2 3 
+Organisational set up 1.3 3-4 
+Status of Direct Benefit Transfer in the State 1.4 4-6 
+Selection of Schemes 1.5 6-7 
+Process adopted in Social Justice and Empowerment 
+Department for disbursement of benefits 1.6 7-10 
+Audit objectives 1.7 10 
+Audit Scope 1.8 10 
+Audit Criteria 1.9 10-11 
+Audit methodology 1.10 11 
+Audit Findings 1.11 11 
+Acknowledgement 1.12 11 
+Chapter 2 
+Re-engineering Process for implementation of Direct Benefit Transfer 
+Non-preparation of documentation for IT system 2.1 13-14 
+Delay in disbursement of pension benefits 2.2 15-16 
+Delay in passing intended benefits due to late enrolment of 
+beneficiaries 2.3 16-18 
+Delay in enrolment of beneficiaries violated the Ri ght to 
+Service Act provisions 2.4 18-19 
+Non-adherence to specific timelines for disbursemen t of 
+social security pensions 2.5 19 
+Transfer of Pension to the dead beneficiaries account 2.6 20-23 
+Non-updation of beneficiaries’ income in the pensio n 
+database 2.7 23 
+Deficiency in digitization of master database of 
+beneficiaries 2.8 24-25 
+Pension disbursed to multiple beneficiaries on same  
+Aadhaar Number 2.9 25-27 
+Undue benefit by providing benefits simultaneously under 
+two schemes 2.10 27 
+Transfer of beneficiaries Pension to other persons’  bank 
+accounts under social security schemes 2.11 28 
+
+Performance Audit on Direct Benefit Transfer 
+ii 
+ Paragraphs  Page(s)  
+Payment to ineligible beneficiaries 2.12 28-29 
+Disbursement of social security pension to retired 
+Government employees and family pensioner 2.13 29-30 
+Disbursement of social security pension to untracea ble 
+beneficiaries 2.14 30-31 
+Porting of incomplete legacy data 2.15 31-33 
+Absence of IT Security Policy 2.16 34 
+Lack of training to users/staff 2.17 34 
+No business continuity planning and disaster recove ry 
+planning 2.18 34 
+Weak access control 2.19 34-35 
+Missing audit trails in IT system 2.20 35 
+Approval of beneficiaries in bulk in a single day 2.21 35-36 
+Irregular payment of commission to banks and post office 2.22 36 
+Non-updation of Savings data on State DBT Portal 2.23 37 
+Non-conducting of Social Audit of Schemes under NSAP 2.24 37 
+Conclusion 2.25 37 
+Recommendations 2.26 38 
+Chapter 3 
+Infrastructure, organisation and management of Direct Benefit Transfer 
+Non-implementation of DBT on all schemes of all 
+departments 3.1 39-40 
+Non-conducting of quarterly meeting of Advisory Board 3.2 40 
+Non-sharing of data of DBT schemes at State DBT Portal 3.3 40-42 
+Non-incorporating of best practices 3.4 42 
+Non-compliance of the Instruction regarding transfe r of 
+funds 3.5 42-43 
+Conclusion 3.6 43 
+Recommendations 3.7 43-44 
+Chapter 4 
+Conclusions 
+Conclusions  45-46 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Table of Contents 
+iii 
+APPENDICES 
+Annexure Particulars Reference to 
+  Paragraph Page (s) 
+I Payment status fields 2.2 (A) 47-48 
+II Time taken for transactions 2.2 (B) 49 
+III Delay in passing intended benefits due to 
+late enrolment of beneficiaries 2.3 50 
+IV Pension disbursed to multiple 
+beneficiaries on    same Aadhaar Number 2.9 51 
+ GLOSSARY  53-54 
+ 
+
+v 
+PREFACE 
+This report of the Comptroller and Auditor General of India has been prepared 
+for submission to the Governor of Haryana under Art icle 151(2) of the 
+Constitution of India for being laid before the Leg islature. The report has been 
+prepared in accordance with the Performance Auditin g Guidelines, 2014 and 
+Regulations on Audit and Accounts, 2020 of the Comp troller and Auditor 
+General of India. 
+The report of the Comptroller and Auditor General of India contains the results 
+of Performance Audit of Direct Benefit Transfer (DB T) covering constitution 
+and functioning of DBT Cell by the Government of Ha ryana and Pension 
+schemes  implemented by Social Justice and Empowerment Department during 
+April 2017 to July 2020. 
+The audit has been conducted in conformity with the Auditing Standards issued 
+by the Comptroller and Auditor General of India.  
+Audit acknowledges the cooperation received from th e DBT Cell and Social 
+Justice and Empowerment Department, Haryana at each  stage of the audit 
+process. 
+
+Executive Summary 
+  
+
+vii 
+Executive Summary 
+Direct Benefit Transfer (DBT) is a major reform ini tiative of the Government 
+to ensure better and timely delivery of benefits from Government to the people. 
+This marks a paradigm-shift in the process of deliv ering benefits like wage 
+payments, fuel subsidies, food grain subsidies, etc . directly into the bank 
+accounts of the beneficiaries, removing leakages an d enhancing financial 
+inclusion. 
+DBT was initiated by the erstwhile Planning Commiss ion (January 2013) and 
+later transferred to Department of Expenditure (Jul y 2013). DBT Mission was 
+brought under Cabinet Secretariat in September 2015 . State DBT Portal was 
+launched in September 2017. The concept and scope of DBT has been evolving 
+over the years. 
+Direct Benefit Transfer stipulates that transfer of  benefits should be done 
+directly to beneficiaries under various Government Schemes and Programmes 
+using Information and Communication Technology (ICT ). Necessary process 
+reengineering to minimize intermediary levels and to reduce delay in payments 
+to intended beneficiaries with the objective of min imizing pilferage and 
+duplication should be done for all Government Schemes and Programmes. The 
+process for implementation of DBT as prescribed should be adopted.  
+In Haryana, as per DBT Mission guidelines, a DBT ce ll under Finance 
+Department was constituted in June 2016 and a State  DBT Portal was created 
+in September 2017 to aggregate benefit transfer inf ormation and the activities 
+for the State DBT Cell through an electronic platfo rm. This is integrated with 
+the DBT Bharat Portal. 
+The Departments are implementing DBT on applicable State and Centrally 
+sponsored schemes. If any, new DBT scheme is identi fied by the Department, 
+it is uploaded by DBT cell on the State DBT portal on the request of 
+Department. The concerned Departments classify/iden tify the DBT applicable 
+schemes and identified schemes are uploaded on the state DBT portal by DBT 
+Cell. 
+Performance Audit on the DBT was conducted to asses s whether necessary 
+process reengineering was done for implementation o f DBT so as to minimize 
+intermediary levels, reduce delay in payments to in tended beneficiaries, 
+pilferage and duplication; and whether the infrastr ucture, organization and 
+management of DBT was adequate and effective. 
+The Performance Audit was conducted during March 20 20 to July 2021 
+covering the period from 01 April 2017 to 31 July 2020. The audit covered DBT 
+Cell and Social Justice and Empowerment Department of the State Government. 
+
+Performance Audit on Direct Benefit Transfer 
+viii 
+Validation of findings noticed on analysis of data was carried out in the selected 
+sample of six districts of Haryana. 
+Significant Audit Findings  
+There was delay in enrolment of beneficiaries in th e scheme ranging between 
+one day to 963 days resulting in violation of the provisions of Haryana Right to 
+Service (RTS) Act, 2014 and objectives of the schem es to serve as income 
+support schemes to beneficiaries was compromised.  
+(Paragraph 2.4) 
+The department failed to identify dead beneficiaries in time resulting in Pension 
+of ` 98.96 crore being transferred to the dead benefici aries account under 
+various social security schemes.  
+(Paragraph 2.6.1 ) 
+To ensure the payment of pension to targeted benefi ciaries, the process of 
+linking beneficiary accounts with Aadhaar numbers w as not being done 
+effectively due to incomplete and incorrect digitalization of legacy data.  
+(Paragraphs 2.8 and 2.9) 
+Disbursement monitoring mechanism was absent leadin g to disbursement of 
+multiple pension payments or double payments to sam e beneficiaries in two 
+schemes viz. Old Age Samman Allowance and Ladli Soc ial Security 
+Allowance. District Social Welfare Officer’s (DSWOs) were unable to identify 
+beneficiaries, verify their eligibility status and ensure that pensions are being 
+disbursed to the correct beneficiaries.  
+(Paragraph 2.10) 
+Pension of ` 54.54 crore was transferred to different bank acco unts instead of 
+correct beneficiaries account in two schemes viz. Old Age Samman Allowance 
+and Widow and Destitute Pension  
+(Paragraph 2.11) 
+The benefit of social security pension schemes was disbursed to retired 
+Government employees also which was against the rules of the schemes. 
+(Paragraph 2.13) 
+Pension amounting to ` 64.13 crore was transferred to 0.38 lakh beneficia ries 
+whose status had been shown as untraceable by the banks. 
+(Paragraph 2.14) 
+
+Executive Summary 
+ix 
+The audit trails related to 5.56 lakh beneficiaries was missing in the data dump. 
+In absence of audit trails it could not be ascertai ned when and from which IP 
+address and by whom they were enrolled. Besides there was gap in beneficiary 
+ID sequence and missing records of beneficiaries in master database. 
+(Paragraphs 2.15.3 and 2.20) 
+Identification of DBT applicable schemes in 28 departments was not done.   
+(Paragraph 3.1) 
+The data regarding schemes, amount transferred through DBT and saving after 
+implementation of DBT depicted on the DBT Portal wa s not complete since 
+Agriculture department did not provide any informat ion and had also not 
+uploaded the DBT data including savings on the state DBT Portal. 
+(Paragraph 3.3) 
+Recommendations 
+ To ensure transfer of payment to correct beneficiar ies’ accounts, the 
+Government may evolve proper systems for authentica tion of Aadhaar  
+numbers of legacy beneficiaries with Aadhaar portal.  
+ The Government/Department may carry out a comprehensive review of 
+the beneficiaries’ data including legacy data to ensure its completeness, 
+authenticity and correctness. 
+ The Government/Department may put in place a robust  system for 
+scrutiny of applications, validation and verificati on process of 
+beneficiaries and transfer of benefit in correct ac count. Access to state 
+pensioner database should be obtained and before en rolment of 
+beneficiaries cross verification should be carried out. 
+ Distribution of pension to deceased persons should be avoided by 
+linking the software with various agencies and not only from data of 
+Registrar General of India. System of disseminating  information like 
+payment of financial assistance to the beneficiaries through SMS should 
+be considered. 
+ The Government may consider evolving real time moni toring 
+mechanism for effective decision making and supervi sion. This would 
+assist in assessing the undisbursed amount of pensi on in respect of  
+untraceable beneficiaries and discontinuance of pension of unauthorized 
+beneficiaries. and to revert back the amount in the se cases in the 
+Department’s account and evolve Information System for regular SMS 
+notifications to the beneficiaries. 
+
+Performance Audit on Direct Benefit Transfer 
+x 
+ The Department may put in place a mechanism to ensure preparation of 
+required documents (User Requirement Specifications , System 
+Requirement Specifications, Detailed Design Document, etc.) whenever 
+development of new system is taken up. 
+ The State Government may evolve proper systems for identification and 
+on boarding of all DBT applicable schemes on DBT portal, beneficiaries 
+and saving earned after implementation of DBT. 
+ The State Government may take strenuous efforts for effecting recovery 
+of inadmissible payment of assistance besides fixin g responsibility for 
+inaction by the authorities concerned. 
+ DBT Cell may ensure that meeting of advisory board is conducted 
+periodically as envisaged in the guidelines. 
+
+Chapter 1  
+Overview 
+  
+
+1 
+Chapter 1 
+Overview 
+1.1 Introduction 
+1.1.1 Direct Benefit Transfer 
+Direct Benefit Transfer (DBT) is a major reform ini tiative by the Government 
+of India (GoI) to ensure better and timely delivery of benefits from Government 
+to the people. This marks a paradigm shift in the p rocess of delivering benefits 
+like wage payments, fuel subsidies, food grain subs idies directly into the bank 
+accounts of the beneficiaries, removing leakages an d enhancing financial 
+inclusion i.e. extension of financial services to t he unbanked areas and 
+providing universal access to banking services across the country. 
+As a step in technology enablement, all benefits transferred, in cash or in-kind, 
+are captured and adequately represented as part of an aggregation web-interface. 
+DBT Bharat portal (https://dbtbharat.gov.in) has be en conceptualized and 
+developed as a national aggregator for all information in the country. 
+1.1.2 Vision of Direct Benefit Transfer 
+DBT vision includes a governance regime which ensur es a simple and user-
+friendly Government to People interface and directl y delivers entitlements to 
+eligible individuals and households in a fair, tran sparent, efficient and reliable 
+manner. Besides, it was a major reform initiative b y Government in various 
+Social Welfare Beneficiary Schemes. 
+DBT proposes to ensure 
+• Accurate targeting 
+• De-duplication 
+• Reduction of Fraud and corruption 
+• Process Re-engineering of Schemes for flow of information and funds 
+• Greater accountability 
+• Elimination of waste in subsidy 
+1.1.3 Provisions of General Financial Rules, 2017 
+Rule 87 of General Financial Rules, 2017 stipulates that 
+(1) Transfer of benefits should be done directly to  beneficiaries under various 
+Government Schemes and Programmes using Information and Communication 
+Technology (ICT). Necessary process reengineering t o minimize intermediary 
+
+Performance Audit on Direct Benefit Transfer 
+2 
+levels and to reduce delay in payments to intended beneficiaries with the 
+objective of minimizing pilferage and duplication s hould be done for all 
+Government Schemes and Programmes. The process for implementation of 
+DBT as prescribed should be adopted. 
+(2) DBT should include transfer of in-kind benefits
+ a nd cash transfers to 
+beneficiaries as well as transfers/honorariums give n to various enablers of 
+government schemes like community workers, etc. for  successful 
+implementation of the schemes. 
+(3) Transfer of cash benefits from Ministries/Departments should be done: 
+a)  directly to beneficiaries from Ministries/Departments;  
+b)  through State Treasury Account; or  
+c)  through any Implementing Agency as appointed by Cen tre/State 
+Governments. 
+1.1.4 Pre-requisites of DBT 
+The principal objective of DBT is to facilitate dir ect processing and credit of 
+payments to the legitimate beneficiary in right acc ount and in right time i.e. 
+without delay. 
+The pre-requisites of DBT are: 
+• Digitization of database of beneficiaries; 
+• Opening of bank accounts of beneficiaries; and 
+• Aadhaar enrolment. 
+1.1.5 Identification of DBT Schemes 
+A scheme will be a DBT Scheme if:  
+• individuals or household can be identified as benef iciaries under the 
+scheme; 
+• benefits transferred to identified beneficiaries viz. cash or in kind; and 
+• the scheme is funded from Consolidated Fund of Indi a or Consolidated 
+Fund of the State. 
+ 
+ 
+ 
+ 
+
+Chapter 1 Overview 
+3 
+1.2 Various Process of Direct Benefit Transfer  
+Under DBT, various schemes in the categories of Cas h and in-kind are being 
+covered 1  according to ‘Standard Operating Procedure (SOP) f or DBT 
+payments’ issued by GoI. Following process is to be followed by implementing 
+agencies through Public Financial Management System  (PFMS) or other 
+payment systems:  
+I.  Beneficiary identification and enrolment in Ministr y’s DBT scheme 
+Management Software; 
+II.  Beneficiary validation/registration on PFMS (or any  other system), 
+including first time validation of bank account details; 
+III.  Generation of payment file instructions; and 
+IV.  Processing of payment file and payment to beneficiary. 
+Source: DBT Flyer 
+1.3 Organisational setup  
+The Department of Social Justice and Empowerment (S JE), Haryana is 
+entrusted with the welfare, social justice and empo werment of disadvantaged 
+and marginalized section of the society. The respon sibility of implementation 
+of social welfare schemes in the State is vested wi th the Department. The 
+implementation of the selected schemes and beneficiary approval is carried out 
+by District Social Welfare Officers (DSWOs) in the department. 
+                                                           
+1 E.g. Cash : PAHAL (Direct Benefit Transfer for LPG), Mahatma Gandhi National 
+Rural Employment Guarantee Act, National Social Ass istance Programme. In-kind : 
+Public Distribution System. Other Transfers : ASHA workers under National Health 
+Mission, Aanganwadi  workers under Integrated Child Development Services, teachers 
+in Aided School and Sanitation staff in Urban Local Bodies. 
+
+
+Performance Audit on Direct Benefit Transfer 
+4 
+For a coordinated effort between the Centre and State to enable: faster decision-
+making, eliminate duplication of efforts and smooth en out differences i.e. 
+fostering an easier transition of schemes on to DBT, GoI asked States to set up 
+DBT Cells. These DBT Cells in the States are expect ed to be a one-stop point 
+for coordinating all efforts for bringing and implementing schemes on to DBT. 
+Therefore, a State DBT cell was constituted on 13 J une 2016 under Finance 
+Department of Haryana as a nodal point for all the activities and matters related 
+to DBT operations in the State. The State DBT cell is responsible for primarily 
+working towards coordinating the implementation of DBT in various schemes 
+which is administered by the Finance Department. The Cell acts as a nodal point 
+for all the activities and matters related to DBT operations in the State. 
+1.4 Status of Direct Benefit Transfer in the State 
+As a Major reform initiative, Government of Haryana introduced various Social 
+Welfare Beneficiary Schemes in the different depart ments in the State. At 
+present 135 DBT applicable schemes of 25 department s are on boarded on the 
+State DBT portal. Year-wise number of beneficiaries , schemes and amount 
+transferred to beneficiaries’ accounts 2 is depicted in the following chart: 
+Chart 1: Year wise Beneficiaries, Funds transferred  and Number of 
+schemes 
+ 
+The above chart shows that the total amount transfe rred to beneficiaries 
+accounts during the years 2017-18 to 2020-21 was ₹ 37,736 crore. The number 
+of beneficiaries had increased to 143.83 lakh in 20 18-19 as compared to 
+90.18 lakh in 2017-18. The increase was mainly due to  ‘Livestock Health and 
+Disease Control’ scheme (16.63 lakh beneficiaries),  Mid-day meal scheme 
+(14.92 lakh beneficiaries)and Samagra Shiksha (9.44  lakh beneficiaries) 
+Thereafter, it decreased to 129.43 lakh in 2020-21 mainly due to decrease in  
+ 
+                                                           
+2 A single person enrolled in multiple schemes is a separate beneficiary under each 
+scheme. 
+
+
+Chapter 1 Overview 
+5 
+number of beneficiaries in eight schemes in 2019-20  and further decrease in 
+four schemes 3 in 2020-21. 
+• In order to aggregate benefit transfer information and the activities for 
+the State DBT Cell through an electronic platform, a State DBT Portal 
+was created in September 2017 which is integrated with the DBT Bharat 
+Portal. Main features of State DBT portal are: 
+ aggregated Dashboard of DBT Schemes; 
+ scheme wise or location wise Reports; 
+ Progress Monitoring System for DBT applicable schem e/service; 
+and  
+ DBT Scheme Code Management.  
+• As per Protocol Document for DBT in states, DBT Cell coordinates with 
+all Departments in compiling a list of schemes and programs to which 
+DBT is applicable.  
+• The identification of DBT applicable State and Cent rally Sponsored 
+Schemes is done by the concerned Departments implem enting the 
+schemes. Identified schemes are uploaded on the sta te DBT portal by 
+DBT Cell on the request of concerned department.  T he process of 
+uploading the scheme on DBT Portal is described below: 
+ The concerned Department fills up the prescribed pr oforma for 
+uploading the scheme on the State DBT portal and su bmits to the 
+DBT cell which is done in physical form and then in corporated 
+through data entry. 
+ The DBT cell uploads the information provided by the Department 
+on the DBT portal to generate a unique code for the  scheme (State 
+scheme or Centrally Sponsored Scheme on sharing basis). 
+ After the unique code is generated, rest of informa tion in the 
+proforma is uploaded on the State DBT portal by the DBT Cell. 
+ The scheme is now visible to the respective Departm ents on the 
+State DBT portal for further updation.  
+ The Departmental user is created for each departmen t and user id 
+and password are assigned for accessing the scheme uploaded on 
+the State DBT portal.  
+                                                           
+3 Two schemes of elementary education and one each fo r Rural Development and 
+Women and Child Development. 
+
+Performance Audit on Direct Benefit Transfer 
+6 
+ The Departmental user further creates scheme Owner (s) by 
+creating User id  and Password  and assign the scheme(s) to the 
+scheme Owner for updating the data on the State DBT portal. 
+• The DBT Scheme Code 4  is generated on all India basis and is a 
+randomly generated five digit code unique to each D BT scheme for 
+identification of DBT transactions with a purpose of distinguishing DBT 
+applicable component/scheme during financial transa ctions and for 
+reporting of data on the DBT Bharat portal. 
+• DBT Cell monitors the DBT scheme code process, gene rates the 
+scheme-wise/location-wise report with the objective  to integrate with 
+DBT Bharat Portal and progress made by Departments with regards to 
+the DBT on-boarding process viz. (i) Beneficiary da tabase digitization, 
+(ii) Seeding of beneficiary database with validated  Aadhaar number, 
+(iii) Transfer of benefit – for cash: using electro nic means, and for 
+in-kind: upon beneficiary authentication from Aadha ar Central 
+Identities Data Repository (CIDR).  
+1.5 Selection of Schemes 
+The total transfer made by the State through DBT during the year 2019-20 was  
+₹ 9,081.69 crore. Out of this, an amount of ₹ 6,455.07 crore (71 per cent ) was 
+transferred by SJE . Of the 14 schemes through which funds have been 
+transferred by SJE, maximum benefit (94 per cent ) was transferred through 
+three schemes viz. (i) Old Age Pension Scheme (OAP) , (ii) The Haryana 
+Pension to Widows and Destitute Women Scheme and (i ii) The Haryana 
+Disabled Persons Pension Schemes. Accordingly, thes e three schemes were 
+selected for audit. 
+The three schemes as detailed below are aimed at pr oviding Social Security to 
+the respective class of persons who are unable to s ustain themselves with their 
+own resources and are in need of financial assistance: 
+(i)  The Haryana Government implemented the OAP scheme with effect 
+from 01 November 1966. The State Government further  enhanced 
+the scheme and introduced “Old Age Pension Scheme-1 991”, now 
+renamed as “Old Age Samman Allowance Scheme”. The s cheme 
+was implemented from 01 July 1991.  
+                                                           
+4 The codification structure is - Scheme Code starti ng with (A) – Central Sector Schemes 
+- Scheme Code starting with (B) – Centrally Sponsor ed Schemes - Scheme Code 
+starting with (C) – State / UT Schemes - Scheme Cod e starting with (D) – District 
+Schemes - Scheme Code starting with (E) – State / U T CSS. The balance four 
+characters of scheme code will have values between 0-9 and A to Z. 
+
+Chapter 1 Overview 
+7 
+(ii)  The Haryana Pension to Widows and Destitute Women Scheme was 
+introduced in the year 1980-81.  
+(iii)  The Haryana Disabled (Divyang) Persons Pension Sche mes was 
+introduced in the year 1981-82. The aim of the scheme is to provide 
+social security to Disabled persons. 
+The details of the expenditure by the SJE departmen t and the three selected 
+schemes are given in Table 1.1: 
+Table 1.1: Details of expenditure incurred by the Department  
+Name of Scheme No. of 
+Beneficiaries  
+Amount 
+(₹ in crore)  
+Percentage 
+of selected 
+scheme’s 
+expenditure 
+over the 
+total 
+expenditure 
+incurred by 
+department  
+No. of 
+Beneficiaries  
+Amount 
+(₹ in crore)  
+Percentage 
+of selected 
+scheme’s 
+expenditur 
+e over the 
+total 
+expenditur 
+e incurred 
+by 
+department  
+No. of 
+Beneficiaries  
+Amount 
+(₹ in crore)  
+Percentage 
+of selected 
+scheme’s 
+expenditure 
+over the 
+total 
+expenditure 
+incurred by 
+department  
+2018-19 2019-20 2020-21 
+Total expenditure 
+incurred by 
+department on all 
+the schemes( ₹ in 
+crore)  
+5,714.31  6,455.07  7,701.49  
+Expenditure incurred under selected schemes 5 
+Old Age Samman 
+Allowance 
+16,83,942  3,490.19  94%  17,67,874  
+ 
+4,001.95  93.41%  17,85,815  4,616.93  93.26%  
+Pension to Widow 
+and Destitute 
+Women 
+7,19,523  1,525.93  7,39,399  
+ 
+1,624.41  7,60,328  2,098.46  
+The Haryana 
+Divyang Person 
+Pension Scheme  
+1,67,238  351.50  1,75,129  403.40  1,76,865  467.07  
+Total 25,70,703  5,367.62   26,82,402 6,029.76   27,23,008  7,182.46   
+However, as per budget document, the expenditure under selected schemes are 
+₹ 5,372.39 crore, ₹ 6,128.29 crore and ₹ 7,156.57 crore during 2018-19, 2019-20 
+and 2020-21 respectively. The reasons for this difference in expenditure as per 
+budget document and DBT portal is awaited from the department. 
+1.6 Process adopted in Social Justice and Empowerme nt Department 
+for disbursement of benefits 
+The steps involved in beneficiary identification, e nrolment and payment to 
+beneficiaries in SJE is as follows:  
+                                                           
+5       Including benefit of ` 841.09 crore during 2018-19, ` 1,011.02 crore during 2019-20 and 
+` 1,120.21 crore during 2020-21 for Below Poverty Li ne (BPL) beneficiaries under 
+National Social Assistance Program Scheme. 
+
+Performance Audit on Direct Benefit Transfer 
+8 
+ 
+with  
+scanned  
+receipt 
+
+Chapter 1 Overview 
+9 
+The department adopted PFMS system for payment to beneficiaries in October, 
+
+
+Performance Audit on Direct Benefit Transfer 
+10 
+2020.After that digitally signed (Extensible Markup  Language) XML files are 
+being placed in the SFTP (Secure File Transfer Protocol) area on PFMS server. 
+PFMS system picks the file and sends the acknowledg ment status to National 
+Payments Corporation of India (NPCI) for further crediting the pension amount 
+into the beneficiaries’ account. After crediting, r esponse files are again placed 
+in SFTP area. 
+1.7 Audit objectives 
+The Performance Audit has been undertaken to ascertain: 
+(i)  Whether necessary process re-engineering was done for implementation 
+of DBT so as to minimize: 
+a)  intermediary levels; 
+b)  delay in payments to intended beneficiaries; and  
+c)  pilferage and duplication. 
+(ii) Whether the infrastructure, organization and m anagement of DBT was 
+adequate and effective. 
+1.8 Audit Scope 
+The scope of this performance audit is limited to t he three social security 
+pension schemes namely, (i) Old Age Samman Allowanc e (ii) Pension to 
+Widow and Destitute Women and (iii) The Haryana Div yang Person Pension 
+Scheme. Total expenditure incurred was taken as a size measure for the purpose 
+of sampling.  
+Audit examined the efficacy of the system through data analysis and records of 
+DBT Cell and Social Justice and Empowerment Department. The results of data 
+analysis were validated in selected six districts v iz. Ambala, Kaithal, Karnal, 
+Kurukshetra, Panchkula and Yamunanagar. 
+In absence of system design documentation, the exis tence of IT controls could 
+not be validated. 
+1.9 Audit Criteria 
+The audit criteria for the performance audit were derived from: 
+• Documents, circulars, orders, instructions and noti fication issued by 
+DBT Mission, Ministry of Finance, Ministry of Rural Development and 
+State Government.  
+• Standard Operating Procedures, Handbook on DBT and Guidelines for 
+State DBT Cell issued by DBT Mission.  
+
+Chapter 1 Overview 
+11 
+• Guidelines of Schemes on process of identification and authentication 
+of beneficiaries and payments. 
+• Instructions regarding maintenance of database, gen eration of various 
+reports and IT controls. 
+1.10 Audit methodology 
+An entry conference was held in December 2020 with the officers of the DBT 
+Cell and Social Justice and Empowerment Department wherein audit objectives, 
+audit criteria, scope of audit were discussed. 
+The Performance audit focused on examining the impl ementation of DBT for 
+selected schemes through data analysis and examination of records of DBT Cell 
+and Social Justice and Empowerment Department. The audit observations were 
+validated in field offices of selected districts. 
+The draft Performance audit report covered the period April 2017 to July 2020 
+and forwarded to the Government on 28 September 202 1. An exit conference 
+was held on 03 December 2021 with the Additional Chief Secretary (Finance), 
+Principal Secretary, Social Justice and Empowerment ; Director, Social Justice 
+and Empowerment; Secretary Finance, Deputy Director and other officers. The 
+views of the Department/Government have been incorp orated in the 
+Performance Audit report and replies thereon of the DBT Cell and Social Justice 
+and Empowerment during exit conference have also be en incorporated in the 
+Performance Audit report. 
+1.11 Audit Findings 
+The audit findings are contained in Chapters 2 and 3 of this Report. Audit 
+findings, conclusions and recommendations relating to each of the two audit 
+objectives have been reported in two distinct chapt ers to facilitate easy 
+comprehension and follow up. The findings are based  on the data and records 
+furnished by the DBT Cell and Social Justice and Empowerment Department. 
+1.12 Acknowledgement 
+Audit acknowledges the co-operation and assistance extended by the officials 
+of the DBT Cell, Social Justice and Empowerment Dep artment and its field 
+offices at various stages during conduct of the performance audit.  
+
+Chapter 2  
+Re-engineering Process for implementation  
+of Direct Benefit Transfer 
+  
+
+13 
+Chapter 2 
+Re-engineering Process for implementation of Direct Benefit Transfer 
+2.1 Non-preparation of documentation for IT system 
+DBT is a major reform initiative to re-engineer the  existing cumbersome 
+delivery processes using modern ICT. Technology is a critical component 
+required to enable DBT in any scheme or program.  
+The schemes were in operation under manual mode. Fo r adoption of the DBT 
+framework including re-engineering of process and maintenance of audit trail it 
+was important to follow a systematic approach for s ystem development. This 
+would require a consultative process for gathering user requirement, translating 
+it into system requirement and design; and document ing the same for 
+knowledge transfer and business continuity. 
+Audit carried out data analysis  on beneficiaries’ data for the period from 
+2017-18 to 2019-20 (extended up to July 2020) obtai ned from Social Justice 
+and Empowerment Department using Microsoft Structur ed Query Language 
+(MS SQL) and Computer Assisted Audit Techniques lik e, Tableau and 
+Interactive Data Extraction and Analysis (IDEA).  
+Validation of the results of data analysis was done in the field offices i.e. in six 
+District Social Welfare Offices viz. Ambala, Kaitha l, Karnal, Kurukshetra, 
+Panchkula and Yamunanagar with the available record s. Using statistical 
+sampling method, five per cent of cases were randomly selected for validation 
+within each selected district offices. 
+The work of development of application for computerisation of disbursement of 
+benefits under benefit schemes of Department of Soc ial Justice and 
+Empowerment was done through M/s National Informatics Centre (NIC). Audit 
+observed that NIC did not prepare any User requirem ent specification (URS)/ 
+System requirement specification (SRS) before takin g up the development of 
+the application. 
+When systems are developed in the absence of full documentation, it would not 
+only make it difficult to maintain system in the longer term, but it would not be 
+possible to review the system for deriving assurance that it works as intended. 
+Due to non-preparation of SRS, Audit could not assure itself, about mapping of 
+complete business rules in the application and adeq uate system controls. 
+Deficiencies like enrolment of deceased pensioners,  payment of pension to 
+deceased pensioners, enrolment of underage persons for Old Age Pension 
+Scheme, same person enrolled under multiple schemes , multiple persons 
+enrolled under single Aadhaar ID, Transfer of benefit to account of person other 
+than the beneficiary were observed during audit (di scussed in subsequent 
+paragraphs) which indicate  weak systemic control. 
+
+Performance Audit on Direct Benefit Transfer 
+14 
+As the SRS/URS was not prepared, the efficacy of the DBT system was checked 
+through targeted audit queries designed in line wit h audit objectives and data 
+analysis. The analysis and verification was focused  to identify whether the 
+objectives of process re-engineering, duplication, accurate targeting and 
+management of DBT were achieved. The findings of the analysis are discussed 
+in detail in the chapters. 
+The financial implication of the shortcomings as an alysed from the data 
+provided by the Department was 
+` 237.31 crore as detailed in Table 2.1 below: 
+Table 2.1: Details of financial implication of shortcomings 
+(`` ``    in crore) 
+Para Ref. Category/Sub Category Old Age 
+Samman 
+Allowance  
+Pension 
+to 
+Widow 
+and 
+Destitute 
+Women 
+Haryana 
+Divyang 
+Person 
+Pension 
+Scheme 
+Impact in 
+money 
+Value with 
+respect of 
+payment to 
+ineligible 
+beneficiaries  
+2.6.1 Transfer of Pension to the 
+dead beneficiaries account 
+under different social security 
+schemes 
+80.12  
+ 
+13.76  
+ 
+3.66  
+ 
+97.54  
+ 
+2.6.3 Transfer of Social Security 
+Pension to the dead 
+beneficiaries’ treated as 
+normal pension account 
+1.63  
+ 
+0.56  
+ 
+0.14  
+ 
+  2.33  
+2.9 Pension disbursed to multiple 
+beneficiaries on same aadhaar 
+Number 
+6.61  2.08  0.46    9.15  
+2.10 Undue benefit by providing 
+benefits simultaneously under 
+two schemes 
+0.21  
+ 
+- - 0.21  
+2.11 Transfer of beneficiaries 
+Pension to other persons’ 
+bank accounts  
+36.95  17.53  - 54.48  
+2.12 Payment to ineligible 
+beneficiaries (transfer to 
+beneficiaries before attaining 
+the age of 60 years) 
+0.94  - - 0.94  
+2.13 Disbursement of social 
+security pension to retired 
+Government employees and 
+family pensioner 
+5.96   2.27 0.30  
+ 
+8.53  
+2.14 Disbursement of social 
+security pension to 
+untraceable beneficiaries 
+46.38  13.91  3.84  64.13  
+  Total       237.31  
+The issues/observations of IT application developme nt without documentation 
+and instances of irregular payment should be investigated and appropriate action 
+should be taken. 
+ 
+ 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+15 
+2.2 Delay in disbursement of pension benefits  
+DBT was to ensure a better and timely delivery of b enefits to the people by 
+speeding up payments and enhancing financial inclus ion 1 . According to 
+authority letter issued by the department to the di sbursing banks/post offices, 
+pension amount should be credited in beneficiaries’ account on the date of issue 
+of the authority letter. However, considering stand ing operating procedure for 
+DBT payment the maximum total time for receiving pa yment response 
+(success/failure) is T+4working days, where T is the day of the transaction when 
+the payment file is received with authorisation to process payment by system 
+for DBT and T 4 represents the maximum permissible time for submiss ion of 
+response file after process of payment (success/fai lure) to the originator of 
+payment file. 
+Audit observed that: 
+(A) Payment status fields 
+On analysis of data of beneficiaries provided by th e department for the period 
+between April 2017 and July 2020, it was noticed th at pension of 
+₹ 19,803.12 crore (10,47,65,864 transactions) was transferred during the period 
+to beneficiaries’ account under social security sch emes. In this database status 
+of each transaction from destination bank was captured under the field ‘payment 
+status’. Seven types of values were captured under the field ‘payment status’ 
+viz. ‘Success’, ‘other’, ‘credit success’, ‘A/c Frozen’, ‘A/c Dormant’, ‘A/c does 
+not exist’, ‘A/c Closure’ and ‘Response not received’.  
+Audit analysis revealed that: 
+ Out of ₹ 19,803.12 crore, only ₹ 16,695.71 crore 
+(8,74,52,031 transactions) was successfully transfe rred to the 
+beneficiaries’ accounts (Annexure -I).  
+ Transaction status of ₹ 3,025.61 crore (1,68,80,027 transactions) has not 
+been updated in database by the department. Disburs ing agencies were 
+required to upload the response on SJE pension portal. However, it was 
+neither uploaded on portal nor monitored by the department. 
+ Pension of ₹ 81.80 crore (4,33,806 transactions) has not been transferred 
+to the beneficiaries’ account due to multiple reaso ns i.e. A/c frozen, 
+A/c dormant, A/c does not exist, A/c closure and other.  Further, it could 
+not be ensured whether this amount was received back by the department 
+or lying with disbursing banks/post offices. 
+                                                           
+1 Financial inclusion means that department has acce ss to useful services that meet their 
+needs – transactions, payments and savings. – deliv ered in a responsible and 
+sustainable way. 
+
+Performance Audit on Direct Benefit Transfer 
+16 
+ There were transactions of ₹ 10.86 crore (58,872 transactions) where the 
+status of credit/payment into beneficiaries’ accounts was depicted under 
+the head ‘other’ in the database. The current status of these transactions 
+could not be ensured due to lack of reconciliation.  The Department 
+should take remedial action by reconciling to actual status of credit.  
+ 
+The department mentions in the monthly authority letter issued to the disbursing 
+banks/post offices to credit the amount in benefici aries’ accounts on the same 
+day of issue of authority letter and return the und isbursed amount to the 
+department along with its details. No such exercise was done by the disbursing 
+banks/post offices nor was this pursued by the department. It was also pertinent 
+to mention that the department did not sign any Memorandum of Understanding 
+with disbursing banks/post offices. 
+(B) Time taken for transactions 
+Pension of 
+` 7,852.23 crore was transferred in 4,22,06,476 tran sactions 
+(Annexure-II) after maximum permissible time for submission of response file 
+after process of payment (success/failure) to the o riginator of payment file i.e. 
+after four days from authority letter to the banks/ disbursing agency. The delay 
+ranged between one day (i.e. day after T+4) to 444 days.  
+The delay in disbursement of benefit to the beneficiaries defeated the principal 
+objective of DBT, while the lack of timely reconcil iation and non enforcement 
+of instructions for crediting the amount will have to be remedied for the system 
+to work as intended. 
+2.3 Delay in passing intended benefits due to late enrolment of 
+beneficiaries  
+Article 41 of the Constitution of India directs the  State to provide public 
+assistance to its citizens in the case of unemploym ent, old age, sickness and 
+disablement as well as in other cases of undeserved want, within the limit of the 
+State’s economic capacity and development. Social security, invalid and old age 
+pensions figure as Items 23 and 24 of the 7 th  Schedule of the Constitution of 
+India in the Concurrent List. It is in compliance of these guiding principles that 
+
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+17 
+the GoI introduced National Social Assistance Progr amme (NSAP) under the 
+Ministry of Rural Development on Independence Day, 1995 as a fully funded 
+Centrally Sponsored Scheme. 
+The NSAP at present includes five 
+2 sub-schemes as its components which 
+includes the following three: (a)  Indira Gandhi National Old Age Pension 
+Scheme (IGNOAPS) (b)  Indira Gandhi National Widow Pension Scheme 
+(IGNWPS) (c)  Indira Gandhi National Disability Pension Scheme (IGNDPS). 
+Guidelines issued in respect of NSAP in October 2014 by the Ministry of Rural 
+Development states that: 
+(i) The States may ensure the deserving person's el igibility should be 
+proactively identified by reaching out to their hou seholds. However, if 
+an eligible person’s name does not figure in the Be low Poverty Line 
+(BPL) list, he/she should not be left out from the eligible beneficiaries 
+list. 
+(ii)  The assistance under the sub-schemes of NSAP is applicable for persons 
+belonging to BPL category.  
+(iii) The eligible age for IGNOAPS is 60 years.  
+(iv) Field level workers/officials should be entrus ted with the task of 
+identifying beneficiaries and getting the forms fil led up. Also support 
+should be provided to get the requisite certificate s from the authorities 
+concerned.   
+(v) For the identification of new beneficiaries of BPL, Gram 
+Panchayats/Municipalities should be given the centr al role. Elected 
+heads and representatives should be sensitized on t he criteria and 
+processes of NSAP.  
+(vi) Also as per the directions of the Hon’ble Supr eme Court of India in Writ 
+Petition (Civil) number 196 of 2001, the deserving person's eligibility 
+should be identified and included in the beneficiaries list.  
+(vii) While individuals can file applications, it i s incumbent on the authorized 
+officials to reach out to potential beneficiaries o n an ‘out today’ 
+approach and get the application forms filled up an d provide assistance 
+to get the relevant records. Field level workers / officials should be 
+entrusted with the task of identifying beneficiaries and getting the forms 
+                                                           
+2 (i) Indira Gandhi National Old Age Pension Scheme (IGNOAPS) (ii) Indira Gandhi 
+National Widow Pension Scheme (IGNWPS) (iii) Indira  Gandhi National Disability 
+Pension Scheme (IGNDPS) (iv) National Family Benefi t Scheme(NFBS) and 
+(v) Annapurna Scheme. The benefit provided by the selected schemes of State to BPL 
+beneficiaries includes the benefits provided under NSAP.   
+
+Performance Audit on Direct Benefit Transfer 
+18 
+filled up. Also support should be provided to get the requisite certificates 
+from the authorities concerned. 
+Audit noticed that 78,567 3(district wise details given in Annexure-III) BPL 
+beneficiaries were registered in scheme management system after attaining age 
+of 60 years. The range of delay in enrolment of the se BPL beneficiaries was 
+between one year to 20 years as shown below : 
+Table 2.2: Details of range of delay in enrolment of beneficiaries 
+Delay range in years(after 60 years) Number of beneficiaries 
+0-5 61,987 
+6-10 12,969 
+11-20 3,288 
+Grand Total 78,244 
+In the Old Age Samman Allowance scheme, audit observed that 78,244 (out of 
+which 75,214 are shown as normal 4 in status as on date) BPL beneficiaries were 
+registered with delays ranging between one year to 20 years, whereas these 
+beneficiaries should have been proactively identifi ed by the department when 
+beneficiary attained the age of 60 as required unde r the guidelines. The 
+beneficiaries should be identified by reaching out to their households by the 
+department. 
+There were 22,206 BPL beneficiaries in six selected  districts who were given 
+benefit with delay as per results of data analysis.  The findings of data analysis 
+was cross checked with 541 
+5 cases (0-5 years : 426, 6-10 years: 91, 11-20 years: 
+21 cases, three cases for more than 20 years)  in t he six selected offices of 
+DSWOs. The verification confirmed the results of data analysis in respect of all 
+541 cases. Besides, no household survey was done by any of the six DSWOs. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).  
+2.4 Delay in enrolment of beneficiaries violated th e Right to Service Act 
+provisions 
+The Haryana Right to Service Act (RTS Act), 2014 provides for the delivery of 
+service to eligible person within the notified time limits for the pension schemes 
+of the Social Justice and Empowerment Department.  Under RTS Act, the time 
+period for providing services has been revised (November 2016) from 120 days 
+to 60 days from the date of application. 
+                                                           
+3 Apart from 78,244 mentioned in table , delay of 21-40 years in passing intended 
+benefits to 323 beneficiaries (for periods beyond t he inception of scheme) was also 
+noticed.  
+4 Any person eligible to receive benefit under a sch eme as on that date as per the 
+database. 
+5 Ambala-100, Kaithal-100, Karnal-100, Kurukshetra-10 0, Panchkula-41 and 
+ Yamunanagar-100 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+19 
+Audit noticed that 2,84,471 beneficiaries were regi stered in scheme 
+management system after the time limit prescribed in the Haryana RTS Act i.e. 
+beyond 60 days. The range of delay in enrolment of beneficiaries was between 
+one day to 963 days in the selected schemes viz. Old Age Samman Allowance, 
+Pension to Widow, Destitute Women and Haryana Divyang Person Pension. 
+As per results of data analysis, there were 80,434 beneficiaries in six selected 
+districts who were enrolled with delays. The result s were cross verified with 
+600 6 (delay ranging between: one day to 609 days) selec ted cases in the six 
+selected offices of DSWOs. The validation confirmed  the results of data 
+analysis for all the 600 cases. The DSWOs confirmed  the findings in their 
+response. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021). 
+2.5 Non-adherence to specific timelines for disburs ement of social 
+security pensions 
+Social security pension schemes are in the nature o f income support schemes 
+and every beneficiary under the scheme is entitled to receive pension on a 
+monthly basis. As per the directions of the Hon’b1e Supreme Court of India in 
+Writ Petition (W.P.)number 196 of 2001, the State Governments were directed 
+to make the payment in respect of IGNOAP to BPL beneficiaries by 7 th  of each 
+month. 
+Audit noticed on analysis of data of beneficiaries that there was delay in issuing 
+pension payment authority to disbursing agencies. T he delay ranged between 
+two and 262 days (calculated from 10 
+th 7 of each of the month).  It was also 
+noticed that pension payment was not being done regularly in the said timeline 
+under all the schemes including IGNOAP to BPL benef iciaries which was in 
+violation of the directions of Hon’b1e Supreme Court decision.  
+Non-ensuring of timelines stipulated for making pay ment of benefits would 
+result in hardships to vulnerable section of societ y. Besides, the department 
+instructs disbursing banks/post offices in the mont hly authority letter to credit 
+the amount in beneficiaries’ accounts on the same day of issue of authority letter 
+and return the undisbursed amount to department along with details. 
+ 
+ 
+ 
+                                                           
+6 Ambala-100, Kaithal-100, Karnal-100, Kurukshetra-100, Panchkula-100 and 
+               Yamunanagar-100  
+7 Three days considered for processing at Department level. 
+
+Performance Audit on Direct Benefit Transfer 
+20 
+2.6 Transfer of Pension to the dead beneficiaries a ccount 
+As per rule 9 (ii) of ‘Old Age Allowance Scheme 200 5’, Scheme Rules, 2005 
+applicable with effect from 29 November 2005 vide H aryana Government 
+notification dated 20 September 2006, allowance sha ll cease to be payable on 
+the death of a beneficiary and if the beneficiary dies before receiving allowance 
+for a particular period, the same shall lapse.  
+Further, as per the Govt. notification No. 459-SW(4)-2011 dated 10 June 2011, 
+in case there is no withdrawal from the bank account for a continuous period of 
+60 days, such bank account will be rendered “inoper ative” for the purpose of 
+this Scheme by the Bank with no further credit of b enefits under this Scheme 
+into it. Such “inoperative” bank accounts will be r eported by the Bank to the 
+Department. In case the beneficiary applies for re-operationalization of the bank 
+account within the next 90 days with justifiable re ason, the bank account may 
+be re-operationalized with the permission of the Di rector. If not, the bank 
+account will be rendered “dead” for the purpose of this Scheme and the benefits 
+credited into the bank account after the last withdrawal would be remitted back 
+by the Bank to the Department with accrued interest.  
+The department instructs disbursing banks/post offices in the monthly authority 
+letter to credit the amount in beneficiaries’ accounts on the same day of issue of 
+authority letter and return the undisbursed amount to department along with its 
+details. Department also stated that data of death cases was being fetched from 
+Registrar General of India (RGI) portal and decease d beneficiaries were being 
+identified by matching aadhaar number.  
+Analysis of data revealed the following: 
+2.6.1 Transfer of Pension to the dead beneficiaries  account under different 
+social security schemes 
+Pension amounting to ₹ 98.96 8 crore was transferred to 91,436 number of dead 
+beneficiaries’ account under selected schemes for p eriod ranging from one 
+month to 40 months as detailed below:   
+Table 2.3: Details of pension transferred to dead beneficiaries 
+Name of Scheme Number of 
+beneficiaries 
+Total amount transferred  
+(₹in crore) 
+Old Age Samman Allowance 74,893 81.29 
+Pension to Widow and Destitute Women 12,990 13.97 
+Haryana Divyang Person Pension Scheme 3,553 3.70 
+Total 91,436 98.96 
+Data analysis revealed that there were 25,861 benef iciaries in the six selected 
+districts where pension was transferred in the acco unts after their demise. This 
+                                                           
+8  Includes `1.42 crore for 2580 beneficiaries discussed in Para 2.9 and 2.11 to 2.14.  
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+21 
+was cross-verified with 569 9selected cases at the six selected offices of DSWOs. 
+The validation exercise confirmed the results of data analysis. In 50 cases (seven 
+Kaithal, six Panchkula and 37 in Yamunanagar) an am ount of  
+` 9.04 lakh was recovered. In the remaining 519 cases, the concerned DSWOs 
+have taken up the issue with the concerned banks an d requested for transfer of 
+the pension amount back to the department’s account as confirmed by DSWOs 
+in their response.  
+Disbursement of pension to beneficiaries already id entified as deceased 
+indicated that neither suitable controls/checks were put in the system to restrict 
+these transactions nor the payments were monitored by the appropriate 
+authorities. Department is also not using any Business Intelligence or reports to 
+monitor the gaps identified by audit during data analysis. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).   
+2.6.2 Payment to beneficiaries enrolled after their  death  
+During scrutiny, it was observed that 1,092 beneficiaries 
+10  were enrolled under 
+selected schemes after their death. 
+The pension of 
+₹ 23.27 lakh was transferred to 241 beneficiaries (o ut of 1,092 
+beneficiaries as seen from the data furnished) whos e enrolment as beneficiary 
+was done after their death under the selected schemes. 
+It is pertinent to mention that the status of these  beneficiaries is also shown as 
+‘dead’ in database even as on date (July 2020).This  indicated inadequate 
+monitoring and system controls. 
+In six selected districts, there were 78 beneficiaries enrolled after their death (as 
+per results of data analysis) where pension was transferred to the accounts. This 
+was validated in seven 
+11  selected cases at the six selected offices of DSWOs. In 
+three cases (one case in Kaithal and two in Yamunan agar) an amount of  
+₹ 0.21 lakh has been recovered. In the remaining fou r cases, the concerned 
+DSWOs have stated to have taken up the issue with t he concerned banks and 
+requested for transfer of the pension amount back to the department’s account.  
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).   
+                                                           
+9 Ambala-100, Kaithal-100, Karnal-100, Kurukshetra-10 0, Panchkula-69 and 
+               Yamunanagar-100  
+10  Old Age Samman Allowance-828 beneficiaries, Pensio n to Widow and Destitute 
+Women-167 beneficiaries and Haryana Divyang Person Pension Scheme-97 
+beneficiaries. 
+11  Ambala-1, Kaithal-1, Karnal-1, Kurukshetra-1, Panch kula-1 and 
+               Yamunanagar-2 
+
+Performance Audit on Direct Benefit Transfer 
+22 
+2.6.3 Transfer of Social Security Pension to the de ad beneficiaries’ treated 
+as normal pension account 
+Pension amounting to ₹ 2.34 12  crore was transferred to 618 beneficiaries’ 
+account under three schemes after their death till date (July 2020) as detailed 
+below: 
+Table 2.4: Details of pension transferred to beneficiaries after death under three schemes  
+Pension Type Number of 
+Beneficiaries 
+Pension Amount transferred  
+(in ₹) 
+Old Age Samman Allowance 419 1,63,59,650 
+Widow Pension 159 56,37,600 
+Disability Pension 40 14,39,650 
+Total  618 2,34,36,900 
+Further, the above accounts were shown as normal be neficiaries i.e. eligible 
+beneficiaries for pension disbursement even as on date (July 2020). 
+As per results of data analysis, there were 188 ben eficiaries in six selected 
+districts in which pension was transferred to dead beneficiaries treated as 
+normal. This was further validated through cross ve rification of 10 13  cases in 
+six selected offices of DSWOs. Out of the 10 cases, in one case (Karnal district) 
+an amount of ₹ 0.34 lakh was recovered and in another case DSWO (Panchkula) 
+stated that verification of beneficiary is under process. In the remaining 8 cases, 
+DSWOs of Ambala, Kurukshetra, Kaithal, and Yamunana gar stated that 
+deficiency occurred during the aadhaar validation p rocess due to linking of 
+wrong aadhaar numbers and thus these beneficiaries were declared as dead. 
+However, after physically appearing of these benefi ciaries previously declared 
+dead and production of their aadhaar card, pension of these beneficiaries was 
+re-started.  
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021). 
+The reply indicates that procedure prescribed by Un ique Identification 
+Authority of India (UIDAI) for seeding of Aadhaar w as not followed. As 
+Aadhaar seeding is supposed to be error-free, keyin g in of wrong Aadhaar 
+numbers at the time of enrolment/migration of legacy data and rectification after 
+their physically appearing casts doubts on the inte grity of data as well as the 
+process adopted. Department needs to investigate and fix responsibility. 
+During exit conference, Department of SJE stated th at this problem is being 
+faced in the case of legacy data. However, while pr ocessing new data 
+department is ensuring this would not happen. Data on RGI portal is not 
+available on real time basis. However, the department comes to know the detail 
+                                                           
+12   Includes  ` 0.01 crore for 12 beneficiaries discussed in Para 2.9, 2.11 and 2.14.  
+13  Ambala-3, Kaithal-2, Karnal-1, Kurukshetra-2, Panch kula-1 and 
+              Yamunanagar-1 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+23 
+of dead beneficiaries after lapse of three to four months. In this period pension 
+continues to be released to these dead beneficiaries. 
+2.7 Non-updation of beneficiaries’ income in the pe nsion database 
+As per Haryana Government Notification, issued on 22 March 2012, maximum 
+income limit for availing social security pension w as increased from ₹ 50,000 
+per annum to ₹ 2,00,000 per annum. The person was eligible for th e grant of 
+Old Age Samman Allowance, if: 
+(i) the person was of age 60 years or more;  
+(ii) the person is domiciled and is a resident of H aryana State; and  
+(iii) his/her income from all sources together with  that of his/her spouse does 
+not exceed 
+₹ 2,00,000 per annum.  
+Similarly, a woman of age 18 years and above was eligible for grant of Widow 
+and Destitute Women pension under the Scheme if her  own income from all 
+sources was below ₹ 2,00,000 per annum. 
+Audit noticed that income field for 34,07,826 beneficiaries out of total number 
+of 34,84,872 beneficiaries was left blank in two schemes i.e. Old Age Samman 
+Allowance and Widow and Destitute Women Pension Sch eme. Neither any 
+mechanism was evolved to verify the annual income o f the beneficiary at the 
+time of enrolment nor periodic review of income of beneficiaries done to ensure 
+the eligibility. 
+Thus, validation process of beneficiaries was largely non-existent. Further, non-
+capturing of income in the database resulted in incomplete and unreliable data. 
+During exit conference, the department stated that updation of income in 
+pension database is being done in phased manner inv olving the platform using 
+Parivar Pehchan Patra 
+14  functionality. It was also suggested on behalf of State 
+Government that verified income of beneficiaries ma y be updated in database. 
+Also ACS (Finance) suggested that in the income field, department should shift 
+from self-declaration mode to verified income mode. 
+ 
+ 
+                                                           
+14  Parivar Pehchan Patra (PPP) aims to build a compreh ensive, reliable and accurate 
+database of families residing in the State which ca n be further utilized by various line 
+departments for welfare scheme delivery across the State. It shall contain details such 
+as the family’s structure, its residential details,  social and economic details of each 
+member of the family. A unique 8-digit ID is issued  to each family registered in the 
+PPP database. This ID can be used by the family mem bers to apply for any 
+services/schemes of the State linked to PPP.  
+
+Performance Audit on Direct Benefit Transfer 
+24 
+2.8 Deficiency in digitization of master database o f beneficiaries  
+Analysis of data of beneficiaries revealed that aadhaar number, which is unique for 
+each person, for 1,15,329 beneficiaries was changed during the period April 2017 
+to July 2020 in which 1,01,980 beneficiaries are still getting pension as normal and 
+the remaining 13,349 beneficiaries’ status have bee n updated to Died/Aadhaar 
+Disputed/Cancelled/Duplicate/Ineligible/Suspended or Untraceable. 
+As per Section 7 of the Aadhaar (Targeted delivery of Financial and other 
+subsidies, benefits and services) Act, 2016, Aadhaa r is used as means of 
+authentication for availing services, benefits and subsidies.  
+The selected schemes namely (i) Old Age Pension Sch eme, (ii) Pension to 
+Widows and Destitute Women Pension Scheme and (iii)  Disabled Persons 
+Pension Scheme were in operation since 1964, 1980-8 1 and 1981-82 
+respectively. However, DBT was implemented by the D epartment from 
+February 2015 while use and possession of Aadhaar was made mandatory with 
+effect from 23 March 2017 for transfer of benefit through DBT in Haryana.  
+The Department entered Aadhaar numbers without ensu ring correctness and 
+there was no validation of the numbers entered with  the Aadhaar database. 
+Whenever beneficiary approached for correction in t he Aadhaar number the 
+same was corrected in the database. 
+Further, the change of Aadhaar was not reflected in  the audit trail for 1,045 
+beneficiaries out of 1,15,329. In the absence of au dit trail in respect of these 
+beneficiaries, it could not be ascertained when or by which user of IP address 
+these missing beneficiaries were enrolled from. Missing of audit trail is a serious 
+issue and indicates that system is not tamper proof  and creates doubt about the 
+integrity of system. Missing of audit trail needs t o be investigated and 
+responsibility fixed.  
+The change of aadhaar number after enrolment of ben eficiary and absence of 
+audit trail indicates that validation/verification checks were not applied to 
+authenticate beneficiaries with aadhaar at the time  of enrolment. Thus, due to 
+lack of verification checks, application is vulnerable to amendments to data that 
+could lead to erroneous payments, wrong postings of transactions and ultimately 
+qualified accounts.  
+In the selected districts it was observed during da ta analysis that Aadhaar of 
+23,772 beneficiaries were changed. This was cross verified with 499 
+15  selected 
+cases at the six selected offices of DSWOs. The DSW Os stated that action in 
+these cases would be taken after verification.  
+                                                           
+15  Ambala-83, Kaithal-100, Karnal-100, Kurukshetra-100 , Panchkula-16 and 
+               Yamunanagar-100  
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+25 
+Audit revealed that the provision for the change of  Aadhaar has also been 
+provided at the social justice portal. The departme nt should ensure where due 
+to circumstances the Aadhaar number is required to be changed, it should be 
+supported by stringent process and an audit trail. 
+2.9 Pension disbursed to multiple beneficiaries on same Aadhaar 
+Number 
+As per Haryana Government Notifications No.203-SW(4)-2011 dated 19 April 
+2011 and 878-SW(4)-201 dated 5 September 2017, a pe rson can avail the 
+benefit of at most one pension/allowance, even if e ligible under more than one 
+social security schemes listed below: 
+(i) Old Age Samman Allowance Scheme. 
+(ii) The Haryana Pension to Widows and Destitute Wo men 
+ Scheme. 
+(iii) The Haryana Divyang Pension Scheme. 
+(iv) Dwarf Allowance Scheme. 
+(v) Eunuch Allowance Scheme. 
+(vi) Financial Assistance to Kashmiri Migrant Famil ies. 
+Further, as per Haryana Government Notification No.  459-SW (4)-2011 dated 
+10 June 2011, if a person is detected to have more than one bank account under 
+the Electronic Benefits Transfer (EBT) Scheme, all his bank accounts would be 
+terminated. He would become ineligible to receive b enefits under any Social 
+Security Scheme of the State in future. Any benefits received under the Scheme 
+by suppressing true information or making wrong claim would be recovered as 
+arrears of land revenue with 12 per cent interest per annum. 
+Audit noticed that pension of 
+₹ 16.17 crore was transferred to 25,134 
+beneficiaries’ with 12,314 Aadhaar IDs between April and October 2017 under 
+Old Age Samman Allowance, Haryana Pension to Widows  and Destitute 
+Women and Haryana Divyang Pension schemes. In this regard, Audit observed 
+that Pension of ₹ 9.32 16  crore was disbursed to 14,641 beneficiaries (out o f 
+25,134) though the status being updated as non-exis ting, cancelled, died, 
+duplicate, untraceable, ineligible, etc. between the period from April to October 
+2017 and subsequently stopped after October 2017. T he following significant 
+issues were observed in the disbursement of ` 9.32 crore made: 
+                                                           
+16   It includes 274 beneficiaries to whom unauthorised pension of ` 0.17 crore was 
+ transferred as pointed out in Para 2.10, 2.11, 2.1 3 and 2.14 . 
+
+Performance Audit on Direct Benefit Transfer 
+26 
+(A) Pension was disbursed to two or more beneficiar ies under same or 
+different schemes with same Aadhaar ID and different beneficiary 
+pension IDs  (Annexure-IV).  
+(B) Department disbursed pension to 56 beneficiarie s under above 
+mentioned three schemes without 17  any Aadhaar.    
+(C) 6,593 beneficiary pension IDs were generated us ing 3,265 Aadhaar IDs 
+(out of 12,314 Aadhaar IDs) and amount of ₹ 3.94 crore transferred to 
+these beneficiaries.  Out of these 6,593 beneficiar y pension IDs, status 
+of 3,328 pension IDs were updated as dead and remai ning 3,265 
+beneficiary pension IDs were still getting pension.  This resulted into 
+disbursement of unauthorised pension of ₹ 1.96 crore to 3,328 
+beneficiaries whose status was declared as dead in database.   
+(D) Pension amounting to ₹ 1.98 crore (during April to October 2017) was 
+transferred to 3,052 beneficiaries pension IDs whic h were generated 
+using 1,524 Aadhaar IDs. In these cases, beneficiar y name and father’s 
+name were same for two or more beneficiaries with same Aadhaar. The 
+risk of single beneficiary getting multiple benefits could not be ruled out 
+in Audit. 
+(E) Pension of ₹ 4.51 lakh was transferred to 68 beneficiaries pens ion IDs 
+(pension IDs were generated using 34 Aadhaar IDs) where Aadhaar and 
+bank account number were same for two different ben eficiary pension 
+IDs. 
+Department may consider having a Business Intellige nce report highlighting 
+such discrepancies and also develop IT controls to rule out these 
+inconsistencies. 
+After October 2017, one or more accounts having same Aadhaar ID was closed 
+by stating status as dead and status of other account as normal i.e. pension being 
+disbursed till date. This implies that Aadhaar has not been used for uniqueness 
+of beneficiary identity, controls do not exist to i nhibit duplicity in IDs and 
+verification process was compromised. 
+It was observed during data analysis, that there were 6,501 cases (beneficiaries) 
+in six selected districts in which pension was disbursed to multiple beneficiaries 
+with same Aadhaar. This was cross checked with 330 
+18  cases at the six selected 
+offices of DSWOs. All DSWOs stated that action in these cases would be taken 
+after verification . 
+                                                           
+17  The Aadhaar number mentioned against each was 9999-9999-9999  
+18  Ambala-29, Kaithal-80, Karnal-83, Kurukshetra-65, P anchkula-4 and 
+Yamunanagar-69  
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+27 
+In view of the observations above, it could be seen that the input controls were 
+weak resulting in incomplete, unauthorized/irrelevant and duplicate data entries 
+in the pension database. Further, due to lack of do cumentation, the systemic 
+controls envisaged by department were not available . Besides, 
+deficiencies/discrepancies noted during audit showe d that systematic controls 
+were mostly absent. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021). 
+2.10 Undue benefit by providing benefits simultaneo usly under two 
+schemes 
+As per Haryana Government notification No.878-SW(4) -201dated 
+05 September 2017 (in reference to Notification No. 203-SW(4)-2011 dated 19 
+April 2011), the beneficiaries of OId Age Samman Al lowance Scheme cannot 
+avail the benefit of Ladli Social Security Allowance Scheme simultaneously, as 
+the benefit of Ladli Social Security Allowance Sche me is applicable up to the 
+age of 60 years and that of OId Age Samman Allowance Scheme after 60 years. 
+Analysis of data of beneficiaries revealed that pen sion of ₹ 42.81 lakh was 
+transferred to 298 beneficiaries’ under Old Age Sam man Allowance and Ladli 
+Social Security Allowance schemes simultaneously. This resulted in unjustified 
+payment of ₹ 21.41 19  lakh to 298 beneficiaries.  
+Audit also observed that for this purpose, new bene ficiary IDs were assigned 
+for other scheme by modifying beneficiary’s account number, name or father’s 
+name but the Aadhaar number remained same. 
+In the selected districts, data analysis revealed t hat pension was transferred 
+simultaneously under two schemes to 179 beneficiaries. This was cross-verified 
+in nine 
+20 test checked cases at the six selected offices of D SWOs. The 
+verification confirmed the results of data analysis. In one case in Kaithal district 
+an amount of ₹ 0.52 lakh has been recovered. In the remaining 8 cases, DSWOs 
+Ambala, Karnal, Kurukshetra and Yamunanagar intimated that recovery notices 
+have been issued.  
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).  
+ 
+                                                           
+19   It includes 2 beneficiaries to whom unauthorised pe nsion of ` 0.16 lakh was 
+ transferred as pointed out in Para 2.11 and 2.14.  
+20  Ambala-2, Kaithal-1, Karnal-1, Kurukshetra-2, Panchkula-0 and Yamunanagar-3 
+
+Performance Audit on Direct Benefit Transfer 
+28 
+2.11 Transfer of beneficiaries Pension to other per sons’ bank accounts 
+under social security schemes  
+Rule 87 of the General Financial Rules, 2017 stipulates that transfer of benefits 
+should be done directly to beneficiaries under various Government Schemes and 
+Programmes using ICT. Necessary process re-engineer ing to minimise 
+intermediary levels and to reduce delay in payments  to intended beneficiaries 
+with the objective of minimising pilferage and dupl ication should be done for 
+all Government Schemes and Programmes. 
+Analysis of beneficiary data revealed that pension of 
+₹ 54.54 21  crore for 9,305 
+beneficiaries (during April 2017 to July 2020) was transferred to bank account 
+with different names in Old Age Samman Allowance and Widow and Destitute 
+Pension as detailed below: 
+Table 2.5: Details of pension transferred to other persons’ bank accounts 
+Pension  No. of Beneficiaries Amount transferred during  
+April 2017 to July 2020 (in ₹) 
+Old Age Samman Allowance 6,317 37,00,10,000 
+Widow and Destitute pension 2,988 17,53,81,400 
+Total  9,305 54,53,91,400 
+It is pertinent to mention that mobile number, bank  account number and 
+Aadhaar number have also not been linked to the correct beneficiaries.  
+This involves risk of embezzlement, and Department should investigate such 
+cases and fix responsibility of the concerned officials.  
+2.12 Payment to ineligible beneficiaries  
+As per notification No. 458A-SW(4)-2011 dated 10 Ju ne 2011, a person is 
+eligible for the grant of Old Age Samman Allowance, if,(i) the person is of age 
+60 years or more; and(ii) the person is domiciled and resident of Haryana State. 
+Also as per Haryana Government , Social Justice and Empowerment Department 
+notification No. 459-SW(4)-2011 dated 10 June 2011,  any benefits received 
+under the Scheme by suppressing true information or  making wrong claim 
+would be recovered as arrears of land revenue with 12 per cent  interest per 
+annum. 
+Analysis of data revealed that 1,860 beneficiaries were enrolled under Old Age 
+Samman Allowance scheme before attaining the eligibility age of 60 years and 
+total pension amounting to 
+₹ 94.25 22  lakh was transferred to these beneficiaries.  
+                                                           
+21   It includes 37 beneficiaries to whom unauthorised p ension of ` 0.06 crore was 
+ transferred as pointed out in Para 2.12 to 2.14.  
+22   It includes 2 beneficiaries to whom unauthorised pe nsion of ` 0.05 lakh was 
+ transferred as pointed out in Para 2.14.  
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+29 
+This shows that desirable input controls at the time of enrolment i.e. validation 
+and verification of the beneficiaries was inadequate and ineligible beneficiaries 
+were getting enrolled. 
+Validation of 500 
+23  cases at the six selected district offices of DSWOs was done. 
+The validation confirmed the results of data analys is. In respect to 58 cases of 
+Karnal district, recovery process was initiated and  ₹ 1.51 lakh in 22 cases 
+recovered. In the remaining 442 cases, DSWOs Ambala, Kurukshetra, Kaithal, 
+Panchkula and Yamunanagar stated that action would be taken after 
+verification. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).  
+2.13 Disbursement of social security pension to ret ired Government 
+employees and family pensioner 
+As per notification No. 458A-SW(4)-2011 dated 10 Ju ne 2011 and No. 308-
+SW(4)-2012 dated 22 March 2012, a person is not eli gible for the grant of Old 
+Age Samman Allowance, in case, the person is receiv ing pension from any 
+Government or Local/Statutory Body or any organization substantially financed 
+by any Government or Local/Statutory Body. 
+Also, a woman otherwise eligible for Haryana pension to widows and Destitute 
+Women Scheme is ineligible in case she is employed by any Government or by 
+any Local/Statutory Body or any organization substa ntially financed by any 
+Government or Local/Statutory Body or who is drawin g pensioner family 
+pension therefrom as per notification No. 458B-SW(4 )-2011 dated 
+10 June 2011. 
+It is pertinent to mention here that in the case of  Haryana Divyang Pension 
+Scheme, the eligibility criteria was for income to be less than minimum wages 
+of unskilled labour. 
+Analysis of data of beneficiaries and data of pensioners (up to December 2018) 
+from e-pension module of Integrated Financial Manag ement System (IFMS) 
+gathered from Office of the Director General, Treas uries and Accounts, 
+Haryana and Centralized Pension Processing Cell (CPCC) SBI, Panchkula for 
+the period April 2017 to July 2020 revealed that 1, 475 beneficiaries enrolled 
+under these three selected schemes viz. Old Age Sam man Allowance scheme, 
+Haryana Pension to Widows and Destitute Women Schem e and Haryana 
+Divyang Pension scheme were retired employees of Government of Haryana or 
+were family pensioners. Disbursement of social secu rity pensions to these 
+beneficiaries was violation of above-mentioned gove rnment instructions. 
+                                                           
+23  Ambala-100, Kaithal-73, Karnal-100, Kurukshetra-100 , Panchkula-29 and 
+               Yamunanagar-98  
+
+Performance Audit on Direct Benefit Transfer 
+30 
+Further, it was observed that ₹ 8.60 24  crore was disbursed to these unauthorised 
+persons, which was recoverable with interest. 
+Audit is of the opinion that if similar type of dat a from other agencies and 
+department i.e. Central Government, Government Comp any, Boards, 
+autonomous bodies, etc. were to be subjected to Bus iness Intelligence, the 
+numbers are likely to be higher. 
+Data analysis revealed that there were 485 cases in six selected districts in which 
+pension was transferred to retired government employees and family pensioners 
+This was validated in 26 
+25 selected cases at the six selected offices of DSWOs . 
+The validation confirmed the results of data analys is. In five cases of Kaithal 
+district an amount of ₹ 6.11 lakh had been recovered (One case from select ed 
+sample and four in other cases). In the remaining 2 5 cases, DSWOs Ambala, 
+Kurukshetra, Karnal, Kaithal, Panchkula and Yamunanagar intimated that after 
+verification, pension has been stopped and recovery notices have been issued. 
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).  
+During exit conference, the department accepted the  issue and stated that 
+recovery would be made as well as demonstrative act ion would be  
+considered. 
+2.14 Disbursement of social security pension to unt raceable beneficiaries 
+As per Government notification No. 459-SW(4)-2011 d ated 10 June 2011, in 
+case there is no withdrawal from the bank account for a continuous period of 60 
+days, such bank account will be rendered “inoperati ve” for the purpose of this 
+Scheme by the Bank with no further credit of benefi ts under this Scheme into 
+it. Such “inoperative” bank accounts will be report ed by the Bank to the 
+Department. In case the beneficiary applies for re-operationalization of the bank 
+account within the next 90 days with justifiable re ason, the bank account may 
+be re-operationalized with the permission of the Di rector. If not, the bank 
+account will be rendered “dead” for the purpose of this Scheme and the benefits 
+credited into the bank account after the last withdrawal would be remitted back 
+to the Department with accrued interest by the Bank.  
+It was seen that pension amounting to ₹ 64.13 crore was transferred to 38,060 
+beneficiaries under three schemes viz. Old Age Samman Allowance, Pension to 
+Widow, Destitute Women and Haryana Divyang Person P ension though the 
+status was updated to ‘untraceable’ by the banks and these beneficiaries had not 
+withdrawn the pension amount from their bank accoun ts even after continuous 
+                                                           
+24   It includes 36 beneficiaries to whom unauthorised p ension of ` 0.07 crore was 
+ transferred as pointed out in Para 2.14.  
+25  Ambala-5, Kaithal-5, Karnal-6, Kurukshetra-4, Panchkula-1 and Yamunanagar-5 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+31 
+90 days of the payment. Further, this amount pertai ns to only 18 pension 
+disbursing banks/post offices (out of 63 pension disbursing banks/post offices). 
+Audit noticed that remaining 45 pension disbursing banks/post offices did not 
+carry out any activity related to identification an d declaring any beneficiary as 
+‘untraceable’. Further, the activity relating to de claring any beneficiary as 
+‘untraceable’ by pension disbursing banks/post offices was also not being done 
+regularly.  
+In 18 pension disbursing banks/post offices, ICICI bank and United Bank of 
+India took action only once i.e. in January 2020. T here was also delay in 
+declaring an account ‘inoperative’ which ranged from 124 to 7,389 days.  
+As per authority letter, details of undisbursed amo unt were to be submitted by 
+disbursing banks/post offices every month. However, no such exercise was done 
+and Department had also not signed any Memorandum o f Undertaking or 
+Memorandum of Understanding (MoU) with these disbur sing banks/post 
+offices to ensure compliance.   
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021).  
+During exit conference, the department stated that 
+₹ 228 crore have been 
+recovered from banks. However, the details of benef iciaries from whom the 
+amount has been recovered was not mentioned.  
+2.15 Porting of incomplete legacy data 
+A legacy database is an old record that is inherited from the legacy records and 
+also form a base for departmental decisions. The work of digitisation of legacy 
+records was an important aspect to embed control over duplicate records and it 
+should be ensured that the complete and correct information was captured in the 
+system as the same would be used over a long period  of time for disbursement 
+of benefits to the intended beneficiaries.  
+In the absence of assurance about correct porting of legacy data audit could not 
+ensure total recovery of old record. However, audit  observed the following 
+discrepancies: 
+2.15.1 Non porting of enrolment date in legacy data  
+Analysis of data of beneficiaries revealed that dat a of 21,99,374 beneficiaries 
+ported was incomplete. The important mandatory field i.e. ‘Enrolment date’ was 
+shown as ‘Null’ in the database for the legacy data  that was digitized from the 
+old legacy records. The entry/enrolment date is an important parameter to know 
+when the beneficiary got enrolled for availing the benefit.  
+ 
+
+Performance Audit on Direct Benefit Transfer 
+32 
+2.15.2 Incorrect age in legacy data 
+The selected three schemes are Centrally Sponsored Schemes and the 
+expenditure incurred on these schemes by the State is reimbursed from the 
+Central Government. The Central Government reimburs es this expenditure in 
+biannual instalments (twice an year). The eligibili ty criteria and the scale of 
+assistance under the sub-schemes of NSAP are as follows:- 
+• Indira Gandhi National Old Age Pension Scheme (IGNO APS): The 
+eligible age for IGNOAPS is 60 years. The pension i s 
+` 200 p.m. for 
+persons between 60 years and 79 years. For persons who are 80 years 
+and above the pension is ` 500 per month. 
+• Indira Gandhi National Widow Pension Scheme (IGNWPS ): The 
+eligible age is 40 years and the pension is ` 300 per month. After 
+attaining the age of 80 years, the beneficiary would get ` 500 per month. 
+• Indira Gandhi National Disability Pension Scheme (I GNDPS): The 
+eligible age for the pensioner is 18 years and abov e and the disability 
+level has to be 80 per cent . The amount is ` 300 per month and after 
+attaining the age of 80 years, the beneficiary will  get ` 500 per month. 
+Dwarfs would also be an eligible category for this pension. 
+In addition to the Central Government share, the St ate Government deliver the 
+benefit to the beneficiary by providing its share. As the State Government is not 
+aware about the age of its beneficiary, then the de mand for reimbursement of 
+the amount from Centre Government would also be def ective which is loss to 
+the State Government.  
+A person is eligible for the grant of Old Age Samma n Allowance if the person 
+is of age 60 years or more. Similarly, a person or women in the age group of 18 
+years and above shall be eligible for grant of Divyang pension and Widows and 
+Destitute Women Pension Scheme. 
+Scrutiny of data for the selected schemes showed that the important mandatory 
+fields like Date of Birth and Age was ‘Null’ or inc orrectly entered (like 0 or 
+more than 120 years up-to 2,068 years) in 15,646 ca ses. Out of 15,646 
+beneficiaries, 3145 beneficiaries were related to o ld age pension enrolment 
+wherein data in age field were entered incorrectly (less than 60 years or more 
+than 120 years) and age field of balance 12,501 ben eficiaries in respect of 
+Divyang pension and Widows and Destitute Women Pens ion Scheme were 
+updated as ‘Null’ in database.  
+If age captured was as less than 60 years then the person was not eligible for 
+enrolment in the Old Age Samman Allowance and if it  was captured as more 
+than 120 years then the same is subject of investig ation, but no 
+correction/checking in these cases have been made by the department even after 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+33 
+lapse of 39 months of complete digitization. The incorrect entry in the Age field 
+would continuously lead to the incorrect reimbursem ent from the Central 
+Government in respect of NSAP scheme. 
+2.15.3 Missing records of beneficiaries from master  database 
+It was revealed in analysis of beneficiary data that audit trail for 327 beneficiary 
+IDs were present in data dump but no records relate d to these IDs existed in 
+master data table (Beneficiary table). Hence, infor mation about these 
+beneficiaries such as name, father's name, DOB, address, bank account number, 
+etc. as well as payment made to them, if any, could  not be ascertained as 
+depicted below: 
+Table 2.6: Details of missing records of beneficiaries 
+No. of 
+beneficiary 
+IDs 
+Details in audit trails Remarks 
+186 Two entries against each ID in audit 
+trails, one for insertion and other for 
+deletion 
+No records of beneficiaries found 
+in master database for these IDs. 
+16 Only one entry against each ID in audit 
+trails i.e. for deletion of record 
+No records of beneficiaries found 
+in master database for these IDs. 
+125 One entry against each ID in audit trails, 
+entry is for insertion of record 
+No records of beneficiaries found 
+in master database for these IDs. 
+Information of beneficiary and 
+payment made to them could not be 
+ascertained. 
+327 Total Beneficiary IDs 
+In the absence of audit trails, unauthorised changes in the database could not be 
+ruled out. This could lead to erroneous payments.  
+2.15.4 Gaps in beneficiary ID sequence in master da tabase 
+Gaps were observed in sequence of allotted beneficiary IDs e.g. beneficiary IDs 
+from 3,871 to 3,934; 8,472 to 9,990; 4,38,109 to 4,39,430 did not exist in master 
+database, however, beneficiary IDs before and after these gaps were allotted to 
+other beneficiaries.  In multiple cases, gap of 1 o r 2 IDs was also found in the 
+beneficiary IDs. 
+Further, significant gaps were also detected in ben eficiary IDs. Absence in 
+sequence from beneficiary ID 35,48,907 to 50,00,000  (absence of 14,51,094 
+IDs), 25,83,454 to 26,55,133 (absence of 71,680 IDs ) and 33,50,818 to 
+33,77,769 (absence of 26,952 IDs) was observed.   
+In the absence of information and system documentation, audit could not derive 
+the requisite assurance that this gap arose in the normal course of porting of 
+legacy data. 
+ 
+
+Performance Audit on Direct Benefit Transfer 
+34 
+2.16 Absence of IT Security Policy 
+Any good IT system should have specifically laid do wn IT security policy 
+indicating minimum standards and compliance require ments for specific areas 
+like assets classification, data security, personal  security, physical, logical and 
+environmental security, communications security, le gal, regulatory and 
+contractual requirements, business continuity planning, security awareness and 
+training, security breach detection and reporting r equirements, violation of 
+enforcement provisions, etc. 
+As per the Best practices and Guidelines to States on Data security, Privacy, 
+Confidentiality and Protection issued by Ministry o f Electronics and 
+Information Technology, State is required to conduc t security posture 
+assessment to determine appropriate risk levels and  maintenance requirements 
+of its assets and frame State’s security policy accordingly. 
+Audit observed that Department did not have any doc umented IT security 
+policy. Documents of review policy, periodic reviews’ minutes of meeting, etc., 
+was not found on records. 
+2.17 Lack of training to users/staff 
+Staff training and development are closely linked to staff resource planning. 
+Audit observed that no training was provided to staff at the time of roll out and 
+no periodical trainings were conducted.  
+2.18 No business continuity planning and disaster r ecovery planning 
+The objective of having a Business Continuity and Disaster Recovery Plan and 
+associated controls is to ensure that in the event of an interruption or disaster 
+leading to temporary or permanent loss of computer facilities, the organisation 
+can still accomplish its mission and it would not l ose the capability to process, 
+retrieve and protect information maintained. 
+Continuity and disaster recovery plans should be do cumented, periodically 
+tested and updated as necessary. Back-up should be cycled through a number of 
+generations by, for example, using daily, weekly, m onthly and quarterly tapes. 
+Backup should be stored, together with a copy of the disaster recovery plan and 
+system documentation, in a fire-safe off-site. 
+No record showing compliance to the above requireme nt was furnished by the 
+Social justice and Empowerment Department.  
+2.19 Weak access control 
+Guidelines for Assessment of Effectiveness of Security Controls (January 2010) 
+published by GoI emphasizes use of quality authentication secret word or phrase 
+(password). The guidelines for assessment of effect iveness in the security 
+controls defined in the guideline are recommended f or use in information 
+systems for e-Governance. As per these guidelines the minimum and maximum 
+password age should be one day and 30 days (typical ly) respectively. These 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+35 
+guidelines recommend imposing password complexities , password change on 
+first use and after specific periods, restrictions on re-use of passwords, etc.  
+It was observed that no password policy, as per gui delines was formulated by 
+the department.  
+Reply from Social Justice and Empowerment Departmen t was awaited 
+(December 2021). However, DSWOs Karnal, Kaithal, and Yamunanagar stated 
+that the observation was noted for future compliance. 
+2.20 Missing audit trails in IT system 
+Audit trail is a series of records either in hard c opy or in electronic format that 
+provide a chronological record of user activity and other events. It demonstrates 
+how a specific transaction was initiated, processed  and summarised and is 
+necessary to track the history of transactions, sys tem shortcomings, erroneous 
+transactions, changes/ modifications in data, etc. The system should be capable 
+of recording logs of different events with date and time of each event occurring 
+during the business process. 
+Analysis of data of beneficiaries revealed that aud it trails related to 5,55,807 
+(out of 40,07,597 beneficiaries IDs)beneficiary IDs  was not present in data 
+provided. In the absence of audit trail it could no t be ascertained when or by 
+which user of department and from which IP address these beneficiaries were 
+enrolled.  
+Further, 1,183 gaps (in beneficiary ID sequence) were detected in audit trails in 
+which 38,033 items/entries/transactions were missin g. Due to inadequate 
+controls, application is vulnerable to unauthorised  amendments to 
+programs/data. Also it could lead to erroneous paym ents, misleading reports, 
+wrong postings of transactions and ultimately qualified accounts.  
+During exit conference, the matter was discussed and it was opined that it needs 
+to be examined by the Department. 
+2.21 Approval of beneficiaries in bulk in a single day 
+As per the system prescribed on the e-disha portal,  applicants collect the 
+application form SARAL portal/department website, e tc. and the filled forms 
+are signed/verified by the Sarpanch/Municipal Counc illor/Gazetted Officer 
+along with required supporting documents. Thereafte r, applicants’ details and 
+scanned copy of application form are to be uploaded  on SARAL portal by 
+Antyodaya/Common Service Center operators (CSC)/onl ine mode by 
+applicants itself and after receiving the applicati on in ‘view mode’ by DSWO 
+office, the application is marked for verification.  Applicant has to visit block 
+level office (DSWO) for physical verification with application form and 
+supporting documents. After verification, DSWO approves the application and 
+
+Performance Audit on Direct Benefit Transfer 
+36 
+assigns pension ID to applicants. Data of approved beneficiaries is recorded in 
+pension portal through Web enabled API (Application programming Interface). 
+Pension disbursement is initiated with next upcoming regular pension.  
+Analysis of data of beneficiaries revealed that in Faridabad district, 3,135 
+beneficiaries were approved by the DSWO in a single day (11 February 2020). 
+Similarly 1,206, 1,035, 1,297, 1,147 beneficiary ca ses were approved by the 
+respective DSWOs Palwal, Sirsa, Sonepat and Jind districts in a single day. The 
+above approvals are assessed as area of concern. 
+During exit conference, the Department was of the o pinion that reasons for 
+approval in bulk in a single day may be enquired from concerned DSWOs. 
+2.22 Irregular payment of commission to banks and p ost office 
+As per office Memorandum F. No. 32 (07) / PF-II 201 1 (Vol. II) Ministry of 
+Finance Department of Expenditure (PF-II Division) dated 26 February 2016, 
+all DBT transactions should be routed through the N ational Payment 
+Corporation of India (NPCI). A transaction cost of ₹ 0.50 would be payable for 
+each transaction to be shared between the sponsor b anks, destination entities 
+and NPCI in accordance with the extant NPCI Circula r. Further, vide office 
+Memorandum No. F. No. 32 (07) / PF-II 2011 Vol. II dated 01 June 2016 it was 
+clarified that with regard to the charges for trans actions pertaining to the State 
+DBT Schemes, transaction charges as per the extant NPCI circular will be 
+applicable, for which the NPCI may approach the respective State Governments 
+for settlement of its claims for all DBT transactio ns for 2015-16, which were 
+not routed through NPCI, transaction charges shall be payable at the extent 
+NPCI rate only to claimant sponsor banks. After 31 March 2016, DBT/DBTL 
+transactions not routed through NPCI will not be en titled to either transaction 
+charges or cash out incentives. 
+Audit noticed that Department transferred benefits under various pension 
+schemes under DBT through Banks and Post Office. As per instructions issued 
+by GoI, Ministry of Finance Department of Expenditu re all the payment under 
+DBT should be routed through NPCI and for this ` 0.50 was payable for each 
+transaction, which was to be shared between the spo nsor bank destination 
+entities and NPCI. Further, it was also instructed that DBT transactions which 
+were not routed through NPCI after 31March 2016 wou ld not be entitled for 
+either transaction charges or cash out incentives.  
+The department paid ₹ 38.05 crore during the period between April 2016 a nd 
+July 2020 to the Banks and Post Offices as commissi on transferred under the 
+schemes, which was in violation of GoI instructions  as all the respective DBT 
+payments were made without involving NPCI and thus was irregular. Further, 
+no MoU signed between banks/Post Offices and Depart ment was found on 
+records. 
+
+Chapter 2 Re-engineering Process for implementation of Direct Benefit Transfer 
+37 
+2.23 Non-updation of Savings data on State DBT Port al  
+As per Guidelines/Methodology “for assessing benefi ts due to Aadhaar based 
+DBT” issued by the DBT Mission, GoI which envisages  that ‘Data on saving 
+should be reported on monthly basis to DBT Mission/ State DBT Cell. If any, 
+Ministry/Department proposes to deviate from the periodicity, they should refer 
+the matter to the DBT Mission/State DBT Cell. 
+Audit noticed that Social Justice and Empowerment D epartment assessed 
+saving amounting to 
+`201.33 crore during the year 2015-16. While scrutinizing 
+the record of DBT Cell, it was noticed that data of  saving in respect of DBT 
+schemes for the years 2016-17to 2020-21 was not upl oaded on the State DBT 
+cell. This was in violation of above said guidelines.   
+2.24 Non-conducting of Social Audit of Schemes unde r NSAP 
+NSAP guidelines stipulate that social audit of all the schemes should be 
+conducted at least once in every six months by Gram  Sabha/Ward Committee 
+and that for each social audit, the Gram Sabha/Ward  Committee has to elect a 
+Social Audit Committee comprising at least two beneficiaries from each of the 
+schemes under NSAP, of which one shall be a woman. It should be ensured that 
+beneficiaries from SCs, STs and Minorities also are  represented in the Social 
+Audit Committee. 
+Scrutiny of records of the department revealed that no such audit was conducted.  
+2.25 Conclusion 
+ 
+Audit observed deficiencies like enrolment and paym ent to ineligible 
+beneficiaries (deceased, underage or enrolled in ot her schemes), multiple 
+beneficiaries enrolled under same Aadhaar id or without Aadhaar id, transfer of 
+benefit to account other than beneficiaries account . This indicated not only 
+inadequate controls but lack of effective verificat ion and monitoring by the 
+concerned authorities.   
+There were instances of missing audit trails, beneficiary data and pension being 
+disbursed to untraceable beneficiaries questioning the integrity of the data in the 
+application.  
+Planning and implementation of the IT system was deficient and assurance that 
+the system met its objectives could not be derived in audit due to absence of 
+complete documentation. Analysis of data showed non -compliance to various 
+rules and procedures as detailed in the findings, i ndicating the system is not 
+adequate to meet its objectives in its present form  and is unable to mitigate the 
+risk of duplication and erroneous payments. 
+
+Performance Audit on Direct Benefit Transfer 
+38 
+2.26 Recommendations 
+• To ensure transfer of payment to correct beneficiar ies’ accounts, the 
+Government may evolve proper systems for authentica tion of Aadhaar 
+numbers of legacy beneficiaries with Aadhaar portal.  
+• The Government/Department may carry out a comprehensive review of 
+the beneficiaries’ data including legacy data to ensure its completeness, 
+authenticity and correctness. 
+• The Government/Department may put in place a robust  system for 
+scrutiny of applications, validation and verificati on process of 
+beneficiaries and transfer of benefit in correct ac count. Access to state 
+pensioner database should be obtained and before en rolment of 
+beneficiaries cross verification should be carried out. 
+• Distribution of pension to deceased persons should be avoided by 
+linking the software with various agencies and not only from data of 
+Registrar General of India. System of disseminating  information like 
+payment of financial assistance to the beneficiaries through SMS should 
+be considered. 
+• The Government may consider evolving real time moni toring 
+mechanism for effective decision making and supervi sion. This would 
+assist in assessing the undisbursed amount of pensi on in respect of  
+untraceable beneficiaries and discontinuance of pension of unauthorized 
+beneficiaries. and to revert back the amount in the se cases in the 
+Department’s account and evolve Information System for regular SMS 
+notifications to the beneficiaries. 
+• The State Government may evolve proper systems for identification and 
+on boarding of all DBT applicable schemes, benefici aries and saving 
+earned after implementation of DBT. 
+• The State Government may devise mechanism to enable  enrolment of 
+eligible beneficiaries immediately after attaining the age i.e. 60 years 
+and suitable business re-engineering process should be put in place.  
+• The State Government may take strenuous efforts for effecting recovery 
+of inadmissible payment of assistance besides fixin g responsibility for 
+inaction by the authorities concerned. 
+• The Department may put in place a mechanism to ensure preparation of 
+required documents (User Requirement Specifications , System 
+Requirement Specifications, etc.) whenever development or updation of 
+any IT system is taken up. Audit of functional requirement of IT system 
+may also be done periodically. 
+
+Chapter 3  
+Infrastructure, organisation and  
+management of Direct Benefit Transfer  
+
+39 
+Chapter 3 
+Infrastructure, organisation and management of Direct Benefit Transfer 
+3.1 Non-implementation of DBT on all schemes of all  departments 
+The State DBT cell shall primarily work towards coo rdinating the 
+implementation of DBT in various schemes. The Cell shall act as a nodal point 
+for all the activities and matters related to DBT operations in the State. As DBT 
+operates in an environment that involves multiple s takeholders, the Cell shall 
+be responsible for liaisoning with all such stakeho lders for the seamless 
+transitioning of schemes to DBT. The State Level Ce ll, as a part of the 
+decentralized DBT architecture, will contribute tow ards achieving effective 
+delivery of government benefits in the country by: 
+• Coordinating with Centre/Ministries and disseminating the directives to 
+the respective departments in States. 
+• Developing scheme/department-specific ICT applicati ons to capture 
+data pertaining to DBT more effectively. 
+• Closely monitoring and evaluating the progress of v arious departments 
+on DBT related indicators vis-a-vis expected outcomes. 
+• Incorporating best practices and international experiences to enhance the 
+effectiveness of benefits delivery. 
+• Partnering with multi-lateral agencies and consulting firms to piggyback 
+on their technological and industry knowledge. 
+Further, GoI issued directions in 2017-18 regarding  identification and on-
+boarding of State Sector/UT Schemes on State DBT Po rtal in lines of Central 
+Sector (CS)/Centrally Sponsored Schemes (CSS) in a time-bound manner. 
+The DBT Cell was constituted on 13 June 2016 in Har yana State and it 
+coordinates with DBT implementing departments for t he implementation of 
+DBT in various Centrally and State sponsored scheme s. As per process of 
+identification of new scheme, the department being implementing agency 
+identifies the new DBT scheme which is uploaded by the DBT cell on State 
+DBT portal on the request of concerned department.   
+During scrutiny of records of DBT cell, audit noticed that the data pertaining to 
+25 Departments having 135 schemes were uploaded by the implementing 
+departments. However, audit observed that out of 53  departments existing in 
+Haryana State, the identification of DBT schemes in remaining departments was 
+still pending (July 2021).  
+
+Performance Audit on Direct Benefit Transfer 
+40 
+During exit conference, DBT Cell stated that that continuous following up with 
+the departments is being done for identification of schemes.  
+3.2 Non-conducting of quarterly meeting of Advisory  Board  
+As per Haryana Government Notification dated 16 Sep tember 2016, for 
+ensuring a smooth roll-out of direct cash transfers  in an orderly and timely 
+manner an Advisory Board of DBT cell in accordance with the guidelines of 
+GoI was constituted. The terms of reference of Board were as under: 
+• To hold review meetings on quarterly basis, to ensu re that the timeline 
+for transition of all schemes to DBT mode is adhered to; 
+• Introduction of novel ideas which can help in deliv ering benefits in a 
+more effective way; 
+• Review of rate of Aadhaar seeding in Bank accounts in respect of each 
+scheme of each Department; 
+• Review of digitization of data; 
+• Streamlining of data base and ultimately its connec tivity with DBT 
+portal; and 
+• The receipt of saving accruing on account of DBT in itiative back to 
+State. 
+A protocol document for State DBT was issued (June 2017) to enable adoption 
+and understanding of the DBT process within each De partment so as to ensure 
+that DBT framework was adopted in implementation of schemes.   
+Audit noticed during scrutiny of record that first meeting of advisory board was 
+held on 30 June 2017 and no further meeting was con ducted. The Advisory 
+Board had significant role in introducing novel way  of delivering benefits in 
+more efficient way, providing long term, wider and strategic inputs to the 
+executive body of the DBT Cell. However, only one meeting of the Board was 
+conducted since its formation. This indicated that the Board was not functioning 
+as envisaged. 
+The department replied (July 2021) that due to Covi d Pandemic the meetings 
+could not be held in time. The reply of the department is not accepted as Covid 
+Pandemic started during March 2020 only but no quar terly meetings were 
+conducted since June 2017. 
+3.3 Non-sharing of data of DBT schemes at State DBT  Portal  
+(A) DBT is a major reform initiative of the GoI to ensu re better and timely 
+delivery of benefits from Government to the people.  DBT is a significant 
+governance reform to ensure greater transparency an d accountability in public 
+service delivery through effective use of technology. 
+
+Chapter 3: Infrastructure, organization and management of Direct Benefit Transfer 
+41 
+During scrutiny of records of the DBT cell for the period April 2017 to July 
+2020, it was claimed that ₹ 1,182.18 crore has been saved in the seven 1 out of 
+25 departments by implementing the DBT during the financial year 2014-15 to 
+2018-19. However, departments of Higher Education, Technical Education, 
+Social Justice & Empowerment and Secondary Educatio n had not worked out 
+the savings during the years 2016-17 to 2018-19. Si milarly, savings for the 
+period 2015-16 to 2017-18 have not been worked out by Rural Development 
+department.  It was also seen that 18 out of 25 departments had not worked out 
+the savings data from 2014-15 onwards. Further, scheme wise savings are not 
+reflected on the DBT Portal and DBT cell has no met hodology to verify 
+authenticity of the savings info rmation uploaded by the respective departments.  
+It is pertinent to mention here that department of Agriculture and Farmers 
+Welfare distributed/disbursed ₹ 382.78 crore during the years 2017-18 to  
+2019-20 in 11 schemes wherein these were on-boarded  on DBT portal. Out of 
+₹ 382.78 crore, only ₹ 1.21 crore in one scheme (2019-20) was disbursed 
+through DBT. Remaining ₹ 381.57 crore was disbursed under 10 schemes 
+during the years 2017-18 to 2019-20 without implementing them as DBT, which 
+was in contravention of the above said guidelines issued by the GoI. 
+While accepting the audit observations, DBT Cell re plied (July 2021) that for 
+calculation and reporting of saving/benefits on monthly basis instructions have 
+been issued to the departments. The departments hav e adopted different 
+methods for calculating savings. DBT Cell also stat ed that Agriculture 
+department uploaded/enrolled eleven schemes on the State DBT portal but did 
+not provide any information and also did not upload  the data on the state DBT 
+Portal in spite of lot of communication. 
+(B) As per Haryana Government notification No. TA-HR (D MC)/2020/1768 
+dated 6 February 2020 introduced a new scheme named  “Mukhya Mantri 
+Parivar Samridhi Yajna (MMPSY)”. Finance Department , Government of 
+Haryana was the Nodal Authority for the implementation of this scheme in the 
+State. Audit observed that the scheme in question w as not on boarded till 
+January 2021. However, DBT Cell did not pursue the matter with DBT mission, 
+GoI for framing of guidelines in this regard. It indicates that a robust framework 
+for seeking and on boarding new schemes on DBT Port al was not put in place. 
+DBT Cell failed to coordinate with all Departments in compiling a list of 
+schemes and programs, including conduct of secondar y research to ensure 
+comprehensive listing.   
+While accepting the fact DBT cell stated (July 2021 ) that information was 
+sought from Department of Economic & Statistical Analysis, Haryana regarding 
+                                                           
+1 Elementary Education, Secondary Education, Higher Education, Technical Education, 
+Social Justice and Empowerment, Food, Civil Supplie s and Consumer Affairs and 
+Rural Development. 
+
+Performance Audit on Direct Benefit Transfer 
+42 
+schemes, at that time, the scheme in question, was not in existence.  Now the 
+scheme has been on-boarded on the State DBT portal and the data for Financial 
+Year 2020-21 uploaded. 
+3.4 Non-incorporating of best practices 
+As per objective of State DBT Cell guidelines issued by DBT Mission, Cabinet 
+Secretariat, DBT cell will contribute towards achie ving effective delivery of 
+Government benefits in the country by: 
+• Developing scheme/department–specific ICT applicati ons to capture 
+data pertaining to DBT more effectively; 
+• Incorporating best practices and international experience to enhance the 
+effectiveness of benefits delivery; and 
+• Partnering with multi-lateral agencies and consulting firms to piggyback 
+on their technological and industry knowledge. 
+It was seen in Audit that the officers of DBT cell attended only one workshop 
+(March 2017) at the Unique Identification Authority  of India  ( UIDAI) at 
+Chandigarh during the period of audit i.e. from 201 7-18 to July 2020. It was 
+also noticed that no centralized specific ICT appli cation was adopted by DBT 
+cell. The DBT cell failed to coordinate with all Departments in compiling a list 
+of all schemes and programs and different departmen ts adopted different 
+methods of implementation of DBT to deliver the ben efit to ultimate 
+beneficiaries. It was further noticed that no partn ership with multi-lateral 
+agencies and consulting firms to make use of their technological and industry 
+knowledge have been made by DBT Cell. 
+During exit conference, it was stated that Haryana has been ranked first in India 
+in implementation of DBT during 2019-20.  
+3.5 Non-compliance of the Instruction regarding tra nsfer of funds  
+As per the DBT Mission Cabinet Secretariat Guidelin es for State all DBT 
+transactions are to be routed through NPCI. While A adhaar linked DBT 
+transactions will be routed through Aadhaar Payment  Bridge System (APBS), 
+non-Aadhaar transactions will be routed through National Automated Clearing 
+House (NACH). NPCI is an umbrella organisation for all retail payments system 
+in India. It was set up with the guidance and suppo rt of the Reserve Bank of 
+India (RBI) and Indian Banks' Association (IBA). NP CI offers a range of 
+services like National Financial Switch (NFS), Aadh aar Payment Bridge 
+System (APBS), Cheque Clearing, Immediate Payments Service (IMPS), 
+National Automated Clearing House (NACH), Electroni c Benefit Transfer, 
+RuPay cards, etc.  
+
+Chapter 3: Infrastructure, organization and management of Direct Benefit Transfer 
+43 
+During scrutiny of record of DBT Cell, it was noticed that instructions in respect 
+of transfer of funds was issued to all the Administ rative Secretaries and 
+departments of Government of Haryana mentioning, th e funds to be routed 
+through NPCI and in Aadhaar linked bank accounts. If in any case, funds are to 
+be transferred through other's account instead of directly to beneficiary (like in 
+the case of institutions), the permission for the s ame may be taken by the 
+concerned Department from the concerned Ministry/Go I or from the Finance 
+Department, Government of Haryana as the case may b e and the same may be 
+ensured by the Treasury Officer that necessary perm ission in such cases has 
+been obtained by the Departments. Further, if the f unds are not credited to 
+beneficiaries after three attempts, then the undisb ursed funds may be 
+immediately deposited in the receipt head of concerned Department. To rule out 
+the possibility of wrong payment and deviation from  the Aadhaar Act, the 
+expenditure under the schemes drawn from the treasu ry and disbursed through 
+NPCI must tally and should be reflected on Haryana State DBT portal on 
+monthly basis. 
+Audit observed that funds were not routed through NPCI and in Aadhaar linked 
+bank accounts in all the schemes in Haryana State a nd no monitoring process 
+was being adopted by State DBT Cell for authenticat ion of fund flow towards 
+the beneficiaries in the respective departments. This was in contravention to the 
+above mentioned instructions of the Government. 
+During exit conference, it was stated by the DBT Ce ll that the departments 
+upload the expenditure on the State DBT portal in the form of Electronic mode 
+in a single column which consists of APB, NEFT, RTG S and AEPS. There is 
+no provision on the State DBT portal for bifurcatio n of funds transferred 
+through NPCI as the formats of the State DBT Portal has been devised by DBT 
+Mission, GoI. The officials of State Government sug gested that the Aadhaar 
+based payments routed through NPCI can be obtained through Treasury based 
+IT applications. 
+3.6 Conclusion 
+DBT was not implemented across all departments and schemes. After 
+establishment of DBT cell only one meeting (on 30 J une 2017) of advisory 
+board was held and no further meeting was conducted . DBT Cell failed to 
+coordinate with all Departments in compiling a list  of schemes and programs, 
+including conduct of secondary research to ensure comprehensive listing. DBT 
+cell could not get the holistic picture of saving, in the absence of specific 
+guidelines. 
+3.7 Recommendations 
+• The State Government may evolve proper mechanism, for identification 
+and on boarding of all DBT applicable schemes on DBT portal. 
+
+Performance Audit on Direct Benefit Transfer 
+44 
+• DBT Cell may ensure that meeting of advisory board is conducted 
+periodically as envisaged in the guidelines. 
+• ICT system should be upgraded and linked with PFMS so that all the 
+relevant information can be extracted through this system. At present, 
+only a few datasets are available with respect to the legacy data. 
+
+Chapter 4  
+Conclusions 
+  
+
+45 
+Chapter 4 
+Conclusions 
+(A)  Regarding Social Justice and Empowerment Department , Audit 
+observed that neither Department nor NIC prepared o r ensured preparation of 
+any System Design Documentation for the application . As a result, there is no 
+assurance regarding mapping of business rules corre ctly in the IT system and 
+various deficiencies were noticed like Enrolment an d payment of pension to 
+dead pensioners, enrolment of persons below 60 year s of age enrolled for Old 
+Age Pension Scheme, same person enrolled under mult iple schemes, multiple 
+persons enrolled under single Aadhaar ID, transfer of benefit to account of 
+person other than the beneficiary .This indicated that not only absence of suitable 
+and adequate controls but also lack of proper verif ication and monitoring by the 
+concerned authorities.   
+The integrity of the data remained doubtful as miss ing of audit trails and 
+beneficiaries’ data was observed.  
+Due to lack of controls to track the flow of fund, pension amount related to the 
+untraceable beneficiaries were not remitted back to department.  
+Irregular payments of commission were made to Banks/ Post Offices in lieu of 
+DBT disbursement. No Memorandum of Understanding si gned between 
+banks/Post Offices and Department formalising the conditions of commission.  
+Lack of password policy rendered the system vulnerable to unauthorised access. 
+Business continuity plan to take care of IT assets in case of disasters was not 
+developed. 
+After on-boarding of the system, Business Intelligence has not been used to for 
+identification of deviant transactions/ lacunae in the system.  
+Audit observed that planning and implementation of the IT system was 
+deficient, data analysis showed non-compliance to various rules and procedures 
+as detailed in the findings, which leads to the con clusion that the system is not 
+adequate to meet its objectives in its present form.  
+Audit could not assure itself that the system has a dequate controls to prevent 
+unauthorised operation or restrict prohibited transactions. Further, audit analysis 
+indicated deficient verification and monitoring. 
+(B)  Regarding DBT Cell, audit observed that DBT wa s not implemented 
+across all departments and schemes. After establish ment of DBT cell only one 
+meeting (on 30 June 2017) of advisory board was hel d and no further meeting 
+was conducted.DBT Cell failed to coordinate with all Departments in compiling 
+a list of schemes and programs, including conduct o f secondary research to 
+
+Performance Audit on Direct Benefit Transfer 
+46 
+ensure comprehensive listing. DBT cell could not get the complete picture of 
+saving, in the absence of specific guidelines, after implementation of DBT in 
+the state.  
+The above points have been referred (September 2021) to Principal Secretary to 
+Government of Haryana, Social Justice and Empowerment Department and 
+Additional Chief Secretary to Government of Haryana, Finance and Planning 
+Department for comments and replies. Response from the Government was 
+awaited (December 2021). 
+ 
+ 
+ 
+Chandigarh 
+Dated: 
+(VISHAL BANSAL) 
+Principal Accountant General (Audit), Haryana 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Countersigned 
+ 
+ 
+New Delhi 
+Dated: 
+ 
+(GIRISH CHANDRA MURMU) 
+Comp
+troller and Auditor General of India 
+ 
+
+Appendices 
+  
+
+47  
+Annexure I 
+(Reference: Paragraph 2.2 (A); page 15) 
+Payment status fields  
+Scheme and Year wise Status of pension amount transferred from March 2017 to July 2020 
+Year 
+Response 
+Type 
+Old Age 
+Samman 
+Allowance 
+Widow 
+Pension 
+Disability 
+Pension 
+Financial 
+Assistance to 
+Destitute 
+Children 
+Financial 
+Assistance to 
+Kashmiri 
+Migrants 
+Financial 
+Assistance to 
+Male and 
+Transgender 
+Acid Attack 
+Victim 
+Financial 
+Assistance to 
+Non School 
+Going 
+Disabled 
+Children 
+Allowance 
+to Dwarf 
+Allowance 
+to Eunuch 
+Financial 
+Assistance to 
+Women and 
+Girl Acid 
+Attack 
+Victim 
+Ladli Social 
+Security 
+Allowance 
+2017 NULL 3289992600 1496322600 326075400 183611700 6000   11590400 54400 47600   74533200 
+A/C Closure 67398400 11941400 3654000 843300     160800       832600 
+A/C does 
+not exist 3335200 1204800 224800 557800     38400       95600 
+A/C 
+Dormant 19183400 5766200 1363800 1494500     52000       307400 
+A/C Frozen 19589600 3485000 984200 472300     52200       129400 
+Other 20459200 8799400 1970000 1195700     66600       603000 
+Success 18195141600 7973642200 1825952200 1090350400 85000   62683200 347200 273200   378837000 
+2018 NULL 4679968700 2151726100 466318600 325006700 0   19904400 60400 94000   109603200 
+A/C Closure 100827800 18818600 5852400 1918400     294600       1250000 
+A/C does 
+not exist 21767000 6502400 1747600 3106300     216800   7200   552000 
+A/C 
+Dormant 445400 149400 20800 26800     6000       3600 
+A/C Frozen 40559600 7319600 1934000 1386200     117200       317800 
+Other 16436400 4900800 1245000 1547700     153600       555600 
+Success 28848591000 12723433200 2934486000 2039661000 10900 0   125266200 571200 477200   642224200 
+2019 NULL 5957530588 2714721199 596799500 458861700     29780800 76000 106000 130000 150754000 
+A/C Closure 104361400 19750000 6150000 2278100     333200       1204000 
+
+ Appendices 
+48 
+Scheme and Year wise Status of pension amount transferred from March 2017 to July 2020 
+Year 
+Response 
+Type 
+Old Age 
+Samman 
+Allowance 
+Widow 
+Pension 
+Disability 
+Pension 
+Financial 
+Assistance to 
+Destitute 
+Children 
+Financial 
+Assistance to 
+Kashmiri 
+Migrants 
+Financial 
+Assistance to 
+Male and 
+Transgender 
+Acid Attack 
+Victim 
+Financial 
+Assistance to 
+Non School 
+Going 
+Disabled 
+Children 
+Allowance 
+to Dwarf 
+Allowance 
+to Eunuch 
+Financial 
+Assistance to 
+Women and 
+Girl Acid 
+Attack 
+Victim 
+Ladli Social 
+Security 
+Allowance 
+A/C does 
+not exist 19987000 5016000 1430000 2465100     221200       660000 
+A/C 
+Dormant 614000 96000 36000 48400     18200       4000 
+A/C Frozen 33060000 5708000 1344000 965800     47600       338000 
+Other 20545000 5282000 1568000 1612600     193200       536000 
+Success 32344770874 14195045598 3318629000 2481648400 10800 0 9000 164208800 706000 632000 326000 772876000 
+2020 NULL 4322379680 1950171125 430153875 365663700     24839100 85500 67500 144000 118911500 
+A/C Closure 74199375 14539500 4545000 2284200     206250       812250 
+A/C does 
+not exist 10991250 1770750 688500 1408050     44550       238500 
+A/C 
+Dormant 540000 101250 33750 9450               
+A/C Frozen 23203125 6358500 1158750 1495800     42900       265500 
+Other 14573375 3523500 873000 1534950     112200       315000 
+Success 22426686860 9605746625 2274210625 1848510450 63000 70875 126914700 501750 425250 241875 552622500 
+Total 120677138427 52941841747 12209448800 8819965500 371000 79875 567565100 2402450 2129950 841875 2809381850 
+Grand Total 198031166574 
+ 
+ 
+ 
+
+Performance Audit on Direct Benefit Transfer  
+49 
+Annexure II 
+(Reference: Paragraph 2.2 (B); page 16) 
+Time taken for transactions  
+Delay Range Wise Number of Transactions along with Pension Amount  
+Year Delay in No. of days Number of Transactions Pension amount 
+2017 5-10 90,00,514 14,61,34,60,200 
+11-30 18,92,978 3,00,99,83,300 
+31-90 12,785 2,02,16,900 
+91-365 5,887 92,76,700 
+366-500 25 43,000 
+2018 5-10 1,14,11,576 20,87,27,84,100 
+11-30 31,74,540 5,75,66,54,100 
+31-90 24 42,500 
+366-500 81,702 14,60,16,000 
+2019 5-10 1,04,39,900 20,75,33,00,068 
+11-30 19,64,387 3,87,21,76,199 
+31-90 3,542 69,68,800 
+91-365 1,919 37,03,900 
+2020 5-10 37,59,780 8,43,16,77,344 
+11-30 4,42,105 99,28,57,074 
+31-90 11,560 2,58,49,650 
+91-365 3,252 73,07,550 
+Grand Total 4,22,06,476 78,52,23,17,385 
+ 
+ 
+
+ Appendices 
+50 
+Annexure III 
+(Reference: Paragraph 2.3; page 18) 
+Delay in passing intended benefits due to late enrolment of beneficiaries  
+Details of range of delay in enrolment of BPL beneficiaries 
+  
+Delay Range in Years wise number of 
+enrolments   
+District Name 1-5 6-10 11-20 21-40 Total 
+FARIDABAD 4,777 1525 507 34 6,843 
+SONIPAT 4,801 1289 242 15 6,347 
+KARNAL 3,889 1102 307 25 5,323 
+HISAR 4,474 601 155 16 5,246 
+PALWAL 3,850 856 204 17 4,927 
+YAMUNANAGAR 3,627 824 207 25 4,683 
+JIND 3,550 641 187 12 4,390 
+KAITHAL 3,138 648 216 23 4,025 
+AMBALA 3,058 581 150 19 3,808 
+MAHINDERGARH 3,096 494 70 5 3,665 
+PANIPAT 2,834 597 164 20 3,615 
+KURUKSHETRA 2,881 530 122 11 3,544 
+SIRSA 2,919 481 107 13 3,520 
+FATEHABAD 2,757 513 141 11 3,422 
+REWARI 2,418 326 49 12 2,805 
+ROHTAK 2,046 419 90 11 2,566 
+BHIWANI 2,055 325 66 9 2,455 
+JHAJJAR 1,671 294 64 19 2,048 
+GURUGRAM 1,344 352 73 13 1,782 
+MEWAT 1,080 296 69 4 1,449 
+CHARKHI DADRI 1,070 166 41 4 1,281 
+PANCHKULA 652 109 57 5 823 
+Grand Total     78,567 
+ 
+
+Performance Audit on Direct Benefit Transfer  
+51 
+Annexure IV 
+(Reference: Paragraph 2.9; page 26) 
+Pension disbursed to multiple beneficiaries on    same Aadhaar Number  
+Pension Type Number of Beneficiaries Amount Transferred 
+Old Age Samman Allowance 16,917 10,89,93,600 
+Widow Pension 6,766 4,32,88,000 
+Disability Pension 1,451 94,67,200 
+Grand Total 25,134 16,17,48,800 
+ 
+ 
+ 
+ 
+ 
+
+Glossary 
+
+Glossary 
+53 
+Glossary of Abbreviations 
+APBS Aadhaar Payment Bridge System 
+BDPO  Block Development and Panchayat Officer  
+BPL  Below Poverty Line  
+CBS  Core Banking Solution  
+CIDR  Central Identity Data Repository  
+CS  Central Sector Scheme  
+CPSMS 
+CPCC 
+ 
+Central Plan Scheme Monitoring System 
+Centralised Pension Processing Cell 
+CSC  Common Service Centre  
+CSS  Centrally Sponsored Schemes  
+DBT  Direct Benefit Transfer  
+DSWO  District Social Welfare Officer  
+e- Governance  Electronic Governance  
+EBT  Electronic Benefit Transfer  
+e-Disha  EPS  Electronic District Haryana   
+Electronic Payment Summary 
+GoI Government of India 
+ICT  Information and Communication Technology  
+IDEA Interactive Data Extraction and analysis 
+IGNDPS Indira Gandhi National Disability Pension Sc heme 
+IGNOAPS Indira Gandhi National Old Age Pension Sche me 
+IGNWPS Indira Gandhi National Widow Pension Scheme 
+IMPS Immediate Payment Service 
+MC Municipal Councillor 
+MMPSY Mukhya Mantri Parivar Samridhi Yojna 
+MoU Memorandum of Understanding 
+NACH National Automated Clearing House 
+NIC National Informatics Centre 
+NPCI 
+NSAP 
+National Payments Corporation of India 
+National Social Assistance Programme 
+
+Performance Audit on Direct Benefit Transfer 
+54 
+PFMS Public Financial Management System 
+RBI  Reserve Bank of India  
+RGI Registrar General of India 
+RTS Right to Service 
+SARAL 
+ 
+SFTP 
+Simple, All Inclusive, Real Time, Action Oriented, Long 
+lasting  
+Secure File Transfer Protocol 
+SJE Social Justice and Empowerment 
+SOP Standard Operating Procedure 
+SRS System Requirement Specification 
+UIDAI 
+URS 
+WP 
+XML 
+Unique Identification Authority of India 
+User Requirement Specification 
+Writ Petition 
+Extensible Markup Language 
+ 
