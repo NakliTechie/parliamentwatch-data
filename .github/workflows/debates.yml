@@ -27,9 +27,15 @@ on:
       lok_sabhas:
         description: 'LS terms to walk (CSV, default = LS-14..18 to match DRSC depth)'
         default: '14,15,16,17,18'
+      rs_sessions:
+        description: 'RS sessions to walk (CSV, "all" for full backfill, default = 2 most recent)'
+        default: ''
       max_extractions:
-        description: 'Max records to extract this run. Keep ≤50 per Politeness policy.'
+        description: 'Max LS records to extract this run. Keep ≤50 per Politeness policy.'
         default: '50'
+      max_rs_extractions:
+        description: 'Max RS PDFs to extract this run. Keep ≤25 per Politeness policy (PDFs are heavier than LS HTML).'
+        default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap (seconds)'
         default: '900'
@@ -67,13 +73,15 @@ jobs:
         # Derived files owned by debates-derive.yml. See CONV.md
         # "Split-phase scraping pattern".
         env:
-          BUILD_PHASE:             'extract'
-          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '14,15,16,17,18' }}
-          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '50' }}
-          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
-          EXTRACT_WORKERS:         '4'
-          JITTER_MIN_MS:           '250'
-          JITTER_MAX_MS:           '500'
+          BUILD_PHASE:                'extract'
+          LOK_SABHAS:                 ${{ inputs.lok_sabhas         || '14,15,16,17,18' }}
+          RS_SESSIONS:                ${{ inputs.rs_sessions        || '' }}
+          MAX_EXTRACTIONS_PER_RUN:    ${{ inputs.max_extractions    || '50' }}
+          MAX_RS_EXTRACTIONS_PER_RUN: ${{ inputs.max_rs_extractions || '25' }}
+          MAX_RUN_SECONDS:            ${{ inputs.max_run_seconds    || '900' }}
+          EXTRACT_WORKERS:            '4'
+          JITTER_MIN_MS:              '250'
+          JITTER_MAX_MS:              '500'
         run: python build_debates.py
 
       - name: Commit and push primary changes

@@ -36,6 +36,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
@@ -105,13 +106,37 @@ _LS_RAW = os.environ.get("LOK_SABHAS", "").strip()
 LOK_SABHAS = ([int(x) for x in _LS_RAW.split(",") if x.strip()]
               if _LS_RAW else list(DEFAULT_LOK_SABHAS))
 
-# RS sessions to enumerate. Comma-separated env var. Default = all
-# sessions visible to the API (~189-270; the scraper discovers them
-# live so we don't hardcode the range). Use RS_SESSIONS=270 in
-# steady-state daily mode to only walk the current session.
-_RS_RAW = os.environ.get("RS_SESSIONS", "").strip()
-RS_SESSIONS = ([int(x) for x in _RS_RAW.split(",") if x.strip()]
-               if _RS_RAW else None)   # None = all available
+# RS sessions to enumerate. Three modes:
+#   - RS_SESSIONS unset (default): walk the 2 most recent sessions
+#     visible upstream. Steady-state mode — captures all new content
+#     (RS only accrues sittings in the current session) without
+#     re-walking the historical archive on every cron firing.
+#   - RS_SESSIONS=all: walk every session the API exposes (~82
+#     sessions, ~1,700 metadata API calls). One-shot backfill mode
+#     — use via workflow_dispatch, not via the regular cron.
+#   - RS_SESSIONS=<csv>: walk exactly those sessions. Used for
+#     targeted catch-up runs.
+#
+# Politeness motivation: a per-cron-firing full walk of all 82
+# sessions = 1,700 metadata calls × 12 cron firings/day = ~20K
+# wasted upstream calls per day at steady state. Capping to the
+# 2 most recent sessions keeps cron firings tight (~40 calls / run).
+# See plan/adding-a-new-corpus.md §"Politeness policy".
+_RS_RAW = os.environ.get("RS_SESSIONS", "").strip().lower()
+if _RS_RAW == "all":
+    RS_SESSIONS: Optional[list[int]] = None       # walk all
+    _RS_MAX = None
+    _RS_MODE = "all-sessions"
+elif _RS_RAW:
+    RS_SESSIONS = [int(x) for x in _RS_RAW.split(",") if x.strip()]
+    _RS_MAX = None
+    _RS_MODE = f"explicit={RS_SESSIONS}"
+else:
+    # Default: 2 most recent. The scraper discovers session numbers
+    # live, so we don't hardcode the latest.
+    RS_SESSIONS = None
+    _RS_MAX = 2
+    _RS_MODE = "recent-2"
 
 # Cooldown after a 429 / 403 — defensive.
 RATE_LIMIT_COOLDOWN_SECONDS = int(os.environ.get("RATE_LIMIT_COOLDOWN_SECONDS", str(6 * 3600)))
@@ -238,12 +263,12 @@ def walk_rs_and_merge(existing: dict[str, list[dict]]) -> tuple[dict[str, list[d
     """Walk RS sessions, merge into existing reports.json. Returns
     (merged_reports, walk_stats, walked_sessions_set).
     """
-    print(f"[Walk RS] sessions={'all available' if RS_SESSIONS is None else RS_SESSIONS}...")
+    print(f"[Walk RS] mode={_RS_MODE}, max_sessions={_RS_MAX}, explicit={RS_SESSIONS}...")
     t0 = time.time()
     fresh_rs: dict[tuple[int, str], dict] = {}
     walked_sessions: set[int] = set()
     try:
-        for rec in walk_rajyasabha(sessions=RS_SESSIONS):
+        for rec in walk_rajyasabha(sessions=RS_SESSIONS, max_sessions=_RS_MAX):
             walked_sessions.add(rec.session_number)
             key = (rec.session_number, rec.date_iso)
             if key in fresh_rs: continue
