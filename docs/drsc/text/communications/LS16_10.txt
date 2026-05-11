@@ -1,0 +1,2059 @@
+1 
+ 
+STANDING COMMITTEE ON 
+INFORMATION TECHNOLOGY 
+(2014-15) 
+ 
+ 
+ 
+SIXTEENTH LOK SABHA 
+ 
+ 
+ 
+MINISTRY OF COMMUNICATIONS & INFORMATION TECHNOLOGY 
+(DEPARTMENT OF POSTS) 
+ 
+ 
+ 
+ 
+IT INDUCTION AND MODERNIZATION IN THE DEPARTMENT OF POSTS 
+ 
+ 
+ 
+TENTH REPORT 
+ 
+ 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT 
+NEW DELHI 
+ 
+August, 2015/Shravana, 1937 (Saka) 
+ 
+ 
+ 
+10 
+
+
+2 
+ 
+TENTH REPORT 
+ 
+STANDING COMMITTEE ON 
+INFORMATION TECHNOLOGY 
+(2014-15) 
+ 
+ 
+(SIXTEENTH LOK SABHA) 
+ 
+ 
+MINISTRY OF COMMUNICATIONS & INFORMATION TECHNOLOGY 
+(DEPARTMENT OF POSTS) 
+ 
+ 
+IT INDUCTION AND MODERNIZATION IN THE DEPARTMENT OF POSTS 
+ 
+ 
+Presented to Lok Sabha on 7 August, 2015  
+Laid in Rajya Sabha on 7 August, 2015 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT 
+NEW DELHI 
+ 
+ 
+ 
+August, 2015/Shravana,1937 (Saka) 
+ 
+ 
+ 
+
+
+3 
+ 
+  
+CONTENTS 
+ 
+  PAGE NO.. 
+ COMPOSITION OF THE COMMITTEE (ii) 
+ ABBREVIATION (iii) 
+ INTRODUCTION (iv) 
+ PART I  
+ REPORT  
+ Introductory 
+ 
+1 
+a.  Genesis and need of IT Induction and Modernization in the 
+Department of Posts 
+1 
+b.  Financial Inclusion in rural areas of the country through IT 
+Induction Project 
+6 
+c.  Transparent delivery of social security schemes, including DBT 
+through IT Project 
+7 
+d.  Improved decision making by Department of Posts 7 
+e.  Launch of new projects/services after successful roll -out of IT 
+Project 
+7 
+f.  Challenges in roll-out of IT Induction and Modernization Project 8 
+g.  Allocation/Utilization of funds under the IT Project 9 
+h.  Role of Software Development Centre, Mysore in IT Project 
+ 
+14 
+i.  Task Force on Leveraging India‟s Post Office Network – Key 
+Recommendations relating to IT Project 
+14 
+j.  Focus on Banking, Insurance and e-Commerce 19 
+k.  Data Centre Facility (DCF) and Disaster Recovery Centre (DRC) 
+ 
+20 
+l.  Need to reorient the Workforce to function in an IT enabled 
+environment  
+21 
+m.  Project Governance Structure  
+ 
+22 
+ PART II  
+ 
+ 
+OBSERVATIONS/RECOMMENDATIONS  23 
+ ANNEXURES 
+ 
+ 
+  I. Minutes of the sitting of the Committee held on 11th November, 2014 
+ 
+ 37 
+II.* Minutes of the sitting of the Committee held on 5th August, 2015  
+ 
+* Minutes not Appended in the cyclostyled copy. 
+ 
+
+4 
+ 
+COMPOSITION OF THE STANDING COMMITTEE ON INFORMATION TECHNOLOGY (2014 -15) 
+  
+ Shri Anurag Singh Thakur     -  Chairperson  
+Lok Sabha 
+2. Shri L.K. Advani 
+ 3. Shri Prasun Banerjee 
+4. Dr. Sunil Baliram Gaikwad 
+* 5. Dr. K.C. Patel 
+ 6. Shri Hemant Tukaram Godse 
+  7. Dr. Anupam Hazra 
+8. Dr. J. Jayavardhan 
+9. Shri P. Karunakaran 
+10. Shri Virender Kashyap 
+11. Shri Harinder Singh Khalsa 
+12. Smt. Hema Malini 
+13. Shri Keshav Prasad Maurya 
+  14. Ms. Mehbooba Mufti  
+15. Shri Paresh Rawal 
+16. Dr. (Smt.) Bhartiben Dhirubhai Shiyal 
+17. Shri Abhishek Singh 
+18. Shri D.K. Suresh 
+19. Shri Ramdas C. Tadas 
+20. Smt. R. Vanaroja 
+@21. Shri Raosaheb Danve Patil 
+Rajya Sabha 
+ 22. Shri Javed Akhtar 
+23. Shri Salim Ansari 
+24. Smt. Jaya Bachchan 
+ 25. Shri Vijay Jawaharlal Darda 
+26. Shri Santiuse Kujur 
+ 27. Shri Derek O‟Brien 
+28. Dr. K.V.P. Ramachandra Rao 
+  29. Shri Sachin Ramesh Tendulkar 
+ 30.  Mahant Shambhuprasadji Tundiya 
+# 31.  Shri Meghraj Jain 
+ Secretariat 
+1. Shri K. Vijayakrishnan              Additional Secretary 
+2. Shri J. M. Baisakh Director 
+3. Shri Abhishek Sharma Executive Assistant 
+ 
+         *    Nominated to the Committee w.e.f. 11.09.2014 vice Shri Feroze Varun Gandhi, M.P., vide   Bulletin Part – II w.e.f. 
+11.09.2014. 
+@ Nominated to the Committee w.e.f 15.07.2015 vide Bulletin Part-II dated 17.07.2015 
+#  Nominated to the Committee w.e.f. 14.01.2015 vide Bulletin Part – II dated 16.01.2015. 
+ 
+(ii) 
+
+5 
+ 
+ ABBREVIATIONS 
+BPM Branch Post Master 
+CBS Core Banking Solution 
+CEPT Centre for Excellence in Postal Technology 
+CICs Commercially Important Clients 
+CIM Customer Interaction Management 
+CM Change Management 
+CoD Cash on Delivery 
+CPCS Circle Processing Centers 
+CSC Common Service Center 
+CSI Core System Integrator 
+DBT Direct Benefit Transfer 
+DC Data Center 
+DCF Data Center Facility 
+DoP Department of Posts 
+DPR Detailed Project Report 
+DRC Disaster Recovery Center 
+EoI Expression of Interest 
+FSI Financial Services Integrator 
+IVR Interactive Voice Response 
+LAN Local Area Network 
+MIS Management Information System 
+MNOP Mail Network Optimization Project 
+MOH Mail Operation Hardware 
+MoU Memorandum of Understanding 
+NI Network Integrator 
+NPCI National Payments Corporation of India 
+PBI Post Bank of India 
+PLI Postal Life Insurance 
+RFPs Request for Proposals 
+RH Rural Hardware 
+RICT Rural Information Communication & Technology 
+RPLI Rural Postal Life Insurance 
+RSI Rural System Integrator 
+WAN Wide Area Network 
+(iii)
+
+6 
+ 
+ INTRODUCTION 
+ 
+I, the Chairperson, Standing Comm ittee on Information Technology (2014-2015), 
+having been authorised by the Committee , do present the Tenth Report on the subject 
+„IT Induction and Modernization in the Department of Posts ‟ relating to the Mini stry of 
+Communications and Information Technology (Department of Posts). 
+2.  The Committee took evidence of the representatives of the Ministry of 
+Communications and Information Technology (Department of Posts) on                     
+11th November, 2014.  
+3. The Committee wish to express their thanks to the representatives of the 
+Department of Posts  for appearing before the Committee for evidence and furnishing 
+information desired by the Committee in connection with the issues relating to the 
+subject. 
+4. The Report was considered and adopted by the Committee at their sitting held on 
+5th August, 2015. 
+5. The Committee also place on record their appreciation for the valuable assistance 
+rendered to them by the Officials of Lok Sabha Secretariat attached to the Committee. 
+6.  For facility of reference and convenience, the Observations/Recommendations of 
+the Committee have been printed in bold letters in Part-II of the Report. 
+ 
+ 
+ 
+ANURAG SINGH THAKUR, 
+New Delhi                                                           Chairperson, 
+ 5 August, 2015                                             Standing Committee on 
+14 Shravana, 1937 (Saka)                                                Information Technology. 
+ 
+ 
+ 
+ 
+(iv)
+
+1 
+ 
+ 
+REPORT 
+ 
+PART-I 
+ 
+Introductory 
+ 
+The IT Modernization Project in the Department of Posts aims at modernization and 
+computerization of all post offices in the country , including more than 1,30,000 branch 
+post offices in rural areas. It is an ambitious transformation project undertaken by the 
+Department. By setting up an IT infrastructure spanning all post offices, including branch 
+post offices in rural areas, the Department will be able to harness the benefits of 
+consolidated real time information and capabilities across various functional silos as well 
+as geographical reach. The transformation  of the physical network to a digital network 
+will also provide a national asset for all users , apart from post offices , including various 
+Government Departments, business houses and citizens to use the IT enabled country 
+wide network for communication, ba nking, insurance and service delivery nee ds with 
+transaction data.  The P roject will create a national asset of 1, 55,000 networked post 
+offices. This mega IT driven transformation is the first of its kind undertaken by any 
+postal operator in the world as well as by any Government Department in the country. It 
+involves development of scalable, integrated and modular software covering all 
+operations of the Department of Posts, including Post O ffice Savings Bank, Postal Life 
+Insurance, Mail Operations , along w ith the establishment of the required IT 
+infrastructure, including Data Centre, Disaster Recovery Centre, WAN Networking of the 
+Departmental Post Offices, development of rural information  communication technology 
+(Rural ICT) in rural post offices and prov iding rural post offices with  handheld devices 
+which are „Aadhaar‟ enabled  and will also act as micro -ATMs, besides transacting PO 
+Savings. This Project will equip  the Departme nt of Posts to play a more  pro active role 
+towards transforming the rural eco nomic landscape in the country, in addition to  
+providing  value added mail and financial services to the urban customers.  
+a. Genesis and need of IT Induction and Modernization in the Department of 
+Posts 
+ 
+2. During the early 1990s, with the advent of technology that led to electronic 
+substitution of mail, introduction of core banking and easy accessibility to mobile and 
+internet based services, the Department of Posts started inducting technology by way of 
+
+2 
+ 
+supplying Hardware to Post Offices and implement ing standalone software solutions for 
+various operations in a LAN based environment. A software development centre was set 
+up at Mysore to cater to the needs of the Post Offices.  
+ 
+3. To improve  the quality of its services in line with  the public expectations and 
+competition, it was necessary to upgrade technology in Post Offices for providing  the 
+best in -class products and services at par with global standards. For achieving this 
+vision, the Department decided to improve an d augment their IT  infrastructure and 
+introduce a new integrated software platform for their operations through an end-to-end 
+IT Project. The India Post IT Project was  designed to realize the vision and t he Project 
+was approved by the Government  with a to tal outlay of Rs. 4909 crore in November 
+2012. 
+ 
+4. The entire scope of the India Post 2012 Project has been structured into the 
+following eight  streams which were to be implemented through eight Request For 
+Proposals: 
+  
+# Project Scope 
+1 Data Center 
+Facility (DCF) 
+Hosting of Primary Data Center (DC) & building the 
+Disaster Recovery Center (DRC) for the Department of 
+Posts 
+2 Network 
+Integrator (NI) 
+Provide connectivity for each departmental post office 
+location from 2 different network service providers in 
+order to ensure  uninterrupted network connectivity 
+(~ 28,000 locations) through one single WAN.  
+3 Financial 
+Services 
+Integrator (FSI) 
+ Implementation of   the solutions for Core 
+Banking in all departmental Post Offices. 
+ Implementation of   the solutions for Postal Life 
+Insurance. 
+ Provide  Multiple delivery channels - internet,  
+Interactive Voice Response (IVR), Mobile, ATM & 
+SMS 
+4 Core System 
+Integrator (CSI) 
+Implementation of  the solutions for  Mail Operation, 
+Retail, Logistics Post, Philately, Finance & Accounts & 
+Human Resources and integration with other SIs 
+5 Change 
+Management 
+(CM) 
+To prepare the work force for the complete change in 
+Department‟s working after the implementation of the 
+IT project. 
+6 Rural Hardware 
+(RH) 
+Providing connectivity, hardware & solar power panels 
+to extra departmental Rural Post Offices. 
+7 Rural System 
+Integrator (RSI) 
+Implementation of the solution for integrating all the 
+FSI/CSI applications to the Branch Offices. 
+8 Mail Operation Providing Handheld devices to delivery Postman 
+
+3 
+ 
+Hardware (MOH) and Providing Hardware for Mail offices 
+ The earlier programmes of induction of technology and computerization of Post 
+Offices and introduction of core banking for post office saving bank operations were 
+merged in this new project. 
+ 
+5. To a query as to  how the IT Induction &  Modernization Project will improve the 
+overall functioning of the postal department such as increased revenue and reduced 
+operation cost, the Department,  in a note, stated:- 
+ “Faster and more reliable services in postal, logistics, banking, insurance and 
+retail operations thus improving service delivery to customers. 
+ Bringing Financial/banking services to the doorsteps of the customers through 
+multiple delivery channels like internet, mobile banking, ATMs, telephone, etc. 
+ All WAN locations are equipped wit h primary and secondary bandwidth 
+connectivity. Hence, if the primary link is down, the availability of secondary link 
+ensures immediate restoration of seamless connectivity. 
+ Simplification of processes and almost immediate transfer of accounts and 
+certificates. 
+ No data entry required for the reporting SOs and BOs. 
+ ATMs would be installed at HOs and high-volume SOs.  
+ “Anytime Anywhere Banking” through multiple channels, e.g. Internet, ATM and 
+mobile.  
+ Interoperability with other banks/Financial Institutions 
+ Improved MIS and reporting leading to efficient controls, monitoring & planning 
+ Potential new services possible leading to Growth of Business.  
+ Improved & timely administrative services with centralised and accurate employee 
+information. 
+ Efficiency in inventory management & procurement.  
+ Reduction in operational times and costs.  
+ Technology will enable better services & hence more customers.” 
+ 
+6. On the likely tangible and measurable benefits to an average customer who avails 
+the services offered by the Department of Posts after implementation of the lT Induction 
+and Modernization Project, the Department informed as under:- 
+ 
+ "Multiple channels of access to the customers through Post Office counters, 
+internet, mobiles, call centres and ATMs, etc. 
+ Faster and more reliable services in postal, logistics, banking, insurance and 
+retail operations. 
+ New products and services, e.g. NEFT, RTGS, bill payments, 3rd party 
+products. 
+ “Anytime Anywhere Banking” through multiple channels, e.g. Internet, ATM 
+and mobile. 
+ Debit cards for Post Office Savings Bank account holders. 
+
+4 
+ 
+ Better financial inclusion for the common man in the rural and semi -urban 
+locations through mobile remittances, mobile banking, mobile insurance , 
+etc.  
+ Better visibility of various articles in the mail s tream by upgrading the track 
+and trace facility and introducing SMS alerts 
+ Improved customer satisfaction due to faster and more reliable services in 
+mails, banking, insurance and money remittance/transfer operations.  
+ Availability of information on real time basis. 
+ Transparency in financial services by introducing core banking and core 
+ insurance  solutions. 
+ Effective and transparent delivery of the social security and 
+ employment guarantee  schemes by the Government. 
+ Improvements in service level for transfer of accounts and certificates. 
+ Potential new services possible due to induction of RICT solution”. 
+ 
+Status of implementation of the IT Project  
+ 
+ 7. The Project is being implemented through eight different RFPs, the status 
+being as under:- 
+SL 
+NO. 
+NAME OF THE           
+SEGMENT 
+                            STATUS AS ON 20-03-15 
+1 Change Management  
+(CM ) 
+RFP process completed and work awarded. 
+Implementation started on 15 -10-12. Training 
+activities are in progress. Training is  concurrent 
+with the implementation of various other streams 
+of the Project.  
+2 Data Centre Facility 
+(DCF) 
+RFP process completed and work awarded. Data 
+Centre is operational w.e.f. 3 rd April 2013 at Navi 
+Mumbai. 
+Disaster Recovery 
+Centre (DRC) 
+Civil work completed. Site Acceptance Test of 
+DRC is completed. Operation to start shortly  
+3 Financial Services 
+Integrator (FSI) 
+RFP process completed and work awarded. 
+Implementation started on 28-09-12. 
+Pilot Roll out of Core Banking (CBS) and Life 
+Insurance (PLI) - Completed. 
+So far, 2148 POs for CBS and 7026 Post Offices 
+for CIS have been migrated. ATM Services - 
+installed and commissioned at 11 Post Offices.  
+Circle Processing Centers (CPC s) have been 
+commissioned in all the 22 Circles.  
+4 Network Integrator 
+(NI) 
+RFP process completed and work awarded. 
+Implementation started on 28-09-12. So far, 27095 
+locations out of ~28000 have been net worked on a 
+single Wide Area Net work (WAN). 
+
+5 
+ 
+5 Core System 
+Integrator (CSI) 
+RFP process completed and work awa rded. 
+Implementation started on 15 -04-13. Installation 
+and commissioning of Central Hardware 
+completed.  Detail Design Documents has been 
+completed. User acceptance t esting of common 
+infrastructure solution completed .  UAT  cycle II 
+for Human Resource, Mail Operations and Finance 
+& Accounts completed on 06-12-14. Roll out is in 
+progress. 
+6 Rural Hardware (RH) RFP process completed. Contract signed with the 
+Vendor   on 24 -11-14. Commissioning of RH 
+devices will start during this year. 
+7 Rural System 
+Integrator (RSI) 
+RFP process completed and work awarded. 
+Contract signed on 28 -02-13. Implementation in 
+alignment with Rural Hardware (RH)   
+8 Mail Operation 
+Hardware (MoH) 
+RFP process completed. The successful bidder M/s 
+HCL Info systems Ltd expressed in ability to sign 
+the contract. LoI annulled on 26 -09-14 and M/s 
+HCL Info system has been blacklisted for 5 years 
+on 25 -11-14. Action is being taken for 
+procurement of Mail Operations Hardware through 
+DGS&D Rate Contract  after approval of 
+competent authority.” 
+ 
+ 
+8. The achievements in respect of the on-going components of the scheme during 
+the Eleventh Plan are as follows:- 
+ 
+ Department of Posts  has the largest network in the country with over 27000 
+offices connected to Data Centre on WAN 
+ Data Centre Facility functional, Disaster Recovery Center to be ready soon 
+ 2148 Post Offices are working on core banking  
+ 7026 Post Offices are working on core insurance service 
+ Core Operations: Email, ESB and SMS Gateway rolled out.  
+ 
+9. The tentative timelines for i mplementation of the various components of the lT 
+Induction and Modernization Scheme for the entire Twelfth Five Year Plan are as 
+follows:- 
+ 
+# Project Timeline 
+1 Data Center Facility (DCF) operational 
+in respect of Data Recovery Centre (DRC)  
+ 
+June 2015 
+2 Network Integrator (NI) in remaining 
+locations 
+June 2015 
+
+6 
+ 
+3 Financial Services Integrator (FSI) June 2016 
+4 Core System Integrator (CSI) June 2016 
+5 Change Management (CM) October 2015 
+6 Rural Hardware (RH) March 2017 
+7 Rural System Integrator (RSI) March 2017 
+8 Mail Operation Hardware (MOH) March 2016 
+ 
+  
+10. On whether the Network Integrator (NI) will also provide connectivity to extra -
+departmental/rural post offices, the Committee have been  informed that NI is not 
+providing connectivity to Extra Departmental Post Offices.  The computerization of extra-
+departmental/rural post offices will be done through handheld mobile devices working on 
+SIM. The Rural Hardware vendor will provide the connectivity to these mobile handheld 
+devices. 
+  
+b. Financial Inclusion in rural areas of the country through IT Induction 
+Project 
+ 
+ When asked about the multiple channels of access available to the customers 
+after roll -out of the IT Modernization Project, the Department stated that 
+multiple types of access would be a vailable to the customers for getting 
+information, availing services and for redressal of grievances. The channels 
+which have been provisioned in the IT Modernization Project  related to 
+Customer Interaction Management Portal (CIM) , Interactive Voice Respon se 
+(IVR), Call Centre, ATM, e-Banking, Mobile phones, Post office counters , and 
+Payment gateway. 
+ 
+11. Asked as to  how the Project is likely to improve financial inclusion , especially in 
+rural areas of the country, the Department, in a note, submitted as under:- 
+ 
+“The implementation of Rural ICT Solution (RH & RSI) and Core Banking 
+Solution (CBS) will enable Department of Posts to rollout DBT through a 
+network of 1.55 Lakh Post Offices in rural as well as urban Post Offices. Rural 
+post offices will be enabled with a Hand Held device with biometric identification 
+and Micro ATM enablement, wireless network, thermal printer to provide 
+immediate receipts to customer and solar powered battery to charge and 
+operate the Micro ATM. 
+ 
+The Rural Information Communication &  Technology (RICT) involves 
+computerization and digitally connecting all the Gramin Dak Sewak Post Offices, 
+including those in rural areas. The objective is to provide a technology solution 
+(ICT Device) to each Branch Postmaster (BPM) which will enable eac h of 
+
+7 
+ 
+approximately 130,000 Branch Post Offices (BOs) to improve the quality of 
+services being offered to rural customers. It will increase the rural reach of the 
+Department and enable Branch Post Offices to increase traffic of all financial 
+remittances, savings accounts, cash certificates and Rural Postal Life Insurance 
+(RPLI). This is being enabled through the Rural System Integrator (RSI) and 
+Rural Hardware (RH) solutions.  
+ 
+The ease of of transactions will encourage rural citizens to avail the services o f 
+Post Offices thereby having a positive impact on the rural economy , besides 
+improving financial inclusion.”   
+ 
+c. Transparent delivery of social security schemes, including DBT through IT  
+Project 
+ 
+12. The Committee enquired as to how the lT Induction and Modernization of Post 
+Offices is likely to lead to transparent delivery of social security schemes , including 
+Direct Benefit Transfer (DBT) . The Department stated that the disbursement of Social 
+Security Scheme shall be done through biometric identificatio n using the mobile hand 
+held devices. That will not only lead to transparency but shall also reduce the number of 
+complaints of wrong payment and fraudulent transactions , besides eliminating the 
+middlemen in the system. Online monitoring shall also be fast er and without any 
+manipulation. 
+d. Improved decision making by Department of Posts 
+ 
+13. The Committee have been informed that the Department ‟s decision making 
+process will be facilitated in the following manner after roll -out of the Modernisation               
+Project :- 
+ 
+ Implementation of IT Modernization Project will improve the visibility in day -to-
+day operations and enable real-time interventions in case of operational problems, 
+e.g. mail movements. 
+ Automatic data updation will enable verified data/report availability/generation  
+ Operational planning and decision making will be facilitated by availability of 
+reliable and up-to-date data.   
+ Efficiencies in Inventory Management and Procurement. 
+ Financial monitoring/planning will be easier. 
+ Human Resource Management will improve. 
+ 
+e. Launch of new products/services after successful roll-out of IT Project 
+ 
+14. The new products/services proposed to be offered by the Department after roll -
+out of IT Induction and Modernization Project are as follows:- 
+ 
+
+8 
+ 
+1. Exponential growth in e-Commerce riding on seamless track & trace, including 
+returns, and immediate remittance of collections on delivery.  
+2. e-Commerce(give orders/view commodity rates) 
+3. Utility Bill payments- phone/electricity, etc. 
+4. Commission/Fee Collection Booking and reservation of train ticket & air tickets 
+5. Data for other organisations 
+6. Distribution of social security benefits 
+7. Common Service Centre services.” 
+ 
+f. Challenges in roll-out of IT Induction and Modernization Project 
+ 
+15. The following are the major problems/challenges being faced in the roll -out of the 
+IT Induction and Modernization project across different postal circles of the Department: 
+ 
+ Public procurement process in Government of India is time consuming 
+and Department‟s experience has been that in some cases (e.g. MOH & 
+RH), when the selected vendor decided not to take up the work, the 
+Project suffered major delays. 
+ Availability of telecom network connectivity in the country , particularly 
+in the areas like No rth East, Chhatti sgarh, Uttarakhand, Ladakh and 
+Island territories.  
+ Pan-India geographical spread 
+ 25,000 Departmental POs and approximately 130,000 BOs.  
+ Migration from almost 56 stand -alone applications presently being used 
+in the Department to an integrated IT platform. 
+ Managing a workforce of almost 4.66 la kh persons, who have been 
+working in a manual environment all through their service tenure. 
+ 
+16. When asked about how the Department propose to meet those challenges, 
+the Department stated that they have developed a focused and time-bound plan to 
+meet the aforesaid challenges. These are enumerated below:  
+ 
+ Change Management vendor is working for creation of a new work 
+culture. 
+ Training is being imparted to employees working at all levels. 
+ The processes are being simplified so that manual processes are not 
+replicated in an IT environment. 
+ A large number of Rules and procedures have been simplified and 
+brought in sync with the new IT working environment 
+ Project Monitoring Units have been set up right up -to the Divisional 
+levels (district level) in order to implement the Project in a synchronized 
+manner. 
+ 
+ 
+
+9 
+ 
+ 
+g. Allocation/Utilization of funds under the IT Project 
+ 
+17.  The Project is an important scheme of the Department of Posts that got the 
+maximum outlay of Rs. 3046.75 crore amongst all the schemes for the Twelfth Five 
+Year P lan. The detail s of allocation relating to IT Induction and Modernization 
+Scheme for the past four years and 2014-15 are as follows: 
+ 
+Sl 
+No 
+Year Proposed 
+allocation 
+BE RE Actual 
+Exp 
+% of 
+Achievement 
+when 
+compared 
+with BE 
+1 2010-11 600.66 414.97 210.90 188.88 45.52 
+2 2011-12 917.97 676.41 196.82 164.40 24.31 
+3 2012-13 1437.28 516.00 109.36 26.13 5.06 
+4 2013-14 842.01 532.21 295.74 254.85 
+(up to 
+March, 
+2014) 
+47.88 
+5 2014-15 1910.18 506.39 --  ---- 
+ 
+18. Enumerating the reasons for reduction of funds from BE to RE stage for all the 
+years beginning from 2010 -11 in the I T I nduction and Modernization scheme and its 
+impact on the implementation of the Project, the Department submitted as under:- 
+ 
+“Delay in finalization of some RFPs as well as award of work due to unforeseen 
+reasons from 2010 -11 to 2012 -13, led to reduced utilization of allotted Plan 
+funds.  Detailed reasons for delay in operationalization of R FPs under the IT 
+Modernisation Project are explained below:- 
+ 
+(i) The IT Modernisation Project is a project involving public procurement of 
+hardware and software for 1,55,000 post offices along with mail, 
+accounts, administrative, motor vehicle and store depot offices. The 
+process of finalization of RFP is complex and time consuming. 
+ 
+(ii)  Because of the complexity and dimensions of the work involved, which 
+is unparalleled, the work was split up into 8 silos for implementation 
+through 8 RFPs. However, the eight  RFPs are inter -dependent. 
+Finalization of one RFP would not lead to the completion of one 
+functionality/silo. E.g. RSI could not start till RH had been on-boarded. 
+ 
+(iii)  Two vendors, M/s Sai in case of RH and M/s HCL India Ltd . in case of 
+MOH, did not c omplete the formalities for signing the contract even 
+
+10 
+ 
+after being finally selected. In case of RH , it led to re -tendering twice 
+and consumed a lot of time. 
+ 
+(iv) The Department has nominated cross -sectional committee members 
+from DIT/NIC and experienced em inent resource persons from various 
+IITs/IIITs in all the RFP management committees, in order to gain from 
+their expertise and domain knowledge. RFP meetings had to be 
+convened as per their schedule to ensure their presence. This process 
+has affected the t ime lines of the RFP committee meetings on 
+deliberation, evaluation of RFPs and their finalisation. 
+ 
+(v) Due to the complex nature of RFPs many queries and clarification s were 
+sought by the bidders to understand and to prepare the bid documents. 
+Accordingly, last date of submission of bid documents ha d been 
+extended several times in almost all RFPs to give ample opportunity to 
+ensure maximum participation of bidders. 
+ 
+(vi)    Many clarifications were sought during pre -qualification and technical 
+evaluation stages by the RFP Management Committees. Bidders had to 
+be given reasonable time to answer and provide additional documents to 
+ensure fair and transparent evaluation of bids, which were a must 
+process and could not have been over looked or cut short or eli minated 
+and were absolutely necessary to ensure a complete, transparent and 
+comprehensive evaluation process. This , however, caused considerable 
+delay in evaluation of RFPs. 
+ 
+(vii)  Some complaints were received by the Department regarding certain 
+aspects of the Project. For a certain period, the P roject was on hold 
+when the complaints were being examined. The issues were ex amined 
+at higher level and the P roject could be moved forwar d only after the 
+complaints were closed.  
+ 
+19. The financial details of P lan schemes in lT Induction and Modernization are as 
+under:- 
+S.No.  Particulars of 
+Scheme/Activity 
+BE 
+2012-13 
+RE 
+2012-
+13 
+Actua
+l 
+2012-
+13 
+BE 
+2013-
+14 
+RE 
+2013-
+14 
+Actual 
+2013-14 
+BE 
+2014-
+15 
+1 Supply of Mail 
+Office Hardware 
+& Rural H/W 
+140.00 
+ 
+17.90 18.15 0.02 00 00 55.01 
+2 Development & 
+deployment of 
+Rural ICT 
+solution 
+24.00 00 00 95.98 00 00 50.00 
+
+11 
+ 
+3 Development & 
+Deployment of 
+Banking and PLI 
+solution 
+100.00 30.00 00 179.0
+0 
+85.00 193.529
+* 
+86.40 
+4 Data Centre and 
+Disaster 
+Recovery Centre 
+05.00 0.46 00 13.00 4.10 4.0944 16.60 
+5 Network 
+Integration 
+100.00 34.00 00 235.2
+8 
+50.00 45.0805 159.38 
+6 Development 
+and deployment 
+of integrated 
+scalable software 
+& Change 
+Management 
+activities 
+126.00 15.00 00 0.02 143.75 00* 114.00 
+7 PMU –PPS  04.00 1.50 00 5.00 9.98 9.8932 14.00 
+  PMU- OE 12.00 9.00 0.82 1.31 1.31 1.1289    2.55 
+ PMU-FTE 01.00 00 00 0.60 0.60 0.2612    0.10 
+ PMU-TE 01.00 01.00 3.85 1.00 1.00 0.7945    1.40 
+ PMU- Tools & 
+equipment 
+03.00 0.50 0.36 1.00 00 00    6.95 
+8 Total 516.00 109.36 23.18 532.2
+1 
+295.74 254.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+78 
+506.39 
+ 
+20. The details of physic al targets and achievements of P lan schemes in lT Induction 
+and Modernization are as under:- 
+ Sl. 
+No. 
+Particulars of 
+Scheme/Activity 
+Physical Target 
+2012-13 
+Achiev
+ement 
+2012-13 
+Physical 
+Target 
+2013-14 
+Achievem
+ent 
+2013-14 
+Physical Target 
+2014-15 
+1 Supply of Mail 
+Office Hardware 
+& Rural H/W 
+Supply of H/W 
+to 49000 ED 
+BOs, 346 Mail 
+Offices, 234 
+TMOs, 336 
+Record offices, 
+146 Speed Post 
+Hubs 
+NIL Supply of 
+H/W to 
+45000 ED 
+BOs, 346 
+Mail Offices, 
+234 TMOs, 
+336 Record 
+offices, 146 
+Speed Post 
+Hubs 
+NIL Supply of Mail 
+office hardware 
+to 346 Mail 
+Offices, 234 
+TMOs, 336 
+Record offices, 
+146 Speed Post 
+Hubs and 
+postman 
+handheld 
+devices to 850 
+POs.  
+Supply of RH 
+hardware to 
+
+12 
+ 
+45000 BOs 
+2 Development & 
+deployment of 
+Rural ICT 
+solution 
+Deployment of 
+application and 
+deployment of 
+hardware 
+NIL Deployment 
+of application 
+and 
+deployment 
+of hardware 
+NIL Deployment of 
+application and 
+deployment of 
+hardware 
+3 Development & 
+Deployment of 
+Banking and PLI 
+solution 
+Deployment of 
+application and 
+deployment of 
+hardware 
+NIL Deployment 
+of application 
+and 
+deployment 
+of hardware 
+Achieved. 
+CBS in 
+124 POs 
+and PLI 
+220 POs 
+gone live. 
+Completion of 
+Phase 1 roll -
+out. 
+Operation and 
+maintenance. 
+4 Data Centre and 
+Disaster 
+Recovery Centre 
+Installation and 
+commissioning 
+of DC 
+NIL Installation 
+and 
+commissioni
+ng of DC 
+Data 
+Centre 
+commissi
+oned 
+w.e.f.  
+03-04-13. 
+DRC 
+work in  
+ 
+progress. 
+Installation and 
+commissioning 
+of DRC 
+5 Network 
+Integration 
+Networking of 
+8000 Post 
+Offices on 
+WAN 
+NIL Networking 
+of 18000 Post 
+Offices on 
+WAN 
+Achieved. 
+27095 
+locations 
+have been 
+networked  
+WAN roll out 
+in remaining 
+Post Offices. 
+ 
+6 
+ 
+Development 
+and deployment 
+of integrated 
+scalable software 
+& Change 
+Management 
+activities 
+ 
+Continuous 
+activation of 
+trainings, 
+workshop and 
+surveys, etc. 
+ 
+NIL 
+ 
+Continuous 
+activation of 
+trainings, 
+workshop 
+and surveys , 
+etc. 
+ 
+achieved 
+ 
+Continuous 
+activation of 
+trainings, 
+workshop and 
+surveys, etc. 
+7 PM Tool & 
+Equipment  
+Deployment of 
+application 
+NIL Deployment 
+of application 
+NIL Deployment of 
+application 
+  
+ 
+Implementation of Eight Requests for Proposals (RFPs) 
+ 
+21. The status/timelines for roll -out of the eight components of lT Induction and 
+Modernization Project are as follows:- 
+ 
+
+13 
+ 
+Sl 
+No. 
+Name of the segment Completion of 
+Implementation  
+Completion of Operation 
+and Maintenance 
+1 Rural System Integrator March 2017 Oct.    2025 
+2 Core System Integrator June 2016 June  2021 
+3 Financial Solution June 2016 May   2021 
+4 Data Centre & DR DC Functioning. 
+DRC –Very shortly July   2020 
+5 Network Connectivity June  2015 Dec.   2020 
+6 Rural H/W & 
+Connectivity March 2017 Oct.    2021 
+7 Mail Operation 
+Hardware March   2016 Sep.   2020 
+8 Change Management Oct.    2015 Oct.   2015” 
+ 
+  
+22. On the current status of the procurement of hardware and software under IT 
+Induction and Modernization scheme, the Department submitted as under :- 
+ 
+Sl 
+No. 
+Name of the 
+segment 
+Setting up 
+of network 
+connectivity 
+Implementing 
+agency 
+Completion of 
+Implementation  
+Completion of 
+Operation and 
+Maintenance 
+1 
+Rural System 
+Integrator  
+will be 
+completed 
+by March 
+2017 
+M/s Infosys March 2017 Oct.    2025 
+2 Core System 
+Integrator NA 
+M/s Tata 
+Consultancy 
+Services  Ltd. 
+June 2016 June  2021 
+3 Financial 
+Solution NA M/s Infosys June2016 May   2021 
+4 Data Centre & 
+DR Done 
+M/s Reliance 
+Communication 
+India Ltd. 
+DC Functioning. 
+DRC –Very 
+shortly 
+July   2020 
+5 Network 
+Connectivity 
+Completed 
+at 27095 
+locations 
+M/s  SIFY June  2015 Dec.   2020 
+6 
+Rural H/W & 
+Connectivity 
+will be 
+completed 
+by March 
+2017 
+M/s TCIL & 
+RICOH India 
+Ltd. 
+March 2017 Oct.    2021 
+7 Mail 
+Operation 
+Hardware 
+NA Through 
+DGS&D March   2016 Sep.   2020 
+8 Change 
+Management NA 
+M/s Tata 
+Consultancy 
+Services  Ltd. 
+Oct.    2015 Oct.   2015” 
+
+14 
+ 
+  
+h. Role of Software Development Centre, Mysore in IT Project 
+ 
+23. On the contribution of the Department's Software Development Centre at Mysore 
+towards the lT Induction and Modernization P roject, the Department , in a note , 
+submitted as under:- 
+ 
+“Department‟s software development centre at Mysore (Centre for Excellence 
+in Postal Technology)  had developed most of the  application software that 
+are still being used by the post offices . In addition, CEPT Mysore also housed 
+the first in-house data centre of the D epartment. The software developed by 
+CEPT is also working in the post offices of many friendly countries. 
+ 
+In addition, data sanitization work required for roll -out of Core Banking 
+Services (CBS) and Core PLI is also being done throughout the country under 
+the overall supervision of CEPT Mysore. CEPT Mysore has the following role in 
+lT Induction and Modernization Project: 
+ Knowledge Transfer of existing Applications. 
+ Assistance in roll-out and Data migration 
+ Acceptance Testing of respective solutions of all RFPs. 
+ Operation and Maintenance.” 
+ 
+i. Task Force on Leveraging India‟s Post Office Network  - Key 
+Recommendations relating to IT Project 
+ 
+24. The Department of Posts constituted a Task F orce on 21.08.2014 to study 
+and make recommendations regarding leveraging the post  office network in India.  
+The Task F orce made a total of 181 recommendations. The key recommendations 
+of the Task Force concerning IT induction and modernization domain in particular 
+are as under:  
+ 
+Para 4.2.4: As part of the IT Modernization and Rural ICT Projects, the Task 
+Force wishes to underline that the soft -ware for the Hand Held Mobile 
+Computing Devices to be made available in Branch and rural POs should be 
+versatile and universal, based on non -proprietary and open standards, 
+without being locked to any vendor or particular operating system. 
+ 
+Para 8.1.8 India Post may conduct a comprehensive study of the viability and 
+feasibility of transmitting unregistered mail through e -mail rather than 
+through physical transportation as at present. 
+ 
+Para 9 .2.12: The strategic strengths of India Post (reach of network and 
+century plus experience in delivering mail) should be aggressively leveraged 
+in the growing e -commerce and e -retail market,   particularly at the back -
+
+15 
+ 
+end of the delivery chain in rural areas s o that it becomes the premier Pan -
+India delivery service provider.  
+India Post should also leverage its unique strengths to conversely extend the 
+supply chain for products emanating from local markets and rural areas 
+(ethnic, traditional and artisanal prod ucts, handicrafts, etc.,) to all parts of 
+India and even beyond. 
+ 
+Para 9.2.16: Under the IT Modernization P roject, India Post should seek to 
+integrate its information systems with those of the major e -commerce 
+companies in order to facilitate two-way information exchange.   
+ 
+India Post should enter into Agreements and Understandings with e -
+commerce companies and online retailers to deliver their consignments and 
+collect cash on their behalf. 
+ 
+Para 9 .2.17: To support e -commerce sales, sophisticated logistics  and 
+warehouse planning, as well as robust routing and tracking & security and 
+delivery systems, should be instituted so as to allow the shipper, India Post 
+and the consumer to track the delivery and time line of the parcel on a real -
+time basis, accessible through any device or channel. 
+ 
+Para 9 .2.18: Agreements or tie -ups with e -commerce companies should 
+include a clause which will e nable the booking of product delivery through 
+India Post / Parcel at the time the product is purchased on the e-commerce 
+portal, so that the customer purchases the product and simultaneously books 
+its delivery through India Parcel. 
+ 
+India Post may seek to incorporate the above clause into its existing MOUs 
+with e-commerce retailers and also incorporate it in MOUs which it may enter 
+into in future. 
+ 
+Para 9 .2.19 India Post should set up a n e -Commerce Portal that allows 
+manufacturers, SMEs, village craftsmen, offline retailers, etc. to list and sell 
+their products.  
+  
+The India Post portal should, in particular, provide consumers from Tier II 
+and Tier  III cities access to a catalogue of goods for sale in their local 
+language, along with ratings and reviews, similar to that offered by industry -
+leading portals today. 
+   
+Agents and advertisers should also be provided access to this portal. 
+   
+The portal should have a payments gateway allowing payments through 
+credit and debit cards, the Post Office Savings Bank and RuPay cards. 
+   
+
+16 
+ 
+Para 9.2.20: Customer interaction and service channels such as Interactive 
+Voice Response (IVR) and Call Centres should be provided as required to 
+support e-Commerce activities. 
+Additionally, a mobile solution should be provided to the end -consumer to 
+track and trace a delivery across the India Parcel system, and to allow 
+scheduling of appointments for delivery of goods and services. 
+ 
+ 
+Para 9.2.23 The delivery of parcels should be de -linked from normal postal 
+services and a separate vertical link should be created from the Directorate 
+to the field with a dedicated, nodal and mechanized delivery system.  
+ 
+Parcel Kiosks should be set up at important locations and delivery staff 
+should be equipped with Hand -held Mobile Computing Devices which can 
+immediately register the delivery of parcels and log them into the tracking 
+system in real time.    
+ 
+Introduction of sa me day delivery service, return logistics, standard and 
+secure packaging at the booking point are areas where reliable systems need 
+to be put in place. 
+ 
+Para 9.2.25 Strong IT back-end support for all activities of India Post and its 
+Subsidiaries is critical and could be achieved by tying up with one of the 
+leading Indian IT Companies to develop a world class user-friendly portal.  
+  
+The portal should provide end -to-end track and trace service with 
+authentication of the loop being completed on the customer receiving 
+delivery, after sales service, key accounts management, BI tools and API 
+based integration with e-commerce players, road and rail transport agencies, 
+airlines and other freight forwarders.  
+  
+A strong online monitoring system with capabilities to diagnose and resolve 
+issues on a real time basis should be put in place with the aim of providing 
+world class customer services. 
+ 
+Para 9.2.26 A strong security system should be instituted at all levels of mail 
+and parcel service.  
+  
+In particular, the security system should ensure absolute cyber security and 
+payment security.  
+ 
+Security at parcel handling centers should be enhanced through installation 
+of CCTV Camera s with live streaming capabilities, installation of metal 
+detectors, X-ray screening, frisking, etc.    
+              
+
+17 
+ 
+Security in transit should be ensured through GPS tracking and containerized 
+movement of parcels.  
+    
+Suitable training should be provided to the security and other personnel to 
+create awareness and establish protocols of operation and standard operating 
+procedures.   
+ 
+Para 10 .2.2: The Governments of Andhra Pradesh and Telengana are 
+operating MeeSeva, an IT -based programme under whic h as many as 342 
+Services,  including both G2C and G2B services, are being facilitated 
+through a single entry  portal. India Post can also consider this model.  
+ Para 10.3.2:  Services which could potentially and usefully be added to the 
+ menu of mail and parcel services currently being offered by India Post 
+1) Post Offices can be used as Common Service Centres for: 
+i. Dissemination of  information, including  weather warnings, traffic 
+ conditions, agricultural extension practices, disease protection and 
+ prevention, good health practices, etc.;  
+ii. Promotion of digital literacy and distance education; 
+iii. Sale of railway, airline and road transport tickets; application forms for 
+ passports, driving licenses; Stamp Paper, Court Fees Stamps; 
+ Application, Examination, Name Correction and other Forms;  
+iv. Collection of electricity, water, telephone and all other bills for 
+ Government services;  
+v. Collection of payments for e -tailing goods and services on behalf of 
+ private service providers; 
+vi. Promotion of tourism by facili tating dissemination of information, 
+ booking of hotels and transport of various kinds;  
+vii. Delivery of all Government documents, including Aadhar cards, Voter 
+ ID cards, Driving Licenses, Birth, Marriage and Death certificates, Land 
+ records, etc.;  
+viii. Acceptance of challans and school and university fees;  
+ix. Sale of life, crop, accident and other types of insurance;  
+x. Collection and compilation of data on electricity services, quality of 
+ infrastructure;  
+xi. Collection and dissemination of grass -roots innovations and 
+ outstanding, functional traditional knowledge practices; 
+xii. Conversion of POs to Disaster Management Centres in case of need;  
+xiii. e-Education and e-Healthcare, as these areas develop in future. 
+2) The Department of Posts may consider whether it would be feasible to  
+  add some of these services, as well as some of the 342 services being  
+  offered through the „MeeSeva‟ programme in to its existing bouquet of  
+  services.  
+
+18 
+ 
+Para 12.2.1: India Post should strengthen its capabilities and diversify the 
+range of  products which it offers, paying particular attention to growth 
+segments such as Card Based Money Transfers, Mobile Banking, Collection of 
+EMIs and bill payments.  
+ 
+Para 12.2.2: India Post may collaborate with the National Payments 
+Corporation of India (N PCI) to develop new financial products based on the 
+RuPay Indian domestic card scheme.  
+     
+Para 12.2.3: India Post may tie -up with RuPay to boost the acceptability of 
+the Card, particularly in rural areas.  
+ 
+Para 16.2.1: The Aadhar data base will be the primary means of 
+authenticating the identity of individuals to whom payments / services are 
+being provided. Where the individual is not covered by Aadhar, the PO 
+Network or other data base may be accessed to authenticate his identity.  
+ 
+Para 16.2.2: Where social security schemes and entitlements are household / 
+family based, it will be the responsibil ity of the State Government / District / 
+Local Administrations concerned to ensure that the individual beneficiary is in 
+fact entitled to the service / payment being provided and obviate the 
+possibility of duplication or fraud in the implementation of Gove rnment 
+schemes.   
+ 
+The PBI data-base would need to be updated and re -checked periodically to 
+eliminate duplication of beneficiaries. 
+ 
+Para 16.2.5: The Aadhar data -base will be the primary means of biometric 
+identification; the PBI should also develop its own data -base focusing on the 
+family or house -hold and link it to the Aadhar data -base for functional and 
+operational purposes.  
+  
+Para 16.3.1: In order to speed up biometric identification and improve 
+operational efficiency, the Aadhar data base should be segmented State-wise 
+or even district-wise.  
+ 
+Para 16.3.2: The smaller data base focused on the particular District should 
+be accessed in the first instance and the larger data base should be resorted 
+to as a secondary pro cedure only if identity authentication on the truncated 
+data base fails.  
+ 
+Para 16.4.1: Commercially Important Clients (CICs) should be treated as a 
+special category and provided with a Bulk Client code through which they can 
+access updated data and ascertain delivery status immediately.   
+       
+
+19 
+ 
+CICs should be allowed to frank the postage impression while printing the 
+communication letter itself.  
+  
+Para 18.2.1: India Post / Parcel  should make postal services available to 
+citizens electronically through the in tro duc t io n o f d ig it a l stamping 
+and franking  machines at postal counters, internet postage and electronic 
+mail boxes.” 
+ 
+25. On the major challenges in implementation of recommendations of the Task Force 
+on leveraging India's post office network, the Committee have been informed as under:- 
+ 
+“The Task Force on Leveraging the Post Office Network has made a total of 
+181 recommendations. The main challenge in implementing the 
+recommendations of the Task Force is that most of the recommendations are 
+interconnected and decision will have to be taken on them in a holistic and 
+not in a piecemeal manner.  Further, before taking a final view on the 
+recommendations, consultation with various stakeholders , including Service 
+Unions, etc. will be required.  
+ 
+ However, with the approval of Hon‟ble Minister of Communications & 
+Information Technology, a Group of Senior Officers has been constituted to 
+examine each recommendation of the Task Force to obtain relevant inputs 
+from various stakeholders, including Service Unions, etc. and to chalk out a 
+strategy for implementing specific recommendations of the Task Force along 
+with timelines, in synergy with the other two reports of Internal Task Forces 
+set up to „Scale up PLI Business‟ and „Capture e-Commerce Market‟” 
+ 
+26. On how the lT Induction and Modernization Project will facilitate implementation of 
+key recommendations of the Task Force, the Department stated that the Task Force has 
+envisaged new role  for the D epartment in the realm of e -commerce, banking and 
+insurance.  The new set -up will be possible only in a technologicall y augmented 
+environment of the Department, which the IT Modernization Project will create. 
+ 
+j. Focus on Banking, Insurance and e-Commerce 
+ 
+27. When asked about h ow the lT Induction Project is likely to facilitate banking, 
+insurance and e-Commerce operations of the Department of Posts, the Committee have 
+been informed as under:- 
+ 
+(i) Banking: The core banking solution is part of the IT Modernization 
+Project that aims to bring in the facility of „Anytime Anywhere banking‟ 
+for the Post Office Savings Bank customers . The primary objective of 
+the IT Modernization P roject has been to enhance customer, 
+
+20 
+ 
+satisfaction through better service delivery.  India Post plans to 
+implement core banking in all depar tmental Post Offices (more than 
+25,000) and install 1000 AT Ms in major Post Offices.   The Project will 
+bring in facilities of ATM banking, Internet banking and Mobile banking 
+to the Post Office Savings Bank customers. 
+(ii) Insurance: Implementation of IT induct ion will facilitate the insurance 
+customers to pay premium or get policy update through any Post 
+Office or online, apply for loan against policy as well as submit final 
+claim at any Post Office . The settlements of claim s will also be easier 
+and smoother  as all documents shall be available in a digitized and 
+easily retrievable format. The departmental processing of investments 
+will be more efficient as the corpus at the disposal of the Department 
+will be know n and made available to the Investment D esk on a real 
+time basis.   
+(iii) e-Commerce:  It is a technology driven business  involving seamless 
+data transmission, visibility of arti cles across mail flow pipeline and 
+smooth & transparent remittance of collected amount. Department has 
+already started providing thes e facilities to high value e-Commerce 
+customers through „Application Programme Interface‟ . With the 
+implementation of I T project in the Department,  e-Commerce 
+transmission & delivery services can be provided through an integrated 
+IT system. The Department shall thus be able to bring the benefits of 
+e-Commerce to the rural and semi -urban areas, both as a market as 
+well as supplier of goods.  
+ 
+k. Data Centre Facility (DCF) and Disaster Recovery Centre (DRC) 
+ 
+28. On the current status of the Data Centre Facility (DCF) located at Mumbai, the 
+average number of transactions handled by the DCF on a daily basis and the current 
+status of installation of the Disaster Recovery Centre (DRC) at Mysore which was slated 
+to be operational by October, 2014, the Department, in a note, stated:- 
+ 
+“DCF located at Navi Mumbai is functional since April 2013. Presently, DCF is 
+handling CBS and Core PLI transactions in 9174 Post Offices. Daily average 
+number of transactions handled at DCF is 8.52 Lakh. The DRC facil ity at 
+CEPT, Mysore has been installed. The user acceptance test has been 
+completed and accepted on 19.03.2015. DRC shall be operationalized 
+shortly." 
+  
+29. On the status of setting up of the National Data Center (NDC) and Disaster 
+Recovery Center (DRC) and th e frequency of synchronization of DRC with the NDC , the 
+Committee have been informed that the National Data Centre has been operational since 
+April 2013. The DRC facility has been accepted by the Department from the vendor on 
+19.3.2015.  For its complete operationalization, statuary approvals from Pollution Control 
+
+21 
+ 
+Board and Controller of Explosives are being obtained. The complete operations of DRC 
+are likely to start very soon. The data flow between NDC and DRC would be continuous 
+and mirror data shall be available at DRC. 
+ 
+30. The status of computerization and networking acro ss the different postal circles is 
+depicted in the following Table:-  
+  
+Sr. 
+No.  Circle 
+No. of Post 
+Office 
+Computerised 
+No. of POs 
+Networked 
+1 Andhra Pradesh 2438 2438 
+2 Assam 626 582 
+3 Bihar 1046 1043 
+4 Chhattisgarh 343 335 
+5 Delhi 425 393 
+6 Gujarat 1335 1328 
+7 Haryana 493 490 
+8 Himachal Pradesh 464 418 
+9 Jammu & Kashmir 263 251 
+10 Jharkhand 455 454 
+11 Karnataka 1715 1683 
+12 Kerala 1506 1506 
+13 Madhya Pradesh 1062 1061 
+14 Maharashtra 2212 2212 
+15 North-East 329 268 
+16 Odisha 1195 1147 
+17 Punjab 758 758 
+18 Rajasthan 1345 1334 
+19 Tamil Nadu 2759 2578 
+20 Uttar Pradesh 2553 2540 
+21 Uttarakhand 388 341 
+22 West Bengal 1758 1301 
+  Total 25468 24462 
+ 
+ 
+ 
+l. Need to reorient the Workforce to function in an IT enabled environment 
+ 
+31. When asked about the plans of the Department to create awareness among the 
+staff about the working conditions in an lT enabled environment & to meet the training 
+requirements of a large workforce under the Change Management Vendor (CM) module, 
+the Department submitted as under:- 
+ 
+
+22 
+ 
+“The Change Management vendor selected for required job is conducting 
+surveys for different level of officers/officials. On the basis of the same, 
+workshops are being held  and training programs are being conducted for the 
+staff.  Department‟s website, newsletter and SMS alerts are being used to create 
+awareness among the staff. Vendors are conducting training in the phased 
+manner to train the staff in IT enabled environment. This is being augmented by 
+training in all our Training Centres, including Work Place Training Centres 
+functioning in all Divisions, and Standard Training Packages being delivered 
+online, and Divisional level Change Agents.” 
+ 
+m. Project Governance Structure 
+ 
+32. A Project Governance Structure has been put in place which consists of the 
+following:- 
+(i) Steering Committee: for implementation of the P roject in the manner indicated in 
+the proposal recommended by the EFC and  has flexibility in modifying the 
+financial and physical parameters of  the scheme within the total budget 
+approved by the CCEA, keeping in view the extant instructions as regards time 
+and cost over-runs.  Secretary, Posts, is its Chairperson. 
+  
+(ii) Project Coordination Committee: for reviewing the project, issues/risks and taking 
+key decisions with respect to the project and for sanctioning the payments as per 
+the contracts approved by the Steering Committee within the overall outlay. 
+ 
+(iii) Project I mplementation Committees:  to review, approve and sign off  on the 
+Project deliverables in each phase.  Finalization of  functional requirement,  blue 
+print document, and User Acceptance  Test, Facilitating deployment of 
+Department‟s manpower to carry out structural changes and  taking business and 
+operational decisions/ process changes. 
+ 
+(iv) Circle Monitoring Committees:  for ensuring the progress of the  project in the 
+Circles. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+23 
+ 
+PART II 
+Observations/Recommendations 
+ 
+1. The Committee note that during the early 1990s, with the advent of 
+technology that led to electronic substitution of postal mail, introduction of 
+core banking solutions and easy accessibility to mobile and internet based 
+services, the Department of Posts  (DoP) had started inducting technolo gy by 
+way of supplying hardware to Post Offices and implementing standalone 
+software solutions for various operations in a Local Area Network (LAN) based 
+environment. A Software Development C entre was also set up at Mysore to 
+cater to the needs of the Post  Offices. To improve the quality of its services in 
+line with the public expectations and to meet the increasing competition, 
+technology upgradation in Post Offices was identified as a necessary 
+prerequisite and to achieve this objective, the Department decided to improve 
+and augment their IT infrastructure and introduce a new integrated software 
+platform for its operations through an end -to-end IT Project. The India Post IT 
+Project was designed to realize this  vision. The Project was approved by the 
+Government with a total outlay of Rs. 4909 crore in November 2012. The earlier 
+programmes of induction of technology and computerization of Post Offices and 
+introduction of core banking for post office saving s bank operations were 
+merged in this new P roject. The Committee recognize that IT Induction and 
+Modernization is a very important P roject of the Department with a 
+comprehensive IT roadmap to develop network architecture, integrated 
+software and effective data ma nagement, including the establishment of 
+National Data Centre(s) and Disaster Recovery Centre. The Committee observe 
+that t here are eight segments/activities under the IT Induction and 
+Modernization Project which are the Data Center Facility (DCF), Network  
+
+24 
+ 
+Integrator (NI), Financial Services Integrator (FSI), Core System Integrator 
+(CSI), Change Management (CM) structure, Rural Hardware (RH), Rural System 
+Integrator (RSI) and Mail Operation Hardware (MOH). 
+ 
+The Committee note that the IT Induction & Moderni zation Project 
+envisages improvement in the working of the Department across all functional 
+areas, viz. faster and more reliable services in postal, logistics, banking, 
+insurance and retail operations, equipping all Wide Area Network ( WAN) 
+locations with p rimary and secondary bandwidth connectivity for seamless 
+connectivity, simplification of processes resulting in immediate transfer of 
+accounts and certificates, “Anytime Anywhere Banking” through multiple 
+channels such as Internet, ATM and mobile, interope rability with other 
+banks/Financial Institutions, efficient controls through improved Management 
+Information System ( MIS), centralised and accurate employee information 
+resulting in improved and timely administrative services, efficient procurement 
+and inventory management and reduction in operational times and costs. 
+ 
+The Committee further observe that by setting up an IT infrastructure 
+spanning across all post offices, including branch post offices in rural areas, the 
+Department will be able to harness the benefits of consolidated real time 
+information and capabilities across various functional silos as well as 
+geographical reach. The transformation of the physical network to a digital 
+network will also provide a national asset for all users , apart from post offices, 
+including various Government Departments, business houses and citizens to 
+use the IT enabled countrywide network for communication, banking, 
+insurance and service delivery needs with  transaction data. This mega IT 
+driven transformation would be unparalleled in its size and scope and will 
+create a national asset of over 1,55,000 networked post offices. 
+
+25 
+ 
+2. The Committee also note that multiple types of access have been 
+provisioned in the I T Modernization Project which w ill be available to the 
+customers for getting information, availing services and for redressal of 
+grievances. The multiple channels include the Customer Interaction 
+Management Portal (CIM), Interactive Voice Response (IVR), C all Centre, ATM, 
+e-Banking, Mobile phones, Post O ffice counters , Payment G ateway, etc. 
+Further, the implementation of Rural ICT Solution (RH & RSI) and Core Banking 
+Solution (CBS) will enable the Department of Posts to roll -out Direct Benefit 
+Transfer (DBT) through a network of 1.55 Lakh Post Offices in rural as wel l as 
+urban Post Offices. Rural Post O ffices will be enabled with a Hand Held device 
+with biometric identification and Micro ATM enablement, wireless network, 
+thermal printer to provide immediate receipts to customer and solar powered 
+battery to charge and operate the Micro ATM. The Rural Information 
+Communication & Technology (RICT) involves computerization and digital 
+connectivity of all the Gramin Dak Sewak Post O ffices including those in rural 
+areas. The objective is to provide a technology solution (ICT Device) to each 
+Branch Postmaster (BPM) which will enable each of approximately 1 ,30,000 
+Branch Post Offices to improve the quality of services being offered to rural 
+customers. It will increase  the rural reach of the Department and enable 
+Branch Post Offices to increase traffic of all financial remittances, savings 
+accounts, cash certificates and Rural Postal Life Insurance (RPLI). This is being 
+enabled through the Rural System Integrator (RSI) and Rural Hardware (RH) 
+solutions. The ease of transactions will encourage rural citizens to avail the 
+services of Post Offices, thereby having a positive impact on the rural economy, 
+besides improving financial inclusion. 
+
+26 
+ 
+ The Department of Posts ha ve a vast network of approximately 1,55,000 
+Post O ffices o ut of which 1,30,000 are rural Branch Post O ffices. The 
+Committee recognize that transformation of the physical network to a digital 
+network will also enable the Government to use the postal network to reach out 
+to the rural population for efficient delivery of financial services such as 
+banking and insurance , besides improving communications, mails and other 
+service delivery needs of the citizens. The IT Modernization Project, particularly 
+the rural ICT s olutions, will rebuild the rural postal network to create an 
+institutional infrastructure for last mile delivery of financial servi ces to the 
+citizens. The Project will make the Post O ffice the focal point for delivery of 
+financial services and further the  cause of financial inclusion by providing the 
+rural population across the country with access to formal banking and 
+insurance services. 
+3. The Committee acknowledge that the lT enabled Post Offices will lead to 
+transparent delivery of social security schemes , including Direct Benefit 
+Transfer (DBT). The disbursement of Social Security Scheme shall be done 
+through biometric identification using the mobile hand held devices , that will 
+not only lead to transparency but also reduce the number of complaints of 
+wrong payment and fraudulent transactions , besides eliminating the 
+middlemen in the system. Online monitoring shall also be faster and shall be 
+without scope for any manipulation . The Committee observe that the 
+Department of Posts, with a net work of approxima tely 1,55,000 Post O ffices 
+making transition to a digital network , will enable the Government to use the 
+postal network to reach out to the citizens for efficient delivery of social service 
+schemes, apart from improving the communications, mails and other service 
+delivery needs of the citizens. The IT Modernization P roject, particularly the 
+
+27 
+ 
+rural ICT solutions , will thus rebuild the rural postal network to create an 
+institutional infrastructure for last mile delivery of all G overnment services to 
+the citizens. The project will make the Post Office the focal point of delivery for 
+social security and employment guarantee schemes of the Union and the State 
+Governments, including disbursement of wages under MNREGS, Pension and 
+scholarship, etc . through Direct Be nefit Transfer employing Biometric 
+authentication of financial transactions. 
+4. The implementation of the IT Modernization Project is likely to improve 
+the visibility in day -to-day operations and enable real -time interventions in 
+case of operational problems,  e.g. mail movements ; further,  automatic data 
+updation will enable verified data/report availability/generation  and 
+operational planning and decision making will be facilitated by availability of 
+reliable and up -to-date data, introduction of efficiencies in Inventory 
+management and Procurement, ease of financial monitoring/planning and 
+improvement in Human Resource Management.  The Committee are of the view 
+that the IT Induction and Modernization Project will facilitate quick  decision 
+making by the Departm ent of Posts enabl ing real-time interventions to resolve 
+operational problems.  The Project will also lead to improved planning and 
+decision making through the use of Management Information System (MIS) 
+facilitated by availability of reliable and up-to-date data generated in real-time. 
+The Committee recommend that the Department should ensure optimum use of 
+the data generated in real -time in improving decision making , both in the 
+operational and the policy front. 
+ 
+5. The Committee also take note of the fact  that with the roll -out of the IT 
+Induction and Modernization Project, the Department shall be in a position to 
+introduce several new services in the future, viz. delivery of e -Commerce 
+
+28 
+ 
+articles offering seamless track and trace facility , including returns , and 
+immediate remittance of collections on delivery, e -Commerce (place orders / 
+view commodity rates), Utility Bill payments  - phone/electricity, etc., 
+Commission/Fee Collection, booking and reservation of train & air tickets, data 
+collection for other o rganizations, distribution of social security benefits and 
+Common Service Centre (CSC) services.  Keeping in view the fact that the 
+future roll -out of various products/services by the Department of Posts is 
+closely tied-up to the successful roll -out of the IT Induction and Modernization 
+Project, the Committee emphasize that efforts should be made for the timely 
+and successful execution of the Project to reap the benefits of prospective 
+business.   
+6. The Committee note that the major challenges faced by the De partment 
+in the roll-out of the lT Induction and Modernization P roject include, inter-alia, 
+the time consuming nature of public procurement process, selected vendors not 
+taking up the allocated work leading to major delays, telecom network 
+connectivity issues in areas like North East, Chhatti sgarh, Uttarakhand, Ladakh 
+and I sland territories, pan -India scope of operations, large number of Post -
+Offices (approx. 1,55,000 comprising of 25,000 Departmental Post Offices and 
+1,30,000 Branch Post -Offices), migration from almost 56 stand -alone 
+applications presently being used in the Department to an integrated IT 
+platform, and managing a workforce of almost 4. 66 lakh employees having no 
+prior experience of working in an IT -enabled environment.  In their endeavour 
+to meet these challenges, the Department have developed a focused and time -
+bound plan which includes roping in Change Management vendor for creation of 
+a new work culture, imparting training to employees at all levels, simplification 
+of procedure to ensure that manual processes are not replicated in an IT 
+environment, large scale simplification of Rules and Procedures to bring them 
+
+29 
+ 
+in synchronisation  with the new IT -enabled working environment and setting 
+up Project Monitoring Units upto the Divisional levels (district level) in order to 
+implement the Project in a synchronized manner. While appreciating the efforts 
+made by  the Department to ensure a smo oth transition from a manual work 
+environment to an IT -enabled environment, the Committee recommend to the 
+Department to remain focus ed through structural monitoring of the remedial 
+measures taken for addressing the operational impediments.  
+7. The Committee note that the implementation of the eight components of 
+the IT Modernization P roject is planned to be completed between 2015 and 
+2017.  As estimated by the Department, the entire operation and maintenance 
+of these units is to be completed bet ween 2020 and 2025.  A review of 
+implementation of the plan schemes indicates  that achievement in the year 
+2012-13 was nil.  The year 2013 -14 witnessed fair progress with the 
+commissioning of the Data Centre, networking of 2795 locations, development 
+and d eployment of CBS in 124 POs and PLI in 220 post offices, etc.  It is 
+disquieting to note that milestones could not be achieved in respect of some 
+important schemes, namely, Supply of Mail Office Hardware and Rural 
+Hardware and development and deployment of  Rural ICT solution in the year 
+2013-14.  The Committee observe that the IT Modernization Scheme of the 
+Department of Posts got the maximum outlay of Rs. 3046.75 crore amongst all 
+the schemes for the Twelfth Five Year Plan.  A scrutiny of the financial 
+performance of the Department during the past four years indicates that there 
+has been significant shortfall in utilization of funds against the allocation at the 
+BE stage.  The shortfall in utilization is attributed to reasons like  complex and 
+time-consuming nature of finalization of RFPs, interdependence amongst the 
+eight RFPs, need for re-tendering in RH and MOH due to the vendors opting-out 
+after being selected, delay in RFP meetings, queries and clarifications sought 
+
+30 
+ 
+by bidders leading to extension of las t date of submission of bid documents, 
+delay in evaluation of RFPs, resolution of complaints re garding certain aspects 
+of the P roject, etc.  The Committee do understand that some of the se factors 
+may have hindered the timely utilization of funds but would like to point out 
+that such challenges are often encountered in implementation of mega projects 
+of this nature. It is for the Department to have anticipated such problems and 
+factor them in the implementation mechanism . The Committee, therefore, 
+recommend that greater efforts should be made by the Department to ensure 
+that the problem areas are addressed in an expeditious manner for the smooth 
+execution of the plan schemes with better utilization of funds.  The Committee 
+also emphasize that the monitoring mechanism in place be appropriately 
+strengthened to ensure that various components of the Project are rolled out in 
+a time -bound manner.  The Committee would like to be apprised of the 
+progress of achievement of all the components of the IT Modernization Project. 
+   
+8. The Committee note that the Department‟s software development centre 
+at Mysore (Centre for Excellence in Postal Technology) had developed most of 
+the application software th at are still being used by the Post O ffices. In 
+addition, CEPT Myso re also housed the first in -house Data C entre of the 
+Department. The Committee have been apprised that the software developed 
+by CEPT is working in the post offices of many friendly countries. In addition, 
+data sanitization work required for roll-out of Core Banking Services (CBS) and 
+Core PLI is also being done throughout the country under the overall 
+supervision of CEPT Mysore. Insofar as the  IT Induction and Modernization 
+Project is concerned, the CEPT, Mysore, is involved in Knowledge Transfer of 
+existing Applications, assistance in roll -out and Data migration, Acceptance 
+Testing of respective solutions of all RFPs, and Operation and Maintenance.   
+
+31 
+ 
+While appreciating the role of CEPT , Mysore, in developing the application 
+software to cater to the specific requirements of post offices, the Committee 
+feel that the Software Development Center at Mysore, with its un ique 
+experience in developing stand -alone software applications for Post O ffices, 
+can play a vital rol e in areas such as knowledge transfer of existing 
+applications, data migration, acceptance testing of different modules of the IT 
+Project as well as operation and maintenance matters. The Committee 
+recommend that the accumulated experience of CEPT , Mysore, in software 
+development for DoP may be optimally utilized in ensuring a seamless 
+transition from stand -alone applications to a fully networked architecture 
+served by a common data center. 
+ 
+9. The Committee have been informed that  Task Force on leveraging the 
+Post Office network had given  wide-ranging recommendations concerning IT 
+Induction and Modernization in the Department .  Some of the key 
+recommendations include adoption of non -proprietary and open standards for 
+hardware and software products, leveraging the inherent strengths of the India 
+Post network to garner business in upcoming segments such as e -commerce 
+and e -retailing, integration of information systems w ith those of major e -
+commerce companies, de -linking parcel service from normal postal services, 
+introduction of same day delivery, providing end-to-end track and trace facility, 
+implementation of measures for cyber security and payment security, GPS 
+tracking and containerized movement of parcels . The Task Force had also 
+stressed the need to use post offices as Common Service Centers (CSCs) 
+offering a variety of public services, diversification into other range of 
+products/services such as Card Based Money T ransfers, Mobile Banking, 
+Collection of EMIs and bill payments, collaboration with the National Payments 
+
+32 
+ 
+Corporation of India (NPCI) to develop new financial products based on the 
+RuPay Indian domestic card scheme, treatment of Commercially Important 
+Clients (CICs) as a special categ ory and availability of Postal S ervices to 
+citizens electronically through the in t r odu ct ion  of  d ig it a l stamping and 
+franking  machines at po stal counters, internet postage and electronic mail 
+boxes.  The Committee are given to understand that a Group of Senior Officers 
+has been constituted to chalk out a strategy for implementing specific 
+recommendations of the Task Force along with timelines, in synergy with the 
+other two reports of the Internal Task Forces set up to „Scale up PLI Business‟ 
+and „Capture e -Commerce Market‟. The Committee  recommend that the Group 
+of Officers should complete the exercise in a time -bound manner and evolve an 
+effective strategy to implement the recommendations of the Task Force so that 
+the vision of leveraging the Post Office network of the country can be realized.  
+The Committee would like to be informed of the outcome in this regard. 
+10. The Committee also note that the Task Force on leveraging India's Post 
+Office network has envisaged a new role for the Department in the realm of 
+banking, insurance and e -commerce.  The new set -up will require a 
+technologically augmented environment which will be created by 
+implementation of the IT Modernization Project. The Committee understand 
+that as part of the IT Project, India Post plan to implement core banking in all 
+Departmental Post Offices (more than 25,000) and install 1000 ATMs in major 
+Post Offices.   The project will bring in facilities of ATM banki ng, Internet 
+Banking and Mobile B anking to th e Post Office Savings Bank customers. 
+Implementation of IT induction will also facilitate insurance customers to pay 
+premium or get policy update through any Post Office or online, apply for loan 
+against policy as well as submit final claim at any Post Office. The settlement of 
+claims will also be easier and smoother as all documents shall be available in a 
+
+33 
+ 
+digitized and easily retrievable format. The Departmental processing of 
+investments will be more efficient as the corpus at the disposal of the 
+Department will be known and made available to the Investment Desk on a real 
+time basis. The Committee stress that e-Commerce is a technology driven 
+business involving seamless data transmission, visibility of articles across mail 
+flow pipeline and smooth and transparent remittance of collected amount. With 
+the implementation of the IT project in the Department, eCommerce 
+transmission and delivery services can be provided through an integrated IT 
+system. The Department shall thus be able to bring the benefits of e -Commerce 
+to the rural and semi -urban areas, both as a market as well as supplier of 
+goods.   
+ The Committee fully recognize the critical role of the IT Induction and 
+Modernization Project in the realm of banking, insurance and e -commerce. The 
+successful ro ll-out of the IT Project is a necessary pre -requisite for the 
+Department to make any significant foray into the banking, insurance and e -
+Commerce domain. The Committe e, therefore,  recommend that the utmost  
+emphasis should be accorded to the implementation of the P roject so that the 
+future expansion of products/services in these areas is not hampered for want 
+of requisite IT infrastructure. 
+11. The Committee note that the DCF located at Navi Mumbai has been  
+functional since April 2013. Presently, DCF is handling  CBS and Core PLI 
+transactions in 9174 Post Offices. The daily average number of trans actions 
+handled at DCF is 8.52 lakh. The Department plans to scale up the DCF as more 
+Post Offices are  being connected through Wide Area Network.  The Committee 
+are give n to understand that  all the technical solutions and infrastructure 
+being created under the IT Project, including the Data Centre Facility, are 
+
+34 
+ 
+scaleable and modular in nature , i.e. they are designed to take care of 
+additional load by scaling up commensur ate to the requirement ; besides, t he 
+Data Centre facility is designed to handle transactions emanating from the 
+entire postal network . Insofar as the requirement of bandwidth is concerned, 
+the RFP and contract s have provisions relating to increasing the ba ndwidth as 
+per actual requirements. The DRC facility at CEPT, Mysore , has been installed 
+followed by the user acceptance test which has been completed and accepted 
+on 19.03.2015. The Committee have been apprised that the DRC is expected to 
+be operationalized shortly. 
+ 
+ With the Data Center Facility (DCF) already in operation since April 2013 
+and the Data Recovery Center (DRC) expected to be operationalized shortly, the 
+Committee recommend that the Department should expedite the networking of 
+the remaining Post Offices so that more and more Post Offices can move their 
+data to DCF and make optimum use of the networked architecture as envisaged 
+in the IT Project.  
+12. The Committee note that Change Management is a vital component of the 
+IT Modernization Project  and Change Management Vendor is  conducting 
+surveys for different level s of officers/officials which forms the basis of 
+workshops and training program mes being conducted for the staff members. 
+The Department‟s website, newsletter and SMS alerts are also being  used to 
+create awareness among the staff members. Vendors are conducting training in 
+a phased manner to train the staff in an IT enabled environment which is being 
+augmented by training in all Training Centres of the Department, including 
+Work Place Train ing Centres functioning in all Divisions, Standard Training 
+Packages being delivered online, and Divisional level Change Agents. 
+
+35 
+ 
+ The Committee observe that it is imperative that the Change Management 
+vendor should impart requisite training which will go a  long way in improving 
+the performance of the Postal employees . Efforts to improve the skills and 
+capabilities of employees through training is necessary to equip the workforce 
+with the knowledge of various IT tools at their disposal , which will also lead to  
+optimum utilization of these IT tools. The Committee feel that since  the 
+Department of Posts are a service oriented entity having a large workforce of 
+approximately 4.66 lakh employees who have been largely working in a manual 
+environment, special emphasis on IT training requirements of such a large 
+workforce should be a priority area. While appreciating the ongoing efforts of 
+the Department to meet the training requirement of their employees, the 
+Committee stress the need to focu s on training requirements of the large 
+workforce to reorient them to work in an IT enabled environment. 
+13. To sum up, though the IT Modernization Project has entered the fourth 
+year of its implementation, the pace of execution has been slow resulting in 
+shortfall in achievements as against the envisaged physical targets.  It is 
+noteworthy that this mega IT driven transformation is the first of its kind 
+undertaken by any postal operator in the world.  The benefits of the Project 
+after its successful implem entation is expected to be immense encompassing 
+the Government, the Department of Posts and equally importantly  the 
+customers.  The Department of Posts are poised to play an important role in 
+bridging the urban-rural divide and bringing IT -enabled services to all sections 
+of society through its 1,55,000 IT-enabled Post Offices.  It needs reiteration 
+that the reduction of paper -based processing w ill enable an environmentally 
+sustainable greener Post Office.  The vision can be transformed into reality only 
+in a technologically augmented environment of the Department, which the IT 
+
+36 
+ 
+Modernization Project intends to create.  Considering that it is a 
+transformational project having far reaching impact, the Committee 
+recommend that the Project Governance Structure o f the Department should 
+take all necessary measures for the successful execution of this mega venture 
+in a time -bound manner which will also support the ambitious 'Digital India' 
+Campaign.         
+ 
+ 
+     New Delhi; ANURAG SINGH THAKUR, 
+     5 August,2015 Chairperson, 
+    14 Shravana, 1937(Saka) Standing Committee on  
+Information Technology. 
+ 
+***** 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+37 
+ 
+Annexure-I  
+ 
+MINUTES OF THE SEVENTH SITTING OF THE STANDING COMMITTEE ON INFORMATION 
+TECHNOLOGY (2014-15) HELD ON 11TH NOVEMBER, 2014 
+ 
+----------- 
+ 
+ The Committee sat on Tuesday, the 11th November, 2014 from 1 100 hours to 1315 
+hours in Committee Room ‘C’, Ground Floor, Parliament House Annexe, New Delhi. 
+ 
+PRESENT 
+Shri Anurag Singh Thakur - Chairperson 
+ MEMBERS 
+ 
+Lok Sabha 
+ 
+2. Shri L.K. Advani 
+3. Shri Prasun Banerjee 
+4. Dr. Sunil Baliram Gaikwad 
+5. Dr. K.C. Patel 
+6. Shri Hemant Tukaram Godse 
+7. Dr. Anupam Hazra  
+8. Dr. J. Jayavardhan 
+9. Shri P. Karunakaran 
+10. Shri Virender Kashyap 
+11. Shri Keshav Prasad Maurya 
+12. Shri D.K. Suresh 
+13. Shri Ramdas C. Tadas 
+Rajya Sabha 
+  
+14. Shi Salim Ansari  
+15. Shri Vijay Jawaharlal Darda 
+16. Shri Santiuse Kujur 
+17. Shri Derek O’Brien 
+18. Dr. K.V.P. Ramachandra Rao 
+19. Mahant Shambhuprasadji Tundiya 
+ 
+SECRETARIAT 
+ 
+1. Shri J.M. Baisakh  - Director 
+2. Shri Ajay Kumar Garg - Additional Director 
+3. Dr. Sagarika Dash  - Deputy Secretary 
+4. Shri Shangreiso Zimik - Under Secretary 
+ 
+ 
+
+38 
+ 
+Representatives of the Ministry of Communications and Information Technology 
+(Department of Posts)  
+ 
+  Name Designation 
+ 
+1. Ms. Kavery Banerjee Secretary (Posts) 
+2. Ms. Anjali Deveshar Member (PLI) 
+3. Ms. Kalpana Tewari Member (Planning) 
+4. Shri G.J. Samuel Member (Operation) 
+5. Shri Ashutosh Tripathi Member (Personnel) 
+6. Ms. Saroj Punhani JS&FA 
+7. Shri Vasumitra CPMG, Delhi Circle 
+8. Shri Vineet Pandey CGM, BD Directorate 
+9. Shri V.Pati CGM, PLI 
+10. Ms. Smita Kumar General Manager (SP&P) BD Directorate 
+ 
+2. At the outset, the Chair person welcomed the Members to the sitting of the 
+Committee. In the first half of the session, the representatives of the Ministry of 
+Communications and Information Te chnology (Department of Posts) briefed the Committee on 
+the subject ‘IT Induction and Modernization in the Department of Posts’. The Department of 
+Posts also made a power -point presentation highlighting different facets of the modernization 
+project. It inc luded implementation/rollout plans, present status of implementation and 
+timelines of the project, provisioning for the future requirements of the project and key 
+benefits of the project to the stakeholders, viz. the customers, the Government and the 
+Department of Posts, etc. 
+ 
+3. The Members then sought clarifications on issues to which the representatives of the 
+Department of Posts responded. The Chairperson directed the Department of Posts to furnish 
+written replies to the points which remained unanswered.  
+ 
+ 
+4. The Chairperson, then, thanked the representatives of Department of Posts for 
+briefing the Committee.  
+ 
+The witnesses then withdrew. 
+ 
+ 
+5. ……....xxxxx………………....xxxxx………………....xxxxx………………....xxxxx………… 
+ 
+6. ……....xxxxx………………....xxxxx………………....xxxxx………………....xxxxx………… 
+ 
+7. ……....xxxxx………………....xxxxx………………....xxxxx………………....xxxxx…………  
+ 
+
+39 
+ 
+ 
+8.  ……....xxxxx………………....xxxxx………………....xxxxx………………....xxxxx…………  
+ 
+ 
+ 
+Verbatim Proceedings of the sitting has been kept on record. 
+ 
+ 
+The Committee, then, adjourned. 
+ 
+_________________________________________________________________________  
+xxxx Matter not related to the Report. 
+ 
+ 
