@@ -1,0 +1,78 @@
+name: FC derive (manifest + bundle + index + meta)
+
+# Single-owner regeneration of FC's derived files (manifest.json,
+# meta.json, search-bundle-*.json, search-index-*.json, audit.json).
+# Triggered by any successful FC primary write (fc.yml), plus a 30-min
+# cron backstop in case workflow_run events get dropped, plus manual
+# workflow_dispatch for ad-hoc rebuilds.
+#
+# Same pattern as cag-derive.yml / lc-derive.yml. See CONV.md
+# "Split-phase scraping pattern" for the full rationale and the race-
+# condition history this prevents.
+
+on:
+  workflow_run:
+    workflows:
+      - "FC scrape and publish"
+    types: [completed]
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # cancel-in-progress: TRUE — older derives produce stale derived
+  # files; cancelling them in favour of a newer derive is strictly
+  # better.
+  group: fc-derive
+  cancel-in-progress: true
+
+jobs:
+  derive:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build FC derived files
+        env:
+          BUILD_PHASE: 'derive'
+        run: python build_fc.py
+
+      - name: Commit and push derived files
+        # Narrow git add to derived files only. Primary files
+        # (reports.json, text/) are owned by writer workflows; this
+        # workflow never touches them.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/fc/manifest.json docs/fc/meta.json docs/fc/audit.json \
+                  docs/fc/search-bundle-*.json docs/fc/search-index-*.json
+          git diff --cached --quiet && echo "no derived changes" && exit 0
+          git commit -m "Auto-rebuild FC derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "attempt $attempt failed; rebuilding derived files on the rebased state"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            BUILD_PHASE=derive python build_fc.py
+            git add docs/fc/manifest.json docs/fc/meta.json docs/fc/audit.json \
+                    docs/fc/search-bundle-*.json docs/fc/search-index-*.json
+            git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
+            git commit -m "Auto-rebuild FC derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          done
+          echo "exceeded 3 push attempts; giving up — next derive run will catch up"
+          exit 1

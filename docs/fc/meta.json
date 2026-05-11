@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "corpus": "fc",
+  "generated_at": "2026-05-11T09:45:55Z",
+  "total_reports": 84,
+  "total_with_text": 2,
+  "lok_sabhas": [
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "search_bundle": {
+    "shard_count": 1,
+    "shards": [
+      "search-bundle-00.json"
+    ],
+    "shard_sizes": {
+      "search-bundle-00.json": 10934
+    },
+    "total": 2,
+    "truncated": 2,
+    "head_chars": 5000,
+    "size_bytes": 10934,
+    "max_shard_bytes": 10934
+  },
+  "search_index": {
+    "shard_count": 1,
+    "shards": [
+      "search-index-00.json"
+    ],
+    "shard_sizes": {
+      "search-index-00.json": 7281
+    },
+    "report_count": 2,
+    "vocab_size": 385,
+    "total_postings": 770,
+    "size_bytes": 7281,
+    "max_shard_bytes": 7281,
+    "freq_cutoff_low": 2,
+    "freq_cutoff_high": 2
+  }
+}

@@ -1,0 +1,94 @@
+name: FC scrape and publish
+
+# Daily walk of the 3 Lok-Sabha Financial Committees (PAC, Estimates,
+# COPU) via sansad.in's api_ls/committee/lsRSAllReports endpoint.
+# Walks the API, merges into reports.json, extracts text from missing
+# PDFs up to MAX_EXTRACTIONS_PER_RUN.
+#
+# Cadence: daily at 06:23 UTC (off-cluster from DRSC=:17, CAG=:17,
+# Bills=:17, LC=:23 across 6 hours). Total volume across LS-14..18 is
+# ~800 reports; backfill via one-shot workflow_dispatch with
+# LOK_SABHAS=14,15,16,17,18 and max_extractions=1000.
+#
+# Steady-state default `LOK_SABHAS=18` — only the current LS term
+# accrues new reports; historical LSes are stable and don't need
+# re-walking each day. The merge logic in build_fc.py preserves
+# historical entries when LOK_SABHAS is narrow (treats them as
+# "wasn't queried", not "delisted").
+#
+# No archive sidecar (sansad.in is the most-stable upstream we mirror
+# — DRSC + Bills are already there with no archive). See
+# plan/financial-committees-recon-001.md §"No archive sidecar needed".
+
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+    inputs:
+      lok_sabhas:
+        description: 'LS terms to walk (CSV, e.g. "14,15,16,17,18" for backfill or "18" for daily)'
+        default: '18'
+      max_extractions:
+        description: 'Max PDFs to extract this run (politeness budget). Use 1000+ for backfill.'
+        default: '25'
+      max_run_seconds:
+        description: 'Hard wall-clock cap for the extraction phase, seconds'
+        default: '900'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Don't let two FC runs ever overlap — they would race on text/
+  # writes and produce a noisy git diff. Independent of `cag`, `lc`,
+  # `scrape` groups so all corpora can run concurrently.
+  group: fc
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git identity for in-flight checkpoint commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build FC primary data (extract phase only)
+        # Split-phase: writers commit reports.json + text/<committee>/.
+        # Derived files owned by fc-derive.yml (single owner,
+        # cancel-in-progress). See CONV.md "Split-phase scraping
+        # pattern" for the rationale.
+        env:
+          BUILD_PHASE:             'extract'
+          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '18' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '25' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
+        run: python build_fc.py
+
+      - name: Commit and push primary changes
+        # Narrow git add to primary files only — reports.json + text/.
+        # Derived files (manifest, meta, bundle, index) are
+        # intentionally excluded; fc-derive.yml regenerates them after
+        # this commit lands.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/fc/reports.json docs/fc/text/
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update FC primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git pull --rebase origin main
+          git push
