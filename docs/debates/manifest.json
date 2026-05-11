@@ -55,16 +55,36 @@
       }
     },
     "rs": {
+      "RS269_2025-12-02": {
+        "floor": {
+          "size": 190649,
+          "url": "text/rs/RS269_2025-12-02_floor.txt"
+        }
+      },
       "RS269_2025-12-03": {
         "floor": {
           "size": 483421,
           "url": "text/rs/RS269_2025-12-03_floor.txt"
+        },
+        "part1": {
+          "size": 3069364,
+          "url": "text/rs/RS269_2025-12-03_part1.txt"
         }
       },
       "RS269_2025-12-04": {
         "floor": {
           "size": 541938,
           "url": "text/rs/RS269_2025-12-04_floor.txt"
+        },
+        "part1": {
+          "size": 2432714,
+          "url": "text/rs/RS269_2025-12-04_part1.txt"
+        }
+      },
+      "RS269_2025-12-09": {
+        "part1": {
+          "size": 2572052,
+          "url": "text/rs/RS269_2025-12-09_part1.txt"
         }
       },
       "RS269_2025-12-11": {
