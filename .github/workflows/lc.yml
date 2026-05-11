@@ -1,0 +1,91 @@
+name: LC scrape and publish
+
+# Daily walk of the 22 Law-Commission-term pages on
+# lawcommissionofindia.nic.in. Walks the listing, merges into reports.json,
+# extracts text from missing PDFs up to MAX_EXTRACTIONS_PER_RUN.
+#
+# No separate backfill workflow — the LC corpus is ~280 reports total,
+# so MAX_EXTRACTIONS_PER_RUN=100 catches the whole historical backlog
+# in three daily cycles. If you ever need a one-shot full backfill,
+# workflow_dispatch this with max_extractions=500.
+#
+# Off-hour minute (:23 UTC) deliberately, off-cluster from existing
+# crons (DRSC=:17, CAG=:17, Bills=:17). Same hour band (06 UTC) — early
+# morning IST window when traffic to gov sites is low.
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_extractions:
+        description: 'Max PDFs to extract this run (politeness budget)'
+        default: '100'
+      max_run_seconds:
+        description: 'Hard wall-clock cap for the extraction phase, seconds'
+        default: '1800'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Don't let two LC runs ever overlap — they would race on the on-disk
+  # text cache and produce a noisy git diff. Independent of `cag` and
+  # `scrape` groups, so all three corpora can run concurrently.
+  group: lc
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git identity for in-flight checkpoint commits
+        # build_lc.py performs incremental commits + pushes during the
+        # extraction loop (every CHECKPOINT_EVERY_N successful PDFs OR
+        # CHECKPOINT_EVERY_S seconds, whichever first), so a runner-killed
+        # mid-stream run doesn't lose all its work. The user identity has
+        # to be set BEFORE the build step, not just before the final
+        # commit step. See CONV.md "Per-file checkpoint pattern".
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build LC primary data (extract phase only)
+        # Split-phase: writers commit reports.json + text/<id>.txt only.
+        # Derived files (manifest/bundle/index/meta) are owned by
+        # lc-derive.yml — single owner, cancel-in-progress, never races.
+        # See CONV.md "Split-phase scraping pattern" for the full rationale.
+        env:
+          BUILD_PHASE:             'extract'
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '100' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
+        run: python build_lc.py
+
+      - name: Commit and push primary changes
+        # Narrow git add to primary files only — reports.json + text/.
+        # Derived files (manifest, meta, bundle, index) are intentionally
+        # excluded; lc-derive.yml will regenerate them after this commit.
+        # `pull --rebase` is still here as a belt-and-suspenders against
+        # rare reports.json races (deterministic content, mergeable in
+        # almost all cases).
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/lc/reports.json docs/lc/text/
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update LC primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git pull --rebase origin main
+          git push
