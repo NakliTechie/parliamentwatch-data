@@ -68,9 +68,19 @@ TEXT_DIR  = DOCS / "text"
 PDFS_DIR  = DOCS / "pdfs"   # transient RS PDFs — gitignored
 DOCS.mkdir(parents=True, exist_ok=True)
 
-REPORTS_JSON  = DOCS / "reports.json"
-MANIFEST_JSON = DOCS / "manifest.json"
-META_JSON     = DOCS / "meta.json"
+REPORTS_JSON      = DOCS / "reports.json"        # legacy single-file (pre-sharding)
+REPORTS_META_JSON = DOCS / "reports-meta.json"   # shard manifest the app fetches first
+MANIFEST_JSON     = DOCS / "manifest.json"
+META_JSON         = DOCS / "meta.json"
+
+# Per-house shard size. Picked so each shard stays under CF's 25 MiB
+# per-file cap with headroom for record-size growth (LS body fields
+# are small; RS records carry version URLs). 2500 records × ~8 KB =
+# ~20 MB worst-case — well clear of the limit. Bills uses 1000/shard;
+# we go bigger because debates records are smaller on average and the
+# total count is higher, so fewer shards = fewer parallel fetches at
+# app boot. See plan/backfill-audit-001.md for why this matters.
+SHARD_SIZE = 2500
 
 # Houses we cover. Phase B adds "rs" (daily-proceedings PDFs).
 HOUSES = ["ls", "rs"]
@@ -183,9 +193,34 @@ def checkpoint_commit(message: str, paths: list[str]) -> bool:
 def load_existing_reports() -> dict[str, list[dict]]:
     """Load house → list-of-reports dict.
 
-    Phase A only has "ls"; phase B adds "rs". The on-disk format is
-    forward-compatible: missing house keys are tolerated.
+    Reads the sharded format (reports-meta.json + reports-<house>-<NN>.json
+    shards) when present; falls back to the legacy single-file reports.json
+    on the first run after migration or on a fresh checkout. Both shapes
+    are equivalent — the on-disk format is forward-compatible: missing
+    house keys are tolerated.
     """
+    # Preferred path: sharded format. App + future scraper runs use this.
+    if REPORTS_META_JSON.exists():
+        try:
+            with open(REPORTS_META_JSON, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! reports-meta.json unreadable ({e}); falling back to legacy reports.json")
+        else:
+            result: dict[str, list[dict]] = {h: [] for h in HOUSES}
+            for house, shard_entries in (meta.get("shards") or {}).items():
+                for entry in shard_entries:
+                    path = DOCS / entry["file"]
+                    if not path.exists():
+                        print(f"  ! shard missing on disk: {entry['file']} — skipping")
+                        continue
+                    with open(path, "r", encoding="utf-8") as f:
+                        result.setdefault(house, []).extend(
+                            json.load(f).get("records", []))
+            return result
+
+    # Legacy fallback — exercised exactly once per repo, the first time
+    # the new build_debates.py runs against an unsharded checkout.
     if REPORTS_JSON.exists():
         with open(REPORTS_JSON, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -193,11 +228,18 @@ def load_existing_reports() -> dict[str, list[dict]]:
 
 
 def save_reports(reports: dict[str, list[dict]]) -> None:
-    """Sort each house's list deterministically:
+    """Sort each house's list deterministically and write as sharded files:
        - LS: lok_sabha desc, session desc, db_slno desc (newest first).
        - RS: session desc, date_iso desc (newest first).
+
+    Output (under docs/debates/):
+      - reports-meta.json         shard manifest (small, app fetches first)
+      - reports-<house>-<NN>.json one shard per SHARD_SIZE records per house
+    The legacy reports.json is deleted on first run after migration. The
+    in-flight checkpoint commits use `docs/debates/` as the path arg so
+    new/changed/deleted shards are all picked up automatically.
     """
-    out = {}
+    out: dict[str, list[dict]] = {}
     for h in HOUSES:
         items = reports.get(h, [])
         if h == "ls":
@@ -206,20 +248,83 @@ def save_reports(reports: dict[str, list[dict]]) -> None:
                 -int(r.get("session")   or 0),
                 -int(r.get("db_slno")   or 0)))
         elif h == "rs":
-            items.sort(key=lambda r: (
-                -int(r.get("session") or 0),
-                str(r.get("date_iso") or "")), reverse=False)
-            # The composite of -session asc + date_iso desc is awkward;
-            # easier to just sort twice in a stable way:
+            # Sort twice (stable) — composite key is -session asc + date_iso
+            # desc which can't be expressed as a single tuple cleanly.
             items.sort(key=lambda r: str(r.get("date_iso") or ""), reverse=True)
             items.sort(key=lambda r: -int(r.get("session") or 0))
         out[h] = items
     # Preserve any unknown-house keys for forward compatibility.
     for h, items in reports.items():
-        if h not in HOUSES:
+        if h not in HOUSES and h not in out:
             out[h] = items
-    with open(REPORTS_JSON, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+
+    shard_entries = _write_sharded_reports(out)
+    _write_reports_meta(out, shard_entries)
+
+    # One-time migration: drop the legacy single-file once shards are in place.
+    if REPORTS_JSON.exists():
+        try:
+            REPORTS_JSON.unlink()
+        except OSError as e:
+            print(f"  ! could not delete legacy reports.json: {e}")
+
+
+def _shard_filename(house: str, idx: int) -> str:
+    return f"reports-{house}-{idx:02d}.json"
+
+
+def _write_sharded_reports(reports: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    """Partition each house's records into SHARD_SIZE-sized shards and write
+    them. Cleans up orphan shards (from a previous run with more records or
+    a different house set). Returns a per-house manifest of shard entries.
+    """
+    # Remove ALL existing report shards so a run with fewer records doesn't
+    # leave a stale higher-index shard behind. reports-meta.json is preserved
+    # — we overwrite it in the meta writer.
+    for path in DOCS.glob("reports-*.json"):
+        if path.name == REPORTS_META_JSON.name:
+            continue
+        try:
+            path.unlink()
+        except OSError:
+            pass
+
+    shard_entries: dict[str, list[dict]] = {}
+    for house in reports:
+        items = reports[house]
+        entries: list[dict] = []
+        for i in range(0, len(items), SHARD_SIZE):
+            chunk = items[i:i + SHARD_SIZE]
+            idx = i // SHARD_SIZE
+            fname = _shard_filename(house, idx)
+            path = DOCS / fname
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump({
+                    "records": chunk,
+                    "count": len(chunk),
+                    "house": house,
+                    "shard_index": idx,
+                }, f, ensure_ascii=False, indent=2)
+            entries.append({"file": fname, "count": len(chunk)})
+        # Always emit an entry list per house (possibly empty) so the app's
+        # discovery logic doesn't have to special-case house presence.
+        shard_entries[house] = entries
+    return shard_entries
+
+
+def _write_reports_meta(reports: dict[str, list[dict]],
+                       shard_entries: dict[str, list[dict]]) -> None:
+    """Write reports-meta.json — the small shard manifest the app fetches
+    first. Includes per-house totals so a corpus-status renderer can show
+    counts without touching any data shard."""
+    meta = {
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "shard_size": SHARD_SIZE,
+        "totals": {h: len(reports.get(h, [])) for h in reports},
+        "shards": shard_entries,
+    }
+    with open(REPORTS_META_JSON, "w", encoding="utf-8") as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
 
 
 def _record_from_lsdebate(d: LSDebate) -> dict:
@@ -501,7 +606,7 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
                 ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
                 checkpoint_commit(
                     f"Auto-checkpoint debates primary data (extracted={len(extracted)} this run) [{ts}]",
-                    ["docs/debates/reports.json", "docs/debates/text/"],
+                    ["docs/debates/"],
                 )
                 extracted_since_checkpoint = 0
                 last_checkpoint_at = now
@@ -516,7 +621,7 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
         checkpoint_commit(
             f"Auto-checkpoint debates primary data (final, extracted={len(extracted)} this run) [{ts}]",
-            ["docs/debates/reports.json", "docs/debates/text/"],
+            ["docs/debates/"],
         )
 
     return {
@@ -975,7 +1080,7 @@ def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) 
                 ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
                 checkpoint_commit(
                     f"Auto-checkpoint debates RS data (extracted={len(extracted)} this run) [{ts}]",
-                    ["docs/debates/reports.json", "docs/debates/text/"],
+                    ["docs/debates/"],
                 )
                 extracted_since_checkpoint = 0
                 last_checkpoint_at = now
@@ -990,7 +1095,7 @@ def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) 
         ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
         checkpoint_commit(
             f"Auto-checkpoint debates RS data (final, extracted={len(extracted)} this run) [{ts}]",
-            ["docs/debates/reports.json", "docs/debates/text/"],
+            ["docs/debates/"],
         )
 
     return {"extracted": extracted, "failed": failed,
