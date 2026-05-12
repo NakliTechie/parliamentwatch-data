@@ -41,6 +41,8 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
+from parliamentwatch_text_shards import write_text_shards  # noqa: E402
+
 from debates.common import RateLimited
 from debates.scrapers.loksabha import (
     DEFAULT_LOK_SABHAS,
@@ -1147,6 +1149,25 @@ def phase_derive() -> None:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
     n_with_text = sum(len(v) for v in manifest["texts"].values())
     print(f"  manifest: {n_with_text} records with extracted text")
+
+    # Bundle per-record text files. Debates has TWO manifest shapes:
+    #   LS: texts.ls[<file_id>] = {size, url}            — flat
+    #   RS: texts.rs[<base_id>][<version>] = {size, url} — multi-version
+    # Composite keys flatten this for the shard: `ls|<file_id>` or
+    # `rs|<base_id>|<version>`. App's fetchReportText is updated to
+    # compute the same composite.
+    print("\n[Derive] Building text shards...")
+    items = []
+    for key, entry in sorted(manifest["texts"].get("ls", {}).items()):
+        items.append((f"ls|{key}", DOCS / entry["url"]))
+    for base_id, versions in sorted(manifest["texts"].get("rs", {}).items()):
+        for version, entry in sorted(versions.items()):
+            items.append((f"rs|{base_id}|{version}", DOCS / entry["url"]))
+    text_meta = write_text_shards(DOCS, items)
+    t = text_meta["totals"]
+    print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
+          f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
+          f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
 
     print("\n[Derive 2/4] Building search-bundle...")
     bundle_stats = build_search_bundle(reports)

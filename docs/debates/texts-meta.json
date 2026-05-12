@@ -1,0 +1,52 @@
+{
+  "shard_size_target_bytes": 4500000,
+  "fallback_threshold_bytes": 10000000,
+  "r2_origin": null,
+  "totals": {
+    "records_with_text": 20,
+    "shards": 3,
+    "r2_fallback": 0,
+    "total_text_bytes": 9799717,
+    "missing_files": 0,
+    "skipped_oversize_no_r2": 0
+  },
+  "shards": [
+    {
+      "file": "texts-00.json",
+      "count": 17,
+      "bytes": 4372909
+    },
+    {
+      "file": "texts-01.json",
+      "count": 1,
+      "bytes": 2508278
+    },
+    {
+      "file": "texts-02.json",
+      "count": 2,
+      "bytes": 3113844
+    }
+  ],
+  "record_to_shard": {
+    "ls|LS18_S7_5372": 0,
+    "ls|LS18_S7_5373": 0,
+    "ls|LS18_S7_5374": 0,
+    "ls|LS18_S7_5375": 0,
+    "ls|LS18_S7_5376": 0,
+    "ls|LS18_S7_5377": 0,
+    "ls|LS18_S7_5378": 0,
+    "ls|LS18_S7_5379": 0,
+    "ls|LS18_S7_5380": 0,
+    "ls|LS18_S7_5381": 0,
+    "ls|LS18_S7_5382": 0,
+    "ls|LS18_S7_5383": 0,
+    "ls|LS18_S7_5384": 0,
+    "rs|RS269_2025-12-02|floor": 0,
+    "rs|RS269_2025-12-03|floor": 0,
+    "rs|RS269_2025-12-03|part1": 0,
+    "rs|RS269_2025-12-04|floor": 0,
+    "rs|RS269_2025-12-04|part1": 1,
+    "rs|RS269_2025-12-09|part1": 2,
+    "rs|RS269_2025-12-11|floor": 2
+  }
+}

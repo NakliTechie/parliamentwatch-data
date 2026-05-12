@@ -25,6 +25,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
+from parliamentwatch_text_shards import write_text_shards
+
 # Each corpus's outputs are scoped under `docs/<corpus>/`. DRSC is the
 # first corpus (this file); CAG and the others land in their own sibling
 # subfolders without touching this layout.
@@ -765,6 +767,21 @@ def phase_derive():
     with open(DOCS / "manifest.json", "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     build_committees_index()
+
+    # Bundle per-record text files. DRSC's manifest is nested by committee:
+    # `texts[<committee>][<file_id>] = {size, url}`. Composite key for the
+    # shard is `<committee>|<file_id>` — needed because file_ids can repeat
+    # across committees (each committee's LS16_10 is a different report).
+    print("\n[Derive] Building text shards...")
+    items = []
+    for committee, by_id in sorted(manifest["texts"].items()):
+        for key, entry in sorted(by_id.items()):
+            items.append((f"{committee}|{key}", DOCS / entry["url"]))
+    text_meta = write_text_shards(DOCS, items)
+    t = text_meta["totals"]
+    print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
+          f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
+          f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
 
     print("\n[Derive 2/4] Building search bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle()

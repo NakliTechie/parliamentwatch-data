@@ -40,6 +40,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from fc.scraper import ...` works
 
+from parliamentwatch_text_shards import write_text_shards
 from fc.scraper import (
     BASE_URL, REPORTS_API,
     COMMITTEES, DEFAULT_LOK_SABHAS,
@@ -702,6 +703,19 @@ def phase_derive() -> None:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
     n_with_text = sum(len(v) for v in manifest["texts"].values())
     print(f"  manifest: {n_with_text} reports with extracted text")
+
+    # Bundle per-record text files. FC's manifest is nested by committee:
+    # `texts[<committee>][<file_id>] = {size, url}` (same shape as DRSC).
+    print("\n[Derive] Building text shards...")
+    items = []
+    for committee, by_id in sorted(manifest["texts"].items()):
+        for key, entry in sorted(by_id.items()):
+            items.append((f"{committee}|{key}", DOCS / entry["url"]))
+    text_meta = write_text_shards(DOCS, items)
+    t = text_meta["totals"]
+    print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
+          f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
+          f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
 
     print("\n[Derive 2/4] Building search-bundle (title + first 5K chars)...")
     bundle_stats = build_search_bundle(reports)

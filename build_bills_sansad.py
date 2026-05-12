@@ -47,6 +47,7 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from bills.sansad.scraper import ...` works
 
+from parliamentwatch_text_shards import write_text_shards  # noqa: E402
 from bills.sansad.scraper import (  # noqa: E402
     SCRAPER_VERSION,
     BILLS_API,
@@ -947,6 +948,22 @@ def phase_derive() -> int:
     shard_entries = write_sharded_index(records)
     write_index_meta(records, shard_entries)
     write_manifest(records)
+
+    # Bundle per-record text files. Bills' manifest is flat by compositeId:
+    # `texts[<compositeId>] = {url}`. Text files live at
+    # `docs/bills/text/<compositeId>.txt`. Composite key for the shard is
+    # the same compositeId the app uses.
+    print("  Building text shards...")
+    items = sorted(
+        (r["compositeId"], TEXT_DIR / f"{r['compositeId']}.txt")
+        for r in records
+        if (TEXT_DIR / f"{r['compositeId']}.txt").exists()
+    )
+    text_meta = write_text_shards(DOCS, items)
+    t = text_meta["totals"]
+    print(f"    text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
+          f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
+          f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
 
     print("  Building search bundle (title + first 5K chars per bill, sharded)...")
     bundle_stats = build_search_bundle(records)

@@ -38,6 +38,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from lc.scraper import ...` works
 
+from parliamentwatch_text_shards import write_text_shards
 from lc.scraper import (
     BASE_URL, LISTING_URL,
     LCReport, RateLimited,
@@ -751,6 +752,19 @@ def phase_derive() -> None:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
     n_with_text = len(manifest["texts"])
     print(f"  manifest: {n_with_text} reports with extracted text")
+
+    # Bundle per-record text files. See build_cag.py for the rationale.
+    # LC manifest is flat: `texts[<report_id>] = {size, url}`.
+    print("\n[Derive] Building text shards...")
+    items = sorted(
+        (key, DOCS / entry["url"])
+        for key, entry in manifest["texts"].items()
+    )
+    text_meta = write_text_shards(DOCS, items)
+    t = text_meta["totals"]
+    print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
+          f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
+          f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
 
     print("\n[Derive 2/4] Building search-bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle(reports)
