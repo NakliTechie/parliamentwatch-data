@@ -1,0 +1,57 @@
+name: R2 sync (texts)
+
+# Mirrors docs/<corpus>/text/* into the sansadsaar-texts R2 bucket so
+# the static-assets bundle stays under Workers Static Assets' 20,000-
+# file deployment cap. Idempotent — re-runs only upload new / changed
+# files (HEAD + ETag match before PUT).
+#
+# Manual dispatch only for now. After confidence in the pattern we'll
+# wire it as a workflow_run on the scrape workflows (so new text files
+# land in R2 automatically alongside the existing docs/ commits), or
+# replace the docs/text/ writes entirely.
+#
+# Requires repo secrets:
+#   - CLOUDFLARE_API_TOKEN  with "Workers R2 Storage: Edit" permission
+#   - CLOUDFLARE_ACCOUNT_ID
+# Both are already set on this repo as of 2026-05-12 (the token was
+# created with the "Edit Cloudflare Workers" template; if the script
+# returns 403s on bucket / object operations, the token's permissions
+# need to be expanded to include R2 in the CF dashboard).
+
+on:
+  workflow_dispatch:
+    inputs:
+      corpora:
+        description: 'Corpora to sync (space-separated; blank = all)'
+        required: false
+        default: ''
+      parallelism:
+        description: 'Concurrent uploads'
+        required: false
+        default: '16'
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install requests
+
+      - name: Sync texts to R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_SYNC_PARALLELISM: ${{ inputs.parallelism }}
+        run: |
+          python3 scripts/r2_sync_texts.py ${{ inputs.corpora }}
