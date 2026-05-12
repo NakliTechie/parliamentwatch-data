@@ -1,12 +1,12 @@
 {
-  "audited_at": "2026-05-12T21:42:43Z",
+  "audited_at": "2026-05-12T21:59:40Z",
   "totals": {
     "reports": 14707,
-    "with_text": 9751,
-    "pypdf_empty_awaiting_ocr": 101,
-    "pypdf_error_retryable": 84,
+    "with_text": 10007,
+    "pypdf_empty_awaiting_ocr": 108,
+    "pypdf_error_retryable": 91,
     "ocr_failed_permanent": 0,
-    "never_attempted": 4771,
+    "never_attempted": 4501,
     "no_pdf_url": 0
   }
 }

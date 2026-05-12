@@ -1,51 +1,55 @@
 {
   "version": "1.2",
-  "generated_at": "2026-05-12T21:42:43Z",
+  "generated_at": "2026-05-12T21:59:39Z",
   "lok_sabhas": [
     18
   ],
   "total_reports": 14707,
-  "total_with_text": 9751,
+  "total_with_text": 10007,
   "search_bundle": {
-    "shard_count": 4,
+    "shard_count": 5,
     "shards": [
       "search-bundle-00.json",
       "search-bundle-01.json",
       "search-bundle-02.json",
-      "search-bundle-03.json"
+      "search-bundle-03.json",
+      "search-bundle-04.json"
     ],
     "shard_sizes": {
-      "search-bundle-00.json": 12835274,
-      "search-bundle-01.json": 12510001,
-      "search-bundle-02.json": 13032688,
-      "search-bundle-03.json": 13047002
+      "search-bundle-00.json": 10756183,
+      "search-bundle-01.json": 9937352,
+      "search-bundle-02.json": 10589956,
+      "search-bundle-03.json": 10797251,
+      "search-bundle-04.json": 10717965
     },
-    "total": 9751,
-    "truncated": 9426,
+    "total": 10007,
+    "truncated": 9682,
     "head_chars": 5000,
-    "size_bytes": 51424965,
-    "max_shard_bytes": 13047002
+    "size_bytes": 52798707,
+    "max_shard_bytes": 10797251
   },
   "search_index": {
-    "shard_count": 4,
+    "shard_count": 5,
     "shards": [
       "search-index-00.json",
       "search-index-01.json",
       "search-index-02.json",
-      "search-index-03.json"
+      "search-index-03.json",
+      "search-index-04.json"
     ],
     "shard_sizes": {
-      "search-index-00.json": 18485048,
-      "search-index-01.json": 18015173,
-      "search-index-02.json": 15687060,
-      "search-index-03.json": 16359847
+      "search-index-00.json": 16747179,
+      "search-index-01.json": 15151066,
+      "search-index-02.json": 14680253,
+      "search-index-03.json": 13562687,
+      "search-index-04.json": 14668715
     },
-    "report_count": 9751,
-    "vocab_size": 388043,
-    "total_postings": 20516985,
-    "size_bytes": 68547128,
-    "max_shard_bytes": 18485048,
+    "report_count": 10007,
+    "vocab_size": 388040,
+    "total_postings": 21058879,
+    "size_bytes": 74809900,
+    "max_shard_bytes": 16747179,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 8775
+    "freq_cutoff_high": 9006
   }
 }
