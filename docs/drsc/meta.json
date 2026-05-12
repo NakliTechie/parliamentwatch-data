@@ -1,11 +1,11 @@
 {
   "version": "1.2",
-  "generated_at": "2026-05-12T00:10:01Z",
+  "generated_at": "2026-05-12T04:27:43Z",
   "lok_sabhas": [
     18
   ],
   "total_reports": 14707,
-  "total_with_text": 8369,
+  "total_with_text": 8646,
   "search_bundle": {
     "shard_count": 4,
     "shards": [
@@ -15,16 +15,16 @@
       "search-bundle-03.json"
     ],
     "shard_sizes": {
-      "search-bundle-00.json": 10865588,
-      "search-bundle-01.json": 10735853,
-      "search-bundle-02.json": 11164049,
-      "search-bundle-03.json": 11173538
+      "search-bundle-00.json": 11247940,
+      "search-bundle-01.json": 11102189,
+      "search-bundle-02.json": 11550715,
+      "search-bundle-03.json": 11553552
     },
-    "total": 8369,
-    "truncated": 8044,
+    "total": 8646,
+    "truncated": 8321,
     "head_chars": 5000,
-    "size_bytes": 43939028,
-    "max_shard_bytes": 11173538
+    "size_bytes": 45454396,
+    "max_shard_bytes": 11553552
   },
   "search_index": {
     "shard_count": 4,
@@ -35,17 +35,17 @@
       "search-index-03.json"
     ],
     "shard_sizes": {
-      "search-index-00.json": 16769686,
-      "search-index-01.json": 16311800,
-      "search-index-02.json": 14195492,
-      "search-index-03.json": 14571516
+      "search-index-00.json": 17179491,
+      "search-index-01.json": 16624947,
+      "search-index-02.json": 14532416,
+      "search-index-03.json": 15000765
     },
-    "report_count": 8369,
-    "vocab_size": 387005,
-    "total_postings": 17657678,
-    "size_bytes": 61848494,
-    "max_shard_bytes": 16769686,
+    "report_count": 8646,
+    "vocab_size": 388049,
+    "total_postings": 18263757,
+    "size_bytes": 63337619,
+    "max_shard_bytes": 17179491,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 7532
+    "freq_cutoff_high": 7781
   }
 }
