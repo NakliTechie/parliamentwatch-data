@@ -78,11 +78,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/lc/manifest.json docs/lc/meta.json docs/lc/audit.json \
+          git add docs/lc/manifest.json docs/lc/meta.json docs/lc/texts-meta.json 'docs/lc/texts-*.json' docs/lc/audit.json \
                   docs/lc/search-bundle-*.json docs/lc/search-index-*.json
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild LC derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
-          for attempt in 1 2 3; do
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
             if git pull --rebase origin main && git push; then
               echo "pushed on attempt $attempt"
               exit 0
@@ -91,10 +91,10 @@ jobs:
             git rebase --abort 2>/dev/null || true
             git reset --hard origin/main
             BUILD_PHASE=derive python build_lc.py
-            git add docs/lc/manifest.json docs/lc/meta.json \
+            git add docs/lc/manifest.json docs/lc/meta.json docs/lc/texts-meta.json 'docs/lc/texts-*.json' \
                     docs/lc/search-bundle-*.json docs/lc/search-index-*.json
             git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
             git commit -m "Auto-rebuild LC derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           done
-          echo "exceeded 3 push attempts; giving up — next derive run will catch up"
+          echo "exceeded 10 push attempts; giving up — next derive run will catch up"
           exit 1

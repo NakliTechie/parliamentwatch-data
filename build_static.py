@@ -68,7 +68,7 @@ LOK_SABHAS = [int(x) for x in os.environ.get("LOK_SABHAS", "18").split(",")]
 
 import subprocess
 
-CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "25"))
+CHECKPOINT_EVERY_N = int(os.environ.get("CHECKPOINT_EVERY_N", "100"))
 CHECKPOINT_EVERY_S = int(os.environ.get("CHECKPOINT_EVERY_S", "300"))
 
 
