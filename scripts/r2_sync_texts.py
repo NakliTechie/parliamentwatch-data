@@ -61,6 +61,31 @@ def _auth_headers() -> dict:
     return {"Authorization": f"Bearer {token}"}
 
 
+def _diagnose_token() -> None:
+    """Print what the token can / can't do. Run on 403 to disambiguate
+    'token missing' from 'token wrong perms' from 'wrong account scope'."""
+    # 1. Token validity + identity
+    vr = requests.get("https://api.cloudflare.com/client/v4/user/tokens/verify",
+                      headers=_auth_headers())
+    if vr.ok:
+        body = vr.json()
+        rsl = body.get("result", {}).get("status", "?")
+        print(f"  [diag] token verify: {vr.status_code} status={rsl}")
+    else:
+        print(f"  [diag] token verify FAILED: {vr.status_code} {vr.text[:150]}")
+        return
+
+    # 2. Account-scoped R2 read (list buckets) — needs R2 Storage:Read
+    lr = requests.get(f"{_api_base()}/r2/buckets", headers=_auth_headers())
+    if lr.status_code == 200:
+        names = [b["name"] for b in lr.json().get("result", {}).get("buckets", [])]
+        print(f"  [diag] R2 list: 200 — {len(names)} bucket(s): {names}")
+    elif lr.status_code == 403:
+        print(f"  [diag] R2 list: 403 — token has NO R2 perms on account {os.environ.get('CLOUDFLARE_ACCOUNT_ID','?')[:8]}…")
+    else:
+        print(f"  [diag] R2 list: {lr.status_code} {lr.text[:200]}")
+
+
 def ensure_bucket() -> None:
     """Idempotent bucket create. 409 = already exists = fine."""
     url = f"{_api_base()}/r2/buckets"
@@ -68,14 +93,28 @@ def ensure_bucket() -> None:
                       json={"name": BUCKET_NAME})
     if r.status_code in (200, 201):
         print(f"[bucket] created {BUCKET_NAME}")
-    elif r.status_code == 409:
+        return
+    if r.status_code == 409:
         print(f"[bucket] {BUCKET_NAME} already exists")
-    elif r.status_code == 403:
+        return
+
+    # Failure path — diagnose first.
+    print(f"[bucket] create returned {r.status_code}: {r.text[:300]}")
+    _diagnose_token()
+    if r.status_code == 403:
         sys.exit(
-            f"[bucket] 403 from CF — API token likely lacks 'Workers R2 Storage: Edit'.\n"
-            f"Update the token at https://dash.cloudflare.com/profile/api-tokens.")
-    else:
-        sys.exit(f"[bucket] unexpected response: {r.status_code} {r.text[:200]}")
+            "\n[bucket] 403 from CF on POST. Common causes:\n"
+            "  1. Token lacks 'Account · Workers R2 Storage · Edit' permission.\n"
+            "     Fix: https://dash.cloudflare.com/profile/api-tokens → edit\n"
+            "     the token, add the permission, save (no need to rotate the\n"
+            "     GitHub secret if you edited in place).\n"
+            "  2. Token was REPLACED rather than edited — GitHub secret still\n"
+            "     holds the old value. Fix: `gh secret set CLOUDFLARE_API_TOKEN\n"
+            "     --repo NakliTechie/parliamentwatch-data` and paste the new value.\n"
+            "  3. Token's Account Resources scope doesn't include the account\n"
+            "     specified by CLOUDFLARE_ACCOUNT_ID. Fix: edit the token's\n"
+            "     scope to include the account that holds your R2 buckets.")
+    sys.exit(f"[bucket] unrecoverable: {r.status_code}")
 
 
 def head_object(key: str) -> Optional[dict]:
