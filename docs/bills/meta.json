@@ -1,8 +1,8 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "last_update": "2026-05-12T10:09:51Z",
+  "last_update": "2026-05-12T10:48:56Z",
   "total": 9914,
-  "with_text": 3731,
+  "with_text": 3916,
   "in_rate_limit_cooldown": false,
   "cooldown_remaining_seconds": null,
   "search_bundle": {
@@ -12,14 +12,14 @@
       "search-bundle-01.json"
     ],
     "shard_sizes": {
-      "search-bundle-00.json": 8727348,
-      "search-bundle-01.json": 8920700
+      "search-bundle-00.json": 9162624,
+      "search-bundle-01.json": 9318554
     },
-    "total": 3731,
-    "truncated": 2603,
+    "total": 3916,
+    "truncated": 2712,
     "head_chars": 5000,
-    "size_bytes": 17648048,
-    "max_shard_bytes": 8920700
+    "size_bytes": 18481178,
+    "max_shard_bytes": 9318554
   },
   "search_index": {
     "shard_count": 2,
@@ -28,15 +28,15 @@
       "search-index-01.json"
     ],
     "shard_sizes": {
-      "search-index-00.json": 2154410,
-      "search-index-01.json": 2217045
+      "search-index-00.json": 2244461,
+      "search-index-01.json": 2284189
     },
-    "report_count": 3731,
-    "vocab_size": 28450,
-    "total_postings": 1436695,
-    "size_bytes": 4371455,
-    "max_shard_bytes": 2217045,
+    "report_count": 3916,
+    "vocab_size": 28742,
+    "total_postings": 1493788,
+    "size_bytes": 4528650,
+    "max_shard_bytes": 2284189,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 3357
+    "freq_cutoff_high": 3524
   }
 }
