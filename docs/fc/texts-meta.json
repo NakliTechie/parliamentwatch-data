@@ -3,10 +3,10 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 588,
+    "records_with_text": 590,
     "shards": 18,
     "r2_fallback": 0,
-    "total_text_bytes": 77264417,
+    "total_text_bytes": 77548588,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0
   },
@@ -34,62 +34,62 @@
     {
       "file": "texts-04.json",
       "count": 32,
-      "bytes": 4591609
+      "bytes": 4293825
     },
     {
       "file": "texts-05.json",
-      "count": 27,
-      "bytes": 4533919
+      "count": 26,
+      "bytes": 4498612
     },
     {
       "file": "texts-06.json",
-      "count": 34,
-      "bytes": 4332132
+      "count": 35,
+      "bytes": 4545390
     },
     {
       "file": "texts-07.json",
       "count": 34,
-      "bytes": 4640367
+      "bytes": 4696165
     },
     {
       "file": "texts-08.json",
       "count": 31,
-      "bytes": 4521342
+      "bytes": 4395204
     },
     {
       "file": "texts-09.json",
       "count": 27,
-      "bytes": 4457898
+      "bytes": 4406627
     },
     {
       "file": "texts-10.json",
-      "count": 32,
-      "bytes": 4455423
+      "count": 31,
+      "bytes": 4579463
     },
     {
       "file": "texts-11.json",
-      "count": 29,
-      "bytes": 4429673
+      "count": 30,
+      "bytes": 4556663
     },
     {
       "file": "texts-12.json",
       "count": 35,
-      "bytes": 4561076
+      "bytes": 4524178
     },
     {
       "file": "texts-13.json",
-      "count": 35,
-      "bytes": 4568007
+      "count": 34,
+      "bytes": 4550549
     },
     {
       "file": "texts-14.json",
-      "count": 37,
-      "bytes": 4545790
+      "count": 35,
+      "bytes": 4524654
     },
     {
       "file": "texts-15.json",
-      "count": 28,
-      "bytes": 4222970
+      "count": 33,
+      "bytes": 4578379
     },
     {
       "file": "texts-16.json",
@@ -252,6 +252,7 @@
     "copu|LS18_7": 4,
     "copu|LS18_8": 4,
     "copu|LS18_9": 4,
+    "estimates|LS14_1": 4,
     "estimates|LS14_10": 4,
     "estimates|LS14_11": 4,
     "estimates|LS14_12": 4,
@@ -259,7 +260,7 @@
     "estimates|LS14_14": 4,
     "estimates|LS14_15": 4,
     "estimates|LS14_16": 4,
-    "estimates|LS14_17": 4,
+    "estimates|LS14_17": 5,
     "estimates|LS14_18": 5,
     "estimates|LS14_19": 5,
     "estimates|LS14_2": 5,
@@ -285,8 +286,8 @@
     "estimates|LS15_2": 5,
     "estimates|LS15_20": 5,
     "estimates|LS15_21": 5,
-    "estimates|LS15_22": 5,
-    "estimates|LS15_23": 5,
+    "estimates|LS15_22": 6,
+    "estimates|LS15_23": 6,
     "estimates|LS15_24": 6,
     "estimates|LS15_25": 6,
     "estimates|LS15_26": 6,
@@ -320,7 +321,7 @@
     "estimates|LS16_2": 6,
     "estimates|LS16_20": 6,
     "estimates|LS16_21": 6,
-    "estimates|LS16_22": 6,
+    "estimates|LS16_22": 7,
     "estimates|LS16_23": 7,
     "estimates|LS16_24": 7,
     "estimates|LS16_25": 7,
@@ -354,7 +355,7 @@
     "estimates|LS17_24": 7,
     "estimates|LS17_25": 7,
     "estimates|LS17_26": 7,
-    "estimates|LS17_27": 7,
+    "estimates|LS17_27": 8,
     "estimates|LS17_28": 8,
     "estimates|LS17_29": 8,
     "estimates|LS17_30": 8,
@@ -377,6 +378,7 @@
     "estimates|LS18_5": 8,
     "estimates|LS18_6": 8,
     "estimates|LS18_7": 8,
+    "pac|LS14_1": 8,
     "pac|LS14_10": 8,
     "pac|LS14_11": 8,
     "pac|LS14_12": 8,
@@ -384,8 +386,8 @@
     "pac|LS14_14": 8,
     "pac|LS14_15": 8,
     "pac|LS14_16": 8,
-    "pac|LS14_17": 8,
-    "pac|LS14_18": 8,
+    "pac|LS14_17": 9,
+    "pac|LS14_18": 9,
     "pac|LS14_19": 9,
     "pac|LS14_2": 9,
     "pac|LS14_20": 9,
@@ -411,8 +413,8 @@
     "pac|LS14_4": 9,
     "pac|LS14_40": 9,
     "pac|LS14_41": 9,
-    "pac|LS14_42": 9,
-    "pac|LS14_43": 9,
+    "pac|LS14_42": 10,
+    "pac|LS14_43": 10,
     "pac|LS14_44": 10,
     "pac|LS14_45": 10,
     "pac|LS14_46": 10,
@@ -442,9 +444,9 @@
     "pac|LS14_68": 10,
     "pac|LS14_69": 10,
     "pac|LS14_7": 10,
-    "pac|LS14_70": 10,
-    "pac|LS14_71": 10,
-    "pac|LS14_72": 10,
+    "pac|LS14_70": 11,
+    "pac|LS14_71": 11,
+    "pac|LS14_72": 11,
     "pac|LS14_73": 11,
     "pac|LS14_74": 11,
     "pac|LS14_75": 11,
@@ -472,8 +474,8 @@
     "pac|LS15_18": 11,
     "pac|LS15_19": 11,
     "pac|LS15_2": 11,
-    "pac|LS15_20": 11,
-    "pac|LS15_21": 11,
+    "pac|LS15_20": 12,
+    "pac|LS15_21": 12,
     "pac|LS15_22": 12,
     "pac|LS15_23": 12,
     "pac|LS15_24": 12,
@@ -507,8 +509,8 @@
     "pac|LS15_50": 12,
     "pac|LS15_51": 12,
     "pac|LS15_52": 12,
-    "pac|LS15_53": 12,
-    "pac|LS15_54": 12,
+    "pac|LS15_53": 13,
+    "pac|LS15_54": 13,
     "pac|LS15_55": 13,
     "pac|LS15_56": 13,
     "pac|LS15_57": 13,
@@ -541,9 +543,9 @@
     "pac|LS15_84": 13,
     "pac|LS15_85": 13,
     "pac|LS15_86": 13,
-    "pac|LS15_87": 13,
-    "pac|LS15_88": 13,
-    "pac|LS15_89": 13,
+    "pac|LS15_87": 14,
+    "pac|LS15_88": 14,
+    "pac|LS15_89": 14,
     "pac|LS15_9": 14,
     "pac|LS15_90": 14,
     "pac|LS15_91": 14,
@@ -576,11 +578,11 @@
     "pac|LS16_12": 14,
     "pac|LS16_120": 14,
     "pac|LS16_121": 14,
-    "pac|LS16_122": 14,
-    "pac|LS16_123": 14,
-    "pac|LS16_124": 14,
-    "pac|LS16_125": 14,
-    "pac|LS16_126": 14,
+    "pac|LS16_122": 15,
+    "pac|LS16_123": 15,
+    "pac|LS16_124": 15,
+    "pac|LS16_125": 15,
+    "pac|LS16_126": 15,
     "pac|LS16_127": 15,
     "pac|LS16_128": 15,
     "pac|LS16_129": 15,

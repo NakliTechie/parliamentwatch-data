@@ -1,6 +1,10 @@
 {
   "texts": {
     "estimates": {
+      "LS14_1": {
+        "size": 18689,
+        "url": "text/estimates/LS14_1.txt"
+      },
       "LS14_10": {
         "size": 36094,
         "url": "text/estimates/LS14_10.txt"
@@ -503,6 +507,10 @@
       }
     },
     "pac": {
+      "LS14_1": {
+        "size": 265482,
+        "url": "text/pac/LS14_1.txt"
+      },
       "LS14_10": {
         "size": 141632,
         "url": "text/pac/LS14_10.txt"
