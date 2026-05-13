@@ -1,6 +1,38 @@
 {
   "texts": {
     "estimates": {
+      "LS14_10": {
+        "size": 36094,
+        "url": "text/estimates/LS14_10.txt"
+      },
+      "LS14_11": {
+        "size": 174038,
+        "url": "text/estimates/LS14_11.txt"
+      },
+      "LS14_12": {
+        "size": 85501,
+        "url": "text/estimates/LS14_12.txt"
+      },
+      "LS14_13": {
+        "size": 130810,
+        "url": "text/estimates/LS14_13.txt"
+      },
+      "LS14_14": {
+        "size": 205354,
+        "url": "text/estimates/LS14_14.txt"
+      },
+      "LS14_15": {
+        "size": 74151,
+        "url": "text/estimates/LS14_15.txt"
+      },
+      "LS14_16": {
+        "size": 164659,
+        "url": "text/estimates/LS14_16.txt"
+      },
+      "LS14_17": {
+        "size": 311061,
+        "url": "text/estimates/LS14_17.txt"
+      },
       "LS14_18": {
         "size": 222799,
         "url": "text/estimates/LS14_18.txt"
@@ -439,6 +471,38 @@
       }
     },
     "pac": {
+      "LS14_10": {
+        "size": 141632,
+        "url": "text/pac/LS14_10.txt"
+      },
+      "LS14_11": {
+        "size": 38917,
+        "url": "text/pac/LS14_11.txt"
+      },
+      "LS14_12": {
+        "size": 168170,
+        "url": "text/pac/LS14_12.txt"
+      },
+      "LS14_13": {
+        "size": 102527,
+        "url": "text/pac/LS14_13.txt"
+      },
+      "LS14_14": {
+        "size": 184314,
+        "url": "text/pac/LS14_14.txt"
+      },
+      "LS14_15": {
+        "size": 35349,
+        "url": "text/pac/LS14_15.txt"
+      },
+      "LS14_16": {
+        "size": 124213,
+        "url": "text/pac/LS14_16.txt"
+      },
+      "LS14_17": {
+        "size": 327845,
+        "url": "text/pac/LS14_17.txt"
+      },
       "LS14_18": {
         "size": 143421,
         "url": "text/pac/LS14_18.txt"
@@ -1633,6 +1697,10 @@
       }
     },
     "copu": {
+      "LS14_10": {
+        "size": 166502,
+        "url": "text/copu/LS14_10.txt"
+      },
       "LS14_101": {
         "size": 32057,
         "url": "text/copu/LS14_101.txt"
@@ -1644,6 +1712,30 @@
       "LS14_103": {
         "size": 39857,
         "url": "text/copu/LS14_103.txt"
+      },
+      "LS14_11": {
+        "size": 256371,
+        "url": "text/copu/LS14_11.txt"
+      },
+      "LS14_12": {
+        "size": 72372,
+        "url": "text/copu/LS14_12.txt"
+      },
+      "LS14_13": {
+        "size": 43802,
+        "url": "text/copu/LS14_13.txt"
+      },
+      "LS14_14": {
+        "size": 226102,
+        "url": "text/copu/LS14_14.txt"
+      },
+      "LS14_15": {
+        "size": 227465,
+        "url": "text/copu/LS14_15.txt"
+      },
+      "LS14_16": {
+        "size": 128675,
+        "url": "text/copu/LS14_16.txt"
       },
       "LS14_17": {
         "size": 162983,
@@ -1728,6 +1820,10 @@
       "LS14_37": {
         "size": 52643,
         "url": "text/copu/LS14_37.txt"
+      },
+      "LS14_9": {
+        "size": 122908,
+        "url": "text/copu/LS14_9.txt"
       },
       "LS15_1": {
         "size": 168686,
