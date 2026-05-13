@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-13T05:31:29Z",
+  "scraped_at": "2026-05-13T07:43:22Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
     "with_intro_pdf": 7464,
     "with_canonical_pdf": 7493,
-    "with_text": 4555,
+    "with_text": 4594,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -79,6 +79,9 @@
     "100_2024_L": {
       "url": "text/100_2024_L.txt"
     },
+    "101_2004_L": {
+      "url": "text/101_2004_L.txt"
+    },
     "101_2006_L": {
       "url": "text/101_2006_L.txt"
     },
@@ -127,6 +130,9 @@
     "101_2025_L": {
       "url": "text/101_2025_L.txt"
     },
+    "102_2005_L": {
+      "url": "text/102_2005_L.txt"
+    },
     "102_2009_L": {
       "url": "text/102_2009_L.txt"
     },
@@ -169,6 +175,9 @@
     "102_2024_L": {
       "url": "text/102_2024_L.txt"
     },
+    "103_2005_L": {
+      "url": "text/103_2005_L.txt"
+    },
     "103_2009_L": {
       "url": "text/103_2009_L.txt"
     },
@@ -207,6 +216,12 @@
     },
     "103_2025_L": {
       "url": "text/103_2025_L.txt"
+    },
+    "104_2004_L": {
+      "url": "text/104_2004_L.txt"
+    },
+    "104_2005_L": {
+      "url": "text/104_2005_L.txt"
     },
     "104_2009_L": {
       "url": "text/104_2009_L.txt"
@@ -249,6 +264,9 @@
     },
     "104_2026_L": {
       "url": "text/104_2026_L.txt"
+    },
+    "105_2004_L": {
+      "url": "text/105_2004_L.txt"
     },
     "105_2009_L": {
       "url": "text/105_2009_L.txt"
@@ -379,6 +397,9 @@
     "107_2026_L": {
       "url": "text/107_2026_L.txt"
     },
+    "108_2004_L": {
+      "url": "text/108_2004_L.txt"
+    },
     "108_2009_L": {
       "url": "text/108_2009_L.txt"
     },
@@ -426,6 +447,9 @@
     },
     "108_2026_L": {
       "url": "text/108_2026_L.txt"
+    },
+    "109_2005_L": {
+      "url": "text/109_2005_L.txt"
     },
     "109_2009_L": {
       "url": "text/109_2009_L.txt"
@@ -6616,6 +6640,12 @@
     "38_2025_L": {
       "url": "text/38_2025_L.txt"
     },
+    "39_2003_L": {
+      "url": "text/39_2003_L.txt"
+    },
+    "39_2004_L": {
+      "url": "text/39_2004_L.txt"
+    },
     "39_2007_L": {
       "url": "text/39_2007_L.txt"
     },
@@ -7117,6 +7147,9 @@
     "47_2024_L": {
       "url": "text/47_2024_L.txt"
     },
+    "48_2004_L": {
+      "url": "text/48_2004_L.txt"
+    },
     "48_2006_L": {
       "url": "text/48_2006_L.txt"
     },
@@ -7176,6 +7209,9 @@
     },
     "48_2025_L": {
       "url": "text/48_2025_L.txt"
+    },
+    "49_2004_L": {
+      "url": "text/49_2004_L.txt"
     },
     "49_2006_L": {
       "url": "text/49_2006_L.txt"
@@ -7410,6 +7446,9 @@
     },
     "52_2025_L": {
       "url": "text/52_2025_L.txt"
+    },
+    "53_2002_L": {
+      "url": "text/53_2002_L.txt"
     },
     "53_2008_L": {
       "url": "text/53_2008_L.txt"
@@ -7872,6 +7911,9 @@
     },
     "61_2024_L": {
       "url": "text/61_2024_L.txt"
+    },
+    "62_2002_L": {
+      "url": "text/62_2002_L.txt"
     },
     "62_2007_L": {
       "url": "text/62_2007_L.txt"
@@ -8578,6 +8620,9 @@
     "75_2025_L": {
       "url": "text/75_2025_L.txt"
     },
+    "76_2003_L": {
+      "url": "text/76_2003_L.txt"
+    },
     "76_2005_L": {
       "url": "text/76_2005_L.txt"
     },
@@ -9267,6 +9312,9 @@
     },
     "88_2025_L": {
       "url": "text/88_2025_L.txt"
+    },
+    "89_2004_L": {
+      "url": "text/89_2004_L.txt"
     },
     "89_2007_L": {
       "url": "text/89_2007_L.txt"
@@ -10018,6 +10066,9 @@
     "III_2026_R": {
       "url": "text/III_2026_R.txt"
     },
+    "II_2002_R": {
+      "url": "text/II_2002_R.txt"
+    },
     "II_2007_R": {
       "url": "text/II_2007_R.txt"
     },
@@ -10068,6 +10119,9 @@
     },
     "II_2026_R": {
       "url": "text/II_2026_R.txt"
+    },
+    "IV_2002_R": {
+      "url": "text/IV_2002_R.txt"
     },
     "IV_2007_R": {
       "url": "text/IV_2007_R.txt"
@@ -10179,6 +10233,9 @@
     },
     "IX_2026_R": {
       "url": "text/IX_2026_R.txt"
+    },
+    "I_2002_R": {
+      "url": "text/I_2002_R.txt"
     },
     "I_2006_R": {
       "url": "text/I_2006_R.txt"
@@ -11317,6 +11374,9 @@
     "L_2025_R": {
       "url": "text/L_2025_R.txt"
     },
+    "VIII_2002_R": {
+      "url": "text/VIII_2002_R.txt"
+    },
     "VIII_2006_R": {
       "url": "text/VIII_2006_R.txt"
     },
@@ -11377,6 +11437,9 @@
     "VIII_2026_R": {
       "url": "text/VIII_2026_R.txt"
     },
+    "VII_2002_R": {
+      "url": "text/VII_2002_R.txt"
+    },
     "VII_2006_R": {
       "url": "text/VII_2006_R.txt"
     },
@@ -11430,6 +11493,9 @@
     },
     "VII_2026_R": {
       "url": "text/VII_2026_R.txt"
+    },
+    "VI_2002_R": {
+      "url": "text/VI_2002_R.txt"
     },
     "VI_2006_R": {
       "url": "text/VI_2006_R.txt"
@@ -11490,6 +11556,9 @@
     },
     "VI_2026_R": {
       "url": "text/VI_2026_R.txt"
+    },
+    "V_2002_R": {
+      "url": "text/V_2002_R.txt"
     },
     "V_2006_R": {
       "url": "text/V_2006_R.txt"
@@ -11686,6 +11755,12 @@
     "XIII_2026_R": {
       "url": "text/XIII_2026_R.txt"
     },
+    "XII_2002_R": {
+      "url": "text/XII_2002_R.txt"
+    },
+    "XII_2004_R": {
+      "url": "text/XII_2004_R.txt"
+    },
     "XII_2006_R": {
       "url": "text/XII_2006_R.txt"
     },
@@ -11809,6 +11884,9 @@
     "XIV_2026_R": {
       "url": "text/XIV_2026_R.txt"
     },
+    "XIX_2002_R": {
+      "url": "text/XIX_2002_R.txt"
+    },
     "XIX_2006_R": {
       "url": "text/XIX_2006_R.txt"
     },
@@ -11862,6 +11940,9 @@
     },
     "XIX_2025_R": {
       "url": "text/XIX_2025_R.txt"
+    },
+    "XI_2002_R": {
+      "url": "text/XI_2002_R.txt"
     },
     "XI_2006_R": {
       "url": "text/XI_2006_R.txt"
@@ -12352,6 +12433,9 @@
     "XL_2025_R": {
       "url": "text/XL_2025_R.txt"
     },
+    "XVIII_2002_R": {
+      "url": "text/XVIII_2002_R.txt"
+    },
     "XVIII_2006_R": {
       "url": "text/XVIII_2006_R.txt"
     },
@@ -12405,6 +12489,9 @@
     },
     "XVIII_2026_R": {
       "url": "text/XVIII_2026_R.txt"
+    },
+    "XVII_2002_R": {
+      "url": "text/XVII_2002_R.txt"
     },
     "XVII_2006_R": {
       "url": "text/XVII_2006_R.txt"
@@ -12565,6 +12652,9 @@
     "XV_2026_R": {
       "url": "text/XV_2026_R.txt"
     },
+    "XXIII_2002_R": {
+      "url": "text/XXIII_2002_R.txt"
+    },
     "XXIII_2006_R": {
       "url": "text/XXIII_2006_R.txt"
     },
@@ -12622,6 +12712,9 @@
     "XXIII_2025_R": {
       "url": "text/XXIII_2025_R.txt"
     },
+    "XXII_2002_R": {
+      "url": "text/XXII_2002_R.txt"
+    },
     "XXII_2006_R": {
       "url": "text/XXII_2006_R.txt"
     },
@@ -12678,6 +12771,9 @@
     },
     "XXII_2026_R": {
       "url": "text/XXII_2026_R.txt"
+    },
+    "XXIV_2002_R": {
+      "url": "text/XXIV_2002_R.txt"
     },
     "XXIV_2006_R": {
       "url": "text/XXIV_2006_R.txt"
@@ -12787,6 +12883,9 @@
     "XXIX_2026_R": {
       "url": "text/XXIX_2026_R.txt"
     },
+    "XXI_2002_R": {
+      "url": "text/XXI_2002_R.txt"
+    },
     "XXI_2006_R": {
       "url": "text/XXI_2006_R.txt"
     },
@@ -12895,6 +12994,9 @@
     "XXVIII_2025_R": {
       "url": "text/XXVIII_2025_R.txt"
     },
+    "XXVII_2002_R": {
+      "url": "text/XXVII_2002_R.txt"
+    },
     "XXVII_2006_R": {
       "url": "text/XXVII_2006_R.txt"
     },
@@ -12954,6 +13056,9 @@
     },
     "XXVII_2026_R": {
       "url": "text/XXVII_2026_R.txt"
+    },
+    "XXVI_2002_R": {
+      "url": "text/XXVI_2002_R.txt"
     },
     "XXVI_2006_R": {
       "url": "text/XXVI_2006_R.txt"
@@ -13072,6 +13177,9 @@
     "XXV_2026_R": {
       "url": "text/XXV_2026_R.txt"
     },
+    "XXXIII_2004_R": {
+      "url": "text/XXXIII_2004_R.txt"
+    },
     "XXXIII_2006_R": {
       "url": "text/XXXIII_2006_R.txt"
     },
@@ -13176,6 +13284,9 @@
     },
     "XXXII_2026_R": {
       "url": "text/XXXII_2026_R.txt"
+    },
+    "XXXIV_2004_R": {
+      "url": "text/XXXIV_2004_R.txt"
     },
     "XXXIV_2006_R": {
       "url": "text/XXXIV_2006_R.txt"
@@ -13480,6 +13591,9 @@
     "XXXVI_2025_R": {
       "url": "text/XXXVI_2025_R.txt"
     },
+    "XXXV_2002_R": {
+      "url": "text/XXXV_2002_R.txt"
+    },
     "XXXV_2006_R": {
       "url": "text/XXXV_2006_R.txt"
     },
@@ -13575,6 +13689,9 @@
     },
     "XXX_2026_R": {
       "url": "text/XXX_2026_R.txt"
+    },
+    "XX_2002_R": {
+      "url": "text/XX_2002_R.txt"
     },
     "XX_2006_R": {
       "url": "text/XX_2006_R.txt"
