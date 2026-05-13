@@ -1,0 +1,2416 @@
+ 
+ 
+ 
+STANDING COMMITTEE ON 
+INFORMATION TECHNOLOGY 
+(2010-11) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FIFTEENTH LOK SABHA 
+ 
+ 
+ 
+ 
+ 
+ 
+MINISTRY OF COMMUNICATIONS & INFORMATION TECHNOLOGY 
+(DEPARTMENT OF POSTS) 
+ 
+ 
+ 
+ 
+MODERNISATION OF POST OFFICES 
+ 
+ 
+ 
+ 
+FIFTEENTH REPORT 
+ 
+ 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT  
+NEW DELHI 
+ 
+October, 2010/Kartika, 1932 (Saka) 
+  
+ 
+15 
+
+
+ 
+ 
+ 
+ 
+ 
+FIFTEENTH REPORT  
+ 
+ 
+ 
+STANDING COMMITTEE ON 
+INFORMATION TECHNOLOGY 
+(2010-11) 
+ 
+ 
+ 
+ 
+ 
+(FIFTEENTH LOK SABHA) 
+ 
+ 
+ 
+ 
+MINISTRY OF COMMUNICATIONS & INFORMATION TECHNOLOGY 
+(DEPARTMENT OF POSTS) 
+ 
+ 
+ 
+MODERNISATION OF POST OFFICES 
+ 
+ 
+Presented to Lok Sabha on 23.11.2010 
+Laid in Rajya Sabha on 23.11.2010 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT 
+NEW DELHI 
+ 
+ 
+ 
+ 
+ 
+ 
+November, 2010/ Kartika, 1932 (Saka) 
+ 
+ 
+ 
+
+
+ 
+ 
+CONTENT 
+ Page No. 
+COMPOSITION OF THE COMMITTEE (  ) 
+INTRODUCTION (  ) 
+REPORT  
+PART I  
+I. Introductory  1 
+II. Classification of Post Offices 1 
+III. Technology Upgradation and Modernisation 2 
+ (i) Financial Outlays and Achievements under various programme related to  Modernisation of Post 
+Offices from Eighth to Tenth Plan (upto 2009-10) 
+2 
+ (ii) Financial Outlays and Achievements for Modernisation of Post Offices during Eleventh Plan (upto 
+2009-10) 
+2 
+ (iii) Physical Targets and Achievements under various programme related to Modernisation of Post 
+Offices from Eighth to Eleventh Plan (upto 2009-10) 
+3 
+  (a) Eighth Plan 3 
+  (b) Ninth Plan 3 
+  (c) Tenth Plan 4 
+  (d) Eleventh Plan (upto 2009-10) 4 
+IV. Status of computerisation of Post Offices 4 
+V. Broadband Connectivity 5 
+VI. IT-Induction-Postal Operations 7 
+ (i) IT Project Phase – I 7 
+ (ii) IT Project Phase – II 9 
+  (a) Financial Outlay for Phase – II 9 
+  (b) Key drivers for IT Modernisation in Phase II 10 
+  (c) Challenges of IT Project Phase-II 10 
+  (d) Software for IT Project Phase-II 10 
+  (e) Comments of Departments of Expenditure, Information Technology, Telecommunications and 
+Planning Commission on IT Project Phase – II 
+10 
+  (f) Establishment of Project Management Unit for Phase II 11 
+  (g) Consultations of M/s Accenture Services Pvt. Ltd. for IT Projects 12 
+  (h) Findings of M/s. Accenture Services Pvt. Ltd. on IT Projects 13 
+VII. Project Arrow 13 
+ (i) Utilisation of Outlays for Project Arrow 14 
+ (ii) Phase I 15 
+ (iii) Phase II  15 
+ (iv) Phase III 16 
+VIII. Mail Operations 17 
+ (i) Setting up of Automatic Mail Processing Centres (AMPCs) 17 
+ (ii) Redesigning of Pin Code 18 
+ (iii) Mail Business Centres 18 
+IX. Modernisation of Financial Services 19 
+ (i) Core Banking Solutions 20 
+ (ii) Feasibility Report For Implementation Of Core Banking Solution By Technology Consultants 20 
+ (iii) Interaction with Banks and Technology Providers for introduction of Core Banking Solution 20 
+ (iv) Comparison of Financial Services provided by Banks and by the Department of Posts 21 
+ (v) Introduction of Accrual Accounting System 22 
+X. Modernisation in Service Delivery Levels with regard to financial services 22 
+ (i) Introduction of i-MO 22 
+ (ii) Introduction of e-MO 23 
+ (iii) Introduction of MO-Videsh 23 
+ (iv) Operation of International Money Transfer Service 23 
+ (v) Electronic Clearance Service 23 
+
+ 
+ 
+XI. Rural ICT Devices 24 
+XII. Support for Mahatma National Rural Employment Guarantee Scheme (MNREGS) 25 
+XIII. Training of Manpower 27 
+ (i) Human Resource Development Initiatives 28 
+ 
+                                            Part-II  
+                       Recommendations/Observations  30-56 
+    
+                                     APPENDICES  
+I. Percentage of Post Offices computerized in India upto 31.12.2009  57 
+II. No. of PFMs as on 31.03.2009 58 
+III. Minutes of the Twenty-first Sitting of the Committee held on 10th August, 2010 59 
+IV. Minutes of the Twenty-second Sitting of the Committee held on 18th August, 2010 62 
+V Minutes of the Second Sitting of the Committee held on 27th October, 2010 65 
+    
+
+ 
+ 
+COMPOSITION OF STANDING COMMITTEE ON INFORMATION TECHNOLOGY 
+(2010-2011) 
+ 
+           
+          Shri Rao Inderjit Singh   -  Chairman  
+   
+Lok Sabha 
+2. Shri Rajendra Agrawal 
+3. Shri Nikhil Kumar Choudhary 
+4. Shri Milind Deora  
+5. Dr. Charles Dias 
+6. Shri Rajen Gohain 
+7. Smt. Darshana Vikram Jardosh 
+8. Shri Mithilesh Kumar 
+9. Shri Sadashivrao Dadoba Mandlik 
+10. Shri Inder Singh Namdhari 
+11. Shri Adhalrao Shivaji Patil 
+12. Shri Abdul Rahman 
+13. Shri Prem Das Rai 
+14. Shri Tufani Saroj 
+15. Shri Tathagata Satpathy 
+16. Smt. M. Vijaya Shanti 
+17. Dr. Bhola Singh 
+18. Shri Dhananjay Singh 
+19. Shri Sushil Kumar Singh 
+20. Shri C. Sivasami 
+21. Shri Dharmendra Yadav 
+Rajya Sabha 
+22. Shri M.P. Achuthan 
+*23. Shri Mohammed Adeeb 
+24. Shri Salim Ansari 
+*25. Shri  Rajeev Chandrasekhar 
+*26. Shri  Rajkumar Dhoot 
+27. Shri  Prabhat Jha 
+28. Prof. Alka Balram Kshatriya 
+29. Shri  Ravi Shankar Prasad 
+30. Shri  P. Rajeeve 
+31. Shri  Jesudasu Seelam 
+  
+SECRETARIAT 
+ 
+1.     Shri T.K. Mukherjee  - Joint Secretary 
+2.     Smt. Sudesh Luthra  - Director  
+3. Dr. Yumnam Arun Kumar - Under Secretary 
+ 
+* Nominated to the Committee w.e.f. 21st September, 2010. 
+
+ 
+ 
+ 
+INTRODUCTION 
+ 
+ I, the Chairman, Standing Committee on Information Technology (2010 -11) 
+having been authorized by the Committee to submit the Report on their behalf, present 
+this Fifteenth Report on „Modernisation of Post Offices‟ relating to the Ministry of 
+Communications and Information Technology (Department of Posts). 
+ 
+2. The Committee took oral evidence of the representatives of the Ministry of 
+Communications and Information Technology (Department of Posts) at their sitting held 
+on 10 August, 2010. Besides, the Committee took oral evidence of the aforesaid 
+Ministry al ong with the Ministry of Rural Development (Department of Rural 
+Development) at their sitting held on 18 August, 2010. The Committee also received 
+memoranda from two Experts containing their suggestions on the subject. 
+ 
+3. The Report was considered and ado pted by the Committee at their sitting held 
+on 27 October, 2010. 
+ 
+4. The Committee wish to express their thanks to the Officers of the Ministry of 
+Communications and Information Technology (Department of Posts) and the Ministry of 
+Rural Development (Depart ment of Rural Development) for appearing before the 
+Committee and the Experts for furnishing information in connection with the 
+examination of the subject. 
+ 
+5. For facility of reference and convenience, the Recommendations/Observations of 
+the committee have been printed in bold in Part-II of the Report. 
+ 
+ 
+New Delhi RAO INDERJIT SINGH 
+15 November, 2010 Chairman 
+24 Kartika, 1932 (Saka) Standing Committee on 
+ Information Technology 
+ 
+  
+
+ 
+ 
+ 
+Report 
+ 
+Part-I 
+ 
+ Introductory 
+ 
+An efficient and reliable communication network is the lifeline of a country and 
+plays crucial role in socio -economic development. It also acts as a medium for 
+integration of a nation. For more than a century and half, the Indian Postal system has 
+been the main component of the communications infrastructure for the country. Today, 
+India has a postal network of 1,55,035 (25,538 Departmental Post Offices and 1,29,497 
+Extra Departmental Post Offices) out of which 15,862 (10.23 per cent) Post Offices are 
+located in urban areas and the rest 1,39,173 (89.77 per cent) are in rural areas.  
+ 
+2. As a consequence of liberalization and globalization, the Indian economy has 
+grown tremendously in the last two decades resulting in the increase in the needs and 
+demands of the people especially in the areas which require to be serviced. To cater the 
+growing needs and demands of the people, it is inevitable on the part of the 
+Department of Posts to improve and modernize the various services offered by them.  
+There are four ser vices which are provided by India Posts viz. the Communication 
+services (letters, post cards etc.), the Transportation services (parcels, logistics etc.), 
+the Financial services (savings bank, money orders, foreign money transfers, insurance 
+etc.) and the Premium value added services (speed post, Business post etc.). 
+ 
+3. According to the Department of Posts, modernisation means upgradation of the 
+physical infrastructure and human resource potential of the Department by providing IT 
+support for performing po stal operations so as to meet the requirements of customer 
+and making office systems more efficient and productive. The focus areas that have 
+been identified by the Department to achieve modernisation of Post Offices during the 
+last three years include spr eading and strengthening of IT infrastructure, modernizing 
+mail transmission, improving service delivery levels, training of manpower, increasing 
+awareness of the people about the services rendered through Post Offices and providing 
+the right ambience to customers in Post Offices.  
+ 
+II. Classification of Post Offices 
+4. As per the Department, there are following type of Post Offices: (i) General Post 
+Office (ii) Head Post Office (iii) Sub Post Office.  Sub Post Offices are further classified 
+into the following categories:  (a) Higher Selection Grade I (HSG I) (b) Higher Selection 
+Grade II (HSG II) (c) Lower Selection Grade (LSG) (d) Class A Sub Post Office or Triple 
+Handed Post Office (e) Class B Sub Post office or Double Handed Post Office (f) Class C 
+
+ 
+ 
+Sub Post office or Single Handed Post Office.  Besides the General Post Offices, Head 
+Post Offices and Sub Post Offices, there is another category called the Branch Post 
+Offices which are also known as Extra Departmental (Gramin Dak Sewak) Post Offices  
+5. The Committee have been informed that on an average, a Post Office in rural 
+areas serves about 5683 persons and an average urban Post Office caters to a 
+population of approximately, 20,251 persons. 
+ 
+III. Technology Upgradation and Modernisation 
+6. The computer isation in the Post Offices was initiated in a limited way in the 
+Eighth Plan. This was continued in the Ninth Plan by induction of „Meghdoot‟ and 
+„Sanchay Post‟ software for postal and banking operations. Induction of technology was 
+scaled up in a big way in the Tenth Plan.  During Eleventh Plan, IT modernisation vision 
+has been envisaged by the Department of Posts in two phases. The Phase -I was 
+implemented from 2008-09 to 2009-10 and the Phase-II would be implemented during 
+the Financial Years 2010-11, 2011-12 and 2012-13 (upto September, 2012). 
+ 
+(i) Financial Outlays and Achievements under various programme related to  
+Modernisation of Post Offices from Eighth to Tenth Plan (upto 2009-10). 
+ 
+7. The Committee have been informed that during the Eighth Plan an Outlay of               
+Rs.  211.96 crore was provided for the modernisation of Post Offices.  However, the 
+Department could utilize only Rs.  144.23 crore, the percentage of utilisation being  
+68.05 per cent.  In the Ninth and Tenth Plan the financial outlays were Rs.  311.54 and 
+Rs. 1040.28 crore respectively.  During the said period, the utilisation was only          
+Rs. 234.10 crore for the Ninth Plan i.e. 75.14 per cent and for the Tenth Plan utilisation 
+outlay was to the tune of Rs.  707.50 crore i.e. 68.01 per cent. 
+ 
+(ii) Financial Outlays and Achievements for Modernisation of Post Offices 
+during Eleventh Plan (upto 2009-10) 
+ 
+8. The Committee have been informed that during the Eleventh Pla n (upto 2009 -
+10) out of the allocation of Rs.  1187.73 crore, the achievement was Rs. 732.86 crore 
+i.e. 61.70 per cent. As per the Department, some of the major activities of 
+modernisation of Post Offices include Mail Operations, Banking and Money Transfer  
+Operations, Insurance Operations, IT Induction-Postal Operations, Marketing, Research 
+and Product Development and Quality Management.  
+ 
+  
+
+ 
+ 
+9. The year-wise breakup of allocation and utilisation are given as under:- 
+ (Rs.  in crore) 
+Sl 
+No. 
+Activity  2007-08 2008-09 2009-10 2010-11 
+ 
+ Allocation Exp. 
+Allocati
+on Exp. Allocation Exp. 
+Allocation 
+1 Mail Operations 17.67 26.56 70.00 13.92 71.00 90.28 125.00 
+2 Banking  and 
+Money Transfer 
+Operations 
+20.50 1.05 15.00 5.49 14.50 2.74 6.00 
+3 Insurance 
+Operations 
+7.00 2.45 7.00 4.71 7.00 2.23 5.00 
+4 IT Induction – 
+Postal Operations 
+174.10 65.36 360.00 228.51 358.50 251.55 475.00 
+5 Marketing, 
+Research and 
+Product 
+Development 
+11.61 5.03 24.00 19.28 21.70 13.18 10.00 
+6 Quality 
+Management 6.65 0.21 1.00 0.31 0.50 0 
+0.25 
+ Total 237.53 100.66 477.00 272.22 473.2 359.98 621.25 
+ 
+(iii) Physical Targets and Achievements under various programme related to 
+Modernisation of Post Offices from Eighth to Eleventh Plan (upto 2009 -
+10). 
+ 
+(a) Eighth Plan 
+ 
+10. The Committee have been informed that during the Eighth Plan, the Department 
+could not achieve the physical target of supplying of all 5000 MPCMs as the 
+achievement made was only 2660 MPCMs. In case of computerisation of accounting and 
+inventory Functions-MIS(at Circles) the achievement made was only in 6 cases out of 
+the target of 19. The Department also did not achieve the target regarding transport 
+service as only 284 Mail Motor S ervice Vans could be procured out of the target of 560 
+Mail Motor Service Vans. 
+ 
+(b)  Plan 
+ 
+11. The Committee have been informed that during Ninth Plan, there was 
+underachievement of physical targets in installation of ESMOs under the scheme of 
+upgradation of Technology. Out of a target of 1732, the achievement made was 1450. 
+(c) Tenth Plan 
+ 
+12. The Department has informed that the underachievement of physical targets 
+during Tenth Plan include computerisation of Divisional Offices. Out of the target of 
+305, the achievement made was only in 205 cases. Regarding Track and Trace system 
+for accountable object, the achievement was nil out of a target of 44.  
+ 
+
+ 
+ 
+(d) Eleventh Plan (upto 2009-10) 
+ 
+13. During the Eleventh Plan (upto 2009-10) underachievement was reported in case 
+of extending instant money order services. Out of the target of 5650, the achievement 
+made was only 2029. Under the IT induction, there was underachievement in 
+computerisation and modernisation of Post Offices as out of a physical target of 1167 0 
+Post Offices, the achievement made was only in 6235 Post Offices. Another area of 
+underachievement was seen under the Scheme of Marketing Research and Product 
+Development as out of the 50 Parcel Post hubs, the Department could achieve only 12.  
+ 
+IV. Status of computerisation of Post Offices  
+ 
+14. The Department has informed that in each successive Plan the ambit of 
+computerisation has been increased and today as on 31 st March, 2010, the Department 
+has been able to computerize 12,604 Post Offices out of a total of 25538 Departmental 
+Post Offices (excluding the 1,29,497 extra Departmental Post Offices) and provide 
+number of e-services to customers.  The percentage of achievement is thus only 49.35.  
+The status of computerisation category-wise is as under :- 
+ 
+Sl. 
+No. 
+Category of Post Office Number 
+1. Head Post Offices 839 
+2. Above Double-handed Sub Post Offices 6,671 
+3. Double-handed Sub Post Offices 4,498 
+4. Single-handed Sub Post Offices 596 
+ Total 12,604 
+ 
+15. The status of computerisation Circle-wise has been given in the Appendix -I. The 
+analysis of the data indicates that the achievement is excellent in Assam, North -East, 
+and Kerala. In Assam, 100 per cent of the Post Offices have been computerized. In 
+Kerala, 1070 Post Offices out of 1503 Post Offices have been computerized. Similarly, in 
+North-East 303 Post Offices out of 335 Post Offices have been computerized. In Circles 
+viz. Andhra Pradesh, Bihar, Chhatisgarh, Jharkhand, Madhya Pradesh, Orissa, 
+Rajasthan and Uttar Pradesh the achievement is less than the national average i.e. 
+49.35 per cent. 
+ 
+V. Broadband Connectivity 
+ 
+16. While expanding the Postal network, the policy of India Post is not only to 
+provide physical access to the people, but also to bridge the digital divide. As a step in 
+
+ 
+ 
+this direction, India Post has plan to connect the entire population to the electronic 
+network.  
+ 
+17. The Committee have been informed that Central Server based system have 
+already been established at NIC, Delhi and PTC Mysore.  As on date, 1305 number of 
+locations have been connected through 2 Mbps leased line and another 8177 
+computerised Post Offices ar e using dial -up/broadband connectivity.  The remaining 
+computerized Post Offices have been asked to get broadband connections through BSNL 
+or any other service provider.  
+ 
+18. The Committee have also been informed that the Department of Posts have not 
+entered into any contract with any service provider for providing broadband services. 
+However, Circles have been given freedom to purchase broadband services from the 
+service providers depending upon local conditions.  Nevertheless,  close liaison is being 
+maintained with BSNL at all levels to get the broadband connectivity for all 
+computerized Post Offices.   
+ 
+19. Regarding  the basic infrastructure that a Post Office must have to achieve 
+broadband connectivity, the Department has informed that at least computers, printers, 
+emergency power supply systems, proper earthing and adequate space are the 
+essential components to provide broadband connectivity to a Post Office. The details of 
+the 9483 Post Offices having broadband/dial-up connectivity are as follows:-  
+Sl. 
+No. 
+Name of the 
+Circle 
+Total Post 
+Offices in the 
+Circle* 
+Total Post 
+Offices having 
+broadband/dial-
+up connectivity 
+% of 
+broadband/dial-up 
+connectivity vis-a 
+vis the total Post 
+Office in the Circle 
+1 Andhra Pradesh 2437 556 22.81 
+2 Assam 623 256 41.09 
+3 Bihar 1043 153 14.67 
+4 Chhattisgarh 333 97 29.12 
+5 Delhi 422 299 70.83 
+6 Gujarat 1318 672 50.99 
+7 Haryana 487 250 51.33 
+8 Himachal Pradesh 461 173 37.53 
+9 Jammu & Kashmir 258 73 28.29 
+10 Jharkhand 448 133 27.54 
+11 Karnataka 1788 791 44.24 
+12 Kerala 1503 818 54.42 
+13 Madhya Pradesh 1057 373 35.29 
+14 Maharashtra 2224 962 43.26 
+15 North-East 335 105 31.34 
+16 Orissa 1192 258 21.64 
+17 Punjab 809 318 39.31 
+18 Rajasthan 1333 339 25.43 
+19 Tamil Nadu 2789 1424 51.06 
+
+ 
+ 
+20 Uttar Pradesh 2540 882 34.72 
+21 Uttrakhand 384 166 43.23 
+22 West Bengal 1754 385 21.95 
+ Total 25538 9483 37.13 
+ 
+* It does not include 1,29,497 Extra Departmental Post Offices. 
+ 
+20. When asked how the Department would meet the challenge of networking of all 
+the Post Offices, particularly when there is no broadband connectivity in the far -flung 
+and difficult areas, the Committee have informed that t he IT modernization project 
+envisages electronic networking of all the Post Offices by use of available connectivity 
+options like B roadband, GPRS and other wireless technologies whichever is available 
+and economical. In far flung and difficult areas where there is no connectivity option, 
+the system can work in an offline manner and encrypted data can be uplinked from the 
+nearest Post Offices having appropriate connectivity. 
+   
+21. Regarding the measures taken to achieve broadband connectivity in the far flung 
+areas like North-East and Andaman and Nicobar Island, the Department has stated that 
+close liaison is being maintained with BSNL  to provide connectivity to all computerized 
+Post Offices of North East and Andaman and Nicobar Islands. The possibility of 
+providing connectivity through VSAT is also being explored. 
+VI. IT-Induction-Postal Operations 
+ 
+22. The Committee have been informed that initially Rs.  2700 crore was allocated 
+for technology upgradation of Post Offices for the entire Eleventh Plan. However, while 
+framing the EFC memos, the requirement of the funds was restricted at Rs.  2572.60 
+crore. The EFC-I for Rs.  978.52 crore was approved. Out of this, Rs.  628.66 crore is 
+for IT Project Phase-I, Rs.  210.80 crore for Automatic Mail Processing Centres and the 
+remaining Rs.  139 crore is for the Project Arrow. The EFC -II for the remaining Outlay 
+has already been submitted and is under consideration.  
+ 
+23. The proposed allocation, Budget Estimates, Revised Estimates and Actual 
+Expenditure for the years 2007-08, 2008-09, 2009-10 and proposed allocation, Budget 
+Estimates for the year 2010-11 are given as under:- 
+(Rs.  in Crore) 
+Sl. 
+No. 
+Year Proposed 
+allocation 
+Budget 
+Estimates 
+Revised 
+Estimates 
+Actual 
+Expenditure 
+1. 2007-08 174.10 174.10 139.57 65.36 
+2. 2008-09 940.31 360.00 221.05 216.51 
+3. 2009-10 1500.05 358.50 220.00 164.60  
+(Upto January, 
+2010) 
+ Total 2614.46 892.50 580.52 446.47 
+ 
+
+ 
+ 
+For the year 2010 -11, the proposed allocation is Rs.  600.66 crore whereas the 
+Outlay at BE stage is Rs.  475 crore. 
+ 
+(i) IT Project Phase – I 
+ 
+24. With regard to the financial outlay, the Committee have been informed that 
+during the Phase I covering the period from 2008 -09 and 2009 -10, an outlay of               
+Rs.  628.66 crore was made for the Department for covering 5143 double handed Post 
+Offices.   
+ 
+25. The Department informed that during the year 2008-09, the process commenced 
+to obtain the approval of Expenditure Finance Committee for the Phase –I which was 
+received in January, 2009 and therefore, the Cabinet Committee's Approval was 
+obtained in February, 2009 and the schemes could be implemented in full swing from 
+2009-10 only. 
+ 
+ 
+ 
+ 
+26. Regarding the financial performance during 2008 -09, 2009-10, the Committee 
+have been informed as under:- 
+ 
+ (Rs.  in crore) 
+Scheme 2008-09 2009-10 
+BE RE Actuals BE RE Actual
+s 
+(upto 
+March 
+2010) 
+Computerisation & 
+Networking of Post Offices 
+240 142.50 137.73 255.00 118.01 152.70 
+Upgradation & 
+Modernisation of Software 
+Centre at Postal Training 
+Centre 
+3.00 0.6 0.68 3.00 0.50 0.06 
+Annual Maintenance 
+Contract 
+- - - 27.00 17.00 20.34 
+Consultancy for 
+Comprehensive Technology 
+- - - - - - 
+
+ 
+ 
+Plan & Strategy 
+Upgradation & 
+Modernisation of PAOs 
+4.00 0.47 0.303 2.00 1.90 1.77 
+Computerisation of 
+Administrative Offices 
+4.00 0.5 0.43 13.72 13.39 15.14 
+Project Management Unit - - - 7.00 4.58 2.03 
+Total 251.00 144.07 139.14 307.72 155.38 192.04 
+ 
+27. The Department also informed the Committee that it was due to non -availability 
+of sufficient funds as per EFC approval, target proposed could not be achieved. 
+ 
+Achievement in IT Project Phase-I 
+ 
+28. The Committee have been informed that some of the highlighting achievements 
+of EFC Phase -I includes achievement of computerisation of 2,920 Double -handed Post 
+Offices  out of the target of 5,143 Post Offices. In case of Single handed P ost Offices, 
+the achievement made was only in 554 Post Offices out of the target of 11497 Post 
+Offices. However, Department could not computerize any extra Departmental Post 
+Offices during Phase-I.  
+ 
+29. Regarding upgradation of hardware, the Department in formed that they have 
+been able to achieve in 1,939 Post Offices out of target 1,772 Post Offices and in case 
+of supply of laptops to Sub-Divisions, the achievement made was for 1,914 Post Offices 
+out of target 1,916 Post Offices. As far as supply to computers to Divisional Offices, the 
+achievement made has been only 156 Post Offices out of the stipulated target of 305 
+Post Offices.  Elaborating on the issue, the Department of Posts also informed that the 
+progress of the work under the project was inhibited  due to lack of adequate allocation 
+of funds during the years 2008-09 & 2009-10. 
+ 
+30. As far as electronic linkages during Phase -I, the Department informed that 
+computerization which has been implemented till date focused on supply of hardware to 
+bigger Post Offices in a LAN (Local Area Network).  The major software for postal 
+operations (Meghdoot) and for Banking operations (Sanchay Post) were of standalone 
+mode working within the Post Offices in a LAN connectivity. Therefore, the electronic 
+linkages  could not be completed.  
+(ii) IT Project Phase - II 
+ 
+31. The IT Project Phase - II envisages building up of a comprehensive IT solution 
+for all the operations viz. Postal, Banking, Insurance, Retail operations and the required 
+
+ 
+ 
+infrastructure for the computerization and networking of all the Post Offices in the 
+country.  It also envisages deployment of integrated modular software for all the Postal 
+and Financial Services operations as well as establishment of the data centre and 
+disaster recovery centre. 
+(a) Financial Outlay for Phase – II 
+ 
+32. The Committee have been informed that the Department  has proposed for 
+approval of its IT Project Phase -II with an overall outlay of Rs.  1877.2 crores to be 
+incurred in the Financial Years 2010-11, 2011-12 and 2012-13 (upto September 2012).  
+ 
+33. The Department have also informed that they have been advised  by the 
+Expenditure Finance Committee (EFC) to phase out the proposed expenditure under the 
+project appropriately so that a part of the project cost can be borne from the first year 
+of the Twelfth Plan and accordingly, the proposal has been modified and wi ll be 
+completed by September, 2012.  The total number of Post Offices to be covered under 
+EFC Phase-II is 1,40,394 Post Offices. 
+ 
+34. Elaborating on the issue, the Department informed that the proposal for IT 
+project phase -II has been recommended by EFC on  28th June 2010 and is under 
+process for obtaining approval of the competent authority. The funds for the current 
+year   (2010-11) under the relevant head allotted has been taken into account. For the 
+next two years the requirement of funds has been indica ted in the proposal which has 
+been recommended by the EFC and will be projected to the Department of Expenditure 
+at appropriate time. 
+ 
+(b) Key drivers for IT Modernisation in Phase II 
+ 
+35. The project objectives for Phase II are as follows: 
+(i) Robust IT solution including infrastructure and applications; 
+(ii) Multiple channels of access - Point of Sale (POS), ICT, Call Centre, Web, 
+Mobile; 
+(iii) Integrated customer support; 
+(iv) High service delivery standards 
+(v) Technology platform for inducting new services and products 
+ 
+ 
+ 
+ 
+ 
+36. With regard to the initiative taken by the Department to ensure the achievement 
+of the objectives of Phase – II, the Department have informed that in anticipation of the 
+approval by the competent Authority, the RFPs are kept in a state of readiness  to be 
+issued after approval of the project. Further, the Department have proposed that the 
+project may be monitored by Inter-Ministerial and Steering Committee for ensuring the 
+implementation of the project in a time bound manner,   
+ 
+
+ 
+ 
+(c) Challenges of IT Project Phase-II 
+37. The Department have informed that some of the challenges for the India Post 
+during Phase II would include the external factors such as rising customer expectations, 
+stagnating mail volumes, advent of e -commerce and increasing competiti on and the 
+internal factors which include 56 varied siloed applications, connectivity in limited 
+number of cities, large manual processes and limited channels for delivery. 
+ 
+(d) Software for IT Project Phase-II 
+38. The Department have informed that for the  Phase II, integrated modular 
+software will be developed which will replace/assimilate old legacy software which 
+operate in standalone/LAN mode and don‟t talk to each other. Some of the legacy 
+software will be customized for use in a centralized architectu re. Other legacy 
+applications will be replaced by appropriate Customized Off The Shelf (COTS) solutions 
+such as Banking, Enterprise Resource Planning (ERP) solutions for Accounts, Finance 
+and Human Resources, etc. 
+ 
+(e) Comments of Departments of Expenditure, Information Technology, 
+Telecommunications and Planning Commission on IT Project Phase - II 
+ 
+39. When asked about the comments of the various Ministries viz. Department of 
+Expenditure, Department of Information Technology, Department of 
+Telecommunications and the Planning Commission on the draft EFC, the Department 
+have stated as under:- 
+ 
+“Some of the observations from Department of Expenditure and Planning 
+commission related to scaling down the proposal to the extent of 
+availability of the fun ds and therefore, the Department was advised to opt 
+for the outsource model for some of the components. After the 
+observations of Nodal Ministries and meeting held with Expenditure Finance 
+Committee, the observations were incorporated into the Project prop osal.  
+The other salient observations were: 
+(i) The Department of Posts should test the robustness of Rural ICT 
+devices before induction into the Post Offices,  
+(ii) The project Internal Rate of Return (IRR) is predicted on very high 
+revenue generation figures.  
+(iii) The targets as well as the requirements of funds need to be 
+realistically phased out, keeping in mind the absorption capacity. 
+(iv) Provision of 10% estimated costs towards „Contingencies‟ is 
+excessive and may be rationalized. 
+(v) There is no indication about the con tinuity of present software 
+applications. 
+ 
+40. The Committee have also been informed that all the queries raised by nodal 
+Ministries were addressed and suitably incorporated into EFC. 
+ 
+
+ 
+ 
+41. The Expenditure Finance Committee, while recommending the proposal has also 
+directed to examine in consultation with the Department of Information Technology 
+whether the requirements of its data can be met by the Department of Information 
+Technology (DIT) before the proposal is submitted to the CCEA for approval. 
+Accordingly, the Department has requested the DIT for their considered views on the 
+matter.  
+(f) Establishment of Project Management Unit for Phase II 
+ 
+42. The Committee have been informed a Project Management Unit (PMU) has been 
+established to execute the second phase of the project. The PMU would ensure 
+availability of the following skill sets to the project: 
+(i) Strategic Planning to conceptualize the Mission 
+(ii) Project Development 
+(iii) Domain expertise in IT-Software, hardware, networking etc. 
+(iv) Project Management 
+(v) Project Finance 
+(vi) Business Process re-engineering  
+(vii) Change Management 
+(viii) Contracting and Contract Management 
+ 
+43. The responsibilities of the PMU would include conceptualization, planning and 
+management of the project.  Further, the Committee have also been apprised that to 
+monitor the project three Committees namely Steering Committee, Working Committee 
+and Functional Teams have been formed.  The Steering Committee has been set up 
+under the Chairmanship of Secretary Posts to monitor the timely implementation of the 
+project.  The Working Committee review the IT Modernization Project under the 
+Chairmanship of Member (Technology).  The Functional Teams oversee the 
+requirements of each of the Solutions of the IT Modernization project and it is looked 
+after by middle management.    
+ 
+44. With regard to the periodical meetings of these Committees, the Department 
+have informed that the Steering Committee meets once in a month while the Working 
+Committee and the Functional Teams meet once in a week.  
+ 
+(g) Consultations of M/s Accenture Services Pvt. Ltd. for IT Projects 
+ 
+45. The Department have informed that they have entered into agreement with M/s 
+Accenture Services Private Limited for providing consultancy for IT modernization of the 
+Department of Posts in order to accomplish DoP‟s aggressive growth and profit targets.  
+ 
+46. The assignment consist of two tracks. Track I for providing consultancy services 
+and Track II for monitoring of Programme Implementation.  Track 1 is to be completed 
+
+ 
+ 
+in 12 Months from the date of kick off of the Project.   Track 2 for the implementation of 
+the project is envisaged to be completed in 2.5 years (maximum period of 36 Months) 
+after the completion of the Track 1 consultancy phase.  
+47. M/s Accenture Services Pvt. Ltd. has submitted 16 reports. They a re (i) 
+Benchmarking Report, (ii) AS -IS and TO -BE Processes, (iii) Feasibility Report for 
+implementation of CBS, (iv) Feasibility Report for implementation of ERP. (v) Feasibility 
+Report for implementation of Advanced Financial Services, (vi) Feasibility Re port for 
+implementation of ICT solutions in Rural Mobile Technologies, (vii) Integrated 
+Application Software Development and Maintenance Plan, (viii) Networking 
+Infrastructure, Network Security and Information Security Development Plan, (ix) 
+Hardware Purchase, Deployment and Maintenance Plan, (x) Data Center and Business 
+Continuity Specifications, (xi) Change Management and Capacity Building Plan, (xii) 
+Implementation Roadmap, Business Models and Programme Management Plan, (xiii) 
+Detailed Project Report, (x iv) Inception Report, (xv) Current State Assessment Report 
+and (xvi) Project Conceptualisation Report. 
+ 
+48. The Committee have been apprised that out of the sixteen reports, ten reports 
+have been accepted by the Department whereas the other six are in process of 
+acceptance.  
+ 
+ 
+(h) Findings of M/s. Accenture Services Pvt. Ltd. on IT Projects 
+ 
+49. The Committee have been informed that Current State Assessment Report had 
+findings in six areas, namely Mails, Banking, PLI, Finance & Accounts, HR and 
+Technology. The general findings are:- 
+ 
+(i) majority of work and processes are manual. There are multiple si loed 
+applications deployed that do not integrate resulting in duplication of work 
+efforts; 
+(ii) the network, IT security and data centre infrastructure were insufficient to 
+support the requirements of the Department.  
+ 
+50. The Department informed that the Project Conceptualization Report provided the 
+initial solution blueprint and costing. This included all facets of the IT Modernization 
+Project for all Business verticals and Enterprise enablers across Applications, Hardware, 
+Connectivity, Data Center, Rural ICT, Training and Change Management. 
+ 
+51. With regard to the acceptance of the findings of the consultant by the 
+Department of Posts, the Committee have been informed that based on the findings of 
+
+ 
+ 
+the consultant, further action as a part of consultancy assignments are being 
+undertaken under the IT Modernisation Project. 
+ 
+VII. Project Arrow 
+ 
+52. To provide new technology enabled services to the common man, the 
+Department of Posts had launched a scheme “Project Arrow” in April, 2008 with the 
+objective of providing a new outlook to Post Offices by modernizing exterior and interior 
+designs of the Post Office, upgrading the infrastructure and enhancing core operation 
+including IT enabled services and processes.  The project aims at making Post Office as 
+a „Window to the World for the Common Man‟ both in rural and urban areas.  The 
+project has two components: 
+(i) Upgrading and enhancing the quality of services in „Core Areas‟ viz. Mail 
+Delivery, Remittances, Savings Bank and upgrading „Office Service Levels‟ in 
+Post Offices identified under Project Arrow; 
+ 
+(ii) Improving the „Look and Feel‟ of Post Offices with focus on Branding, IT 
+induction, Human Resource Development and Infrastructure improvement in 
+Post Offices identified under Project Arrow.   
+ 
+53. When asked about the parameters/norms that have been identified to ensure 
+that the objectives that have been set under each of the identified core areas are 
+achieved as per time and costs, the Department explained to the Committee that t he 
+core opera tional areas of Project Arrow i.e. mail delivery, remittance, Savings Bank 
+operations and office Service level are maintained on a day -to-day basis through a 
+network and on -line system. The daily and periodic performance of the Post Offices is 
+measured thr ough Key Performance Indicators (KPIs) for mail and savings bank 
+operations.  There are 19 KPIs through which the performance of Post Offices are 
+assessed which include percentage of mail delivered on the day of receipt in Post Office 
+(Speed Post, Regd. Parcels, Regd. Letters, Money Orders and e-MO).  
+ 
+(i) Utilisation of Outlays for Project Arrow 
+ 
+54. Project Arrow was introduced during the second year of Eleventh Plan and as 
+such no separate funds was earmarked. As on date, the Department have been able to  
+spend Rs.  151 crore on 1000 Post Offices under Project Arrow in three phases.  
+However, the Committee have been informed that constraint of funds was faced by the 
+Department while implementing the scheme due to which the number of offices to be 
+modernized was restricted to 50 POs in Phase -I, 450 POs in Phase -II, 500 POs in 
+Phase-III.  
+ 
+
+ 
+ 
+55. The Committee have also been informed that 500 Post Offices were identified for 
+“Project Arrow Phase -IV” in the Financial Year 2010 -11 for which Rs.  86 crore was 
+approved. During BE 2010 -11 Rs.  60 crore was allocated for the scheme therefore 
+funds has been released for modernizing 371 Post Offices. Funds to the tune of Rs.  24 
+crore have been sought for first batch of supplementary grant. On the receipt of the 
+same the remaining 129 offices would be modernized. 
+ 
+56. As per the Department, a total of 4,500 Post Offices were to be covered under 
+the scheme with the requirement of funds of Rs.  887 crore during the Eleventh Plan.   
+The Department have stated that they would  be able to spent Rs.  325 crore on 
+Technology from the Plan allocation.  However, for the remaining Rs.  562 crore, it is 
+not possible for them to finance the said amount from the existing Eleventh Plan 
+allocation and outlay.  Therefore, they had taken up  the matter with the Planning 
+Commission and the Ministry of Finance.  However, the Ministry of Finance have not 
+approved the further allocation of outlay for the Project. 
+ 
+57. The Committee have been informed that the Department is optimistic of getting 
+more funds for the project as the Minister of Finance in his Budget Speech (2009 -10) 
+under Para No. 26(iv) has assured that the Project Arrow will receive full Government 
+support as it will enhance the service offered to masses and would lay the foundation  
+for a vibrant delivery mechanism for many social sector schemes such as pension & 
+MNREGS. 
+ 
+58. The Committee have been informed that Project Arrow has covered 1,000 Post 
+Offices from 22 Postal Circles in three phases where „Look and Feel‟ portion  has bee n 
+completed as detailed below:- 
+  
+Phase 
+Number of 
+offices 
+covered 
+Circles covered 
+I 50 Andhra Pradesh, Rajasthan, UP, Jharkhand, Tamil Nadu, 
+Uttarakhand, Orissa, Maharashtra, Madhya Pradesh & North 
+East (10 Circles)  
+II 450 Andhra Pradesh, Rajasthan, UP, Jharkhand, Tamil Nadu, 
+Uttarakhand, Orissa, Maharashtra, Madhya Pradesh, North 
+East, Bihar and Gujarat (12 Circles) 
+III 500 Andhra Pradesh, Assam, Chhattisgarh, Delhi, Haryana, 
+Himachal Pradesh, J&K, Karnataka, Kerala, Punja b, 
+Rajasthan, UP, Jharkhand, Tamil Nadu, Uttarakhand, Orissa, 
+Maharashtra, Madhya Pradesh, North East, Bihar, Gujarat and 
+West Bengal            (22 Circles) 
+ 
+59. Regarding the achievement made under the different Phases of Project Arrow, 
+the Committee have been apprised that the performance and the achievements made 
+
+ 
+ 
+are constantly monitored through periodic video conferences and data extraction tool.  
+The phase-wise achievements of Project Arrow Post Offices are as under: 
+(ii) Phase I 
+(i) Same day delivery of  Speed Post received in Project Arrow Post Offices has 
+increased from 93% (August 2008) to 98% (December 2009) 
+ 
+(ii) Same day delivery of Registered Letters received in Project Arrow Post Offices 
+has increased from 87.5% (August 2008) to 98% (December 2009) 
+ 
+(iii) Same day delivery of Money Orders received in Project Arrow Post Offices has 
+increased from 75% (August 2008) to 97% (December 2009) 
+(iii) Phase II  
+(i) Same day delivery of Speed Post received in Project Arrow Post Offices has 
+increased from 97% (March 2009) to 98% (December 2009) 
+ 
+(ii) Same day delivery of Registered Letters received in Project Arrow Post Offices 
+has increased from 85% (March 2009) to 99% (December 2009) 
+ 
+(iii) Same day delivery of Money Orders received in Project Arrow Post Offices has 
+increased from 81% (March 2009) to 98% (December 2009) 
+ 
+(iv) Phase III 
+(i) Same day delivery of Speed Post received in Project Arrow Post Offices has 
+increased from 87.5% (October 2009) to 95.4% (December 2009) 
+ 
+(ii) Same day delivery of Registered Letters received in Project Arrow Post Offices 
+has increased from 84% (October 2009) to 95% (December 2009) 
+ 
+(iii) Same day delivery of Money Orders received in Project Arrow Post Offices has 
+increased from 87.5% (October 2009) to 95.5% (December 2009) 
+ 
+(iv) Percentage of Savings Bank accounts where signature scanning is complete 
+has increased from 62% (October 2009) to 99% (December 2009) 
+ 
+60. Elaborating on the achievement, the Department have further informed that 
+Project Arrow has resulted in substantial improvement in quality of services in the 
+identified Post Offices by improving the delivery performance, upgradation and 
+standardized facilities for customers and introduction of web based services such as i -
+MO, e -MO, e -Payment, e -Post etc. The Department have also informed that 
+infrastructure has been made available at all Project Arrow offices to provide various e -
+enabled services viz i-MO, e-MO, e-Payment, e-Post.  The Department have added that 
+the continuous training in technology and soft skills, proper reward and reorganization 
+system for th e performers in Project Arrow Post Offices, standardized and improved 
+facilities for the staff like better chairs, cupboards, proper lighting etc. have boosted the 
+morale of staff working in Project Arrow Post Offices. However, there is intermittent 
+
+ 
+ 
+broadband failure in Post Offices of North East Circle which results in non -reporting of 
+data by Post Offices occasionally. 
+ 
+61. Regarding tangible  and noteworthy difference that has been made in Post 
+Offices through Project Arrow, the Secretary, Department of Posts during evidence 
+deposed as under:- 
+“……making a visible, tangible and noteworthy difference in Post Offices, this 
+applies to our project Arrow Post Offices where the Post Offices under project 
+Arrow throughout the country, presently 1500 of them, look absolutely alike. 
+They have all been upgraded. They have the same colour scheme. They have 
+the same interiors. That is the difference. Also, the staff members in the Post 
+Offices have been given specialized training and the workers are monitored 
+on a daily basis where information is actually extracted from the system and 
+is reviewed through a videoconferencing at my level every fortnight so much 
+so that we know exactly when an article is received from delivery and when 
+it is actually delivered. That is the  kind of monitoring that is going on the 
+these 1500 Post Offices. So it has a big impact. In fact, I can say that our 
+revenue has actually gone up in these 1500 Post Offices. This data we collect 
+directly from the Post Offices.” 
+ 
+62. The Committee have been informed that Department of Posts had appointed TUV 
+India Post Limited to conduct audits/customer and staff satisfaction survey in 50 Project 
+Arrow-Phase –I Post Offices to evaluate performance of Post Offices in 18 parameters 
+Major findings of the External Audit are as under:  
+ Same day delivery registered letters was 99 per cent.  
+ Same day delivery of Speed post articles ranged between 98 per cent to 99 
+per cent.  
+ 
+ 90 to 92 per cent of the test letters posted during three rounds of audit were 
+received back from the auditors with same day delivery performance ranging 
+from 94 per cent to 100 per cent.  
+ 
+ Performance of computerized Banking operations (data digitization and 
+signature scanning) increased from 72 per cent to 81 per cent during the 
+course of the audit.  
+ 
+ All 50 Post Offices were found to be having adequate infrastructure including 
+computer hardware and other facilities.  
+ 
+ Average Customer satisfaction score was found to be 9.52 on a scale of 10.  
+ 
+ Employees were found to be motivated and satisfied in general. The score of 
+average Staff satisfaction level was observed to be 5.8 on a scale of 6.  
+ 
+63. The Department has decided to conduct External Audit for Post Offices under 
+Phase II and Phase III as  well. The Request for Proposal for external audit of Project 
+Arrow. Post Offices Phase II and III is under preparation. 
+ 
+VIII. Mail Operations 
+
+ 
+ 
+ 
+(i) Setting up of Automatic Mail Processing Centres (AMPCs) 
+ 
+64. During the Eleventh Plan period, the Department has undertaken new initiatives 
+to improve the quality of mail operations. One of the major initiative of the Department 
+include setting up of the Automatic Mail Processing Centres (AMPCs). This scheme 
+seeks to address the problems in processing segment by mechanizing the mail 
+processing capacity which is at present largely manual. 
+ 
+65. During the year 2009-10, the Department had placed the orders for setting up of 
+AMPCs at Delhi and Kolkata and the system will be installed during 2010 -11. It also  
+involves replacement of existing AMPCs at Mumbai and Chennai. Besides, the 
+Department has plan to set up AMPC at Bengaluru and Hyderabad. The average speed 
+of sorting of manual sorter is 1000 articles per hour. The speed of sorting of a letter 
+sorting machine is 36,000 articles/hour. The Department has informed that they have 
+placed order to the selected vendor for installation and commissioning of the AMPCs in 
+Delhi and Kolkata. Action has also been initiated for preparation of Request for Proposal 
+(RFP) with respect to setting up of AMPCs in four other metro cities and the Department 
+would make all efforts to achieve the plan target in this respect. 
+ 
+(ii) Redesigning of Pin Code 
+66. The Committee have been informed that the Department has introduced a 
+numeric code, the PIN, way back on 15th August, 1972 to coincide with 25th Anniversary 
+of India‟s Independence.  
+ 
+67. The Department has informed Committee have been informed that a new Plan 
+programme to carry out a publicity campaign for a redesigned Pin Cod e is under 
+implementation. The objectives of this scheme is to improve delivery efficiency by 
+redesigning the Pin Code for specific delivery beats to take care of present and future 
+requirements of digits addressing, taking advantage of the current and evo lving 
+technologies.  
+ 
+68. Regarding the features of the redesigned Pin Code, the Department stated as 
+under:- 
+“While there is no change in the characteristics of the Pin Code being used 
+at present, the Pin Code has been redesigned as a pin plus code for 
+providing better services to the customers. A pin plus code consists of 
+6+2 digits. The first 6 digits refer to the Pin Code of the Delivery Post 
+office while the additional 2 digits refer to the postman beat code. By 
+incorporating the beat code along with the Pin Code at the original point 
+itself, it becomes very easy to sort the mail for each beat. This saves lot of 
+time at the Delivery Post Office. The Postman Beat Code has already been 
+
+ 
+ 
+implemented in mails being posted by certain large mailers like 
+telephones. A further improvement on this 6+2 digit Pin Code is the 
+6+2+3 Pin Code. The last 3 digits is the Deliver y Point Identification 
+(DPI). This scheme has not yet been implemented since it is felt that this 
+stage should get implemented only after the 6+2 pin plus gets accepted 
+well.” 
+ 
+(iii) Mail Business Centres 
+ 
+69. Mail Business Centre (MBC) was conceptualized by Department of Posts in 2006 
+as a key component of the New Paradigm for Mail Management, which seeks to change 
+the way, mail management has been traditionally looked at. In the new context of 
+expanding Courier, Express and Parcel market in India, MBCs ar e envisioned as 
+frontline business wings of India Post offering one -stop solution for varied mailing 
+needs of the customers. MBCs have been designed as an integrated mail business hub 
+undertaking the task of collection processing and delivery of (Bulk) mai l. MBCs are 
+equipped with technology and modern mailing tools in order to enable them to become 
+a complete mail business hub. Delivery of mail for bulk addresses will be undertaken by 
+MBCs, while individual mail will continue to be delivered by the Post Of fices. MBCs are 
+expected to gradually become profit centres in an environment where personal 
+communication is fast being replaced by B2B and B2C segment of mail, and where 
+parcel and logistics are new areas of growth. In these MBCs, all the mail business 
+services are provided under one roof. These MBCs are equipped with all facilities from 
+pre-mailing activities to delivery to bulk customers. 
+  
+70. Under the Eleventh Plan, the existing MBCs as well as new MBCs are envisaged 
+to be restructured with a view to streamline core mail operations and develop them  as 
+integrated mail business entities. At present, 142 Mail Business Centres are functioning 
+in the country. The plan scheme relating to Setting up of Mail Business Centres involved 
+redesign of the existing  Mail Business Centres/Mail Offices and optimizing the 
+countrywide mail network of the Department which includes 412 mail offices.  
+ 
+IX. Modernisation of Financial Services 
+ 
+71. The Post Office Saving Bank (POSB) is the oldest and largest Banking institution 
+in the Country.  It operates more than 206 million saving accounts as on 31.03.2009. 
+The Post Office Savings Bank provides an avenue to people all over the country to 
+deposit their savings in various Schemes. Its reach and service is unparallel ed by any 
+other banking agency in the country. In the future, it is possible to envision a role for 
+the India Posts as a provider of payments system functions. 
+ 
+
+ 
+ 
+72. When asked as to what extent the Department of Posts have been able to 
+provide financial services in the country, the Department has submitted as under:  
+“With the reach, network and reliability on its side for more than 100 years, 
+Department of Posts is spreading financial services to every nook and 
+corner of the country including unbanked and under banked areas. Life of 
+every citizen is touched by Post Office by fulfilling his financial services 
+needs. Services like savings, money remittance and insurance are age -old 
+financial services available at the doorstep of the customer including rural 
+populace. This strength of the Department has also been acknowledged by 
+RBI and declared that Post Office could be one of the potential institution to 
+meet objectives of financial inclusion. Currently, Department of Posts is 
+offering financial services thro ugh three categories of products i.e. regular 
+departmental schemes (Savings, Money Order and PLI), social security 
+schemes (National Rural Employment Guarantee Schemes (NREGS), Old 
+Age Pension, etc.) and products of other banks (SBI, NABARD, etc.). India 
+Post enjoys advantages such as network of more than1.5 lakh Post Offices, 
+reach to every part of the country, more than 100 years of experience in 
+handling savings bank work, huge mobilization in savings schemes ( Rs.  
+5.47 trillion), large customer base (22  crore accounts), nearly 40% 
+manpower engaged in savings work and trust and reliability”. 
+ 
+73. With regard to the total number of Post Offices which have computerized banking 
+facilities, the Committee have been informed that there are 12571 Post Offices with 
+computerized banking using Sanchay Post software as on 27.01.2010, 
+ 
+(i) Core Banking Solutions 
+74. The scheme Core Banking Solution (CBS) i.e. Anywhere, Anytime Banking for 
+Post Office Small Savings schemes has been included in the Eleventh Five Year Plan.  
+The scheme envisages setting up of 4000 CBS Branches during the plan period.  
+Number of steps have been taken to implement the scheme include appointment of 
+Technology and Banking Consultants, setting up of Project Management Unit (PMU) to 
+oversee and monitor the implementation of Core Banking Solution (CBS), identification 
+of 4000 Post Offices.  However, the Committee have been apprised that the project is 
+dependent on setting up the technology platform upon which the software will be 
+installed for which separate EFC is prepared and necessary approvals are sought. Pre 
+implementation activities of data cleansing and authentication of Post Office Saving 
+Bank data, training of staff are ongoing in circles. 
+(ii) Feasibility Report For Implementation Of C ore Banking Solution By 
+Technology Consultants 
+75. The Committee have been informed that Technology consultants have submitted 
+a feasibility report for implementation of Core Banking Solutions where the following 
+solutions are proposed (i) India Post requires an integrated core banking solution which 
+will enable real time processing capability, multi channel integration, flexibility to launch 
+
+ 
+ 
+new products and services, interface with internal and external applications, strong MIS 
+capability and superior dat a management and security functionalities and (ii) Core 
+Banking Service will be acquired from the Open Market from an established vendor - 
+customized to the needs of Department of Posts. Initially the solution will be 
+implemented in 4000 identified branche s having high volumes and gradually extended 
+to cover the entire network through various technology led solutions – offline 
+capabilities, multiple channels, mobile handheld devices (rural ICT), cards, and 
+centralized data centre.  
+(iii) Interaction with Ba nks and Technology Providers for introduction of 
+Core Banking Solution 
+76. The Committee have been informed that detailed discussion and interactions 
+which have been held by the Department of Post with some of the major banks include 
+State Bank of India, Punjab National Bank, National Institute of Bank Management, 
+Pune to draw a roadmap for implementing Core Banking Solutions . In this regard, the 
+Department have informed that these discussions have led to putting in place a pre 
+data migration strategy for cleansing the existing data which is needed for effective 
+migration to CBS environment. 
+ 
+77. The Department have also stated that they also had interactions with the 
+Technology Providers such as Infosys Technology, Oracle and Tata Communications for 
+implementation of Core Banking Solution. 
+ 
+(iv) Comparison of Financial Services provided by Banks and by the 
+Department of Posts 
+ 
+78. It is said that despite the many advantages of the financial services provided by 
+the Department of Posts, the public, particula rly in urban areas prefer commercial 
+banks for the following reasons: 
+(i) Better connectivity i.e. unlike Post Offices, banks are networked for ATM 
+withdrawal, deposits, withdrawal etc. 
+(ii) Liquidity and service; 
+(iii) Dematerialization (Post Office Savings instruments like Kisan Vikas Patra 
+and National Savings Certificate don‟t have the dematerialization facility) 
+(iv) Market determined interest rates; 
+(v) Availability of credit for customers of banks based on their deposits and 
+credit history. 
+ 
+79. When asked whether the Department of Posts intend to initiate any 
+steps/measures to compete with the services that are being provided by the various 
+commercial banks, it was informed as under:- 
+“Department of Posts is operating Small Savings Schemes of 
+Government of India as an operating agent.  These schemes are owned 
+by Ministry of Finance, Department of Economic Affairs on behalf of 
+Central Government under Government Savings Bank Act, 1873, 
+
+ 
+ 
+Government Savings Certificates Act, 1959 and Public Provident Fund Act 
+1968.  All maj or policy changes like ceilings on investments, eligible 
+criteria of investment, interest rates etc. are initiated by Ministry of 
+Finance (Department of Economic Affairs) and Department of Posts 
+makes its procedural rules accordingly.  Issue of certificate s in demat 
+form was initiated by the Department but had to be stopped due to lack 
+of demand from customers.  Department of Posts on its own initiative 
+has sent proposals to Ministry of Finance (Department of Economic 
+Affairs) for grant of loans against deposits, removal of ceiling in retaining 
+balance in saving account to enable its customers to enjoy some of the 
+services which are provided by the commercial banks.  Department is 
+providing appropriate technology in major Post Offices to give better 
+services to its customers.  So far about 12,000 Post Offices are working 
+in Local Area Network based technology.  Department has initiated a 
+project for providing anywhere -anytime banking through Central Server 
+based technology (CBS) in major 4000 Post Offices.  T his will provide a 
+platform to give services to the customers which are being provided by 
+the various commercial banks.” 
+ 
+80. With regard to the postal banking, the Secretary, Department of Posts during the 
+evidence stated they are now asking a private con sultancy for helping them to develop 
+a roadmap for opening postal banks. 
+ 
+81. When inquired about the issue regarding licence for the postal banks, the 
+representative from the Department of Posts during evidence deposed as under:- 
+“This is at present under  the National Saving Banks Act. This is 
+administered by the Ministry of Finance. We are the agents of the Ministry 
+of Finance to collect savings on their behalf. We do not give other products 
+because we are not bank in a proper sense. But we have some aspi rations 
+to become postal bank, like the Japan Post Bank, etc. so, we are appointing 
+a consultant to look at the feasibility and to prepare a roadmap for that. 
+Once we receive that consultancy report and the roadmap, we will go back 
+to the Government. 
+ 
+ 
+(v) Introduction of Accrual Accounting System 
+ 
+82. The Committee have been informed that the Twelfth  Finance Commission had   
+recommended an operational framework and detailed roadmap for implementation of 
+accrual accounting. In this regard, Department of Posts has signed an MoU on 25th June 
+2009 with ICAI-ARF for implementing accrual accounting system in two identified Head 
+Post Offices in New Delhi. The consulting team of ICAI-ARF has undertaken a diagnostic 
+review of the As -Is situation in the two identifie d HPOs primarily with the objective of 
+identifying the gaps in the existing system and the new changes which might be 
+required so as to enable identification of strategies and measures to achieve reform 
+objectives. 
+ 
+
+ 
+ 
+83. Regarding the diagnostic review of t he As-Is situation in the two identified Head 
+Post Offices the Committee have been informed that Pilot Study in Delhi Circle viz. New 
+Delhi Head Office (NDHO) and Nariana Industrial Estate Head Office (NIEHO) is being 
+undertaken by the ICAI-ARF. The ICAI-ARF has finalized Concept Papers on most of the 
+deliverables relating to the Pilot Study and are under examination with the Department. 
+The comprehensive Scope Evaluation Report (CSER) submitted by the ICAI-ARF on Pilot 
+Study is under consideration with the Department.  
+X. Modernisation in Service Delivery Levels with regard to financial 
+services 
+(i) Introduction of i-MO 
+ 
+84. The Department have informed that during 2010 -11, the service has been 
+extended to 6361 Post Offices. The service offers an instant online domestic money 
+transmission service intended for a market clientele requiring instant money 
+remittance.  Under this service, a person can send amount f rom Rs.  1000/- up to               
+Rs.  50,000/- in one transaction.  Money is disbursed to the payee at any of the i -MO 
+Post Offices in India other than the office of booking on presentation of 16 digit i -MO 
+number and photo identity proof. 
+ 
+(ii) Introduction of e-MO 
+85. The Committee have been informed that the Department of Posts has launched 
+e-MO on 10.10.08.  This system facilitates remittance of MOs electronically, however, 
+Post Offices should have connectivity by WAN/Broadband.   
+(iii) Introduction of MO-Videsh 
+ 
+86. Eurogiro is a network connecting Post Offices, banks and financial institutions.  
+This network is available in more than 50 countries.  Almost all modern postal 
+administrations use the Eurogiro network for international money remittances.   In 
+India, Eurogiro network is used by India Post under the name MO -Videsh for outward 
+and inwards international money remittance. 
+(iv) Operation of International Money Transfer Service 
+87. The Committee have been informed that this service, operated in a ssociation 
+with a multinational company – Western Union Financial Services International, 
+provides the customers the facility of receiving remittances from 205 countries and 
+territories on a real time basis.  Department is reviewing the business generated 
+through Western Union in the identified Post Offices. 
+88. The Committee have also been apprised that service is being withdrawn from the 
+dormant locations and simultaneously new locations are being identified to generate 
+more business.  Department has a pl an to introduce IMTS through MoneyGram in 500 
+Post Offices during 2010-11.   
+
+ 
+ 
+ 
+(v) Electronic Clearance Service 
+89. The Committee have been informed that the Scheme is in operation at 15 
+centres where Reserve Bank of India manages clearing Houses and 50 oth er centres 
+where State Bank of India, Punjab National Bank etc. are managing Electronic 
+Clearance Service on behalf of Reserve Bank of India.  Electronic Clearing Service is 
+being offered in the Department of Posts at all the 15 locations of Reserve Bank of India 
+& 21 locations of State Bank of India in connection with payment of monthly interest 
+under “Monthly Income Scheme” (MIS).  More than 5 lakh depositors are using this 
+facility.   
+XI. Rural ICT Devices 
+ 
+90. The Committee have been informed that the thrust of India Post Rural ICT 
+initiative would enable rural branches (BOs) to offer financial services to the „unbanked” 
+rural population and develop strong operational capability.  The proposed solution 
+would be an integrated banking and insurance solution and will offer various financial 
+services through the Mobile handled devices.  The proposed solution will bring complete 
+automation of rural Post Offices.   
+ 
+91. The Committee have been informed that f or modernization and computerization 
+of Extra Departmental Post Offices, Rural Information & Communication Technology 
+solution (Rural ICT) has been designed in consultation with the IT consultant and has 
+been incorporated in the draft EFC -II which has been circulated. The proposed solution 
+envisages that each of the rural office will have a mobile hand held device which will 
+have the ability to perform all the transactions of the Post Offices. A data centre is also 
+proposed to be set up with which these devices can e xchange date based on available 
+connectivity options such as GPRS, Encrypted SMS, broadband etc. The device will be 
+able to connect with central server and perform synchronously or asynchronously 
+depending upon the available connectivity. Rolling out of th e rural ICT solution in all 
+Branch Post Offices will be done in a phased manner in the financial year 2010 -11 and 
+2011-12 after the approval of the project.  
+92. The Department have also informed that they have obtained the authorization 
+from EFC to issue Requests for Proposals (RFPs) for rural ICT devices and application in 
+anticipation of the project approval which is under process of finalization. The EFC has 
+also authorized the Department to initiate action for supply of hardware to the single 
+handed Post Office in anticipation of the project approval. The Department have also 
+informed that action is being taken to initiate the supply of hardware to the single 
+handed Post Offices.  
+ 
+
+ 
+ 
+93. Regarding the rural ICT, the Secretary, Department of Posts during evidence 
+deposed as under:- 
+“We have set up a Committee for rural ICT. They are coming to the 
+conclusion that it will be better to lease and outsource the hand device 
+rather than purchase it outright. So, this question of obsolescence and 
+also of maintenan ce will be taken care of by the company that will be 
+outsourcing and leasing this hand device to us.” 
+94. The Secretary further added that:- 
+ 
+“Regarding the mobile devices, we still have to finalise it. We will be issuing 
+a tender and we will be asking for  solutions from operators who have 
+supplied the devices to business correspondents, to banks, to various other 
+people who are actually using this. We still have to decide on the best 
+solution for us as to what we will do. When we talk about new products an d 
+services, when we computerize, many things will be available throughout the 
+country which is not available now. For one thing, the 1,49,000 Post Offices 
+are being completely networked. It means that there is a source of delivery 
+from a central point to a ny point at these 1,49,000 Post Offices. Anything 
+can go through these services – it can be social welfare, it can be pensions, 
+it can be even e -Commerce. A person living in North East can order through 
+these Post Offices to any shop that has e -Commerce website or to which we 
+link up. That kind of delivery will become very possible. It is so in many 
+countries and it can become so in this country also. These are some of the 
+examples, but there are many more.” 
+ 
+XII. Support for Mahatma National Rural Employme nt Guarantee Scheme 
+(MNREGS) 
+95. The Committee during the course of examination of Demands for Grants (2010 -
+11) have been informed that the total number of MNREGS accounts opened till 
+February, 2010 are 4.07 crore. In their subsequent note, the Department has stated 
+that the number of MGNREGS accounts as on 01.06.2010 as 4.41 crore. 
+ 
+96. The Committee have been informed by the Department of Rural Development 
+that in the year 2009 -10. Out of a total amount of Rs.  21625.18 crore disbursed as 
+wages to unskill ed labourer through Post Offices/bank accounts, an amount of Rs.  
+8864.98 crore was disbursed through Post Offices and Rs.  12760.20 crore was 
+disbursed through bank accounts.  
+97. The Committee have also been informed that from the feedback received from 
+the labourers, it reveals that some of the problems regarding disbursement of wages to 
+the labourers under MNREGA are limited outreach, inadequate manpower and 
+infrastructure.  
+98. Regarding the bottlenecks for timely disbursement of wages to labourers under 
+MNREGA by India Posts, the Department of Rural Development in their written reply 
+stated as under:- 
+“One of the main bottleneck in timely disbursement of wages is delay in 
+payment of wages to Mahatma Gandhi NREGA workers through post offices 
+
+ 
+ 
+even after timely issuance of payment advise to sub post offices due to 
+shortage of manpower and infrastructure. Other problems are limited cash 
+handling capacity, shortage of manpower at Bran ch Post Office level, non -
+availability of any post office in some Gram Panchayat areas, there is no 
+proper building for use as Post Office in many of the interior villages and 
+the residential buildings of the Branch Post Master are used as post offices 
+in which it is not safe to keep wages money, proper security cannot be 
+arranged in all the villages due to lack of police personnel in the State, 
+Head Post Office is a cash dealing office of the Postal Department. 
+Sometimes one Head Post Office covers more th an one district which 
+results in delay in cash transfer to Sub -Post offices.  Bottlenecks reported 
+on the part of State governments are delay in submission of wage list to 
+post offices, mistakes in preparation of wage lists, problems related to 
+clearance of cheques, non- availability of rolling funds in every district and 
+bulk submission of wage list/pay orders at one go.” 
+ 
+99. With regard to addressing the problem of poor infrastructure and outreach, the 
+Department of Rural Development informed that the role of Business Correspondent 
+Model with ICT enabled innovations has been thought of. Business 
+correspondent/facilitator model , hand held devices, smart cards, biometrics, mobile 
+banking to encourage target branch expansion in the identified have been some 
+measures for initiation. The States have been requested to   identify unserved areas 
+where the BC model may be required and d iscuss with banks the possibility of 
+extending BC model in these areas. The possibility of using Self Help Groups in this 
+regard may also be examined.  
+100. The Department of Rural Development also proposes to use ICT devices, 
+especially Biometrics and integration with UIDAI to introduce bio -metric attendance on 
+site and to improve the overall delivery system in the implementation of the MNREGA 
+by capturing all the processes right from registration, demand of work, issue of dated 
+receipt, allocation of work, attendance at worksite with GPS coordinates, measurement 
+of work and wage payments.  
+101. The Committee have also been informed by the Department of Posts that they 
+are taking initiatives to introduce IT infrastructure to bring rural handheld devices 
+providing all services at rural doorsteps and application support for MNREGS and e -MO 
+application and all the other postal, financial services on the rural device. 
+102. When asked whether any deadline for rural ICT has been fixed, the Department 
+of Posts stated as under:- 
+“Yes the deadlines have been set to achieve ICT solution in the rural Post 
+Offices. After six months of approval of the project, the rural devices 
+platform would be ready, and the 1st pilot would be rolled out in the 
+seventh month. The First phase of roll out would be made after successful 
+testing of the pilots, and the solution in all the Rural Post Offices in six 
+selected circles would be implemented. The final roll out would commence 
+after fourteen months and would cover all the remaining c ircles to be 
+completed by September 2012.” 
+
+ 
+ 
+103. Regarding disbursement of wages of MNREGS workers through Department of 
+Posts, the Secretary, Department of Posts during evidence stated as under:- 
+“In the first place we do not do independent work as far as NREGA is 
+concerned. We are totally dependent on the State Government. The State 
+Government draws the funds and passes them on to the Post Offices along 
+with the Muster Rolls of all the persons who have done work. So, it depends 
+on two things when we make t he payment. One is that the Muster Roll 
+should reach us on time and the second is that the cash reaches us on time 
+from the Stage Government. We are supposed to pay within three days of 
+receiving the cash. Sometimes the Muster rolls do not reach us in time  or 
+the State Government delays giving us the cash which is why the payments 
+get delayed. I do not think it is possible for us to draw directly from 
+Reserve bank of India because it is completely dependent on the work 
+carried out and the measurement that i s taken by the State Government 
+authorities and the Muster Roll that reaches of the people who are to be 
+given the payment. It is completely dependent on these activities. We pay 
+out only as per the rules that are given to us.” 
+ 
+104. When asked whether the Department of Posts pay faster than the banks, the 
+Secretary, Department of Posts during the evidence deposed as under:- 
+“We definitely pay faster because we have a much simpler system. We 
+normally ask the State Governments to give us an advance or kind o f a 
+rolling fund against which we keep adjusting it. We have sensitized our 
+Branch Post Master to such an extent that even though he just works three 
+hours a day, during the period when payments are to be made we make 
+more persons there available at the vi llage to help him. They sit there 
+throughout the day making the payments. It is not that he works for two 
+hours and goes away. He remains till the whole payment is made out.” 
+ 
+105. Explaining the advantage of banks over Post Offices with regard to disbursement 
+of wages to labourers under MNREGA, the Secretary, Department of Rural Development 
+during evidence stated as under:- 
+“As I have mentioned earlier, the banks have a certain advantage.  So, it 
+has been found that the number of accounts that they are handling is much 
+larger as compared to the Post Offices, though they are numerically 
+inferior.   The number of accounts that they are handling is larger and also 
+their payment as some of the studies suggest is better.  I would refer to the 
+study by Dreze and Khera in which they have analysed in four of these 
+States the working of banks and post offices.  They found that the payment 
+of banks to be better and they also found that the complaints of their 
+clients was less.  But that is again an academic article an d that is not a 
+study commissioned by the Ministry.” 
+106. With regard to the preference of choosing between the Department of Post and 
+Banks by the State Government in connection with disbursement of wages to labourers 
+under MNREGA, the Secretary, Departme nt of Posts during evidence deposed as 
+under:- 
+“The point is that the State Governments have been given the option to 
+either use post offices or banks. So, many of them prefer to use banks 
+rather than post offices. “ 
+XIII. Training of Manpower 
+
+ 
+ 
+ 
+107. Regarding training of manpower, the Department have stated that they have 
+conceptualized the IT modernization project to enable IT in all its Post Offices which can 
+deliver the highest level of performance, efficiency and also to modernize all its 
+products and services.  In this endeavour, Department of Posts is drawing upon the 
+expertise of the private sector not only for implementation of its plan but also for its 
+human resource related initiatives.     
+ 
+(i) Human Resource Development Initiatives 
+108. In connection with human resource related initiatives, the Department has stated 
+that to train the work force of the Department a comprehensive scheme has been 
+prepared as the Plan Project for the Eleventh Plan with and outlay of Rs.  130.66 crore.  
+This scheme includes imparting of institutional in service training, technology training, 
+business orientation programmes, capacity building and development of infrastructure. 
+109. Elaborating on the issue, the Department informed that the Group „A‟ and „B‟ 
+Officers are trained at Postal Staff college of India (PSCI) which is the apex institute of 
+the Department.  In addition to induction training for Group „A‟ and „B; Officers, PSCI 
+also organizes in service training on computerization, ins urance and related issues.  
+Technology training is an essential component of induction training for both Group „A‟ 
+and „B‟ Officers. There are six Postal Training Centres which impart induction training to 
+Inspectors of Post Offices, Postal Assistants and Sorting Assistants.  The PTCs also 
+organize in service training programme for Postmasters and Assistant Superintendent 
+of Post Offices (ASPOs) on departmental matters and technology.  The training on 
+technology is an essential part of the induction training. 
+110. With regard to the training centres that have been set up for imparting technical 
+and computer education to the employees, the Department have stated as under:  
+“In order to keep pace with technology implementation, local training 
+facilities are be ing developed to supplement the training provided by Postal 
+Training Centres,  Accordingly, two types of training facilities are being set 
+up-Workplace Computer Training Centre (WCTC) and Divisional Level 
+Training Centre (DTCs).  The Workplace Computer Tra ining Centres, which 
+are mainly set up in regions, impart training for departmental software to the 
+Supervisors and Postal Assistants.  The Divisional Level Training Centres 
+(DTCs) are set up at Divisional level.  The Divisional Level Training Centres 
+(DTCs) impart basic computer training to the employees who are not familiar 
+with working on computers   Training facilities have been set up for the 
+Accounts Personnel in the Circles.  Five Zonal Training Centres have been set 
+up at the Postal Accounts Offices located at Chennai, Delhi, Lucknow, Nagpur 
+and Kolkata and fifteen Divisional Level Training Centres have been set up at 
+the remaining Postal Accounts Offices.  The Zonal Training Centres impart 
+training on accounting as well as accounting software.  Divi sional Level 
+Centres provide training on accounting software. The computer training 
+capacity of the Postal Training Centres has also been increased to cope up 
+
+ 
+ 
+with the need for induction training for the newly recruited Postal 
+Assistants”. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+111. With regard to key areas that have been identified for the improvement of 
+human resource development, the Committee have been informed that specific training 
+packages are being devised to cater to specialized Plan projects so that the staff can be 
+trained dep ending on the requirements of the specific activities involved. For this, 
+Xavier Institute of Management Bhubaneswar, Indian Institutes of Management and 
+Ecole Polytechnique Federale de Lausanne, Switzerland have been approached to assist 
+the Department of Post.  
+112. When asked about the steps that have been taken by the Department to ensure 
+that manpower planning are undertaken by considering the inevitable role of specialists 
+in the modernisation of Post Offices, the Committee have been informed as under:- 
+“With modernization there is a requirement to have personnel to use 
+software, maintain hardware and train personnel in new procedures. 
+Training Division of Dept of Posts has slated special training programmes 
+for System Administrators, Hardware troubleshooters and Software 
+Trainers.” 
+ 
+***** 
+
+ 
+ 
+Part-II 
+ 
+OBSERVATIONS/RECOMMENDATIONS 
+ 
+1. India Posts is in the process of modernisation to keep pace with the 
+emergence of several significant changes that have been brought by 
+liberalization and globalization as well as by the demographic shift towards 
+urbanization. As per the Department, modernisation of Post Offices means  
+spreading and strengthening of IT infrastructure, modernizing the mail 
+transmission, improving service delivery levels, training of manpow er, 
+increasing awareness of the people regarding the services provided by the 
+Post Offices and giving  the right ambience to customers . A number of steps 
+have been initiated by India Posts since the Eighth Five Year Plan and the 
+Department is quite optimi stic that by September, 2012, it would be able to 
+create a platform for automated delivery of Postal Transportation, Financial, 
+and Premium Value Added Services to all the Post Offices in the Country.  The  
+Committee are of the opinion that to achieve   the mission  of modernization of 
+Post Offices, technology has to play a vital role by building the last mile 
+infrastructure in the rural areas . In addition to this, India Posts needs to 
+unlock the various obstacles in the urban areas. In the succeeding paragraphs, 
+the Committee have dealt at length how far India Posts has been able to 
+achieve the objectives of being a technology -enabled service covering urban, 
+rural and remote areas, increased market share and revenue, improved service 
+delivery as well as motivating and improving the skills of the workforce. 
+ 
+Overview of Modernisation of Post Offices from Eighth to Eleventh Five 
+Year Plan (upto 2009-10) 
+ 
+2. The Modernisation of Post Offices took its root during the Eighth 
+Five Year Plan with the initiation of  computerisation in the Post Offices 
+in a limited way and continued in the Ninth Five Year Plan with the 
+induction of ‘Meghdoot’ and ‘Sanchay Post’ software for postal and 
+
+ 
+ 
+banking operations. With the induction of IT in its modernisation vision, 
+the Department has intensified its efforts during the Tenth and Eleventh 
+Plan. However, the analysis of the progress made by India Posts with 
+regard to its vision of having technology enabled Post Offices reveals 
+several areas of concern. The Committee note that over the years, India 
+Posts has not been able to optimally achieve its financial and physical 
+targets. This observation can be substantiated by the fact that during 
+Eighth and Ninth Plans the financial achievement was 68.70 and 75.14 
+per cent respectively. Th e trend of underutilization of Outlay continued 
+during the Tenth Plan too, as it was again 68.01 per cent and during the 
+Eleventh Plan (upto 2009 -10) it was 61.70 per cent. In terms of 
+physical achievement too, the Department under -performed.  During 
+Eighth Plan, the Department could not supply 2340 MPCMs. Similarly 
+under achievement has been witnessed in case of computerisation of 
+accounting and inventory function –MIS (at Circles).  In case of 
+procurement of Mail Motor Service Vans, the achievement was onl y 13 
+out of the target of procuring 19 vans. Underachievement of the 
+physical targets continued during Ninth Plan also as out of 1730  
+targeted ESMOs, only 282 ESMOs could be installed. In Tenth Plan, 
+underachievement is seen under -performance relating to  providing 
+computerisation facilities to 100 Divisional Offices. The trend of 
+underachievement of physical targets persisted even in Eleventh Plan 
+(upto 2009-10) as the Department could not extend the instant money 
+order service in the targeted 3621 Post O ffices. In case of IT induction, 
+the achievement could be made only in 6233 Post Offices out of a 
+physical target of 11670 Post Offices. From the foregoing, the 
+
+ 
+ 
+Committee cannot but conclude that a lot needs to be done by the 
+Department in its mission to m odernize its Post Offices. In this regard, 
+the Committee are of the opinion that the Department besides fulfilling 
+its Universal Service Obligation to provide basic facilities throughout 
+the country at an affordable price, the foremost task before them is to 
+have inter-connectivity of its Post Offices and this can only be achieved 
+if all the Post offices in the country are computerized. However, with 
+the trend of under performance of the Department both financially and 
+physically over the years, there are b ig challenges for the Department 
+especially taking into account the increasing penetration by private 
+sectors into logistic and parcel delivery as well as reduction in the 
+dependence of the people on communication services of India Posts 
+with the emerging technological changes brought by e -mail, mobile 
+telephony etc. Nevertheless, the Committee recommend that the 
+Department should conduct a SWOT (Strength, Weaknesses, 
+Opportunity and Threats) analysis to identify the  Department’s internal 
+strength and weak nesses and explore the opportunities and threats 
+facing the Department externally and take corrective measures 
+accordingly. The Committee feel that the Department should use its 
+advantage of having a wider outreach to capture the market throughout 
+the country. The Committee feel that the absence of a comprehensive 
+IT network covering all the Post Offices would entail non -fulfillment of 
+its automation plan which in turn would affect the service delivery 
+system. Therefore, the Committee emphasize that the speedy electronic 
+linkages of all the Post Offices should be taken up by the Department at 
+the earliest. 
+
+ 
+ 
+Status of Computerisation of Post Offices 
+3. The process of computerisation or transformation from physical to 
+digital network of Post Offices was initiat ed in Eighth Five Year Plan 
+and as per the Department the ambit of computerisation has increased 
+in each of the successive Plans and as on 31 st March, 2010, there are a 
+total of 12,604 Departmental Post Offices which have been 
+computerized out of the total 25,538 Departmental Post Offices, the 
+percentage of achievement being only 49.35 per cent.  Most of the work 
+of Post Offices is carried out by the Extra Departmental Post Offices and 
+at present out of total 1,55,035 Post Offices 1,29,497 are Extra 
+Departmental Post Offices.  If the number of Extra Departmental Post 
+Offices is also taken into consideration, the percentage of 
+computerization of Po st Offices comes to just 8.13 per cent.  The 
+Committee note that the Department has big plans with regard to 
+enlarging their savings and insurance activities.  The Department 
+proposes to set up Post Bank of India.  The Committee note that the 
+aforesaid amb itious plans of the Department cannot be achieved 
+without networking of the Post Offices.  The Department claims to 
+achieve the 100 per cent computerization of Post Offices by September, 
+2012.  With the existing status of computerization the details of whi ch 
+have been given above, the Committee have doubts about the 
+achievement of the targets by the stipulated timeframe i. e. by 
+September, 2012.  The aforesaid apprehension of the Committee is 
+further reinforced by the fact that the Department cannot compute rize 
+even a single Post Office during the financial year 2009 -10 as status of 
+computerization of Post Offices remained static during the aforesaid 
+
+ 
+ 
+period.  The Committee cannot but express their unhappiness over the 
+status of computerization of Post Office s.  The Committee exhort the 
+Department to take the desired initiatives at least now so as to step up 
+the pace of computerization of Post Offices in the country.   
+ 
+Broadband Connectivity 
+4. From the information provided by the Department, the Committee 
+note that out of 12,604 Departmental Post Offices computerized so far, 
+the broadband/dial-up connectivity could be provided to just 9483 Post 
+Offices i.e. 37.13 per cent.  The detailed information provided by the 
+Department further indicates that 1305 locati ons have been connected 
+through 2 Mbps leased line and another 8177 computerized Post Offices 
+are using dial -up connectivity.  The Committee observe that the 
+purpose of computerization is achieved only when the broadband 
+connectivity is provided.  Moreover , the availability of adequate and 
+efficient broadband service is the prerequisite to achieve the objective 
+of networking of Post Offices.  The coverage of only 37.13 per cent of 
+the Departmental Post Offices in the country having broadband 
+connectivity is  not a satisfactory position.  Moreover, the aforesaid 
+position does not cover the Extra Departmental Post Offices which are 
+handling the major work of the Posts as indicated in the earlier part of 
+the Report.  The Committee again emphasize that the challe nges before 
+the Department are going to increase  manifold with the rapidly 
+evolving technology and to face this, the Department has to put in place 
+an effective networking system by having electronic linkages of all the 
+Post Offices in the country and thi s can only be achieved by providing 
+
+ 
+ 
+the broadband connectivity to all the Post Offices.  Otherwise, the 
+vision of the Department such as ‘Anywhere, Anytime Banking’, Speed -
+Net Service, Upgradation of Customer Call Centres, Project Arrow etc. 
+would always remain a mission yet to see their successful and complete 
+implementation.  In view of this, the Committee strongly recommend to 
+take all the initiatives so that the broadband connectivity is provided to 
+all the computerized Post Offices. 
+5. The Post Offices  are located in every nook and corner of the 
+country.  As such providing broadband connectivity to far -flung and 
+difficult areas is the biggest challenge before the Posts so far as the 
+issue of broadband connectivity is concerned.  The Department has 
+informed that the steps have been taken to ensure that the system can 
+work in offline manner and the encrypted data can be uplinked from the 
+nearest Post Office having appropriate connectivity.  The Committee 
+have also been informed that the Department is explo ring of having the 
+connectivity through VSAT in North -East and Andaman and Nicobar 
+Island.  The Committee note that all the steps are in the right direction 
+and need to be continued.  Besides, the Committee also emphasize that 
+the Department should take up  the issue of providing broadband 
+connectivity in the far -flung and difficult areas with BSNL.  Proper 
+coordination with BSNL would help the Department in finding solution 
+to the problem of connectivity in such difficult areas.  The desired 
+initiatives on the suggested lines should be taken by the Department 
+and the Committee informed accordingly.   
+6. The analysis of Circle-wise data with regard to computerization as 
+well as broadband connectivity of Post Offices as furnished by the 
+
+ 
+ 
+Department indicates that achievement with regard to computerization 
+is outstanding in Assam, North -East and Kerala.   In Assam, the 
+achievement is 100 per cent, in North -East and Kerala the achievement 
+is 90.45 and 71.19 per cent respectively.  The national average in this 
+regard is 49.35 per cent.  The under -performing Circles where the 
+achievement is lesser than the average are Andhra Pradesh, Bihar, 
+Chhattisgarh, Rajasthan and Uttar Pradesh.  With regard to broadband 
+connectivity, the data furnished by the Department indicate s that 
+connectivity is maximum in Delhi i.e. 70.83 per cent followed by Kerala, 
+Haryana, Gujarat and Tamil Nadu which have 54.42, 51.33, 50.99 and 
+51.06 per cent connectivity respectively.  In all the remaining Circles, 
+the connectivity is less than 50 per  cent.  It is surprising to note that in 
+Delhi which has very good broadband penetration, 30 per cent of Post 
+Offices computerized so far could not be provided broadband 
+connectivity.  More disturbing is the fact that Assam and North -East 
+which have achiev ed 100 per cent and 90.45 per cent of the 
+computerization have only 41.09 per cent and 31.34 per cent of the 
+broadband connectivity respectively.  As such, the purpose of providing 
+100 per cent computerisation to such Circles is defeated.  From the 
+aforesaid position, the Committee conclude that the adequate measures 
+have not been taken by the Department to provide broadband 
+connectivity to the computers already installed in various Post Offices.  
+The Committee exhort the Department to take all the desired initiatives 
+which include taking up the issue with BSNL i.e. the Government 
+telecommunication service provider for providing broadband 
+connectivity to the computers in all the Circles.    
+
+ 
+ 
+IT Induction – Postal Operations during Eleventh Plan 
+7. The Committee find that the Department has ambitious plans with 
+regard to upgradation of various services viz. Communications Services, 
+Transport Services, Financial Services and Value Added Services.  To 
+achieve the objective, Rs.  2700 crore was allocate d by the Ministry of 
+Finance during the Eleventh Plan.  The aforesaid allocation was reduced 
+to Rs.  2572.60 crore while framing EFC Memo.  Out of Rs.  2572.60 
+crore, the Cabinet Committee’s approval could be obtained for only Rs.  
+978.52 crore and that to o in February, 2009 whereas Eleventh Plan 
+commenced on 1 April, 2007.  Out of this, Rs.  628.66 crore was for IT 
+Project Phase -I, Rs.  210.86 crore was for Automatic Mail Processing 
+Centres and the remaining 139.00 crore was for Project Arrow.  Due to 
+late approvals of the schemes, there were huge gaps between the 
+projected outlay, allocation made at BE Stage, RE Stage and the actual 
+expenditure during each of the year.  Out of total allocation of Rs.  
+2572.60 crore Rs.  446.47 could only be utilized during first three years 
+of the Eleventh Plan, the percentage utilization being just Rs.  17.35 per 
+cent.  The Committee have consistently been raising serious concern 
+over the whole planning process in the Reports on Demands for Grants 
+of the last three years.  In spite of that the approval of the various 
+programmes is being badly delayed resulting into huge shortfall in the 
+financial as well as physical achievements, particularly the IT Induction 
+Programme of the Department.  The Committee disapprove the way th e 
+schemes are being proposed and approvals made whereby almost full 
+three years of the Plan were lost in getting approvals.  Even when the 
+fourth year of the Plan is going to expire approvals for the substantial 
+
+ 
+ 
+allocation for Phase -II are still awaited.  The Committee again 
+emphasize that the Department need to relook its procedure for getting 
+approvals for the different schemes and a specific time limit for getting 
+approval at each of the stage should be fixed.  Since the approvals for 
+Phase-I are now in place, the Committee exhort the Department to take 
+all the initiatives so that the allocations provided are meaningfully 
+utilized. 
+Financial and physical achievements under IT Project Phase-I  
+8. From the data made available by the Department, the Committe e 
+note that there are huge shortfall in financial and physical 
+achievements during each year of the Eleventh Plan under different 
+programmes of IT Induction.  The major part of the allocation is made 
+for computerization and networking at BE stage.  During the year 2008-
+09, Rs.  240 were allocated for the aforesaid programme.  The 
+allocation was reduced to Rs.  142.50 crore at RE stage.  The 
+Department could not ensure full utilization of even the reduced outlay 
+and there was shortfall of Rs.  4.77 crore.  S imilarly, during the year 
+2009-10 even when the major approvals were in place, the allocation at 
+BE stage was Rs.  255 crore which was reduced to Rs.  118.01 crore at 
+RE stage.  The actual expenditure during the year 2009 -10 has been 
+indicated as Rs.  152.70 crore.  Similarly, huge reduction at RE Stage 
+under the other Programmes of IT Induction like Upgradation and 
+Modernization of Software Centre at Postal Training Centre, Annual 
+Maintenance Contract, Consultancy for Comprehensive Technology Plan 
+and Stra tegy, Upgradation and Modernization of Postal Accounts 
+Offices, Computerisation of Administrative Offices and Project 
+
+ 
+ 
+Management Unit was made.  With regard to physical achievements, 
+the Committee again note the huge shortfalls.  Out of the target of 
+computerisation of 5,143 Double -handed Post Offices, the achievement 
+was 2920 Post Offices.  In case of Single -handed Post Offices the 
+achievement was further worse.  Out of the target of 11497 Post 
+Offices, the achievement was just 554 Post Offices.  So far as  supply of 
+computers to Divisional Sub-Post Offices is concerned, the achievement 
+was just 156 out of the target of 305.  Even where the computerisation 
+had been done, the electronic linkages could not be completed.  The 
+reasons in this regard as indicated  by the Department are that the 
+computerization which has been implemented till date focused on 
+supply of hardware to bigger Post Offices in a LAN (Local Area 
+Network).  The major software for postal operations (Meghdoot) and 
+for Banking operations (Sancha y Post) were of standalone mode 
+working within the Post Offices in a LAN connectivity.    The Committee 
+conclude from the aforesaid scenario that there are serious problems in 
+implementation of various IT Projects.  The Department has tried to 
+justify the shortfalls by stating that approvals were in place only in the 
+year 2009 i.e. after passing of almost three years of the Eleventh Plan.  
+On one hand, it has been stated that due to inadequate allocation 
+during Eleventh Plan, there were shortfall in achieve ment of targets.  
+On the other hand, the allocation made are being reduced at RE stage 
+and there is still under spending during each of the year as explained 
+above.  With the present pace of IT Induction Programme, the 
+Committee feel that it would take more decades to get the 100 per cent 
+Post Offices computerized.  While expressing serious concern over this, 
+
+ 
+ 
+the Committee exhort the Department to take all the initiatives so that 
+at least now progress are made in various activities related to IT 
+Induction in Postal Operations.         
+IT Project Phase II 
+9. The Committee note that the Department has ambitious plans 
+under IT project Phase II which envisages building up of a 
+comprehensive IT solution for all the operations viz postal banking 
+insurance and retail operations.  The project objectives as informed t o 
+the Committee are Robust IT solution including infrastructure and 
+applications, multiple channels of access – POS ICT Call centres, web 
+mobile, Integrated customer support, High service delivery standards, 
+Technology platform for inducting new services a nd products.  In this 
+connection, the Department has proposed an overall outlay of Rs.  
+1877.20 crore to be incurred in the financial years 2010 -11, 2011 -12 
+and 2012-13 (upto September, 2010). As regards the status of approval 
+of EFC phase II,  the Committ ee have been informed that the proposal 
+for IT project phase II was recommended by EFC on 28 June, 2010 and 
+is under process for obtaining approval of the competent authority.  The 
+detailed information provided by the Department further indicates that 
+Department of Expenditure and Planning Commission recommended for 
+scaling down the proposal to the extent of availability of funds and the 
+Department was advised to opt for the outsourced model for some of 
+the components.  As such the total outlay has been sca led down to Rs.  
+187720 crore and the project has been phased to be rolled out in the 
+financial year 2010-11, 2011-12 and 2012-13. The year  2010 -11 is the 
+fourth year of the Eleventh Plan and half of the year has already passed 
+
+ 
+ 
+and the Department is still  to obtain the approvals for the Phase II.  
+Further Phase II is in continuation of the phase I and envisages 
+computerization of all the Post Offices in the country.  Various 
+modernized services like mobile banking integrated customer support 
+ATM facility e tc. can only be provided when there is complete 
+networking of the Post Offices.  In view of this, the Committee strongly 
+recommend that earnest action should be taken to complete the 
+computerization process and make the computers broad band enabled 
+so that the modernized facility could be provided to the customers as 
+envisaged under phase II of the project.  All the procedural difficulties 
+should be sorted out with the various Ministries so that the approval of 
+phase II are in place and the programme is imp lemented with full 
+swing.   
+Establishment of Project Management Unit 
+10. The Committee have been informed that a Project Management 
+Unit (PMU) has been established. The PMU would ensure availability of 
+skills for strategic planning to conceptualize the mis sion, project 
+development, project management, project finance etc. Besides, three 
+Committee viz. Steering Committee, Working Committee and Functional 
+Teams have been formed to monitor the project. The Committee have 
+also been informed that the Steering Co mmittee meets once in a month 
+while the Working Committee meets once in a week. The Functional 
+Teams meet at least once in a week. While appreciating the aforesaid 
+mechanisms to monitor the implementation of Phase -II of the project, 
+the Committee strongly emphasize that various procedural hurdles 
+should be addressed so that clearance for IT Project Phase -II are 
+
+ 
+ 
+obtained and project is implemented under the supervision of various 
+monitoring mechanisms. 
+Consultancy service from M/s Accenture Service Private Limited 
+11. The Committee have been informed that M/s Accenture Services 
+Pvt. Ltd., the consultant engaged for IT modernisation of the 
+Department to accomplish its aggressive growth and profit targets has 
+submitted 16 Reports. Out of which, 10 Reports have been accepted by 
+the Department and the remaining are in the process for acceptance. 
+The Committee note that the Current State Assessment Report has 
+highlighted that in six  areas of operations, namely Mails, Banking, 
+Postal Life Insurance, Finance and Acc ounts, Human Resource and 
+Technology carried out by the Department, the majority of the work are 
+being carried out manually.  Besides, there are multiple siloed 
+application deployed which do not integrate resulting in duplication of 
+work efforts carried ou t by the Department. Further, the Report has 
+highlighted that the network, IT security and Data Centre infrastructure 
+are insufficient. The Committee feel that each of the observations made 
+by the M/s Accenture Services Pvt. Ltd. are very significant and t he 
+Department needs to address each of the issue at the earliest. The 
+concrete action in this regard should be taken and the Committee 
+informed accordingly.  
+ 
+Project Arrow 
+12. The Committee note that the Department of Posts has launched a 
+scheme ‘Project Arrow’ in April, 2008 with the objective of providing a 
+new outlook to Post Offices by modernizing exterior and interior 
+designs of the Post Offices, upgrading the infrastructure and enhancing 
+
+ 
+ 
+core operations including IT enabled services and processes.  N o 
+separate allocation was made for Project Arrow.  The Department spent  
+Rs.  151 crore on 1000 Post Offices i.e. 50 Post Offices in Phase -I, 450 
+Post Offices in Phase -II and 500 Post Offices in Phase -III.  During the 
+year 2010 -11 another 500 Post Offices were identified to be covered 
+under Project Arrow for which Rs.  86 crore were approved.  However, 
+Rs.  60 crore were allocated and as such funds have been released for 
+modernizing only 371 Post Offices in Phase -IV.  The Department has 
+also informed that f unds to the tune of Rs.  24 crore have been sought 
+for first batch of Supplementary Grants and on the receipt of the same, 
+the remaining 129 Post Offices would be covered.  As regards, the plans 
+of the Department during Eleventh Plan, the Committee have be en 
+informed that a total of 4,500 Post Offices were to be covered during 
+Eleventh Plan with the outlay of Rs.  887 crore.  The Department was 
+able to spend Rs.  325 crore and for the remaining 562 crore, the 
+Department has taken up the matter with the Plan ning Commission and 
+the Ministry of Finance for further allocation of outlay.  Further, the 
+Committee have been informed that the Project Arrow has a big impact 
+and revenue has actually gone up in 1,500 Post Offices covered by the 
+Project Arrow.  The Commi ttee are unable to comprehend the reasons 
+for not allocating outlay for the ‘Project Arrow’ particularly when the 
+Finance Minister in the Budget Speech (2009 -10) has assured that the 
+‘Project Arrow’ would receive full Government support. Moreover, there 
+has been huge shortfall in expenditure earmarked for IT -Induction 
+projects of the Department due to late approval of the programme. As 
+such, the outlay approved for the Eleventh Plan could have been 
+
+ 
+ 
+earmarked for ‘Project Arrow’ which according to the Depart ment has 
+been a success.  As such, the Committee strongly recommend that the 
+initial plan of extending facilities by Project Arrow to 4,500 Post Offices 
+should be maintained and the Ministry of Finance and Planning 
+Commission should be pursued to give the desired allocation for the 
+Programme. The concerns of the Committee in this regard should be 
+duly communicated to the Ministry of Finance and Planning 
+Commission.   
+13. The Committee have been informed that the Department of Posts 
+had appointed TUV India Posts Limited to conduct audit/customers’ and 
+staff satisfaction survey in 50 Project Arrow Phase -I Post Offices to 
+evaluate performance of Post Offices in 18 parameters.  As per the 
+findings of the aforesaid survey, there is remarkable improvement in 
+the services offered by the Post Offices.  Besides, the average customer 
+satisfaction as well as employees’ satisfaction is also good in the 
+aforesaid Post Offices.  The Committee have further been informed that 
+the Department has decided to conduct external au dit for Post Offices 
+under Phase-II and Phase-III as well and the Request for Proposal for 
+external audit is under preparation.  The Committee appreciate the 
+efforts being made by the Department to monitor the performance of 
+the Post Offices covered under Project Arrow.  The Committee 
+emphasize that external audit for Post Offices covered under Phase -II 
+and Phase-III should be expedited and the findings communicated to 
+them.  Besides, the Committee also emphasize that the findings of the 
+survey which indicate great improvement in the various services should 
+be publicized by the Department so that the public at large is aware of 
+
+ 
+ 
+the efficient services being provided by these Post Offices.  This would 
+certainly help the Department in increasing their customer base and 
+enhance revenue generation of the Post Offices.    
+Mail Operation 
+Automatic Mail Processing Centres 
+14. The Committee note that the Department as an initiative to 
+modernize mail operations proposes to set up Automatic Mail 
+Processing Centres (AMPC s) during the Eleventh Plan.  While it is 
+possible to sort only 100 articles per hour manually, the AMPCs can sort 
+36,000 articles per hour.  In this direction, the Department has initiated 
+the process for setting up of AMPCs in Delhi and Kolkata and order s 
+have been placed to the selected vendors for supply, installation and 
+commissioning of the AMPCs in these cities.  Further action has also 
+been initiated for preparation of Request for Proposals with respect to 
+setting up of AMPCs in four other metro cit ies.  The Committee observe 
+that setting up of AMPCs would help in quicker delivery of mail articles 
+in the country.  Moreover, setting up of these Processing Centres is 
+urgently required keeping in view the fact that private sector has 
+entered into the do main of mail services in the country and the 
+Department has to provide competitive service to the customers  As 
+such, the Committee strongly recommend that all the efforts should be 
+made to set up these Centres expeditiously in various metro cities.      
+Redesigning of Pin Code 
+15. The Department had introduced six digit numeric code way back 
+in 15th August, 1972. The first three digits denote the sorting unit, while 
+the last three digits denote the delivery Post Office.  Now, it has been 
+
+ 
+ 
+decided that Pin Code should be redesigned to be able to take care of 
+present and future requirements of digits addressing, taking advantage 
+of the current and evolving technologies. As such it has been decided to 
+re-design the Pin code and introduce Pin P lus, a numeric code 
+combining 6 digits of the current Pin Code with an additional 5 digit – 
+the first 2 digits would denote the Postman beat and the other 3 digits 
+would denote delivery point on the beat. The Committee have further 
+been informed that the P ostman Beat Code has already been 
+implemented in mails being posted by certain large mailers like 
+telephones. A further improvement on this 6+2 digit Pin Code is the 
+6+2+3 Pin Code. The last 3 digits is the Delivery Point Identification 
+(DPI). This scheme has not yet been implemented since it is felt that at 
+this stage it should be implemented only after the 6+2 pin plus gets 
+accepted. The Committee find that it has been mentioned in the 
+Outcome Budget 2010 -11 that the Department has embarked upon a 
+comprehensive plan for popularization of Pin Codes through various 
+media during the Eleventh Plan period to improve delivery efficiency by 
+redesigning the PIN Code for specific delivery beats. In this regard, the 
+Committee would like to be apprised about the init iatives taken by the 
+Department for popularization of the redesigned Pin Code. The 
+Committee would also like to be apprised about the feedback of 
+implementation of the Postman Beat Code based on which 8 digit Pin 
+Code would be fully operational by the Depa rtment. The Committee 
+hope that the aforesaid initiatives would certainly improve the delivery 
+of mails.  
+Mail Business Centres 
+
+ 
+ 
+16. The Committee note that the initiative taken by the Department to 
+provide efficient mail business services under one roof wa s the setting 
+up of Mail Business Centres. At present 142 Mail Business Centres are 
+functioning in the country. During Eleventh Plan, the Department 
+proposed to implement a plan scheme relating to Setting up of Mail 
+Business Centres that involved redesign of the existing Mail Business 
+Centres/Mail Offices and optimizing the countrywide mail network of 
+the Department which includes 412 mail offices. Under the aforesaid 
+scheme the existing MBCs as well as new MBCs are envisaged to be 
+restructured with a view to streamline core mail operations and 
+develop them as integrated mail business entities. During the year 
+2009-10, the physical target for setting up of 150 MBCs was reduced to 
+50 only. The Department in this regard has informed the Committee 
+that now the process for selection of consultant for the project has 
+been completed and the roadmap for implementation of the project is 
+being prepared with the help of the consultant. The Committee express 
+serious concern over the way important schemes are  being 
+implemented by the Department. Even when the scheme related to Mail 
+Business Centre is operational and the three and a half precious year of 
+Eleventh Plan have already been over, the Department now has decided 
+for selection of the consultant for the project. T he Committee are of the 
+firm view that the process of consultation should be undertaken before 
+the project is started and not in the middle of the implementation of the 
+project. Since personal communication is fast being replaced by B2B 
+and B2C segment of mail, and where parcel and logistics are new areas 
+of growth, the Committee emphasize that all the initiatives should be 
+
+ 
+ 
+taken  for the targeted setting up of Mail Business Centres as well as 
+restructuring of the existing MBCs. The concrete action taken in  this 
+regard should be communicated to the Committee. 
+Modernisation of Financial Services 
+17. The Post Office Savings Bank (POSB) with 206 million savings 
+account (as on 31.03.2009) and having 100 years of experience in 
+handling savings bank work is the oldest and largest banking institution 
+in the country. Inspite of un -paralelled reach of Post Bank as compared 
+to any other banking agency in the country, the preference of the 
+customer today particularly in urban areas is commercial banks as 
+acknowledged by  the Department. Better connectivity, network for 
+ATM, liquidity, dematerialization, market determined interest rates and 
+availability of credit are the main factors for choice of commercial 
+banks as compared to posts. Inspite of the various initiatives ta ken by 
+the Department with the huge allocations made out of government 
+funding the IT-Induction programme has not been to the desired level. 
+The detailed analysis of which have been given in the previous part of 
+the Report. While the Department has the net work of 1.5 lakh Post 
+Offices only 12571 Post Offices have the computerized banking system 
+using ‘Sanchay Post Software’ and are working in local area network 
+based technology. The scheme Core Banking Solution CBS) i.e. ‘Anytime 
+Anywhere Banking’ for post office small savings have been included in 
+the Eleventh Five Year Plan. Technology consultant have submitted the 
+Feasibility Report for implementation of Core Banking Solutions. As per 
+the Report, India Posts require an integrated Core Banking Solution 
+which would enable real time processing capability, multi channel 
+
+ 
+ 
+integration, flexibility to launch  new products and services, interface 
+with internal and external applications, strong MIS capability and 
+superior data management and security functionalities. The Department 
+propose to provide Core Banking Solution initially in 4000 identified 
+branches which would gradually extend to cover the entire network 
+through various technology led solutions -offline capabilities, multiple 
+channels, mobile hand held devi ces (rural ICT), cards, and centralized 
+data centre. The Department is having detailed discussions and 
+interactions with various commercial banks and technology providers 
+such as Infosys Technology, Oracle and Tata Communications for 
+implementation of Core Banking Solution. The Committee conclude from 
+the aforesaid position that now when more than three and a half years 
+of the Plan period have already been passed, there is no headway on 
+the scheme. The Committee again emphasize that computerization and 
+networking of Post Offices is the prerequisite for providing Core 
+Banking Solutions which would provide the customer various modern 
+facilities as at present are available to the customer from the 
+commercial banks and other private sector banks and organization s. As 
+such, the Department has to work on a mission mode to ensure the 
+computerization of Post Offices followed by implementation of Core 
+Banking Solution. The consultations with the various commercial banks 
+and other technology providers should follow the concrete action on the 
+part of the Department so that the Core Banking Solutions become 
+reality in the Eleventh Plan. 
+Accrual Accounting System 
+ 
+
+ 
+ 
+18. As informed by the Department, the Twelfth Finance Commission 
+had recommended an operational framework and  a detailed roadmap 
+for its implementation.  Accordingly, the Department of Posts has 
+signed an MoU on 25 th June, 2009 with ICAI -ARF in two indentified 
+Head Post Offices in New Delhi viz. New Delhi Head Office and Naraina 
+Industrial Estate Head Office.  Th e Committee have also been informed 
+that Comprehensive Scope Evaluation Report (CSER) submitted by the 
+ICAI-ARF on Pilot Study is under consideration with the Department.  
+The Committee feel that the introduction of Accrual Accounting System 
+is one of the basic requirements for the introduction of Core Banking 
+Solution and since the Department has an ambitious plan of introducing 
+it in 4000 identified Post Offices in the Eleventh Plan, the Committee 
+expect that the Comprehensive Scope Evaluation Report (CSE R) 
+submitted by the ICAI -ARF on Pilot Study are examined expeditiously 
+so that Accrual Accounting System could be introduced in the various 
+Post Offices in the country at the earliest. 
+ 
+ 
+ 
+Modernization in Service Delivery Levels with regard to financial 
+services  
+ 
+19. The Committee observe that various initiatives have been taken 
+by the Department to facilitate expeditious remittance of money. Such 
+initiatives include introduction of i -MO facility in 6361 Post Offices 
+under which a person can send money fro m  Rs.  1000 to Rs.  50,000 in 
+one transaction, introduction of e -MO which has been introduced w.e.f. 
+10.10.2008 and it facilitates remittance of MOs electronically. The 
+limitation of this facility that Post Offices should have connectivity by 
+
+ 
+ 
+WAN/Broadband. Another facility is introduction of MO -Videsh in 
+Eurogiro network is used by India Posts under the name MO Videsh for 
+outward and inwards international money remittance. Operation of 
+International Money Transfer Service is another service provided by 
+Posts in association with a multinational  company – Western Union 
+Financial Services International which provide the customer the facility 
+of receiving remittances from 205 countries and territories on a real 
+time basis. The Committee note that all these initiatives are steps in the 
+right direction. However, these facilities need to be expanded to more 
+number of Post Offices so that these facilities are available in every 
+nook and corner of the country. The Department should prepare the 
+concrete proposals in this regard.  
+ 
+Electronic Clearance Service 
+ 
+ 
+20. The Committee find that Electronic Clearance Service is in 
+operation at 15 centres where Reserve Bank of India manages clearing 
+Houses and 50 other centres where State Bank of India, Punjab 
+National bank etc. are managing Electronic Clearance Service on behalf 
+of Reserve bank of India. Electronic Clearing Service is being offered in 
+the Department of Posts at all the 15 locations of Reserve Bank of India 
+and 21 locations of State Bank of India in connection  with payment of 
+monthly interest under ‘Monthly Income Scheme’ (MIS). The Committee 
+further note that the aforesaid facility is available to only 5 lakh 
+depositors whereas the customer base is 22 crore accounts. The 
+Committee exhort the Department to take the desired action so that the 
+
+ 
+ 
+Electronic Clearance Service is available to every depositor of Posts in 
+the country.  
+Rural ICT Devices  
+ 
+21. Most of the work of Post Offices is carried by the extra 
+Departmental Post offices and at present out of total 15 5035 Post 
+Offices 129497 are extra Departmental Post Offices. The Committee 
+have been informed that for modernization and computerization of 
+Extra Departmental Post Offices, Rural Information and Communication 
+Technology solution (Rural ICT) has been desig ned in consultation with 
+the IT consultant and has been incorporated in the draft EFC which has 
+been circulated. The proposed solution envisages that each of the rural 
+office will have a mobile hand held device which will have the ability to 
+perform all th e transactions of the Post Offices. A data centre is also 
+proposed to be set up with which these devices can exchange data 
+based on available connectivity options such as GPRS, Encrypted SMS, 
+broadband etc. The device will be able to connect with central s erver 
+and perform synchronously or asynchronously depending upon the 
+available connectivity. The Department propose to roll out first pilot in 
+the seventh month after the approval of the project followed by roll out 
+of first phase in six selected circles. The final roll out would commence 
+after fourteen months and would cover all the remaining circles to be 
+completed by September, 2012. The detailed examination has further 
+revealed that one of the query made by the Department of Expenditure 
+and Planning Commission on the draft EFC was that the Department of 
+Posts should test the robustness of Rural ICT devices before induction 
+in the Post Offices. Not only that the availability of power, internet 
+
+ 
+ 
+connectivity and training of the ‘Grameen Dak Sewaks’ who woul d be 
+using such devices are the big challenges before the Department. In 
+view of this, the Committee strongly recommend the concerns of the 
+Department of Expenditure and Planning Commission should be 
+properly addressed before the roll out of the project. B esides, there is 
+an urgent need to take advance action for the training of Grameen Dak 
+Sewaks who will use the device so that the system becomes functional 
+after the roll out. The Committee again reemphasize that unless the 
+extra Departmental Post Offices are covered by the modernization 
+programme, complete IT solution for the different services cannot be 
+found. As such, the Department should address to the procedural issues 
+with regard to clearance of the project and take all the desired 
+initiatives for the successful implementation of the project.  
+ 
+Technological initiatives to make the disbursement of wages under 
+MNREGA effective-financial inclusion for the unbanked rural masses 
+ 
+22. The Committee observed that disbursement of wages to laborers 
+under Maha tama Gandhi National Rural Employment Guarantee Act 
+(MNREGA) is being made by Post Offices and commercial banks. State 
+Government have been given the option to either use Post Offices or 
+the banks for the aforesaid purpose. The Committee find that whereas 
+the number of bank branches in the country are 72156 as compared to 
+1.55 lakh branches of Post Offices, the share of banks in this regard is 
+more than the Post Offices. With regard to the amount of wages 
+disbursed during the year 2009 -10, the Committee hav e been informed 
+that out of total amount of Rs. 21625.18 crore, an amount of Rs.  
+8864.98 crore was disbursed through Post Offices and Rs.  1276.02 
+
+ 
+ 
+crore was disbursed through bank accounts. The detailed deliberations 
+with the representatives of the Department of Rural Department has 
+indicated that there are certain bottlenecks regarding disbursement of 
+wages by Posts which include delay in submission  of wage list to Post 
+Offices by State Government, mistakes in preparation of wage list, 
+problems relating to clearance of cheques, non -availability of rolling 
+funds in every districts, lack of proper security to keep wages money, 
+bulk submission of wage l ist/pay orders at one go etc. Moreover, a 
+study done by Dreze and Khera has revealed that payment by banks is 
+better than Post Offices. The Secretary, Posts, during the course of 
+deliberations have acknowledged that many labourers preferred to use 
+banks rather than Post Offices. Keeping in view the various problems 
+being faced in the disbursement of wages under MNREGA, the 
+Committee have decided to undertake detailed examination by 
+selecting the subject in this regard. In the context of use of technology 
+for the effective disbursement of wages under MNREGA, the Committee 
+would like to emphasize that the preference of banks over Post Offices 
+even in disbursement of wages under MNREGA is obviously due to 
+effective and fast services provided by banks. The detai led analysis of 
+the various aspects related to disbursement of wages under MNREGA 
+would be done separately by the Committee as stated above. Here the 
+Committee would like to strongly recommend that the Department 
+should take all the initiatives, particular ly with the use of latest 
+technology and networking of Post Offices to address to the various 
+problems being faced in the disbursement of wages under MNREGA. 
+With the reach of Post in every nook and corner of the country, great 
+
+ 
+ 
+opportunities are being prov ided by the Government. The Department 
+has to act professionally and use this opportunity by opening Post 
+accounts of BPL persons. Besides, technological intervention, better 
+services can be provided by helping the customers in rural areas in 
+opening the a ccounts like filling of various forms, completing the 
+formalities of surety etc. Moreover, coordination with State 
+Governments and local bodies particularly in rural areas will further 
+help Posts in addressing the various bottlenecks being faced in 
+disbursement of wages. The Department has to take all the initiatives 
+for effective disbursement of wages under MNREGA so that the State 
+Government opt for Posts for disbursement of wages under MNREGA. 
+The desired initiatives on the suggested lines should be take n and the 
+Committee informed accordingly. 
+  
+Training of Manpower 
+ 
+23. With the growth and development of Information Technology, 
+skill based training has become a pre -requisite for the success of any 
+organisation.   The Committee note that the Department o f Posts in 
+order to hone the skills of its employees has prepared a comprehensive 
+scheme for the Eleventh Plan with an Outlay of Rs.  130.66 crore. The 
+scheme include imparting of institutional in service training, technology 
+training, business orientation  programmes, capacity building and 
+development of infrastructure. From the information provided by the 
+Department, it is understood that the Department has set up training 
+centres for officials belonging to Group ‘A’ and other officials such as 
+Group ‘B’ I nspectors, Postal Assistants, Sorting Assistants, 
+
+ 
+ 
+Postmasters, Assistant Superintendent of Post Offices, Accounts 
+Personnel, etc,.  However, the Committee are constraint to note that 
+nothing seem to have been done regarding the training of the Extra 
+Departmental Employees or Grameen Dak Sewaks.  The Committee feel 
+that since the Department of Posts is embarking on the ambitious 
+project of networking of all its Post Offices in rural areas through 
+introduction of Rural ICT, the training of this category of em ployees is 
+inevitable.  
+ 
+The Committee also feel that the Department has a monumental 
+task of providing suitable training to its employees to complement with 
+its automation plan for financial services viz. proposals of setting up of 
+Core Banking Solution, introduction of Accrual A ccounting System, etc.  
+Therefore, the Committee recommend that the Department needs to 
+take all the necessary steps to equip all its employees with the skills 
+necessary for matching with the modernisation of its Post Offices. The 
+Committee feel that enhan cing and transforming the human resources 
+through training would make the Department more customer friendly 
+and techno-savvy.  
+  
+
+ 
+ 
+Appendix-I 
+ 
+ 
+Percentage of Post Offices Computerised in India upto 31.12.2009 
+Sl. 
+No. 
+Name of the Circle Total POs 
+in the 
+Circle 
+Total Post Office 
+Computerised 
+% 
+1 Andhra Pradesh 2437 754 30.94 
+2 Assam 623 623 100.00 
+3 Bihar 1043 316 30.30 
+4 Chhattisgarh 333 144 43.24 
+5 Delhi 422 289 68.48 
+6 Gujarat 1318 769 58.35 
+7 Haryana 487 278 57.08 
+8 Himachal Pradesh 461 264 57.27 
+9 Jammu & Kashmir 258 129 50.00 
+10 Jharkhand 448 188 41.96 
+11 Karnataka 1788 816 45.64 
+12 Kerala 1503 1070 71.19 
+13 Madhya Pradesh 1057 476 45.03 
+14 Maharashtra 2224 1222 54.95 
+15 North-East 335 303 90.45 
+16 Orissa 1192 479 40.18 
+17 Punjab 809 443 54.76 
+18 Rajasthan 1333 422 31.66 
+19 Tamil Nadu 2789 1450 51.99 
+20 Uttar Pradesh 2540 1034 40.71 
+21 Uttrakhand 384 193 50.26 
+22 West Bengal 1754 942 53.71 
+ Total 25538 12604 49.35 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
