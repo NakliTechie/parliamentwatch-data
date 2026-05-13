@@ -427,6 +427,58 @@
       }
     },
     "pac": {
+      "LS14_28": {
+        "size": 231193,
+        "url": "text/pac/LS14_28.txt"
+      },
+      "LS14_29": {
+        "size": 320473,
+        "url": "text/pac/LS14_29.txt"
+      },
+      "LS14_30": {
+        "size": 89808,
+        "url": "text/pac/LS14_30.txt"
+      },
+      "LS14_31": {
+        "size": 151590,
+        "url": "text/pac/LS14_31.txt"
+      },
+      "LS14_32": {
+        "size": 191573,
+        "url": "text/pac/LS14_32.txt"
+      },
+      "LS14_33": {
+        "size": 152910,
+        "url": "text/pac/LS14_33.txt"
+      },
+      "LS14_34": {
+        "size": 75322,
+        "url": "text/pac/LS14_34.txt"
+      },
+      "LS14_36": {
+        "size": 82718,
+        "url": "text/pac/LS14_36.txt"
+      },
+      "LS14_37": {
+        "size": 27602,
+        "url": "text/pac/LS14_37.txt"
+      },
+      "LS14_38": {
+        "size": 442890,
+        "url": "text/pac/LS14_38.txt"
+      },
+      "LS14_39": {
+        "size": 73476,
+        "url": "text/pac/LS14_39.txt"
+      },
+      "LS14_40": {
+        "size": 183922,
+        "url": "text/pac/LS14_40.txt"
+      },
+      "LS14_41": {
+        "size": 64981,
+        "url": "text/pac/LS14_41.txt"
+      },
       "LS14_42": {
         "size": 182273,
         "url": "text/pac/LS14_42.txt"
@@ -1540,6 +1592,46 @@
       "LS14_103": {
         "size": 39857,
         "url": "text/copu/LS14_103.txt"
+      },
+      "LS14_28": {
+        "size": 110669,
+        "url": "text/copu/LS14_28.txt"
+      },
+      "LS14_29": {
+        "size": 156404,
+        "url": "text/copu/LS14_29.txt"
+      },
+      "LS14_30": {
+        "size": 121053,
+        "url": "text/copu/LS14_30.txt"
+      },
+      "LS14_31": {
+        "size": 51765,
+        "url": "text/copu/LS14_31.txt"
+      },
+      "LS14_32": {
+        "size": 41745,
+        "url": "text/copu/LS14_32.txt"
+      },
+      "LS14_33": {
+        "size": 66627,
+        "url": "text/copu/LS14_33.txt"
+      },
+      "LS14_34": {
+        "size": 550897,
+        "url": "text/copu/LS14_34.txt"
+      },
+      "LS14_35": {
+        "size": 48373,
+        "url": "text/copu/LS14_35.txt"
+      },
+      "LS14_36": {
+        "size": 65081,
+        "url": "text/copu/LS14_36.txt"
+      },
+      "LS14_37": {
+        "size": 52643,
+        "url": "text/copu/LS14_37.txt"
       },
       "LS15_1": {
         "size": 168686,
