@@ -1,6 +1,54 @@
 {
   "texts": {
     "agriculture": {
+      "LS15_21": {
+        "size": 145181,
+        "url": "text/agriculture/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 111630,
+        "url": "text/agriculture/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 97506,
+        "url": "text/agriculture/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 106191,
+        "url": "text/agriculture/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 88840,
+        "url": "text/agriculture/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 126205,
+        "url": "text/agriculture/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 133352,
+        "url": "text/agriculture/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 98126,
+        "url": "text/agriculture/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 73065,
+        "url": "text/agriculture/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 96579,
+        "url": "text/agriculture/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 102545,
+        "url": "text/agriculture/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 145712,
+        "url": "text/agriculture/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 98586,
         "url": "text/agriculture/LS15_33.txt"
@@ -811,6 +859,54 @@
       }
     },
     "chemicals": {
+      "LS15_21": {
+        "size": 73229,
+        "url": "text/chemicals/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 84923,
+        "url": "text/chemicals/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 53366,
+        "url": "text/chemicals/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 76804,
+        "url": "text/chemicals/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 218560,
+        "url": "text/chemicals/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 158119,
+        "url": "text/chemicals/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 109633,
+        "url": "text/chemicals/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 177919,
+        "url": "text/chemicals/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 85794,
+        "url": "text/chemicals/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 144966,
+        "url": "text/chemicals/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 71272,
+        "url": "text/chemicals/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 71397,
+        "url": "text/chemicals/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 190559,
         "url": "text/chemicals/LS15_33.txt"
@@ -1377,6 +1473,50 @@
       }
     },
     "coal": {
+      "LS15_21": {
+        "size": 92305,
+        "url": "text/coal/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 78981,
+        "url": "text/coal/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 100554,
+        "url": "text/coal/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 141330,
+        "url": "text/coal/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 127909,
+        "url": "text/coal/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 148972,
+        "url": "text/coal/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 170882,
+        "url": "text/coal/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 146163,
+        "url": "text/coal/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 123766,
+        "url": "text/coal/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 111442,
+        "url": "text/coal/LS15_30.txt"
+      },
+      "LS15_32": {
+        "size": 67168,
+        "url": "text/coal/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 217512,
         "url": "text/coal/LS15_33.txt"
@@ -2295,6 +2435,10 @@
         "size": 66007,
         "url": "text/commerce/LS15_209.txt"
       },
+      "LS15_21": {
+        "size": 160721,
+        "url": "text/commerce/LS15_21.txt"
+      },
       "LS15_210": {
         "size": 91110,
         "url": "text/commerce/LS15_210.txt"
@@ -2334,6 +2478,10 @@
       "LS15_219": {
         "size": 34179,
         "url": "text/commerce/LS15_219.txt"
+      },
+      "LS15_22": {
+        "size": 102709,
+        "url": "text/commerce/LS15_22.txt"
       },
       "LS15_220": {
         "size": 23915,
@@ -2375,6 +2523,10 @@
         "size": 91064,
         "url": "text/commerce/LS15_229.txt"
       },
+      "LS15_23": {
+        "size": 84540,
+        "url": "text/commerce/LS15_23.txt"
+      },
       "LS15_230": {
         "size": 134629,
         "url": "text/commerce/LS15_230.txt"
@@ -2414,6 +2566,10 @@
       "LS15_239": {
         "size": 171325,
         "url": "text/commerce/LS15_239.txt"
+      },
+      "LS15_24": {
+        "size": 63633,
+        "url": "text/commerce/LS15_24.txt"
       },
       "LS15_240": {
         "size": 99398,
@@ -2455,6 +2611,10 @@
         "size": 261255,
         "url": "text/commerce/LS15_249.txt"
       },
+      "LS15_25": {
+        "size": 100232,
+        "url": "text/commerce/LS15_25.txt"
+      },
       "LS15_250": {
         "size": 188458,
         "url": "text/commerce/LS15_250.txt"
@@ -2478,6 +2638,34 @@
       "LS15_255": {
         "size": 240819,
         "url": "text/commerce/LS15_255.txt"
+      },
+      "LS15_26": {
+        "size": 144626,
+        "url": "text/commerce/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 165245,
+        "url": "text/commerce/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 91939,
+        "url": "text/commerce/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 117200,
+        "url": "text/commerce/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 124101,
+        "url": "text/commerce/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 204412,
+        "url": "text/commerce/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 61356,
+        "url": "text/commerce/LS15_32.txt"
       },
       "LS15_33": {
         "size": 281288,
@@ -5485,6 +5673,54 @@
       }
     },
     "communications": {
+      "LS15_21": {
+        "size": 206187,
+        "url": "text/communications/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 99568,
+        "url": "text/communications/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 113329,
+        "url": "text/communications/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 90352,
+        "url": "text/communications/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 122349,
+        "url": "text/communications/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 112034,
+        "url": "text/communications/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 169536,
+        "url": "text/communications/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 99212,
+        "url": "text/communications/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 247817,
+        "url": "text/communications/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 130655,
+        "url": "text/communications/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 158470,
+        "url": "text/communications/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 185142,
+        "url": "text/communications/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 136245,
         "url": "text/communications/LS15_33.txt"
@@ -6147,6 +6383,54 @@
       }
     },
     "consumer_affairs": {
+      "LS15_21": {
+        "size": 218217,
+        "url": "text/consumer_affairs/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 112058,
+        "url": "text/consumer_affairs/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 221283,
+        "url": "text/consumer_affairs/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 157693,
+        "url": "text/consumer_affairs/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 89638,
+        "url": "text/consumer_affairs/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 175831,
+        "url": "text/consumer_affairs/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 495803,
+        "url": "text/consumer_affairs/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 270309,
+        "url": "text/consumer_affairs/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 272582,
+        "url": "text/consumer_affairs/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 231433,
+        "url": "text/consumer_affairs/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 104752,
+        "url": "text/consumer_affairs/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 175321,
+        "url": "text/consumer_affairs/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 100025,
         "url": "text/consumer_affairs/LS15_33.txt"
@@ -6461,6 +6745,14 @@
       }
     },
     "defence": {
+      "LS15_21": {
+        "size": 134489,
+        "url": "text/defence/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 184333,
+        "url": "text/defence/LS15_22.txt"
+      },
       "LS16_1": {
         "size": 242465,
         "url": "text/defence/LS16_1.txt"
@@ -12265,6 +12557,54 @@
       }
     },
     "energy": {
+      "LS15_21": {
+        "size": 73723,
+        "url": "text/energy/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 77851,
+        "url": "text/energy/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 90760,
+        "url": "text/energy/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 47185,
+        "url": "text/energy/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 108221,
+        "url": "text/energy/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 118896,
+        "url": "text/energy/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 128840,
+        "url": "text/energy/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 145762,
+        "url": "text/energy/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 170210,
+        "url": "text/energy/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 169662,
+        "url": "text/energy/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 77447,
+        "url": "text/energy/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 152512,
+        "url": "text/energy/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 92257,
         "url": "text/energy/LS15_33.txt"
@@ -12671,6 +13011,26 @@
       }
     },
     "external_affairs": {
+      "LS15_21": {
+        "size": 120910,
+        "url": "text/external_affairs/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 196610,
+        "url": "text/external_affairs/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 110586,
+        "url": "text/external_affairs/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 111469,
+        "url": "text/external_affairs/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 192173,
+        "url": "text/external_affairs/LS15_25.txt"
+      },
       "LS16_1": {
         "size": 105293,
         "url": "text/external_affairs/LS16_1.txt"
@@ -12941,6 +13301,50 @@
       }
     },
     "finance": {
+      "LS15_21": {
+        "size": 1738397,
+        "url": "text/finance/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 96512,
+        "url": "text/finance/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 32351,
+        "url": "text/finance/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 30889,
+        "url": "text/finance/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 50041,
+        "url": "text/finance/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 132642,
+        "url": "text/finance/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 75050,
+        "url": "text/finance/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 74600,
+        "url": "text/finance/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 60392,
+        "url": "text/finance/LS15_29.txt"
+      },
+      "LS15_31": {
+        "size": 62147,
+        "url": "text/finance/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 154567,
+        "url": "text/finance/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 118786,
         "url": "text/finance/LS15_33.txt"
@@ -14154,6 +14558,42 @@
       "LS15_174": {
         "size": 527522,
         "url": "text/health/LS15_174.txt"
+      },
+      "LS15_21": {
+        "size": 134458,
+        "url": "text/health/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 319172,
+        "url": "text/health/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 121408,
+        "url": "text/health/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 232443,
+        "url": "text/health/LS15_24.txt"
+      },
+      "LS15_27": {
+        "size": 360951,
+        "url": "text/health/LS15_27.txt"
+      },
+      "LS15_29": {
+        "size": 45248,
+        "url": "text/health/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 386429,
+        "url": "text/health/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 219898,
+        "url": "text/health/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 414028,
+        "url": "text/health/LS15_32.txt"
       },
       "LS15_33": {
         "size": 29380,
@@ -16917,6 +17357,10 @@
         "size": 260528,
         "url": "text/home_affairs/LS15_209.txt"
       },
+      "LS15_21": {
+        "size": 10925,
+        "url": "text/home_affairs/LS15_21.txt"
+      },
       "LS15_210": {
         "size": 237286,
         "url": "text/home_affairs/LS15_210.txt"
@@ -16956,6 +17400,10 @@
       "LS15_219": {
         "size": 46565,
         "url": "text/home_affairs/LS15_219.txt"
+      },
+      "LS15_22": {
+        "size": 11839,
+        "url": "text/home_affairs/LS15_22.txt"
       },
       "LS15_220": {
         "size": 142913,
@@ -16997,6 +17445,10 @@
         "size": 381925,
         "url": "text/home_affairs/LS15_229.txt"
       },
+      "LS15_23": {
+        "size": 19896,
+        "url": "text/home_affairs/LS15_23.txt"
+      },
       "LS15_230": {
         "size": 443639,
         "url": "text/home_affairs/LS15_230.txt"
@@ -17036,6 +17488,10 @@
       "LS15_239": {
         "size": 309903,
         "url": "text/home_affairs/LS15_239.txt"
+      },
+      "LS15_24": {
+        "size": 10690,
+        "url": "text/home_affairs/LS15_24.txt"
       },
       "LS15_240": {
         "size": 220658,
@@ -17077,6 +17533,10 @@
         "size": 174925,
         "url": "text/home_affairs/LS15_249.txt"
       },
+      "LS15_25": {
+        "size": 12042,
+        "url": "text/home_affairs/LS15_25.txt"
+      },
       "LS15_250": {
         "size": 68754,
         "url": "text/home_affairs/LS15_250.txt"
@@ -17112,6 +17572,34 @@
       "LS15_258": {
         "size": 213896,
         "url": "text/home_affairs/LS15_258.txt"
+      },
+      "LS15_26": {
+        "size": 66042,
+        "url": "text/home_affairs/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 18724,
+        "url": "text/home_affairs/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 58834,
+        "url": "text/home_affairs/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 41676,
+        "url": "text/home_affairs/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 39217,
+        "url": "text/home_affairs/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 38396,
+        "url": "text/home_affairs/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 107108,
+        "url": "text/home_affairs/LS15_32.txt"
       },
       "LS15_33": {
         "size": 64213,
@@ -20463,6 +20951,50 @@
       }
     },
     "housing": {
+      "LS15_21": {
+        "size": 82233,
+        "url": "text/housing/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 42235,
+        "url": "text/housing/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 160095,
+        "url": "text/housing/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 245618,
+        "url": "text/housing/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 167325,
+        "url": "text/housing/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 156827,
+        "url": "text/housing/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 203699,
+        "url": "text/housing/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 91961,
+        "url": "text/housing/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 104698,
+        "url": "text/housing/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 374121,
+        "url": "text/housing/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 283922,
+        "url": "text/housing/LS15_31.txt"
+      },
       "LS16_1": {
         "size": 158076,
         "url": "text/housing/LS16_1.txt"
@@ -21153,6 +21685,10 @@
         "size": 35956,
         "url": "text/industry/LS15_219.txt"
       },
+      "LS15_22": {
+        "size": 48118,
+        "url": "text/industry/LS15_22.txt"
+      },
       "LS15_220": {
         "size": 57132,
         "url": "text/industry/LS15_220.txt"
@@ -21192,6 +21728,10 @@
       "LS15_229": {
         "size": 47419,
         "url": "text/industry/LS15_229.txt"
+      },
+      "LS15_23": {
+        "size": 33003,
+        "url": "text/industry/LS15_23.txt"
       },
       "LS15_230": {
         "size": 34241,
@@ -21233,6 +21773,10 @@
         "size": 36664,
         "url": "text/industry/LS15_239.txt"
       },
+      "LS15_24": {
+        "size": 30225,
+        "url": "text/industry/LS15_24.txt"
+      },
       "LS15_240": {
         "size": 54267,
         "url": "text/industry/LS15_240.txt"
@@ -21272,6 +21816,10 @@
       "LS15_249": {
         "size": 22445,
         "url": "text/industry/LS15_249.txt"
+      },
+      "LS15_25": {
+        "size": 41808,
+        "url": "text/industry/LS15_25.txt"
       },
       "LS15_250": {
         "size": 44839,
@@ -21313,6 +21861,10 @@
         "size": 61588,
         "url": "text/industry/LS15_259.txt"
       },
+      "LS15_26": {
+        "size": 389282,
+        "url": "text/industry/LS15_26.txt"
+      },
       "LS15_260": {
         "size": 37997,
         "url": "text/industry/LS15_260.txt"
@@ -21353,6 +21905,10 @@
         "size": 36973,
         "url": "text/industry/LS15_269.txt"
       },
+      "LS15_27": {
+        "size": 73214,
+        "url": "text/industry/LS15_27.txt"
+      },
       "LS15_271": {
         "size": 109218,
         "url": "text/industry/LS15_271.txt"
@@ -21384,6 +21940,10 @@
       "LS15_279": {
         "size": 33204,
         "url": "text/industry/LS15_279.txt"
+      },
+      "LS15_28": {
+        "size": 57577,
+        "url": "text/industry/LS15_28.txt"
       },
       "LS15_280": {
         "size": 203244,
@@ -21425,6 +21985,10 @@
         "size": 49468,
         "url": "text/industry/LS15_289.txt"
       },
+      "LS15_29": {
+        "size": 154638,
+        "url": "text/industry/LS15_29.txt"
+      },
       "LS15_290": {
         "size": 177912,
         "url": "text/industry/LS15_290.txt"
@@ -21464,6 +22028,10 @@
       "LS15_299": {
         "size": 93251,
         "url": "text/industry/LS15_299.txt"
+      },
+      "LS15_30": {
+        "size": 86488,
+        "url": "text/industry/LS15_30.txt"
       },
       "LS15_300": {
         "size": 128008,
@@ -21505,6 +22073,10 @@
         "size": 111584,
         "url": "text/industry/LS15_309.txt"
       },
+      "LS15_31": {
+        "size": 24816,
+        "url": "text/industry/LS15_31.txt"
+      },
       "LS15_310": {
         "size": 99978,
         "url": "text/industry/LS15_310.txt"
@@ -21545,6 +22117,10 @@
         "size": 76432,
         "url": "text/industry/LS15_319.txt"
       },
+      "LS15_32": {
+        "size": 75657,
+        "url": "text/industry/LS15_32.txt"
+      },
       "LS15_320": {
         "size": 171559,
         "url": "text/industry/LS15_320.txt"
@@ -21584,6 +22160,10 @@
       "LS15_329": {
         "size": 88595,
         "url": "text/industry/LS15_329.txt"
+      },
+      "LS15_33": {
+        "size": 65530,
+        "url": "text/industry/LS15_33.txt"
       },
       "LS15_330": {
         "size": 111013,
@@ -25771,6 +26351,54 @@
       }
     },
     "labour": {
+      "LS15_21": {
+        "size": 86174,
+        "url": "text/labour/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 102095,
+        "url": "text/labour/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 28044,
+        "url": "text/labour/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 111585,
+        "url": "text/labour/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 76155,
+        "url": "text/labour/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 133536,
+        "url": "text/labour/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 81290,
+        "url": "text/labour/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 133467,
+        "url": "text/labour/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 90943,
+        "url": "text/labour/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 51510,
+        "url": "text/labour/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 43788,
+        "url": "text/labour/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 54520,
+        "url": "text/labour/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 76156,
         "url": "text/labour/LS15_33.txt"
@@ -26628,6 +27256,54 @@
       "LS15_164": {
         "size": 98320,
         "url": "text/personnel/LS15_164.txt"
+      },
+      "LS15_21": {
+        "size": 336134,
+        "url": "text/personnel/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 251889,
+        "url": "text/personnel/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 101244,
+        "url": "text/personnel/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 103292,
+        "url": "text/personnel/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 136509,
+        "url": "text/personnel/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 226066,
+        "url": "text/personnel/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 105641,
+        "url": "text/personnel/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 92194,
+        "url": "text/personnel/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 160824,
+        "url": "text/personnel/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 39491,
+        "url": "text/personnel/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 172297,
+        "url": "text/personnel/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 136393,
+        "url": "text/personnel/LS15_32.txt"
       },
       "LS15_33": {
         "size": 112197,
@@ -28867,6 +29543,18 @@
       }
     },
     "petroleum": {
+      "LS15_21": {
+        "size": 254706,
+        "url": "text/petroleum/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 108079,
+        "url": "text/petroleum/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 62040,
+        "url": "text/petroleum/LS15_23.txt"
+      },
       "LS16_1": {
         "size": 256090,
         "url": "text/petroleum/LS16_1.txt"
@@ -29097,6 +29785,26 @@
       }
     },
     "railways": {
+      "LS15_21": {
+        "size": 77468,
+        "url": "text/railways/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 132463,
+        "url": "text/railways/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 129759,
+        "url": "text/railways/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 89922,
+        "url": "text/railways/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 124460,
+        "url": "text/railways/LS15_25.txt"
+      },
       "LS16_1": {
         "size": 83796,
         "url": "text/railways/LS16_1.txt"
@@ -29299,6 +30007,54 @@
       }
     },
     "rural_development": {
+      "LS15_21": {
+        "size": 125244,
+        "url": "text/rural_development/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 133930,
+        "url": "text/rural_development/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 121187,
+        "url": "text/rural_development/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 121176,
+        "url": "text/rural_development/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 93812,
+        "url": "text/rural_development/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 91242,
+        "url": "text/rural_development/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 120778,
+        "url": "text/rural_development/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 129957,
+        "url": "text/rural_development/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 132503,
+        "url": "text/rural_development/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 205554,
+        "url": "text/rural_development/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 689296,
+        "url": "text/rural_development/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 96652,
+        "url": "text/rural_development/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 112221,
         "url": "text/rural_development/LS15_33.txt"
@@ -30325,6 +31081,10 @@
         "size": 58035,
         "url": "text/science/LS15_219.txt"
       },
+      "LS15_22": {
+        "size": 52508,
+        "url": "text/science/LS15_22.txt"
+      },
       "LS15_220": {
         "size": 166141,
         "url": "text/science/LS15_220.txt"
@@ -30364,6 +31124,10 @@
       "LS15_229": {
         "size": 152908,
         "url": "text/science/LS15_229.txt"
+      },
+      "LS15_23": {
+        "size": 44188,
+        "url": "text/science/LS15_23.txt"
       },
       "LS15_230": {
         "size": 270421,
@@ -30444,6 +31208,10 @@
       "LS15_249": {
         "size": 81313,
         "url": "text/science/LS15_249.txt"
+      },
+      "LS15_25": {
+        "size": 44604,
+        "url": "text/science/LS15_25.txt"
       },
       "LS15_250": {
         "size": 72308,
@@ -30685,6 +31453,10 @@
         "size": 134297,
         "url": "text/science/LS15_309.txt"
       },
+      "LS15_31": {
+        "size": 32428,
+        "url": "text/science/LS15_31.txt"
+      },
       "LS15_310": {
         "size": 115561,
         "url": "text/science/LS15_310.txt"
@@ -30725,6 +31497,10 @@
         "size": 43603,
         "url": "text/science/LS15_319.txt"
       },
+      "LS15_32": {
+        "size": 60782,
+        "url": "text/science/LS15_32.txt"
+      },
       "LS15_320": {
         "size": 47786,
         "url": "text/science/LS15_320.txt"
@@ -30764,6 +31540,10 @@
       "LS15_329": {
         "size": 40224,
         "url": "text/science/LS15_329.txt"
+      },
+      "LS15_33": {
+        "size": 49368,
+        "url": "text/science/LS15_33.txt"
       },
       "LS15_330": {
         "size": 40866,
@@ -36139,6 +36919,54 @@
       }
     },
     "social_justice": {
+      "LS15_21": {
+        "size": 73454,
+        "url": "text/social_justice/LS15_21.txt"
+      },
+      "LS15_22": {
+        "size": 148181,
+        "url": "text/social_justice/LS15_22.txt"
+      },
+      "LS15_23": {
+        "size": 63443,
+        "url": "text/social_justice/LS15_23.txt"
+      },
+      "LS15_24": {
+        "size": 134632,
+        "url": "text/social_justice/LS15_24.txt"
+      },
+      "LS15_25": {
+        "size": 98490,
+        "url": "text/social_justice/LS15_25.txt"
+      },
+      "LS15_26": {
+        "size": 124879,
+        "url": "text/social_justice/LS15_26.txt"
+      },
+      "LS15_27": {
+        "size": 106349,
+        "url": "text/social_justice/LS15_27.txt"
+      },
+      "LS15_28": {
+        "size": 56138,
+        "url": "text/social_justice/LS15_28.txt"
+      },
+      "LS15_29": {
+        "size": 94702,
+        "url": "text/social_justice/LS15_29.txt"
+      },
+      "LS15_30": {
+        "size": 56770,
+        "url": "text/social_justice/LS15_30.txt"
+      },
+      "LS15_31": {
+        "size": 134486,
+        "url": "text/social_justice/LS15_31.txt"
+      },
+      "LS15_32": {
+        "size": 134391,
+        "url": "text/social_justice/LS15_32.txt"
+      },
       "LS15_33": {
         "size": 37451,
         "url": "text/social_justice/LS15_33.txt"
@@ -36965,6 +37793,10 @@
         "size": 126941,
         "url": "text/transport/LS15_219.txt"
       },
+      "LS15_22": {
+        "size": 22362,
+        "url": "text/transport/LS15_22.txt"
+      },
       "LS15_220": {
         "size": 179905,
         "url": "text/transport/LS15_220.txt"
@@ -37004,6 +37836,10 @@
       "LS15_229": {
         "size": 108252,
         "url": "text/transport/LS15_229.txt"
+      },
+      "LS15_23": {
+        "size": 43920,
+        "url": "text/transport/LS15_23.txt"
       },
       "LS15_230": {
         "size": 111703,
@@ -37045,6 +37881,10 @@
         "size": 125544,
         "url": "text/transport/LS15_239.txt"
       },
+      "LS15_24": {
+        "size": 48743,
+        "url": "text/transport/LS15_24.txt"
+      },
       "LS15_240": {
         "size": 59320,
         "url": "text/transport/LS15_240.txt"
@@ -37084,6 +37924,10 @@
       "LS15_249": {
         "size": 695463,
         "url": "text/transport/LS15_249.txt"
+      },
+      "LS15_25": {
+        "size": 57296,
+        "url": "text/transport/LS15_25.txt"
       },
       "LS15_250": {
         "size": 299432,
@@ -37125,6 +37969,10 @@
         "size": 115397,
         "url": "text/transport/LS15_259.txt"
       },
+      "LS15_26": {
+        "size": 37712,
+        "url": "text/transport/LS15_26.txt"
+      },
       "LS15_260": {
         "size": 150692,
         "url": "text/transport/LS15_260.txt"
@@ -37164,6 +38012,10 @@
       "LS15_269": {
         "size": 287996,
         "url": "text/transport/LS15_269.txt"
+      },
+      "LS15_27": {
+        "size": 46880,
+        "url": "text/transport/LS15_27.txt"
       },
       "LS15_270": {
         "size": 72713,
@@ -37205,6 +38057,10 @@
         "size": 180441,
         "url": "text/transport/LS15_279.txt"
       },
+      "LS15_28": {
+        "size": 45186,
+        "url": "text/transport/LS15_28.txt"
+      },
       "LS15_280": {
         "size": 104987,
         "url": "text/transport/LS15_280.txt"
@@ -37244,6 +38100,10 @@
       "LS15_289": {
         "size": 149204,
         "url": "text/transport/LS15_289.txt"
+      },
+      "LS15_29": {
+        "size": 75529,
+        "url": "text/transport/LS15_29.txt"
       },
       "LS15_290": {
         "size": 193934,
@@ -37285,6 +38145,10 @@
         "size": 206325,
         "url": "text/transport/LS15_299.txt"
       },
+      "LS15_30": {
+        "size": 49817,
+        "url": "text/transport/LS15_30.txt"
+      },
       "LS15_300": {
         "size": 189471,
         "url": "text/transport/LS15_300.txt"
@@ -37324,6 +38188,10 @@
       "LS15_309": {
         "size": 138151,
         "url": "text/transport/LS15_309.txt"
+      },
+      "LS15_31": {
+        "size": 47017,
+        "url": "text/transport/LS15_31.txt"
       },
       "LS15_310": {
         "size": 76836,
@@ -37365,6 +38233,10 @@
         "size": 284666,
         "url": "text/transport/LS15_319.txt"
       },
+      "LS15_32": {
+        "size": 51311,
+        "url": "text/transport/LS15_32.txt"
+      },
       "LS15_320": {
         "size": 96787,
         "url": "text/transport/LS15_320.txt"
@@ -37404,6 +38276,10 @@
       "LS15_329": {
         "size": 32560,
         "url": "text/transport/LS15_329.txt"
+      },
+      "LS15_33": {
+        "size": 56813,
+        "url": "text/transport/LS15_33.txt"
       },
       "LS15_330": {
         "size": 94937,
@@ -42571,6 +43447,10 @@
       }
     },
     "water_resources": {
+      "LS15_21": {
+        "size": 205624,
+        "url": "text/water_resources/LS15_21.txt"
+      },
       "LS16_1": {
         "size": 174757,
         "url": "text/water_resources/LS16_1.txt"
