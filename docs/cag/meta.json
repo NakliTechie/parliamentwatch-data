@@ -1,22 +1,22 @@
 {
   "version": "1.0",
   "corpus": "cag",
-  "generated_at": "2026-05-12T23:11:05Z",
+  "generated_at": "2026-05-13T01:28:14Z",
   "total_reports": 2701,
-  "total_with_text": 1833,
+  "total_with_text": 1867,
   "search_bundle": {
     "shard_count": 1,
     "shards": [
       "search-bundle-00.json"
     ],
     "shard_sizes": {
-      "search-bundle-00.json": 9878377
+      "search-bundle-00.json": 10062783
     },
-    "total": 1833,
-    "truncated": 1781,
+    "total": 1867,
+    "truncated": 1813,
     "head_chars": 5000,
-    "size_bytes": 9878377,
-    "max_shard_bytes": 9878377
+    "size_bytes": 10062783,
+    "max_shard_bytes": 10062783
   },
   "search_index": {
     "shard_count": 1,
@@ -24,14 +24,14 @@
       "search-index-00.json"
     ],
     "shard_sizes": {
-      "search-index-00.json": 14854953
+      "search-index-00.json": 15130758
     },
-    "report_count": 1833,
-    "vocab_size": 159795,
-    "total_postings": 5475366,
-    "size_bytes": 14854953,
-    "max_shard_bytes": 14854953,
+    "report_count": 1867,
+    "vocab_size": 161552,
+    "total_postings": 5582441,
+    "size_bytes": 15130758,
+    "max_shard_bytes": 15130758,
     "freq_cutoff_low": 2,
-    "freq_cutoff_high": 1649
+    "freq_cutoff_high": 1680
   }
 }
