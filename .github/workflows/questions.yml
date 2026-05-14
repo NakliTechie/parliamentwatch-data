@@ -2,11 +2,9 @@ name: Questions scrape and publish
 
 # 12×/day walk of Lok Sabha qetFilteredQuestionsAns across LS-15..18 ×
 # sessions × types (STARRED + UNSTARRED), with per-question PDF download
-# and pypdf extract.
-#
-# Phase A: LS only. Phase B (Rajya Sabha) will land in this same workflow
-# when we add the RS scraper; the build_questions.py orchestrator is
-# house-keyed so the addition is strictly additive.
+# and pypdf extract — PLUS Rajya Sabha walk across the 2 most recent
+# sessions (api_rs/business/{starredQuestionsItemWise,unStarredQuestionsItemWise})
+# with per-sitting-day bundle PDF download.
 #
 # Cadence rationale (plan/questions-recon-001.md §"Politeness budget"):
 # 50 records per burst × 12×/day = 600/day. Clears the ~280K record
@@ -33,9 +31,15 @@ on:
       ls_qtypes:
         description: 'LS question types (CSV: STARRED,UNSTARRED; empty = both)'
         default: ''
+      rs_sessions:
+        description: 'RS sessions to walk (CSV, "all" for full backfill, default = 2 most recent)'
+        default: ''
       max_extractions:
         description: 'Max LS records to extract this run. Keep ≤50 per Politeness policy.'
         default: '50'
+      max_rs_extractions:
+        description: 'Max RS bundle PDFs to extract this run. Keep ≤25 per Politeness policy (bundles are heavier than LS per-Q PDFs).'
+        default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap (seconds)'
         default: '900'
@@ -73,15 +77,17 @@ jobs:
         # Derived files owned by questions-derive.yml. See CONV.md
         # "Split-phase scraping pattern".
         env:
-          BUILD_PHASE:             'extract'
-          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '15,16,17,18' }}
-          LS_SESSIONS:             ${{ inputs.ls_sessions     || '' }}
-          LS_QTYPES:               ${{ inputs.ls_qtypes       || '' }}
-          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '50' }}
-          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
-          EXTRACT_WORKERS:         '4'
-          JITTER_MIN_MS:           '250'
-          JITTER_MAX_MS:           '500'
+          BUILD_PHASE:                'extract'
+          LOK_SABHAS:                 ${{ inputs.lok_sabhas         || '15,16,17,18' }}
+          LS_SESSIONS:                ${{ inputs.ls_sessions        || '' }}
+          LS_QTYPES:                  ${{ inputs.ls_qtypes          || '' }}
+          RS_SESSIONS:                ${{ inputs.rs_sessions        || '' }}
+          MAX_EXTRACTIONS_PER_RUN:    ${{ inputs.max_extractions    || '50' }}
+          MAX_RS_EXTRACTIONS_PER_RUN: ${{ inputs.max_rs_extractions || '25' }}
+          MAX_RUN_SECONDS:            ${{ inputs.max_run_seconds    || '900' }}
+          EXTRACT_WORKERS:            '4'
+          JITTER_MIN_MS:              '250'
+          JITTER_MAX_MS:              '500'
         run: python build_questions.py
 
       - name: Commit and push primary changes
