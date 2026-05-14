@@ -40,7 +40,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from fc.scraper import ...` works
 
-from parliamentwatch_text_shards import write_text_shards
+from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers
 from fc.scraper import (
     BASE_URL, REPORTS_API,
     COMMITTEES, DEFAULT_LOK_SABHAS,
@@ -272,7 +272,10 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
     # Build the candidate set across all committees. Skip anything
-    # already classified (.txt / .pypdf-empty / .ocr-failed) OR bundled.
+    # already classified (.txt / .pypdf-empty / .ocr-failed) OR bundled
+    # OR carries a permanent marker (.pypdf-empty/.ocr-failed) in
+    # markers.json. .pypdf-error stays retryable.
+    bundled_markers = load_markers(DOCS)
     candidates: list[tuple[str, int, int, str]] = []  # (committee, ls, num, pdf_url)
     skipped_marked = 0
     skipped_bundled = 0
@@ -284,8 +287,12 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
             if ls is None or num is None or not url:
                 continue
             fid = file_id(int(ls), int(num))
-            if f"{cmt}|{fid}" in bundled_ids:
+            cid = f"{cmt}|{fid}"
+            if cid in bundled_ids:
                 skipped_bundled += 1; continue
+            bm = bundled_markers.get(cid)
+            if bm in ("pypdf-empty", "ocr-failed"):
+                skipped_marked += 1; continue
             cmt_text_dir = TEXT_DIR / cmt
             if (cmt_text_dir / f"{fid}.txt").exists():
                 skipped_marked += 1; continue
@@ -449,6 +456,7 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
         "no_pdf_url":                 0,
     }
     bundled_ids = _load_bundled_ids()
+    markers = load_markers(DOCS)
     for cmt, items in reports.items():
         cmt_text_dir = TEXT_DIR / cmt
         for r in items:
@@ -459,10 +467,21 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
             if not r.get("pdf_url"):
                 counts["no_pdf_url"] += 1; continue
             fid = file_id(int(ls), int(num))
-            if f"{cmt}|{fid}" in bundled_ids:
+            cid = f"{cmt}|{fid}"
+            if cid in bundled_ids:
                 counts["with_text"] += 1
             elif cmt_text_dir.exists() and (cmt_text_dir / f"{fid}.txt").exists():
                 counts["with_text"] += 1
+            elif cid in markers:
+                mt = markers[cid]
+                if mt == "ocr-failed":
+                    counts["ocr_failed_permanent"] += 1
+                elif mt == "pypdf-empty":
+                    counts["pypdf_empty_awaiting_ocr"] += 1
+                elif mt == "pypdf-error":
+                    counts["pypdf_error_retryable"] += 1
+                else:
+                    counts["never_attempted"] += 1
             elif (cmt_text_dir / f"{fid}.ocr-failed").exists():
                 counts["ocr_failed_permanent"] += 1
             elif (cmt_text_dir / f"{fid}.pypdf-empty").exists():
@@ -751,6 +770,15 @@ def phase_derive() -> None:
                 continue
             items.append((f"{committee}|{key}", DOCS / entry["url"]))
     text_meta = write_text_shards(DOCS, items)
+    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    # Nested layout: text/<committee>/<fid>.<suffix>. Composite id includes the committee.
+    marker_stats = consolidate_markers(
+        DOCS, TEXT_DIR,
+        composite_id_from_path=lambda p: f"{p.parent.name}|{p.stem}",
+        drop_record_ids=bundled_ids,
+    )
+    print(f"  markers: {marker_stats['totals']} consolidated "
+          f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")
     t = text_meta["totals"]
     print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
           f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "

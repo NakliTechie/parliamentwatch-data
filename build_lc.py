@@ -38,7 +38,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from lc.scraper import ...` works
 
-from parliamentwatch_text_shards import write_text_shards
+from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers
 from lc.scraper import (
     BASE_URL, LISTING_URL,
     LCReport, RateLimited,
@@ -324,14 +324,20 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
+    bundled_markers = load_markers(DOCS)
     candidates = []
     skipped_marked = 0
     skipped_bundled = 0
     for rid, meta in reports.items():
         if not meta.get("pdf_url"):
             continue
-        if str(rid) in bundled_ids:
+        cid = str(rid)
+        if cid in bundled_ids:
             skipped_bundled += 1
+            continue
+        bm = bundled_markers.get(cid)
+        if bm in ("pypdf-empty", "ocr-failed"):
+            skipped_marked += 1
             continue
         text_path        = TEXT_DIR / f"{rid}.txt"
         pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
@@ -510,14 +516,26 @@ def compute_audit(reports: dict[int, dict]) -> dict:
         "no_pdf_url":                 0,
     }
     bundled_ids = _load_bundled_ids()
+    markers = load_markers(DOCS)
     for rid, meta in reports.items():
         if not meta.get("pdf_url"):
             counts["no_pdf_url"] += 1
             continue
-        if str(rid) in bundled_ids:
+        cid = str(rid)
+        if cid in bundled_ids:
             counts["with_text"] += 1
         elif TEXT_DIR.exists() and (TEXT_DIR / f"{rid}.txt").exists():
             counts["with_text"] += 1
+        elif cid in markers:
+            mt = markers[cid]
+            if mt == "ocr-failed":
+                counts["ocr_failed_permanent"] += 1
+            elif mt == "pypdf-empty":
+                counts["pypdf_empty_awaiting_ocr"] += 1
+            elif mt == "pypdf-error":
+                counts["pypdf_error_retryable"] += 1
+            else:
+                counts["never_attempted"] += 1
         elif (TEXT_DIR / f"{rid}.ocr-failed").exists():
             counts["ocr_failed_permanent"] += 1
         elif (TEXT_DIR / f"{rid}.pypdf-empty").exists():
@@ -805,6 +823,13 @@ def phase_derive() -> None:
     print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
           f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
           f"{t['r2_fallback']} via R2 sentinel, {t['skipped_oversize_no_r2']} skipped")
+
+    # Consolidate marker sidecars into markers.json. LC composite_id ==
+    # path.stem (flat text/<rid>.suffix layout, same as CAG).
+    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    marker_stats = consolidate_markers(DOCS, TEXT_DIR, drop_record_ids=bundled_ids)
+    print(f"  markers: {marker_stats['totals']} consolidated "
+          f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")
 
     print("\n[Derive 2/4] Building search-bundle (title + first 5K chars per report)...")
     bundle_stats = build_search_bundle(reports)

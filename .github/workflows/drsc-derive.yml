@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/meta.json docs/drsc/texts-meta.json 'docs/drsc/texts-*.json' docs/drsc/audit.json \
+          git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/markers.json docs/drsc/meta.json docs/drsc/texts-meta.json 'docs/drsc/texts-*.json' docs/drsc/audit.json \
                   docs/drsc/search-bundle-*.json docs/drsc/search-index-*.json
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild DRSC derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
@@ -69,7 +69,7 @@ jobs:
             git rebase --abort 2>/dev/null || true
             git reset --hard origin/main
             BUILD_PHASE=derive python build_static.py
-            git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/meta.json docs/drsc/audit.json docs/drsc/texts-meta.json 'docs/drsc/texts-*.json' \
+            git add docs/drsc/manifest.json docs/drsc/committees.json docs/drsc/markers.json docs/drsc/meta.json docs/drsc/audit.json docs/drsc/texts-meta.json 'docs/drsc/texts-*.json' \
                     docs/drsc/search-bundle-*.json docs/drsc/search-index-*.json
             git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
             git commit -m "Auto-rebuild DRSC derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"

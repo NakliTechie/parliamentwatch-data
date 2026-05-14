@@ -271,3 +271,152 @@ def write_text_shards(
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
     return meta
+
+
+# ── Marker consolidation ───────────────────────────────────────────────────
+#
+# Per-attempt status markers (`.pypdf-empty` / `.pypdf-error` /
+# `.ocr-failed`) live as sidecar files in text_dir, one per record.
+# Without consolidation they accumulate forever (write_text_shards
+# cleans `*.txt` but not markers) and push corpora close to CF's
+# 20,000-file deploy cap.
+#
+# consolidate_markers() bundles them into a single markers.json per
+# corpus and DELETES the on-disk sidecars. Subsequent runs:
+#   - compute_audit reads markers.json (instead of scanning the dir)
+#   - extract candidate selection reads markers.json (to skip
+#     records already marked, except .pypdf-error which is retryable)
+#
+# Shape of markers.json:
+#   {
+#     "generated_at": "ISO-Z",
+#     "totals": {"pypdf-empty": N, "pypdf-error": N, "ocr-failed": N},
+#     "markers": {"<composite_id>": "<marker-type>", ...},
+#   }
+
+
+from typing import Callable as _Callable
+import datetime as _datetime
+
+
+def _markers_filename() -> str:
+    return "markers.json"
+
+
+DEFAULT_MARKER_SUFFIXES = ("pypdf-empty", "pypdf-error", "ocr-failed")
+
+
+def consolidate_markers(
+    corpus_docs_dir: Path,
+    text_dir: Path,
+    *,
+    composite_id_from_path: Optional[_Callable[[Path], str]] = None,
+    drop_record_ids: Optional[set] = None,
+    marker_suffixes: tuple = DEFAULT_MARKER_SUFFIXES,
+) -> dict:
+    """Scan text_dir recursively for marker files, merge them into
+    markers.json under corpus_docs_dir, then DELETE the on-disk
+    sidecar marker files.
+
+    Each marker file `<...>.<suffix>` (suffix in marker_suffixes) is
+    interpreted as: "record <composite_id> has marker <suffix>".
+
+    composite_id_from_path: callable that returns the composite_id
+    string for a given marker Path. Default: `path.stem` (strips the
+    final `.<suffix>`). Corpora with nested text/<group>/<fid>.<suffix>
+    layouts pass a function that includes the group prefix, e.g.:
+        lambda p: f"{p.parent.name}|{p.stem}"
+
+    drop_record_ids: composite_ids of records that now have bundled
+    text (their markers should be REMOVED — text takes precedence
+    over any past marker). Pass the set of record_to_shard keys from
+    texts-meta.json.
+
+    marker_suffixes: which sidecar suffixes to consolidate. Defaults
+    to the three project-wide statuses.
+
+    Returns the resulting markers dict (also written to disk).
+
+    Existing markers.json is preserved and merged; never reset by this
+    function alone. Manual delete needed if a clean rebuild is desired.
+    """
+    corpus_docs_dir = Path(corpus_docs_dir)
+    text_dir = Path(text_dir)
+    composite_id_from_path = composite_id_from_path or (lambda p: p.stem)
+    drop_record_ids = drop_record_ids or set()
+
+    # Load existing markers.
+    existing: dict = {}
+    meta_path = corpus_docs_dir / _markers_filename()
+    if meta_path.exists():
+        try:
+            with open(meta_path, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            existing = dict(payload.get("markers") or {})
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read existing markers.json ({e}) — starting fresh")
+            existing = {}
+
+    # Scan for new sidecar markers + remember the paths to delete.
+    new_markers: dict[str, str] = {}
+    scanned_paths: list[Path] = []
+    if text_dir.exists():
+        for suffix in marker_suffixes:
+            for path in text_dir.rglob(f"*.{suffix}"):
+                if not path.is_file():
+                    continue
+                cid = composite_id_from_path(path)
+                new_markers[cid] = suffix
+                scanned_paths.append(path)
+
+    # Merge: existing carries forward; new wins on conflict (the
+    # most-recent attempt's outcome is authoritative).
+    final = dict(existing)
+    final.update(new_markers)
+
+    # Drop records that now have text. Text precedence.
+    for cid in drop_record_ids:
+        final.pop(cid, None)
+
+    # Compute totals.
+    totals: dict[str, int] = {s: 0 for s in marker_suffixes}
+    for v in final.values():
+        if v in totals:
+            totals[v] += 1
+
+    out = {
+        "generated_at": _datetime.datetime.now(_datetime.timezone.utc)
+                            .strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "totals":  totals,
+        "markers": final,
+    }
+    with open(meta_path, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+
+    # Delete the on-disk sidecars we just consolidated. (Defensive: only
+    # delete paths we scanned this call — don't recursively unlink
+    # anything else.)
+    removed = 0
+    for path in scanned_paths:
+        try:
+            path.unlink()
+            removed += 1
+        except OSError:
+            pass
+    out["removed_sidecar_count"] = removed
+
+    return out
+
+
+def load_markers(corpus_docs_dir: Path) -> dict[str, str]:
+    """Read markers.json's `markers` dict (composite_id → marker_type).
+    Empty dict on missing/unreadable.
+    """
+    p = Path(corpus_docs_dir) / _markers_filename()
+    if not p.exists():
+        return {}
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            return dict((json.load(f).get("markers") or {}))
+    except (OSError, json.JSONDecodeError):
+        return {}

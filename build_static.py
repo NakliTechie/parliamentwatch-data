@@ -25,7 +25,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-from parliamentwatch_text_shards import write_text_shards
+from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers
 
 # Each corpus's outputs are scoped under `docs/<corpus>/`. DRSC is the
 # first corpus (this file); CAG and the others land in their own sibling
@@ -224,6 +224,7 @@ def _missing_reports_priority_order():
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
+    bundled_markers = load_markers(DOCS)
     candidates = []
     skipped_marked = 0
     skipped_bundled = 0
@@ -235,10 +236,15 @@ def _missing_reports_priority_order():
             if not num or not url or ls is None:
                 continue
             file_id = _file_id(ls, num)
+            cid = f"{committee_key}|{file_id}"
             # Composite key matches the build adapter that emits the
             # text-shards: `<committee>|<file_id>`.
-            if f"{committee_key}|{file_id}" in bundled_ids:
+            if cid in bundled_ids:
                 skipped_bundled += 1
+                continue
+            bm = bundled_markers.get(cid)
+            if bm in ("pypdf-empty", "ocr-failed"):
+                skipped_marked += 1
                 continue
             base = DOCS / "text" / committee_key
             text_path        = base / f"{file_id}.txt"
@@ -446,6 +452,7 @@ def compute_audit():
     }
     text_root = DOCS / "text"
     bundled_ids = _load_bundled_ids()
+    markers = load_markers(DOCS)
     for committee_key, committee_reports in reports.items():
         for r in committee_reports:
             counts["reports"] += 1
@@ -459,11 +466,22 @@ def compute_audit():
                 counts["never_attempted"] += 1
                 continue
             file_id = _file_id(ls, num)
+            cid = f"{committee_key}|{file_id}"
             base = text_root / committee_key
-            if f"{committee_key}|{file_id}" in bundled_ids:
+            if cid in bundled_ids:
                 counts["with_text"] += 1
             elif (base / f"{file_id}.txt").exists():
                 counts["with_text"] += 1
+            elif cid in markers:
+                mt = markers[cid]
+                if mt == "ocr-failed":
+                    counts["ocr_failed_permanent"] += 1
+                elif mt == "pypdf-empty":
+                    counts["pypdf_empty_awaiting_ocr"] += 1
+                elif mt == "pypdf-error":
+                    counts["pypdf_error_retryable"] += 1
+                else:
+                    counts["never_attempted"] += 1
             elif (base / f"{file_id}.ocr-failed").exists():
                 counts["ocr_failed_permanent"] += 1
             elif (base / f"{file_id}.pypdf-empty").exists():
@@ -833,6 +851,16 @@ def phase_derive():
                 continue
             items.append((f"{committee}|{key}", DOCS / entry["url"]))
     text_meta = write_text_shards(DOCS, items)
+    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    # Nested layout: text/<committee>/<fid>.<suffix>. Composite id == "<committee>|<fid>".
+    text_root = DOCS / "text"
+    marker_stats = consolidate_markers(
+        DOCS, text_root,
+        composite_id_from_path=lambda p: f"{p.parent.name}|{p.stem}",
+        drop_record_ids=bundled_ids,
+    )
+    print(f"  markers: {marker_stats['totals']} consolidated "
+          f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")
     t = text_meta["totals"]
     print(f"  text-shards: {t['shards']} shard(s), {t['records_with_text']} records, "
           f"{t['total_text_bytes'] / 1024 / 1024:.1f} MB, "
