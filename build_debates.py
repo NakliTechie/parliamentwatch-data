@@ -530,14 +530,30 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
                 "budget_hit": False, "skipped_due_to_cooldown": True,
                 "candidates_total": 0}
 
+    # Bundled-records skip: texts-meta.json is the source of truth post-
+    # 2026-05-14 cleanup. LS composite key matches the build adapter:
+    # `ls|<file_id>`.
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     ls_text_dir = TEXT_DIR / "ls"
     candidates: list[tuple[int, int, int]] = []  # (loksabha, session, dbslno)
     skipped_marked = 0
+    skipped_bundled = 0
     for r in reports.get("ls", []):
         ls = r.get("lok_sabha"); ses = r.get("session"); dn = r.get("db_slno")
         if ls is None or ses is None or dn is None:
             continue
         fid = ls_file_id(int(ls), int(ses), int(dn))
+        if f"ls|{fid}" in bundled_ids:
+            skipped_bundled += 1; continue
         if (ls_text_dir / f"{fid}.txt").exists():
             skipped_marked += 1; continue
         if (ls_text_dir / f"{fid}.empty").exists():
@@ -550,7 +566,8 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
     # Priority: newest LS first, then highest dbSlno (newest record).
     candidates.sort(key=lambda c: (-c[0], -c[1], -c[2]))
     print(f"  candidates: {len(candidates)} LS records missing text "
-          f"({skipped_marked} skipped — already marked)")
+          f"({skipped_marked} skipped — already marked; "
+          f"{skipped_bundled} skipped — already in shards)")
 
     if not candidates:
         return {"extracted": [], "failed": [], "rate_limited": False,
@@ -988,10 +1005,25 @@ def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) 
     fetch + extract up to MAX_RS_EXTRACTIONS_PER_RUN PDFs. Priority:
     newest session → newest date → Floor before English before Part-1.
     """
+    # Bundled-records skip: texts-meta.json is the source of truth post-
+    # 2026-05-14 cleanup. RS composite key matches the build adapter:
+    # `rs|<base_id>|<version>` where base_id = file_id stripped of the
+    # `_<version>` suffix.
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     rs_text_dir = TEXT_DIR / "rs"
     rs_pdfs_dir = PDFS_DIR / "rs"
     candidates: list[tuple[int, str, str, str]] = []   # (session, date_iso, version, url)
     skipped_marked = 0
+    skipped_bundled = 0
     for r in reports.get("rs", []):
         ses = r.get("session"); iso = r.get("date_iso")
         if ses is None or iso is None: continue
@@ -1002,6 +1034,10 @@ def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) 
             url = url_by_v.get(ver)
             if not url: continue
             fid = rs_versioned_file_id(int(ses), iso, ver)
+            suffix = f"_{ver}"
+            base_id = fid[:-len(suffix)] if fid.endswith(suffix) else fid
+            if f"rs|{base_id}|{ver}" in bundled_ids:
+                skipped_bundled += 1; continue
             if (rs_text_dir / f"{fid}.txt").exists():
                 skipped_marked += 1; continue
             if (rs_text_dir / f"{fid}.pypdf-empty").exists():
@@ -1023,7 +1059,8 @@ def extract_missing_rs_pdfs(reports: dict[str, list[dict]], *, deadline: float) 
     candidates.sort(key=lambda c: _VER_ORDER.get(c[2], 9))   # then by version (Floor first)
     candidates.sort(key=lambda c: -int(c[0]))                # then by session desc (primary)
     print(f"  RS candidates: {len(candidates)} versions missing text "
-          f"({skipped_marked} skipped — already marked / OCR-pending)")
+          f"({skipped_marked} skipped — already marked / OCR-pending; "
+          f"{skipped_bundled} skipped — already in shards)")
 
     if not candidates:
         return {"extracted": [], "failed": [], "rate_limited": False,

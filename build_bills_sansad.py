@@ -331,11 +331,27 @@ def select_candidates(records: list[dict]) -> list[dict]:
       .pypdf-error   → retryable (still attempt)
       (no marker)    → never attempted (default)
     """
+    # Skip records already in texts-meta.json's record_to_shard map —
+    # those are bundled (source of truth post-2026-05-14 cleanup).
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     candidates = []
     skipped_marked = 0
+    skipped_bundled = 0
     for r in records:
         cid = r.get("compositeId")
         if not cid:
+            continue
+        if cid in bundled_ids:
+            skipped_bundled += 1
             continue
         text_path        = TEXT_DIR / f"{cid}.txt"
         pypdf_empty_path = TEXT_DIR / f"{cid}.pypdf-empty"
@@ -350,9 +366,9 @@ def select_candidates(records: list[dict]) -> list[dict]:
         key=lambda r: (r.get("billYear") or 0, r.get("billNumber") or ""),
         reverse=True,
     )
-    if skipped_marked:
-        print(f"  candidate selection: skipped {skipped_marked} bills "
-              f"already marked .txt/.pypdf-empty/.ocr-failed")
+    if skipped_marked or skipped_bundled:
+        print(f"  candidate selection: skipped {skipped_marked} marked "
+              f"+ {skipped_bundled} already-in-shards")
     return candidates
 
 

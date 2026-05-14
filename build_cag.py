@@ -336,10 +336,31 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
     #   .ocr-failed    → OCR permanent tombstone
     # Retry .pypdf-error (transient pypdf failure, could re-succeed) and
     # never-attempted reports.
+    #
+    # Also skip records present in `texts-meta.json`'s record_to_shard
+    # map — those are already bundled into the sharded text store and
+    # the per-record .txt files may no longer exist on disk (the
+    # 2026-05-14 cleanup removed all docs/cag/text/*.txt files;
+    # subsequent scrape runs would otherwise re-extract those records
+    # repeatedly). Graceful fallback if texts-meta.json is missing.
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     candidates = []
     skipped_marked = 0
+    skipped_bundled = 0
     for rid, meta in reports.items():
         if not meta.get("pdf_url"):
+            continue
+        if str(rid) in bundled_ids:
+            skipped_bundled += 1
             continue
         text_path        = TEXT_DIR / f"{rid}.txt"
         pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
@@ -351,7 +372,8 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
     # Newest first (highest id wins — CAG IDs are monotonic).
     candidates.sort(key=lambda c: -c[0])
     print(f"  candidates: {len(candidates)} reports missing extracted text "
-          f"({skipped_marked} skipped — already marked .txt/.pypdf-empty/.ocr-failed)")
+          f"({skipped_marked} skipped — already marked; "
+          f"{skipped_bundled} skipped — already in shards)")
 
     if not candidates:
         return {"extracted": [], "failed": [], "rate_limited": False,

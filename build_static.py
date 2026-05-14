@@ -211,8 +211,22 @@ def _missing_reports_priority_order():
       (no marker)    → never attempted (default — attempt)
     """
     reports = load_existing_reports()
+
+    # Skip records already present in texts-meta.json's record_to_shard
+    # map — those are bundled, source of truth post-2026-05-14 cleanup.
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     candidates = []
     skipped_marked = 0
+    skipped_bundled = 0
     for committee_key, committee_reports in reports.items():
         for report in committee_reports:
             num = report.get("report_number")
@@ -221,6 +235,11 @@ def _missing_reports_priority_order():
             if not num or not url or ls is None:
                 continue
             file_id = _file_id(ls, num)
+            # Composite key matches the build adapter that emits the
+            # text-shards: `<committee>|<file_id>`.
+            if f"{committee_key}|{file_id}" in bundled_ids:
+                skipped_bundled += 1
+                continue
             base = DOCS / "text" / committee_key
             text_path        = base / f"{file_id}.txt"
             pypdf_empty_path = base / f"{file_id}.pypdf-empty"
@@ -237,9 +256,9 @@ def _missing_reports_priority_order():
             })
     # Most recent first (LS18 before LS17, higher report number first within an LS)
     candidates.sort(key=lambda c: (c["lok_sabha"], c["report_number"]), reverse=True)
-    if skipped_marked:
-        print(f"  candidate selection: skipped {skipped_marked} reports "
-              f"already marked .txt/.pypdf-empty/.ocr-failed")
+    if skipped_marked or skipped_bundled:
+        print(f"  candidate selection: skipped {skipped_marked} marked "
+              f"+ {skipped_bundled} already-in-shards")
     return candidates
 
 

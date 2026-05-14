@@ -258,10 +258,24 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
                 "budget_hit": False, "skipped_due_to_cooldown": True,
                 "candidates_total": 0}
 
+    # Skip records already in texts-meta.json's record_to_shard map
+    # (bundled = source of truth post-2026-05-14 cleanup). FC composite
+    # key matches the build adapter: `<committee>|<file_id>`.
+    bundled_ids: set = set()
+    texts_meta_path = DOCS / "texts-meta.json"
+    if texts_meta_path.exists():
+        try:
+            with open(texts_meta_path, "r", encoding="utf-8") as f:
+                texts_meta = json.load(f)
+            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
+
     # Build the candidate set across all committees. Skip anything
-    # already classified (.txt / .pypdf-empty / .ocr-failed).
+    # already classified (.txt / .pypdf-empty / .ocr-failed) OR bundled.
     candidates: list[tuple[str, int, int, str]] = []  # (committee, ls, num, pdf_url)
     skipped_marked = 0
+    skipped_bundled = 0
     for cmt, items in reports.items():
         for r in items:
             ls = r.get("lok_sabha")
@@ -270,6 +284,8 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
             if ls is None or num is None or not url:
                 continue
             fid = file_id(int(ls), int(num))
+            if f"{cmt}|{fid}" in bundled_ids:
+                skipped_bundled += 1; continue
             cmt_text_dir = TEXT_DIR / cmt
             if (cmt_text_dir / f"{fid}.txt").exists():
                 skipped_marked += 1; continue
@@ -284,7 +300,8 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
     # searched) over deep historical backlog.
     candidates.sort(key=lambda c: (-c[1], -c[2], c[0]))
     print(f"  candidates: {len(candidates)} reports missing extracted text "
-          f"({skipped_marked} skipped — already marked)")
+          f"({skipped_marked} skipped — already marked; "
+          f"{skipped_bundled} skipped — already in shards)")
 
     if not candidates:
         return {"extracted": [], "failed": [], "rate_limited": False,
