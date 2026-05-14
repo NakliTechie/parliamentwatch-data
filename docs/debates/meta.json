@@ -1,9 +1,9 @@
 {
   "version": "1.0",
   "corpus": "debates",
-  "generated_at": "2026-05-14T01:54:03Z",
-  "total_records": 56679,
-  "total_with_text": 68,
+  "generated_at": "2026-05-14T03:14:10Z",
+  "total_records": 56806,
+  "total_with_text": 0,
   "houses": [
     "ls",
     "rs"
@@ -15,34 +15,6 @@
     17,
     18
   ],
-  "search_bundle": {
-    "shard_count": 1,
-    "shards": [
-      "search-bundle-00.json"
-    ],
-    "shard_sizes": {
-      "search-bundle-00.json": 180738
-    },
-    "total": 67,
-    "truncated": 5,
-    "head_chars": 5000,
-    "size_bytes": 180738,
-    "max_shard_bytes": 180738
-  },
-  "search_index": {
-    "shard_count": 1,
-    "shards": [
-      "search-index-00.json"
-    ],
-    "shard_sizes": {
-      "search-index-00.json": 114070
-    },
-    "report_count": 67,
-    "vocab_size": 4322,
-    "total_postings": 14295,
-    "size_bytes": 114070,
-    "max_shard_bytes": 114070,
-    "freq_cutoff_low": 2,
-    "freq_cutoff_high": 33
-  }
+  "search_bundle": null,
+  "search_index": null
 }
