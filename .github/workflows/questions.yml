@@ -1,25 +1,26 @@
 name: Questions scrape and publish
 
-# 12×/day walk of Lok Sabha qetFilteredQuestionsAns across LS-15..18 ×
+# 24×/day walk of Lok Sabha qetFilteredQuestionsAns across LS-15..18 ×
 # sessions × types (STARRED + UNSTARRED), with per-question PDF download
 # and pypdf extract — PLUS Rajya Sabha walk across the 2 most recent
 # sessions (api_rs/business/{starredQuestionsItemWise,unStarredQuestionsItemWise})
 # with per-sitting-day bundle PDF download.
 #
 # Cadence rationale (plan/questions-recon-001.md §"Politeness budget"):
-# 50 records per burst × 12×/day = 600/day. Clears the ~280K record
-# LS-15..18 backlog in ~1 year. Within Politeness policy: per-burst ≤50,
-# ≥1-hour gaps (2-hour gaps here). Per-PDF cost is ~250-500 ms (download
-# + pypdf extract on 2-page typeset PDFs); 50 takes ~25 sec sustained
-# across 4 workers.
+# 50 records per burst × 24×/day = 1,200/day for LS. Clears the ~280K
+# record LS-15..18 backlog in ~233 days. RS: 25 bundles/run × 24/day =
+# 600/day → ~4.5 days for the ~2,700-bundle RS-194..270 backfill. Within
+# Politeness policy: per-burst ≤50, ≥1-hour gaps (exactly 1 hour here).
+# Per-PDF cost is ~250-500 ms (download + pypdf extract on 2-page
+# typeset PDFs); 50 takes ~25 sec sustained across 4 workers.
 #
 # Off-cluster from LC (02/06/10/14/18/22 at :01), FC (01/05/09/13/17/21
 # at :01), and debates (every 2h at :23). Questions fires at :47 every
-# 2 hours starting at 00:47 UTC.
+# hour starting at 00:47 UTC.
 
 on:
   schedule:
-    - cron: '47 */2 * * *'
+    - cron: '47 * * * *'
   workflow_dispatch:
     inputs:
       lok_sabhas:
