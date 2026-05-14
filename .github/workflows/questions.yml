@@ -1,0 +1,98 @@
+name: Questions scrape and publish
+
+# 12×/day walk of Lok Sabha qetFilteredQuestionsAns across LS-15..18 ×
+# sessions × types (STARRED + UNSTARRED), with per-question PDF download
+# and pypdf extract.
+#
+# Phase A: LS only. Phase B (Rajya Sabha) will land in this same workflow
+# when we add the RS scraper; the build_questions.py orchestrator is
+# house-keyed so the addition is strictly additive.
+#
+# Cadence rationale (plan/questions-recon-001.md §"Politeness budget"):
+# 50 records per burst × 12×/day = 600/day. Clears the ~280K record
+# LS-15..18 backlog in ~1 year. Within Politeness policy: per-burst ≤50,
+# ≥1-hour gaps (2-hour gaps here). Per-PDF cost is ~250-500 ms (download
+# + pypdf extract on 2-page typeset PDFs); 50 takes ~25 sec sustained
+# across 4 workers.
+#
+# Off-cluster from LC (02/06/10/14/18/22 at :01), FC (01/05/09/13/17/21
+# at :01), and debates (every 2h at :23). Questions fires at :47 every
+# 2 hours starting at 00:47 UTC.
+
+on:
+  schedule:
+    - cron: '47 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      lok_sabhas:
+        description: 'LS terms to walk (CSV, default = LS-15..18 per recon coverage)'
+        default: '15,16,17,18'
+      ls_sessions:
+        description: 'LS sessions to walk ("1-20" range or "1,2,3" CSV; empty = default 1..20)'
+        default: ''
+      ls_qtypes:
+        description: 'LS question types (CSV: STARRED,UNSTARRED; empty = both)'
+        default: ''
+      max_extractions:
+        description: 'Max LS records to extract this run. Keep ≤50 per Politeness policy.'
+        default: '50'
+      max_run_seconds:
+        description: 'Hard wall-clock cap (seconds)'
+        default: '900'
+
+permissions:
+  contents: write
+
+concurrency:
+  # Don't let two questions runs overlap. Independent of other corpora's
+  # groups so all corpora can run concurrently.
+  group: questions
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git identity for in-flight checkpoint commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Build questions primary data (extract phase only)
+        # Split-phase: writers commit reports shards + text/ls/.
+        # Derived files owned by questions-derive.yml. See CONV.md
+        # "Split-phase scraping pattern".
+        env:
+          BUILD_PHASE:             'extract'
+          LOK_SABHAS:              ${{ inputs.lok_sabhas      || '15,16,17,18' }}
+          LS_SESSIONS:             ${{ inputs.ls_sessions     || '' }}
+          LS_QTYPES:               ${{ inputs.ls_qtypes       || '' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '50' }}
+          MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '900' }}
+          EXTRACT_WORKERS:         '4'
+          JITTER_MIN_MS:           '250'
+          JITTER_MAX_MS:           '500'
+        run: python build_questions.py
+
+      - name: Commit and push primary changes
+        # `docs/questions/` covers reports-meta.json + reports-<house>-<NN>.json
+        # shards + text/ (transient .txt files + persistent markers).
+        # Gitignored `pdfs/` won't be picked up by directory `git add`.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/questions/
+          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git commit -m "Auto-update questions primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
+          git pull --rebase origin main
+          git push
