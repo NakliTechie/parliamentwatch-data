@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-05-14T10:26:12Z",
+  "totals": {
+    "pypdf-empty": 0,
+    "pypdf-error": 0,
+    "ocr-failed": 0
+  },
+  "markers": {}
+}
