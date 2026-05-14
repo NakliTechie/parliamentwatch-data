@@ -46,7 +46,7 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from parliamentwatch_text_shards import write_text_shards  # noqa: E402
+from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers  # noqa: E402
 
 from questions.common import RateLimited
 from questions.scrapers.loksabha import (
@@ -553,6 +553,7 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
+    bundled_markers = load_markers(DOCS)
     ls_text_dir = TEXT_DIR / "ls"
     candidates: list[tuple[int, int, str, int, str]] = []  # +pdf_url
     skipped_marked = 0
@@ -565,8 +566,12 @@ def extract_missing_bodies(reports: dict[str, list[dict]], *, deadline: float) -
                 or not qtype or not pdf_url):
             continue
         fid = ls_file_id(int(ls), int(ses), qtype, int(qno))
-        if f"ls|{fid}" in bundled_ids:
+        cid = f"ls|{fid}"
+        if cid in bundled_ids:
             skipped_bundled += 1; continue
+        bm = bundled_markers.get(cid)
+        if bm in ("pypdf-empty", "ocr-failed"):
+            skipped_marked += 1; continue
         if (ls_text_dir / f"{fid}.txt").exists():
             skipped_marked += 1; continue
         if (ls_text_dir / f"{fid}.pypdf-empty").exists():
@@ -688,6 +693,7 @@ def extract_missing_rs_bodies(reports: dict[str, list[dict]], *, deadline: float
         except (OSError, json.JSONDecodeError):
             pass
 
+    bundled_markers = load_markers(DOCS)
     rs_text_dir = TEXT_DIR / "rs"
     candidates: list[tuple[int, str, str, str]] = []   # session, date_iso, qtype, pdf_url
     skipped_marked = 0
@@ -698,8 +704,12 @@ def extract_missing_rs_bodies(reports: dict[str, list[dict]], *, deadline: float
         if ses is None or not iso or not qtype or not pdf_url:
             continue
         fid = rs_file_id(int(ses), iso, qtype)
-        if f"rs|{fid}" in bundled_ids:
+        cid = f"rs|{fid}"
+        if cid in bundled_ids:
             skipped_bundled += 1; continue
+        bm = bundled_markers.get(cid)
+        if bm in ("pypdf-empty", "ocr-failed"):
+            skipped_marked += 1; continue
         if (rs_text_dir / f"{fid}.txt").exists():
             skipped_marked += 1; continue
         if (rs_text_dir / f"{fid}.pypdf-empty").exists():
@@ -861,6 +871,7 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
             bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
         except (OSError, json.JSONDecodeError):
             pass
+    markers = load_markers(DOCS)
 
     ls_dir = TEXT_DIR / "ls"
     for r in reports.get("ls", []):
@@ -869,10 +880,17 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
         if ls is None or ses is None or qno is None or not qtype:
             continue
         fid = ls_file_id(int(ls), int(ses), qtype, int(qno))
-        if f"ls|{fid}" in bundled_ids:
+        cid = f"ls|{fid}"
+        if cid in bundled_ids:
             counts["ls_with_text"] += 1
         elif (ls_dir / f"{fid}.txt").exists():
             counts["ls_with_text"] += 1
+        elif cid in markers:
+            mt = markers[cid]
+            if mt == "ocr-failed":   counts["ls_ocr_failed_permanent"] += 1
+            elif mt == "pypdf-empty": counts["ls_pypdf_empty_awaiting_ocr"] += 1
+            elif mt == "pypdf-error": counts["ls_pypdf_error_retryable"] += 1
+            else: counts["ls_never_attempted"] += 1
         elif (ls_dir / f"{fid}.pypdf-empty").exists():
             counts["ls_pypdf_empty_awaiting_ocr"] += 1
         elif (ls_dir / f"{fid}.pypdf-error").exists():
@@ -889,10 +907,17 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
         if ses is None or not iso or not qtype:
             continue
         fid = rs_file_id(int(ses), iso, qtype)
-        if f"rs|{fid}" in bundled_ids:
+        cid = f"rs|{fid}"
+        if cid in bundled_ids:
             counts["rs_with_text"] += 1
         elif (rs_dir / f"{fid}.txt").exists():
             counts["rs_with_text"] += 1
+        elif cid in markers:
+            mt = markers[cid]
+            if mt == "ocr-failed":   counts["rs_ocr_failed_permanent"] += 1
+            elif mt == "pypdf-empty": counts["rs_pypdf_empty_awaiting_ocr"] += 1
+            elif mt == "pypdf-error": counts["rs_pypdf_error_retryable"] += 1
+            else: counts["rs_never_attempted"] += 1
         elif (rs_dir / f"{fid}.pypdf-empty").exists():
             counts["rs_pypdf_empty_awaiting_ocr"] += 1
         elif (rs_dir / f"{fid}.pypdf-error").exists():
@@ -1289,6 +1314,18 @@ def phase_derive() -> int:
             items.append((f"rs|{path.stem}", path))
     text_meta = write_text_shards(DOCS, items)
     print(f"  bundled text shards: {text_meta['totals']}")
+
+    # Consolidate per-record marker sidecars into markers.json. Questions
+    # nested layout: text/ls/<fid>.<suffix>, text/rs/<fid>.<suffix>.
+    # Composite id == "<house>|<fid>".
+    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    marker_stats = consolidate_markers(
+        DOCS, TEXT_DIR,
+        composite_id_from_path=lambda p: f"{p.parent.name}|{p.stem}",
+        drop_record_ids=bundled_ids,
+    )
+    print(f"  markers: {marker_stats['totals']} consolidated "
+          f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")
 
     bundle = build_search_bundle(reports)
     index  = build_search_index(reports)
