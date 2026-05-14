@@ -3,25 +3,27 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 3,
+    "records_with_text": 5,
     "shards": 1,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 123924,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 3,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shards": [
     {
       "file": "texts-00.json",
-      "count": 3,
-      "bytes": 164843
+      "count": 5,
+      "bytes": 290782
     }
   ],
   "record_to_shard": {
     "ls|LS18_S4_S_498": 0,
     "ls|LS18_S4_S_499": 0,
-    "ls|LS18_S4_S_500": 0
+    "ls|LS18_S4_S_500": 0,
+    "rs|RS266_2024-12-20_S": 0,
+    "rs|RS266_2024-12-20_U": 0
   }
 }
