@@ -372,6 +372,22 @@ def select_candidates(records: list[dict]) -> list[dict]:
     return candidates
 
 
+def _load_bundled_ids() -> set[str]:
+    """Read record_to_shard keys from texts-meta.json. For Bills the
+    composite_id IS the bill compositeId — same identifier the records
+    list uses. Empty set on missing/unreadable.
+    """
+    texts_meta_path = DOCS / "texts-meta.json"
+    if not texts_meta_path.exists():
+        return set()
+    try:
+        with open(texts_meta_path, "r", encoding="utf-8") as f:
+            tm = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return set((tm.get("record_to_shard") or {}).keys())
+
+
 def compute_audit(records: list[dict]) -> dict:
     """Walk records + text/ to produce a per-bill status breakdown.
 
@@ -388,6 +404,7 @@ def compute_audit(records: list[dict]) -> dict:
         "never_attempted":            0,
         "no_canonical_pdf":           0,
     }
+    bundled_ids = _load_bundled_ids()
     for r in records:
         cid = r.get("compositeId")
         if not cid:
@@ -395,7 +412,9 @@ def compute_audit(records: list[dict]) -> dict:
         if not _has_any_canonical_pdf(r):
             counts["no_canonical_pdf"] += 1
             continue
-        if (TEXT_DIR / f"{cid}.txt").exists():
+        if cid in bundled_ids:
+            counts["with_text"] += 1
+        elif (TEXT_DIR / f"{cid}.txt").exists():
             counts["with_text"] += 1
         elif (TEXT_DIR / f"{cid}.ocr-failed").exists():
             counts["ocr_failed_permanent"] += 1
@@ -560,7 +579,12 @@ def write_index_meta(records: list[dict], shard_entries: list[dict]) -> None:
     """Write index-meta.json — small file the app fetches first to discover
     shards. Includes top-level totals so the chip status can render without
     fetching any shard."""
-    with_text = sum(1 for r in records if (TEXT_DIR / f"{r['compositeId']}.txt").exists())
+    bundled_ids = _load_bundled_ids()
+    with_text = sum(
+        1 for r in records
+        if r.get("compositeId") in bundled_ids
+        or (TEXT_DIR / f"{r['compositeId']}.txt").exists()
+    )
     with_canonical_pdf = sum(1 for r in records if _has_any_canonical_pdf(r))
     meta = {
         "scraper_version": SCRAPER_VERSION,
@@ -601,10 +625,17 @@ def write_manifest(records: list[dict]) -> None:
     with_report_link    = sum(1 for r in records if r.get("reportFile"))
     with_gazette_link   = sum(1 for r in records if r.get("billGazettedFile"))
 
-    # Per-bill texts map. Walk the records once + check existence per id.
+    # Per-bill texts map. Walk the records once + check existence
+    # per id. Bundled records (post-49538544 migration) get a
+    # `{bundled: True}` entry; legacy on-disk text/<cid>.txt files
+    # keep their `{url}` entry for any transient pre-bundle state.
+    bundled_ids = _load_bundled_ids()
     texts: dict = {}
     for r in records:
         cid = r["compositeId"]
+        if cid in bundled_ids:
+            texts[cid] = {"bundled": True}
+            continue
         text_file = TEXT_DIR / f"{cid}.txt"
         if text_file.exists():
             texts[cid] = {"url": f"text/{cid}.txt"}

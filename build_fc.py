@@ -389,24 +389,49 @@ def extract_missing_texts(reports: dict[str, list[dict]], *, deadline: float) ->
 # ── Phase 3: build manifest ────────────────────────────────────────────────
 
 
+def _load_bundled_ids() -> set[str]:
+    """Read record_to_shard keys from texts-meta.json. Composite_ids
+    are `<committee>|<file_id>` for FC.
+    """
+    texts_meta_path = DOCS / "texts-meta.json"
+    if not texts_meta_path.exists():
+        return set()
+    try:
+        with open(texts_meta_path, "r", encoding="utf-8") as f:
+            tm = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return set((tm.get("record_to_shard") or {}).keys())
+
+
 def build_manifest() -> dict:
-    """List every extracted text file with its size + relative URL.
-    Committee-keyed shape, matching DRSC's manifest.
+    """Committee-keyed presence map. Reads from texts-meta.json's
+    record_to_shard first (post-bundling), falls back to TEXT_DIR
+    glob for transient text/<cmt>/<fid>.txt files between extract
+    and derive.
     """
     out: dict[str, dict] = {}
-    if not TEXT_DIR.exists():
-        return {"texts": out}
-    for cmt in COMMITTEES:
-        cmt_dir = TEXT_DIR / cmt
-        if not cmt_dir.exists():
+    # Primary: bundled records from texts-meta.json. Composite IDs
+    # are `<committee>|<file_id>`; unpack into the nested manifest.
+    for composite_id in _load_bundled_ids():
+        cmt, _, fid = composite_id.partition("|")
+        if not cmt or not fid:
             continue
-        out[cmt] = {}
-        for text_file in sorted(cmt_dir.glob("*.txt")):
-            fid = text_file.stem
-            out[cmt][fid] = {
-                "size": text_file.stat().st_size,
-                "url":  f"text/{cmt}/{text_file.name}",   # relative; app prepends 'fc/'
-            }
+        out.setdefault(cmt, {})[fid] = {"bundled": True}
+    # Additive: on-disk per-record .txt files (transient pre-bundle).
+    if TEXT_DIR.exists():
+        for cmt in COMMITTEES:
+            cmt_dir = TEXT_DIR / cmt
+            if not cmt_dir.exists():
+                continue
+            for text_file in sorted(cmt_dir.glob("*.txt")):
+                fid = text_file.stem
+                if fid in out.get(cmt, {}):
+                    continue
+                out.setdefault(cmt, {})[fid] = {
+                    "size": text_file.stat().st_size,
+                    "url":  f"text/{cmt}/{text_file.name}",
+                }
     return {"texts": out}
 
 
@@ -423,17 +448,7 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
         "never_attempted":            0,
         "no_pdf_url":                 0,
     }
-    if not TEXT_DIR.exists():
-        counts["never_attempted"] = sum(
-            1 for items in reports.values()
-            for r in items if r.get("pdf_url"))
-        counts["no_pdf_url"] = sum(
-            1 for items in reports.values()
-            for r in items if not r.get("pdf_url"))
-        return {
-            "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "totals":     counts,
-        }
+    bundled_ids = _load_bundled_ids()
     for cmt, items in reports.items():
         cmt_text_dir = TEXT_DIR / cmt
         for r in items:
@@ -444,7 +459,9 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
             if not r.get("pdf_url"):
                 counts["no_pdf_url"] += 1; continue
             fid = file_id(int(ls), int(num))
-            if (cmt_text_dir / f"{fid}.txt").exists():
+            if f"{cmt}|{fid}" in bundled_ids:
+                counts["with_text"] += 1
+            elif cmt_text_dir.exists() and (cmt_text_dir / f"{fid}.txt").exists():
                 counts["with_text"] += 1
             elif (cmt_text_dir / f"{fid}.ocr-failed").exists():
                 counts["ocr_failed_permanent"] += 1
@@ -724,9 +741,14 @@ def phase_derive() -> None:
     # Bundle per-record text files. FC's manifest is nested by committee:
     # `texts[<committee>][<file_id>] = {size, url}` (same shape as DRSC).
     print("\n[Derive] Building text shards...")
+    # Only pass entries with a fresh on-disk text file. Bundled-only
+    # entries (post-49538544) have no `url` field — write_text_shards's
+    # preservation logic carries them forward without needing them here.
     items = []
     for committee, by_id in sorted(manifest["texts"].items()):
         for key, entry in sorted(by_id.items()):
+            if "url" not in entry:
+                continue
             items.append((f"{committee}|{key}", DOCS / entry["url"]))
     text_meta = write_text_shards(DOCS, items)
     t = text_meta["totals"]

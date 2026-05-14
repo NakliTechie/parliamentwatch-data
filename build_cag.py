@@ -470,17 +470,47 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
 
 # ── Phase 4: build manifest ────────────────────────────────────────────────
 
+def _load_bundled_ids() -> set[str]:
+    """Read record_to_shard keys from texts-meta.json. Empty set if
+    missing or unreadable. The keys are the canonical composite_ids
+    used by write_text_shards. For CAG: just the report id as a string.
+    """
+    texts_meta_path = DOCS / "texts-meta.json"
+    if not texts_meta_path.exists():
+        return set()
+    try:
+        with open(texts_meta_path, "r", encoding="utf-8") as f:
+            tm = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return set((tm.get("record_to_shard") or {}).keys())
+
+
 def build_manifest() -> dict:
-    """List every extracted text file with its size + relative URL."""
+    """Per-record presence map. Reads from texts-meta.json's
+    record_to_shard first (post-bundling) — records are listed with
+    `{"bundled": True}` (no per-file URL, since the content lives in
+    a shard). Falls back to scanning TEXT_DIR for legacy per-file
+    text/<id>.txt (transient between extract + derive).
+
+    The app uses this purely as a "does record X have text?" lookup;
+    actual content retrieval goes through the sharded text store.
+    """
     manifest: dict[str, dict] = {}
-    if not TEXT_DIR.exists():
-        return {"texts": manifest}
-    for text_file in sorted(TEXT_DIR.glob("*.txt")):
-        rid = text_file.stem
-        manifest[rid] = {
-            "size": text_file.stat().st_size,
-            "url":  f"text/{text_file.name}",   # relative; app prepends 'cag/'
-        }
+    # Primary: bundled records.
+    for rid in _load_bundled_ids():
+        manifest[rid] = {"bundled": True}
+    # Fallback / additive: any text/<id>.txt files on disk (transient).
+    if TEXT_DIR.exists():
+        for text_file in sorted(TEXT_DIR.glob("*.txt")):
+            rid = text_file.stem
+            # Don't overwrite a bundled entry; on-disk + bundled means
+            # the disk copy will be cleaned by next derive's bundling.
+            if rid not in manifest:
+                manifest[rid] = {
+                    "size": text_file.stat().st_size,
+                    "url":  f"text/{text_file.name}",
+                }
     return {"texts": manifest}
 
 
@@ -503,18 +533,17 @@ def compute_audit(reports: dict[int, dict]) -> dict:
         "never_attempted":            0,
         "no_pdf_url":                 0,
     }
-    if not TEXT_DIR.exists():
-        counts["never_attempted"] = sum(1 for r in reports.values() if r.get("pdf_url"))
-        counts["no_pdf_url"]      = sum(1 for r in reports.values() if not r.get("pdf_url"))
-        return {
-            "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "totals":     counts,
-        }
+    bundled_ids = _load_bundled_ids()
     for rid, meta in reports.items():
         if not meta.get("pdf_url"):
             counts["no_pdf_url"] += 1
             continue
-        if (TEXT_DIR / f"{rid}.txt").exists():
+        # Order matters: bundled-records short-circuit FIRST. The on-disk
+        # text/<id>.txt files were removed in 49538544 (2026-05-14); the
+        # canonical "has text" signal is now the texts-meta record_to_shard.
+        if str(rid) in bundled_ids:
+            counts["with_text"] += 1
+        elif TEXT_DIR.exists() and (TEXT_DIR / f"{rid}.txt").exists():
             counts["with_text"] += 1
         elif (TEXT_DIR / f"{rid}.ocr-failed").exists():
             counts["ocr_failed_permanent"] += 1
@@ -795,9 +824,13 @@ def phase_derive() -> None:
     # key passed to the shard helper is just the report_id, which is also
     # what the app uses to look up texts.
     print("\n[Derive] Building text shards...")
+    # Only pass entries with a fresh on-disk text file. Bundled-only
+    # entries (post-49538544) have no `url` field — write_text_shards's
+    # preservation logic carries them forward without needing them here.
     items = sorted(
         (key, DOCS / entry["url"])
         for key, entry in manifest["texts"].items()
+        if "url" in entry
     )
     text_meta = write_text_shards(DOCS, items)
     t = text_meta["totals"]

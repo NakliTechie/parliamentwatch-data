@@ -375,22 +375,49 @@ def extract_missing_texts():
     }
 
 
+def _load_bundled_ids() -> set:
+    """Read record_to_shard keys from texts-meta.json. Composite IDs
+    are `<committee>|<file_id>` for DRSC.
+    """
+    texts_meta_path = DOCS / "texts-meta.json"
+    if not texts_meta_path.exists():
+        return set()
+    try:
+        with open(texts_meta_path, "r", encoding="utf-8") as f:
+            tm = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return set((tm.get("record_to_shard") or {}).keys())
+
+
 def build_manifest():
-    """List every extracted text file with its size."""
+    """Committee-keyed presence map. Reads from texts-meta.json's
+    record_to_shard first (post-bundling). Falls back to TEXT_DIR
+    glob for transient text/<cmt>/<fid>.txt files between extract
+    and derive.
+    """
     manifest = {"texts": {}}
-    text_root = DOCS / "text"
-    if not text_root.exists():
-        return manifest
-    for committee_dir in sorted(text_root.iterdir()):
-        if not committee_dir.is_dir():
+    # Primary: bundled records.
+    for composite_id in _load_bundled_ids():
+        cmt, _, fid = composite_id.partition("|")
+        if not cmt or not fid:
             continue
-        committee_key = committee_dir.name
-        manifest["texts"][committee_key] = {}
-        for text_file in sorted(committee_dir.glob("*.txt")):
-            manifest["texts"][committee_key][text_file.stem] = {
-                "size": text_file.stat().st_size,
-                "url": f"text/{committee_key}/{text_file.name}",
-            }
+        manifest["texts"].setdefault(cmt, {})[fid] = {"bundled": True}
+    # Additive: on-disk per-record .txt files (transient pre-bundle).
+    text_root = DOCS / "text"
+    if text_root.exists():
+        for committee_dir in sorted(text_root.iterdir()):
+            if not committee_dir.is_dir():
+                continue
+            committee_key = committee_dir.name
+            cmt_entries = manifest["texts"].setdefault(committee_key, {})
+            for text_file in sorted(committee_dir.glob("*.txt")):
+                if text_file.stem in cmt_entries:
+                    continue
+                cmt_entries[text_file.stem] = {
+                    "size": text_file.stat().st_size,
+                    "url": f"text/{committee_key}/{text_file.name}",
+                }
     return manifest
 
 
@@ -418,6 +445,7 @@ def compute_audit():
         "no_pdf_url":                 0,
     }
     text_root = DOCS / "text"
+    bundled_ids = _load_bundled_ids()
     for committee_key, committee_reports in reports.items():
         for r in committee_reports:
             counts["reports"] += 1
@@ -432,7 +460,9 @@ def compute_audit():
                 continue
             file_id = _file_id(ls, num)
             base = text_root / committee_key
-            if (base / f"{file_id}.txt").exists():
+            if f"{committee_key}|{file_id}" in bundled_ids:
+                counts["with_text"] += 1
+            elif (base / f"{file_id}.txt").exists():
                 counts["with_text"] += 1
             elif (base / f"{file_id}.ocr-failed").exists():
                 counts["ocr_failed_permanent"] += 1
@@ -792,9 +822,15 @@ def phase_derive():
     # shard is `<committee>|<file_id>` — needed because file_ids can repeat
     # across committees (each committee's LS16_10 is a different report).
     print("\n[Derive] Building text shards...")
+    # Only pass entries that have a fresh on-disk text file (transient,
+    # pre-bundle). Bundled entries (post-49538544) have no `url` field;
+    # write_text_shards's preservation logic carries them forward without
+    # needing them in `items`.
     items = []
     for committee, by_id in sorted(manifest["texts"].items()):
         for key, entry in sorted(by_id.items()):
+            if "url" not in entry:
+                continue
             items.append((f"{committee}|{key}", DOCS / entry["url"]))
     text_meta = write_text_shards(DOCS, items)
     t = text_meta["totals"]
