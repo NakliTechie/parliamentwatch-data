@@ -85,10 +85,17 @@ jobs:
         run: python build_debates.py
 
       - name: Commit and push primary changes
+        # `docs/debates/` covers reports-meta.json + reports-<house>-<NN>.json
+        # shards + text/, matching the in-flight checkpoint paths in
+        # build_debates.py since the 2026-05-12 sharding migration. The
+        # previous explicit `docs/debates/reports.json docs/debates/text/`
+        # broke on every cron firing because reports.json was renamed/deleted
+        # during sharding. Gitignored `pdfs/` won't be picked up by directory
+        # `git add` because gitignore wins.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/debates/reports.json docs/debates/text/
+          git add docs/debates/
           git diff --cached --quiet && echo "no primary changes" && exit 0
           git commit -m "Auto-update debates primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
