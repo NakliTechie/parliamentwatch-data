@@ -846,13 +846,11 @@ def compute_audit(reports: dict[str, list[dict]]) -> dict:
         "rs_ocr_failed_permanent":    0,
         "rs_never_attempted":         0,
     }
-    if not TEXT_DIR.exists():
-        counts["ls_never_attempted"] = counts["ls_records"]
-        counts["rs_never_attempted"] = counts["rs_records"]
-        return {
-            "audited_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "totals":     counts,
-        }
+    # No early-return when TEXT_DIR doesn't exist — bundled records
+    # still need to be counted. The marker-file checks below
+    # (Path.exists()) safely return False when TEXT_DIR is missing,
+    # so the audit just classifies non-bundled records as
+    # never_attempted as expected.
 
     bundled_ids: set = set()
     texts_meta_path = DOCS / "texts-meta.json"
