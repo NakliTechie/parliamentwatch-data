@@ -85,9 +85,41 @@ def write_text_shards(
     """
     corpus_docs_dir = Path(corpus_docs_dir)
     corpus_docs_dir.mkdir(parents=True, exist_ok=True)
+    items = list(items)  # materialize so we can iterate twice
+
+    # SHARD PRESERVATION: load existing shards' record contents so that
+    # records bundled in a previous run survive the next run even when
+    # text/<id>.txt is no longer on disk (post-2026-05-14 cleanup leaves
+    # text/ empty between scrape extractions; build_manifest's `texts`
+    # map reflects only newly-extracted records). Without this read,
+    # write_text_shards would wipe the existing bundle every run.
+    #
+    # Semantics: shards are append-only with respect to each record key.
+    # Once a record's content is in a shard, it stays until either:
+    #   (a) a fresh disk read of items[<key>] overwrites it this run, or
+    #   (b) the caller explicitly removes the key from items AND wipes
+    #       texts-meta.json (which we'd treat as a hard reset).
+    existing_records: dict = {}
+    existing_meta_path = corpus_docs_dir / _meta_filename()
+    if existing_meta_path.exists():
+        try:
+            with open(existing_meta_path, "r", encoding="utf-8") as f:
+                existing_meta = json.load(f)
+            for shard_entry in existing_meta.get("shards", []):
+                sp = corpus_docs_dir / shard_entry["file"]
+                if not sp.exists():
+                    continue
+                with open(sp, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+                for k, v in (payload.get("records") or {}).items():
+                    existing_records[k] = v
+        except (OSError, json.JSONDecodeError) as e:
+            print(f"  ! couldn't preload existing shards ({e}) — starting fresh")
+            existing_records = {}
 
     # Clean up previous shards. Preserve texts-meta.json (we overwrite
     # it below) — wildcard matches both shards and meta otherwise.
+    # Safe to remove now because we've cached existing_records above.
     for path in glob.glob(str(corpus_docs_dir / "texts-*.json")):
         if Path(path).name == _meta_filename():
             continue
@@ -109,6 +141,7 @@ def write_text_shards(
         "total_text_bytes": 0,
         "missing_files": 0,
         "skipped_oversize_no_r2": 0,
+        "from_existing_shards": 0,
     }
 
     def flush_shard() -> None:
@@ -133,50 +166,97 @@ def write_text_shards(
         cur_records = {}
         cur_bytes = 0
 
+    # Build the full set of (key → value) we want in the new shards.
+    # Strategy: start from existing-shard contents (preserves prior bundle),
+    # then overlay any items whose disk file exists (refreshes content).
+    # Records present in items but with no disk file fall back to existing
+    # content; records only in existing-shards (not in items at all) stay.
+    item_paths = {key: path for key, path in items}
+    final_records: dict = {}
+
+    # Pass 1: bring existing-shard records forward as-is.
+    for key, value in existing_records.items():
+        final_records[key] = value
+
+    # Pass 2: for items that have a fresh disk file, overwrite with the
+    # newly-extracted content. For items whose path doesn't exist,
+    # preserve the existing content (do nothing — already in final_records
+    # from pass 1).
     for key, path in items:
         if not path.exists():
-            totals["missing_files"] += 1
+            if key not in final_records:
+                # Not in any source — count as missing for the audit log.
+                totals["missing_files"] += 1
             continue
         try:
             data = path.read_bytes()
         except OSError:
-            totals["missing_files"] += 1
+            if key not in final_records:
+                totals["missing_files"] += 1
             continue
-
         size = len(data)
         if size > fallback_threshold:
             if r2_origin is None:
-                # No fallback configured — skip rather than overwhelm a shard.
                 totals["skipped_oversize_no_r2"] += 1
+                if key not in final_records:
+                    continue
+                # If existing has content, leave it as-is; don't replace with
+                # an oversize-skipped record.
                 continue
-            value = R2_SENTINEL
-            value_cost = SENTINEL_BUDGET_BYTES
+            final_records[key] = R2_SENTINEL
             totals["r2_fallback"] += 1
         else:
             try:
                 value = data.decode("utf-8")
             except UnicodeDecodeError:
-                # Shouldn't happen for our text/ files, but failing soft is
-                # better than aborting the whole derive.
-                totals["missing_files"] += 1
+                if key not in final_records:
+                    totals["missing_files"] += 1
                 continue
-            value_cost = size
+            final_records[key] = value
+        totals["total_text_bytes"] += size
 
-        # If adding this would push the shard past the target, flush first.
-        # (Exception: empty shard — even an oversize-but-not-fallback record
-        # gets its own shard. Shouldn't happen given fallback_threshold but
-        # keeps the loop honest.)
+    # Sort the merged keys for deterministic shard packing. Stable order
+    # ⇒ minimal shard diffs across runs (helps git delta + CF cache).
+    sorted_keys = sorted(final_records.keys())
+
+    # Pack into shards.
+    for key in sorted_keys:
+        value = final_records[key]
+        if isinstance(value, dict):  # R2 sentinel
+            value_cost = SENTINEL_BUDGET_BYTES
+        else:
+            value_cost = len(value.encode("utf-8")) if isinstance(value, str) else SENTINEL_BUDGET_BYTES
+
         if cur_records and cur_bytes + value_cost > target_bytes:
             flush_shard()
-
         cur_records[key] = value
         cur_bytes += value_cost
         record_to_shard[key] = len(shards)
         totals["records_with_text"] += 1
-        totals["total_text_bytes"] += size
 
     flush_shard()
     totals["shards"] = len(shards)
+    totals["from_existing_shards"] = len(existing_records) - sum(
+        1 for k in existing_records if k in item_paths and item_paths[k].exists()
+    )
+
+    # Clean up per-record .txt files now that they're bundled. Leaves
+    # the marker files (.pypdf-empty / .ocr-failed / .pypdf-error /
+    # .empty / .error) intact — those are the "we tried, this is the
+    # result" memory the extract phase needs to avoid re-attempting
+    # records that produced no text. Recursive glob so we catch both
+    # flat layouts (text/<id>.txt) and nested ones (text/<committee>/
+    # <fid>.txt, text/<house>/<fid>.txt).
+    text_root = corpus_docs_dir / "text"
+    removed_txt = 0
+    if text_root.exists():
+        for path in text_root.rglob("*.txt"):
+            try:
+                path.unlink()
+                removed_txt += 1
+            except OSError:
+                pass
+    totals["txt_files_removed"] = removed_txt
 
     meta = {
         "shard_size_target_bytes": target_bytes,
