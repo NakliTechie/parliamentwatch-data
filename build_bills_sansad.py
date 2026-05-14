@@ -908,7 +908,12 @@ def write_meta(records: list[dict], state: dict,
     See CONV.md "Split-phase scraping pattern".
     """
     in_cooldown, remaining = _is_in_cooldown(state)
-    with_text = sum(1 for r in records if (TEXT_DIR / f"{r['compositeId']}.txt").exists())
+    bundled_ids = _load_bundled_ids()
+    with_text = sum(
+        1 for r in records
+        if r.get("compositeId") in bundled_ids
+        or (TEXT_DIR / f"{r['compositeId']}.txt").exists()
+    )
     meta = {
         "scraper_version": SCRAPER_VERSION,
         "last_update": _now_iso(),
