@@ -1,37 +1,9 @@
 {
   "version": "1.0",
   "corpus": "lc",
-  "generated_at": "2026-05-14T01:29:53Z",
+  "generated_at": "2026-05-14T05:12:49Z",
   "total_reports": 287,
-  "total_with_text": 117,
-  "search_bundle": {
-    "shard_count": 1,
-    "shards": [
-      "search-bundle-00.json"
-    ],
-    "shard_sizes": {
-      "search-bundle-00.json": 639878
-    },
-    "total": 117,
-    "truncated": 117,
-    "head_chars": 5000,
-    "size_bytes": 639878,
-    "max_shard_bytes": 639878
-  },
-  "search_index": {
-    "shard_count": 1,
-    "shards": [
-      "search-index-00.json"
-    ],
-    "shard_sizes": {
-      "search-index-00.json": 787482
-    },
-    "report_count": 117,
-    "vocab_size": 20806,
-    "total_postings": 241465,
-    "size_bytes": 787482,
-    "max_shard_bytes": 787482,
-    "freq_cutoff_low": 2,
-    "freq_cutoff_high": 105
-  }
+  "total_with_text": 0,
+  "search_bundle": null,
+  "search_index": null
 }
