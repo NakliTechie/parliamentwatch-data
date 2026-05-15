@@ -25,7 +25,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
-from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers
+from parliamentwatch_text_shards import (
+    write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+)
 
 # Each corpus's outputs are scoped under `docs/<corpus>/`. DRSC is the
 # first corpus (this file); CAG and the others land in their own sibling
@@ -795,8 +797,8 @@ def write_meta(total_reports, total_with_text, bundle_stats=None, index_stats=No
         "search_bundle": bundle_stats,   # None if bundle wasn't built this run
         "search_index":  index_stats,    # None if index wasn't built this run
     }
-    with open(DOCS / "meta.json", "w") as f:
-        json.dump(meta, f, indent=2)
+    if not write_json_idempotent(DOCS / "meta.json", meta):
+        print("  [skip] meta.json unchanged (besides timestamp) — no commit churn")
     return meta
 
 
@@ -894,8 +896,8 @@ def phase_derive():
     print(json.dumps(meta, indent=2))
 
     audit = compute_audit()
-    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
-        json.dump(audit, f, indent=2)
+    if not write_json_idempotent(DOCS / "audit.json", audit):
+        print("  [skip] audit.json unchanged (besides timestamp)")
     t = audit["totals"]
     print(f"\n  audit: with_text={t['with_text']} "
           f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "

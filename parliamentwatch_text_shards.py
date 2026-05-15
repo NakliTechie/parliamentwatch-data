@@ -390,8 +390,18 @@ def consolidate_markers(
         "totals":  totals,
         "markers": final,
     }
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
+    # Idempotent: skip the markers.json write if only `generated_at`
+    # would change. Cuts CF build churn for corpora that are quiet
+    # between derive runs. See write_json_idempotent below.
+    wrote = write_json_idempotent(meta_path, out)
+    if not wrote:
+        # Preserve the on-disk file's actual generated_at in the return
+        # so audit / logs reflect "last real change", not "now".
+        try:
+            with open(meta_path, "r", encoding="utf-8") as f:
+                out["generated_at"] = json.load(f).get("generated_at", out["generated_at"])
+        except (OSError, json.JSONDecodeError):
+            pass
 
     # Delete the on-disk sidecars we just consolidated. (Defensive: only
     # delete paths we scanned this call — don't recursively unlink
@@ -420,3 +430,57 @@ def load_markers(corpus_docs_dir: Path) -> dict[str, str]:
             return dict((json.load(f).get("markers") or {}))
     except (OSError, json.JSONDecodeError):
         return {}
+
+
+# ── Idempotent JSON write: skip no-op timestamp-only changes ───────────────
+#
+# Every derive run writes meta.json / audit.json / markers.json with a
+# fresh `generated_at` (or `audited_at`) timestamp. If nothing else
+# changed, the file still diffs against origin/main, triggers a commit,
+# triggers a Cloudflare build — burning monthly build quota for no real
+# user-visible change. write_json_idempotent loads the existing file,
+# compares every key except the timestamp keys, and skips the write
+# entirely when the meaningful content matches.
+#
+# When the helper skips a write, the live mirror's `generated_at` stays
+# anchored to the last meaningful data change. The staleness indicator
+# in the SansadSaar app reads that timestamp; a "quiet" corpus with no
+# new data correctly shows the timestamp of the last real change rather
+# than a misleading "just rebuilt" timestamp on every cron tick.
+
+_DEFAULT_TIMESTAMP_KEYS: tuple = ("generated_at", "audited_at")
+
+
+def write_json_idempotent(
+    path,
+    content: dict,
+    *,
+    ignore_keys: tuple = _DEFAULT_TIMESTAMP_KEYS,
+    indent: int = 2,
+) -> bool:
+    """Write `content` to `path` as JSON, but skip the write if every
+    field besides those in `ignore_keys` matches the existing file.
+
+    Returns True if the file was written, False if it was a no-op skip.
+
+    Defaults ignore the standard "build-time" timestamp keys. Pass a
+    different `ignore_keys` to extend / override.
+
+    Falls back to writing on any read/parse error of the existing file
+    (safer to overwrite than to leave stale).
+    """
+    p = Path(path)
+    if p.exists():
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+            if isinstance(existing, dict) and isinstance(content, dict):
+                existing_check = {k: v for k, v in existing.items() if k not in ignore_keys}
+                new_check      = {k: v for k, v in content.items()  if k not in ignore_keys}
+                if existing_check == new_check:
+                    return False
+        except (OSError, json.JSONDecodeError):
+            pass   # fall through and write
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(content, f, ensure_ascii=False, indent=indent)
+    return True

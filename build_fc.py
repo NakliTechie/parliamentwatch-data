@@ -40,7 +40,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from fc.scraper import ...` works
 
-from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers
+from parliamentwatch_text_shards import (
+    write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+)
 from fc.scraper import (
     BASE_URL, REPORTS_API,
     COMMITTEES, DEFAULT_LOK_SABHAS,
@@ -714,8 +716,8 @@ def write_meta(*, total_reports: int, total_with_text: int,
         "search_bundle":   bundle_stats,
         "search_index":    index_stats,
     }
-    with open(META_JSON, "w", encoding="utf-8") as f:
-        json.dump(meta, f, indent=2)
+    if not write_json_idempotent(META_JSON, meta, ignore_keys=("generated_at", "elapsed_s")):
+        print("  [skip] meta.json unchanged (besides timestamp) — no commit churn")
     return meta
 
 
@@ -808,8 +810,8 @@ def phase_derive() -> None:
     print(json.dumps(meta, indent=2))
 
     audit = compute_audit(reports)
-    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
-        json.dump(audit, f, indent=2)
+    if not write_json_idempotent(DOCS / "audit.json", audit):
+        print("  [skip] audit.json unchanged (besides timestamp)")
     t = audit["totals"]
     print(f"\n  audit: with_text={t['with_text']} "
           f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "

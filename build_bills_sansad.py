@@ -47,7 +47,9 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))   # so `from bills.sansad.scraper import ...` works
 
-from parliamentwatch_text_shards import write_text_shards, consolidate_markers, load_markers  # noqa: E402
+from parliamentwatch_text_shards import (  # noqa: E402
+    write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+)
 from bills.sansad.scraper import (  # noqa: E402
     SCRAPER_VERSION,
     BILLS_API,
@@ -614,8 +616,8 @@ def write_index_meta(records: list[dict], shard_entries: list[dict]) -> None:
         },
         "shards": shard_entries,
     }
-    with open(INDEX_META_JSON, "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
+    if not write_json_idempotent(INDEX_META_JSON, meta):
+        print("  [skip] index-meta.json unchanged (besides timestamp)")
 
 
 def write_manifest(records: list[dict]) -> None:
@@ -940,8 +942,12 @@ def write_meta(records: list[dict], state: dict,
         "search_bundle": bundle_stats,   # None if no extracted texts yet
         "search_index":  index_stats,
     }
-    with open(META_JSON, "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
+    # Bills' meta carries `last_update` (from scraper_state) and
+    # `cooldown_remaining_seconds` (live computation). Neither is a
+    # plain timestamp, so leave them as comparison keys — the helper's
+    # default only ignores generated_at/audited_at.
+    if not write_json_idempotent(META_JSON, meta):
+        print("  [skip] meta.json unchanged — no commit churn")
 
 
 # ── Main ───────────────────────────────────────────────────────────────────
@@ -1063,8 +1069,8 @@ def phase_derive() -> int:
     print(f"  Wrote {len(shard_entries)} index shard(s) + index-meta.json + manifest.json + meta.json + search artefacts")
 
     audit = compute_audit(records)
-    with open(DOCS / "audit.json", "w", encoding="utf-8") as f:
-        json.dump(audit, f, indent=2)
+    if not write_json_idempotent(DOCS / "audit.json", audit):
+        print("  [skip] audit.json unchanged (besides timestamp)")
     t = audit["totals"]
     print(f"  audit: with_text={t['with_text']} "
           f"pypdf_empty={t['pypdf_empty_awaiting_ocr']} "
