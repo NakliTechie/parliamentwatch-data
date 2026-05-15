@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-15T04:07:27Z",
+  "generated_at": "2026-05-15T04:45:50Z",
   "totals": {
-    "pypdf-empty": 208,
-    "pypdf-error": 119,
+    "pypdf-empty": 213,
+    "pypdf-error": 127,
     "ocr-failed": 0
   },
   "markers": {
@@ -332,6 +332,19 @@
     "defence|LS16_29": "pypdf-error",
     "defence|LS16_28": "pypdf-error",
     "defence|LS17_11": "pypdf-error",
-    "rural_development|LS15_8": "pypdf-error"
+    "rural_development|LS15_8": "pypdf-error",
+    "commerce|LS14_147": "pypdf-empty",
+    "commerce|LS14_135": "pypdf-empty",
+    "commerce|LS14_131": "pypdf-empty",
+    "commerce|LS14_138": "pypdf-empty",
+    "commerce|LS14_139": "pypdf-empty",
+    "commerce|LS14_137": "pypdf-error",
+    "commerce|LS14_133": "pypdf-error",
+    "commerce|LS14_144": "pypdf-error",
+    "commerce|LS14_134": "pypdf-error",
+    "education|LS14_131": "pypdf-error",
+    "education|LS14_129": "pypdf-error",
+    "education|LS14_130": "pypdf-error",
+    "education|LS14_127": "pypdf-error"
   }
 }
