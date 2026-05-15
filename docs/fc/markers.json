@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-15T08:31:59Z",
+  "generated_at": "2026-05-15T11:39:29Z",
   "totals": {
-    "pypdf-empty": 200,
-    "pypdf-error": 0,
+    "pypdf-empty": 209,
+    "pypdf-error": 2,
     "ocr-failed": 0
   },
   "markers": {
@@ -205,6 +205,17 @@
     "pac|LS16_52": "pypdf-empty",
     "pac|LS16_23": "pypdf-empty",
     "pac|LS16_29": "pypdf-empty",
-    "pac|LS16_24": "pypdf-empty"
+    "pac|LS16_24": "pypdf-empty",
+    "estimates|LS16_15": "pypdf-empty",
+    "pac|LS16_8": "pypdf-empty",
+    "pac|LS15_74": "pypdf-empty",
+    "pac|LS14_35": "pypdf-empty",
+    "pac|LS15_59": "pypdf-empty",
+    "pac|LS16_22": "pypdf-empty",
+    "pac|LS15_58": "pypdf-empty",
+    "pac|LS15_31": "pypdf-empty",
+    "pac|LS16_13": "pypdf-empty",
+    "copu|LS14_4": "pypdf-error",
+    "copu|LS15_9": "pypdf-error"
   }
 }
