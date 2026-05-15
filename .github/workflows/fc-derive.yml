@@ -23,11 +23,16 @@ permissions:
   contents: write
 
 concurrency:
-  # cancel-in-progress: TRUE — older derives produce stale derived
-  # files; cancelling them in favour of a newer derive is strictly
-  # better.
-  group: fc-derive
-  cancel-in-progress: true
+  # Shared across all 5 parliamentwatch-data derive workflows
+  # (lc/drsc/fc/bills/cag) so they serialize at the repo level.
+  # Previously each had its own per-corpus group, but all five push
+  # to the same `main` and were exhausting the 10-attempt push-retry
+  # loop on overlapping triggers. With cancel-in-progress: false, a
+  # newly-triggered derive queues behind the running one (queue depth
+  # 1); the 30-min cron backstop catches anything that gets cancelled-
+  # while-pending.
+  group: parliamentwatch-derive
+  cancel-in-progress: false
 
 jobs:
   derive:
@@ -58,6 +63,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/fc/manifest.json docs/fc/markers.json docs/fc/meta.json docs/fc/texts-meta.json 'docs/fc/texts-*.json' docs/fc/audit.json \
                   docs/fc/search-bundle-*.json docs/fc/search-index-*.json
+          # Stage deletions of tracked files (e.g., per-record sidecar marker
+          # files consolidated into markers.json). Without this, the deletions
+          # remain unstaged and the next `git pull --rebase` aborts with
+          # "cannot pull with rebase: You have unstaged changes."
+          git add -u docs/fc/
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild FC derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
@@ -71,6 +81,7 @@ jobs:
             BUILD_PHASE=derive python build_fc.py
             git add docs/fc/manifest.json docs/fc/markers.json docs/fc/meta.json docs/fc/texts-meta.json 'docs/fc/texts-*.json' docs/fc/audit.json \
                     docs/fc/search-bundle-*.json docs/fc/search-index-*.json
+            git add -u docs/fc/
             git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
             git commit -m "Auto-rebuild FC derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           done

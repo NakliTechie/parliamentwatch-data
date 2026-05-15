@@ -37,13 +37,16 @@ permissions:
   contents: write
 
 concurrency:
-  # cancel-in-progress: TRUE for the derive group — older derive runs
-  # produce stale derived files (they'd be missing whatever primary
-  # writes landed in the meantime), so cancelling them in favor of a
-  # newer derive is strictly better. Net effect: at most one derive
-  # runs at a time, and it always sees the latest primary state.
-  group: cag-derive
-  cancel-in-progress: true
+  # Shared across all 5 parliamentwatch-data derive workflows
+  # (lc/drsc/fc/bills/cag) so they serialize at the repo level.
+  # Previously each had its own per-corpus group, but all five push
+  # to the same `main` and were exhausting the 10-attempt push-retry
+  # loop on overlapping triggers. With cancel-in-progress: false, a
+  # newly-triggered derive queues behind the running one (queue depth
+  # 1); the 30-min cron backstop catches anything that gets cancelled-
+  # while-pending.
+  group: parliamentwatch-derive
+  cancel-in-progress: false
 
 jobs:
   derive:
@@ -84,6 +87,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/cag/manifest.json docs/cag/markers.json docs/cag/meta.json docs/cag/texts-meta.json 'docs/cag/texts-*.json' docs/cag/audit.json \
                   docs/cag/search-bundle-*.json docs/cag/search-index-*.json
+          # Stage deletions of tracked files (e.g., per-record sidecar marker
+          # files consolidated into markers.json). Without this, the deletions
+          # remain unstaged and the next `git pull --rebase` aborts with
+          # "cannot pull with rebase: You have unstaged changes."
+          git add -u docs/cag/
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild CAG derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
@@ -97,6 +105,7 @@ jobs:
             BUILD_PHASE=derive python build_cag.py
             git add docs/cag/manifest.json docs/cag/markers.json docs/cag/meta.json docs/cag/audit.json docs/cag/texts-meta.json 'docs/cag/texts-*.json' \
                     docs/cag/search-bundle-*.json docs/cag/search-index-*.json
+            git add -u docs/cag/
             git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
             git commit -m "Auto-rebuild CAG derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           done

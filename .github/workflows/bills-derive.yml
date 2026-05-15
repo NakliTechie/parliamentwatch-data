@@ -27,8 +27,16 @@ permissions:
   contents: write
 
 concurrency:
-  group: bills-derive
-  cancel-in-progress: true
+  # Shared across all 5 parliamentwatch-data derive workflows
+  # (lc/drsc/fc/bills/cag) so they serialize at the repo level.
+  # Previously each had its own per-corpus group, but all five push
+  # to the same `main` and were exhausting the 10-attempt push-retry
+  # loop on overlapping triggers. With cancel-in-progress: false, a
+  # newly-triggered derive queues behind the running one (queue depth
+  # 1); the 30-min cron backstop catches anything that gets cancelled-
+  # while-pending.
+  group: parliamentwatch-derive
+  cancel-in-progress: false
 
 jobs:
   derive:
@@ -60,6 +68,11 @@ jobs:
           git add docs/bills/manifest.json docs/bills/markers.json docs/bills/meta.json docs/bills/texts-meta.json 'docs/bills/texts-*.json' docs/bills/audit.json \
                   docs/bills/index-*.json \
                   docs/bills/search-bundle-*.json docs/bills/search-index-*.json
+          # Stage deletions of tracked files (e.g., per-record sidecar marker
+          # files consolidated into markers.json). Without this, the deletions
+          # remain unstaged and the next `git pull --rebase` aborts with
+          # "cannot pull with rebase: You have unstaged changes."
+          git add -u docs/bills/
           git diff --cached --quiet && echo "no derived changes" && exit 0
           git commit -m "Auto-rebuild Bills derived files [$(date -u +%Y-%m-%dT%H:%MZ)]"
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
@@ -74,6 +87,7 @@ jobs:
             git add docs/bills/manifest.json docs/bills/markers.json docs/bills/meta.json docs/bills/texts-meta.json 'docs/bills/texts-*.json' docs/bills/audit.json docs/bills/index-meta.json \
                     docs/bills/index-*.json \
                     docs/bills/search-bundle-*.json docs/bills/search-index-*.json
+            git add -u docs/bills/
             git diff --cached --quiet && echo "nothing to commit after retry" && exit 0
             git commit -m "Auto-rebuild Bills derived files (retry $attempt) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           done
