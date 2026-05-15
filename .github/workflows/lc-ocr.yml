@@ -43,7 +43,12 @@ concurrency:
 jobs:
   ocr:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Bumped from 60 → 350 (just under GitHub's 6h hard ceiling) so a single
+    # workflow_dispatch with a high `max_ocr_per_run` can clear a large
+    # backlog in one run. The regular weekly cron still uses the default
+    # MAX_RUN_SECONDS=2700 (45 min) and only consumes a fraction of this
+    # budget, so the bump is harmless for scheduled firings.
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
