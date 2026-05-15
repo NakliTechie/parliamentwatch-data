@@ -46,12 +46,19 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # First-time push of cf-deploy on a heavy repo (text shards, full
+    # history) can take a few minutes; steady-state syncs run in seconds.
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0
+          # depth=1 is enough — we only need the current main HEAD SHA
+          # for `git rev-parse HEAD` + `git push`. The diff-summary
+          # `git log $CF_SHA..$MAIN_SHA` would fail at depth=1 (no
+          # access to $CF_SHA) but it's wrapped in `|| true` so the
+          # summary is best-effort, not blocking.
+          fetch-depth: 1
 
       - name: Fast-forward cf-deploy to main HEAD
         run: |
