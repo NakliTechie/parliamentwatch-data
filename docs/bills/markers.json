@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T04:42:09Z",
+  "generated_at": "2026-05-15T09:36:16Z",
   "totals": {
-    "pypdf-empty": 766,
+    "pypdf-empty": 791,
     "pypdf-error": 3,
     "ocr-failed": 0
   },
@@ -774,6 +774,31 @@
     "27_1998_L": "pypdf-empty",
     "29_1998_L": "pypdf-empty",
     "31_1998_L": "pypdf-empty",
-    "61_1998_L": "pypdf-empty"
+    "61_1998_L": "pypdf-empty",
+    "16_1998_L": "pypdf-empty",
+    "17_1998_L": "pypdf-empty",
+    "XXX_1995_R": "pypdf-empty",
+    "98_1993_L": "pypdf-empty",
+    "18_1998_L": "pypdf-empty",
+    "49_1996_L": "pypdf-empty",
+    "10_1998_L": "pypdf-empty",
+    "20_1998_L": "pypdf-empty",
+    "LXXIII_1993_R": "pypdf-empty",
+    "13_1998_L": "pypdf-empty",
+    "LXXVI_1994_R": "pypdf-empty",
+    "XLIII_1997_R": "pypdf-empty",
+    "20_1996_L": "pypdf-empty",
+    "15_1998_L": "pypdf-empty",
+    "XLIII_1996_R": "pypdf-empty",
+    "100_1996_L": "pypdf-empty",
+    "LXVI_1994_R": "pypdf-empty",
+    "XXII_1996_R": "pypdf-empty",
+    "12_1998_L": "pypdf-empty",
+    "XXXV_1994_R": "pypdf-empty",
+    "21_1998_L": "pypdf-empty",
+    "VII_1993_R": "pypdf-empty",
+    "82_1993_L": "pypdf-empty",
+    "IX_1994_R": "pypdf-empty",
+    "11_1998_L": "pypdf-empty"
   }
 }

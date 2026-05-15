@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-15T08:04:35Z",
+  "scraped_at": "2026-05-15T09:36:14Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
     "with_intro_pdf": 7464,
     "with_canonical_pdf": 7493,
-    "with_text": 4594,
+    "with_text": 4597,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -2121,6 +2121,9 @@
     },
     "149_2025_L": {
       "bundled": true
+    },
+    "14_1998_L": {
+      "url": "text/14_1998_L.txt"
     },
     "14_2007_L": {
       "bundled": true
@@ -7710,6 +7713,9 @@
     },
     "58_2024_L": {
       "bundled": true
+    },
+    "59_1993_L": {
+      "url": "text/59_1993_L.txt"
     },
     "59_2007_L": {
       "bundled": true
@@ -13338,6 +13344,9 @@
     },
     "XXXIV_2026_R": {
       "bundled": true
+    },
+    "XXXIX_1994_R": {
+      "url": "text/XXXIX_1994_R.txt"
     },
     "XXXIX_2006_R": {
       "bundled": true

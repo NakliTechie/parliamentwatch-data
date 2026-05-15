@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 4594,
+    "records_with_text": 4597,
     "shards": 20,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 36463,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 4594,
-    "txt_files_removed": 0
+    "txt_files_removed": 3
   },
   "shards": [
     {
@@ -31,12 +31,12 @@
     {
       "file": "texts-03.json",
       "count": 299,
-      "bytes": 4598073
+      "bytes": 4595066
     },
     {
       "file": "texts-04.json",
-      "count": 224,
-      "bytes": 4198303
+      "count": 225,
+      "bytes": 4208640
     },
     {
       "file": "texts-05.json",
@@ -76,12 +76,12 @@
     {
       "file": "texts-12.json",
       "count": 144,
-      "bytes": 4582821
+      "bytes": 4581288
     },
     {
       "file": "texts-13.json",
-      "count": 342,
-      "bytes": 4599061
+      "count": 343,
+      "bytes": 4602828
     },
     {
       "file": "texts-14.json",
@@ -105,13 +105,13 @@
     },
     {
       "file": "texts-18.json",
-      "count": 349,
-      "bytes": 4592916
+      "count": 347,
+      "bytes": 4600609
     },
     {
       "file": "texts-19.json",
-      "count": 145,
-      "bytes": 2264378
+      "count": 148,
+      "bytes": 2284539
     }
   ],
   "record_to_shard": {
@@ -812,6 +812,7 @@
     "149_2022_L": 3,
     "149_2024_L": 3,
     "149_2025_L": 3,
+    "14_1998_L": 3,
     "14_2007_L": 3,
     "14_2008_L": 3,
     "14_2009_L": 3,
@@ -850,7 +851,7 @@
     "152_2014_L": 3,
     "152_2015_L": 3,
     "152_2016_L": 3,
-    "152_2017_L": 3,
+    "152_2017_L": 4,
     "152_2018_L": 4,
     "152_2019_L": 4,
     "152_2021_L": 4,
@@ -2675,6 +2676,7 @@
     "58_2022_L": 12,
     "58_2023_L": 12,
     "58_2024_L": 12,
+    "59_1993_L": 12,
     "59_2007_L": 12,
     "59_2008_L": 12,
     "59_2009_L": 12,
@@ -2787,7 +2789,7 @@
     "64_2019_L": 12,
     "64_2020_L": 12,
     "64_2021_L": 12,
-    "64_2022_L": 12,
+    "64_2022_L": 13,
     "64_2023_L": 13,
     "64_2024_L": 13,
     "65_2007_L": 13,
@@ -4551,6 +4553,7 @@
     "XXXIV_2024_R": 18,
     "XXXIV_2025_R": 18,
     "XXXIV_2026_R": 18,
+    "XXXIX_1994_R": 18,
     "XXXIX_2006_R": 18,
     "XXXIX_2007_R": 18,
     "XXXIX_2008_R": 18,
@@ -4561,9 +4564,9 @@
     "XXXIX_2017_R": 18,
     "XXXIX_2018_R": 18,
     "XXXIX_2019_R": 18,
-    "XXXIX_2021_R": 18,
-    "XXXIX_2022_R": 18,
-    "XXXIX_2024_R": 18,
+    "XXXIX_2021_R": 19,
+    "XXXIX_2022_R": 19,
+    "XXXIX_2024_R": 19,
     "XXXIX_2025_R": 19,
     "XXXI_2006_R": 19,
     "XXXI_2008_R": 19,
