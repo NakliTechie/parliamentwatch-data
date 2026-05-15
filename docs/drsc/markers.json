@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-15T18:11:18Z",
+  "generated_at": "2026-05-15T21:47:04Z",
   "totals": {
-    "pypdf-empty": 265,
-    "pypdf-error": 137,
+    "pypdf-empty": 280,
+    "pypdf-error": 141,
     "ocr-failed": 0
   },
   "markers": {
@@ -407,6 +407,25 @@
     "commerce|LS14_67": "pypdf-error",
     "commerce|LS14_61": "pypdf-error",
     "commerce|LS14_66": "pypdf-error",
-    "commerce|LS14_70": "pypdf-error"
+    "commerce|LS14_70": "pypdf-error",
+    "commerce|LS14_44": "pypdf-empty",
+    "home_affairs|LS14_41": "pypdf-empty",
+    "education|LS14_42": "pypdf-empty",
+    "education|LS14_36": "pypdf-empty",
+    "education|LS14_43": "pypdf-empty",
+    "education|LS14_41": "pypdf-empty",
+    "education|LS14_38": "pypdf-empty",
+    "education|LS14_39": "pypdf-empty",
+    "education|LS14_44": "pypdf-empty",
+    "education|LS14_48": "pypdf-empty",
+    "education|LS14_50": "pypdf-empty",
+    "education|LS14_37": "pypdf-empty",
+    "education|LS14_47": "pypdf-empty",
+    "education|LS14_49": "pypdf-empty",
+    "education|LS14_40": "pypdf-empty",
+    "commerce|LS14_50": "pypdf-error",
+    "commerce|LS14_48": "pypdf-error",
+    "commerce|LS14_49": "pypdf-error",
+    "education|LS14_46": "pypdf-error"
   }
 }
