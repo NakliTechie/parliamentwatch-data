@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-15T10:50:54Z",
+  "scraped_at": "2026-05-15T14:50:52Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
@@ -10835,7 +10835,7 @@
       "bundled": true
     },
     "LXI_1992_R": {
-      "url": "text/LXI_1992_R.txt"
+      "bundled": true
     },
     "LXI_2006_R": {
       "bundled": true
