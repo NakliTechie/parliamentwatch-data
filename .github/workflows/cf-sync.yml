@@ -1,0 +1,81 @@
+name: CF deploy sync (main → cf-deploy)
+
+# Every 4 hours, fast-forward cf-deploy to match main's HEAD. Cloudflare
+# Workers Static Assets watches cf-deploy (configured in CF dashboard
+# → project → Settings → Production branch) and builds + deploys on
+# each new SHA there.
+#
+# This decouples build cadence from commit cadence: the 5 corpora
+# (DRSC + CAG + FC + LC + Bills) can each push to main on their own
+# scrape/derive schedules without consuming CF build quota; only this
+# workflow's pushes to cf-deploy trigger CF builds.
+#
+# Cadence rationale: 6 syncs/day per repo, 3 data repos → ~540 absolute
+# max builds/month across the org, comfortably under the 500/month free
+# tier when combined with write_json_idempotent (the helper that skips
+# no-op timestamp-only writes upstream of this workflow).
+#
+# Manual workflow_dispatch trigger is the escape hatch for urgent
+# deploys — fire it after a hotfix lands on main and the deploy is
+# live in ~30 seconds instead of waiting up to 4h.
+#
+# No-op safety: when no new commits have landed since the last sync,
+# `git push HEAD:cf-deploy` is a no-op (same SHA), CF sees no new ref
+# and doesn't build.
+#
+# Particularly relevant here: this repo carries the busiest push
+# footprint (5 corpus pipelines + a 30-min derive backstop), so the
+# sync model's savings are the most pronounced. See CONV.md
+# "Multi-corpus derive in one repo" for the corresponding write-path
+# fixes that complement this read-path batching.
+
+on:
+  schedule:
+    # 6 fires/day, offset :05 to avoid clustering at the top of the
+    # hour with the scrape/derive crons.
+    - cron: '5 0,4,8,12,16,20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cf-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fast-forward cf-deploy to main HEAD
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          MAIN_SHA="$(git rev-parse HEAD)"
+          CF_SHA="$(git ls-remote origin cf-deploy | awk '{print $1}')"
+          echo "main HEAD:       $MAIN_SHA"
+          echo "cf-deploy HEAD:  ${CF_SHA:-<unset>}"
+
+          if [ "$MAIN_SHA" = "$CF_SHA" ]; then
+            echo "No new commits since last sync — push would be a no-op."
+            echo "CF will not rebuild. Done."
+            exit 0
+          fi
+
+          if [ -n "$CF_SHA" ]; then
+            echo ""
+            echo "=== Commits deploying ==="
+            git log --oneline "$CF_SHA..$MAIN_SHA" | head -40 || true
+            echo "=========================="
+          fi
+
+          git push origin HEAD:cf-deploy
+          echo ""
+          echo "Synced cf-deploy → $MAIN_SHA"
