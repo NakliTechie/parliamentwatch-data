@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T04:45:50Z",
+  "generated_at": "2026-05-15T10:58:16Z",
   "totals": {
-    "pypdf-empty": 213,
+    "pypdf-empty": 222,
     "pypdf-error": 127,
     "ocr-failed": 0
   },
@@ -345,6 +345,15 @@
     "education|LS14_131": "pypdf-error",
     "education|LS14_129": "pypdf-error",
     "education|LS14_130": "pypdf-error",
-    "education|LS14_127": "pypdf-error"
+    "education|LS14_127": "pypdf-error",
+    "transport|LS14_101": "pypdf-empty",
+    "commerce|LS14_100": "pypdf-empty",
+    "commerce|LS14_105": "pypdf-empty",
+    "commerce|LS14_102": "pypdf-empty",
+    "industry|LS14_98": "pypdf-empty",
+    "industry|LS14_103": "pypdf-empty",
+    "education|LS14_108": "pypdf-empty",
+    "education|LS14_115": "pypdf-empty",
+    "education|LS14_100": "pypdf-empty"
   }
 }
