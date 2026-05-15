@@ -1,88 +1,90 @@
-name: CF deploy sync (main → cf-deploy)
+name: CF deploy (wrangler, 4h cadence)
 
-# Every 4 hours, fast-forward cf-deploy to match main's HEAD. Cloudflare
-# Workers Static Assets watches cf-deploy (configured in CF dashboard
-# → project → Settings → Production branch) and builds + deploys on
-# each new SHA there.
+# Every 4 hours, deploy the latest main HEAD to Cloudflare Workers
+# Static Assets via wrangler. Single-branch model — we never push to
+# any other branch; only main + a `last-cf-deploy` tag are maintained
+# in this repo.
 #
-# This decouples build cadence from commit cadence: the 5 corpora
-# (DRSC + CAG + FC + LC + Bills) can each push to main on their own
-# scrape/derive schedules without consuming CF build quota; only this
-# workflow's pushes to cf-deploy trigger CF builds.
+# Why wrangler instead of GitHub-integrated deploys: per-push builds
+# burn the monthly free CF build quota on no-op timestamp-only
+# changes. By batching deploys to every 4 h AND skipping when main
+# hasn't advanced since the last deploy, the worst-case build cost
+# falls from ~2,400/month to ~360/month across all three data repos.
 #
-# Cadence rationale: 6 syncs/day per repo, 3 data repos → ~540 absolute
-# max builds/month across the org, comfortably under the 500/month free
-# tier when combined with write_json_idempotent (the helper that skips
-# no-op timestamp-only writes upstream of this workflow).
+# This repo carries the busiest push footprint (5 corpora × 2-3
+# workflows each + a 30-min derive backstop), so the savings here
+# are the most pronounced.
+#
+# Skip-if-unchanged: the last successfully-deployed SHA is recorded
+# in the `last-cf-deploy` git tag. If main HEAD matches the tag, we
+# skip the wrangler call entirely. With write_json_idempotent
+# upstream (no-op derive runs produce no commits at all), this is
+# the common case.
 #
 # Manual workflow_dispatch trigger is the escape hatch for urgent
-# deploys — fire it after a hotfix lands on main and the deploy is
-# live in ~30 seconds instead of waiting up to 4h.
+# deploys.
 #
-# No-op safety: when no new commits have landed since the last sync,
-# `git push HEAD:cf-deploy` is a no-op (same SHA), CF sees no new ref
-# and doesn't build.
+# Required repo secrets:
+#   - CLOUDFLARE_API_TOKEN   (Workers Scripts: Edit + Workers R2
+#                             Storage: Edit, per existing r2-sync.yml)
+#   - CLOUDFLARE_ACCOUNT_ID
 #
-# Particularly relevant here: this repo carries the busiest push
-# footprint (5 corpus pipelines + a 30-min derive backstop), so the
-# sync model's savings are the most pronounced. See CONV.md
-# "Multi-corpus derive in one repo" for the corresponding write-path
-# fixes that complement this read-path batching.
+# Required CF dashboard state: the project's GitHub integration must
+# be disconnected (or the production branch pointed at a parked branch
+# that nobody pushes to), so this workflow is the only source of
+# deploys.
 
 on:
   schedule:
-    # 6 fires/day, offset :05 to avoid clustering at the top of the
-    # hour with the scrape/derive crons.
     - cron: '5 0,4,8,12,16,20 * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write   # write needed to push the last-cf-deploy tag
 
 concurrency:
-  group: cf-sync
+  group: cf-deploy
   cancel-in-progress: true
 
 jobs:
-  sync:
+  deploy:
     runs-on: ubuntu-latest
-    # First-time push of cf-deploy on a heavy repo (text shards, full
-    # history) can take a few minutes; steady-state syncs run in seconds.
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-          # depth=1 is enough — we only need the current main HEAD SHA
-          # for `git rev-parse HEAD` + `git push`. The diff-summary
-          # `git log $CF_SHA..$MAIN_SHA` would fail at depth=1 (no
-          # access to $CF_SHA) but it's wrapped in `|| true` so the
-          # summary is best-effort, not blocking.
           fetch-depth: 1
 
-      - name: Fast-forward cf-deploy to main HEAD
+      - name: Check if main has advanced since last deploy
+        id: check
+        run: |
+          git fetch origin --tags --quiet || true
+          DEPLOYED="$(git rev-parse refs/tags/last-cf-deploy 2>/dev/null || echo none)"
+          MAIN="$(git rev-parse HEAD)"
+          echo "main HEAD:           $MAIN"
+          echo "last-cf-deploy tag:  $DEPLOYED"
+          if [ "$DEPLOYED" = "$MAIN" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "No new commits since last deploy — skipping wrangler call."
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "Will deploy."
+          fi
+
+      - name: Deploy to Cloudflare Workers (wrangler)
+        if: steps.check.outputs.skip != 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+
+      - name: Record the deployed SHA as last-cf-deploy tag
+        if: steps.check.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          MAIN_SHA="$(git rev-parse HEAD)"
-          CF_SHA="$(git ls-remote origin cf-deploy | awk '{print $1}')"
-          echo "main HEAD:       $MAIN_SHA"
-          echo "cf-deploy HEAD:  ${CF_SHA:-<unset>}"
-
-          if [ "$MAIN_SHA" = "$CF_SHA" ]; then
-            echo "No new commits since last sync — push would be a no-op."
-            echo "CF will not rebuild. Done."
-            exit 0
-          fi
-
-          if [ -n "$CF_SHA" ]; then
-            echo ""
-            echo "=== Commits deploying ==="
-            git log --oneline "$CF_SHA..$MAIN_SHA" | head -40 || true
-            echo "=========================="
-          fi
-
-          git push origin HEAD:cf-deploy
-          echo ""
-          echo "Synced cf-deploy → $MAIN_SHA"
+          git tag -f last-cf-deploy HEAD
+          git push -f origin refs/tags/last-cf-deploy
+          echo "Tagged $(git rev-parse HEAD) as last-cf-deploy."
