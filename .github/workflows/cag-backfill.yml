@@ -37,7 +37,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Bumped from 60 → 300. Recent runs were consistently hitting the
+    # 60-min job cap before the script's MAX_RUN_SECONDS=2700 (45 min)
+    # internal wall-clock check could fire — likely a few slow PDF
+    # downloads per run pushing past the budget. 300 is the safety
+    # net; the script's own MAX_RUN_SECONDS still does the actual
+    # stopping for healthy runs. Audit 2026-05-15: 8/8 recent runs
+    # cancelled at exactly the 60-min mark before this fix.
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
 
