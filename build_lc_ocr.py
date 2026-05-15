@@ -41,6 +41,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
+from parliamentwatch_text_shards import load_markers
+
 # ── Paths ───────────────────────────────────────────────────────────────────
 
 ASSETS    = ROOT / "docs"
@@ -145,31 +147,51 @@ TESSERACT_LANGS = os.environ.get("TESSERACT_LANGS", "eng+hin")
 
 def find_ocr_candidates(reports: dict[int, dict]) -> list[tuple[int, str]]:
     """Walk reports.json for any report with a pdf_url that has neither a
-    text/<id>.txt nor a text/<id>.ocr-failed tombstone AND has a
-    text/<id>.pypdf-empty marker (i.e. pypdf already confirmed scanned-only).
+    text/<id>.txt nor an .ocr-failed tombstone AND has a .pypdf-empty
+    marker (i.e. pypdf already confirmed scanned-only).
     Returns [(id, pdf_url), ...] sorted newest-first (highest report_number
     wins — LC numbers are monotonic across the whole corpus).
+
+    Marker source-of-truth: docs/lc/markers.json (post-derive
+    consolidation), with on-disk sidecars as a fallback for the brief
+    window between a fresh scrape commit and the next derive run. The
+    consolidation step in lc-derive.yml deletes the per-record sidecars
+    from disk after merging them into markers.json — historically this
+    function only checked sidecars, which made it find zero candidates
+    once the corpus had been derive'd. Now it reads markers.json the
+    same way build_lc.py does. See CONV.md "Per-attempt status markers"
+    for the consolidation semantics.
 
     pdfs/ is gitignored, so on a fresh runner we don't have local PDFs
     cached. The slow lane downloads each candidate's PDF before OCR'ing.
     """
-    # Per-attempt markers (see CONV.md "Per-attempt status markers"):
-    # an OCR candidate is one where pypdf already confirmed the PDF is
-    # scanned-only or encrypted (the .pypdf-empty marker exists) AND we
-    # haven't already extracted text via tesseract (.txt) or marked it
-    # permanently OCR-failed (.ocr-failed). This narrows the OCR target
-    # set to exactly the population OCR is designed to fix.
+    # Consolidated markers — single source of truth post-derive. Empty
+    # dict if markers.json doesn't exist yet (pre-first-derive corpus).
+    bundled_markers = load_markers(DOCS)
+
     candidates: list[tuple[int, str]] = []
     for rid, meta in reports.items():
         pdf_url = meta.get("pdf_url")
         if not pdf_url:
             continue
-        text_path        = TEXT_DIR / f"{rid}.txt"
-        ocr_failed_path  = TEXT_DIR / f"{rid}.ocr-failed"
-        pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
-        if text_path.exists() or ocr_failed_path.exists():
+        cid = str(rid)
+        # Permanent skips: already extracted (.txt) or tombstoned
+        # (.ocr-failed). Check both markers.json and on-disk sidecar —
+        # sidecars only exist transiently in the pre-derive window after
+        # a fresh OCR run wrote them but the next derive hasn't yet
+        # consolidated.
+        if (TEXT_DIR / f"{rid}.txt").exists():
             continue
-        if not pypdf_empty_path.exists():
+        if bundled_markers.get(cid) == "ocr-failed":
+            continue
+        if (TEXT_DIR / f"{rid}.ocr-failed").exists():
+            continue
+        # Positive signal: pypdf-empty marker (in either source).
+        is_pypdf_empty = (
+            bundled_markers.get(cid) == "pypdf-empty"
+            or (TEXT_DIR / f"{rid}.pypdf-empty").exists()
+        )
+        if not is_pypdf_empty:
             continue   # let the daily run try pypdf first
         candidates.append((rid, pdf_url))
     candidates.sort(key=lambda c: -c[0])
@@ -251,6 +273,17 @@ def main():
     print(f"  candidates: {len(candidates)} (out of {len(reports)} total reports)")
     if not candidates:
         print("  nothing to do — all reports already have text or are tombstoned")
+        # Emit outputs even on early exit so the workflow's chain step
+        # has explicit '0' values to compare (an empty output string
+        # would let `outputs.x != '0'` evaluate true and create a loop).
+        gh_output_path = os.environ.get("GITHUB_OUTPUT")
+        if gh_output_path:
+            try:
+                with open(gh_output_path, "a", encoding="utf-8") as f:
+                    f.write("processed=0\n")
+                    f.write("remaining=0\n")
+            except OSError:
+                pass
         return
 
     target = candidates[:MAX_OCR_PER_RUN]
@@ -360,6 +393,30 @@ def main():
         )
 
     print(f"\n  succeeded: {len(succeeded)} · failed (tombstoned): {len(failed)} · timed out: {len(timed_out)}")
+
+    # Emit progress to GITHUB_OUTPUT so the workflow can chain another
+    # OCR run when (a) we made progress AND (b) backlog remains. See
+    # the "Chain another OCR run" step in .github/workflows/lc-ocr.yml.
+    # Re-run find_ocr_candidates against the post-run disk state so the
+    # remaining count reflects what we just wrote (.txt + .ocr-failed
+    # files cause records to be excluded from the new candidate set).
+    processed = len(succeeded) + len(failed)
+    try:
+        remaining = len(find_ocr_candidates(reports))
+    except Exception as e:
+        print(f"  (couldn't recount candidates for chain decision: {e})")
+        remaining = -1
+    gh_output_path = os.environ.get("GITHUB_OUTPUT")
+    if gh_output_path:
+        try:
+            with open(gh_output_path, "a", encoding="utf-8") as f:
+                f.write(f"processed={processed}\n")
+                f.write(f"remaining={remaining}\n")
+            print(f"  workflow outputs: processed={processed} remaining={remaining}")
+        except OSError as e:
+            print(f"  (couldn't write GITHUB_OUTPUT: {e})")
+    else:
+        print(f"  workflow outputs (local run): processed={processed} remaining={remaining}")
 
     # Note: this slow lane deliberately does NOT regenerate manifest /
     # bundle / index / meta. The lc-derive.yml workflow_run + cron backstop

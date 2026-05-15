@@ -28,6 +28,10 @@ on:
 
 permissions:
   contents: write
+  # Needed for the end-of-workflow chain step that fires another
+  # workflow_dispatch when the manual sprint hits the budget cap but
+  # backlog remains. See "Chain another OCR run if backlog remains" below.
+  actions: write
 
 concurrency:
   # Same group as lc.yml. Both the daily run (pypdf) and OCR (tesseract)
@@ -110,6 +114,7 @@ jobs:
           fi
 
       - name: OCR scanned PDFs
+        id: ocr_run
         env:
           MAX_OCR_PER_RUN:    ${{ inputs.max_ocr_per_run    || '5' }}
           MAX_RUN_SECONDS:    ${{ inputs.max_run_seconds    || '2700' }}
@@ -147,3 +152,37 @@ jobs:
           git commit -m "Auto-update LC OCR data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push
+
+      - name: Chain another OCR run if backlog remains
+        # Sprint-completion mechanism. Only runs when this workflow was
+        # triggered manually (workflow_dispatch) — never on the weekly
+        # cron — and only re-fires when we made progress this run AND
+        # there's still backlog. Self-terminates when:
+        #   - remaining=0  → backlog cleared, no chain
+        #   - processed=0  → no progress made (e.g., all candidates
+        #                    were heavy and timed out), abort to avoid
+        #                    a no-op loop
+        #   - any earlier step fails → workflow ends in failure, no chain
+        # See build_lc_ocr.py main() for the GITHUB_OUTPUT emit that
+        # drives the gate.
+        if: >-
+          success()
+          && github.event_name == 'workflow_dispatch'
+          && steps.ocr_run.outputs.processed != '0'
+          && steps.ocr_run.outputs.processed != ''
+          && steps.ocr_run.outputs.remaining != '0'
+          && steps.ocr_run.outputs.remaining != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "OCR progress this run: processed=${{ steps.ocr_run.outputs.processed }} remaining=${{ steps.ocr_run.outputs.remaining }}"
+          echo "Chaining another OCR run to continue the backfill."
+          # Pass the same sprint-sized inputs through to the chained run
+          # so it keeps the big budget instead of falling back to the
+          # weekly-cron defaults.
+          gh workflow run lc-ocr.yml \
+            -R ${{ github.repository }} \
+            --field max_ocr_per_run=${{ inputs.max_ocr_per_run    || '200'   }} \
+            --field max_run_seconds=${{ inputs.max_run_seconds   || '20400' }} \
+            --field max_pages_per_pdf=${{ inputs.max_pages_per_pdf || '400' }} \
+            --field render_dpi=${{ inputs.render_dpi              || '150' }}
