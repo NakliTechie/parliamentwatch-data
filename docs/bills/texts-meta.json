@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 4597,
+    "records_with_text": 4598,
     "shards": 20,
     "r2_fallback": 0,
-    "total_text_bytes": 36463,
+    "total_text_bytes": 2200,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
-    "from_existing_shards": 4594,
-    "txt_files_removed": 3
+    "from_existing_shards": 4597,
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -96,12 +96,12 @@
     {
       "file": "texts-16.json",
       "count": 244,
-      "bytes": 4596788
+      "bytes": 4594724
     },
     {
       "file": "texts-17.json",
-      "count": 332,
-      "bytes": 4499866
+      "count": 333,
+      "bytes": 4504170
     },
     {
       "file": "texts-18.json",
@@ -3716,6 +3716,7 @@
     "LXIX_2023_R": 16,
     "LXIX_2024_R": 16,
     "LXIX_2025_R": 16,
+    "LXI_1992_R": 16,
     "LXI_2006_R": 16,
     "LXI_2008_R": 16,
     "LXI_2010_R": 16,
@@ -3884,7 +3885,7 @@
     "LX_2018_R": 16,
     "LX_2019_R": 16,
     "LX_2022_R": 16,
-    "LX_2024_R": 16,
+    "LX_2024_R": 17,
     "LX_2025_R": 17,
     "L_2008_R": 17,
     "L_2009_R": 17,
