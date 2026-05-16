@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T06:52:25Z",
+  "generated_at": "2026-05-16T10:10:29Z",
   "totals": {
-    "pypdf-empty": 320,
+    "pypdf-empty": 334,
     "pypdf-error": 145,
     "ocr-failed": 0
   },
@@ -470,6 +470,20 @@
     "education|LS14_18": "pypdf-empty",
     "education|LS14_25": "pypdf-empty",
     "health|LS14_25": "pypdf-error",
-    "education|LS14_20": "pypdf-error"
+    "education|LS14_20": "pypdf-error",
+    "energy|LS14_15": "pypdf-empty",
+    "energy|LS14_16": "pypdf-empty",
+    "energy|LS14_14": "pypdf-empty",
+    "energy|LS14_10": "pypdf-empty",
+    "energy|LS14_8": "pypdf-empty",
+    "energy|LS14_12": "pypdf-empty",
+    "energy|LS14_9": "pypdf-empty",
+    "energy|LS14_13": "pypdf-empty",
+    "energy|LS14_11": "pypdf-empty",
+    "education|LS14_15": "pypdf-empty",
+    "education|LS14_16": "pypdf-empty",
+    "education|LS14_14": "pypdf-empty",
+    "education|LS14_13": "pypdf-empty",
+    "industry|LS14_15": "pypdf-empty"
   }
 }
