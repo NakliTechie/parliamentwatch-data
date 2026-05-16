@@ -1,8 +1,20 @@
-# Static-assets deploy config for the data mirror. No worker code.
+# Worker + Static Assets deploy config for the data mirror.
+#
+# Why a Worker now (was pure static assets until 2026-05-16):
+# wrangler-deployed Workers Static Assets doesn't process `_headers`
+# the way CF Pages or the legacy GitHub-integrated build did. After
+# the cf-sync migration to wrangler, CORS stopped being applied to
+# responses, breaking cross-origin fetches from
+# sansadsaar.naklitechie.com to this mirror. src/index.js wraps the
+# assets handler and injects `Access-Control-Allow-Origin: *` (plus
+# the GET/HEAD/OPTIONS allowed-methods bits) on every response. See
+# src/index.js for the full rationale.
 
 name = "sansad-files"
+main = "src/index.js"
 compatibility_date = "2026-05-09"
 
 [assets]
 directory = "./docs"
+binding = "ASSETS"
 not_found_handling = "404-page"
