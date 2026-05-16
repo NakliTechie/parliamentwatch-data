@@ -86,6 +86,13 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Pin wrangler 4 so [assets] supports `run_worker_first` and
+          # `binding`. wrangler 3 silently drops these as unknown fields
+          # and the Worker never gets to intercept asset requests —
+          # which broke CORS on 2026-05-16 (incognito users hit
+          # "Failed to fetch" because no ACAO header). See
+          # src/index.js + wrangler.toml.
+          wranglerVersion: '4'
           command: deploy
 
       - name: Record the deployed SHA as last-cf-deploy tag
