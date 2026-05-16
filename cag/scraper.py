@@ -6,7 +6,13 @@ server-side and re-publishes the data with CORS-friendly headers.
 Site shape:
   LISTING : https://cag.gov.in/en/audit-report?page=<N>      # 10/page, default newest first
   DETAIL  : https://cag.gov.in/en/audit-report/details/<id>
-  PDF     : https://cag.gov.in/uploads/download_audit_report/<year>/<filename>.pdf
+  PDF     : https://cag.gov.in/webroot/uploads/download_audit_report/<year>/<filename>.pdf
+            (cag.gov.in moved the PDF asset root from /uploads/ to
+             /webroot/uploads/ circa late 2025; older listing HTML and
+             stale reports.json entries with /uploads/ now 302 → 404.
+             _normalize_pdf_url() rewrites both shapes to the canonical
+             form; the one-shot migration of docs/cag/reports.json was
+             committed in this same change.)
 
 The corpus is ~2,710 reports total (page 1..271). Year filtering via URL
 params is broken (?year=N is silently ignored); we derive year from the
@@ -168,8 +174,19 @@ _LABEL_RE     = re.compile(
     r'<div class="labelItemBold">\s*(.+?)\s*</div>',
     re.DOTALL,
 )
+# PDF link regex.
+#
+# Captures BOTH the historical absolute-URL form
+#   https://cag.gov.in/uploads/download_audit_report/<year>/<file>.pdf
+# AND the new path scheme cag.gov.in switched to circa late 2025
+#   /webroot/uploads/download_audit_report/<year>/<file>.pdf  (relative)
+#
+# After capture, _normalize_pdf_url() rewrites either shape to the
+# canonical absolute https://cag.gov.in/webroot/uploads/... form so
+# downloads succeed. The non-capturing groups handle the optional
+# scheme/domain and the optional /webroot/ prefix.
 _PDF_RE       = re.compile(
-    r'href="(https://cag\.gov\.in/uploads/download_audit_report/[^"]+\.pdf)"',
+    r'href="((?:https://cag\.gov\.in)?/(?:webroot/)?uploads/download_audit_report/[^"]+\.pdf)"',
     re.IGNORECASE,
 )
 _FILESIZE_RE  = re.compile(r'\(([0-9.]+)\s*(KB|MB|GB)\)', re.IGNORECASE)
@@ -238,13 +255,55 @@ def _html_unescape_loop(s: str) -> str:
     """html.unescape only undoes one level of encoding. cag.gov.in
     occasionally emits double-encoded entities (`&amp;amp;` for `&`),
     so we loop until no further change. Bounded to avoid pathological
-    input loops."""
+    input loops.
+
+    NOTE: do NOT use this on PDF URLs — cag.gov.in's filesystem has
+    literal `&amp;` in J&K-style filenames, so the URL must KEEP the
+    `&amp;` (not decode it to `&`). Use `html.unescape(url)` exactly
+    once for PDF URLs (see _normalize_pdf_url below) so that `&amp;amp;`
+    → `&amp;` (which the server expects) and stops there.
+    """
     for _ in range(4):
         prev = s
         s = html.unescape(s)
         if s == prev:
             break
     return s
+
+
+def _normalize_pdf_url(raw_href: str) -> str:
+    """Normalize a PDF href captured from a CAG detail page into the
+    canonical downloadable URL.
+
+    Two shapes accepted:
+      - https://cag.gov.in/[webroot/]uploads/download_audit_report/...  (absolute)
+      - /[webroot/]uploads/download_audit_report/...                    (relative)
+
+    Two transforms applied:
+      1. Path migration: if /uploads/ without /webroot/, insert /webroot/.
+         cag.gov.in restructured the path scheme circa late 2025; the
+         old /uploads/ path now 302s to a non-existent /hi/ path → 404.
+      2. HTML unescape ONCE only. Server filenames with `&` are stored
+         as literal `&amp;`; the listing page HTML-encodes them once
+         more to `&amp;amp;`. Single unescape: `&amp;amp;` → `&amp;`
+         which matches the on-disk filename. Multi-level unescape would
+         strip down to `&` and 404. See _html_unescape_loop docstring.
+    """
+    url = html.unescape(raw_href)
+
+    # Make absolute.
+    if url.startswith("/"):
+        url = "https://cag.gov.in" + url
+
+    # Insert /webroot/ if the path is the old scheme.
+    if url.startswith("https://cag.gov.in/uploads/"):
+        url = url.replace(
+            "https://cag.gov.in/uploads/",
+            "https://cag.gov.in/webroot/uploads/",
+            1,
+        )
+
+    return url
 
 
 def parse_detail_html(report_id: int, html: str) -> CAGReport:
@@ -284,13 +343,14 @@ def parse_detail_html(report_id: int, html: str) -> CAGReport:
     if m:
         rep.report_type = m.group(1).strip()
 
-    # PDF link. unescape because the href attribute is HTML-encoded and
-    # some reports' URLs contain `&amp;amp;` for ampersands in their slugs
-    # (e.g. J&K reports). Apply twice in case of double-encoding.
+    # PDF link. _normalize_pdf_url handles (a) the relative vs absolute
+    # href shape, (b) the /uploads/ → /webroot/uploads/ migration cag.gov.in
+    # rolled out in late 2025, and (c) single-shot html.unescape that
+    # preserves `&amp;` in J&K-style filenames (the server's filesystem
+    # stores `&` as literal `&amp;` chars). See _normalize_pdf_url docstring.
     m = _PDF_RE.search(html)
     if m:
-        url = _html_unescape_loop(m.group(1))
-        rep.pdf_url = url
+        rep.pdf_url = _normalize_pdf_url(m.group(1))
 
     # File size — usually formatted as "(3.81 MB)" near the PDF link.
     m = _FILESIZE_RE.search(html)
