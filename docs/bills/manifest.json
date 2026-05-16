@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-15T21:41:14Z",
+  "scraped_at": "2026-05-16T04:15:19Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
     "with_intro_pdf": 7464,
     "with_canonical_pdf": 7493,
-    "with_text": 4598,
+    "with_text": 4604,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -7039,6 +7039,9 @@
     "45_2022_L": {
       "bundled": true
     },
+    "46_1990_L": {
+      "url": "text/46_1990_L.txt"
+    },
     "46_2006_L": {
       "bundled": true
     },
@@ -7663,6 +7666,9 @@
     "57_2022_L": {
       "bundled": true
     },
+    "58_1990_L": {
+      "url": "text/58_1990_L.txt"
+    },
     "58_2006_L": {
       "bundled": true
     },
@@ -8257,6 +8263,9 @@
     "68_2025_L": {
       "bundled": true
     },
+    "69_1990_L": {
+      "url": "text/69_1990_L.txt"
+    },
     "69_2006_L": {
       "bundled": true
     },
@@ -8482,6 +8491,9 @@
     "72_2026_L": {
       "bundled": true
     },
+    "73_1990_L": {
+      "url": "text/73_1990_L.txt"
+    },
     "73_2006_L": {
       "bundled": true
     },
@@ -8685,6 +8697,9 @@
     },
     "76_2025_L": {
       "bundled": true
+    },
+    "77_1990_L": {
+      "url": "text/77_1990_L.txt"
     },
     "77_2006_L": {
       "bundled": true
@@ -9606,6 +9621,9 @@
     },
     "93_2023_L": {
       "bundled": true
+    },
+    "94_1990_L": {
+      "url": "text/94_1990_L.txt"
     },
     "94_2007_L": {
       "bundled": true
