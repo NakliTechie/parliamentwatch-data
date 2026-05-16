@@ -18,3 +18,7 @@ compatibility_date = "2026-05-09"
 directory = "./docs"
 binding = "ASSETS"
 not_found_handling = "404-page"
+# Route every request through src/index.js BEFORE the asset server, so
+# the Worker can add CORS + intercept OPTIONS preflight. Without this,
+# the asset server replies first and the Worker never runs.
+run_worker_first = true
