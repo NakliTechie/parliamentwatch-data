@@ -49,7 +49,15 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Bumped from 15 → 60. parliamentwatch-data is the heaviest of the
+    # three data repos (5 corpora's text shards + manifests + reports
+    # JSONs in docs/), and wrangler-action's upload of the whole asset
+    # directory was consistently hitting the 15-min timeout, getting
+    # cancelled, and never producing a deploy. Audit 2026-05-16: 5/5
+    # most-recent runs cancelled at exactly the 15-min mark. The other
+    # two repos (gazettes, proceedings) are smaller and complete in
+    # <2 min; 15 is fine for them.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
