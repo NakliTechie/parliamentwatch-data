@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-16T08:31:36Z",
+  "scraped_at": "2026-05-16T10:05:39Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
     "with_intro_pdf": 7464,
     "with_canonical_pdf": 7493,
-    "with_text": 4647,
+    "with_text": 4672,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -31,6 +31,9 @@
     "max": 2026
   },
   "texts": {
+    "100_1989_L": {
+      "url": "text/100_1989_L.txt"
+    },
     "100_2006_L": {
       "bundled": true
     },
@@ -176,7 +179,7 @@
       "bundled": true
     },
     "103_1990_L": {
-      "url": "text/103_1990_L.txt"
+      "bundled": true
     },
     "103_2005_L": {
       "bundled": true
@@ -221,7 +224,7 @@
       "bundled": true
     },
     "104_1990_L": {
-      "url": "text/104_1990_L.txt"
+      "bundled": true
     },
     "104_2004_L": {
       "bundled": true
@@ -2809,6 +2812,9 @@
     "169_2022_L": {
       "bundled": true
     },
+    "16_1989_L": {
+      "url": "text/16_1989_L.txt"
+    },
     "16_2007_L": {
       "bundled": true
     },
@@ -3859,6 +3865,9 @@
     "209_2024_L": {
       "bundled": true
     },
+    "20_1989_L": {
+      "url": "text/20_1989_L.txt"
+    },
     "20_2005_L": {
       "bundled": true
     },
@@ -4096,6 +4105,9 @@
     "219_2022_L": {
       "bundled": true
     },
+    "21_1989_L": {
+      "url": "text/21_1989_L.txt"
+    },
     "21_2006_L": {
       "bundled": true
     },
@@ -4308,6 +4320,9 @@
     },
     "229_2022_L": {
       "bundled": true
+    },
+    "22_1989_L": {
+      "url": "text/22_1989_L.txt"
     },
     "22_2006_L": {
       "bundled": true
@@ -4963,6 +4978,9 @@
     "259_2024_L": {
       "bundled": true
     },
+    "25_1989_L": {
+      "url": "text/25_1989_L.txt"
+    },
     "25_2007_L": {
       "bundled": true
     },
@@ -5157,6 +5175,9 @@
     },
     "269_2024_L": {
       "bundled": true
+    },
+    "26_1989_L": {
+      "url": "text/26_1989_L.txt"
     },
     "26_2008_L": {
       "bundled": true
@@ -5359,6 +5380,9 @@
     "279_2024_L": {
       "bundled": true
     },
+    "27_1989_L": {
+      "url": "text/27_1989_L.txt"
+    },
     "27_2008_L": {
       "bundled": true
     },
@@ -5530,6 +5554,9 @@
     "289_2022_L": {
       "bundled": true
     },
+    "28_1989_L": {
+      "url": "text/28_1989_L.txt"
+    },
     "28_2008_L": {
       "bundled": true
     },
@@ -5688,6 +5715,9 @@
     },
     "299_2022_L": {
       "bundled": true
+    },
+    "29_1989_L": {
+      "url": "text/29_1989_L.txt"
     },
     "29_2006_L": {
       "bundled": true
@@ -5865,6 +5895,9 @@
     },
     "309_2016_L": {
       "bundled": true
+    },
+    "30_1989_L": {
+      "url": "text/30_1989_L.txt"
     },
     "30_2007_L": {
       "bundled": true
@@ -6511,6 +6544,9 @@
     "369_2019_L": {
       "bundled": true
     },
+    "36_1989_L": {
+      "url": "text/36_1989_L.txt"
+    },
     "36_1990_L": {
       "bundled": true
     },
@@ -6591,6 +6627,9 @@
     },
     "376_2019_L": {
       "bundled": true
+    },
+    "37_1989_L": {
+      "url": "text/37_1989_L.txt"
     },
     "37_1990_L": {
       "bundled": true
@@ -6865,6 +6904,9 @@
     "40_2025_L": {
       "bundled": true
     },
+    "41_1989_L": {
+      "url": "text/41_1989_L.txt"
+    },
     "41_2005_L": {
       "bundled": true
     },
@@ -6912,6 +6954,9 @@
     },
     "41_2024_L": {
       "bundled": true
+    },
+    "42_1989_L": {
+      "url": "text/42_1989_L.txt"
     },
     "42_2006_L": {
       "bundled": true
@@ -6967,6 +7012,9 @@
     "42_2025_L": {
       "bundled": true
     },
+    "43_1989_L": {
+      "url": "text/43_1989_L.txt"
+    },
     "43_2006_L": {
       "bundled": true
     },
@@ -7012,6 +7060,9 @@
     "43_2025_L": {
       "bundled": true
     },
+    "44_1989_L": {
+      "url": "text/44_1989_L.txt"
+    },
     "44_2007_L": {
       "bundled": true
     },
@@ -7056,6 +7107,9 @@
     },
     "44_2024_L": {
       "bundled": true
+    },
+    "45_1989_L": {
+      "url": "text/45_1989_L.txt"
     },
     "45_1990_L": {
       "bundled": true
@@ -7104,6 +7158,9 @@
     },
     "45_2022_L": {
       "bundled": true
+    },
+    "46_1989_L": {
+      "url": "text/46_1989_L.txt"
     },
     "46_1990_L": {
       "bundled": true
@@ -7165,6 +7222,9 @@
     "46_2025_L": {
       "bundled": true
     },
+    "47_1989_L": {
+      "url": "text/47_1989_L.txt"
+    },
     "47_2006_L": {
       "bundled": true
     },
@@ -7218,6 +7278,9 @@
     },
     "47_2024_L": {
       "bundled": true
+    },
+    "48_1989_L": {
+      "url": "text/48_1989_L.txt"
     },
     "48_2004_L": {
       "bundled": true
@@ -7283,7 +7346,7 @@
       "bundled": true
     },
     "49_1989_L": {
-      "url": "text/49_1989_L.txt"
+      "bundled": true
     },
     "49_2004_L": {
       "bundled": true
@@ -7385,7 +7448,7 @@
       "bundled": true
     },
     "50_1989_L": {
-      "url": "text/50_1989_L.txt"
+      "bundled": true
     },
     "50_2006_L": {
       "bundled": true
@@ -7472,7 +7535,7 @@
       "bundled": true
     },
     "52_1989_L": {
-      "url": "text/52_1989_L.txt"
+      "bundled": true
     },
     "52_2007_L": {
       "bundled": true
@@ -7616,7 +7679,7 @@
       "bundled": true
     },
     "55_1989_L": {
-      "url": "text/55_1989_L.txt"
+      "bundled": true
     },
     "55_2008_L": {
       "bundled": true
@@ -7745,7 +7808,7 @@
       "bundled": true
     },
     "58_1989_L": {
-      "url": "text/58_1989_L.txt"
+      "bundled": true
     },
     "58_1990_L": {
       "bundled": true
@@ -7802,7 +7865,7 @@
       "bundled": true
     },
     "59_1989_L": {
-      "url": "text/59_1989_L.txt"
+      "bundled": true
     },
     "59_1993_L": {
       "bundled": true
@@ -7895,7 +7958,7 @@
       "bundled": true
     },
     "60_1989_L": {
-      "url": "text/60_1989_L.txt"
+      "bundled": true
     },
     "60_2006_L": {
       "bundled": true
@@ -7955,7 +8018,7 @@
       "bundled": true
     },
     "61_1989_L": {
-      "url": "text/61_1989_L.txt"
+      "bundled": true
     },
     "61_2006_L": {
       "bundled": true
@@ -8015,7 +8078,7 @@
       "bundled": true
     },
     "62_1989_L": {
-      "url": "text/62_1989_L.txt"
+      "bundled": true
     },
     "62_2002_L": {
       "bundled": true
@@ -8069,7 +8132,7 @@
       "bundled": true
     },
     "63_1989_L": {
-      "url": "text/63_1989_L.txt"
+      "bundled": true
     },
     "63_2007_L": {
       "bundled": true
@@ -8123,7 +8186,7 @@
       "bundled": true
     },
     "64_1989_L": {
-      "url": "text/64_1989_L.txt"
+      "bundled": true
     },
     "64_2008_L": {
       "bundled": true
@@ -8168,7 +8231,7 @@
       "bundled": true
     },
     "65_1989_L": {
-      "url": "text/65_1989_L.txt"
+      "bundled": true
     },
     "65_2007_L": {
       "bundled": true
@@ -8219,7 +8282,7 @@
       "bundled": true
     },
     "66_1989_L": {
-      "url": "text/66_1989_L.txt"
+      "bundled": true
     },
     "66_2007_L": {
       "bundled": true
@@ -8273,7 +8336,7 @@
       "bundled": true
     },
     "67_1989_L": {
-      "url": "text/67_1989_L.txt"
+      "bundled": true
     },
     "67_2007_L": {
       "bundled": true
@@ -8321,7 +8384,7 @@
       "bundled": true
     },
     "68_1989_L": {
-      "url": "text/68_1989_L.txt"
+      "bundled": true
     },
     "68_2005_L": {
       "bundled": true
@@ -8375,7 +8438,7 @@
       "bundled": true
     },
     "69_1989_L": {
-      "url": "text/69_1989_L.txt"
+      "bundled": true
     },
     "69_1990_L": {
       "bundled": true
@@ -8513,7 +8576,7 @@
       "bundled": true
     },
     "71_1989_L": {
-      "url": "text/71_1989_L.txt"
+      "bundled": true
     },
     "71_2007_L": {
       "bundled": true
@@ -9224,7 +9287,7 @@
       "bundled": true
     },
     "84_1989_L": {
-      "url": "text/84_1989_L.txt"
+      "bundled": true
     },
     "84_2009_L": {
       "bundled": true
@@ -9322,6 +9385,9 @@
     "85_2026_L": {
       "bundled": true
     },
+    "86_1988_L": {
+      "url": "text/86_1988_L.txt"
+    },
     "86_2007_L": {
       "bundled": true
     },
@@ -9360,6 +9426,9 @@
     },
     "86_2024_L": {
       "bundled": true
+    },
+    "87_1988_L": {
+      "url": "text/87_1988_L.txt"
     },
     "87_2007_L": {
       "bundled": true
@@ -9838,6 +9907,9 @@
     "95_2025_L": {
       "bundled": true
     },
+    "96_1988_L": {
+      "url": "text/96_1988_L.txt"
+    },
     "96_2006_L": {
       "bundled": true
     },
@@ -9880,8 +9952,11 @@
     "96_2025_L": {
       "bundled": true
     },
+    "97_1988_L": {
+      "url": "text/97_1988_L.txt"
+    },
     "97_1989_L": {
-      "url": "text/97_1989_L.txt"
+      "bundled": true
     },
     "97_2007_L": {
       "bundled": true
@@ -9929,7 +10004,7 @@
       "bundled": true
     },
     "98_1989_L": {
-      "url": "text/98_1989_L.txt"
+      "bundled": true
     },
     "98_2006_L": {
       "bundled": true
@@ -9983,7 +10058,7 @@
       "bundled": true
     },
     "99_1989_L": {
-      "url": "text/99_1989_L.txt"
+      "bundled": true
     },
     "99_2007_L": {
       "bundled": true
