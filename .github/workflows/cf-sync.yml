@@ -64,24 +64,15 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Check if main has advanced since last deploy
-        id: check
-        run: |
-          git fetch origin --tags --quiet || true
-          DEPLOYED="$(git rev-parse refs/tags/last-cf-deploy 2>/dev/null || echo none)"
-          MAIN="$(git rev-parse HEAD)"
-          echo "main HEAD:           $MAIN"
-          echo "last-cf-deploy tag:  $DEPLOYED"
-          if [ "$DEPLOYED" = "$MAIN" ]; then
-            echo "skip=true" >> $GITHUB_OUTPUT
-            echo "No new commits since last deploy — skipping wrangler call."
-          else
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "Will deploy."
-          fi
+      # Skip-if-unchanged removed for this repo on 2026-05-16. The
+      # `git fetch --tags` step was reliably stalling at >15 min on
+      # parliamentwatch-data's heavy history — making the cf-sync
+      # workflow useless. Unconditional deploys at the 4 h cadence
+      # = 180/month, well under quota. The marginal cost of an
+      # unchanged deploy is wrangler's `Found N new or modified
+      # static assets` check, which is fast (asset content hashes).
 
       - name: Deploy to Cloudflare Workers (wrangler)
-        if: steps.check.outputs.skip != 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -94,12 +85,3 @@ jobs:
           # src/index.js + wrangler.toml.
           wranglerVersion: '4'
           command: deploy
-
-      - name: Record the deployed SHA as last-cf-deploy tag
-        if: steps.check.outputs.skip != 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -f last-cf-deploy HEAD
-          git push -f origin refs/tags/last-cf-deploy
-          echo "Tagged $(git rev-parse HEAD) as last-cf-deploy."
