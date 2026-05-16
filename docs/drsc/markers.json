@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T10:10:29Z",
+  "generated_at": "2026-05-16T14:18:28Z",
   "totals": {
-    "pypdf-empty": 334,
+    "pypdf-empty": 340,
     "pypdf-error": 145,
     "ocr-failed": 0
   },
@@ -484,6 +484,12 @@
     "education|LS14_16": "pypdf-empty",
     "education|LS14_14": "pypdf-empty",
     "education|LS14_13": "pypdf-empty",
-    "industry|LS14_15": "pypdf-empty"
+    "industry|LS14_15": "pypdf-empty",
+    "commerce|LS14_1": "pypdf-empty",
+    "energy|LS14_3": "pypdf-empty",
+    "energy|LS14_4": "pypdf-empty",
+    "energy|LS14_6": "pypdf-empty",
+    "energy|LS14_5": "pypdf-empty",
+    "energy|LS14_7": "pypdf-empty"
   }
 }
