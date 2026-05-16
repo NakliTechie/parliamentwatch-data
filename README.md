@@ -1,14 +1,19 @@
 # parliamentwatch-data
 
-Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar). Hosts the five document-centric corpora: **DRSC committee reports**, **CAG audits**, **Bills**, **Law Commission reports**, **Financial Committee reports**.
+Static data mirror for [SansadSaar](https://github.com/NakliTechie/SansadSaar). Holds the document-centric corpora: **DRSC committee reports**, **CAG audits**, **Bills**, **Law Commission reports**, **Financial Committee reports**.
 
-Served at `sansadsaar-data.naklitechie.com` via Cloudflare Pages.
+Served at `sansadsaar-data.naklitechie.com`.
 
 ## Why a separate repo?
 
-The upstream sources don't permit cross-origin browser requests. This repo runs each corpus's scraper from GitHub Actions on a schedule and re-publishes JSON + text via a CORS-friendly endpoint, so the single-file SansadSaar app can read it without any backend.
+Upstream sources don't permit cross-origin browser requests. GitHub Actions scrapes each corpus on a schedule and re-publishes JSON + text at a CORS-friendly endpoint the SansadSaar app reads directly — no backend.
 
-The two high-volume person-centric corpora (debates + questions) and the Central Gazette corpus live in their own sibling repos to keep this one comfortably under Cloudflare Pages's per-deploy file count cap.
+## Family
+
+- [SansadSaar](https://github.com/NakliTechie/SansadSaar) — the app
+- [sansadsaar-proceedings-data](https://github.com/NakliTechie/sansadsaar-proceedings-data) — Debates, Questions
+- [sansadsaar-gazettes](https://github.com/NakliTechie/sansadsaar-gazettes) — Central Gazette
+- [sansadsaar-lc](https://github.com/NakliTechie/sansadsaar-lc) — Law Commission PDF archive
 
 ## Credits
 
