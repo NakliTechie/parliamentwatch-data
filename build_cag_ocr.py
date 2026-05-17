@@ -241,6 +241,24 @@ def ocr_pdf(pdf_path: Path, *, deadline: float) -> str | None:
     return full
 
 
+def _emit_chain_outputs(processed: int, remaining: int) -> None:
+    """Emit progress to $GITHUB_OUTPUT so the workflow can chain another
+    OCR run when (a) we made progress AND (b) backlog remains. See the
+    "Chain another OCR run" step in .github/workflows/cag-ocr.yml.
+    """
+    gh_output_path = os.environ.get("GITHUB_OUTPUT")
+    if gh_output_path:
+        try:
+            with open(gh_output_path, "a", encoding="utf-8") as f:
+                f.write(f"processed={processed}\n")
+                f.write(f"remaining={remaining}\n")
+            print(f"  workflow outputs: processed={processed} remaining={remaining}")
+        except OSError as e:
+            print(f"  (couldn't write GITHUB_OUTPUT: {e})")
+    else:
+        print(f"  workflow outputs (local run): processed={processed} remaining={remaining}")
+
+
 def main():
     print("=== ParliamentWatch CAG OCR slow-lane ===")
     print(f"DOCS               : {DOCS}")
@@ -266,6 +284,10 @@ def main():
     print(f"  candidates: {len(candidates)} (out of {len(reports)} total reports)")
     if not candidates:
         print("  nothing to do — all reports already have text or are tombstoned")
+        # Emit explicit '0' values so the workflow's chain step has values
+        # to compare against (empty strings would let `outputs.x != '0'`
+        # evaluate true and create a loop).
+        _emit_chain_outputs(0, 0)
         return
 
     target = candidates[:MAX_OCR_PER_RUN]
@@ -365,6 +387,20 @@ def main():
         )
 
     print(f"\n  succeeded: {len(succeeded)} · failed (tombstoned): {len(failed)} · timed out: {len(timed_out)}")
+
+    # Emit progress to GITHUB_OUTPUT so the workflow can chain another
+    # OCR run when (a) we made progress AND (b) backlog remains. See
+    # the "Chain another OCR run" step in .github/workflows/cag-ocr.yml.
+    # Re-run find_ocr_candidates against the post-run disk state so the
+    # remaining count reflects what we just wrote (.txt + .ocr-failed
+    # files cause records to be excluded from the new candidate set).
+    processed = len(succeeded) + len(failed)
+    try:
+        remaining = len(find_ocr_candidates(reports))
+    except Exception as e:
+        print(f"  (couldn't recount candidates for chain decision: {e})")
+        remaining = -1
+    _emit_chain_outputs(processed, remaining)
 
     # Note: this slow lane deliberately does NOT regenerate manifest /
     # bundle / index / meta. The daily `cag.yml` cron walks the filesystem
