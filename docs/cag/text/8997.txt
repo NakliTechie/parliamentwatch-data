@@ -1,0 +1,2604 @@
+This Audit Report for the year ended 31 March 2010 has been prepared for
+submission to the Governor under Article 151 (2) of the Constitution.
+
+The audit of revenue receipts of the State Government is conducted under
+Section 16 of the Comptroller and Auditor General’s (Duties, Powers and
+Conditions of Service) Act, 1971. This Report presents the results of audit of
+“Collection of Motor Vehicles Taxes, Fees and Fines” of the Transport
+Department, Government of West Bengal.
+
+The cases mentioned in this Report are among those which came to notice in
+the course of test audit of records during September 2009 and June 2010 as
+well as those noticed in earlier years but could not be included in previous
+year’s reports.
+
+iii
+
+
+
+This Report contains five chapters which include 33 paragraphs relating to
+deficiencies in the system of monitoring the registration of vehicles, issue and
+renewal of licences, permits, collection of taxes, fees and fines and internal
+controls of the Transport Department of the state involving = 14.41 crore.
+Some of the major findings are mentioned in the following paragraphs:
+
+As on 30 June 2010, 100 inspection reports issued upto December 2009
+containing 267 audit observations involving € 9.44 crore were outstanding for
+want of response or final action by the Transport Department.
+
+(Paragraph 1.9)
+As 0131 March 2010, the Transport Department had not furnished explanatory
+notes in respect of seven selected and 202 unselected paragraphs including
+four sub paragraphs of Audit Reports from 1981-82 to 2007-08.
+
+(Paragraph 1.10.2)
+
+stem Implemen
+We noticed that the system was implemented in a phased manner and as on 31
+
+March 2009 VAHAN was operational in only 19 RAs out of the 27 units (26
+RAs and STA) while SARATHI was operational in nine.
+
+(Paragraphs 2.2)
+
+We observed that a security policy had not been formulated by the
+Department. No guidelines had been issued to the RAs for protection of
+hardware and software of the system.
+
+(Paragraphs 2.3.1)
+
+We noted that due to lack of a business continuity plan, data could not be
+restored in the office of the RA, South 24 Parganas after a system crash which
+occurred on 4 September 2008 following which the data was irretrievably lost
+as the RAs had discontinued the maintenance of any manual register relating
+to collection of taxes and fees after computerisation of their activities.
+
+(Paragraphs 2.5)
+3.
+
+7ahan and Sarathij
+
+In the VAHAN software we found that in the ‘owners’ table the same engine
+number was found to have been entered against two different registration
+numbers in 462 vehicles in 11 RAs. We cross checked the ‘owner’ table
+and ‘Motor vehicle check’ table and found that in case of 2,635 vehicles
+though the registration numbers were the same, the chassis number or the
+engine numbers differed in the two tables in the 11 RAs.
+
+(Paragraph 3.2.1)
+
+
+
+We found that the data was not accurate and was unreliable. In case of 68
+vehicles registered in the RA, Howrah, the date of registration was earlier than
+the date of purchase of the vehicles by 1 to 25 days. We also found that 2,141
+vehicles were registered either on a Saturday or a Sunday.
+
+(Paragraph 3.2.2)
+We analysed the database and found that 2,90,641 vehicles had not paid tax of
+% 645.17 crore. Of these, 40,585 vehicles were more than thirty years old,
+some of which are dating back to 1930’s.
+
+(Paragraph 3.13)
+
+We found that out of 33 fields prescribed for registration of motor vehicle in
+‘Form 20’ under the CMV Rules 1989, five fields were not mapped in the
+system.
+
+(Paragraph 3.15)
+
+We found from the SARATHI database of the eight RAs selected for review
+that input validation controls were not inbuilt in the system. Hence, the system
+was unable to restrict input of invalid data. In the database of six RAs, we
+noticed that in 788 cases DL for transport vehicles were issued though the
+applicants did not have the requisite minimum educational qualification of
+eighth standard under Rule 8 of CMVR, 1989.
+
+(Paragraph 3.16.1)
+
+4. Other observati
+
+We found no record/register was maintained to watch revalidation and return
+of the lapsed dralis. This resulted in blocking of revenue of & 2.22 crore as
+revalidation of the BDs is still pending.
+
+(Paragraphs 4.4.1)
+
+We found that defaulting owners of seized vehicles neither paid the assessed
+dues nor was any action taken by the RAs to dispose of the seized vehicles
+through auction though a considerable period of time had lapsed since their
+seizure. This resulted in non-realisation of revenue of € 25.07 lakh in 33 cases.
+
+(Paragraph 4.6)
+
+We found in the offices of the STA, WB and nine RAs that inability of the
+Department to issue saleable forms to the applicants for licence, registration
+and permits resulted in loss of revenue of € 1.07 crore.
+
+(Paragraph 4.7)
+
+vi
+
+
+CHAPTER-I
+GENERAL
+
+3 Introd
+
+ion}
+
+Road transport is considered to be one of the most cost effective and preferred
+modes of transport for both freight and passengers. Easy availability,
+adaptability to individual needs and cost savings are some of the factors
+working in favour of road transport. Road transport also acts as a feeder
+service to railway, shipping and air traffic.
+
+The Transport Department, Government of West Bengal administers road
+transport activities through the State Transport Authority (STA) and 26
+registering authorities (RAs) comprising of 19 Regional Transport Offices at
+the district level and seven Additional Regional Transport Offices at the sub-
+divisional level. The Department is concerned with the formulation of broad
+policies relating to regulation of road transport, arrangements for movement of
+vehicular traffic within the State and collection of motor vehicles taxes, fees
+and fines.
+
+The Transport Department, Government of West Bengal planned the
+computerisation of the system of registration and taxation of vehicles to
+streamline the process of realisation of taxes in collaboration with the National
+Informatics Centre (NIC) in 1991. Accordingly five RAs were computerised
+in 2000 using a software called the Transport Information System (TIS).
+
+Tn 2002, the Ministry of Road Transport and Highways, Government of India
+entered into a Memorandum of Understanding with NIC to develop core
+software for vehicle registration and driving licence workflow process
+computerisation. The VAHAN software for vehicle registration and tax
+collection and SARATHLI software for issue and renewal of driving licences
+(DL) were developed centrally for the whole country. Accordingly, TIS was
+teplaced by VAHAN. The details of various taxes, fees and fines levied on
+motor vehicles and for driving licence are contained in Annexure — I.
+
+The VAHAN and SARATHI softwares were customised by the NIC, West
+Bengal state unit and implemented in the Public Vehicles Department (PVD),
+Kolkata in July 2004, These softwares were made operational in the offices of
+the RAs on different dates in a phased manner. During the period between
+2004-05 and 2008-09, SARATHI was in operation in nine RAs! and VAHAN
+in 19 RAs’.
+
+1 RAs: Asansol, Barasat, Barrackpore, Burdwan, Durgapur, Hooghly, Howrah, PVD Kolkata
+and South 24 Parganas
+
+? RAs: Alipurdwar, Asansol. Barasat, Barrackpore, Birbhum, Burdwan, Durgapur, Hooghly,
+Howrah, Malda, Murshidabad, Nadia, Paschim Medinipur, Purulia, Purva Medinipur,
+PVD Kolkata, Raigunj, Siliguri and South 24 Parganas.
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+The Additional Chief Secretary to the Government of West Bengal is the
+administrative head of the Transport Department. He is assisted by one Special
+Secretary, five Joint Secretaries, two Assistant Secretaries, one Registrar and
+one Statistical Officer at the headquarters. The Secretary, State Transport
+Authority (STA), West Bengal, Director, Public Vehicles Department (PVD)
+Kolkata, 18 Regional Transport Officers (RAs) and seven Additional Regional
+Transport Officers (RAs) administer the provisions of the Motor Vehicles Acts
+and Rules. The Joint Secretary, Transport Department is responsible for all
+computerisation-related activities in the Department.
+
+We reviewed the system of collection of motor vehicle taxes, fees and fines
+for issue and renewal of different types of licences, permits, trade
+certificates and compounding of offences and realisation of revenue
+thereof. The review revealed a number of deficiencies which are
+mentioned in the succeeding chapters of this Report.
+
+Audit o
+
+es|
+
+We conducted the review to ascertain whether:
+
+. the provisions of the Acts and Rules made thereunder and the
+instructions/orders issued from time to time by the Department/
+Government for monitoring the collection of the motor vehicles taxes,
+fees and fines were adequate and complied with;
+
+e the security of the IT system, completeness and integrity of the data
+and supervision of the system was adequate, efficient and effective;
+and
+
+. an internal control system existed and was adequate to help the
+
+organisation achieve its objectives with optimum use of its resources.
+
+LE Audit crite
+
+The review was conducted with reference to the provisions made under the
+laws governing transport management in the State. These are:
+
+Central Laws
+e Motor Vehicles (MV) Act, 1988;
+° The Central Motor Vehicles (CMV) Rules, 1989;
+
+State Laws
+
+. The West Bengal Motor Vehicles Tax (WBMVT) Act, 1979;
+
+e The West Bengal Motor Vehicles (WBMV) Rules, 1989; and
+
+° The West Bengal Additional Tax and One-time Tax on Motor Vehicles
+
+(WBAT) Act, 1989.
+
+Scope and method: of au
+
+We conducted the review between September 2009 and June 2010 covering
+the period between 2004-05 and 2008-09. The review covered the STA and 12
+
+
+
+Chapter-I: General
+
+RAs’ out of 26 RAs selected on the basis of stratified random sampling
+method. We divided the 27 units (26 RAs and STA) in three strata on the basis
+of collection of revenue and selected 100 per cent i.e. two units from the first
+stratum having average collection of = 38 crore and above, 50 per cent i.e. 10
+out of 19 units from the second stratum with average revenue collection
+between & four and % 38 crore and 10 per cent i.e. one out of six units from the
+third stratum with average revenue collection below & four crore.
+
+IT audit in respect of VAHAN was conducted in 11 RAs* while SARATHI
+was conducted in eight RAs*. The total number of records in VAHAN and
+SARATHI database was 20,97,965 (including tax exempted vehicles) and
+13,52,189 respectively. Out of these 15,28,638 and 4,66,749 cases were
+related to pre-online period and 5,69,327 and 8,85,440 cases were related to
+post-online period in respect of VAHAN and SARATHI respectively
+
+The findings on system were derived from analysis of post-online data only
+where as findings on transaction were related to the period after the date of
+inception of VAHAN and SARATHI in the RAs though the registration dates
+of the vehicles were related to both pre-online and post-online periods. The
+CAATs® were applied using the same criteria in respect of each finding for all
+the 11 RAs and deficiencies noticed in respect of RAs were incorporated in
+the paragraphs. Besides, we test checked the records of one check post
+(Rampur Motor Vehicle check post) out of three’ check posts. The results of
+data analysis were cross verified with the front end of the system of the RAs
+on test check basis and were found to be in conformity with the results. We
+also attempted verification of the audit findings with reference to the manual
+records. We further reviewed the physical records in respect of
+units‘/functional areas’ yet to be computerised.
+
+1.6 Acknowledgemen
+
+The Indian Audit and Accounts Department acknowledges the co-operation of
+the Transport Department in providing necessary information and records for
+audit. An entry conference was held in September 2009 with the Additional
+Chief Secretary, Transport Department in which the objectives, scope and
+methodology of audit were explained. It was also attended by the Technical
+Director, National Informatics Centre (NIC). In course of review the audit
+observations were issued to the RAs along with a soft copy of the details of
+the cases. The draft review report was forwarded to the Government in June
+2010 along with a compact disc (CD) containing detailed information of the
+cases for their response. The exit conference was held in August 2010 with the
+Additional Chief Secretary, Transport Department in which the results of audit
+
+3 RAs: Asansol (including check post at Rampur), Bankura, Barasat, Barrackpore, Burdwan,
+Hooghly, Howrah, Nadia, Paschim Medinipur, PVD Kolkata, Siliguri, South 24
+Parganas and STA.
+
+“RAs: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, Nadia, Paschim
+
+Medinipur, PVD Kolkata, Siliguri and South 24 Parganas.
+
+5 RAs: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, PVD Kolkata, South 24
+Parganas.
+
+6 Computer Assisted Auditing Techniques.
+
+7 Beltala (Paschim Medinipur), Barobisha (Jalpaiguri) and Rampur (Asansol).
+
+STA and RA, Bankura.
+
+Enforcement, Licence to sub-dealers, Permits and Trade certificates.
+
+8
+°
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+and the recommendations were discussed. The replies of the
+Department/Government received during the exit conference and at other
+points of time have been appropriately incorporated in this report.
+
+ation and the trend of revenue collections
+
+As per the Budget Manual, the responsibility for the preparation of the Annual
+statement of the estimated receipts and expenditure of the State and its
+presentation to the Legislature lies with the Finance Department. The
+materials on which the budget estimates (BEs) are based should be obtained
+by the Finance Department from the local budgeting officers. The actuals of
+the previous years and revised estimates of the current year ordinarily afford
+the best guide in framing the BEs of the ensuing year.
+
+The salient factors which have led to the adoption of figures proposed for the
+BEs should be clearly and briefly explained. For the fluctuating items neither
+the actuals of the previous year nor the progress of actuals of the current year
+should be used as the only guide but due consideration should be given to
+exceptional circumstances of the previous years and special features of the
+current year.
+
+We observed that BEs and revised estimates (REs) in respect of Taxes on
+motor vehicles were prepared by the Finance (Budget) Department.
+
+The BEs, actual receipts and variation in receipts over BEs and percentage of
+variation for the years 2004-05 to 2008-09 are shown in the following table:
+
+(Rupees in crore)
+
+Budget ion between _| Percentage of
+
+estimates BEs and Actuals variation
+
+(BEs) excess (+) or
+
+shortfall (-)
+2004-05 548.75 527.66 -21.09 “3.84
+2005-06 700.00 537.56 -162.44 -23.21
+2006-07 759.84 508.97 -250.87 -33.02
+2007-08 645.88 532.07 -113.81 -17.62
+2008-09 673.11 608.01 ~65.10 -9.67
+
+DBudget Estimates (8६) GActuals
+800
+
+700
+600
+500
+400
+300
+200
+100
+
+0
+
+2004-05 2005-06 2006-07 2007-08 2008-09
+
+
+
+Chapter-I: General
+
+Percentage of variation
+
+2005-06 2006-07 2007-08
+
+Thus, it would be seen from the figures given above that the collection of
+revenue had always been lower than the BEs. The variation between BEs and
+actual receipts between 2005-06 and 2007-08 ranged between (-) 9.67 and (-)
+33.02 per cent, indicating that the BEs were not prepared on a realistic basis.
+
+The Department stated that collection of revenue increased in 2007-08 and
+2008-09 due to introduction of revised rate of one-time tax and life-time tax
+(September 2010). However, we did not receive the reasons for variation
+between BEs and the actuals despite our request (June 2010).
+
+We recommend that the Government may issue directions to the
+Department to streamline the budgeting process and ensure that BEs are
+prepared in a scientific manner and are as close to the actuals as possible.
+
+1.8 (:05( of collection|
+
+The gross collection from motor vehicles taxes, fees and fines, the expenditure
+incurred on collection and the percentage of such expenditure to gross
+collection for the years 2006-07 to 2008-09 are given in the following table:
+
+Rupees in crore)
+
+Year Gross Gross Percentage of All India average of
+collection | expenditure | expenditure to gross expenditure on collection for
+collection the preceding year
+2006-07 | 508.97 9.89 1.94 2.47
+2007-08 532.07 10.86 [20a 2.58
+2008-09 608.01 11.92 1.96 2.93
+
+The above table shows that the collection from motor vehicles tax increased to
+608.01 crore in 2008-09 from % 508.97 crore in 2006-07, registering an
+increase of 19.46 per cent. The percentage of expenditure to gross collection
+which increased in 2007-08 was brought down in 2008-09. We noted that the
+percentage was also always lower than the all India average. The Department
+should continue with its efforts to maintain this positive trend.
+
+ction reports and audit observatio
+
+The Accountant General (Receipt, Works & Local Bodies Audit), West
+Bengal (AG) conducts periodic inspection of the Government Departments to
+test check the transactions and verify the maintenance of the important
+accounts and other records as prescribed in the rules and procedures. These
+inspections are followed up with the Department through inspection reports
+(IRs). These IRs incorporating irregularities detected during the inspection
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+and not settled on the spot, are issued to the heads of the offices inspected with
+copies to the next higher authorities for taking prompt corrective action. The
+heads of the offices/Government are required to promptly comply with the
+observations contained in the IRs, rectify the defects and omissions and report
+compliance through initial reply to the AG within two months from the date of
+issue of the IRs. Serious financial irregularities are reported to the head of the
+Departments and the Government.
+
+A review of IRs issued to the Transport Department upto December 2009
+disclosed that 267 paragraphs involving ~ 9.44 crore relating to 100 IRs
+remained outstanding at the end of June 2010 as mentioned in the following
+table along with the corresponding figures for the preceding two years.
+
+June 2008 Sune 209
+
+Number of outstanding IRs
+
+Number | of outstanding audit 347 349 267
+observations
+
+Amount involved (Rupees in crore) 12.52 22.24 9.44
+
+The year-wise details of the IRs and audit observations outstanding as on 30
+June 2010 and the amounts involved are mentioned in the following table:
+
+Number of Number of Money value involv
+outstanding standing (Rupees in lakh)
+IRs
+
+1998-99 2 1.92
+1999-2000 5 | 8 [ 13.88
+2000-01 [9 | 6 [ 130.81
+2001-02 il 24 165.07
+2002-03 13 37 130.54
+2003-04 14 49 121.70
+2004-05 16 4 51.52
+2005-06 [io 47 196.71
+2006-07 [os [ 19 20.42
+2007-08 (SS |
+2008-09 5 | 9  [ 98.04
+2009-10 2 | 65 [ 2.58
+Total | 10" | 267 944.10
+
+This large pendency of IRs due to non-receipt of replies is indicative of the
+fact that the Department did not initiate timely action to rectify the defects,
+omissions and irregularities pointed out by us in the IRs.
+
+‘We recommend that the Government may take suitable steps to install an
+effective mechanism for prompt and appropriate response to audit
+observations and initiate action against officers who do not send replies to
+the IRs/paragraphs within the prescribed time schedule. A system needs
+to be developed for prompt recovery of the revenue at least in respect of
+the audit observations that have been accepted by the
+Department/Government.
+
+6
+
+
+Chapter-I: General
+
+1.10 Follow up of Audit Reports
+
+1.10.1 Summarised position|
+
+As per the Rules of Procedure of the Committee on Public Accounts (PAC) of
+the West Bengal Legislative Assembly (Internal Working) framed in 1997, the
+concerned Department was required to send action taken notes (ATNs) on the
+recommendations contained in the Report of the PAC within six months from
+the date of its presentation to the House. The position of outstanding ATNs
+due from the Transport Department is mentioned in the following table:
+
+22704 Report of 1990-91 26 March 1991
+1980-81 1
+250 Report of 1994-96 1 August 1995 1983-84 1
+23" Report of 2008-09 24 March 2009 2006-07 2
+Total | 5 |
+
+The Committee on Public Accounts discusses the Receipt Audit Reports and
+presents its reports and recommendations for compliance by the Government.
+Normally 20 per cent of the total number of paragraphs of the Audit Report is
+selected every year for discussion. The remaining paragraphs are disposed of
+on the basis of replies of the Government.
+
+As of 31 March 2010, the Transport Department had not furnished explanatory
+notes in respect of seven selected and 202 unselected paragraphs including
+four sub paragraphs of Audit Reports from 1981-82 to 2007-08 as detailed in
+Annexure-II.
+
+A meeting of the high level audit committee chaired by the Chief Secretary
+and consisting of heads of various departments was held on 4 February 2010
+to discuss the selected outstanding paragraphs and ATNs on_ the
+recommendations of PAC. The Transport department was represented by the
+Joint Secretary. The Chief Secretary instructed the departments to furnish
+replies to the outstanding paragraphs and ATNs at an early date. However, no
+reply has been received from the Transport department (September 2010).
+
+1.11 Results of audit]
+
+The findings of the review in the STA and 12 RAs along with the test check of
+records in two RAs!” conducted during 2009-10 revealed underassessment of
+tax and other irregularities of € 14.41 crore in four cases as mentioned in the
+following table:
+
+RAs: Malda and Purba Medinipur.
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+Categoi
+1. Collection of Motor Vehicle taxes, fees and fines
+(A review)
+2. Non-realisation of revenue due to non-disposal of 3 0.25
+seized vehicles
+Total [a4 | 14.41
+
+ssment and other deficiencies of
+
+The Department accepted under:
+% 4.75 crore during the year 2009-10.
+
+A few illustrative cases and the findings of the review on “Collection of
+Motor Vehicle taxes, fees and fines” involving a financial impact of
+14.41 crore are discussed in the following chapters.
+
+
+
+CHAPTER-II
+DEFICIENCIES IN SYSTEM IMPLEMENTA
+
+2.1 Introductio
+
+In an IT system, formulation and documentation of needs of the users, security
+of the system, completeness and integrity of the data, defined supervision,
+change control mechanism and a business continuity plan are essential
+prerequisites for successful implementation of the system.
+
+We noticed a number of system implementation deficiencies in VAHAN and
+SARATHL as discussed in this chapter.
+
+General IT Controls}
+
+General controls create the environment in which the application systems and
+application controls operate. They include IT policies, standards and
+guidelines pertaining to [T security and information protection. The following
+deficiencies in general controls were noticed by us:
+
+2.2 Documentation of IT Strategy}
+
+The Department did not
+furnish any = document
+bringing out the stages of
+implementation of VAHAN
+and SARATHI to us. We
+noticed that the system was
+
+In order to achieve the desired
+objectives, there should be a proper IT
+strategy and a well devised plan for
+addressing issues relating to
+customising, implementing and
+
+maintaining the information system. The
+Department needed to set up a steering
+committee consisting of representatives
+of the Department and NIC for
+providing necessary direction and
+guidance to the computerisation efforts
+as well as to monitor the progress of
+implementations.
+
+implemented in a phased
+manner and as on 31 March
+2009 VAHAN was
+operational in only 19 RAs
+out of the 27 units (26 RAs
+and STA) while SARATHI
+was operational in nine.
+Even in these units, only
+
+certain features available in
+the software were utilised while other functions were discharged through
+manual operations. We did not find any documentation indicating the
+involvement of the top management at the planning and implementation stage
+of the project. This resulted in development of a non-integrated application
+and partial utilisation of its features as mentioned in the following paragraphs.
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+५5 wee We noticed that in none of
+Provisions exist in the VAHAN software the RAs the provisions of
+
+for permits, enforcement, temporary VAHAN for issue/renewal
+registrations, issuing of trade certificates
+
+: of permits to transport
+to dealers, surrender of vehicles, and
+
+. ¢ dail Llecti . vehicles, enforcement
+mainienance of daily ° ction aa activities relating to
+and licence register of sub-dealers. In offending vehicles,
+
+SARATHI there are provisions for
+issue/renewal of conductor licences and
+licenses to motor training schools.
+
+temporary registration of
+vehicles, issue/renewal of
+trade certificates to dealers,
+surrender of vehicles,
+maintenance of daily collection register and sub-dealer’s licence register
+utilised by the Department. Similarly, the provisions relating to issue and
+renewal of conductor’s licences and licences to the motor training schools
+available in SARATHI were not utilised by the Department. These activities
+were being done manually thereby defeating the purpose of providing these
+provisions in the system. This also led to non-generation of computerised
+receipts on this account for which a locally developed parallel software called
+“Regional Vahan Sarathi’” (RVS) was being utilised by the Department.
+
+The original software i.e. VAHAN had the facility of generation of receipts
+and as such it had better controls and would have added assurance in the
+accounting system. Thus, the development of the parallel software RVS served
+little purpose and was not required at all had the provisions of VAHAN been
+fully utilised.
+
+Although we called for (May 2010) the reasons for partial utilisation of
+VAHAN and SARATHI softwares, the Department did not intimate the same.
+However, it stated (September 2010) that the provisions of the software would
+be utilised in the near future.
+
+We recommend that the Government should use the processing
+capabilities in the VAHAN and SARATHI software in their entirety, and
+discontinue using the parallel software.
+
+2.2.2_Non-existence of central State server system
+Our test — check
+
+Sections 63 and 26 of the MV Act and Rules 75 revealed that the
+and 23 of the CMV Rules prescribe the Department had not
+maintenance of a State Register of motor vehicles taken any steps to
+in Form 41 and a State Register of driving set up a central State
+licences in Form 10 respectively. The objective server system into
+of computerisation was that data of the vehicles which the
+should flow from the RAs to the central State information — from
+server system for monitoring the activities of the the RAs could flow
+vehicles within the State and for supplying the and be stored. As a
+information to the Central Government. result even the 19
+computerised = RAs
+
+could not be linked to share the information available in the system. Thus, no
+
+10
+
+
+Chapter-I: Deficiencies in system implementation
+
+state register could be prepared. Besides, due to non-linking of the system, the
+RAs could not cross check the data available with them resulting in a number
+of deficiencies as mentioned in para 2.2.3.
+
+3 V
+
+more than one RAs|
+2.2.3.1 We cross verified
+
+For transfer of a vehicle to another RA,a the data of RA Barrackpore
+‘No Objection Certificate’ (NOC) is शांत the data of 10° other
+required to be issued by the RA under RAs and found 3,526
+whose jurisdiction the vehicle is kept. Vehicles were available in
+Information about NOCs issued by an RA the “owner”” table of the
+would feature only in the ‘NOC’ table of database of =the RA
+that RA’s database. Registration code  Barrackpore as well as in
+*WB23’ was allotted for transport vehicles _the database of the other 10
+
+registered in RA, Barrackpore. RAs. These vehicles were
+not found in the ‘NOC’
+
+issued table of the RA
+Barrackpore and ‘NOC’ received table of the other 10 RAs. This indicates that
+either the validation controls in these cases were bypassed or data pertaining to
+NOCs in respect of these vehicles were deleted. The reasons for the same were
+not found on record and the matter needs to be looked into.
+
+2.2.3.2. We found from the database of 10 RAs that in case of 894 vehicles,
+the registration code was ‘WB23’ indicating that these were originally
+registered in RA, Barrackpore; however, information about these vehicles was
+not found in the database of the RA Barrackpore although in case of transfer
+of these vehicles it should have been found in the ‘NOC’ table of the RA,
+Barrackpore. The reasons for their non-existence, though called for, were not
+furnished to us.
+
+found re;
+
+2.2.3.3 In respect of goods vehicles tax is based on Gross Vehicle Weight
+(GVW). We found that 10 goods vehicles, which were originally registered in
+RA, Barrackpore were transferred to six’ other RAs and registered there with
+lesser GVW. Thus due to data input error there was short realisation of tax and
+additional tax of € 1.18 lakh.
+
+The above facts indicate that non-existence of a central State server system
+had resulted in non detection of the errors committed in the transfer of the
+vehicles from one RA to another RA. This underlines the need for linking all
+the database within the State by setting up a central State server system. Till
+then, the primary objective of computerisation to monitor the activities of
+vehicles within the State and provide information for creation of a National
+Register of Vehicles, would remain elusive.
+
+After we pointed this out, the Department stated that the central server system
+was established in June 2010 and connectivity of 24 RAs out of 26 RAs was
+established with the central State server in respect of VAHAN till April 2011.
+RA, Darjeeling and RA, Kalimpong were yet to connect with the central State
+
+, Barasat, Burdwan, Hooghly, Howrah, Nadia, Paschim Medinipur, PVD
+ala, Siliguri and South 24 Parganas.
+
+> “Owner” table contains information regarding vehicles and their owners
+
+3 RAs: Asansol, Barasat, Burdwan, Howrah, Nadia and PVD Kolkata.
+
+ll
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+server. In respect of SARATHI, no RA was connected with the central State
+server. Thus, in absence of connectivity of all the RAs with the central State
+server the objective of computerisation to monitor the activities of vehicles
+within the State could not be achieved.
+
+2
+
+Environment controls are aimed at ensuring that the assets of the project are
+not put to risk. This requires that risk assessment should be done and
+preventive measures put in place prior to implementing the project. We
+noticed that the Department had neither undertaken any risk assessment nor
+devised any preventive measures like a security policy and business continuity
+plan, before putting the system in use.
+
+ment contr
+
+|$|
+
+of security
+
+Information security policy through We observed that no security
+physical and logical controls restricts Policy had been formulated
+
+access to the system only to authorised by the Department. No
+individuals. guidelines had been issued to
+
+the RAs for protection of
+hardware and software of the system. Preventive and detective measures like
+installing and updating antivirus software and framing a password policy was
+not done. We found expired/not updated antivirus software in five’ RAs.
+Creating of user’s id and passwords were lefi to the discretion of the RAs.
+Passwords of less than eight characters were found in most of the RAs.
+Absence of a provision to record failed ‘login attempts’ is fraught with the risk
+of unauthorised access and consequent data tampering. We also observed that
+fire fighting devices were not installed in five’ RAs.
+
+ement contri
+
+Documentation regarding
+
+Once a system is implemented, change the request, approval,
+management controls should be put in place testing and authorisation
+
+to ensure that the changes to the system are of changes like updating
+authorised, tested and documented and to tax rates in accordance
+see that there is adequate audit trail. The with notifications issued
+requests for changes (RFC) should be by the Government,
+signed by the designated authorities of the providing additional input
+Department and all the changes should be validation controls like
+tested before they are put to use in the live mandatory capturing of
+environment. Permanent Account
+Number (PAN) or General
+
+Index Number except in case of RA Siliguri was not made available to us. The
+absence of documentation not only resulted in absence of a trail as to whether
+the changes sought for had been carried out but was also fraught with the risk
+of non-detection of any unauthorised change made in the system. For example,
+the rate of tax was changed vide a notification effective from 08.09.2008 and had
+
+* RAs: Asansol, Burdwan, Howrah, Paschim Medinipur and South 24 Parganas.
+5 RAs: Asansol, Howrah, Nadia, Paschim Medinipur and South 24 Parganas.
+
+12
+
+
+Chapter-I: Deficiencies in system implementation
+
+been incorporated in the system but the date of incorporation and the authority
+who authorised, it could not be verified. Documentation of the changes would
+ensure transparency and effective internal controls.
+
+After we pointed this out, the Department accepted (September 2010) the
+observation for corrective action.
+
+We found that the
+Department had not evolved
+a backup policy. Though
+periodical backups had been
+taken in the RAs, there was
+no provision for testing of
+
+Business continuity planning is essential to
+ensure that the organisation can prevent
+disruption of business and resume
+processing in the event of a total or partial
+interruption. The objective is to reduce
+downtime and minimise loss to business. such backup for successful
+Regular backup of data is the backbone of ~~ ckup 8 8
+alhnstiness ढक्ागिगारिफ ila, installation if needed. The
+RAs had no records to
+
+indicate the date(s) on which
+the backup was taken and had no provision for off-site storage of backup.
+Mock trial of data recovery was not done regularly to ensure prompt
+restoration in the event of a system crash.
+
+We noted that due to lack of a business continuity plan, data could not be
+restored in the office of the RA, South 24 Parganas after a system crash which
+occurred on 4 September 2008 following which the data was irretrievably lost
+as the RAs had discontinued the maintenance of any manual register relating
+to collection of taxes and fees after computerisation of their activities. The
+Department could not retrieve the lost data. Thus, they would have to depend
+upon the documents furnished by the vehicle owners/licence holders in respect
+of tax receipts/ payments in the event of a system crash.
+
+After we pointed this out, the Department admitted the audit observation and
+stated that the data could not be retrieved because of technical failure
+(September 2010). RA, South 24 Parganas intimated (May 2011) that live
+backup was being taken from April 2010. RA, PVD intimated (May 2011)
+that backup was being taken after working hours on a daily basis. The other
+RAs did not furnish the current status of backups . Thus, taking backups was
+left to the discretion of the concerned RAs as no directions on this matter was
+issued by the Department.
+
+The Government may consider evolving a well documented IT security
+policy, change management policy and suitable business continuity plan
+including live backup or backup after a short interval of time to ensure
+safety, transparency and prompt recovery of data/system.
+
+
+
+CHAPTER-IUL
+
+VAHAN AND SARATHI
+3.1 Introduction|
+
+An IT system must have in-built controls to ensure that all the key information
+has been entered before the transaction is recorded in the database. The system
+should be complete by incorporating all the main processes mentioned in the
+business rules.
+
+We noticed a number of deficiencies in respect of operations transacted
+through VAHAN and SARATHI as discussed in this Chapter. As already
+stated in Paragraph 1.5 pertaining to Scope and Methodology, the findings on
+system were derived from analysis of post-online data only whereas the
+findings on transactions were related to the period after the date of inception
+of VAHAN and SARATHL in the RAs though the registration dates of the
+vehicles were related to both pre-online and post-online periods. The (4515
+were applied using the same criteria in respect of each finding for all the 11
+RAs and deficiencies noticed in respect of RAs were incorporated in the
+paragraphs.
+
+iVAHAN
+
+The VAHAN database which contained a total number of 20,97,965 records
+out of which number of records pertaining to the pre-online system was
+15,28,638 and the remaining 5,69,327 cases related to the post-online system.
+
+A, The audit findings included in the following paragraphs are based on
+the analysis of the records relating to post-online system as these
+pertain to the input controls, validation controls etc. in the system:
+
+Input controls and validation controls over input are vital for ensuring
+correctness and completeness of the data. These controls also ensure that data
+is entered correctly without duplication. The system lacks such controls as our
+analysis of the data in the selected RAs revealed. The following deficiencies
+were noticed in VAHAN software due to absence of input controls and
+validation controls.
+
+3.2 _ Input control weaknesses of VAHAN|
+
+3.2.1. Input control weaknesse:
+
+© The engine number is the unique identification mark of a vehicle. The
+engine numbers cannot be identical for any two vehicles. However, we found
+that in the ‘owners’ table the same engine number was found to have been
+entered against two different registration numbers in 462 vehicles in 11 RAs.
+
+' RAs; Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, Nadia, Paschim
+Medinipur, PVD Kolkata, Siliguri and South 24 Parganas.
+
+15
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+The existence of duplicate engine numbers indicate lack of inbuilt data
+validation controls at data entry stage to restrict entry of duplicate engine
+numbers. Cases of fraud also cannot be ruled out.
+
+© We cross checked the ‘owner’ table and ‘Motor vehicle check’ table and
+found that in case of 2,635 vehicles though the registration numbers were the
+same, the chassis number or the engine numbers differed in the two tables in
+the 11 RAs.
+
+*® Separate code numbers from ‘1’ to ‘12’ have been incorporated in the
+system to identify the allotment of vehicles to different categories like
+individual, company, Government etc. The code number 5 was specified for
+State Government. We found that in case of 985 Government vehicles
+registered under four’ RAs, the owner code was not allotted as 5. Thus, the
+vehicles, which were Government vehicles, could not be identified from the
+system code as ‘Government vehicles’.
+
+3.
+
+Validation controls}
+
+Unusual and improbable data makes the data integrity doubtful and suggests
+unreliability of data or indicates existence of other irregularities. To check
+such deviations, validation controls should be inbuilt within the system.
+
+* In case of 68 vehicles registered in the RA, Howrah, the date of
+registration was earlier than the date of purchase of the vehicles by 1 to 25
+days.
+
+© Registration of vehicles is done only on working days. We however found
+that in case of 2,141 vehicles, registered in 10° RAs, the date of registration
+was found to be either a Saturday or a Sunday and in case of 333 vehicles
+registered under two’ RAs, the cash receipt was found to have been issued on
+a Saturday or a Sunday.
+
+The applications for registration submitted at the time of initial registration of
+the vehicles, which are the main source of input data, were not made available
+to us and hence we were not in a position to cross check the data with
+reference to the original records.
+
+The above facts indicate that the data was not accurate and was unreliable. The
+Department should take necessary steps to build in appropriate input controls
+and validation controls to prevent entry of incorrect data.
+
+Incomplete dat:
+
+As per Rule 47 of the CMV Rules, Incomplete database means missing
+1989 Form-20 has been prescribed some information. We analysed the
+for registration of vehicles which VAHAN database in 11 RAs and
+Gantintng प्रतिशत 1 33 oh, found that data capture was partial
+even in crucial fields like engine
+
+number (433 cases), insurance cover note number (65,225 cases), insurance
+date (17,933 cases), seating capacity (51 cases), cubic capacity (52 cases),
+
+2? RAs: Hooghly, Howrah, PVD Kolkata and South 24 Parganas.
+3. RAs: Asansol, Barasat, Barrackpore, Burdwan, Howrah, Nadia, Paschim Medinipur, PVD
+Kolkata Siliguri and South 24 Parganas
+
++ RAs: PVD Kolkarta and South 24 Parganas.
+
+16
+
+
+Chapter-IIl: VAHAN and SARATHI
+
+laden weight (36 cases), address of owner (453 cases), purchase date of the
+vehicles (732 cases) and PAN (10,619 cases). This indicates that at the time of
+data entry input, these essential information fields were not made mandatory
+and consequently the database remained incomplete. In the absence of vital
+information like owner's name, PAN and engine number, registration of
+stolen/damaged vehicles and use of the same registration number by more than
+one vehicle cannot be ruled out. Absence of insurance cover note number does
+not ensure the coverage of third party risk. As per Central Government
+notification of May 2002, it is mandatory for the vehicle owner to disclose
+PAN but this was not captured in the database.
+
+We could not verify the accuracy of the data from manual records as these
+were not made available to us. The incompleteness in the database made it
+unreliable and application of the business rules could not be assured. Any
+analysis and generation of MIS reports based on incomplete and unvalidated
+database was likely to produce incomplete and unreliable information. This
+pointed to weakness in the internal control mechanism which was further
+accentuated by absence of data validation and needs to be immediately
+rectified.
+
+3.3 __ Partial mapping of adi
+
+We found from the
+
+Rule 57(6) of the WBMV Rules, 1989 prescribes
+that the owner of a vehicle shall apply for
+renewal of C.F before one month of the expiry
+of fitness certificate. In case, the owner fails to
+make application before the prescribed date, he
+shall be liable to pay additional amount of 150
+per cent of the application fee and testing fee.
+Further, if the owner fails to produce the vehicle
+on the date prescribed for inspection of the
+vehicle he shall be liable to pay additional
+amount of 150 per cent of fees, in addition to the
+amount mentioned in the schedule E-14 which is
+different for different categories of vehicles.
+
+additional
+
+database of 11 RAs°
+that in case of
+1,45,406 vehicles, the
+owners did not
+produce the vehicles
+on the date prescribed
+for inspection of the
+vehicle. Though the
+additional amount of
+fee for late application
+was levied at the rate
+of 150 per cent of the
+application fee, the
+amount of.
+
+testing fee for delay in production of vehicles was not levied. Thus, absence of
+provision in the system resulted in short realisation of additional amount of fee
+of € 2.53 crore.
+
+After we pointed this out, the Department stated that the rate of additional
+amount of fee for submission of application was mapped in the system. The
+reply is not relevant as our observation relates to fee for delay in production of
+vehicles for testing and not for fee for late submission of application. We had
+found the deficiency in all the cases of 1,45,406 vehicles.
+
++ RAs: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, Nadia, Paschim
+
+Medinipur, PVD Kolkata, Siliguri and South 24 Parganas.
+
+17
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+We noticed from the
+“6
+Rule 61(4) of the WBMV Rules provides for database of six” RAs
+
+allotment of fancy registration number to that 14 out of the 29
+motor vehicles at the rate of ten times of the fancy numbers were
+difference of current number and number allotted to हज vehicles.
+requested. The Government had reserved 29 Though the fee for these
+numbers i.e. from 0001 to 0020 and all four fancy numbers — was
+digit numbers of the same digit (e.g. 1111 higher than the normal
+etc.). The fee for these 29 numbers was kept fancy number, the
+higher than the normal fancy numbers. These Department collected
+were released for allotment w.e.f. 22.11.2007 the fee at the lesser rates
+but the rates were not mapped in the system. ie. at normal fancy
+
+number rates. We found
+
+that the rate of fee of
+these 29 fancy numbers released for allotment from 22.11.2007 was not
+mapped in the system. Thus, non-mapping of the additional rates in the system
+resulted in short realisation of revenue of 28.90 lakh.
+
+After we pointed this out, the RA, Asansol in three cases involving हैं 5.92 lakh
+stated that demand notices would be issued to realise the balance amount. In
+the remaining cases the RAs did not furnish any specific reply.
+
+B. The audit findings included in the following paragraphs are based on
+the analysis of the transactions related to the period after the date of
+inception of VAHAN in the RAs though the registration dates of the
+vehicles were related to both pre-online and post-online periods:
+
+Short realisation of one-time tax]
+
+We found from the
+Section 9B of the WBAT Act, prescribes one- \ database of 10’ RAs
+time tax for a period of five years on motor cars व 654 vehicles
+and ommibuses registered as non-transport were less than 10
+vehicles being less than 10 years old. Rate of tax years old as such
+for motor cars is based on engine capacity and _— they were liable to
+category (individual/society and others) of pay one-time tax but
+owners. The system provides options for payment the RAs incorrectly
+of annual tax and one-time tax. In case of transfer exercised the option
+of ownership from individual to others the of annual tax
+difference of tax is to be realised. available in the
+system. Further, we
+noticed that category of the vehicles was changed from ‘individual/society’ to
+‘others’ on sale of some of these vehicles. The difference of one-time tax
+applicable for ‘others’ and for ‘individuals/society’ was payable by the
+owners of the vehicles.
+
+This resulted in short realisation of one time tax of f 24.32 lakh in 654 cases.
+8 RAs: Asansol, Barasat, Burdwan, Hooghly, PVD Kolkata and South 24 Parganas
+
+7 RAs: Asansol, Barasat, Barrackpore, Burdwan, Howrah, Nadia, Paschim Medinipur, PVD
+Kolkata, Siliguri and South 24 Parganas.
+
+18
+
+
+Chapter-IIl: VAHAN and SARATHI
+
+The above fact indicates that the system was not customised to prevent
+acceptance of annual tax instead of one-time tax and transfer of ownership of
+vehicles without realising the due differential tax.
+
+We found from the
+database of nine RAs” that
+special tax in respect of
+4,265 air conditioned
+vehicles amounting to
+₹ 2.93 crore was not paid by
+the owners during the period
+from April 2004 to March 2009, The vehicles were neither surrendered nor
+was NOC issued in any case. The concerned RAs had not maintained any Tax
+Demand Register in the system to monitor the realisation of the tax from the
+defaulters. This resulted in non-realisation of revenue of € 2.93 crore.
+
+Under the provisions of the WBMVT Act,
+and WBAT Act, special tax is realisable at
+the prescribed rates for air conditioned
+vehicles based on their use, seating capacity,
+engine capacity and category of the vehicle.
+
+After we pointed out the cases, RA, Burdwan and RA, Asansol stated that
+demand notices would be issued in case of 35 vehicles involving हैं 4.79 lakh.
+The other RAs did not furnish replies in the remaining cases.
+
+in six!”
+Rule 218(7) of the WBMV Rules prescribes | W¢ found in six” RAs
+an audio fee for installation of any audio set that in 6,238 vehicles
+
+with or without loudspeaker in the motor audio sets were installed;
+vehicle. however, audio fees were
+
+not realised from the
+owners of these vehicles though the vehicles were paying taxes. The system
+was not customised to make the field “audio fee” mandatory for the vehicles at
+the time of tax payment to prevent escapement of the fee in these cases. This
+resulted in non-realisation of audio fee of = 33.32 lakh.
+
+on-realisation of dealer’s tax
+
+We analysed the
+‘owner’ table and
+‘additional tax’ table
+and found that in
+seven'' RAs in
+5,298 cases, dealer’s
+tax amounting to
+1.08 crorewas not realised from 708 dealers during the registration of new
+vehicles during the period from April 2004 to March 2009. We also noticed
+that the dealer’s tax field was not made mandatory in the system at the time of
+
+Section 3 of the WBMV Tax Act prescribes that
+every dealer or manufacturer who keeps any
+motor vehicle in his possession or control shall
+pay dealer’s tax on such motor vehicle at the
+prescribed rate at the time of its first registration.
+
+§ [118 a one-time tax for five years in respect of non-transport vehicles, payable by all types
+
+of air conditioned vehicles.
+RAs: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, Nadia, PVD Kolkata
+and South 24 Parganas
+kpore, Hooghly, Howrah, Siliguri and South 24 Parganas.
+"| RAs: Barasat Barrackpore, Hooghly, Howrah, PVD Kolkata, Siliguri and South 24
+Parganas.
+
+0
+
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+registration of the new vehicles. Thus, these dealers were registered without
+realisation of the dealer’s tax.
+
+After we pointed this out, the Department stated (September 2010) that the
+matter has been referred to NIC for carrying out necessary rectification in the
+system. However, the reply was silent about the realisation of the amount.
+
+Non
+
+॥1 of showroom i
+
+We found from the
+database of six!” RAs that
+1,68,939 vehicles had
+been sold through
+showrooms or premises of 708 dealers/sub-dealers. There was nothing on
+record to indicate that inspection was conducted by the RAs. We noticed that
+the showroom inspection fee field was not made mandatory in the system at
+the time of registration of the new vehicles and registration of a vehicle was
+possible without payment of the showroom inspection fee. This resulted in
+non-realisation of inspection fee of 1.46 crore from the dealers.
+
+Rule 60A of the WBMV Rules prescribes a
+showroom inspection fee for motor vehicles at
+the time of first registration.
+
+After we pointed this out, the Department stated (September 2010) that the
+matter has been referred to NIC for carrying out necessary rectification in the
+tion of the amount.
+
+system. However, the reply was silent about the re:
+
+. है We found from the
+Section 56 of the MV Act prescribes that a database of two!
+
+transport vehicle shall not be deemed to be validly 4. s that 5,500
+registered unless it carries a certificate of fitness. vehicles had paid
+Rule 62 of the CMV Rules and Rule 57(6) of taxes but their
+WBMYV Rules prescribes the validity of certificate fitness certificate
+of fitness renewed for transport vehicles. was not renewed.
+
+The system did not
+ensure the renewal of fitness of the vehicles at the time of payment of tax.
+Thus, the vehicles were plying without certification of their fitness which
+could compromise public safety. The Department should ensure the renewal
+of Certificate of fitness at the time of payment of tax.
+
+3.11 _Non-assignment of new registration mark to other
+
+f fi th
+Section 47 of the MV Act, 1988 prescribes हनन किक tax का
+
+that when a motor vehicle registered in one records) of PVD, Kolkata
+state is kept in another state for a period that 128 vehicles of other
+exceeding twelve months, the owner will
+apply for new registration mark. If the owner
+fails to make an application within the
+period as prescribed, penalty may be
+imposed under the provisions of the Act.
+
+states were paying tax in
+West Bengal for more
+than twelve — months
+indicating that these had
+been plying in this state
+for more than 12 months
+
+7 RAs: Barasat, Barrackpore, Hooghly, Howrah, PVD Kolkata and South 24 Parganas.
+7 RAs: Hooghly and Howrah.
+
+20
+
+
+Chapter-IIl: VAHAN and SARATHI
+
+without being assigned new registration mark. The RA had not generated any
+report from the system in respect of these vehicles that were paying taxes for
+more than twelve months so that action in this regard could be taken.
+
+After we pointed this out, the Department stated (September 2010) that
+changes in the system to ensure allotment of new registration mark to the
+vehicles of other states at the time of payment of tax after 12 months will be
+ensured.
+
+ignment of registration number
+
+We noticed from the
+Section 41(6) of the MV Act, 1988 and the | database of 11 RAs that
+notification issued thereunder stipulates that a two to three series were
+RA shall assign a unique mark to every taken up simultaneously
+vehicle at the time of registration. Provision for —allotment रण
+exists for distinction in the allotment of mark _registration number for
+to transport and non-transport vehicles. In a transport vehicles. Thus,
+single series, 9,999 vehicles ie. upto four a subsequent series was
+digits can be awarded registration numbers. started even before the
+These numbers should be awarded in a ongoing series was
+sequence to monitor the year of registration exhausted.
+of the vehicle. The series for
+
+registration numbers was
+allotted by the RAs manually. Thereafter, the numbers were generated by the
+system for allotment. This resulted in allotment of more than one series
+simultaneously. This indicates the possibility of misuse of the facility for
+blocking choice numbers and improper management of registration of
+vehicles.
+
+There were also gaps between the registration numbers of a series. The
+missing registration numbers of vehicles were not found anywhere in the
+database. Due to gaps in the chronological order of registration number, the
+total number of vehicles registered at a particular period of time could not be
+ascertained. The missing registration numbers are also vulnerable to misuse.
+
+In two'* RAs, no separate series was maintained in the allotment of
+registration mark to non-transport and transport vehicles.
+
+After we pointed this out, the Department stated (September 2010) that
+suitable change in the system to ensure that before completion of one series of
+registration number no other series would be started, to maintain separate
+series for registration of transport and non-transport vehicles and to issue
+registration numbers serially would be made.
+
+RAs: Asansol and Burdwan.
+
+21
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+intenance of electron ter and 10
+
+monitoring of tax collecti
+
+3.13.1 Out of the
+As per Rule 26 of the WBMVT Rules, 1957, the 117 RAs selected
+taxing officer shall maintain a tax demand register for review the
+(TDR) in form ‘J’ showing registration number, Department had
+name and address of the owner, tax due etc. and transferred the
+shall review the register in order to see whether the data from TIS to
+tax is regularly paid and shall take prompt action VAHAN in five
+against the person concerned who did not pay tax. RAs!® and in the
+Further, one of the main objectives of remaining six RAs
+computerisation of the motor vehicles offices was it was directly fed
+maintenance of updated electronic TDR. in the system from
+the vehicle registers.
+Thereafter though information required for tax demand register was available
+in the system, it was not maintained in Form ‘J’ for monitoring tax collection.
+We analysed the database and found that 2,90,641 vehicles out of 19,30,266
+vehicles had not paid tax of € 645.17 crore. This may not be the actual
+position of non-realisation of tax but the computerised data showed such large
+extent of non-realisation. The age-wise analysis of these vehicles is mentioned
+in the table below:
+
+(Rupees in crore)
+
+Category of Vehicles Age of the vehicles
+
+Upto 15 years Between 15 and More than 30
+30 years years
+
+| Amount Cases Amount Cases Amount
+Transport Vehicles 1,15,001 | 269.72 | 28,608 | 54.24 | 27,215 | 130.90
+Non-Transport Vehicles 71,843 136.40 | 34,604 34.55 | 13,370 19.36
+Total 1,86,844 | 406.12 | 63,212 [| 88.79 | 40,585 | _150.26 |
+
+Thus, it would be seen from the above table that there are 40,585 vehicles
+which were more than thirty years old, some of which are dating back to
+1930’s. The possibility of any of these old vehicles being on the road is
+remote. The presence of such improbable data in VAHAN indicates that the
+legacy data in TIS was not eliminated before importing it into VAHAN and
+further, that the aforesaid mistakes in the VATIAN database were not rectified
+by proper data validation before commencing on-line transactions. Hence,
+information generated out of the system may not be authentic and reliable.
+3.13.2, We noticed that out of the
+Rule 121 of the WBMV Rules above —2,90,641 vehicles, 5,999
+read with GOs circulated from
+time to time prescribe the rates
+of special fees per annum on
+
+vehicles were also liable to pay special
+fees of रैं 4.42 crore that was also not
+हर . recovered by the RAs as the vehicle
+heavy goods vehicles having जार did not tum up for payment of
+gross vehicle weight (GVW) tax and no system for monitoring the
+above 22,542 Kg. collection of tax existed .
+
+1s
+
+RAs: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, Nadia, Paschim
+Medinipur, PVD Kolkata, Siliguri and South 24 Paraganas.
+
+‘© RAs: Barasat, Barrackpore, Hooghly, Howrah and Paschim Medinipur.
+
+22
+
+
+Chapter-IIl: VAHAN and SARATHI
+
+3.13.3. The Department had not set up any mechanism to review the VAHAN
+database to ascertain the actual number of vehicles that were on road and
+liable to pay tax. The RAs did not attempt to ascertain the amount of arrears
+pending collection and could not furnish any reason for non-realisation of tax
+from the defaulting vehicles. We found that though the RAs sent monthly
+reports to the Assistant Secretary, Transport Department indicating revenue
+realised during the reported month, the report did not contain any information
+regarding revenue recoverable from the vehicle owners.
+
+After we pointed this out five!’ RAs in 50,709 cases involving ~ 100.89 crore
+stated that demand notices for realisation of the due taxes were being issued.
+The remaining अं RAs did not furnish any reply/specific reply.
+
+The Department admitted the audit observation and stated that some vehicles
+might have been plying in the State without paying tax. After preparation of
+the state register of motor vehicles the problem would be sorted out
+(September 2010).
+
+.14 _Non-realisation ot fee for renewal ot c
+
+We found that system was
+not customised to
+generate reports In respect
+of the vehicles that
+
+Section 41(7) of the MV Act prescribes that
+the certificate of registration of a non-
+transport vehicle shall be renewed after a
+period of fifteen years from the date of issue
+
+. ८ required renewal of
+of such certificate. Rule 81 of the CMV quire
+है registration after the
+Rules, 1989 prescribes a fee for renewal of हु 5
+completion of fifteen
+
+certificate of registration. years. Thus, the RAs were
+
+not able to monitor the
+registration of vehicles that were paying tax even after the completion of
+fifteen years. We found from the database of six’? RAs that out of 1,97,171
+cases, in 33,237 cases the registration certificates had not been renewed
+though the owners of the vehicles were paying tax even after the expiry of
+validity of registration certificates ic. 15 years. This resulted in non-
+realisation of renewal fees of € 66.47 lakh.
+
+After we pointed this out, the Department stated (September 2010) that
+necessary action to register these cases would be taken.
+
+Cc Other instances
+
+-15 _Non/partial mapping of business rules}
+
+We found that out of 33 fields prescribed for registration of motor vehicle in
+‘Form 20’ under the CMV Rules 1989, five fields were not mapped in the
+system. These are mentioned as follows:
+
+ansol, Burdwan,Howrah, Nadia and Paschim Medinipur.
+: Barasat, Barrackpore, Hooghly, PVD Kolkata, Siliguri and South 24 Parganas.
+19 RAs: Barasat, Barrackpore, Hooghly, Howrah, PVD Kolkata and South 24 Parganas.
+
+23
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+Name of the field
+
+‘Age of the person to be registered as Registered owner
+
+Duration of stay at the present address
+
+Place of birth
+
+If place of birth is outside India, when migrated to India
+
+Declaration of citizenship by status
+
+Since, the data is meant to be utilised at the State and Central level in future
+for cross verification at various ends, its non-mapping renders the data
+
+incomplete to that extent.
+ISARATHI|
+
+The audit findings included in the following paragraphs are based on the
+analysis of the records relating to post-online system as these pertain to the
+input controls, validation controls etc. in the system:
+
+16 Input control weakness}
+
+3.16.1 Lack of dat:
+
+ut validation controls
+
+We found from the SARATHI database of the eight RAs selected for review
+that input validation controls were not inbuilt in the system. Hence, the system
+was unable to restrict input of invalid data. The following deficiencies were
+observed due to lack of input validation controls in the system:
+
+. According to Section 4 of the MV Act, 1988, no person under the age
+of 18 years shall drive a motor vehicle in any public place except in case of
+motor cycle having engine capacity below 50 cubic capacity (cc) which may
+be driven by a person above 16 years. Further, only a person above the age of
+20 years can drive a transport vehicle. The input validation controls of age of
+16/20 was however not made mandatory in the system.
+
+We found in the database of PVD, Kolkata and RA, South 24 Parganas that in
+seven cases the DLs were issued/renewed to persons below the age of 16
+years.
+
+e We found in the database of six”? RAs that in 788 cases DL for
+transport vehicles were issued though the applicants did not have the requisite
+minimum educational qualification of eighth standard under Rule 8 of CMVR,
+1989,
+
+As the application/documents submitted by the applicants were not made
+available to audit, we could not verify the data entered in the system.
+
+e Though passing of driving test is compulsory for issue of driving
+licenses (DLs), we noticed from the ‘DD licence’ table and ‘DL test result’
+table available in the database that in seven’! LAs, 4,458 applicants failed in
+the driving test and six applicants were absent but DLs were shown to have
+been issued to the applicants. This indicated that system was not customised to
+make passing of driving test compulsory for issue of DLs. Thus, the issue of
+
+* RAs: Bal
+2 LAs:
+
+, Barrackpore, Burdwan, Hooghly, Howrah and PVD Kolkata.
+ansol, Barasat, Barrackpore, Burdwan, Hooghly, PVD Kolkata and South 24
+arganas,
+
+24
+
+
+Chapter-IIl: VAHAN and SARATHI
+
+DLs to ineligible persons cannot be ruled out and this could seriously
+compromise public safety.
+
+‘ In 208 cases of six” RAs, while the registration number of the vehicle
+on which the driving test was conducted was found to be the same, the class
+and category of the vehicle was different. In these cases the licensees of four
+wheelers were shown to have taken the test on two wheelers and vice versa.
+The input validation control of class of vehicle for driving test was not made
+mandatory in the system to avoid the lapse.
+
+° We found from the ‘DD licence’ table and ‘Learner Licence’ table
+available in the database that in 82 cases under four”’ LAs the learner’s licence
+for transport vehicles was shown to be issued but DL for light motor vehicles
+was not shown to have been issued in the ‘DD licence’ table. The input
+validation control of issue of learner’s licence for transport vehicle only afier
+issue of DL for non-transport vehicle was not made mandatory in the system
+to avoid such lapses.
+
+e According to Section 14(2)(a) of the MV Act, 1988, licence to drive
+transport vehicle shall be effective for three years except DL issued to persons
+driving vehicles carrying dangerous or hazardous goods, which will be
+effective for one year.
+
+We found in the database of three™* RAs that in 45 cases DL for transport
+vehicles were issued with validity of more than three years and in seven” RAs
+we noticed that in 3,669 cases licences were issued with validity of less than
+three years in contravention of the rules. As the applications/documents
+submitted by the applicants were not made available to audit, the data entered
+in the system could not be verified by us.
+
+. According to Section 14(2)(b) of the MV Act, 1988, a licence to drive
+non-transport vehicle shall be effective for twenty years or until the date on
+which the licence holder attains the age of fifty years, whichever is earlier.
+
+We found in the database of five”® RAs that in 761 cases DL for non-transport
+vehicles were issued with validity of more than twenty years and in eight”
+RAs we noticed 8,652 cases where it was issued with validity of less than
+twenty years in contravention of the rules.
+
+e In 138 cases under four” RAs ‘challan’ numbers of money receipts in
+token of DL fee generated by SARATHI were found duplicate.
+
+° We found in the database of seven”? offices that 8,892 transactions had
+been conducted on Saturdays or Sundays though the offices of the RAs remain
+closed on those days.
+
+2 RAs: Asansol, Burasat, Barrackpore, Hooghly, Howrah and PVD Kolkata.
+
+23 [ 85: Barasat, Burdwan, PVD Kolkata and South 24 Parganas.
+
+* RAs: Barrackpore, PVD Kolkata and South 24 Parganas.
+
+* RAs; Asansol, Barasat, Battackpore, Burdwan, Hooghly, Howrah and PVD Kolkata.
+
+: Barasat, Bartackpore, Burdwan, PVD Kolkata and South 24 Parganas.
+
+: Asansol, Barasat, Barrackpore, Burdwan, Hooghly, Howrah, PVD Kolkata and South
+24 Parganas.
+
+*SRAs: Asansol, Burdwan, PVD Kolkata and South 24 Parganas.
+
+»” LAs: Barasat, Barrackpore, Burdwan, Hooghly, Howrah, PVD Kolkata and South 24
+
+Parganas.
+
+Fol
+ट्रे हे
+
+25
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+We also found that the data entered in the respective tables was not checked
+by any other person/supervising authority to ensure its correctness/credibility.
+
+Since incorrect issue of driving licenses is fraught with the risk to public
+safety, it is desirable that the Department ensure that the important fields
+mentioned above are made mandatory so that the system cannot proceed
+further in the event of any violation of business rules being detected.
+
+After we pointed this out, the Department referred the matter to NIC for input
+validation controls (September 2010).
+
+3.16.2 Incomplete databas
+
+We found that important fields were not made mandatory for data input.
+Consequently, the following fields were not captured in the system as detailed
+in the following table:
+
+Sl. No. Name of the table Name of the field Number of
+and total number of records foun:
+records blank
+1. DL issuing authori 3,02,408
+2. Testing authorit 8,83,441
+3. Pin code 86,800
+4. CENC! Qualification of DL holders. 714,066
+5. शक Inward number 14,862
+6. ~~ 1* Identification Mark 2,95,970
+7 2™ Identification Mark 3,37,799
+| * | Vehicle registration number for 2,28,266
+conducting driving test
+| 9. | Challan details (रैं 4.19 lakh ) 1,802
+10. TEST RESULT Challan number 1,51,766
+11. (2,66,321) Test result 23,400
+
+In the absence of mandatory details of driving test such as “testing authority”
+and “registration number” of the vehicle on which driving test was conducted
+we could not derive reasonable assurance that driving tests were actually being
+conducted before issue of driving licences. We recommend that the
+Government may issue directions for capturing data in such important fields.
+
+After we pointed this out, the Department stated that the matter would be
+checked and it would be referred to NIC for necessary action (September
+2010).
+
+The Government may ensure the completeness of the IT system by
+incorporating the business rules and putting in place proper validation
+controls which would ensure generation of complete and _ reliable
+information.
+
+26
+
+
+CHAPTER-IV
+
+TIONS
+
+HER OBSERV/
+
+.1___Introduction|
+
+The activities of Transport Department relating to issue/renewal of permits,
+trade certificates, licence to sub-dealers, maintenance of cash book, activities
+of the enforcement wing like receipts from compounding of fines and seizure
+of documents/vehicles were being performed manually. All these provisions
+except for issue/renewal of trade certificate were available in VAHAN but
+were not being utilised by the Department. We conducted the audit of these
+non-computerised activities and found certain deficiencies which are
+mentioned in this chapter.
+
+We also observed that no Manual detailing the working of and the process of
+collection of motor vehicle taxes, fees and fines was prepared by the Transport
+Department.
+
+4.2 S|
+
+ort realisation of permit fees}
+
+Permit is an important means to regulate the plying of transport vehicles
+within and outside the State. Every owner of a transport vehicle requires a
+permit to be granted or countersigned by the RAs or State Transport Authority
+(STA). The Transport Department issues and renews permits to contract
+carriages, stage carriages and goods carriages on realisation of requisite fees.
+
+We found from scrutiny of
+Rule 126 and 127 of the WBMV Rules, 1989 the permit registers in the
+read with Notification No. 5305 WT dated _ offices of 10' RAs that the
+12.12.2003 prescribe the rates of fees for RAs granted/renewed
+grant and renewal of permit for stage 2,732 permanent — stage
+carriage, contract carriage, goods carriage, carriage permits, contract
+ete. in schedule ‘A’ of the rules ibid. The carriage permits and goods
+permit fees were subsequently enhanced with carriage permits valid for
+effect from 20.10.2005 vide Notification No. various periods between
+4026-WT/ 6M-13/2005 dated 05.10.2005. April 2004 and October
+2014. However, the
+Department realised permit
+fees at rates lower than the revised rates. This resulted in short realisation of
+permit fees of € 37.85 lakh.
+
+After this was pointed out, the Department accepted (September 2010) the
+audit observation. However, the action taken to recover the amount has not
+been received.
+
+RAs: Asansol, Bankura, Barasat, Burdwan, Howrah, Nadia, Paschim Medinipur, Purba
+Medinipur, PVD Kolkata and South 24 Parganas.
+
+27
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+Short ri ci ate Transport Auth
+
+4.3.1 We found that
+As per Rule 87 of the CMV Rules the Transport the STAs of 14
+
+Authorities of different states grant National states’ and Union
+Permit (NP) to goods carriages and collect Territory of
+composite fee in the form of bank draft (BD) Chandigarh sent 915
+from the holders of such permits and dispatch BDs for composite
+
+these to the State Transport Authority (STA) of fees in respect of
+the concerned state for permitting those 10,546 NPs to the
+vehicles to ply in that state. Further, Rule STA, West Bengal
+128(4) of the WBMV Rules, 1989 provides that between February
+
+the annual rate of composite fee for goods 2006 and = March
+carriages of other states in West Bengal shall be 2009. However, the
+the same as fixed by those states from time to composite fee was
+time for permitting the vehicles of West Bengal collected by those
+to ply in those states. The rate of composite fee states at rates lower
+ranged between & 3,000 and ¥ 5,000 during the than the prescribed
+period under review. rates. The states
+
+were liable to send
+the composite fee of
+%4.64 crore instead of 2.29 crore through BDs. The STA, WB did not take up
+the matter with the authorities concerned for realisation of the balance amount
+resulting in short realisation of composite fee of € 2.35 crore.
+
+After we pointed this out, the Department accepted the audit observation and
+assured that the cases would be looked into (September 2010).
+
+4.3.2 Our scrutiny further revealed that the Government of Tamil Nadu
+enhanced the rate of composite fee from हैं 3,000 to % 5,000 from 12.12.2008
+through Notification dated 12.12.2008 circulated to all the States. Since the
+composite fee was required to be collected on reciprocal basis, the
+Government of West Bengal was required to issue orders for realisation of the
+tax at the rate of € 5,000 per annum/per vehicle from the said date. However,
+the Government neither issued any order for collection of the tax nor did it
+request the Government of Tamil Nadu for collection of the difference of the
+composite tax from 1,663 permit holders of Tamil Nadu received between
+26.12.2008 and 14.8.2009. This resulted in non-realisation of revenue of
+= 33.26 lakh in the shape of composite fee.
+
+Afier we pointed this out, the Department admitted the audit observation.
+However, specific action taken on this issue has not been intimated to the audit
+(September 2010).
+
+> Andhra Pradesh, Assam, Bihar. Gujarat, Haryana, Himachal Pradesh, Jharkhand,
+Madhya Pradesh, Maharashtra, Nagaland, Punjab, Rajasthan, Tamil Nadu and Uttar
+Pradesh
+
+28
+
+
+Chapter-IV: Other observations
+
+Deficiencies in monitoring, remittance and reconciliation of bank
+drafts
+
+Absence of provisions for maintenance of register for recording}
+defective/lapsed drafts
+
+We found that the WBMV
+
+Bank Drafts (BDs) are remitted to Rules did not provide for
+
+Reserve Bank of India (RBI) for credit maintenance of any register
+
+into the Government account. Defective for monitoring the receipts
+
+or lapsed BDs are returned by RBI to the of lapsed/defective BDs
+
+STA, from time to time. returned from the RBI.
+
+Consequently the STA, WB
+
+did not maintain any separate record/register to monitor receipt of defective or
+
+lapsed BDs returned by RBI, Kolkata. Therefore, the actual number of BDs
+
+lapsed, subsequently revalidated and remitted to the Government account
+could not be ascertained.
+
+We also found that the RBI, Kolkata returned 10,207 BDs valued at हैं 2.22
+crore to STA, WB as the validity of those drafts had expired. The STA, WB
+sent back the BDs to the issuing banks between July 2005 and March 2009 for
+revalidation. However, no record/register was maintained to watch
+revalidation and return of the lapsed drafis. This resulted in blocking of
+revenue of € 2.22 crore as revalidation of the BDs is still pending.
+
+After we pointed this out, the Department admitted the audit observation and
+stated that the problems would be solved with the introduction of the new
+system of receiving composite fees online.
+
+4.2 _Non-recon ion_of bank draft
+
+The West Bengal Financial Rules provide that the departmental controlling
+officers should see that all sums due to Government are regularly received and
+checked against demands and that they are paid into the treasury.
+
+We cross verified remittance of 70 challans of BDs with the records of the
+RBI, Kolkata and noticed that BDs amounting to 2.08 crore were remitted to
+RBI, Kolkata between June 2006 and March 2008 but we traced the credits
+aggregating to € 2.01 crore only in the Government account during that period.
+Non-reconciliation by the Department with the RBI resulted in non-detection
+of the variation of T seven lakh.
+
+After we pointed this out, the Department stated that reconciliation was started
+only from December 2009.
+
+.4.3__Non-authentication of entries made in Bank Draft Regi:
+
+The WBMV Rules, 1989 do not prescribe maintenance of a bank draft register
+to monitor the receipt and remittance of bank drafts.
+
+We noticed that the STA, WB received a large number of bank drafts for
+composite fee for National Permit (NP) from different states. Though the
+details of the BDs were recorded in a register, the entries made in the register
+were neither authenticated nor periodically reviewed by any responsible
+
+29
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+officer of the STA to ascertain the correctness of remittance of revenue to the
+Government account.
+
+After we pointed this out, the Department admitted the audit observation and
+stated that the receipts and remittances of bank drafis could not be adequately
+monitored due to involvement of the officers of STA in court cases most of the
+time.
+
+Improper maintenance of cash boo!
+
+As per the West Bengal Treasury Rules and
+Subsidiary Rules, a cash book is required to
+be maintained in order to monitor receipts
+and remittance of revenue. All transactions
+should be entered in the cash book as soon
+as they occur and attested by the head of
+office in token of check. The head of the
+office should verify the totaling of the cash
+book or have this done by some responsible
+officer sub-ordinate to him other than the
+writer of the cash book and initial it as
+correct. At the end of each month the head
+of the office should verify the cash balance
+in the cash book and record a signed and
+dated certificate to that effect. Entries made
+in the cash book regarding remittances of
+receipt to the accredited bank for credit into
+Government account should be attested by
+the head of office after verifying them with
+reference to the bank receipt recorded in the
+pay-in-slips or challans.
+
+We found that the
+receipts in token of
+money received were
+generated through RVS
+but cash book was being
+maintained manually in
+all the RAs test
+checked. The following
+irregularities were
+found in the cash book
+of three® RAs:
+
+() In PVD, Kolkata, we
+found that the cash book
+was neither signed by
+the cashier-in-charge
+nor was it verified by
+any officer during the
+period between August
+2008 and February
+2009. The collection on
+17 October 2008 was
+shown in the cash book
+
+as © 2.19 lakh. However, a
+sum of © 1.84 lakh only was remitted on 20 October 2008. Cross verification
+of the treasury records also confirmed that the actual deposit was = 1.84 lakh.
+This resulted in short remittance of हैं 0.35 lakh. The local office admitted that
+it was a bonafide mistake and stated that actual cash collection on 17 October
+2008 was & 1.84 lakh instead of F 2.19 lakh which was wrongly entered on the
+receipt side of the cash book. Further, the local office stated that signature and
+authentication of the cash book had since been completed. However, the cash
+book was not shown to audit to enable us to verify this.
+
+(ii) In RA, South 24 Parganas, during October 2005 and March 2009, a
+computer printout of daily receipts on account of receipt of taxes, fees & fines
+etc. was affixed on the ‘Receipt’ side of the cash book without any attestation/
+authentication by any officer.
+
+(iii) The blank ‘payment’ side was signed by the RA, South 24 Parganas upto
+30 June 2008.
+
+3 RAs: Asansol, PVD Kolkata and South 24 Parganas.
+
+30
+
+
+Chapter-IV: Other observations
+
+(iv) No cash collection was reflected on the receipt side of the cash book on 4
+September 2008 and 5 September 2008, though those days were weekdays on
+which the office remained open.
+
+(v) No cash collection on account of taxes, registration and permit was shown
+on 13 March 2009 except the collection of licence fees.
+
+(vi) Neither was the monthly cash balance verified nor was any signed and
+dated certificate to that effect recorded by the head of the office.
+
+The RA, South 24 Parganas, inter alia stated that due to failure of the
+computer system on 4 September 2008, no transaction was done on 5
+September 2008. However, action would be taken to reflect the collection of 4
+September 2008 in the cash book. The matter regarding maintenance of the
+Cash Book was noted for future guidance. However, the probability of
+gathering the details of the collections made on 4 September 2008 appears
+remote in view of our findings reported in para 2.5 of Chapter II.
+
+In RA, Asansol no cash book was maintained during the period January 2008
+and March 2009. Daily collection of revenue report extracted from computer
+was kept and that was produced to audit for verification.
+
+In reply RA, Asansol stated that they had noted the audit observation for
+future guidance.
+
+We recommend that the Government may consider issuing directions to
+the Department for maintenance of the cash book in accordance with the
+Treasury Rules and ensure that the prescribed checks are exercised by
+the head of the offices to safeguard Government revenues.
+
+है पु We found from
+Section 16 of the WBMVT Act and Section 12 of the the records of
+
+WBAT Act provide that a motor vehicle may be seized vehicles.
+detained and seized by the enforcement authority due case registers
+to non-payment of tax and additional tax and may be and seizure lists
+released on realisation of dues within 30 days of in PVD, Kolkata
+seizure. The owner is liable to pay double the amount and twot RAs
+of tax and penalty within a further period of 15 days that 47 vehicles
+after expiry of the said 30 days. In case no one tums up were seized
+claiming the ownership of the motor vehicle within 30 between January
+days from the date of seizure, the Taxing Officer shall 2006 and
+auction the vehicle to recover the Government dues. September 2009
+
+for plying on road
+without payment of tax and additional tax. In 33 cases, tax dues were assessed
+at & 25.07 lakh and demand notices were issued between April 2007 and
+November 2009 by the RAs. The defaulting owners of the seized vehicles
+neither paid the assessed dues nor were any action taken by the RAs to dispose
+of the seized vehicles through auction. In the remaining 14 cases tax was not
+assessed by the RAs. The details like engine capacity, type of vehicles, etc.
+
++ RAs: Howrah and South 24 Parganas.
+
+31
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+were not found on record. As such the amount recoverable from these vehicles
+could not be ascertained.
+
+After we pointed this out, the Department accepted the audit observation and
+stated that reminders had recently been issued to the concerned RAs for
+necessary action.
+
+4.7___No
+
+suance of saleable forms|
+
+We noticed that the
+Rule 123 of the WBMV Rules provides that | Department was not
+all kinds of forms prescribed under the supplying the forms for
+CMV Rules, 1989 and the WBMV Rules, issue of registration
+1989, such as application form for issue of certificates and driving
+
+registration certificates, driving licences, licences. We found in the
+permits etc. shall be saleable and priced at offices of the STA, WB
+the rate of € 5 per page (including both sides and nine? RAs
+of each form). that 13,02,084 licences,
+
+registration certificates,
+
+permits etc. were issued
+
+during the period under review. However, no statutory forms were issued by
+
+the RAs and the applicants procured the forms from private agents. The
+Department could have earned revenue of € 1.07 crore by sale of the forms.
+
+After we pointed this out, the Department accepted the audit observation and
+stated that in place of the present system, computerised system of application
+was to be introduced (September 2010).
+
+4.8  Non-realisation of differential tax and penalty from the owners of
+
+two wheelers
+
+We found in the
+Section 9A of the WBAT Act as amended in August | offices of four"
+2003, provides that the owner of a motor cycle RAs that the
+tegistered after 25 November 1991 has to pay the owners of 2,345
+
+difference of the life time tax payable as specified in two wheelers
+schedule Ill and one-time tax (OTT) already paid registered
+within the appointed date. Notification issued by the between July
+State Government in December 2004, stipulated 16 2002 and
+
+March 2005 as the appointed date for payment of the February 2004
+difference of tax. In case of non-payment of १10 not pay the
+differential tax within the prescribed date, penalty differential tax
+depending upon the category of the vehicle and the of हैं 46.82 lakh
+delay is leviable at the prescribed rates. even 22 to 58
+months afler
+lapse of the stipulated date. No action was taken by the Department to realise
+the same by issue of demand notices. This resulted in non-realisation of tax of
+₹ 93.64 lakh including penalty of F 46.82 lakh.
+
+3 RAs: Asansol, Bankura, Barasat, Barrackpore, Jalpaiguri, Malda, Nadia, Purba Medinipur
+and Siliguri.
+
+© RAs: Asansol, Bankura, Malda and Siliguri.
+
+32
+
+
+Chapter-IV: Other observations
+
+After we pointed this out, the RAs stated that demand notices would be issued
+
+to realise the dues as soon as possible.
+
+4.9 Application of incorrect rate of special tax
+
+Section 9B of the WBAT Act, as amended
+from time to time, provides for realisation
+of one time tax for five years from the
+owners of non-transport vehicles at the
+prescribed rate based on their use, engine
+capacity and seating capacity in lieu of
+annual tax payable under the WBMVT
+Act. Further, the schedule to the Act
+provides for levy of special tax if such
+motor vehicle is air conditioned. In case of
+non-payment of one-time tax and special
+tax beyond 15 days after the due date,
+penalty ranging between 5 and 100 per
+cent of the unpaid tax is leviable.
+
+We found in the offices of
+six’ RAs that the owners of
+252 light motor vehicles
+either paid annual tax
+instead of one time tax for
+five years or RAs applied
+incorrect rates. The RAs
+did not take any action to
+realise the tax dues. This
+resulted in non-realisation
+of one time tax of % 15.46
+lakh. Besides penalty of
+15.46 lakh could have been
+levied.
+
+After we pointed this out,
+the Department accepted the
+
+audit observation and assured to look into the cases (September 2010).
+
+of Motor
+
+Rule 24 of the CMV Rules prescribes that no person
+shall establish or maintain any driving school or
+establishment for imparting instructions for driving
+motor vehicles without a licence granted by the
+licensing authority. Moreover, the vehicles owned by
+motor training schools are liable to be taxed at the
+
+rates prescribed in the Schedules.
+
+We found from
+the motor training
+school register
+maintained in the
+offices of PVD,
+Kolkata RA,
+Howrah and RA,
+Barasat that in
+case of 139
+
+vehicles owned by 83 motor training schools, the RAs either did not realise
+tax and additional tax or realised such taxes at lower rates. The application of
+lower rate was due to the fact that the RAs were treating these vehicles as
+owned by individuals and charging the tax at a lower rate. This resulted in
+non/short realisation of tax and additional tax of € 21.42 lakh. Besides penalty
+of % 21.42 lakh could have been levied.
+
+After we pointed this out,the Department accepted the audit observation and
+assured (0 look into the cases (September 2010).
+
+7 RAs: Bankura, Burdwan, Malda, Nadia, Purba Medinipur and Siliguri.
+
+33
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+Non-monitoring of renewal of trade certificates}
+
+Rule 33 of the CMV Rules provides
+that a motor vehicle in the possession
+of a dealer shall be exempted from the
+necessity of registration subject to the
+condition that the dealer obtains a trade
+certificate (TC) from the concerned
+RA. No holder of a TC shall deliver a
+motor vehicle to a purchaser without
+registration of the vehicle, whether
+temporary or permanent. Further, Rule
+35 of the CMV Rules, 1989 prescribes
+that a TC granted to a dealer shall be
+valid for twelve months from the date
+of issue and shall be renewable on
+realisation of prescribed fees.
+Presentation of vehicle for registration
+by the dealer before the RA with
+invalid TC attracts penalty u/s 192 of
+
+4.11.1 We noticed that the RAs
+did not monitor the vehicles
+presented for registration with
+invalid TCs. No survey was
+also conducted to identify the
+dealers using invalid TCs for
+presentation of vehicles. No
+penalty was imposed on the
+dealers who presented the
+vehicles for registration with
+invalid TCs. We found in
+five’ RAs that the validity of
+183 TCs issued to 50 dealers
+had expired between July
+2000 and July 2009. No
+record was maintained in
+respect of presentation of
+vehicles by the defaulting
+dealers before the RAs for
+
+the MV Act, 1988. registration with invalid TCs.
+This resulted in non-realisation
+
+of TC renewal fees of € 1.08 lakh.
+
+Further, the following two RAs renewed 13 TCs of three dealers in an
+irregular manner as mentioned below:
+
+4.11.2 We noticed in PVD, Kolkata that a dealer applied for renewal of TC
+on 29 June 2007 and deposited fees on 5 September 2007. However, renewal
+was granted retrospectively from 26 May 2007. The dealer presented four auto
+rickshaws for registration between 31 May 2007 and 27 June 2007 with
+invalid TCs. However, no penalty was imposed.
+
+We noticed in RA, Asansol that in case of one dealer, renewal of TC was
+granted for three years at a time with retrospective effect and in another case
+renewal was granted after expiry of the provisional appointment for
+dealership.
+
+After we pointed this out, the RA, Asansol agreed to conduct survey to
+identify the dealers operating within his jurisdiction with invalid TCs. The
+RA, South 24 Parganas stated that attempts would be made to take up the
+matter with NIC for on-line link-up so that the system would not allow
+registration of vehicles presented for registration on the basis of invalid TCs.
+The remaining RAs did not furnish any specilic reply.
+
+* RAs: Asansol, Burdwan, Nadia, PVD Kolkata and South 24 Parganas.
+
+34
+
+
+Chapter-IV: Other observations
+
+We noticed that the licence
+Rule 75(4) of the WBMV Rules register to watch over the grant
+prescribes that the RA should grant or renewal of sub-dealer’s
+
+licence to sub-dealers to sell or deal licence and the fees was not
+or keep in possession any motor maintained in the four’ RAs. In
+vehicle. A licence so issued is valid the absence of this control
+for a period of one year only and mechanism, we could not
+shall be renewable on payment of ascertain the number of sub-
+prescribed fees. District Magistrate dealer’s licences issued, date of
+is the administrative head of all the expiry of the licences, date of
+State Government offices in the renewal and fees realised etc.
+
+district. The RAs work under the We further found from the
+administrative control of the District licence register maintained in
+Magistrate/Additional District five! RAs that the validity of
+
+Magistrate. licences of 135 sub-dealers had
+
+expired between 2005 and 2009.
+
+The District Magistrate, Howrah issued suspension notices to 47 sub-dealers
+
+in March 2009 without conducting enquiry whether the sub-dealers continued
+
+with their business during the intervening period. The other RAs did not take
+
+any action to realise the sub-dealer’s licence fee. This resulted in non-
+realisation of revenue of € 23.80 lakh.
+
+After we pointed this out, the RA, Bankura and RA, Paschim Medinipur stated
+that demand notices for realisation of the fee would be issued. The RAs,
+Howrah, Barasat and Siliguri did not furnish any specific reply.
+
+We reported the above observations to the Department/Government in June
+2010. They assured (September 2010) that necessary action would be initiated.
+A report on further action has not been intimated (February 2011).
+
+Lack of proper infrastructure i
+
+ost
+
+The Rampur MV check post is situated on National Highway-2 at a distance
+of 14 kilometers from Asansol town. The check post had no check gate or any
+barrier to stop vehicles. As a result, the enforcement activities were conducted
+by the motor vehicles inspectors near the check gate of Garui Toll Plaza under
+the jurisdiction of National Highway Authority of India. The lighting
+arrangements at the check post was indequate and hindered enforcement
+activities at night.
+
+The check post was located in an isolated place. Though the average daily
+collection of revenue at the check post was around® three lakh which was
+required to be deposited into the State Bank of India, Asansol Branch, there
+Was no atrangement for permanent posting of police personnel.
+
+After being pointed out by us, the Department accepted the audit observation
+and assured to look into the case (September 2010).
+
+9
+
+RAs: Burdwan, Nadia, PVD Kolkata and South 24 Parganas.
+' RAs: Bankura, Barasat, Howrah, Paschim Medinipur and Siliguri
+
+35
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+In order to augment the collection of revenue, the Additional Chief Secretary,
+Transport Department instructed the District Magistrate, Burdwan in July
+2007 to shift the Rampur MV check post near the Commercial Tax Check
+Post at Duburdihi for combined checkingof vehicles with the commercial tax
+inspectors. Moreover, the Ministry of Surface Transport, Government of India
+also advised the State Government to set up integrated check posts. Though
+the matter was discussed in the revenue meeting held in February 2009, no
+further action had been taken for integration of the check post.
+
+The Government may consider integration of the check posts to augment
+collection of revenue.
+
+15 Internal Audi
+
+Internal audit is a vital tool available to the management to monitor the
+functioning of an organisation. It helps the management to take corrective
+action wherever necessary to ensure that the systems are functioning
+reasonably well and the stated objectives are achieved.
+
+The Internal Audit Branch set up in November 1998 under the Finance
+Department conducts internal audit in various Departments.
+
+We observed that the Transport Department had no internal audit wing. The
+Finance (Internal Audit) Department also did not conduct audit of the
+Department during the period under review.
+
+The Government may ensure that internal audit of the Department is
+conducted periodically.
+
+36
+
+
+The irregularilies noticed during the review of the Transport Department have
+been discussed in the preceding chapters. The conclusions arrived at and
+summary of recommendations are mentioned in the succeeding paragraphs.
+
+5.1 Conclusion}
+
+Despite instructions of GOT in 2002 to implement the standard software
+applications ‘VAHAN’ and‘ SARATHTI’, little progress could be achieved by
+the State Government. By March 2009, only 19 RAs out of 26 RAs were using
+the ‘ VAHAN’ package while only nine RAs were using ‘SARATHI’ for
+issuing driving licenses. Thus, the IT system had restricted geographical
+coverage. The RAs were not linked up and thus, no progress could be made in
+implementing a state wide area network to ensure that the entire state wide
+data of motor vehicles was available at a central server. Consequently, the
+State register of Motor Vehicles could not be prepared which in turn impacted
+on the preparation of a National Register of Vehicles. Even after a lapse of six
+years from the date of commencement of computerisation, all the modules are
+not yet operational and some of the applications are still being done manually.
+A locally developed software was being used in a few RAs for accounting
+purposes and such an application carried risks from the control point of view.
+Thus, the objectives of computerising the system of registration and taxation
+of vehicles and issuing of driving licenses could not be fully achieved.
+
+The Department did not have an IT strategy or an IT plan leading to absence
+of direction in the IT implementation. The system was further compromised
+when complete information was not captured in the database and deficient
+input controls and validation checks, non-mapping of business rules and
+probability of manual interventions made the data unreliable. Lack of adequate
+supervision resulted in erroneous data capture thereby resulling in data
+redundancy. The IT procedures and management of changes were not
+satisfactory and records and relevant documentation describing the impact and
+testing of IT changes did not address all recent changes to the business rules.
+Legacy data was not weeded out from the database rendering it unreliable. The
+Department had not formulated and documented any security policy and had
+not issued any guidelines for protection of hardware and software of the
+system. Preventive and detective measures like installing and updating
+antivirus software, user’s id and passwords were left to the discretion of the
+RAs, thus putting the assets at risk.
+
+The Department was not able to extract useful information from the system
+regarding defaulters and has thus failed to exploit the full potential of the IT
+system. The system as a management information system (MIS) was
+inadequate.
+
+37
+
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+No Manual detailing the working of and the process of collection of motor
+vehicle taxes, fees and fines was prepared by the Transport Department. The
+Department did not have an Internal Audit Wing and no internal audit was
+ever conducted, as a result of which the weaknesses in the functioning of the
+Department remained undetected.
+
+recommend.
+
+mma
+
+The Government may consider taking the following steps to enhance the
+efficiency and effectiveness of the Transport Department:
+
+> developing an IT strategy and an IT plan to avoid ad-hoc
+implementation of the computerisation efforts;
+
+> setting a time frame for early completion of all functions and in all
+RAs;
+
+> establishing a State wide area network with interconnectivity of all
+offices to integrate the database so that the data being captured at RA
+level can be integrated at the state level in order to establish the State
+Register of vehicles;
+
+> incorporating stringent input and validation controls into the system to
+ensure that unauthorised, invalid and non-existing data is not fed into
+the system to enhance data reliability and completely eliminate manual
+intervention;
+
+> maintaining a well documented change management procedure for
+ensuring transparency and effective internal controls;
+
+> drawing up an IT security policy with adequate documentation with a
+credible threat assessment mechanism and disaster recovery and
+business continuity plan for harnessing optimum output from the
+system;
+
+(5;
+
+Vv
+
+generating periodical reports from the system as a tool of management
+information system to aid the management to monitor the revenue
+collection and take suitable corrective measures; and
+
+38
+
+
+Chapter-V: Conclusion and recommendations
+
+> establishing an internal audit wing for conducting periodical audit of
+the Department and preparing a manual detailing the internal control
+mechanism in the Department.
+
+pr. al
+
+Kolkata (M. RAY BHATTACHARYYA)
+The Accountant General (R,W & LBA)
+West Bengal
+Countersigned
+
+FR, -
+
+New Delhi (VINOD RAI)
+The Comptroller and Auditor General of India
+
+39
+
+
+2.
+
+3.
+
+ANNE
+
+1 ॥
+
+Types of Taxes, Fees and Fines levied on Motor Vehicles and for Driving
+
+Licences by Transport Department
+
+VAHAN
+
+Registration of Vehicles: a) “Registration fee” is paid by the owner of the
+
+vehicle.
+
+b) “Fancy registration marks fee” is paid by the
+owner of the vehicle for assignment of a registration
+mark for which he has a fancy for, if any.
+
+c) “Showroom Inspection fee” shall be realised from
+the dealer or sub-dealer for inspection of vehicles by
+the transport authority.
+
+d) “Dealer’s tax” shall be paid by the dealer as
+specified in tax schedule in respect of the motor
+vehicles in his possession or control, whether or not
+such motor vehicles are driven in any public place.
+
+Certificate of fitness of vehicle: Fitness fee is paid by the owners of vehicles
+for inspection of their vehicles by the transport authority.
+
+Tax: (I) Road tax
+
+a) “Life time tax” means the tax imposed on motor cycle or motor cycle
+combination under the Act and leviable for the entire life-time of such
+motor cycle or motor cycle combination, as the case may be.
+
+b) “One-time tax” means the tax imposed on motor car and omnibus as
+specified for a period of five years from the date of its registration and
+being less than 10 years old and not being transport vehicles.
+
+c) “Quarterly tax” means transport vehicle shall pay tax quarterly in
+advance, but a rebate of five per cent shall be allowed if the tax is paid
+for the whole year in advance.
+
+(1) “Special tax” is realisable at the prescribed rates for air conditioned
+vehicles based on their use, seating capacity, engine capacity and
+category of the vehicles.
+
+(II) “Special fee” is realisable from the owners of heavy goods vehicle
+having gross vehicle weight (GVW) above 22,542 Kg.
+
+(IV) “Audio fees” is realisable from the owners of vehicle in which any
+audio set with or without loudspeaker is installed.
+
+Renewal of Certificate of registration: In case of non-transport vehicles
+certificate of registration is valid only for a period of fifteen years from the
+date of issue of such certificate and shall be renewable on payment of required
+
+41
+
+
+we
+
+Audit Report on Collection of motor vehicles taxes, fees and fines
+
+SARATHI
+
+Application for learner’s licence is made by the applicant with proof of
+residence, age and citizenship.
+
+Preliminary test is taken for learner’s licence by the licensing authority for its
+satisfaction so that the applicant possesses adequate knowledge and
+understanding of the traffic signs, signals, rules of the road and duties of a
+driver.
+
+Application for driving licence shall be accompanied by an effective learner’s
+licence and appropriate fees.
+
+Driving test shall be conducted by the licensing authority in a vehicle of the
+type to which the application relates.
+
+Issue of driving licence by a licensing authority.
+Addition to driving licence shall be accompanied by an effective learner’s
+licence and driving licence held by the applicant with appropriate fees.
+
+Renewal of driving licence shall be accompanied by driving licence and
+appropriate fee.
+
+42
+
+
+Annexure
+
+ANNEXURE-II
+
+ear of No. of हे फ्ाह्ा 5
+
+Selected paragraphs
+
+1994-95 [1 [5.2 (Review)
+
+1997-98 [15.08
+
+2001-02 [1 5.02 (Review)
+
+2003-04 [16
+
+2004-05 |1 [5.2
+
+2005-06 1 7 तिफिििििो)फश।
+
+2007-08 L 5.4
+
+Total 7
+
+Unselected paragraphs
+
+1981-82 2 3.2, 3.3
+
+1982-83 7+3* 4.2.2(a), 4.2.3, 4.2.4, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9
+
+1983-84 | 8 | 3.6, 3.7, 3.8, 3.9, 3.10
+
+1984-85 5 5.5, 5.6
+
+1985-86 | 9 | 5.5, 5.6, 5.7, 5.8, 5.9, 5.10
+
+1986-87 [9 [6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10
+
+1987-88 15 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.10, 5.11, 5.12, 5.13,
+5.14, 5.15, 5.16, 5.17
+
+1988-89 [8 [4.2, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4.10
+
+1989-90 7 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8
+
+1990-91 9 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4.10
+
+1991-92 11 5.2, 5.3, 5.4, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12
+
+1992-93 13 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 5.13, 5.14,
+5.15
+
+1993-94 [8 [5.2, 5.3, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12
+
+1994-95 [6 [15.3, 5.4, 5.5, 5.6, 5.7, 5.8
+
+1995-96 12 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09, 5.10, 5.11, |
+5.12, 5.13
+
+1996-97 14 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09, 5.10,
+5.11, 5.12, 5.13, 5.14, 5.15
+
+1997-98 [6 _[5.03, 5.04, 5.05, 5.06, 5.07, 5.09
+
+1998-99 7 5.02, 5.03, 5.04, 5.05, 5.06, 5.07, 5.08
+
+1999-00 5 6.03, 6.04, 6.05, 6.07, 6.08
+
+2000-01 7 5.02, 5.04, 5.05, 5.06, 5.07, 5.08, 5.09
+
+2001-02 3 5.03, 5.04, 5.05
+
+2002-03 [6 | 5.2, 5.3, 5.4, 5.5, 5.6, 5.7
+
+2003-04 [4 [5.2, 5.3, 5.4, 5.5
+
+2004-05 5 5.3, 5.4, 5.5, 5.6, 5.7
+
+2005-06 | _ 4 [4.2, 4.3, 4.4, 4.5
+
+2006-07 5+1*® 5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.5, 5.2.6.1, 5.2.8, 5.2.9, 5.2.10,
+5.2.11, 5.2.12, 5.2.13, 5.2.14, 5.3, 5.4, 5.5, 5.6, 5.7
+
+2007-08 3 5.2, 5.3, 5.5
+
+Total 198+4
+
+* sub-paragraph ® Review.
