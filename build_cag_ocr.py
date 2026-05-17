@@ -34,6 +34,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
+from parliamentwatch_text_shards import load_markers
+
 # ── Paths ───────────────────────────────────────────────────────────────────
 
 ASSETS    = ROOT / "docs"
@@ -133,40 +135,56 @@ TESSERACT_LANGS = os.environ.get("TESSERACT_LANGS", "eng+hin")
 
 def find_ocr_candidates(reports: dict[int, dict]) -> list[tuple[int, str]]:
     """Walk reports.json for any report with a pdf_url that has neither a
-    text/<id>.txt nor a text/<id>.ocr-failed tombstone. Returns
-    [(id, pdf_url), ...] sorted newest-first (highest id wins — CAG IDs
-    are monotonic).
+    text/<id>.txt nor a text/<id>.ocr-failed tombstone AND has a
+    .pypdf-empty marker (i.e. pypdf already confirmed scanned-only).
+    Returns [(id, pdf_url), ...] sorted newest-first (highest id wins —
+    CAG IDs are monotonic).
+
+    Marker source-of-truth: docs/cag/markers.json (post-derive
+    consolidation), with on-disk sidecars as a fallback for the brief
+    window between a fresh backfill commit and the next derive run. The
+    consolidation step in cag-derive.yml deletes the per-record sidecars
+    from disk after merging them into markers.json — historically this
+    function only checked sidecars, which made it find zero candidates
+    once the corpus had been derive'd (visible in audit.json as
+    pypdf_empty_awaiting_ocr > 0 but the slow lane reporting
+    `candidates: 0`). Now it reads markers.json the same way
+    build_cag.py:compute_audit does, matching the corrected pattern in
+    build_lc_ocr.py and build_fc_ocr.py. See CONV.md "Per-attempt
+    status markers" for the consolidation semantics.
 
     pdfs/ is gitignored, so on a fresh runner we don't have local PDFs
     cached. The slow lane downloads each candidate's PDF before OCR'ing.
     On subsequent runs that hit the same PDF (rare — tombstones prevent
     most retries), the cached file is reused.
     """
-    # Per-attempt markers (see CONV.md "Per-attempt status markers"):
-    # an OCR candidate is one where pypdf already confirmed the PDF is
-    # scanned-only or encrypted (the .pypdf-empty marker exists) AND we
-    # haven't already extracted text via tesseract (.txt) or marked it
-    # permanently OCR-failed (.ocr-failed). This narrows the OCR target
-    # set to exactly the population OCR is designed to fix — no wasted
-    # tesseract cycles on PDFs where backfill should be retrying with
-    # pypdf, and no wasted cycles on already-tombstoned PDFs.
-    #
-    # During the migration window (after this code first deploys, before
-    # the hourly backfill has populated .pypdf-empty markers across the
-    # corpus), OCR will find few candidates. That's fine — backfill
-    # populates markers within a few cron ticks and OCR's effective set
-    # converges on the scanned-PDF residue.
+    # Consolidated markers — single source of truth post-derive. Empty
+    # dict if markers.json doesn't exist yet (pre-first-derive corpus).
+    bundled_markers = load_markers(DOCS)
+
     candidates: list[tuple[int, str]] = []
     for rid, meta in reports.items():
         pdf_url = meta.get("pdf_url")
         if not pdf_url:
             continue
-        text_path        = TEXT_DIR / f"{rid}.txt"
-        ocr_failed_path  = TEXT_DIR / f"{rid}.ocr-failed"
-        pypdf_empty_path = TEXT_DIR / f"{rid}.pypdf-empty"
-        if text_path.exists() or ocr_failed_path.exists():
+        cid = str(rid)
+        # Permanent skips: already extracted (.txt) or tombstoned
+        # (.ocr-failed). Check both markers.json and on-disk sidecar —
+        # sidecars only exist transiently in the pre-derive window after
+        # a fresh backfill wrote them but the next derive hasn't yet
+        # consolidated.
+        if (TEXT_DIR / f"{rid}.txt").exists():
             continue
-        if not pypdf_empty_path.exists():
+        if bundled_markers.get(cid) == "ocr-failed":
+            continue
+        if (TEXT_DIR / f"{rid}.ocr-failed").exists():
+            continue
+        # Positive signal: pypdf-empty marker (in either source).
+        is_pypdf_empty = (
+            bundled_markers.get(cid) == "pypdf-empty"
+            or (TEXT_DIR / f"{rid}.pypdf-empty").exists()
+        )
+        if not is_pypdf_empty:
             continue   # let backfill try pypdf first
         candidates.append((rid, pdf_url))
     candidates.sort(key=lambda c: -c[0])
