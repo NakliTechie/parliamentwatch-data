@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-17T08:31:26Z",
+  "generated_at": "2026-05-17T09:08:26Z",
   "totals": {
-    "pypdf-empty": 323,
+    "pypdf-empty": 337,
     "pypdf-error": 9,
-    "ocr-failed": 0
+    "ocr-failed": 2
   },
   "markers": {
     "117140": "pypdf-empty",
-    "124959": "pypdf-empty",
+    "124959": "ocr-failed",
     "122702": "pypdf-empty",
     "116197": "pypdf-empty",
     "119183": "pypdf-empty",
@@ -20,7 +20,7 @@
     "118801": "pypdf-empty",
     "119364": "pypdf-empty",
     "117328": "pypdf-empty",
-    "125144": "pypdf-empty",
+    "125144": "ocr-failed",
     "116198": "pypdf-empty",
     "120434": "pypdf-empty",
     "121382": "pypdf-empty",
@@ -337,6 +337,22 @@
     "1366": "pypdf-empty",
     "1246": "pypdf-empty",
     "1239": "pypdf-empty",
-    "1230": "pypdf-empty"
+    "1230": "pypdf-empty",
+    "958": "pypdf-empty",
+    "973": "pypdf-empty",
+    "1206": "pypdf-empty",
+    "932": "pypdf-empty",
+    "890": "pypdf-empty",
+    "1176": "pypdf-empty",
+    "1173": "pypdf-empty",
+    "1212": "pypdf-empty",
+    "1196": "pypdf-empty",
+    "1109": "pypdf-empty",
+    "1151": "pypdf-empty",
+    "1536": "pypdf-empty",
+    "913": "pypdf-empty",
+    "1132": "pypdf-empty",
+    "1158": "pypdf-empty",
+    "1143": "pypdf-empty"
   }
 }
