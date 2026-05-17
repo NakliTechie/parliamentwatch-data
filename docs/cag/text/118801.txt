@@ -1,0 +1,4821 @@
+Report of the
+Comptroller and Auditor General of India
+
+for the year ended 31 March 2020
+
+IT Audit of STAR 2.0 Application in the
+Registration Department, Tamil Nadu
+
+लोकहितार्थ सत्यनिष्ठा
+
+Dedicated to Truth in Public Interest
+
+Government of Tamil Nadu
+Report No. 4 of 2022
+
+
+
+Report of the
+Comptroller and Auditor General of India
+
+IT Audit of STAR 2.0 Application in the
+Registration Department, Tamil Nadu
+
+for the year ended 31 March 2020
+
+Government of Tamil Nadu
+
+Report No. 4 of 2022
+
+
+Table of Contents
+
+Number. Gout Number
+Preface v
+Overview vii
+1.1 Introduction 1
+1.2 Organisational Setup 1
+1.3 Audit Objectives 2
+1.4 Audit Criteria 2
+1.5 Scope and methodology 2
+1.6 Acknowledgement 3
+Chapter II — Planning and implementation of STAR 2.0 Application
+21 Planning 5
+2.2 Document Registration Module | 6 |
+2.2.1 Non-development of Interface for verification of Identity os
+Cards
+2.2.2 Incomplete Special Deputy Collector (Stamps) segment 0
+2.2.3 Incomplete PWD segment 1
+224 Incorrect provision of Aadhar consent window in back 2
+office interface
+2.2.5 Inefficient provision for matching patta details 3
+2.2.6 Deficiencies in services with regard to patta transfer
+2.2.7 Absence of process history to Sub Registrar 4
+228 Absence of classifications and deficiencies in data 5
+capturing
+23 Issuance of Certified Copies Module 6
+231 Incorrect disclosure of personally identifiable 6
+information
+2.3.2 Delayed issuance of certified copy 6
+2.3.3 Issuance of certified copies of will 7
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+"Number उपाए Number
+2.3.4 Non-availability of documents 18
+24 Issuance of encumbrance certificate module 18
+
+Conclusion 19
+Recommendations 20
+ap P) ation Di 1
+3.1 Lack of data integrity 24
+3.2 Document identities 24
+3.3 Personal identities 28
+3.3.1 Incomplete citizen credentials 28
+3.3.2 Lack of authentication checks 29
+3.3.3 Capture of poor quality of thumb impressions 30
+3.3.4 Capture of poor quality of facial images 31
+3.4 Processing details 31
+3.4.1 Non-implementation of fingerprint matching 31
+3.42 Multiple mutations of documents with same previous 32
+document
+3.43 Non-restriction of documents engaged by Revenue 33
+Authorities/Court
+3.4.4 Incomplete process flow — e-Stamping procedure 34
+3.5 Non-compliance to quality assurance guidelines 34
+3.5.1 Quality testing procedures 35
+3.6 Delayed and partial conduct of Third Party Audit 36
+3.7 Non-mapping of Business Rules 37
+3.7.1 Unauthorised modifications in Account ‘A’ 37
+372 Incorrect online payment system/Incorrect acceptance of 39
+payment challans
+3.7.3 Inefficient processing of refund applications 40
+3.7.4 Absence of functionalities for reconciliation 40
+3.75 Absence of provision to create document in any 41
+language
+Conclusion 42
+Recommendations 42
+
+ii
+
+
+
+Table of contents
+
+Paragraph
+
+Number
+
+Contents
+
+Chapter IV — Resource Management and cont.
+
+Migration of existing data
+
+Page
+Number
+
+42 Delayed completion of support requests 44
+
+43 Index corrections 44
+
+44 Deficiencies in MIS reporting 45
+
+4.5 Concurrent user login in multiple systems 46
+Absence of facility to upload periodical report to Income
+
+| | 47
+Tax Department
+
+47 Non-inclusion/migration of provision to upload legacy 47
+
+. revenue arrears
+
+48 Non-availability of Inventory Register 48
+Conclusion | 48 |
+Recommendations 48
+
+Chapter V - Conclusion and Recommendations
+
+Conclusion and Recommendations 49
+Annexure Annexures Page
+Number Number
+Pi | Details of Modules developed and yet to be developed 55
+by the System Integrator and the brief description of the
+Modules
+2 Details of PAN mismatch 57
+3 Certified copies of will issued to applicant other than the 59
+executant
+4 Support requests relating to EC generation pending for 60
+more than 30 days
+5 Details of documents having poor quality of facial 65
+images
+[6 | Documents engaged by revenue authorities | 66 |
+7 Details of defect found during functional testing | 68 |
+| | Details of observations noticed during user acceptance 72
+testing by Audit
+| 9 | Details of Release notes released by the Department 77
+10 Details of MIS reports yet to be developed 78
+Link Annexures (1 to 14) 79
+Glossary | 80 |
+
+iii
+
+
+Preface
+
+Report for the year ended March 2020 has been prepared fo:
+to the Governor of Tamil Nadu under Article 151(2) of the Constitution of
+India.
+
+The Report contai: ignificant results of the IT Audit of STAR 2.0
+Application in the Registration Department, Tamil Nadu.
+
+The instances mentioned in this Report are those, which came to notice in
+the course of test audit for the period 2013-20
+
+The audit was conducted in conformi ith the Auditing Standards issued
+by the Comptroller and Auditor General of India.
+
+
+
+Overview
+
+The primary function of the Registration Department (Department) is to register
+documents. The project STAR 2.0 Application (online registration activities) was
+sanctioned in November 2012 at a cost of = 117.34 crore and was awarded to M/s Tata
+Consultancy Services (2013) with a target to Go-Live by November 2014. However, the
+department announced ‘Go-Live’ of the STAR 2.0 project on 12 February 2018. Further,
+the project cost was enhanced (October 2019) to हैं 215.32 crore due to deployment of
+additional data entry operators and help desk operators.
+
+[ Paragraph 1.1]
+
+Lut Planning and Implementation of S 2.0 Application
+
+The Department had not developed interface for verification of Identity Cards, which is
+the primary attribute to ensure that the document registered is not disputable, thereby
+exposing the department to fraudulent registration of documents through impersonation.
+Audit analysis revealed that the PAN, Aadhaar details & Driving licences in respect of
+1,55,726 cases were found incorrect.
+
+[ Paragraph 2.2.1 ]
+
+Incomplete Special Deputy Collector (Stamps) Segment and Public Works Department
+Segment of Document Registration Module led to incomplete data capturing of Value of
+the document and the Demand, Collection and Remittances of Stamp Duty/Registration
+Fee, Also, same payment receipts (referred by transaction ID) were used against Stamp
+Duty/Registration Fee charges of more than one document besides non fulfilment of
+objective of seamless flow of citizen’s service.
+
+[ Paragraphs 2.2.2 and 2.2.3 ]
+
+Inefficient system for matching patta details wherein, 18,378 ‘invalid survey number’
+responses received from the Revenue Department were linked to documents registered.
+Thus, the system allows completion of document registration despite mismatches in patta
+details leading to registration of disputable documents.
+
+[ Paragraph 2.2.5 ]
+
+vii
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Out of 16,00,145 requests sent for transfer of ownership of property, in 1,24,304 cases,
+the requests were returned with ‘Null’ and ‘Failed’ status with responses such as
+Government lands, Land under Anadheenam, blocked for transaction etc., The
+department did not take any corrective action in respect of the above cases, wherein the
+risk of fraudulent registration of Government land is high.
+
+[ Paragraph 2.2.6 |
+
+Absence of classifications and deficiencies in data capturing in respect of various types of
+deeds/documents would result in short levy of duty, fees and adoption of manual
+procedure besides incomplete data capture.
+
+Paragraph 2.2.8 |
+
+While issuing Certified copy of a document, Audit noticed that the personal
+data/information relating to parties of a specific document, viz, fingerprints, facial photo,
+photo ID cards (Aadhaar, PAN, efc.) were also shared with any third party.
+
+Paragraph 2.3.1 |
+
+Audit noticed in one District Registrar office that 531 volumes were fully damaged, and
+1,784 volumes were partially damaged. Further, 32 photo volumes were fully damaged,
+and 91 photo volumes were partially damaged. Non-availability of these documents for
+inspection/issuance of certified copies would hamper customer service delivery
+envisaged by the department.
+
+Paragraph 2.3.4 |
+
+During data analysis, audit noticed 192 support requests relating to EC generation were
+pending for more than 30 days. These requests were raised on issues such as missing
+document number, error in survey number, change in SR office jurisdiction, non-
+reflection of court attachment, etc.
+
+[ Paragraph 2.4 ]
+
+n Development
+
+A user has to compulsorily select the survey number of the land parcel that has to be
+registered and if not available, the user is allowed to enter any value for the survey
+number by choosing ‘Others’ option and continue with the registration process. This
+leads to registration of any parcel of land despite non-availability of survey numbers in
+the application. Audit undertook a comparative study of survey number of 10,811
+documents in one village which revealed that 832 documents had invalid survey numbers
+and 308 records had survey numbers categorized as ‘Government land’ in that village.
+
+[ Paragraph 3.2(a) ]
+
+viii
+
+
+Overview
+
+Audit noticed that there were 16,777 documents without identity proofs of
+executants/claimants, 38,878 documents without contact number and 59,423 documents
+without email ID.
+
+[ Paragraph 3.3.1 ]
+
+Audit noticed capturing of poor quality of thumb impressions and facial images which do
+not commensurate with the standards prescribed.
+
+[ Paragraphs 3.3.3 & 3.3.4 |
+
+Audit noticed that the application allowed initiation of multiple transactions from a single
+document by linking any of the previous documents of a property, though the previous
+documents are to be archived and used only for reference and verification of lineage of
+transaction/document.
+
+[ Paragraph 3.4.2 |
+
+Audit noticed that security testing in respect of nine modules was last conducted during
+2018 but no security testing was conducted thereafter. Further, release notes listing 371
+enhancements / error fixations had been furnished by the SI during the period from
+January 2019 to July 2019 without security testing.
+
+[ Paragraph 3.5.1(c) |
+
+Audit analysis of Account ‘A’ table of registration database revealed reuse of challans in
+864 cases. Further, the application allows modification of status of the receipts as
+‘inactive’ even after return of the document, thereby bringing them available for re-use or
+for claiming refund.
+
+[ Paragraph 3.7.1 ]
+
+Audit observed that the application did not have a reconciliation functionality. As per the
+office of the Accountant General (A&E), Tamil Nadu that there is a credit difference of
+₹ 1,175 crore (as on 31 January 2020) between the State Books and Central Accounts
+Section of RBI, Nagpur. Further the department did not reconcile the online receipt
+figures with that of AG(A&E), Tamil Nadu from April 2019.
+
+[ Paragraph 3.7.4 ]
+
+Audit verification of the status of data migration revealed that 99.98 per cent of records
+out of six crore records relating to Index II register of STAR was successfully migrated
+by the department and 37 per cent of records pertaining to pre-computerisation period
+were yet to be uploaded and integrated with the new application. Further Account
+details, viz, Accounts ‘A’ to ‘H’ prior to February 2018 were not migrated into STAR
+2.0.
+
+[ Paragraph 4.1 ]
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Audit noticed that 11 out of 58 MIS reports are yet to be developed and the reporting
+module enabled generation of MIS only after office hours. Further, the MIS report on
+surcharge can be downloaded only for the selected month and not on quarterly basis.
+
+[ Paragraph 4.4 ]
+Audit noticed that the SR screen could be accessed by various methods, viz, recovering
+previous SR login history, use of function keys, efc. and concurrent SR login in multiple
+
+systems were also noticed.
+
+[ Paragraph 4.5 ]
+
+
+
+Chapter I - Introduction
+
+1.1 Introduction
+
+The computerisation of the activities of the Registration Department started during the
+year 2000. An application, named ‘STAR’ (Simple and Transparent Administration of
+Registration) was designed and developed by the department with the assistance of
+National Informatics Centre (NIC). The STAR covered registration related activities
+through REGiNET! network (since 2003) wherein the registrants had to visit the
+respective Sub-Registrar Office (SRO) to initiate and avail the services. Payments of
+Stamp Duty (SD) and Registration Fees (RF) for registration and other services were
+accepted in both Physical (Demand Drafts) and online modes and accounted for in the
+respective field offices. In this application certain processes viz, preparation of Books,
+Indexes, generation of Encumbrance Certificates (EC) etc., were computerised.
+
+The project STAR 2.0 was sanctioned? at a cost of = 117.34 crore (November 2012)
+and was awarded to M/s Tata Consultancy Services (2013) with a target to Go-Live by
+November 2014 at the contract value of = 176.44 crore which was subsequently
+approved by Government in 20157, However, the department announced ‘Go-Live’ of
+the STAR 2.0 project on 12 February 2018. Further, the project cost was enhanced*
+(October 2019) to ¥ 215.32 crore due to deployment of additional data entry operators
+and help desk operators.
+
+1.2 Orga tional setup
+
+The Inspector General of Registration (IGR) is the head of the department and functions
+under the control of the Principal Secretary, Commercial Taxes and Registration
+Department at the Government level. The hierarchical structure is as follows:
+
+Inspector General of Registration
+
+(७. IG
+=<
+
+(=I fea
+[scum Deputy [rmx Registrar
+Collector Stamps (A Superintendent
+of stamps
+
+Dedicated Local Area Network of the Registration Department.
+GO Ms.143 dated 20 November 2012
+
+GO Ms. No. 20 dated 5 February 2015
+
+GO.Ms. 174 dated 31 October 2019
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+The objective of the audit is to ascertain whether:
+
+> Planning and implementation of the application was effective to meet the
+objectives of the computerisation of the Department and application and
+controls are adequate to ensure confidentiality, integrity and availability of the
+data.
+
+> The measures planned by the department to improve citizen service delivery
+were effectively implemented and appropriate mechanism existed to ensure
+legality, reliability and effective usage of third-party data.
+
+> Internal monitoring and control mechanism are functioning effectively.
+
+1... Audit criteria
+
+Audit criteria for this Performance Audit were sourced from the following:
+
+¢ Information Technology Act, 2000 and Information Technology policy of
+Tamil Nadu, 2010.
+
+e Indian Stamps (IS) Act, 1899 and the rules made thereunder and Indian
+Registration Act, 1908 and the rules made thereunder.
+
+e Income Tax Act, 1961 and Rules made thereunder.
+
+e RFP (Request for Proposal) document of STAR 2.0 Application.
+e SLA (Service Level Agreement) of STAR 2.0 Application.
+
+e IGR circulars in connection with web based online registration.
+
+1.5 Scope and methodology
+
+The announcement for the development of a new application for the Registration
+department was made in August 2011 and was commenced in 2013. Therefore, in
+respect of planning and implementation, records pertaining to the period from April
+2013 to March 2020 were taken up for audit scrutiny.
+
+Various modules of the project became operational over a period from 12 February
+2018 to 10 December 2018. Therefore, the processes of registration of documents and
+other online service deliveries were covered from their respective dates of
+implementation. The registration data dump for the period from February 2018 to
+February 2020 was provided by the department (March 2020). Further the database
+provided by the Transport Department was also analysed. After analysis of data dump,
+field visits were taken up from January to June 2021 in the offices of the IGR, District
+Registrar (DR) (South and Central) and SRO, Pallavaram. The Directorate of Survey
+and Settlement under Department of Revenue was also visited for scrutiny of land
+records.
+
+An Entry conference was held with the Secretary to Government, Commercial Taxes
+and Registration Department on 6 August 2019 in which audit objectives, scope and
+methodology was explained.
+
+
+
+Chapter I - Introduction
+
+After completion of the audit, the Exit conference was held on 16 December 2021 in
+which the Deputy Secretary to the Government of Tamil Nadu (GoTN)/Registration
+Department and IGR have participated. The Government also gave its reply
+(21 December 2021) for the Audit observations. The views expressed by the
+Government in the Exit conference and the Government’s further reply (January 2022)
+have been considered and incorporated in the report wherever found necessary.
+
+1.6 Acknowledgement
+
+Audit acknowledges the co-operation extended by the IGR, Additional IGR, Deputy
+IGR, District Registrars (DR) and Sub Registrars (SR) and other officials of the
+Registration Department in the smooth conduct of the audit.
+
+
+
+2.1
+
+Chapter - IT
+
+Planning and Implementation of STAR 2.0 Application
+
+Planning|
+
+The STAR 2.0, was envisaged as a centralised system with web-based architecture to
+provide:
+
+i. end-to-end integration of registration processes.
+ii. biometric based document registration.
+iii. e-payment of duties, fees and charges.
+iv. workflow based operations with comprehensive audit trail.
+v. online verification of revenue records.
+vi. online issue of Certified Copies with digital signature.
+
+vii. uniform upgradation of software throughout the State.
+
+However, Audit scrutiny revealed that the Functional Requirements under new web-
+based software as envisaged were not implemented as detailed below:
+
+As per Agreement, the System Integrator (SI) had agreed to develop 18 modules
+and five sub-modules. Till date, development of 15 modules and two sub-
+modules were fully completed. However, despite a lapse of three years after
+the date of completion, three modules were partially completed and three sub-
+modules were yet to be developed! as detailed in Annexure 1.
+
+The Government replied in the Exit conference that the modules pertaining to Audit,
+Appeal, Vendor, and Inventory Management have since been completed and the
+modules relating to Human Resource and Guidelines revision are under progress.
+
+Interface facilities with Income Tax Department and Unique Identification
+Authority of India (UIDAT) were envisaged in STAR 2.0 application to ensure
+the correct identity of persons who are availing the services of the department.
+However, it was noticed that the same was not implemented resulting in use of
+incorrect Permanent Account Number (PAN)/Aadhaar identity details for
+registration and consequently the department being exposed to fraudulent
+transactions as discussed in detail in Paragraph 2.2.1.
+
+As an integrated system, it was important to integrate the various segments
+involved in the registration process viz., Correct valuation of land and buildings
+and the additional payment made thereon should be mapped with the original
+entries. However, valuations made by the Special Deputy Collector (SDC)
+(Stamps) and Assistant Executive Engineers/PWD were not mapped with the
+original entries in the system resulting in the correct valuation (generated
+subsequently) not being reflected in the ECs as detailed in Paragraph 2.2.2 and
+2.2.3.
+
+Department's reply in November 2019
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+e The STAR 2.0 application has provision for matching of land database records
+before registration to avoid any registration based on fraudulent documents.
+However, it was observed that the application allowed registration of documents
+despite mismatches responses of survey numbers, efc received from the
+database of Revenue Department as detailed in Paragraph 2.2.5 and 3.2 (a) &
+(b).
+
+e The Stock Holding Corporation of India Limited (SHCIL) requested for
+Application Programming Interface (API) gateway for updation of its records
+on usage of e-stamps, but it was not yet developed as detailed in Paragraph
+3.4.4,
+
+¢ Only 47 out of 58 MIS reports envisaged were developed as detailed in
+Paragraph 4.4.
+Thus, due to lack of planning, the objective of end-to-end integration of registration
+process, effective monitoring and provision of seamless and transparent services to the
+citizens was not fully achieved.
+
+2.2 Document Reg! 101 Module
+
+The Document Registration Module (DRM) covers the processes from receipt of
+registration application request from a citizen and return of document to the same
+citizen after registration. During this process, the module interacts with other modules
+of this application like Online processing module, Pending documents module, Field
+Inspection module and Accounts and Challan module.
+
+The time taken for completion of the registration process is one day and the
+Government stated that 70 per cent of the documents are returned to the registrants on
+the same day of registration.
+
+Analysis of data relating to the Sub-Registrar office, Pallavaram revealed that out of
+22,176 documents registered during the period from 12 February 2018 to 6 February
+2020, the registration process was completed in 17,737 cases (80 per cent) within one
+day.
+
+The deficiencies noticed in the operation of the Document Registration Module are
+detailed below:
+
+2.2.1 Non-development of Interface for verification of Identity Cards
+
+According to Section 34 of Indian Registration Act, 1908, the Registering Authority
+shall, before registration of a document, satisfy himself about the identity of persons
+appearing before him. PAN, Aadhaar, Driving license, Electoral Photo Identity Card
+(Voter IDs) are some of the identity proofs accepted in the registration process.
+
+The Special Investigation Team (SIT) on Black Money” has emphasised the need for
+establishment of central KYC Registry and need for interconnection between different
+databases for proofs of identities viz., PAN, Aadhaar, Driving licence, Passport, etc.,
+to assist identifying multiple transaction by one person with different identities.
+
+Section 139A(5) Clause (c) of Income Tax Act, 1961 (as amended in 1995) read with
+Rule 114B Income Tax Rules (as amended with effect from 1 January 2016) stipulates
+
+2 Constituted from 27 May 2014.
+
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+that every person should quote PAN in all documents pertaining to sale or purchase of
+any immovable property exceeding € 10 lakh with effect from 1 January 2016 or valued
+by stamp valuation authority referred to in Section SOC of the Act at an amount
+exceeding हैं 10 lakh.
+
+As per Functional Requirement (FR) 042 of STAR 2.0 Application, the system should
+be capable of searching external databases and verify identities, such as PAN, Voter
+ID, Driving license, Ration Card, Passport, etc. As per clause 6(xi) of Request for
+Proposal (RFP) (volume I), the system has to interface with external systems/agencies
+to allow exchange of data and communication. An indicative list of 15°
+departments/agencies has been provided in the RFP. Income Tax Department and
+Unique Identification Authority of India are two primary agencies listed.
+
+Identity of users and parties to instruments executed is the primary attribute to ensure
+that the document registered is not disputable. However, audit found that acceptance
+of wrong PAN/Aadhaar number and absence of facility to verify identities from issuing
+authorities has compromised data integrity of the STAR 2.0 Application as detailed
+below:
+
+In STAR 2.0 Application interface in respect of only two departments, viz, Income Tax
+Department and Revenue department had been created and also found that a total of
+70,24,185 number of identity details (PAN/Aadhaar/Driving Licence) pertaining to
+documents registered (during the period from February 2018 to February 2020) were
+uploaded in the database.
+
+Audit verification during March 2021 revealed that the STAR 2.0 Application did not
+carry out PAN verification with the Income Tax department. Audit had conducted an
+independent data analysis of the identity details with two primary aspects in the
+structure of PAN and Aadhaar numbers which are as below:
+
+* The fourth character of PAN represents the status of the PAN holder and
+would be from the group of (P,C,H,A,B,G,J,L,F,T) and none other.
+
+¥ 12" digit of the Aadhaar number is a checksum associated with Verhoeff
+Algorithm‘. Validity of an Aadhaar number can be instantly verified by
+calculating the last digit related to the 11 digits entered.
+
+Apart from the above two tests, Audit also cross verified the Driving license details
+with the database (SARATHI) obtained from Transport department.
+
+Data analysis revealed that the PAN/Aadhaar details/Driving licences in respect of
+1,55,726 cases were found incorrect as detailed below:
+
+2,307 out of 17,58,725 PAN numbers were not valid.
+
+61,291 out of 3,16,984 Driving licenses were not valid.
+
+iii. 92,128 out of 49,48,476 Aadhaar number were not valid.
+
+i) Common Service Centers (CSC) and other citizen service delivery projects such as e-District,
+ii) Corporation and Municipality Database, iii) Courts, iv) Election Commission of India, v) Food
+and Civil Supplies Department, vi) Income Tax, vii) MEA database - passport, viii) MSDG -
+Mobile Service Delivery Gateway, ix) RBI - for verification of Bank details, x) Revenue
+Department — patta, xi) Road Transport Corporation, xii) State Portal and State Service Delivery
+Gateway (SSDG), xiii) Survey and Settlement Department, xiv) Tamil Nadu Electricity Board
+and xv) Unique Identification Authority of India
+
+An algorithm used for calculating a single decimal digit as checksum. Algorithm is a set of rules
+/ formulas. In Aadhaar, Verhoeff algorithm is used to calculate the 12" digit.
+
+7
+
+
+ITAi
+
+of STAR 2.0 Ap)
+
+the Registration Department,
+
+Audit noted that the National Securities Depository Ltd (NSDL) responses in respect
+of 16 lakh executants/claimants, received during the said period was available in the
+database. Test check of 6,131 number of NSDL’s PAN responses revealed that even
+though there were instances of mismatches in 394 records relating to
+executant/claimants name, yet the process of registration was completed. Moreover,
+the provision to validate PAN numbers with NSDL which was available in the
+application (March 2020) was subsequently disabled.
+
+The Government replied that at present Aadhaar authentication is enabled in 209 Sub
+Registrar offices across the State and Aadhaar is verified properly with UIDAI and it
+will be extended to rest of the State. The audit point is taken well and to eliminate
+impersonation Aadhaar verification with UIDAI will be enabled in all offices in future.
+In respect of PAN, Government replied that basic format validation for PAN have been
+enabled. As a fourth character, only English alphabets are allowed. If it has to allow
+only certain alphabets, it will be added in future.
+
+Audit selected SRO, Pallavaram for detailed analysis of PAN furnished
+(executants/claimants) which revealed mismatch in the category of the holder in 65
+cases (Annexure 2) out of 65,083 numbers. The 4" character did not match with the
+category of executant / claimant. PAN numbers of individuals were furnished in case
+of registrations involving companies, firms, etc and vice versa.
+
+Due to these incorrect PAN identity details, Government will not be in a position to
+identify the illegitimate transactions. Further, Registration Department also failed to
+send the complete Statement of Financial Transactions in prescribed format to IT
+Department under Section 285BA of IT Act, 1961 readwith Rule 114 E of IT Rule,
+1962 (more detailed in Para 4.6 of the report).
+
+Thus, verification of PAN will help to create an Audit trail of all high-value transactions
+by one particular individual and help the tax department to determine any illegitimate
+transaction. This will also help the Government to widen its tax base and curb the
+circulation of black money.
+
+Failure of the Department to ensure correctness and completeness of personal identity
+has led to cases of impersonation/frauds as detailed below:
+
+Illustration 1:
+
+Original Transaction — Year:1991
+
+Mr. Mohan
+
+Void Transactions — Year:2019 ]
+
+Mr. Mohan
+
+(Impersonator) Mr. Kamraj
+
+Power Agent
+Doe no : 642/2019
+
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+Shri Mohan was owner of a parcel of land described by Survey No.112/1E, with an area
+of 2,079 sq.ft. at Madhanandhapuram, Kundrathur. However, an individual assuming
+the identity of Shri Mohan, effected transfer of ownership of the above property to
+Shri Ravi in 2019, by registering a Deed of Settlement. Shri Ravi further extended the
+incorrect transaction chain by registering a deed of Power of Attorney in 2019 to
+Shri Kamraj. The above facts of impersonation and attempts to take over the property
+was noticed by the department only after receipt of complaint from the owner of the
+property.
+
+Audit conducted validity checks of the Aadhaar numbers used in the fraudulent
+transactions and found that the Aadhaar number furnished by the impersonator during
+registration in 2019 was invalid. Further, the Aadhaar number furnished by Shri. Ravi
+was also found to be invalid. Had the department implemented interface facility to
+check Aadhaar identity with UIDAI as envisaged in STAR 2.0 application, this
+fraudulent transaction could have been detected by the department.
+
+The above facts of impersonation and attempts to take over the property was noticed by
+the department only after receipt of complaint from the owner of the property.
+
+Illustration 2:
+
+Original Transaction — Year: 2012
+
+Void Transactions — Years: 2018 & 2019
+
+=-2-8-8
+
+Shri N. Chokkalingam was owner of a parcel of land described by Survey No.73/3, Plot
+No.584, Area 4800 sq.ft. at Madipakkam. However, an individual assuming the
+identity of Shri Chokkalingam, effected transaction in the property by registering a
+Deed of Power of Attorney in 2018 (authorising Shri Gomez). The Voter ID furnished
+by Shri Chokkalingam was verified by audit in the National Voter Service portal and
+found to be invalid. Shri Gomez continued the incorrect transaction chain by
+registering a deed of Sale in 2019 in favour of Shri. Muthuvel. Shri. Muthuvel had
+borrowed % 1.92 crore against the property by registering deed of Memorandum of
+Deposit of Title vide 21/2019 and 618/2019 from Indian Bank.
+
+9
+
+
+ITAi
+
+of STAR 2.0 Ap)
+
+the Registration Department,
+
+All the above incorrect transactions were rendered void by the DR, South vide
+proceedings No.1205/E2/2019 dated 15 July 2019, leaving the loan amount unpaid.
+
+The above attempts of impersonation and registration of disputable documents could
+have been identified and prevented by the department by verifying Aadhaar numbers
+and other personal identities as envisaged in STAR 2.0 application.
+
+2.2.2 Incomplete Special Deputy Collector (Stamps) segment
+
+According to Section 47-A of Indian Stamps Act, 1899, if the registering authority is
+of the opinion that market value of the property transacted in the document has not been
+truly set forth in the instrument, he may refer the same to SDC(Stamps) for
+determination of market value and stamp duty.
+
+The work at the office of the SDC(Stamps) involves receipt of documents for valuation,
+issue of notice, issue of order finalising value of the property, calculation of SD,
+Collection, Endorsement in the document, Return of the document to the Registering
+Authority. There are 115 SDC (Stamps) under Revenue department for valuation of
+properties referred to them. Tahsildars deputed under each SDC(Stamps) are
+responsible for field inspection and valuation of properties in their respective districts.
+
+As per the document registration process under clause 1.12 of RFP, the SDC segment
+should have facility to finalise and report the determined value of the document referred
+and to collect deficit stamp duty. However, during verification, audit noticed the
+following deficiencies in STAR 2.0 application:
+
+i. The module did not facilitate online payment of deficit stamp duty and the
+registrant was required to pay manually at the designated banks and submit
+paid challans to SDC (stamps) in person (physical form).
+
+ii. After issue of valuation order, online challan for the deficit stamp duty was
+generated by the application. However, this online challan could not be
+used for offline payments at treasury branches of banks as it was not
+generated with appropriate temporary challan IDs. Therefore, the registrant
+had to make payments through TNTC® 9 forms provided by SDC(Stamps).
+In this process, the system generated online challans were left orphaned
+without appropriate closing entry.
+
+iii. Revised value of the document and additional demand raised were not
+mapped with the original entry in Account-A’.
+
+iv. Segregation of duties as per jurisdiction of Tahsildars was not implemented.
+Therefore, data entry work pertaining to all districts were entered through
+SDC login only.
+
+yv. Without established workflow between Tahsildar and SDC, all work items
+were done through physical files and data entry in respect of the same were
+done subsequently.
+
+Chennai, Coimbatore, Cuddalore, Kanchipuram, Madurai, Salem, Thanjavur, Tiruchirappalli,
+Tirunelveli, Vellore, Virudhunagar,
+Tamil Nadu Treasury Code
+
+Account-A: Account of daily registrations, Stamp Duty/Registration Fee realised
+
+10
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+The above discrepancies resulted in incomplete data capturing for reconciliation of
+Value of the property, Demand, Collection and Remittances. Audit observed that even
+manual method of reconciliation as per serial number 8 of E-payment module in RFP
+Volume 2 was not carried out from October 2019 to March 2021 (as of March 2021)
+which may lead to misclassification of revenue receipts under different heads. Further,
+the goal of seamless flow of citizen’s service was defeated.
+
+The Government has assured to implement the audit suggestion and stated that SRs are
+adding the revised value in ‘A’ account and in future, revised value of the document
+and additional demand raised will be automatically included in the Account ‘A’. The
+Government further stated that it will be considered to add workflow between Tahsildar
+and SDC (Stamps).
+
+2.2.3 Incomplete PWD segment
+
+According to IGR circular No.40164/3 dated 26 June 2018, a sale deed for land and
+building for a value of more than हैं 50 lakh should be referred to the Assistant Executive
+Engineer (AEE) of Public Works Department for ascertaining value of the building.
+23,973 such documents were referred between February 2018 to February 2020.
+
+As per clause 1.1, Item No.24 of RFP (Volume II), if the Registering Authority
+approves field verification values and if the same resulted in dues to be collected, then
+the system must send notices through email/short messaging service (SMS).
+
+Audit noticed that the AEE, Chennai communicated to the SI, the following
+deficiencies in the software to the department (August 2019):
+
+no provision to calculate the value of the special buildings,
+no provision to preview/edit/save options before forwarding,
+iii. no specific provision to value the big industrial complexes to the department.
+
+However, no action has been taken to create the provisions in the application. Further,
+audit check of the PWD Segment revealed that:
+
+i. Queuing of the works to be verified was not arranged in the system (155 out of
+422 documents in SR Pallavaram).
+ii. Street/Area/district -wise grouping of items was not available for the AEE to
+attend all building inspections in a particular area during their inspection.
+iii. The interface was not used for online preparation and submission of Inspection
+Reports. Inspection report in Form 1-C was prepared and sent to the Registering
+Authority in physical files.
+
+The Government replied that preview option is provided and edit/save option will be
+given in future. The Street/Area/District wise grouping will also be given. Further a
+circular was issued to carry out the Building inspection and its valuation through this
+application.
+
+Further, the department noticed fraudulent use of payment receipts during December
+2020 wherein same payment receipts (referred by transaction ID) were used against two
+SD/RF charges and registration of two documents. Audit took up these cases for cause
+analysis and found the following weakness in the system:
+
+ll
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+> Due to manual preparation of Building Inspection Report, revised value
+was not reported in the digital form.
+
+> Demand for deficit stamp duty for revised value of the property was not
+raised against the document in the system.
+
+> Payment challans submitted by the registrant for payment of deficit SD and
+RF were mapped against the document with original charges. However, the
+revised value and the demand was not mapped in the system thereby
+creating a scenario where, even cancellation of additional payment did not
+flag the document as ‘Not duly stamped’ since it had only one value which
+is the original value of the document and did not include the additional or
+the revised value.
+
+As per circular dated June 2018, the time limit fixed for field inspection of building by
+AEE is 10 days. However, analysis of data revealed that the period of delay in
+conducting of inspection was ranging from 31 days to 691 days as detailed below:
+
+Table 1 — Delay in conduct of inspection
+
+S.No. Period of delay (in days
+
+1 31-90 44,621
+2 91-150 8,295
+3 151-210 3,057
+4 211-270 1,412
+5 271-330 880
+
+; 6 | 331-365 372
+
+7 More than a year | 1,900 |
+
+Thus, the department did not adhere to the timeline for inspection in as much as 60,597
+
+cases (Link Annexure 1). Out of these cases in respect of 1,960 cases the delay in
+conduct of inspection was more than one year.
+
+2.2.4 Incorrect provision of Aadhaar consent window in back office interface
+
+Aadhaar is a personal and confidential information. As per Rule 4 of the Tamil Nadu
+egistration (Identity verification for registration of documents) Rules, 2018, the
+registering authority should obtain explicit consent of the person in electronic or paper
+format for use in the consent based Aadhaar authentication.
+
+However, audit noticed that the window meant for giving consent by the citizen has a
+
+rovision for edition/access in the back office interface. This implied that consent
+furnished through the Junior Assistant (JA) login in the SRO may create disputable
+circumstances.
+
+The Government replied that since it was a consent based Aadhaar authentication edit
+rovision was provided. But the fact, however, remained that availability of edit option
+in the back office interface may create disputable circumstances.
+
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+2.2.5 Inefficient provision for matching patta details
+
+As per Chapter 3 of RFP (Volume 1), the application should have compatibility with
+the National Land Records Modernisation Program (NLRMP) of Revenue Department
+and fetch property/ownership details of the patta numbers being processed.
+
+On a data analysis it was noticed that out of 53,63,061 patta verification (previous
+document) requests sent during February 2018 to February 2020, in 1,85,249 requests
+the response was ‘Invalid survey number’. Despite the above invalid survey number
+tesponses, audit found that 18,378 requests (Link Annexure 2) were linked to
+documents registered.
+
+During real time testing of back office interface, audit noticed that the SR interface for
+patta verification shows results of name comparison only. Other mismatch results, viz,
+invalid / non-existing survey numbers, efc., were not shown to SR for necessary action.
+In respect of name match results also, irrespective of the percentage match reported by
+the system, the toggle button under ‘Match’ option is selected as ‘Yes’ by default and
+the window did not have provision for the SR to record reasons for overriding the
+mismatch result.
+
+Thus, the system allows completion of document registration despite mismatches in
+patta details resulting in the possibility of registering disputable documents.
+
+The Government replied that the mismatch in survey number was on account of non-
+updation of revenue database in cases of Natham® lands, inherited properties, sub-
+divisions of a survey number. The software cannot restrict registration if a survey
+number is not found in revenue database (Tamil Nilam). The reply is not tenable as
+authority for creation, maintenance and updation of land records lies with the Revenue
+Department. Hence, details of the land parcel as maintained by Registration
+Department should match with that of Revenue Department. In case of mismatches, the
+application should capture justification of SR.
+
+2.2.6 Deficiencies in services with regard to patta transfer
+
+Analysis by audit revealed that in respect of 16,00,145 number of Form 6 requests sent
+to Revenue Department for transfer of ownership of property during the period
+February 2018 to February 2020, in 68,917 requests the response was ‘Null’ and in
+55,387 requests the response was with ‘Failed’ status. Details of the failed requests is
+given below:
+
+8 Natham is defined in law lexicon as a land upon which houses can be built in a village.
+
+13
+
+
+the Registration Department, Ta
+
+Table 2 — Details of Failed Requests
+
+scription No of documents
+
+Schema Failure 28,124
+
+Invalid Input format 10,772
+
+Invalid District Code/ Taluk Code 9,671
+
+Form 6 number already exists 4,927
+
+Invalid Survey number 892
+
+Land Pending for A-Register Correction 622
+
+Land is under CLR 197
+
+Land is under Anadheenam 76
+
+Not available in the tables 54
+
+Government Lands Involved 35
+
+Blocked for transaction 17
+
+Total 55,387
+In this regard, audit observed that the incorrect capturing and transferring of property
+details resulted in failure of delivery of citizen’s service despite collecting patta transfer
+fee. The department did not take any corrective action in respect of the above cases,
+especially with respect to the cases relating to ‘Invalid survey number’, ‘Land under
+Anadheenam’, ‘Government land involved’ {discussed in Para 3.2(a)} etc, wherein the
+risk of fraudulent registration of Government land is high.
+
+The Government replied that all the cases pointed out by Audit has been sorted out and
+the failed cases have been resent to the Revenue Department. Further, database of
+Revenue and Registration Department in respect of survey numbers is being
+synchronised and at present there is no error occurred. The Government further replied
+that the Revenue Department is creating notations for Anadheenam and Natham lands
+and the registration of such land would be completely blocked once the notation is
+shared by the Revenue Department with the Registration Department.
+
+2.2.7 Absence of process history to Sub Registrar
+
+For data integrity and better monitoring a workflow Information Technology
+management should exhibit all proposals, changes made at every step of execution of a
+process to the subsequent higher levels of hierarchy. STAR 2.0, being a workflow
+management application should record and exhibit changes made at all levels.
+
+During real time testing and walk through, audit noticed that any changes made on the
+original entries by the Junior Assistant of a SR office were not available in the SR
+screen. Therefore, application did not give efficient oversight facility to the SR as he
+would not be aware of the changes made by his subordinates.
+
+The Government accepted that there is no provision in the software for SR to view the
+entries as such functionality would spoil the user friendliness in the screen. The
+Government’s reply is not tenable as supervisory officers cannot check the changes
+made by JA/Assistant which weakens supervisory control mechanism.
+
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+2.2.8 Absence of classifications and deficiencies in data capturing
+
+The levy of SD and RF is based on the classification of documents. The rates differ
+based on the nature of documents. Hence, the system should have provision to list out
+various type of deeds and the data on classification of the document to levy the
+appropriate SD and RF. However, audit noticed that:
+
+‘Cancellation of sale agreements where possession was given’ was not
+identified as a distinct classification under Entry 1(0) of Table of Fees under
+Registration Act. Also, provision was not given to capture value of total
+consideration and to calculate appropriate RF, thus bringing in manual
+processing of the document.
+
+The application did not identify “Certificate of Sale’ as a classification distinct
+from conveyance as listed in Article 18(c) of the Indian Stamp Act. Thus,
+registrant would be forced to select the option as conveyance and to pay the
+stamp duty at seven per cent (i.e.) inclusive of surcharge at two per cent
+resulting in excess payment of stamp duty by the registrants.
+
+“Mortgage deeds for securing debentures’ was not classified as distinct from
+Simple mortgage as notified in GO Ms. No. 60 dated 16 March 2020.
+
+“Release between family members who constitute the partnership’ was not
+identified as distinct from ‘Release among family members’ as classified under
+Articles 55 A & 55 D (i) of Schedule I to Indian Stamp Act.
+
+The instrument, ‘Power of Attorney (POA) - Given for a consideration’ was not
+identified as a distinct instrument under Article 48. Treating it as POA-without
+consideration would result in short-levy of SD/RF.
+
+Components that constitute value of the document, viz, rent, period of lease,
+premium, security deposit, enhancements, efc. as stipulated under Article 35 of
+Indian Stamp Act, 1899 were not captured. Only consolidated lease value is
+entered to be verified physically by the SR.
+
+In case of new developments on the leased property, the application did not have
+provision to capture value of developments in respect of the instrument,
+“Surrender of Lease Deed’ and calculate RF accordingly under Entry 1(p) of
+Table of fees under Registration Act.
+
+Residential status of the claimant was not captured to validate transactions under
+para 4 of Foreign Exchange Management (Acquisition and Transfer of
+Immovable Property in India) Regulation, 2018,
+
+Invalid drop-down options for Identity type, viz, Driving license, Pensioners ID
+card, Freedom fighters card, etc was shown and accepted while entering details
+for a minor.
+
+In respect of the instrument of Settlement or Release among family members,
+the field for entering father’s name was not made mandatory. The application
+allowed to select the relationship option as ‘among family members’ (defining
+instrument category) even for different parent’s names without prompting any
+further details.
+
+15
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Thus, non-availability of provision of capturing the above important data may result in
+short levy of duty, fees, adoption of manual procedure and incomplete data capture.
+
+The Government replied that if each classification is provided, it would be a
+cumbersome process for citizen to enter more data. Also, all the specific classifications
+pointed out by Audit will be introduced and the “Mortgage deeds for securing
+debentures” is not required as the volume of such transaction is very meagre. The
+Government’s reply is not acceptable as every classification should be provided
+separately to the user for payment of right amount of fees and stamp duty, generation
+of MIS reports etc.
+
+The Issuance of Certified Copies (CC) Module covers the back-office processes from
+receipt of application for issuance of CC from a citizen to return of printed copy of the
+document. During the process, the module interacts with the databases for search of
+document by number.
+
+2.3.1 Incorrect disclosure of personally identifiable information
+
+According to Rule 2(b) read with 2(i) and 3 of Information Technology (Reasonable
+security practices and procedures and sensitive personal data or information) Rules,
+2011, data relating to fingerprints and facial pattern of a natural person forms part of
+sensitive personal data or information under Information Technology Act, 2000.
+
+As per Rule 6 ibid, disclosure of personal data by a body corporate to any third party
+shall require prior permission from the provider of such information.
+
+During walk through and real time testing, audit noticed that certified copies of scanned
+documents issued by the department contained personal data/information relating to
+parties of a specific document, viz, fingerprints, facial image, photo ID cards (Aadhaar,
+PAN, efc.). The above sensitive personal information is shared with any third party
+without requisite prior permission from the individual, as CC can be generated by any
+person and not necessarily by the individuals involved in the document registration.
+
+The Government replied that the Registration Act, 1908, permits to provide for supply
+of scanned documents to the citizens as certified copies. The reply is not acceptable as
+sharing of personal data like fingerprints, facial image, identity proof details (Aadhaar
+Number) is prohibited under Information Technology Act, 2000. The Department need
+to ensure that while furnishing such certified copies, personal information like Aadhaar
+number, fingerprint, ec should be concealed.
+
+2.3.2 Delayed issuance of certified copy
+
+The department introduced the scheme of issuance of Quick Response (QR) coded
+digitally certified EC and CC. IGR vide circular No.42407/C1/96 dated 29 May 1997
+and Standing order 1024, prescribed a time limit of five days excluding date of
+production of stamp papers for preparation of certified copies of documents and
+miscellaneous records. The digitalised certified copies relating to Book I could be
+obtained through online.
+
+16
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+Analysis of data revealed belated issue of CC in 94,773 out of 15,97,344 applications
+received during the period from February 2018 to February 2020. The delay ranged
+from 30 to 697 days. Out of the above 94,773 cases, 92,692 CCs (Link Annexure 3)
+were returned to the citizen and 2,081 (February 2021) were still pending with
+department.
+
+Delay in issuance of CC was primarily due to non-availability of digitalised copies of
+document. It was noted that 37 per cent of documents pertaining to pre-computerisation
+period were yet to be uploaded into the application (detailed further in Para 4.1). Thus,
+non-availability of documents impacts the timely issuance of CC to the Citizens.
+
+The Government attributed the space constraint as a reason for non-uploading of
+documents relating to pre-computerisation period and in case of manual processing of
+CC, the date of issue was not entered in the database and hence the delay. The fact
+remains that due to non-uploading of documents of pre-computerisation period in
+database, such documents are being searched manually and the delay occurs, which
+defeats the objective of seamless delivery of citizen services.
+
+2.3.3 Issuance of certified copies of will
+
+According to Section 51 of the Registration Act, the following are the books that shall
+be maintained in the offices:
+
+Book 1: Register of non-testamentary documents relating to immovable property
+Book 2: Record of reasons for refusal to register
+
+Book 3: Register of Wills and authorities to adopt and
+
+Book 4: Miscellaneous Register.
+
+According to Section 57(1) of the Registration Act, the Book Nos | and 2 and the
+indexes relating to Book No.1 shall be at all times open to inspection by any person
+applying to inspect and as per section 62, copies of entries in such books shall be given
+to all persons applying for. According to Section 57(2) of the Registration Act, copies
+of entries in book number 3 and the Index relating thereto shall be given only to the
+persons executing the documents, and after the death of the executants (but not before)
+to any person applying for such copies.
+
+Audit noticed that the application allowed any citizen to apply for certified copy of
+wills. During the period (from February 2018 to February 2020) 21,174 certified copies
+of wills were issued by the department. Test check in SRO, Pallavaram revealed that
+out of 27 number of certified copies of will issued, in eight cases (Annexure 3) it was
+issued to persons other than the executants. Due to absence of space in the interface
+for recording the reasons for the same, the veracity of such issuance could not be
+ensured.
+
+The application did not include provision to capture details of the applicant and also it
+did not have the space for entering the status of the executant. It was further noticed
+that the provision to apply for certified copies of documents under Book 3 was disabled
+in the department’s portal subsequently. Thus, the above aspects defeated the goal of
+seamless flow of citizen’s service.
+
+17
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Though the Government stated that there was no provision in the portal to apply for
+Book III and Book IV documents, data analysis by Audit revealed that the same were
+issued in as much as 21,174 cases for which the applications were received through
+online. The risk of document falling into wrong hands and exposing it to misuse could
+not be ruled out.
+
+2.3.4 Non-availability of documents
+
+During the scrutiny of records pertaining to issuance of CC at SRO, Pallavaram, audit
+noticed that application for CC for the period from 1960 to 1965 were rejected stating
+that the volumes were damaged.
+
+Scrutiny of records in the office of the District Registrar (South) revealed that 531
+volumes were fully damaged and 1,784 volumes were partially damaged. Further, 32
+photo volumes were fully damaged and 91 photo volumes were partially damaged.
+
+Non-availability of these documents for inspection/issuance of certified copies would
+hamper customer service delivery envisaged by the department.
+
+The Government replied that a circular had been issued to recopy the records of the
+damaged volume and the scanning works are being undertaken to avoid further
+damages and the works are nearing completion.
+
+2.4 Issuance of encumbrance cert! ite module}
+
+The Issuance of EC Module has two blocks-viz, (i) EC-Online block where the citizen
+searches and generates EC and (ii) EC block where search is carried out at the SRO and
+the citizen gets EC approved by the SRO.
+
+The following discrepancies were noticed in generation and issuance of EC:
+
+i. The service of online generation of EC is available for documents registered
+after 1975. For the period prior to 1975, the applicant had to visit the SR office
+and obtain the EC copy manually.
+
+ii. In SR Pallavaram, out of 716 documents (pertaining to four survey numbers),
+in respect of 177 documents, the previous document number was not
+displayed despite availability of the same in the database.
+
+iii. The fact of referral to SDC(Stamps) /AEE, PWD was not automatically
+fetched from process log. It was captured only through individual data entry
+at the SROs. In case of omission of data entry, the same would not be
+displayed in EC
+
+iv. Revised value of the property, arrived after referral to SDC (stamps)/
+AEE(PWD), was not reflected in EC.
+
+v. During data analysis, audit noticed 192 (Annexure 4) support requests?
+relating to EC generation were pending for more than 30 days. These requests
+were raised on issues such as missing document number, error in survey
+number, change in SR office jurisdiction, non-reflection of court attachment,
+etc.
+
+Support requests are help desk tickets for raising request with the SI
+
+18
+
+
+Chapter If -Planning and Implementation of STAR 2.0 Application
+
+vi. Index of registration records were mapped to registering offices, resulting in
+field office wise generation of EC. In case of transfer of jurisdiction of a
+village to a different field office, EC generated by a user would show only the
+transactions registered in the selected field office and not all transactions
+relating to the property.
+
+vii. Analysis of data revealed belated issue of EC in 7,73,486 (25.30 per cent) out
+of 30,57,157 applications received during the period from February 2018 to
+February 2020. The delay ranged from 31 to 723 days. Out of the above
+7,73,486 cases, 8,345 (Link Annexure 4) were still pending with department.
+
+viii. Audit observed from the records of the DR South, the Director of Snake Park
+Trust had made a complaint that the sale made to them by
+Smt. Nagarathinammal in the year 1980 though reflected in the EC generated
+in the year 2007 but was not reflected in the EC generated in the year 2018.
+However, the EC search by Audit is detailed below:
+
+D
+
+D. . Seller | Purchaser | Dateof | Document | Seller | Purchaser | Date of
+CaS registration number registration
+Cl Smt. Snake Park | 2 June 1980 Chennai. Shanthi | | 2 June 1980
+ahennal Sout Nagarathi |. Trust South Joint II
+T/Book1/1722/1980 | nammal Rees)
+
+EC is used as primary document of evidence of free title and provides a true picture of
+transactions in an immovable property. Incorrect generation of EC adversely impacts
+the goal of improved citizen’s service delivery experience.
+
+The Government attributed the above lapses to clerical errors that pertained to the
+transactions prior to digitalisation period. The Government, in its reply, added that the
+initial issues were sorted out and the EC modules is working well. Further discrepancy
+in mapping of hamlet villages between Revenue and Registration Departments resulted
+for non-generation of single EC in respect of a survey number. Outsourced data entry
+error may lead to omission in EC and necessary correction based on analysis will be
+carried out. However, during the data analysis, Audit found that in addition to the errors
+committed prior to the digitalisation period, there were recurrence of deficiencies as
+pointed out in the above paragraph which requires immediate corrective action by the
+department.
+
+‘Conclusion|
+
+In STAR 2.0 application, the interface with the ID issuing authorities is not
+developed/enabled for verification of identities, which may lead to non-identification
+of illegitimate transactions, if any. In respect of documents referred to SDC (Stamps)
+and AEE (PWD) for the determination of market value of property, there was no
+provision in the application for online submission of their reports. The revised value
+of property along with the additional demand of stamp duty were also not mapped with
+the original document entry in Account A. The system allows document registration
+despite mismatches in patta details resulting in the possibility of registering disputable
+documents.
+
+Absence of classification in respect of certain documents viz., Cancellation of sale
+agreements where possession was given, Mortgage deeds for securing debentures, efc.
+
+19
+
+
+‘he Registration Department,
+
+was noticed in the application which may lead to short collection of stamp duty. While
+issuance of certified copies, the application allowed inclusion of personal data viz.,
+photo IDs, Aadhaar/PAN ezc. also in contravention to the rules. Instances of full/partial
+damage of physical as well as photo volumes were noticed which would result in non-
+availability of these documents for inspection/issue of certified copies. The application
+provided for issuance of certified copy of will to persons other than executants in some
+cases without recording the reasons for the same.
+
+Discrepancies were noticed in generation of Encumbrance certificates with respect to
+property / valuation details. Registration records are mapped to the registering offices
+in the application. This leads to a situation wherein, in case of transfer of
+jurisdiction/creation of registering offices, EC generated by a user would show only the
+transactions registered in the selected registering office rather than showing all the
+transactions pertaining to the property.
+
+IRecommenda' ||
+
+a. Verification of Identity Cards:
+
+The department may integrate STAR 2.0 with all ID issuing Government
+departments / Agencies (PAN, Aadhaar, Driving Licence etc.,) for verification of
+identities of persons and properties in respect of service sought through the
+application so as to capture correct information which may be useful to detect
+illegitimate transactions, if any.
+
+b. SDC segment:
+
+i. Online payment facility may be developed by sending payment link / online
+challans to the registrant.
+
+ii, The process of creation of demand at SDC(Stamps) may be matched with
+payment details.
+
+iii. Increase in the value of document as per SDC valuation may be mapped with
+the document alongwith demand / payments.
+
+iv. Segregation of duties may be enforced with record-based permission
+alongwith review/oversight management by Supervising Officer.
+
+c. PWD segment:
+i. Queue system of documents alongwith automatic grouping of work
+items (based on area / street) may be enforced.
+
+ii. Online payment of SD/RF, in respect of the revised value may be ensured by
+sending payment link / online challan.
+
+iii. Increase in the value of document based on field inspection may be mapped
+with the document alongwith demand / payment.
+
+20
+
+
+Chapter II -Planning and Implementation of STAR 2.0 Application
+
+Patta matching and patta transfer process
+
+i.
+
+ii.
+
+Patta mismatch report may be allowed for processing only after recording
+of reasons by the registering authority.
+
+Correctness and completeness of property details furnished to Revenue
+department may be ensured. In case of error response from NLRMP, the
+citizen service requests for patta transfer may be completed by either
+rectifying the error responses or informing the deficiencies to the claimant.
+
+Classification and valuation of instruments
+
+i
+
+ii.
+
+Dataset on classification of instruments may be updated to include all
+instruments specified under the Indian Stamp Act, 1899, and the Registration
+Act, 1908, as amended.
+
+Provision may be included to capture all the personal, property and
+document details under necessary input controls.
+
+Issuance of Certified Copies
+
+i
+
+ii.
+
+Inclusion of personally identifiable information, viz, photo, thumb
+impression, ID proofs, PAN/Aadhaar numbers, etc in the generation of
+Certified Copies may be restricted. Display of personally identifiable
+information to other users should be restricted.
+
+Necessary steps may be taken to digitalise all the documents registered with
+the department. Recovery and digitalisation of damaged copies with the help
+of appropriate technologies may be implemented.
+
+Issuance of Encumbrance Certificates
+
+i
+
+ii.
+
+iii.
+
+iv.
+
+Steps may be taken to digitalise index records of all the documents registered
+with the department.
+
+Correctness and completeness of index table in terms of property identities,
+viz, survey number, may be ensured for generation of correct and complete
+EC.
+
+Engagements of the property with court or revenue recovery authorities may
+be recorded as a mutation in the Index table to restrict further transaction.
+
+Display of all necessary details, viz, previous document, referral to
+SDC/AEE, revised document value, etc in the EC may be ensured.
+
+EC based on document number, may include the complete transaction
+lineage as on date.
+
+21
+
+
+Chapter - III
+
+Application Development
+
+Primary steps involved in the process of online registration of documents is the creation
+of user credentials with the scope of submission of application and other documents for
+services alongwith the payments of fees so that the Registrar can approve the user. The
+detailed steps are depicted in the flow chart as shown below:
+
+OF ONLIN
+
+IV Creation of
+.. executant/claimant/
+Witness/Presenter
+
+TI. Creation of
+user credentials
+
+VIL. Presentation
+of documents /
+> proof of identity
+before the
+
+a
+>
+Registrar
+
+VT
+
+IX. Field
+inspection /
+Verification of
+details furnished /
+Reference to SDC
+
+The above processes go through all or some of the following integrated modules of the
+application:
+
+Citizen Profile
+Management Module
+
+IT
+
+Issuance of Certified Appeal Management
+copies Module Process Sub Module
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+The observations noticed by Audit in the development of the application is discussed
+in the subsequent paras.
+
+Data integrity refers to the completeness, accuracy and reliability of data obtained,
+processed and preserved in a database. Any database management system should
+ensure data integrity through various validations / restrictions, viz, authentication, input
+controls, process controls, non-repudiation, etc.
+
+Due to the cost of acquisition and its impact on socio-economic growth of a household,
+ownership of an immovable property plays a very important role in the livelihood of an
+individual. It is often used as collateral for gaining capital/liquidity for major
+agricultural / household expenditures.
+
+In India, ownership to a property is primarily established through registered documents
+of sale deed and other documents of transfer of rights. In view of this, maintaining
+correct and reliable details of a citizen’s ownership to a property and preventing
+registrations of incorrect/disputable documents is the primary responsibility of the
+department.
+
+Processing of documents for registration consists of the following three major
+components, correctness of which would ensure integrity of the registration database:
+
+Figure 2— Components of Processing of documents for Registration
+
+= Date of Birth,
+Identification
+
+document number,
+
+Phone no, Email ID
+ete,
+
+= number,
+
+Survey number,
+Dimensions, Schedule
+etc.,
+
+= of the
+document, Ownership
+to a property etc.,
+
+Audit took up testing of user and back office interface and conducted data analysis to
+assess the integrity of the registration data. The observation made on the three major
+components are discussed in the subsequent paragraphs.
+
+3.2 Document identities
+
+As per Section 54 of Registration Act, 1908, every office wherein the books of
+registration are kept, shall prepare current index of contents of the books, immediately
+after the registering authority filled the memorandum of documents.
+
+According to Rule 119 Tamil Nadu Registration Rules, 1967, read with Appendix VI,
+every registering office shall prepare indexes containing particulars such as Names of
+the parties, location of property, Nature of property, Transaction value, Date of
+Execution / presentation / registration, etc.
+
+Depending upon the type of document, four types of Indexes are prepared in the
+Registration Department. Indexes I & II are prepared for instruments relating to
+
+24
+
+
+Chapter II -Application Development
+
+transfer of immovable properties. Index III is prepared for instruments relating to Will
+and Index IV is for Miscellaneous instruments.
+
+In STAR 2.0 application, though initial inputs are received from the registrants,
+ensuring its correctness lies with the department.
+
+a) Registration of land categorised as Government land
+
+Land records are being created and maintained by the Directorate of Survey and
+Settlement under the Revenue department. Land record information comprises of
+primary components like District, City/Town/Village, Ward, Block, Survey number,
+Sub-division number, Resurvey number, Town Survey number, Patta, efc. Each
+attribute represents a distinct, but interrelated identity of the property and cannot be
+interchanged. Combination of ward/block number and survey number (or any
+equivalent identity) is unique for a land parcel.
+
+In the A-Register, maintained by the Revenue Department two types of survey numbers
+are given:
+
+e¢ Government - Survey numbers of all Government Lands
+
+e Ryotwari— Survey numbers of all other lands
+
+While entering document details for registration, a user has to select the survey number
+from drop down menu. Survey numbers classified as ‘Ryotwari’ in the A-Register of
+Revenue Department alone would be loaded and those classified as ‘Government’
+would not be loaded for selection.
+
+Audit scrutiny revealed the following system deficiencies while performing a document
+registration:
+
+i. The user interface did not capture land details under distinct attributes, viz,
+Survey number, Resurvey number, Town Survey number, etc.
+
+ii. A user has to compulsorily select, from the dropdown menu, the survey number
+the land parcel that has to be registered. However, in the case of non-
+availability of a specific number under the ‘Survey number’ drop down menu,
+the user is allowed to enter any value for the survey number by choosing
+‘Others’ option and continue with the registration process.
+
+°
+
+iii. The above invalid values entered by the user are incorrectly stored under the
+attribute ‘Survey number’.
+
+This leads to a situation wherein a user can register any parcel of land despite non-
+availability of survey numbers in the application. Audit undertook a comparative study
+of survey numbers of 10,811 documents! by obtaining survey number database of the
+village and verified them with that of the document registrations. The findings are
+detailed in Chart I given below:
+
+1 Registered in Katchur Village in Thiruvallur district during the period from February 2018 to
+February 2020
+
+25
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Chart -1 — Details of registrations with invalid/incorrect
+survey numbers in a village
+
+e= - 10,811 DOCUMENTS
+
+Documents with valid survey
+numbers
+
+Documents with Invalid survey
+numbers - valuing % 3.32 crore
+
+Documents with survey
+numbers of Government land -
+valuing % 3.56 crore
+
+The breakup of documents with survey numbers of Government land is detailed below:
+
+Table 3 — Break-up details of survey numbers of Government land
+
+Re r Number of
+
+Anadheenam Puncey (Dry land 2
+Grama Natham Porampoke 274
+
+Tax Assessed 16
+Medu
+
+Porampoke 16
+
+Though Government lands can be given to citizens through means such as land for
+landless etc., and subsequent transactions in those land are allowed, proper verification
+needs to be done before processing any land wherein the survey number is not displayed
+in the application. Provision of ‘Others’ option in the application for registering land
+with any survey number allows registration of Government land and other disputable
+lands.
+
+The department may verify the 832 registrations with invalid survey numbers and 308
+records (Link Annexure 5) with survey numbers categorised as Government Lands in
+Katchur village in Tiruvallur District and ensure genuineness of the registrations.
+Department should also check similar cases in other villages also.
+
+Processing of registration other than those categorised as ‘Ryotwari’ through ‘Others’
+option in the application has affected integrity of the database as well. Requirement of
+verification with Revenue authorities and Survey authorities in cases of lands other than
+‘Ryotwari’ was not envisaged in the application.
+
+26
+
+
+Chapter II -Application Development
+
+The Government replied that the above data analysis result might be due to registration
+of Natham lands categorised under Government land which is not yet digitalised. Audit
+reiterated that in respect of land parcels other than ‘Ryotwari’, application should
+include workflow to capture further details on Natham land like Government orders
+and decision/justification of SR to proceed with the registration. It is further reiterated
+that registration of Natham land to private individuals was test checked in only one
+village. Therefore, the department may carry out the above analysis for all the villages
+in the State for necessary corrective action and to safeguard the Government Lands and
+put in place necessary verification mechanism for registration of such lands.
+
+b) Registration of land categorised as temple land
+
+As per section 22-A(1)(ii) of the Registration Act, 1908, the registering officer shall
+refuse to register instruments belonging to, or given or endowed for the purpose of, any
+religious institution to which the Tamil Nadu Hindu Religious and Charitable
+Endowments (TN HR & CE) Act, 1959 is applicable, unless a sanction in this regard is
+issued by the competent authority as provided under the relevant Act.
+
+During scrutiny of files/database provided by the Department, audit noticed that the
+department did not have any centralised mechanism to update these details, viz,
+endowments to institutions / trust, leaving the above properties open for further
+transaction.
+
+Failure to ensure correctness and completeness of document identity details has made
+the process prone to fraudulent transactions. One such illustration whereby temple land
+was conveyed as private property is given below.
+
+Illustration:
+
+A deed of settlement, transferring the title to a land parcel described by Survey
+No.183/1, Area 11,298 sq.ft at Zamin Pallavaram by Shri Sivakumar to his son
+Shri Hari, was registered in January 2018 vide Doc.No.SRO Pallavaram /169/2018.
+The recitals of the document specify that the property was donated to his great
+grandfather as inam land for being trustee of Anjaneyar temple and claimed title to the
+property through unregistered Will. The document was registered at SRO, Pallavaram
+without referring the case to TN HR&CE department and obtaining sanction from
+appropriate authority as required under Section 22-A(1)(ii) of the Registration Act.
+Subsequently the following transactions continued by other registered documents as
+detailed below:
+
+27
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Original Transaction
+
+* Sanction from the Commissioner /HR&CE
+Department was not obtained.
+
+Land owned by + Special Tahsildar had stated that the
+Trustee of Anjaneyar Temple was not listed in the
+Anjaneyar Temple, HR&CE Website.
+Pallavaram — 11,298 * On verification, Audit found that Anjaneyar
+Temple was listed in serial number 586 in
+HR & CE website.
+
+Son cS
+Doc No. POA >
+5611/2018
+
+The Government replied that a separate notation for temple land is being created in the
+Revenue Department which will be shared with the Registration department and post
+sharing of the notations, such transactions of temple lands will be completely blocked.
+
+3.3 Personal identities|
+
+3.3.1 Incomplete citizen credentials
+
+Name, Age, Gender, Address, Contact number, Email ID, Identity proof details are
+some of the credentials against which a user ID is generated. Similar credentials are
+captured in respect of Executant, Claimant, Presenter and Witnesses while creating/
+drafting a document for registration as explained in Figure - 1.
+
+However, these important fields were made mandatory only while creating User ID.
+While creating Executant / Claimant / Presenter / Witnesses, the fields for entering
+Contact number, Email ID, Identity proof details were not made mandatory. This
+resulted in creation of incomplete / incorrect personal information which are necessary
+to maintain uniqueness of details of parties to the instrument.
+
+Audit noticed that in SR _ Pallavaram, 59,661 records of executant/
+claimant/presenter/receiver and 3,42,245 User IDs were created during the period
+between February 2018 and February 2020. Audit analysis of the data of the records
+revealed the following,
+
+28
+
+
+Chapter II -Application Development
+
+Chart 2 - Incomplete and Multiple creation of USER IDs
+
+INCOMPLETE EXECUTANT/ CREATION OF MULTIPLE USER
+CLAIMANT DETAILS 195
+350000 342245
+60000. 59661 59423 300000
+250000
+40000 सपा 200000
+150000 a
+20000 poTZZ 100000
+50000 3187
+CL] |] >
+——S—EEEEE
+»
+s
+बढ रा
+किस
+$
+s हि
+a की
+
+Out of the 82,692 cases pertaining to repeated Email ID, Audit analysis of 1,000 cases
+revealed that one email ID was repeatedly used for 94 times despite having different
+ersonal details. Further, analysis of another 1,000 cases revealed that 122 mobile
+numbers were used repeatedly.
+
+Non-capturing of important details and not ensuring uniqueness of personal information
+in the application software leads to entry of wrong information and poor data integrity.
+
+The Government replied that contact number and identity proof details are made
+mandatory for all executants. Although it is not restricted during initial time of
+implementation, later, creation of user login with same mobile number has been
+restricted. The Government further replied that Audit point will be taken up and
+creation of user login with same email id will also be restricted.
+
+3.3.2 Lack of authentication checks
+
+Authentication is a data integrity mechanism to ensure that users are the persons they
+claim to be. Such authentication was carried out only, at the time of creation of user
+IDs alone. It is pertinent to mention that in STAR 2.0 application it was envisaged to
+verify the authenticity by sending SMS. However, no authentication, by sending one
+time password (OTP), was taken up at the time of capturing details of persons involved
+in execution of a document.
+
+Analysis of data relating to SRO, Pallavaram revealed that out of 20,783, there were
+five dummy mobile numbers (viz., 1234567890, 9876543210, etc.) involving seven
+cases relating to executants/claimants.
+
+29
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Non-authentication of personal details of executant / claimant affects data integrity in
+as much as the system did not check and filter unintended, typographical mistakes.
+
+The Government replied that most of the documents are created by document writers
+and advocates. They are not able to get claimant mobile number in time. So, in order
+to avoid the cumbersome process in entering OTP and on considering the expiry time,
+they entered OTP of their employees or nearby persons. So, to encourage to enter the
+mobile number of original claimant, the OTP provision was removed. Now, it is
+encouraged the citizen to provide their contact numbers and notice boards have been
+placed in this regard in all Sub-Registrar’s offices.
+
+The reply is not acceptable since removal of authentication had adversely affected data
+integrity without which department cannot provide seamless service delivery (SMS
+alerts and e-mails) as envisaged in Clause 5 of RFP Volume I.
+
+3.3.3 Capture of poor quality of thumb impressions
+
+As per clause 7 (xxxiv)(b) of RFP, thumb impression is being captured and stored, as
+mandated by the department as a system of capturing identification of parties to the
+document registered.
+
+As per para 5.3 of Fingerprint Image and Minutiae Data Standard for e-Governance
+Applications in India, issued by Department of Information Technology, Ministry of
+Communications and Information Technology, fingerprint image captured must be
+checked for quality before storage/minutiae extraction. Fingerprint images captured
+with NFIQ (NIST Fingerprint Image Quality) value of 1, 2 and 3 qualify for acceptable
+quality. NFIQ levels 4 and 5 are poor quality images for minutiae data creation and are
+discouraged from use for enrolment/verification/identification purposes. The picture of
+good quality thumb impression is given under:
+
+Clear Thumb Impression
+
+Left Thumb
+
+Left Thumb
+
+Test check by audit revealed that the STAR 2.0 application accepted attempts of any
+incorrect placement of finger on the platen and captured image. Fingerprint images
+without proper coverage of core, ridges were also accepted by the application. Poor
+quality data would affect data integrity, thus defeating the goal to match bio-metric data
+for subsequent registrations.
+
+30
+
+
+Chapter II -Application Development
+
+Execution admitted by 1 Left Thumb
+Left Thumb
+
+The Government replied that some of the persons are having eroded fingerprint due to
+their nature of work. So, quality is getting reduced. If the percentage of capturing is
+enhanced the fingerprint of those persons could not be captured. This will be analysed
+and best practices will be implemented.
+
+3.3.4 Capture of poor quality of facial images
+
+As per clause 7 (xxxiv) (b) of RFP, photo of executants and claimants should be
+captured and stored as mandated by the department for identification of parties to the
+document.
+
+As per para 6.1 of Face Image Data Standard for e-Governance Applications in India
+issued by Department of Information Technology, Ministry of Communications and
+Information Technology, the vendor (SI) should certify the quality of face image by
+filling check list provided therein. A quality check list (which includes 20 parameters
+and prescriptive values), as per the specification and best practices is provided at para
+6.2 of the said standard.
+
+Test check by audit revealed that the interface for capturing images did not provide any
+quality check list. Audit test checked 120 documents (registered during the period from
+February 2018 to February 2020) pertaining to the SRO, Pallavaram with reference to
+the above check list and noticed poor image quality in 20 cases (Annexure 5). Thus,
+capturing of poor quality of facial images would make it difficult for the department to
+match the image for future transactions.
+
+The Government replied that the Face Image Data Standard will be studied and
+applicable recommendations will be implemented.
+
+4 Processing details}
+3.4.1 Non-implementation of fingerprint matching
+
+As per Section 7 of Transfer of Property Act, 1882, every person, entitled to the
+property or authorised to dispose the property not his own, is empowered to execute
+transfer of a property. According to rule 60 (i) of the Registration Rules, the executant
+and claimant (in case of instrument of sale) or only the executant shall be required to
+affix his/her left-hand thumb impression in both the register of thumb impressions (as
+prescribed in Appendix IV) and in the endorsement on the document.
+
+31
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Hence, thumb impression of owner or power of attorney who has right to execute the
+document of transfer in respect of every property is available with the department.
+However, Audit observed that despite availability of thumb impressions with the
+department, it was not used to match for subsequent transactions to avoid fraudulent
+transactions and safeguard public interest.
+
+Audit further observed that fraudulent activities in property transactions were identified
+y the department only on receipt of complaint from owner or any other concerned
+ersons.
+
+Audit scrutiny of 478 complaints and subsequent orders passed by the DRs during the
+period from February 2018 to February 2020 revealed impersonation of owner of the
+roperty. It is to be noted that the above transaction involved consideration value of
+% 51.59 crore which reflects loss to the purchasers. Thus, implementing fingerprint
+matching procedure could have avoided registration of fraudulent transactions and
+safeguarded public interest.
+
+The Government stated that the digitised fingerprint is not available for the older period
+and so is not possible to match the fingerprint of those documents. The Government
+further replied that it will be ensured in the software. The fact however remained that
+the comparison of fingerprint was not being made even in respect of fingerprints already
+available in the department which would have been a deterrent to fraudulent
+transactions.
+
+3.4.2 Multiple mutations of documents with same previous document
+
+As per section 7 of Transfer of Property Act, 1882, every person, entitled to the property
+or authorised to dispose the property not his own, is empowered to execute transfer of
+a property.
+
+When an instrument is executed, entitlement to/authorisation to handle the property
+passes on to the claimant/authorised person. Thereafter, executants of the
+present/previous transactions are prohibited from transacting in that property. In this
+regard the last transaction in respect of a property only is to be considered live and open
+for further transaction. All other previous transactions in records of the department are
+to be archived only for reference and verification of lineage of transaction/document.
+
+However, during walk through and real time testing, audit noticed that the application
+allowed multiple transactions to be initiated by linking the same previous document in
+respect of the same property. It indicates that mechanism to ensure
+entitlement/authority to transact in the property, viz, automatic updation of document
+status or entitlement/ authorisation status was not envisaged in the application.
+
+Failure to ensure previous document status or entitlement to the property as archived,
+has exposed the department process to register disputable documents. An illustration
+of multiple registrations citing the same previous document, conveying the same
+property is given below.
+
+32
+
+
+Chapter III -Application Development
+
+Illustration:
+
+==
+
+This illustration depicts that even after the mutation of document (277/1983) in 2014
+
+itself, persons other than the owners were al
+document in the current fraudulent transacti
+
+This happened since the application did n
+document or title to the property after com
+
+le to refer the 1983 document as previous
+on.
+
+ot capture the updated status of previous
+pletion of a registration process. This has
+
+resulted in poor data integrity in respect of transaction / document lineage, resulting in
+registration of disputable documents.
+
+The Government replied that it will be considered to provide an alert to SR, if the same
+citizen sells the same property again to a different citizen. The Government further
+replied that if the full field of a survey number is sold out in the same documents or
+with various documents, further registration will be blocked. However, the fact remains
+that at present this application allowed multiple transactions to be initiated by linking
+the same previous documents in respect of the same property.
+
+3.4.3 Non-restriction of documents engaged by Revenue Authorities /Court
+
+As per Section 89 of Registration Act, 1908, every court granting a certificate of sale,
+every revenue officer granting a certificate of sale, every officer granting agricultural /
+land improvement loan, every officer granting an assignment of land by the government
+shall send a copy to the registering officer.
+
+In cases of Mortgage, Engagements with court and revenue recovery authorities,
+Attachments by Enforcement Directorate (ED), ec, the claimant in the previous
+document is barred from transacting in the said property.
+
+Audit performed walk through and real time testing with the simulated circumstances
+of mortgage, attachment by court efc., and found that the application allowed
+transaction to be initiated from any of the previous documents. The events of mortgage,
+court or revenue attachments were only captured as remarks and not used in restricting
+unauthentic transactions. Also, department did not have any centralised mechanism to
+update these details, the details were received and updated at individual field offices.
+
+33
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Further, it was also noticed that the ED had notified (April 2021)? attachment of
+properties scheduled in 51 documents registered in eight SR Offices. Out of the above,
+entries have been made in 40 cases only, leaving the other 11 (Annexure 6) properties
+vulnerable for further transaction.
+
+Thus, lack of effective IT validation in STAR 2.0 application would result in
+transactions on those documents which were barred by revenue authorities/courts.
+
+The Government accepted the audit observation and stated that an alert would be
+provided for further registration of the attached property in viable cases.
+
+3.4.4. Incomplete process flow — e-Stamping procedure
+
+As per clause 1.19.5 of RFP (Vol II), the e-Stamping module of software should have
+provision to verify genuineness of the e-Stamp paper and to lock the same, before
+completing the registration process. Stock Holding Corporation of India Limited
+(SHCIL) has requested to provide Application Programming Interface (API) gateway
+for updation of its records on usage of e-stamps.
+
+The aspect of not locking the E-stamps was also commented in the Performance Audit
+report on STAR application, featured in the CAG’s audit report on Revenue Sector,
+Tamil Nadu for the year ending March 2013 titled ‘Implementation of Computerisation
+in Registration Department’.
+
+However, audit noticed that despite a lapse of six years after commented in Audit
+eport, the API gateway as required by SHCIL was not yet developed in the application
+defeating the goal of end-to-end integration.
+
+The Government replied that the API integration would be provided to SHCIL for
+ocking at their end.
+
+As per para 2.4 of the Guidelines for Software Development and Re-engineering
+ublished by the Department of Electronics & IT, Ministry of Communication &
+Information Technology, Gol, every e-Governance project would be required to qualify
+the following three tests by Standardisation Testing and Quality Certification (STQC)
+irectorate or other empanelled agencies:
+
+. Functional testing - Functional or User Acceptance Testing (UAT) is a
+technique used to verify compliance of an application to the functional
+requirements furnished to the SI.
+
+. Performance testing — Performance or Load testing is a technique to verify
+processing capacity in terms of speed, responsiveness and stability of the
+application to the intended load.
+
+. Security testing — Security or Vulnerability Assessment and Penetration
+Testing is a technique used to identify vulnerabilities in the system that
+threatens possible unauthorised access.
+
+2 F.No.ECIR/CEZ)-1/03/2019 dated 8 April 2021.
+
+34
+
+
+Chapter II -Application Development
+
+Further, as per clause 7 of RFP, after the configuration of the SLA reports by the SI and
+setting up the software for roll-out, the application should be audited by a third-party
+software auditor before the launch of the application.
+
+3.5.1 Quality testing procedures
+
+As per clause 6(xii) and (xx) of RFP (vol I), which elaborates on the conditions to be
+fulfilled by the SI before launch of the application, the SI should develop test cases and
+should rectify the defects reported by the department after user testing. The application
+should be tested for performance assessment, vulnerability and security by any
+Computer Emergency Response Team — India (CERT-IN) empanelled agency. Only on
+successful clearance through a compliance audit done by the SI, the application should
+be deemed ready for Go-Live by the SI.
+
+During scrutiny of records, audit noticed the following deficiencies:
+a. Functional testing
+
+The department conducted Functional testing (User Acceptance Testing) with the
+assistance of Technical Consultant during March 2017. Out of 50 number of test cases
+developed by the department with the technical consultant, 326 number of defects were
+raised. Out of which 117 number of defects remained unrectified (as on April 2017).
+Test check of 24 defects (Annexure 7) in June 2021 (out of 117) revealed that 19
+defects (79 per cent) were rectified fully, one partially rectified and four were pending.
+
+Audit conducted independent User Acceptance testing of selected functionalities under
+the UAT environment* provided (February 2021) by the department and noticed 30
+observations (Annexure 8). Some of the observations are elaborated in para 2.2.8 in
+this report.
+
+The Government replied that all critical observations are rectified and some are under
+fixing. Further unrectified test cases would be scrutinised and if required will be
+rectified.
+
+b. Performance testing
+
+The department had not ensured the conduct any performance testing by the SI before
+the launch of the application. During scrutiny of files relating to launch of application,
+Audit observed that the application suffered from technical glitches immediately after
+launch of the 1‘ module (Document Registration Module) on 12 February 2018 and
+that the application was not accessible by public upto 14 February 2018. The
+department officials had to resort to ‘Online linked Offline method’, wherein the staff
+would have to enter necessary index details in back office system causing hardship to
+users and departmental officers. The system was restored with the help of Indian
+Institute of Technology, Madras (IIT-M) who came as Third Party Auditor (TPA).
+
+The Government stated that Performance testing has been carried out by IIT, Madras,
+and the suggestions pointed out by them were implemented.
+
+Internal-user credentials, mapping the roles of Sub-Registrar and Junior Assistant were created
+for audit to navigate and process test records in a non-production server.
+
+35
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+c. Security Testing
+
+As per clause (xx) of Chapter 6 and Chapter 7 of RFP (Volume I), the application should
+be tested for vulnerability assessment and security testing on yearly basis and till the
+end of contract during the Operation and Maintenance phase by any CERT-IN
+empanelled agency.
+
+As per the NIC-CERT, Ministry of Information Technology guidelines for vendors and
+other stakeholders involved in development, administration and management of
+websites, every website should be security audited and obtain security clearance
+certificate from a CERT-IN empanelled agency before hosting in production
+environment and as and when changes are done to the source code.
+
+Audit noticed that security testing in respect of nine modules was last conducted during
+2018 and no security testing was conducted thereafter. Further, 371 release notes
+(Annexure 9) had been furnished by the Department during the period from January
+2019 to July 2019 without security testing.
+
+In the absence of conduct of Security testing, the possibility of security threats could
+not be ruled out.
+
+The Government stated that security testing was completed and will be done before any
+major release to avoid any security lapse.
+
+3.6 Delayed and partial conduct of Third Party Audi
+
+Audit observed that the department did not perform the mandatory third party audit as
+per the RFP before the launch of the application. As neither the Performance testing
+nor the third party audit was conducted, the stability of the application remained
+untested. As a result, the application crashed immediately after the launch on 12
+February 2018 and remained inaccessible up to 14 February 2018. IIT-M was brought
+in by the department to rectify the issues and stabilise the application after the crash.
+
+Though TPA was not conducted before the launch of the Application, in order to
+identify performance issues and bring performance stability to the application, the
+department appointed IIT-M as TPA in April 2018 (i.e.) two months after ‘Go-live’.
+The recommendations of the TPA after completion of performance audit are as below:
+
+a) To conduct load test before any major release
+b) To upgrade database framework
+c) To continuously monitor performance measure
+
+In this regard, the following observations were made:
+
+i. As per Clause 7 of RFP, the performance audit of the application was to be
+carried out by the Third Party Agency. However, the SI did not give the back-
+office build’ to the TPA team till completion of the Third party Audit in
+January 2019. The department concluded the contract without conducting
+
+A software segment relating to departmental activities, viz, processing, administration,
+accounting, efc. to be carried out by departmental officials.
+
+36
+
+
+Chapter II -Application Development
+
+performance audit of back office application for all the modules thus partially
+utilising the services of the TPA. The payment was also released in full despite
+partial completion of the audit by the TPA.
+
+ii. Audit noticed that, after the conclusion of TPA’s performance audit, the SI
+has released eight more modules and issued 23 (Annexure 9) release notes?
+for changes in software. However, the SI did not take up any further
+performance testing even after recommendation of the TPA.
+
+The failure in conduct of testing affected the assurance of quality of the application.
+
+The Government replied that RFP is not mandating third party audit and the decision
+lies with Department. The IIT, Madras has done the third party audit on the request of
+the Department. The Government further stated that due to lack of environment
+resources, SI was not able to provide the environment immediately for testing even after
+implementation. The reply is not tenable since as per Clause 7 of RFP, the application
+should be audited by the third party approved by the department and the department
+had not conducted before the ‘Go live” and the back office application was also not
+given for third party audit.
+
+ing of Business Rules}
+
+3.7.1 Unauthorised modifications in Account ‘A’
+
+As per Rule 7 of the Tamil Nadu Treasury rules, all money received by or tendered to
+Government servants in their official capacity shall be, without delay, paid in full into
+the Bank.
+
+As per Rule 98 of Registration Rules, the registering authority should grant receipt for
+every fee or fine levied by him.
+
+According to Rule 27 of Tamil Nadu Treasury rules, the government servant
+responsible for maintenance of departmental accounts with original receipt entry shall
+prepare a bill for drawing money on account of refund of revenue. Every such refund
+shall be noted against the original receipt entry in the accounts.
+
+Order number 1453 (h) (iii) of the Registration Manual (Part II) stipulates that in case
+of refund of fee, a note, with the date of refund shall be entered under the initials of the
+registering officer.
+
+As per serial number 10 of e-payment module of clause 1.18 of RFP (Vol-II), after the
+challan is presented with the document, i.e., after adding certificate under section 41 of
+ISA, 1899, any refund of the amount can be refunded as per Tamil Nadu Stamp Rules.
+
+It is clear from the above rule/manual provisions that in no case, registering officer has
+a situation to cancel/modify receipts issued in respect of a payment made into
+government account. Any error in depiction can be rectified through correction entries
+or excess payments can be refunded through sanction order of competent authority. In
+
+Department’s notice on enhancements/error fixations made by the SI.
+
+37
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+both the cases, further entries should be made against the original entry under the initials
+of registering authority.
+
+Under the web-based environment established, online-payment challans, containing
+unique transaction IDs were submitted along with the documents presented for
+registration. After verification of payment confirmation from the bank, the same is
+accepted for payment of SD/RF by the registering authority. A receipt, mapping the
+payment challans presented, is issued in favour of the registrant. The registered
+document is returned to the claimant/receiver on production of the receipt. Collection
+of SD and RF are automatically accounted under the corresponding head of accounts in
+the respective field office. Receipts are mapped with the relevant document number
+with receipt status as ‘active’.
+
+During data analysis of Account ‘A’® maintained in the system, audit noticed
+modifications in the status of receipts to ‘inactive’. Audit noticed modification even
+after return of the document to the receiver/claimant. Changing the status of receipts to
+‘Inactive’, brings the under-linked challans to ‘Unutilised’ status. These challans
+(Transaction IDs) could either be used for payment of stamp duty for any other
+document or for claiming refund of the amount. In case of reuse, the departmental
+accounts (Account ‘A’) would show registration of two instruments as against the
+actual receipt of one payment into government account.
+
+Audit analysis of Account ‘A’ table of registration database revealed reuse / refund of
+payments after generation of receipts has been detailed in the Chart below: (Link
+Annexure 6)
+
+Chart 3 - Audit Anal Reuse of Receipts/Refund of Payments
+
+Total Number of Receipts in ‘A’ Account — 53,81,766 (Feb 2018 to Feb 2020)
+
+Status of modified receipts
+(SD & RF involyed- & in lakh)
+7557 (4,491.60)
+8000
+7000
+6000
+5000
+4000 864
+707
+ELD (233.78) (122.63)
+2000 13 (6.76)
+1000 न
+0
+Receipts flagged Challans reused Receipts in respect of _ Receipts rendered
+inactive which refund _ inactive after return
+applications were —_of the document
+made
+
+Account of daily registrations, Fee/Stamp duty realised thereon.
+
+38
+
+
+Chapter II -Application Development
+
+The Government replied that cancellation option of receipt provided in the independent
+payment module has been misused in some offices. So, the option has been blocked
+and the misappropriated amount has been collected. The Government further stated
+that audit observation regarding cancellation details in ‘A’ Account will be taken into
+account and implemented and further modifications/cancellation of receipts will not be
+permitted after registering authority certified the documents.
+
+3.7.2 Incorrect online payment system/Incorrect acceptance of payment challans
+
+Chapter II C of Indian Stamp Act, 1899 stipulates the time of stamping instruments.
+Instruments executed in India are to be stamped before or at the time of execution.
+Instruments executed out of India may be stamped within three months after it has been
+first received in India.
+
+As per Section 23 of Registration Act, 1908, documents other than a Will can be
+accepted for registration within four months from the date of its execution.
+
+Chapter IV of Indian Stamp Act 1899 lays down procedure for processing instruments
+not duly stamped and collection of deficit stamp duty.
+
+Any payment to the department would be made by a user, only against registration of a
+specific document or against services offered / certificates issued by the department for
+which individual application are to be submitted. Hence, a situation of making payment
+of duty / fee into government account without any cause for it, does not arise.
+
+As per clause 1.1 for Online Document Registration process map, the payment event
+comes after completion of model form for the transaction type and uploading of scanned
+proof documents.
+
+However, IGR issued circular’ (January 2015) in which it was stated that production of
+e-payments receipts in the name of the parties to the instruments should not be insisted.
+
+During walk through/real time testing and data analysis of payment system, it was
+noticed that a user can make payments towards SD, RF and other fees without any
+resent/future dues, i.e., the payments need not have any linked document/application
+for processing, viz, temporary number, application number, efc.
+
+The open system of payment and the IGR’s circular cited, permitting utilisation of
+ayment made on behalf of one registrant (‘Applicant’ as named in the receipt) by
+another, led to a situation of repeated use of the same payment receipt in more than one
+registration as detailed below:
+
+Data analysis of payments in respect of SRO, Pallavaram and Tiruppur Joint I revealed
+that 25,540 independent payments were made during the period from February 2018 to
+February 2020. Out of the above, in respect of 1,076 payments (Link Annexure 7) of
+SD/RF for % 5.29 crore, the payment receipts (transaction IDs) of applicants other than
+the registrant of the document were utilised.
+
+epeated usage of same payment challans and thereby completing the registration
+rocess was noticed in four cases® out of 1,076 payments, resulting in short payment of
+SD/RF of %1,22,700.
+
+7 Circular 5642/CS/12 DT 7 January 2015.
+8 Transaction IDs : REG201809040817212, REG201806280535868, REG201812241350150
+and REG201910097038838
+
+39
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+On further data analysis of payments, it was noticed that the department had collected
+fees of हैं 82.94 crore (Link Annexure 8) during the period from 2018-2020 in respect
+of the services to be rendered to the citizens such as furnishing the certified copies,
+encumbrance certificates, etc. However, the department had not rendered these services
+to the citizen subsequently resulting in collection of amount by the department without
+offering services.
+
+The Government replied that (i) online payments once used for generation of receipt
+would be locked and the application would not accept the same for another service. (ii)
+payments made by persons other than the Registrant is allowable under manual system.
+Similarly, to make the payment process user friendly, e-payment made by any person
+is accepted in the application. The Government reply is not tenable since the audit
+observation was on the incorrect procedure of independent payment without any
+underlying service request and not payment by any person.
+
+3.7.3 Inefficient processing of refund applications
+
+Under the web-based environment in the department, payments made by the users was
+in two stages, viz, (i) challans not yet presented for registration (ii) challans used, i.e.,
+presented with the documents for registration in respect of which receipt is issued by
+the registering authority. The payments processed by the registering authorities are
+accounted in their respective Account ‘A’.
+
+During walk through, the following inadequacies were noticed:
+
+i. Online system for refund of challans, i.e., payments accounted for in the
+Account ‘A’ of a registering authority was not developed. Physical copy of
+requisitions for refund were to be submitted by the applicants at the respective
+registering offices. The processing in respect of these applications were also
+handled through physical files.
+
+ii. Due to the above manual processing, required note of refund were not made
+against the original payment receipts in the Account ‘A’.
+
+iii. The application did not have a reconciliation mechanism. Hence, every
+individual challan was sent to the Pay and Accounts Office (PAO) for
+remittance verification. PAO in turn verifies the remittance ID with the
+tespective agency banks, resulting in delayed processing of refund requests.
+
+The Government replied that refund in respect of used challans was being processed
+through physical files since the same requires certificate from the PAO. However, Audit
+observation is about non-availability of online system for application for refund for
+used challan. Further, though the reconciliation with PAO is to be done, the refund of
+the excess amount through online system has not been envisaged in the STAR 2.0
+application. The reply is silent about linking the refund with the original payment entry
+in Account ‘A’ and its subsequent reconciliation.
+
+3.7.4 Absence of functionalities for reconciliation
+
+According to Order No.1469 of the Registration Manual (Part II), an extract (form 50)
+of remittances during the month in respect of each district should be forwarded to the
+treasury officer for verification. Discrepancies, if any, with the treasury accounts
+should be rectified and a report in this regard be sent to Inspector-General.
+
+40
+
+
+Chapter II -Application Development
+
+As per order No.1853 ibid, the District Registrar should consolidate fees realised and
+remitted into treasuries and have the figures verified at the treasuries. A certificate of
+reconciliation is submitted to the IGR on 20" of the following month.
+
+As per item No.8 of e-payment module in RFP (Vol 1), the system should compare
+payments made through the portal with the treasury scroll to ensure transfer of receipts
+into government account.
+
+Following observations are made in this regard:
+
+i. Accounting head-wise reconciliation of departmental receipts with the monthly
+accounts prepared by the Treasury/PAO was not envisaged.
+ii. Reconciliation of outstanding amounts in the pooling accounts of IGR held in
+different agency banks was not envisaged.
+iii. Nosystem of reconciliation for remittance into government account as proposed
+in RFP was developed.
+
+Further, as per the office of the Accountant General (A&E), Chennai that there is a
+credit difference of = 1,175 crore, since February 2018 (as on 31 January 2020) between
+the State Books and Central Accounts Section of RBI, Nagpur. Further the department
+did not reconcile the online receipt figures with that of AG(A&E) from April 2019.
+
+Without dedicated reconciliation module, department could not review its balances in
+the pooling account, remittance of all online payments into government account and
+verification of payment in respect of a challan before processing refund.
+
+The Government replied that banks were uploading the scroll to RBI portal only but
+not in Registration department’s portal. The same has been requested from RBI for
+reconciliation.
+
+3.7.5. Absence of provision to create document in any language
+
+As per Section 19 of the Registration Act, 1908, a document for registration can be
+presented in any language provided a true translation of it in a language commonly used
+in the District is enclosed.
+
+As per Chapter V of the Registration Rules, Tamil and English shall be used in all the
+districts and Telugu, Malayalam, Kannada and Urdu shall be commonly used in the
+notified? district and sub-districts. The documents can be presented in the native
+language of notified district/sub district.
+
+During Walk through/real time testing, audit noticed that the application had provision
+to capture registration details and create draft deed in only English and Tamil. Absence
+of other commonly used languages is depriving the citizens of notified districts from
+using website and register documents in their native languages.
+
+The Government replied that since the documents are presented for registration either
+in English or Tamil, there is no provision for registration in rest of the languages.
+However, the fact remained that the above system was not in conformity with the
+provisions of the Registration Act, 1908.
+
+° Kannada — Selected sub-districts of Dharmapuri, Coimbatore, Erode
+Telugu — erstwhile North Arcot, Dharmapuri, Madras, Ramanathapuram, Coimbatore, Madurai,
+Erode
+
+Malayalam - Kanyakumari, Coimbatore
+Urdu - erstwhile North Arcot
+
+41
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+clusion]
+
+The application did not capture the distinct attributes of land details and allowed
+registration of Government land and temple lands in certain cases, by selecting ‘others’
+option in the application. Personal identity fields were not made mandatory for
+registrations resulting in non-availability of contact numbers, email IDs of executants
+and claimants. Use of dummy mobile numbers were also noticed in certain cases. Non-
+capturing of important details and not ensuring uniqueness of personal information in
+the application leads to poor data integrity. Capturing of poor quality thumb
+impressions and facial images in the application were noticed. Non-implementation of
+fingerprint matching in the subsequent transactions would compromise the safety of
+transaction and may lead to fraudulent transactions.
+
+While registration, the application did not ensure the status of previous documents and
+allowed multiple mutation of documents without verifying the entitlements of the
+property. This may result in registration of disputable documents. Lack of effective IT
+validation in STAR 2.0 application would result in transactions of those documents
+which were barred by revenue authorities/courts. Quality assurance testing like
+functional, performance and security testing were not conducted as per the procedures
+laid down.
+
+There were instances of unauthorized modification of status of challan in Account ‘A’
+(active to inactive) post registration, non-mapping of document value with the
+demand/collection of applicable duty/fee and acceptance of challans from persons other
+than the executants. This led to multiple use of same e-payment challan against
+registration of different documents. Further online system for refund of used challans
+was not developed. There was no reconciliation module for the payments received
+towards duty and fees.
+
+Recommendations
+
+The Government may:
+
+a. ensure completion of quality assurance testing periodically and before every major
+release, as per requirement.
+
+b. complete citizen identity management system wherein personal details of citizen
+obtaining services through the system is verified, accepted, stored and managed for
+further use.
+
+c. fix the standards for capturing fingerprint and facial data.
+
+ensure fingerprint matching /SMS notification procedure for registration of
+documents with previous registered document available with the department.
+
+e. capture and update the value of document status in respect of every property and
+archive all previous documents, denying further transaction in them.
+
+ff capture and maintain land record details in consistent with that in NLRMP
+database
+
+g. ensure complete mapping of value/revised value of the document, demand raised
+and payments made.
+
+h. include online refund application and payment procedure in respect of unutilised
+challans also.
+
+i. develop a dedicated reconciliation module.
+
+42
+
+
+Chapter —IV — Resource Management and
+
+Controls
+
+In connection with the development and administration of STAR 2.0 application,
+resources viz., IT resources, human skill, financial sanctions, digitalised data, efc are
+placed at the disposal of the Department for effective and efficient utilisation.
+
+4.1 M
+
+ion of datal
+
+Any data migration process would include (i) digitalisation of physical records / data
+extraction from existing system, (ii) verification of validations as per data integrity rules
+of the target system and (iii) integration.
+
+Legacy data of the Registration department are from two categories:
+
+i. Data pertaining to the pre-computerisation era (Non-digital data) which were
+in the form of physical records, viz, Documents, Register of thumb
+impressions, etc.
+
+ii. Data generated in digital form after computerisation of the department
+through introduction of STAR software in 2000, consisting of scanned
+documents, datasets relating to persons and properties including bio-metric
+data captured during registration of a document.
+
+For non-digital data, GoTN accorded! (August 2018) administrative sanction of = 89.17
+crore for scanning documents registered from 1865 to 2009.
+
+For the digital data, Clause 6 (xiii) of RFP entrusted the responsibility to SI for
+migration and integration of the data available in STAR and the digitalised data of pre-
+computerised era.
+
+Audit verification of the status of data migration revealed the following:
+
+i. 99.98 per cent of records out of six crore records relating to Index II’ register
+of STAR was successfully migrated by the department.
+
+ii. 37 per cent of records pertaining to pre-computerisation period were yet to be
+uploaded and integrated with the new application.
+
+iii, Account details, viz, Accounts ‘A’ to ‘H’ prior to February 2018 were not
+migrated into STAR 2.0
+
+1 GO Ms.No.126 dated 24 September 2018
+Abstract of documents registered in a field office. Details of property, parties to the document,
+Date of execution, document number, efc are recorded.
+
+43
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Audit took up one attribute of migrated data, viz, document number for validation
+control and gaps in sequential numbers and noticed the following defects:
+
+a. In respect of the 2,43,122 documents/cases pertaining to the period from 1975
+to 2021, the date of registration was incorrectly displayed in the user interface
+for Certified Copy. In 1,23,037 (Link Annexure 9) out of 2,43,122 cases, (50
+to 60 per cent) where the registration date ranges from 1975 to 13 September
+2002, the same was displayed as 8 October 2020.
+
+b. On analysis of documents registered in the SRO, Pallavaram, it was noticed that
+there were 4,872 (Link Annexure 10) gaps in the document running number
+for the period from 1975 to 2017.
+
+c. Data was migrated without input/validation controls. Audit noticed that in
+1,30,787 (Link Annexure 11) out of 6,85,92,178 number of registration records
+migrated, document number and date of registration did not match. Further it
+was also noticed that out of 6,38,22,696 records in Bookl, 5,227 (Link
+Annexure 12) number of records has invalid years in document numbers, viz,
+7592, 8097, 8002.
+
+The Government replied that the audit point is noted and the data cleansing would be
+carried out.
+
+4.2 Delayed completion of support requests
+
+Support requests are raised through email/fax/calls both by citizens and departmental
+officials facing difficulties in using the application. While time limit for resolving the
+issues, according to levels of difficulties, was not fixed by the department the maximum
+acceptable timeline as per the performance metric is 24 hours.
+
+During audit it was noticed that no mechanism, viz, Management Information System
+(MIS) reports, was put in place to monitor time taken for resolving issues raised.
+
+Analysis of data relating to Support requests revealed that 14 per cent of cases (20,918
+out of 1,47,284 closed cases) were resolved after a period of 30 days. With 25 per cent
+(5,158) (Link Annexure 13) of issues raised on core functions, viz, EC generation,
+correction in index, online payments, issue of certified copies, return of documents efc.,
+belated resolving of issues affects timely delivery of citizen’s service.
+
+The Government replied that the delay was in respect of online payment issues which
+required third party support. The reply is not acceptable as the delay pointed out by
+audit was not only in respect of the online payment issues but also in other issues such
+as EC generation, index correction etc., which affected the delivery of the citizen
+services.
+
+3 Index corrections
+
+According to Rule 119 of Tamil Nadu Registration Rules,1983 read with Appendix VI,
+every registering office shall prepare indexes containing particulars such as Names of
+the parties, location/boundary of property, Nature of property, Transaction value,
+Market value, Date of registration, etc.
+
+44
+
+
+Chapter IV -Resource Management and Controls
+
+As per Section 54 of Registration Act 1908, every office wherein the books of
+registration are kept, shall prepare current indexes of contents of the books,
+immediately after the registering authority filled the memorandum of documents.
+
+Audit test checked 53,78,191 number of documents registered during the period from
+February 2018 to February 2020 and noticed that 11,773 (Link Annexure 14) index
+correction petitions relating to 9,388 documents were received. Out of the above, 8,465
+petitions were approved, 2,321 petitions were rejected and 987 petitions were pending.
+Occurrence of error / corrections in the index reflects weakness in internal contro
+mechanism. One such case is illustrated below:
+
+Document number
+
+document
+SRO Pallavaram / E Vincent Polamma 372/ 1AIA1 372/ LAIAL
+5079/2015 (Seller) (Purchaser)
+SRO Pallavaram/ Polamma S Riyaz Ahmed 372/ 1AIAL 372/ 1A1A1
+2422/2019 (Seller) (Purchaser)
+SRO Pallavaram / S Riyaz Ahmed | Nasreen Farah 372/ 1AIAL 372/1A1 Al &
+8385/2020 (Settlor) (Settlee) 143/33
+
+Representation of Shri Riyaz Ahmed for transfer of patta was not accepted by Revenue
+Authority stating that the plot under consideration covered two survey numbers, viz,
+372/1A1A1 and 143/33. But the Sale deed (2242/2019) included only 372/1A1A1.
+The property description in the document had to be corrected only by registering a Deed
+of Rectification. However, the department accepted the application for Index correction
+and changes made in Index were reflected in EC.
+
+No workflow was provided for making index corrections in respect of name of the
+claimant, consideration, etc. After approval of District Registrar in manual records,
+details of corrections were forwarded to the Support Cell of SI which would make
+changes in the index. Index is one of the important government record wherein the
+power to access and update lies with government authorities, viz, DR/SR. Thus, index
+correction by SI support cell exposes the breach of vulnerability of the data by officers
+not authorised.
+
+The Government replied that the corrections that were made to rectify the errors were
+approved by the Additional Inspector General and were carried out through backend
+query. Suitable module will be implemented to carry out the corrections through the
+application. The fact however remains that till provisions are made in the application,
+carrying out the rectifications at the back end was vulnerable for manipulation and
+would escape audit trail.
+
+As per FRs 2.2 of RFP (volume.2), SI should provide for generation of 58 MIS reports
+out of which, 47 reports had been developed and 11 (Annexure 10) were yet to be
+developed. 15 out of 47 MIS reports for the period 2019-2020 were test checked and
+the following deficiencies noticed:
+
+i. The reporting module enabled generation of MIS only after office hours, viz,
+05.30 pm. This implied that department cannot generate any MIS report during
+office hours.
+
+45
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+ii. Periodicity of all reports were fixed as one month only. Therefore, Annual,
+Quarterly or any selected period reports could be generated only by repeated
+attempts, filtering and consolidation by departmental officials.
+
+iii. In respect of Document Registration Summary and Deed-wise registration
+summary, no data/details were loaded. The window displayed only blank
+reports.
+
+iv. The MIS report on surcharge can be downloaded only for the selected month and
+not on quarterly basis. The field offices send quarterly statements to the
+concerned District Registrar and the same is forwarded to the Office of the IGR,
+Chennai. The quarterly statements received are consolidated manually and the
+allocation is being done to the concerned local bodies.
+
+The Government in its reply stated that the issue would be rectified once the server and
+storage are procured.
+
+Concurrent user login in multiple systems|
+
+Access management process of the application has two layers, viz, user ID / password
+and thumb impression. Encumbrance Certificate, Patta and Identity verifications,
+verification of presence of reserved words, certification of Index data are some of the
+mandatory and critical steps of a SR in the online processing of document registration.
+Hence, access management policy should sufficiently protect access to SR login screen.
+
+As per para 3.1.1.4 of Password Policy set by the Ministry of Electronics and
+Information Technology, Government of India, passwords shall not be stored in
+readable form in batch files, internet browsers or any other location where unauthorised
+access is possible.
+
+During data analysis and real time testing of the back-office system, audit noticed that
+SR screen could be accessed by various methods, viz, recovering previous SR login
+history, use of function keys, efc. Further, analysis of the table for login sessions
+revealed concurrent SR login in multiple systems as detailed below:
+
+Table 1 — Login Sessions of SR Login
+
+Lack of effective access control may leave the application vulnerable to unauthorised
+access / activities through SR login.
+
+The Government replied that the deficiencies pointed out by the audit were sorted out.
+The login of every employee can be opened by entering password as well as comparing
+their fingerprint. It reduced unauthorised access. Further, the back office application
+runs MPLS-VPN which cannot be opened outside the office. Password policy set by
+Ministry of Electronics and IT were enabled. The access of SR login using function
+
+46
+
+
+Chapter IV -Resource Management and Controls
+
+‘ey, recovering previous login history etc were blocked. Opening of concurrent SR
+login in multiple systems also disabled now.
+
+4.6 Absence of facility to u
+
+As per Section 285 BA of Income Tax Act,1961 read with Rule 114 E of IT Rules,
+962, every registering authority should furnish Statement of Financial Transactions of
+value more than %30 lakh (in Form 614A) to the IT authority. Comma Separated Value
+(CSV) format for generation of such report is provided in the reporting portal (Insight)
+of the Income Tax department.
+
+During test check at SR, Pallavaram, Audit noticed that 1,540 transactions were due to
+e reported to the IT Department for the period from 1 April 2018 to 31 March 2019.
+Out of the above 55 number of reports with 269 transactions were furnished to ITD and
+all the reports/transactions had been returned by IT department citing data quality
+errors. Some of the errors reported in Data Quality Report of IT department are:
+Absence of PAN or Incorrect / Invalid PAN
+
+Absence of buyer / transferee details
+
+Blank father’s name
+
+No PAN
+
+Failed mobile number / contact details
+
+Failed identification Type / Number for no PAN case
+
+Failed Date of Birth / Incorporation
+
+Failed Date of Birth range
+
+Failed Address type / postal code
+
+j. Failed form 60 acknowledgement number for no PAN case
+
+k. Inconsistent aggregate transaction amount
+
+roe mo 9० ge
+
+In this regard, audit observed that:
+
+i. The errors were manually verified and corrected in the individual records being
+uploaded in the Income Tax portal without rectifying errors in the departmental
+records.
+
+ii. The department did not envisage the above reporting requirement in STAR 2.0
+application. Without provision for automated generation of data quality
+compliant report, the Registering authorities are burdened with manual
+generation of reports. The above failure led to generation of incomplete reports
+making the exercise futile.
+
+The Government replied that a facility to enter the Form 61 and 61A details during
+document/abstract creation by public themselves were created and the system validates
+some of the details automatically. As such the remark pointed out by audit has been
+implemented.
+
+Arrears of revenue of the department to the end of March 2020 is € 386.46 Crore with
+the earliest year of outstanding revenue being 2010-11. Out of the above % 334.96 crore
+was outstanding for more than five years.
+
+However, migration of document / registrant-wise arrear details and integration of the
+same with the current DCB was not envisaged, defeating the goal of generation of MIS
+under computerised environment.
+
+47
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+4.8 Non-availability of Inventory Register
+
+Para 2.1 of E-security policy 2010 of GoTN, prescribes that each department shall build
+an inventory of its IT assets and ensure the physical and environmental security of them.
+
+However, audit noticed that the application did not have provision to maintain and
+update inventory register for IT assets. MIS report on the Model / make, Date of issue
+/ receipt in the office, Date of installation / repair, maintenance cycles, etc., would help
+the department in efficient resource management.
+
+The Government replied that the application is having an inventory register for IT
+assets. However, audit verification revealed that the same was not maintained and
+updated to reveal the real time information.
+
+‘onclusion|
+
+Data was migrated from STAR to STAR 2.0 application without input/validation
+controls which resulted in instances such as incorrect document registration date, gaps
+in the document running number etc., Support request from citizen with reference to
+the STAR 2.0 Application were resolved with delay.
+
+No workflow was provided in the STAR 2.0 Application for making index correction
+in respect of name of the claimant, consideration, etc. In the absence of workflow in
+application, index corrections were made by System Integrator in the database through
+back-end which makes the application vulnerable for manipulation and it would escape
+audit trail also.
+
+Generation of MIS reports was not enabled during office hours and instances of
+concurrent usage of SR logins in multiple systems were also noticed. The STAR 2.0
+Application did not envisage the furnishing of the Financial Transactions details of the
+properties that are to be reported to the Income Tax department in the prescribed format
+under IT Act, 1961 and the rules made thereunder.
+
+Recommend: ns}
+
+The Government may
+
+(a) Ensure data cleansing and complete data migration process at the earliest, to
+ensure data integrity and complete document trail.
+
+(b) Develop a robust mechanism to monitor the support requests from citizens for
+their early disposal.
+
+(c) Ensure, that no index corrections should be carried out through back end and
+develop a suitable module to carry out corrections through the application only
+
+(d) Develop a user-friendly MIS Report to ensure better co-ordination and
+reporting
+
+(e) Ensure a suitable automated mechanism for furnishing complete and correct
+periodical reports/transactions to IT Department and also develop the
+mechanism to review the returned reports by IT Department promptly for
+corrective actions.
+
+48
+
+
+Chapter - V
+
+Conclusion and Recommendations
+
+Conclusion|
+
+The computerisation of the activities of the Registration Department started
+during the year 2000. An application, named ‘STAR’ was designed and
+developed by the department with the assistance of National Informatics Centre
+(NIC). In order to further enhance the citizen’s service delivery experience the
+Registration Department had taken up new initiative STAR 2.0 in the year 2012
+with the assistance of M/s.Tata Consultancy Services for comprehensive
+coverage of all registration related services through web-based service delivery.
+
+In STAR 2.0 application, the interface with the ID issuing authorities is not
+developed / enabled for verification of identities, which may lead to non-
+identification of illegitimate transactions, if any. In respect of documents
+referred to SDC (Stamps) and AEE (PWD) for the determination of market
+value of property, there was no provision in the application for online
+submission of their reports. The revised value of property along with the
+additional demand of stamp duty were also not mapped with the original
+document entry in Account A. The system allows document registration despite
+mismatches in patta details resulting in the possibility of registering disputable
+documents.
+
+Absence of classification in respect of certain documents viz., Cancellation of
+sale agreements where possession was given, Mortgage deeds for securing
+lebentures, etc. was noticed in the application which may lead to short
+collection of stamp duty. While issuance of certified copies, the application
+allowed inclusion of personal data viz., photo IDs, Aadhaar/PAN etc. also in
+contravention to the rules. Instances of full/partial damage of physical as well
+as photo volumes were noticed which would result in non-availability of these
+documents for inspection/issue of certified copies. The application provided for
+issuance of certified copy of will to persons other than executants in some cases
+without recording the reasons for the same.
+
+Discrepancies were noticed in generation of Encumbrance certificates with
+respect to property / valuation details. Registration records are mapped to the
+registering offices in the application. This leads to a situation wherein, in case
+of transfer of jurisdiction/creation of registering offices, EC generated by a user
+would show only the transactions registered in the selected registering office
+rather than showing all the transactions pertaining to the property.
+
+The application did not capture the distinct attributes of land details and allowed
+registration of Government land and temple lands in certain cases, by selecting
+‘others’ option in the application. Personal identity fields were not made
+mandatory for registrations resulting in non-availability of contact numbers,
+email IDs of executants and claimants. Use of dummy mobile numbers were
+also noticed in certain cases. Non-capturing of important details and not
+ensuring uniqueness of personal information in the application leads to poor
+data integrity. Capturing of poor quality thumb impressions and facial images
+in the application were noticed. Non-implementation of fingerprint matching in
+
+49
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+the subsequent transactions would compromise the safety of transaction and
+may lead to fraudulent transactions.
+
+While registration, the application did not ensure the status of previous
+documents and allowed multiple mutation of documents without verifying the
+entitlements of the property. This may result in registration of disputable
+documents. Lack of effective IT validation in STAR 2.0 application would
+result in transactions of those documents which were barred by revenue
+authorities/courts. Quality assurance testing like functional, performance and
+security testing were not conducted as per the procedures laid down.
+
+There were instances of unauthorized modification of status of challan in
+Account ‘A’ (active to inactive) post registration, non-mapping of document
+value with the demand / collection of applicable duty / fee and acceptance of
+challans from persons other than the executants. This led to multiple use of same
+e-payment challan against registration of different documents. Further online
+system for refund of used challans was not developed. There was no
+reconciliation module for the payments received towards duty and fees.
+
+Data was migrated from STAR to STAR 2.0 application without
+input/validation controls which resulted in instances such as incorrect document
+registration date, gaps in the document running number etc., Support request
+from citizen with reference to the STAR 2.0 Application were resolved with
+delay.
+
+No workflow was provided in the STAR 2.0 Application for making index
+correction in respect of name of the claimant, consideration, etc. In the absence
+of workflow in application, index corrections were made by System Integrator
+in the database through back-end which makes the application vulnerable for
+manipulation and it would escape audit trail also.
+
+Generation of MIS reports was not enabled during office hours and instances of
+concurrent usage of SR logins in multiple systems were also noticed. The STAR
+2.0 Application did not envisage the furnishing of the Financial Transactions
+details of the properties that are to be reported to the Income Tax department in
+the prescribed format under IT Act, 1961 and the rules made thereunder.
+
+Addressing the above deficiencies would help the department in achieving its
+goal of enhanced citizen service delivery, prevention of fraudulent registrations
+and in improving system of revenue administration.
+
+‘ions|
+
+A Planning and Implementation of STAR 2.0 Application
+
+Verification of Identity Cards:
+The department may integrate STAR 2.0 with all ID issuing Government
+departments / Agencies (PAN, Aadhaar, Driving Licence efc.,) for
+verification of identities of persons and properties in respect of service
+sought through the application so as to capture correct information which
+may be useful to detect illegitimate transactions, if any.
+
+[ Paragraph 2.2.1]
+
+iRecommendat
+
+SDC segment:
+
+i. Online payment facility may be developed by sending payment
+link/online challans to the registrant.
+
+50
+
+
+Chapter V— Conclusion and Recommendations
+
+iii.
+
+iv.
+
+The process of creation of demand at SDC(Stamps) may be matched
+with payment details.
+Increase in the value of document as per SDC valuation may be
+mapped with the document alongwith demand / payments.
+Segregation of duties may be enforced with record-based permission
+alongwith review/oversight management by Supervising Officer.
+
+| Paragraph 2.2.2 |
+
+PWD segment
+
+i.
+
+ii.
+
+Queue system of documents alongwith automatic grouping of
+work items (based on area / street) may be enforced.
+Online payment of SD/RF, in respect of the revised value may be
+ensured by sending payment link / online challan.
+Increase in the value of document based on field inspection may be
+mapped with the document alongwith demand / payment.
+
+[ Paragraph 2.2.3 |
+
+Patta matching and patta transfer process
+
+1.
+
+ii.
+
+Patta mismatch report may be allowed for processing only after
+recording of reasons by the registering authority.
+
+Correctness and completeness of property details furnished to
+Revenue department may be ensured. In case of error response from
+NLRMP, the citizen service requests for patta transfer may be
+completed by either rectifying the error responses or informing the
+deficiencies to the claimant.
+
+[ Paragraphs 2.2.5 & 2.2.6 |
+
+Classification and valuation of instruments
+
+ii.
+
+Dataset on classification of instruments may be updated to include all
+instruments specified under the Indian Stamp Act, 1899, and the
+Registration Act, 1908, as amended.
+Provision may be included to capture all the personal, property and
+document details under necessary input controls.
+
+[ Paragraph 2.2.8 |
+
+Issuance of Certified Copies
+
+Inclusion of personally identifiable information, viz, photo, thumb
+impression, ID proofs, PAN/Aadhaar numbers, etc in the generation
+of Certified Copies may be restricted. Display of personally
+identifiable information to other users should be restricted.
+Necessary steps may be taken to digitalise all the documents
+registered with the department. Recovery and digitalisation of
+damaged copies with the help of appropriate technologies may be
+implemented.
+
+[ Paragraphs 2.3.1 & 2.3.4]
+
+Issuance of Encumbrance Certificates
+
+il.
+
+Steps may be taken to digitalise index records of all the documents
+registered with the department.
+
+Correctness and completeness of index table in terms of property
+identities, viz, survey number, may be ensured for generation of
+correct and complete EC.
+
+51
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+iii. Engagements of the property with court or revenue recovery
+authorities may be recorded as a mutation in the Index table to restrict
+further transaction.
+
+iv. Display of all necessary details, viz, previous document, referral to
+SDC/AEE, revised document value, efc in the EC may be ensured.
+
+v. EC based on document number, may include the complete transaction
+lineage as on date.
+[ Paragraph 2.4 |
+B Application Development
+The Government may:
+i. ensure completion of quality assurance testing periodically and before
+every major release, as per requirement.
+[ Paragraph 3.5.1(c) ]
+
+ii. complete citizen identity management system wherein personal details of
+citizen obtaining services through the system is verified, accepted, stored
+and managed for further use.
+
+[ Paragraph 3.3.1 |
+
+iii. fix the standards for capturing fingerprint and facial data.
+[ Paragraphs 3.3.3 & 3.3.4]
+
+iv ensure fingerprint matching /SMS notification procedure for registration
+of documents with previous registered document available with the
+department.
+
+[ Paragraph 3.4.1 |
+
+v capture and update the value of document status in respect of every
+property and archive all previous documents, denying further transaction
+in them.
+
+[ Paragraph 3.4.2 |
+
+vi capture and maintain land record details in consistent with that in
+NLRMP database.
+
+[ Paragraph 3.2 (a)& (b) ]
+
+vii ensure complete mapping of value/revised value of the document,
+demand raised and payments made.
+
+[ Paragraph 3.7.1 |
+
+viii include online refund application and payment procedure in respect of
+unutilised challans also.
+
+[ Paragraph 3.7.3 |
+
+ix develop a dedicated reconciliation module.
+[ Paragraph 3.7.4 ]
+
+Cc Resource Management and Controls
+The Government may
+i. Ensure data cleansing and complete data migration process at the
+earliest, to ensure data integrity and complete document trail.
+[ Paragraph 4.1 ]
+
+52
+
+
+Chapter V— Conclusion and Recommendations
+
+iii.
+
+Develop a robust mechanism to monitor the support requests from
+citizens for their early disposal.
+
+| Paragraph 4.2 |
+Ensure, that no index corrections should be carried out through back end
+and develop a suitable module to carry out corrections through the
+application only.
+
+[ Paragraph 4.3 |
+iv. Develop a user-friendly MIS Report to ensure better co-ordination and
+reporting
+[ Paragraph 4.4 ]
+v. Ensure a suitable automated mechanism for furnishing complete and
+correct periodical reports/transactions to IT Department and also
+develop the mechanism to review the returned reports by IT Department
+promptly for corrective actions.
+| Paragraph 4.6 |
+(Brom —
+५
+Chennai (K. P. ANAND)
+The 08 June 2022 Principal Accountant General (Audit-I])
+Tamil Nadu and Puducherry
+Countersigned
+New Delhi (GIRISH CHANDRA MURMU)
+The 20 June 2022 Comptroller and Auditor General of India
+
+53
+
+
+ANNEXURES
+
+
+Annexure-1
+
+Referred to in Paragraph 2.1
+
+Details of Modules developed and yet to be developed by the System Integrator and the
+brief description of the Modules
+
+No.
+
+Name of the Modul:
+
+Completed modules
+
+1 | Document Registration | The document registration module covers the process of creation
+Module of document/index in the portal and subsequent registration
+process in the field office till the return of the document.
+2. | Issuance of Certified The certified copy of a document can be applied through online
+copies and the copy would be forwarded to the applicant's email id
+3 Issuance of EC EC is an important property document that provides references to
+any liabilities in the form of a mortgage or a loan against the
+property, that has not been cleared. EC can be applied through
+online for the period commencing from 1975 to till date after
+paying the requisite application and search fees. The EC generated
+would be forwarded to the email id of the applicant
+4 | Hold Document Module | This module is also otherwise known as Pending Document
+process. A document is classified as a Hold document due to some
+issues while registering a document. Some of the reasons for
+pendency are extra evaluation time is required by SR,
+disagreement in nature of deed and case is referred to DR. This
+module speaks about the pendency and process of subsequent
+clearance
+5 | Societies Registration Application along with required documents submitted by the
+Module Society’s representative triggers the processes of this module
+6 | Chit Funds Registration | Chit funds can apply and obtain prior sanction order. Second phase
+Module is certificate of commencement.
+7 ‘| Filing of minutes for After each draw meeting of an operational chit fund is conducted,
+Chit Funds the minutes can be filed through online. On successful filing of
+minutes, prescribed fee had to be paid through online.
+8 | Firm Registration This module deals with three phases: (i) Registration of a firm (ii)
+Module Filing of annual declaration (iii) Dissolution of the firm
+a Marriage Registration This module facilitates registration of marriages under (i) Hindu
+Module Marriage Act, (ii)Tamil Nadu Marriage Registration Act, (iii)
+Special Marriage Registration Act (iv) Christian Marriage Act
+10 | Issue of Birth and Death | Module facilitates applying for issue of birth/death certificates in
+Extract the prescribed format and forwarding the same through online to
+the applicant
+11 | Refund of Stamp duty This module enables refund of stamp duty through online for
+which there are three phases: (i) Details of stamp papers in
+electronic form (ii) Verification request from the Tahsildar and
+(iii) Data on stamp paper details and legal stamp vendors
+12 | MIS and Reporting This module generates all the MIS reports required by the
+
+Module
+
+department
+
+55
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Name of the Module
+
+Field Inspection Module
+
+Description
+
+A document for registration after scanning would automatically
+come to the field verification queue where in the SR/AEE conducts
+field verification and inspection report is uploaded. Based on the
+verification report, the deficit Stamp duty and registration fee
+would be collected from the registrant
+
+14
+
+Accounts and Challan
+Module
+
+This module tracks and generate the revenue generated in the field
+offices. Collection of stamp duty and registration fees under
+several accounting heads is recorded in this module
+
+15
+
+Online Services Module
+
+It provides an interface to interact with the department through
+internet. The modules of issue of EC. CC, chits, firms, societies
+registration modules will be available partially/fully on the internet
+
+16
+
+E Stamping sub-module
+
+This module enables the SR to verify the authenticity of the E
+stamp paper by citing the unique E stamp number presented to him
+for registration of a document
+
+17
+
+Citizen profile
+maintenance sub-module
+
+The details of citizen who receives a service from the department
+is stored in the database
+
+Partially completed modules
+
+Appeal
+
+Issues relating to undervaluation of the property are resolved
+through this module. When the disagreement arises between the
+SR and the registrant, the document is kept pending and is
+processed through appeal module till it reaches a finali
+
+Audit
+
+Documents that have completed the registration process with a
+regular registration number are eligible for audit and queries are to
+be raised through this module. However, as on date, the document
+viewing facility is only available
+
+Human Resource
+
+Module covers the details of the employees of the registration
+department. The date of joining of an official in the department,
+pay and allowances, promotion, transfers and training are
+generally covered
+
+Pending Development Sub-modules
+
+1 Vendor Management | Vendor management module should help the department to
+manage all its procurement requirements and the subsequent
+contract management would be facilitated in this module
+
+2 Inventory Inventory management module should manage the inventory
+
+Management database and track all the incoming and outgoing inventories
+3 Guideline revision Guideline register is revised by the department periodically or
+
+through State Government Directive. This module should be used
+by a suitable authority to fix and update the guideline values
+
+56
+
+
+Annexure-2
+
+Referred to in Paragraph 2.2.1
+Details of PAN mismatch
+
+Sl.
+No. Document Number Registration date Document type
+
+[1 | R/Pallavaram/Book 1/1314/2018 22-02-2018 00:00 | Sale deed
+
+2 | RvPallavaram/Book 1/2314/2018 05-04-2018 00:00 | Sale deed
+
+3. | RvPallavaram/Book 1/2668/2018 19-04-2018 00:00 | Sale deed
+
+4 | R/Pallavaram/Book 1/3172/2018 07-05-2018 00:00 | Sale deed
+
+5 | RvPallavaram/Book 1/3174/2018 07-05-2018 00:00 | Sale deed
+
+6 | R’Pallavaram/Book 1/5498/2019 17-06-2019 00:00 | Sale deed
+
+7 | R/Pallavaram/Book 1/5499/2019 17-06-2019 00:00 | Deposit Of Title Deeds
+
+[8 | R/Pallavaram/Book 1/8774/2019 04-10-2019 00:00 | Sale deed
+
+[>| R/Pallavarany/Book1/10115/2016 01-12-2016 00:00 | Power of Attomey relating to Immovable Property
+[10 | R/Pallavaram/Book1/11396/2015 28-12-2015 00:00 | Deposit of Title Deeds If loan is repayable on demand
+11 | R/Pallavaram/Book1/3637/2017 12-05-2017 00:00 | Conveyance Metro(UA
+
+12. | RvPallavaram/Book1/4110/2008 18-09-2008 00:00 | Conveyance Metro/UA
+
+13 | RyPallavaram/Book1/428/2018 19-01-2018 00:00 | Conveyance Metro/UA
+
+14. | R/Pallavaram/Book1/4730/2017 19-06-2017 00:00 | Agreement-construction Metro/UA
+1S | R/Pallavaram/Book1/4731/2017 19-06-2017 00:00 | Conveyance Metro/UA
+
+16 | R/Pallavaram/Book1/4732/2017 19-06-2017 00:00 | Deposit of Title Deeds If loan is repayable on demand
+17 | RyPallavaram/Book1/5164/2015 10-06-2015 00:00 | Agreement-construction Metro/UA
+[1s | R/Pallavaram/Book1/5165/2015 10-06-2015 00:00 | Conveyance Metro/(UA
+
+[19 | RyPallavarany/Book1/5935/2017 27-07-2017 00:00 | Rectification Deed
+
+20 | RyPallavaram/Book|/7108/2017 05-09-2017 00:00 | Conveyance Metro/UA
+
+21 | R/Pallavaram/Book1/7804/2017 27-09-2017 00:00 | Conveyance Metro/UA
+
+22 | R/Pallavaram/Book1/7905/2017 04-10-2017 00:00 | Conveyance Metro/UA
+
+23 | RvPallavaram/Book1/797/2007 15-02-2007 00:00 | Conveyance Metro/UA
+
+24 | RyPallavaram/Book1/9095/2017 10-11-2017 00:00 | Agreement
+
+25 | RyPallavaram/Book1/9096/2017 10-11-2017 00:00 | Agreement
+
+26 | RvPallavaram/Book1/9097/2017 10-11-2017 00:00 | Agreement
+
+27 | RyPallavaram/Book|/9098/2017 10-11-2017 00:00 | Agreement
+
+28 R/Pallavaram/Book1/9099/2017 10-11-2017 00:00 | Agreement
+
+29 | R/Pallavaram/Book1/9100/2017 10-11-2017 00:00 | Agreement
+
+30 | RvPallavaram/Book1/9159/2017 15-11-2017 00:00 | Agreement-construction Metro/UA
+31. | RyPallavaram/Book1/9160/2017 15-11-2017 00:00 | Conveyance Metro/UA
+
+32 | RyPallavaram/Book1/9611/2017 30-11-2017 00:00 | Agreement-construction Metro/UA
+33. | RvPallavaram/Book1/9612/2017 30-11-2017 00:00 | Agreement-construction Metro/UA.
+34° | RyPallavaram/Book1/9668/2017 01-12-2017 00:00 | Conveyance Metro/UA
+
+35__| R/Pallavaram/Book1/9678/2015 26-10-2015 00:00 | Agreement-construction Metro/UA
+36 | R/Pallavaram/Book1/9679/2015 26-10-2015 00:00 | Conveyance Metro/UA
+
+37 | RyPallavaram/Book1/3347/2009 11-09-2009 00:00 | Conveyance Metro/UA
+
+38 | RyPallavaram/Book1/1641/2017 09-03-2017 00:00 | Agreement-construction Metro/UA
+
+57
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Document Number Registration date ॥
+
+39. | R/Pallavaram/Book1/1642/2017 09-03-2017 00:00 | Conveyance Metro/UA
+
+40 | RvPallavaram/Book|/6832/2014 14-08-2014 00:00 | Conveyance Metro/UA
+
+[4 | R/Pallavaramy/Book1/370/2017 23-01-2017 00:00 | Conveyance Metro/UA
+
+42 | R/Pallavaram/Book1/372/2017 23-01-2017 00:00 | Conveyance Metro/UA
+
+43. | RvPallavaram/Book1/3879/2017 23-05-2017 00:00 | Deposit of Title Deeds If loan is repayable on demand
+[44 | R/Pallavaram/Book 1/8824/2017 03-11-2017 00:00 | Conveyance Metro(JA
+
+45 | R/Pallavaram/Book1/10115/2017 04-10-2017 00:00 | Conveyance Metro/UA
+
+46 | R/Pallavaram/Book1/10114/2017 14-12-2017 00:00 | Agreement-construction Metro/UA
+
+47. | RyPallavaram/Book1/10117/2017 14-12-2017 00:00 | Conveyance Metro/UA
+
+[48 | R/Pallavaram/Book|/8779/2017 02-11-2017 00:00 | Conveyance Metro/UA
+
+49 | RY/Pallavaram/Book 1/7894/2018 27-09-2018 00:00 | (General) Power of Attomey deed
+
+50 | R/Pallavaram/Book 1/9062/2018 13-11-2018 00:00 | (General) Power of Attorney deed
+
+51 | R/Pallavaram/Book 1/9523/2018 28-11-2018 00:00 | Sale deed
+
+52 | R/Pallavaram/Book 1/4448/2019 20-05-2019 00:00 | (General) Power of Attomey deed
+
+33. | R/Pallavaram/Book 1/9343/2019 30-10-2019 00:00 [sueded  ss—‘—sSCidY deed
+
+54 | R/Pallavaram/Book1/8500/2017 25-10-2017 00:00 wet without possession for every Rs.100 or part thereof
+55 | RvPallavaram/Book1/1083/2018 06-02-2018 00:00 | Mortgage without possession If it exceeds Rs.1000
+56 | RyPallavaram/Book /6452/2006 01-12-2006 00:00 | Conveyance Metro/UA
+
+57 | R/Pallavaram/Book 1/1934/2018 20-03-2018 00:00 | Deed of Receipt
+
+58 | R/Pallavaram/Book1/4810/2007 17-09-2007 00:00 | Conveyance Metro/UA
+
+39. | R/Pallavaram/Book1/465/2017 27-01-2017 00:00 | Conveyance Metro/UA
+
+[60 | R/Pallavaram/Book1/804/2017 09-02-2017 00:00 | Conveyance Metro/JA
+
+[61 | R/Pallavaram/Book1/10442/2016 09-12-2016 00:00 | Conveyance Metro/UA
+
+62 | R/Pallavaram/Book1/390/2017 23-01-2017 00:00 | Conveyance Metro/UA
+
+63 | RvPallavaram/Book1/743/2017 06-02-2017 00:00 | Conveyance Metro/UA
+
+[६4 | R/Pallavaram/Book1/10342/2016 09-12-2016 00:00 | Conveyance Metro/UA
+
+65 | R/Pallavaram/Book1/1073/2018 06-02-2018 00:00 | Receipt
+
+58
+
+
+
+Annexure-3
+
+Referred to in Paragraph 2.3.3
+
+Annexures
+
+Certified copies of will issued to applicant other than the executant
+
+Document No
+R/Pallavaram/Book3/41/2010 | CCA/Pallavaram/1099/2019 09-05-2019 09-05-2019
+R/Pallavaram/Book3/78/2004 CCA/Pallavaram/1805/2019 25-07-2019 25-07-2019
+RvPallavaram/Book3/66/2008 CCA/Pallavaram/244/2019 07-02-2019 07-02-2019
+R/Pallavaram/Book3/10/2013 CCA/Pallavaram/245 1/2019 27-09-2019 27-09-2019
+R/Pallavaram/Book3/74/2006 | CCA/Pallavaram/3212/2018 24-07-2018 25-07-2018
+R/Pallavaram/Book3/144/2007_ | CCA/Pallavaram/3277/2019 24-12-2019 24-12-2019
+R/Pallavaram/Book3/115/2014 | CCA/Pallavaram/3288/2019 24-12-2019 24-12-2019
+R/Pallavaram/Book3/122/2016 | CCA/Pallavaram/609/2019 19-03-2019 19-03-2019
+CCA/Pallavaram/610/2019 19-03-2019 19-03-2019
+
+59
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Annexure-4
+Referred to in Paragraph 2.4
+
+Support requests relating to EC generation pending for more than 30 days
+
+SRO name s st No. Request initiated Support request statu:
+date
+
+[3 | ‘Adayar SR/ACK/4422868 20-12-2019 | Clarification Required
+2 | Kullanchavadi SR/ACK/4404028 19-12-2019 | Clarification Required
+3. Nagal nayakkampatti SR/ACK/441 1588 19-12-2019 | In Progress
+
+4 | Kunrathur SRIACK/4365508 16-12-2019 | In Progress
+
+3 | Kunrathur SRIACK/4365548 16-12-2019 | In Progress
+
+[6 | Thackala SR/ACK/4189108 28-11-2019 | In Progress
+
+7 | Melapalayam SR/ACK/3707988 20-09-2019 | Clarification Required
+| $ | SR/ACK/3662708 16-09-2019 | Clarification Required
+9 | Melakarur SRYACK/3642068 12-09-2019 | Clarification Required
+10 | Thiruvidaimarudhur SRYACK/3613508 06-09-2019 | Clarification Required
+[1 | Purasaivakkam SR/ACK/3541748 28-08-2019 | Clarification Required
+12 | Moolakaraipatti SR/ACK/3518188 26-08-2019 | Clarification Required
+13, | Walajabad SR/ACK/3463388 16-08-2019 | Clarification Required
+14 | Thirvarumpur SRYACK/3421668 08-08-2019 | Clarification Required
+15 | Mylapore SRYACK/3362708 01-08-2019 | Clarification Required
+16 | Anniyur SR/ACK/3339148 30-07-2019 | Clarification Required
+[7 | Uthiramerur SR/ACK/3274828 23-07-2019 | Clarification Required
+| 18 | Marakkanam SR/ACK/3 147829 06-07-2019 | Clarification Required
+[19 | Coimbatore Joint T SR/ACK/3071269 26-06-2019 | Clarification Required
+20 | Vada madurai SR/ACK/3046428 24-06-2019 | Clarification Required
+21 | Trichy Joint I SR/ACK/2858508 31-05-2019 | Clarification Required
+22. | Kalasapakkam SR/ACK/2690628 14-05-2019 | Clarification Required
+23. | Suramangalam SRYACK/2507229 24-04-2019 | Clarification Required
+24 | Vellakovil SR/ACK/1729309 28-01-2019 | On Hold
+
+25 | Walajabad SR/ACK/4498388 30-12-2019 | Clarification Required
+26 SR/ACK/4493668 30-12-2019 | Clarification Required
+27_| Kanchipuram Joint 1V SR/ACK/4401348 19-12-2019 | Clarification Required
+28 | Kalayarkoil SR/ACK/4406188 19-12-2019 | Clarification Required
+29 | Pallavaram SR/ACK/4388988 18-12-2019 | Clarification Required
+30. | Perungalur SR/ACK/4392548 18-12-2019 | Clarification Required
+31 | Pallavaram SR/ACK/4388948 18-12-2019 | Clarification Required
+
+32 | Padappai 18-12-2019 | Clarification Required
+
+18-12-2019 | In Progress
+
+33 | Madurandakam
+
+34 Cheyyur SR/ACK/4376308 17-12-2019 | In Progress
+35 Avadi SR/ACK/4385668 17-12-2019 | In Progress
+36 | Pappireddypatti SRIACK/4369829 16-12-2019 | In Progress
+37 Thiruchengode SR/ACK/4355588 13-12-2019 | Clarification Required
+38 Trichy Joint I SR/ACK/4335588 12-12-2019 | Clarification Required
+39 Panagudi SR/ACK/43 14228 10-12-2019 | Clarification Required
+40 Urayur SR/ACK/4003268 08-11-2019 | In Progress
+41 AnnaNagar SR/ACK/3857988 15-10-2019 | Clarification Required
+42 Erode Joint I SR/ACK/3837948 11-10-2019 | Clarification Required
+43 Pallavaram SR/ACK/3489788 20-08-2019 | Clarification Required
+
+60
+
+
+Annexures
+
+Support request No. Request initiated Support request status
+date
+
+44 | Coimbatore Joint IT SR/ACK/2682668 13-05-2019 | Clarification Required
+व5 | Villivakkam SR/ACK/2620108 06-05-2019 | Clarification Required
+46 | Arcot SRIACK/2249428 19-03-2019 | Clarification Required
+47_| Kodaikanal SR/ACK/4278908 06-12-2019 | Clarification Required
+B SR/ACK/4278868 06-12-2019 | Clarification Required
+49 | Pollachi SR/ACK/4279308 06-12-2019 | Clarification Required
+50 SR/ACK/4271348 05-12-2019 | Clarification Required
+31_| Coimbatore Joint I SRYACK/4263268 05-12-2019 | In Progress
+
+32. | Krishnagiri Joint T SR/ACK/4254471 04-12-2019 | Clarification Required
+53. | Padappai SRIACK/4253909 04-12-2019 | Clarification Required
+34 | Kunrathur SR/ACK/4247668 04-12-2019 | In Progress
+
+उ5 | Pallipattu SR/ACK/4244868 03-12-2019 | Clarification Required
+356 | Villupuram Joint IT SR/ACK/4183228 27-11-2019 | Clarification Required
+37 | Palani Joint I SR/ACK/4168952, 26-11-2019 | In Progress
+
+38 | Paramakudi SR/ACK/4174828 26-11-2019 | Clarification Required
+39 | Tuticorin Joint I SR/ACK/4165628 26-11-2019 | Clarification Required
+60 | Mclapalayam SR/ACK/4148788 25-11-2019 | In Progress
+
+61 | Suramangalam SRYACK/4150510 25-11-2019 | Clarification Required
+62 SRYACK/4146188 23-11-2019 | Clarification Required
+63_| Chengleput Joint TT SR/ACK/4111588 19-11-2019 | Clarification Required
+64 | Trichi Joint IIT SR/ACK/4075268 15-11-2019 | Clarification Required
+65 | Udumalpettai SR/ACK/4031948 13-11-2019 | Clarification Required
+66 | Mettur SR/ACK/4023788 12-11-2019 | In Progress
+
+हा. Nellikuppam SRIACK/3576909 03-09-2019 | Clarification Required
+| 68 | Meitupalayam SR/ACK/1965708 18-02-2019 | In Progress
+
+69. | Thigaraya Nagar SRYACK/3973029 05-11-2019 | Clarification Required
+70 | Kalayarkoil SR/ACK/3978428 05-11-2019 | Clarification Required
+71 | Adayar SR/ACK/3947948 31-10-2019 | Clarification Required
+72 | Madurai South Joint 1V SR/ACK/3941148 30-10-2019 | Clarification Required
+73 | Pappireddypatti SR/ACK/3933828 29-10-2019 | In Progress
+
+74 SR/ACK/3933668 29-10-2019 | Clarification Required
+75. | Suramangalam SR/ACK/3937268 29-10-2019 | Clarification Required
+76 | Thiruttani SR/ACK/3903668 22-10-2019 | Clarification Required
+77 | Sembiam SR/ACK/3909028 22-10-2019 | Clarification Required
+78 | Madurandakam SR/ACK/3909788 22-10-2019 | Clarification Required
+79 | Melakarur SR/ACK/3896309 21-10-2019 | Clarification Required
+80 | Poonamallee SR/ACK/3876509 17-10-2019 | Clarification Required
+[| Padappai SR/ACK/3869508 16-10-2019 | Clarification Required
+82 | Karakudi Joint I SR/ACK/3864828 16-10-2019 | Clarification Required
+83 SRIACK/3868068 16-10-2019 | Clarification Required
+84 | Arakonam Joint IT SR/ACK/3859348 15-10-2019 | Clarification Required
+85. | Thiruvannamalai Joint II SR/ACK/3844828 14-10-2019 | Clarification Required
+86 | Kodavasal SR/ACK/3850828 14-10-2019 | Clarification Required
+87 | Veerachozhan SR/ACK/3837148 11-10-2019 | Clarification Required
+[_ 88 | Thivage thorgam SR/ACK/2206988 14-03-2019 | Clarification Required
+
+61
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+SRO name Support request No. Request initiated Support request status
+date
+89] Trichy Joint I SR/ACK/2054308 27-02-2019 | Clarification Required
+90 | Nagal nayakkampatti SR/ACK/2036788 25-02-2019 | Clarification Required
+91 Trichi Joint वा SR/ACK/38 10668 09-10-2019 | Clarification Required
+92 | Kalayarkoil SR/ACK/3813188 09-10-2019 | Clarification Required
+
+93 | Mettupalayam SR/ACK/3813228 09-10-2019 | Clarification Required
+94 Trichi Joint वा 3810988 09-10-2019 | Clarification Required
+
+95 | Madurandakam 3798428 03-10-2019 | Clarification Required
+96 | Suramangalam SR/ACK/3790468 03-10-2019 | Clarification Required
+97 | Valliyur SR/ACK/3767508 30-09-2019 | Clarification Required
+98 | Avadi SR/ACK/3760789 27-09-2019 | Clarification Required
+|? | Pallavaram| SR/ACK/3756388 26-09-2019 | Clarification Required
+100 | Perundurai SR/ACK/3755268 26-09-2019 | Clarification Required
+101 | Sivagangai Joint IT SR/ACK/3741828 25-09-2019 | Clarification Required
+102 SR/ACK/3724268 24-09-2019 | On Hold
+
+103 | Bhavani SR/ACK/3722829 24-09-2019 | Clarification Required
+104 | Erode Joint I SR/ACK/3717388 23-09-2019 | Clarification Required
+105 | Manamelkudi SR/ACK/3716828 23-09-2019 | Clarification Required
+106 | Avalpoondurai SR/ACK/3714829 23-09-2019 | Clarification Required
+107 | Avalpoondurai SR/ACK/3715708 23-09-2019 | Clarification Required
+108 | Manamelkudi SR/ACK/3716628 23-09-2019 | Clarification Required
+109 | Avalpoondurai SR/ACK/3715468 23-09-2019 | Clarification Required
+110 | Erode Joint I 3717588 23-09-2019 | Clarification Required
+111 | Kaniyur /3701389 20-09-2019 | Clarification Required
+112 | Uthukuli SR/ACK/3695708 19-09-2019 | Clarification Required
+113 | Chennai Central Joint I SR/ACK/3695788 19-09-2019 | Clarification Required
+114 SR/ACK/3688548 18-09-2019 | Clarification Required
+115 | Devakkottai SR/ACK/3648508 12-09-2019 | Clarification Required
+116 | Cheyyur SR/ACK/3615909 09-09-2019 | Clarification Required
+117 | Cheyyur SR/ACK/3618628 09-09-2019 | Clarification Required
+118 | Sulur SR/ACK/3628428 09-09-2019 | Clarification Required
+119 | Thiruvidaimarudhur SR/ACK/3593748 05-09-2019 | Clarification Required
+120 | Kodambakkam SR/ACK/3576628 03-09-2019 | Clarification Required
+121 | Cheyyur SR/ACK/3581068 03-09-2019 | In Progress
+
+122 | Cheyyur SR/ACK/3573428 31-08-2019 | Clarification Required
+123 | Cheyyur SR/ACK/3573308 31-08-2019 | Clarification Required
+124 | Cheyyur SR/ACK/3573508 31-08-2019 | Clarification Required
+125 | Urayur SR/ACK/3569509 30-08-2019 | Clarification Required
+126 | Chengleput Joint I SR/ACK/3566868 30-08-2019 | Clarification Required
+127 | Bhavani SR/ACK/3527348 27-08-2019 | Clarification Required
+128 | Thirumuttam SR/ACK/3532068 27-08-2019 | Clarification Required
+129 | Suramangalam SR/ACK/3525628 26-08-2019 | Clarification Required
+130 | Salem West Joint IIT SR/ACK/3516108 26-08-2019 | Clarification Required
+131 | Thiruporur SR/ACK/3501388 22-08-2019 | In Progress
+
+132 | Chengleput Joint II SR/ACK/3479988 20-08-2019 | Clarification Required
+133 | Chengleput Joint IT SR/ACK/3478708 20-08-2019 | Clarification Required
+
+62
+
+
+Annexures
+
+Support request No. Request initiated Support request status
+date
+
+134 | Srivaikundam SR/ACK/3478670 20-08-2019 | In Progress
+135. | Chennai Central Joint T SRIACK/3473068 19-08-2019 | Clarification Required
+136 | Chengleput Joint IT 475988 19-08-2019 | Clarification Required
+137 | Chengleput Joint It SR/ACK/3473548 19-08-2019 | Clarification Required
+138 | Avadi SR/ACK/3465028 17-08-2019 | Clarification Required
+139 | Ayyampalayam SR/ACK/3457908 16-08-2019 | Clarification Required
+140 | Pochampalli SR/ACK/3457308 16-08-2019 | Clarification Required
+141_ | Papanasam SRIACK/3433468 10-08-2019 | Clarification Required
+142 | Trichi Joint IIT SRIACK/3423229 09-08-2019 | Clarification Required
+143 | Kumbakonam Joint I SR/ACK/3427068 09-08-2019 | Clarification Required
+144 | Ambattur SR/ACK/3430869 09-08-2019 | Clarification Required
+145 | Mannarkudi SR/ACK/3417148 08-08-2019 | Clarification Required
+146 | Sankaranainarkoil SRYACK/3404948 07-08-2019 | Clarification Required
+147 | Coimbatore Joint TT SR/ACK/3401108 06-08-2019 | Clarification Required
+
+148 | Kunrathur
+
+06-08-2019 | Clarification Required
+
+149 | Cheranmadevi Joint T SR/ACK/3384948 05-08-2019 | Clarification Required
+150 | Dharapuram SR/ACK/3369708 02-08-2019 | Clarification Required
+151 | Chengleput Joint IT SR/ACK/3344668 31-07-2019 | Clarification Required
+152 | Chengleput Joint IT SR/ACK/3350708 31-07-2019 | Clarification Required
+
+153 | Udumalpettai SR/ACK/3342748 31-07-2019 | Clarification Required
+
+154 | Tambaram 30-07-2019 | Clarification Required
+
+30-07-2019 | Clarification Required
+
+155 | Periyanayakkan Palayam
+
+156 | Sethur SR/ACK/3330188 30-07-2019 | Clarification Required
+157 | Perundurai SR/ACK/3328509 29-07-2019 | Clarification Required
+158 | Thittakudi SR/ACK/3311308 26-07-2019 | Clarification Required
+159 | Sembiam SR/ACK/3306469 26-07-2019 | Clarification Required
+160 | Triplicane SR/ACK/3278788 24-07-2019 | Clarification Required
+161 | Thakkattur SR/ACK/3274108 23-07-2019 | Clarification Required
+162 | Gobichettipalayam JointI | SR/ACK/3255308 22-07-2019 | Clarification Required
+163 | Thiruvidaimarudhur SR/ACK/3247028 19-07-2019 | Clarification Required
+164 | Alwarthirunagari SR/ACK/3246668 19-07-2019 | In Progress
+
+165 | Srivaikundam 3243388 18-07-2019 | Submitted
+
+166 | Coimbatore Joint IT °K/3232230 17-07-2019 | Clarification Required
+167 | Pernampattu SR/ACK/3224148 16-07-2019 | Clarification Required
+168 | Chengleput Joint IT SR/ACK/3225988 16-07-2019 | Clarification Required
+169 | Tambaram SR/ACK/3211348 15-07-2019 | Clarification Required
+170 | Periamet SR/ACK/3215708 15-07-2019 | Clarification Required
+[71 | Neclankarai SR/ACK/3205628 12-07-2019 | Clarification Required
+172 | AnnaNagar SR/ACK/3 187628 11-07-2019 | Clarification Required
+173 | Tambaram SR/ACK/3 195188 11-07-2019 | Clarification Required
+174 | Ashok Nagar SR/ACK/3180708 10-07-2019 | Clarification Required
+175 | Tharamangalam SR/ACK/3163628 09-07-2019 | Clarification Required
+176 | Velur SR/ACK/3150548 06-07-2019 | Clarification Required
+177 | Ashok Nagar SR/ACK/3 139828 05-07-2019 | Clarification Required
+178 | Keeranur SR/ACK/3 125388 03-07-2019 | Clarification Required
+179 | Avalpoondurai SR/ACK/3101869 01-07-2019 | Clarification Required
+
+63
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Support request No.
+
+Request initiated
+
+date
+
+Support request statu:
+
+| 180 | Poonamallee SR/ACK/3049948 24-06-2019 | Clarification Required
+181 | Theni SR/ACK/2944868 11-06-2019 | Clarification Required
+182 | Poonamallee SR/ACK/2732188 17-05-2019 | Clarification Required
+183 | Parangi pettai SR/ACK/2711748 16-05-2019 [Suemited sd
+
+[184 | Virugambakkam SR/ACK/2427988 09-04-2019 | Clarification Required
+185 | Avadi SRYACK/2371108 01-04-2019 | Clarification Required
+[ 18 | Virugambakkam SR/ACK/2320628 27-03-2019 | Clarification Required
+187 | Virugambakkam SR/ACK/2192948 13-03-2019 | Clarification Required
+| 188 | Virugambakkam SR/ACK/2183228 12-03-2019 | On Hold
+
+189 | Pethanayakanpalayam SRYACK/2143108 07-03-2019 [Submited sd
+
+| 190 | Nazareth SR/ACK/2053908 27-02-2019 | In Progress
+
+191 | Kodambakkam_ SR/ACK/1617068 11-01-2019 [| क्रागठ॒_....्[प
+
+192 | Nagoor SR/ACK/1591428 10-01-2019 [ome Hold
+
+64
+
+
+
+Annexures
+
+Annexure-5
+
+Referred to in Paragraph 3.3.4
+
+Details of documents having poor quality of facial images
+
+Document number Registration year
+1 101 2018 11
+2 268 2019 |. 6... ।
+3 नि रा 2018 17
+4 703 2018 5&17
+5 950 2018 17
+| 6| 1293 2019 7
+7 1538 2019 7
+| 8| 2294 2019 12
+| 9| 2748 2019 7
+[10] 3253 2018 7
+11 3505 2018 17
+12 3746 2019 7
+13 4594 2018 S&17
+14 5238 2018 5
+15 6657 2018 17
+| 16 | 7407 2018 5,8&17
+17 9252 2018 5&18
+[18 | 9658 2019 po
+[19 10411 2018 12
+20 1539 2020 1,12,13
+
+65
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Annexure-6
+Referred to in Paragraph 3.4.3
+
+Documents engaged by revenue authorities
+
+Document Whether remarks reflected in EC
+
+1 1986 1702 Tiruvottiyur yes
+
+2 1986 1622 Tiruvottiyur yes
+
+3 1986 1712 Tiruvottiyur yes
+
+4 2003 851 Arani_chennai_north yes
+
+5 2003 852 Arani_chennai_north yes
+
+; 6 | 2003 844 Arani_chennai_north yes
+
+7 2003 845 Arani_chennai_north yes
+
+[| 8 | 2003 846 Arani_chennai_north yes
+
+9 2008 2379 Periamet yes
+
+| 10 | 0 2005 216 Kodambakkam yes
+
+11 2005 583 Anna Nagar no remarks
+12 2009 2649 Neelankarai no remarks
+13 2010 711 Periamet yes
+
+14 2010 2298 Periamet yes
+
+15 2011 4075 Gummidipoondi yes
+
+16 2011 4076 Gummidipoondi yes
+
+17 2011 4077 Gummidipoondi yes
+[18 | 8 2011 4078 Gummidipoondi yes
+
+; 9 | 2011 4079 Gummidipoondi yes
+20 2011 4080 Gummidipoondi yes
+21 2011 4081 Gummidipoondi yes
+22 2011 4082 Gummidipoondi yes
+23 2011 4083 Gummidipoondi yes
+24 2011 4084 Gummidipoondi yes
+25 2011 4085 Gummidipoondi yes
+26 2011 4086 Gummidipoondi yes
+27 2011 4087 Gummidipoondi yes
+28 2011 4088 Gummidipoondi no remarks
+29 2011 4089 Gummidipoondi no remarks
+30 2011 4090 Gummidipoondi no remarks
+31 2011 4091 Gummidipoondi no remarks
+32 2011 4092 Gummidipoondi no remarks
+33 2011 3447 Gummidipoondi yes
+34 2012 5520 Pammal yes
+35 2012 6485 Thiruvottiyur yes
+36 2013 5509 Gummidipoondi no remarks
+
+66
+
+
+Annexures
+
+Document _ SR offi
+
+No
+37 2013 5508 Gummidipoondi no remarks
+38 2013 5510 Gummidipoondi no remarks
+39 2013 3222 pammal yes
+40 2013 3223 pammal yes
+41 2014 3384 Gummidipoondi no remarks
+42 2014 3385 Gummidipoondi yes
+43 2014 4584 Gummidipoondi yes
+44 2015 3178 Gummidipoondi yes
+45 2015 3179 Gummidipoondi yes
+46 2015 3180 Gummidipoondi yes
+47 2016 1941 Gummidipoondi yes
+48 2017 1139 Gummidipoondi yes
+49 2017 1140 Gummidipoondi yes
+50 2018 3110 Periamet yes
+51 2018 3109 Periamet yes
+
+67
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Annexure-7
+Referred to in Paragraph 3.5.1 (a)
+
+Details of defect found during functional testing
+
+Description rtal/ Application Si rity Remarks
+
+| | ‘Adayar Book 1- 563/2016 on | Portal Document Settlement | Linking | High Only data in | Partially
+Copy Party from PR Registration | deed PR tamil font is | Completed
+document, data not document copied.
+copied.
+
+2 | Adayar In case of UDS property | Portal Document Settlement | Linear High Entering the | Completed
+(Plot with Building, Registration | deed Measurem Linear
+Flats), Linear ent measurement
+Measurement is not details can be
+mandatory. But system skipped
+
+is mandating to enter
+Linear Measurements
+
+3 | Adayar | In case if Settlee not | Portal Document Settlement | Represent - Representati_ | Pending
+executing the Document, Registration deed ative ve is
+Representative is not details mandatory in
+mandatory for the case if the
+Settlee. But when Settlee settle is
+added with age 16. minor.
+
+System is mandating to
+enter Representative-
+
+Minor
+Guardian
+
+| ‘Adayar | In the deed print out, | Portal Document Settlement | Deed High Settlor Completed
+before the Witness Registration | deed printout signature
+
+details provision for
+signature of the Settlor is
+not available.
+
+5 Adayar Witness should not come | Portal Document Settlement Deed High Witness Completed
+in separate screen, It Registration | deed printout details are
+should be displayed available in
+along with a Document the deed as
+content. running
+pages only. It
+is not
+displayed
+separately,
+|| Adayar [In the Print details | Portal Document All deeds Print Tow No “Action” | Completed
+Screen, in the grid to add Registration details bution is
+the Stamp details, the displayed in
+last column name the screen.
+
+"Action" button should
+be displayed in a single
+line. Word wrap should
+
+not happen
+7 | Adayar [In the Document | Portal Document All deeds Document | Medium | Option of | Completed
+valuation screen, after Registration valuation entering the
+entering the Stamp stamp details
+details, the Amount is not
+payable and Final available in
+‘Amount payable is not the document
+same. Amount payable valuation
+displays value after sereen, There
+deducting the Stamp isno Amount
+details. But in the Final payable and
+amount, the stamp Final
+details paid is not Amount
+deducted. payable
+column
+separately.
+
+68
+
+
+SI
+No
+
+SRO
+
+scription
+
+Sub
+Application/
+Deed
+
+Screen
+Name
+
+Priority
+
+है Mylapore | By default, for Tamil | Portal ‘Common Party Details | Common | Low Correction | Completed
+fields typewriting mode executed in
+should be set to Tamil the portal
+typewriter for
+Government and
+Company
+Party Type. For
+Individual Party Type it
+is working properly.
+; Mylapore [In case of multiple | Portal ‘Common Document Deed Medium | Correction ‘Completed
+executants, if we have Creation Printout executed in
+added representative for the portal
+each executant then in
+PDF print out for Ist
+executant 1)". should
+come and for 2nd "2)"
+should come but in PDF
+for Ist nothing is coming
+and for 2nd executant
+"1)" is coming in the
+representative details
+section
+10 Mylapore In case of Non-Family | Portal Document Release Deed High Correction Completed
+Release, in deed_ print Registration | Deed Printout executed. in
+out after text "The the portal.
+Releasee of the
+document is related to
+Releasor as" nothing is
+coming.
+11 | Mylapore [In Deed print out for | Portal Document Release Deed High Correction | Completed
+"Total Market Value of Registration | Deed Printout executed in
+the release property is the portal
+Rs." line the value
+should come as per
+Released Share and not
+total market value
+12 | Guduvan- | Sale deed print out: | Portal Document Sale deed PDF Print | High Error Completed
+cheri Blank page is coming registration rectified.
+12279
+13 | Guduvan- | Token Print out (tamil | Portal Document Token Token | Token is | Completed
+cheri and english) alignment is registration print generated
+not there. only in Tamil
+14 Guduvan- | Token print out -In | Portal Document Token Token Medium Correction Completed
+cheri Applicant details: Sub registration print executed in
+Registrar office should the portal
+come instead of sub
+registrar
+15 | Guduvan- | Token printout (Tamil) - | Portal Document Token Token High Correction ‘Completed
+cheri print out should come registration print executed in
+only in single page, but the portal.
+in generated print two
+pages are coming
+16 | Guduvan- | Token print out (Tamil)- | Portal Document Token Token High The date of | Completed
+cheri varugaipurihalukkaana registration print registration
+naal - space should be and date of
+given "varugai appointment
+purithalukkaana _naal" is mentioned
+‘And in appointment only in
+date "Month" - instead numeric.
+of Tamil month
+(chithirai) 1. should
+come in English month
+onl
+17 | Adayar | Linked PR- 563/2016 in | Portal Document Rectification | Copy High Party details | Completed
+Rectification deed. Registration | deed Party copied only
+
+When trying to copy
+party Party displayed
+twice. On copy no
+details are copied. Same
+party name displayed
+
+once
+
+69
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+twice; this issue occurs
+
+Application
+
+Remarks.
+
+in all PRs linked
+
+18 | Adayar | In the Boundary details, | Portal Document All deeds Boundary | High System Completed
+Special Registration details accepting
+Character’ & ' should be special
+accepted characters
+
+like 8.
+
+19 | Adayar | Inlease deed, linked 510 | Portal Document Tease deed | Linking | High ‘Able to link | Completed
+12017 when linked Registration PR the document
+displayed as Invalid link document
+document
+
+20 | Adayar [In the Lease details, | Portal Document Tease deed | Lease High Provision to | Pending
+Total lease period given Registration details mention the
+as 10 years and lease period
+Incremental duration ie, — lease
+given as 6 years. In start date and
+Back office, alert lease end
+displayed as Lease date is
+period and Increment available.
+duration should be However, the
+equal. But no validation provision of
+done in Portal. incremental
+
+duration — is
+itself not
+available in
+the portal to
+mention the
+same period
+in both the
+places.
+
+2 Tn Lease details, given | Portal Document Tease deed | Lease High Provision to | Pending
+Lease period as 10 years. Registration details mention the
+Incremental lease period
+per cent is 10. Three ie, — lease
+year after for the start date and
+duration of Six years, lease end
+After that 20 per cent date is
+increment. But the available.
+
+Lease amount is However, the
+
+calculated wrongly provision of
+incremental
+duration is
+not available
+in the portal
+to mention
+the same
+period in
+both the
+places.
+
+22 | Mylapore [In boundary Details | Portal Document Common Boundary | Low Correction | Completed
+section for language Registration Details executed in
+culture in Tamil, label the portal
+should have (in Tamil).
+
+Currently it is displayed
+(in English) it is
+displaying.
+
+3 | Guduvan [Sale Agreement. In | Portal Document Sale Boundary P| Correction | Completed
+
+cheri boundary details screen, Registration | Agreement | details executed. in
+what is in the north the portal.
+
+(street) label is not
+required
+
+70
+
+
+
+SI SRO scription Sub
+
+No ack Application/
+Deed
+
+24 | Guduvan | In advance — search | Portal Document All deeds
+cheri option, in portal ‘The Registration
+status should change
+
+based on the new flow
+
+My
+documents
+
+Priority
+
+-
+
+In the
+advanced
+search under
+my
+documents
+the status
+should be
+selected from
+
+Pending
+
+71
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Annexure-8
+
+Referred to in Paragraph 3.5.1 (a)
+
+Details of observations noticed during user acceptance testing by Audit
+
+Module
+No name
+
+Test
+scenari
+
+Audit findings
+
+‘New User New User | A user (Citizen-Individual) can | There is mo check on the
+registration Registratio | create multiple login credentials | combination of the key details
+nin Portal | in the TNReginet site with same | (name, dob, identity no. etc.) to
+personal details except for the | avoid an individual to create
+phone no. which was the only | multiple ids. A valid PAN. or the
+unique field. Aadhaar number which is unique
+can be used for creating user
+credentials so multiple id
+creation for the same person can
+be avoided.
+2 Document | Portal/Citizen | Portal Create a The system allows linking of | The system should not allow to | High
+Registration | Login sale document just by selecting any | link the previous document for
+document | SR Office and entering a random | further draft creation. The system
+by linking | document number and year. The | should send an alert to the
+previous | details of id proofs, property and | executant's registered _ phone
+document | names of the party details are | number. For this purpose, the
+available | available for viewing department should make the
+under Book mobile details column mandatory
+1 for the executant and claimant,
+3 | Document | Portal/Citizen | Portal Create a The data of the linked document | The system should not allow to | High
+Registration | Login sale can be copied by enabling the | link the previous document for
+document | check box available. After the | further draft creation. The system
+by linking | data is copied the system shows a | should send an alert to the
+previous pop-up message "Please verify | executant’s registered phone
+document — | the copied migrated data". number. For this purpose, the
+available department should make the
+under Book mobile details column mandatory
+Land for the executant and claimant.
+copying the
+data
+| Document | Portal/Citizen | Portal Enter a The system accepts the id | The system should verify the | Medium
+Registration | Login valid id number, a valid PAN even | PAN details with the database
+proof ofa | though it does not belong to the | and in case of mismatch it should
+different | guardian. not proceed further to the next
+person sereen.
+under the
+guardian
+details.
+3 | Document | Portal/Citizen | Portal Select PAN | The system does not validate the |The system should verify the | Medium
+Registration | Login asincome | PAN entered under the | PAN details with the database
+proof under | supporting details column. The | and in case of mismatch it should
+supporting | system does not verify the match | not proceed further to the next
+details and _| between the PAN with that of the | screen.
+add any name of the parties.
+PAN
+| Document | Sale deed Portal Sale deed [A sale deed was created by | PAN should be verified with | Medium
+Registration | creation in creation by | linking a previous document | PAN database.
+portal linking where the Claimant had given
+previous | PAN as identity proof. The
+document. | system allows to edit the PAN
+under identity no. :e,, it allows to
+enter any valid PAN and
+proceeds.
+7 | Document | Sale deed Portal Saledeed | The property details can be High
+Registration | creation in creation by | fetched just by clicking on the
+portal linking check box "linked survey". The
+previous | complete details of the property
+document. | appears in the property remarks
+which is editable.
+
+72
+
+
+Sl.
+No
+
+Module
+name
+
+Test
+scenario
+
+Audit findings
+
+Annexure:
+
+Priority
+
+| | Document | Sale deed Portal Saledeed | In case of a property linked from High
+Registration | creation in creation by | previous document the system
+portal linking allows to make changes in the
+previous boundary details, street name.
+document.
+| Document Sale deed Portal Sale deed The system allows the same High
+Registration | creation in creation executant to create a sale deed for
+portal after the same property after executing
+execution | a settlement deed. The system
+of does not show any error message.
+settlement.
+| Document Token Back Tnitiate a A token was initiated for the | The drafts created should be | Medium
+Registration | system/BO office token and | temporary document number for | available in the JA login only
+check the | the date 01.03.2021 at 15.00 to | during the token time and further.
+same in 15.30hrs. The system allows the
+JAISR token to be pulled before the
+Login scheduled time at the JA login
+and process the document
+| Document | Sale deed Portal Sale deed The system allows adding the | There should be a provision in | High
+Registration | creation in creation by | executant of the previous | the system that the claimant of
+portal linking document as executant in the | the previous transaction should
+मजा current sale also, even after the | be the executor in the current
+andsclecting | OWnership is completely | transaction by default, The
+the previous | transferred to the claimant (new | system should freeze the
+executant as__| transactions). The system also | claimant name from the previous
+the current | allows entering the construction | documents executant of the new
+executant agreement number pertaining to | transaction.
+evenafter the | the previous transaction while
+full हे
+hipis | teating this sale deed.
+ownership
+transferred.
+12 Document Sale deed Portal Sale deed A token was initiated for the | The system should not allow to | High
+Registration | creation creation temporary document number at | generate two tokens for the same
+and tokens | 15.00 to 15.30hrs and another | document which is unnecessarily
+taken for | token was initiated at 13.00 to | blocking as the tokens per day are
+two 13.30hrs in the Citizen login. | limited.
+different | Two temporary registration
+time slots. | numbers were generated and the
+system also allows initiating
+token for both.
+13 | Document | Sale deed Portal Saledeed | The NRI cannot purchase an | The system should ask for the | Medium
+Registration | creation in the creation agricultural property as per the | resident status of the citizen
+portal where an | Foreign Exchange Management | mandatorily.
+NRI (Acquisition and Transfer of
+purchases | Immovable Property in India)
+agricultural | Regulations, 2018, But while
+property. | creating a draft of sale deed the
+system ask if the individual
+(Claimant) is an NRI or not
+however this option is available
+in the Hindu marriage
+registration and Tamil Nadu
+Marriage registration. Hence,
+any person who has an Indian id
+proof can submit the same and
+purchase an agricultural land in
+India without disclosing their tax
+status.
+14 | Document | Construction | Portal Con- While filling up the address of | The option “others” should be | Low
+Registration | deed creation struction | the village details after filling up | replaced with the list of all the
+in the portal agreement | the Taluk option, a dropdown of | village names.
+creation. the villages available in that
+
+particular taluk is listed, In the
+dropdown menu there is an
+option “other”. This shows that
+not all the village names are
+uploaded into the systems.
+
+73
+
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Si.
+No
+
+Module
+name
+
+Deed nam
+process name
+
+Test
+scenario
+
+Audit findings
+
+Remarks.
+
+15 | Document | Construction | Portal Con- Representative details to be | A provision to upload a scanned | Low
+Registration | deed creation struction | mandatorily filled up in this type | GPOA can be introduced in the
+in the portal agreement | of document (Second party - | site for cases where GPOA is
+creation. Government) where the | registered outside Tamil Nadu.
+purchaser/allottee/owner should | The GPOA document so
+select the representation from the | uploaded should be verified in
+dropdown list. (SPOA,Guardian, | the concerned office where it was
+GPOA, Court Appointed | registered.
+curator.) If we select the General
+power of attorney under the
+representation by details, any
+general power of _attomey
+document pertaining to any SRO
+(Within Tamil Nadu) can be
+linked, If we try to enter a general
+power of attorney registered
+outside Tamil Nadu, the system
+does not ask for anything beyond
+document number, date of
+registration and document type.
+| Document | Construction | Portal Con- Under survey details column Medium
+Registration | deed creation struction | there is an option called “Not
+in the portal agreement | available” under survey number
+creation. dropdown. After selecting this
+option any number can be
+mentioned thereafter in the
+survey no (i.e) even survey
+numbers relating to government
+land can be given as input.
+17 | Document | Construction | Portal Con- Under Building construction | Minimum limit of builtup area | Low
+Registration | deed creation struction | details, the built-up area is | can be set in the system.
+in the portal agreement | mandatory column where any
+creation. value above 0/is accepted. (58.1).
+| Document | Settlement Portal Create a The system does not prompt for Medium
+Registration | deed settlement | any error it accepted different
+deed father name in the place of father
+among details.
+three sons,
+with one
+sons’ father
+name
+different.
+| Document — | Partnership Back- Modificatio | The token was scheduled | The drafts created should be | High
+Registration | deed office कर्ण between 12.00hrs and 1300 hrs | available in the JA login only
+Partnership | which was viewed/edited before | during the token time and further.
+deed inJA | the scheduled time allotted | The trail of changes made by JA
+Login. (11.33hrs.) The JA modified the | should be made available for SR
+contribution amount of party 1 to | to view
+Rs.200000 from the earlier
+amount of Rs.100000.
+20 | Document | Deposit of Portal Entertheage | The age of the mortgagor was Low
+Registration | Title deeds of the entered as 30 and the identity
+Mortgagor as | proof was selected as Pensioners
+30and select | F हें
+the identity identity card and the identity
+proof as number was entered. The system
+Pensioners did not prompt any error.
+identity card
+21 | Document | Release deed- | Back- Creation of | A release deed was created by Medium
+Registration | Portal/Back | office Release entering a random PAN number
+Office deed and —_| for the releasor and token was
+processing | initiated. In the JA Login under
+in JA login. | the section supporting documents
+by clicking on “Click here to
+Bulk PAN Approval” the PAN
+submitted can be verified. The
+PAN details were fetched, and
+the details of the PAN holder
+appear in a new dialog box. The
+name in the PAN card database
+does not match with the pat
+
+74
+
+
+
+Sl.
+No
+
+Module
+name
+
+Test
+scenario
+
+Audit findings
+
+Annexure:
+
+Priority
+
+name but even then the system
+allows proceeding to next step.
+22 | Document | Will deed Portal Creation of | The system prompts for entering Medium
+Registration draft will | the presenter’s mobile number
+deed only in the presenter/retum to
+party details. Mobile no. is not a
+mandatory column in the testator
+or beneficiary details.
+23 | Document | Will deed Portal Creation of | The Aadhaar number is not a part Low
+Registration draft will | of the identification type in
+deed supporting details.
+24 | Document | Gift Back Create gift | When we tried rejecting the | Creation and authorisation | High
+Registration | deed/Back office deed where document in the JA Login the | should be implemented like
+Officer Father is system allows selecting all the | maker checker concept.
+tindeed te | Teieetion reasons from the list of
+ind in faveur | Teasons provided. The refusal
+of his son. does not go to the SR for
+The Donor | approval, but the SR can only
+and the view the refusal slip in his login.
+guardian of
+the Donee
+are one and
+the same.
+25 | Document | Gift deed Portal Create gift. | The minor cannot be a donor ina High
+Registration deed where | gift deed as he is not eligible to
+son (minor) | contract so they cannot transfer
+is executing | property as a gift. If the donor is
+agiftdeed | a minor then the gift deed
+toandin | becomes invalid. There is no
+favour of | restriction in the system in the
+his mother. | home screen while creating a gift
+deed.
+26 | Document | Gift deed Portal Create gift | The system allows the minor | Age restrictions can be added to | Low
+Registration deed where | details to be filled under donor | the type of identity proof as per
+son (minor) | details and — while the ‘| the eligibility. (Example Voter id
+is executing | representative details should be | card can be enabled only is the
+agifideed | mandatorily filled as the donor is | applicant is 18 years old.)
+toandin | minor, (Minor Guardian) details
+favour of | When the identity type was
+his mother. | selected as Driving licence for a
+12 year old minor; the system
+does not prompt any error.
+27 ६ Document | Other deed Portal Create a Under the first party details the [The validity of the identity | Medium
+Registration lease deed | Driving licence was given as | number entered should be cross
+under other | identity proof where any random | verified.
+deed number is accepted by the system
+as identification no. Similarly,
+under the second party details the
+freedom fighter’s identity card
+alpha numeric characters were
+entered in the identification no.
+and the system accepted the
+same.
+28 | Document | Portal/Citizen | Portal Fill the The system accepts any random | The system can verily the email | Low
+Registration | Login email idof | email id (for example system | id by sending an verification link
+Executant | accepts the —email_—_id | by clicking which the user will be
+and “ashokkumars@nun.ka” to be | allowed to proceed further in
+Claimant | entered. It does not check for the | creating the document.
+for validity.
+receiving
+the
+information
+
+75
+
+
+IT Audit of STAR 2.0 Application in the Registration Department, Tamil Nadu
+
+Module
+name
+
+Document
+Registration
+
+Test
+scenario
+
+Witness
+details
+
+Audit findings
+
+To create a document, 2
+execution witness and 2
+identification witness. are
+mandatory. In the identity type of
+identification witness, all ids are
+listed whereas while proceeding
+to next screen an error message
+appears stating '2 identification
+witness with Aadhaar is
+mandatory’. It accepts only
+‘Aadhaar as id proof even when
+other ids are listed in the type
+
+Priority
+
+30
+
+Document
+Registration
+
+Portal/Citizen
+Login-
+Creation of a
+document
+
+Portal
+
+Enter the
+claimant as
+“minor”.
+
+The claimant age has been
+entered as "1" year and also the
+marital status was stated as
+married. The system allows
+adding details of the minor in the
+claimant details column even
+without asking for the proof of
+identity.
+
+Proof of identity and age should
+be made mandatory in case of
+minor.
+
+Low
+
+76
+
+
+Annexures
+
+Annexure-9
+Referred to in Paragraph 3.5.1 (c) and 3.6 (ii)
+
+Details of Release notes released by the Department
+
+SI. No. Date of Phase I Phase II
+
+[1 | 12-Mar-19 ; 6 | 0 |
+2 29-Apr-19 12 10
+3 04-Mar-19 ; 8 [| | 6 |
+4 27-Mar-19 4 13 17
+5 07-May-19 14 7 21
+6 25-Jan-19 13 3 | 16 |
+7 21-Jan-19 20 ; 65 | 26
+| 8 | 05-Feb-19 5 11 16
+[9 | 07-Jan-19 | 9 [| | 6 | 15
+10 18-Feb-19 7 ; 8 [| 15
+1] 11-Feb-19 5 ; 6 | 1]
+12 19-Mar-19 7 5 12
+13 16-Apr-19 5 18 23
+14 12-Jun-19 5 ; 9 | 14
+15 02-Jul-19 ; 6 ; 8 [| 14
+16 01-Apr-19 | 9 [| 14
+17 09-Apr-19 po 15 24
+[18 | 28-May-19 ; 6 ; 6 | 12
+19 22-May-19 | 0 [| | 9 | | 9 |
+20 16-Jul-19 5 | 0 | 5
+21 14-May-19 5 13 | 18 |
+22 10-Jul-19 9 ; 8 [| 17
+23 06-Jun-19 10 20 30
+Total 179 192 371
+
+77
+
+
+IT Audit of STAR 2.0 Applic
+
+the Registration Department, Tam
+
+Annexure-10
+Referred to in Paragraph 4.4
+Details of MIS reports yet to be developed
+
+[15 Reports not developed
+
+Particulars of local audit paras for which final orders passed but pending collection of
+amount
+
+Year wise pendency of audit paras
+
+Details of AG(A)report for which reply is to be sent
+
+Details of AAG(A) paras involving money value
+
+Year wise pendency of AG (A) Paras
+
+Paras raised during Annual Inspection by DIG/DR/AIG - Final orders passed but
+pending collection of amount
+
+Number of chit arbitration cases
+
+Details of Inspection for societies and filing of returns
+
+Performance evaluation of DRs(Admin)
+
+10
+
+Registration of firms
+
+11
+
+Details of Impounded documents
+
+78
+
+
+Annexures
+
+LINK ANNEXURES
+
+Link Annexure Paragraph Lin
+Reference
+
+2.2.3 https://cag.gov.in/uploads/media/Link-Annexure-1-
+062399ec26412a0-81787331.pdf
+
+2 2.2.5 https://cag.gov.in/uploads/media/Link-Annexure-2-
+062399f185123c9-90510465.pdf
+
+3 2.3.2 https://cag.gov.in/uploads/media/Link-Annexure-3-
+062399f4a05ba34-14255163.pdf
+
+4 24 https://cag.gov.in/uploads/media/Link-Annexure-4-
+06239bdc4533e24-39332175.pdf
+
+5 3.2 (a) https://cag.gov.in/uploads/media/Link-Annexure-5-
+06239b4e6bf4322-37977843.pdf
+
+| | 3.7.1 https://cag.gov.in/uploads/media/Link-Annexure-6-
+06239b51c7b37d8-85327454.pdf
+
+7 3.7.2 https://cag.gov.in/uploads/media/Link-Annexure-7-
+06239b53f586f24-05608783.pdf
+
+| | 3.7.2 https://cag.gov.in/uploads/media/Link-Annexure-8-
+06239b56a13f244-10269790.pdf
+
+|? | https://cag.gov.in/uploads/media/Link-Annexure-9-
+06239b5c4084c20-61821931.pdf
+
+10 https://cag.gov.in/uploads/media/Link-Annexure-10-
+41 06239b5eb4c5867-78232074.pdf
+
+11 ह https://cag.gov.in/uploads/media/Link-Annexure-11-
+06239b6433aa5e4-38820613.pdf
+
+12 https://cag.gov.in/uploads/media/Link-Annexure-12-
+06239b66dc014d6-10424991.pdf
+
+13 4.2 https://cag.gov.in/uploads/media/Link-Annexure-13-
+06239b692c7c3c6-67137761.pdf
+
+14 43 https://cag.gov.in/uploads/media/Link-Annexure-14-
+
+06239b6bae76bf9-02227650.pdf
+
+79
+
+
+Glossary
+
+AEE Assistant Executive Engineer
+
+cc Certified Copies
+
+CERT-IN Indian Computer Emergency Response Team.
+DCB Demand, Collection and Balance
+
+DRM Document Registration Module
+
+EC Encumbrance Certificate
+
+GoTN Government of Tamil Nadu
+
+IGR Inspector General of Registration
+
+IS Indian Stamp Act, 1899
+
+MIS Management Information System
+
+NFIQ NIST Fingerprint Image Quality
+
+NIC National Informatics Centre
+
+NLRMP National Land Records Modernization Program
+NSDL National Securities Depository Ltd
+
+NSIPL M/s. Nine Starts Information Technologies Pvt. Ltd.
+O&M Operation and Maintenance
+
+PAN Permanent Account Number
+
+PAO Pay and Accounts Office
+
+POA Power of Attorney
+
+PWD Public Works Department
+
+९ ऑिि Quick Response
+
+RF Registration Fee
+
+RFP Request for proposal
+
+SD Stamp Duty
+
+SDC Special Deputy Collector
+
+SHCIL Stock Holding Corporation of India Limited
+
+SI System Integrator
+
+SLA Service Level Agreement
+
+SRO Sub Registrar Office
+
+SRS System Requirement Specification
+
+STAR Simple and Transparent Administration of Registration
+STQC Standardisation Testing and Quality Certification
+TNTC Tamil Nadu Treasury Challan
+
+TPA Third Party Auditor
+
+UAT User Acceptance Testing
+
+WBSL M/s. Writers Business Services Ltd.
+
+80
+
+
+
+© COMPTROLLER AND
+AUDITOR GENERAL OF INDIA
+www.cag.gov.in
+
+http://www.agtn.cag.gov.in
