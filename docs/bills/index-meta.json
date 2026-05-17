@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-16T21:21:03Z",
+  "scraped_at": "2026-05-17T04:50:12Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "shard_size": 1000,
   "totals": {
     "bills": 9914,
     "with_canonical_pdf": 7493,
-    "with_text": 4744
+    "with_text": 4765
   },
   "shards": [
     {
