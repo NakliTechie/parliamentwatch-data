@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-17T13:48:28Z",
+  "scraped_at": "2026-05-17T14:10:51Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
     "with_intro_pdf": 7464,
     "with_canonical_pdf": 7493,
-    "with_text": 4795,
+    "with_text": 4818,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -3961,6 +3961,9 @@
     "206_2022_L": {
       "bundled": true
     },
+    "207_1985_L": {
+      "url": "text/207_1985_L.txt"
+    },
     "207_2016_L": {
       "bundled": true
     },
@@ -3972,6 +3975,9 @@
     },
     "207_2019_L": {
       "bundled": true
+    },
+    "208_1985_L": {
+      "url": "text/208_1985_L.txt"
     },
     "208_2015_L": {
       "bundled": true
@@ -3990,6 +3996,9 @@
     },
     "208_2022_L": {
       "bundled": true
+    },
+    "209_1985_L": {
+      "url": "text/209_1985_L.txt"
     },
     "209_2015_L": {
       "bundled": true
@@ -4075,6 +4084,9 @@
     "20_2025_L": {
       "bundled": true
     },
+    "210_1985_L": {
+      "url": "text/210_1985_L.txt"
+    },
     "210_2015_L": {
       "bundled": true
     },
@@ -4089,6 +4101,9 @@
     },
     "210_2019_L": {
       "bundled": true
+    },
+    "211_1985_L": {
+      "url": "text/211_1985_L.txt"
     },
     "211_2015_L": {
       "bundled": true
@@ -4107,6 +4122,9 @@
     },
     "211_2022_L": {
       "bundled": true
+    },
+    "212_1985_L": {
+      "url": "text/212_1985_L.txt"
     },
     "212_2015_L": {
       "bundled": true
@@ -4128,6 +4146,9 @@
     },
     "212_2024_L": {
       "bundled": true
+    },
+    "213_1985_L": {
+      "url": "text/213_1985_L.txt"
     },
     "213_2015_L": {
       "bundled": true
@@ -4161,6 +4182,9 @@
     },
     "214_2022_L": {
       "bundled": true
+    },
+    "215_1985_L": {
+      "url": "text/215_1985_L.txt"
     },
     "215_2015_L": {
       "bundled": true
@@ -4257,6 +4281,9 @@
     },
     "219_2022_L": {
       "bundled": true
+    },
+    "21_1985_L": {
+      "url": "text/21_1985_L.txt"
     },
     "21_1986_L": {
       "bundled": true
@@ -7579,6 +7606,9 @@
     "48_2025_L": {
       "bundled": true
     },
+    "49_1985_L": {
+      "url": "text/49_1985_L.txt"
+    },
     "49_1986_L": {
       "bundled": true
     },
@@ -7684,6 +7714,9 @@
     "4_2023_L": {
       "bundled": true
     },
+    "50_1985_L": {
+      "url": "text/50_1985_L.txt"
+    },
     "50_1989_L": {
       "bundled": true
     },
@@ -7725,6 +7758,9 @@
     },
     "50_2024_L": {
       "bundled": true
+    },
+    "51_1985_L": {
+      "url": "text/51_1985_L.txt"
     },
     "51_2007_L": {
       "bundled": true
@@ -7770,6 +7806,9 @@
     },
     "51_2025_L": {
       "bundled": true
+    },
+    "52_1985_L": {
+      "url": "text/52_1985_L.txt"
     },
     "52_1989_L": {
       "bundled": true
@@ -7828,6 +7867,9 @@
     "52_2025_L": {
       "bundled": true
     },
+    "53_1985_L": {
+      "url": "text/53_1985_L.txt"
+    },
     "53_1986_L": {
       "bundled": true
     },
@@ -7882,6 +7924,9 @@
     "53_2024_L": {
       "bundled": true
     },
+    "54_1985_L": {
+      "url": "text/54_1985_L.txt"
+    },
     "54_1986_L": {
       "bundled": true
     },
@@ -7926,6 +7971,9 @@
     },
     "54_2025_L": {
       "bundled": true
+    },
+    "55_1985_L": {
+      "url": "text/55_1985_L.txt"
     },
     "55_1986_L": {
       "bundled": true
@@ -7980,6 +8028,9 @@
     },
     "55_2024_L": {
       "bundled": true
+    },
+    "56_1985_L": {
+      "url": "text/56_1985_L.txt"
     },
     "56_1986_L": {
       "bundled": true
@@ -8137,6 +8188,9 @@
     "58_2024_L": {
       "bundled": true
     },
+    "59_1985_L": {
+      "url": "text/59_1985_L.txt"
+    },
     "59_1989_L": {
       "bundled": true
     },
@@ -8230,6 +8284,9 @@
     "5_2022_L": {
       "bundled": true
     },
+    "60_1985_L": {
+      "url": "text/60_1985_L.txt"
+    },
     "60_1988_L": {
       "bundled": true
     },
@@ -8292,6 +8349,9 @@
     },
     "60_2025_L": {
       "bundled": true
+    },
+    "61_1985_L": {
+      "url": "text/61_1985_L.txt"
     },
     "61_1989_L": {
       "bundled": true
@@ -8406,6 +8466,9 @@
     },
     "62_2025_L": {
       "bundled": true
+    },
+    "63_1985_L": {
+      "url": "text/63_1985_L.txt"
     },
     "63_1987_L": {
       "bundled": true
@@ -8772,6 +8835,9 @@
     },
     "69_2025_L": {
       "bundled": true
+    },
+    "6_1985_L": {
+      "url": "text/6_1985_L.txt"
     },
     "6_2007_L": {
       "bundled": true
@@ -9339,6 +9405,9 @@
     },
     "79_2026_L": {
       "bundled": true
+    },
+    "7_1985_L": {
+      "url": "text/7_1985_L.txt"
     },
     "7_2007_L": {
       "bundled": true
