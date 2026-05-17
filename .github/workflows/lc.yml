@@ -158,11 +158,23 @@ jobs:
         # `pull --rebase` is still here as a belt-and-suspenders against
         # rare reports.json races (deterministic content, mergeable in
         # almost all cases).
+        #
+        # `text/` is transient — its contents get bundled into
+        # `texts-NN.json` shards by the derive step and the loose dir
+        # may not exist in steady state. Stage it only if it exists and
+        # is non-empty, otherwise an unconditional `git add` errors out
+        # (exit 128) and surfaces a successful no-op run as failure.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/lc/reports.json docs/lc/text/
-          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git add docs/lc/reports.json
+          if [ -d docs/lc/text ] && [ -n "$(ls -A docs/lc/text 2>/dev/null)" ]; then
+            git add docs/lc/text/
+          fi
+          if git diff --cached --quiet; then
+            echo "no primary changes — skipping push"
+            exit 0
+          fi
           git commit -m "Auto-update LC primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

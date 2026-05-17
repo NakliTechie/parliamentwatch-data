@@ -57,11 +57,22 @@ jobs:
         run: python build_bills_sansad.py
 
       - name: Commit and push primary changes
+        # `text/` is transient — its contents get bundled into
+        # `texts-NN.json` shards by the derive step and the loose dir
+        # may not exist in steady state. Stage it only if it exists and
+        # is non-empty, otherwise an unconditional `git add` errors out
+        # (exit 128) and surfaces a successful no-op run as failure.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/bills/records.json docs/bills/text/ docs/bills/.scraper_state.json
-          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git add docs/bills/records.json docs/bills/.scraper_state.json
+          if [ -d docs/bills/text ] && [ -n "$(ls -A docs/bills/text 2>/dev/null)" ]; then
+            git add docs/bills/text/
+          fi
+          if git diff --cached --quiet; then
+            echo "no primary changes — skipping push"
+            exit 0
+          fi
           git commit -m "Auto-update Bills (sansad) primary data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push

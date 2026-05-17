@@ -81,11 +81,23 @@ jobs:
       - name: Commit and push primary changes
         # Narrow git add to primary files only. Derived files arrive in a
         # separate commit from cag-derive.yml.
+        #
+        # `text/` is transient — its contents get bundled into
+        # `texts-NN.json` shards by the derive step and the loose dir
+        # may not exist in steady state. Stage it only if it exists and
+        # is non-empty, otherwise an unconditional `git add` errors out
+        # (exit 128) and surfaces a successful no-op run as failure.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/cag/reports.json docs/cag/text/
-          git diff --cached --quiet && echo "no primary changes" && exit 0
+          git add docs/cag/reports.json
+          if [ -d docs/cag/text ] && [ -n "$(ls -A docs/cag/text 2>/dev/null)" ]; then
+            git add docs/cag/text/
+          fi
+          if git diff --cached --quiet; then
+            echo "no primary changes — skipping push"
+            exit 0
+          fi
           git commit -m "Auto-update CAG primary data (backfill) [$(date -u +%Y-%m-%dT%H:%MZ)]"
           git pull --rebase origin main
           git push
