@@ -942,12 +942,10 @@ def write_meta(records: list[dict], state: dict,
         "search_bundle": bundle_stats,   # None if no extracted texts yet
         "search_index":  index_stats,
     }
-    # Bills' meta carries `last_update` (from scraper_state) and
-    # `cooldown_remaining_seconds` (live computation). Neither is a
-    # plain timestamp, so leave them as comparison keys — the helper's
-    # default only ignores generated_at/audited_at.
-    if not write_json_idempotent(META_JSON, meta):
-        print("  [skip] meta.json unchanged — no commit churn")
+    # Non-idempotent on purpose — see build_lc.py write_meta() for the
+    # full rationale. Always bump generated_at so the app's staleness
+    # indicator reflects "last successful derive".
+    write_json_idempotent(META_JSON, meta, ignore_keys=())
 
 
 # ── Main ───────────────────────────────────────────────────────────────────
