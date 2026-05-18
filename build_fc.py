@@ -716,8 +716,10 @@ def write_meta(*, total_reports: int, total_with_text: int,
         "search_bundle":   bundle_stats,
         "search_index":    index_stats,
     }
-    if not write_json_idempotent(META_JSON, meta, ignore_keys=("generated_at", "elapsed_s")):
-        print("  [skip] meta.json unchanged (besides timestamp) — no commit churn")
+    # Non-idempotent on purpose — see build_lc.py write_meta() for the
+    # full rationale. Always bump generated_at so the app's staleness
+    # indicator reflects "last successful derive".
+    write_json_idempotent(META_JSON, meta, ignore_keys=())
     return meta
 
 
