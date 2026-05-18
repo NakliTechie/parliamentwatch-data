@@ -1,0 +1,2826 @@
+Report of the
+Comptroller and Auditor
+General of India
+
+on
+
+Effectiveness of Kerala Value Added Tax
+Information System (KVATIS) in the
+Tax Administration of
+Commercial Taxes Department
+
+Government of Kerala
+Report No. 7 of the year 2014
+
+www.agker.cag.gov.in
+
+
+TABLE OF C N’
+
+Particulars Paragraph Page
+Preface (v)
+Executive summary (vii)
+
+GENERAL
+
+Introduction 1.1 1
+Trend of receipts 1.2 1
+Kerala Value Added Tax Information System (1 ७७ 118) 13 2
+Expenditure incurred for computerization 1.4 3
+Organogram 1.5 4
+Audit objectives 1.6 4
+Audit criteria 1.7 5
+Scope and methodology of Audit 1.8 5
+Interaction with the Government/Department 1.9 5
+Acknowledgement 0 5
+
+CHAPTER — IT : DEALER INFORMAT
+
+Introduction 2.1 7
+Process Automation 2.2 7
+Registration 2.3 [ 8 |
+Registration of new dealers 2.3.1 [ 8 |
+Multiple registrations 23.2 | 8 |
+Risk of non mapping of business rule on multiple 2.3.3 |? |
+registration
+TIN dealers evaded the tax liability by keeping the turnover 2.3.3.1 |? |
+against each registration below हैं 10 lakh
+The Presumptive tax paying dealers continue to pay tax at 2.3.3.2 10
+presumptive rate by keeping the turnover below the limit of
+%50/% 60 lakh per year
+Renewal of registration 2.3.4 1
+Non renewal of registration 2.3.4.1 1
+System allows cancelled dealers to renew their registration 2.3.4.2 2
+Security deposit for registration 2.4 2
+Non renewal/revalidation of security instruments 2.4.1 2
+Conclusion 3
+Recommendations 3
+CHAPTER - III : CHECKPOST MANAGEMENT S
+Introduction. 3.1 15
+Process Automation 3.2 5
+Non-mapping of business rules for Token generation 3.3 6
+Interstate transactions of dealers whose registrations were 3.3.1 7
+not renewed
+Interstate transactions of dealers whose registrations were 3.3.2 8
+cancelled
+Lack of processing/validation control against master files 3.4 19
+System allows transport of consignments into the State 0 3.4.1 19
+
+
+
+dealers without a valid TIN
+
+System allows irregular claim of concession for Inter State 3.4.2 20
+sales effected to unregistered dealers
+
+Inadequate process control - Lack of integration between 3.5 21
+modules
+
+Interstate purchase/stock transfer of goods short/non- 3.5.1 21
+reported
+
+Non-surrender of Transit Passes 3.5.2 22
+Use of risk management system 3.6 23
+Release of consignments brought by registered/unregistered 3.6.1 23
+dealers for own use without verification of genuineness
+
+Input data quality issues 3.7 24
+Release of consignments brought by registered dealers 3.7.1 24
+
+without verification of the genuineness of the details
+entered by them
+
+Data on physical verification of consignments 3.8 25
+Conclusion 3.9 25
+Recommendations 3.10 26
+JRN PROCESSING S
+Introduction 4.1 27
+Process Automation 4.2 27
+Filing of Returns 4.3 28
+Default in filing of periodical and annual returns 4.3.1 28
+Scrutiny of Returns 44 29
+Short fixation of compounded tax for Gold dealers 4.5 30
+Accounting of Purchases 4.6 31
+Discrepancies in reporting of purchases 4.6.1 31
+Excess input tax credit (ITC) availed 4.6.2 31
+Availing of ITC by dealers for purchases from dealers who 4.6.2.1 31
+are not liable to pay tax under section 6 of KVAT Act
+Availing of ITC by dealers for the purchases of goods not 4.6.2.2 32
+coming under the purview of Capital goods
+Availing of more ITC by dealers than the tax actually 4.6.2.3 33
+paid/due on the purchases
+Non reversal of ITC when the goods purchased are sent 4.6.2.4 34
+outside the State otherwise than by way of sale
+Accounting of Sales 47 35
+Accounted sales escaped self assessment 471 35
+Short reporting of interstate sale than that reported at check 47.2 36
+posts
+Excess deduction of tax in respect of sales return 4.7.3 36
+Failure to remit the collected tax 474 38
+Failure to pay the collected tax as reported by the dealer 4.7.4.1 38
+through the details of his sales invoices
+Failure to pay the collected tax by the dealers as reported in 4742 39
+the details of the purchase invoices by their purchasing
+dealers
+
+di)
+
+
+Short accounting of opening stock of a year than the closing 48 39
+stock of the previous year
+
+Scrutiny of returns of presumptive tax dealers 49 40
+Non demand of schedule rate of tax from Presumptive tax 4.9.1 40
+dealers who imported goods into the State
+
+Non demand of schedule rate of tax from Presumptive tax 4.9.2 4l
+
+dealers whose turnover crossed the threshold limit in the
+previous year
+
+Conclusion 4.10 42
+Recommendations 4.11 42
+CHAPTER -
+
+Non utilisation of Modules 5.1 45
+Audit Assessment Module 5.1.1 45
+Refund System Module 5.1.2 45
+Arrear Recovery System Module 5.1.3 45
+Other Modules 5.1.4 46
+Inadequate Management Information System (MIS) 5.2 46
+Reports
+
+Insufficient training 5.3 46
+Conclusion 5.4 46
+Recommendations 5.5 47
+
+APPENDIX
+
+Appendix 49
+
+(ii)
+
+
+This Report of the Comptroller and Auditor General of India for the year
+ended March 2013 has been prepared for submission to the Governor of
+Kerala under Article 151 of the Constitution of India.
+
+The Report contains the significant results of audit of the ‘Effectiveness of the
+Kerala Value Added Tax Information System in the tax administration of
+Commercial Taxes Department’ from April 2008 to May 2013.
+
+The instances mentioned in this Report are those which came to notice in the
+course of audit during February to December 2013.
+
+The audit has been conducted in conformity with the Auditing Standards
+issued by the Comptroller and Auditor General of India.
+
+(vy)
+
+
+Executive Summary
+
+
+xecutive summa
+
+Commercial Taxes Department contributes about 75 per cent of the revenue of
+the State which includes General Sales Tax, Value Added Tax and Central Sales
+Tax. Kerala Value Added Tax was introduced with effect from 01 April 2005.
+As part of e-governance initiative, the Kerala Value Added Tax Information
+System (KVATIS), application software was deployed during 2007 and became
+operational from 2007-08 onwards in a phased manner. This was developed by
+CMC Ltd., a TATA enterprise, as a web based application with 12 modules. Up
+to March 2010 total expenditure incurred on the project was = 29.75 crore and
+three modules were fully operational. In this context, an audit of effectiveness
+of KVATIS on the tax administration was taken up.
+
+n thi ort
+
+The audit was conducted from February to December 2013 and data was
+collected from the Information Technology Management Cell (ITMC) in the
+Commissionerate of Commercial Taxes. The entire data in the system for the
+period upto May 2013 was extracted and analysed using the Interactive Data
+Extraction and Analysis (IDEA) software. The audit observations were cross
+verified on a sample basis with the assessment details in the Assessment Circle
+Offices. The results of audit of information in the modules like Dealer
+information system, Checkpost management system and Return Processing
+System are narrated in Chapters II to IV and other deficiencies noticed in
+Chapter V of this Report.
+
+Material value of Audit Findings
+
+Audit observed several deficiencies/defects in the application of the system for
+tax administration. Some key risks resulting from weak systemic controls are
+highlighted in this Report which involves a tax effect of ¥ 4,653.43 crore. A
+maximum penalty of = 7,311.81 crore and security deposit of = 317.15 crore
+were also leviable.
+
+Dealer information system|
+
+Audit found that the system accepted multiple registrations ranging from two to
+18 on a single Permanent Account Number (PAN). Either a single PAN was
+used by different individuals or the same individual used same PAN for getting
+more than one registration. The dealers either avoided tax liability by keeping
+their turnover under each registration below % 10 lakh, the threshold minimum.
+for tax liability or minimised their tax liability by bringing the turnover below
+र₹ 50 lakh 60 lakh per year which was fixed as the threshold limit for
+presumptive tax. The system failed to generate any alerts by aggregating these
+multiple registrations. Audit also found cases of non-renewal of registration,
+
+(vii)
+
+
+Report on Effectiveness of Kerala Value Added Tax Information System (KVATIS) in the
+Tax Administration of Commercial Taxes Department
+
+non-existence of a system for monitoring the expiry of security instruments etc.
+Short levy of tax including interest in the above cases amounted to € 2.46 crore.
+A maximum penalty of % 2.65 crore was also leviable.
+
+[Chapter I]
+
+Check Post Management System|
+
+Audit found that in the absence of an inbuilt control mechanism in the system to
+check inter state transportation of goods by dealers who have not renewed or
+cancelled their registration, such dealers transported goods without payment of
+security deposit (SD) at Check Post. Further, Audit found that 1,450 dealers
+were effecting inter state sales to dealers either without TIN or with defective
+TIN but claiming concessional rate for their inter-state sales. There were cases
+in which dealers short reported/short accounted inter-state purchase/stock
+transfer in their returns filed, cases in which transit passes were not surrendered,
+release of consignments brought by dealers for own use without verifying the
+genuineness of the purpose/details entered etc. In all these instances the
+information available in the system could have been better utilised for efficient
+monitoring and tax administration. Short levy of tax including interest in the
+above cases amounted to € 1,928.45 crore. A maximum penalty of % 2,888.96
+crore and a security deposit of ¥ 317.15 crore was also leviable.
+
+[Chapter IT]
+
+Return Proce:
+
+Audit found that the absence of a system to generate demand notice for penalty
+for non-filing of returns resulted in non-imposition of penalty. Further, audit
+pointed out cases of inappropriate mapping of business rules resulting in short
+fixation of compounded tax for gold dealers, defects/deficiencies in accounting
+of purchases/sales/opening and closing stock for the financial year, short
+payment of tax due, scrutiny of presumptive tax payments etc. Short levy of tax
+including interest in the above cases amounted to हैं 2,722.52 crore. A
+maximum penalty of हैं 4,420.20 crore was also leviable.
+
+[Chapter IV]
+
+Other Important Points|
+
+Audit found that there was significant dependence on inefficient manual
+procedures due to non-utilisation of some modules like Audit Assessment
+Module, Refund System Module, Arrear Recovery System Module etc which
+were not operational.
+
+[Chapter V]
+
+(viii)
+
+
+Executive Summary
+
+‘Conclusion and Recommendation|
+
+The application software was only partially effective with respect to the
+modules which were operational. The Department continues to rely on manual
+controls which underutilises the possibilities that the system offers. Moreover,
+there existed many deficiencies due to non-utilisation of remaining modules.
+
+Audit recommends that Government/Department may take early action to
+update/upgrade the software in a time bound manner rectifying the defects
+pointed out. The updating will be cost effective since it would generate
+additional recurring revenue to the exchequer.
+
+Further, the system of monitoring and scrutiny merits a revisit as the selection
+of cases need to be risk-based with appropriate use of data available in the
+system across modules.
+
+(i)
+
+
+Chapter - I
+General
+
+
+CHAPTER-I : GENERAL
+
+1.1 Introduction]
+
+The Commercial Taxes Department contributes nearly 75 per cent of the tax
+revenue of the State through Kerala General Sales Tax (KGST), Kerala Value
+Added Tax (KVAT) and Central Sales Tax (CST) regulated by the Kerala
+General Sales Tax Act, 1963 (KGST Act), Kerala Value Added Tax Act, 2003
+(KVAT Act), the Central Sales Tax Act, 1956 (CST Act) respectively and the
+notifications/circulars issued thereunder by the Government/Department from
+time to time.
+
+1.2 ‘Trend of rece'
+
+The budgeted and actual receipts of tax on sales, trade etc., and the total
+revenue receipts of the State during the five years ended 31 March 2013 were
+
+S|
+
+as depicted below:
+R 33000 00 F REVENUE डर
+u TREND OF REVEN 7 :
+ए 30000.00 2
+e 8 &
+€ 25000.00 re ent
+s
+20000.00
+i
+n 1500.00
+¢ 1000.00
+¥ 5000.00
+०
+r 0.00 7 :
+e 2008-09 2009-10 2010-11 2011-12 2012-13
+Tax Receipts - Budget Estimates # Tax Receipts - Actual collection
+=Total receipts of the State
+The revenue collected as KGST - levied on sale of ganja, opium, foreign
+liquor and certain petroleum products under the KGST Act, KVAT - levied on
+intrastate sale of commodities other than those mentioned above and CST -
+levied on interstate sales, during the last three years ended 31 March 2013 as
+
+recorded in Finance Accounts prepared by Principal Accountant General
+(A&E) Kerala were as detailed below:
+
+11
+
+Sales Tax 7,402.07 8,754.38 | 9,921.57
+VAT 8,097.15 9,803.74 | 12,171.70
+CST 310.42 292.66 320.88
+
+During 2012-13 collection of VAT increased by % 2,367.96 crore and that of
+sales tax increased by % 1,167.19 crore.
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+1.3 Kerala Value Added Tax Information System (K’
+
+The Government of Kerala enacted the KVAT Act which came into effect
+from 1 April 2005. The work on project for the computerisation of commercial
+tax administration in Kerala (KVATIS) under the KVAT Act, was started
+during 2005-06 with the objectives to;
+
+> develop a user-friendly IT solution for the effective and transparent tax
+administration with a view to maximise tax collection, reduce the tax
+evasion and corruption.
+
+> simplify the procedures and deliver better services timely to the
+stakeholders.
+
+The KVATIS software was developed, supplied and implemented by the
+Computer Maintenance Corporation (CMC) Limited. The scope of the project
+work entrusted to CMC included - design and development of the application
+to meet business requirements of the Department, provide appropriate
+hardware specifications and network design, testing, documentation and
+implementation. The system is based on industry standard three tier
+architecture (WEB) on J2EE Platform. The system is deployed on the Oracle
+10g Application Server and Oracle 10g database engine as Relational
+Database Management System (RDBMS) with 12' Modules.
+
+Be eS 28
+
+Diagram of architecture of the system
+
+BBs 3
+
+Dealers/
+Transporters
+
+Commercial
+Taxes
+Department
+
+"छात्रा
+Smzrrazn
+
+‘Access Router
+
+KVATIS is accessed through both Internet and Intranet. The Internet web
+based application for public interface is accessible to all registered dealers,
+transporters etc., through the website www.keralataxes.gov.in. The Intranet
+application is accessible only to the employees of the Department and is
+accessed through Wide Area Network (WAN). A unique role is assigned to
+each employee to access the KVATIS modules based on the nature of the
+work performed.
+
+Dealer Information System, Return Processing System, Checkpost Management System,
+Tax Accounting System, Enforcement and Raid System, Appeal and Revision
+System, Dealer Audit Assessment System, Penalty and Offences System, Arrear
+Recovery System, Refund System, Employees Information System, Kiosk and Web
+Enabled System
+
+
+
+Chapter : 7 - Introduction
+
+The application software became operational from 2007-08 in a phased
+manner. A chronology of important e-services introduced is given below:
+
+Date of implementation eserves
+
+January 2009 e-filing of Returns and uploading of lists of purchase/sales
+Invoices
+
+September 2009 e-payment of Tax
+
+January 2010 e-payment of Advance Tax
+
+January 2010 e-consignment Declaration
+
+April 2010 e-renewal of Registration, uploading of Closing Stock and
+Audited Statement
+
+April 2011 Online registration
+
+The Department has so far (March 2014) fully operationalised only three
+modules namely, Dealer Information System, Return Processing System and
+Checkpost Management System. The modules such as Enforcements and
+Raids system, Tax Accounting System, Employee Information System etc.,
+were only partially used/made operational. The KVATIS also capture the data
+relating to e-filing of returns and e-payments under the KGST Act.
+
+The details of expenditure incurred on the project as on March 2010
+(Appendix) is shown in the chart below:
+
+eo E
+
+TENT IN COMPUTERISATION
+(Value @ in crore)
+
+mSoftware investment बा Hardware investment
+
+lm Network investment Expenses for awareness programme
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Secretary to
+Government (Taxes)
+
+Commissioner of
+Commer
+
+Joint Commissis Joint
+a) Commissioner
+(General)
+
+Deputy Deputy Deputy
+Commissioner (15) Commissioner Commissioner Commissioner
+
+Commercial Tax
+Officer
+(Assessment)
+
+(Appeals) ternal Audit) telligence) (3)
+
+Commercial Tax
+Officer
+(Intemal Audit)
+
+ig
+Officer (IB)
+
+The Department is under the administrative control of the Secretary to
+Government, Taxes Department. The Commissioner of Commercial Taxes
+administers the Acts and Rules. Department constituted the Information
+Technology Management Cell (ITMC) for the implementation of the KVATIS
+project, headed by an Assistant Commissioner, assisted by three Commercial
+Tax Officers and two Upper Division Clerks. One System Administrator each
+was also deployed in all districts to help district level implementation. The
+data required for audit were obtained from ITMC.
+
+1.6 Audit Objectiv
+
+Audit was taken up to ascertain whether;
+
+> the system has achieved the intended objectives like;
+
+. transparency in tax administration with maximisation of tax
+collection
+
+. reduction in tax evasion
+
+. support the business processes and ensure compliance with the
+
+applicable rules and regulations
+
+
+
+Chapter : I - Introduction
+
+Vv
+
+the input processing and output controls are adequate to ensure the
+integrity of data
+
+> the database provides sufficient, complete, reliable and authorised
+information for management action.
+
+1.7 Audi
+
+Implementation of the KVATIS, data management and monitoring were
+examined with reference to;
+
+. Guidelines on development of e-governance applications.
+
+. Standard application development and implementation
+methodology.
+
+. The Central Sales Tax Act, 1956 (CST Act, 1956)
+
+. The Kerala Value Added Tax Act, 2003 (KVAT Act, 2003)
+. The Kerala Value Added Tax Rules, 2005 (KVAT Rules, 2005)
+
+. Notifications/Government Orders issued from time to time.
+
+1.8 Scope and methodology of Audi
+
+The audit was conducted from February to December 2013 by collecting the
+computerised data from the ITMC. The entire data in the system for the period
+April 2008 to May 2013 was extracted from the centralized data and analysed
+using the IDEA? software. The details of audit examination were made
+available to the Department for necessary action. Sample records were cross-
+verified to corroborate with the findings from data analysis.
+
+1.9 Interaction with the Government/Department
+
+A discussion was conducted with the Department and Oracle dump data of
+KVATIS as on date certified by the Department was collected on 22 May
+2013. An exit meeting was conducted on 3 April 2014 with the Secretary to
+Government (Taxes) and the Commissioner of Commercial Taxes and the
+findings of the Audit were discussed in detail. The views of Government/
+Department were considered while finalising the Report.
+
+A Compact Disc containing assessing office wise findings were given to the
+Department/Government in March/April 2014. CD containing the results of
+field verification of individual cases has also been furnished to Department/
+Government in July 2014. Hence separate detailed appendixes are not
+included in the Report.
+
+1.10
+
+Audit acknowledges the co-operation extended by the Commercial Taxes
+Department for providing necessary information and inputs required for
+preparation of the Report.
+
+knowledgement
+
+? Interactive Data Extraction and Analysis
+
+
+
+Chapter - II
+Dealer Information System
+
+
+0 Introduction|
+
+A unique registration number to identify a dealer and to trace all his
+transactions is the foundation of the VAT system. The assessing officer
+(Commercial Tax Officer/Assistant Commissioner) in charge of the Circle
+Office is the authority to grant/renew/revoke the registration. Dealer
+Information System (DIS) Module in KVATIS helps the assessing officer to
+manage various aspects of the registration, viz., initial registration, yearly
+renewal, collection of fees and security, cancellation, suspension etc. As there
+are three types of dealers under KVAT Act, 2003 and CST Act, 1956
+KVATIS allots three types! of registration numbers.
+
+.2__ Process automation|
+
+The Department has provided the facility for e-renewal of registration from
+April 2010 and introduced online facility for submission of application for
+registration from 01 April 2011. The process of on-line registration is as
+depicted below:
+
+Register with Obtain Temporary
+KVATIS User ID, password
+
+on-line
+ication
+
+Submit hard copy of application
+other documents to jurisdictional
+Registering Authority concerned
+
+After verification an
+approval by Registering
+Authority, KVATIS
+automatically generates
+TIN or PIN
+
+Download registration
+certificate and issue to the
+dealer after affixing
+gnature and office seal
+
+Also generates User-id an Communicate
+password for accessing to the dealer
+e-services
+
+(i) Tax Payers Identification Number (TIN) — allotted to dealers paying tax under
+Section 6(1) and 8 of the KVAT Act, 2003. (ii) Presumptive Tax Payers Identification
+Number (PIN) — allotted to dealers who are not importers or first sellers and opt to pay
+tax at concessional rate where the annual turnover is below = 50 60 lakh under
+Section 6(5) of the KVAT Act 2003. (iii) Central Sales Tax Number (CST) - allotted to
+TIN dealers registered under CST Act, 1956 who undertake interstate transactions.
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+2.3 _Registration|
+
+2.3.1 Registration of new dealers}
+
+Fifth proviso to Section16 (1) of KVAT Act stipulates that a person shall not
+be entitled for more than one registration under the Act from 01 April 2007.
+
+As per Section 2(xxxiii) of the Act, person includes, (a) an individual; (b) a
+joint family; (c) a company; (d) a firm;(e) an association of persons or a body
+of individuals, whether incorporated or not; (f) the Central Government or the
+Government of Kerala or the Government of any other State or any
+department thereof or a Union Territory in India; (g) a local authority; (h)
+every artificial juridical person not falling under any of the preceding sub
+clauses.
+
+The system deficiencies noticed in the DIS module regarding the registration
+are discussed in the succeeding paragraphs.
+
+2.3.2 Multiple Registrations}
+
+The statutory ID available to identify a person in the system is the Permanent
+Account Number (PAN) issued by the income tax authorities. Audit extracted
+PAN details, furnished by the applicants for the registration under KVAT Act
+and found that multiple registrations ranging from two to eighteen were
+permitted by the system against a PAN as detailed in Table 1 below. The
+system did not record whether multiple registrations were duly authorized as
+per relevant clauses of the KVAT Act. It was also noticed that in some cases
+single PAN was used by different individuals for registrations.
+
+Table 1: Details of multiple registrations against single PAN
+
+TIN 2,238 4,681
+PIN 1,786 3,827
+Total 4,025 8,508
+
+On this being pointed out, Government replied (April 2014) that as per Section
+20(3) of the KVAT Act, Commissioner may, on application by the dealer,
+treat each of such places of business as a separate unit for the purposes of levy,
+assessment and collection of tax, as if, such places of business were a separate
+unit, and hence same business entity is permitted to take multiple registrations;
+in such cases even though the TIN is different PAN is unique, and pointed out
+specific instances where multiple TINs were issued against single PAN.
+
+However, there were no controls in the system to ensure that only genuine
+registrations are permitted and the Government had not specified whether all
+the multiple TIN registrations pointed out were granted under Section 20(3) of
+the KVAT Act. Further, the reply was silent on the usage of single PAN by
+different individuals for obtaining registration.
+
+The Government also stated that the suggestion to include a rule into KVATIS
+to allow unique PAN for every registration shall be factored while
+systematically allowing on specific permission, multiple registration on single
+
+
+
+Chapter : व - Dealer Information System
+
+PAN in genuine verified cases. It was also stated that PAN validation has now
+been done.
+
+non-mapping of business rule multipl
+
+on
+
+As per Section 20(4), dealers who were granted multiple registrations are
+liable to pay tax if their combined turnover crosses the threshold limit of = 10
+lakh for TIN dealers. Further, Section 20(3) restricts the Commissioner from
+granting multiple registrations to Presumptive Tax paying Dealers”. Audit
+analysed the multiple registrations and found that non-mapping of the above
+provisions properly into the system enabled the dealers to keep their turnover
+below the threshold limit and evade tax as discussed below:
+
+-3.3.1_TIN dealers evaded the tax liability by keeping the turnove:
+against each registration below %10 lakh}
+
+Under the Act every dealer whose total turnover for a year exceeds ₹ 10 lakh
+shall pay tax at the rates prescribed in the schedules (Section 6(1)). Dealers
+are not entitled for more than one registration vide proviso 5 of the Section
+16(1) of the Act. Based on application, Commissioner can treat each places of
+business as a separate unit for levy, assessment and collection of tax (Section
+20(3)) and permit more than one registration. In such cases each place of
+business shall be liable to tax irrespective of the turnover provided the
+combined turnover exceeds ₹ 10 lakh. Audit observed that non mapping of
+business rules as stipulated in Section 20(4) of the Act into the application
+enabled the TIN dealers in evading tax by spreading over their turnover.
+
+Audit extracted details of registrations and it was noticed that 270 TIN
+registrations were granted against 120 PAN enabling the dealers to keep their
+total turnover below %10 lakh, whereas the combined total turnover of a single
+dealer crossed the threshold limit of € 10 lakh.
+
+An illustrative example is given below:
+
+PAN TIN Year Turnover Office
+@)
+ABIPJ7008E 32150832175 2011 941,647
+CTO, Angamaly
+ABIPJ7008E 32150880472 2011 9,86,428
+19,28,075
+
+To confirm the existence of multiple registrations under a single PAN, Audit
+subsequently verified (May 2014) the manual records with MIS report “Dealer
+complete details” in KVATIS and found that 74 TIN existed against 36 PAN.
+Non levy of tax in 110 assessment files in respect of the above 74 TIN worked
+out to % 0.70 crore.
+
+? Small and medium dealers who opt to pay tax at concessional rate of 0.5 per cent (sales
+
+turnover up to 60 lakh) under Section 6(5).
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Further, as the dealers took multiple registrations and avoided payment of tax,
+penalty under Section 67° should have been imposed on them. The maximum
+penalty leviable worked out to हैं 1.09 crore.
+
+Government replied (April 2014) that if the combined turnover crosses the
+minimum turnover mentioned in Section 6, the assessing authority shall verify
+the books of accounts and complete the assessment manually. The
+Government also questioned the validity of the finding and integrity of
+analysed data. The matter was re-examined in audit and no data integrity
+issues were observed. The reply itself indicated that the KVATIS could not
+operate without combining with manual verification. Further, the system had
+no provision to capture the result of such manual verification.
+
+Audit cross verified the details of assessments pointed out and found that the
+self assessment were not reopened in any of the 110 files of 74 dealers.
+
+2.3.3.2 The Presumptive tax paying dealers continue to pay tax at
+presumptive rate by keeping the turnover below the limit of
+RX 50 lakh 60 lakh per year
+
+As per Section 6(5), a registered dealer who is not an importer* or other
+dealers specified therein and whose turnover is below हैं 50 lakh/® 60 lakh may
+pay at his option tax at the rate of half per cent of the turnover of sale of
+taxable goods as presumptive tax instead of paying tax under Section 6(1).
+
+Audit observed that 31 PIN registrations were granted against 15 PAN and
+that the turnover of each such registration being below हैं 50 lakh/® 60 lakh
+during the years, those dealers were treated as presumptive dealers, though
+their aggregate turnover on each PAN, exceeded the threshold limit of = 50
+lakh/® 60 lakh. Section 20(3) of the KVAT Act restricts the grant of multiple
+registrations to presumptive dealers. This provision was not mapped to the
+system and hence the system wrongly admits payment of presumptive tax,
+where the turnover of the dealers crossed the threshold limit.
+
+Government replied (April 2014) that the point raised is not valid as the data
+mining team of the Department has already reported the cases of presumptive
+dealers whose turnover crossed the threshold limit to the assessing authority
+for taking necessary action.
+
+However, the justification of the Department is not valid as the re-examination
+(May 2014) in audit revealed that the cases pointed out were not reported by
+the data mining team for rectification. Regarding grant of 31 registrations
+against 15 PAN, the findings were from the database as on 22 May 2013.
+Audit verified the live data of the KVATIS of May 2014 and found 8 TIN
+issued against 4 PAN.
+
+It was also found that no assessments were completed in the 14 assessment
+files relating to the above 8 dealers with resultant short levy of tax including
+interest therein amounting to & 1.02 crore.
+
+3. Under Section 67 of the KVAT Act, a penalty not exceeding twice the amount of tax
+
+evaded or sought to be evaded is leviable for offences specified in the Act
+
+* Person who obtains or brings goods from any place outside the State or country
+
+10
+
+
+Chapter : Il Dealer Information System
+
+Further, as the dealers minimised the payment of tax taking multiple
+registrations, penalty under Section 67 is also leviable; which worked out to
+₹ 1.56 crore.
+
+2.3.4 Renewal of reg! ion|
+
+Non renewal of registration]
+
+As per Section 16(7), a certificate of registration issued shall be valid for a
+year and shall be renewed from year to year on payment of the fee of = 500 in
+case of KVAT dealers and additional हैं 1,000 for dealers having CST
+registration. The details regarding registration, cancellation and renewal
+during the period 2009-10 to 2012-13 are as described below:
+
+Table 2: Yearly statistics of registration, cancellation and renewal/non-
+renewal of registration under KVAT Act
+
+Year Registered No. of No. of dealers No. of live No. of dealers No. of
+
+Dealers as dealers cancelled their dealersason renewed their dealers
+णा 1 April registered registration 31 March (To registration failed to
+
+during during the be renewed next year renew their
+
+the year year next year) registration
+
+3 4 5 (243-4) 7 (5-6)
+Upto 2,13,572 34,865 1,78,707 1,54,551 24,156
+
+2009-10 | (upto 31 March 2010)
+
+2010-11 | 1,78,707 20,207 9,106 1,89,808 1,64,592 25,216
+2011-12 | 1,89,808 22,102 8,365 2,03,545 1,74,951 28,594
+2012-13 | 2,03,545 23,565 8,242 2,18,868 1,69,992 48,876
+
+Table 3: Yearly statistics of registration, cancellation and renewal/ non-
+renewal of registration under CST Act
+
+Registered No. of No. of dealers No. of live No. of No. of
+Dealers as dealers cancelled dealers as on dealers dealers
+onl April registered their 31 March (To renewed their failed to
+
+during _ registration © be renewed registration renew their
+
+the year during the year next year) next year _registration
+4 5 (2+3-4) 6 7 (5-6)
+Upto 64,346 3,190 61,156 60,620 536
+
+2009-10 | (up to 31 March 2010)
+
+2010-11 61,156 7368| 8 |[ 68,443 55,971 12,472
+2011-12 68,443 8,424 113 76,754 64,493 12,261
+2012-13 76,754 9,113 17 85,150 72,594 12,556
+
+Audit found that the system permits transactions by the dealers who have not
+renewed their registration. It was noticed that 3,979 dealers who had not
+renewed their registration had effected interstate transactions. Further, 953
+dealers filed return for their transactions during the non-renewed period and
+1,946 dealers had effected sales to other registered dealers. Non-renewal of
+registration by such dealers in each year resulted in short collection of renewal
+fee of 0.74 crore’.
+
+5 Calculated @ & 1,500 per renewal per year in case of 3,979 dealers who had effected
+
+interstate transactions and @ % 500 per renewal per year in case of 2,899 dealers
+
+11]
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+In cases where the dealers failed to renew their registration, notices should
+have been generated by the system. Absence of this process control in the
+system indicated that business rules in this regard have not been mapped in the
+system properly.
+
+On this being pointed out, Government stated (April 2014) that the audit point
+is not valid as there are various alerts in the system to prevent transactions like
+filing of returns/interstate trade by a dealer who failed to renew his
+registration.
+
+This statement is not correct as the cases mentioned above were from the
+database provided to audit. This issue is still persisting. Audit re-verified
+(May 2014) the live data in KVATIS in respect of 16 dealers and found that
+they had not renewed their registration though they effected interstate
+transactions and failed to file return/pay tax.
+
+em allows cancelled dealers to renew their regis
+
+As per Section 16(7), the registration is valid for a year and shall be renewed
+yearly on payment of fee of € 500 in the case of KVAT dealers and हैं 1500 is
+the case of CST dealers. There is no provision in the statute for renewal of
+registration of dealers who cancelled their registration. A dealer whose
+registration is cancelled should obtain a fresh registration.
+
+Out of the 2,79,446 registered dealers under KVAT Act (as on 31 March
+2013) 60,578 dealers cancelled their registration. Audit found that 768 dealers
+who cancelled their registration renewed it without fresh application for
+registration. Out of this, 420 dealers are still in the list of live dealers (for the
+year 2013-14). This shows that the system does not have an inbuilt process
+control to prevent the renewal of cancelled registration.
+
+On this being pointed out Government stated (April 2014) that some dealers
+were permitted to keep their registration live in order to download statutory
+forms against previous purchases or to submit annual return, closing stock
+inventory etc. The reply is not acceptable since these cancelled dealers not
+only have access to the system to download statutory forms, but could also
+renew their registration and were permitted to continue their business.
+
+2.4
+
+2.4.1 Non renewal/revalidation of security instruments
+
+As per Section 17 of the KVAT Act, 2003, registration shall be granted only
+against furnishing adequate financial security to protect the interest of revenue
+considering the volume of the business of a dealer. Rule 19(2) of KVAT
+Rules provides that security may be furnished in any of the form such as
+deposit with treasury, Government securities, Post Office Saving Bank
+Deposit, Bank Guarantee, National Savings Certificate pledged and deposited
+with the authority. A Bank guarantee cannot be invoked if the same is not
+renewed on expiry of validity period. As such the system should alert the
+authorised officer and generate notices to the dealers whose Bank Guarantee
+had expired.
+
+
+
+Chapter : व - Dealer Information System
+
+An extraction and analysis of data revealed that the validity of the Bank
+Guarantee furnished by 395 dealers aggregating to हैं 3.49 crore had expired
+and the system permitted transactions by such dealers.
+
+This indicates that necessary process controls were not built into the system to
+ensure the detection and timely renewal of expired Bank Guarantee.
+
+On this being pointed out Government stated (April 2014) that receipts of
+bank guarantee are entered in the security register maintained in the assessing
+circle and renewal are done manually.
+
+The reply is not acceptable as the data regarding validity of bank guarantee is
+available in KVATIS itself, the Department could have utilised this system
+controls instead of manual controls.
+
+2.5 _Conclusion|
+
+Audit found that the Dealer Information System Module lacks in certain
+aspects:
+
+e The system does not indicate whether the multiple registrations were
+duly authorised by the competent authority as provided under the Act.
+
+e The risk of tax evasion by dealers having multiple registrations by
+keeping turnover under each registration below the threshold levels
+was found to be significant.
+
+e The KVATIS allows dealers to transact business without renewing the
+registration and after cancellation of registration.
+
+e The validity of Bank guarantee furnished as security for registration by
+many dealers though expired were not revalidated. This is not
+identified by the system for taking corrective action.
+
+2.6 Recommendations}
+
+** Business Rules regarding registration may be mapped properly to
+avoid acceptance of multiple registrations by the system unless
+specifically permitted by Commissioner of Commercial Taxes under
+Section 20(3).
+
+< The system be updated to cover the risk of tax evasion by dealers
+
+having multiple registration, working out their aggregate turnover as
+
+specified in Section 20(4) of KVAT Act
+
+Department may conduct periodical analysis of dormant registration
+numbers, other than application for temporary stoppage of business
+(vide Section 16), and take timely action for issuing notices for renewal
+or otherwise cancel the registration of dealers who had no business
+transactions for more than two years, to avoid misuse of Registration
+Certificate.
+
+“* System should generate appropriate alerts for renewal of Bank
+guarantees before its date of expiry and while dealers are effecting
+transactions.
+
+%* Necessary modifications may be made to the system to adequately
+capture the results of manual verification done by Assessing Officers.
+
+13
+
+
+Chapter - III
+Check Post Management System
+
+
+CHAPTER-III : CHECKPOST MANAGEMENT S
+
+3.1 Introduction|
+
+The Commercial Taxes Department has established checkposts along the
+borders of the State for monitoring the movement of goods into and outside
+the State. These are managed by Inspecting Assistant Commissioner/
+Commercial Tax Officer/Commercial Tax Inspectors. The Checkpost
+Management System (CPMS) module in the KVATIS captures the details of
+goods purchased/sold and stock transferred into and outside the State by
+registered dealers, etc.
+
+2. Process automation|
+
+There are 76 checkposts in the State, out of which only 36 are provided with
+online Wide Area Network (WAN) connectivity. The data regarding
+transactions through offline checkposts are uploaded to KVATIS from the
+nearest online office in the same week. Since 2010, the Department
+introduced a new system - ‘e-declaration of consignments’ (in Form No.8F),
+on interstate transfer of goods. This provides system information to the
+Department about the consignments arriving at the checkposts, enabling
+speedy clearance. The following diagram depicts the process of e-declaration.
+
+Login into
+KVATIS and
+upload
+e-declaration before
+goods reaches State
+Border checkpost
+
+Take Printout of
+the Token No.
+generated on each
+consignment
+
+When
+Consignment
+teaches the
+Checkpost,
+Produce the
+print out of the
+Token
+
+Verification and
+
+Physical approval. —___—.
+verification of = Generation of Release of
+consignment another unique consignment
+token number
+(containing the
+checkpost ID)
+
+The most important control in e-declaration is the ‘second token system’;
+which identifies the person who transports the goods; the commodity
+transported in the vehicle and the checkpost. It helps the assessing officers
+spread all over the state to identify the dealer wise details of interstate
+transfers in VAT assessment.
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+The flow chart of the checkpost transactions are given below:
+
+Incoming and outgoing vehicles
+with consignments
+
+Consignments
+without any records
+or e-declaration
+
+Consignments with
+e-declaration
+
+Without valid TIN
+
+aw, valid TIN Transit Pass
+(For sale outside
+Kerala)
+
+=. —-
+
+The year-wise details of token generated for inward and outward vehicles are
+as shown below:
+
+Year No. of tokens Generated (IN) _No. of tokens Generated (OUT)
+2008-09 6, 07,979 1,85,862
+2009-10 6,65,081 1,98,763
+2010-11 7,07,916 4,49,401
+2011-12 9,99,025 5,16,237
+2012-13 18,33,802 7,56,351
+
+As per Section 8 of CST Act, a registered dealer can purchase taxable goods
+from outside the State at concessional rate and transport it into the State for
+trading. If the dealer’s principal place of business is outside the State or if he is
+acting as an agent of a principal dealer outside the State, then that dealer can
+also transfer the goods into the State for trading (Section 6A of CST Act).
+
+Under Section 47(2) of the KVAT Act, if the goods under transport are not
+covered by proper and genuine documents or that any person transporting the
+goods is attempting to evade payment of tax, the same shall be allowed to be
+transported only on furnishing of security deposit at double the amount of tax
+likely to be evaded as estimated by the Officer.
+
+As per Section 16(7), a certificate of TIN registration issued shall be valid for
+a year and shall be renewed from year to year on payment of the fee. If a
+
+16
+
+
+Chapter : II - Checkpost Management System
+
+dealer fails to renew his registration in any year, he should be considered as an
+unregistered dealer and shall not be eligible for the concessional rate of tax for
+interstate transactions and transport of goods through checkpost without
+remitting security.
+
+The KVATIS system is expected to map the above business rules. It should
+have an inbuilt control mechanism to give an alert to the authorities, on a non-
+renewed/cancelled dealer trying to generate a token for interstate
+transportation of goods. It should also generate a demand notice for collection
+of security deposit from the errant dealers.
+
+The system deficiencies noticed in the CPMS module are discussed in the
+succeeding paragraphs.
+
+Due to the absence of proper system for detection of transaction using non-
+renewed TIN; goods worth % 2,029.57 crore were transported into the State by
+3,979 dealers during 2010-11 to 2012-13, without collecting security deposit.
+
+Audit analysed the risk in allowing non-renewed dealers effecting interstate
+transactions by cross verifying their transactions with the returns filed and
+cases of non-reporting of interstate purchases were noticed during analysis.
+Two illustrative cases are shown below:
+
+towhich the TokenNumber Value of goods _Intei
+transported pur
+
+not renewed ® d
+in returns
+
+32070235994 2010-11 320310/2010-11/ 12,12,695
+7629
+
+32010805314 2012-13 320117/2012-13/ 57,12,000 Nil
+4474
+
+On this being pointed out, Government stated (April 2014) that assessing
+authorities are provided with Management Information System (MIS) reports
+to identify the defaulters in filing returns having checkpost transactions.
+Additional demands can be created by them using this data. Short-levy
+worked out by audit requires verification of individual cases and hence not
+sustainable.
+
+The reply is not acceptable as audit found that self-assessments in respect of
+59 assessment files’ relating to 55 dealers who failed to renew their
+registration were not reopened though they failed to report their interstate
+transactions. Short levy of tax in this regard works out to = 4.37 crore. Out
+of these, audit cross verified (May 2014) 16 cases with the live data available
+in KVATIS and found that in all the cases the dealers failed to file the return
+and pay tax on the sales turnover of goods purchased interstate. The resultant
+short-levy of tax in the 16 cases worked out to हैं 1.67 crore. This shows that
+assessing authorities are not taking proper action based on MIS reports.
+Hence, the system should be modified to detect and generate notices on the
+
+' Where tax effect is greater than rupees one lakh
+
+17
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+interstate transactions effected by the dealers who have not renewed their
+registration.
+
+Further, dealers who have not renewed their registration were effecting
+interstate transport of goods leading to evasion of tax. However, security
+deposit as stipulated in the Act had not been collected in the checkpost. Non-
+collection of security deposit from these 55 non-renewed dealers is worked out
+to = 7.89 crore.
+
+3.3.2 Interstate transactions of deal
+cancelled]
+
+Absence of proper system for detection of transaction using cancelled TIN
+resulted in irregular release of 1,605 consignments of 184 dealers without
+collecting security deposit. Audit analysed the risk in allowing cancelled
+dealers effecting interstate transactions by cross verifying data on interstate
+transactions with information as per returns filed. Instances were noticed
+where dealers failed to report their interstate purchases. Two illustrative cases
+are shown below:
+
+Name of the dealer Dateof  Reasonfor Token  Dateof —_—-Value of
+
+cancellation cancellation Number transporta- goods
+
+tion of goods ®
+
+1 | 32070292143 | JT.INTERNATIONAL | 28.03.2011 | Business 320921/| 05.09.2011 | 3,41,198
+(WHOLESALE) INDIA| stopped 2011-12/
+PVT LTD. 65718
+
+2 | 32071739062 | BIOTECH 25.03.2010 | Business 320921/| 29.08.2012 | 1,32,487
+SCIENTIFIC stopped 2012-13/
+303007
+
+On the risk being pointed out, Government stated (April 2014) that in cases of
+suo motu cancellation of registration by assessing authorities, the cancellation
+could be revoked later by appellate/revisional authorities on application by the
+dealers concerned, the process of filing appeal/revision and disposal of which
+were purely manual. Further, it was stated that in cases of transaction by
+cancelled dealers, checkpost authorities and data mining wing were given
+facility to view the checkpost transactions of cancelled dealers so that the
+authorities can initiate statutory measures.
+
+The controls pointed out in the reply is not adequate since audit found that in
+spite of these precautions, there were 153 dealers (178 assessment files) who
+effected interstate transactions, even after cancellation of registrations. Even
+if the registration was restored by appellate authorities, the dealers had the
+liability to report and pay tax on their interstate transactions. On analysis audit
+found that no returns were filed by these assessees. Short-levy of tax
+including interest would work out to € 0.45 crore.
+
+Since cancelled dealers were transporting goods interstate and evading
+payment of tax, in order to protect the revenue, the department should collect
+the security deposit at the checkpost for interstate transactions effected by
+dealers whose registrations were cancelled treating it as a transaction made by
+an unregistered dealer. Non-collection of security deposit from 153 cancelled
+
+
+
+Chapter : II - Checkpost Management System
+
+dealers, whose tax liability of goods transported into the state is above rupees
+one lakh, worked out to 0.69 crore.
+
+Audit rechecked (May 2014) 22 cases (12.23 per cent) with reference to the
+live data in KVATIS at the assessing offices and found that dealers did not file
+any return and thus sales turnover of goods purchased interstate was not
+assessed to tax. Thus, the controls stated by the Department were not
+effective.
+
+3.4.1 System allows transport of consignments into the state by
+dealers without a valid TIN}
+
+TIN is used to track all the transactions of a registered dealer. TIN, the
+identification number allotted to a registered dealer is an eleven digit number,
+which is unique all over India. The first two digits identify the State. Thus,
+‘32’ is allotted to Kerala dealers.
+
+The system should have the input controls to ensure that the data entered are
+valid, complete, accurate and properly authorised. Lack of input control by the
+system results in goods being transported, purchased/ stock transferred, into
+the State without declaring their TIN or declaring a defective TIN? at the
+Checkpost as detailed below:
+
+Year No. of entries made into the State without Value of goods transported
+la @ in crore)
+
+2010-11 496.70
+
+2011-12 2,577.04
+
+2012-13 5,17,118 3,332.59
+
+Inability of the system to process/validate the data without a valid TIN
+resulted in non-payment of tax and interest of = 171.51 crore’ on 2095
+assessment files.
+
+To curtail the evasion of tax, the system should alert and generate a demand
+for security deposit to be collected at the checkpost from the dealers who fail
+to declare their valid TIN. Non collection of security deposit on the above files
+worked out to हैं 308.57 crore.
+
+Government stated (April 2014) that in case the documents are defective, the
+checkpost officials detain the vehicle and demand security deposit. Since this
+is a manual process the short collection of revenue can be ascertained only
+after verifying the Offence Register (OR) maintained at checkpost. During the
+Exit Conference (April 2014) the Secretary, Taxes Department assured that
+necessary business rules will be built into the system to block the
+consignments brought into the state not for own use by unregistered dealers.
+
+The effectiveness of manual controls pointed out in the reply is not adequate
+since audit analysed the details of consignments on which release order was
+
+TIN without mandatory eleven digits.
+
+Dealers excluding Government departments and PSUs and those dealers having tax
+liability of more than rupees one lakh for the interstate transaction effected without a
+valid TIN.
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+issued without compounding’ any offence. Audit visited two major
+checkposts, CTCP Walayar and CTCP Amaravila that covered 69.70 per cent
+of the cases. It was found that the security deposit were collected for other
+offences like overload, difference in commodity transported ete and Token
+number which is the unique recognition number for transport of goods were
+not mentioned in the OR maintained. Moreover, the department admitted that
+the total security deposit collected for all the offences in the State for the
+above three years were = 109.52 crore only whereas the security deposit to be
+collected for above said cases alone comes to 308.57 crore. Lack of proper
+controls in the system enabled transport of goods into the state without
+furnishing valid TIN.
+
+em allows irregular claim of concession for Inter State
+
+Section 3 of CST Act provides that a sale or purchase of goods shall be
+deemed to take place in the course of interstate trade if the sale or purchase
+occasions the movement of goods from one state to other or is effected by a
+transfer of documents of title to the goods during their movement from one
+state to another. Section 8(1) of the Act provides that, if the sale is to a
+registered dealer outside the state, a dealer can claim concessional rate of tax
+for that sale provided the dealer should produce valid C Form issued by that
+registered dealer. If movement of goods from one State to another occasioned
+as a result of an anterior contract of sale, then it is an interstate sale. There
+must be an inextricable link between movement of goods and prior order. As
+such, a dealer effecting interstate sale to a registered dealer outside the State
+would be aware of the details of the dealer.
+
+Audit found that 977 dealers effected interstate sale to dealers having invalid
+TIN. This means that the dealers were not aware of the registration details of
+the purchasing dealers even at the time of transport of goods outside the State.
+As there was no inextricable link between movement of goods and prior order
+by a registered dealer outside the State in the aforesaid case, tax shall be levied
+at full rate for such interstate sale. Audit noted that self-assessments were not
+reopened in respect of 1,276 assessment files of the above 977 dealers, that
+tax to the tune of हैं 192.57 crore was paid short by availing inadmissible
+concession. Penalty under Section 67 also should be imposed. Maximum
+penalty to be imposed would come to % 316.52 crore. Two illustrative cases
+are shown below:
+
+Token Number Year Consignor _Consignee | Value of goods transported
+TIN TIN Out of State
+®
+320921/2011-12/ | 2011-12 | 32071694602 Nil 2,05,221
+516576
+320921/2011-12/ | 2011-12 | 32150304235 Nil 1,30,949
+161434
+
++ ‘Compounding of offence’: Section 74 of KVAT Act allows registered dealers to legalise
+their irregular transactions, paying an additional amount equal to the tax evaded as
+penalty. This process is termed as ‘compounding of offence’.
+
+20
+
+
+Chapter : II - Checkpost Management System
+
+Lack of necessary input controls in the system, for detecting interstate sale to a
+consignee without TIN or to an unregistered dealer, enabled dealers to claim
+concessional rate for their interstate sale which was not due to them.
+
+On this being pointed out, Government stated (April 2014) that at the time of
+assessment the assessing officer will allow the concessional rate only on
+production of statutory forms. Hence without verifying the details of
+assessment records the actual short levy could not be ascertained.
+
+Audit verified (May 2014) 35 cases with the returns filed along with the
+checkpost transactions and found that in all the cases dealers effected
+interstate sale to unregistered dealers and availed concession for that sale
+resulting in short-levy of tax of % 5.10 crore. Thus, the justification of the
+Department about manual controls is not acceptable.
+
+Inadequate process control - Lack of integration between|
+
+3.5.1 Interstate purchase/stock transfer of goods short/non-reported|
+
+If a dealer purchases or stock transfers goods from outside the State and
+transports it into the State by declaring it at any of the checkposts, he should
+disclose that transaction through his periodical return and tax shall be paid on
+the sale of such goods within the State. He should also account it in his P&L
+Account and submit the copy of the certified Annual Accounts to the assessing
+authority.
+
+Lack of application controls enabling cross-linkage of the checkpost
+transactions with information submitted in the returns allowed dealers to short
+report/short account interstate purchase/stock transfer in their returns filed.
+
+Two illustrative cases noticed are shown below:
+
+( in lakh)
+Total value of Total Interstate Short reporting
+goods transaction (IN) __ of Interstate
+transported (IN) returned/ transaction (IN)
+to the State accounted
+32070381682 | 2012 53,013.59 6,089.36 46,924.22
+32151597344 | 2011 2,519.17 2,426.47 92.70
+
+On analysis of electronic data audit could identify 1,581 cases involving a tax
+effect of 1,559.55 crore due to short reporting of interstate transactions.
+
+Penalty under Section 67 should also have been imposed. Maximum penalty
+to be imposed works out to = 2,572.44 crore.
+
+On this being pointed out, Government stated (April 2014) that estimation of
+short levy based on assumption is not fair and reasonable. There is already a
+manual control in which short reporting of transactions can be detected during
+the process of scrutiny. At the time of return scrutiny the Assessing authority
+is provided with a number of options in the KVATIS to verify the veracity of
+the returns filed by the dealer. If any unaccounted transactions are detected by
+assessing authorities, assessment will be completed based on best judgement
+creating additional demand and it is a manual process.
+
+21
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+The reply is not acceptable as the coverage of this manual control (scrutiny) in
+terms of percentage of assessments scrutinised may be low and a significant
+proportion of cases would remain undetected.
+
+Further, Audit re-verified (May 2014) 46 cases with reference to returns and
+checkpost transactions available in KVATIS and found that in 11 cases invalid
+data was recorded in column concerned and in 35 cases dealers failed to report
+the entire interstate purchases effected by them resulting in short-levy of tax of
+% 288.41 crore. Department/Government may take effective action to verify
+the remaining cases.
+
+This indicates that the inherent risk of relying on manual scrutiny of returns
+instead of relying on the strength of an automated system where the
+information available across different modules of KVATIS will help prioritize
+files for scrutiny. Hence necessary controls needs to be built-in the system
+and to integrate the checkpost module with the return processing module.
+
+Under Section 48 of the KVAT Act and Rules thereunder, transport of goods
+through the border checkposts that are not to be unloaded in Kerala should be
+accompanied by a transit pass in Form 7B. This pass should be issued by the
+entry checkpost and has to be surrendered at the exit checkpost. In case of
+failure to surrender the transit pass at the exit checkpost, the goods which are
+transported into the State through the entry checkpost should be treated as the
+goods delivered within the State for sale and are liable to tax under this Act.
+
+The system should provide information about the non-surrendered transit pass
+to authorities including the intelligence wing of the department and alert them
+to track the vehicle.
+
+An extraction and analysis of data for the period from 1 April 2012 to 22 May
+2013 revealed that out of the 13,146 transit passes issued surrender details of
+3,534 (27 per cent) cases were not available in KVATIS, which had a tax
+implication.
+
+On this being pointed out, Government stated (April 2014) that out of 83
+checkposts, only 29 have online access to KVATIS. Hence, if the vehicles
+entered into State through online checkposts and exit through offline
+checkposts, the details would be entered in the manual register maintained at
+the exit checkpost. Therefore, the short levy alleged is not correct.
+Government also stated that the system now generates alert messages to the
+checkposts, to detain vehicles which have not surrendered online transit pass
+on previous occasion.
+
+22
+
+
+Chapter : II - Checkpost Management System
+
+The Department’s reply on existing manual controls exercised at checkposts
+was cross verified at four major checkposts’ where goods in respect of 2046
+cases out of the 13146 transit passes referred to in the observation above
+should have exited. Verification of the manual registers showed that only 674
+transit passes were recorded as surrendered. The reply of the department is
+therefore not acceptable and tax implication on non surrender of transit passes
+could not be ruled out.
+
+3.6 Use of risk management system
+
+istered
+
+As per Section 46(3) of the KVAT Act, goods for own use can be transported
+through checkposts on the strength of certificate of ownership and Rule 58(18)
+of the KVAT Rules, 2005, stipulates that every person other than a registered
+dealer who brought in goods not in pursuance of a sale shall furnish a
+certificate of ownership in Form-16. The facility of transporting goods for own
+use except capital goods were extended to registered dealers also, vide
+Circular No.14/2007. The statute (Section 70B) provides for penalty (not
+exceeding three times of tax due on such goods) for commercial use of goods
+brought from outside the State declaring it as for own use.
+
+The extraction of data relating to release of consignments for own use
+revealed that both registered and unregistered dealers brought substantial
+volume of taxable goods into the State by furnishing Form 16 at checkposts.
+An illustration of aggregating similar consignments each time as for own use
+is given below:
+
+Consignee Name of the Frequency Nature of Value of
+TIN consignee goods Commodity
+®)
+32130275782 | New Western Saw 114 times Timber 4,99,70,720
+Mill
+Unregistered | Southern Batteries 4 times Bars - Lead 59,178,739
+Private Limited
+
+Audit extracted the details of transport of bulk quantities of taxable goods such
+as paint, toothpaste, medicines, medical and surgical equipments, cosmetics,
+computer peripherals, batteries, plastic granules etc. by registered dealers and
+found that 399° registered dealers transported bulk quantity or transported
+same goods repeatedly (six times or more in a year) into the state, stating as
+for own use. The total value of such goods comes to ¥ 117.02 crore.
+
+6 Walayar, Wellingdon Island, Aryankavu and Amaravila
+
+Commodity value above हैं Five lakh
+
+23
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Similarly, 1787 unregistered dealers transported goods of value above हैं 10
+lakh into the state for own use. The total value of these comes to % 81.02 crore.
+
+The system should be geared up to gather the details of bulk quantity or
+repeated transactions into the state and generate over a period, a report on the
+type of commodity and type of persons transporting such goods to alert the
+authorities against the misuse of this facility. The system should also have
+been designed to use a risk management system to block/scrutinise such
+consignments before release.
+
+Based on the scrutiny, the system should generate a demand notice for security
+deposit from the dealers/persons misusing this facility.
+
+On this being pointed out, Government stated (April 2014) that the physical
+verification of the consignment with the transporting document is the routine
+function of the checkpost. After verification only genuine consignments
+brought for own use will be permitted to proceed. Government also stated that
+the system data contains token details of both approved and unapproved
+transactions. The data set given to audit would also contain information related
+to unapproved, test tokens. The reply is not acceptable. The Audit observation
+is based on analysis of data relating to approved transactions. The reply itself
+validates the observation as it has been pointed out that the physical
+verification is a routine manual control, with minimal data driven intelligence
+built into the procedure. Each consignment is treated independently. The
+benefit of having computerised information on similar and related transactions
+is not taken care of by the Department.
+
+The system should be redesigned to use such information for preventing
+misuse of the facility.
+
+Release of consignments brought by registered dealers
+without verification of the genuineness of the details entered]
+
+Checkpost Module System (CPMS) Module is an important unit of KVATIS
+in assisting the administration of tax. As the assessing officers had to rely
+heavily on the details of this module for assessment purpose, it is important
+that the data fed into this module is accurate. Audit observed that the system
+accepts any numerical in the value field due to weak validation controls. As a
+result, certain registered dealers had entered irrelevant figures like their TIN
+etc as the value of commodity transported into the state for trading.
+Illustrations of abnormal value entered into the CPMS module are as shown
+below:
+
+7 Commodity value above हैं 10 lakh
+
+24
+
+
+Chapter : II - Checkpost Management System
+
+Sommodity Comm
+value me
+1 321409/2012- | 32101075708 | Energy Papers 59929710019 | Paper, Rolls -
+13/88008 Uncoated
+(Other)
+2. | 321310/2011- | 32080750492 | Gemco Rubber 32080750492 | Carbon Black
+12/75759 Pvt. Ltd
+3. | 320921/2010- | 32070482684 | Geeyem 355700911062371 | Motor Cars
+11/193513 Motors (P) Ltd
+4 | 320924/2010- | 32090900174 | J.M.P Traders 32090900174 | Day Old
+11/10954, Chicks
+5 | 321310/2010- | 32100252794 | KVR 1675261675261 | Motor Cars
+11/87485 Automobiles
+On this being pointed out, Government stated (April 2014) that errors crept
+into the database mainly due to data entry mistakes made by daily wage
+employees who entered the data into the system prior to the introduction of
+the system of e-consignment declaration in January 2010.
+The reply is not acceptable as the data entry errors persisted during 2011-12
+
+and 2012-13, after the introduction of e-declaration indicating absence of
+appropriate input controls. Integrating the data in CPMS module with that of
+the Return Processing Module for validation of data would enhance data
+integrity.
+
+The main duty of the checkpost authorities is physical verification of
+consignment of goods in a vehicle and ensuring the correctness of the details
+entered in the e-declaration or invoices. They issue notices to the transporters
+in case of variation in quantity or commodity. An extraction and analysis of
+the data revealed that out of 1,91,43,413 vehicles with consignments released
+during the period from 1 April 2010 to 31 March 2013 details of physical
+verification were not seen entered in the field records for such verification in
+99 per cent cases. Hence audit could not ensure/ascertain whether the
+consignments were physically verified or not.
+
+The department may equip the system to capture data of physical verification
+using techniques such as hand held devices, x-ray scanners, uploading
+photographs etc. based on process and feasibility study.
+
+On this being pointed out, Government stated (April 2014) that KVATIS is
+facilitated to capture the relevant details. However, due to slow performance
+of the application, at present, it is not practical to operate these modules as it
+would affect the vehicle movement. The recommendation can be incorporated
+once the system is upgraded by replacing the existing servers.
+
+3.9 _ Conclusion|
+
+The checkposts were established to prevent the evasion of tax on interstate
+transport of goods. We found that the CPMS Module fell short of being an
+effective instrument in preventing or detecting tax evasion for the reasons
+stated below:
+
+25
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+. Entering of registration numbers in the e-declaration was not made
+mandatory for generation of token in the case of registered dealers.
+Many consignments with e-declaration were released without insisting
+on Registration number.
+
+e KVATIS has no provision to identify and raise alert on transport of
+consignments using cancelled registration numbers and transport of
+consignments by dealers who had not renewed their registration.
+
+° System is not alerting the authorities concerned, though significant
+proportion of transit passes issued were not surrendered at the exit
+checkposts.
+
+e Large quantity of goods are being transported into and outside the
+State ‘for own use’. These include bulk quantities of medicines,
+surgical equipments etc. The system generates no alert to Checkpost
+authorities on the basis of information in KVATIS relating to the
+frequency and nature of these items brought in by certain dealers.
+
+3.10 Recommendations}
+
+The department may provide adequate controls in the software to
+detect and alert the interstate transactions by cancelled dealers and the
+dealers who have not renewed their registration.
+
+“Entering of valid registration numbers in the field for Consignee
+TIN/Consignor TIN in the e-declaration format for generating e-token
+may be made mandatory.
+
+“System generated alerts needs to be devised for tracking consignment
+
+of goods in bulk quantity to prevent misuse of the facility for
+transporting consignments ‘for own use’ without payment of tax
+
+“The system should be enabled to provide information about the non-
+surrendered transit passes to authorities including the intelligence wing
+of the department so as to track such vehicle.
+
+26
+
+
+Chapter - IV
+Return Processing System
+
+
+ESSING
+
+1 Introduction|
+
+VAT is a self-assessment system, which contemplates that the tax liability is
+calculated and paid by the dealers through periodical returns. Hence, Return
+Processing System should ensure that, all the dealers carrying out business
+have filed periodical returns regularly; the returns filed are in complete shape
+and with all enclosures required; and dealers have shown their tax liability
+correctly and paid them to Government.
+
+Process Automation|
+
+Government incorporated a new provision (2A) to Section 20 of KVAT Act to
+facilitate electronic filing of returns, mandatory for all dealers from 1 April
+2009. In order to facilitate better and simplified services to dealers, the various
+returns to be filed under KVAT Act, CST Act, and KGST Act were integrated
+into a single return and 8,230 commodities were grouped into 361 commodity
+groups. Rule 22(1) and (2) of KVAT Rule, 2005 (Rule) stipulates that every
+dealer should file periodical’ and annual return showing the details of
+transactions effected during the return period. A flow chart of the e-filing
+process of periodical return is shown below:
+
+Dealer login to his HOME PAGE in
+KVATIS
+
+Online entry of Return deta
+(Assessment Year, Return type, Return
+period, data etc.)
+
+Dealer uploads the details of
+purchases/sales invoices
+
+SYSTEM GENERATES
+NET TAX DUE,
+
+RETURN SUBMI
+SUCCESSFULLY
+
+' Returns filed monthly and quarterly
+
+27
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Periodical Return is the return uploaded by the dealer in each month (in some
+cases quarterly) reporting all the transactions effected by him during the
+previous month along with the details of his purchases and sales invoices and
+the e-payment of tax. Annual Return is the consolidated figure of all periodical
+returns generated by the system on the command of the dealer.
+
+In the e-filing system, the dealer can file returns electronically from any place
+at any time through the Internet. Once the returns are submitted by the dealers,
+the assessing authority has to accept the return. The dealer can revise the
+return within two months. The KVATIS provides the platform for the detailed
+effective scrutiny of returns through verification of invoices, checkpost
+declarations, crime files ete.
+
+The Department introduced e-payment of net tax payable in September 2009.
+The system generates an e-challan for the payment of net tax payable, which is
+automatically calculated. The payment is effected through the bank account of
+the dealer, connected with the KVATIS.
+
+KVATIS also provides the facility for downloading the statutory forms
+(prescribed under CST Act, for the claim of concessional rate or exemption)
+needed for the interstate transactions and upload the details of closing stock
+and audited statements in Form 13/13A.
+
+4.3 _ Filing of Returns
+
+As per Section 20 of the Act every registered dealer shall submit to the
+assessing authority such return or returns on or before the date prescribed.
+Further, under Section 22(3) of the Act, if a dealer failed to submit any return
+as provided, the assessing authority shall estimate the turnover of the return
+period and complete the assessment to the best of judgment and a penalty
+under Section 67(1)(c) not exceeding Rupees ten thousand may be imposed on
+him.
+
+The system should have an inbuilt input control mechanism to give alert to the
+assessing authority on the non-filing of returns, so that the assessing officer
+could complete the best judgment assessment effectively.
+
+Audit extracted the number of dealers who have not submitted the periodical
+returns and annual return during the period 2009-10 to 2011-12 and found that
+75,758 dealers failed to submit returns. Non-mapping of the business rule and
+absence of a system to generate a demand notice for penalty for non-filing of
+returns restricted the system in imposing penalty.
+
+On this being pointed out, Government stated (April 2014) that in the e-filing
+scenario, no separate annual return is to be filed by the dealers. Moreover, it
+was stated that, they had verified the cases and the number of defaulters comes
+to 13,677 only as against 75,758 pointed out by audit as there were many
+dealers who may have commenced business in the middle of the year. The
+Department stated that remedial action will be taken by the assessing
+authorities.
+
+The reply of the Department that no separate annual return need to be filed by
+the dealer is incorrect as the same is mandatory under Rule 22(2) of KVAT
+
+28
+
+
+Chapter : IV — Return Processing System
+
+Rules. Further, non-levy of penalty on return defaulters as verified by the
+Government, works out to = 13.68 crore”.
+
+During the Exit conference (April 2014), the Secretary, Taxes Department
+assured that, necessary steps would be taken to ensure that the business rules
+are properly mapped in the system to prevent such deficiencies.
+
+Scrutiny of Returns}
+
+It is the primary duty of the assessing officers to scrutinise the returns filed by
+the dealers and to ensure that the receipt due to Government are correctly and
+properly assessed, realised and credited to government account. Under
+Section 22 of the KVAT Act, assessing authority has to issue notices in cases
+of non-filing/defective filing of self assessment returns and complete the
+assessments in deserving cases.
+
+Return scrutiny is an important function in the administration of VAT and a
+provision was incorporated in the KVATIS for the detailed scrutiny of returns
+filed. Audit extracted and analysed the details of online scrutiny of periodical/
+annual returns by assessing officers and the percentage of scrutiny done are
+shown in the chart given below:
+
+renee “ALL SCRUTINY OF RETURNS
+1800000 17.62.861
+15,57,788 STA —_
+1600000 16 01
+1400000
+1200000
+1000000
+800000
+600000
+00006 4.17,623
+हु. 702
+जा 1.95,911
+200000
+26.81 7.61 Wl
+0 T T 1
+2011-12
+@No. of periodical retumns scrutinised
+= Percentage in scrutiny of periodical retury
+
+On this being pointed out, Government stated (April 2014) that, even though
+the scrutiny status is provisioned in KVATIS, the officers were not mandated
+to record the scrutiny status due to slow performance of the system. Further, it
+was stated that, the actual per cent of scrutiny can be known from monthly
+diary of Assessing Officers and that steps are being undertaken to upload the
+diaries of assessing authorities so that the Department can review the
+assessments made by them through KVATIS.
+
+2. 13,677 cases &) ₹ 10,000
+
+29
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+The reply depicts constraints in incorporating controls due to insufficient
+server capacity. Further, there exist no inbuilt controls in the system to assist
+the assessing officers to identify high risk transactions for assessment.
+
+Short fixation of compounded tax for Gold dealers}
+
+Section 8(f)(v) of the Act provides that where a dealer in Gold had paid
+compounded tax? for the previous year, the compounded tax payable for the
+year 2011-12 shall be at the rate mentioned in item (i) below“ the said clause
+or at the rate of 1.25 per cent of the turnover of the sales of the goods covered
+under the said clause for the previous year, whichever is higher.
+
+Non-mapping of business rules and lack of process control in the system to
+automatically calculate the compounded tax of a dealer based on his previous
+years return had resulted in remittance of compounded tax less than due.
+
+Analysis of the electronic data revealed that due to the above, compounded tax
+amounting to हैं 5.08 crore was short collected in 10 assessment files and that
+self assessments were not reopened in any of the cases. Illustrative cases
+noticed are given below:
+
+Compounded | Compounded
+previous year’s tax fixed tax short fixed
+
+turnover
+@ @) iss)
+32010177712 2011-12 1,93,74,053 1,52,10,336 41,63,717
+32150890664 2011-12 23,38,725 10,45,125 12,93,600
+
+Penalty under Section 67 should also have been imposed. Maximum penalty
+leviable would work out to € 8.61 crore.
+
+On this being pointed out, Government stated (April 2014) that the dealers can
+file compounding option online and the assessing authority can upload the
+orders issued in KVATIS. The dealer can file 10D return entering the tax due
+and at the end of the financial year if more tax is to be paid on the turnover, he
+can make manual payment on the order of the assessing authority. The short
+levy arrived at by audit without physical verification of assessment records is
+not correct and sustainable.
+
+The reply is not correct. As per Departmental instruction physical payment is
+not allowed from 2011-12. Payment could be made only electronically.
+Further, on verification (May 2014) of the returns filed, Audit found that no
+additional payment of tax have been made in any of the above cases.
+
+Government assured that, necessary steps would be taken to ensure that the
+business rules are properly mapped into the system to prevent such
+deficiencies.
+
+3. To attract more dealers dealing with Gold, Works Contractor ete into the tax net, they are
+
+permitted to pay tax at a specified rate instead of paying tax under Schedule rate.
+Turnover for the previous year (a) below 210 lakh — same as tax paid in previous year,
+(b) ₹ 10 lakh to हैं 40 lakh - 105 per cent of tax paid in the previous year,
+(०) above & 40 lakh to € one crore — 115 per cent,
+(d) above हैं जाल crore - 125 per cent
+
+30
+
+
+Chapter : IV — Return Processing System
+
+4.6 _Accoun Purchases|
+
+VAT is charged on the value addition on the purchase of a dealer. Accounting
+of purchases, so as to avail Input Tax Credit (ITC), is one of the important
+information to be included in the returns filed.
+
+As per Section 24(1)(a) of the Act, if it is found during the scrutiny of books
+of accounts that the dealer had submitted incorrect return, his return shall be
+rejected and the assessment to be completed on “best of judgment”. Audit
+observed that while reporting the local purchases, certain dealers claimed
+ineligible ITC and thereby reduced their tax liability. Instances noticed are
+discussed below:
+
+4.6.1 Discrepancies in reporting of purchases
+
+Audit observed that out of the 40,981, 40,006 and 39,573 dealers who filed
+audit certificate along with their annual return, in 7,293, 7,425 and 7,271
+cases, purchase disclosed in the Statement of Particulars (Form 13 A) was less
+than that declared in the annual return during the year 2009-10, 2010-11 and
+2011-12 respectively. The system had no input validation to match the
+purchase data declared through return and through Form 13A. This had the
+risk of dealers boosting their purchase in the return to avail excess ITC on
+local purchase or to issue C/F Form on non-existent interstate purchase/ stock
+transfer or for reporting a lower purchase in the accounts to suppress sales.
+Lack of control in the system to integrate the data in the return filed with that
+of the figures uploaded in Form 13A could result in short payment of tax.
+
+Audit compared the details of assessments completed and found that the self
+assessments were not reopened in 1,902 assessments in respect of 1,283
+dealers whose purchase figures did not match. Short-remittance of tax on this
+account could not be ascertained in audit as the details of opening stock,
+closing stock, purchases and sales available in the system were not integrated.
+
+On this being pointed out, Government stated (April 2014) that cross
+verification of the value by the system is very difficult in the present situation
+due to slow performance of the system and that the tax impact can be arrived
+at only after verifying the opening stock, purchases and closing stock
+manually by the assessing officers while completing assessments.
+
+The reply is not acceptable as the details of opening stock, closing stock,
+purchases, sales etc are available in the system. The requirement is only to
+integrate the data. This reiterates the need for the automated validation
+checks.
+
+Government in the exit conference assured that, steps would be taken to
+incorporate necessary controls into the system to prevent such deficiencies.
+
+dealers for purchases fi
+x under Section 6 of
+
+As per Section 11(5) of KVAT Act, no ITC shall be allowed for the purchases
+effected from a registered dealer who is not liable to pay tax under Section 6
+of KVAT Act.
+
+31
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Necessary validation and process control checks needs to be provided in the
+system to identify the status of the selling dealers from whom the taxable
+purchases were effected and reject the claim of ITC paid on purchases from
+dealers who are not liable to pay tax under the Act. Audit observed that due to
+lack of adequate controls, in 21 assessment files of 18 assessment circles, 19
+dealers claimed ITC for the purchases effected from registered dealers who are
+not liable to pay tax under Section 6 of KVAT Act, and that their self
+assessments were not reopened. The short-levy of tax including interest
+worked out to % 0.98 crore in the mentioned cases. The maximum penalty
+under Section 67 leviable on those cases would work out to € 1.46 crore.
+
+On this being pointed out, Government stated (April 2014) that during return
+scrutiny such irregularities would be verified by the assessing authorities and
+assessments completed by creating additional demand. It was also stated that
+it is impossible to cross check the TIN furnished using existing server
+capacity. Once the system is upgraded by replacing the server, linkage could
+be provided to cross check the TIN.
+
+6.2.2 Availing of ITC by dealers for the purchases of
+coming under the purview of Capital
+
+As per Section 11(2) of the KVAT Act, ITC on capital goods shall be allowed
+to a registered dealer from the date from which the capital goods are put to
+use. Section 2(x) defines Capital Goods and SRO No.324/2005 excludes
+certain capital goods®, from the purview of the definition.
+
+‘Non mapping of the above business rules into the system resulted in dealers
+availing ITC for the purchases of goods not coming under the purview of
+capital goods such as, air conditioners, building materials etc.
+
+Excess ITC claimed including interest by 31 dealers in 43 assessment files
+worked out to हैं 1.64 crore. The maximum penalty under Section 67 leviable
+on them worked out to € 2.45 crore. Two illustrative cases are given below:
+
+(₹ in crore)
+
+Goods description Purchase
+value
+32151208509 | Air Conditioners And Coolers 2010 0.27 0.03
+32151044158 | Cement / White Cement 2009 0.12 0.02
+
+On this being pointed out, Government stated (April 2014) that while
+disposing the application in Form 25B the assessing authority would verify the
+eligibility of the claim and such verification is a manual process. Further, it
+was stated that as per notification, all kinds of Cranes, Earthmovers and
+similar machines used in connection with the supply of labour and services
+alone were coming under negative list.
+
+The reply is not correct since the notification infer alia includes Air
+Conditioners, Building materials and Fixtures used in construction activities
+and the system allows to avail ITC on the purchases made for goods coming
+under the negative list.
+
+Air conditioners, civil structure, vehicles other than delivery vehicles, office furniture
+
+elevators, all kinds of cranes, earth movers, excavators, building materials etc.
+
+32
+
+
+Chapter : IV — Return Processing System
+
+Audit cross verified (May 2014) 10 cases out of the above 43 cases with
+respect to the details available in KVATIS and found that in all the cases the
+dealers effected purchases of capital goods falling under the negative list.
+
+Government assured in the exit conference that the business rules would
+properly be mapped in the system enabling it to reject the claim of ITC on
+capital goods coming under the negative list.
+
+ITC is available for any registered dealer for the tax paid on the purchases
+made by him and no ITC shall be available for any amount illegally collected
+by way of tax as specified in Section 30(3)(a) of the Act.
+
+Lack of necessary validation and process control in the system, to calculate the
+actual ITC eligible on the purchase as per the invoices uploaded and to detect
+and block any excess claim of ITC had resulted in dealers availing excess ITC
+than eligible.
+
+Audit observed that in respect of 485 assessments files of 404 dealers , tax
+and interest to the tune of % 43.37 crore was short paid by availing ITC in
+excess than the tax actually due or paid by them. The maximum penalty
+under Section 67 to be imposed on these cases would work out to हैं 66.03
+crore.
+
+Two illustrative cases noticed are shown below:
+
+Taxpaid®  Taxdue ITC ITC
+
+om on eligible claimed
+
+purchases purchase claimed
+32030583164 | 2010-11 | 14.40 179 1.67 1.67 1.79 0.12
+32050817032 | 2011-12 51.27 2.06 2.05 2.05 2.06 0.02
+
+On this being pointed out, Government stated (April 2014) that the automated
+control will adversely affect the system performance and hence the scrutiny is
+being done manually which is effective also. During scrutiny of returns the
+assessing authorities would find out such irregularities manually and complete
+the assessments. There is no loss of revenue as alleged by Audit.
+
+The reply is not correct since the short levy pointed out in Audit resulted due
+to lack of process control in the system to calculate the actual ITC due. Audit
+verified (May 2014) 31 cases with respect to the details available in KVATIS
+and found that in all the cases the dealers availed ITC more than what was
+actually due to them. Short-remittance of tax on these cases comes to हैं 3.36
+crore. These cases do not figure in the list of cases for which additional
+demand is created. It is recommended that the system be upgraded to achieve
+effective automated control. Moreover, Government had assured in the exit
+conference that necessary changes would be incorporated once the system is
+upgraded, replacing the existing servers.
+
+Excess tax paid is the tax illegally collected by his seller than the actual tax due on that
+commodity.
+
+33
+
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+Proviso third below Section 11(3) of the Act provides that where any goods
+purchased in the State are subsequently sent outside the State or used in the
+manufacture of goods and the same are sent outside the State otherwise than
+by way of sale in the course of interstate trade or export or where the sale in
+the course of interstate trade is exempted from tax, ITC under this Section
+shall be limited to the amount of input tax paid in excess of four per cent on
+the purchase turnover of such goods sent outside the State.
+
+Non mapping of such business rules coupled with lack of necessary controls in
+the system to trace the interstate stock transfer of goods to which ITC was
+claimed and to reverse the ITC in the next return automatically resulted in
+non-reversal of ITC by dealers who sent goods to outside the state otherwise
+than by way of sale.
+
+Audit noted that self assessments were not reopened in respect of 278
+assessments files on which tax including interest of 30.21 crore was short
+paid due to non reversing of ITC claimed on goods sent outside the state other
+than by way of sale.
+
+The maximum penalty under Section 67 to be imposed on 174 dealers in 278
+files worked out to हैं 46.83 crore. Two illustrative cases are shown below:
+
+Year Taxpaid —Percentageof_ ‘ITC tobe ITC
+uptofour interstate stock — reversed —_reversed
+percent _ transfer to total
+sale @ in crore)
+32080204326 | 2009-10 | 0.96 | 97 03 | 0 |
+32070336232 | 2011-12 14.96 2 0.29 0.01
+
+On this being pointed out, Government stated (April 2014) that the verification
+for disallowance of ITC on goods purchased locally and sent outside the state
+as stock transfer or used in the manufacture of goods coming under first
+schedule required application of human intelligence and verification of
+physical records.
+
+The reply of the Government is not acceptable. Since all the data is available
+in the system, the system can do all the verification and calculations if proper
+control were built in it. Moreover, audit verified (May 2014) the 20 cases
+thrown up by the system for verification with physical records and found that
+short-reversal of ITC of € 12.79 crore exist in all these cases.
+
+Government assured that the observation would be taken care of once the
+system is upgraded, replacing the existing servers. Further report has not been
+received.
+
+34
+
+
+Chapter : IV — Return Processing System
+
+4.7 _ Accounting of Sales|
+
+4.7.1_Accounted sales escaped self assessmen'
+
+Section 42 of the Act stipulates that every dealer whose total turnover in a year
+exceeds हैं 40 lakh/% 60 lakh’ shall get his accounts audited annually by a
+Chartered Accountant and shall submit copy of it in the manner prescribed.
+Further, Rule 22(1) and (2) stipulates that every dealer shall file periodical and
+annual return showing the details of transactions during the return period.
+
+Section 24(1)(a) of the Act, stipulates rejection of the return, if there is
+discrepancy between the return filed and audited accounts and to complete the
+assessment to the “best of judgement”. As per Section 42(2), the dealer is
+liable to pay any additional tax with reference to the audited figures.
+
+Since audited statement is a key control instituted by the statute to ensure
+correctness of sales/purchase turnover declared by the dealers, the system
+should have necessary in-built controls to cross verify the annual return filed
+with the audited statement of accounts uploaded. Necessary controls also need
+to be built into the system to accept only Form 13A duly authorised by the
+Chartered Accountant. The system should also generate a demand if there is
+any increase in the tax liability of a dealer.
+
+Audit extracted data and analysed the details of 40,981, 40,006 and 39,573
+dealers who filed Form 13A along with their annual return during the years
+2009-10, 2010-11 and 2011-12 respectively and found short reporting of
+accounted sales in 2,303 assessment files due to lack of inbuilt control in the
+system to match the figures in the return with that in Form No.13A. The
+resultant short levy worked out to हैं 783.78 crore. The maximum penalty
+under Section 67 to be imposed on 2,303 cases would work out to हैं 1,113
+crore. Two illustrative cases noticed are as shown below:
+
+% in crore)
+Assessment Sales Sales Turnover Short levy
+year turnover turnover escaped of tax
+accounted | returned assessment
+32010667312 2011-12 390.14 195.31 194.83 7.90
+32070329842 | 2010-11 355.36 344.89 10.47 0.47
+
+The Government stated (April 2014) in reply that though the suggestion of
+embedding this control in the system is welcomed, there would be practical
+difficulty to implement the recommendation due to the slow performance of
+the existing servers. Both annual returns and audit statements are filed online
+and is made available to the assessing officers while conducting scrutiny. The
+assessing officers will cross check the values furnished as per returns and as
+per audit statements and send defect notices to the concerned dealers and take
+remedial action. Government assured that the recommendation for inbuilt
+controls would be incorporated once the system is upgraded, replacing the
+existing servers.
+
+Audit verified (May 2014) 52 cases out of the 2,303 cases with respect to the
+details available in KVATIS and found that in all the cases the dealers failed
+
+7 The turnover limit for filing Audit Report has been increased from हैं 40 lakh to हैं 60 lakh
+
+from 2010-11 vide Finance Act 2010.
+
+35
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+to report the actual sale accounted in their certified annual accounts. This was
+not detected by the assessing officers. Thus the claim of the department is not
+correct. The short-remittance of tax in these 52 cases comes to % 41.84 crore.
+Department/Government may take effective action to ascertain the cases of
+short-remittance in the remaining cases.
+
+The adequacy of the manual control as stated in the reply is evidently
+ineffective, given the coverage of the control and the possibility of human
+
+errors.
+
+Registered dealers upload the details of their interstate sales and stock transfer
+(out) of goods before the consignment reaches the checkposts. When the
+consignments are released from checkpost, the details of consignments
+transported as approved by the checkpost authorities are linked to the Return
+Processing Module through KVATIS. Audit found that 1,165* dealers had
+transported out goods worth % 5,516.32 crore as interstate sale, interstate stock
+transfer (out) and consignment stock transfer (out) through various checkposts.
+However, the total value of interstate transaction (out) reported was only
+& 2,737.12 crore (49.62 per cent).
+
+Lack of process control in the system to integrate the interstate sales captured
+in the checkpost module with the interstate sales of the dealer in the Return
+Processing Module resulted in short reporting/non-reporting of interstate sales.
+Analysis of electronic data revealed that in 1,345 assessment files, interstate
+transaction (out) amounting to हैं 2,779.20 crore escaped from assessment
+resulting in short levy of tax and interest of € 189.88 crore. The maximum
+penalty under Section 67 to be imposed would work out to हैं 310.77 crore.
+Two illustrative cases are given below:
+
+Year Value of goods __ Interstate sale | Interstate sale
+reported at returned short reported
+checkposts
+@) @) @)
+32021102542 | 2011-12 3,20,66,845 | 2,95,13,300 25,53,545 | 1,03,163
+32080829332 | 2011-12 4,64,47,810 99,97,785 3,64,50,025 |16,26,540
+
+On this being pointed, Government (April 2014) stated that the cross
+validations for the value of goods reported at the checkposts to the interstate
+sales turnover declared in the return filed is practically difficult since the
+volume of transactional invoices through checkposts to be consolidated are
+very high to arrive at the interstate sales turnover. This is impossible using the
+existing server capacity. Further, it was assured that once the system is
+upgraded by replacing the existing servers the audit recommendations can be
+incorporated.
+
+4.7.3 Excess deduction 0: in re: of sales return|
+
+As per Section 41(1) read with Rule 9 and 59, if any taxable goods sold have
+been returned by the purchaser, the dealer effecting the sale shall issue to such
+
+* पु liability of goods transported (out) above Rupees one lakh only is taken.
+
+36
+
+
+Chapter : IV — Return Processing System
+
+purchaser a credit note in Form No.9°. Further Rule 59 provides that credit
+note claim shall be supported by debit notes issued by the purchaser in Form
+No.9.
+
+Audit compared the output tax deducted by the sellers through credit notes
+issued by them and ITC reversed by purchaser through their debit notes for the
+years 2010-11, 2011-12 and 2012-13 and found a significant mismatch with a
+probable revenue impact.
+
+2010-11 42,09,30,775 15,81,29,502
+2011-12 50,13,91,709 20,56,45,832
+2012-13 15,59,43,284 6,16,20,273
+
+It was observed that there are no fields in the system to capture the essential
+details such as, Seller/ Purchaser TIN, the invoice number and date, the date of
+return of the goods, tax amount, ete., in Form No.9. In the absence of such
+fields, it is not possible to detect from whom the goods are received back,
+whether the goods received back are within the time limit fixed, whether
+corresponding debit notes are issued for all credit notes, etc. These details are
+all mandatory requirements for allowing deduction of output tax (OPT) for
+sales return. Non mapping of the requisite business rules into the system leave
+a significant risk of revenue loss.
+
+Similar case was pointed out in Paragraph 2.16.1 (Item 5 of Table) in Audit
+Report 2013.
+
+Government stated (April 2014) that the system of verification of above
+aspects are done manually by the assessing officers while scrutiny of returns.
+The officers had already taken remedial measures in the cases where
+irregularities were noticed. It was further stated that specific cases had not
+been pointed out in the observation. The statistics of scrutiny of returns and
+additional demands raised by the Department was shared to show that
+remedial measures had already been taken and there may not be any revenue
+loss as alleged by audit.
+
+The reply is not acceptable since the statistical data furnished by the
+Department was not relevant to the points raised by Audit. Better data capture
+will only obviate the need for manual control, and improve effectiveness of
+tax administration. In absence of the details as pointed out in the observation,
+it was not possible to draw conclusions on individual cases. Moreover, during
+exit conference, the Department assured that filing of credit note and debit
+note would be made online and necessary controls would be put into the
+system to check the tax credit taken for sales return by integrating the details
+of credit and debit notes. Further report has not been received.
+
+° Form No.9- The form stipulated for filing both credit note by seller and debit note by
+
+purchaser.
+
+37
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+4.7.4 Failure to remit the collected tax]
+
+4.7.4.1 Failure to pay the collected tax as reported by the dealer
+hrough the details of his sales invoices}
+
+As per Rule 41(1) of KVAT Rules 2005, where a registered dealer collects tax
+under Section 30, he shall pay it over to Government and as per sub Rule 2 to
+Rule 41(1), if the assessing officer is satisfied that any amount collected by
+way of tax have not been paid by the dealer to the Government, he shall issue
+notice to the dealer specifying the amount withheld by him and the dealer shall
+pay such sum within the time prescribed along with interest.
+
+The system should be designed in such a way that it had necessary controls to
+cross verify the periodic returns of the dealers with the details of sales invoices
+uploaded by dealer to ensure that the entire amount collected by way of tax,
+after adjusting the eligible ITC, was paid to the Government. Audit cross
+checked the details of sales invoices uploaded by the dealers with their returns
+filed and cases were noticed that dealers withheld a portion of the amount
+collected by them, by way of tax without remitting it to the Government.
+Illustrative examples are given below:
+
+32010125354 5,27,19,481 5,23,95,981 3,23,500
+
+32081490808 32,94,031 29,04,125 3,89,906
+
+Audit noted that the self assessments were not reopened in respect of 2,480
+assessments files on which tax to the tune of 632.59 crore was short remitted
+by dealers withholding the tax collected through their invoices. The maximum
+penalty under Section 67 leviable in these cases would work out to हैं 1,082.55
+crore. On this being pointed out, Government stated (April 2014) that the
+incorporation of necessary controls to check the returns of the dealers with the
+details of the sales invoices uploaded by dealer to ensure that the entire
+amount collected by way of tax after adjusting the eligible ITC was paid to the
+Government involves high volume of data. It is impossible to incorporate the
+suggestion in real time using the existing server capacity as the system would
+get choked and would become inaccessible for availing e-services.
+Government assured that the observation would be taken care of once the
+system is upgraded, replacing the existing servers.
+
+Audit test checked (April 2014) 31 cases and found that in 17 cases invalid
+data was recorded in the column concerned. In the remaining 14 cases there
+was actual short remittance of tax collected which amounted to % 39.23 crore.
+Department/Government may take effective action to ascertain the cases of
+short remittance in the remaining cases and collect the balance tax due in all
+cases.
+
+38
+
+
+Chapter : IV — Return Processing System
+
+4.7.4.2 Failure to pay the collected tax by the dealers as reported in|
+
+Audit compared the details of purchase invoices uploaded by the purchasing
+dealers with the returns filed by the selling dealers and found that 8,746 7
+selling dealers in 12,574 assessment files withheld a portion of the amount
+collected by them by way of tax from the persons who purchased goods
+without paying it to the Government. Lack of process controls in the system to
+detect collected tax details uploaded by the purchasing dealers and it’s cross
+check with the return filed by the selling dealer enabled the selling dealer to
+withhold a portion of the collected tax without remittance to Government. In
+such cases the system should generate a demand notice for any shortfall in the
+payment of collected tax
+
+Audit noted that self assessments were not reopened in respect of 12,102
+assessments files on which tax to the tune of € 959.45 crore was short remitted
+by dealers withholding the tax collected as per their purchaser’s invoices. The
+maximum penalty under Section 67 to be imposed on 12,102 files would work
+out to € 1,650.31 crore. Two illustrative cases are given below:
+
+TIN of the No of Tax collected Corresponding Collected Tax paid Collected
+seller purchasing by seller as VAT collected tax short without tax
+dealers from per the as per seller reported uploading withheld
+whom 7 invoices by seller invoicesby _ by the
+collected tax seller dealer
+withheld ® ® ® ®
+32070314384 31 11,32,981 7,712,556 3,60,425 35,172 | 3,25,252
+32070455144 | 12 47,73,945_[_ 35.37162 [| 12,36,84 | 9,80,389 | 2,56,395
+
+On this being pointed out, the Government stated (April 2014) that the volume
+of invoices to be uploaded being very high it is impossible to incorporate it
+using the existing server capacity. The cross verification of purchase and sale
+invoices could be done by the assessing officers manually. Once the system is
+upgraded the above details could be incorporated.
+
+Accounting of stock and its corresponding sales has a direct bearing on the
+payment of tax, the system should be designed in such a way that the opening
+stock of a year should be automatically generated from the closing stock of the
+previous year rather than giving an option to input the values of opening stock
+by the dealer.
+
+Audit extracted data of the ‘accounted stock’ from the statement of particulars
+filed in Form 13A for the years 2009-10, 2010-11 and 2011-12 and found that
+517 dealers in 2010-11 and 465 dealers in 2011-12 accounted lesser opening
+stock than their accounted closing stock of the previous year. Out of these
+cases the short accounting of stock by 223 dealers, who had tax liability of
+over % one lakh was to the tune of % 654.37 crore.
+
+Tax evaded by these 223 dealers in 225 assessment files including interest
+worked out to 47.53 crore. The maximum penalty under Section 67 leviable
+
+10. Amount withheld more than Rupees one lakh is taken.
+
+39
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+on them would work out to हैं 76.56 crore. Two illustrative cases are given
+below:
+
+Opening stock current | Closing stock previous Stock difference
+
+year year ®
+(₹) @)
+
+32030463407 7,368,398 73,368,398 66,000,000
+
+32071308535 | 97,251,571 [ 54,823,755 [42,427,816
+
+On this being pointed out, Government stated (April 2014) that the cross
+verification of opening stock with the closing stock of the preceding year has
+been facilitated to the assessing officer during scrutiny of return manually.
+During this verification if any irregularities are reported they proceed to “best
+judgment assessment”'!. All the assessment files where audit reports have
+been filed may have been physically subjected to audit by the assessing
+officers. Hence, the loss of revenue arrived at by the Audit without verification
+of physical records is not sustainable. The reply is not acceptable. We
+collected the details of all assessments completed during the audit period and
+found that best judgment assessments were done only in less than five
+percentage of files to which we found discrepancies. Hence the claim of 100
+per cent scrutiny is not acceptable
+
+Audit verified (April 2014) 14 cases out of the 225 cases where dealer had
+filed audit report. There was mismatch found between opening stock and
+closing stock values. Audit found that in seven cases the value recorded in the
+column concerned was invalid. In the remaining seven cases actual short levy
+including interest amounted to हैं 12.13 crore. Department may take necessary
+action to verify remaining 213 cases pointed out and take effective action to
+make good the short levy.
+
+Scrutiny of Returns of Presum
+
+4.9.1 __Non-demand of schedule rate of tax from Presumptive tax
+
+dealers who imported goods into the State
+
+As per Section 6(5), a registered dealer who is not an importer’? or other
+dealers specified therein and whose turnover is below हैं 50 lakh/® 60 lakh may
+pay at his option tax at the rate of half per cent of the turnover of sale of
+taxable goods as presumptive tax instead of paying tax under Section 6(1)"°.
+
+Necessary input control should have been made in the system where a
+presumptive dealer effects any interstate transaction, the system should
+recalculate the tax due on the turnover of sale as if the sale was effected by a
+regular tax payer. Audit found that 369 presumptive dealers had transported
+goods from outside the State through various checkposts. Lack of proper
+validation controls and checks in the system resulted in 369 dealers in 430
+assessment files paying presumptive tax instead of at the schedule rate. Short
+levy of tax including interest in this regard works out to हैं 24.81 crore'*.
+
+Assessment completed under Section 22 (3) of the Act by reopening of self assessments in
+case of defective filing of return
+Person who obtains or brings goods from any place outside the State or country
+The liability to pay tax and the rate of tax are derived from Section 6(1) of Act
+Tax liability of more than Rupees one lakh
+
+40
+
+
+Chapter : IV — Return Processing System
+
+The maximum penalty under Section 67 leviable on them would work out to
+₹ 42.52 crore.
+
+On this being pointed out, Government stated (April 2014) that the status of
+the dealer can be verified at the checkpost through KVATIS and if it is found
+that the consignment into the state by PIN dealers checkpost officials may
+collect security deposit for the release of vehicle, the details of which can be
+ascertained from the manual registers maintained at the checkposts. Further,
+it was stated that the value of goods transported from outside the state by the
+presumptive dealers was meagre and there is no restriction in the statute for a
+presumptive dealer to transport goods for own use by paying CST.
+
+The reply is not acceptable since it is not relevant to the points raised by
+Audit. Audit extracted data from interstate transaction of trading goods and
+not from goods meant for own use and the statute clearly mentions that an
+importer, irrespective of the value of goods imported, is not permitted to pay
+tax at presumptive rate.
+
+Audit verified (May 2014) 22 assessment files with respect to the returns and
+checkpost transactions and found that all these presumptive dealers effected
+interstate purchase. Short remittance of tax by these dealers worked out to
+% 6.03 crore. Hence, necessary validation should be made into the system to
+change automatically the presumptive status of the dealer and demand tax at
+schedule rate.
+
+4.9.2
+
+Non-demand of schedule rate of tax from Presumptive tax!
+dealers whose turnover crossed the threshold limit in the
+
+As per the third proviso below Section 6(5) of KVAT Act, a dealer shall not
+be eligible to opt for payment of presumptive tax if his total turnover had
+exceeded the threshold limit during the year preceding the year to which such
+option relates. Further, Rule 18 (31) stipulates that a presumptive dealer who
+is likely to become ineligible for the payment of tax under that Section shall
+intimate the fact to the registering/assessing authority at least thirty days prior
+to the date from which he expects to so become ineligible and he shall be
+liable for payment of tax under Section 6(1) or (2) from the date on which he
+has become ineligible. Audit found that 48 dealers in 37 assessment circles
+continued to pay presumptive tax though their total turnover crossed the limit
+specified in the Act.
+
+Non-mapping of business Rules into the system to change automatically the
+status when the turnover of the dealer for the previous year crossed the
+threshold limit’? had resulted in 48 dealers in 56 assessment files short paid
+tax including interest of हैं 3.20 crore. Since the dealers, who are liable to
+switch over to regular tax payer status as and when their turnover crossed the
+threshold limit, paid tax at presumptive rate even after their turnover crossed
+the limit, penalty of € 5.43 crore was leviable under Section 67.
+
+On this being pointed out, Government stated (April 2014) that the data
+mining team of the department had already listed out the cases of presumptive
+
+5. Threshold limit- हैं 50 lakh total turnover up to 2010-11 and thereafter € 60 lakh
+
+41
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+dealers crossing the threshold limit and forwarded to the respective assessing
+officers for remedial action. Based on the report the assessing authorities had
+already taken necessary steps to convert the PIN to TIN. Verification result of
+one of the cases pointed out indicated that the levy and conversion of status
+was applied correctly. It further stated that the short levy worked out had no
+basis and the audit is not sustainable.
+
+The reply is not acceptable. The departmental reply relates to crossing of
+threshold limit in the current assessment year whereas Audit objection relates
+to turnover crossing threshold limit in the previous year. Audit verified (April
+2014) 12 cases and found that in the above cases though turnover of the
+previous year crossed the threshold limit PIN was not converted to TIN. The
+tax effect involved in these cases amounted to हैं 1.23 crore and maximum
+penalty leviable amounted to हैं 2.08 crore. Department may verify the physical
+records in respect of the remaining cases.
+
+4.10 Conclusion
+
+e Audit observed that the Return Processing System Module developed
+for automation of the manual procedures in filing of returns and
+scrutiny of returns is not fully effective due to the following:
+
+> The business Rules regarding the filing and scrutiny of returns
+were not properly mapped into the system.
+
+> Lack of proper input and process controls in the system to
+detect and rectify all possible tax evasion.
+
+> The validation checks and cross linking of each modules inbuilt
+in the system is not adequate for the effective administration of
+tax.
+
+> The data available in various modules were not utilised by the
+Assessing Officers for effective tax administration.
+
+e Though the system provides a platform for detailed scrutiny of returns,
+the low percentage of scrutiny of returns filed by the dealers through
+KVATIS shows that the departmental officers are not giving adequate
+attention/priority to scrutinize the returns filed.
+
+Thus, due to the above shortcomings, the benefit of Return processing system
+module, such as, online processing of data available, scrutiny of returns
+through cross verification of invoices, generation of various demand notices,
+generation of return defaulters etc rendered unutilised.
+
+-11__Recommendations|
+
+“ Department may ensure that all business Rules are mapped to the
+system properly, that the system provide all necessary input and that
+there exists adequate process controls and validation checks to detect
+shortfalls in payment of tax.
+
++ Government may consider strengthening KVATIS for monitoring the
+scrutiny of returns through it.
+
+42
+
+
+Chapter : IV — Return Processing System
+
+%
+
+The Department may incorporate a provision in the KVATIS to ensure
+that the closing stock shown in the certified accounts in Form 13-A of
+a year is correctly taken as the opening stock of the succeeding year.
+
+Proper controls be built into the system so that the system can
+scrutinise returns collecting details from different databases.
+Department/Government may initiate early action for the upgradation
+of the present server which would be cost effective in terms of
+improvement of revenue realisation it would fetch.
+
+43
+
+
+Chapter - V
+Other Important Points
+
+
+Audit observed that some modules viz. Dealer audit assessment system,
+Refund system, Arrear recovery system, Penalty and offence system, Appeal
+and Revision system which are important for effective tax administration are
+not made functional. The deficiencies due to non utilisation of the said
+modules are discussed below.
+
+5.1.1 Audi
+
+essment Module}
+
+In the VAT scenario the conventional system of assessments has been
+replaced by self assessment, which is a voluntary compliance system. Thus the
+correctness of the self assessment depends up on the integrity of the dealers. In
+the white paper prepared for formulating State level VAT, the Empowered
+Committee’ has stressed the necessity of an independent assessment wing
+other than the tax collection wing for the detailed audit on the basis of risk
+analysis. Sections 23 and 24 of the KVAT Act, empowered the department for
+such detailed audit assessment.
+
+An audit assessment wing which functioned for such assessment was
+abolished in 2009 and the detailed assessments were entrusted with the
+officers conducting regular scrutiny and best judgment assessments. KVATIS
+had an audit assessment module with various parameters to identify the high
+risk dealers. But the Department had not utilised this Module due to abolition
+of the audit assessment wing.
+
+The audit recommends that the audit assessment Module be made operational
+with suitable modifications in such a way that high risk dealers are
+selected on the basis of specific parameters through KVATIS that can be
+monitored by Inspecting Assistant Commissioners/Deputy Commissioners/
+higher authorities.
+
+5.1.2 Refund System Module}
+
+As per proviso below Section 11(6), the dealer is eligible to get refund of the
+excess input tax remained unadjusted at the end of the year. Since refund is the
+pay back of the excess tax paid to the government, the refund under VAT is a
+potential risk area. The Refund Module developed for the automation of
+procedures involved in the refund process especially for cross verification of
+transactions could not be put to use so far.
+
+5.1.3 Arrear Recovery System Module]
+
+The Arrear Recovery System Module was developed for helping the officers
+in watching the various process involved in realisation of huge amount of
+arrears such as revenue recovery, vacation of stay, preparation of second
+appeals etc,. Non utilisation of the Module resulted in accumulation of arrears
+without proper follow up action. With the operationalisation of the module the
+
+' A Committee formed (17 July 2000) by the Government of India consisting of Finance
+
+Ministers from all States for implementation of VAT
+
+45
+
+
+Report on Effectiveness of KVATIS in the Tax Administration of Commercial Taxes
+Department
+
+assessing/higher authorities can monitor the arrear recovery mechanism
+effectively.
+
+Oth
+
+Other modules like Appeal and Revision System for the use of appellate wing,
+Penalty and Offences System to capture the details of nature of the penalty
+levied and Employee performance system Module were also not operational
+and the continuation of manual procedures in those area resulted in non
+monitoring of disposal of appeals/performance by higher authorities through
+KVATIS.
+
+odules}
+
+ement Information System (MIS) Reports}
+
+KVATIS provides for various MIS reports. Audit found that MIS Reports
+available in the KVATIS were not adequate to analyse the various risk
+parameters and to solve the deficiencies pointed out in earlier chapters. More
+over certain reports like sales turnover details, employee performances etc are
+not being generated even though there is provision for such reports in the
+system.
+
+Audit recommends that well defined MIS Reports be developed which would
+enable better tax administration through KVATIS.
+
+3 Insufficient training}
+
+In order to ensure the effectiveness of KVATIS in tax administration,
+continuous and timely training in various aspects of KVATIS to officers and
+staff are required for the smooth operation of the relevant Module. Audit
+conducted a study among the assessing officers by issuing questionnaires and
+from their replies Audit found that insufficient training especially for the
+officers and staff working in the assessment wing and checkposts affected the
+effective utilisation of system and thereby tax administration.
+
+e The KVATIS was planned and designed to capture the complete
+workflow of all main functions in the Department. Due to lack of proper
+inbuilt control, the system is not equipped to analyse, evaluate and report
+all the transactions. The Government replied that the existing server
+capacity is not adequate to cater to the additional requirements.
+
+e Carrying on partial manual and partial automated procedures with
+inadequate data capture relating to manual procedures limits the
+adequacy of information available in the system.
+
+e The automatic workflow as envisaged through the KVATIS system was
+not attained and the continuation of manual intervention in important
+functions may lead to deviation from the main objectives of
+computerisation.
+
+e Due to non integration of modules, the system could not utilise the data
+available to evaluate the risk areas of tax evasion and achieve the
+objectives of computerisation viz, maximisation of tax collection,
+reduction of tax evasion and corruption.
+
+46
+
+
+Chapter : V— Other Important Points
+
+Recommendations}
+
+Audit recommends that -
+
+the Department may operationalise the Audit Assessment Module with
+suitable modifications for the selection of high risk dealers through
+KVATIS for detailed audit. Thus the progress can be monitored by
+higher authorities and failure penalised.
+
+the Department may initiate action to make use of other Modules so
+that the disposal of appeals, the nature of penalty levied, progress of
+collecting arrears etc can easily be monitored.
+
+important/required MIS reports may be made available in the software.
+
+the Department may impart sufficient training to all officers and staff
+periodically.
+
+the upgradation of the present system/server which is slow, would be
+cost effective in terms of improvement of revenue realisation, which
+was one of the primary goals of implementation of KVATIS.
+
+the Department may lay down norms for check of physical records on
+the basis of reports generated through KVATIS indicating risk areas.
+
+Thiruvananthapuram, (Dr. BIJU JACOB)
+
+The
+
+Accountant General
+(Economic and Revenue Sector Audit), Kerala
+
+Countersigned
+
+Yue
+
+New Delhi, (SHASHI KANT SHARMA)
+
+The
+
+Comptroller and Auditor General of India
+
+47
+
+
+Appendix
+
+
+Reference: Paragraph 1.4
+
+Table showing details of investment in computerisation
+
+Software investments.
+
+Software development- = 160,80,000 5.90
+Oracle Licences and ATS- हैं 419,10,175
+Antivirus Licences - हू 995,820
+
+2 Hardware investments
+Hardware for Data Centre- % 385,82,101 8.28
+-do- for Hqrs and other offices- % 442,18111
+
+3 Network investments
+Lease line rent-BSNL- हैं 433,52,651 6.57
+WAN network expenses- है 223,80152
+
+a Expenses for awareness programme
+Advt. through electronic media- % 834,64,889 on
+Advt. Through print media 2 65,76,468
+
+Total 29.75
+
+49
