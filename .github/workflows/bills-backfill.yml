@@ -2,12 +2,21 @@ name: Bills (sansad-side) backfill (4-hourly, until corpus full)
 
 on:
   schedule:
-    - cron: '17 */4 * * *'
+    # Bumped from `17 */4 * * *` (every 4h) → `17 */2 * * *` (every 2h)
+    # to halve the time-to-clear on the never_attempted backlog. Bills
+    # is at ~1660 never_attempted as of 2026-05-18; at the previous
+    # 6×/day cadence × 200/run = 1200/day, the backlog was ~9 days from
+    # clear. New 12×/day × 400/run = 4800/day target → ~2-3 days.
+    - cron: '17 */2 * * *'
   workflow_dispatch:
     inputs:
       max_extractions:
+        # Bumped default 200 → 400 so the scheduled runs (which omit
+        # this input and use the default) actually consume more of the
+        # backlog per fire. Manual dispatches can still pass smaller
+        # numbers when needed.
         description: 'Max PDFs to extract this run (politeness budget)'
-        default: '200'
+        default: '400'
       max_run_seconds:
         description: 'Hard wall-clock cap for the extraction phase, seconds'
         default: '1800'
@@ -49,7 +58,7 @@ jobs:
         # See CONV.md "Split-phase scraping pattern".
         env:
           BUILD_PHASE:             'extract'
-          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '200' }}
+          MAX_EXTRACTIONS_PER_RUN: ${{ inputs.max_extractions || '400' }}
           MAX_RUN_SECONDS:         ${{ inputs.max_run_seconds || '1800' }}
           EXTRACT_WORKERS:         '4'
           JITTER_MIN_MS:           '250'
