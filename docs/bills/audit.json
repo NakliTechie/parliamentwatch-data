@@ -1,9 +1,9 @@
 {
-  "audited_at": "2026-05-18T05:00:30Z",
+  "audited_at": "2026-05-18T10:37:28Z",
   "totals": {
     "bills": 9914,
-    "with_text": 4889,
-    "pypdf_empty_awaiting_ocr": 961,
+    "with_text": 5008,
+    "pypdf_empty_awaiting_ocr": 842,
     "pypdf_error_retryable": 7,
     "ocr_failed_permanent": 0,
     "never_attempted": 1636,
