@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-20T18:32:03Z",
+  "scraped_at": "2026-05-20T22:36:04Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
