@@ -32,7 +32,7 @@ jobs:
     # MAX_RUN_SECONDS keeps any single run from approaching this.
     timeout-minutes: 90
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - uses: actions/setup-python@v5
         with:
