@@ -49,9 +49,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
-from parliamentwatch_text_shards import load_markers
-from pdf_utils import download_pdf as _download_pdf, RateLimited
-
 # ── Paths ───────────────────────────────────────────────────────────────────
 
 ASSETS    = ROOT / "docs"
@@ -59,6 +56,15 @@ DOCS      = ASSETS / "drsc"
 TEXT_DIR  = DOCS / "text"
 PDFS_DIR  = DOCS / "pdfs"
 DOCS.mkdir(parents=True, exist_ok=True)
+
+# Force scraper paths to docs/drsc/ before importing pdf_utils — without this
+# config.PDFS_DIR defaults to data/pdfs/ and pdf_utils.download_pdf writes
+# the PDF to a directory we never read from, triggering a FileNotFoundError
+# at pdf_path.stat() below. Matches build_static.py:40.
+os.environ["DATA_DIR"] = str(DOCS)
+
+from parliamentwatch_text_shards import load_markers  # noqa: E402
+from pdf_utils import download_pdf as _download_pdf, RateLimited  # noqa: E402
 
 REPORTS_JSON = DOCS / "reports.json"
 
