@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 14157,
+    "records_with_text": 14162,
     "shards": 385,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 457957,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14157,
-    "txt_files_removed": 0
+    "txt_files_removed": 5
   },
   "shards": [
     {
@@ -455,123 +455,123 @@
     },
     {
       "file": "texts-88.json",
-      "count": 31,
-      "bytes": 4555689
+      "count": 27,
+      "bytes": 4577159
     },
     {
       "file": "texts-89.json",
-      "count": 70,
-      "bytes": 4527132
+      "count": 73,
+      "bytes": 4563054
     },
     {
       "file": "texts-90.json",
-      "count": 47,
-      "bytes": 4406039
+      "count": 50,
+      "bytes": 4542205
     },
     {
       "file": "texts-91.json",
-      "count": 38,
-      "bytes": 4477808
+      "count": 37,
+      "bytes": 4499909
     },
     {
       "file": "texts-92.json",
-      "count": 26,
-      "bytes": 4523150
+      "count": 27,
+      "bytes": 4466097
     },
     {
       "file": "texts-93.json",
-      "count": 35,
-      "bytes": 4567825
+      "count": 34,
+      "bytes": 4377978
     },
     {
       "file": "texts-94.json",
-      "count": 47,
-      "bytes": 4510808
+      "count": 46,
+      "bytes": 4516519
     },
     {
       "file": "texts-95.json",
-      "count": 41,
-      "bytes": 4520277
+      "count": 42,
+      "bytes": 4234155
     },
     {
       "file": "texts-96.json",
-      "count": 90,
-      "bytes": 4563014
+      "count": 79,
+      "bytes": 4506188
     },
     {
       "file": "texts-97.json",
-      "count": 59,
-      "bytes": 4478794
+      "count": 65,
+      "bytes": 4534538
     },
     {
       "file": "texts-98.json",
-      "count": 45,
-      "bytes": 4529391
+      "count": 48,
+      "bytes": 4489866
     },
     {
       "file": "texts-99.json",
       "count": 35,
-      "bytes": 4544579
+      "bytes": 4576868
     },
     {
       "file": "texts-100.json",
       "count": 29,
-      "bytes": 4453740
+      "bytes": 4391070
     },
     {
       "file": "texts-101.json",
-      "count": 38,
-      "bytes": 4450829
+      "count": 34,
+      "bytes": 4514236
     },
     {
       "file": "texts-102.json",
-      "count": 45,
-      "bytes": 4468483
+      "count": 49,
+      "bytes": 4552620
     },
     {
       "file": "texts-103.json",
-      "count": 36,
-      "bytes": 4483700
+      "count": 35,
+      "bytes": 4472385
     },
     {
       "file": "texts-104.json",
       "count": 87,
-      "bytes": 4502579
+      "bytes": 4534935
     },
     {
       "file": "texts-105.json",
-      "count": 37,
-      "bytes": 4491082
+      "count": 38,
+      "bytes": 4584992
     },
     {
       "file": "texts-106.json",
-      "count": 32,
-      "bytes": 4485022
+      "count": 33,
+      "bytes": 4538312
     },
     {
       "file": "texts-107.json",
       "count": 40,
-      "bytes": 4550414
+      "bytes": 4602720
     },
     {
       "file": "texts-108.json",
-      "count": 39,
-      "bytes": 4602017
+      "count": 40,
+      "bytes": 4601154
     },
     {
       "file": "texts-109.json",
       "count": 28,
-      "bytes": 4458316
+      "bytes": 4473157
     },
     {
       "file": "texts-110.json",
-      "count": 22,
-      "bytes": 4321826
+      "count": 23,
+      "bytes": 4532433
     },
     {
       "file": "texts-111.json",
-      "count": 17,
-      "bytes": 4339148
+      "count": 18,
+      "bytes": 4452752
     },
     {
       "file": "texts-112.json",
@@ -980,8 +980,8 @@
     },
     {
       "file": "texts-193.json",
-      "count": 23,
-      "bytes": 4401949
+      "count": 24,
+      "bytes": 4515386
     },
     {
       "file": "texts-194.json",
@@ -1196,12 +1196,12 @@
     {
       "file": "texts-236.json",
       "count": 62,
-      "bytes": 4545631
+      "bytes": 4555763
     },
     {
       "file": "texts-237.json",
-      "count": 49,
-      "bytes": 4496742
+      "count": 50,
+      "bytes": 4521513
     },
     {
       "file": "texts-238.json",
@@ -5228,11 +5228,14 @@
     "education|LS16_5": 88,
     "education|LS16_6": 88,
     "education|LS16_7": 88,
-    "education|LS16_8": 88,
-    "education|LS16_81": 88,
-    "education|LS16_82": 88,
-    "education|LS16_83": 88,
-    "education|LS16_84": 88,
+    "education|LS16_78": 88,
+    "education|LS16_79": 89,
+    "education|LS16_8": 89,
+    "education|LS16_80": 89,
+    "education|LS16_81": 89,
+    "education|LS16_82": 89,
+    "education|LS16_83": 89,
+    "education|LS16_84": 89,
     "education|LS16_85": 89,
     "education|LS16_86": 89,
     "education|LS16_87": 89,
@@ -5299,10 +5302,10 @@
     "education|LS17_145": 89,
     "education|LS17_146": 89,
     "education|LS17_147": 89,
-    "education|LS17_148": 89,
-    "education|LS17_149": 89,
-    "education|LS17_15": 89,
-    "education|LS17_150": 89,
+    "education|LS17_148": 90,
+    "education|LS17_149": 90,
+    "education|LS17_15": 90,
+    "education|LS17_150": 90,
     "education|LS17_151": 90,
     "education|LS17_152": 90,
     "education|LS17_153": 90,
@@ -5349,7 +5352,7 @@
     "education|LS17_192": 90,
     "education|LS17_193": 90,
     "education|LS17_194": 90,
-    "education|LS17_195": 90,
+    "education|LS17_195": 91,
     "education|LS17_196": 91,
     "education|LS17_197": 91,
     "education|LS17_198": 91,
@@ -5386,8 +5389,8 @@
     "education|LS17_226": 91,
     "education|LS17_227": 91,
     "education|LS17_228": 91,
-    "education|LS17_229": 91,
-    "education|LS17_23": 91,
+    "education|LS17_229": 92,
+    "education|LS17_23": 92,
     "education|LS17_230": 92,
     "education|LS17_231": 92,
     "education|LS17_232": 92,
@@ -5413,7 +5416,7 @@
     "education|LS17_250": 92,
     "education|LS17_251": 92,
     "education|LS17_252": 92,
-    "education|LS17_253": 92,
+    "education|LS17_253": 93,
     "education|LS17_254": 93,
     "education|LS17_255": 93,
     "education|LS17_256": 93,
@@ -5447,8 +5450,8 @@
     "education|LS17_281": 93,
     "education|LS17_282": 93,
     "education|LS17_283": 93,
-    "education|LS17_284": 93,
-    "education|LS17_285": 93,
+    "education|LS17_284": 94,
+    "education|LS17_285": 94,
     "education|LS17_286": 94,
     "education|LS17_287": 94,
     "education|LS17_288": 94,
@@ -5493,9 +5496,9 @@
     "education|LS17_322": 94,
     "education|LS17_323": 94,
     "education|LS17_324": 94,
-    "education|LS17_325": 94,
-    "education|LS17_326": 94,
-    "education|LS17_327": 94,
+    "education|LS17_325": 95,
+    "education|LS17_326": 95,
+    "education|LS17_327": 95,
     "education|LS17_328": 95,
     "education|LS17_329": 95,
     "education|LS17_33": 95,
@@ -5535,8 +5538,8 @@
     "education|LS17_360": 95,
     "education|LS17_361": 95,
     "education|LS17_362": 95,
-    "education|LS17_363": 95,
-    "education|LS17_364": 95,
+    "education|LS17_363": 96,
+    "education|LS17_364": 96,
     "education|LS17_365": 96,
     "education|LS17_366": 96,
     "education|LS17_367": 96,
@@ -5614,19 +5617,19 @@
     "education|LS17_92": 96,
     "education|LS17_93": 96,
     "education|LS17_94": 96,
-    "education|LS17_95": 96,
-    "education|LS17_96": 96,
-    "education|LS17_97": 96,
-    "education|LS17_98": 96,
-    "education|LS17_99": 96,
-    "education|LS18_1": 96,
-    "education|LS18_10": 96,
-    "education|LS18_100": 96,
-    "education|LS18_101": 96,
-    "education|LS18_102": 96,
-    "education|LS18_103": 96,
-    "education|LS18_104": 96,
-    "education|LS18_105": 96,
+    "education|LS17_95": 97,
+    "education|LS17_96": 97,
+    "education|LS17_97": 97,
+    "education|LS17_98": 97,
+    "education|LS17_99": 97,
+    "education|LS18_1": 97,
+    "education|LS18_10": 97,
+    "education|LS18_100": 97,
+    "education|LS18_101": 97,
+    "education|LS18_102": 97,
+    "education|LS18_103": 97,
+    "education|LS18_104": 97,
+    "education|LS18_105": 97,
     "education|LS18_106": 97,
     "education|LS18_107": 97,
     "education|LS18_108": 97,
@@ -5679,13 +5682,13 @@
     "education|LS18_154": 97,
     "education|LS18_155": 97,
     "education|LS18_156": 97,
-    "education|LS18_157": 97,
-    "education|LS18_158": 97,
-    "education|LS18_159": 97,
-    "education|LS18_16": 97,
-    "education|LS18_160": 97,
-    "education|LS18_161": 97,
-    "education|LS18_162": 97,
+    "education|LS18_157": 98,
+    "education|LS18_158": 98,
+    "education|LS18_159": 98,
+    "education|LS18_16": 98,
+    "education|LS18_160": 98,
+    "education|LS18_161": 98,
+    "education|LS18_162": 98,
     "education|LS18_163": 98,
     "education|LS18_164": 98,
     "education|LS18_165": 98,
@@ -5727,10 +5730,10 @@
     "education|LS18_2": 98,
     "education|LS18_200": 98,
     "education|LS18_201": 98,
-    "education|LS18_202": 98,
-    "education|LS18_203": 98,
-    "education|LS18_204": 98,
-    "education|LS18_205": 98,
+    "education|LS18_202": 99,
+    "education|LS18_203": 99,
+    "education|LS18_204": 99,
+    "education|LS18_205": 99,
     "education|LS18_206": 99,
     "education|LS18_207": 99,
     "education|LS18_208": 99,
@@ -5762,10 +5765,10 @@
     "education|LS18_231": 99,
     "education|LS18_232": 99,
     "education|LS18_233": 99,
-    "education|LS18_234": 99,
-    "education|LS18_235": 99,
-    "education|LS18_236": 99,
-    "education|LS18_237": 99,
+    "education|LS18_234": 100,
+    "education|LS18_235": 100,
+    "education|LS18_236": 100,
+    "education|LS18_237": 100,
     "education|LS18_238": 100,
     "education|LS18_239": 100,
     "education|LS18_24": 100,
@@ -5791,10 +5794,10 @@
     "education|LS18_258": 100,
     "education|LS18_259": 100,
     "education|LS18_26": 100,
-    "education|LS18_260": 100,
-    "education|LS18_261": 100,
-    "education|LS18_262": 100,
-    "education|LS18_263": 100,
+    "education|LS18_260": 101,
+    "education|LS18_261": 101,
+    "education|LS18_262": 101,
+    "education|LS18_263": 101,
     "education|LS18_264": 101,
     "education|LS18_265": 101,
     "education|LS18_266": 101,
@@ -5825,14 +5828,14 @@
     "education|LS18_289": 101,
     "education|LS18_29": 101,
     "education|LS18_290": 101,
-    "education|LS18_291": 101,
-    "education|LS18_292": 101,
-    "education|LS18_293": 101,
-    "education|LS18_294": 101,
-    "education|LS18_295": 101,
-    "education|LS18_296": 101,
-    "education|LS18_297": 101,
-    "education|LS18_298": 101,
+    "education|LS18_291": 102,
+    "education|LS18_292": 102,
+    "education|LS18_293": 102,
+    "education|LS18_294": 102,
+    "education|LS18_295": 102,
+    "education|LS18_296": 102,
+    "education|LS18_297": 102,
+    "education|LS18_298": 102,
     "education|LS18_299": 102,
     "education|LS18_3": 102,
     "education|LS18_30": 102,
@@ -5874,10 +5877,10 @@
     "education|LS18_332": 102,
     "education|LS18_333": 102,
     "education|LS18_334": 102,
-    "education|LS18_335": 102,
-    "education|LS18_336": 102,
-    "education|LS18_337": 102,
-    "education|LS18_338": 102,
+    "education|LS18_335": 103,
+    "education|LS18_336": 103,
+    "education|LS18_337": 103,
+    "education|LS18_338": 103,
     "education|LS18_339": 103,
     "education|LS18_34": 103,
     "education|LS18_340": 103,
@@ -5909,11 +5912,11 @@
     "education|LS18_364": 103,
     "education|LS18_365": 103,
     "education|LS18_366": 103,
-    "education|LS18_367": 103,
-    "education|LS18_368": 103,
-    "education|LS18_369": 103,
-    "education|LS18_37": 103,
-    "education|LS18_370": 103,
+    "education|LS18_367": 104,
+    "education|LS18_368": 104,
+    "education|LS18_369": 104,
+    "education|LS18_37": 104,
+    "education|LS18_370": 104,
     "education|LS18_371": 104,
     "education|LS18_372": 104,
     "education|LS18_373": 104,
@@ -5996,11 +5999,11 @@
     "energy|LS15_11": 104,
     "energy|LS15_12": 104,
     "energy|LS15_13": 104,
-    "energy|LS15_14": 104,
-    "energy|LS15_15": 104,
-    "energy|LS15_16": 104,
-    "energy|LS15_17": 104,
-    "energy|LS15_18": 104,
+    "energy|LS15_14": 105,
+    "energy|LS15_15": 105,
+    "energy|LS15_16": 105,
+    "energy|LS15_17": 105,
+    "energy|LS15_18": 105,
     "energy|LS15_19": 105,
     "energy|LS15_2": 105,
     "energy|LS15_20": 105,
@@ -6034,10 +6037,10 @@
     "energy|LS15_6": 105,
     "energy|LS15_7": 105,
     "energy|LS15_8": 105,
-    "energy|LS15_9": 105,
-    "energy|LS16_1": 105,
-    "energy|LS16_10": 105,
-    "energy|LS16_11": 105,
+    "energy|LS15_9": 106,
+    "energy|LS16_1": 106,
+    "energy|LS16_10": 106,
+    "energy|LS16_11": 106,
     "energy|LS16_12": 106,
     "energy|LS16_13": 106,
     "energy|LS16_14": 106,
@@ -6067,9 +6070,9 @@
     "energy|LS16_39": 106,
     "energy|LS16_40": 106,
     "energy|LS16_41": 106,
-    "energy|LS16_42": 106,
-    "energy|LS16_43": 106,
-    "energy|LS16_8": 106,
+    "energy|LS16_42": 107,
+    "energy|LS16_43": 107,
+    "energy|LS16_8": 107,
     "energy|LS16_9": 107,
     "energy|LS17_1": 107,
     "energy|LS17_10": 107,
@@ -6107,9 +6110,9 @@
     "energy|LS17_4": 107,
     "energy|LS17_40": 107,
     "energy|LS17_41": 107,
-    "energy|LS17_5": 107,
-    "energy|LS17_6": 107,
-    "energy|LS17_7": 107,
+    "energy|LS17_5": 108,
+    "energy|LS17_6": 108,
+    "energy|LS17_7": 108,
     "energy|LS17_8": 108,
     "energy|LS17_9": 108,
     "energy|LS18_1": 108,
@@ -6147,8 +6150,8 @@
     "external_affairs|LS14_7": 108,
     "external_affairs|LS14_8": 108,
     "external_affairs|LS14_9": 108,
-    "external_affairs|LS15_1": 108,
-    "external_affairs|LS15_10": 108,
+    "external_affairs|LS15_1": 109,
+    "external_affairs|LS15_10": 109,
     "external_affairs|LS15_11": 109,
     "external_affairs|LS15_12": 109,
     "external_affairs|LS15_13": 109,
@@ -6175,8 +6178,8 @@
     "external_affairs|LS16_1": 109,
     "external_affairs|LS16_10": 109,
     "external_affairs|LS16_11": 109,
-    "external_affairs|LS16_12": 109,
-    "external_affairs|LS16_13": 109,
+    "external_affairs|LS16_12": 110,
+    "external_affairs|LS16_13": 110,
     "external_affairs|LS16_14": 110,
     "external_affairs|LS16_15": 110,
     "external_affairs|LS16_16": 110,
@@ -6198,7 +6201,7 @@
     "external_affairs|LS16_8": 110,
     "external_affairs|LS16_9": 110,
     "external_affairs|LS17_1": 110,
-    "external_affairs|LS17_10": 110,
+    "external_affairs|LS17_10": 111,
     "external_affairs|LS17_11": 111,
     "external_affairs|LS17_12": 111,
     "external_affairs|LS17_13": 111,
@@ -8178,6 +8181,7 @@
     "home_affairs|LS16_76": 193,
     "home_affairs|LS16_77": 193,
     "home_affairs|LS16_78": 193,
+    "home_affairs|LS16_79": 193,
     "home_affairs|LS16_8": 193,
     "home_affairs|LS16_80": 193,
     "home_affairs|LS16_81": 193,
@@ -9779,6 +9783,7 @@
     "industry|LS16_80": 236,
     "industry|LS16_81": 236,
     "industry|LS16_82": 236,
+    "industry|LS16_83": 236,
     "industry|LS16_84": 236,
     "industry|LS16_85": 236,
     "industry|LS16_86": 236,
@@ -9797,7 +9802,7 @@
     "industry|LS16_98": 236,
     "industry|LS16_99": 236,
     "industry|LS17_1": 236,
-    "industry|LS17_10": 236,
+    "industry|LS17_10": 237,
     "industry|LS17_100": 237,
     "industry|LS17_101": 237,
     "industry|LS17_102": 237,
