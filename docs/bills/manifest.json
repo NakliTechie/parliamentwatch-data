@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-05-24T16:38:56Z",
+  "scraped_at": "2026-05-25T09:42:08Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
@@ -10064,7 +10064,7 @@
       "bundled": true
     },
     "82_2005_L": {
-      "url": "text/82_2005_L.txt"
+      "bundled": true
     },
     "82_2006_L": {
       "bundled": true
@@ -10133,7 +10133,7 @@
       "bundled": true
     },
     "83_2005_L": {
-      "url": "text/83_2005_L.txt"
+      "bundled": true
     },
     "83_2006_L": {
       "bundled": true
@@ -10196,7 +10196,7 @@
       "bundled": true
     },
     "84_2005_L": {
-      "url": "text/84_2005_L.txt"
+      "bundled": true
     },
     "84_2006_L": {
       "bundled": true
@@ -10247,7 +10247,7 @@
       "bundled": true
     },
     "85_2005_L": {
-      "url": "text/85_2005_L.txt"
+      "bundled": true
     },
     "85_2006_L": {
       "bundled": true
@@ -10310,7 +10310,7 @@
       "bundled": true
     },
     "86_2005_L": {
-      "url": "text/86_2005_L.txt"
+      "bundled": true
     },
     "86_2006_L": {
       "bundled": true
