@@ -2,15 +2,16 @@ name: DRSC OCR slow-lane
 
 on:
   schedule:
-    # Weekly, Sunday 05:47 UTC (= 11:17 IST Sunday morning). Off-cluster
-    # from existing weekly OCR crons (CAG=02:17, LC=03:23, FC=04:47).
-    # Sunday-morning UTC keeps runner pressure low.
-    - cron: '47 5 * * 0'
+    # TEMP SPRINT CADENCE (2026-05-29): 4-hourly @ 25/run to drain the
+    # ~335 pypdf-empty DRSC backlog fast (~2-3 days). Minute :37 staggers
+    # off bills-OCR (:07) and the backfill (:17). REVERT to weekly
+    # `47 5 * * 0` + default '5' once the backlog clears.
+    - cron: '37 */4 * * *'
   workflow_dispatch:
     inputs:
       max_ocr_per_run:
-        description: 'Max scanned PDFs to OCR this run (default 5; sprint dispatches override to 25-100)'
-        default: '5'
+        description: 'Max scanned PDFs to OCR this run (sprint default 25, 4-hourly; revert to 5 + weekly when backlog clears)'
+        default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap for OCR phase (seconds, default 2700)'
         default: '2700'

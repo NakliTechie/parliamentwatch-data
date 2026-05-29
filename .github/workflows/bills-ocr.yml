@@ -2,18 +2,17 @@ name: Bills (sansad-side) OCR slow-lane
 
 on:
   schedule:
-    # Weekly, Sunday 06:47 UTC (= 12:17 IST Sunday lunchtime). Off-cluster
-    # from existing weekly OCR crons (CAG=02:17, LC=03:23, FC=04:47,
-    # DRSC=05:47). Bills's OCR pool is the second-largest behind DRSC's
-    # (~960 vs 340 records as of 2026-05-18), so the weekly cadence is
-    # mainly catching new pypdf-empty arrivals — the bulk drain happens
-    # via workflow_dispatch sprint runs.
-    - cron: '47 6 * * 0'
+    # TEMP SPRINT CADENCE (2026-05-29): 4-hourly @ 25/run to drain the
+    # ~840 pypdf-empty bills backlog fast (~25/run × 6/day = 150/day →
+    # ~1 week). Minute :07 keeps it off bills-backfill's :17 slot.
+    # REVERT to weekly `47 6 * * 0` + default '5' once the backlog
+    # clears (each run becomes a quick no-op otherwise).
+    - cron: '7 */4 * * *'
   workflow_dispatch:
     inputs:
       max_ocr_per_run:
-        description: 'Max scanned PDFs to OCR this run (default 5; sprint dispatches override to 25-100)'
-        default: '5'
+        description: 'Max scanned PDFs to OCR this run (sprint default 25, 4-hourly; revert to 5 + weekly when backlog clears)'
+        default: '25'
       max_run_seconds:
         description: 'Hard wall-clock cap for OCR phase (seconds, default 2700)'
         default: '2700'
