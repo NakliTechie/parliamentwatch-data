@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T12:09:51Z",
+  "generated_at": "2026-05-30T14:42:59Z",
   "totals": {
-    "pypdf-empty": 7,
+    "pypdf-empty": 5,
     "pypdf-error": 7,
     "ocr-failed": 1
   },
@@ -14,12 +14,10 @@
     "79_1988_L": "pypdf-error",
     "59_1988_L": "pypdf-error",
     "72_1988_L": "pypdf-error",
-    "119_1967_L": "pypdf-empty",
-    "31_1968_L": "pypdf-empty",
-    "61_1966_L": "pypdf-empty",
-    "118_1967_L": "pypdf-empty",
-    "120_1967_L": "pypdf-empty",
     "58_1966_L": "pypdf-empty",
-    "XXXIV_1963_R": "pypdf-empty"
+    "XXXIV_1963_R": "pypdf-empty",
+    "38_1955_L": "pypdf-empty",
+    "XIII_1954_R": "pypdf-empty",
+    "23_1955_L": "pypdf-empty"
   }
 }
