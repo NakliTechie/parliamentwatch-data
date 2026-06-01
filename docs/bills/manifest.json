@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-06-01T05:29:00Z",
+  "scraped_at": "2026-06-01T12:22:55Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
-    "with_intro_pdf": 7465,
-    "with_canonical_pdf": 7494,
-    "with_text": 7315,
+    "with_intro_pdf": 7466,
+    "with_canonical_pdf": 7495,
+    "with_text": 7316,
     "became_law": 3445,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -18153,6 +18153,9 @@
     },
     "LVIII_2025_R": {
       "bundled": true
+    },
+    "LVII_1990_R": {
+      "url": "text/LVII_1990_R.txt"
     },
     "LVII_2000_R": {
       "bundled": true

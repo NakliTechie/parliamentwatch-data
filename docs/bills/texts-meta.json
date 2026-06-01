@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 7315,
+    "records_with_text": 7316,
     "shards": 33,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 21412,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7315,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -150,8 +150,8 @@
     },
     {
       "file": "texts-27.json",
-      "count": 271,
-      "bytes": 4568997
+      "count": 272,
+      "bytes": 4590732
     },
     {
       "file": "texts-28.json",
@@ -6221,6 +6221,7 @@
     "LVIII_2023_R": 27,
     "LVIII_2024_R": 27,
     "LVIII_2025_R": 27,
+    "LVII_1990_R": 27,
     "LVII_2000_R": 27,
     "LVII_2004_R": 28,
     "LVII_2006_R": 28,
