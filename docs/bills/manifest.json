@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-06-01T12:22:55Z",
+  "scraped_at": "2026-06-01T18:31:17Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
@@ -18155,7 +18155,7 @@
       "bundled": true
     },
     "LVII_1990_R": {
-      "url": "text/LVII_1990_R.txt"
+      "bundled": true
     },
     "LVII_2000_R": {
       "bundled": true
