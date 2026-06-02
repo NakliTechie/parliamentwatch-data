@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-31T07:00:25Z",
+  "generated_at": "2026-06-02T12:17:19Z",
   "totals": {
-    "pypdf-empty": 7,
+    "pypdf-empty": 8,
     "pypdf-error": 10,
     "ocr-failed": 4
   },
@@ -26,6 +26,7 @@
     "737": "pypdf-empty",
     "762": "pypdf-empty",
     "792": "pypdf-empty",
-    "641": "pypdf-error"
+    "641": "pypdf-error",
+    "125177": "pypdf-empty"
   }
 }
