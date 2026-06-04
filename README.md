@@ -13,7 +13,7 @@ Upstream sources don't permit cross-origin browser requests. GitHub Actions scra
 - [SansadSaar](https://github.com/indiavotes/SansadSaar) — the app
 - [sansadsaar-proceedings-data](https://github.com/NakliTechie/sansadsaar-proceedings-data) — Debates, Questions
 - [sansadsaar-gazettes](https://github.com/NakliTechie/sansadsaar-gazettes) — Central Gazette
-- [sansadsaar-lc](https://github.com/indiavotes/sansadsaar-lc) — Law Commission PDF archive
+- [sansadsaar-lc](https://github.com/NakliTechie/sansadsaar-lc) — Law Commission PDF archive
 
 ## Credits
 
