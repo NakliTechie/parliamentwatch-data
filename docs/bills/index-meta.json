@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-06-08T05:17:32Z",
+  "scraped_at": "2026-06-08T06:56:35Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "shard_size": 1000,
   "totals": {
