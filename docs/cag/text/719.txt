@@ -1,0 +1,2227 @@
+Report of the
+Comptroller and Auditor General
+of India
+
+for the year ended March 2012
+
+Strengthening the Tax Base
+through
+use of Information
+
+Union Government
+Department of Revenue - Direct Taxes
+No. 4 of 2013
+
+Laid on the table of Lok Sabha/Rajya Sabha on
+
+
+Table of Contents
+
+Contents Pages
+Preface i
+. Executive summary iii
+8. Summary of Recommendations v
+. Chapter I; Introduction 1-4
+C.1 Central Information Branch 1
+C.2 Organization set up 1-2
+C.3 Audit objectives 3
+C.4 Audit scope, methodology, sample 3-4
+C.5 Legal Provision 4
+. Chapter Il: Collection, Collation and 5-22
+Dissemination of Information
+D.1 Importance of Information 5-6
+D.2 Sources of Information 6-8
+D.3 Collection and collation of Information 8-17
+D.4 Dissemination of Information 17-21
+D.5 Recommendations 21-22
+Chapter III: Utilization of Information 23-35
+E.1 Extent of usage of disseminated information 23-26
+E.2 AIR information not brought to tax 26-27
+E.3 Identification of non-filers/stop-filers 27-32
+E.4 Monitoring of disseminated information 32-34
+E.5 Recommendations 35
+Annex 37-40
+
+. Abbreviations 41
+
+
+
+Preface
+
+The Report for the year ended March 2012 containing the results of the
+performance audit of ‘Strengthening the Tax Base through use of Information’
+has been prepared for submission to the President under Article 151(1) of the
+Constitution of India.
+
+The audit of Revenue Receipts — Direct Taxes of the Union Government is
+conducted under Section 16 of the Comptroller and Auditor General of India
+(Duties, Powers and Conditions of Service) Act, 1971.
+
+Our findings are based mainly on test audit conducted from
+November 2011 to June 2012.
+
+
+Executive Summary
+
+. Strengthening the tax base is arguably one of the most important
+aspects of the direct tax management. The Income Tax Department (ITD) uses
+‘pieces of information’ arising from different sources to strengthen the tax
+database, in addition to the information available in the income tax
+returns/provided by the assessee during assessment.
+
+. Central Information Branch (CIB) of ITD collects, uploads information to
+the ITD Systems and disseminates to the Assessing Officers (AOs). There are
+17 formations of CIB across the Country under the Director General of Income
+Tax (Intelligence and Criminal Investigation). Agencies submit information to
+CIB or TIN Facilitation Centres of National Securities Depository Limited (NSDL)
+on behalf of ITD. This flows through CIB Module of ITD Systems software
+administered by the Director General of Income Tax (Systems).
+
+. Annual Central Action Plans of ITD target an increase of 15 per cent per
+year in assessee base. Against this, annual increase during the ten year period
+from FY 02 to FY 11 was only 3.1 percent (from 262 lakh to 336 lakh assessees).
+
+. We found several deficiencies in the scheme of flow and utilization of
+information. ITD did not call for Information from all the sources (paragraph
+2.11). Some of the information lacked basic information like PAN of assessees
+thereby rendering it useless (paragraphs 2.12 & 2.13). We came across cases
+where incorrect information was transmitted. ITD made no effort to transfer
+this incorrect transmitted information to AOs dealing with the correct
+assessees (paragraph 2.19 and Box 2.1). ITD was not following up on notices
+requisitioning information from the agencies. ITD did not take action against
+inadequate filing of AIRs (paragraphs 2.20-2.23 & Box 2.2). CIB delayed and
+defaulted on uploading information on ITD Systems (paragraph 2.32). They
+defaulted on classifying and maintaining the data and did not utilize the full
+functionalities of CIB Module (paragraphs 2.37-2.39, 2.47-2.57).
+
+. We found that out of the total cases selected for scrutiny by ITD, an
+average of 7.7 per cent over FY 08 to FY 10 was on the basis of AIR information
+(paragraphs 3.1 & 3.2). We also found 285 high value cases where AOs did not
+utilize the useful available information during assessments or they finalized the
+assessments relying on the reply of the assessees without verifying the facts
+and correctness of the transactions. (paragraph 3.3). AOs also did not bring AIR
+information to tax in cases where the assessee himself had offered the amount
+(paragraph 3.5).
+
+iii
+
+
+Summary of Recommendations
+
+With reference to Collection and Collation of Information
+(Paragraph 2.1 to 2.44)
+1. Information from all the compulsory as well as approved optional
+source codes be collected;
+2. Entire collected information be uploaded by CIB/NSDL in the same year
+and bottlenecks in uploading the information be removed so that it can be
+used in scrutiny assessment;
+3. Suitable system be put in place which ensures correctness and
+reliability of data received through AIR/CIB before its dissemination to the
+field. There is also a need for effective penal provisions in the Act for
+furnishing factually incorrect information in AIR or in reply to notices
+issued by ITD;
+4. Feasibility of developing a web based information collection system be
+explored to avoid the problems in collecting non-AIR information. This
+would take care of redundant data and data mismatch;
+5. Internal review be initiated to gauge the utility and effectiveness of
+system of filing of AIR;
+6. Time lines for issuing query letters be defined as also for referring back
+cases to DIT-CIB, as control mechanism to ensure that the query letters
+are issued by a specified time/date and if the letters return as un-served,
+the cases are referred to DIT-CIB within a defined time period, enabling
+effective monitoring of the activity;
+With reference to Dissemination of Information
+(Paragraph 2.45 to 2.57)
+7. Suitable mechanism be devised including business intelligence tools to
+ensure effective utilization of information collected at high cost, both to
+ITD and for the agencies tasked with collecting and providing such
+information to ITD to achieve the objective of deepening and widening of
+tax base;
+8. All available functionalities of CIB module be used;
+
+With reference to utilization of Information
+(Paragraph 3.1 to 3.28)
+
+9. Monitoring system put in place by CBDT needs to be ensured at
+different levels of ITD;
+10. Utilization of declarations received in Form 60/61 be ensured by
+digitizing and disseminating them;
+11. Nomination of Designated Assessing Officers on regular basis to deal
+with non-PAN AIR cases be emphasized;
+12. Responsibility on AOs be defined who fail to record or utilize the
+information available to them in course of their assessments.
+
+
+Chapter I: Introduction
+
+1.1 Expansion of tax base is necessary to bring more persons under the
+tax net so that more revenue may be generated. Therefore, the Income Tax
+Department (ITD) collects, disseminates and utilizes useful information from
+various sources to curb evasion of tax. Annual Central Action Plans of ITD
+have aimed at 15 per cent annual increase of new assesses.
+
+Central Information Branch (CIB)
+
+1.2 CIB, formed in 1975’, is the nodal agency of ITD for strengthening tax
+data base. Its key function areas are: (i) collection, collation of information
+from internal as well as external sources and its dissemination to Assessing
+Officers (AOs) and other users in ITD; (ii) widening of tax base through
+identification of stop filers and non-filers; (iii) deepening of tax base by
+providing information for proper selection of cases for scrutiny assessments.
+CIB collects information relating to financial transactions like investment,
+expenses, payment of taxes, etc. and details of persons who are involved in
+some specified activities. This information relates to 40 internal and external
+source codes (Annex). Section 139A(5)(c) of the Income Tax Act, 1961 (Act)
+read with Rule 114B of Income Tax Rules, 1962 (Rules) made quoting of PAN
+in respect of 16 source codes compulsory. There are 17 CIB offices in ITD.
+With effect from August 20117, CIB has been placed under newly created
+Directorate of Income Tax (Intelligence & Criminal Investigation) headed by
+DGIT-I&Cl.
+
+1.3 ITD Systems has CIB module for sorting, collating, managing,
+organizing and analyzing information coming from various sources. CIB
+uploads information in CIB module under control of Director General Income
+Tax (System).
+
+Organization set up
+
+1.4 Member (Investigation) of the Central Board of Direct Taxes (CBDT)
+has the overall responsibility of investigation management in ITD. There is an
+attached office of the Director General of Income Tax-—(Intelligence and
+Criminal Investigation (DGIT-I&Cl) under him, set up in August 2011, at New
+Delhi for this purpose. There are 17 field formations - 08 DsIT (&ए) at
+Ahmadabad, Chandigarh, Chennai, Delhi, Jaipur, Kolkata, Lucknow and
+Mumbai; and 09 DsIT (Intelligence) at Bangalore, Bhubaneswar, Bhopal,
+Guwahati, Hyderabad, Kochi, Kanpur, Pune and Patna. Prior to formation of
+
+1 CBDT in August 1975 streamlined Information set-up and named it as Central Information Branch
+2 CBDT’s notification no. 42/2011 dated 19.8.2011
+
+
+Report No.4 of 2013 (Performance Audit)
+
+DGIT-I&CI in August 2011, the CIB offices functioned under Director General
+of Income Tax (Investigation) in each state.
+
+1.5 The Directorate of Income Tax (System), created in the year 1981 and
+headed by Director General-IT System (DGIT-S), coordinates at the apex level
+all activities relating to introduction of computerization in ITD. DGIT-S is
+assisted by 05 Directors of Income Tax (DsIT) and 03 Officers on Special Duty
+(OSD). DIT-II is in-charge of National Securities Depository Limited (NSDL),
+Online Tax Accounting System (OLTAS) and CIB module.
+
+1.6 The organogram of ITD dealing ‘Strengthening of Tax Base through
+use of Information’ and person in position against sanctioned strength (given
+in brackets) as on 31 March 2012, is as follows:
+
+Central Board of Direct Taxes
+Member Member
+Legislation & Investigation
+Computerization 8
+DG-IT DG-IT
+Systems Intelligence &
+Ys Criminal Investigation
+DsIT (1) DsIT (I & Cl)
+sp orl as DIT (Admn) (9 field offices) (8 field offices)
+10) 7 (8) 8(8)
+Addl/JT Addl/sT Addi/st
+DsIT DsIT DsIT
+1(3) 6 (9) 6 (12)
+DD/Asstt DD/Asstt DD/Asstt
+DsIT DsIT DsIT
+3(5) 6 (16) 9 (25)
+105 105५ 105
+3(5) 44 (57) 58 (81)
+805 05 AOs
+DDOs DDOs DDOs
+1(1) 4(7) 6 (7)
+
+17 There is overall? shortage of 599 (53.63 %) persons against sanctioned
+strength of 1117 in DGIT-I & Cl.
+
+3
+This includes shortage of 515 persons against sanctioned strength of 868 in other cadres.
+
+2
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+1.8 The expenditure incurred against the budget during the last four
+years ended on 31 March 2012 to | & Cl wing is given in Table 1.1 below.
+
+Table 1.1: Budget and Expenditure
+
+Lakh&
+Financial Budget Expenditure Unspent budget
+Year Amount (in per cent)
+FY 09 2,87,014 1,71,015 1,15,999 40.4
+FY 10 2,67,570 2,25,452 42,118 15.7
+FY 11 2,72,705 2,32,013 40,692 14.9
+FY 12 3,06,197 3,00,585 5,612 18
+
+Why we chose the topic?
+
+1.9 It was over 20 years ago that audit had reviewed’ the functioning of
+CIB. The present performance audit on ‘Strengthening the Tax Base through
+use of Information’, seeks to study the developments in strengthening of tax
+database, especially with reference to the scheme of furnishing of Annual
+Information Return (AIR) through CIB/NSDL under section 285BA of the Act,
+implemented since 01 April 2005.
+
+Audit Objectives
+
+1.10. The following are the audit objectives:
+a. Evaluation of the process of collection, collation, transmission and
+utilization of information by ITD towards widening and deepening the tax
+base;
+b. Evaluation of the effectiveness of working of CIB, NSDL, DGIT-S, CsIT,
+Assessing Officers and DG (Investigation)/CsIT(TDS) with regards to the
+flow of information;
+c. Evaluation of the effectiveness of the scheme of furnishing of AIR
+through CIB/ NSDL under section 285BA as implemented since 01 April
+2005.
+
+Audit Scope
+
+1.11 This study covers the period from FY 08 to FY 11. We carried out
+examination of records of CIB and DGIT-S and cross-checked the utilization of
+information provided by them to AOs in 16 states, viz. Assam, Andhra
+Pradesh, Bihar, Delhi, Haryana, Gujarat, Kolkata, Karnataka, Kerala, Madhya
+Pradesh, Maharashtra, Odisha, Punjab, Rajasthan, Tamil Nadu and Uttar
+Pradesh. In these states, we examined information collected by 17 CIB
+offices.
+
+4 In C&AG’s Report no 5 of 1991, Union Government (Revenue Receipts - Direct Taxes)
+
+3
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Audit Methodology and Sampling for audit
+
+1.12 We examined records of CIB offices and undertook review of
+procedures to receive and upload AIR information in TIN Facilitation Centres
+(TIN-FCs) of National Securities Depository Limited (NSDL). We selected five
+TIN-FCs in each selected state. To see the utilization of information during the
+assessment, top 30 per cent CsIT subject to maximum of five CsIT in each
+state with all assessment charges under the selected CsIT, (in all 60 CITs)
+were selected on the basis of risk analysis. Further, we took up a maximum of
+100 assessment cases for cross verification on the basis of stratified random
+sampling per year per selected charge.
+
+Legal Provisions
+1.13 The Act contains statutory provisions for collecting the information on
+specified transactions from specified persons and quotation of PAN. In
+addition, CBDT has issued various instructions from time to time in this
+regard. These are as follows:
+a. Section 285BA is specific to the functioning of CIB. CBDT circular no.
+7/2005 dated 29 August 2005 prescribes that AIR is to be filed in terms of
+Rule 114E by the ‘specified persons’ in respect of those ‘specified
+transactions’ which are registered or recorded by them during financial
+year. The Board has authorized NSDL as the agency to receive AIRs on
+behalf of CIB. NSDL has started receiving AIRs from August 2005.
+b. — Section 139A read with Rules 1148 and 114C specifies compulsory
+quoting of PAN in certain transactions.
+c.  Board’s instruction no. 1943 dated 22 August 1997, revised
+instruction vide letter F. no. 414/47/2002 IT (Inv. |) dated 05 September
+2002 and further rationalized instructions vide letter no. 414/ 66/2009
+(Inv. ॥ dated 22 December 2009 laid down about importance of sources of
+information.
+d. Instruction nos. 6/2006 of 01 August 2006 and 01/2009 of
+12 February 2009 etc. deal with utilization of information in AIR during
+assessment.
+
+Acknowledgement
+
+1.14 We acknowledge the cooperation of ITD in providing the necessary
+records and information in connection with the conduct of this performance
+audit. An entry conference was held with CBDT in November 2011. The audit
+objectives, scope of audit and the main areas of audit examination were
+explained in the meeting.
+
+1.15 The exit conference was held (January 2013) with CBDT. We have
+suitably incorporated CBDT’s views in this report.
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Chapter II: Collection, Collation and Dissemination
+of Information
+
+© CIB did not collect information from all the compulsory source codes and
+approved optional source codes. A large number of collected pieces of
+information were without PAN and had zero value.
+
+e ITD did not take penal action against the persons who did not furnish the
+required information, did not file AIR, filed AIR belatedly, and who gave
+incomplete information in AIR.
+
+e ITD did not have any system to ensure the compliance to Rule 1148 which
+requires mentioning of PAN in documents pertaining to specified
+transaction.
+
+© CIB did not maintain database for collecting the information and for
+identifying prospective AIR filers/non-filers.
+
+e CIB did not upload collected information in a timely and complete manner
+to CIB module. It faced problems in uploading information due to technical
+reasons.
+
+e Information of earlier years was uploaded as information of current year.
+
+© CIB did not digitize and disseminate declarations received in Forms 60/61
+
+© CIB did not use all functionalities available in CIB module.
+
+Importance of information
+21 ITD collects information on financial transactions from various third
+party sources which help in identifying potential sources of revenue.
+
+2.2 Tax GDP° ratio which was showing an increasing trend started
+declining in FY 09 and came down to 5.7 per cent in FY 11 from 6.6 per cent in
+FY 08. During the period FY 02 to FY 11 average increase in number of
+assessees was 3.1 per cent (Chart 2.1).
+
+os
+3S
+6
+
+HHT 2.1: Assesses vs. Tax GDP Ratio
+
+2 6.6
+है ॥ 16111
+
+3300 27+ 69
+% 2
+8 a
+3 200 2 4a
+Bd oO
+
+x
+£10 | 2 ५ 2 ०0 FD © H QD ०५ + ०27
+¥ so ¢ aw» Gd Fe NAN GC BG GS w
+oO wo 90 a iat cea) ad ial N t ia)
+8 S है हे RHR A के HB BH HM M
+So 0
+
+7४02 FY03 7४04 FYOS5 FYO6 FYO7 FYO8 FYO9 FY10 FY11
+Assesses Numbers (Lakhs) Tax GDP Ratio
+
+5 GDP at Market Price (Source: Ministry of Statistics; NSO)
+
+
+Report No.4 of 2013 (Performance Audit)
+
+2.3 Clearly, there is much scope for widening and strengthening of tax
+base through collection of information by DGIT-I&CI (formerly CIB).
+
+Sources of information
+
+2.4 ITD collects information through AIR and by CIB directly. Various
+sources like banks, credit card companies, companies, mutual funds,
+registrar/sub-registrar of properties, Reserve Bank of India, Central Excise/
+Custom/Sales Tax Departments, Post Office, local authorities, hotels/clubs/
+caterers, telephone providers, insurance companies, etc. contribute
+information. CIB collects information from 40 source codes of which 12 is
+compulsory (Annex).
+
+2.5 During FY 05, CIB collected 13.59 lakh pieces of information valuing
+4.38 lakh crore. This increased to 11.17 crore pieces of information valuing
+% 223.53 lakh crore in FY 12. During FY 05, ITD received 20.08 lakh AIR data
+valuing हैं 14.21 lakh crore. This increased to 46.61 lakh AIR data in FY 12
+valuing € 94.30 lakh crore.
+
+Flow of information
+2.6 The following flow chart illustrates the flow of information:
+
+CIB (Non AIR
+
+information) NSDL {AIR information)
+
+(ax) Collation of
+Information
+
+Computer System (DG IT System)
+
+Dessimination of information to
+
+CCsIT/CsIT
+
+Assessment charges
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Annual Information Return (AIR)/CIB information
+
+2.7 Section 285BA of the Act and Rule 114E of the Rules, specify that
+persons are required to furnish AIR immediately following financial year to
+the prescribed Income Tax authority or agency. CBDT has notified NSDL as
+prescribed agency to receive AIR from the specified persons. At present,
+seven categories of persons are required to compulsorily file AIR which are
+Banks accepting cash deposit of € 10 lakh or more in a year, Bank or company
+issuing credit card where payment against bill exceed € two lakh in a year,
+Mutual funds collecting €two lakh or more for sale of units, Company
+receiving € five lakh or more against issue of bonds/debentures, Company
+receiving = one lakh or more against issue of shares, Registrars/sub-registrars
+in respect of sale/purchase of immovable property exceeding < 30 lakh and
+RBI for issue of bonds exceeding & five lakh or more.
+
+CIB Module of ITD Systems
+
+2.8 CIB module of ITD systems assists in identifying PAN of the
+transaction. It also allows updating of PAN information in cases where this is
+obtained by issuing query letter by the Designated Assessing Officer
+(DAO)/Jurisdictional Assessing Officer (JAO). The information collected from
+various internal and external sources are thereafter disseminated to AOs and
+the Investigation wing.
+
+2.9 Assistance to AO at the time of scrutiny is provided in the form of the
+Individual Transaction Statement (ITS) report, which brings together
+information from multiple sources against a PAN in a single report and gives a
+more comprehensive financial profile of a tax payer.
+
+
+Report No.4 of 2013 (Performance Audit)
+
+2.10 The flow of CIB information (both PAN as well as non-PAN) through
+ITD System is as under:
+
+(eam)
+
+¥ Standard Locality,
+is }¢———_ | Standardization of |¢—>| city & variations
+हद Name and Address
+y
+CASS
+
+६-> | Matching based on
+Name & Address
+
+Party Building
+
+ar गई
+
+PAN population
+
+Selected for Not Selected
+
+Standardizing PAN
+
+Scrutiny for Scrutiny procedure
+data base and
+Matching — Manual
+Available to Not Available PaNifound resolution of suspect
+
+|
+
+networked
+AO
+
+to networked
+AO
+
+cases
+
+i
+FE}
+
+Yes
+
+Based on
+
+J Threshold
+Case building |
+values
+
+-
+
+i
+
+Based on Name,
+Locality, PIN
+code
+
+CIB did not collect information from all the compulsory source codes and
+approved optional source codes. A large number of collected pieces of
+information were without PAN and had zero value. All the persons were not
+furnishing the information called for and penal action was not taken against
+them.
+
+Deficiencies in collection of information
+2.11 CIB had collected 2,868.94 lakh® pieces of Information during FY 08 to
+FY 11. Analysis of information collected by CIB revealed that:
+
+a. DGIT (Intelligence) accorded sanction (June 2010) for collection of
+information from 10 optional sources in Kerala. However, information
+from these sources has not been called for in FY 11.
+
+9. DIT-CIB, Patna had not called’ for information from all the compulsory
+source codes. The Ministry replied (December 2012) that DIT-CIB, Patna
+called for information relating to all compulsory source codes and issued
+notices but did not mention the period to which these pertains to.
+
+6 FY 08: 325.58 lakh, FY 09: 517.19 lakh, FY 10: 876.83 lakh and FY 11: 1,149.34 lakh. Information for FY 08 and FY 09
+was not provided by the CIB, Tamil Nadu. Information in respect of Chhattisgarh was included.
+7 FY 10: source codes 009 (i) & (ii), 010 & 011, FY 11: source codes 009 (i) & (ii)
+
+8
+
+
+Report No.4 of 2013 (Performance Audit)
+
+c. CIB did not receive replies to 18,590 notices® out of 56,528 notices?
+issued during FY 07 to FY 11. DIT-CIB, Pune initiated penal actions only in
+10 cases in FY 11 and DIT(CIB), Mumbai has not taken any action except
+issuing reminders in 2,746 cases. In Andhra Pradesh, ITD did not take
+penal action against non respondent except in 258 cases as ITD was
+preoccupied in the process of educating the filers and encouraging
+compliance. The Ministry replied (December 2012) that due to shortages
+of AddI.DIT/JDIT, many charges did not initiate penalty proceedings.
+
+d. National Stock Exchange (NSE) did not furnish any information for FY 08
+and FY 09”°. ITD did not take any action against NSE for non-furnishing the
+information. The Ministry replied (December 2012) that from FY 10
+onwards data from NSE has been collected and uploaded.
+Information received without PAN
+2.12. Out of 24.74 lakh and 1.55 lakh pieces of information collected in
+Kerala and West Bengal respectively, 19.14 lakh and 0.81 lakh pieces of
+information i.e. 77 per cent and 52.2 per cent information respectively were
+without PAN.
+
+2.13. Analysis of data relating to CIB, Karnataka revealed that only
+17 per cent of the information collected during FY 09 was with PAN whereas
+in FY 10 it was only 08 per cent of the data made available. We also noticed
+that 21 per cent of the information collected in FY 09 has zero value.
+
+Table 2.1: Details of information collected by CIB, Karnataka
+
+Financial Pieces of Piecesof Data with Data Data
+Year _ information information zero without with
+collected made available value PAN PAN
+
+FY 09 2300232 2300232 489057 1917613 382619
+(21%) (83%) (17%)
+
+FY 10 8854011 1788206 152989 1645776 142430
+(9%) (92%) (8%)
+
+Information not maintained in uniform format
+
+2.14 We observed deficiencies in CIB’s maintenance of Information Receipt
+Register (IRR) in the prescribed format in Rajasthan, Kerala, Odisha and Bihar.
+CIB was also not recording details about data uploaded in CIB module and
+disseminated. CIB was not maintaining IRR in a uniform format in Gujarat. It
+did not maintain IRR at all in Assam; and in FY 08 and FY 09 in Kerala and
+Odisha.
+
+8 DIT-CIB, Pune: 12,534; DIT-CIB), Mumbai: 2,746; Andhra Pradesh:1,870; Kerala: 1,390; Madhya Pradesh: 58
+
+9 DIT-C1B, Pune: 25,580; DIT-CIB), Mumbai: 7,329. Information in respect of FY 08 to FY 10 was not available in
+respect of DIT-CIB, Mumbai. Andhra Pradesh 7,296 (FY 11), Kerala: 7,785; Madhya Pradesh: 8,538.
+
+10 Information for FY 10 and FY 11 was made available by CIB.
+
+9
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Collection of information through AIR handled by TIN FCs
+
+2.15... AIR information is received through NSDL to its TIN FCs and uploaded
+to ITD System. Audit examination of information provided by NSDL revealed
+difference between count and amount of transactions received and uploaded
+to TIN Central System.
+
+2.16 The Ministry replied (December 2012) that the difference between
+count and amount of transactions received and accepted is on account of
+AIRs rejected at TIN Central System for the reason of duplicate reporting of
+transactions. Audit, however, has observed that amount of transactions in
+AIRs accepted at TIN Central System was more than the amount of the
+transactions received in many cases.
+
+2.17. We observed several deficiencies in AIR information handled by
+TIN FC which are as follows:
+
+a. While extracting AIR data to ITD, NSDL is required to check the
+presence of PAN in ITD PAN Master. We, however, observed that TIN FCs
+checked” only structural validity of PAN before uploading of AIR, i.e.
+whether PAN contained 10 digits in the specified format. Thus there was
+no check about the presence of PAN in ITD PAN Master. The Ministry’s
+reply (December 2012) - that ITD’s data showed valid and invalid PAN
+categories and that CIB took remedial action as necessary — does not
+address the audit observation.
+
+b. AIR filer can file Supplementary AIR to correct the incorrect
+information. ITD had, however, not prescribed any time limit for this. Little
+purpose is served by supplementary AlRs filed after selection of scrutiny
+cases. The Ministry’s reply (December 2012) - that the use of
+supplementary AIR information was not limited to scrutiny and was also
+useful for investigation and drawing 360 degree profile of taxpayer — does
+not address the audit point as to why a time limit could not be set for
+supplementary AIR.
+
+Assurance regarding completeness of information
+
+2.18 Under Rule 114E(2), AIR in Form 61A was to be filed in respect of the
+specified transactions which were registered or recorded by the specified
+persons during a financial year. We observed that there were little checks in
+place to ensure that persons furnishing the information had included all the
+eligible transactions in their report and that reported information was
+correct.
+
+* audit analysed structural validity in Rajasthan at 5 TIN FCs-Shell Jaipur (code no, 07020), Alankrit Jaipur (code no.
+01005), Karvy Jaipur (code no. 05016), Alankrit Jodhpur (code no. 01058}, Integrated Enterprises Jodhpur (code
+No. 03160) on the data for the period from FY 08 to FY 11 involving 177 AIRs. Structurally valid PAN was not
+available in ITD in 1096 cases (9.62 per cent) out of 11395 cases of 122 AIRs. Further, there was no structural valid
+PAN in 55 AIRs.
+
+10
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Furnishing of incorrect information
+
+2.19 We observed during test check that AIR information in 110 cases,
+selected for scrutiny assessment on the basis of information given in AIR, was
+found incorrect on verification during assessment process. Often, AOs did not
+forward reported information pertaining to assesses in other jurisdiction to
+the concerned jurisdictional AOs in absence of clear instructions, leading to
+wastages of information resources (see Box 2.1).
+
+Box 2.1: Illustrative cases of incorrect information
+
+A. Charge: DCIT 10(3), CIT 10, Mumbai, AY: 09
+
+Assessce: Infrastructure Leasing and Financial Services Ltd
+As per AIR information, the assessee had purchased immovable properties of
+& 1,333.76 crore in FY 08. Assessee clarified that out of the reported transactions, one
+transaction of & 1,280 crore pertained to the registration for the debenture trust deed
+for borrowings by the assessee for its business purposes and did not pertain to any
+purchase transaction in immovable property. Joint Sub Registrar, Kurla also
+confirmed the facts.
+B. Charge: DCIT 5, CIT- 3, Pune, AY: 09
+
+Assessee: Shri Dara N Damania
+As per AIR information the as ee had deposited cash of € 3.07 crore in Cosmos
+Co-op Bank. Later on it was discovered that the assessee did not have an account
+with the Bank. The Bank also confirmed this against notice and informed that the
+cash was deposited by four schools belonging to a Trust where the assessee was only
+a signatory.
+C. Charge: CIT 20, Kolkata, AY: 10
+
+Assessee: Shri Madhuchanda Kar, PAN-AEIPM9031M
+As per AIR, the assessee had invested हैं 20 crore in mutual funds during FY 09.
+During assessment proceedings, Assets Management Company informed that the
+investment made by some other person, inadvertently had been mentioned against
+name of the assessee.
+D. Charge: CIT II, Bengaluru, AY: 06
+
+Assessee: Shri Narchi Bhai M Patel, PAN-AAYPP7854M.
+The AIR information wrongly mentioned registration fee payment of € 75,750 as
+75.75 lakh as sale value of the property. As a result, AO reopened the as:
+by issue of notice under section 148 and concluded under section 143(3) read with
+section 147 in December 2010 without any addition. Thus incorrect information lead
+to reopening the case which otherwise would not have been reopened resulting
+wastage of manpower.
+
+ssment
+
+2.20 Audit also observed that AIR filers did not furnish information in the
+correct way: names of assessees were wrong or mis-spelt or abbreviated;
+addresses of the transacting party were clubbed with the names of the
+transacting parties; addresses of the transacting parties were not correct
+leading to significant information deficit and non-identification of PAN.
+
+11
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+ITD did not levy penalty against the persons who did not file AIR or filed
+belatedly and against those who gave incomplete information in AIR.
+
+Non-levy of penalty for not filing/late filing of AIR
+
+2.21. 271FA of the Act prescribes that if a person who is required to file AIR,
+failed to file AIR within the prescribed period, then the prescribed income tax
+authority i.e. DIT-CIB is empowered to levy penalty of € 100 for every day
+during which the failure continues. The late collection and dissemination of
+AIR information has very serious consequences as it not only results in non
+verification of genuineness of the transactions by AO at the time of
+assessment but also lead to escapement of cases for selection of scrutiny
+through CASS” cycle run for that financial year. This defeats the very purpose
+for which AIR information is collected and disseminated.
+
+2.22 We observed in 60 cases that AIRs relating to FY 08 (relevant to AY 09)
+were filed in January/March 2011 i.e. after expiry of the time limit specified
+under section 153 for assessment.
+
+2.23 CIB sent notices to 2,414 non-filers/late filers of AIR during the
+period from FY 08 to FY 11 of which 1,296” had filed AIR. Penalty had been
+imposed in 263*° cases. Regarding less cases of penal action for late filing of
+AIR as well as delayed response to notices issued under section 133(6), DIT-
+CIB, Mumbai stated that he was guided by the fact that filers were helping
+ITD by building up a database at some cost and inconvenience to them,
+therefore persuasion was preferred to punishment. In Haryana, penalty was
+not levied in those cases where the delay was less than 100 days. Penalty*® of
+% 596.78 lakh for late filing/ defective filing of 2,651 AIR was not levied by
+ITD.
+
+No action against AIR filers for filing incomplete information
+
+2.24 We observed in 87 cases that AIR filers either have not reported the
+transaction at all or not reported all the transactions. Though all these cases
+were selected for scrutiny assessment, AO did not take any action against AIR
+filer for not filing all the specified transactions in AIR (see Box 2.2).
+
+12 Computer Assisted Scrutiny System
+
+13 Maharashtra: 1,035 cases; Haryana: 369 cases; Kerala: 230 (only for FY 10 and FY 11, no list for FY 08 and FY 09
+was generated by 018, Kerala), Tamil Nadu: 471 (FY 09 and FY 10}, Odisha: 116 (FY 09 and FY 10), Andhra Pradesh:
+193 (FY 10)
+
+14 Maharashtra: 811, Kerala: 120, Andhra Pradesh: 64, Odisha: 18, Haryana: 283
+
+15 Maharashtra: 54 cases, Haryana: 122 cases, Tamil Nadu: 87
+
+12
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Box 2.2: Illustrative cases where no penal action was taken
+
+A. Charge: CIT वा, Kolkata, AY: 09
+
+Assessee: Smt. Deria Sarkar, PAN-ALQPS3180C
+As per AIR, the assessee had invested रैं 49.99 lakh in Mutual funds. During scrutiny
+proceedings, the assessee disclosed the investment of € 18 lakh in the Mutual funds
+over and above as disclosed in AIR which did not appear in ITS.
+B. Charge: CIT XX, Kolkata, AY: 09
+
+Assessee: Suvaprasanna Bhattacharya, PAN-AEDPD2611R
+Assessee’s investment of € 38 lakh in mutual funds did not appear in ITS and since it
+was not reported in AIR.
+C. The Sub Registrar, Haveli 20 (under the jurisdiction of DIT-CIB, Pune reported
+14 transactions in AIR for FY 09. Upon verification, DIT-CIB found that five
+transactions having transaction value of more than % 30 Lakh were not included in
+AIR.
+
+ITD did not have any system to ensure the compliance of Rule 114B which
+requires mentioning of PAN in documents pertaining to specified
+transaction.
+
+Non quoting of PAN
+
+2.25 Rule 1148 prescribes that every person is required to quote his/her
+Permanent Account Number (PAN) in all the documents pertaining to
+16 types of transactions specified in the Rule. We found that the ITD did not
+have any system to ensure the compliance of provisions of Rule 114B though
+Section 272B of the Act prescribed penalty for not complying with the
+provisions of the Rule.
+
+2.26 We observed that about 52 and 37 per cent of the transactions as
+reported in AIR to CIB, West Bengal and DIT-CIB, Pune respectively either did
+not have PAN or had invalid PAN. Similarly, 59 and 20 per cent of
+transactions reported to CIB in Andhra Pradesh and Karnataka respectively in
+FY 10 were without PAN or had invalid PAN. This indicates that system of
+collecting the data was not adequate. We took a sample of 150 transactions”
+reported in AIR, where declaration in Forms 60/61 was indicated. We noticed
+that most of the transacting parties were companies, banks etc. Therefore,
+there was no question of these transacting parties not having PAN. We tried
+to find out PAN of these transacting parties and were able to find out PAN in
+127 transactions.
+
+17 Information collected from DIT-CIB, Mumbai relating to the transactions entered in FY 09 for purchase of
+immovable property exceeding रैं 30 lakh.
+
+13
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Refusal of Co-operative Banks to furnish information to ITOs (Intelligence)
+2.27 Cooperative banks/societies involved in banking business in Kerala
+had refused to provide information to CIB against notices issued to them
+under section 133 (6) of the Act saying that they are not governed by this
+provision of the Act and obtained a stay from the Supreme Court. ITD is
+required to ensure to bring information possessed by Co-operative Banks in
+the ITD system. The Board may make necessary amendments in the Act, if
+necessary.
+
+Disposal of Notices
+
+2.28 We observed that CIB in Rajasthan disposed off the notices issued to
+non-filers of AIR within six months of issue of notices, by dropping them on
+the basis of reply or by imposing penalty without ensuring that AIRs had been
+filed. During FY 10 and FY 11, ITD imposed penalty for failure to furnish AIR
+on 21 and 34 non-filers respectively.
+
+CIB did not use the database for identifying prospective AIR filers and non-
+filers.
+
+Data base of AIR filers
+
+2.29 CIB is collecting information by issuing notices to various persons/
+organizations. For this purpose CIB needs to use a database of the
+persons/organization. This database may be used for identifying prospective
+AIR filers and also AIR non-filers. However, it appears that CIB was not using
+this database for AIR purposes. As a result notices in 48 cases were issued
+under section 285BA (5) for not filing AIR to the branch offices of the banks in
+Gujarat who were not required to file AIR. Similarly, in 12 cases in Gujarat
+where penalty proceedings under section 271FA were initiated, were
+ultimately dropped as AIR filers ceased to exist. In Hyderabad, one Sub-
+registrar office did not file AIR during FY 06 to FY 11, but ITD did not take
+action against it as it was not appearing in non-filers list.
+
+Collation of information and party building based on gathered information
+2.30 The information is gathered on annual basis in respect of financial
+transaction in the immediately preceding financial year from various sources.
+Board's letter dated September 2006 suggested that the information
+collected needs to be collated party-wise by CIT-CIB into individual
+transaction statements (ITS) using PAN of the transacting party. Where PAN is
+not available, CIB is required to prepare name-wise ITS and send it in CD
+format to DGIT-S to identify PAN of the transacting parties and update them
+in ITD system. ITD did not follow above suggested procedure and never send
+the gathered data to DGIT-S.
+
+14
+
+
+Report No.4 of 2013 (Performance Audit)
+
+CIB did not upload collected information in a timely and complete manner
+to CIB module. It faced problems in uploading information due to technical
+reasons.
+
+Uploading of information into ITD System
+2.31 Information collected by ITD can be properly utilized only when such
+information is uploaded to the central system being operated by DGIT-S and
+disseminated to the field offices (Administrative Commissioners) for scrutiny
+during assessment. Data from third party sources are useful in verifying
+declarations made by individual assessees.
+
+2.32. We observed that 588.53 lakh pieces of information collected during
+FY 08 to FY 10 could not be uploaded due to technical or other reasons such
+as shortage of manpower, CDs not being readable, proforma not being in
+prescribed format, late receipt of new software from DGIT-S and stabilizing
+problems of the software, etc. CIB offices did not make available money value
+of the information collected and uploaded except Assam, Rajasthan, Kerala
+and Kolkata.
+
+Table 2.2: Details of information collected and uploaded into ITD Systems
+Figures in lakh
+
+Financial Year Information collected Information uploaded
+FY 08 325.58 213,19
+FY 09 $17.19 218.81
+FY 10 876.83 667.34
+FY 11 1149.34 1181.07
+Total 2868.94 2280.41
+
+For FY 08 and FY 09, CIB units at West Bengal, Rajasthan, Tamil Nadu, Assam, Maharashtra (DIT Mumbai) and for FY
+10, 08 unit at Assam did not provide data on information uploaded,
+
+Problems related to PAN/TAN
+
+2.33 1,460 pieces of information worth of हैं 59.49 crore collected from
+post offices could not be uploaded due to want of TANs of respective post
+offices. Information gathered having Tax Deduction and Collection Account
+Number (TAN) issued outside of the State could not be uploaded to ITD
+System from that State. As a result 17,881 pieces of information for FY 11
+valuing हैं 1,680.82 crore gathered by CIB Kochi under two transaction codes
+(403 & 410) could not be uploaded to ITD System.
+
+2.34 The Ministry replied (December 2012) that the data pertaining to TANs
+outside the jurisdiction could be uploaded in the system by the concerned
+jurisdictional DIT-CIB. However, the audit did not find any system by which
+such cases could be transferred to the jurisdictional DIT-CIB for uploading.
+
+15
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Delay in uploading information into CIB module
+
+2.35 NSDL uploaded information received from Bombay Stock Exchange
+for FY 08 and FY 09 in September 2010 and for FY 10 and FY 11 received from
+Bombay Stock Exchange and National Stock Exchange in October 2011.
+
+2.36 Entire collected information of a year could not be uploaded during
+the same year except in Andhra Pradesh, Karnataka and Kerala. DIT-CIB,
+Mumbai informed that the procedure prescribed vide instruction No. 22
+dated 17 January 2008 was very cumbersome and only a few CIB officers
+throughout the country could upload the data. Simplified procedures for
+uploading was introduced vide instruction no. 29 dated 29June 2009
+following which substantial amount of data was uploaded. We observed that
+in 171 cases involving = 50.60 crore information was uploaded late as a result
+these could not be utilized during the scrutiny assessment (see Box 2.3).
+
+Box 2.3: Illustrative case on delayed uploading of information
+
+In CIT-I, Surat charge, CIB source code information containing 21 pieces valuing
+9.63 crore in respect of a company, M/s. Amar Jewellers Limited relating to FY 08
+(relevant to AY 09) were uploaded it on 8 March 2011 after the time limit specified
+under section 153 for completing the assessment.
+
+Lack of uniformity/classification in uploading data
+
+2.37. DIT-S, New Delhi has prescribed digitized data structure’® for the
+purpose of uniformity. The source code agencies are required to furnish the
+information in the prescribed format in CDs. Information received from
+source code agencies in CDs are required to be checked at the filing stage.
+Defective/incorrect CDs were to be returned for resubmission.
+
+2.38 A test check of the soft copy of the information furnished by some of
+the Sub Registrar offices (SRO) in Chennai’’ revealed that the data furnished
+by SRO was not as per the prescribed data structure but was in a different
+data structure in respect of 23 columns out of 39 columns. Moreover, the
+important information such as name of the transacting parties, address was
+in the regional language. This defeated the very purpose of having a common
+prescribed data structure. This may result delay in uploading such data
+received, as translation was required before uploading, involving unnecessary
+manpower and time delay.
+
+18 Chapter 7 of the user manual for ‘Third Party CIB information upload procedure for new compulsory CIB codes’
+19 SRO Mylapore, Triplicane, Nungambakkam (Joint I Thousand Lights), Teynampet (Joint | Chennai — Central)
+
+16
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+2.39 The Ministry replied (December 2012) that considering the spread of
+agencies providing CIB Data substantial agencies find it difficult to comply
+with Return Preparation Utility (RPU)/Filed Validation Utility (FVU)
+requirements. Nevertheless, field officers request agencies to submit data in
+correct prescribed format.
+
+Information of earlier years was uploaded as information of current year
+
+2.40 We observed that transactions pertaining to earlier years were
+uploaded as the transactions of current year in 32 cases (see Box 2.4).
+
+Box 2.4: Illustrative cases on uploading of earlier year’s information as current
+year’s information.
+
+A. A transaction” of 13.0 lakh transacted on 22 February 2002 was shown as
+the transaction of FY 08.
+5. In one another case”! 33 pieces of AIR/ CIB information valued हैं 70.30 crore
+
+disseminated and appearing in ITS of the assessee as transaction of FY 08 were
+
+related to FY 07.
+
+2.41. CBDT instruction no. 1943 dated 22 August 1997 and no. 414/66/2009
+(Inv. ॥ dated 22 December 2009 prescribed that DIT-I&CI shall disseminate/
+upload CIB source code information between 01September and 15
+September immediately following the financial year in which the transaction
+was registered or recorded. Further, as per first proviso to sub-section (1) of
+section 153, no order of assessment shall be made under section 143 or 144
+after expiry of 21 months from the end of assessment year in which the
+income was first assessable.
+
+Dissemination of information
+
+2.42  AIR/CIB information uploaded with PAN on the system generates
+Individual Transaction Statements (ITS) and is available for use in CASS for
+selection of cases for scrutiny. Such data becomes accessible to AOs
+concerned in the cases selected for scrutiny which are useful in assessment
+proceedings. Non—-PAN data is, however, organized on the basis of address
+and sent by DGIT-S to CCIT concerned for further dissemination to
+jurisdictional DAO/JAO for taking further action.
+
+2.43 08, Uttar Pradesh delayed the dissemination of non-PAN information.
+CIT-I, Agra and CIT Ghaziabad received CD containing non-PAN information
+for FY 09 in the month of January 2012, i.e. after end of the prescribed period
+by which assessment for relevant assessment year could have been
+completed. CIT-I, Lucknow received this CD in May 2011. Similarly, DAO, Agra
+received a CD containing 9,007 pieces of non-PAN information pertaining to
+
+20 Assessee: M/s. Fair growth Enterprises Private Ltd., Charge: CIT-II, Kolkata, AY: 09
+21 Assessee: M/s. Amrapali Fincap Private Limited, Charge: CIT-I, Anmedabad, AY: 09
+
+17
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+FY 05 to FY 09 in April 2010. This delay resulted in non utilization of
+information due to time barring of assessment period, non-tracing of
+transacting parties, etc.
+
+2.44 Prior to February 2010, information was disseminated by 01-08,
+Kolkata in consolidated manner without collation or sorting. All CsIT were
+given copies of same CD. Information received in 10 selected units”? was in
+such an unorganized manner that these could not be segregated so as to
+make the retrieval of the desired information at the time of assessment. CIB
+Kolkata was requested to provide macro level details regarding information
+disseminated to the five CsIT selected for review. However, CIB Kolkata
+expressed its inability to retrieve and provide the same on the plea that the
+data had been arranged pin code wise before sending to respective
+CCsIT/CsIT and jurisdiction of a CIT had covered numbers of pin code areas.
+When the concerned wing that has collected, organized and disseminated the
+data itself cannot retrieve the same, it may be almost impossible for AOs to
+use the same at the time of the assessment.
+
+CIB did not digitize and disseminate declarations received in Forms 60/61.
+
+Dissemination of information collected through Form 60 & 61
+
+2.45 CBDT”™ instructions recommended that CIT-CIB should get the
+information contained in Form 60/61 digitized in a pre-determined format,
+sort them address-wise and range-wise and sent in CD format within one
+month of receiving the declarations to CCsIT for passing it on to the DAOs
+who shall with the prior approval of CIT call for information under section
+133(6). We observed that different approaches were adopted by CIB offices
+in this regard. CIB in Karnataka, Kerala, Tamil Nadu, Uttar Pradesh and West
+Bengal dumped forms” after receipt whereas Andhra Pradesh, Gujarat,
+Haryana, Punjab and Rajasthan digitized*° the data contained in Forms 60/61
+and disseminated the same to respective CsIT. However disseminated
+information did not reach to the concerned assessing officers in some
+states’, As a result large number of information which may be useful in
+identifying the assessees remained unutilized to a large extent coupled with
+wastage of scarce resources of ITD-money and manpower.
+
+22 Out of 75 selected units disseminated information was not received by 65 units. Only 10 units received the
+disseminated information.
+
+23 Letter no.415/2/97-IT (Inv.) dated September 2006 of CBDT.
+
+24 Kerala: 13,247 (FY 08 to FY 11); Karnataka: NA, Tamil Nadu: NA, Uttar Pradesh (CIB Lucknow): 5,82,251 (FY 09 and
+FY 10); West Bengal: 73,421 (FY 08 to FY 10).
+
+25 Andhra Pradesh: 9,95,330 pieces digitized and sent; Gujarat: 38,488 Forms received of which 2,264 were
+disseminated; Punjab:2,50,301 Forms 60/61 received and disseminated; Haryana: 25,695 pieces received and
+disseminated; Rajasthan: 69,474 Forms digitized however only 46,832 were uploaded
+
+26 Haryana and Punjab
+
+18
+
+
+Report No.4 of 2013 (Performance Audit)
+
+2.46 Information about Forms 60/61 either was not available or not
+ascertainable in Assam, Odisha, Mumbai and Delhi Regions. CIB, Kanpur did
+not receive any Form 60/61 from AIR filers. None of the banks of the State
+Bank group, RTOs/SRTOs and District Registrars/Sub-Registrars have
+forwarded Form 60/61 to CIB Office in Kerala.
+
+CIB did not use all functionalities available in CIB module
+
+Standardisation of transactions in CIB module
+
+2.47 The functionality of standardization of names and addresses in the
+transactions where PAN is not available was not being used. The on-line
+review of all standardized and non-standardized transactions required to be
+done for checking correctness of the transaction details by ITOs and their
+staff was not being done. The function of correcting errors in names and
+addresses due to errors in data entry was not being performed.
+
+2.48 The Ministry replied (December 2012) that the data is voluminous and
+it requires technical expertise for standardization of Names and Addresses in
+the transactions where PAN is not available.
+
+City - Regional Computer Centre (RCC) Cross-Reference at National
+Computer Centre (NCC)
+
+2.49 The functionality of RCC and city cross — linkage required to be used
+to decide final destination of such transactions was not being maintained in
+the system. Similarly, the options available in system to transfer all
+transactions not pertaining to a particular RCC to NCC and also to retrieve
+from NCC, all transactions belonging to a particular RCC were not being used.
+
+2.50 The Ministry replied (December 2012) that the functionality of RCC —
+City linkage is available in the system. The data has to be updated by the field
+CIB Units. Data warehousing & business intelligence project is being
+envisaged to address these issues.
+
+Collation of transactions based on standardisation of name and address of
+the party
+
+2.51 The functionality available for collation of transactions received
+without PAN from third parties on the basis of name and address through
+interface with AIS module after standardisation of name and locality is not
+being performed.
+
+19
+
+
+Report No.4 of 2013 (Performance Audit)
+
+2.52 After receiving the transaction from third parties and standardisation
+in cases where no PAN is available, there is provision in the system to form
+parties by collating all transactions related to the single assessee at a single
+place on the basis of standardised names and addresses. However, we
+observed that no such activities were being performed by using the third
+party information received during FY 08 to FY 11 by the directorate using
+functionality of CIB module in order to widen the tax base. Similarly,
+functionality in the system to locate a unique party and linking of transaction
+to it, resolving same transaction linking to more than one party are also not
+being performed. Function of creating new party for each non-standardised
+transaction was also not being performed. In the absence of formation of
+parties, the information received from the third party remained unutilised
+and this defeated the very purpose of computerisation.
+
+Case Generation
+
+2.53 The functionality for generation of cases on the basis of threshold
+limits or benchmarks to build cases and mark them for sending query letters
+and also to ascertain whether the party whose case is built has filed the
+return or not through interface with AST module is available in CIB module.
+However, we observed that cases were not generated in CIB module. The
+Directorate did not issue any query letters. The non-generation of cases by
+using CIB module, resulted in huge number of information remaining
+unutilised, rendering the objective of widening the tax base using this
+information unachieved, as this information could not be disseminated to its
+final destination i.e. concerned Assessing Officer/Range.
+
+Utilisation of information received without PAN
+
+2.54 Major part of the information received remained unutilised due to
+absence of PAN and no efforts were made by ITD to resolve such cases by
+using various functionalities of CIB module. Even in cases where ITD
+successfully disseminated the information, no monitoring was exercised to
+ascertain whether all the cases where information has been passed on to the
+concerned Assessing officers/Range have been acted upon, despite this
+facility being available in the system. The failure on the part of Department to
+utilise the various functionalities of CIB module resulted in a major part of the
+information received remaining unutilised and locked in the system which
+have not been disseminated to concerned assessing officer/Range head.
+
+2.55 Out of a total of 2.69 crore pieces of information valuing = 2,830
+thousand crore received during FY 08 to FY 11, 0.71 crore pieces of
+information valuing = 828 thousand crore received without PAN remained
+unutilized due to non-collation of transactions. Moreover, the trend of non-
+
+20
+
+
+Report No.4 of 2013 (Performance Audit)
+
+utilization of information received showed increase during FY 10 and FY 11 as
+compared to earlier years. Hence, due to non-collation of these transactions
+with PAN by using interface with other ITD Modules, ITD was unable to utilize
+the information to the final output of CIB Module i.e. ITS report to give a
+more comprehensive financial profile of a tax payer at the time of scrutiny
+assessment by AO.
+
+2.56 Further, there is provision in CIB module where progress of each case
+sent to the concerned AO/Range can be watched through generation of
+feedback reports. However, no such reports were being generated by ITD.
+Thus, the tool available in CIB module to monitor utilisation of information to
+achieve the objective of deepening/ widening tax base remained unutilised.
+
+2.57 The Ministry replied (December 2012) that the approach of the
+department was to investigate on sample basis. However, 360 degree profile
+is available to investigation, realization of demand, identifying survey and
+search cases.
+
+Recommendations
+2.58 We recommend that
+
+a. ITD may collect Information from all the compulsory as well as
+approved optional source codes. The Ministry stated (December 2012)
+information gathering for compulsory as well as approved optional source
+codes is done as policy-matter considering emerging priorities vis-a-vis
+available resources. ITD is facing acute shortage of manpower at different
+levels which poses serious limitations on various intended outcomes.
+
+b. CIB/NSDL may upload the entire collected information in the same
+year so that it can be used in scrutiny assessment, bottlenecks in
+uploading the information may be removed. The Ministry replied
+(December 2012) that ITD made consistent efforts to overcome the
+problems and upload data seamlessly. Specific targets have been assigned
+in the Central Action Plan 2012-13 for import of financial transactions into
+CIB module.
+
+c. ITD should put in place a system which ensures correctness and
+reliability of data received through AIR/CIB before its dissemination to the
+field. There is also a need for effective penal provisions in the Act for
+furnishing factually incorrect information in AIR or in reply to notices
+issued by ITD. The Ministry has noted (December 2012) the
+recommendations and agreed to examine the desirability of legislative
+change, if any.
+
+d. ITD may evaluate the feasibility of developing a web based
+information collection system to avoid the problems in collecting non-AIR
+information. This would take care of redundant data and data mismatch.
+The Ministry informed (December 2012) that the issue was already under
+consideration of the CBDT.
+
+21
+
+
+Report No.4 of 2013 (Performance Audit)
+
+e. ITD may also initiate internal review to gauge the utility and
+effectiveness of system of filing of AIR. The Ministry noted the suggestion
+and informed (December 2012) that from time to time CBDT has set up
+committee/s to review inter alia the module and functionality in various
+forms.
+
+f. ITD may define time lines for issuing query letters as also for referring
+back cases to DIT-CIB, as control mechanism to ensure that the query
+letters are issued by a specified time/date and if the letters return as un-
+served, the cases are referred to DIT-CIB within a defined time period,
+enabling effective monitoring of the activity. The Ministry replied
+(December 2012) that the query letters issued by DIT (Intelligence) were
+system generated and were sent within time prescribed in the Action Plan
+for 2012-13. However, the human resources constraints pose a limitation
+on the intended outcomes.
+
+g. ITD may devise a suitable mechanism including business intelligence
+tools to ensure effective utilization of information collected at high cost,
+both to ITD and for the agencies tasked with collecting and providing such
+information to ITD to achieve the objective of deepening and widening of
+tax base. The Ministry replied (December 2012) that a separate project
+relating to data warehousing was proposed to be undertaken to address
+these and the related issues by DIT-S. Also, the new application viz.
+Income Tax Business Application would suitably address the suggestion.
+h. ITD use the available functionalities of CIB module. The Ministry
+replied (December 2012) that with continuous evolution of IT
+technologies, CIB functionalities are improving. The efforts are further
+continuing.
+
+22
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Chapter III: Utilization of Information
+
+e CASS system of ITD selected cases for scrutiny out of which only 24 per
+cent of cases had AIR information.
+
+© AOs did not utilise the useful available information in 285 high value cases
+or finalize the assessments relying on the reply of the assessees without
+verifying the facts and correctness of the transactions.
+
+e ITD identified 2,45,843 number of non-filers/stop filers. ITD did not notify
+Designated Assessing Officers (DAOs) for following up on information in
+selected CsIT charge in Gujarat, Punjab, Uttar Pradesh and West Bengal.
+
+e ITD identified PANs in 22.7 to 26.2 per cent cases during the period FY 08
+to FY 11. ITD did not issue notices in 2,596 non-PAN cases where
+addresses were incomplete. Notices issued in 5,355 cases returned
+undelivered.
+
+e AIR information could not be considered during assessment as the
+jurisdictional CIB did not respond to the request of AO.
+
+e AO did not refer back the information to jurisdictional CIB for
+confirmation.
+
+e AOs did not have data relating to action taken on the disseminated AIR
+information. In the selected charge, AOs did not maintain the information
+in the prescribed register.
+
+Computer Assisted Scrutiny Selection (CASS) system of ITD selected cases
+for scrutiny out of which only 24 per cent cases had AIR information.
+
+Extent of usage of disseminated information
+3.1 Position of cases selected for scrutiny by CASS on the basis of AIR data
+for all assessment charges across the country is as follows:
+
+Table 3.1: Cases selected for scrutiny by CASS
+
+‘Assessment PANs for which Total cases AIR cases % of PAN AIR cases
+Year information selected in selected cases completed
+was available CASS Number % selected by Number %
+CASS-AIR
+AY 08 4,19,879 82,024 14112 7 34 2,959 21
+AY 09 5,73,891 2,31,145 36,910 16 6.4 13,747 37
+AY 10 7,22,829 2,32,303 80,681. 35 11.2 70433 87
+Total 17,16,599 5,45,473 131,703.24 77 87,139 66
+
+3.2 The above table indicates that only 17 to 35 per cent of cases selected
+in CASS for scrutiny were related to AIR cases. Further, AIR related cases were
+on an average only 7.7 per cent of total PAN cases for which AIR information
+was available. Thus, ITD did not utilize AIR information effectively for scrutiny
+assessments.
+
+23
+
+
+Report No.4 of 2013 (Performance Audit)
+
+AOs did not utilise the useful available information in 285 high value cases
+or finalize the assessments relying on the reply of the assessees without
+verifying the facts and correctness of the transactions.
+
+Disseminated information not used properly
+
+3.3 AIR/CIB information is accessible in AST to AOs in those cases which
+were selected for scrutiny. We observed high value transactions of € 2,138.80
+crore reported in AIR information in 285 cases”’ selected for scrutiny where
+AOs did not consider information during scrutiny proceedings or finalize the
+assessments relying on the reply of the assessees without verifying the facts
+and correctness of the transactions from AIR filers, DIT-CIB and DGIT-S. AIR
+filer rectified wrong information uploaded in the system, by filing
+supplementary AIR but report generated from the system at the time of
+assessment did not reflect the updated information. AOs did not utilize
+information received from other jurisdictional units. (see Box 3.1).
+
+Box 3.1: Illustrative case on non-utilization of disseminated information
+
+A. Charge: CIT-II, Kolkata, West Bengal, AY: 09
+
+Assessee: All Bank Finance Ltd., PAN-AACCA4014D
+Assessee denied investment of € 6.45 crore in mutual funds which appeared in ITS.
+AO issued letter for confirmation under section 133(6) on 27 December 2010 to the
+Principal Officers of the mutual fund which remained unanswered. AO made
+assessment on 30 December 2010 without drawing any inference.
+B. Charge: CIT-XX, Kolkata, West Bengal, AY: 09
+
+Assessee: Dr. Prasanta Banerjee, PAN-AECPB7012
+ITS revealed that assessee deposited cash of F 189.66 crore and हैं 41 lakh in his
+saving bank accounts. Assessee denied the deposit of € 189.66 crore. The Bank
+confirmed the assessee’s contention stating that mistake occurred due to error in AIR
+filed by them. Bank further informed that they had rectified the error by filing
+supplementary AIR return on 12 August 2009. However, ITS generated during
+October 2010 by AO at the time of assessment showed transactions based on AIR
+initially filed by the bank. This shows that the system did not update ITS based on
+supplementary AIR return.
+C. Charge: CIT-I, Chandigarh, AY: 09
+
+Assessee: Rajinder Singh, PAN-ANFPS7614A
+ITD selected this case on the basis of AIR information for cash deposit of = 24.95
+lakh. The assessment order mentioned that हैं 8 lakh was from sale of agricultural
+land, however, the differential amount was not discussed during scrutiny proceedings.
+
+3.4 The Ministry replied (December 2012) that the information as
+updated are being adequately reflected and being viewed by appropriate
+authorities. Audit observed that the reply of the Ministry is in variance of the
+observations noted above.
+
+2 Pertaining to AYs 09 and 10 in Andhra Pradesh, Assam, Bihar, Haryana, Gujarat, Karnataka, Kerala, Madhya
+Pradesh, Maharashtra, Odisha, Punjab, Rajasthan, Uttar Pradesh and West Bengal charge,
+
+24
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Inadequate follow up on disseminated information
+
+3.5 We observed in three cases that concerned AO had failed to utilize
+the disseminated information. In these cases scrutiny proceedings were
+dropped either due to delay in serving of notice or notice was not at all
+served to the assessee intimating the selection of the case in scrutiny. These
+cases, however, could be re-opened in terms of para 6 of CBDT instruction
+no. 1 of 2009. The omission on the part of AO resulted in non-completion of
+assessment under scrutiny and subsequently non-verification of AIR
+information (see Box 3.2).
+
+Box 3.2: Illustrative cases on inadequate follow up
+
+A. Charge: CIT-II, Delhi, AY: 10
+
+Assessee: M/s. Maxxfun Buildmart Private Limited
+The assessee filed e-return of income on 31 March 2010 at ‘nil’ income and revised
+return on 03 April 2010 at a loss of हैं 0.63 lakh. ITD selected it under CASS for
+scrutiny on the basis of AIR information of sale of immovable property for हैं 5.65
+crore. AO issued statutory notice under section 143(2) on 26 August 2011. AO
+dropped the proceedings on 28 December 2012 despite CIT’s order dated 23
+‘December 2012 for examining the case for issue of notice under section 148,
+considering that the assessee was not eligible to file the revised return as original
+return filed by him was not in time and initiating the proceedings on the basis of the
+original return was not possible as time for issue of notice was over.
+Centralized Processing of Returns Scheme, 2011 prescribed that for a valid e-return,
+it is necessary that Form ITR-V may reach CPC within the period specified. DIT
+(Systems) informed (May 2012) that CPC did not receive ITR-V of original return
+filed by the assessee. In absence of ITR-V, original return cannot be processed in ITD
+application and also cannot be selected in CASS. However, ITR-V of revised return
+‘was received on 07 May 2010. Therefore revised return filed by the assessee was
+processed as original return under section 143(1) by CPC. Further the same return
+was also selected in CASS on 07 August 2011 for which notice under section 143(2)
+was issued on 26 August 2011. Since the original return was invalid return, therefore
+subsequent filed return (revised return) was to be considered as original return and
+assessment under section 143(3) should have been completed on this subsequent
+return instead of dropping the proceedings. In addition, penal action for late filing of
+return should have been taken by AO. Thus the action of AO was totally irregular as
+he did not take into account the validity of the first (original) return. He also did not
+follow the instruction of CIT to reopen the case under section 148.
+8. Charge: CIT-2, Nagpur, Maharashtra, AY: 09
+
+Assessee: Shri Aloke Ambar Basu, PAN-ABNPB7624B
+ITD selected this case for scrutiny on the basis of AIR information of sale of
+immovable property for € 79.99 lakh on 07 September 2007, which was also
+confirmed by the Sub-Registrar and notice under section 143(2) was issued on
+20 August 2009. Scrutiny proceedings were dropped on 09 December 2010 stating
+that notice was not served on to the as:
+
+886९.
+
+28 One case each in Haryana, Delhi and Maharashtra
+
+25
+
+
+Report No.4 of 2013 (Performance Audit)
+
+C. Charge: CIT Panchkula, Haryana, AY: 09
+
+Assessee: Sanjeev Sardana, PAN-ABMPS1166L
+ITD selected the case for scrutiny on the basis of AIR information of payment of
+& 34.49 lakh through credit card and issued notice under section 143(2). In response,
+the assessee contested that he has filed the return in July 2008 and received notice on
+26 August 2010, delayed almost by one year and requested to drop the proceedings.
+AO dropped the proceedings in December 2010 rather than reopening the case.
+
+AIR information not brought to tax despite being offered by the assessee
+3.6 We observed in two cases which were selected for scrutiny under
+CASS on the basis of AIR information but AO did not consider the information
+despite the assessee offered the amount of AIR reported information as
+income in his revised return and paid tax on this amount (see Box 3.3).
+
+Box 3.3: Illustrative case on information not brought to tax
+
+Charge: CIT-Bhopal, Madhya Pradesh, AY: 09
+Assessees: Sanjay Shrivastava (PAN-ACNPS5131P) and Pankaj
+Shrivastava (PAN-ACNPS5129H)
+Both assessees filed their return on 29 September 2008 declaring taxable income
+₹ 5.44 lakh and हैं 5.06 lakh respectively. ITD selected these cases for scrutiny under
+CASS on the basis of AIR information of cash deposit of € 30.01 lakh in each case
+and issued notices under section 143(2) on 10 September 2009. During scrutiny
+assessment, AO did not make any specific query about AIR information and also
+there was no mention in the assessment orders with respect to AIR information. Audit
+noticed that AO has completed the scrutiny assi ent on 16 November 2010,
+determining original returned income as the taxable income despite AIR information
+of cash deposit of = 30.01 lakh was shown by both the assessee as income from other
+sources in their revised returns which were filed on 22 December 2009 and paid tax
+on said amount under section 140A in October 2009.
+
+Cases selected by CASS for scrutiny on the basis of AIR were not taken up
+for scrutiny.
+
+३.7. We observed that five selected cases were not taken up for scrutiny
+by the concerned AOs resulting in non-verification of AIR information of
+₹ 8.61 crore.
+
+a. In Delhi, DGIT-S provided list of cases (soft copy) selected under CASS
+on the basis of AIR information for scrutiny. We noticed four cases”?
+involving AIR of € 3.57 crore were selected under CASS-AIR, but respective
+AOs denied selection of these cases. DGIT-S clarified that notices under
+section 143(2) had been generated in these cases.
+
+29 pertains to AY 2008-09 and 2010-11
+
+26
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+b. CASS selected the case of Ramchandra Radhakrishna, PAN-
+AAGPR9058M” for scrutiny on the basis of AIR information of € 5.04
+crore. Audit noticed that DCR did not have the records of this case and
+ITD also did not make case records available.
+
+Disseminated information not pertained to the assessee
+
+3.8 AIR filers have to ensure that PAN is quoted correctly in AIR. We
+observed in 16 cases*' that disseminated AIR information did not pertain to
+the concerned assessee but the quoted PAN was of the assessee (see Box
+3.4).
+
+Box 3.4: lustrative cases on disseminated information not pertaining to the
+assessee
+
+A. Charge: CIT Panchkula, Haryana; AY: 10
+
+Assessee:-Vir Singh, PAN-ARGPS4907H
+During scrutiny proceedings, AO noticed that PAN of the a: was wrongly
+quoted in the information supplied for purchase of property for हैं 43.51 lakh; the
+transaction was actually related to another assessee (Mihir Chandra Kant Shah).
+B. Charge: Ward 11(2), CIT-I, Karnataka; AY: 09
+
+Assessee: B. Nagarajan, PAN-AAFPN1966R
+AIR filer provided information of a different entity with identical name of the
+company as that of the assessee’s company. Failure on the part of AIR filers to ensure
+quoting of correct PAN in AIR resulted in inconveniences to the assessee.
+
+3.9 The Ministry replied (December 2012) that there is facility to identify
+any mismatch between PAN name and transacting name by way of mismatch
+flag provided in the system. It can be used by various field authorities. The
+reply of the Ministry is not addressing the issue pointed out by audit.
+
+ITD identified 2,45,843 number of non-filers/stop filers. ITD did not notify
+Designated Assessing Officers (DAOs) for following up on information in
+selected CsIT charge in Gujarat, Punjab, Uttar Pradesh and West Bengal.
+
+Identification of non-filers/stop-filers
+
+3.10 ITD identified®* 2,45,843 number of non-filers/stop filers*®. Since one
+of the basic purposes of collecting AIR/CIB information was to identify non-
+filers and widen the tax base, non generation of non-filers list resulted in
+non-identification of potential non-filers seriously hampering ITD’s initiative
+in strengthening the tax base. We noticed the following issues relating to
+identification of non-filers/stop-filers:
+
+30 Charge: CIT Ghaziabad (now CIT, Noida), AY: 2008-09
+
+31 One case in Haryana, 10 cases in Karnataka and five cases in Rajasthan pertaining to the AYs 2008-09 and 2009-10.
+
+32 Para 3 and 4 of instruction no. 1/2009 dated 12.2.2009.
+
+33 Andhra Pradesh: 10,327 (FY 10), Delhi: 57,254 (FY 08 to FY 10), Punjab: 21.253 (FY 08 and FY 09), Rajasthan:
+10,257, Madhya Pradesh: 17,526, Maharashtra: 1,14,118, Uttar Pradesh: 1,755 and West Bengal: 13,353
+
+27
+
+
+Report No.4 of 2013 (Performance Audit)
+
+a. In Delhi, CIT-CO forwarded the list of non-filers for FY 08 and FY 09 on
+26 December 2011 and for FY 10 on 07 February 2012 to the Co-ordination
+wing of CCIT-I, Delhi i.e. after lapse of 32 months, 20 months and
+
+10 months respectively. The list of non-filers for FY 11 was yet to be
+circulated (May 2012).
+
+b. In Maharashtra, in five selected CsIT, ITD initiated action against
+23,051 number of non-filers/stop filers out of 1,14,118 identified and
+brought 82 new assessees to tax net. However, ITD did not add new
+assessees to tax net in CIT 8 and CIT 11, Mumbai though there were
+48,014 and 50,665 non-filers/stop filers respectively.
+
+c. In Tamil Nadu, CIT-CO, Chennai stated that furnishing of information
+was in the domain of DGIT-S.
+
+d. In Haryana, DAOs under the charge of CIT, Panchkula stated that no
+non-PAN cases were available with them. Data for FY 08 was not received,
+however, for FY 09 was received in January 2012.
+
+e. No information/list™ in the selected CIT(CO) charge regarding number
+of non-filers including stop filers on the basis of transactions in AIR and
+status of filing of Income Tax Return for the same year was generated and
+intimated to respective AOs as per instruction.
+
+Appointment of Designated Assessing Officers (DAOs)
+
+3.11 The cadre controlling CCsIT were required to pass orders conferring
+concurrent jurisdiction to one or more AOs (i.e. designated AO), depending
+on the workload, at the stations where the assessees (to whom notices under
+section 142(1) are to be issued) were located. The Designated Assessing
+Officers (DAOs) were responsible for identifying assessees in respect of non-
+PAN AIR pieces of information. We observed in selected CsIT charge in
+Gujarat, Punjab, Uttar Pradesh®® and West Bengal that ITD did not notify
+DAOs during FY 08 to FY 11.
+
+a. In Delhi, Co-ordination wing of CCIT-I informed that the last batch of
+DAOs was nominated in November 2008 for AY 07 and AY 08.
+
+b. In Tamil Nadu, ITO, Business Ward IV(3), Chennai was nominated as
+DAO for the jurisdiction of CCIT-I to VI, Chennai and DGIT (Investigation) in
+June 2006. However, for jurisdictions falling under CCIT-Trichy/Madurai/
+Coimbatore, DAOs were nominated in February 2012. In respect of DAO
+Chennai jurisdiction, ITD did not take action in identifying assessees in
+respect of AIR information without PAN.
+
+34 Assam, Gujarat, Kerala and Odisha
+35 Not in CIT - Varanasi, Ghaziabad & CIT-II, Kanpur and appointed in CIT-1, Lucknow in October 2011.
+
+28
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Issuance of query letters to non-filers
+
+३.12. Para 3 (0) and 4(b) of instruction no. 01/2009 of CBDT provides that in
+case of AIR information with/without PAN, JAO/DAO shall issue query letter
+in the prescribed proforma to identify the assessee to all non-government
+transacting parties. If, on the basis of reply to the query letter where
+information was without PAN, it is found that the person is an existing
+assessee, the letter along with the reply/return and AIR information should
+be transferred by DAO to JAO for initiating action in accordance to para 4 (ii)
+and (iii) of instructions.
+
+a. In Delhi, there were 96,157 cases of AIR information without PAN
+during FY 097, DIT (| &Cl) stated that 14,529 query letters were issued to
+persons who had entered into high value transaction during the FY 11.
+
+b. In Rajasthan®’, query letters to non-filers were not issued by JAOs of
+the selected units.
+
+c. In Madhya Pradesh, it was noticed that, two 08057 have taken action
+on 3,388 pieces out of 5,305 pieces of AIR/CIB information without PAN
+received during the period from FY 08 to FY 11. However, they failed to
+initiate any action on 1,917 pieces of information till March 2011.
+
+d. In Odisha, out of 1958 enquiry letters issued during FY 11 in respect of
+cases of AIR without PAN, 343 letters remained undelivered, replies were
+received in respect of 680 cases and in respect of 935 cases no reply was
+received.
+
+ITD identified PANs in 22.7 to 26.2 per cent cases during FY 08 to FY 11. ITD
+did not issue notices in 2,596 non-PAN cases where addresses were
+incomplete. Notices issued in 5,355 cases returned undelivered.
+
+Identification of PAN
+
+३.13. In para 10 of instruction no. 6/2006 of August 2006, it was mentioned
+that to ascertain PAN of persons in respect of transactions where PAN is not
+quoted by AIR filer, DGIT-S has developed software Multi Iterative Phonetic
+Pattern recognition Algorithm (MIPPRA) to search PAN. Accordingly,
+therefore, it was instructed that no fresh notice under section 142 (1) should
+be issued in pursuance of letter of DIT-S dated 20 December 2005 in respect
+of cases having AIR information but no PAN. DIT-S, New Delhi informed that
+ITD never introduced this software. It was a pilot work used in FY 07. The
+matching percentage was around 20-22 per cent. Based on the above
+
+36 Information for FY 08, FY 10 and FY 11 was not furnished.
+
+37By 36 JAOs (except six JAOs who issued notices to 121 numbers of non-filers) under the selected CsIT having
+10,257 numbers of non-filler during FY 08 to FY 11.
+
+38 DAO/ITO 1(1), Bhopal and DAO/ITO 3(3), Indore
+
+29
+
+
+Report No.4 of 2013 (Performance Audit)
+
+experience, ITD shelved the use of MIPPRA. However, they did not explore
+any alternatives to meet the important requirement of PAN identification.
+The Ministry replied (December 2012) that these issues are being explored
+under data warehousing and business intelligences.
+
+3.14 AIR information without PAN is required to be passed on to 0805 who
+shall in turn issue query letters thereon to all Non-Government transacting
+parties in terms of para 4 of the instruction no. 1/2009. The designated
+Assessing Officers are required to take all possible steps to locate and serve
+the query letter and subsequent notice, if required. On the basis of replies
+received from the transacting parties of non-PAN AIR information, DAO is
+required to intimate PAN of concerned transacting parties, to DIT (CIB) of his
+region, who shall then update PAN in non-PAN AIR information through AIR
+module of ITD application. We found that ITD did not make major efforts to
+identify PAN in following cases:
+
+a. During FY 11 only in 26.4 per cent cases PAN were identified in four
+States”.
+
+b. In Assam, only in five cases PAN could be identified during FY 08 in CIT
+Dibrugarh against 3,763 query letters issued.
+
+c. In Gujarat, only in 24 per cent cases PAN could be identified during FY
+09 and FY 10 against 13,542 query letters.
+
+d. In Kerala, only in 22.7 per cent cases PAN could be identified during FY
+09 and FY 11 against 27,292 query letters.
+
+e. No action for identifying PAN was taken in FY 08 and FY 11 in Gujarat
+and from FY 08 to FY 10 in Andhra Pradesh and Punjab.
+
+f. No case of updating PAN was reported by DAO in the selected charge
+of Maharashtra, Odisha and Rajasthan.
+
+3.15 To ascertain the depth of the action taken by ITD to identify PAN of
+the persons whose PAN were not quoted in AIR, we collected information
+from DIT-CIB, Mumbai for FY 09 (AY 10) and selected 150 cases from AIR
+information pertaining to purchase of immovable property exceeding
+& 30 lakh, mainly companies and tried to find out PAN. We noticed that ITD
+had not taken much action to search PAN in these cases as ITD failed to
+identify PAN in these cases whereas we were able to identify PAN in 127
+numbers of transactions. In the absence of PAN, AIR information could not be
+disseminated to the concerned assessing officer for use during scrutiny
+assessment. Out of PAN identified in 127 cases we selected 35 cases for test
+
+39 Andhra Pradesh: 5,492 against query letters 26,858; Haryana: 3,659 against query letters 11,562; Madhya Pradesh:
+1,156 against query letters 6,086 and Punjab: 4,977 against query letters 13,274.
+
+30
+
+
+Report No.4 of 2013 (Performance Audit)
+
+check to see whether AIR information was disseminated to AOs and whether
+it was appearing in Individual Transactions Statement (ITS). We found that in
+none of the test checked cases AIR information was appearing in ITS.
+
+3.16 The Ministry replied (December 2012) that there is difference
+between manual check and check through software based search engine.
+Searching through software based search engine is carried through well-
+defined logical parameters which require the source data on one hand and
+one target data on the other. As PAN was not available in data, ITS could not
+be generated. Audit feels that the system may be strengthened with suitable
+modification in the Software.
+
+३.17 In Tamil Nadu, the total number of ‘AIR information without PAN’ for
+FY 09 to FY 11 was 1,31,117 involving हैं 64,450.42 crore. However, ITD could
+not identify PAN in respect of the above pieces of AIR information and
+update in ITD application (March 2012). Thus, in the absence of PAN 1,31,117
+cases have escaped scrutiny, as they were not available for CASS. DIT/CIB
+expressed difficulty in tracing PAN when no correct address was available.
+
+3.18 We observed that ITD did not receive any reply against 7,903 notices
+issued to AIR filers by DIT (CIB), Haryana during FY 11 for getting PAN of the
+transacting parties. ITD referred these cases to CCIT (North West Region) but
+CCIT (NWR)/CCIT Panchkula did not forward to jurisdictional DAOs.
+
+3.19 In non-PAN cases where addresses were incomplete, notices in 2,596
+cases” could not be issued and 5,355 cases” in which notices were issued
+returned undelivered. However, ITD did not take action on these cases. From
+the records available, we observed that DAO did not take follow up action to
+locate and serve the query letters.
+
+AIR information could not be considered during assessment as the
+jurisdictional CIB did not respond to the request of AO.
+
+Cases referred back by AO for correct details of the person
+
+3.20 Information collected through AIR/CIB is disseminated to the
+respective assessing charges on the basis of PAN. In case of wrong PAN,
+information disseminated cannot be verified. In such cases AO writes to the
+jurisdictional DIT-CIB for clarification. DIT-CIB is required to correspond with
+AIR filer and to obtain the correct information and passes it on to AO for use
+during scrutiny assessment. We noticed that AOs informed the jurisdictional
+DIT-CIB about the wrong information. However, DIT-CIB did not provide the
+
+40 Rajasthan - 189 cases, Madhya Pradesh - 2,407 cases
+41 Rajasthan — 1,008 cases, Madhya Pradesh - 1,035 cases, Kerala - 3,312 cases
+
+31
+
+
+Report No.4 of 2013 (Performance Audit)
+
+correct information to AOs. As a result disseminated information could not
+be used during assessment. During test check we observed 24 cases in which
+AIR/CIB information could not be considered during assessment as the
+jurisdictional CIB did not respond adequately to the request of AO
+(see Box 3.5).
+
+Box 3.5: Illustrative cases where AIR information could not be considered as the
+jurisdictional CIB did not respond adequately to the request of AO.
+
+A. Charge: CIT VI Mumbai, AY: 09
+
+Assessee: M/s. Liberty Oil Mills Limited
+The assessee had transferred two immovable properties for a consideration of
+& 156.95 crore each on 28 March 2008 as per CIB information. During scrutiny
+proceedings the assessee denied any such transfer. AO referred the case to CIT-CO
+for verification of facts in November 2010 and completed the assessment without
+considering the information in December 2010.
+
+B. Charge: CIT-4, Pune, AY: 09
+Assessee: M/s. Sathe Biscuit & Chocolate Company Limited
+
+The assessee entered into two transactions relating to mutual funds of € 1.00 crore
+and हैं 1.50 crore in Mahaveer Co-op Bank, Solapur in the month of March 2008 as
+per AIR. Both the assessee and Mahaveer Co-op Bank, Solapur denied the
+transactions. AO sought further clarification from DIT-CIB, Pune. DIT-CIB, Pune
+stated that clarification should be sought from CIB, Mumbai as it uploaded the
+information. or with AD (Systems), New Delhi. However, AO completed the scrutiny
+assessment in December 2010 without confirming the actual facts.
+
+AO did not refer back the information to jurisdictional CIB for confirmation
+
+Information to jurisdictional CIB
+3.21 We also observed 30 cases”? where AO did not refer back the
+
+information to jurisdictional CIB for confirmation (see Box 3.6).
+
+Box 3.6: Illustrative case where AIR information was not referred back to CIB
+Charge: CIT-I, Chandigarh, AY: 09
+Assessee: Jai Shree Thakur, PAN-AAGPT4333H
+ITD received AIR information of investment in mutual funds of € 51 lakh, however,
+the assessee stated that it was actually = 15 lakh. AO did not refer back to CIB for
+clarification. There was no documentary evidence from assessee placed in file.
+
+AOs did not have data relating to action taken on the disseminated AIR
+information. In the selected charge, AOs did not maintain the information
+in the prescribed register.
+
+Monitoring of disseminated information
+
+3.22 Para 7 of instruction no. 1/2009 dated 12 February 2009 of CBDT
+stipulates that CsIT/Addl. CsIT/JCsIT shall closely monitor the action taken on
+AIR information. Further, DAO/JAO is required to maintain a register as per
+Annex 4 of ibid instruction indicating all the details of the non-filers and the
+
+42 One case - Punjab and 29 cases - Andhra Pradesh.
+
+32
+
+
+Report No.4 of 2013 (Performance Audit)
+
+said registers was to be inspected every quarter by the Range head and CIT
+concerned. In the absence of maintenance of prescribed register the Range
+Officers and CsIT were unable to monitor and supervise the work on AIR
+information disseminated to AOs. We noticed the following irregularities with
+regard to monitoring of disseminated information.
+
+a. We noticed that data relating to action taken on the disseminated AIR
+
+information was either not available with AO or not maintained in the
+
+prescribed register by AO in the selected charge*?.
+
+b. In Haryana, JAOs/DAOs did not forward list of cases selected for
+
+scrutiny on the basis of AIR information to the range in-charge for
+
+monitoring purpose** by Range in-charge Gurgaon.
+Generation of revenue through use of information
+३.23. In Kerala, in a departure from mere collection, collation, uploading of
+information, ITO(Intelligence), Kozhikode, holding the additional charge of
+the Investigation wing, used 6,424 pieces of information to pursue 140 cases
+of high value transactions in FY 11 resulting in realization of revenue of € 6.29
+crore and adding 35 new assesses to the tax net. Similar utilization of
+information in 94 cases in FY 12 has already resulted in netting हैं 4.87 crore
+towards the tax net. This highlights the tremendous potential for detecting
+the plugging tax evasion on the basis of information gathered if it is put to
+use. Further, we observed in 2,933 cases that AO has made addition of
+53.78 crore through use of AIR/CIB information.
+
+Other issues
+
+Assessee allowed his PAN to be used by other person
+
+3.24 The case of Sudhakar Nayak, PAN-ADAPN2724K” was selected for
+scrutiny on the basis of AIR information of cash deposit of हैं 12.58 lakh. In
+compliance to the notice issued under section 142(1) in January 2011, the
+assessee stated that as his brother Bijay Kumar Nayak, PAN-AEBPN6777L
+(Proprietor of Mahaveer Enterprises) had no bank account at Keonjhar, he
+made his business income through his bank account. He furnished a
+declaration from his brother regarding transaction made by him. The
+assessment was completed on 17 January 2011 without addition on account
+of AIR information. AIR information was also not referred back to the
+jurisdictional AO of assessee's brother.
+
+43 During the period FY 08 to FY 11 in Andhra Pradesh, Bihar, Delhi (out of 75 005, six AOs have intimated in March
+2012 that these were being maintained from the current year and for 2011-12 no such registers were
+maintained), Gujarat, Kerala, Karnataka, Madhya Pradesh [not maintained by 27 AOs {except by DAO/ITO-1(1),
+Bhopal and ITO-2(2), Bhopal, but records were not being updated}], Maharashtra (not maintained by As of 11
+ranges out of checked 15 ranges in five selected CsIT), Odisha, Punjab (not maintained by 59 AOs out of checked
+60 AOs), Rajasthan, Uttar Pradesh and West Bengal,
+
+44 Except ACIT Circle 1 Gurgaon; ITO Ward 1(1) & 1(2) Gurgaon on random basis.
+
+45 Charge: ITO, Keonjhar charge, CIT - Sambalpur, Odisha, AY: 10;
+
+33
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Non-initiation of action by AO
+
+3.25 ॥ Uttar Pradesh, ACIT Circle Il Ghaziabad received AIR information of
+sale of property for € 32.47 lakh in the case of Smt. Prakashwati for FY 08.
+During proceedings, it was held that the property was sold for €51.63 lakh
+instead of € 32.47 lakh to Smt. Kailasho Devi, an assessee under jurisdiction
+of ITO 1(3), Ghaziabad. The information was passed on to ITO 1(3) on 22 June
+2010 for necessary action. However, the concerned AO issued notice in
+February 2012 i.e. after lapse of 20 months.
+
+Information in respect of section 50C cases
+
+3.26 018 collects information of real estate transactions as a compulsory
+source code where the difference in the sale consideration as stated in the
+document presented for registration and the actual consideration on which
+stamp duty was charged by the registering authority exceeded हैं 10,000 to
+supplement the efforts of field agencies to enhance the revenue collection as
+the difference amount is liable to tax under section SOC. CIB forwarded
+11,257 number of transaction involving money value of € 1,302.77 crore for
+FY 10 and FY 11 pertaining to the section 50C to CCIT, Jaipur and CIT office*®.
+ITD forwarded it to assessing units through range offices. ITD could not
+generate jurisdictional wise break up and utilize the information as in most of
+the cases PAN was not available and contained jumbled up addresses.
+
+Non-initiation of action on AIR information of earlier years
+
+3.27 Para 2(b) of CBDT instruction no. 01/2009 dated 12 February 2009
+provides that, depending upon feedback on scrutiny assessment in a case for
+a particular AY, AOs may resort to proceedings under section 148 for earlier
+assessment years, in that case on the basis of AIR information available, if
+any, if they have reasons to believe that income has escaped assessment.
+
+3.28 In Madhya Pradesh, we observed in 11 cases that AOs did not give
+cognizance to AIR Information pertaining to FY 08 while assessing the case for
+AY 10 under section 143(3) and did not initiate proceedings under section
+148 for the relevant earlier AYs, despite availability of AIR information giving
+feedback for reopening the cases. Thus, the non-initiation of proceeding
+under section 148 resulted in non-assessment of transactions valuing = 7.42
+crore involving revenue impact € 2.52 crore.
+
+46 AO wise break-up of above information along with the total number of information put to use with amount
+involved and revenue generated with the help of such information was not available with CIT-1 and CIT-2 Jaipur
+and CIT-Alwar.
+
+34
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Recommendations
+
+3.29 We recommend that
+a. Compliance to the monitoring system put in place by CBDT needs to
+be ensured at different levels of ITD. The Ministry replied (December
+2012) that with continuous evolution, functionalities are improving. The
+efforts are further continuing. However, implementation and monitoring
+issues require additional manpower for which proposal is under
+consideration.
+b. Utilization of declarations received in Form 60/61 may be ensured by
+digitizing and disseminating them. The Ministry noted the observations
+and intimated (December 2012) that high value Form 60/61 were being
+digitized now.
+c. Nomination of Designated Assessing Officers on regular basis to deal
+with Non-PAN AIR cases may be emphasized. The Ministry replied
+(December 2012) that an expert group has been set-up to suggest
+modalities for better utilization of Non-PAN AIR and CIB data. On receipt
+of recommendations, further action would be taken.
+d. ITD may fix definite responsibility on AOs who fail to record or utilize
+the information available to them in course of their assessments. The
+Ministry replied (December 2012) that the issue of feed-back system in
+respect of such information was under consideration of the CBDT. The
+modalities would be worked out to see how the objectives could be taken
+forward under the given constraints of shortage of manpower.
+
+Mer,
+
+New Delhi (MANISH KUMAR)
+Dated: 8 April, 2013 Principal Director (Direct Taxes)
+
+Countersigned
+
+Ve ho
+
+New Delhi (VINOD RAI)
+Dated: 8 April, 2013 Comptroller and Auditor General of India
+
+35
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Abbreviations
+AIR Annual Information Return
+Als Assessee Information System
+AO Assessing Officer
+AST Assessment Information System
+AY Assessment Year
+CASS Computer Assisted Scrutiny Selection
+९08 Central Information Branch
+DAO Designated Assessing Officer
+DGIT Director General of Income-Tax
+DIT Director of Income-Tax
+EFS Enforcement System
+FY Financial Year
+ITD Income Tax Department
+ITs Individual Transaction Statements
+MIPPRA Multi Interactive Phonetic Patter Recognition Algorithm
+NSDL National Securities Depository Limited
+OLTAS On-line Tax Accounting Software
+PAN Permanent Account Number
+RCC Regional Computer Centre
+RRR Return Receipt Register
+TAN Tax Deduction and Collection Account Number
+TDS Tax Deducted at Source
+TIN Tax Information Network-Facilitation Centre
+
+41
+
+
+Report No.4 of 2013 (Performance Audit)
+
+Annex
+
+Source Codes of information to be collected by the CIB
+
+Ea Source | = | Te
+No. code
+Compulsory source codes
+1 001 Registrars/Local (i) Sale and purchase of immovable property valued at
+Municipal Bodies %5,00,000 or more (but less than & 30,00,000)
+(ii) Information relating to transfer of capital assets
+where value declared for the purposes of stamp duty is
+more than the sale value. Information collected to
+include names and addresses of sellers, date of
+transaction, amount of sale consideration and value
+adopted for stamp duty purposes
+2 002 RTOs/Finance Sale and purchase of motor vehicles valued at
+companies/car dealers |  5,00,000 and above
+3 003 Banking company/ Time deposit exceeding € 2,00,000 with a banking
+financial institutions | company
+| | | Post Office A deposits exceeding € 2,00,000 in any account with
+Post Office saving bank
+5 005 Hotels and Payment to hotels and restaurants against their bills for
+Restaurants an amount exceeding € 1,00,000 at any one time
+a | Banks Payment in cash for purchase of bank drafts or pay
+orders or banker's cheques from a banking company of
+an amount aggregating & 1,00,000 or more during any
+one day
+7 007 Banks Deposit in cash aggregating  2,00,000 or more with
+banking company during any day
+a 008 Travel Agents/ Airlines | Payment in cash in connection with travel to any
+foreign country of an amount exceeding € 1,00,000 at
+any one time.
+- हे Banks and financial (i) Payment made by any person against bills raised in
+institutions respect of credit card issued to that person
+aggregating to % 1,00,000 or more (but less than
+₹ 2,00,000) in a year;
+(ii) payment made by any person against bills raised in
+foreign currency in respect of credit card issued to that
+person aggregating to € 50,000 or more (but less than
+% 2,00,000) in a year
+10 010 Mutual Funds Names and address of investors investing हैं 1,00,000
+and above but less than हैं 2.00,000 in Mutual Fund
+units.
+11 011 Registrar of Name and address of Investors investing € 2,00,000 and
+
+Companies
+/companies/
+institutions
+
+above but less than & 5,00,000 for acquisition of
+debentures or bonds issued by a company or
+institution.
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+12 012 Reserve Bank of India_| Name and address of investors investing & 2,00,000 and
+above but less than हैं 5,00,000 for acquisition of bonds
+issued by RBI.
+
+Optional Source codes
+
+13 013 Telecom companies __ | Subscriber to Cellular telephone, landline telephone
+including internet connections having bill amount
+exceeding 1 lakh per annum.
+
+14 014 Clubs, Gymnasiums, Any person who is a member of such Club,
+
+Health Centres, Spas, Gymnasiums, Health Centres, Spas, Holiday/ Country
+Holiday/ Country Resorts where entrance fee is हैं 50,000 or more
+Resorts
+
+15 015 Post office Purchase of Kisan Vikas Patras/Indira Vikas Patra/
+national Savings Certificates of = 1,00,000 or more.
+
+16 016 State Excise Name and address of the liquor shops, license amount
+
+Department paid
+
+17 017 Electricity Boards/ Electricity bills above & 2,00,000 in a year for
+Undertakings residential premises and % 5,00,000 in a year for
+
+commercial establishments
+
+18 018 Builders & Name and address of persons who have entered into
+contractors/ Housing | agreement for purchase and sale and details of
+Co-operative societies | transactions हैं 10 lakh and above.
+
+19 019 Builders & Names & addresses of persons to whom contracts/ sub-
+contractors/ Housing | contracts/ material supply contracts/ labour contracts
+Co-operative societies | or such other part contracts exceeding aggregate
+
+amount of € 10,00,000 during the financial year are
+awarded.
+
+20 020 Registrar to Issue of __ | In respect of issue of shares and debentures including
+shares and private placements above % one crore, full list of
+debentures. allottees with address and PAN
+
+21 021 Insurance Companies. | Insurance premia >हैं 2 lakh and above.
+
+22 022 Local bodies Contractors of parking slots in Municipal Area
+
+23 023 Central Excise New registration, excise payments including fines &
+Department penalties/list of contracts awarded with name and
+
+address of the contractee and contractor, exceeding
+contract value of <5 lakh during the financial year
+
+24 024 Customs Department | Confiscation of goods, duty paid including fines and
+penalties exceeding रैं 5 lakh.
+
+25 025 Enforcement Confiscation, fine & penalties, cases of FEMA violation
+
+Directorate exceeding € 5 lakh.
+
+26 026 Sales Tax Department/ | New Registration, Sales/Professional tax paid
+Professional Tax including fines and penalties
+Department
+
+27 027 Land Acquisition Compensation paid for acquisition of land
+Authority exceeding 5 lakh
+
+28 028 Reserve Bank of India| Foreign remittance/grants etc. received by NGO /
+Charitable institutions etc. above हैं 10 lakh
+
+38
+
+
+
+Report No.4 of 2013 (Performance Audit)
+
+29 029 Big consumer goods __| Purchase of high-end consumer goods for & 2,00,000
+dealers, Malls, and above
+Shopping complexes
+30 030 Educational Payment details of admission in educational institutes
+Institutions under Management Quota and NRI quota and
+payments exceeding € 2 lakh per year.
+
+31 031 Local Authorities Public place contracts approval of building plan, new
+shops, bars, restaurants, cinema houses, clubs etc./list
+of properties with names and addresses of the
+owners/promoters/builders, in case where completion
+certificate have been issued.
+
+32 032 Telephone Directory / | Nursing homes, clinics, gyms, interior decorators, study
+
+Yellow Pages/ Trade. _| circles, coaching classes, guest houses, service sectors
+
+Journals such as security services, event managers, providers for
+marriage venues and infrastructure for functions,
+professional consultants and interior designers.
+
+33 033 Professional/Institutes | Names & addresses of Doctors, Chartered Accountants,
+
+/ Bodies / IMA / Bar Cost Accountants, Architects, Engineers etc. Advocates,
+Associations /CAs etc who are member of these associations,
+Association
+34 034 Local Authorities or Name and address of charitable organizations and
+any other organization | societies
+35 035 Local Authorities or Name and address of schools & colleges and
+any other organization | educational institutions running for charitable/profit
+purposes
+36 036 Registrar of New Registration, Certificate of commencement of
+Companies business
+
+37 037 Directorate of Registration of new industries
+Industries
+
+38 038 Export Promotion Names and addresses of exporters and details of
+Council/ DGFT exports.
+
+39 039 Stock Exchanges Holders of Stock Exchange Card, list of brokers and sub-
+brokers
+
+| | | Immigration Authority | Details of travel made by holders of Indian Passport to
+
+foreign countries showing the destination, date of
+departure, date of arrival and the relevant passport
+details
+
+39
