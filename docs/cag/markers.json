@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-14T07:09:13Z",
+  "generated_at": "2026-06-23T14:16:59Z",
   "totals": {
     "pypdf-empty": 0,
-    "pypdf-error": 4,
+    "pypdf-error": 3,
     "ocr-failed": 4
   },
   "markers": {
@@ -12,7 +12,6 @@
     "34004": "pypdf-error",
     "1922": "ocr-failed",
     "1837": "ocr-failed",
-    "1966": "pypdf-error",
-    "641": "pypdf-error"
+    "1966": "pypdf-error"
   }
 }
