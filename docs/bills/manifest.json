@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-06-24T16:45:12Z",
+  "scraped_at": "2026-06-24T20:19:26Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
@@ -21359,7 +21359,7 @@
       "bundled": true
     },
     "XXXIV_1972_R": {
-      "url": "text/XXXIV_1972_R.txt"
+      "bundled": true
     },
     "XXXIV_1999_R": {
       "bundled": true
