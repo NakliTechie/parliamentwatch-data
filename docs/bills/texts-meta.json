@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 7316,
+    "records_with_text": 7317,
     "shards": 33,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 4629,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7316,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -170,8 +170,8 @@
     },
     {
       "file": "texts-31.json",
-      "count": 326,
-      "bytes": 4601280
+      "count": 327,
+      "bytes": 4606101
     },
     {
       "file": "texts-32.json",
@@ -7289,6 +7289,7 @@
     "XXXII_2025_R": 31,
     "XXXII_2026_R": 31,
     "XXXIV_1963_R": 31,
+    "XXXIV_1972_R": 31,
     "XXXIV_1999_R": 31,
     "XXXIV_2000_R": 31,
     "XXXIV_2001_R": 31,
