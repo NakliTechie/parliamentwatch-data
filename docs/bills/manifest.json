@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-06-29T05:10:16Z",
+  "scraped_at": "2026-06-29T11:34:06Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9914,
@@ -14,10 +14,10 @@
   "by_status": {
     "Lapsed": 4615,
     "Assented": 3392,
-    "Pending": 716,
+    "Pending": 707,
     "(null)": 394,
     "Withdrawn": 363,
-    "Removed": 213,
+    "Removed": 222,
     "Passed": 168,
     "Negatived": 53
   },
