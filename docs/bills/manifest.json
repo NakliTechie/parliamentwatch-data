@@ -1,19 +1,19 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-07-14T12:52:39Z",
+  "scraped_at": "2026-07-14T14:24:54Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
-    "bills": 9914,
+    "bills": 9915,
     "with_intro_pdf": 7467,
     "with_canonical_pdf": 7496,
     "with_text": 7317,
-    "became_law": 3445,
+    "became_law": 3446,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
   },
   "by_status": {
     "Lapsed": 4615,
-    "Assented": 3392,
+    "Assented": 3393,
     "Pending": 707,
     "(null)": 394,
     "Withdrawn": 363,
@@ -23,7 +23,7 @@
   },
   "by_type": {
     "Private Member": 5495,
-    "Government": 4418,
+    "Government": 4419,
     "(null)": 1
   },
   "year_range": {
