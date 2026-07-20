@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 7317,
+    "records_with_text": 7318,
     "shards": 33,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 4621,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7317,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -36,17 +36,17 @@
     {
       "file": "texts-04.json",
       "count": 192,
-      "bytes": 4601090
+      "bytes": 4601095
     },
     {
       "file": "texts-05.json",
       "count": 219,
-      "bytes": 4609511
+      "bytes": 4605197
     },
     {
       "file": "texts-06.json",
-      "count": 249,
-      "bytes": 4579342
+      "count": 250,
+      "bytes": 4588397
     },
     {
       "file": "texts-07.json",
@@ -935,6 +935,7 @@
     "128_2021_L": 4,
     "128_2022_L": 4,
     "128_2024_L": 4,
+    "128_2026_L": 4,
     "129_1952_L": 4,
     "129_1958_L": 4,
     "129_1977_L": 4,
@@ -993,7 +994,7 @@
     "130_1970_L": 4,
     "130_1977_L": 4,
     "130_1986_L": 4,
-    "130_1987_L": 4,
+    "130_1987_L": 5,
     "130_1988_L": 5,
     "130_2000_L": 5,
     "130_2005_L": 5,
@@ -1212,7 +1213,7 @@
     "13_2010_L": 5,
     "13_2011_L": 5,
     "13_2012_L": 5,
-    "13_2013_L": 5,
+    "13_2013_L": 6,
     "13_2014_L": 6,
     "13_2015_L": 6,
     "13_2016_L": 6,

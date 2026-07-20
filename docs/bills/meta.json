@@ -1,8 +1,8 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "last_update": "2026-07-20T06:56:59Z",
-  "total": 9915,
-  "with_text": 7317,
+  "last_update": "2026-07-20T07:39:14Z",
+  "total": 9916,
+  "with_text": 7318,
   "in_rate_limit_cooldown": false,
   "cooldown_remaining_seconds": null,
   "search_bundle": null,
