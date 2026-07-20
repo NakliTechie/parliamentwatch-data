@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-07-20T07:39:11Z",
+  "scraped_at": "2026-07-20T10:20:53Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9916,
@@ -2297,7 +2297,7 @@
       "bundled": true
     },
     "128_2026_L": {
-      "url": "text/128_2026_L.txt"
+      "bundled": true
     },
     "129_1952_L": {
       "bundled": true
