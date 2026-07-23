@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 799,
+    "records_with_text": 803,
     "shards": 22,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 266301,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 799,
-    "txt_files_removed": 0
+    "txt_files_removed": 4
   },
   "shards": [
     {
@@ -120,8 +120,8 @@
     },
     {
       "file": "texts-21.json",
-      "count": 49,
-      "bytes": 3548743
+      "count": 53,
+      "bytes": 3820857
     }
   ],
   "record_to_shard": {
@@ -919,7 +919,11 @@
     "pac|LS18_45": 21,
     "pac|LS18_46": 21,
     "pac|LS18_47": 21,
+    "pac|LS18_48": 21,
+    "pac|LS18_49": 21,
     "pac|LS18_5": 21,
+    "pac|LS18_50": 21,
+    "pac|LS18_51": 21,
     "pac|LS18_6": 21,
     "pac|LS18_7": 21,
     "pac|LS18_8": 21,
