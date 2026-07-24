@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 2697,
+    "records_with_text": 2698,
     "shards": 193,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 370185,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 2697,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -415,18 +415,18 @@
     },
     {
       "file": "texts-80.json",
-      "count": 14,
-      "bytes": 4591538
+      "count": 13,
+      "bytes": 4351646
     },
     {
       "file": "texts-81.json",
       "count": 13,
-      "bytes": 4286317
+      "bytes": 4154509
     },
     {
       "file": "texts-82.json",
-      "count": 12,
-      "bytes": 3603308
+      "count": 14,
+      "bytes": 4353558
     },
     {
       "file": "texts-83.json",
@@ -2087,6 +2087,7 @@
     "124454": 80,
     "124469": 80,
     "12449": 80,
+    "124512": 80,
     "124514": 80,
     "124515": 80,
     "124517": 80,
@@ -2095,8 +2096,8 @@
     "124547": 80,
     "124559": 80,
     "12457": 80,
-    "124572": 80,
-    "124582": 80,
+    "124572": 81,
+    "124582": 81,
     "124583": 81,
     "124593": 81,
     "1246": 81,
@@ -2108,8 +2109,8 @@
     "124660": 81,
     "124673": 81,
     "124685": 81,
-    "124690": 81,
-    "124697": 81,
+    "124690": 82,
+    "124697": 82,
     "124709": 82,
     "12472": 82,
     "124720": 82,
