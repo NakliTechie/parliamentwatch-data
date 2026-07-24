@@ -1,6 +1,34 @@
 {
   "records": [
     {
+      "billNumber": "43",
+      "billName": "The East Punjab Ayurvedic and Unani Practitioners (Delhi Amendment) Bill, 1964",
+      "billType": "Government",
+      "billCategory": "Financial Bill",
+      "ministryName": "HEALTH AND FAMILY WELFARE",
+      "billYear": 1964,
+      "billIntroducedInHouse": "Lok Sabha",
+      "billIntroducedBy": null,
+      "billIntroducedDate": "1964-04-29 00:00:00.0",
+      "billIntroducedFile": "https://sansad.in/getFile/BillsTexts/LSBillTexts/Asintroduced/43_1964_LS_Eng.pdf?source=legislation",
+      "billPassedInLSDate": "1964-05-04 00:00:00.0",
+      "billPassedInLSFile": null,
+      "billPassedInRSDate": "1964-05-07 00:00:00.0",
+      "billPassedInRSFile": null,
+      "billPassedInBothHousesFile": null,
+      "errataFile": null,
+      "referredToCommitteeDate": null,
+      "reportPresentedDate": null,
+      "reportFile": null,
+      "actNo": "15",
+      "actYear": 1964,
+      "billAssentedDate": "12/05/1964",
+      "billGazettedFile": null,
+      "billSynopsisFile": null,
+      "status": "Assented",
+      "compositeId": "43_1964_L"
+    },
+    {
       "billNumber": "42",
       "billName": "The Appropriation (No.3) Bill, 1964",
       "billType": "Government",
@@ -25649,7 +25677,7 @@
       "compositeId": "100_1952_L"
     }
   ],
-  "count": 916,
+  "count": 917,
   "shard_index": 9,
   "scraper_version": "bills.sansad.scraper/0.2"
 }

@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 7318,
+    "records_with_text": 7319,
     "shards": 33,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 2979,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7318,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -150,8 +150,8 @@
     },
     {
       "file": "texts-27.json",
-      "count": 272,
-      "bytes": 4590732
+      "count": 273,
+      "bytes": 4593853
     },
     {
       "file": "texts-28.json",
@@ -6190,6 +6190,7 @@
     "LIX_2023_R": 27,
     "LIX_2024_R": 27,
     "LIX_2025_R": 27,
+    "LIX_2026_R": 27,
     "LI_2000_R": 27,
     "LI_2001_R": 27,
     "LI_2004_R": 27,
