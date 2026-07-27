@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-07-27T04:23:15Z",
+  "scraped_at": "2026-07-27T07:41:46Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9917,
@@ -557,7 +557,7 @@
       "bundled": true
     },
     "106_2012_L": {
-      "url": "text/106_2012_L.txt"
+      "bundled": true
     },
     "106_2014_L": {
       "bundled": true
