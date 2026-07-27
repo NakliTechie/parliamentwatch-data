@@ -2,12 +2,15 @@ name: Bills (sansad-side) backfill (4-hourly, until corpus full)
 
 on:
   schedule:
+    # Retuned 2026-07-27: 2-hourly -> daily; 171 never-attempted left.
+    # Was '17 */2 * * *'. The sprint that needed the fast cadence is done;
+    # forward discovery (scrape/cag/bills-sansad) gets the slots back.
     # Bumped from `17 */4 * * *` (every 4h) → `17 */2 * * *` (every 2h)
     # to halve the time-to-clear on the never_attempted backlog. Bills
     # is at ~1660 never_attempted as of 2026-05-18; at the previous
     # 6×/day cadence × 200/run = 1200/day, the backlog was ~9 days from
     # clear. New 12×/day × 400/run = 4800/day target → ~2-3 days.
-    - cron: '17 */2 * * *'
+    - cron: '17 5 * * *'
   workflow_dispatch:
     inputs:
       max_extractions:
