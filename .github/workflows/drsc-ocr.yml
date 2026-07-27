@@ -2,11 +2,14 @@ name: DRSC OCR slow-lane
 
 on:
   schedule:
+    # Retuned 2026-07-27: 4x/day -> weekly; DRSC backlog is 210, mostly retryable.
+    # Was '37 */4 * * *'. The sprint that needed the fast cadence is done;
+    # forward discovery (scrape/cag/bills-sansad) gets the slots back.
     # TEMP SPRINT CADENCE (2026-05-29): 4-hourly @ 25/run to drain the
     # ~335 pypdf-empty DRSC backlog fast (~2-3 days). Minute :37 staggers
     # off bills-OCR (:07) and the backfill (:17). REVERT to weekly
     # `47 5 * * 0` + default '5' once the backlog clears.
-    - cron: '37 */4 * * *'
+    - cron: '37 3 * * 0'
   workflow_dispatch:
     inputs:
       max_ocr_per_run:
