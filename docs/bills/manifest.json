@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-07-27T03:43:59Z",
+  "scraped_at": "2026-07-27T04:23:15Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9917,
     "with_intro_pdf": 7469,
     "with_canonical_pdf": 7498,
-    "with_text": 7319,
+    "with_text": 7320,
     "became_law": 3446,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -555,6 +555,9 @@
     },
     "106_2011_L": {
       "bundled": true
+    },
+    "106_2012_L": {
+      "url": "text/106_2012_L.txt"
     },
     "106_2014_L": {
       "bundled": true
