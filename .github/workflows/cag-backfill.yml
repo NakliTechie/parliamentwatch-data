@@ -2,6 +2,9 @@ name: CAG backfill (hourly, until corpus full)
 
 on:
   schedule:
+    # Retuned 2026-07-27: hourly -> weekly; CAG backlog is 11.
+    # Was '17 * * * *'. The sprint that needed the fast cadence is done;
+    # forward discovery (scrape/cag/bills-sansad) gets the slots back.
     # Hourly at :17. Aggressive cadence — every hour for ~1-2 days until
     # the historical CAG corpus is fully extracted, then this workflow
     # gets manually disabled (it's a one-shot ramp, not steady state).
@@ -11,7 +14,7 @@ on:
     # The runs cost very little when there's nothing to do (script
     # finds 0 candidates and exits without committing), but cleaning
     # up after the ramp is the courteous move.
-    - cron: '17 * * * *'
+    - cron: '17 5 * * 0'
   workflow_dispatch:
     inputs:
       max_extractions:
