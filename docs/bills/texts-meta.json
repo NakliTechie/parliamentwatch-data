@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 7321,
+    "records_with_text": 7322,
     "shards": 33,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 41126,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7321,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shards": [
     {
@@ -155,28 +155,28 @@
     },
     {
       "file": "texts-28.json",
-      "count": 237,
-      "bytes": 4595055
+      "count": 235,
+      "bytes": 4603890
     },
     {
       "file": "texts-29.json",
-      "count": 336,
-      "bytes": 4607651
+      "count": 335,
+      "bytes": 4581619
     },
     {
       "file": "texts-30.json",
-      "count": 286,
-      "bytes": 4591615
+      "count": 284,
+      "bytes": 4604125
     },
     {
       "file": "texts-31.json",
-      "count": 327,
-      "bytes": 4606101
+      "count": 331,
+      "bytes": 4607042
     },
     {
       "file": "texts-32.json",
-      "count": 88,
-      "bytes": 1625032
+      "count": 90,
+      "bytes": 1672042
     }
   ],
   "record_to_shard": {
@@ -6418,6 +6418,7 @@
     "LXXII_2022_R": 28,
     "LXXII_2024_R": 28,
     "LXXII_2025_R": 28,
+    "LXXII_2026_R": 28,
     "LXXIV_2000_R": 28,
     "LXXIV_2001_R": 28,
     "LXXIV_2006_R": 28,
@@ -6461,9 +6462,9 @@
     "LXXVI_2007_R": 28,
     "LXXVI_2010_R": 28,
     "LXXVI_2022_R": 28,
-    "LXXVI_2024_R": 28,
-    "LXXV_2000_R": 28,
-    "LXXV_2001_R": 28,
+    "LXXVI_2024_R": 29,
+    "LXXV_2000_R": 29,
+    "LXXV_2001_R": 29,
     "LXXV_2005_R": 29,
     "LXXV_2006_R": 29,
     "LXXV_2010_R": 29,
@@ -6796,10 +6797,10 @@
     "XLIII_1999_R": 29,
     "XLIII_2000_R": 29,
     "XLIII_2001_R": 29,
-    "XLIII_2006_R": 29,
-    "XLIII_2008_R": 29,
-    "XLIII_2009_R": 29,
-    "XLIII_2010_R": 29,
+    "XLIII_2006_R": 30,
+    "XLIII_2008_R": 30,
+    "XLIII_2009_R": 30,
+    "XLIII_2010_R": 30,
     "XLIII_2012_R": 30,
     "XLIII_2014_R": 30,
     "XLIII_2016_R": 30,
@@ -7080,12 +7081,12 @@
     "XXII_2000_R": 30,
     "XXII_2001_R": 30,
     "XXII_2002_R": 30,
-    "XXII_2006_R": 30,
-    "XXII_2007_R": 30,
-    "XXII_2008_R": 30,
-    "XXII_2009_R": 30,
-    "XXII_2010_R": 30,
-    "XXII_2011_R": 30,
+    "XXII_2006_R": 31,
+    "XXII_2007_R": 31,
+    "XXII_2008_R": 31,
+    "XXII_2009_R": 31,
+    "XXII_2010_R": 31,
+    "XXII_2011_R": 31,
     "XXII_2012_R": 31,
     "XXII_2013_R": 31,
     "XXII_2014_R": 31,
@@ -7411,8 +7412,8 @@
     "XXXVI_2017_R": 31,
     "XXXVI_2018_R": 31,
     "XXXVI_2019_R": 31,
-    "XXXVI_2021_R": 31,
-    "XXXVI_2023_R": 31,
+    "XXXVI_2021_R": 32,
+    "XXXVI_2023_R": 32,
     "XXXVI_2024_R": 32,
     "XXXVI_2025_R": 32,
     "XXXV_1994_R": 32,
