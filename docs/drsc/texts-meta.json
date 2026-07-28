@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 14516,
+    "records_with_text": 14519,
     "shards": 392,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 264428,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14516,
-    "txt_files_removed": 0
+    "txt_files_removed": 3
   },
   "shards": [
     {
@@ -56,12 +56,12 @@
     {
       "file": "texts-08.json",
       "count": 34,
-      "bytes": 4581679
+      "bytes": 4536598
     },
     {
       "file": "texts-09.json",
-      "count": 39,
-      "bytes": 4405367
+      "count": 40,
+      "bytes": 4570125
     },
     {
       "file": "texts-10.json",
@@ -310,78 +310,78 @@
     },
     {
       "file": "texts-59.json",
-      "count": 39,
-      "bytes": 4491374
+      "count": 40,
+      "bytes": 4372838
     },
     {
       "file": "texts-60.json",
       "count": 25,
-      "bytes": 4558192
+      "bytes": 4418402
     },
     {
       "file": "texts-61.json",
-      "count": 25,
-      "bytes": 4569046
+      "count": 22,
+      "bytes": 4481538
     },
     {
       "file": "texts-62.json",
       "count": 26,
-      "bytes": 4527210
+      "bytes": 4368839
     },
     {
       "file": "texts-63.json",
-      "count": 28,
-      "bytes": 4453603
+      "count": 29,
+      "bytes": 4493977
     },
     {
       "file": "texts-64.json",
-      "count": 24,
-      "bytes": 4539042
+      "count": 22,
+      "bytes": 4560731
     },
     {
       "file": "texts-65.json",
-      "count": 29,
-      "bytes": 4583168
+      "count": 27,
+      "bytes": 4552338
     },
     {
       "file": "texts-66.json",
-      "count": 37,
-      "bytes": 4513236
+      "count": 39,
+      "bytes": 4572242
     },
     {
       "file": "texts-67.json",
-      "count": 54,
-      "bytes": 4369074
+      "count": 55,
+      "bytes": 4508798
     },
     {
       "file": "texts-68.json",
-      "count": 40,
-      "bytes": 4382276
+      "count": 41,
+      "bytes": 4514348
     },
     {
       "file": "texts-69.json",
-      "count": 31,
-      "bytes": 4502678
+      "count": 33,
+      "bytes": 4501036
     },
     {
       "file": "texts-70.json",
       "count": 28,
-      "bytes": 4294434
+      "bytes": 4480919
     },
     {
       "file": "texts-71.json",
       "count": 37,
-      "bytes": 4522795
+      "bytes": 4547040
     },
     {
       "file": "texts-72.json",
       "count": 42,
-      "bytes": 4505012
+      "bytes": 4485231
     },
     {
       "file": "texts-73.json",
-      "count": 33,
-      "bytes": 4271983
+      "count": 34,
+      "bytes": 4375186
     },
     {
       "file": "texts-74.json",
@@ -2250,6 +2250,7 @@
     "agriculture|LS18_36": 8,
     "agriculture|LS18_37": 8,
     "agriculture|LS18_38": 8,
+    "agriculture|LS18_39": 8,
     "agriculture|LS18_4": 8,
     "agriculture|LS18_5": 8,
     "agriculture|LS18_6": 8,
@@ -2257,7 +2258,7 @@
     "agriculture|LS18_8": 8,
     "agriculture|LS18_9": 8,
     "chemicals|LS14_1": 8,
-    "chemicals|LS14_10": 8,
+    "chemicals|LS14_10": 9,
     "chemicals|LS14_11": 9,
     "chemicals|LS14_12": 9,
     "chemicals|LS14_13": 9,
@@ -4238,6 +4239,8 @@
     "consumer_affairs|LS18_14": 59,
     "consumer_affairs|LS18_15": 59,
     "consumer_affairs|LS18_16": 59,
+    "consumer_affairs|LS18_17": 59,
+    "consumer_affairs|LS18_18": 59,
     "consumer_affairs|LS18_2": 59,
     "consumer_affairs|LS18_3": 59,
     "consumer_affairs|LS18_4": 59,
@@ -4248,7 +4251,7 @@
     "consumer_affairs|LS18_9": 59,
     "defence|LS14_1": 59,
     "defence|LS14_10": 59,
-    "defence|LS14_11": 59,
+    "defence|LS14_11": 60,
     "defence|LS14_12": 60,
     "defence|LS14_13": 60,
     "defence|LS14_14": 60,
@@ -4273,7 +4276,7 @@
     "defence|LS14_31": 60,
     "defence|LS14_32": 60,
     "defence|LS14_33": 60,
-    "defence|LS14_34": 60,
+    "defence|LS14_34": 61,
     "defence|LS14_35": 61,
     "defence|LS14_36": 61,
     "defence|LS14_4": 61,
@@ -4295,10 +4298,10 @@
     "defence|LS15_19": 61,
     "defence|LS15_2": 61,
     "defence|LS15_20": 61,
-    "defence|LS15_21": 61,
-    "defence|LS15_22": 61,
-    "defence|LS15_3": 61,
-    "defence|LS15_4": 61,
+    "defence|LS15_21": 62,
+    "defence|LS15_22": 62,
+    "defence|LS15_3": 62,
+    "defence|LS15_4": 62,
     "defence|LS15_5": 62,
     "defence|LS15_6": 62,
     "defence|LS15_7": 62,
@@ -4321,10 +4324,10 @@
     "defence|LS16_22": 62,
     "defence|LS16_23": 62,
     "defence|LS16_24": 62,
-    "defence|LS16_25": 62,
-    "defence|LS16_26": 62,
-    "defence|LS16_27": 62,
-    "defence|LS16_3": 62,
+    "defence|LS16_25": 63,
+    "defence|LS16_26": 63,
+    "defence|LS16_27": 63,
+    "defence|LS16_3": 63,
     "defence|LS16_31": 63,
     "defence|LS16_32": 63,
     "defence|LS16_33": 63,
@@ -4350,9 +4353,9 @@
     "defence|LS16_6": 63,
     "defence|LS16_7": 63,
     "defence|LS16_8": 63,
-    "defence|LS16_9": 63,
-    "defence|LS17_1": 63,
-    "defence|LS17_10": 63,
+    "defence|LS16_9": 64,
+    "defence|LS17_1": 64,
+    "defence|LS17_10": 64,
     "defence|LS17_12": 64,
     "defence|LS17_13": 64,
     "defence|LS17_14": 64,
@@ -4372,11 +4375,11 @@
     "defence|LS17_27": 64,
     "defence|LS17_28": 64,
     "defence|LS17_29": 64,
-    "defence|LS17_3": 64,
-    "defence|LS17_30": 64,
-    "defence|LS17_31": 64,
-    "defence|LS17_32": 64,
-    "defence|LS17_33": 64,
+    "defence|LS17_3": 65,
+    "defence|LS17_30": 65,
+    "defence|LS17_31": 65,
+    "defence|LS17_32": 65,
+    "defence|LS17_33": 65,
     "defence|LS17_34": 65,
     "defence|LS17_35": 65,
     "defence|LS17_36": 65,
@@ -4399,13 +4402,13 @@
     "defence|LS17_9": 65,
     "defence|LS18_1": 65,
     "defence|LS18_10": 65,
-    "defence|LS18_11": 65,
-    "defence|LS18_12": 65,
-    "defence|LS18_13": 65,
-    "defence|LS18_14": 65,
-    "defence|LS18_15": 65,
-    "defence|LS18_16": 65,
-    "defence|LS18_17": 65,
+    "defence|LS18_11": 66,
+    "defence|LS18_12": 66,
+    "defence|LS18_13": 66,
+    "defence|LS18_14": 66,
+    "defence|LS18_15": 66,
+    "defence|LS18_16": 66,
+    "defence|LS18_17": 66,
     "defence|LS18_18": 66,
     "defence|LS18_19": 66,
     "defence|LS18_2": 66,
@@ -4438,11 +4441,11 @@
     "education|LS14_112": 66,
     "education|LS14_113": 66,
     "education|LS14_114": 66,
-    "education|LS14_115": 66,
-    "education|LS14_116": 66,
-    "education|LS14_117": 66,
-    "education|LS14_118": 66,
-    "education|LS14_119": 66,
+    "education|LS14_115": 67,
+    "education|LS14_116": 67,
+    "education|LS14_117": 67,
+    "education|LS14_118": 67,
+    "education|LS14_119": 67,
     "education|LS14_12": 67,
     "education|LS14_120": 67,
     "education|LS14_121": 67,
@@ -4493,10 +4496,10 @@
     "education|LS14_166": 67,
     "education|LS14_167": 67,
     "education|LS14_168": 67,
-    "education|LS14_169": 67,
-    "education|LS14_17": 67,
-    "education|LS14_170": 67,
-    "education|LS14_171": 67,
+    "education|LS14_169": 68,
+    "education|LS14_17": 68,
+    "education|LS14_170": 68,
+    "education|LS14_171": 68,
     "education|LS14_172": 68,
     "education|LS14_173": 68,
     "education|LS14_175": 68,
@@ -4534,9 +4537,9 @@
     "education|LS14_205": 68,
     "education|LS14_206": 68,
     "education|LS14_207": 68,
-    "education|LS14_208": 68,
-    "education|LS14_209": 68,
-    "education|LS14_21": 68,
+    "education|LS14_208": 69,
+    "education|LS14_209": 69,
+    "education|LS14_21": 69,
     "education|LS14_210": 69,
     "education|LS14_211": 69,
     "education|LS14_212": 69,
@@ -4567,7 +4570,7 @@
     "education|LS14_235": 69,
     "education|LS14_236": 69,
     "education|LS14_237": 69,
-    "education|LS14_238": 69,
+    "education|LS14_238": 70,
     "education|LS14_239": 70,
     "education|LS14_24": 70,
     "education|LS14_240": 70,
@@ -4595,7 +4598,7 @@
     "education|LS14_260": 70,
     "education|LS14_261": 70,
     "education|LS14_262": 70,
-    "education|LS14_263": 70,
+    "education|LS14_263": 71,
     "education|LS14_264": 71,
     "education|LS14_265": 71,
     "education|LS14_266": 71,
@@ -4632,7 +4635,7 @@
     "education|LS14_294": 71,
     "education|LS14_295": 71,
     "education|LS14_296": 71,
-    "education|LS14_297": 71,
+    "education|LS14_297": 72,
     "education|LS14_298": 72,
     "education|LS14_299": 72,
     "education|LS14_3": 72,
@@ -4674,7 +4677,7 @@
     "education|LS14_331": 72,
     "education|LS14_332": 72,
     "education|LS14_333": 72,
-    "education|LS14_334": 72,
+    "education|LS14_334": 73,
     "education|LS14_335": 73,
     "education|LS14_336": 73,
     "education|LS14_337": 73,
