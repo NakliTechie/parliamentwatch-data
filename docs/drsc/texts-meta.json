@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 14520,
+    "records_with_text": 14522,
     "shards": 392,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 472028,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14520,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shards": [
     {
@@ -600,23 +600,23 @@
     },
     {
       "file": "texts-117.json",
-      "count": 18,
-      "bytes": 4229664
+      "count": 19,
+      "bytes": 4529923
     },
     {
       "file": "texts-118.json",
-      "count": 24,
-      "bytes": 4580318
+      "count": 23,
+      "bytes": 4540117
     },
     {
       "file": "texts-119.json",
       "count": 36,
-      "bytes": 4599147
+      "bytes": 4450563
     },
     {
       "file": "texts-120.json",
-      "count": 38,
-      "bytes": 3093046
+      "count": 40,
+      "bytes": 3461791
     },
     {
       "file": "texts-121.json",
@@ -6556,8 +6556,10 @@
     "external_affairs|LS18_11": 117,
     "external_affairs|LS18_12": 117,
     "external_affairs|LS18_13": 117,
+    "external_affairs|LS18_14": 117,
+    "external_affairs|LS18_15": 117,
     "external_affairs|LS18_2": 117,
-    "external_affairs|LS18_3": 117,
+    "external_affairs|LS18_3": 118,
     "external_affairs|LS18_4": 118,
     "external_affairs|LS18_5": 118,
     "external_affairs|LS18_6": 118,
@@ -6580,8 +6582,8 @@
     "finance|LS14_21": 118,
     "finance|LS14_22": 118,
     "finance|LS14_23": 118,
-    "finance|LS14_24": 118,
-    "finance|LS14_25": 118,
+    "finance|LS14_24": 119,
+    "finance|LS14_25": 119,
     "finance|LS14_26": 119,
     "finance|LS14_27": 119,
     "finance|LS14_28": 119,
@@ -6616,8 +6618,8 @@
     "finance|LS14_55": 119,
     "finance|LS14_56": 119,
     "finance|LS14_57": 119,
-    "finance|LS14_58": 119,
-    "finance|LS14_59": 119,
+    "finance|LS14_58": 120,
+    "finance|LS14_59": 120,
     "finance|LS14_6": 120,
     "finance|LS14_60": 120,
     "finance|LS14_61": 120,
