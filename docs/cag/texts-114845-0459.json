@@ -1,0 +1,6 @@
+{
+  "shard": "texts-114845-0459.json",
+  "records": {
+    "114845": "Process all type of meter data (sub-\nstation, Feeder, DT, HT/LT consumer\nNetwork Hierarchy Details and\nConsumers Indexing there against\nAssets information along with\nsystem meter, modem, sim details\nWork Assets Management\n(WAM)\nGIS (Consumer Indexing\nand Assets Mapping)\nMeter Data Acquisition\nSystem (MDAS)\nMeter, Billing and \nCollection (MBC) Network Analysis Module\nAnalyses load owReportsConsumer detail, billing and \npayment data\nEnergy Audit\nModule\nAnalysis Report\n\nTotal Consumers in\nR-ARDRP area\nGIS Mapped\nConsumers\nNumber of Consumers\n41,80,837\n66,86,222\n\nPuVVNL MVVNL PVVNL DVVNL\nNumber of Consumers\n5,56,029 7,21,872\n7,97,790\n12,86,098\nPuVVNL MVVNL PVVNL DVVNL\nAdvance Deposit\n(` in crore)\n1,531.26\n1,651.48\n2,043.33\n12,935.09\n\nLMV\n-1\nLMV\n-2\nLMV\n-3\nLMV\n-5\nLMV\n-8\nLMV\n-9\nLMV\n-10\nNumber of Consumers\nTotal No. of consumers No. of unmetered consumers\n61,73761,737\n7168,543\n24,47027,340\n10,30,809 9,47,623\n3,0734,573\n9,73,493 60,979\n29,76,6501,75,01,853"
+  }
+}
