@@ -2,9 +2,10 @@
   "shard_size_target_bytes": 4500000,
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
+  "schema": 2,
   "totals": {
     "records_with_text": 803,
-    "shards": 22,
+    "shards": 803,
     "r2_fallback": 0,
     "total_text_bytes": 0,
     "missing_files": 0,
@@ -12,921 +13,4022 @@
     "from_existing_shards": 803,
     "txt_files_removed": 0
   },
+  "shard_stride": 250,
   "shards": [
     {
-      "file": "texts-00.json",
-      "count": 34,
-      "bytes": 4562793
+      "file": "texts-copu-LS14-1-0000.json",
+      "count": 1,
+      "bytes": 13911
     },
     {
-      "file": "texts-01.json",
-      "count": 34,
-      "bytes": 4570805
+      "file": "texts-copu-LS14-10-0000.json",
+      "count": 1,
+      "bytes": 169757
     },
     {
-      "file": "texts-02.json",
-      "count": 30,
-      "bytes": 4575954
+      "file": "texts-copu-LS14-101-0000.json",
+      "count": 1,
+      "bytes": 32952
     },
     {
-      "file": "texts-03.json",
-      "count": 27,
-      "bytes": 4580765
+      "file": "texts-copu-LS14-102-0000.json",
+      "count": 1,
+      "bytes": 25292
     },
     {
-      "file": "texts-04.json",
-      "count": 32,
-      "bytes": 4293825
+      "file": "texts-copu-LS14-103-0000.json",
+      "count": 1,
+      "bytes": 41233
     },
     {
-      "file": "texts-05.json",
-      "count": 26,
-      "bytes": 4498612
+      "file": "texts-copu-LS14-11-0000.json",
+      "count": 1,
+      "bytes": 262091
     },
     {
-      "file": "texts-06.json",
-      "count": 32,
-      "bytes": 4473340
+      "file": "texts-copu-LS14-12-0000.json",
+      "count": 1,
+      "bytes": 73908
     },
     {
-      "file": "texts-07.json",
-      "count": 31,
-      "bytes": 4624755
+      "file": "texts-copu-LS14-13-0000.json",
+      "count": 1,
+      "bytes": 44987
     },
     {
-      "file": "texts-08.json",
-      "count": 34,
-      "bytes": 4553197
+      "file": "texts-copu-LS14-14-0000.json",
+      "count": 1,
+      "bytes": 230784
     },
     {
-      "file": "texts-09.json",
-      "count": 28,
-      "bytes": 4485445
+      "file": "texts-copu-LS14-15-0000.json",
+      "count": 1,
+      "bytes": 232441
     },
     {
-      "file": "texts-10.json",
-      "count": 31,
-      "bytes": 4351493
+      "file": "texts-copu-LS14-16-0000.json",
+      "count": 1,
+      "bytes": 131487
     },
     {
-      "file": "texts-11.json",
-      "count": 26,
-      "bytes": 4547761
+      "file": "texts-copu-LS14-17-0000.json",
+      "count": 1,
+      "bytes": 166978
     },
     {
-      "file": "texts-12.json",
-      "count": 38,
-      "bytes": 4562274
+      "file": "texts-copu-LS14-18-0000.json",
+      "count": 1,
+      "bytes": 64846
     },
     {
-      "file": "texts-13.json",
-      "count": 31,
-      "bytes": 4443595
+      "file": "texts-copu-LS14-19-0000.json",
+      "count": 1,
+      "bytes": 66514
     },
     {
-      "file": "texts-14.json",
-      "count": 30,
-      "bytes": 4511533
+      "file": "texts-copu-LS14-2-0000.json",
+      "count": 1,
+      "bytes": 321627
     },
     {
-      "file": "texts-15.json",
-      "count": 47,
-      "bytes": 4538440
+      "file": "texts-copu-LS14-20-0000.json",
+      "count": 1,
+      "bytes": 242998
     },
     {
-      "file": "texts-16.json",
-      "count": 32,
-      "bytes": 4463128
+      "file": "texts-copu-LS14-21-0000.json",
+      "count": 1,
+      "bytes": 154808
     },
     {
-      "file": "texts-17.json",
-      "count": 39,
-      "bytes": 4587630
+      "file": "texts-copu-LS14-22-0000.json",
+      "count": 1,
+      "bytes": 156048
     },
     {
-      "file": "texts-18.json",
-      "count": 64,
-      "bytes": 4475694
+      "file": "texts-copu-LS14-23-0000.json",
+      "count": 1,
+      "bytes": 110449
     },
     {
-      "file": "texts-19.json",
-      "count": 53,
-      "bytes": 4563009
+      "file": "texts-copu-LS14-24-0000.json",
+      "count": 1,
+      "bytes": 63083
     },
     {
-      "file": "texts-20.json",
-      "count": 51,
-      "bytes": 4575910
+      "file": "texts-copu-LS14-25-0000.json",
+      "count": 1,
+      "bytes": 123921
     },
     {
-      "file": "texts-21.json",
-      "count": 53,
-      "bytes": 3820857
+      "file": "texts-copu-LS14-26-0000.json",
+      "count": 1,
+      "bytes": 249480
+    },
+    {
+      "file": "texts-copu-LS14-27-0000.json",
+      "count": 1,
+      "bytes": 140495
+    },
+    {
+      "file": "texts-copu-LS14-28-0000.json",
+      "count": 1,
+      "bytes": 112876
+    },
+    {
+      "file": "texts-copu-LS14-29-0000.json",
+      "count": 1,
+      "bytes": 160919
+    },
+    {
+      "file": "texts-copu-LS14-3-0000.json",
+      "count": 1,
+      "bytes": 151105
+    },
+    {
+      "file": "texts-copu-LS14-30-0000.json",
+      "count": 1,
+      "bytes": 123670
+    },
+    {
+      "file": "texts-copu-LS14-31-0000.json",
+      "count": 1,
+      "bytes": 53027
+    },
+    {
+      "file": "texts-copu-LS14-32-0000.json",
+      "count": 1,
+      "bytes": 42754
+    },
+    {
+      "file": "texts-copu-LS14-33-0000.json",
+      "count": 1,
+      "bytes": 68063
+    },
+    {
+      "file": "texts-copu-LS14-34-0000.json",
+      "count": 1,
+      "bytes": 562479
+    },
+    {
+      "file": "texts-copu-LS14-35-0000.json",
+      "count": 1,
+      "bytes": 49473
+    },
+    {
+      "file": "texts-copu-LS14-36-0000.json",
+      "count": 1,
+      "bytes": 66453
+    },
+    {
+      "file": "texts-copu-LS14-37-0000.json",
+      "count": 1,
+      "bytes": 54019
+    },
+    {
+      "file": "texts-copu-LS14-5-0000.json",
+      "count": 1,
+      "bytes": 55933
+    },
+    {
+      "file": "texts-copu-LS14-6-0000.json",
+      "count": 1,
+      "bytes": 76748
+    },
+    {
+      "file": "texts-copu-LS14-7-0000.json",
+      "count": 1,
+      "bytes": 60947
+    },
+    {
+      "file": "texts-copu-LS14-8-0000.json",
+      "count": 1,
+      "bytes": 68302
+    },
+    {
+      "file": "texts-copu-LS14-9-0000.json",
+      "count": 1,
+      "bytes": 125537
+    },
+    {
+      "file": "texts-copu-LS15-1-0000.json",
+      "count": 1,
+      "bytes": 171755
+    },
+    {
+      "file": "texts-copu-LS15-10-0000.json",
+      "count": 1,
+      "bytes": 171563
+    },
+    {
+      "file": "texts-copu-LS15-11-0000.json",
+      "count": 1,
+      "bytes": 208116
+    },
+    {
+      "file": "texts-copu-LS15-12-0000.json",
+      "count": 1,
+      "bytes": 44210
+    },
+    {
+      "file": "texts-copu-LS15-13-0000.json",
+      "count": 1,
+      "bytes": 126633
+    },
+    {
+      "file": "texts-copu-LS15-14-0000.json",
+      "count": 1,
+      "bytes": 177513
+    },
+    {
+      "file": "texts-copu-LS15-15-0000.json",
+      "count": 1,
+      "bytes": 92231
+    },
+    {
+      "file": "texts-copu-LS15-16-0000.json",
+      "count": 1,
+      "bytes": 134316
+    },
+    {
+      "file": "texts-copu-LS15-17-0000.json",
+      "count": 1,
+      "bytes": 202130
+    },
+    {
+      "file": "texts-copu-LS15-18-0000.json",
+      "count": 1,
+      "bytes": 54609
+    },
+    {
+      "file": "texts-copu-LS15-19-0000.json",
+      "count": 1,
+      "bytes": 102621
+    },
+    {
+      "file": "texts-copu-LS15-2-0000.json",
+      "count": 1,
+      "bytes": 187321
+    },
+    {
+      "file": "texts-copu-LS15-20-0000.json",
+      "count": 1,
+      "bytes": 82931
+    },
+    {
+      "file": "texts-copu-LS15-21-0000.json",
+      "count": 1,
+      "bytes": 71042
+    },
+    {
+      "file": "texts-copu-LS15-22-0000.json",
+      "count": 1,
+      "bytes": 157026
+    },
+    {
+      "file": "texts-copu-LS15-23-0000.json",
+      "count": 1,
+      "bytes": 211776
+    },
+    {
+      "file": "texts-copu-LS15-24-0000.json",
+      "count": 1,
+      "bytes": 132631
+    },
+    {
+      "file": "texts-copu-LS15-25-0000.json",
+      "count": 1,
+      "bytes": 111371
+    },
+    {
+      "file": "texts-copu-LS15-26-0000.json",
+      "count": 1,
+      "bytes": 176944
+    },
+    {
+      "file": "texts-copu-LS15-27-0000.json",
+      "count": 1,
+      "bytes": 197079
+    },
+    {
+      "file": "texts-copu-LS15-28-0000.json",
+      "count": 1,
+      "bytes": 182324
+    },
+    {
+      "file": "texts-copu-LS15-29-0000.json",
+      "count": 1,
+      "bytes": 331748
+    },
+    {
+      "file": "texts-copu-LS15-3-0000.json",
+      "count": 1,
+      "bytes": 97866
+    },
+    {
+      "file": "texts-copu-LS15-30-0000.json",
+      "count": 1,
+      "bytes": 60555
+    },
+    {
+      "file": "texts-copu-LS15-31-0000.json",
+      "count": 1,
+      "bytes": 62381
+    },
+    {
+      "file": "texts-copu-LS15-32-0000.json",
+      "count": 1,
+      "bytes": 77124
+    },
+    {
+      "file": "texts-copu-LS15-33-0000.json",
+      "count": 1,
+      "bytes": 52488
+    },
+    {
+      "file": "texts-copu-LS15-4-0000.json",
+      "count": 1,
+      "bytes": 278857
+    },
+    {
+      "file": "texts-copu-LS15-5-0000.json",
+      "count": 1,
+      "bytes": 228302
+    },
+    {
+      "file": "texts-copu-LS15-6-0000.json",
+      "count": 1,
+      "bytes": 154895
+    },
+    {
+      "file": "texts-copu-LS15-7-0000.json",
+      "count": 1,
+      "bytes": 15010
+    },
+    {
+      "file": "texts-copu-LS15-8-0000.json",
+      "count": 1,
+      "bytes": 68183
+    },
+    {
+      "file": "texts-copu-LS16-1-0000.json",
+      "count": 1,
+      "bytes": 167619
+    },
+    {
+      "file": "texts-copu-LS16-10-0000.json",
+      "count": 1,
+      "bytes": 51370
+    },
+    {
+      "file": "texts-copu-LS16-11-0000.json",
+      "count": 1,
+      "bytes": 181839
+    },
+    {
+      "file": "texts-copu-LS16-12-0000.json",
+      "count": 1,
+      "bytes": 179349
+    },
+    {
+      "file": "texts-copu-LS16-13-0000.json",
+      "count": 1,
+      "bytes": 119084
+    },
+    {
+      "file": "texts-copu-LS16-14-0000.json",
+      "count": 1,
+      "bytes": 186625
+    },
+    {
+      "file": "texts-copu-LS16-15-0000.json",
+      "count": 1,
+      "bytes": 162473
+    },
+    {
+      "file": "texts-copu-LS16-16-0000.json",
+      "count": 1,
+      "bytes": 67904
+    },
+    {
+      "file": "texts-copu-LS16-17-0000.json",
+      "count": 1,
+      "bytes": 74448
+    },
+    {
+      "file": "texts-copu-LS16-18-0000.json",
+      "count": 1,
+      "bytes": 240839
+    },
+    {
+      "file": "texts-copu-LS16-19-0000.json",
+      "count": 1,
+      "bytes": 198713
+    },
+    {
+      "file": "texts-copu-LS16-2-0000.json",
+      "count": 1,
+      "bytes": 31824
+    },
+    {
+      "file": "texts-copu-LS16-20-0000.json",
+      "count": 1,
+      "bytes": 154218
+    },
+    {
+      "file": "texts-copu-LS16-21-0000.json",
+      "count": 1,
+      "bytes": 105969
+    },
+    {
+      "file": "texts-copu-LS16-22-0000.json",
+      "count": 1,
+      "bytes": 200827
+    },
+    {
+      "file": "texts-copu-LS16-23-0000.json",
+      "count": 1,
+      "bytes": 119599
+    },
+    {
+      "file": "texts-copu-LS16-24-0000.json",
+      "count": 1,
+      "bytes": 424513
+    },
+    {
+      "file": "texts-copu-LS16-25-0000.json",
+      "count": 1,
+      "bytes": 188843
+    },
+    {
+      "file": "texts-copu-LS16-3-0000.json",
+      "count": 1,
+      "bytes": 86132
+    },
+    {
+      "file": "texts-copu-LS16-4-0000.json",
+      "count": 1,
+      "bytes": 195397
+    },
+    {
+      "file": "texts-copu-LS16-5-0000.json",
+      "count": 1,
+      "bytes": 75073
+    },
+    {
+      "file": "texts-copu-LS16-6-0000.json",
+      "count": 1,
+      "bytes": 99629
+    },
+    {
+      "file": "texts-copu-LS16-7-0000.json",
+      "count": 1,
+      "bytes": 95211
+    },
+    {
+      "file": "texts-copu-LS16-8-0000.json",
+      "count": 1,
+      "bytes": 209371
+    },
+    {
+      "file": "texts-copu-LS16-9-0000.json",
+      "count": 1,
+      "bytes": 151170
+    },
+    {
+      "file": "texts-copu-LS17-1-0000.json",
+      "count": 1,
+      "bytes": 292075
+    },
+    {
+      "file": "texts-copu-LS17-10-0000.json",
+      "count": 1,
+      "bytes": 279618
+    },
+    {
+      "file": "texts-copu-LS17-11-0000.json",
+      "count": 1,
+      "bytes": 210883
+    },
+    {
+      "file": "texts-copu-LS17-12-0000.json",
+      "count": 1,
+      "bytes": 217442
+    },
+    {
+      "file": "texts-copu-LS17-13-0000.json",
+      "count": 1,
+      "bytes": 227672
+    },
+    {
+      "file": "texts-copu-LS17-14-0000.json",
+      "count": 1,
+      "bytes": 103079
+    },
+    {
+      "file": "texts-copu-LS17-15-0000.json",
+      "count": 1,
+      "bytes": 181163
+    },
+    {
+      "file": "texts-copu-LS17-16-0000.json",
+      "count": 1,
+      "bytes": 62358
+    },
+    {
+      "file": "texts-copu-LS17-17-0000.json",
+      "count": 1,
+      "bytes": 91127
+    },
+    {
+      "file": "texts-copu-LS17-18-0000.json",
+      "count": 1,
+      "bytes": 136586
+    },
+    {
+      "file": "texts-copu-LS17-19-0000.json",
+      "count": 1,
+      "bytes": 137071
+    },
+    {
+      "file": "texts-copu-LS17-2-0000.json",
+      "count": 1,
+      "bytes": 243201
+    },
+    {
+      "file": "texts-copu-LS17-20-0000.json",
+      "count": 1,
+      "bytes": 69550
+    },
+    {
+      "file": "texts-copu-LS17-21-0000.json",
+      "count": 1,
+      "bytes": 195143
+    },
+    {
+      "file": "texts-copu-LS17-22-0000.json",
+      "count": 1,
+      "bytes": 117418
+    },
+    {
+      "file": "texts-copu-LS17-23-0000.json",
+      "count": 1,
+      "bytes": 53833
+    },
+    {
+      "file": "texts-copu-LS17-3-0000.json",
+      "count": 1,
+      "bytes": 278162
+    },
+    {
+      "file": "texts-copu-LS17-4-0000.json",
+      "count": 1,
+      "bytes": 203546
+    },
+    {
+      "file": "texts-copu-LS17-5-0000.json",
+      "count": 1,
+      "bytes": 305351
+    },
+    {
+      "file": "texts-copu-LS17-6-0000.json",
+      "count": 1,
+      "bytes": 206624
+    },
+    {
+      "file": "texts-copu-LS17-7-0000.json",
+      "count": 1,
+      "bytes": 258030
+    },
+    {
+      "file": "texts-copu-LS17-8-0000.json",
+      "count": 1,
+      "bytes": 411951
+    },
+    {
+      "file": "texts-copu-LS17-9-0000.json",
+      "count": 1,
+      "bytes": 55294
+    },
+    {
+      "file": "texts-copu-LS18-1-0000.json",
+      "count": 1,
+      "bytes": 91603
+    },
+    {
+      "file": "texts-copu-LS18-10-0000.json",
+      "count": 1,
+      "bytes": 97202
+    },
+    {
+      "file": "texts-copu-LS18-11-0000.json",
+      "count": 1,
+      "bytes": 187741
+    },
+    {
+      "file": "texts-copu-LS18-12-0000.json",
+      "count": 1,
+      "bytes": 123319
+    },
+    {
+      "file": "texts-copu-LS18-13-0000.json",
+      "count": 1,
+      "bytes": 146716
+    },
+    {
+      "file": "texts-copu-LS18-14-0000.json",
+      "count": 1,
+      "bytes": 170378
+    },
+    {
+      "file": "texts-copu-LS18-15-0000.json",
+      "count": 1,
+      "bytes": 120333
+    },
+    {
+      "file": "texts-copu-LS18-16-0000.json",
+      "count": 1,
+      "bytes": 185893
+    },
+    {
+      "file": "texts-copu-LS18-17-0000.json",
+      "count": 1,
+      "bytes": 60764
+    },
+    {
+      "file": "texts-copu-LS18-18-0000.json",
+      "count": 1,
+      "bytes": 150833
+    },
+    {
+      "file": "texts-copu-LS18-19-0000.json",
+      "count": 1,
+      "bytes": 167829
+    },
+    {
+      "file": "texts-copu-LS18-2-0000.json",
+      "count": 1,
+      "bytes": 300205
+    },
+    {
+      "file": "texts-copu-LS18-20-0000.json",
+      "count": 1,
+      "bytes": 183272
+    },
+    {
+      "file": "texts-copu-LS18-21-0000.json",
+      "count": 1,
+      "bytes": 431154
+    },
+    {
+      "file": "texts-copu-LS18-22-0000.json",
+      "count": 1,
+      "bytes": 112434
+    },
+    {
+      "file": "texts-copu-LS18-23-0000.json",
+      "count": 1,
+      "bytes": 42405
+    },
+    {
+      "file": "texts-copu-LS18-24-0000.json",
+      "count": 1,
+      "bytes": 68067
+    },
+    {
+      "file": "texts-copu-LS18-25-0000.json",
+      "count": 1,
+      "bytes": 113358
+    },
+    {
+      "file": "texts-copu-LS18-26-0000.json",
+      "count": 1,
+      "bytes": 60231
+    },
+    {
+      "file": "texts-copu-LS18-27-0000.json",
+      "count": 1,
+      "bytes": 51679
+    },
+    {
+      "file": "texts-copu-LS18-28-0000.json",
+      "count": 1,
+      "bytes": 90019
+    },
+    {
+      "file": "texts-copu-LS18-29-0000.json",
+      "count": 1,
+      "bytes": 88362
+    },
+    {
+      "file": "texts-copu-LS18-3-0000.json",
+      "count": 1,
+      "bytes": 97353
+    },
+    {
+      "file": "texts-copu-LS18-30-0000.json",
+      "count": 1,
+      "bytes": 101505
+    },
+    {
+      "file": "texts-copu-LS18-4-0000.json",
+      "count": 1,
+      "bytes": 134897
+    },
+    {
+      "file": "texts-copu-LS18-5-0000.json",
+      "count": 1,
+      "bytes": 90069
+    },
+    {
+      "file": "texts-copu-LS18-6-0000.json",
+      "count": 1,
+      "bytes": 269637
+    },
+    {
+      "file": "texts-copu-LS18-7-0000.json",
+      "count": 1,
+      "bytes": 106347
+    },
+    {
+      "file": "texts-copu-LS18-8-0000.json",
+      "count": 1,
+      "bytes": 143248
+    },
+    {
+      "file": "texts-copu-LS18-9-0000.json",
+      "count": 1,
+      "bytes": 216097
+    },
+    {
+      "file": "texts-estimates-LS14-1-0000.json",
+      "count": 1,
+      "bytes": 19381
+    },
+    {
+      "file": "texts-estimates-LS14-10-0000.json",
+      "count": 1,
+      "bytes": 37084
+    },
+    {
+      "file": "texts-estimates-LS14-11-0000.json",
+      "count": 1,
+      "bytes": 177943
+    },
+    {
+      "file": "texts-estimates-LS14-12-0000.json",
+      "count": 1,
+      "bytes": 87814
+    },
+    {
+      "file": "texts-estimates-LS14-13-0000.json",
+      "count": 1,
+      "bytes": 133731
+    },
+    {
+      "file": "texts-estimates-LS14-14-0000.json",
+      "count": 1,
+      "bytes": 210014
+    },
+    {
+      "file": "texts-estimates-LS14-15-0000.json",
+      "count": 1,
+      "bytes": 75631
+    },
+    {
+      "file": "texts-estimates-LS14-16-0000.json",
+      "count": 1,
+      "bytes": 168274
+    },
+    {
+      "file": "texts-estimates-LS14-17-0000.json",
+      "count": 1,
+      "bytes": 317166
+    },
+    {
+      "file": "texts-estimates-LS14-18-0000.json",
+      "count": 1,
+      "bytes": 227905
+    },
+    {
+      "file": "texts-estimates-LS14-19-0000.json",
+      "count": 1,
+      "bytes": 8847
+    },
+    {
+      "file": "texts-estimates-LS14-2-0000.json",
+      "count": 1,
+      "bytes": 30807
+    },
+    {
+      "file": "texts-estimates-LS14-20-0000.json",
+      "count": 1,
+      "bytes": 100059
+    },
+    {
+      "file": "texts-estimates-LS14-3-0000.json",
+      "count": 1,
+      "bytes": 24416
+    },
+    {
+      "file": "texts-estimates-LS14-4-0000.json",
+      "count": 1,
+      "bytes": 27493
+    },
+    {
+      "file": "texts-estimates-LS14-5-0000.json",
+      "count": 1,
+      "bytes": 29887
+    },
+    {
+      "file": "texts-estimates-LS14-6-0000.json",
+      "count": 1,
+      "bytes": 206647
+    },
+    {
+      "file": "texts-estimates-LS14-7-0000.json",
+      "count": 1,
+      "bytes": 217518
+    },
+    {
+      "file": "texts-estimates-LS14-8-0000.json",
+      "count": 1,
+      "bytes": 206993
+    },
+    {
+      "file": "texts-estimates-LS14-9-0000.json",
+      "count": 1,
+      "bytes": 30102
+    },
+    {
+      "file": "texts-estimates-LS15-1-0000.json",
+      "count": 1,
+      "bytes": 135904
+    },
+    {
+      "file": "texts-estimates-LS15-10-0000.json",
+      "count": 1,
+      "bytes": 132529
+    },
+    {
+      "file": "texts-estimates-LS15-11-0000.json",
+      "count": 1,
+      "bytes": 384158
+    },
+    {
+      "file": "texts-estimates-LS15-12-0000.json",
+      "count": 1,
+      "bytes": 206673
+    },
+    {
+      "file": "texts-estimates-LS15-13-0000.json",
+      "count": 1,
+      "bytes": 331984
+    },
+    {
+      "file": "texts-estimates-LS15-14-0000.json",
+      "count": 1,
+      "bytes": 337142
+    },
+    {
+      "file": "texts-estimates-LS15-15-0000.json",
+      "count": 1,
+      "bytes": 272083
+    },
+    {
+      "file": "texts-estimates-LS15-16-0000.json",
+      "count": 1,
+      "bytes": 143155
+    },
+    {
+      "file": "texts-estimates-LS15-17-0000.json",
+      "count": 1,
+      "bytes": 121654
+    },
+    {
+      "file": "texts-estimates-LS15-18-0000.json",
+      "count": 1,
+      "bytes": 264045
+    },
+    {
+      "file": "texts-estimates-LS15-19-0000.json",
+      "count": 1,
+      "bytes": 192646
+    },
+    {
+      "file": "texts-estimates-LS15-2-0000.json",
+      "count": 1,
+      "bytes": 153330
+    },
+    {
+      "file": "texts-estimates-LS15-20-0000.json",
+      "count": 1,
+      "bytes": 203932
+    },
+    {
+      "file": "texts-estimates-LS15-21-0000.json",
+      "count": 1,
+      "bytes": 193280
+    },
+    {
+      "file": "texts-estimates-LS15-22-0000.json",
+      "count": 1,
+      "bytes": 151316
+    },
+    {
+      "file": "texts-estimates-LS15-23-0000.json",
+      "count": 1,
+      "bytes": 201226
+    },
+    {
+      "file": "texts-estimates-LS15-24-0000.json",
+      "count": 1,
+      "bytes": 160849
+    },
+    {
+      "file": "texts-estimates-LS15-25-0000.json",
+      "count": 1,
+      "bytes": 201211
+    },
+    {
+      "file": "texts-estimates-LS15-26-0000.json",
+      "count": 1,
+      "bytes": 111738
+    },
+    {
+      "file": "texts-estimates-LS15-27-0000.json",
+      "count": 1,
+      "bytes": 99851
+    },
+    {
+      "file": "texts-estimates-LS15-28-0000.json",
+      "count": 1,
+      "bytes": 73168
+    },
+    {
+      "file": "texts-estimates-LS15-29-0000.json",
+      "count": 1,
+      "bytes": 184652
+    },
+    {
+      "file": "texts-estimates-LS15-3-0000.json",
+      "count": 1,
+      "bytes": 8255
+    },
+    {
+      "file": "texts-estimates-LS15-30-0000.json",
+      "count": 1,
+      "bytes": 70545
+    },
+    {
+      "file": "texts-estimates-LS15-31-0000.json",
+      "count": 1,
+      "bytes": 127446
+    },
+    {
+      "file": "texts-estimates-LS15-32-0000.json",
+      "count": 1,
+      "bytes": 63236
+    },
+    {
+      "file": "texts-estimates-LS15-33-0000.json",
+      "count": 1,
+      "bytes": 84196
+    },
+    {
+      "file": "texts-estimates-LS15-34-0000.json",
+      "count": 1,
+      "bytes": 86576
+    },
+    {
+      "file": "texts-estimates-LS15-35-0000.json",
+      "count": 1,
+      "bytes": 176257
+    },
+    {
+      "file": "texts-estimates-LS15-36-0000.json",
+      "count": 1,
+      "bytes": 72455
+    },
+    {
+      "file": "texts-estimates-LS15-4-0000.json",
+      "count": 1,
+      "bytes": 111177
+    },
+    {
+      "file": "texts-estimates-LS15-5-0000.json",
+      "count": 1,
+      "bytes": 122213
+    },
+    {
+      "file": "texts-estimates-LS15-6-0000.json",
+      "count": 1,
+      "bytes": 154553
+    },
+    {
+      "file": "texts-estimates-LS15-7-0000.json",
+      "count": 1,
+      "bytes": 285759
+    },
+    {
+      "file": "texts-estimates-LS15-8-0000.json",
+      "count": 1,
+      "bytes": 120378
+    },
+    {
+      "file": "texts-estimates-LS15-9-0000.json",
+      "count": 1,
+      "bytes": 242362
+    },
+    {
+      "file": "texts-estimates-LS16-1-0000.json",
+      "count": 1,
+      "bytes": 349881
+    },
+    {
+      "file": "texts-estimates-LS16-10-0000.json",
+      "count": 1,
+      "bytes": 167541
+    },
+    {
+      "file": "texts-estimates-LS16-11-0000.json",
+      "count": 1,
+      "bytes": 76846
+    },
+    {
+      "file": "texts-estimates-LS16-12-0000.json",
+      "count": 1,
+      "bytes": 47530
+    },
+    {
+      "file": "texts-estimates-LS16-13-0000.json",
+      "count": 1,
+      "bytes": 101558
+    },
+    {
+      "file": "texts-estimates-LS16-14-0000.json",
+      "count": 1,
+      "bytes": 56012
+    },
+    {
+      "file": "texts-estimates-LS16-15-0000.json",
+      "count": 1,
+      "bytes": 483475
+    },
+    {
+      "file": "texts-estimates-LS16-16-0000.json",
+      "count": 1,
+      "bytes": 106283
+    },
+    {
+      "file": "texts-estimates-LS16-17-0000.json",
+      "count": 1,
+      "bytes": 52037
+    },
+    {
+      "file": "texts-estimates-LS16-18-0000.json",
+      "count": 1,
+      "bytes": 124917
+    },
+    {
+      "file": "texts-estimates-LS16-19-0000.json",
+      "count": 1,
+      "bytes": 121324
+    },
+    {
+      "file": "texts-estimates-LS16-2-0000.json",
+      "count": 1,
+      "bytes": 130080
+    },
+    {
+      "file": "texts-estimates-LS16-20-0000.json",
+      "count": 1,
+      "bytes": 185848
+    },
+    {
+      "file": "texts-estimates-LS16-21-0000.json",
+      "count": 1,
+      "bytes": 118479
+    },
+    {
+      "file": "texts-estimates-LS16-22-0000.json",
+      "count": 1,
+      "bytes": 139215
+    },
+    {
+      "file": "texts-estimates-LS16-23-0000.json",
+      "count": 1,
+      "bytes": 312833
+    },
+    {
+      "file": "texts-estimates-LS16-24-0000.json",
+      "count": 1,
+      "bytes": 228050
+    },
+    {
+      "file": "texts-estimates-LS16-25-0000.json",
+      "count": 1,
+      "bytes": 142637
+    },
+    {
+      "file": "texts-estimates-LS16-26-0000.json",
+      "count": 1,
+      "bytes": 129520
+    },
+    {
+      "file": "texts-estimates-LS16-27-0000.json",
+      "count": 1,
+      "bytes": 74453
+    },
+    {
+      "file": "texts-estimates-LS16-28-0000.json",
+      "count": 1,
+      "bytes": 258040
+    },
+    {
+      "file": "texts-estimates-LS16-29-0000.json",
+      "count": 1,
+      "bytes": 187254
+    },
+    {
+      "file": "texts-estimates-LS16-3-0000.json",
+      "count": 1,
+      "bytes": 46464
+    },
+    {
+      "file": "texts-estimates-LS16-30-0000.json",
+      "count": 1,
+      "bytes": 390515
+    },
+    {
+      "file": "texts-estimates-LS16-31-0000.json",
+      "count": 1,
+      "bytes": 185528
+    },
+    {
+      "file": "texts-estimates-LS16-4-0000.json",
+      "count": 1,
+      "bytes": 63681
+    },
+    {
+      "file": "texts-estimates-LS16-5-0000.json",
+      "count": 1,
+      "bytes": 323121
+    },
+    {
+      "file": "texts-estimates-LS16-6-0000.json",
+      "count": 1,
+      "bytes": 44087
+    },
+    {
+      "file": "texts-estimates-LS16-7-0000.json",
+      "count": 1,
+      "bytes": 47400
+    },
+    {
+      "file": "texts-estimates-LS16-8-0000.json",
+      "count": 1,
+      "bytes": 105511
+    },
+    {
+      "file": "texts-estimates-LS16-9-0000.json",
+      "count": 1,
+      "bytes": 236213
+    },
+    {
+      "file": "texts-estimates-LS17-1-0000.json",
+      "count": 1,
+      "bytes": 301122
+    },
+    {
+      "file": "texts-estimates-LS17-10-0000.json",
+      "count": 1,
+      "bytes": 33870
+    },
+    {
+      "file": "texts-estimates-LS17-11-0000.json",
+      "count": 1,
+      "bytes": 217800
+    },
+    {
+      "file": "texts-estimates-LS17-12-0000.json",
+      "count": 1,
+      "bytes": 152189
+    },
+    {
+      "file": "texts-estimates-LS17-13-0000.json",
+      "count": 1,
+      "bytes": 104297
+    },
+    {
+      "file": "texts-estimates-LS17-14-0000.json",
+      "count": 1,
+      "bytes": 192253
+    },
+    {
+      "file": "texts-estimates-LS17-15-0000.json",
+      "count": 1,
+      "bytes": 2390
+    },
+    {
+      "file": "texts-estimates-LS17-16-0000.json",
+      "count": 1,
+      "bytes": 2250
+    },
+    {
+      "file": "texts-estimates-LS17-17-0000.json",
+      "count": 1,
+      "bytes": 2243
+    },
+    {
+      "file": "texts-estimates-LS17-18-0000.json",
+      "count": 1,
+      "bytes": 148177
+    },
+    {
+      "file": "texts-estimates-LS17-19-0000.json",
+      "count": 1,
+      "bytes": 130146
+    },
+    {
+      "file": "texts-estimates-LS17-2-0000.json",
+      "count": 1,
+      "bytes": 183630
+    },
+    {
+      "file": "texts-estimates-LS17-20-0000.json",
+      "count": 1,
+      "bytes": 66113
+    },
+    {
+      "file": "texts-estimates-LS17-21-0000.json",
+      "count": 1,
+      "bytes": 86867
+    },
+    {
+      "file": "texts-estimates-LS17-22-0000.json",
+      "count": 1,
+      "bytes": 123213
+    },
+    {
+      "file": "texts-estimates-LS17-23-0000.json",
+      "count": 1,
+      "bytes": 86842
+    },
+    {
+      "file": "texts-estimates-LS17-24-0000.json",
+      "count": 1,
+      "bytes": 138412
+    },
+    {
+      "file": "texts-estimates-LS17-25-0000.json",
+      "count": 1,
+      "bytes": 97306
+    },
+    {
+      "file": "texts-estimates-LS17-26-0000.json",
+      "count": 1,
+      "bytes": 124872
+    },
+    {
+      "file": "texts-estimates-LS17-27-0000.json",
+      "count": 1,
+      "bytes": 83417
+    },
+    {
+      "file": "texts-estimates-LS17-28-0000.json",
+      "count": 1,
+      "bytes": 126668
+    },
+    {
+      "file": "texts-estimates-LS17-29-0000.json",
+      "count": 1,
+      "bytes": 46081
+    },
+    {
+      "file": "texts-estimates-LS17-3-0000.json",
+      "count": 1,
+      "bytes": 159733
+    },
+    {
+      "file": "texts-estimates-LS17-30-0000.json",
+      "count": 1,
+      "bytes": 72306
+    },
+    {
+      "file": "texts-estimates-LS17-31-0000.json",
+      "count": 1,
+      "bytes": 107541
+    },
+    {
+      "file": "texts-estimates-LS17-32-0000.json",
+      "count": 1,
+      "bytes": 144293
+    },
+    {
+      "file": "texts-estimates-LS17-33-0000.json",
+      "count": 1,
+      "bytes": 102733
+    },
+    {
+      "file": "texts-estimates-LS17-34-0000.json",
+      "count": 1,
+      "bytes": 133483
+    },
+    {
+      "file": "texts-estimates-LS17-35-0000.json",
+      "count": 1,
+      "bytes": 69269
+    },
+    {
+      "file": "texts-estimates-LS17-36-0000.json",
+      "count": 1,
+      "bytes": 309629
+    },
+    {
+      "file": "texts-estimates-LS17-37-0000.json",
+      "count": 1,
+      "bytes": 136842
+    },
+    {
+      "file": "texts-estimates-LS17-4-0000.json",
+      "count": 1,
+      "bytes": 236044
+    },
+    {
+      "file": "texts-estimates-LS17-5-0000.json",
+      "count": 1,
+      "bytes": 107843
+    },
+    {
+      "file": "texts-estimates-LS17-6-0000.json",
+      "count": 1,
+      "bytes": 41953
+    },
+    {
+      "file": "texts-estimates-LS17-7-0000.json",
+      "count": 1,
+      "bytes": 588762
+    },
+    {
+      "file": "texts-estimates-LS17-8-0000.json",
+      "count": 1,
+      "bytes": 174748
+    },
+    {
+      "file": "texts-estimates-LS17-9-0000.json",
+      "count": 1,
+      "bytes": 99588
+    },
+    {
+      "file": "texts-estimates-LS18-1-0000.json",
+      "count": 1,
+      "bytes": 68497
+    },
+    {
+      "file": "texts-estimates-LS18-2-0000.json",
+      "count": 1,
+      "bytes": 85204
+    },
+    {
+      "file": "texts-estimates-LS18-3-0000.json",
+      "count": 1,
+      "bytes": 99585
+    },
+    {
+      "file": "texts-estimates-LS18-4-0000.json",
+      "count": 1,
+      "bytes": 59513
+    },
+    {
+      "file": "texts-estimates-LS18-5-0000.json",
+      "count": 1,
+      "bytes": 71091
+    },
+    {
+      "file": "texts-estimates-LS18-6-0000.json",
+      "count": 1,
+      "bytes": 213578
+    },
+    {
+      "file": "texts-estimates-LS18-7-0000.json",
+      "count": 1,
+      "bytes": 179685
+    },
+    {
+      "file": "texts-pac-LS14-1-0000.json",
+      "count": 1,
+      "bytes": 270252
+    },
+    {
+      "file": "texts-pac-LS14-10-0000.json",
+      "count": 1,
+      "bytes": 144695
+    },
+    {
+      "file": "texts-pac-LS14-11-0000.json",
+      "count": 1,
+      "bytes": 39848
+    },
+    {
+      "file": "texts-pac-LS14-12-0000.json",
+      "count": 1,
+      "bytes": 171201
+    },
+    {
+      "file": "texts-pac-LS14-13-0000.json",
+      "count": 1,
+      "bytes": 104767
+    },
+    {
+      "file": "texts-pac-LS14-14-0000.json",
+      "count": 1,
+      "bytes": 187465
+    },
+    {
+      "file": "texts-pac-LS14-15-0000.json",
+      "count": 1,
+      "bytes": 36094
+    },
+    {
+      "file": "texts-pac-LS14-16-0000.json",
+      "count": 1,
+      "bytes": 126519
+    },
+    {
+      "file": "texts-pac-LS14-17-0000.json",
+      "count": 1,
+      "bytes": 333797
+    },
+    {
+      "file": "texts-pac-LS14-18-0000.json",
+      "count": 1,
+      "bytes": 146005
+    },
+    {
+      "file": "texts-pac-LS14-19-0000.json",
+      "count": 1,
+      "bytes": 378592
+    },
+    {
+      "file": "texts-pac-LS14-2-0000.json",
+      "count": 1,
+      "bytes": 53037
+    },
+    {
+      "file": "texts-pac-LS14-20-0000.json",
+      "count": 1,
+      "bytes": 68344
+    },
+    {
+      "file": "texts-pac-LS14-21-0000.json",
+      "count": 1,
+      "bytes": 151153
+    },
+    {
+      "file": "texts-pac-LS14-22-0000.json",
+      "count": 1,
+      "bytes": 171321
+    },
+    {
+      "file": "texts-pac-LS14-23-0000.json",
+      "count": 1,
+      "bytes": 57869
+    },
+    {
+      "file": "texts-pac-LS14-24-0000.json",
+      "count": 1,
+      "bytes": 197653
+    },
+    {
+      "file": "texts-pac-LS14-25-0000.json",
+      "count": 1,
+      "bytes": 88646
+    },
+    {
+      "file": "texts-pac-LS14-26-0000.json",
+      "count": 1,
+      "bytes": 269546
+    },
+    {
+      "file": "texts-pac-LS14-27-0000.json",
+      "count": 1,
+      "bytes": 174711
+    },
+    {
+      "file": "texts-pac-LS14-28-0000.json",
+      "count": 1,
+      "bytes": 235195
+    },
+    {
+      "file": "texts-pac-LS14-29-0000.json",
+      "count": 1,
+      "bytes": 326369
+    },
+    {
+      "file": "texts-pac-LS14-3-0000.json",
+      "count": 1,
+      "bytes": 80603
+    },
+    {
+      "file": "texts-pac-LS14-30-0000.json",
+      "count": 1,
+      "bytes": 91544
+    },
+    {
+      "file": "texts-pac-LS14-31-0000.json",
+      "count": 1,
+      "bytes": 154718
+    },
+    {
+      "file": "texts-pac-LS14-32-0000.json",
+      "count": 1,
+      "bytes": 194854
+    },
+    {
+      "file": "texts-pac-LS14-33-0000.json",
+      "count": 1,
+      "bytes": 155595
+    },
+    {
+      "file": "texts-pac-LS14-34-0000.json",
+      "count": 1,
+      "bytes": 76772
+    },
+    {
+      "file": "texts-pac-LS14-35-0000.json",
+      "count": 1,
+      "bytes": 124309
+    },
+    {
+      "file": "texts-pac-LS14-36-0000.json",
+      "count": 1,
+      "bytes": 84166
+    },
+    {
+      "file": "texts-pac-LS14-37-0000.json",
+      "count": 1,
+      "bytes": 28269
+    },
+    {
+      "file": "texts-pac-LS14-38-0000.json",
+      "count": 1,
+      "bytes": 450429
+    },
+    {
+      "file": "texts-pac-LS14-39-0000.json",
+      "count": 1,
+      "bytes": 74990
+    },
+    {
+      "file": "texts-pac-LS14-4-0000.json",
+      "count": 1,
+      "bytes": 110818
+    },
+    {
+      "file": "texts-pac-LS14-40-0000.json",
+      "count": 1,
+      "bytes": 187143
+    },
+    {
+      "file": "texts-pac-LS14-41-0000.json",
+      "count": 1,
+      "bytes": 66145
+    },
+    {
+      "file": "texts-pac-LS14-42-0000.json",
+      "count": 1,
+      "bytes": 185545
+    },
+    {
+      "file": "texts-pac-LS14-43-0000.json",
+      "count": 1,
+      "bytes": 345528
+    },
+    {
+      "file": "texts-pac-LS14-44-0000.json",
+      "count": 1,
+      "bytes": 125785
+    },
+    {
+      "file": "texts-pac-LS14-45-0000.json",
+      "count": 1,
+      "bytes": 305694
+    },
+    {
+      "file": "texts-pac-LS14-46-0000.json",
+      "count": 1,
+      "bytes": 121535
+    },
+    {
+      "file": "texts-pac-LS14-47-0000.json",
+      "count": 1,
+      "bytes": 159684
+    },
+    {
+      "file": "texts-pac-LS14-48-0000.json",
+      "count": 1,
+      "bytes": 258712
+    },
+    {
+      "file": "texts-pac-LS14-49-0000.json",
+      "count": 1,
+      "bytes": 94808
+    },
+    {
+      "file": "texts-pac-LS14-5-0000.json",
+      "count": 1,
+      "bytes": 87388
+    },
+    {
+      "file": "texts-pac-LS14-50-0000.json",
+      "count": 1,
+      "bytes": 89634
+    },
+    {
+      "file": "texts-pac-LS14-51-0000.json",
+      "count": 1,
+      "bytes": 194322
+    },
+    {
+      "file": "texts-pac-LS14-52-0000.json",
+      "count": 1,
+      "bytes": 90959
+    },
+    {
+      "file": "texts-pac-LS14-53-0000.json",
+      "count": 1,
+      "bytes": 107550
+    },
+    {
+      "file": "texts-pac-LS14-54-0000.json",
+      "count": 1,
+      "bytes": 161021
+    },
+    {
+      "file": "texts-pac-LS14-55-0000.json",
+      "count": 1,
+      "bytes": 168987
+    },
+    {
+      "file": "texts-pac-LS14-56-0000.json",
+      "count": 1,
+      "bytes": 32348
+    },
+    {
+      "file": "texts-pac-LS14-57-0000.json",
+      "count": 1,
+      "bytes": 70519
+    },
+    {
+      "file": "texts-pac-LS14-58-0000.json",
+      "count": 1,
+      "bytes": 83213
+    },
+    {
+      "file": "texts-pac-LS14-59-0000.json",
+      "count": 1,
+      "bytes": 41552
+    },
+    {
+      "file": "texts-pac-LS14-6-0000.json",
+      "count": 1,
+      "bytes": 101391
+    },
+    {
+      "file": "texts-pac-LS14-60-0000.json",
+      "count": 1,
+      "bytes": 89069
+    },
+    {
+      "file": "texts-pac-LS14-61-0000.json",
+      "count": 1,
+      "bytes": 137770
+    },
+    {
+      "file": "texts-pac-LS14-62-0000.json",
+      "count": 1,
+      "bytes": 174118
+    },
+    {
+      "file": "texts-pac-LS14-63-0000.json",
+      "count": 1,
+      "bytes": 250675
+    },
+    {
+      "file": "texts-pac-LS14-64-0000.json",
+      "count": 1,
+      "bytes": 171824
+    },
+    {
+      "file": "texts-pac-LS14-65-0000.json",
+      "count": 1,
+      "bytes": 101979
+    },
+    {
+      "file": "texts-pac-LS14-66-0000.json",
+      "count": 1,
+      "bytes": 100480
+    },
+    {
+      "file": "texts-pac-LS14-67-0000.json",
+      "count": 1,
+      "bytes": 326666
+    },
+    {
+      "file": "texts-pac-LS14-68-0000.json",
+      "count": 1,
+      "bytes": 62454
+    },
+    {
+      "file": "texts-pac-LS14-69-0000.json",
+      "count": 1,
+      "bytes": 49580
+    },
+    {
+      "file": "texts-pac-LS14-7-0000.json",
+      "count": 1,
+      "bytes": 290581
+    },
+    {
+      "file": "texts-pac-LS14-70-0000.json",
+      "count": 1,
+      "bytes": 54076
+    },
+    {
+      "file": "texts-pac-LS14-71-0000.json",
+      "count": 1,
+      "bytes": 57524
+    },
+    {
+      "file": "texts-pac-LS14-72-0000.json",
+      "count": 1,
+      "bytes": 295496
+    },
+    {
+      "file": "texts-pac-LS14-73-0000.json",
+      "count": 1,
+      "bytes": 301139
+    },
+    {
+      "file": "texts-pac-LS14-74-0000.json",
+      "count": 1,
+      "bytes": 107955
+    },
+    {
+      "file": "texts-pac-LS14-75-0000.json",
+      "count": 1,
+      "bytes": 105571
+    },
+    {
+      "file": "texts-pac-LS14-76-0000.json",
+      "count": 1,
+      "bytes": 78593
+    },
+    {
+      "file": "texts-pac-LS14-77-0000.json",
+      "count": 1,
+      "bytes": 380898
+    },
+    {
+      "file": "texts-pac-LS14-78-0000.json",
+      "count": 1,
+      "bytes": 107757
+    },
+    {
+      "file": "texts-pac-LS14-79-0000.json",
+      "count": 1,
+      "bytes": 33029
+    },
+    {
+      "file": "texts-pac-LS14-8-0000.json",
+      "count": 1,
+      "bytes": 74930
+    },
+    {
+      "file": "texts-pac-LS14-80-0000.json",
+      "count": 1,
+      "bytes": 187598
+    },
+    {
+      "file": "texts-pac-LS14-81-0000.json",
+      "count": 1,
+      "bytes": 253220
+    },
+    {
+      "file": "texts-pac-LS14-82-0000.json",
+      "count": 1,
+      "bytes": 134502
+    },
+    {
+      "file": "texts-pac-LS14-83-0000.json",
+      "count": 1,
+      "bytes": 306535
+    },
+    {
+      "file": "texts-pac-LS14-84-0000.json",
+      "count": 1,
+      "bytes": 377995
+    },
+    {
+      "file": "texts-pac-LS14-9-0000.json",
+      "count": 1,
+      "bytes": 259456
+    },
+    {
+      "file": "texts-pac-LS15-1-0000.json",
+      "count": 1,
+      "bytes": 78840
+    },
+    {
+      "file": "texts-pac-LS15-10-0000.json",
+      "count": 1,
+      "bytes": 71461
+    },
+    {
+      "file": "texts-pac-LS15-100-0000.json",
+      "count": 1,
+      "bytes": 136727
+    },
+    {
+      "file": "texts-pac-LS15-11-0000.json",
+      "count": 1,
+      "bytes": 72635
+    },
+    {
+      "file": "texts-pac-LS15-12-0000.json",
+      "count": 1,
+      "bytes": 90619
+    },
+    {
+      "file": "texts-pac-LS15-13-0000.json",
+      "count": 1,
+      "bytes": 64579
+    },
+    {
+      "file": "texts-pac-LS15-14-0000.json",
+      "count": 1,
+      "bytes": 99221
+    },
+    {
+      "file": "texts-pac-LS15-15-0000.json",
+      "count": 1,
+      "bytes": 98143
+    },
+    {
+      "file": "texts-pac-LS15-16-0000.json",
+      "count": 1,
+      "bytes": 126719
+    },
+    {
+      "file": "texts-pac-LS15-17-0000.json",
+      "count": 1,
+      "bytes": 75659
+    },
+    {
+      "file": "texts-pac-LS15-18-0000.json",
+      "count": 1,
+      "bytes": 102327
+    },
+    {
+      "file": "texts-pac-LS15-19-0000.json",
+      "count": 1,
+      "bytes": 204585
+    },
+    {
+      "file": "texts-pac-LS15-2-0000.json",
+      "count": 1,
+      "bytes": 220719
+    },
+    {
+      "file": "texts-pac-LS15-20-0000.json",
+      "count": 1,
+      "bytes": 161361
+    },
+    {
+      "file": "texts-pac-LS15-21-0000.json",
+      "count": 1,
+      "bytes": 118682
+    },
+    {
+      "file": "texts-pac-LS15-22-0000.json",
+      "count": 1,
+      "bytes": 273203
+    },
+    {
+      "file": "texts-pac-LS15-23-0000.json",
+      "count": 1,
+      "bytes": 147442
+    },
+    {
+      "file": "texts-pac-LS15-24-0000.json",
+      "count": 1,
+      "bytes": 149286
+    },
+    {
+      "file": "texts-pac-LS15-25-0000.json",
+      "count": 1,
+      "bytes": 60209
+    },
+    {
+      "file": "texts-pac-LS15-26-0000.json",
+      "count": 1,
+      "bytes": 157806
+    },
+    {
+      "file": "texts-pac-LS15-27-0000.json",
+      "count": 1,
+      "bytes": 93657
+    },
+    {
+      "file": "texts-pac-LS15-28-0000.json",
+      "count": 1,
+      "bytes": 179438
+    },
+    {
+      "file": "texts-pac-LS15-29-0000.json",
+      "count": 1,
+      "bytes": 53228
+    },
+    {
+      "file": "texts-pac-LS15-3-0000.json",
+      "count": 1,
+      "bytes": 115077
+    },
+    {
+      "file": "texts-pac-LS15-30-0000.json",
+      "count": 1,
+      "bytes": 108118
+    },
+    {
+      "file": "texts-pac-LS15-31-0000.json",
+      "count": 1,
+      "bytes": 133149
+    },
+    {
+      "file": "texts-pac-LS15-32-0000.json",
+      "count": 1,
+      "bytes": 236636
+    },
+    {
+      "file": "texts-pac-LS15-33-0000.json",
+      "count": 1,
+      "bytes": 89037
+    },
+    {
+      "file": "texts-pac-LS15-34-0000.json",
+      "count": 1,
+      "bytes": 65527
+    },
+    {
+      "file": "texts-pac-LS15-35-0000.json",
+      "count": 1,
+      "bytes": 131412
+    },
+    {
+      "file": "texts-pac-LS15-36-0000.json",
+      "count": 1,
+      "bytes": 189383
+    },
+    {
+      "file": "texts-pac-LS15-37-0000.json",
+      "count": 1,
+      "bytes": 68905
+    },
+    {
+      "file": "texts-pac-LS15-38-0000.json",
+      "count": 1,
+      "bytes": 79643
+    },
+    {
+      "file": "texts-pac-LS15-39-0000.json",
+      "count": 1,
+      "bytes": 104944
+    },
+    {
+      "file": "texts-pac-LS15-4-0000.json",
+      "count": 1,
+      "bytes": 64843
+    },
+    {
+      "file": "texts-pac-LS15-40-0000.json",
+      "count": 1,
+      "bytes": 261699
+    },
+    {
+      "file": "texts-pac-LS15-41-0000.json",
+      "count": 1,
+      "bytes": 57009
+    },
+    {
+      "file": "texts-pac-LS15-42-0000.json",
+      "count": 1,
+      "bytes": 54582
+    },
+    {
+      "file": "texts-pac-LS15-43-0000.json",
+      "count": 1,
+      "bytes": 46954
+    },
+    {
+      "file": "texts-pac-LS15-44-0000.json",
+      "count": 1,
+      "bytes": 143223
+    },
+    {
+      "file": "texts-pac-LS15-45-0000.json",
+      "count": 1,
+      "bytes": 102718
+    },
+    {
+      "file": "texts-pac-LS15-46-0000.json",
+      "count": 1,
+      "bytes": 68820
+    },
+    {
+      "file": "texts-pac-LS15-47-0000.json",
+      "count": 1,
+      "bytes": 164405
+    },
+    {
+      "file": "texts-pac-LS15-48-0000.json",
+      "count": 1,
+      "bytes": 122924
+    },
+    {
+      "file": "texts-pac-LS15-49-0000.json",
+      "count": 1,
+      "bytes": 132881
+    },
+    {
+      "file": "texts-pac-LS15-5-0000.json",
+      "count": 1,
+      "bytes": 207511
+    },
+    {
+      "file": "texts-pac-LS15-50-0000.json",
+      "count": 1,
+      "bytes": 244005
+    },
+    {
+      "file": "texts-pac-LS15-51-0000.json",
+      "count": 1,
+      "bytes": 189236
+    },
+    {
+      "file": "texts-pac-LS15-52-0000.json",
+      "count": 1,
+      "bytes": 82534
+    },
+    {
+      "file": "texts-pac-LS15-53-0000.json",
+      "count": 1,
+      "bytes": 103321
+    },
+    {
+      "file": "texts-pac-LS15-54-0000.json",
+      "count": 1,
+      "bytes": 213620
+    },
+    {
+      "file": "texts-pac-LS15-55-0000.json",
+      "count": 1,
+      "bytes": 189864
+    },
+    {
+      "file": "texts-pac-LS15-56-0000.json",
+      "count": 1,
+      "bytes": 69899
+    },
+    {
+      "file": "texts-pac-LS15-57-0000.json",
+      "count": 1,
+      "bytes": 98797
+    },
+    {
+      "file": "texts-pac-LS15-58-0000.json",
+      "count": 1,
+      "bytes": 83244
+    },
+    {
+      "file": "texts-pac-LS15-59-0000.json",
+      "count": 1,
+      "bytes": 166799
+    },
+    {
+      "file": "texts-pac-LS15-6-0000.json",
+      "count": 1,
+      "bytes": 82985
+    },
+    {
+      "file": "texts-pac-LS15-60-0000.json",
+      "count": 1,
+      "bytes": 170423
+    },
+    {
+      "file": "texts-pac-LS15-61-0000.json",
+      "count": 1,
+      "bytes": 52653
+    },
+    {
+      "file": "texts-pac-LS15-62-0000.json",
+      "count": 1,
+      "bytes": 90503
+    },
+    {
+      "file": "texts-pac-LS15-63-0000.json",
+      "count": 1,
+      "bytes": 54332
+    },
+    {
+      "file": "texts-pac-LS15-64-0000.json",
+      "count": 1,
+      "bytes": 299852
+    },
+    {
+      "file": "texts-pac-LS15-65-0000.json",
+      "count": 1,
+      "bytes": 179284
+    },
+    {
+      "file": "texts-pac-LS15-66-0000.json",
+      "count": 1,
+      "bytes": 47897
+    },
+    {
+      "file": "texts-pac-LS15-67-0000.json",
+      "count": 1,
+      "bytes": 95532
+    },
+    {
+      "file": "texts-pac-LS15-68-0000.json",
+      "count": 1,
+      "bytes": 73416
+    },
+    {
+      "file": "texts-pac-LS15-69-0000.json",
+      "count": 1,
+      "bytes": 84292
+    },
+    {
+      "file": "texts-pac-LS15-7-0000.json",
+      "count": 1,
+      "bytes": 247078
+    },
+    {
+      "file": "texts-pac-LS15-70-0000.json",
+      "count": 1,
+      "bytes": 202803
+    },
+    {
+      "file": "texts-pac-LS15-71-0000.json",
+      "count": 1,
+      "bytes": 380652
+    },
+    {
+      "file": "texts-pac-LS15-72-0000.json",
+      "count": 1,
+      "bytes": 278813
+    },
+    {
+      "file": "texts-pac-LS15-73-0000.json",
+      "count": 1,
+      "bytes": 15963
+    },
+    {
+      "file": "texts-pac-LS15-74-0000.json",
+      "count": 1,
+      "bytes": 122665
+    },
+    {
+      "file": "texts-pac-LS15-75-0000.json",
+      "count": 1,
+      "bytes": 91424
+    },
+    {
+      "file": "texts-pac-LS15-76-0000.json",
+      "count": 1,
+      "bytes": 62267
+    },
+    {
+      "file": "texts-pac-LS15-77-0000.json",
+      "count": 1,
+      "bytes": 59705
+    },
+    {
+      "file": "texts-pac-LS15-78-0000.json",
+      "count": 1,
+      "bytes": 250738
+    },
+    {
+      "file": "texts-pac-LS15-79-0000.json",
+      "count": 1,
+      "bytes": 134486
+    },
+    {
+      "file": "texts-pac-LS15-8-0000.json",
+      "count": 1,
+      "bytes": 110934
+    },
+    {
+      "file": "texts-pac-LS15-80-0000.json",
+      "count": 1,
+      "bytes": 63587
+    },
+    {
+      "file": "texts-pac-LS15-81-0000.json",
+      "count": 1,
+      "bytes": 217327
+    },
+    {
+      "file": "texts-pac-LS15-82-0000.json",
+      "count": 1,
+      "bytes": 101116
+    },
+    {
+      "file": "texts-pac-LS15-83-0000.json",
+      "count": 1,
+      "bytes": 117019
+    },
+    {
+      "file": "texts-pac-LS15-84-0000.json",
+      "count": 1,
+      "bytes": 190480
+    },
+    {
+      "file": "texts-pac-LS15-85-0000.json",
+      "count": 1,
+      "bytes": 48647
+    },
+    {
+      "file": "texts-pac-LS15-86-0000.json",
+      "count": 1,
+      "bytes": 72937
+    },
+    {
+      "file": "texts-pac-LS15-87-0000.json",
+      "count": 1,
+      "bytes": 195254
+    },
+    {
+      "file": "texts-pac-LS15-88-0000.json",
+      "count": 1,
+      "bytes": 53644
+    },
+    {
+      "file": "texts-pac-LS15-89-0000.json",
+      "count": 1,
+      "bytes": 85564
+    },
+    {
+      "file": "texts-pac-LS15-9-0000.json",
+      "count": 1,
+      "bytes": 66852
+    },
+    {
+      "file": "texts-pac-LS15-90-0000.json",
+      "count": 1,
+      "bytes": 204179
+    },
+    {
+      "file": "texts-pac-LS15-91-0000.json",
+      "count": 1,
+      "bytes": 269813
+    },
+    {
+      "file": "texts-pac-LS15-92-0000.json",
+      "count": 1,
+      "bytes": 300027
+    },
+    {
+      "file": "texts-pac-LS15-93-0000.json",
+      "count": 1,
+      "bytes": 471714
+    },
+    {
+      "file": "texts-pac-LS15-94-0000.json",
+      "count": 1,
+      "bytes": 192660
+    },
+    {
+      "file": "texts-pac-LS15-95-0000.json",
+      "count": 1,
+      "bytes": 145571
+    },
+    {
+      "file": "texts-pac-LS15-96-0000.json",
+      "count": 1,
+      "bytes": 201974
+    },
+    {
+      "file": "texts-pac-LS15-97-0000.json",
+      "count": 1,
+      "bytes": 209449
+    },
+    {
+      "file": "texts-pac-LS15-98-0000.json",
+      "count": 1,
+      "bytes": 31443
+    },
+    {
+      "file": "texts-pac-LS15-99-0000.json",
+      "count": 1,
+      "bytes": 147127
+    },
+    {
+      "file": "texts-pac-LS16-1-0000.json",
+      "count": 1,
+      "bytes": 304668
+    },
+    {
+      "file": "texts-pac-LS16-10-0000.json",
+      "count": 1,
+      "bytes": 205735
+    },
+    {
+      "file": "texts-pac-LS16-100-0000.json",
+      "count": 1,
+      "bytes": 20609
+    },
+    {
+      "file": "texts-pac-LS16-101-0000.json",
+      "count": 1,
+      "bytes": 19820
+    },
+    {
+      "file": "texts-pac-LS16-102-0000.json",
+      "count": 1,
+      "bytes": 31035
+    },
+    {
+      "file": "texts-pac-LS16-103-0000.json",
+      "count": 1,
+      "bytes": 102334
+    },
+    {
+      "file": "texts-pac-LS16-104-0000.json",
+      "count": 1,
+      "bytes": 69284
+    },
+    {
+      "file": "texts-pac-LS16-105-0000.json",
+      "count": 1,
+      "bytes": 63820
+    },
+    {
+      "file": "texts-pac-LS16-106-0000.json",
+      "count": 1,
+      "bytes": 124459
+    },
+    {
+      "file": "texts-pac-LS16-107-0000.json",
+      "count": 1,
+      "bytes": 19315
+    },
+    {
+      "file": "texts-pac-LS16-108-0000.json",
+      "count": 1,
+      "bytes": 26081
+    },
+    {
+      "file": "texts-pac-LS16-109-0000.json",
+      "count": 1,
+      "bytes": 56759
+    },
+    {
+      "file": "texts-pac-LS16-11-0000.json",
+      "count": 1,
+      "bytes": 57127
+    },
+    {
+      "file": "texts-pac-LS16-110-0000.json",
+      "count": 1,
+      "bytes": 75105
+    },
+    {
+      "file": "texts-pac-LS16-111-0000.json",
+      "count": 1,
+      "bytes": 46169
+    },
+    {
+      "file": "texts-pac-LS16-112-0000.json",
+      "count": 1,
+      "bytes": 42152
+    },
+    {
+      "file": "texts-pac-LS16-113-0000.json",
+      "count": 1,
+      "bytes": 129139
+    },
+    {
+      "file": "texts-pac-LS16-114-0000.json",
+      "count": 1,
+      "bytes": 125107
+    },
+    {
+      "file": "texts-pac-LS16-115-0000.json",
+      "count": 1,
+      "bytes": 207116
+    },
+    {
+      "file": "texts-pac-LS16-116-0000.json",
+      "count": 1,
+      "bytes": 44376
+    },
+    {
+      "file": "texts-pac-LS16-117-0000.json",
+      "count": 1,
+      "bytes": 20398
+    },
+    {
+      "file": "texts-pac-LS16-118-0000.json",
+      "count": 1,
+      "bytes": 36928
+    },
+    {
+      "file": "texts-pac-LS16-119-0000.json",
+      "count": 1,
+      "bytes": 29965
+    },
+    {
+      "file": "texts-pac-LS16-12-0000.json",
+      "count": 1,
+      "bytes": 97839
+    },
+    {
+      "file": "texts-pac-LS16-120-0000.json",
+      "count": 1,
+      "bytes": 99870
+    },
+    {
+      "file": "texts-pac-LS16-121-0000.json",
+      "count": 1,
+      "bytes": 134426
+    },
+    {
+      "file": "texts-pac-LS16-122-0000.json",
+      "count": 1,
+      "bytes": 70374
+    },
+    {
+      "file": "texts-pac-LS16-123-0000.json",
+      "count": 1,
+      "bytes": 51554
+    },
+    {
+      "file": "texts-pac-LS16-124-0000.json",
+      "count": 1,
+      "bytes": 69496
+    },
+    {
+      "file": "texts-pac-LS16-125-0000.json",
+      "count": 1,
+      "bytes": 128510
+    },
+    {
+      "file": "texts-pac-LS16-126-0000.json",
+      "count": 1,
+      "bytes": 35795
+    },
+    {
+      "file": "texts-pac-LS16-127-0000.json",
+      "count": 1,
+      "bytes": 80721
+    },
+    {
+      "file": "texts-pac-LS16-128-0000.json",
+      "count": 1,
+      "bytes": 67387
+    },
+    {
+      "file": "texts-pac-LS16-129-0000.json",
+      "count": 1,
+      "bytes": 40155
+    },
+    {
+      "file": "texts-pac-LS16-13-0000.json",
+      "count": 1,
+      "bytes": 378167
+    },
+    {
+      "file": "texts-pac-LS16-130-0000.json",
+      "count": 1,
+      "bytes": 238094
+    },
+    {
+      "file": "texts-pac-LS16-131-0000.json",
+      "count": 1,
+      "bytes": 111579
+    },
+    {
+      "file": "texts-pac-LS16-132-0000.json",
+      "count": 1,
+      "bytes": 52550
+    },
+    {
+      "file": "texts-pac-LS16-133-0000.json",
+      "count": 1,
+      "bytes": 132734
+    },
+    {
+      "file": "texts-pac-LS16-134-0000.json",
+      "count": 1,
+      "bytes": 118652
+    },
+    {
+      "file": "texts-pac-LS16-135-0000.json",
+      "count": 1,
+      "bytes": 85362
+    },
+    {
+      "file": "texts-pac-LS16-136-0000.json",
+      "count": 1,
+      "bytes": 58081
+    },
+    {
+      "file": "texts-pac-LS16-137-0000.json",
+      "count": 1,
+      "bytes": 43454
+    },
+    {
+      "file": "texts-pac-LS16-14-0000.json",
+      "count": 1,
+      "bytes": 180513
+    },
+    {
+      "file": "texts-pac-LS16-15-0000.json",
+      "count": 1,
+      "bytes": 114243
+    },
+    {
+      "file": "texts-pac-LS16-16-0000.json",
+      "count": 1,
+      "bytes": 92332
+    },
+    {
+      "file": "texts-pac-LS16-17-0000.json",
+      "count": 1,
+      "bytes": 202007
+    },
+    {
+      "file": "texts-pac-LS16-18-0000.json",
+      "count": 1,
+      "bytes": 364900
+    },
+    {
+      "file": "texts-pac-LS16-19-0000.json",
+      "count": 1,
+      "bytes": 358404
+    },
+    {
+      "file": "texts-pac-LS16-2-0000.json",
+      "count": 1,
+      "bytes": 137405
+    },
+    {
+      "file": "texts-pac-LS16-20-0000.json",
+      "count": 1,
+      "bytes": 149644
+    },
+    {
+      "file": "texts-pac-LS16-21-0000.json",
+      "count": 1,
+      "bytes": 317257
+    },
+    {
+      "file": "texts-pac-LS16-22-0000.json",
+      "count": 1,
+      "bytes": 185084
+    },
+    {
+      "file": "texts-pac-LS16-23-0000.json",
+      "count": 1,
+      "bytes": 123347
+    },
+    {
+      "file": "texts-pac-LS16-24-0000.json",
+      "count": 1,
+      "bytes": 44060
+    },
+    {
+      "file": "texts-pac-LS16-25-0000.json",
+      "count": 1,
+      "bytes": 240591
+    },
+    {
+      "file": "texts-pac-LS16-26-0000.json",
+      "count": 1,
+      "bytes": 39487
+    },
+    {
+      "file": "texts-pac-LS16-27-0000.json",
+      "count": 1,
+      "bytes": 208589
+    },
+    {
+      "file": "texts-pac-LS16-28-0000.json",
+      "count": 1,
+      "bytes": 46713
+    },
+    {
+      "file": "texts-pac-LS16-29-0000.json",
+      "count": 1,
+      "bytes": 36667
+    },
+    {
+      "file": "texts-pac-LS16-3-0000.json",
+      "count": 1,
+      "bytes": 128990
+    },
+    {
+      "file": "texts-pac-LS16-30-0000.json",
+      "count": 1,
+      "bytes": 173400
+    },
+    {
+      "file": "texts-pac-LS16-31-0000.json",
+      "count": 1,
+      "bytes": 204521
+    },
+    {
+      "file": "texts-pac-LS16-32-0000.json",
+      "count": 1,
+      "bytes": 176706
+    },
+    {
+      "file": "texts-pac-LS16-33-0000.json",
+      "count": 1,
+      "bytes": 118630
+    },
+    {
+      "file": "texts-pac-LS16-34-0000.json",
+      "count": 1,
+      "bytes": 142899
+    },
+    {
+      "file": "texts-pac-LS16-35-0000.json",
+      "count": 1,
+      "bytes": 38573
+    },
+    {
+      "file": "texts-pac-LS16-36-0000.json",
+      "count": 1,
+      "bytes": 166185
+    },
+    {
+      "file": "texts-pac-LS16-37-0000.json",
+      "count": 1,
+      "bytes": 34135
+    },
+    {
+      "file": "texts-pac-LS16-38-0000.json",
+      "count": 1,
+      "bytes": 57187
+    },
+    {
+      "file": "texts-pac-LS16-39-0000.json",
+      "count": 1,
+      "bytes": 128036
+    },
+    {
+      "file": "texts-pac-LS16-4-0000.json",
+      "count": 1,
+      "bytes": 136055
+    },
+    {
+      "file": "texts-pac-LS16-40-0000.json",
+      "count": 1,
+      "bytes": 143488
+    },
+    {
+      "file": "texts-pac-LS16-41-0000.json",
+      "count": 1,
+      "bytes": 33085
+    },
+    {
+      "file": "texts-pac-LS16-42-0000.json",
+      "count": 1,
+      "bytes": 82086
+    },
+    {
+      "file": "texts-pac-LS16-43-0000.json",
+      "count": 1,
+      "bytes": 74150
+    },
+    {
+      "file": "texts-pac-LS16-44-0000.json",
+      "count": 1,
+      "bytes": 66903
+    },
+    {
+      "file": "texts-pac-LS16-45-0000.json",
+      "count": 1,
+      "bytes": 141581
+    },
+    {
+      "file": "texts-pac-LS16-46-0000.json",
+      "count": 1,
+      "bytes": 166341
+    },
+    {
+      "file": "texts-pac-LS16-47-0000.json",
+      "count": 1,
+      "bytes": 425832
+    },
+    {
+      "file": "texts-pac-LS16-48-0000.json",
+      "count": 1,
+      "bytes": 35407
+    },
+    {
+      "file": "texts-pac-LS16-49-0000.json",
+      "count": 1,
+      "bytes": 43517
+    },
+    {
+      "file": "texts-pac-LS16-5-0000.json",
+      "count": 1,
+      "bytes": 89310
+    },
+    {
+      "file": "texts-pac-LS16-50-0000.json",
+      "count": 1,
+      "bytes": 40608
+    },
+    {
+      "file": "texts-pac-LS16-51-0000.json",
+      "count": 1,
+      "bytes": 55686
+    },
+    {
+      "file": "texts-pac-LS16-52-0000.json",
+      "count": 1,
+      "bytes": 34090
+    },
+    {
+      "file": "texts-pac-LS16-53-0000.json",
+      "count": 1,
+      "bytes": 72319
+    },
+    {
+      "file": "texts-pac-LS16-54-0000.json",
+      "count": 1,
+      "bytes": 23850
+    },
+    {
+      "file": "texts-pac-LS16-55-0000.json",
+      "count": 1,
+      "bytes": 26956
+    },
+    {
+      "file": "texts-pac-LS16-56-0000.json",
+      "count": 1,
+      "bytes": 32485
+    },
+    {
+      "file": "texts-pac-LS16-57-0000.json",
+      "count": 1,
+      "bytes": 52786
+    },
+    {
+      "file": "texts-pac-LS16-58-0000.json",
+      "count": 1,
+      "bytes": 37897
+    },
+    {
+      "file": "texts-pac-LS16-59-0000.json",
+      "count": 1,
+      "bytes": 29778
+    },
+    {
+      "file": "texts-pac-LS16-6-0000.json",
+      "count": 1,
+      "bytes": 204209
+    },
+    {
+      "file": "texts-pac-LS16-60-0000.json",
+      "count": 1,
+      "bytes": 101371
+    },
+    {
+      "file": "texts-pac-LS16-61-0000.json",
+      "count": 1,
+      "bytes": 38169
+    },
+    {
+      "file": "texts-pac-LS16-62-0000.json",
+      "count": 1,
+      "bytes": 102780
+    },
+    {
+      "file": "texts-pac-LS16-63-0000.json",
+      "count": 1,
+      "bytes": 88408
+    },
+    {
+      "file": "texts-pac-LS16-64-0000.json",
+      "count": 1,
+      "bytes": 50346
+    },
+    {
+      "file": "texts-pac-LS16-65-0000.json",
+      "count": 1,
+      "bytes": 57499
+    },
+    {
+      "file": "texts-pac-LS16-66-0000.json",
+      "count": 1,
+      "bytes": 56407
+    },
+    {
+      "file": "texts-pac-LS16-67-0000.json",
+      "count": 1,
+      "bytes": 251675
+    },
+    {
+      "file": "texts-pac-LS16-68-0000.json",
+      "count": 1,
+      "bytes": 131055
+    },
+    {
+      "file": "texts-pac-LS16-69-0000.json",
+      "count": 1,
+      "bytes": 128372
+    },
+    {
+      "file": "texts-pac-LS16-7-0000.json",
+      "count": 1,
+      "bytes": 211165
+    },
+    {
+      "file": "texts-pac-LS16-70-0000.json",
+      "count": 1,
+      "bytes": 70048
+    },
+    {
+      "file": "texts-pac-LS16-71-0000.json",
+      "count": 1,
+      "bytes": 51394
+    },
+    {
+      "file": "texts-pac-LS16-72-0000.json",
+      "count": 1,
+      "bytes": 77821
+    },
+    {
+      "file": "texts-pac-LS16-73-0000.json",
+      "count": 1,
+      "bytes": 47493
+    },
+    {
+      "file": "texts-pac-LS16-74-0000.json",
+      "count": 1,
+      "bytes": 737516
+    },
+    {
+      "file": "texts-pac-LS16-75-0000.json",
+      "count": 1,
+      "bytes": 147857
+    },
+    {
+      "file": "texts-pac-LS16-76-0000.json",
+      "count": 1,
+      "bytes": 86230
+    },
+    {
+      "file": "texts-pac-LS16-77-0000.json",
+      "count": 1,
+      "bytes": 81143
+    },
+    {
+      "file": "texts-pac-LS16-78-0000.json",
+      "count": 1,
+      "bytes": 112339
+    },
+    {
+      "file": "texts-pac-LS16-79-0000.json",
+      "count": 1,
+      "bytes": 115758
+    },
+    {
+      "file": "texts-pac-LS16-8-0000.json",
+      "count": 1,
+      "bytes": 598884
+    },
+    {
+      "file": "texts-pac-LS16-80-0000.json",
+      "count": 1,
+      "bytes": 20515
+    },
+    {
+      "file": "texts-pac-LS16-81-0000.json",
+      "count": 1,
+      "bytes": 21066
+    },
+    {
+      "file": "texts-pac-LS16-82-0000.json",
+      "count": 1,
+      "bytes": 45843
+    },
+    {
+      "file": "texts-pac-LS16-83-0000.json",
+      "count": 1,
+      "bytes": 21294
+    },
+    {
+      "file": "texts-pac-LS16-84-0000.json",
+      "count": 1,
+      "bytes": 47148
+    },
+    {
+      "file": "texts-pac-LS16-85-0000.json",
+      "count": 1,
+      "bytes": 62710
+    },
+    {
+      "file": "texts-pac-LS16-86-0000.json",
+      "count": 1,
+      "bytes": 34148
+    },
+    {
+      "file": "texts-pac-LS16-87-0000.json",
+      "count": 1,
+      "bytes": 59876
+    },
+    {
+      "file": "texts-pac-LS16-88-0000.json",
+      "count": 1,
+      "bytes": 100352
+    },
+    {
+      "file": "texts-pac-LS16-89-0000.json",
+      "count": 1,
+      "bytes": 126286
+    },
+    {
+      "file": "texts-pac-LS16-9-0000.json",
+      "count": 1,
+      "bytes": 331086
+    },
+    {
+      "file": "texts-pac-LS16-90-0000.json",
+      "count": 1,
+      "bytes": 47054
+    },
+    {
+      "file": "texts-pac-LS16-91-0000.json",
+      "count": 1,
+      "bytes": 29741
+    },
+    {
+      "file": "texts-pac-LS16-92-0000.json",
+      "count": 1,
+      "bytes": 211068
+    },
+    {
+      "file": "texts-pac-LS16-93-0000.json",
+      "count": 1,
+      "bytes": 64727
+    },
+    {
+      "file": "texts-pac-LS16-94-0000.json",
+      "count": 1,
+      "bytes": 141028
+    },
+    {
+      "file": "texts-pac-LS16-95-0000.json",
+      "count": 1,
+      "bytes": 210277
+    },
+    {
+      "file": "texts-pac-LS16-96-0000.json",
+      "count": 1,
+      "bytes": 96466
+    },
+    {
+      "file": "texts-pac-LS16-97-0000.json",
+      "count": 1,
+      "bytes": 48730
+    },
+    {
+      "file": "texts-pac-LS16-98-0000.json",
+      "count": 1,
+      "bytes": 116370
+    },
+    {
+      "file": "texts-pac-LS16-99-0000.json",
+      "count": 1,
+      "bytes": 23512
+    },
+    {
+      "file": "texts-pac-LS17-1-0000.json",
+      "count": 1,
+      "bytes": 53715
+    },
+    {
+      "file": "texts-pac-LS17-10-0000.json",
+      "count": 1,
+      "bytes": 52482
+    },
+    {
+      "file": "texts-pac-LS17-100-0000.json",
+      "count": 1,
+      "bytes": 85519
+    },
+    {
+      "file": "texts-pac-LS17-101-0000.json",
+      "count": 1,
+      "bytes": 25205
+    },
+    {
+      "file": "texts-pac-LS17-102-0000.json",
+      "count": 1,
+      "bytes": 24990
+    },
+    {
+      "file": "texts-pac-LS17-103-0000.json",
+      "count": 1,
+      "bytes": 51905
+    },
+    {
+      "file": "texts-pac-LS17-104-0000.json",
+      "count": 1,
+      "bytes": 176172
+    },
+    {
+      "file": "texts-pac-LS17-105-0000.json",
+      "count": 1,
+      "bytes": 24566
+    },
+    {
+      "file": "texts-pac-LS17-106-0000.json",
+      "count": 1,
+      "bytes": 17949
+    },
+    {
+      "file": "texts-pac-LS17-107-0000.json",
+      "count": 1,
+      "bytes": 48067
+    },
+    {
+      "file": "texts-pac-LS17-108-0000.json",
+      "count": 1,
+      "bytes": 41791
+    },
+    {
+      "file": "texts-pac-LS17-109-0000.json",
+      "count": 1,
+      "bytes": 29790
+    },
+    {
+      "file": "texts-pac-LS17-11-0000.json",
+      "count": 1,
+      "bytes": 22989
+    },
+    {
+      "file": "texts-pac-LS17-110-0000.json",
+      "count": 1,
+      "bytes": 50648
+    },
+    {
+      "file": "texts-pac-LS17-111-0000.json",
+      "count": 1,
+      "bytes": 31017
+    },
+    {
+      "file": "texts-pac-LS17-112-0000.json",
+      "count": 1,
+      "bytes": 58696
+    },
+    {
+      "file": "texts-pac-LS17-113-0000.json",
+      "count": 1,
+      "bytes": 50579
+    },
+    {
+      "file": "texts-pac-LS17-114-0000.json",
+      "count": 1,
+      "bytes": 47572
+    },
+    {
+      "file": "texts-pac-LS17-115-0000.json",
+      "count": 1,
+      "bytes": 76676
+    },
+    {
+      "file": "texts-pac-LS17-116-0000.json",
+      "count": 1,
+      "bytes": 54795
+    },
+    {
+      "file": "texts-pac-LS17-117-0000.json",
+      "count": 1,
+      "bytes": 75280
+    },
+    {
+      "file": "texts-pac-LS17-118-0000.json",
+      "count": 1,
+      "bytes": 18270
+    },
+    {
+      "file": "texts-pac-LS17-119-0000.json",
+      "count": 1,
+      "bytes": 30008
+    },
+    {
+      "file": "texts-pac-LS17-12-0000.json",
+      "count": 1,
+      "bytes": 33785
+    },
+    {
+      "file": "texts-pac-LS17-120-0000.json",
+      "count": 1,
+      "bytes": 12749
+    },
+    {
+      "file": "texts-pac-LS17-121-0000.json",
+      "count": 1,
+      "bytes": 35246
+    },
+    {
+      "file": "texts-pac-LS17-122-0000.json",
+      "count": 1,
+      "bytes": 17929
+    },
+    {
+      "file": "texts-pac-LS17-123-0000.json",
+      "count": 1,
+      "bytes": 33442
+    },
+    {
+      "file": "texts-pac-LS17-124-0000.json",
+      "count": 1,
+      "bytes": 162811
+    },
+    {
+      "file": "texts-pac-LS17-125-0000.json",
+      "count": 1,
+      "bytes": 528968
+    },
+    {
+      "file": "texts-pac-LS17-126-0000.json",
+      "count": 1,
+      "bytes": 14803
+    },
+    {
+      "file": "texts-pac-LS17-127-0000.json",
+      "count": 1,
+      "bytes": 19061
+    },
+    {
+      "file": "texts-pac-LS17-128-0000.json",
+      "count": 1,
+      "bytes": 2545
+    },
+    {
+      "file": "texts-pac-LS17-129-0000.json",
+      "count": 1,
+      "bytes": 92
+    },
+    {
+      "file": "texts-pac-LS17-13-0000.json",
+      "count": 1,
+      "bytes": 47064
+    },
+    {
+      "file": "texts-pac-LS17-130-0000.json",
+      "count": 1,
+      "bytes": 175912
+    },
+    {
+      "file": "texts-pac-LS17-131-0000.json",
+      "count": 1,
+      "bytes": 38169
+    },
+    {
+      "file": "texts-pac-LS17-132-0000.json",
+      "count": 1,
+      "bytes": 213635
+    },
+    {
+      "file": "texts-pac-LS17-133-0000.json",
+      "count": 1,
+      "bytes": 21317
+    },
+    {
+      "file": "texts-pac-LS17-134-0000.json",
+      "count": 1,
+      "bytes": 35963
+    },
+    {
+      "file": "texts-pac-LS17-135-0000.json",
+      "count": 1,
+      "bytes": 17918
+    },
+    {
+      "file": "texts-pac-LS17-136-0000.json",
+      "count": 1,
+      "bytes": 15033
+    },
+    {
+      "file": "texts-pac-LS17-137-0000.json",
+      "count": 1,
+      "bytes": 55916
+    },
+    {
+      "file": "texts-pac-LS17-138-0000.json",
+      "count": 1,
+      "bytes": 10860
+    },
+    {
+      "file": "texts-pac-LS17-139-0000.json",
+      "count": 1,
+      "bytes": 20107
+    },
+    {
+      "file": "texts-pac-LS17-14-0000.json",
+      "count": 1,
+      "bytes": 129505
+    },
+    {
+      "file": "texts-pac-LS17-140-0000.json",
+      "count": 1,
+      "bytes": 66643
+    },
+    {
+      "file": "texts-pac-LS17-141-0000.json",
+      "count": 1,
+      "bytes": 12945
+    },
+    {
+      "file": "texts-pac-LS17-142-0000.json",
+      "count": 1,
+      "bytes": 48337
+    },
+    {
+      "file": "texts-pac-LS17-143-0000.json",
+      "count": 1,
+      "bytes": 83534
+    },
+    {
+      "file": "texts-pac-LS17-144-0000.json",
+      "count": 1,
+      "bytes": 138272
+    },
+    {
+      "file": "texts-pac-LS17-145-0000.json",
+      "count": 1,
+      "bytes": 193057
+    },
+    {
+      "file": "texts-pac-LS17-146-0000.json",
+      "count": 1,
+      "bytes": 23160
+    },
+    {
+      "file": "texts-pac-LS17-147-0000.json",
+      "count": 1,
+      "bytes": 18168
+    },
+    {
+      "file": "texts-pac-LS17-148-0000.json",
+      "count": 1,
+      "bytes": 15570
+    },
+    {
+      "file": "texts-pac-LS17-149-0000.json",
+      "count": 1,
+      "bytes": 63294
+    },
+    {
+      "file": "texts-pac-LS17-15-0000.json",
+      "count": 1,
+      "bytes": 68557
+    },
+    {
+      "file": "texts-pac-LS17-150-0000.json",
+      "count": 1,
+      "bytes": 123380
+    },
+    {
+      "file": "texts-pac-LS17-151-0000.json",
+      "count": 1,
+      "bytes": 151568
+    },
+    {
+      "file": "texts-pac-LS17-152-0000.json",
+      "count": 1,
+      "bytes": 73872
+    },
+    {
+      "file": "texts-pac-LS17-16-0000.json",
+      "count": 1,
+      "bytes": 143656
+    },
+    {
+      "file": "texts-pac-LS17-17-0000.json",
+      "count": 1,
+      "bytes": 82954
+    },
+    {
+      "file": "texts-pac-LS17-18-0000.json",
+      "count": 1,
+      "bytes": 68764
+    },
+    {
+      "file": "texts-pac-LS17-19-0000.json",
+      "count": 1,
+      "bytes": 57617
+    },
+    {
+      "file": "texts-pac-LS17-2-0000.json",
+      "count": 1,
+      "bytes": 72670
+    },
+    {
+      "file": "texts-pac-LS17-20-0000.json",
+      "count": 1,
+      "bytes": 128921
+    },
+    {
+      "file": "texts-pac-LS17-21-0000.json",
+      "count": 1,
+      "bytes": 118256
+    },
+    {
+      "file": "texts-pac-LS17-22-0000.json",
+      "count": 1,
+      "bytes": 21952
+    },
+    {
+      "file": "texts-pac-LS17-23-0000.json",
+      "count": 1,
+      "bytes": 140223
+    },
+    {
+      "file": "texts-pac-LS17-24-0000.json",
+      "count": 1,
+      "bytes": 73746
+    },
+    {
+      "file": "texts-pac-LS17-25-0000.json",
+      "count": 1,
+      "bytes": 65862
+    },
+    {
+      "file": "texts-pac-LS17-26-0000.json",
+      "count": 1,
+      "bytes": 43459
+    },
+    {
+      "file": "texts-pac-LS17-27-0000.json",
+      "count": 1,
+      "bytes": 52775
+    },
+    {
+      "file": "texts-pac-LS17-28-0000.json",
+      "count": 1,
+      "bytes": 52076
+    },
+    {
+      "file": "texts-pac-LS17-29-0000.json",
+      "count": 1,
+      "bytes": 21310
+    },
+    {
+      "file": "texts-pac-LS17-3-0000.json",
+      "count": 1,
+      "bytes": 49452
+    },
+    {
+      "file": "texts-pac-LS17-30-0000.json",
+      "count": 1,
+      "bytes": 105819
+    },
+    {
+      "file": "texts-pac-LS17-31-0000.json",
+      "count": 1,
+      "bytes": 104154
+    },
+    {
+      "file": "texts-pac-LS17-32-0000.json",
+      "count": 1,
+      "bytes": 183320
+    },
+    {
+      "file": "texts-pac-LS17-33-0000.json",
+      "count": 1,
+      "bytes": 50688
+    },
+    {
+      "file": "texts-pac-LS17-34-0000.json",
+      "count": 1,
+      "bytes": 59472
+    },
+    {
+      "file": "texts-pac-LS17-36-0000.json",
+      "count": 1,
+      "bytes": 64322
+    },
+    {
+      "file": "texts-pac-LS17-37-0000.json",
+      "count": 1,
+      "bytes": 46994
+    },
+    {
+      "file": "texts-pac-LS17-38-0000.json",
+      "count": 1,
+      "bytes": 73369
+    },
+    {
+      "file": "texts-pac-LS17-39-0000.json",
+      "count": 1,
+      "bytes": 108933
+    },
+    {
+      "file": "texts-pac-LS17-4-0000.json",
+      "count": 1,
+      "bytes": 82432
+    },
+    {
+      "file": "texts-pac-LS17-40-0000.json",
+      "count": 1,
+      "bytes": 37149
+    },
+    {
+      "file": "texts-pac-LS17-41-0000.json",
+      "count": 1,
+      "bytes": 99583
+    },
+    {
+      "file": "texts-pac-LS17-42-0000.json",
+      "count": 1,
+      "bytes": 26304
+    },
+    {
+      "file": "texts-pac-LS17-43-0000.json",
+      "count": 1,
+      "bytes": 68414
+    },
+    {
+      "file": "texts-pac-LS17-44-0000.json",
+      "count": 1,
+      "bytes": 136023
+    },
+    {
+      "file": "texts-pac-LS17-45-0000.json",
+      "count": 1,
+      "bytes": 38099
+    },
+    {
+      "file": "texts-pac-LS17-46-0000.json",
+      "count": 1,
+      "bytes": 92396
+    },
+    {
+      "file": "texts-pac-LS17-47-0000.json",
+      "count": 1,
+      "bytes": 70163
+    },
+    {
+      "file": "texts-pac-LS17-48-0000.json",
+      "count": 1,
+      "bytes": 262509
+    },
+    {
+      "file": "texts-pac-LS17-49-0000.json",
+      "count": 1,
+      "bytes": 172976
+    },
+    {
+      "file": "texts-pac-LS17-5-0000.json",
+      "count": 1,
+      "bytes": 163168
+    },
+    {
+      "file": "texts-pac-LS17-50-0000.json",
+      "count": 1,
+      "bytes": 116473
+    },
+    {
+      "file": "texts-pac-LS17-51-0000.json",
+      "count": 1,
+      "bytes": 238034
+    },
+    {
+      "file": "texts-pac-LS17-52-0000.json",
+      "count": 1,
+      "bytes": 68483
+    },
+    {
+      "file": "texts-pac-LS17-53-0000.json",
+      "count": 1,
+      "bytes": 75870
+    },
+    {
+      "file": "texts-pac-LS17-54-0000.json",
+      "count": 1,
+      "bytes": 122062
+    },
+    {
+      "file": "texts-pac-LS17-55-0000.json",
+      "count": 1,
+      "bytes": 263505
+    },
+    {
+      "file": "texts-pac-LS17-56-0000.json",
+      "count": 1,
+      "bytes": 202016
+    },
+    {
+      "file": "texts-pac-LS17-57-0000.json",
+      "count": 1,
+      "bytes": 176012
+    },
+    {
+      "file": "texts-pac-LS17-58-0000.json",
+      "count": 1,
+      "bytes": 67410
+    },
+    {
+      "file": "texts-pac-LS17-59-0000.json",
+      "count": 1,
+      "bytes": 110854
+    },
+    {
+      "file": "texts-pac-LS17-6-0000.json",
+      "count": 1,
+      "bytes": 22298
+    },
+    {
+      "file": "texts-pac-LS17-60-0000.json",
+      "count": 1,
+      "bytes": 194095
+    },
+    {
+      "file": "texts-pac-LS17-61-0000.json",
+      "count": 1,
+      "bytes": 58507
+    },
+    {
+      "file": "texts-pac-LS17-62-0000.json",
+      "count": 1,
+      "bytes": 59081
+    },
+    {
+      "file": "texts-pac-LS17-63-0000.json",
+      "count": 1,
+      "bytes": 77756
+    },
+    {
+      "file": "texts-pac-LS17-64-0000.json",
+      "count": 1,
+      "bytes": 47139
+    },
+    {
+      "file": "texts-pac-LS17-65-0000.json",
+      "count": 1,
+      "bytes": 68194
+    },
+    {
+      "file": "texts-pac-LS17-66-0000.json",
+      "count": 1,
+      "bytes": 36663
+    },
+    {
+      "file": "texts-pac-LS17-67-0000.json",
+      "count": 1,
+      "bytes": 137432
+    },
+    {
+      "file": "texts-pac-LS17-68-0000.json",
+      "count": 1,
+      "bytes": 54391
+    },
+    {
+      "file": "texts-pac-LS17-69-0000.json",
+      "count": 1,
+      "bytes": 128425
+    },
+    {
+      "file": "texts-pac-LS17-7-0000.json",
+      "count": 1,
+      "bytes": 82342
+    },
+    {
+      "file": "texts-pac-LS17-70-0000.json",
+      "count": 1,
+      "bytes": 57630
+    },
+    {
+      "file": "texts-pac-LS17-71-0000.json",
+      "count": 1,
+      "bytes": 145717
+    },
+    {
+      "file": "texts-pac-LS17-72-0000.json",
+      "count": 1,
+      "bytes": 78787
+    },
+    {
+      "file": "texts-pac-LS17-73-0000.json",
+      "count": 1,
+      "bytes": 163564
+    },
+    {
+      "file": "texts-pac-LS17-74-0000.json",
+      "count": 1,
+      "bytes": 201191
+    },
+    {
+      "file": "texts-pac-LS17-75-0000.json",
+      "count": 1,
+      "bytes": 122836
+    },
+    {
+      "file": "texts-pac-LS17-76-0000.json",
+      "count": 1,
+      "bytes": 194122
+    },
+    {
+      "file": "texts-pac-LS17-77-0000.json",
+      "count": 1,
+      "bytes": 83986
+    },
+    {
+      "file": "texts-pac-LS17-78-0000.json",
+      "count": 1,
+      "bytes": 110356
+    },
+    {
+      "file": "texts-pac-LS17-79-0000.json",
+      "count": 1,
+      "bytes": 32168
+    },
+    {
+      "file": "texts-pac-LS17-8-0000.json",
+      "count": 1,
+      "bytes": 41457
+    },
+    {
+      "file": "texts-pac-LS17-80-0000.json",
+      "count": 1,
+      "bytes": 38162
+    },
+    {
+      "file": "texts-pac-LS17-81-0000.json",
+      "count": 1,
+      "bytes": 20532
+    },
+    {
+      "file": "texts-pac-LS17-82-0000.json",
+      "count": 1,
+      "bytes": 53898
+    },
+    {
+      "file": "texts-pac-LS17-83-0000.json",
+      "count": 1,
+      "bytes": 81177
+    },
+    {
+      "file": "texts-pac-LS17-84-0000.json",
+      "count": 1,
+      "bytes": 51743
+    },
+    {
+      "file": "texts-pac-LS17-85-0000.json",
+      "count": 1,
+      "bytes": 22451
+    },
+    {
+      "file": "texts-pac-LS17-86-0000.json",
+      "count": 1,
+      "bytes": 25075
+    },
+    {
+      "file": "texts-pac-LS17-87-0000.json",
+      "count": 1,
+      "bytes": 57806
+    },
+    {
+      "file": "texts-pac-LS17-88-0000.json",
+      "count": 1,
+      "bytes": 36758
+    },
+    {
+      "file": "texts-pac-LS17-89-0000.json",
+      "count": 1,
+      "bytes": 153397
+    },
+    {
+      "file": "texts-pac-LS17-9-0000.json",
+      "count": 1,
+      "bytes": 78260
+    },
+    {
+      "file": "texts-pac-LS17-90-0000.json",
+      "count": 1,
+      "bytes": 24439
+    },
+    {
+      "file": "texts-pac-LS17-91-0000.json",
+      "count": 1,
+      "bytes": 62053
+    },
+    {
+      "file": "texts-pac-LS17-92-0000.json",
+      "count": 1,
+      "bytes": 81289
+    },
+    {
+      "file": "texts-pac-LS17-93-0000.json",
+      "count": 1,
+      "bytes": 31230
+    },
+    {
+      "file": "texts-pac-LS17-94-0000.json",
+      "count": 1,
+      "bytes": 20884
+    },
+    {
+      "file": "texts-pac-LS17-95-0000.json",
+      "count": 1,
+      "bytes": 141015
+    },
+    {
+      "file": "texts-pac-LS17-96-0000.json",
+      "count": 1,
+      "bytes": 48425
+    },
+    {
+      "file": "texts-pac-LS17-97-0000.json",
+      "count": 1,
+      "bytes": 28100
+    },
+    {
+      "file": "texts-pac-LS17-98-0000.json",
+      "count": 1,
+      "bytes": 94548
+    },
+    {
+      "file": "texts-pac-LS17-99-0000.json",
+      "count": 1,
+      "bytes": 32445
+    },
+    {
+      "file": "texts-pac-LS18-1-0000.json",
+      "count": 1,
+      "bytes": 124467
+    },
+    {
+      "file": "texts-pac-LS18-10-0000.json",
+      "count": 1,
+      "bytes": 40375
+    },
+    {
+      "file": "texts-pac-LS18-11-0000.json",
+      "count": 1,
+      "bytes": 107032
+    },
+    {
+      "file": "texts-pac-LS18-12-0000.json",
+      "count": 1,
+      "bytes": 24618
+    },
+    {
+      "file": "texts-pac-LS18-13-0000.json",
+      "count": 1,
+      "bytes": 84872
+    },
+    {
+      "file": "texts-pac-LS18-14-0000.json",
+      "count": 1,
+      "bytes": 30555
+    },
+    {
+      "file": "texts-pac-LS18-15-0000.json",
+      "count": 1,
+      "bytes": 36455
+    },
+    {
+      "file": "texts-pac-LS18-16-0000.json",
+      "count": 1,
+      "bytes": 37854
+    },
+    {
+      "file": "texts-pac-LS18-17-0000.json",
+      "count": 1,
+      "bytes": 45453
+    },
+    {
+      "file": "texts-pac-LS18-18-0000.json",
+      "count": 1,
+      "bytes": 27190
+    },
+    {
+      "file": "texts-pac-LS18-19-0000.json",
+      "count": 1,
+      "bytes": 241590
+    },
+    {
+      "file": "texts-pac-LS18-2-0000.json",
+      "count": 1,
+      "bytes": 41988
+    },
+    {
+      "file": "texts-pac-LS18-20-0000.json",
+      "count": 1,
+      "bytes": 29555
+    },
+    {
+      "file": "texts-pac-LS18-21-0000.json",
+      "count": 1,
+      "bytes": 42752
+    },
+    {
+      "file": "texts-pac-LS18-22-0000.json",
+      "count": 1,
+      "bytes": 111117
+    },
+    {
+      "file": "texts-pac-LS18-23-0000.json",
+      "count": 1,
+      "bytes": 60302
+    },
+    {
+      "file": "texts-pac-LS18-24-0000.json",
+      "count": 1,
+      "bytes": 24983
+    },
+    {
+      "file": "texts-pac-LS18-25-0000.json",
+      "count": 1,
+      "bytes": 28998
+    },
+    {
+      "file": "texts-pac-LS18-26-0000.json",
+      "count": 1,
+      "bytes": 46236
+    },
+    {
+      "file": "texts-pac-LS18-27-0000.json",
+      "count": 1,
+      "bytes": 78369
+    },
+    {
+      "file": "texts-pac-LS18-28-0000.json",
+      "count": 1,
+      "bytes": 21597
+    },
+    {
+      "file": "texts-pac-LS18-29-0000.json",
+      "count": 1,
+      "bytes": 84308
+    },
+    {
+      "file": "texts-pac-LS18-3-0000.json",
+      "count": 1,
+      "bytes": 35263
+    },
+    {
+      "file": "texts-pac-LS18-30-0000.json",
+      "count": 1,
+      "bytes": 54431
+    },
+    {
+      "file": "texts-pac-LS18-31-0000.json",
+      "count": 1,
+      "bytes": 106630
+    },
+    {
+      "file": "texts-pac-LS18-32-0000.json",
+      "count": 1,
+      "bytes": 106349
+    },
+    {
+      "file": "texts-pac-LS18-33-0000.json",
+      "count": 1,
+      "bytes": 208049
+    },
+    {
+      "file": "texts-pac-LS18-34-0000.json",
+      "count": 1,
+      "bytes": 101262
+    },
+    {
+      "file": "texts-pac-LS18-35-0000.json",
+      "count": 1,
+      "bytes": 79161
+    },
+    {
+      "file": "texts-pac-LS18-36-0000.json",
+      "count": 1,
+      "bytes": 139616
+    },
+    {
+      "file": "texts-pac-LS18-37-0000.json",
+      "count": 1,
+      "bytes": 95996
+    },
+    {
+      "file": "texts-pac-LS18-38-0000.json",
+      "count": 1,
+      "bytes": 125703
+    },
+    {
+      "file": "texts-pac-LS18-39-0000.json",
+      "count": 1,
+      "bytes": 47076
+    },
+    {
+      "file": "texts-pac-LS18-4-0000.json",
+      "count": 1,
+      "bytes": 50087
+    },
+    {
+      "file": "texts-pac-LS18-40-0000.json",
+      "count": 1,
+      "bytes": 73762
+    },
+    {
+      "file": "texts-pac-LS18-41-0000.json",
+      "count": 1,
+      "bytes": 168501
+    },
+    {
+      "file": "texts-pac-LS18-42-0000.json",
+      "count": 1,
+      "bytes": 57983
+    },
+    {
+      "file": "texts-pac-LS18-43-0000.json",
+      "count": 1,
+      "bytes": 26548
+    },
+    {
+      "file": "texts-pac-LS18-44-0000.json",
+      "count": 1,
+      "bytes": 188758
+    },
+    {
+      "file": "texts-pac-LS18-45-0000.json",
+      "count": 1,
+      "bytes": 65484
+    },
+    {
+      "file": "texts-pac-LS18-46-0000.json",
+      "count": 1,
+      "bytes": 62797
+    },
+    {
+      "file": "texts-pac-LS18-47-0000.json",
+      "count": 1,
+      "bytes": 31753
+    },
+    {
+      "file": "texts-pac-LS18-48-0000.json",
+      "count": 1,
+      "bytes": 38729
+    },
+    {
+      "file": "texts-pac-LS18-49-0000.json",
+      "count": 1,
+      "bytes": 37428
+    },
+    {
+      "file": "texts-pac-LS18-5-0000.json",
+      "count": 1,
+      "bytes": 39535
+    },
+    {
+      "file": "texts-pac-LS18-50-0000.json",
+      "count": 1,
+      "bytes": 93151
+    },
+    {
+      "file": "texts-pac-LS18-51-0000.json",
+      "count": 1,
+      "bytes": 103058
+    },
+    {
+      "file": "texts-pac-LS18-6-0000.json",
+      "count": 1,
+      "bytes": 40858
+    },
+    {
+      "file": "texts-pac-LS18-7-0000.json",
+      "count": 1,
+      "bytes": 82728
+    },
+    {
+      "file": "texts-pac-LS18-8-0000.json",
+      "count": 1,
+      "bytes": 29473
+    },
+    {
+      "file": "texts-pac-LS18-9-0000.json",
+      "count": 1,
+      "bytes": 36317
     }
-  ],
-  "record_to_shard": {
-    "copu|LS14_1": 0,
-    "copu|LS14_10": 0,
-    "copu|LS14_101": 0,
-    "copu|LS14_102": 0,
-    "copu|LS14_103": 0,
-    "copu|LS14_11": 0,
-    "copu|LS14_12": 0,
-    "copu|LS14_13": 0,
-    "copu|LS14_14": 0,
-    "copu|LS14_15": 0,
-    "copu|LS14_16": 0,
-    "copu|LS14_17": 0,
-    "copu|LS14_18": 0,
-    "copu|LS14_19": 0,
-    "copu|LS14_2": 0,
-    "copu|LS14_20": 0,
-    "copu|LS14_21": 0,
-    "copu|LS14_22": 0,
-    "copu|LS14_23": 0,
-    "copu|LS14_24": 0,
-    "copu|LS14_25": 0,
-    "copu|LS14_26": 0,
-    "copu|LS14_27": 0,
-    "copu|LS14_28": 0,
-    "copu|LS14_29": 0,
-    "copu|LS14_3": 0,
-    "copu|LS14_30": 0,
-    "copu|LS14_31": 0,
-    "copu|LS14_32": 0,
-    "copu|LS14_33": 0,
-    "copu|LS14_34": 0,
-    "copu|LS14_35": 0,
-    "copu|LS14_36": 0,
-    "copu|LS14_37": 0,
-    "copu|LS14_5": 1,
-    "copu|LS14_6": 1,
-    "copu|LS14_7": 1,
-    "copu|LS14_8": 1,
-    "copu|LS14_9": 1,
-    "copu|LS15_1": 1,
-    "copu|LS15_10": 1,
-    "copu|LS15_11": 1,
-    "copu|LS15_12": 1,
-    "copu|LS15_13": 1,
-    "copu|LS15_14": 1,
-    "copu|LS15_15": 1,
-    "copu|LS15_16": 1,
-    "copu|LS15_17": 1,
-    "copu|LS15_18": 1,
-    "copu|LS15_19": 1,
-    "copu|LS15_2": 1,
-    "copu|LS15_20": 1,
-    "copu|LS15_21": 1,
-    "copu|LS15_22": 1,
-    "copu|LS15_23": 1,
-    "copu|LS15_24": 1,
-    "copu|LS15_25": 1,
-    "copu|LS15_26": 1,
-    "copu|LS15_27": 1,
-    "copu|LS15_28": 1,
-    "copu|LS15_29": 1,
-    "copu|LS15_3": 1,
-    "copu|LS15_30": 1,
-    "copu|LS15_31": 1,
-    "copu|LS15_32": 1,
-    "copu|LS15_33": 1,
-    "copu|LS15_4": 1,
-    "copu|LS15_5": 1,
-    "copu|LS15_6": 2,
-    "copu|LS15_7": 2,
-    "copu|LS15_8": 2,
-    "copu|LS16_1": 2,
-    "copu|LS16_10": 2,
-    "copu|LS16_11": 2,
-    "copu|LS16_12": 2,
-    "copu|LS16_13": 2,
-    "copu|LS16_14": 2,
-    "copu|LS16_15": 2,
-    "copu|LS16_16": 2,
-    "copu|LS16_17": 2,
-    "copu|LS16_18": 2,
-    "copu|LS16_19": 2,
-    "copu|LS16_2": 2,
-    "copu|LS16_20": 2,
-    "copu|LS16_21": 2,
-    "copu|LS16_22": 2,
-    "copu|LS16_23": 2,
-    "copu|LS16_24": 2,
-    "copu|LS16_25": 2,
-    "copu|LS16_3": 2,
-    "copu|LS16_4": 2,
-    "copu|LS16_5": 2,
-    "copu|LS16_6": 2,
-    "copu|LS16_7": 2,
-    "copu|LS16_8": 2,
-    "copu|LS16_9": 2,
-    "copu|LS17_1": 2,
-    "copu|LS17_10": 2,
-    "copu|LS17_11": 3,
-    "copu|LS17_12": 3,
-    "copu|LS17_13": 3,
-    "copu|LS17_14": 3,
-    "copu|LS17_15": 3,
-    "copu|LS17_16": 3,
-    "copu|LS17_17": 3,
-    "copu|LS17_18": 3,
-    "copu|LS17_19": 3,
-    "copu|LS17_2": 3,
-    "copu|LS17_20": 3,
-    "copu|LS17_21": 3,
-    "copu|LS17_22": 3,
-    "copu|LS17_23": 3,
-    "copu|LS17_3": 3,
-    "copu|LS17_4": 3,
-    "copu|LS17_5": 3,
-    "copu|LS17_6": 3,
-    "copu|LS17_7": 3,
-    "copu|LS17_8": 3,
-    "copu|LS17_9": 3,
-    "copu|LS18_1": 3,
-    "copu|LS18_10": 3,
-    "copu|LS18_11": 3,
-    "copu|LS18_12": 3,
-    "copu|LS18_13": 3,
-    "copu|LS18_14": 3,
-    "copu|LS18_15": 4,
-    "copu|LS18_16": 4,
-    "copu|LS18_17": 4,
-    "copu|LS18_18": 4,
-    "copu|LS18_19": 4,
-    "copu|LS18_2": 4,
-    "copu|LS18_20": 4,
-    "copu|LS18_21": 4,
-    "copu|LS18_22": 4,
-    "copu|LS18_23": 4,
-    "copu|LS18_24": 4,
-    "copu|LS18_25": 4,
-    "copu|LS18_26": 4,
-    "copu|LS18_27": 4,
-    "copu|LS18_28": 4,
-    "copu|LS18_29": 4,
-    "copu|LS18_3": 4,
-    "copu|LS18_30": 4,
-    "copu|LS18_4": 4,
-    "copu|LS18_5": 4,
-    "copu|LS18_6": 4,
-    "copu|LS18_7": 4,
-    "copu|LS18_8": 4,
-    "copu|LS18_9": 4,
-    "estimates|LS14_1": 4,
-    "estimates|LS14_10": 4,
-    "estimates|LS14_11": 4,
-    "estimates|LS14_12": 4,
-    "estimates|LS14_13": 4,
-    "estimates|LS14_14": 4,
-    "estimates|LS14_15": 4,
-    "estimates|LS14_16": 4,
-    "estimates|LS14_17": 5,
-    "estimates|LS14_18": 5,
-    "estimates|LS14_19": 5,
-    "estimates|LS14_2": 5,
-    "estimates|LS14_20": 5,
-    "estimates|LS14_3": 5,
-    "estimates|LS14_4": 5,
-    "estimates|LS14_5": 5,
-    "estimates|LS14_6": 5,
-    "estimates|LS14_7": 5,
-    "estimates|LS14_8": 5,
-    "estimates|LS14_9": 5,
-    "estimates|LS15_1": 5,
-    "estimates|LS15_10": 5,
-    "estimates|LS15_11": 5,
-    "estimates|LS15_12": 5,
-    "estimates|LS15_13": 5,
-    "estimates|LS15_14": 5,
-    "estimates|LS15_15": 5,
-    "estimates|LS15_16": 5,
-    "estimates|LS15_17": 5,
-    "estimates|LS15_18": 5,
-    "estimates|LS15_19": 5,
-    "estimates|LS15_2": 5,
-    "estimates|LS15_20": 5,
-    "estimates|LS15_21": 5,
-    "estimates|LS15_22": 6,
-    "estimates|LS15_23": 6,
-    "estimates|LS15_24": 6,
-    "estimates|LS15_25": 6,
-    "estimates|LS15_26": 6,
-    "estimates|LS15_27": 6,
-    "estimates|LS15_28": 6,
-    "estimates|LS15_29": 6,
-    "estimates|LS15_3": 6,
-    "estimates|LS15_30": 6,
-    "estimates|LS15_31": 6,
-    "estimates|LS15_32": 6,
-    "estimates|LS15_33": 6,
-    "estimates|LS15_34": 6,
-    "estimates|LS15_35": 6,
-    "estimates|LS15_36": 6,
-    "estimates|LS15_4": 6,
-    "estimates|LS15_5": 6,
-    "estimates|LS15_6": 6,
-    "estimates|LS15_7": 6,
-    "estimates|LS15_8": 6,
-    "estimates|LS15_9": 6,
-    "estimates|LS16_1": 6,
-    "estimates|LS16_10": 6,
-    "estimates|LS16_11": 6,
-    "estimates|LS16_12": 6,
-    "estimates|LS16_13": 6,
-    "estimates|LS16_14": 6,
-    "estimates|LS16_15": 6,
-    "estimates|LS16_16": 6,
-    "estimates|LS16_17": 6,
-    "estimates|LS16_18": 6,
-    "estimates|LS16_19": 7,
-    "estimates|LS16_2": 7,
-    "estimates|LS16_20": 7,
-    "estimates|LS16_21": 7,
-    "estimates|LS16_22": 7,
-    "estimates|LS16_23": 7,
-    "estimates|LS16_24": 7,
-    "estimates|LS16_25": 7,
-    "estimates|LS16_26": 7,
-    "estimates|LS16_27": 7,
-    "estimates|LS16_28": 7,
-    "estimates|LS16_29": 7,
-    "estimates|LS16_3": 7,
-    "estimates|LS16_30": 7,
-    "estimates|LS16_31": 7,
-    "estimates|LS16_4": 7,
-    "estimates|LS16_5": 7,
-    "estimates|LS16_6": 7,
-    "estimates|LS16_7": 7,
-    "estimates|LS16_8": 7,
-    "estimates|LS16_9": 7,
-    "estimates|LS17_1": 7,
-    "estimates|LS17_10": 7,
-    "estimates|LS17_11": 7,
-    "estimates|LS17_12": 7,
-    "estimates|LS17_13": 7,
-    "estimates|LS17_14": 7,
-    "estimates|LS17_15": 7,
-    "estimates|LS17_16": 7,
-    "estimates|LS17_17": 7,
-    "estimates|LS17_18": 7,
-    "estimates|LS17_19": 8,
-    "estimates|LS17_2": 8,
-    "estimates|LS17_20": 8,
-    "estimates|LS17_21": 8,
-    "estimates|LS17_22": 8,
-    "estimates|LS17_23": 8,
-    "estimates|LS17_24": 8,
-    "estimates|LS17_25": 8,
-    "estimates|LS17_26": 8,
-    "estimates|LS17_27": 8,
-    "estimates|LS17_28": 8,
-    "estimates|LS17_29": 8,
-    "estimates|LS17_3": 8,
-    "estimates|LS17_30": 8,
-    "estimates|LS17_31": 8,
-    "estimates|LS17_32": 8,
-    "estimates|LS17_33": 8,
-    "estimates|LS17_34": 8,
-    "estimates|LS17_35": 8,
-    "estimates|LS17_36": 8,
-    "estimates|LS17_37": 8,
-    "estimates|LS17_4": 8,
-    "estimates|LS17_5": 8,
-    "estimates|LS17_6": 8,
-    "estimates|LS17_7": 8,
-    "estimates|LS17_8": 8,
-    "estimates|LS17_9": 8,
-    "estimates|LS18_1": 8,
-    "estimates|LS18_2": 8,
-    "estimates|LS18_3": 8,
-    "estimates|LS18_4": 8,
-    "estimates|LS18_5": 8,
-    "estimates|LS18_6": 8,
-    "estimates|LS18_7": 8,
-    "pac|LS14_1": 9,
-    "pac|LS14_10": 9,
-    "pac|LS14_11": 9,
-    "pac|LS14_12": 9,
-    "pac|LS14_13": 9,
-    "pac|LS14_14": 9,
-    "pac|LS14_15": 9,
-    "pac|LS14_16": 9,
-    "pac|LS14_17": 9,
-    "pac|LS14_18": 9,
-    "pac|LS14_19": 9,
-    "pac|LS14_2": 9,
-    "pac|LS14_20": 9,
-    "pac|LS14_21": 9,
-    "pac|LS14_22": 9,
-    "pac|LS14_23": 9,
-    "pac|LS14_24": 9,
-    "pac|LS14_25": 9,
-    "pac|LS14_26": 9,
-    "pac|LS14_27": 9,
-    "pac|LS14_28": 9,
-    "pac|LS14_29": 9,
-    "pac|LS14_3": 9,
-    "pac|LS14_30": 9,
-    "pac|LS14_31": 9,
-    "pac|LS14_32": 9,
-    "pac|LS14_33": 9,
-    "pac|LS14_34": 9,
-    "pac|LS14_35": 10,
-    "pac|LS14_36": 10,
-    "pac|LS14_37": 10,
-    "pac|LS14_38": 10,
-    "pac|LS14_39": 10,
-    "pac|LS14_4": 10,
-    "pac|LS14_40": 10,
-    "pac|LS14_41": 10,
-    "pac|LS14_42": 10,
-    "pac|LS14_43": 10,
-    "pac|LS14_44": 10,
-    "pac|LS14_45": 10,
-    "pac|LS14_46": 10,
-    "pac|LS14_47": 10,
-    "pac|LS14_48": 10,
-    "pac|LS14_49": 10,
-    "pac|LS14_5": 10,
-    "pac|LS14_50": 10,
-    "pac|LS14_51": 10,
-    "pac|LS14_52": 10,
-    "pac|LS14_53": 10,
-    "pac|LS14_54": 10,
-    "pac|LS14_55": 10,
-    "pac|LS14_56": 10,
-    "pac|LS14_57": 10,
-    "pac|LS14_58": 10,
-    "pac|LS14_59": 10,
-    "pac|LS14_6": 10,
-    "pac|LS14_60": 10,
-    "pac|LS14_61": 10,
-    "pac|LS14_62": 10,
-    "pac|LS14_63": 11,
-    "pac|LS14_64": 11,
-    "pac|LS14_65": 11,
-    "pac|LS14_66": 11,
-    "pac|LS14_67": 11,
-    "pac|LS14_68": 11,
-    "pac|LS14_69": 11,
-    "pac|LS14_7": 11,
-    "pac|LS14_70": 11,
-    "pac|LS14_71": 11,
-    "pac|LS14_72": 11,
-    "pac|LS14_73": 11,
-    "pac|LS14_74": 11,
-    "pac|LS14_75": 11,
-    "pac|LS14_76": 11,
-    "pac|LS14_77": 11,
-    "pac|LS14_78": 11,
-    "pac|LS14_79": 11,
-    "pac|LS14_8": 11,
-    "pac|LS14_80": 11,
-    "pac|LS14_81": 11,
-    "pac|LS14_82": 11,
-    "pac|LS14_83": 11,
-    "pac|LS14_84": 11,
-    "pac|LS14_9": 11,
-    "pac|LS15_1": 11,
-    "pac|LS15_10": 12,
-    "pac|LS15_100": 12,
-    "pac|LS15_11": 12,
-    "pac|LS15_12": 12,
-    "pac|LS15_13": 12,
-    "pac|LS15_14": 12,
-    "pac|LS15_15": 12,
-    "pac|LS15_16": 12,
-    "pac|LS15_17": 12,
-    "pac|LS15_18": 12,
-    "pac|LS15_19": 12,
-    "pac|LS15_2": 12,
-    "pac|LS15_20": 12,
-    "pac|LS15_21": 12,
-    "pac|LS15_22": 12,
-    "pac|LS15_23": 12,
-    "pac|LS15_24": 12,
-    "pac|LS15_25": 12,
-    "pac|LS15_26": 12,
-    "pac|LS15_27": 12,
-    "pac|LS15_28": 12,
-    "pac|LS15_29": 12,
-    "pac|LS15_3": 12,
-    "pac|LS15_30": 12,
-    "pac|LS15_31": 12,
-    "pac|LS15_32": 12,
-    "pac|LS15_33": 12,
-    "pac|LS15_34": 12,
-    "pac|LS15_35": 12,
-    "pac|LS15_36": 12,
-    "pac|LS15_37": 12,
-    "pac|LS15_38": 12,
-    "pac|LS15_39": 12,
-    "pac|LS15_4": 12,
-    "pac|LS15_40": 12,
-    "pac|LS15_41": 12,
-    "pac|LS15_42": 12,
-    "pac|LS15_43": 12,
-    "pac|LS15_44": 13,
-    "pac|LS15_45": 13,
-    "pac|LS15_46": 13,
-    "pac|LS15_47": 13,
-    "pac|LS15_48": 13,
-    "pac|LS15_49": 13,
-    "pac|LS15_5": 13,
-    "pac|LS15_50": 13,
-    "pac|LS15_51": 13,
-    "pac|LS15_52": 13,
-    "pac|LS15_53": 13,
-    "pac|LS15_54": 13,
-    "pac|LS15_55": 13,
-    "pac|LS15_56": 13,
-    "pac|LS15_57": 13,
-    "pac|LS15_58": 13,
-    "pac|LS15_59": 13,
-    "pac|LS15_6": 13,
-    "pac|LS15_60": 13,
-    "pac|LS15_61": 13,
-    "pac|LS15_62": 13,
-    "pac|LS15_63": 13,
-    "pac|LS15_64": 13,
-    "pac|LS15_65": 13,
-    "pac|LS15_66": 13,
-    "pac|LS15_67": 13,
-    "pac|LS15_68": 13,
-    "pac|LS15_69": 13,
-    "pac|LS15_7": 13,
-    "pac|LS15_70": 13,
-    "pac|LS15_71": 13,
-    "pac|LS15_72": 14,
-    "pac|LS15_73": 14,
-    "pac|LS15_74": 14,
-    "pac|LS15_75": 14,
-    "pac|LS15_76": 14,
-    "pac|LS15_77": 14,
-    "pac|LS15_78": 14,
-    "pac|LS15_79": 14,
-    "pac|LS15_8": 14,
-    "pac|LS15_80": 14,
-    "pac|LS15_81": 14,
-    "pac|LS15_82": 14,
-    "pac|LS15_83": 14,
-    "pac|LS15_84": 14,
-    "pac|LS15_85": 14,
-    "pac|LS15_86": 14,
-    "pac|LS15_87": 14,
-    "pac|LS15_88": 14,
-    "pac|LS15_89": 14,
-    "pac|LS15_9": 14,
-    "pac|LS15_90": 14,
-    "pac|LS15_91": 14,
-    "pac|LS15_92": 14,
-    "pac|LS15_93": 14,
-    "pac|LS15_94": 14,
-    "pac|LS15_95": 14,
-    "pac|LS15_96": 14,
-    "pac|LS15_97": 14,
-    "pac|LS15_98": 14,
-    "pac|LS15_99": 14,
-    "pac|LS16_1": 15,
-    "pac|LS16_10": 15,
-    "pac|LS16_100": 15,
-    "pac|LS16_101": 15,
-    "pac|LS16_102": 15,
-    "pac|LS16_103": 15,
-    "pac|LS16_104": 15,
-    "pac|LS16_105": 15,
-    "pac|LS16_106": 15,
-    "pac|LS16_107": 15,
-    "pac|LS16_108": 15,
-    "pac|LS16_109": 15,
-    "pac|LS16_11": 15,
-    "pac|LS16_110": 15,
-    "pac|LS16_111": 15,
-    "pac|LS16_112": 15,
-    "pac|LS16_113": 15,
-    "pac|LS16_114": 15,
-    "pac|LS16_115": 15,
-    "pac|LS16_116": 15,
-    "pac|LS16_117": 15,
-    "pac|LS16_118": 15,
-    "pac|LS16_119": 15,
-    "pac|LS16_12": 15,
-    "pac|LS16_120": 15,
-    "pac|LS16_121": 15,
-    "pac|LS16_122": 15,
-    "pac|LS16_123": 15,
-    "pac|LS16_124": 15,
-    "pac|LS16_125": 15,
-    "pac|LS16_126": 15,
-    "pac|LS16_127": 15,
-    "pac|LS16_128": 15,
-    "pac|LS16_129": 15,
-    "pac|LS16_13": 15,
-    "pac|LS16_130": 15,
-    "pac|LS16_131": 15,
-    "pac|LS16_132": 15,
-    "pac|LS16_133": 15,
-    "pac|LS16_134": 15,
-    "pac|LS16_135": 15,
-    "pac|LS16_136": 15,
-    "pac|LS16_137": 15,
-    "pac|LS16_14": 15,
-    "pac|LS16_15": 15,
-    "pac|LS16_16": 15,
-    "pac|LS16_17": 15,
-    "pac|LS16_18": 16,
-    "pac|LS16_19": 16,
-    "pac|LS16_2": 16,
-    "pac|LS16_20": 16,
-    "pac|LS16_21": 16,
-    "pac|LS16_22": 16,
-    "pac|LS16_23": 16,
-    "pac|LS16_24": 16,
-    "pac|LS16_25": 16,
-    "pac|LS16_26": 16,
-    "pac|LS16_27": 16,
-    "pac|LS16_28": 16,
-    "pac|LS16_29": 16,
-    "pac|LS16_3": 16,
-    "pac|LS16_30": 16,
-    "pac|LS16_31": 16,
-    "pac|LS16_32": 16,
-    "pac|LS16_33": 16,
-    "pac|LS16_34": 16,
-    "pac|LS16_35": 16,
-    "pac|LS16_36": 16,
-    "pac|LS16_37": 16,
-    "pac|LS16_38": 16,
-    "pac|LS16_39": 16,
-    "pac|LS16_4": 16,
-    "pac|LS16_40": 16,
-    "pac|LS16_41": 16,
-    "pac|LS16_42": 16,
-    "pac|LS16_43": 16,
-    "pac|LS16_44": 16,
-    "pac|LS16_45": 16,
-    "pac|LS16_46": 16,
-    "pac|LS16_47": 17,
-    "pac|LS16_48": 17,
-    "pac|LS16_49": 17,
-    "pac|LS16_5": 17,
-    "pac|LS16_50": 17,
-    "pac|LS16_51": 17,
-    "pac|LS16_52": 17,
-    "pac|LS16_53": 17,
-    "pac|LS16_54": 17,
-    "pac|LS16_55": 17,
-    "pac|LS16_56": 17,
-    "pac|LS16_57": 17,
-    "pac|LS16_58": 17,
-    "pac|LS16_59": 17,
-    "pac|LS16_6": 17,
-    "pac|LS16_60": 17,
-    "pac|LS16_61": 17,
-    "pac|LS16_62": 17,
-    "pac|LS16_63": 17,
-    "pac|LS16_64": 17,
-    "pac|LS16_65": 17,
-    "pac|LS16_66": 17,
-    "pac|LS16_67": 17,
-    "pac|LS16_68": 17,
-    "pac|LS16_69": 17,
-    "pac|LS16_7": 17,
-    "pac|LS16_70": 17,
-    "pac|LS16_71": 17,
-    "pac|LS16_72": 17,
-    "pac|LS16_73": 17,
-    "pac|LS16_74": 17,
-    "pac|LS16_75": 17,
-    "pac|LS16_76": 17,
-    "pac|LS16_77": 17,
-    "pac|LS16_78": 17,
-    "pac|LS16_79": 17,
-    "pac|LS16_8": 17,
-    "pac|LS16_80": 17,
-    "pac|LS16_81": 17,
-    "pac|LS16_82": 18,
-    "pac|LS16_83": 18,
-    "pac|LS16_84": 18,
-    "pac|LS16_85": 18,
-    "pac|LS16_86": 18,
-    "pac|LS16_87": 18,
-    "pac|LS16_88": 18,
-    "pac|LS16_89": 18,
-    "pac|LS16_9": 18,
-    "pac|LS16_90": 18,
-    "pac|LS16_91": 18,
-    "pac|LS16_92": 18,
-    "pac|LS16_93": 18,
-    "pac|LS16_94": 18,
-    "pac|LS16_95": 18,
-    "pac|LS16_96": 18,
-    "pac|LS16_97": 18,
-    "pac|LS16_98": 18,
-    "pac|LS16_99": 18,
-    "pac|LS17_1": 18,
-    "pac|LS17_10": 18,
-    "pac|LS17_100": 18,
-    "pac|LS17_101": 18,
-    "pac|LS17_102": 18,
-    "pac|LS17_103": 18,
-    "pac|LS17_104": 18,
-    "pac|LS17_105": 18,
-    "pac|LS17_106": 18,
-    "pac|LS17_107": 18,
-    "pac|LS17_108": 18,
-    "pac|LS17_109": 18,
-    "pac|LS17_11": 18,
-    "pac|LS17_110": 18,
-    "pac|LS17_111": 18,
-    "pac|LS17_112": 18,
-    "pac|LS17_113": 18,
-    "pac|LS17_114": 18,
-    "pac|LS17_115": 18,
-    "pac|LS17_116": 18,
-    "pac|LS17_117": 18,
-    "pac|LS17_118": 18,
-    "pac|LS17_119": 18,
-    "pac|LS17_12": 18,
-    "pac|LS17_120": 18,
-    "pac|LS17_121": 18,
-    "pac|LS17_122": 18,
-    "pac|LS17_123": 18,
-    "pac|LS17_124": 18,
-    "pac|LS17_125": 18,
-    "pac|LS17_126": 18,
-    "pac|LS17_127": 18,
-    "pac|LS17_128": 18,
-    "pac|LS17_129": 18,
-    "pac|LS17_13": 18,
-    "pac|LS17_130": 18,
-    "pac|LS17_131": 18,
-    "pac|LS17_132": 18,
-    "pac|LS17_133": 18,
-    "pac|LS17_134": 18,
-    "pac|LS17_135": 18,
-    "pac|LS17_136": 18,
-    "pac|LS17_137": 18,
-    "pac|LS17_138": 18,
-    "pac|LS17_139": 18,
-    "pac|LS17_14": 19,
-    "pac|LS17_140": 19,
-    "pac|LS17_141": 19,
-    "pac|LS17_142": 19,
-    "pac|LS17_143": 19,
-    "pac|LS17_144": 19,
-    "pac|LS17_145": 19,
-    "pac|LS17_146": 19,
-    "pac|LS17_147": 19,
-    "pac|LS17_148": 19,
-    "pac|LS17_149": 19,
-    "pac|LS17_15": 19,
-    "pac|LS17_150": 19,
-    "pac|LS17_151": 19,
-    "pac|LS17_152": 19,
-    "pac|LS17_16": 19,
-    "pac|LS17_17": 19,
-    "pac|LS17_18": 19,
-    "pac|LS17_19": 19,
-    "pac|LS17_2": 19,
-    "pac|LS17_20": 19,
-    "pac|LS17_21": 19,
-    "pac|LS17_22": 19,
-    "pac|LS17_23": 19,
-    "pac|LS17_24": 19,
-    "pac|LS17_25": 19,
-    "pac|LS17_26": 19,
-    "pac|LS17_27": 19,
-    "pac|LS17_28": 19,
-    "pac|LS17_29": 19,
-    "pac|LS17_3": 19,
-    "pac|LS17_30": 19,
-    "pac|LS17_31": 19,
-    "pac|LS17_32": 19,
-    "pac|LS17_33": 19,
-    "pac|LS17_34": 19,
-    "pac|LS17_36": 19,
-    "pac|LS17_37": 19,
-    "pac|LS17_38": 19,
-    "pac|LS17_39": 19,
-    "pac|LS17_4": 19,
-    "pac|LS17_40": 19,
-    "pac|LS17_41": 19,
-    "pac|LS17_42": 19,
-    "pac|LS17_43": 19,
-    "pac|LS17_44": 19,
-    "pac|LS17_45": 19,
-    "pac|LS17_46": 19,
-    "pac|LS17_47": 19,
-    "pac|LS17_48": 19,
-    "pac|LS17_49": 19,
-    "pac|LS17_5": 19,
-    "pac|LS17_50": 19,
-    "pac|LS17_51": 20,
-    "pac|LS17_52": 20,
-    "pac|LS17_53": 20,
-    "pac|LS17_54": 20,
-    "pac|LS17_55": 20,
-    "pac|LS17_56": 20,
-    "pac|LS17_57": 20,
-    "pac|LS17_58": 20,
-    "pac|LS17_59": 20,
-    "pac|LS17_6": 20,
-    "pac|LS17_60": 20,
-    "pac|LS17_61": 20,
-    "pac|LS17_62": 20,
-    "pac|LS17_63": 20,
-    "pac|LS17_64": 20,
-    "pac|LS17_65": 20,
-    "pac|LS17_66": 20,
-    "pac|LS17_67": 20,
-    "pac|LS17_68": 20,
-    "pac|LS17_69": 20,
-    "pac|LS17_7": 20,
-    "pac|LS17_70": 20,
-    "pac|LS17_71": 20,
-    "pac|LS17_72": 20,
-    "pac|LS17_73": 20,
-    "pac|LS17_74": 20,
-    "pac|LS17_75": 20,
-    "pac|LS17_76": 20,
-    "pac|LS17_77": 20,
-    "pac|LS17_78": 20,
-    "pac|LS17_79": 20,
-    "pac|LS17_8": 20,
-    "pac|LS17_80": 20,
-    "pac|LS17_81": 20,
-    "pac|LS17_82": 20,
-    "pac|LS17_83": 20,
-    "pac|LS17_84": 20,
-    "pac|LS17_85": 20,
-    "pac|LS17_86": 20,
-    "pac|LS17_87": 20,
-    "pac|LS17_88": 20,
-    "pac|LS17_89": 20,
-    "pac|LS17_9": 20,
-    "pac|LS17_90": 20,
-    "pac|LS17_91": 20,
-    "pac|LS17_92": 20,
-    "pac|LS17_93": 20,
-    "pac|LS17_94": 20,
-    "pac|LS17_95": 20,
-    "pac|LS17_96": 20,
-    "pac|LS17_97": 20,
-    "pac|LS17_98": 21,
-    "pac|LS17_99": 21,
-    "pac|LS18_1": 21,
-    "pac|LS18_10": 21,
-    "pac|LS18_11": 21,
-    "pac|LS18_12": 21,
-    "pac|LS18_13": 21,
-    "pac|LS18_14": 21,
-    "pac|LS18_15": 21,
-    "pac|LS18_16": 21,
-    "pac|LS18_17": 21,
-    "pac|LS18_18": 21,
-    "pac|LS18_19": 21,
-    "pac|LS18_2": 21,
-    "pac|LS18_20": 21,
-    "pac|LS18_21": 21,
-    "pac|LS18_22": 21,
-    "pac|LS18_23": 21,
-    "pac|LS18_24": 21,
-    "pac|LS18_25": 21,
-    "pac|LS18_26": 21,
-    "pac|LS18_27": 21,
-    "pac|LS18_28": 21,
-    "pac|LS18_29": 21,
-    "pac|LS18_3": 21,
-    "pac|LS18_30": 21,
-    "pac|LS18_31": 21,
-    "pac|LS18_32": 21,
-    "pac|LS18_33": 21,
-    "pac|LS18_34": 21,
-    "pac|LS18_35": 21,
-    "pac|LS18_36": 21,
-    "pac|LS18_37": 21,
-    "pac|LS18_38": 21,
-    "pac|LS18_39": 21,
-    "pac|LS18_4": 21,
-    "pac|LS18_40": 21,
-    "pac|LS18_41": 21,
-    "pac|LS18_42": 21,
-    "pac|LS18_43": 21,
-    "pac|LS18_44": 21,
-    "pac|LS18_45": 21,
-    "pac|LS18_46": 21,
-    "pac|LS18_47": 21,
-    "pac|LS18_48": 21,
-    "pac|LS18_49": 21,
-    "pac|LS18_5": 21,
-    "pac|LS18_50": 21,
-    "pac|LS18_51": 21,
-    "pac|LS18_6": 21,
-    "pac|LS18_7": 21,
-    "pac|LS18_8": 21,
-    "pac|LS18_9": 21
-  }
+  ]
 }
