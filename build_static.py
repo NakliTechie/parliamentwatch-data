@@ -27,6 +27,7 @@ from pathlib import Path
 
 from parliamentwatch_text_shards import (
     write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+    load_bundled_ids,
 )
 
 # Each corpus's outputs are scoped under `docs/<corpus>/`. DRSC is the
@@ -222,7 +223,7 @@ def _missing_reports_priority_order():
         try:
             with open(texts_meta_path, "r", encoding="utf-8") as f:
                 texts_meta = json.load(f)
-            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+            bundled_ids = load_bundled_ids(DOCS)
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
@@ -395,7 +396,7 @@ def _load_bundled_ids() -> set:
             tm = json.load(f)
     except (OSError, json.JSONDecodeError):
         return set()
-    return set((tm.get("record_to_shard") or {}).keys())
+    return load_bundled_ids(DOCS)
 
 
 def build_manifest():
@@ -855,7 +856,7 @@ def phase_derive():
                 continue
             items.append((f"{committee}|{key}", DOCS / entry["url"]))
     text_meta = write_text_shards(DOCS, items)
-    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    bundled_ids = load_bundled_ids(DOCS)
     # Nested layout: text/<committee>/<fid>.<suffix>. Composite id == "<committee>|<fid>".
     text_root = DOCS / "text"
     marker_stats = consolidate_markers(

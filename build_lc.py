@@ -40,6 +40,7 @@ sys.path.insert(0, str(ROOT))   # so `from lc.scraper import ...` works
 
 from parliamentwatch_text_shards import (
     write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+    load_bundled_ids,
 )
 from lc.scraper import (
     BASE_URL, LISTING_URL,
@@ -322,7 +323,7 @@ def extract_missing_texts(reports: dict[int, dict], *, deadline: float) -> dict:
         try:
             with open(texts_meta_path, "r", encoding="utf-8") as f:
                 texts_meta = json.load(f)
-            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+            bundled_ids = load_bundled_ids(DOCS)
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
@@ -476,7 +477,7 @@ def _load_bundled_ids() -> set[str]:
             tm = json.load(f)
     except (OSError, json.JSONDecodeError):
         return set()
-    return set((tm.get("record_to_shard") or {}).keys())
+    return load_bundled_ids(DOCS)
 
 
 def build_manifest() -> dict:
@@ -833,7 +834,7 @@ def phase_derive() -> None:
 
     # Consolidate marker sidecars into markers.json. LC composite_id ==
     # path.stem (flat text/<rid>.suffix layout, same as CAG).
-    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    bundled_ids = load_bundled_ids(DOCS)
     marker_stats = consolidate_markers(DOCS, TEXT_DIR, drop_record_ids=bundled_ids)
     print(f"  markers: {marker_stats['totals']} consolidated "
           f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")

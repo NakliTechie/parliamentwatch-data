@@ -49,6 +49,7 @@ sys.path.insert(0, str(ROOT))   # so `from bills.sansad.scraper import ...` work
 
 from parliamentwatch_text_shards import (  # noqa: E402
     write_text_shards, consolidate_markers, load_markers, write_json_idempotent,
+    load_bundled_ids,
 )
 from bills.sansad.scraper import (  # noqa: E402
     SCRAPER_VERSION,
@@ -341,7 +342,7 @@ def select_candidates(records: list[dict]) -> list[dict]:
         try:
             with open(texts_meta_path, "r", encoding="utf-8") as f:
                 texts_meta = json.load(f)
-            bundled_ids = set((texts_meta.get("record_to_shard") or {}).keys())
+            bundled_ids = load_bundled_ids(DOCS)
         except (OSError, json.JSONDecodeError) as e:
             print(f"  ! couldn't read texts-meta.json — proceeding without shard skip ({e})")
 
@@ -392,7 +393,7 @@ def _load_bundled_ids() -> set[str]:
             tm = json.load(f)
     except (OSError, json.JSONDecodeError):
         return set()
-    return set((tm.get("record_to_shard") or {}).keys())
+    return load_bundled_ids(DOCS)
 
 
 def compute_audit(records: list[dict]) -> dict:
@@ -1039,7 +1040,7 @@ def phase_derive() -> int:
 
     # Consolidate marker sidecars into markers.json. Bills flat layout:
     # composite_id == compositeId == path.stem.
-    bundled_ids = set((text_meta.get("record_to_shard") or {}).keys())
+    bundled_ids = load_bundled_ids(DOCS)
     marker_stats = consolidate_markers(DOCS, TEXT_DIR, drop_record_ids=bundled_ids)
     print(f"    markers: {marker_stats['totals']} consolidated "
           f"(removed {marker_stats.get('removed_sidecar_count', 0)} sidecars)")

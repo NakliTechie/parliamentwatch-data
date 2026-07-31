@@ -1,7 +1,7 @@
 """Shared text-sharding helper for the parliamentwatch corpora.
 
 Bundles per-record text files (`docs/<corpus>/text/<name>.txt`) into
-size-targeted shard files (`docs/<corpus>/texts-NN.json`) plus a
+key-addressed shard files (`docs/<corpus>/texts-<bucket>-<band>.json`) plus a
 manifest (`docs/<corpus>/texts-meta.json`). Reduces the static-assets
 file count by 50-200x per corpus while keeping each shard well under
 Cloudflare's 25 MiB per-file cap.
@@ -10,9 +10,9 @@ See `plan/cloudflare-strategy-002.md` for the design rationale (bundling
 primary, R2 fallback for oversize records).
 
 Each corpus's build script generates the input list
-`[(composite_id, Path), ...]` in its own canonical sort order
-(newest-first by convention) and passes it here. This module doesn't
-know per-corpus naming or sort logic — it just packs greedily.
+`[(composite_id, Path), ...]`. Order is irrelevant: a record's shard is a
+pure function of its own key (see "Stable shard assignment" below), so this
+module never packs by position.
 
 R2 fallback: any single record whose text exceeds `fallback_threshold`
 gets a `{"r2": true}` sentinel in the shard. App fetches that record's
@@ -27,6 +27,7 @@ from __future__ import annotations
 import glob
 import json
 import os
+import re
 from pathlib import Path
 from typing import Iterable, Optional
 
@@ -49,12 +50,168 @@ R2_SENTINEL = {"r2": True}
 SENTINEL_BUDGET_BYTES = 50
 
 
-def _shard_filename(idx: int) -> str:
-    return f"texts-{idx:02d}.json"
-
-
 def _meta_filename() -> str:
     return "texts-meta.json"
+
+
+# ── Stable shard assignment ────────────────────────────────────────────────
+#
+# THE RULE: a record's shard is a pure function of that record's own key.
+# Never of its position in a global ordering.
+#
+# The pre-2026-07-27 implementation sorted every key, then greedily packed
+# into size-targeted shards. That made the *order* deterministic but not the
+# *assignment*: inserting one record early in the sort shifted every later
+# record across shard boundaries, so a run adding ~2 MB of new text rewrote
+# hundreds of MB of shards. One measured debates run rewrote 39 shards
+# (~195 MB). Compounded hourly, that is what drove the repo to 100 GB and
+# past GitHub's hard limit on 2026-06-28.
+#
+# Now: shard = f(key). Adding a record touches exactly one shard, and every
+# other shard is byte-identical, so git stores no new blob for it.
+#
+# Buckets are the record's natural, immutable coordinates — house + term +
+# session (or sitting date). Parliamentary records are historical: once a
+# session is fully extracted its bucket is frozen forever. Only the session
+# currently being backfilled sees any churn at all.
+#
+# INVARIANT for anyone maintaining this: every file that is rewritten
+# frequently must be small; every file that is large must be immutable once
+# written. `record_to_shard` was deleted from the manifest for exactly this
+# reason — it was a 3.5 MB map rewritten on every run (and downloaded by
+# every app session). The app now derives the shard from the key instead,
+# using the same two functions mirrored in app/text-shards.js.
+
+_BUCKET_SPLIT_RE = re.compile(r"[_|]")
+_BUCKET_CLEAN_RE = re.compile(r"[^A-Za-z0-9-]")
+
+
+def bucket_for(key: str) -> str:
+    """Natural immutable bucket for a composite record key.
+
+    `ls|LS16_S10_U_1`      -> `ls-LS16-S10`
+    `rs|RS241_2016-12-07_U`-> `rs-RS241-2016-12-07`
+    `rs|RS239_2016-05-03|floor` -> `rs-RS239-2016-05-03`
+
+    Mirrored byte-for-byte in app/text-shards.js `bucketFor()`. If you
+    change one, change both — the app resolves shards without a lookup map.
+    """
+    house, sep, body = key.partition("|")
+    if not sep:
+        house, body = "", key
+    parts = [p for p in _BUCKET_SPLIT_RE.split(body) if p]
+    head = parts[0] if parts else ""
+    ses = parts[1] if len(parts) > 1 else ""
+    raw = "-".join(p for p in (house, head, ses) if p)
+    return _BUCKET_CLEAN_RE.sub("", raw) or "misc"
+
+
+
+# Records per band inside a bucket. Big sessions (LS18-S7 is 41 MB) need
+# splitting, but the split must preserve LOCALITY: extraction walks a
+# session in question-number order, so banding on the record's own ordinal
+# keeps a run's writes inside one or two files.
+#
+# Hashing the key was tried first and measured worse — it scatters a
+# session's newly-extracted records across every band of its bucket, so the
+# whole bucket gets rewritten. Measured on the real corpus, one 500-record
+# run against questions:
+#     hash sub-split   41.5 MB rewritten
+#     ordinal band 50   7.9 MB rewritten
+# Stride is set by the FILE-COUNT ceiling, not by amplification. Cloudflare
+# Workers Static Assets caps a deploy at 20,000 files, and the corpus is only
+# ~14% extracted — projecting both corpora to full backfill (246,046 question
+# records + 58,958 debate records):
+#     texts  50 / search  500 -> 20,218 files   OVER CAP
+#     texts 100 / search 1000 -> 16,694 files   tight
+#     texts 250 / search 1000 -> 14,929 files   25% headroom  <- chosen
+# Amplification barely moves across that range (questions clustered: 7.9 MB
+# at stride 50 vs 8.7 MB at 250; debates 10.2 vs 10.8), so the headroom is
+# nearly free. Largest shard stays ~3.7 MB, inside the 25 MiB per-file cap.
+DEFAULT_SHARD_STRIDE = 250
+
+# Search bundle + index band coarser than the text shards — they carry the
+# same buckets, so a shared stride would inflate the file count for no gain.
+SEARCH_SHARD_STRIDE = 1000
+
+_ORDINAL_RE = re.compile(r"(\d+)\D*$")
+
+
+def shard_group(key: str, stride: int = DEFAULT_SHARD_STRIDE) -> str:
+    """Shard group for `key` — the `<bucket>[-<band>]` infix.
+
+    Shared by the text shards, the search bundle and the search index so all
+    three partition identically: a record's title, its body and its postings
+    all move together, and a run touches the same handful of files in each.
+    """
+    bucket = bucket_for(key)
+    m = _ORDINAL_RE.search(key)
+    if not m:
+        # No ordinal (e.g. RS date-keyed records) — the bucket is already
+        # a single sitting, so it needs no banding.
+        return bucket
+    return f"{bucket}-{int(m.group(1)) // stride:04d}"
+
+
+def shard_filename(key: str, stride: int = DEFAULT_SHARD_STRIDE) -> str:
+    """Text-shard filename holding `key`. Pure function of the key.
+
+    Mirrored in app/text-shards.js `shardFileFor()`. Change one, change both.
+    """
+    return f"texts-{shard_group(key, stride)}.json"
+
+
+_BUNDLED_IDS_CACHE: dict = {}
+
+
+def load_bundled_ids(corpus_docs_dir: Path) -> set:
+    """Composite ids currently held in the text shards.
+
+    Schema 2 has no `record_to_shard` map — it was 3.5 MB, rewritten every
+    run and downloaded by every app session, so it was removed on
+    2026-07-27. Membership therefore comes from the shards themselves.
+
+    That removal silently broke nine call sites across the two builders that
+    did `set(meta["record_to_shard"].keys())` and got an empty set on a
+    schema-2 manifest. The audit read it (every record became
+    "never_attempted"), and — far worse — so did the extract phase's
+    "already bundled, skip it" check, which would have re-downloaded PDFs
+    for 127,319 records that already had text. Caught before a scheduled run
+    fired; the failure mode was silent because an absent key just yields {}.
+
+    Memoized per (dir, mtime of texts-meta) so a run pays the read once.
+    Schema-1 manifests still take the cheap map path.
+    """
+    corpus_docs_dir = Path(corpus_docs_dir)
+    meta_path = corpus_docs_dir / _meta_filename()
+    if not meta_path.exists():
+        return set()
+    try:
+        cache_key = (str(corpus_docs_dir), meta_path.stat().st_mtime_ns)
+    except OSError:
+        return set()
+    if cache_key in _BUNDLED_IDS_CACHE:
+        return _BUNDLED_IDS_CACHE[cache_key]
+    ids: set = set()
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return set()
+    legacy = meta.get("record_to_shard")
+    if legacy:
+        ids = set(legacy.keys())
+    else:
+        for entry in meta.get("shards", []):
+            sp = corpus_docs_dir / entry.get("file", "")
+            if not sp.exists():
+                continue
+            try:
+                with open(sp, "r", encoding="utf-8") as f:
+                    ids.update((json.load(f).get("records") or {}).keys())
+            except (OSError, json.JSONDecodeError):
+                continue
+    _BUNDLED_IDS_CACHE[cache_key] = ids
+    return ids
 
 
 def write_text_shards(
@@ -64,6 +221,7 @@ def write_text_shards(
     target_bytes: int = DEFAULT_TARGET_BYTES,
     fallback_threshold: int = DEFAULT_FALLBACK_THRESHOLD,
     r2_origin: Optional[str] = None,
+    stride: int = DEFAULT_SHARD_STRIDE,
 ) -> dict:
     """Pack texts into shards under `<corpus_docs_dir>/texts-NN.json`.
 
@@ -129,10 +287,6 @@ def write_text_shards(
             pass
 
     shards: list[dict] = []                # per-shard manifest entries
-    record_to_shard: dict[str, int] = {}   # composite_id → shard index
-
-    cur_records: dict = {}                 # building shard's payload
-    cur_bytes = 0                          # rolling byte count
 
     totals = {
         "records_with_text": 0,
@@ -143,28 +297,6 @@ def write_text_shards(
         "skipped_oversize_no_r2": 0,
         "from_existing_shards": 0,
     }
-
-    def flush_shard() -> None:
-        nonlocal cur_records, cur_bytes
-        if not cur_records:
-            return
-        idx = len(shards)
-        fname = _shard_filename(idx)
-        path = corpus_docs_dir / fname
-        payload = {
-            "shard_index": idx,
-            "records": cur_records,
-        }
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        on_disk_bytes = path.stat().st_size
-        shards.append({
-            "file": fname,
-            "count": len(cur_records),
-            "bytes": on_disk_bytes,
-        })
-        cur_records = {}
-        cur_bytes = 0
 
     # Build the full set of (key → value) we want in the new shards.
     # Strategy: start from existing-shard contents (preserves prior bundle),
@@ -215,26 +347,34 @@ def write_text_shards(
             final_records[key] = value
         totals["total_text_bytes"] += size
 
-    # Sort the merged keys for deterministic shard packing. Stable order
-    # ⇒ minimal shard diffs across runs (helps git delta + CF cache).
-    sorted_keys = sorted(final_records.keys())
+    # ── Assign every record to a shard by key, never by position ──────────
+    #
+    # Group by shard_filename(key) and write. A shard whose membership is
+    # unchanged serialises to identical bytes, so git records no new blob
+    # for it — that is the whole point of the exercise.
 
-    # Pack into shards.
-    for key in sorted_keys:
-        value = final_records[key]
-        if isinstance(value, dict):  # R2 sentinel
-            value_cost = SENTINEL_BUDGET_BYTES
-        else:
-            value_cost = len(value.encode("utf-8")) if isinstance(value, str) else SENTINEL_BUDGET_BYTES
+    groups: dict[str, list[str]] = {}
+    for key in final_records:
+        groups.setdefault(shard_filename(key, stride), []).append(key)
 
-        if cur_records and cur_bytes + value_cost > target_bytes:
-            flush_shard()
-        cur_records[key] = value
-        cur_bytes += value_cost
-        record_to_shard[key] = len(shards)
-        totals["records_with_text"] += 1
+    for fname in sorted(groups):
+        # Sorted only WITHIN a shard, so the output bytes are stable. This
+        # ordering never decides which shard a record lands in.
+        keys = sorted(groups[fname])
+        path = corpus_docs_dir / fname
+        payload = {
+            "shard": fname,
+            "records": {k: final_records[k] for k in keys},
+        }
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        shards.append({
+            "file": fname,
+            "count": len(keys),
+            "bytes": path.stat().st_size,
+        })
+        totals["records_with_text"] += len(keys)
 
-    flush_shard()
     totals["shards"] = len(shards)
     totals["from_existing_shards"] = len(existing_records) - sum(
         1 for k in existing_records if k in item_paths and item_paths[k].exists()
@@ -258,13 +398,19 @@ def write_text_shards(
                 pass
     totals["txt_files_removed"] = removed_txt
 
+    # NOTE: no `record_to_shard`. It was a per-record map (121,642 entries,
+    # 3.5 MB for questions) rewritten every run and downloaded by every app
+    # session. The shard is now derivable from the key, so the app computes
+    # it with bucketFor()/fnv1a32() and needs only `sub_counts` — ~1 KB.
+    # See the INVARIANT note above before adding anything per-record here.
     meta = {
         "shard_size_target_bytes": target_bytes,
         "fallback_threshold_bytes": fallback_threshold,
         "r2_origin": r2_origin,
+        "schema": 2,
         "totals": totals,
+        "shard_stride": stride,
         "shards": shards,
-        "record_to_shard": record_to_shard,
     }
     meta_path = corpus_docs_dir / _meta_filename()
     with open(meta_path, "w", encoding="utf-8") as f:
@@ -392,11 +538,9 @@ def consolidate_markers(
     }
     # Idempotent: skip the markers.json write if only `generated_at`
     # would change. Cuts CF build churn for corpora that are quiet
-    # between derive runs. See write_json_idempotent below.
+    # between derive runs.
     wrote = write_json_idempotent(meta_path, out)
     if not wrote:
-        # Preserve the on-disk file's actual generated_at in the return
-        # so audit / logs reflect "last real change", not "now".
         try:
             with open(meta_path, "r", encoding="utf-8") as f:
                 out["generated_at"] = json.load(f).get("generated_at", out["generated_at"])
