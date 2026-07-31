@@ -3,14 +3,14 @@
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
   "totals": {
-    "records_with_text": 14522,
+    "records_with_text": 14524,
     "shards": 392,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 213305,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14522,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shards": [
     {
@@ -1515,63 +1515,63 @@
     },
     {
       "file": "texts-300.json",
-      "count": 56,
-      "bytes": 4523448
+      "count": 55,
+      "bytes": 4564284
     },
     {
       "file": "texts-301.json",
-      "count": 66,
-      "bytes": 4555147
+      "count": 67,
+      "bytes": 4504639
     },
     {
       "file": "texts-302.json",
-      "count": 59,
-      "bytes": 4558021
+      "count": 58,
+      "bytes": 4566697
     },
     {
       "file": "texts-303.json",
-      "count": 55,
-      "bytes": 4502923
+      "count": 56,
+      "bytes": 4490376
     },
     {
       "file": "texts-304.json",
-      "count": 58,
-      "bytes": 4511706
+      "count": 56,
+      "bytes": 4546953
     },
     {
       "file": "texts-305.json",
-      "count": 51,
-      "bytes": 4504459
+      "count": 53,
+      "bytes": 4538987
     },
     {
       "file": "texts-306.json",
       "count": 73,
-      "bytes": 4498152
+      "bytes": 4537113
     },
     {
       "file": "texts-307.json",
       "count": 63,
-      "bytes": 4530877
+      "bytes": 4474402
     },
     {
       "file": "texts-308.json",
-      "count": 71,
-      "bytes": 4542149
+      "count": 69,
+      "bytes": 4549838
     },
     {
       "file": "texts-309.json",
-      "count": 48,
-      "bytes": 4503074
+      "count": 50,
+      "bytes": 4494125
     },
     {
       "file": "texts-310.json",
-      "count": 55,
-      "bytes": 4502438
+      "count": 56,
+      "bytes": 4565450
     },
     {
       "file": "texts-311.json",
-      "count": 59,
-      "bytes": 3773629
+      "count": 60,
+      "bytes": 3890939
     },
     {
       "file": "texts-312.json",
@@ -12287,6 +12287,8 @@
     "rural_development|LS18_30": 300,
     "rural_development|LS18_31": 300,
     "rural_development|LS18_32": 300,
+    "rural_development|LS18_33": 300,
+    "rural_development|LS18_34": 300,
     "rural_development|LS18_4": 300,
     "rural_development|LS18_5": 300,
     "rural_development|LS18_6": 300,
@@ -12320,9 +12322,9 @@
     "science|LS14_121": 300,
     "science|LS14_122": 300,
     "science|LS14_123": 300,
-    "science|LS14_124": 300,
-    "science|LS14_125": 300,
-    "science|LS14_126": 300,
+    "science|LS14_124": 301,
+    "science|LS14_125": 301,
+    "science|LS14_126": 301,
     "science|LS14_127": 301,
     "science|LS14_128": 301,
     "science|LS14_129": 301,
@@ -12387,8 +12389,8 @@
     "science|LS14_189": 301,
     "science|LS14_19": 301,
     "science|LS14_190": 301,
-    "science|LS14_191": 301,
-    "science|LS14_192": 301,
+    "science|LS14_191": 302,
+    "science|LS14_192": 302,
     "science|LS14_193": 302,
     "science|LS14_194": 302,
     "science|LS14_195": 302,
@@ -12445,9 +12447,9 @@
     "science|LS14_240": 302,
     "science|LS14_241": 302,
     "science|LS14_242": 302,
-    "science|LS14_243": 302,
-    "science|LS14_244": 302,
-    "science|LS14_245": 302,
+    "science|LS14_243": 303,
+    "science|LS14_244": 303,
+    "science|LS14_245": 303,
     "science|LS14_246": 303,
     "science|LS14_247": 303,
     "science|LS14_248": 303,
@@ -12501,8 +12503,8 @@
     "science|LS14_291": 303,
     "science|LS14_292": 303,
     "science|LS14_293": 303,
-    "science|LS14_294": 303,
-    "science|LS14_295": 303,
+    "science|LS14_294": 304,
+    "science|LS14_295": 304,
     "science|LS14_296": 304,
     "science|LS14_297": 304,
     "science|LS14_298": 304,
@@ -12557,10 +12559,10 @@
     "science|LS14_341": 304,
     "science|LS14_342": 304,
     "science|LS14_343": 304,
-    "science|LS14_344": 304,
-    "science|LS14_345": 304,
-    "science|LS14_346": 304,
-    "science|LS14_347": 304,
+    "science|LS14_344": 305,
+    "science|LS14_345": 305,
+    "science|LS14_346": 305,
+    "science|LS14_347": 305,
     "science|LS14_348": 305,
     "science|LS14_349": 305,
     "science|LS14_35": 305,
@@ -12610,8 +12612,8 @@
     "science|LS14_39": 305,
     "science|LS14_390": 305,
     "science|LS14_391": 305,
-    "science|LS14_392": 305,
-    "science|LS14_393": 305,
+    "science|LS14_392": 306,
+    "science|LS14_393": 306,
     "science|LS14_394": 306,
     "science|LS14_395": 306,
     "science|LS14_396": 306,
@@ -12683,8 +12685,8 @@
     "science|LS14_86": 306,
     "science|LS14_87": 306,
     "science|LS14_88": 306,
-    "science|LS14_89": 306,
-    "science|LS14_9": 306,
+    "science|LS14_89": 307,
+    "science|LS14_9": 307,
     "science|LS14_90": 307,
     "science|LS14_91": 307,
     "science|LS14_93": 307,
@@ -12746,8 +12748,8 @@
     "science|LS15_147": 307,
     "science|LS15_148": 307,
     "science|LS15_149": 307,
-    "science|LS15_15": 307,
-    "science|LS15_150": 307,
+    "science|LS15_15": 308,
+    "science|LS15_150": 308,
     "science|LS15_151": 308,
     "science|LS15_152": 308,
     "science|LS15_153": 308,
@@ -12815,10 +12817,10 @@
     "science|LS15_212": 308,
     "science|LS15_213": 308,
     "science|LS15_214": 308,
-    "science|LS15_215": 308,
-    "science|LS15_216": 308,
-    "science|LS15_217": 308,
-    "science|LS15_218": 308,
+    "science|LS15_215": 309,
+    "science|LS15_216": 309,
+    "science|LS15_217": 309,
+    "science|LS15_218": 309,
     "science|LS15_219": 309,
     "science|LS15_22": 309,
     "science|LS15_220": 309,
@@ -12865,8 +12867,8 @@
     "science|LS15_258": 309,
     "science|LS15_259": 309,
     "science|LS15_26": 309,
-    "science|LS15_260": 309,
-    "science|LS15_261": 309,
+    "science|LS15_260": 310,
+    "science|LS15_261": 310,
     "science|LS15_262": 310,
     "science|LS15_263": 310,
     "science|LS15_264": 310,
@@ -12921,7 +12923,7 @@
     "science|LS15_308": 310,
     "science|LS15_309": 310,
     "science|LS15_31": 310,
-    "science|LS15_310": 310,
+    "science|LS15_310": 311,
     "science|LS15_311": 311,
     "science|LS15_312": 311,
     "science|LS15_313": 311,
