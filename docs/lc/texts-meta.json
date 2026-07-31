@@ -2,9 +2,10 @@
   "shard_size_target_bytes": 4500000,
   "fallback_threshold_bytes": 10000000,
   "r2_origin": null,
+  "schema": 2,
   "totals": {
     "records_with_text": 287,
-    "shards": 12,
+    "shards": 287,
     "r2_fallback": 0,
     "total_text_bytes": 0,
     "missing_files": 0,
@@ -12,355 +13,1442 @@
     "from_existing_shards": 287,
     "txt_files_removed": 0
   },
+  "shard_stride": 250,
   "shards": [
     {
-      "file": "texts-00.json",
-      "count": 27,
-      "bytes": 4558554
+      "file": "texts-1-0000.json",
+      "count": 1,
+      "bytes": 132251
     },
     {
-      "file": "texts-01.json",
-      "count": 31,
-      "bytes": 4437774
+      "file": "texts-10-0000.json",
+      "count": 1,
+      "bytes": 401384
     },
     {
-      "file": "texts-02.json",
-      "count": 25,
-      "bytes": 4432383
+      "file": "texts-100-0000.json",
+      "count": 1,
+      "bytes": 44148
     },
     {
-      "file": "texts-03.json",
-      "count": 23,
-      "bytes": 3893536
+      "file": "texts-101-0000.json",
+      "count": 1,
+      "bytes": 71291
     },
     {
-      "file": "texts-04.json",
-      "count": 27,
-      "bytes": 4561152
+      "file": "texts-102-0000.json",
+      "count": 1,
+      "bytes": 14663
     },
     {
-      "file": "texts-05.json",
-      "count": 44,
-      "bytes": 4210584
+      "file": "texts-103-0000.json",
+      "count": 1,
+      "bytes": 33674
     },
     {
-      "file": "texts-06.json",
-      "count": 25,
-      "bytes": 4552550
+      "file": "texts-104-0000.json",
+      "count": 1,
+      "bytes": 36535
     },
     {
-      "file": "texts-07.json",
-      "count": 17,
-      "bytes": 4519577
+      "file": "texts-105-0000.json",
+      "count": 1,
+      "bytes": 51195
     },
     {
-      "file": "texts-08.json",
-      "count": 18,
-      "bytes": 3869952
+      "file": "texts-106-0000.json",
+      "count": 1,
+      "bytes": 34520
     },
     {
-      "file": "texts-09.json",
-      "count": 14,
-      "bytes": 4159197
+      "file": "texts-107-0000.json",
+      "count": 1,
+      "bytes": 17689
     },
     {
-      "file": "texts-10.json",
-      "count": 14,
-      "bytes": 4579261
+      "file": "texts-108-0000.json",
+      "count": 1,
+      "bytes": 79251
     },
     {
-      "file": "texts-11.json",
-      "count": 22,
-      "bytes": 3272607
+      "file": "texts-109-0000.json",
+      "count": 1,
+      "bytes": 39820
+    },
+    {
+      "file": "texts-11-0000.json",
+      "count": 1,
+      "bytes": 277442
+    },
+    {
+      "file": "texts-110-0000.json",
+      "count": 1,
+      "bytes": 1088121
+    },
+    {
+      "file": "texts-111-0000.json",
+      "count": 1,
+      "bytes": 84697
+    },
+    {
+      "file": "texts-112-0000.json",
+      "count": 1,
+      "bytes": 22084
+    },
+    {
+      "file": "texts-113-0000.json",
+      "count": 1,
+      "bytes": 23163
+    },
+    {
+      "file": "texts-114-0000.json",
+      "count": 1,
+      "bytes": 248910
+    },
+    {
+      "file": "texts-115-0000.json",
+      "count": 1,
+      "bytes": 77248
+    },
+    {
+      "file": "texts-116-0000.json",
+      "count": 1,
+      "bytes": 129912
+    },
+    {
+      "file": "texts-117-0000.json",
+      "count": 1,
+      "bytes": 86827
+    },
+    {
+      "file": "texts-118-0000.json",
+      "count": 1,
+      "bytes": 83277
+    },
+    {
+      "file": "texts-119-0000.json",
+      "count": 1,
+      "bytes": 47938
+    },
+    {
+      "file": "texts-12-0000.json",
+      "count": 1,
+      "bytes": 1012504
+    },
+    {
+      "file": "texts-120-0000.json",
+      "count": 1,
+      "bytes": 17329
+    },
+    {
+      "file": "texts-121-0000.json",
+      "count": 1,
+      "bytes": 276927
+    },
+    {
+      "file": "texts-122-0000.json",
+      "count": 1,
+      "bytes": 127193
+    },
+    {
+      "file": "texts-123-0000.json",
+      "count": 1,
+      "bytes": 159224
+    },
+    {
+      "file": "texts-124-0000.json",
+      "count": 1,
+      "bytes": 145118
+    },
+    {
+      "file": "texts-125-0000.json",
+      "count": 1,
+      "bytes": 112143
+    },
+    {
+      "file": "texts-126-0000.json",
+      "count": 1,
+      "bytes": 255666
+    },
+    {
+      "file": "texts-127-0000.json",
+      "count": 1,
+      "bytes": 156437
+    },
+    {
+      "file": "texts-128-0000.json",
+      "count": 1,
+      "bytes": 103172
+    },
+    {
+      "file": "texts-129-0000.json",
+      "count": 1,
+      "bytes": 109487
+    },
+    {
+      "file": "texts-13-0000.json",
+      "count": 1,
+      "bytes": 204720
+    },
+    {
+      "file": "texts-130-0000.json",
+      "count": 1,
+      "bytes": 115084
+    },
+    {
+      "file": "texts-131-0000.json",
+      "count": 1,
+      "bytes": 106655
+    },
+    {
+      "file": "texts-132-0000.json",
+      "count": 1,
+      "bytes": 94861
+    },
+    {
+      "file": "texts-133-0000.json",
+      "count": 1,
+      "bytes": 66045
+    },
+    {
+      "file": "texts-134-0000.json",
+      "count": 1,
+      "bytes": 67184
+    },
+    {
+      "file": "texts-135-0000.json",
+      "count": 1,
+      "bytes": 120243
+    },
+    {
+      "file": "texts-136-0000.json",
+      "count": 1,
+      "bytes": 131123
+    },
+    {
+      "file": "texts-137-0000.json",
+      "count": 1,
+      "bytes": 189056
+    },
+    {
+      "file": "texts-138-0000.json",
+      "count": 1,
+      "bytes": 136128
+    },
+    {
+      "file": "texts-139-0000.json",
+      "count": 1,
+      "bytes": 33356
+    },
+    {
+      "file": "texts-14-0000.json",
+      "count": 1,
+      "bytes": 735705
+    },
+    {
+      "file": "texts-140-0000.json",
+      "count": 1,
+      "bytes": 41394
+    },
+    {
+      "file": "texts-141-0000.json",
+      "count": 1,
+      "bytes": 104835
+    },
+    {
+      "file": "texts-142-0000.json",
+      "count": 1,
+      "bytes": 176822
+    },
+    {
+      "file": "texts-143-0000.json",
+      "count": 1,
+      "bytes": 174150
+    },
+    {
+      "file": "texts-144-0000.json",
+      "count": 1,
+      "bytes": 195322
+    },
+    {
+      "file": "texts-145-0000.json",
+      "count": 1,
+      "bytes": 101150
+    },
+    {
+      "file": "texts-146-0000.json",
+      "count": 1,
+      "bytes": 26594
+    },
+    {
+      "file": "texts-147-0000.json",
+      "count": 1,
+      "bytes": 35094
+    },
+    {
+      "file": "texts-148-0000.json",
+      "count": 1,
+      "bytes": 32693
+    },
+    {
+      "file": "texts-149-0000.json",
+      "count": 1,
+      "bytes": 105680
+    },
+    {
+      "file": "texts-15-0000.json",
+      "count": 1,
+      "bytes": 376581
+    },
+    {
+      "file": "texts-150-0000.json",
+      "count": 1,
+      "bytes": 27713
+    },
+    {
+      "file": "texts-151-0000.json",
+      "count": 1,
+      "bytes": 248718
+    },
+    {
+      "file": "texts-152-0000.json",
+      "count": 1,
+      "bytes": 289323
+    },
+    {
+      "file": "texts-153-0000.json",
+      "count": 1,
+      "bytes": 143848
+    },
+    {
+      "file": "texts-154-0000.json",
+      "count": 1,
+      "bytes": 443032
+    },
+    {
+      "file": "texts-155-0000.json",
+      "count": 1,
+      "bytes": 161098
+    },
+    {
+      "file": "texts-156-0000.json",
+      "count": 1,
+      "bytes": 483104
+    },
+    {
+      "file": "texts-157-0000.json",
+      "count": 1,
+      "bytes": 125263
+    },
+    {
+      "file": "texts-158-0000.json",
+      "count": 1,
+      "bytes": 63398
+    },
+    {
+      "file": "texts-159-0000.json",
+      "count": 1,
+      "bytes": 67711
+    },
+    {
+      "file": "texts-16-0000.json",
+      "count": 1,
+      "bytes": 28813
+    },
+    {
+      "file": "texts-160-0000.json",
+      "count": 1,
+      "bytes": 78565
+    },
+    {
+      "file": "texts-161-0000.json",
+      "count": 1,
+      "bytes": 125617
+    },
+    {
+      "file": "texts-162-0000.json",
+      "count": 1,
+      "bytes": 259953
+    },
+    {
+      "file": "texts-163-0000.json",
+      "count": 1,
+      "bytes": 284722
+    },
+    {
+      "file": "texts-164-0000.json",
+      "count": 1,
+      "bytes": 36898
+    },
+    {
+      "file": "texts-165-0000.json",
+      "count": 1,
+      "bytes": 133149
+    },
+    {
+      "file": "texts-166-0000.json",
+      "count": 1,
+      "bytes": 44564
+    },
+    {
+      "file": "texts-167-0000.json",
+      "count": 1,
+      "bytes": 35591
+    },
+    {
+      "file": "texts-168-0000.json",
+      "count": 1,
+      "bytes": 323203
+    },
+    {
+      "file": "texts-169-0000.json",
+      "count": 1,
+      "bytes": 60252
+    },
+    {
+      "file": "texts-17-0000.json",
+      "count": 1,
+      "bytes": 109721
+    },
+    {
+      "file": "texts-170-0000.json",
+      "count": 1,
+      "bytes": 367274
+    },
+    {
+      "file": "texts-171-0000.json",
+      "count": 1,
+      "bytes": 101803
+    },
+    {
+      "file": "texts-172-0000.json",
+      "count": 1,
+      "bytes": 178892
+    },
+    {
+      "file": "texts-173-0000.json",
+      "count": 1,
+      "bytes": 239203
+    },
+    {
+      "file": "texts-174-0000.json",
+      "count": 1,
+      "bytes": 186692
+    },
+    {
+      "file": "texts-175-0000.json",
+      "count": 1,
+      "bytes": 120691
+    },
+    {
+      "file": "texts-176-0000.json",
+      "count": 1,
+      "bytes": 690067
+    },
+    {
+      "file": "texts-177-0000.json",
+      "count": 1,
+      "bytes": 293761
+    },
+    {
+      "file": "texts-178-0000.json",
+      "count": 1,
+      "bytes": 207555
+    },
+    {
+      "file": "texts-179-0000.json",
+      "count": 1,
+      "bytes": 145625
+    },
+    {
+      "file": "texts-18-0000.json",
+      "count": 1,
+      "bytes": 52838
+    },
+    {
+      "file": "texts-180-0000.json",
+      "count": 1,
+      "bytes": 77171
+    },
+    {
+      "file": "texts-181-0000.json",
+      "count": 1,
+      "bytes": 17697
+    },
+    {
+      "file": "texts-182-0000.json",
+      "count": 1,
+      "bytes": 28649
+    },
+    {
+      "file": "texts-183-0000.json",
+      "count": 1,
+      "bytes": 68786
+    },
+    {
+      "file": "texts-184-0000.json",
+      "count": 1,
+      "bytes": 201112
+    },
+    {
+      "file": "texts-185-0000.json",
+      "count": 1,
+      "bytes": 11798
+    },
+    {
+      "file": "texts-186-0000.json",
+      "count": 1,
+      "bytes": 262974
+    },
+    {
+      "file": "texts-187-0000.json",
+      "count": 1,
+      "bytes": 145630
+    },
+    {
+      "file": "texts-188-0000.json",
+      "count": 1,
+      "bytes": 268989
+    },
+    {
+      "file": "texts-189-0000.json",
+      "count": 1,
+      "bytes": 176368
+    },
+    {
+      "file": "texts-19-0000.json",
+      "count": 1,
+      "bytes": 93634
+    },
+    {
+      "file": "texts-190-0000.json",
+      "count": 1,
+      "bytes": 352747
+    },
+    {
+      "file": "texts-191-0000.json",
+      "count": 1,
+      "bytes": 212083
+    },
+    {
+      "file": "texts-192-0000.json",
+      "count": 1,
+      "bytes": 143069
+    },
+    {
+      "file": "texts-193-0000.json",
+      "count": 1,
+      "bytes": 96781
+    },
+    {
+      "file": "texts-194-0000.json",
+      "count": 1,
+      "bytes": 40041
+    },
+    {
+      "file": "texts-195-0000.json",
+      "count": 1,
+      "bytes": 724425
+    },
+    {
+      "file": "texts-196-0000.json",
+      "count": 1,
+      "bytes": 697196
+    },
+    {
+      "file": "texts-197-0000.json",
+      "count": 1,
+      "bytes": 57721
+    },
+    {
+      "file": "texts-198-0000.json",
+      "count": 1,
+      "bytes": 770775
+    },
+    {
+      "file": "texts-199-0000.json",
+      "count": 1,
+      "bytes": 331574
+    },
+    {
+      "file": "texts-2-0000.json",
+      "count": 1,
+      "bytes": 35848
+    },
+    {
+      "file": "texts-20-0000.json",
+      "count": 1,
+      "bytes": 119198
+    },
+    {
+      "file": "texts-200-0000.json",
+      "count": 1,
+      "bytes": 301897
+    },
+    {
+      "file": "texts-201-0000.json",
+      "count": 1,
+      "bytes": 158441
+    },
+    {
+      "file": "texts-202-0000.json",
+      "count": 1,
+      "bytes": 135354
+    },
+    {
+      "file": "texts-203-0000.json",
+      "count": 1,
+      "bytes": 144904
+    },
+    {
+      "file": "texts-204-0000.json",
+      "count": 1,
+      "bytes": 27506
+    },
+    {
+      "file": "texts-205-0000.json",
+      "count": 1,
+      "bytes": 74573
+    },
+    {
+      "file": "texts-206-0000.json",
+      "count": 1,
+      "bytes": 31329
+    },
+    {
+      "file": "texts-207-0000.json",
+      "count": 1,
+      "bytes": 29896
+    },
+    {
+      "file": "texts-208-0000.json",
+      "count": 1,
+      "bytes": 22101
+    },
+    {
+      "file": "texts-209-0000.json",
+      "count": 1,
+      "bytes": 33724
+    },
+    {
+      "file": "texts-21-0000.json",
+      "count": 1,
+      "bytes": 304089
+    },
+    {
+      "file": "texts-210-0000.json",
+      "count": 1,
+      "bytes": 57798
+    },
+    {
+      "file": "texts-211-0000.json",
+      "count": 1,
+      "bytes": 52605
+    },
+    {
+      "file": "texts-212-0000.json",
+      "count": 1,
+      "bytes": 36172
+    },
+    {
+      "file": "texts-213-0000.json",
+      "count": 1,
+      "bytes": 58229
+    },
+    {
+      "file": "texts-214-0000.json",
+      "count": 1,
+      "bytes": 54315
+    },
+    {
+      "file": "texts-215-0000.json",
+      "count": 1,
+      "bytes": 102553
+    },
+    {
+      "file": "texts-216-0000.json",
+      "count": 1,
+      "bytes": 144737
+    },
+    {
+      "file": "texts-217-0000.json",
+      "count": 1,
+      "bytes": 29777
+    },
+    {
+      "file": "texts-218-0000.json",
+      "count": 1,
+      "bytes": 25855
+    },
+    {
+      "file": "texts-219-0000.json",
+      "count": 1,
+      "bytes": 42753
+    },
+    {
+      "file": "texts-22-0000.json",
+      "count": 1,
+      "bytes": 47348
+    },
+    {
+      "file": "texts-220-0000.json",
+      "count": 1,
+      "bytes": 21754
+    },
+    {
+      "file": "texts-221-0000.json",
+      "count": 1,
+      "bytes": 30795
+    },
+    {
+      "file": "texts-222-0000.json",
+      "count": 1,
+      "bytes": 58752
+    },
+    {
+      "file": "texts-223-0000.json",
+      "count": 1,
+      "bytes": 56701
+    },
+    {
+      "file": "texts-224-0000.json",
+      "count": 1,
+      "bytes": 23488
+    },
+    {
+      "file": "texts-225-0000.json",
+      "count": 1,
+      "bytes": 29805
+    },
+    {
+      "file": "texts-226-0000.json",
+      "count": 1,
+      "bytes": 93125
+    },
+    {
+      "file": "texts-227-0000.json",
+      "count": 1,
+      "bytes": 55933
+    },
+    {
+      "file": "texts-228-0000.json",
+      "count": 1,
+      "bytes": 32348
+    },
+    {
+      "file": "texts-229-0000.json",
+      "count": 1,
+      "bytes": 35444
+    },
+    {
+      "file": "texts-230-0000.json",
+      "count": 1,
+      "bytes": 54859
+    },
+    {
+      "file": "texts-231-0000.json",
+      "count": 1,
+      "bytes": 23612
+    },
+    {
+      "file": "texts-232-0000.json",
+      "count": 1,
+      "bytes": 29266
+    },
+    {
+      "file": "texts-233-0000.json",
+      "count": 1,
+      "bytes": 17965
+    },
+    {
+      "file": "texts-234-0000.json",
+      "count": 1,
+      "bytes": 145018
+    },
+    {
+      "file": "texts-235-0000.json",
+      "count": 1,
+      "bytes": 42657
+    },
+    {
+      "file": "texts-236-0000.json",
+      "count": 1,
+      "bytes": 45166
+    },
+    {
+      "file": "texts-237-0000.json",
+      "count": 1,
+      "bytes": 112602
+    },
+    {
+      "file": "texts-238-0000.json",
+      "count": 1,
+      "bytes": 62239
+    },
+    {
+      "file": "texts-239-0000.json",
+      "count": 1,
+      "bytes": 69905
+    },
+    {
+      "file": "texts-24-0000.json",
+      "count": 1,
+      "bytes": 111428
+    },
+    {
+      "file": "texts-240-0000.json",
+      "count": 1,
+      "bytes": 142880
+    },
+    {
+      "file": "texts-241-0000.json",
+      "count": 1,
+      "bytes": 111860
+    },
+    {
+      "file": "texts-242-0000.json",
+      "count": 1,
+      "bytes": 77651
+    },
+    {
+      "file": "texts-243-0000.json",
+      "count": 1,
+      "bytes": 175205
+    },
+    {
+      "file": "texts-244-0000.json",
+      "count": 1,
+      "bytes": 158312
+    },
+    {
+      "file": "texts-245-0000.json",
+      "count": 1,
+      "bytes": 150935
+    },
+    {
+      "file": "texts-246-0000.json",
+      "count": 1,
+      "bytes": 150174
+    },
+    {
+      "file": "texts-247-0000.json",
+      "count": 1,
+      "bytes": 34593
+    },
+    {
+      "file": "texts-248-0000.json",
+      "count": 1,
+      "bytes": 219326
+    },
+    {
+      "file": "texts-249-0000.json",
+      "count": 1,
+      "bytes": 96532
+    },
+    {
+      "file": "texts-25-0000.json",
+      "count": 1,
+      "bytes": 32899
+    },
+    {
+      "file": "texts-250-0001.json",
+      "count": 1,
+      "bytes": 70285
+    },
+    {
+      "file": "texts-251-0001.json",
+      "count": 1,
+      "bytes": 33684
+    },
+    {
+      "file": "texts-252-0001.json",
+      "count": 1,
+      "bytes": 17716
+    },
+    {
+      "file": "texts-253-0001.json",
+      "count": 1,
+      "bytes": 184475
+    },
+    {
+      "file": "texts-254-0001.json",
+      "count": 1,
+      "bytes": 82551
+    },
+    {
+      "file": "texts-255-0001.json",
+      "count": 1,
+      "bytes": 675014
+    },
+    {
+      "file": "texts-256-0001.json",
+      "count": 1,
+      "bytes": 118129
+    },
+    {
+      "file": "texts-257-0001.json",
+      "count": 1,
+      "bytes": 150634
+    },
+    {
+      "file": "texts-258-0001.json",
+      "count": 1,
+      "bytes": 155271
+    },
+    {
+      "file": "texts-259-0001.json",
+      "count": 1,
+      "bytes": 131871
+    },
+    {
+      "file": "texts-26-0000.json",
+      "count": 1,
+      "bytes": 519765
+    },
+    {
+      "file": "texts-260-0001.json",
+      "count": 1,
+      "bytes": 146246
+    },
+    {
+      "file": "texts-261-0001.json",
+      "count": 1,
+      "bytes": 43951
+    },
+    {
+      "file": "texts-262-0001.json",
+      "count": 1,
+      "bytes": 495658
+    },
+    {
+      "file": "texts-263-0001.json",
+      "count": 1,
+      "bytes": 114837
+    },
+    {
+      "file": "texts-264-0001.json",
+      "count": 1,
+      "bytes": 86283
+    },
+    {
+      "file": "texts-265-0001.json",
+      "count": 1,
+      "bytes": 24478
+    },
+    {
+      "file": "texts-266-0001.json",
+      "count": 1,
+      "bytes": 171598
+    },
+    {
+      "file": "texts-267-0001.json",
+      "count": 1,
+      "bytes": 95964
+    },
+    {
+      "file": "texts-268-0001.json",
+      "count": 1,
+      "bytes": 244306
+    },
+    {
+      "file": "texts-269-0001.json",
+      "count": 1,
+      "bytes": 79228
+    },
+    {
+      "file": "texts-27-0000.json",
+      "count": 1,
+      "bytes": 625308
+    },
+    {
+      "file": "texts-270-0001.json",
+      "count": 1,
+      "bytes": 70233
+    },
+    {
+      "file": "texts-271-0001.json",
+      "count": 1,
+      "bytes": 180016
+    },
+    {
+      "file": "texts-272-0001.json",
+      "count": 1,
+      "bytes": 249053
+    },
+    {
+      "file": "texts-273-0001.json",
+      "count": 1,
+      "bytes": 149392
+    },
+    {
+      "file": "texts-274-0001.json",
+      "count": 1,
+      "bytes": 115260
+    },
+    {
+      "file": "texts-275-0001.json",
+      "count": 1,
+      "bytes": 215048
+    },
+    {
+      "file": "texts-276-0001.json",
+      "count": 1,
+      "bytes": 238160
+    },
+    {
+      "file": "texts-277-0001.json",
+      "count": 1,
+      "bytes": 191386
+    },
+    {
+      "file": "texts-278-0001.json",
+      "count": 1,
+      "bytes": 31126
+    },
+    {
+      "file": "texts-279-0001.json",
+      "count": 1,
+      "bytes": 158719
+    },
+    {
+      "file": "texts-28-0000.json",
+      "count": 1,
+      "bytes": 86608
+    },
+    {
+      "file": "texts-280-0001.json",
+      "count": 1,
+      "bytes": 130859
+    },
+    {
+      "file": "texts-281-0001.json",
+      "count": 1,
+      "bytes": 90399
+    },
+    {
+      "file": "texts-282-0001.json",
+      "count": 1,
+      "bytes": 126246
+    },
+    {
+      "file": "texts-283-0001.json",
+      "count": 1,
+      "bytes": 215644
+    },
+    {
+      "file": "texts-284-0001.json",
+      "count": 1,
+      "bytes": 212062
+    },
+    {
+      "file": "texts-285-0001.json",
+      "count": 1,
+      "bytes": 189969
+    },
+    {
+      "file": "texts-286-0001.json",
+      "count": 1,
+      "bytes": 159589
+    },
+    {
+      "file": "texts-287-0001.json",
+      "count": 1,
+      "bytes": 155208
+    },
+    {
+      "file": "texts-289-0001.json",
+      "count": 1,
+      "bytes": 153275
+    },
+    {
+      "file": "texts-29-0000.json",
+      "count": 1,
+      "bytes": 474702
+    },
+    {
+      "file": "texts-3-0000.json",
+      "count": 1,
+      "bytes": 207090
+    },
+    {
+      "file": "texts-30-0000.json",
+      "count": 1,
+      "bytes": 389554
+    },
+    {
+      "file": "texts-31-0000.json",
+      "count": 1,
+      "bytes": 13645
+    },
+    {
+      "file": "texts-32-0000.json",
+      "count": 1,
+      "bytes": 116163
+    },
+    {
+      "file": "texts-33-0000.json",
+      "count": 1,
+      "bytes": 141008
+    },
+    {
+      "file": "texts-34-0000.json",
+      "count": 1,
+      "bytes": 339845
+    },
+    {
+      "file": "texts-35-0000.json",
+      "count": 1,
+      "bytes": 927180
+    },
+    {
+      "file": "texts-36-0000.json",
+      "count": 1,
+      "bytes": 37175
+    },
+    {
+      "file": "texts-37-0000.json",
+      "count": 1,
+      "bytes": 662105
+    },
+    {
+      "file": "texts-38-0000.json",
+      "count": 1,
+      "bytes": 324700
+    },
+    {
+      "file": "texts-39-0000.json",
+      "count": 1,
+      "bytes": 34963
+    },
+    {
+      "file": "texts-4-0000.json",
+      "count": 1,
+      "bytes": 11451
+    },
+    {
+      "file": "texts-40-0000.json",
+      "count": 1,
+      "bytes": 67701
+    },
+    {
+      "file": "texts-41-0000.json",
+      "count": 1,
+      "bytes": 1117060
+    },
+    {
+      "file": "texts-42-0000.json",
+      "count": 1,
+      "bytes": 1059765
+    },
+    {
+      "file": "texts-43-0000.json",
+      "count": 1,
+      "bytes": 307806
+    },
+    {
+      "file": "texts-44-0000.json",
+      "count": 1,
+      "bytes": 52096
+    },
+    {
+      "file": "texts-45-0000.json",
+      "count": 1,
+      "bytes": 40418
+    },
+    {
+      "file": "texts-46-0000.json",
+      "count": 1,
+      "bytes": 38203
+    },
+    {
+      "file": "texts-47-0000.json",
+      "count": 1,
+      "bytes": 391496
+    },
+    {
+      "file": "texts-48-0000.json",
+      "count": 1,
+      "bytes": 70206
+    },
+    {
+      "file": "texts-49-0000.json",
+      "count": 1,
+      "bytes": 38928
+    },
+    {
+      "file": "texts-5-0000.json",
+      "count": 1,
+      "bytes": 194697
+    },
+    {
+      "file": "texts-50-0000.json",
+      "count": 1,
+      "bytes": 30867
+    },
+    {
+      "file": "texts-51-0000.json",
+      "count": 1,
+      "bytes": 47501
+    },
+    {
+      "file": "texts-52-0000.json",
+      "count": 1,
+      "bytes": 14538
+    },
+    {
+      "file": "texts-53-0000.json",
+      "count": 1,
+      "bytes": 28485
+    },
+    {
+      "file": "texts-54-0000.json",
+      "count": 1,
+      "bytes": 819930
+    },
+    {
+      "file": "texts-55-0000.json",
+      "count": 1,
+      "bytes": 44253
+    },
+    {
+      "file": "texts-56-0000.json",
+      "count": 1,
+      "bytes": 49456
+    },
+    {
+      "file": "texts-57-0000.json",
+      "count": 1,
+      "bytes": 96709
+    },
+    {
+      "file": "texts-58-0000.json",
+      "count": 1,
+      "bytes": 316778
+    },
+    {
+      "file": "texts-59-0000.json",
+      "count": 1,
+      "bytes": 238708
+    },
+    {
+      "file": "texts-6-0000.json",
+      "count": 1,
+      "bytes": 236661
+    },
+    {
+      "file": "texts-60-0000.json",
+      "count": 1,
+      "bytes": 381576
+    },
+    {
+      "file": "texts-61-0000.json",
+      "count": 1,
+      "bytes": 511506
+    },
+    {
+      "file": "texts-62-0000.json",
+      "count": 1,
+      "bytes": 331597
+    },
+    {
+      "file": "texts-63-0000.json",
+      "count": 1,
+      "bytes": 132140
+    },
+    {
+      "file": "texts-64-0000.json",
+      "count": 1,
+      "bytes": 244846
+    },
+    {
+      "file": "texts-65-0000.json",
+      "count": 1,
+      "bytes": 481276
+    },
+    {
+      "file": "texts-66-0000.json",
+      "count": 1,
+      "bytes": 274475
+    },
+    {
+      "file": "texts-67-0000.json",
+      "count": 1,
+      "bytes": 1071767
+    },
+    {
+      "file": "texts-68-0000.json",
+      "count": 1,
+      "bytes": 46707
+    },
+    {
+      "file": "texts-69-0000.json",
+      "count": 1,
+      "bytes": 1050753
+    },
+    {
+      "file": "texts-7-0000.json",
+      "count": 1,
+      "bytes": 61919
+    },
+    {
+      "file": "texts-70-0000.json",
+      "count": 1,
+      "bytes": 1049652
+    },
+    {
+      "file": "texts-71-0000.json",
+      "count": 1,
+      "bytes": 92084
+    },
+    {
+      "file": "texts-72-0000.json",
+      "count": 1,
+      "bytes": 28307
+    },
+    {
+      "file": "texts-73-0000.json",
+      "count": 1,
+      "bytes": 44911
+    },
+    {
+      "file": "texts-74-0000.json",
+      "count": 1,
+      "bytes": 12927
+    },
+    {
+      "file": "texts-75-0000.json",
+      "count": 1,
+      "bytes": 30365
+    },
+    {
+      "file": "texts-76-0000.json",
+      "count": 1,
+      "bytes": 281329
+    },
+    {
+      "file": "texts-77-0000.json",
+      "count": 1,
+      "bytes": 350528
+    },
+    {
+      "file": "texts-78-0000.json",
+      "count": 1,
+      "bytes": 116308
+    },
+    {
+      "file": "texts-79-0000.json",
+      "count": 1,
+      "bytes": 342417
+    },
+    {
+      "file": "texts-8-0000.json",
+      "count": 1,
+      "bytes": 26275
+    },
+    {
+      "file": "texts-80-0000.json",
+      "count": 1,
+      "bytes": 196320
+    },
+    {
+      "file": "texts-81-0000.json",
+      "count": 1,
+      "bytes": 72949
+    },
+    {
+      "file": "texts-82-0000.json",
+      "count": 1,
+      "bytes": 88911
+    },
+    {
+      "file": "texts-83-0000.json",
+      "count": 1,
+      "bytes": 308434
+    },
+    {
+      "file": "texts-84-0000.json",
+      "count": 1,
+      "bytes": 156367
+    },
+    {
+      "file": "texts-85-0000.json",
+      "count": 1,
+      "bytes": 294394
+    },
+    {
+      "file": "texts-86-0000.json",
+      "count": 1,
+      "bytes": 162073
+    },
+    {
+      "file": "texts-87-0000.json",
+      "count": 1,
+      "bytes": 127620
+    },
+    {
+      "file": "texts-88-0000.json",
+      "count": 1,
+      "bytes": 109541
+    },
+    {
+      "file": "texts-89-0000.json",
+      "count": 1,
+      "bytes": 834443
+    },
+    {
+      "file": "texts-9-0000.json",
+      "count": 1,
+      "bytes": 185151
+    },
+    {
+      "file": "texts-90-0000.json",
+      "count": 1,
+      "bytes": 70062
+    },
+    {
+      "file": "texts-91-0000.json",
+      "count": 1,
+      "bytes": 39950
+    },
+    {
+      "file": "texts-92-0000.json",
+      "count": 1,
+      "bytes": 28548
+    },
+    {
+      "file": "texts-93-0000.json",
+      "count": 1,
+      "bytes": 102495
+    },
+    {
+      "file": "texts-94-0000.json",
+      "count": 1,
+      "bytes": 124011
+    },
+    {
+      "file": "texts-95-0000.json",
+      "count": 1,
+      "bytes": 139757
+    },
+    {
+      "file": "texts-96-0000.json",
+      "count": 1,
+      "bytes": 59149
+    },
+    {
+      "file": "texts-97-0000.json",
+      "count": 1,
+      "bytes": 41036
+    },
+    {
+      "file": "texts-98-0000.json",
+      "count": 1,
+      "bytes": 37653
+    },
+    {
+      "file": "texts-99-0000.json",
+      "count": 1,
+      "bytes": 68612
     }
-  ],
-  "record_to_shard": {
-    "1": 0,
-    "10": 0,
-    "100": 0,
-    "101": 0,
-    "102": 0,
-    "103": 0,
-    "104": 0,
-    "105": 0,
-    "106": 0,
-    "107": 0,
-    "108": 0,
-    "109": 0,
-    "11": 0,
-    "110": 0,
-    "111": 0,
-    "112": 0,
-    "113": 0,
-    "114": 0,
-    "115": 0,
-    "116": 0,
-    "117": 0,
-    "118": 0,
-    "119": 0,
-    "12": 0,
-    "120": 0,
-    "121": 0,
-    "122": 0,
-    "123": 1,
-    "124": 1,
-    "125": 1,
-    "126": 1,
-    "127": 1,
-    "128": 1,
-    "129": 1,
-    "13": 1,
-    "130": 1,
-    "131": 1,
-    "132": 1,
-    "133": 1,
-    "134": 1,
-    "135": 1,
-    "136": 1,
-    "137": 1,
-    "138": 1,
-    "139": 1,
-    "14": 1,
-    "140": 1,
-    "141": 1,
-    "142": 1,
-    "143": 1,
-    "144": 1,
-    "145": 1,
-    "146": 1,
-    "147": 1,
-    "148": 1,
-    "149": 1,
-    "15": 1,
-    "150": 1,
-    "151": 2,
-    "152": 2,
-    "153": 2,
-    "154": 2,
-    "155": 2,
-    "156": 2,
-    "157": 2,
-    "158": 2,
-    "159": 2,
-    "16": 2,
-    "160": 2,
-    "161": 2,
-    "162": 2,
-    "163": 2,
-    "164": 2,
-    "165": 2,
-    "166": 2,
-    "167": 2,
-    "168": 2,
-    "169": 2,
-    "17": 2,
-    "170": 2,
-    "171": 2,
-    "172": 2,
-    "173": 2,
-    "174": 3,
-    "175": 3,
-    "176": 3,
-    "177": 3,
-    "178": 3,
-    "179": 3,
-    "18": 3,
-    "180": 3,
-    "181": 3,
-    "182": 3,
-    "183": 3,
-    "184": 3,
-    "185": 3,
-    "186": 3,
-    "187": 3,
-    "188": 3,
-    "189": 3,
-    "19": 3,
-    "190": 3,
-    "191": 3,
-    "192": 3,
-    "193": 3,
-    "194": 3,
-    "195": 4,
-    "196": 4,
-    "197": 4,
-    "198": 4,
-    "199": 4,
-    "2": 4,
-    "20": 4,
-    "200": 4,
-    "201": 4,
-    "202": 4,
-    "203": 4,
-    "204": 4,
-    "205": 4,
-    "206": 4,
-    "207": 4,
-    "208": 4,
-    "209": 4,
-    "21": 4,
-    "210": 4,
-    "211": 4,
-    "212": 4,
-    "213": 4,
-    "214": 4,
-    "215": 4,
-    "216": 4,
-    "217": 4,
-    "218": 4,
-    "219": 5,
-    "22": 5,
-    "220": 5,
-    "221": 5,
-    "222": 5,
-    "223": 5,
-    "224": 5,
-    "225": 5,
-    "226": 5,
-    "227": 5,
-    "228": 5,
-    "229": 5,
-    "230": 5,
-    "231": 5,
-    "232": 5,
-    "233": 5,
-    "234": 5,
-    "235": 5,
-    "236": 5,
-    "237": 5,
-    "238": 5,
-    "239": 5,
-    "24": 5,
-    "240": 5,
-    "241": 5,
-    "242": 5,
-    "243": 5,
-    "244": 5,
-    "245": 5,
-    "246": 5,
-    "247": 5,
-    "248": 5,
-    "249": 5,
-    "25": 5,
-    "250": 5,
-    "251": 5,
-    "252": 5,
-    "253": 5,
-    "254": 5,
-    "255": 5,
-    "256": 5,
-    "257": 5,
-    "258": 5,
-    "259": 5,
-    "26": 6,
-    "260": 6,
-    "261": 6,
-    "262": 6,
-    "263": 6,
-    "264": 6,
-    "265": 6,
-    "266": 6,
-    "267": 6,
-    "268": 6,
-    "269": 6,
-    "27": 6,
-    "270": 6,
-    "271": 6,
-    "272": 6,
-    "273": 6,
-    "274": 6,
-    "275": 6,
-    "276": 6,
-    "277": 6,
-    "278": 6,
-    "279": 6,
-    "28": 6,
-    "280": 6,
-    "281": 6,
-    "282": 7,
-    "283": 7,
-    "284": 7,
-    "285": 7,
-    "286": 7,
-    "287": 7,
-    "289": 7,
-    "29": 7,
-    "3": 7,
-    "30": 7,
-    "31": 7,
-    "32": 7,
-    "33": 7,
-    "34": 7,
-    "35": 7,
-    "36": 7,
-    "37": 7,
-    "38": 8,
-    "39": 8,
-    "4": 8,
-    "40": 8,
-    "41": 8,
-    "42": 8,
-    "43": 8,
-    "44": 8,
-    "45": 8,
-    "46": 8,
-    "47": 8,
-    "48": 8,
-    "49": 8,
-    "5": 8,
-    "50": 8,
-    "51": 8,
-    "52": 8,
-    "53": 8,
-    "54": 9,
-    "55": 9,
-    "56": 9,
-    "57": 9,
-    "58": 9,
-    "59": 9,
-    "6": 9,
-    "60": 9,
-    "61": 9,
-    "62": 9,
-    "63": 9,
-    "64": 9,
-    "65": 9,
-    "66": 9,
-    "67": 10,
-    "68": 10,
-    "69": 10,
-    "7": 10,
-    "70": 10,
-    "71": 10,
-    "72": 10,
-    "73": 10,
-    "74": 10,
-    "75": 10,
-    "76": 10,
-    "77": 10,
-    "78": 10,
-    "79": 10,
-    "8": 11,
-    "80": 11,
-    "81": 11,
-    "82": 11,
-    "83": 11,
-    "84": 11,
-    "85": 11,
-    "86": 11,
-    "87": 11,
-    "88": 11,
-    "89": 11,
-    "9": 11,
-    "90": 11,
-    "91": 11,
-    "92": 11,
-    "93": 11,
-    "94": 11,
-    "95": 11,
-    "96": 11,
-    "97": 11,
-    "98": 11,
-    "99": 11
-  }
+  ]
 }
