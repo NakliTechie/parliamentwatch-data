@@ -1103,8 +1103,8 @@
       "billIntroducedBy": null,
       "billIntroducedDate": "2026-07-29 00:00:00.0",
       "billIntroducedFile": "https://sansad.in/getFile/BillsTexts/LSBillTexts/Asintroduced/as intro7292026123713PM.pdf?source=legislation",
-      "billPassedInLSDate": null,
-      "billPassedInLSFile": null,
+      "billPassedInLSDate": "2026-07-31 00:00:00.0",
+      "billPassedInLSFile": "https://sansad.in/getFile/BillsTexts/LSBillTexts/PassedLoksabha/As Passed731202633814PM.pdf?source=legislation",
       "billPassedInRSDate": null,
       "billPassedInRSFile": null,
       "billPassedInBothHousesFile": null,
@@ -1117,7 +1117,7 @@
       "billAssentedDate": null,
       "billGazettedFile": null,
       "billSynopsisFile": null,
-      "status": "Pending",
+      "status": "Passed",
       "compositeId": "140_2026_L"
     },
     {
@@ -1145,7 +1145,7 @@
       "billAssentedDate": null,
       "billGazettedFile": null,
       "billSynopsisFile": null,
-      "status": null,
+      "status": "Passed",
       "compositeId": "139_2026_L"
     },
     {
@@ -1173,7 +1173,7 @@
       "billAssentedDate": null,
       "billGazettedFile": null,
       "billSynopsisFile": null,
-      "status": null,
+      "status": "Pending",
       "compositeId": "128_2026_L"
     },
     {
