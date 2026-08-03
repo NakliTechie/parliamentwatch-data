@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-08-03T08:52:19Z",
+  "scraped_at": "2026-08-03T10:15:03Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "shard_size": 1000,
   "totals": {
-    "bills": 9920,
-    "with_canonical_pdf": 7501,
-    "with_text": 7323
+    "bills": 9922,
+    "with_canonical_pdf": 7503,
+    "with_text": 7325
   },
   "shards": [
     {
@@ -65,7 +65,7 @@
     },
     {
       "file": "index-09.json",
-      "count": 920,
+      "count": 922,
       "newest_billYear": 1964,
       "oldest_billYear": 1952
     }
