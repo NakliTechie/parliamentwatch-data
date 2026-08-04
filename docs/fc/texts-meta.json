@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 803,
-    "shards": 803,
+    "records_with_text": 805,
+    "shards": 805,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 101062,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 803,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shard_stride": 250,
   "shards": [
@@ -4009,6 +4009,16 @@
       "file": "texts-pac-LS18-51-0000.json",
       "count": 1,
       "bytes": 103058
+    },
+    {
+      "file": "texts-pac-LS18-52-0000.json",
+      "count": 1,
+      "bytes": 70595
+    },
+    {
+      "file": "texts-pac-LS18-53-0000.json",
+      "count": 1,
+      "bytes": 32731
     },
     {
       "file": "texts-pac-LS18-6-0000.json",
