@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-08-04T07:53:54Z",
+  "scraped_at": "2026-08-04T09:19:12Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
-    "bills": 9922,
-    "with_intro_pdf": 7474,
-    "with_canonical_pdf": 7503,
-    "with_text": 7325,
+    "bills": 9924,
+    "with_intro_pdf": 7476,
+    "with_canonical_pdf": 7505,
+    "with_text": 7327,
     "became_law": 3446,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -14,8 +14,8 @@
   "by_status": {
     "Lapsed": 4616,
     "Assented": 3393,
-    "Pending": 709,
-    "(null)": 394,
+    "Pending": 710,
+    "(null)": 395,
     "Withdrawn": 363,
     "Removed": 222,
     "Passed": 172,
@@ -23,7 +23,7 @@
   },
   "by_type": {
     "Private Member": 5495,
-    "Government": 4426,
+    "Government": 4428,
     "(null)": 1
   },
   "year_range": {
@@ -3628,6 +3628,9 @@
     "149_2025_L": {
       "bundled": true
     },
+    "149_2026_L": {
+      "url": "text/149_2026_L.txt"
+    },
     "14_1953_L": {
       "bundled": true
     },
@@ -3789,6 +3792,9 @@
     },
     "150_2025_L": {
       "bundled": true
+    },
+    "150_2026_L": {
+      "url": "text/150_2026_L.txt"
     },
     "151_1977_L": {
       "bundled": true
