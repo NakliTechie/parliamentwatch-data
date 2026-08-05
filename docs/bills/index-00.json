@@ -713,8 +713,8 @@
       "billIntroducedFile": "https://sansad.in/getFile/BillsTexts/RSBillTexts/Asintroduced/e728202624419PM.pdf?source=legislation",
       "billPassedInLSDate": null,
       "billPassedInLSFile": null,
-      "billPassedInRSDate": null,
-      "billPassedInRSFile": null,
+      "billPassedInRSDate": "2026-08-03 00:00:00.0",
+      "billPassedInRSFile": "https://sansad.in/getFile/BillsTexts/RSBillTexts/PassedRajyaSabha/THE MICRO, SMALL AND MEDIUM ENTERPRISES DEVELOPMEN?source=legislation",
       "billPassedInBothHousesFile": null,
       "errataFile": "https://sansad.in/getFile/BillsTexts/RSBillTexts/Errata/ee728202624347PM.pdf?source=legislation",
       "referredToCommitteeDate": null,
@@ -725,7 +725,7 @@
       "billAssentedDate": null,
       "billGazettedFile": null,
       "billSynopsisFile": null,
-      "status": "Pending",
+      "status": "Passed",
       "compositeId": "LXXII_2026_R"
     },
     {
@@ -1217,7 +1217,7 @@
       "billIntroducedFile": "https://sansad.in/getFile/BillsTexts/LSBillTexts/Asintroduced/as intro7292026123713PM.pdf?source=legislation",
       "billPassedInLSDate": "2026-07-31 00:00:00.0",
       "billPassedInLSFile": "https://sansad.in/getFile/BillsTexts/LSBillTexts/PassedLoksabha/As Passed731202633814PM.pdf?source=legislation",
-      "billPassedInRSDate": null,
+      "billPassedInRSDate": "2026-08-04 00:00:00.0",
       "billPassedInRSFile": null,
       "billPassedInBothHousesFile": null,
       "errataFile": null,
