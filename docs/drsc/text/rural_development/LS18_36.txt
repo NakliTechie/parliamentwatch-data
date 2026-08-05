@@ -1,0 +1,1653 @@
+ 
+ 
+STANDING COMMITTEE ON RURAL DEVELOPMENT AND PANCHAYATI RAJ 
+(2025-2026) 
+   
+ 
+       EIGHTEENTH LOK SABHA 
+ 
+ 
+ 
+MINISTRY OF PANCHAYATI RAJ 
+ 
+ 
+ 
+ 
+SURVEY OF VILLAGES ABADI AND MAPPING WITH IMPROVISED TECHNOLOGY 
+IN VILLAGE AREAS (SVAMITVA) SCHEME 
+ 
+THIRTY-SIX REPORT 
+ 
+ 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT 
+NEW DELHI 
+36 
+
+
+ii 
+ 
+THIRTY-SIX REPORT 
+ 
+STANDING COMMITTEE ON RURAL DEVELOPMENT AND PANCHAYATI RAJ 
+(2025-2026) 
+ 
+(EIGHTEENTH LOK SABHA) 
+ 
+ 
+MINISTRY OF PANCHAYATI RAJ 
+ 
+ 
+ 
+SURVEY OF VILLAGES ABADI AND MAPPING WITH IMPROVISED TECHNOLOGY 
+IN VILLAGE AREAS (SVAMITVA) SCHEME 
+ 
+Presented to Lok Sabha on 05.08.2026 
+Laid in Rajya Sabha on 05.08.2026 
+ 
+ 
+ 
+LOK SABHA SECRETARIAT 
+NEW DELHI 
+August, 2026/Shraavana, 1948 (Saka) 
+  
+
+
+iii 
+ 
+CRD No. 227 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+. 
+ 
+ 
+ 
+ 
+ 
+ 
+Price: Rs 
+ 
+ 
+ 
+© 2026 BY LOK SABHA SECRETARIAT 
+Published under Rule 382 of the Rules of Procedure and Conduct of Business in Lok Sabha (Seventeenth 
+Edition) and Printed by __________________. 
+ 
+
+ 
+ 
+CONTENTS 
+Page No. 
+Composition of the Committee (2024-2025) ii 
+Composition of the Committee (2025-2026) ii 
+Introduction  iii  
+ 
+THIRTY-SIX REPORT 
+PART I 
+NARRATION ANALYSIS 
+I.  Introduction 1 
+II.  Rationale and Need for the Scheme 1 
+III.  Objectives of the Scheme 2 
+IV.  Coverage of the Scheme 2 
+V.  Technological Architecture of the Scheme 3 
+VI.  Establishment of Continuous Operating Reference System (CORS) 
+Network 
+3 
+VII.  Large Scale Mapping using Drone Technology 5 
+VIII.  Feature Extraction and GIS Database Creation 5 
+IX.  Spatial Planning and Digital Platforms 5 
+X.  Implementation Framework 6 
+XI.  Scheme Components and Deliverables 8 
+XII.  Institutional Mechanism 9 
+XIII.  National Steering Committee (NSC) 9 
+XIV.  National Programme Management Unit (NPMU) 10 
+XV.  State Steering Committee (SSC) 10 
+XVI.  State Programme Management Unit (SPMU) 10 
+XVII.  District Monitoring and Review Committee (DMRC) 10 
+XVIII.  Panchayat Monitoring Committee (PMC) 10 
+XIX.  Stakeholders: Roles and Responsibilities 12 
+XX.  Financial Architecture 13 
+XXI.  Monitoring and Evaluation Framework 14 
+XXII.  Progress of Implementation 15 
+XXIII.  Outcomes and Achievements 17 
+XXIV.  Impact Evaluation 18 
+XXV.  International Recognition 19 
+ Part - II 
+Observations/Recommendations 
+ 
+20 
+ANNEXURES  
+I Minutes of the Twenty-Fourth sitting of the Committee held on 04 June, 
+2026. 
+29 
+II Minutes of the Twenty-Fifth sitting of the Committee held 22 June, 2026 32 
+III *Extracts of the Minutes of the Twenty-Eighth sitting of the Committee held 
+29 June, 2026 
+35 
+ 
+* Not attached. 
+  
+
+ii 
+ 
+COMPOSITION OF THE STANDING COMMITTEE ON RURAL DEVELOPMENT AND 
+PANCHAYATI RAJ (2025-2026) 
+ 
+Shri Saptagiri Sankar Ulaka  -- Chairperson 
+Lok Sabha Members 
+ 
+2. Shri Bhumare Sandipanrao Asaram  
+3. Shri Sudip Bandyopadhyay 
+4. Shri Raju Bista 
+5. Shri Vijay Kumar Dubey 
+6. Dr. Sanjay Jaiswal 
+7. Shri Bhajan Lal Jatav 
+8. Dr. Mohammad Jawed 
+9. Shri Jugal Kishore 
+10. Dr. D. Ravi Kumar 
+11. Shri Naba Charan Majhi 
+12. Shri Imran Masood 
+13. Shri Janardan Mishra 
+14. Shri Kota Srinivasa Poojary 
+15. Shri K. Radhakrishnan 
+16. Shri Ramashankar Vidharthi Rajbhar 
+17. Shri Omprakash Bhupalsinh alias Pavan Rajenimbalkar 
+18. Shri Parshottambhai Rupala 
+19. Shri Devendra Singh alias Bhole Singh 
+20. Shri Ganesh Singh 
+21. Shri Vivek Thakur 
+ 
+Rajya Sabha Members 
+ 
+22. Smt. Geeta alias Chandraprabha 
+23. Dr. M. Dhanapal 
+24. Shri Samirul Islam 
+25. Dr. Kavita Patidar 
+26. Smt. Rajathi 
+27. Shri Nagendra Ray 
+28. Shri Sant Balbir Singh 
+29. Smt. P.T. Usha 
+30. Shri Karamvir Singh Boudh 
+31. Shri Baidyanath Ram 
+Secretariat 
+1. Shri D. R. Shekhar  - Additional Secretary 
+2. Shri V.K. Shailon   - Director 
+3. Smt Rashmi Roy   - Deputy Secretary 
+4. Shri Sushil Kumar   - Under Secretary 
+ 
+
+iii 
+ 
+INTRODUCTION 
+I, the Chairperson of the Standing Committee on Rural Development and 
+Panchayati Raj (2025-26) having been authorised by the Committee to submit the 
+Report on their behalf, present the Thirty-Six Report on ‘Survey of Villages Abadi and 
+Mapping with Improvised Technology in Village Areas (SVAMITVA) Scheme’ of the 
+Ministry of Panchayati Raj.  
+2.  The Committee held briefing by the representatives of the Ministry of 
+Panchayati Raj (MoPR), Ministry of Electronics and Information Technology, and 
+Ministry of Science & Technology (Department of Science & Technology) on 4 June, 
+2026. 
+3.  The Committee took further briefing by the representatives of the Ministry of 
+Panchayati Raj, Ministry of Electronics and Information Technology, and Ministry of 
+Science & Technology (Department of Science & Technology) on 22 June, 2026. 
+4. The Report was considered and adopted by the Committee at their sitting held 
+on 29 July, 2026. 
+5.  The Committee wish to express their thanks to the officials of the Ministry of 
+Panchayati Raj, Ministry of Electronics and Information Technology, and Ministry of 
+Science & Technology (Department of Science & Technology) for placing before them 
+the requisite material and their considered views in connection with the examination 
+of the subject.  
+6. The Committee would also like to place on record their deep sense of 
+appreciation for the invaluable assistance rendered to them by the officials of Lok 
+Sabha Secretariat attached to the Committee. 
+ 
+ 
+NEW DELHI 
+03 August, 2026 
+12 Shraavana, 1948 (Saka) 
+SAPTAGIRI SANKAR ULAKA  
+Chairperson 
+Standing Committee on Rural Development & 
+Panchayati Raj 
+
+1 
+ 
+ 
+THIRTY-SIXTH REPORT 
+“SURVEY OF VILLAGES ABADI AND MAPPING WITH IMPROVISED 
+TECHNOLOGY IN VILLAGE AREAS (SVAMITVA) SCHEME” 
+PART – I  
+NARRATION ANALYSIS  
+I INTRODUCTION 
+1.1 The Government of India has decided to implement the Central Sector scheme 
+“SVAMITVA”. The Scheme aims to provide an integrated property validation solution 
+for rural India. The demarcation of abadi areas (the abadi area includes inhabitant 
+land, inhabited areas contiguous to Abadi and wadis/basties in rural areas) would be 
+done using Drone Surveying technology, with the collaborative efforts of the Ministry 
+of Panchayati Raj, State Panchayati Raj Department, State Revenue Departments 
+and Survey of India. 
+1.2 This would provide the ‘Record of Rights’ to village household owners 
+possessing houses in inhabited rural areas in villages which, in turn, would enable 
+them to use their property as a financial asset for taking loans and other financial 
+benefits from Banks. Further, this would also enable updation of property and asset 
+register to strengthen tax collection and demand assessment process of Gram 
+Panchayats in States where Property tax is devolved to the Gram Panchayats. 
+1.3 Apart from demarcation of individual rural property, other Gram Panchayat and 
+community assets like village roads, ponds, canals, open spaces, school, Anganwadi, 
+Health sub-centres, etc. would also be surveyed and GIS maps would be created. 
+Further, these GIS maps and spatial database would also help in preparation of 
+accurate work estimates for various works undertaken by Gram Panchayats and other 
+Departments of State Government. These can also be used to prepare better-quality 
+Gram Panchayat Development Plan (GPDP). 
+1.4 SVAMITVA Scheme is a Central Sector Scheme of the Ministry of Panchayati 
+Raj that aims to provide ‘Record of rights’ to village household owners possessing 
+houses in inhabited rural areas in villages with the issuance of Property Cards to 
+property owners. As on date, Drone Survey has been completed for about 3.30 lakh 
+village abadi areas out of targeted 3.38 lakh villages. 
+II RATIONALE AND NEED FOR THE SCHEME 
+1.5 Survey of rural land in India for Settlement and record of rights had last been 
+completed many decades back and moreover, ABADI (inhabited) area of villages were 
+not surveyed/mapped in most States. Hence, in the absence of a legal document, the 
+owner of the property in the rural habitations are not able to leverage their own property 
+as a financial asset acceptable by the banks for the purpose of providing loans and 
+other financial assistance.  In order to provide the legal right of the property to the 
+
+2 
+ 
+household owner in a transparent and cost-effective manner, there is a need of latest 
+Drone Technology and Continuously Operating Reference Station (CORS) technology 
+for capturing images. 
+1.6 The Survey of India has evolved standard operating procedures for acquiring 
+very high-resolution aerial images and preparing very large-scale maps at 1:500 scale 
+using Drones. The high resolution and accurate image base maps have facilitated 
+creation of the most durable record of property holdings in these areas with no legacy 
+revenue records. Such accurate image base maps provide a clear demarcation of land 
+holdings in a very short frame of time compared to on ground physical measurement 
+and mapping of the land parcels. Further, these maps are free from measurement 
+errors to a very large extent, which is not the case with physical on ground 
+measurements. 
+1.7 Such maps provide a visual aid to the landowners as well as to the revenue 
+officials for identifying and resolving any property dispute and are also an invaluable 
+tool for local level planning. 
+1.8 In rural India, a large number of properties in abadi (inhabited village) areas 
+lack clear ownership records leading to disputes, limited access to institutional credit 
+and challenges in property taxation and planning. To address this long-standing issue, 
+the Government of India launched the SVAMITVA Scheme. 
+III OBJECTIVES OF THE SCHEME 
+1.9 The Scheme seeks to achieve the following objectives: 
+(i)  Creation of accurate land records for rural planning and reduce property 
+related disputes; 
+(ii)  To bring financial stability to the citizens in rural India by enabling them to 
+use their property as a financial asset for taking loans and other financial 
+benefits; 
+(iii) Determination of property tax, which would accrue to the GPs directly in 
+States where it is devolved or else, add to the State exchequer; 
+(iv) Creation of survey infrastructure and GIS maps that can be leveraged by 
+any department for their use; 
+(v) To support in preparation of better-quality Gram Panchayat Development 
+Plan (GPDP) by making use of GIS maps. 
+IV COVERAGE OF THE SCHEME 
+1.10 All villages in the country will be eventually covered under this Scheme. The 
+entire work is likely to be spread over a period of five years from April 2020 to March 
+2025. 
+1.11 Pilot Phase of the Scheme implemented in FY 2020-21 covered States of 
+Haryana, Karnataka, Madhya Pradesh, Maharashtra, Uttar Pradesh and Uttarakhand, 
+Punjab, Rajasthan and Andhra Pradesh and CORS network establishment in States 
+of Haryana, Punjab, Rajasthan and Madhya Pradesh. 
+
+3 
+ 
+1.12 SVAMITVA aims to provide the ‘Record of Rights’ to village household owners 
+in rural abadi areas and issuance of Property Cards. The Scheme covers all eligible 
+inhabited villages across the Country and envisages establishment of 567 
+Continuously Operating Reference Station (CORS) network. The financial outlay of 
+the Scheme is ₹566.23 crore including ₹79.65 crore for the Pilot Phase of the Scheme 
+during FY 2020-21. 
+1.13 SVAMITVA Scheme was launched as a pilot scheme in six States namely 
+Haryana, Uttarakhand, Uttar Pradesh, Maharashtra, Madhya Pradesh and Karnataka 
+and was further launched nationwide on 24 April 2021. The Scheme is being 
+implemented in 30 States and Union Territories and drone flying has been completed 
+in more than 3.3 lakh villages against a target of approximately 3.38 lakh villages. 
+V TECHNOLOGICAL ARCHITECTURE OF THE SCHEME 
+1.14 The SVAMITVA Scheme represents one of the largest technology-enabled 
+property mapping exercises undertaken in rural India. The Scheme leverages Drone 
+Survey Technology, Continuously Operating Reference Station (CORS) Network, 
+Geographic Information System (GIS), high-resolution ortho imagery, spatial 
+databases and digital property records for creation of an integrated property validation 
+system for rural inhabited areas. 
+1.15 When asked about the developed standardized APls for data exchange 
+between SVAMITVA, DILRMP, Gram Panchayat systems and State databases, the 
+Ministry of Information and Technology in their written reply have submitted the 
+following: 
+“NIC has enabled Integration of geospatial and ownership data through 
+SVAMITVA Portal. Information exchange among Ministry of Panchayati Raj, 
+Survey of India, State/UTs Revenue Departments, and Panchayati Raj 
+Institutions. APIs Integration is also enabled for sharing data to Gram 
+Manchitra, Panchayat Enterprise Suite (PES).” 
+VI ESTABLISHMENT OF CONTINUOUS OPERATING REFERENCE SYSTEM 
+(CORS) NETWORK 
+1.16 Continuously Operating Reference Stations is a network of reference stations 
+that provide a virtual base station that allows access long-range high-accuracy 
+Network RTK corrections. The RTK networks extend the use of RTK to a larger area 
+containing a network of reference stations. Accuracy is increased in a CORS network, 
+because more than one station helps ensure correct positioning and guards against a 
+false initialization of a single base station. 
+1.17 Real-time kinematic (RTK) positioning is a satellite navigation technique used 
+to enhance the precision of position data derived from satellite-based positioning 
+systems. The Survey of India shall perform the establishment of CORS Network, 
+preparation of Geoid Model and ensure operation and maintenance of CORS network 
+stations and provision of CORS network services for five years. 
+
+4 
+ 
+1.18 The Scheme envisages establishment of 567 Continuously Operating 
+Reference Station (CORS) network across the country. 
+1.19 The CORS network supports in establishing Ground Control Points, which is an 
+important activity for accurate Geo-referencing, ground truthing and demarcation of 
+lands. Once the CORS network is established, it could be used by any State 
+agency/Department viz. Revenue Department, Gram Panchayat, Public Works 
+Department, Rural Development Department, Agriculture, Drainage & Canal, 
+Education, Electricity, Water, Health etc. for the survey and implementing/using GIS 
+based applications. 
+1.20 This would facilitate use of CORS network for any survey related activities like 
+road construction, irrigation works and infrastructure works. The CORS infrastructure 
+created under the Scheme is therefore expected to serve as a long-term national 
+geospatial asset. 
+1.21 Statement showing State-wise status of establishment and operationalisation 
+of CORS stations in the country is as under:  
+ 
+
+
+5 
+ 
+ 
+VII LARGE SCALE MAPPING USING DRONE TECHNOLOGY 
+1.22 Rural inhabited (Abadi) area would be mapped by Survey of India in 
+collaboration with State Revenue Department and State Panchayati Raj Department 
+to generate revenue maps to confer ownership property rights. Based on these maps 
+or data, property cards would be issued to the rural household owners in Abadi area. 
+The high resolution and accurate image base maps would facilitate creation of the 
+most durable record of property holdings in areas with no legacy revenue records. 
+1.23 Large scale mapping of rural inhabited area (abadi) using Drone or UAV 
+(Unmanned Aerial Vehicle) would be carried out using Professional Survey Grade 
+UAVs as these UAVs are RTK (Real Time Kinematic)/PPK (Post Point Kinematic) 
+enabled and use high resolution RGB sensor on 1:500 scale with image capturing of 
+better than 5 cm GSD ±12.5 cm or better planimetry accuracy to provide accurate 
+projection centre and orientation of the images captured during the flying. 
+1.24 The process involves acquisition of images, establishment of Ground Control 
+Points, aerial triangulation, generation of Digital Elevation Models (DEM), Digital 
+Terrain Models (DTM), ortho-rectified images and creation of GIS databases. 
+VIII Feature Extraction and GIS Database Creation 
+1.25 Ortho-rectified Images (ORI) shall be used for extraction of all topographical 
+features by Survey of India including property boundaries marked in ground jointly by 
+Gram Panchayat and State Revenue Department. 
+1.26 State Revenue Department and State Panchayati Raj Department will provide 
+requisite support to the Survey of India feature extraction team in identification of 
+features or assets viz. open plots, Government owned land, Gram Sabha owned 
+properties and individual properties. 
+1.27 The GIS database created under the Scheme shall be Open Geospatial 
+Consortium (OGC) compliant and shall include attribute information, land parcel maps, 
+village maps and digital spatial databases. 
+IX SPATIAL PLANNING AND DIGITAL PLATFORMS 
+1.28 A spatial planning application “Gram Manchitra” has been implemented by the 
+Ministry of Panchayati Raj for leveraging GIS maps and technology for the preparation 
+of Gram Panchayat Development Plans. As the drone survey progresses, the digital 
+spatial data/maps created under drone survey shall be leveraged for creation of spatial 
+analytical tools to support preparation of GPDP. 
+1.29 Online Monitoring and reporting dashboard would be centrally hosted for real 
+time monitoring of the SVAMITVA Scheme. It will monitor progress of activities under 
+the Scheme and facilitate online reporting by States and implementing agencies. 
+
+6 
+ 
+ 
+ 
+X IMPLEMENTATION FRAMEWORK 
+1.30 The brief/broad level implementation process flow of the Scheme comprises 
+preliminary activities, pre-survey activities, survey activities and post-survey activities. 
+ Pre-Survey Activities 
+(i) Establishment of CORS network 
+ 
+(ii) The regional revenue office takes permission from the Collector’s office to 
+conduct the survey. The Collector notifies the survey area through a public 
+notice. 
+ 
+(iii) The Panchayati Raj Department invites the residents of the village for 
+Gram Sabha to inform them about the schedule of the survey and to 
+sensitize about the surveying methodology and its benefits. 
+ 
+(iv) Identification of individual properties, Government assets, Gram Sabha 
+land parcels, roads, open plots etc. and Ground marking of property areas 
+to be surveyed will be done by State Government.  
+ 
+(v) SoI takes requisite permission for flying Drones from Directorate General 
+of Civil Aviation/ Ministry of Defence. 
+ 
+(vi) Mission planning for drone flying using available maps/satellite imagery 
+ 
+ Survey Activities 
+(i) The regional revenue office would provide scanned maps to SoI; 
+ 
+(ii) SoI should provision for Ground Control Points or Check points before 
+flying; 
+ 
+(iii) Acquisition of Aerial images using Professional Survey Grade 
+Unmanned Aerial Vehicle/ Drone for Large Scale Mapping of rural abadi 
+area, inhabited areas contiguous to Abadi and wadis/basties in rural 
+areas; 
+ 
+(iv) The images captured through Drone would be processed by Survey of 
+India in its Geographic Information System lab. 
+ 
+(v) Data Processing: Basemap Generation and 2D Feature Extraction 
+a. Generation of DEM & Ortho Rectified Images 
+b. Extraction of 2D topographical features from Ortho-rectified images 
+c. Generation of Land Parcel maps at a scale of 1:500 
+
+7 
+ 
+d. Linking of Attributes with extracted topographical features 
+e. Creation of boundaries of villages 
+f. Numbering of properties/structures within village abadi 
+area /Lal dora area as per the numbering system 
+provided by State Government 
+ii. Creation of GIS database 
+iii. Ground validation of the processed images for better than 10 cm 
+accuracy. 
+ 
+ Post -Survey Activities 
+(i) Legal Notification for joint verification of ownership by State Revenue 
+Department and Gram Panchayat. 
+(ii) Inquiry Process for Ownership adjudication: The process is initiated, 
+where survey officials verify ownership of the land parcels, with the help 
+of gram sabha, land owners, and review the existing documents 
+(iii) Issue of notification for providing adjudication of final results. The Enquiry 
+Officer (from the Survey Department) re-verifies the ownership and 
+resolves any post survey objections received from property owners. 
+These may be related to correction in owner name, property boundaries, 
+joint holding etc. For unresolved objections / disputes, the final decision 
+shall rest with the District Magistrate / Collector/ or State may indicate a 
+resolution mechanism. 
+(iv) After Ground truthing, inquiry process and dispute resolution, final Digital 
+maps/ LPM /DEM/ GIS datasets would be generated and handed over to 
+MoPR/Authorised agency as per the standard procedure for use. 
+(v) Printing and distribution of property cards to village household owners 
+(legal document of property ownership). 
+(vi) Provisions should be made for the proper storage and regular update of 
+records, 
+(vii) Gram Panchayat shall update the property tax and asset register of GP, 
+wherever applicable. 
+(viii) State Revenue shall perform and responsible for regular updation of 
+maps. 
+(ix) SoI shall provide training and Capacity building of Revenue Department 
+Government Officials 
+
+8 
+ 
+ 
+1.31 Post validation and completion of inquiry process, property owners are provided 
+an opportunity to raise claims and objections. Disputes are resolved before issuance 
+of Property Cards by the State Authorities/Revenue Department. 
+1.32 On being asked about how many States have integrated SVAMITVA records 
+with State Revenue Department database and registration systems, the Ministry of 
+Information and Technology in their written reply submitted the following: 
+ 
+“SVAMITVA Portal maintains drone data of all habitations covered under the 
+scheme. The field verifications and corrections are applied by the States/UTs. 
+The finalized and partial data is shared using APIs with the SVAMITVA Portal 
+for centralized access and seamless data integration. The data for 17 States 
+and Union Territories—Chhattisgarh, Goa, Gujarat, Haryana, Himachal 
+Pradesh, Jammu & Kashmir, Karnataka, Ladakh, Madhya Pradesh, 
+Maharashtra, Odisha, Puducherry, Punjab, Rajasthan, Tripura, Uttarakhand, 
+and Uttar Pradesh—is available on SVAMITVA Portal. This is being integrated 
+by the States with DILRMP scheme for seamless access.” 
+XI SCHEME COMPONENTS AND DELIVERABLES 
+1.33 (i) Establishment of CORS Network; 
+ (ii) Large Scale Mapping using Drone; 
+ (iii) Information, Education and Communication (IEC) Activities; 
+ (iv) Enhancement of Spatial Planning Application "Gram Manchitra"; 
+ (v) Online Monitoring System; 
+ (vi) Programme Management Units at National and State level; and 
+
+
+9 
+ 
+ (vii) Documentation Support, Workshops and Exposure Visits. 
+XII INSTITUTIONAL MECHANISM 
+1.34 The SVAMITVA Scheme is implemented through a multi-tier institutional 
+framework involving the Ministry of Panchayati Raj, Survey of India, State 
+Governments, Gram Panchayats and other stakeholders. The Scheme provides for 
+institutional mechanisms at National, State, District and Panchayat levels for 
+implementation, monitoring and management. 
+1.35 The following stakeholders are involved in carrying out the Scheme: 
+(i) Nodal Ministry (Ministry of Panchayati Raj), Government of India; 
+(ii) Survey of India (Technology Implementation Agency); 
+(iii) State Revenue Department; 
+(iv) State Panchayati Raj Department; 
+(v) Local District Authorities; 
+(vi) Property Owner; 
+(vii) Gram Panchayat; 
+(viii) National Informatics Centre (NIC-GIS Division); and 
+(ix) Other line departments having assets in rural inhabited areas for preparing 
+comprehensive database. 
+1.36 When asked is there a common national data architecture for SVAMITVA, or 
+are States maintaining separate platforms and what challenges have been 
+encountered, the Ministry of Information and Technology in their written reply 
+submitted the following: 
+“States maintain their own SVAMITVA Portals to support survey management, 
+ownership verification, workflow coordination, and the generation and 
+distribution of Property Cards. In some States, the software has been 
+developed and is being maintained by the National Informatics Centre (NIC) in 
+coordination with the respective Revenue Departments. In other States, the 
+software has been developed and is being maintained independently by the 
+respective State Revenue Departments. After data is finalized the same is 
+shared with SVAMITVA Portal for centralized management and access.” 
+XIII  NATIONAL STEERING COMMITTEE (NSC) 
+1.37 A National Steering Committee has been envisaged under the Scheme for 
+overall guidance, monitoring and review of implementation. The Committee functions 
+as the apex body for policy direction and review of implementation progress at the 
+national level. 
+
+10 
+ 
+ 
+ 
+XIV National Programme Management Unit (NPMU) 
+1.38 National Programme Management Unit (NPMU) will be set up at the National 
+level for overall management, monitoring of various activities under the Scheme and 
+to provide support to States and Survey of India. The NPMU will have qualified and 
+experienced experts from the relevant domain. Ministry of Panchayati Raj may also 
+hire short-term consultants and/or have flexibility to outsource NPMU to professional 
+agencies. 
+XV STATE STEERING COMMITTEE (SSC) 
+1.39 A State Steering Committee has been envisaged for monitoring implementation 
+of the Scheme at the State level and for coordination among various departments and 
+agencies involved in implementation. 
+XIV STATE PROGRAMME MANAGEMENT UNIT (SPMU) 
+1.40 State Programme Management Unit (SPMU) will be set up at the State level for 
+overall management, monitoring of various activities under the Scheme and to provide 
+support to State Revenue Department, District Officials, Gram Panchayat 
+functionaries and Survey of India. The SPMU will have qualified and experienced 
+experts from relevant domains. 
+XVII District Monitoring and Review Committee (DMRC) 
+1.41 District Monitoring and Review Committees have been envisaged to review 
+implementation progress at the district level and facilitate coordination among district 
+administration, Survey of India teams and Panchayati Raj Institutions. 
+XVIII PANCHAYAT MONITORING COMMITTEE (PMC) 
+1.42 Panchayat Monitoring Committees have been envisaged to facilitate 
+implementation at the village level and to support awareness generation, validation of 
+records and grievance redressal processes. 
+1.43 The detailed roles and responsibilities of stakeholders are placed as under:  
+I National Programme Management Unit 
+Key Responsibilities 
+(i) Responsible for managing the day-to-day PMU activities. 
+(ii) Keep track of project progress, keep the senior management 
+and other important stakeholders informed about the project 
+progress. 
+(iii) Overall implementation and stakeholder coordination including 
+facilitating awareness and handholding support. 
+
+11 
+ 
+(iv) Assistance to States and Survey of India viz. supporting with 
+signing of MoU, fund disbursement to States, monitoring of project 
+timelines etc. 
+(v) Collaboration with Survey of India and States to monitor 
+establishment of CORS network and large-scale mapping using 
+Drone. 
+(vi) Provide functional inputs towards development and maintenance 
+of online monitoring and reporting Dashboard of the Scheme. 
+(vii) Evaluation of the effectiveness of the scheme through 
+verification and validating of project progress. 
+(viii) Cross State sharing and learning, documentation of good 
+practices. 
+(ix) Co-ordinate the IEC activities at the national level to mobilize 
+people to participate in drone survey. It will include running 
+Campaign during National Panchayati Raj Day/week, 
+dissemination of good practices and other national campaigns 
+through various mediums including social media 
+(x) Coordination with NIC-GIS division and NRSC Bhuvan for 
+leveraging digital spatial data/maps created under drone survey to 
+develop spatial analytical tools to support preparation of GPDP in 
+Gram Manchitra application among other applications. 
+(xi) Any other relevant activity. 
+Educational Qualifications 
+ BE/ B. Tech / Bachelors in relevant field 
+Experience 
+ 6 to 15 years 
+Domain Knowledge / Skills (Must Have) 
+ Worked in IT Project Management function or in an IT 
+PMU/PMO setup 
+ Knowledge of e-Governance projects, Use of GIS and 
+related technology. 
+ 
+Domain Knowledge / Skills (Preferred) 
+ Knowledge of latest GIS Survey technologies 
+ Experience in geospatial datasets and databases 
+ Familiarity with and usage of sources of open-source maps/ 
+shape files etc. 
+ 
+II State Programme Management Unit 
+
+12 
+ 
+Key Responsibilities 
+(i) Responsible for managing the day- t o - d a y  programme 
+management activities. 
+(ii) Keep track of project progress, keep the senior management and 
+other important stakeholders informed about the project progress. 
+(iii) Overall implementation and handholding to States and Survey of 
+India. 
+(iv) Support State Revenue department in evaluation and 
+monitoring the progress of Large-Scale mapping using Drones 
+(v) Consolidate the attribute information and other secondary 
+information to be incorporated in the GIS database 
+(vi) Support in ground-truthing of maps 
+(vii) Facilitate signing of MoU between State and Survey of India 
+and monitor the implementation timelines 
+(viii) Facilitate Project progress reporting through
+ regular updates in Monitoring Dashboard of Scheme 
+(ix) Desirable knowledge of latest GIS Survey technologies and 
+familiarity with and usage of sources of open-source maps/ shape 
+files etc 
+(x) Any other relevant activity. 
+Educational Qualifications 
+ Any Graduate 
+ 
+Experience 
+ 1 to 3 years 
+ 
+XIX STAKEHOLDERS: ROLES AND RESPONSIBILITIES 
+1.44 Ministry of Panchayati Raj: The Ministry of Panchayati Raj is the nodal 
+Ministry for implementation of the Scheme. It is responsible for overall policy direction, 
+coordination with States and Survey of India, release of funds, monitoring of 
+implementation and facilitation of convergence with other developmental initiatives. 
+The Ministry is also responsible for enhancement of the Gram Manchitra platform, 
+establishment of monitoring systems, dissemination of best practices and review of 
+implementation progress. 
+1.45 Survey of India: Survey of India functions as the Technology Implementation 
+Agency under the Scheme. 
+Survey of India shall perform the establishment of CORS Network, preparation of 
+Geoid Model and ensure operation and maintenance of CORS network stations and 
+provision of CORS network services. It is also responsible for drone surveys, image 
+
+13 
+ 
+processing, feature extraction, map generation, GIS database creation, capacity 
+building and technical support. 
+1.46 State Revenue Department: State Revenue Department is responsible for 
+legal and administrative aspects of implementation. It provides support in demarcation 
+of property parcels, validation of ownership details, ground verification, inquiry 
+process, dispute resolution and issuance of Property Cards. 
+1.47 State Panchayati Raj Department: State Panchayati Raj Department 
+supports implementation through community mobilisation, awareness generation, 
+Gram Sabha consultations and facilitation of survey activities. It also assists in 
+utilisation of GIS datasets for local planning purposes. 
+1.48 Gram Panchayat: Gram Panchayat plays a key role in identification of 
+properties, mobilisation of citizens, support during survey operations, validation of 
+maps and maintenance of local records. 
+1.49  Property Owners:  Property owners participate in demarcation, verification, 
+inquiry and objection processes and provide necessary information for preparation of 
+property records. 
+1.50 NIC-GIS Division: The National Informatics Centre (NIC-GIS Division) 
+supports integration, hosting and management of spatial datasets generated under 
+the Scheme and facilitates utilisation of GIS-based planning applications. 
+1.51 State Department of Land Records:  State Department of Land Records shall 
+facilitate utilisation of the Data Centre infrastructure available at the State, District and 
+Tehsil levels under the Digital India Land Records Modernization Programme 
+(DILRMP) for hosting and storage of digital data created under the Scheme and 
+ensure seamless integration of Bhu-Naksha with SVAMITVA maps. 
+1.52 Joint Responsibility (State and Survey of India):  State Governments and 
+Survey of India share certain responsibilities relating to execution of the Scheme. 
+These include signing of Memoranda of Understanding for implementation of the 
+project, establishment and densification of Ground Control Points using the respective 
+Ground Control Point libraries and reconciliation of survey data with available records 
+for finalisation of dimensions of individual land parcels. 
+XX FINANCIAL ARCHITECTURE 
+1.53 SVAMITVA is a Central Sector Scheme implemented by the Ministry of 
+Panchayati Raj. The Scheme (April 2020 – September 2026) covers all eligible 
+inhabited villages across the country. The financial outlay of the Scheme is ₹566.23 
+crore, including ₹79.65 crore for the Pilot Phase of the Scheme during FY 2020-21. 
+1.54 The Scheme provides for financial support towards establishment and 
+operation of CORS infrastructure, drone surveys, Information, Education and 
+Communication (IEC) activities, development of GIS-based applications, Programme 
+
+14 
+ 
+Management Units, capacity building, documentation support and other activities 
+necessary for implementation of the Scheme. 
+ 
+1.55 State-wise details of funds released under the Scheme are as under:  
+Release of funds to States/UTs for IEC and SPMU components under 
+SVAMITVA scheme as on June 2026 
+State / UT 2020-21 2021-22 2022-23 2023-24 2024-25 2025-26 Total 
+Andhra 
+Pradesh 
+  26,70,000         26,70,000 
+Arunachal P   16,54,250         16,54,250 
+Assam   54,74,750   32,94,598 29,30,402   1,16,99,750 
+Chhattisgarh   13,14,500         13,14,500 
+DNH & 
+Daman Diu 
+  2,19,750         2,19,750 
+Gujarat       10,85,000 22,51,641 25,88,592 59,25,233 
+Haryana 21,61,270           21,61,270 
+Himachal 
+Pradesh 
+  41,15,250       8,95,062 50,10,312 
+Karnataka 7,75,125           7,75,125 
+Kerala       3,84,375     3,84,375 
+Ladakh       30,375     30,375 
+Madhya 
+Pradesh 
+47,68,750 45,08,750         92,77,500 
+Maharashtra 10,52,500           10,52,500 
+Mizoram   2,77,750       6,54,437 9,32,187 
+Odisha   11,50,000         11,50,000 
+Punjab   13,24,500 7,80,000 23,40,000 23,40,000 3,38,254 71,22,754 
+Rajasthan     61,40,000       61,40,000 
+Tripura   3,87,000         3,87,000 
+Uttar Pradesh 1,44,75,000           1,44,75,000 
+Uttarakhand 15,10,000           15,10,000 
+Total 2,47,42,645 2,30,96,500 69,20,000 71,34,348 75,22,043 44,76,345 7,38,91,881 
+        
+Component-wise & Year-wise funds released under SVAMITVA scheme as on May 2026 
+Compo- 
+nent 2020-21 2021-22 2022-23 2023-24 2024-25 2025-26 Total 
+CORS 55,42,35,115 61,11,79,340 0 0 0 10,89,85,420 1,27,43,99,875 
+LSM 19,49,22,240 70,37,24,160 91,86,80,000 48,79,90,199 27,40,25,800 24,58,50,000 2,82,51,92,399 
+IEC and 
+SPMU 2,47,42,645 2,30,96,500 69,20,000 71,34,348 75,22,043 44,76,345 
+7,38,91,881 
+NICSI 2,26,00,000 6,19,40,987 12,44,00,000 4,16,00,000 14,99,00,000 13,00,00,000 53,04,40,987 
+Workshop 
+/Study       32,75,453   1,34,18,960 
+1,66,94,413 
+Total 79,65,00,000 1,39,99,40,987 1,05,00,00,000 54,00,00,000 43,14,47,843 50,27,30,725 4,72,06,19,555 
+XXI MONITORING AND EVALUATION FRAMEWORK 
+
+15 
+ 
+1.56 For monitoring purpose, a four-layer monitoring and evaluation framework has 
+been envisaged for timely monitoring, reporting and course corrections, wherever 
+necessary. An online monitoring and reporting dashboard is centrally hosted for real-
+time monitoring of the Scheme and facilitates online reporting by States and 
+implementing agencies. 
+1.57 The Scheme also provides for third-party assessment for independent 
+evaluation of implementation progress, outcomes and effectiveness of interventions. 
+1.58 The online monitoring mechanism enables tracking of survey activities, map 
+generation, Property Card issuance and other implementation milestones across 
+States and Union Territories. 
+XXII PROGRESS OF IMPLEMENTATION 
+1.59 The SVAMITVA Scheme was launched as a pilot programme in selected States 
+and was subsequently expanded for implementation across the country. The Scheme 
+is presently being implemented in 31 States and Union Territories and has emerged 
+as one of the largest technology-enabled rural property mapping initiatives undertaken 
+in the country. 
+1.60 The Scheme (April 2020 – September 2026) covers all eligible inhabited 
+villages across the Country. As on date, Drone Survey has been completed for about 
+3.30 lakh village abadi areas out of targeted 3.38 lakh villages. 
+1.61 As per the Technical Progress of SVAMITVA Scheme as on 22 May 2026, 
+against a target of 3,31,978 villages, drone flying has been completed in 3,29,837 
+villages, representing achievement of more than 99 per cent of the target. 
+1.62 Technical Progress of SVAMITVA Scheme as on 22 May 2026: The progress 
+achieved under the Scheme demonstrates substantial saturation of survey activities 
+in a majority of States and Union Territories. Drone flying has been completed in all 
+targeted villages in States/UTs such as Andaman & Nicobar Islands, Andhra Pradesh, 
+Arunachal Pradesh, Assam, Goa, Haryana, Jammu & Kashmir, Jharkhand, Kerala, 
+Ladakh, Lakshadweep, Madhya Pradesh, Mizoram, Puducherry, Sikkim, Tamil Nadu, 
+Telangana and Uttarakhand. 
+1.63 Technical Progress of SVAMITVA Scheme as on 22 May 2026: The 
+Committee note that substantial progress has also been achieved in large States such 
+as Uttar Pradesh, Rajasthan, Maharashtra, Gujarat and Chhattisgarh where drone 
+survey activities have been completed in nearly all targeted villages. However, a few 
+States continue to exhibit implementation gaps. As on 22 May 2026, drone flying had 
+been completed in 173 villages against a target of 473 villages in Manipur, 19 villages 
+against a target of 898 villages in Tripura, 2,686 villages against a target of 3,094 
+villages in Odisha, 10,658 villages against a target of 11,308 villages in Punjab and 
+14,168 villages against a target of 14,678 villages in Himachal Pradesh. 
+  
+
+16 
+ 
+1.64 Technical Progress of SVAMITVA Scheme as on 22 May 2026: The State-
+wise progress of implementation relating to target villages, drone survey completion, 
+preparation and distribution of Property Cards is provided are as under: 
+Sl.  
+No. Name of States/UTs Notified 
+villages 
+Drone 
+Flying 
+Villages 
+Number  
+of  
+Villages  
+for  
+which  
+Property  
+Cards  
+prepared 
+Number  
+of  
+Property  
+Cards  
+prepared 
+Number of 
+Property 
+Cards 
+distributed 
+1 Andaman and Nicobar 
+Islands 186 186 141 7,409 7,409 
+2 Andhra Pradesh 13,321 13,321 1,067 5,30,351 - 
+3 Arunachal Pradesh 3,647 3,647 - - - 
+4 Assam 946 946 - - - 
+5 Chhattisgarh 15,791 15,791 3,389 2,81,258 1,65,728 
+6 Dadra and Nagar Haveli 
+and Daman and Diu 80 80 75 4,397 4,397 
+7 Delhi 31 31 15 3,000 - 
+8 Goa 410 410 410 6,72,646 6,72,646 
+9 Gujarat 14,951 14,900 11,492 18,47,546 12,28,586 
+10 Haryana 6,260 6,260 6,260 25,15,646 25,15,646 
+11 Himachal Pradesh 15,196 14,226 364 5,419 5,395 
+12 Jammu and Kashmir 4,497 4,497 1,699 63,542 39,204 
+13 Jharkhand 757 240 - - - 
+14 Karnataka 27,757 26,124 5,070 10,60,162 3,36,872 
+15 Keralam 597 597 - - - 
+2 Ladakh 232 232 225 18,788 15,623 
+17 Lakshadweep Islands 10 10 10 13,563 13,563 
+18 Madhya Pradesh 43,014 43,014 40,664 67,33,512 55,85,952 
+19 Maharashtra 37,819 37,724 23,473 39,34,305 39,05,727 
+20 Manipur 2,555 207 - - - 
+21 Mizoram 568 568 101 14,962 1,155 
+22 Odisha 2,724 2,724 42 3,596 3,596 
+23 Puducherry 96 96 92 2,801 2,801 
+24 Punjab 12,083 10,889 319 73,681 285 
+25 Rajasthan 36,277 35,997 15,975 15,03,930 14,95,974 
+26 Sikkim 1 1 - - - 
+27 Tamil Nadu 3 3 - - - 
+28 Telangana 5 5 - - - 
+29 Tripura 898 19 893 5,71,783 5,71,783 
+30 Uttar Pradesh 90,573 90,573 75,134 1,18,15,000 1,01,31,232 
+31 Uttarakhand 7,441 7,441 7,441 2,78,229 2,78,229 
+Total 3,38,726  3,30,759 1,94,351 3,19,55,526 2,69,81,803 
+ 
+
+17 
+ 
+XXIII OUTCOMES AND ACHIEVEMENTS 
+1.65 SVAMITVA Scheme is a reformative step towards establishment of clear 
+ownership of property in rural inhabited areas through use of drone technology and 
+creation of accurate land records. The Scheme has facilitated creation of a digital 
+inventory of rural properties and assets and has strengthened the foundation for 
+evidence-based governance and planning. 
+1.66 As on date, Property Cards have been generated for more than 3.18 crore rural 
+property owners and distributed to beneficiaries across the country. The Property 
+Cards provide documentary evidence of ownership and facilitate access to financial 
+services and institutional credit. 
+1.67 Approximately 70,000 square kilometres of rural abadi area have been 
+surveyed under the Scheme. The digital maps generated through drone surveys have 
+enabled creation of accurate property records and GIS databases which can be 
+utilised by multiple departments for planning and implementation of developmental 
+activities. 
+1.68 The Scheme has enabled creation of one of the largest geospatial databases 
+of rural inhabited areas in the country. The GIS datasets generated under the Scheme 
+include property boundaries, public infrastructure, roads, ponds, canals, schools, 
+Anganwadi Centres, health facilities and other community assets. 
+1.69 The Scheme has also contributed to development of the drone ecosystem in 
+the country by promoting adoption of advanced geospatial technologies, creating 
+demand for skilled manpower and facilitating growth of drone-based survey 
+operations. 
+1.70 The Property Cards generated under the Scheme have emerged as a tool for 
+financial inclusion. According to the Ministry, 11,147 loans amounting to ₹1,713 crore 
+have been sanctioned using SVAMITVA Property Cards as collateral security. 
+Several States have also taken initiatives for recognising women as co-owners in 
+Property Cards, thereby contributing to strengthening women’s economic 
+empowerment and ownership rights. 
+  
+
+18 
+ 
+1.71 A consolidated statement of major achievements under the Scheme is as under  
+ 
+1.72 The Ministry of Information and Technology have informed the States are 
+providing citizen access to SVAMITVA records through online portals and mobile 
+applications are as under: 
+“The SVAMITVA digital ecosystem supports online citizen access to Property 
+Cards and digital verification services. States have been asked to integrate 
+SVAMITVA records with BhuNaksha system and Digilocker for citizen access.” 
+1.73 When asked about the percentage of issued property cards can be digitally 
+verified online, the Ministry of Information and Technology has been informed that: 
+“SVAMITVA property cards are digitally generated and integrated with online 
+platforms to facilitate access and verification. The States of UP, Karnataka, 
+Maharashtra (through SANAD portal) have done that. Other states are in 
+process of enabling the verification services.” 
+XXIV IMPACT EVALUATION 
+1.74 The Ministry of Panchayati Raj commissioned an independent impact 
+assessment of the SVAMITVA Scheme through the Indian Institute of Management 
+Ahmedabad to assess the socio-economic and governance outcomes of the Scheme. 
+
+
+19 
+ 
+1.75 The impact evaluation study found that the Scheme has contributed 
+significantly towards formalisation of property ownership, enhancement of access to 
+institutional credit and strengthening of local governance systems. 
+1.76 The study observed that in Madhya Pradesh, annual loan amounts increased 
+by approximately ₹22,129 per parcel following implementation of the Scheme, 
+indicating increased utilisation of residential properties for accessing formal credit. 
+1.77 The study further found that registered residential mutations increased by 
+approximately 6.2 per cent, reflecting greater formalisation of ownership records and 
+property transactions. 
+1.78 In Maharashtra, the impact assessment indicated a 4.71 per cent increase in 
+Gram Panchayat property tax revenue and a 7.57 per cent increase in other local taxes 
+following issuance of Property Cards. 
+1.79 Analysis based on Reserve Bank of India data showed an increase of 
+approximately 6.5 per cent in credit uptake in States where the Scheme was 
+implemented, with Maharashtra recording the highest increase among the study 
+States. 
+1.80 The findings of the impact evaluation suggest that the Scheme has contributed 
+to unlocking rural capital, enhancing financial inclusion, improving property 
+governance and strengthening the fiscal capacity of local governments. 
+XXV INTERNATIONAL RECOGNITION 
+1.81 The SVAMITVA Scheme has received considerable recognition at national and 
+international forums for its innovative application of geospatial technologies for 
+strengthening rural property governance. 
+1.82 The Scheme has been showcased at the United Nations General Assembly, 
+the United Nations World Geospatial Information Congress and various international 
+conferences on land governance and geospatial technologies. 
+1.83 The findings of the impact evaluation study undertaken by the Indian Institute 
+of Management Ahmedabad were presented at the World Bank Land and Property 
+Research Conference. The Scheme has also been discussed at international 
+workshops attended by representatives from several countries. 
+1.84 The international interest generated by the Scheme reflects growing recognition 
+of India's experience in utilising drone technology, GIS platforms and digital 
+governance tools for strengthening rural property rights and land administration 
+systems. 
+1.85 The Scheme is increasingly being viewed as a global best practice in 
+technology-enabled rural property administration and geospatial governance. 
+ 
+
+20 
+ 
+PART – II 
+ 
+OBSERVATIONS / RECOMMENDATIONS OF THE COMMITTEE 
+ 
+1. Need for Expeditious Completion of SVAMITVA Coverage Across All 
+Target Villages 
+The Committee note that the SVAMITVA Scheme was launched with the 
+objective to resolve the lack of formal property rights in rural India and 
+accordingly creating accurate property records in rural inhabited areas through 
+drone-based surveys and issuance of Property Cards. The Committee further 
+note that against the target of 3.32 lakh villages, drone survey operations have 
+been completed in about 3.29 lakh villages. However, progress remains uneven 
+across States and Union Territories. The Committee observe that while several 
+States and UTs have achieved saturation, substantial gaps continue to exist in 
+States such as Manipur, Tripura, Odisha, Punjab, Himachal Pradesh and 
+Karnataka. The Committee are of the considered view that unless uniform 
+progress is achieved across all States and Union Territories, the objective of 
+creating a comprehensive national rural property database may remain only 
+partially realised. The Committee, therefore, recommend that the Ministry of 
+Panchayati Raj prepare State-specific action plans with clearly defined timelines 
+for completion of pending surveys and periodically review progress at the 
+highest level so that saturation of the Scheme is achieved within the stipulated 
+timeframe.  
+2. Need to Review the Scope of Coverage of the Scheme 
+The Committee note that the SVAMITVA Scheme was conceived with the 
+objective of providing records of rights to village household owners possessing 
+houses in inhabited (abadi) areas through drone-based surveys and issuance 
+of Property Cards. Scheme is presently confined to abadi areas and has made 
+significant progress in creation of accurate property records and geospatial 
+databases in such areas. However, the Committee are of the view that with the 
+near completion of survey operations in a majority of villages, it would be 
+appropriate to review the existing scope of the Scheme in the light of emerging 
+requirements and practical experience gained during implementation. The 
+Committee observe that certain residential structures, habitation clusters, 
+extensions of villages and long-settled households located outside the 
+traditional abadi limits may remain outside the coverage of the Scheme, thereby 
+limiting the objective of providing comprehensive and inclusive property 
+records in rural areas. The Committee are of the considered view that exclusion 
+of such households may impede equitable access to the benefits of formal 
+property rights, institutional credit and improved governance. The Committee, 
+therefore, recommend that the Ministry of Panchayati Raj, in consultation with 
+States/UT Governments and other stakeholders, undertake a comprehensive 
+
+21 
+ 
+review of the existing coverage of the Scheme and examine the feasibility of 
+extending its benefits to other eligible residential structures and habitation 
+clusters presently lying outside the traditional abadi areas. The Committee also 
+recommend that special attention be paid to ensuring that vulnerable and 
+historically disadvantaged sections are not deprived of the benefits of formal 
+property records on account of technical or jurisdictional limitations and that 
+suitable guidelines be evolved to ensure more inclusive coverage while 
+preserving the objectives and integrity of the Scheme. 
+3. Need to Ensure Timely Distribution, Legal Validity and Effective Utilisation 
+of Property Cards 
+The Committee are informed that more than 3 crore Property Cards have 
+been generated under the Scheme. The Committee also note that the ultimate 
+success of the Scheme depends not merely on generation of Property Cards but 
+on their widespread acceptance as legally recognised documents for ownership 
+verification, financial transactions and governance purposes. The Committee, 
+therefore, recommend that the Ministry of Panchayati Raj (MoPR), in 
+consultation with State/UT Governments, ensure seamless integration of 
+Property Cards with revenue administration systems, registration processes, 
+mutation mechanisms, DigiLocker and banking institutions. The Committee 
+further recommend that Property Cards be integrated in a time-bound manner 
+with DigiLocker, BhuNaksha and other citizen-centric digital service platforms 
+across all States and Union Territories so as to facilitate secure online access, 
+verification and utilisation of Property Cards by beneficiaries. The Committee 
+note that data relating to 17 States and Union Territories is already available on 
+the SVAMITVA Portal and is being integrated with the Digital India Land Records 
+Modernization Programme (DILRMP). The Committee, therefore, recommend 
+that the remaining States and Union Territories also complete such integration 
+in a time-bound manner so as to ensure seamless verification, wider legal 
+acceptability and uniform utilisation of Property Cards across the country. The 
+Committee further note that the utility of Property Cards for facilitating 
+institutional credit would depend upon their legal recognition and acceptability 
+across States. Accordingly, the Committee further recommend that State 
+Governments undertake suitable amendments in their revenue laws, rules and 
+administrative procedures so as to confer adequate legal sanctity upon Property 
+Cards and ensure their universal acceptance by financial institutions. The 
+Committee also recommend that MoPR periodically review the status of such 
+reforms and undertake studies to assess the extent of utilisation of Property 
+Cards for institutional credit and other citizen services. 
+4. Integration of SVAMITVA Data with PM GatiShakti Platform 
+The Committee note that cadastral maps prepared under the Digital India 
+Land Records Modernization Programme have already been integrated with the 
+PM GatiShakti National Master Plan platform and are being utilised extensively 
+
+22 
+ 
+for infrastructure planning and project implementation. The Committee, 
+however, note with concern that despite creation of a vast repository of high-
+accuracy geospatial data under SVAMITVA, the datasets generated under the 
+Scheme have not yet been integrated with the PM GatiShakti platform. The 
+Committee are of the view that integration of SVAMITVA datasets with PM 
+GatiShakti would create a seamless geospatial framework for village-level 
+planning and improve convergence among infrastructure and citizen welfare 
+programmes/projects relating to drinking water, roads and other developmental 
+activities. The said integration of data of both the schemes will bridge rural 
+ground level realities with national development. The Committee, therefore, 
+strongly recommend that the Ministry of Panchayati Raj coordinate with the 
+concerned Ministries and ensure onboarding of datasets relating to all surveyed 
+villages onto the PM GatiShakti platform in a time-bound manner. The 
+Committee note that cadastral maps of nearly 20 States and Union Territories 
+are already available on the PM GatiShakti platform and are being utilised for 
+infrastructure planning. The Committee are, therefore, of the view that 
+integration of SVAMITVA datasets would provide a comprehensive geospatial 
+framework for village-level planning, convergence of Government schemes and 
+evidence-based decision-making. 
+5. Leveraging SVAMITVA Data for Gram Panchayat Development Plans 
+The Committee note that one of the principal objectives of the Scheme is 
+to facilitate preparation of better-quality Gram Panchayat Development Plans 
+(GDPDs) through GIS-based planning. The Committee, however, find that 
+utilisation of the rich spatial database generated under the Scheme for local 
+planning remains limited in many States. The Committee also note that the 
+Scheme envisages integration of the spatial database with Gram Manchitra for 
+creation of analytical tools to support preparation of Gram Panchayat 
+Development Plans. The Committee, therefore, recommend that the Ministry of 
+Panchayati Raj (MoPR) formulate a comprehensive framework for integration of 
+SVAMITVA datasets with Gram Manchitra and other planning applications and 
+ensure that adequate training and technical support are provided to Gram 
+Panchayats and field-level officials so that the geospatial assets created under 
+the Scheme are effectively utilised for evidence-based planning and 
+implementation of development programmes. The Committee further 
+recommend that the MoPR periodically monitor the extent of utilisation of 
+SVAMITVA datasets by Gram Panchayats and ensure availability of adequate 
+digital infrastructure and broadband connectivity for effective use of GIS-based 
+planning tools. The Committee are of the view that effective utilisation of these 
+datasets would significantly improve the quality of Gram Panchayat 
+Development Plans and promote scientific and data-driven planning at the 
+grassroots level. 
+ 
+
+23 
+ 
+6. Need for a Sustainable Mechanism for Updating Property Records 
+The Committee appreciate the efforts made in creating an extensive 
+database of rural properties. However, the Committee are concerned that in the 
+absence of a robust updation mechanism, the utility of the database may 
+gradually diminish due to transfers, inheritance, partition and other changes in 
+ownership. A sustainable mechanism for the SVAMITVA scheme is critical to 
+permanently transform rural India from a landscape of ambiguous land tenure 
+into one of formalized property rights and self-reliance. The Committee, 
+therefore, recommend that the Ministry of Panchayati Raj (MoPR), in 
+consultation with State/UT Governments, evolve a uniform framework for 
+continuous updation of property records and GIS maps and ensure seamless 
+integration of SVAMITVA records with State land administration systems. The 
+Committee further emphasise the need for institutionalising structured and 
+time-bound mechanisms for disposal of objections and post-survey disputes. 
+Draft maps should invariably be placed before Gram Sabhas for community 
+verification so as to enhance transparency, minimise litigation and safeguard 
+the interests of vulnerable sections. The Committee also recommend that 
+suitable grievance redressal mechanisms with clearly defined escalation 
+procedures from Gram Panchayat to District level be established for expeditious 
+resolution of disputes arising from mapping errors or omissions. The existing 
+objection, verification and correction mechanisms adopted prior to issuance of 
+Property Cards may be institutionalised for regular updation of records so that 
+changes arising from inheritance, partition, transfer or mutation are reflected in 
+a timely manner. Particular attention should be paid to protecting the interests 
+of Scheduled Castes, Scheduled Tribes and economically weaker sections 
+residing on community lands or lacking formal documentation so that the 
+benefits of the Scheme are equitably shared and no deserving households are 
+excluded. 
+7. Enhancing Access to Institutional Credit through Property Cards 
+The Committee note with satisfaction that Property Cards issued under 
+the Scheme have facilitated sanction of loans amounting to over ₹1,700 crore, 
+demonstrating the transformative potential of the Scheme in unlocking rural 
+capital and promoting financial inclusion. The Committee, therefore, 
+recommend that the Ministry of Panchayati Raj, in consultation with the 
+Department of Financial Services, NABARD and banking institutions, evolve a 
+dedicated framework for wider acceptance of Property Cards as collateral 
+security and undertake awareness campaigns among banks and rural 
+households to maximise utilisation of this facility. The Committee also note that 
+online verification of Property Cards has already been enabled in States such 
+as Uttar Pradesh, Karnataka and Maharashtra. Similar digital verification 
+facilities may be extended across all States and Union Territories to facilitate 
+faster acceptance of Property Cards by financial institutions and improve 
+
+24 
+ 
+citizens' access to institutional credit. The Committee further recommend that 
+State Level Bankers' Committees (SLBCs) may be actively associated with the 
+process so as to ensure wider acceptance of Property Cards and alignment of 
+their format and features with the requirements of financial institutions. 
+8. Strengthening and Leveraging the Geospatial Infrastructure Created 
+under the Scheme 
+The Committee note that establishment of the CORS network and creation 
+of high-accuracy GIS databases constitute valuable national geospatial assets. 
+The Committee further note that the Scheme guidelines envisage utilisation of 
+these assets by departments dealing with roads, irrigation, agriculture, water 
+resources, electricity, education and other infrastructure sectors. The 
+Committee are of the view that these assets should be leveraged to the fullest 
+extent for developmental purposes. The Committee, therefore, recommend that 
+the Ministry of Panchayati Raj prepare a roadmap for inter-departmental 
+utilisation of the geospatial infrastructure created under the Scheme and 
+establish mechanisms for its long-term maintenance, periodic upgradation and 
+capacity building of user departments. 
+9. Institutionalisation of Impact Assessment and Outcome Monitoring 
+The Committee note with satisfaction the encouraging findings of the 
+impact assessment undertaken by the Indian Institute of Management, 
+Ahmedabad, which indicate positive outcomes in terms of financial inclusion, 
+formalisation of property rights and enhancement of revenue mobilisation. The 
+Committee, however, are of the view that the long-term success of the Scheme 
+would depend not merely on completion of surveys and issuance of Property 
+Cards but also on sustained monitoring of its socio-economic and governance 
+outcomes. For the long-term success of the scheme there will be a need to 
+prioritize three core elements i.e. ensuring financial institutions accept rural 
+property cards as primary collateral, building local digital literacy to maintain 
+dynamic land records and robust dispute resolution mechanism. The 
+Committee, therefore, recommend that the Ministry of Panchayati Raj (MoPR) 
+institutionalise a robust monitoring and evaluation framework with clearly 
+defined and measurable outcome indicators so as to periodically assess the 
+long-term impact of the Scheme. Such indicators may, inter alia, include 
+reduction in property-related disputes, uptake of institutional credit against 
+Property Cards, mobilisation of property tax revenues and strengthening of 
+own-source revenues of Gram Panchayats, enhancement of women's 
+ownership and joint ownership of properties, utilisation of GIS databases and 
+spatial tools for evidence-based planning, and improvement in the quality and 
+effectiveness of Gram Panchayat Development Plans. The Committee also 
+recommend that indicators relating to utilisation of GIS-based planning tools by 
+Gram Panchayats and the degree of interoperability with other digital platforms 
+may be incorporated into the monitoring framework so as to assess the 
+
+25 
+ 
+effectiveness of integration and utilisation of the digital assets created under 
+the Scheme. The Committee further recommend that periodic third-party impact 
+assessments may be undertaken to evaluate the effectiveness of the Scheme 
+and facilitate evidence-based policy interventions and course corrections, 
+wherever necessary. The Committee desires that the MoPR document and 
+disseminate best practices emerging from such assessments for wider 
+adoption across States and Union Territories. 
+10. Promoting Women's Property Ownership and Financial Empowerment 
+The Committee note with satisfaction that the SVAMITVA Scheme has 
+contributed to strengthening women's economic empowerment through 
+formalisation of property rights. The Committee further note that, as highlighted 
+by the Ministry, formalisation of property records under the Scheme has 
+resulted in a 24.6 per cent increase in the credit amount sanctioned to first-time 
+women borrowers. The Committee also note that Madhya Pradesh has made 
+provision under the Madhya Pradesh Land Revenue Code for inclusion of 
+women as co-owners in Abadi areas, thereby promoting greater participation of 
+women in ownership of assets and access to institutional credit. The Committee 
+are of the considered view that the Scheme presents a unique opportunity to 
+advance gender equity and strengthen women's ownership of productive assets 
+in rural areas. The Committee, therefore, recommend that the Ministry of 
+Panchayati Raj issue suitable guidelines to encourage States and Union 
+Territories to promote joint ownership of properties and record women as co-
+owners wherever feasible, with particular emphasis on single, widowed and 
+vulnerable women. The Committee further recommend that the best practices 
+adopted by States such as Madhya Pradesh may be suitably documented and 
+disseminated for wider replication across the country. The Committee also 
+desire that progress achieved in respect of women's ownership and joint 
+ownership of properties may be periodically monitored and documented as an 
+important outcome indicator of the Scheme. 
+11. Strengthening Gram Panchayat Finances through Property Tax Reforms 
+The Committee note that determination of property tax and strengthening 
+of Gram Panchayat finances constitute one of the important objectives of the 
+Scheme. The Committee further note with satisfaction that the impact 
+assessment undertaken by the Indian Institute of Management Ahmedabad has 
+indicated positive outcomes in this regard, with Gram Panchayat property tax 
+revenues in Maharashtra increasing by about 4.71 per cent and other local taxes 
+by about 7.57 per cent following implementation of the Scheme. The Committee 
+are of the view that accurate and updated property databases created under 
+SVAMITVA have considerable potential to improve assessment and collection of 
+property taxes and thereby enhance the financial autonomy and fiscal 
+sustainability of Panchayats.  The Committee, therefore, recommend that the 
+Ministry of Panchayati Raj, in consultation with the States/UTs, encourage 
+
+26 
+ 
+effective utilisation of SVAMITVA databases for rationalisation of property tax 
+assessment and strengthening of own-source revenues of Gram Panchayats 
+wherever taxation powers have been devolved. The Committee further 
+recommend that Gram Panchayats may be provided adequate technical support 
+and capacity building for maintenance of Property Tax Registers, Asset 
+Registers based on the spatial database generated under the Scheme so as to 
+improve assessment, transparency and efficiency in revenue collection.  The 
+Committee also desire that best practices and successful experiences emerging 
+from States demonstrating improvements in local revenue mobilisation may be 
+suitably documented and disseminated for wider replication across the country. 
+12. Ensuring Post-2026 Sustainability and Capacity Building 
+The Committee note that while substantial progress has been achieved in 
+completion of drone surveys, considerable post-survey activities relating to 
+ground verification, disposal of objections, preparation of final maps and 
+distribution of Property Cards remain to be completed in certain States. The 
+Committee also note that the technical progress under the Scheme reveals a 
+gap between completion of drone surveys and generation of final Property 
+Cards. The Committee are of the considered view that sustained institutional 
+support would be necessary even after the formal completion of the Scheme 
+period in September, 2026 to ensure that the assets created under the Scheme 
+continue to deliver long-term benefits. The Committee, therefore, recommend 
+that the Ministry of Panchayati Raj (MoPR) deploy focused technical support for 
+expeditious completion of pending verification and Property Card generation 
+activities in lagging States. The Committee further recommend that adequate 
+resources be provided by the MoPR for continuous capacity building of 
+Revenue officials and Gram Panchayats so as to enable local bodies to maintain 
+and periodically update GIS databases and utilise them for preparation of Gram 
+Panchayat Development Plans and strengthening their own-source revenues. 
+The Committee further recommend that continuous capacity building 
+programmes, workshops and knowledge-sharing mechanisms may be 
+institutionalised to equip Gram Panchayats and field functionaries for effective 
+use and maintenance of geospatial databases and related digital tools. The 
+Committee also recommend that institutionalised technical support and training 
+mechanisms be continued beyond the Scheme period to facilitate maintenance, 
+updation and effective utilisation of the digital assets created under SVAMITVA. 
+Suitable arrangements may also be put in place for long-term maintenance, 
+periodic upgradation and wider utilisation of the geospatial assets created 
+under the Scheme so that the benefits accruing from the Scheme are sustained 
+beyond its present tenure. 
+13. Positioning SVAMITVA as a Global Best Practice in Digital Land 
+Governance 
+
+27 
+ 
+The Committee note with satisfaction that the Scheme has received 
+international recognition and has emerged as a model for technology-enabled 
+rural property governance. The Committee are of the view that India's 
+experience under SVAMITVA offers valuable lessons for other developing 
+countries facing challenges relating to land administration and property rights. 
+The Committee recommend that the Ministry of Panchayati Raj systematically 
+document best practices and lessons learnt from implementation of the Scheme 
+and disseminate the same through national and international workshops, 
+exposure visits and global forums so as to strengthen India's leadership role in 
+digital land governance and geospatial planning. The Scheme guidelines 
+themselves envisage documentation of best practices and organisation of 
+workshops and exposure visits. 
+14. Need for Strengthening Data Governance and Cyber Security Framework 
+The Committee note that the SVAMITVA Scheme has resulted in creation 
+of one of the largest repositories of rural geospatial and property-related data in 
+the country. The Committee are of the view that protection of such data assumes 
+critical importance in view of increasing concerns relating to cyber security, 
+unauthorised access and misuse of digital information. The Committee, 
+therefore, recommend that the Ministry of Ministry of Panchayati Raj, in 
+coordination and collaboration with other concerned ministries and other 
+agencies, put in place a robust data governance and cyber security framework 
+covering storage, transmission, access protocols, privacy safeguards and 
+mechanisms to prevent unauthorised commercial use and data breaches. The 
+Committee also desire that appropriate grievance redressal mechanisms be 
+established to address complaints relating to misuse of geospatial property 
+data. 
+15. Need for Enhancing Interoperability and Digital Integration 
+The Committee note that the utility of the Scheme would be greatly 
+enhanced through seamless integration with other digital governance 
+platforms. The Committee are of the view that interoperability among SVAMITVA, 
+DILRMP, Aadhaar-enabled services and other e-Governance platforms is 
+essential for maximising the benefits of the Scheme. The Committee, therefore, 
+recommend that the Ministry of Panchayati Raj prepare a roadmap for achieving 
+end-to-end interoperability with other relevant digital platforms and periodically 
+review the State-wise status of such integration so as to facilitate seamless 
+delivery of citizen-centric services. The Committee note that APIs have already 
+been developed for integration of SVAMITVA with Gram Manchitra and the 
+Panchayat Enterprise Suite (PES). The Committee recommend that such 
+interoperability be extended in a time-bound manner to all relevant land 
+administration, registration and citizen service platforms to maximise utilisation 
+of the geospatial database created under the Scheme. 
+
+28 
+ 
+16. Need for Strengthening Technical Quality Assurance and Independent 
+Audit Mechanisms 
+The Committee note that accuracy and reliability of maps constitute the 
+foundation of the Scheme. Strengthening the technical quality assurance and 
+independent audit mechanism of the SVAMITVA scheme is critical to ensuring 
+the legal validity, financial reliability and long-term utility of the generated land 
+records. The Committee are of the view that continuous quality assurance and 
+validation are essential to ensure public confidence in the records created under 
+the Scheme. The Committee, therefore, recommend that robust quality 
+assurance mechanisms and periodic independent technical audits of geospatial 
+datasets be institutionalised. The Committee further recommend that the 
+Ministry of Panchayati Raj periodically review instances requiring re-survey and 
+examine the feasibility of adopting emerging technologies such as Artificial 
+Intelligence, LiDAR, satellite imagery and machine learning to further improve 
+mapping accuracy and minimise technical disputes. 
+ 
+ 
+ 
+ 
+NEW DELHI 
+03 August, 2026 
+12 Shraavana, 1948 (Saka) 
+SAPTAGIRI SANKAR ULAKA  
+Chairperson 
+Standing Committee on Rural Development & 
+Panchayati Raj 
+ 
+  
+
+29 
+ 
+Annexure I 
+COMMITTEE ON RURAL DEVELOPMENT AND PANCHAYATI RAJ (2025-26) 
+ 
+MINUTES OF THE TWENTY FOURTH SITTING OF THE COMMITTEE HELD ON 
+THURSDAY, 04 JUNE, 2026 
+ 
+The Committee sat from 1300 hrs to 1415 hrs in Committee Room ‘C’, Ground 
+Floor, Parliament House Annexe (PHA), New Delhi. 
+ 
+PRESENT   
+Shri Saptagiri Sankar Ulaka  -- Chairperson 
+ 
+Members 
+Lok Sabha 
+2. Shri Vijay Kumar Dubey 
+3. Dr. Sanjay Jaiswal 
+4. Shri Bhajan Lal Jatav 
+5. Dr. Mohammad Jawed 
+6. Shri Jugal Kishore 
+7. Dr. D. Ravi Kumar 
+8. Shri Naba Charan Majhi 
+9. Shri Janardan Mishra 
+10. Shri Kota Srinivasa Poojary 
+11. Shri K. Radhakrishnan 
+12. Shri Ramashankar Vidharthi Rajbhar 
+13. Shri Parshottambhai Rupala 
+14. Shri Ganesh Singh 
+Rajya Sabha 
+ 
+15. Shri Iranna Kadadi 
+16. Dr. Kavita Patidar 
+17. Smt. Rajathi 
+ 
+SECRETARIAT 
+ 
+1. Shri V.K. Shailon  - Director 
+2. Smt. Rashmi Roy  - Deputy Secretary 
+ 
+Representatives of the Ministry of Panchayati Raj  
+  
+Sr. No. Name of the Witness Designation 
+1.  Shri Vivek Bharadwaj Secretary 
+2.  Ms Palka Sahni Joint Secretary 
+3.  Ms Mukta Shekhar Joint Secretary 
+4.  Shri Rajesh Kumar Singh Joint Secretary 
+ 
+Representatives of the Ministry of Electronics and Information Technology 
+ 
+Sr. No. Name of the Witness Designation 
+1.  Shri Vinay Thakur ADG, BISAG 
+2.  Shri Sanjay Koul Director 
+
+30 
+ 
+Representatives of the Survey of India, Department of Science & Technology  
+(Ministry of Science & Technology) 
+ 
+Sr. No. Name of the Witness Designation 
+1.  Shri Shailesh Kumar Sinha Surveyor General of India, SoI 
+2.  Shri Pardeep Singh Deputy Surveyor General, SoI 
+3.  Shri Sanjay Kumar Joint Secretary, DST 
+4.  Shri Amit Bhargava DDG, NIC-GIS 
+ 
+2. At the outset, the Chairperson welcomed the Members to the sitting of the 
+Committee convened for briefing by the representatives of the Ministry of Panchayati 
+Raj, Ministry of Electronics and Information Technology, and Ministry of Science & 
+Technology (Department of Science & Technology) on the subject “Survey of Villages 
+Abadi and Mapping with Improvised Technology in Village Areas (SVAMITVA) scheme”. 
+ 
+[Thereafter the representatives from the Ministry of Panchayati Raj, Ministry of 
+Electronics and Information Technology, and Ministry of Science & Technology 
+(Department of Science & Technology) were called in] 
+ 
+3. After welcoming the representatives, the Chairperson in his opening remarks 
+stressed upon the objectives and implementation of “Survey of Villages Abadi and 
+Mapping with Improvised Technology in Village Areas (SVAMITVA) scheme”. The 
+Chairperson, then asked the representatives of the Ministry to introduce themselves 
+and place their views on the subject.  
+ 
+4.  The Secretary, Ministry of Panchayati Raj after taking permission from the 
+Chairperson, made a Power Point Presentation on the above-mentioned subject 
+covering various aspects of above amendment with special focus on its 
+implementation along with challenges face etc.  
+ 
+5. Highlights of Ministry of Panchayati Raj PPT are as under:-  
+(i) Drone survey completed in about 3.30 lakh villages against a target of 
+3.38 lakh villages.  
+(ii) 3.18 crore Property Cards prepared.  
+(ii) Survey completed with 1:500 scale and about 5 cm accuracy.  
+(iv) Scheme extended till September 2026.  
+(v)  Total outlay of ₹566.23 crore.  
+(vi) Establishment of 567 CORS stations.  
+(v) Reduction in property disputes.  
+(vi) Facilitation of institutional credit.  
+(vii) Better property tax assessment.  
+(viii)  Support to GPDP preparation through GIS maps.  
+(ix) Creation of accurate geospatial infrastructure.  
+(x) Employment generation and promotion of drone ecosystem.  
+(xi) Loans worth ₹1,713 crore sanctioned against Property Cards through 
+11,147 loans.  
+ 
+No presentation was done by MeITY and DST/Survey of India. 
+ 
+
+31 
+ 
+6. During the evidence, the following major queries were raised/suggestions were 
+made by Members of the Committee: - 
+(i) Cyber Security and Data Governance: Safeguards for storage, 
+transmission and protection of geospatial property data. Mechanisms to 
+prevent misuse, unauthorised access and data breaches. 
+(ii) Interoperability and Digital Integration:  Extent of integration with 
+DILRMP, Aadhaar-enabled services and e-governance platforms. State-
+wise status of interoperability.  
+(iii) Utilisation of GIS Data by Gram Panchayats: Broadband connectivity at 
+GP level. Number of Gram Panchayats actively using GIS-based 
+planning tools.  
+(iv) Accuracy and Quality of Mapping: Differences between old and new 
+survey scales. Mapping inaccuracies, boundary disputes and 
+requirement of re-surveys. Quality assurance and validation 
+mechanisms adopted by Survey of India.  
+(v) Independent Audit and Adoption of Emerging Technologies: Need for 
+independent technical audit of geospatial datasets. Use of AI, LiDAR, 
+satellite imagery and machine learning.  
+(vi) International Benchmarking: Comparison of India's experience with 
+international practices and standards.  
+(vii) Coverage of the Scheme: Exclusion of Bihar from the Scheme and 
+rationale thereof. 
+7. Subsequently, the queries of the Committee were replied by the Secretary, 
+MoPR. Certain issues which remained unanswered along with those which warranted 
+elaborate reply, the Ministry were requested to send written replies thereto in writing 
+within seven days.  
+ [The Witnesses then withdrew] 
+A verbatim record of the proceedings has been kept. 
+The Committee then adjourned. 
+***** 
+ 
+  
+
+32 
+ 
+Annexure II 
+COMMITTEE ON RURAL DEVELOPMENT AND PANCHAYATI RAJ (2025-26) 
+ 
+MINUTES OF THE TWENTY FIFTH SITTING OF THE COMMITTEE HELD ON 
+MONDAY, 22 JUNE, 2026 
+ 
+The Committee sat from 1100 hrs to 1312 hrs in Committee Room ‘C’, Ground 
+Floor, Parliament House Annexe (PHA), New Delhi. 
+ 
+PRESENT   
+Shri Saptagiri Sankar Ulaka  -- Chairperson 
+ 
+Members 
+ 
+Lok Sabha 
+ 
+2. Shri Vijay Kumar Dubey 
+3. Shri Bhajan Lal Jatav 
+4. Dr. Mohammad Jawed 
+5. Shri Jugal Kishore 
+6. Shri Imran Masood 
+7. Shri Janardan Mishra 
+8. Shri K. Radhakrishnan 
+9. Shri Ramashankar Vidharthi Rajbhar 
+10. Shri Parshottambhai Rupala 
+11. Shri Vivek Thakur 
+ 
+Rajya Sabha 
+ 
+12. Smt. Geeta alias Chandraprabha 
+13. Dr. M. Dhanapal 
+14. Dr. Kavita Patidar 
+15. Shri Nagendra Ray 
+16. Shri Karamvir Singh Boudh 
+ 
+ 
+SECRETARIAT 
+ 
+1. Shri V.K. Shailon  - Director 
+ 
+Representatives of the Ministry of Panchayati Raj  
+  
+Sr. No. Name of the Witness Designation 
+1.  Shri Sushil Kumar Lohani Additional Secretary 
+2.  Ms. Palka Sahni Joint Secretary 
+3.  Shri Rajesh Kumar Singh Joint Secretary 
+ 
+Representatives of the Ministry of Electronics and Information Technology 
+ 
+Sr. No. Name of the Witness Designation 
+1.  Shri S. Krishnan Secretary 
+
+33 
+ 
+2.  Shri Priyank Bharti Additional Secretary & 
+DG, NIC 
+3.  Shri Amit Bhargava DDG, NIC 
+4.  Shri Karthikeyan S.P. DDG, NIC 
+ 
+Representatives of the Survey of India, Department of Science & Technology  
+(Ministry of Science & Technology) 
+ 
+Sr. No. Name of the Witness Designation 
+1.  Dr. Rajesh S. Gokhale Secretary, DST 
+2.  Shri Sanjay Kumar Joint Secretary, DST 
+3.  Shri Shailesh Kumar Sinha Surveyor General of India, SoI 
+4.  Shri Pardeep Singh Deputy Surveyor General, SoI 
+ 
+2. At the outset, the Chairperson welcomed the Members to the sitting of the 
+Committee convened for having a briefing by the representatives of the Ministry of 
+Panchayati Raj, Ministry of Electronics and Information Technology, and Ministry of 
+Science & Technology (Department of Science & Technology) on the subject “Survey 
+of Villages Abadi and Mapping with Improvised Technology in Village Areas 
+(SVAMITVA) scheme”. 
+ 
+[Thereafter the representatives from the Ministry of Panchayati Raj, Ministry of 
+Electronics and Information Technology, and Ministry of Science & Technology 
+(Department of Science & Technology) were called in] 
+ 
+3. After welcoming the representatives, the Chairperson in his opening remarks 
+stressed upon the objectives and implementation of “Survey of Villages Abadi and 
+Mapping with Improvised Technology in Village Areas (SVAMITVA) scheme”. The 
+Chairperson, then asked the representatives of the Ministry to introduce themselves 
+and place their views on the subject.  
+ 
+4.  The Secretary, Ministry Electronics and Information Technology after taking 
+permission from the Chairperson, made a Power Point Presentation on the above-
+mentioned subject covering various aspects of the subject. Highlights of Ministry’s PPT 
+are as under:  
+ 
+(i) Establishment of 567 Continuously Operation Reference Stations 
+(CORS) network; 
+(ii) Financial Outlay of Rs.566.23 Crores (including Rs.79.65 crores for the 
+pilot phone of the scheme (FY 2020-21); 
+(iii) 70 thousand square kilometres of abadi land surveyed with an accuracy 
+of 5cms; 
+(iv) Drones create 1:500 scale high resolution land maps; 
+(v) Integration of Property Card and Digilocker; and 
+(vi) Opens the door for numerous Start-Ups and MSME service companies. 
+ 
+5. Also, the Secretary, Department of Science and Technology (Ministry of 
+Science and Technology after taking permission from the Chairperson, made a Power 
+
+34 
+ 
+Point Presentation on the above-mentioned subject.  Highlights of Ministry’s PPT are 
+as under:- 
+ 
+(i) Setting up ground control points using CORS; 
+(ii) Using advanced photogrammetry – Aerial platforms with Nadir RGB 
+cameras and LiDAR sensors; 
+(iii) Availability of Hard copy maps on 1:500 scale for a village along with 
+PDF copy; and 
+(iv) Helping the other projects like NAKSHA project under DoLR, AMRUT 
+project under HoHUA and Large-Scale Mapping project etc. 
+ 
+6. During the evidence, the following major queries were raised by Members of 
+the Committee: - 
+i. The procedure adopted for resolving a boundary dispute between two 
+villages using modern surveying technology; 
+ii. Common land of villages like ponds, grazing lands and playgrounds etc 
+have been encroached; safeguard provided in protecting public lands 
+from illegal occupation; 
+iii. The process for revising and maintaining the final village map after future 
+changes or court orders; and 
+iv. Whether survey covered owners of kaccha houses as well as pucca 
+houses and eligibility of owner of kaccha houses to receive property 
+ownership cards. 
+7. Subsequently, the queries of the Committee were replied by the both 
+Secretaries Ministry of Information and Communication Technology and Ministry of 
+Science and Technology (Department of Science and Technology). Certain issues 
+which remained unanswered along with those which warranted elaborate reply, the 
+Ministry were requested to send written replies thereto in writing within seven days.  
+ [The Witnesses then withdrew] 
+A verbatim record of the proceedings has been kept. 
+The Committee then adjourned. 
+***** 
+ 
+  
+
+35 
+ 
+Annexure III 
+ 
