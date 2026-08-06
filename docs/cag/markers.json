@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T09:37:33Z",
+  "generated_at": "2026-08-06T09:32:14Z",
   "totals": {
-    "pypdf-empty": 2,
+    "pypdf-empty": 8,
     "pypdf-error": 3,
     "ocr-failed": 4
   },
@@ -14,6 +14,12 @@
     "1837": "ocr-failed",
     "1966": "pypdf-error",
     "125857": "pypdf-empty",
-    "125856": "pypdf-empty"
+    "125856": "pypdf-empty",
+    "125883": "pypdf-empty",
+    "125879": "pypdf-empty",
+    "125881": "pypdf-empty",
+    "125878": "pypdf-empty",
+    "125882": "pypdf-empty",
+    "125884": "pypdf-empty"
   }
 }
