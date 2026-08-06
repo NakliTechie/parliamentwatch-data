@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14528,
-    "shards": 14528,
+    "records_with_text": 14543,
+    "shards": 14543,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 2286214,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14528,
-    "txt_files_removed": 0
+    "txt_files_removed": 15
   },
   "shard_stride": 250,
   "shards": [
@@ -2386,9 +2386,44 @@
       "bytes": 101102
     },
     {
+      "file": "texts-chemicals-LS18-28-0000.json",
+      "count": 1,
+      "bytes": 165790
+    },
+    {
+      "file": "texts-chemicals-LS18-29-0000.json",
+      "count": 1,
+      "bytes": 97330
+    },
+    {
       "file": "texts-chemicals-LS18-3-0000.json",
       "count": 1,
       "bytes": 132932
+    },
+    {
+      "file": "texts-chemicals-LS18-30-0000.json",
+      "count": 1,
+      "bytes": 147918
+    },
+    {
+      "file": "texts-chemicals-LS18-31-0000.json",
+      "count": 1,
+      "bytes": 160316
+    },
+    {
+      "file": "texts-chemicals-LS18-32-0000.json",
+      "count": 1,
+      "bytes": 122833
+    },
+    {
+      "file": "texts-chemicals-LS18-33-0000.json",
+      "count": 1,
+      "bytes": 202000
+    },
+    {
+      "file": "texts-chemicals-LS18-34-0000.json",
+      "count": 1,
+      "bytes": 117930
     },
     {
       "file": "texts-chemicals-LS18-4-0000.json",
@@ -10646,9 +10681,44 @@
       "bytes": 692614
     },
     {
+      "file": "texts-communications-LS18-28-0000.json",
+      "count": 1,
+      "bytes": 164969
+    },
+    {
+      "file": "texts-communications-LS18-29-0000.json",
+      "count": 1,
+      "bytes": 155665
+    },
+    {
       "file": "texts-communications-LS18-3-0000.json",
       "count": 1,
       "bytes": 253491
+    },
+    {
+      "file": "texts-communications-LS18-30-0000.json",
+      "count": 1,
+      "bytes": 123272
+    },
+    {
+      "file": "texts-communications-LS18-31-0000.json",
+      "count": 1,
+      "bytes": 152106
+    },
+    {
+      "file": "texts-communications-LS18-32-0000.json",
+      "count": 1,
+      "bytes": 232642
+    },
+    {
+      "file": "texts-communications-LS18-33-0000.json",
+      "count": 1,
+      "bytes": 161542
+    },
+    {
+      "file": "texts-communications-LS18-34-0000.json",
+      "count": 1,
+      "bytes": 220300
     },
     {
       "file": "texts-communications-LS18-4-0000.json",
@@ -22344,6 +22414,11 @@
       "file": "texts-energy-LS18-12-0000.json",
       "count": 1,
       "bytes": 148061
+    },
+    {
+      "file": "texts-energy-LS18-13-0000.json",
+      "count": 1,
+      "bytes": 105818
     },
     {
       "file": "texts-energy-LS18-2-0000.json",
