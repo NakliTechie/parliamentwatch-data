@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 805,
-    "shards": 805,
+    "records_with_text": 811,
+    "shards": 811,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 893306,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 805,
-    "txt_files_removed": 0
+    "txt_files_removed": 6
   },
   "shard_stride": 250,
   "shards": [
@@ -729,6 +729,36 @@
       "file": "texts-copu-LS18-30-0000.json",
       "count": 1,
       "bytes": 101505
+    },
+    {
+      "file": "texts-copu-LS18-31-0000.json",
+      "count": 1,
+      "bytes": 151857
+    },
+    {
+      "file": "texts-copu-LS18-32-0000.json",
+      "count": 1,
+      "bytes": 279241
+    },
+    {
+      "file": "texts-copu-LS18-33-0000.json",
+      "count": 1,
+      "bytes": 142362
+    },
+    {
+      "file": "texts-copu-LS18-34-0000.json",
+      "count": 1,
+      "bytes": 74420
+    },
+    {
+      "file": "texts-copu-LS18-35-0000.json",
+      "count": 1,
+      "bytes": 112160
+    },
+    {
+      "file": "texts-copu-LS18-36-0000.json",
+      "count": 1,
+      "bytes": 152158
     },
     {
       "file": "texts-copu-LS18-4-0000.json",
