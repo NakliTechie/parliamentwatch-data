@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 811,
-    "shards": 811,
+    "records_with_text": 813,
+    "shards": 813,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 461584,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 811,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shard_stride": 250,
   "shards": [
@@ -1444,6 +1444,16 @@
       "file": "texts-estimates-LS18-7-0000.json",
       "count": 1,
       "bytes": 179685
+    },
+    {
+      "file": "texts-estimates-LS18-8-0000.json",
+      "count": 1,
+      "bytes": 277767
+    },
+    {
+      "file": "texts-estimates-LS18-9-0000.json",
+      "count": 1,
+      "bytes": 193352
     },
     {
       "file": "texts-pac-LS14-1-0000.json",
