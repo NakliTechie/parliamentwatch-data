@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14543,
-    "shards": 14543,
+    "records_with_text": 14548,
+    "shards": 14548,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 587528,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14543,
-    "txt_files_removed": 0
+    "txt_files_removed": 5
   },
   "shard_stride": 250,
   "shards": [
@@ -12299,6 +12299,31 @@
       "file": "texts-defence-LS18-23-0000.json",
       "count": 1,
       "bytes": 141830
+    },
+    {
+      "file": "texts-defence-LS18-24-0000.json",
+      "count": 1,
+      "bytes": 155480
+    },
+    {
+      "file": "texts-defence-LS18-25-0000.json",
+      "count": 1,
+      "bytes": 166704
+    },
+    {
+      "file": "texts-defence-LS18-26-0000.json",
+      "count": 1,
+      "bytes": 71025
+    },
+    {
+      "file": "texts-defence-LS18-27-0000.json",
+      "count": 1,
+      "bytes": 128565
+    },
+    {
+      "file": "texts-defence-LS18-28-0000.json",
+      "count": 1,
+      "bytes": 77635
     },
     {
       "file": "texts-defence-LS18-3-0000.json",
