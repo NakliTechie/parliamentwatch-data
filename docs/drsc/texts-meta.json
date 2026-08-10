@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14548,
-    "shards": 14548,
+    "records_with_text": 14561,
+    "shards": 14561,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 1219668,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14548,
-    "txt_files_removed": 0
+    "txt_files_removed": 13
   },
   "shard_stride": 250,
   "shards": [
@@ -24746,9 +24746,39 @@
       "bytes": 938146
     },
     {
+      "file": "texts-finance-LS18-37-0000.json",
+      "count": 1,
+      "bytes": 78548
+    },
+    {
+      "file": "texts-finance-LS18-38-0000.json",
+      "count": 1,
+      "bytes": 74547
+    },
+    {
+      "file": "texts-finance-LS18-39-0000.json",
+      "count": 1,
+      "bytes": 64229
+    },
+    {
       "file": "texts-finance-LS18-4-0000.json",
       "count": 1,
       "bytes": 115341
+    },
+    {
+      "file": "texts-finance-LS18-40-0000.json",
+      "count": 1,
+      "bytes": 99530
+    },
+    {
+      "file": "texts-finance-LS18-41-0000.json",
+      "count": 1,
+      "bytes": 64057
+    },
+    {
+      "file": "texts-finance-LS18-42-0000.json",
+      "count": 1,
+      "bytes": 105465
     },
     {
       "file": "texts-finance-LS18-5-0000.json",
@@ -36079,6 +36109,11 @@
       "file": "texts-housing-LS18-10-0000.json",
       "count": 1,
       "bytes": 218661
+    },
+    {
+      "file": "texts-housing-LS18-11-0000.json",
+      "count": 1,
+      "bytes": 152819
     },
     {
       "file": "texts-housing-LS18-2-0000.json",
@@ -50576,6 +50611,11 @@
       "bytes": 187382
     },
     {
+      "file": "texts-railways-LS18-10-0000.json",
+      "count": 1,
+      "bytes": 186213
+    },
+    {
       "file": "texts-railways-LS18-2-0000.json",
       "count": 1,
       "bytes": 91183
@@ -50609,6 +50649,11 @@
       "file": "texts-railways-LS18-8-0000.json",
       "count": 1,
       "bytes": 251683
+    },
+    {
+      "file": "texts-railways-LS18-9-0000.json",
+      "count": 1,
+      "bytes": 75433
     },
     {
       "file": "texts-ruraldevelopment-LS14-1-0000.json",
@@ -62524,6 +62569,26 @@
       "file": "texts-socialjustice-LS18-20-0000.json",
       "count": 1,
       "bytes": 94332
+    },
+    {
+      "file": "texts-socialjustice-LS18-21-0000.json",
+      "count": 1,
+      "bytes": 113743
+    },
+    {
+      "file": "texts-socialjustice-LS18-22-0000.json",
+      "count": 1,
+      "bytes": 116160
+    },
+    {
+      "file": "texts-socialjustice-LS18-23-0000.json",
+      "count": 1,
+      "bytes": 71416
+    },
+    {
+      "file": "texts-socialjustice-LS18-24-0000.json",
+      "count": 1,
+      "bytes": 42116
     },
     {
       "file": "texts-socialjustice-LS18-3-0000.json",
