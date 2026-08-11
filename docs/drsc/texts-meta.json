@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14561,
-    "shards": 14561,
+    "records_with_text": 14566,
+    "shards": 14566,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 524861,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14561,
-    "txt_files_removed": 0
+    "txt_files_removed": 5
   },
   "shard_stride": 250,
   "shards": [
@@ -51751,9 +51751,34 @@
       "bytes": 84000
     },
     {
+      "file": "texts-ruraldevelopment-LS18-37-0000.json",
+      "count": 1,
+      "bytes": 185592
+    },
+    {
+      "file": "texts-ruraldevelopment-LS18-38-0000.json",
+      "count": 1,
+      "bytes": 49838
+    },
+    {
+      "file": "texts-ruraldevelopment-LS18-39-0000.json",
+      "count": 1,
+      "bytes": 79768
+    },
+    {
       "file": "texts-ruraldevelopment-LS18-4-0000.json",
       "count": 1,
       "bytes": 133889
+    },
+    {
+      "file": "texts-ruraldevelopment-LS18-40-0000.json",
+      "count": 1,
+      "bytes": 108110
+    },
+    {
+      "file": "texts-ruraldevelopment-LS18-41-0000.json",
+      "count": 1,
+      "bytes": 112271
     },
     {
       "file": "texts-ruraldevelopment-LS18-5-0000.json",
