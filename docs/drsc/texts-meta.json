@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14566,
-    "shards": 14566,
+    "records_with_text": 14567,
+    "shards": 14567,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 160758,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14566,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shard_stride": 250,
   "shards": [
@@ -36114,6 +36114,11 @@
       "file": "texts-housing-LS18-11-0000.json",
       "count": 1,
       "bytes": 152819
+    },
+    {
+      "file": "texts-housing-LS18-12-0000.json",
+      "count": 1,
+      "bytes": 163871
     },
     {
       "file": "texts-housing-LS18-2-0000.json",
