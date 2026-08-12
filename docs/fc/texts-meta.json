@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 813,
-    "shards": 813,
+    "records_with_text": 816,
+    "shards": 816,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 417343,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 813,
-    "txt_files_removed": 0
+    "txt_files_removed": 3
   },
   "shard_stride": 250,
   "shards": [
@@ -1414,6 +1414,11 @@
       "file": "texts-estimates-LS18-1-0000.json",
       "count": 1,
       "bytes": 68497
+    },
+    {
+      "file": "texts-estimates-LS18-10-0000.json",
+      "count": 1,
+      "bytes": 367106
     },
     {
       "file": "texts-estimates-LS18-2-0000.json",
@@ -4059,6 +4064,16 @@
       "file": "texts-pac-LS18-53-0000.json",
       "count": 1,
       "bytes": 32731
+    },
+    {
+      "file": "texts-pac-LS18-54-0000.json",
+      "count": 1,
+      "bytes": 29472
+    },
+    {
+      "file": "texts-pac-LS18-55-0000.json",
+      "count": 1,
+      "bytes": 29472
     },
     {
       "file": "texts-pac-LS18-6-0000.json",
