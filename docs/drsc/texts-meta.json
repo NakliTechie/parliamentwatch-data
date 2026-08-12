@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14572,
-    "shards": 14572,
+    "records_with_text": 14581,
+    "shards": 14581,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 997226,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14572,
-    "txt_files_removed": 0
+    "txt_files_removed": 9
   },
   "shard_stride": 250,
   "shards": [
@@ -1399,6 +1399,41 @@
       "file": "texts-agriculture-LS18-4-0000.json",
       "count": 1,
       "bytes": 149757
+    },
+    {
+      "file": "texts-agriculture-LS18-40-0000.json",
+      "count": 1,
+      "bytes": 80331
+    },
+    {
+      "file": "texts-agriculture-LS18-41-0000.json",
+      "count": 1,
+      "bytes": 105061
+    },
+    {
+      "file": "texts-agriculture-LS18-42-0000.json",
+      "count": 1,
+      "bytes": 167649
+    },
+    {
+      "file": "texts-agriculture-LS18-43-0000.json",
+      "count": 1,
+      "bytes": 74787
+    },
+    {
+      "file": "texts-agriculture-LS18-44-0000.json",
+      "count": 1,
+      "bytes": 68789
+    },
+    {
+      "file": "texts-agriculture-LS18-45-0000.json",
+      "count": 1,
+      "bytes": 159159
+    },
+    {
+      "file": "texts-agriculture-LS18-46-0000.json",
+      "count": 1,
+      "bytes": 88950
     },
     {
       "file": "texts-agriculture-LS18-5-0000.json",
@@ -50084,6 +50119,16 @@
       "file": "texts-petroleum-LS18-7-0000.json",
       "count": 1,
       "bytes": 165351
+    },
+    {
+      "file": "texts-petroleum-LS18-8-0000.json",
+      "count": 1,
+      "bytes": 116798
+    },
+    {
+      "file": "texts-petroleum-LS18-9-0000.json",
+      "count": 1,
+      "bytes": 156708
     },
     {
       "file": "texts-railways-LS14-1-0000.json",
