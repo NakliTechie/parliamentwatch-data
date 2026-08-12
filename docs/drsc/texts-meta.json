@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14567,
-    "shards": 14567,
+    "records_with_text": 14572,
+    "shards": 14572,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 585313,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14567,
-    "txt_files_removed": 0
+    "txt_files_removed": 5
   },
   "shard_stride": 250,
   "shards": [
@@ -3484,6 +3484,11 @@
       "file": "texts-coal-LS18-28-0000.json",
       "count": 1,
       "bytes": 108753
+    },
+    {
+      "file": "texts-coal-LS18-29-0000.json",
+      "count": 1,
+      "bytes": 129192
     },
     {
       "file": "texts-coal-LS18-3-0000.json",
@@ -24779,6 +24784,21 @@
       "file": "texts-finance-LS18-42-0000.json",
       "count": 1,
       "bytes": 105465
+    },
+    {
+      "file": "texts-finance-LS18-43-0000.json",
+      "count": 1,
+      "bytes": 87580
+    },
+    {
+      "file": "texts-finance-LS18-44-0000.json",
+      "count": 1,
+      "bytes": 129724
+    },
+    {
+      "file": "texts-finance-LS18-45-0000.json",
+      "count": 1,
+      "bytes": 158165
     },
     {
       "file": "texts-finance-LS18-5-0000.json",
@@ -62619,6 +62639,11 @@
       "file": "texts-socialjustice-LS18-24-0000.json",
       "count": 1,
       "bytes": 42116
+    },
+    {
+      "file": "texts-socialjustice-LS18-25-0000.json",
+      "count": 1,
+      "bytes": 92149
     },
     {
       "file": "texts-socialjustice-LS18-3-0000.json",
