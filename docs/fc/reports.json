@@ -4,6 +4,19 @@
       "committee": "estimates",
       "committee_name": "Estimates",
       "lok_sabha": 18,
+      "report_number": 10,
+      "title": "Budget and Policy aspects for providing Affordable and Quality Education in the Country including Review of Central Board of Secondary Education",
+      "presented_in_ls": "10-Aug-2026",
+      "laid_in_rs": null,
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/Estimates/18_Estimates_10.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/Estimates/18_Estimates_10(hindi).pdf?source=app"
+    },
+    {
+      "committee": "estimates",
+      "committee_name": "Estimates",
+      "lok_sabha": 18,
       "report_number": 9,
       "title": "Action Taken by the Government on the recommendations contained in the 6th Report (18th Lok Sabha) of the Committee on the subject “Promotion of Climate Resilient Agriculture, Natural and Organic Farming through KVKs”",
       "presented_in_ls": "07-Aug-2026",
@@ -1731,6 +1744,32 @@
     }
   ],
   "pac": [
+    {
+      "committee": "pac",
+      "committee_name": "Public Accounts",
+      "lok_sabha": 18,
+      "report_number": 55,
+      "title": "Action Taken by the Government on the Observations/Recommendations of the Committee contained in their 119th Report (17th LS) on \"Loss of Revenue due to Failure to revise Casual Occupation and Service Charges\"",
+      "presented_in_ls": "12-Aug-2026",
+      "laid_in_rs": "12-Aug-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/Public Accounts/18_Public_Accounts_55.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/Public Accounts/18_Public_Accounts_55(hindi).pdf?source=app"
+    },
+    {
+      "committee": "pac",
+      "committee_name": "Public Accounts",
+      "lok_sabha": 18,
+      "report_number": 54,
+      "title": "Production of Small Arms in Ordanance Factories",
+      "presented_in_ls": "12-Aug-2026",
+      "laid_in_rs": "12-Aug-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/Public Accounts/18_Public_Accounts_54.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/Public Accounts/18_Public_Accounts_54(hindi).pdf?source=app"
+    },
     {
       "committee": "pac",
       "committee_name": "Public Accounts",
