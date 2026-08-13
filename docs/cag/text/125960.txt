@@ -1,0 +1,2701 @@
+ 
+
+ 
+Report of the 
+Comptroller and Auditor General of India 
+on 
+Performance Audit on BharatNet 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Union Government 
+Ministry of Communications 
+Department of Telecommunications 
+Report No. 19 of 2026 
+(Performance Audit - Civil) 
+ 
+
+ 
+
+Report No. 19 of 2026 
+i 
+Contents 
+Title Page 
+Preface iii 
+Executive Summary v-vi 
+Recommendations vii-viii 
+Chapter I:  Introduction 1-8 
+Chapter II:  Audit objectives, Scope and Methodology 9-10 
+Chapter III:  Project Planning and implementation 11-33 
+Chapter IV:  Operation & Maintenance and Utilisation of BharatNet 
+Infrastructure 
+35-48 
+Chapter V:  Governance 49-53 
+Annexures 55-60 
+Glossary 61-62 
+ 
+ 
+
+ 
+ 
+ 
+
+Report No. 19 of 2026 
+iii 
+ 
+Preface 
+This Report for the year ended March 202 4 has been prepared for submission to the 
+President under Article 151 of the Constitution of India.  
+The Report contains significant results of the Performance Audit on BharatNet, 
+Department of Telecommunications for the period from 2017 -18 to 2022-23 focussing 
+on Phase-II of the project. 
+The instances mentioned in this Report are those which came to notice during test audit 
+conducted from October 2023 to August 2024. The status of the p roject has been 
+updated up to November 2025 wherever considered relevant. 
+The audit has been conducted in conformity with the Auditing Standards issued by the 
+Comptroller and Auditor General of India. 
+ 
+ 
+ 
+
+ 
+ 
+ 
+Executive Summary 
+
+Report No. 19 of 2026 
+v 
+Executive Summary  
+Rural broadband connectivity serves as a critical catalyst for socio -economic development 
+and the BharatNet project stands as one of the world's largest telecommunications initiatives 
+aimed at addressing this need. The project, implemented in phases, seeks  to provide 
+broadband access to approximately 2 .5 lakh  Gram Panchayats (GPs) across India. The 
+selection of this project for a Performance Audit acknowledges its immense potential to 
+transform rural communities through digital inclusion.        (Para 1.1) 
+The BharatNet project was conceived in October 2011 and has been executed through a 
+Special Purpose Vehicle, Bharat Broadband Network Limited (BBNL) incorporated in 2012. 
+BBNL steered the project in Phase -I and Phase -II. The project is funded by the Univer sal 
+Service Obligation Fund (USOF) now called Digital Bharat Nidhi  (DBN). As of November 2025, 
+an expenditure of ₹ 39,888 crore has been incurred against an approved budget of 
+₹42,068 crore (₹11,148 crore in Phase-I and ₹30,920 crore1 in Phase-II). As of November 2025, 
+BharatNet had achieved service ready status in  2.19 lakh GPs (96.70  per cent) against the 
+revised scope of 2.26 lakh GPs.                                                     (Para 1.1, 1.5,3.3.2) 
+The audit mainly focusses on Phase -II of the project and aims to seek an assurance on two 
+aspects of the project: the capability of the project to deliver effective last mile connectivity 
+with optimal utilisation and the robustness of its governance struct ure in identifying and 
+overcoming implementation challenges. We audited Bharat Broadband Network Limited and 
+Bharat Sanchar Nigam Limited  (BSNL) Corporate offices, USOF, Department of 
+Telecommunications and field units across eight selected States and one Union Territory.                         
+              (Para 2.1, 2.2, 2.3) 
+We found deficiencies in the project’s planning and implementation. Though Phase-II was 
+planned in 20 states (21 Circles) through three implementation models – Central Public 
+Sector Undertaking  (CPSU) led model, State -led model and Private led model, it could be 
+implemented in 13  States (14 Circles) only. Detailed Project Report ( DPR) preparation, the 
+starting point of project commencement, was carried out on the basis of desktop surveys 
+although physical surveys were mandated. BBNL implemented projects in Punjab and Bihar 
+without preparing DPRs under Private-led model. In the satellite component meant to provide 
+connectivity in remote areas, BBNL did not install Wi -Fi Access Points even in service -ready 
+GPs, thereby preventing end-users from accessing the intended broadband services. Further, 
+as on November 2025, only six States (seven Circles) achieved 100 per cent  service-ready 
+status with delays ranging from two to six years across all the Implementation models. The 
+delayed roll-out deferred the availability of broadband connectivity in rural areas envisaged 
+to enable access to services such as education, healthcare, business, entertainment, 
+e-governance to the rural population  thereby undermining the objective of early 
+socio-economic transformation.               (Para 3.1, 3.2) 
+ 
+1  Comprising CAPEX - ₹18,792 crore (Phase-II), OPEX - ₹6,046 crore, Last Mile connectivity through viability Gap funding- ₹4,066 crore & 
+Replacement of poor-quality BSNL fibre- ₹2,016 crore.  
+
+Report No. 19 of 2026 
+vi 
+The network infrastructure has been largely deployed —covering over 96.70 per cent 2 
+(November 2025) of targeted GPs, however the same could not be translated into efficient 
+operation, utilisation and revenue generation. Operational performance remained 
+significantly low with persistent downtime, low availability and poor fault -resolution record. 
+As of November 2025, only 33.20 per cent3 of service-ready GPs were operational. The main 
+cause of downtime was fibre faults or cuts, accounting for approximately 48 per cent  of 
+non-operational cases. Moreover, the Mean Time to Restore (MTTR) fibre faults stood at an 
+average of 17 days, reflecting delayed maintenance response. Additionally, the inability to 
+integrate fibre fault localisation systems hampered maintenance. The operation al status of 
+BharatNet remains a challenge across States except in Gujarat and Punjab where the 
+operational GPs were above 90 per cent.                                                        (Para 1.5, 3.2.5, 4.2) 
+We noted that only 17.91 per cent  of the available bandwidth was utilised. Further, key 
+stakeholders, including major telecom service providers, withdrew due to service quality 
+concerns. Despite demand, dark fibre was not leased in many cases due to absence of policy 
+or delayed decisions at State Implementing Agency  level. Low utili sation has curtailed 
+BharatNet’s potential to drive grassroots transformation.                                              (Para 4.3) 
+The project was conceived to be self -sustaining but high maintenance costs vis a vis paltry 
+revenue, have cut short that expectation. Financial oversight emerged as a concern. The 
+milestone -based payment model was weakest under the CPSU -led model contribu ting to 
+lower service delivery, while the private-led model demonstrated stronger financial discipline 
+and better service delivery.  We also noted that BSNL under the CPSU -led model diverted 
+funds of ₹2,001.43 crore from the project for other purposes which has since been recouped 
+and submission of Utilisation Certificates is now required under Amended BharatNet Program 
+(ABP).                                                                                                                                 (Para 3.3, 4.4) 
+Overall, Audit concludes that while BharatNet has achieved substantial infrastructural 
+success, it has fallen short of its broader objective of bridging the digital divide. The decision 
+to merge BBNL with BSNL and implement BharatNet under a single -agency model (BSNL) 
+through ABP reflects an acknowledgement of the governance and execution deficiencies 
+noted in the project.  To transform BharatNet into a successful digital connectivity initiative, 
+several reforms as suggested in recommendations may be considered during 
+implementation. These gain greater significance given that ABP approved by the Cabinet in 
+August 2023 aims to expand the scope of the project from 2.5 lakh GPs in the earlier phases 
+to 6.4 lakh villages/GPs across India.  
+ 
+ 
+2  99.97 per cent and 92.79 per cent of the targeted GPs of Phase-I and Phase-II respectively are service ready as on November 2025. 
+3  Of the GPs declared service-ready, 31.97 per cent in Phase-I and 34.79 per cent in Phase-II were operational.  
+
+Report No. 19 of 2026 
+vii 
+Recommendations 
+1.  Streamline Planning, its approval and System Integration 
+i. Detailed Project Reports should be based on comprehensive ground surveys, 
+ensuring accurate cost projections and reducing revisions.  
+ii. Department of Telecommunications and Digital Communication Commission 
+establish a fast -track approval mechanism with strategies that factor location -
+specific challenges. 
+iii. Better coordination is needed between the Department of Telecommunications 
+(DoT), BSNL and State governments to address bottlenecks. 
+iv. Fast-track GIS mapping completion for all Gram Panchayats (GPs) to streamline 
+maintenance and network upgrades. 
+v. Ensure effective rollout of Fibre Fault Localisation System (FFLS)/Remote Fibre 
+Monitoring Systems (RFMS) and integrate these systems with a centralized Network 
+Operations Centre  (NOC). 
+vi. Ensure integration of GIS, FFLS/RFMS and Network Management System (NMS) for 
+automated fault localization and route optimization. 
+vii. Ensure that Wi-Fi Access Points are operational and properly maintained to enhance 
+utilisation. 
+2.  Improve Financial Oversight  
+i. Implement a performance -linked disbursement model similar to the private -led 
+approach, ensuring payments are strictly tied to project milestones and service 
+availability. 
+3.  Accelerate Network Completion and utilisation 
+i. Ensure integration of  state and central NOCs  by implementing consolidated 
+monitoring frameworks. 
+ii. Prioritize completion of acceptance testing across all GPs before declaring project 
+milestones as achieved. 
+iii. Consider launching a targeted awareness and marketing campaigns to promote 
+BharatNet services to rural users, MSMEs, public agencies, and local businesses.  
+iv. Consider introducing targeted incentives to promote anchor tenancy  by key 
+government departments such as health, education and agriculture. Additionally, 
+tiered pricing models  for first-time users, with subsidized rates for priority sectors  
+like agriculture and education may be considered to encourage utili sation and 
+enhance financial sustainability. 
+v. Ensure that all GPs are operational and properly maintained to enhance utilisation. 
+
+Report No. 19 of 2026 
+viii 
+4.  Enhance Service Quality  
+i. Deploy dedicated maintenance teams in each State with strict Service Level 
+Agreements (SLAs) to ensure high uptime. 
+ii. Implement predictive maintenance and AI -based fault detection systems to reduce 
+downtime and optimize network operation. 
+iii. Deploy real-time dashboards to monitor data usage, uptime and service quality at 
+the GP level and link partner incentives to key performance metrics such as uptime 
+(above 95 per cent), bandwidth utilisation, and customer satisfaction. 
+5.  Strengthen Long-Term Sustainability 
+i. Develop a self -sustaining revenue model, including monetization of dark fibre and 
+leasing of excess network capacity to telecom providers. 
+ii. Explore BOOT (Build -Own-Operate-Transfer) or DBOM (Design -Build-Operate-
+Maintain) model for ABP to ensure long -term sustainability and attract private 
+sector participation and Viability Gap Funding (VGF) linked to clearly defined service-
+level milestones. 
+6.  Align Implementation Strategy with Digital Inclusion Goals 
+i. ABP should move beyond mere infrastructure deployment and focus equally on 
+community awareness, and  Service delivery at the last mile by engaging non-
+telecom partners  (NGOs, SHGs, CSCs) , thereby addressing the persistent issue of 
+underutilisation and ensuring that the socio -economic benefits envisioned under 
+BharatNet are fully realized. 
+7.  Strengthen Governance and Institutional Design for ABP 
+i. The executing agency (BSNL) for ABP should be supported by a specialized division 
+with independent leadership , separate financials , adequate institutional capacity 
+and clearly defined performance KPIs  to ensure focused implementation and 
+operational efficiency. Governance should be strengthened through the oversight by 
+independent directors. 
+ii. The legacy concerns raised by Telecom Regulatory Authority of India (TRAI), such as 
+conflict of interest, lack of competitive neutrality  and distraction from BSNL’s core 
+telecom mandate  need to be proactively addressed by legally separating 
+BharatNet’s infrastructure and service provision functions within BSNL. 
+iii. Ensure PPP based training programs  in collaboration with Gram Panchayats and 
+local bodies, supported by certification modules covering fibre maintenance, RFMS 
+operation, and fault localization. Encourage trained local youth and entrepreneurs  
+to take up O&M roles under the BharatNet Udyami Model  through performance-
+linked contracts , fostering employment, accountability and high -quality service 
+delivery. 
+
+ 
+ 
+Introduction 
+Chapter I 
+
+Report No. 19 of 2026 
+1 
+CHAPTER I 
+Introduction 
+1.1  Background 
+In October 2011, the Government of 
+India launched the National Optical 
+Fibre Network (NOFN) project, aimed 
+to provide broadband connectivity to 
+about 2.5 lakh Gram Panchayats (GPs)  
+across the country , funded by the 
+Universal Services Obligation Fund 
+(now Digital Bharat Nidhi 4). The 
+objective of the project was to ensure 
+non-discriminatory access to all 
+telecom service providers and to facilitate delivery of essential  services such as education, 
+healthcare, business, entertainment, and e -governance to the rural population . The project 
+progressed in two phases: Phase-I for one lakh GPs commenced in 2012 and Phase-II covering 
+the balance 1.5 lakh GPs in 2017.  
+For execution and management of the project, a Special Purpose Vehicle, Bharat Broadband 
+Network Limited (BBNL) was incorporated  on 25 February 2012 under the Department of 
+Telecommunications. In April 2016, the project was rebranded as "BharatNet" . The Union 
+Cabinet approved (July 2022) the merge r of BBNL with BSNL. Subsequently, Union Cabinet 
+approved Amended BharatNet Program (ABP) in August 2023 and designated BSNL as Project 
+Management Agency (PMA) for implementation of the program.  
+1.2  The network architecture 
+The architecture of BharatNet (Chart-1.1) comprises three layers : Core Layer, Aggregation 
+Layer and Access Layer. Core Layer represents optical fibre network already available up to 
+Block Headquarters. While the Aggregation Layer connects the Blocks to Gram Panchayats, 
+the Access layer5 connects users to the Gram Panchayats. The project was conceptualised as 
+a “middle mile” network connecting the Gram Panchayats with Blocks and did not include the 
+last-mile i.e., provision of service to citizens and Government institutions till 20176. Last-mile 
+utilisation was introduced in Phase -II and operationalised through an agreement/MoU with 
+BSNL (October 2017), Government of Rajasthan (February 2018) and CSC 7 (July 2019) for 
+provision of Wi-Fi Access Points  at the GP and Fibre To The Home (FTTH)  to end user. In 
+ 
+4  USOF was renamed as DBN in December 2023 by the Telecommunication Act, 2023. 
+5  Wi-Fi Access Points/Fibre To The Home (FTTH) to the users. 
+6  Funding for Last mile was included in 2017 by Cabinet. 
+7  Common Service Centre e-governance services India Ltd. (CSC), a -Special Purpose Vehicle (SPV) under the Ministry of Electronics and 
+Information Technology (MeitY). 
+
+
+Report No. 19 of 2026 
+2 
+August 2023, the Union Cabinet approved the BharatNet Udyamis model. The approach was 
+to engage local entrepreneurs to provide FTTH connections to the individual households on 
+revenue sharing basis with BSNL. 
+Chart-1.1: Architecture of BharatNet 
+ 
+ 
+ 
+1.3  Evolving technology 
+Phase-I adopted linear topology connecting Block Headquarter (BHQ) to Gram Panchayat 
+through Optical Fibre Cable (OFC) using Gigabit Capable Passive Optical Networks (GPON) 
+technology. GPON provides a mix of  services (voice, data and video)  to subscribers with a 
+capability to provide higher bandwidth, better quality of service and enhanced scalability.  
+GPON network mainly consists of two transmission units viz. Optical Line Terminal (OLT) 
+installed at the Block Headquarter (BHQ) level and the Optical Network Terminal (ONT) 
+installed at Gram Panchayat level to transmit and receive optical signals. At the Gram 
+Panchayat, the ONT unit is backed by solar energy unit in addition to regular supply of 
+electricity. Architecture of linear topology is depicted below in Chart-1.2.  
+Chart-1.2: Architecture of linear topology 
+ 
+Phase-II introduced 8 ring topology (Chart-1.3) using Internet Protocol Multi -Protocol 
+Label Switching (IP MPLS) 9 technology. In linear topology, fibre cut at any one place would 
+cause all connected GPs along the line to become non -operational. But in ring topology, the 
+operation can be routed through alternate channels in the ring, thus providing uninterrupted 
+services.  
+ 
+8  Under Phase-II, ring topology was introduced in four States (Andhra Pradesh, Chhattisgarh, Maharashtra and Telangana), while linear 
+topology continued in the remaining States. 
+9  The Multiprotocol Label Switching (MPLS) protocol on an IP network, allows efficient routing and management of data traffic between 
+different nodes within the BharatNet infrastructure. 
+User 
+User 
+Access 
+Layer 
+Gram 
+Panchayat 
+Aggregation 
+Layer 
+Block Core 
+Layer 
+ 
+District 
+
+Report No. 19 of 2026 
+3 
+Chart-1.3: Architecture of Ring topology 
+ 
+1.4 Multiple Partnerships in BharatNet: Participating entities 
+ 
+ 
+Department of Telecommunications (DoT) : Under Ministry of 
+Communications, the Department is responsible for telecommunications 
+policy and regulation in India. DoT played a crucial role in the planning and 
+approval stages of BharatNet. 
+ 
+Telecom Commission/Digital Communication Commission: Telecom 
+Commission renamed as Digital Communication Commission (DCC) w.e.f. 
+22 October 2018 is the Apex decision making body for policy matter s on 
+BharatNet. The Telecom Commission also approves the Detailed Project 
+Reports. Secretary, DoT is the Chairman of the Telecom Commission and in 
+this role participates in the approval of the Projects. 
+ 
+Universal Service Obligation Fund (USOF), now Digital Bharat Nidhi (DBN): 
+It was established retrospectively with effect from 1 April 2002 by an Act of 
+Parliament passed in December 2003 and is headed by the Administrator. 
+DBN funds BharatNet . The resources for DBN are raised by way of a 
+Universal Service Levy (USL), levied on the License Fee collected10 from the 
+Telecom Service Providers (TSPs).  
+ 
+Bharat Broadband Network Limited (BBNL):  A Special Purpose Vehicle 
+(SPV) wholly owned by the Central Government established for the 
+planning, execution, monitoring, and utilisation of BharatNet. It  is headed 
+by Chairman Cum Managing Director (CMD) supported by Director 
+(Planning), Director (Operations) and Director (Finance) at Delhi. Union 
+Cabinet accorded in principle approval (July 2022) for merger of BBNL with 
+BSNL. 
+ 
+10  Rate of license fee being collected from TSPs is 8 per cent of Adjusted Gross Revenue (AGR) of the TSPs which includes 5 per cent as 
+USL. 
+
+
+Report No. 19 of 2026 
+4 
+ 
+Bharat Sanchar Nigam Limited (BSNL):  A wholly owned Public Sector 
+Undertaking under DoT for providing Telecom Services. BSNL was involved 
+in execution of Phase-I and Phase-II and in the operation and maintenance 
+(O&M) of the BharatNet network. 
+ 
+Centre for Development of Telematics (C -DoT): A Union Government -
+owned telecom technology development Centre. C -DoT was tasked with 
+developing the Network Management System (NMS) and Fault 
+Management system for BharatNet. 
+ 
+National Informatics Centre (NIC):  NIC developed the Geographic 
+Information System (GIS) platform for BharatNet. 
+ 
+State Implementing Agencies (SIAs): State Government-designated entities 
+that implemented Phase-II of BharatNet under the State led model. 
+ 
+Telecom Service Providers (TSPs):  Private telecom companies like Airtel, 
+Vodafone, Idea, and RJIO utilise the BharatNet infrastructure to provide 
+broadband services to their customers. 
+ 
+Power Grid Corporation of India (PGCIL):  A State-owned electricity utility 
+company responsible for power transmission. PGCIL was an Implementing 
+Agency in BharatNet. 
+1.5 Phased roll out 
+The BharatNet project adopted a phased implementation approach. In Phase -I, BBNL 
+awarded ( December 2012) the work on nomination basis to three Central Public Sector 
+Undertakings (CPSUs) viz. Bharat Sanchar Nigam Limited (BSNL) in 15 States11 and three UTs, 
+Railtel in seven States12 and three UTs and Power Grid Corporation of India Limited (PGCIL) in 
+five States13. BBNL was to procure optical fibre cable and equipment by aggregating volumes 
+to obtain lower prices. Phase-I connected one lakh Gram Panchayats by December 2017 
+through optical fibre network. 
+ 
+ 
+11  Assam, Bihar, Chhattisgarh, Haryana, Jammu & Kashmir, Karnataka, Kerala, Madhya Pradesh, Maharashtra, Punjab, Rajasthan, Utta r 
+Pradesh, Uttarakhand, West Bengal, Sikkim, Chandigarh (UT), Andaman & Nicobar (UT) and Lakshadweep (UT).  
+12  Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Tripura, Gujarat, Daman & Diu (UT), Dadra & Nagar Haveli (UT) and 
+Puducherry (UT).  
+13  Andhra Pradesh, Telangana, Odisha, Jharkhand and Himachal Pradesh. 
+
+
+Report No. 19 of 2026 
+5 
+Chart-1.4: Milestones in BharatNet 
+ 
+Following a comprehensive review of the Phase -I (January 2015), Department of 
+Telecommunications identified the challenges in technology, topology and implementation 
+strategy. These challenges prompted a fundamental restructuring of the Project. The Union 
+Cabinet approved (July 2017) a modified implementation strategy for BharatNet Phase -II, 
+targeting the connection of 1.5 lakh Gram Panchayats through a multi-technology approach 
+by incorporating, in addition to optical fibre, satellite and radio connectivity with a budget of 
+₹42,068 crore14 (exclusive of GST, octroi and local taxes). The project was to be completed by 
+March 2019 but the deadline was extended to 2025. As of November 2025, BharatNet had 
+achieved service ready status in  2.19 lakh GPs (96.70 per cent) against the revised scope of 
+2.26 lakh GPs. The changes in Phase-II vis-a-vis Phase-I are elaborated in Chart-1.5. 
+ 
+ 
+14  This includes ₹11,148 crore for Phase-I. 
+
+
+Report No. 19 of 2026 
+6 
+Chart-1.5: Flow Design Architecture of BharatNet 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+GPON  IP-MPLS/GPON 
+Linear  Ring/Linear 
+Underground OFC  Underground OFC, Aerial 
+OFC and Satellite 
+Upto GPs  Upto GPs and 
+Household/users 
+1 lakh GPs  1.5 lakh GPs 
+CPSU Model  CPSU-led Model, State-led 
+Model and Pvt.-led Model 
+Three CPSUs (BSNL, 
+RailTel, PGCIL) 
+ BBNL, States and State 
+Agencies, CPSUs and 
+Private Sector 
+CAPEX- 
+₹11,148 crore 
+ CAPEX - ₹18,792 crore 
+OPEX - ₹6,046 crore 
+Last Mile connectivity 
+through viability Gap 
+funding- ₹4,066 crore 
+Replacement of 
+poor-quality BSNL fibre- 
+₹2,016 crore 
+Phase-II 
+ 
+Phase-I 
+ 
+Technology 
+Topology 
+Media 
+Reach 
+Initial Target 
+Model 
+Implementing 
+Agencies 
+Funding 
+
+Report No. 19 of 2026 
+7 
+The possibility of Public Private Partnership ( PPP) Model was explored in June 2021  to 
+enhance the scope of BharatNet beyond Gram Panchayat to cover 3.61 lakh inhabited 
+villages/GPs in the country . Government also offered Viability Gap Funding (VGF) up to 
+₹19,041 crore15 as an incentive. However, the Request for Proposal (RFP) in July 2021, could 
+not attract private sector bids, highlighting challenges in attracting private participation.  
+The Union Cabinet has approved the Amended BharatNet Program in August 2023  with a 
+target to connect households in 6.4 lakh villages /GPs16 across the country, to be completed 
+within 36 months from the signing of the Master Service Agreement. As of November 2025, 
+out of 16 packages 17, BSNL had signed (February 2025 – June 2025) agreement with Project 
+Implementing Agencies (PIAs) for 12 packages and for the remaining 4 packages, tender was 
+under technical evaluation. 
+1.6  Governance structure 
+ 
+1.6.1  Steering Committee 
+A Steering Committee headed by Administrator, USOF (now DBN) was constituted to monitor 
+and iron out inter-agency issues in implementation.  
+1.6.2  Committees for implementing models  
+Following Monitoring Committees were constituted: 
+State-led model 
+(i) Empowered Committee chaired by Secretary (Telecom) for monthly stock taking of 
+project progress and policy decisions. 
+(ii) State level Implementation Committee chaired by Chief Secretary of the State with 
+DoT/USOF/BBNL designated officials and CGM (BSNL) of the State/Circle as members to 
+resolve inter-agency matters.  
+(iii) Project Steering Committee chaired by Administrator, USOF, DoT with heads of State 
+Implementing Agencies as its members for weekly monitoring and ironing out the 
+operational issues. 
+CPSU-led model 
+(i) Empowered Committee chaired by Secretary (T elecom) for monthly stock taking of 
+project progress and policy decisions. 
+ 
+15  The VGF is calculated on the gap between the expected investment by the private sector partners and the revenue it can earn t o 
+recover the investment. 
+16  This includes upgradation of existing network of BharatNet Phase -I and Phase -II, build the network in uncovered GPs. Further, 
+BharatNet was extended beyond Gram Panchayat to cover villages.  
+17  For the purpose of implementing the Amended BharatNet Programme, the States and Union Territories were grouped into 16 
+implementation packages. 
+
+Report No. 19 of 2026 
+8 
+(ii) State level Implementation Committee- chaired by CGM BSNL of the State/Circle with 
+DoT/USOF/BBNL designated officials as its members to resolve inter-agency matters.  
+(iii) Project Steering Committee chaired by Administrator, USOF, DoT with heads of 
+State/CPSU Implementing Agencies as its members for fortnightly monitoring and 
+ironing out the operational issues. 
+
+Report No. 19 of 2026 
+1 
+Audit objectives, Scope and  
+Methodology 
+Chapter II 
+
+Report No. 19 of 2026 
+9 
+CHAPTER II 
+Audit objectives, Scope and Methodology 
+ 
+2.1 Audit objectives 
+The objectives of the Performance Audit on BharatNet Phase-II were to examine whether: 
+i) The project could deliver last mile connectivity and utilisation. 
+ii) The Governance structure was robust and adequate to identify and address the 
+challenges in implementation. 
+2.2 Scope of Audit 
+We conducted the Performance Audit covering the period from 2017 -18 to 2022 -23 during 
+October 2023 to August 2024 at BBNL and BSNL Corporate offices, USOF, DoT and field units 
+in eight sampled States /Circles and one UT 18. Detailed audit analysis of BharatNet Phase-II 
+has been carried out up to July 2024, while status of project has been updated upto November 
+2025. Wherever relevant, issues noticed from the implementation of Phase-l have also been 
+suitably incorporated in the scope of this Report along with the response of the Ministry.  
+2.3 Methodology and Sampling 
+The performance audit commenced with an Entry conference held at DoT Headquarters in 
+October 2023, attended by the Administrator, USOF along with representatives from BBNL 
+and BSNL Corporate offices. During this conference, the audit objectives, scope and 
+methodology were discussed. Subsequently, between October 2023 and December 2023, 
+selected Branch Audit Offices conducted entry conferences with respective BSNL/BBNL 
+authorities and State Implementing Agencies. We examined records and analysed data from 
+the Network Management System. Additionally, we conducted physical verification in 
+131 GPs across eight States/Circle and one UT, selected through purposive sampling. 
+A mid -term workshop with stakeholders19 was conducted in July 2024 and the audit was 
+concluded with an Exit Conference in December 2024. 
+2.4 Audit criteria and evidence 
+The sources of audit criteria were: 
+a. Cabinet and DCC approvals from time to time. 
+ 
+18  Andhra Pradesh, Assam, Bihar, Gujarat, Haryana, Sikkim, Tamil Nadu, Uttar Pradesh (West) and Lakshadweep. UP state consists of 
+two Circles – UP(East) and UP(West). 
+19  Representative from DBN erstwhile USoF (DoT), BSNL and State Implementing Agency Tamil Nadu (TANFINET). 
+
+Report No. 19 of 2026 
+10 
+b. MoU and agreements with USOF, C -DoT, State Governments and other partnering 
+organizations, including CPSUs. 
+c. Decision of Steering and Monitoring Committees. 
+d. Conditions of tenders and purchase order issued to vendors. 
+e. CVC guidelines, GFRs and manuals and guidelines of USOF, BBNL and other CPSUs 
+relating to procurement and works. 
+f. Budget documents, financial statements, MIS reports 
+g. USOF files relating to conditions of grant. 
+2.5 Structure of the Report 
+ 
+The Report is organized in five Chapters: 
+Chapter I introduces the Project and its Key Implementation aspects. 
+Chapter II covers the Audit objectives, scope and methodology. 
+Chapter III is on Project Planning and Implementation. 
+Chapter IV covers Operation & Maintenance and Utilisation of the BharatNet Infrastructure. 
+Chapter V summarises the Governance. 
+2.6 Acknowledgment 
+We wish to acknowledge the cooperation extended by Department of Telecommunication s 
+(Universal Service Obligation Fund), Bharat Broadband Network Limited, all the other auditee 
+units including Public Sector Enterprises, Bharat Sanchar Nigam Limited and State 
+Implementing Agencies of Gujarat, Andhra Pradesh and Tamil Nadu during Audit.  
+ 
+ 
+ 
+
+Report No. 19 of 2026 
+9 
+ 
+Project Planning and  
+Implementation 
+Chapter III 
+
+Report No. 19 of 2026 
+11 
+CHAPTER III 
+Project Planning and Implementation 
+ 
+3.1  Planning 
+Evolving strategies and project design 
+The BharatNet was an ambitious project that aimed at its launch in October 2011, to reach 
+2.5 lakh GPs within three years. Phase -I was to cover one lakh gram panchayats spread over 
+2,727 Blocks but was beset with delays at all stages. To begin with, the Telecom Commission 
+took 23 months to approve  (September 2013) the implementation strategy and the budget. 
+Physical work commenced 10 months later (Mid 2014).  
+Initially, Phase-I envisaged connectivity to 1,00,000 GPs (across 2,727 Blocks) by 31 March 
+2014; however, work could not be commenced in 350 Blocks and 20,971 GPs, primarily due 
+to inadequate bidder participation, high quoted rates, difficult terrain etc.  The scope was 
+revised in April 2016 to 1,25,000 GPs by inclusion of an additional 25,000 GPs. The target date 
+for completion was also revised multiple times from 31 March 2014 to 31 March 2015 and 
+subsequently to 31 March 2017. Although Phase-I was declared completed in December 2017 
+(connectivity to approximately 1,00,000 GPs), about 23,261 GPs20 under Phase-I remained to 
+be connected and work in these GPs were in the final stages of completion as of 
+November 2025. Delays in completion and high incidence of non -operational networks 
+impaired the BharatNet Phase -I. BBNL and the Ministry attributed the delays to the 
+BharatNet’s unprecedented scale, delays in finalizing the technology and to limitations in the 
+domestic supplier base, given the application of preferential market access (PMA) norms21. 
+Phase-II commenced in November 2017 with the aim to cover all the remaining GPs. The 
+issues faced in Phase-I and the steps taken by the Ministry in Phase-II are summarised below 
+in Table-3.1.  
+Table-3.1: Challenges faced in Phase-I and status of steps taken by the Ministry in Phase-II 
+Issues Challenges in Phase-I  Steps taken  in Phase -II and 
+outcome 
+ 
+Reliance on a single 
+source for supplies due to 
+centralized procurement 
+by BBNL 
+Decentralized procurement 
+eased the delays in supplies. 
+ 
+20  Revised scope of BharatNet Phase-I was 1,23,261 GPs (as of November 2025). 
+21  PMA norms prescribe the domestic component in each item of procurement by government agencies. 
+
+
+Report No. 19 of 2026 
+12 
+ 
+Gaps in planning: 
+Inadequate assessment 
+of required quantities of 
+essential low -cost 
+equipment such as joint 
+closures and fibre 
+termination boxes  
+Detailed Project Reports (DPR) 
+submitted by Implementing 
+Agencies underwent revisions 
+with changes in scope/technology 
+/quantity with consequent 
+delays. 
+                     (Para 3.1.1 and 3.1.2) 
+ 
+Delays in permission for 
+Right of Way (R oW) by 
+government agencies 
+Data22 show that this issue could 
+not be resolved. Average time 
+taken by agencies in clearance of 
+RoW is still high  against the 
+criteria of sixty days 23 as shown 
+below: 
+• Reserve forest authority - 4 
+to 9 months  
+• NHAI and NH- state - 6 
+months to one year  
+• Wildlife authorities - 5 
+months to one year 
+Continuous follow-up was stated 
+to have been  made with the 
+concerned authority to obtain 
+RoW permission . In Andhra 
+Pradesh, the project was 
+completed by adopting an 
+alternate route owing to delays 
+in obtaining RoW permission. 
+ 
+Damage to cables after 
+laying 
+Interruptions continued to be  a 
+major problem in Phase-II as well 
+with Fibre cut account ing for 
+48 per cent of downtime. 
+                                       (Para 4.2.2) 
+ 
+Delays in locating faults 
+because the Fibre Fault 
+Localisation System, 
+although planned, could 
+not be implemented. 
+Fibre Fault Localisation System 
+was not implemented  even in 
+Phase-II.  
+                                       (Para 3.2.5) 
+ 
+ 
+22  from Licensed Service Areas (LSA) offices (DoT). 
+23  In terms of Rule 6 of the Indian Telegraph Right to Way Rule 2016. 
+
+
+Report No. 19 of 2026 
+13 
+ 
+Non-completion of GIS 
+mapping of OFC routes  
+As of November 2025, GIS 
+mapping work remained 
+incomplete for 1.84 per cent  of 
+Gram Panchayats (GPs) and 
+11.46 per cent  of Optical Fibre 
+Cable (OFC).  
+                                 (Para 3.2.1) 
+ 
+Frequent disruption in 
+network 
+Network disruption continued to 
+persist.  
+                                          (Para 4.2) 
+ 
+Gram Panchayat buildings 
+were not ready for 
+installation of equipment. 
+No such instance was noticed. 
+Our analysis showed that while procurement issues were ironed out in Phase -II, significant 
+implementation challenges continued, affecting the achievement of project objectives. These 
+are discussed in detail later in the Audit Report. Another area that posed a significant 
+challenge during the implementation of Phase-I was coordination with State Governments 
+and their agencies. Recognizing this, the design of Phase-II incorporated three distinct models 
+for planning and implementation , ma king a structured transition aimed at improving co -
+ordination and execution: 
+i. The State-led model where the State Governments were invited to take over the project. 
+This was the preferred model wherever the State governments came forward (eight 
+States24). 
+ii. CPSU-led Model: In eight States (nine Circles)25 BSNL was the implementing agency and in 
+two States26 PGCIL was given this charge. 
+ 
+24  Andhra Pradesh, Chhattisgarh, Gujarat, Jharkhand, Maharashtra, Odisha, Tamil Nadu and Telangana. 
+25  Assam, Haryana, Jammu and Kashmir, Madhya Pradesh, Rajasthan, Sikkim, Uttar Pradesh {(UP(E) and UP(W)} and West Bengal. 
+26  Himachal Pradesh and Uttarakhand. 
+
+
+Report No. 19 of 2026 
+14 
+iii. Private-led Model: In two States 27, BBNL itself planned and implemented the project  
+through the engagement of private sector entities. 
+In addition to above, connectivity to GPs the remote and hilly areas of North East and other 
+regions was provided through satellite media . BSNL and BBNL were the implementing 
+agencies. 
+The target date for completion of Phase-II was March 2019, which was extended upto 2025. 
+The status of implementation of  Phase-II project is depicted at Chart-3.1 and 3.2. As of 
+November 2025, 92.79 per cent of the GPs were covered and 94.08 per cent of cabling work 
+was completed indicating shortfall even after an extension of over six years. 
+  
+The Ministry in its reply stated (November 2025) that the delays in achieving BharatNet 
+targets were due to the project’s vast scale, difficult rural terrains, wide geographical spread, 
+and challenges like Right of Way (RoW) clearances and coordination with multiple agencies. 
+The Amended BharatNet Program ( ABP) addresses these issues through the Design –Build–
+Operate–Maintain (DBOM) model, where a single P MA handles both implementation and 
+maintenance for 10 years.  
+The reply of the Ministry indicates that the design of Phase-II did not adequately address the 
+challenges encountered during Phase -I. Further, the effectiveness of the measures 
+envisaged/taken in ABP to address the challenges can be ascertained in subsequent audit. 
+3.1.1 Detailed Project Reports 
+The first stage of planning is the preparation of Detailed Project Reports (DPR). A well 
+prepared DPR is expected to comprehensively assess technical and financial feasibility duly 
+factoring ground-level issues , the unique challenges of each region and an accurate cost 
+analysis. 
+ 
+27  Bihar and Punjab. 
+89.35%
+98.78%
+100.00% 97.44%
+92.79%
+0
+20,000
+40,000
+60,000
+80,000
+1,00,000
+State led CPSU
+(BSNL)
+led
+Private
+led
+(BBNL)
+Satellite Grand
+Total
+Number of GPs
+Chart-3.1: Coverage of GPs
+Revised scope of work Service ready GPs
+92.61%
+98.23%
+99.88%
+94.08%
+0
+1,00,000
+2,00,000
+3,00,000
+4,00,000
+State
+led
+CPSU
+(BSNL)
+led
+Private
+led
+(BBNL)
+Grand
+Total
+Length (in KM)
+Chart-3.2: Laying of OFC
+OFC to be laid OFC laid
+
+Report No. 19 of 2026 
+15 
+The DPRs had to take into account the technological upgrades of Phase-II over Phase-I. Under 
+Phase-I, GPs were connected from the Block through a 24 -fibre Optical Fibre Cable (OFC) 
+providing bandwidth of 100 Mbps. In Phase-II, GPs were to be connected using 48 -fibre OFC 
+enabling a bandwidth capacity of up to one Gbps and to ensure 6 dark fibres from Block to 
+GP.  
+The process flow for preparation and approval of DPRs is at Chart-3.3. 
+Chart-3.3: DPR Approval Process 
+ 
+We found the following deficiencies in DPRs, which contributed to delays in project 
+implementation. 
+DPR not backed by a survey 
+In terms of Manual for Procurement of Works, proper field surveys and investigations of 
+ground conditions are critical in preparation of a reliable DPR. Although the DPRs were meant 
+to be prepared through a survey at ground level, they were prepared on the basis of a desktop 
+assessment. We also observed that USOF while communicating (December 2017) the 
+responsibilities and instructions to the State/S tate Implementing Agencies  for 
+implementation of BharatNet Phase -II project under the State -led model had specifically 
+advised them to adopt Desktop survey for preparing the DPR and floating of tender. This 
+decision was inconsistent with the provisions of Manual of Procurement of works ibid. Project 
+Appraisal Committee of USOF acknowledged this deficiency in April 2018. 
+The Ministry in its reply stated (November 2025) that the DPR preparation based on desktop 
+survey is a common practic e which is done for optimizing time and resources. However, the 
+actual implementation of work is undertaken after physical survey within the overall 
+approved cost for the project. 
+We however noted that t he preparation of DPRs based on desktop assessments instead of 
+comprehensive field surveys , coupled with delays in their submission, led to deficiencies in 
+project execution as discussed in the subsequent paras. (Para 3.1.2 and case study 3.1) 
+ 
+Recommended by 
+BBNL Board of 
+Directors 
+Submission by 
+CPSUs/SIAs to BBNL 
+Approval by 
+Telecom 
+Commission 
+Scrutiny by 
+Project Appraisal 
+Committee of 
+USOF 
+Scrutiny by 
+Scrutinizing 
+Committee of 
+BBNL 
+
+Report No. 19 of 2026 
+16 
+Delays in submission and approval of DPRs 
+In terms of Manual for Procurement of Works, no works shall be commenced or liability 
+incurred in connection with it until a proper Detailed Project Report (DPR) has been prepared 
+and Administrative approval has been obtained from the appropriate authority in each case 
+and Expenditure Sanction to incur expenditure has been obtained from the competent 
+authority.  
+In Phase-II, in respect of State-led model, each State prepared DPR. Similarly, BSNL prepared 
+DPRs for seven states ( eight Circles28) and PGCIL prepared DPRs for two States (Himachal 
+Pradesh and Uttarakhand) under the CPSU-led model. We found that BBNL implemented the 
+project without preparing a DPR in two states (Bihar and Punjab).  
+As per the original timelines prescribed (July 2017) by the DBN, DPRs were to be received by 
+30 August 2017, to be approved by 10 September 2017 thus facilitating the commencement 
+of tendering by 15 September 2017. The schedule was expected to meet the target for 
+completion by March 2019. 
+In the State-led model in all the eight states, the DPRs were received on time. In the CPSU-led 
+Model, BSNL submitted DPRs with delays ranging from six to 21 months, whereas PGCIL 
+delayed submission by four to 15 months.  Under the State-led model, DPRs for seven States 
+were approved by the Telecom Commission in September 2017, while Odisha’s DPR was 
+approved in December 2017. Under the CPSU -led model, BSNL’s seven DPRs (excluding 
+Jammu & Kashmir)  and PGCIL’s Himachal Pradesh DPR were approved in May 2018, two to 
+four months after receipt. BSNL submitted (May 2019) the DPR for Jammu & Kashmir under 
+the EPC model and PGCIL submitted (December 2018) the DPR for Uttarakhand. Meanwhile, 
+DBN informed (July 2019) BBNL that no further action was to be taken on, or approval granted 
+for, the remaining Phase-II projects (BSNL – EPC model States; PGCIL – Himachal Pradesh and 
+Uttarakhand), as these States/projects were to be covered under the proposed PPP Model. 
+Revision in DPRs 
+The DPRs submitted by all eight States under the State -led Model and two States/Circles UP 
+(West) and Sikkim (under the CPSU-led Model), underwent changes after approval of Telecom 
+Commission. The revisions (Table 3.2) included change in scope of work (number of GPs/OFC 
+length), change in technology and in cost,  which necessitated resubmission of DPRs and 
+obtaining fresh approvals with consequent delays in commencement of work in the range of 
+three months to more than four years  (Chart 3.4). These deficiencies occurred as the DPRs 
+were prepared without ground surveys, necessitating revisions and contributing to delays. 
+ 
+ 
+28  Excluding Haryana as BSNL did not submit DPR for Haryana. 
+
+Report No. 19 of 2026 
+17 
+Table 3.2: State wise deviation in no. of GPs, OFC Length and CAPEX due to revision in DPR 
+Name of the  
+State/Circle 
+Initial DPR Revised DPR Increase 
+No. of 
+GPs 
+OFC 
+Length 
+Total 
+CAPEX 
+approved 
+by TC 
+No. of 
+GPs 
+OFC 
+Length 
+Total 
+CAPEX 
+approved 
+by TC 
+No. 
+of 
+GPs 
+OFC 
+Length 
+Total 
+CAPEX 
+approved 
+by TC 
+(in Km) (₹ in crore) (in Km) (₹ in crore) (in Km) (₹ in crore) 
+Andhra 
+Pradesh 
+11,254 51,449 847.98 11,254 55,000 998.74 0 3,551 150.76 
+Chhattisgarh 5,987 32,466 1,491.89 5,987 32,466 1,449.82 0 0 -42.07 
+Gujarat 6,916 35,000 1,477.05 7,692 35,500 2,176.18 776 500 699.13 
+Jharkhand 1,684 8,848 363.60 1,684 12,073 549.18 0 3,225 185.58 
+Maharashtra 13,561 50,313 2,058.83 13,561 55,218 2,980.65 0 4,905 921.82 
+Odisha 2,564 13,511 307.54 2,945 15,491 453.92 381 1,980 146.38 
+Tamil Nadu 12,524 41,500 1,067.56 12,524 49,500 1,608.16 0 8,000 540.60 
+Telangana 6,657 27,493 1,122.78 10,787 31,881 1,844.36 4,130 4,388 721.58 
+Sikkim 124 774 66.93 124 1,034 96.28 0 260 29.35 
+Uttar Pradesh 
+(W) 
+2,169 6,097 266.29 2,175 6,527 314.51 6 430 48.22 
+The wide variation in per kilometre cost can be attributed to disparity in the type of soil and 
+methodology of laying of cable (aerial and underground).  
+Chart-3.4: Delay in commencement of work due to revision 
+ 
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+Delay (in year) 
+
+Report No. 19 of 2026 
+18 
+3.1.2 Causes for revision in DPRs 
+The DPRs necessitated revisions on account of various reasons, some of these specific to the 
+implementation model are discussed as below: 
+CPSU-led model: imprudent cost-cuts (BSNL) 
+In March 2018, BSNL submitted DPRs for six States (seven Circles), excluding Haryana and 
+Jammu & Kashmir29, separately identifying GPs which would be implemented through EPC30 
+or Non -EPC mode. In case of Assam and West Bengal the work was to be implemented 
+through EPC mode exclusively whereas in case of Madhya Pradesh, Rajasthan, Sikkim, 
+UP(East) and UP(West), the work was to be implemented through both the modes. The DPRs 
+were evaluated in BBNL by its Scrutinizing Committee headed by CGM (BharatNet). The Board 
+of Directors of BBNL and the Project Appraisal Committee of USOF endorsed the 
+recommendations of the Scrutinizing Committee. 
+We found that while evaluating and recommending the DPRs of BSNL, BBNL excluded several 
+crucial elements such as those meant for protection of OFC 31, aerial OFC accessories 
+necessary for installing aerial OFC, required quantity of redundant line cards planned by BSNL 
+etc. As a result, the Telecom Commission  (TC) approved (May 2018)  costs which were 
+substantially less than what BSNL had proposed in their DPRs, with deductions ranging from 
+11.58 per cent  to 71.42 per cent . BSNL floated tenders for EPC and Non -EPC mode in 
+December 2017 prior to TC approval.  Thus, the tendered costs was based on the submitted 
+DPRs rather than the TC approved costs. In all EPC mode across seven Circles (six States), the 
+tendered costs exceeded TC approved cost by 25.72 per cent to 75.88 per cent. In non-EPC 
+mode, the tendered costs were higher in Sikkim and  UP(West) out of five 32 Circles by 
+22.48 per cent to 24.36 per cent. Details are at Annexure-3.1. BSNL was consequently forced 
+to approach (October 2018) BBNL again for additional funding which was not granted in 
+Sikkim and UP(West) for Non-EPC mode and in all six States (seven Circles) for EPC mode. As 
+a result, 16,271 GPs (39 per cent ) to be covered in these states through EPC mode were 
+excluded from the project.  
+Later, BSNL submitted revised Non-EPC mode DPRs for Sikkim and Uttar Pradesh (West), 
+which were approved by the Ministry. 
+BBNL in its reply stated (March 2025) that the work assigned to BSNL under non-EPC mode in 
+Madhya Pradesh was complete, while in UP (East) and UP (West), work was in progress.  
+The reply did not address audit findings regarding the underlying cause for exclusions, namely 
+deficiencies in the DPR approval process. 
+ 
+29  BSNL submitted DPR of J&K in May 2019 and did not submit DPR for Haryana. 
+30  EPC (Engineering, Procurement, and Construction)  is a contract model used in infrastructure projects where the contractor is 
+responsible for designing, procuring materials and equipment, constructing the project and delivering a completed facility to the client, 
+ready for operation. 
+31  Such as Double Wall Corrugated (DWC) pipes, Galvanized Iron (GI) pipes, cement concrete (CC) construction of joint chambers, marking 
+of OFC routes, and installation of Fibre Distribution Management Systems (FDMS) at both Block and Gram Panchayat (GP) levels. 
+32  In respect of three states, the tendered costs were lower than the TC approved cost. 
+
+Report No. 19 of 2026 
+19 
+The Ministry accepted (December 2024) that the work in these States could not be executed 
+due to higher quoted rates. The Ministry in its reply (November 2025) stated that the GPs 
+which were not completed under BharatNet Phase-I and Phase-II have been suitably planned 
+under ABP. 
+Thus, improper assessment of requirements and resultant cost-cuts led to work being 
+abandoned in 16,271 GPs  in six States ( seven Circles) while the implementation was 
+hampered in Sikkim. 
+State-led model 
+In the State-led Model, revisions in DPRs occurred mainly due to factors such as changes in 
+scope of work, particularly the number of GPs and length of OFC (as detailed in Table 3.2).  
+We noted that i n case of Telangana revision occurred due to increase in number of GPs, 
+inclusion of ribbon type OFC instead of loose type, higher rate of trenching and laying, etc. 
+Further, the DPRs did not adequately account for region-specific challenges. For example, the 
+DPR for Chhattisgarh did not account for the impact of dense forests and Left-Wing Extremism 
+(LWE) affected areas. These factors led to frequent changes in the cable laying methods and 
+the size of the cable etc., leading to increased costs.  
+The revision arising from such deficiencies led to delay in commencement of work in all eight 
+States under the State-led model. 
+3.1.3 Execution of work without preparation of DPR in Private-led model 
+The Manual for Procurement of Works stipulate that no work shall be commenced, nor any 
+liability incurred, unless a proper Detailed Project Report (DPR) has been prepared by a 
+competent agency. Further, USOF prescribed (July 2017) a clear timeline stipulating 
+30 August 2017 as the last date for receipt of DPRs and 10 September 2017 as the last date 
+for their approval. 
+Audit scrutiny revealed that BBNL planned and executed the project in Bihar and Punjab 
+without preparing and obtaining approval of DPRs, in contravention of above prescribed 
+norms. The BBNL board approved a Capex of ₹399.22 crore for Bihar and ₹482.09 crore for 
+Punjab, which was revised upwards in March 2018 to ₹400.87 crore and ₹561.38 crore 
+respectively, primarily due to changes in the type of OFC for Punjab and the substitution of 
+Fibre Termination Boxes with Fibre Distribution Management Systems in both States. Tenders 
+for these States were floated in December 2017  on the basis of which work orders were 
+issued. 
+In August 2019, BBNL submitted a fund requirement of ₹675.51 crore for Bihar and 
+₹713.55 crore for Punjab to the USOF, significantly exceeding the revised Capex approved in 
+March 2018. The increase was attributed to additional infrastructure charges, including space 
+and power charges, Fibre -to-the-Home (FTTH) connections and Data Centre Networ k (DCN) 
+charges. In January 2020, Administrator, USOF, asked for a comprehensive justification note 
+
+Report No. 19 of 2026 
+20 
+from BBNL. BBNL did not provide the justification and yet, USOF continued to release the 
+fund. As of May 2024, post-facto approval of these revised costs was pending. 
+The Ministry in its reply  stated (November 2025) that BBNL was assigned responsibility for 
+States not covered under the State -led model, including those under the Private -led model. 
+Following its Board approval of cost estimates, BBNL floated tenders, discovered market rates 
+through open competition and successfully executed the project under the Private-led model, 
+achieving a high percentage of operational Gram Panchayats (GPs). 
+The reply may be viewed in the light of the fact that submission and approval of DPRs was a 
+mandatory precondition for execution of the project. However, BBNL did not obtain Telecom 
+Commission approval in this case.  
+3.1.4 Shifting from EPC to PPP mode (CPSU-led model - PGCIL)  
+PGCIL prepared DPRs for two States Himachal Pradesh and Uttarakhand under the CPSU -led 
+model (EPC Mode) and submitted them in January 2018 and December 2018 respectively. 
+The Telecom Commission approved the DPR for Himachal Pradesh in May 2018. However, 
+USOF informed (July 2019) BBNL that no further action was to be taken on, or approval 
+granted for, the remaining Phase -II projects (including Himachal Pradesh and Uttarakhand), 
+as these were to be covered under the proposed PPP Model. As a result, 8700 GPs in these 
+two states were excluded from the project. 
+The Ministry in its reply (November 2025) stated that the GPs which were not completed 
+under BharatNet Phase-I and Phase-II have been suitably planned under ABP. 
+3.2 Implementation 
+ 
+3.2.1 Status of Key deliverables 
+BBNL monitors performance and progress of the project through weekly progress reports on 
+the number of GPs covered, cable laid and GPs made Service Ready33 across different phases 
+and models. The operational status of these GPs is regularly updated  at BBNL's Central 
+Network Operating Centre (NOC) in Delhi. 
+Phase-II achieved 92.79 per cent  Service Ready  GPs and 94.08 per cent  laying of OFC 
+(November 2025). Expenditure as of November 2025 was ₹18,590 crore, within the Cabinet -
+approved cost of ₹22,174.56 crore for Phase-II Capex (inclusive of taxes). It may, however, be 
+noted that the Cabinet approval was for 1.5 lakh GPs, where as the scope of the project was 
+reduced to 1.03 lakh GPs (November 2025).  
+Physical Coverage 
+Physical Performance of the BharatNet Phase -II Project in 13 States as on November 2025 is 
+given in Table-3.3. 
+ 
+ 
+33  Service Ready GPs: Any GP which has been End to End tested OK, GP equipment installed, powered on Configuration completed, 
+connected with Block and status is live at Network Operating Centre. 
+
+Report No. 19 of 2026 
+21 
+Table-3.3: BharatNet Phase-II status (November 2025) 
+Start 
+date 
+Target date  Revised 
+Scope 
+(No. of GPs) 
+Revised Scope- 
+OFC to be laid 
+(in Km) 
+Service Ready 
+GPs  
+OFC laid 
+(in Km) 
+Nov-17 Mar-19 
+(Extended 
+up to 2025) 
+1,03,112  4,06,468 95,681    
+(92.79 per cent) 
+3,82,422 
+(94.08 per cent) 
+Phase-II was to be initially implemented in 20 states . Subsequently, the scope was revised  
+(July 2019) to cover 13 States (14 Circles). Seven States/Circles34 achieved 100 per cent service 
+ready status as of November 2025 with delays ranging from two years to six years. In six 
+States/Circles, 75.14 per cent to 99.94 per cent GPs are service ready and in Sikkim no GP is 
+service ready (Annexure-3.2).  
+GIS Mapping 
+ This is essential for mapping the route as well as in operation and maintenance of the cables. 
+It also serves as an asset register at the time of handover. GIS mapping was included in the 
+MoU (2012) signed by BBNL with the CPS Us in Phase -I. In July 2019, a tripartite agreeme nt 
+among USOF, BBNL, and CSC aimed to capture GIS data on a "best -effort" basis but that too 
+did not yield satisfactory results. By 2020, efforts intensified to accelerate mapping, with 
+specific regions assigned to different methods. However, 90.96 per cent  GPs and 
+82.42 per cent of OFC of Phase-I and II were mapped as of July 2024.  
+Table - 3.4: GIS Mapping status (July 2024) 
+Work done as per Report Mapped in GIS 
+Service ready GP  OFC Laid GP OFC 
+2,17,589 6,89,242 1,97,926 5,68,122 
+(90.96 per cent) (82.42 per cent) 
+The Ministry stated (March 2025) that GIS mapping for Phase -I and II has been almost 
+completed (99 per cent). Under ABP, GIS mapping has been mandated while constructing the 
+network. 
+We however noted from GIS report that a s of November 2025, GIS mapping was completed 
+for 98.16 per cent  of GPs and 88.54 per cent  of OFC. However, the effectiveness of the 
+corrective measures envisaged under the ABP can be assessed in subsequent audit. 
+3.2.2  State specific aspects of implementation 
+ 
+CPSU-Led Model 
+BSNL was the implementing agency for BharatNet Phase-II in eight States. As of November 2025, 
+in Madhya Pradesh and UP(W), all the GPs were made service ready; 99.03 per cent GPs were 
+made service ready in UP(E) and none of the GPs were made service ready in Sikkim.  
+ 
+34  Gujarat, Andhra Pradesh, Odisha, Bihar, Punjab, UP(W) and Madhya Pradesh. 
+
+Report No. 19 of 2026 
+22 
+We noted that a s per Cabinet approval (July 2017), only the Telecom Commission (TC) was 
+empowered to decide on any issue or modification in BharatNet relating to technology, scope 
+and implementation strategy. Further, Phase-II provided technological advantages over 
+Phase-I. While under Phase-I, GPs were connected from the Block through a 24 -fibre Optical 
+Fibre Cable (OFC) providing bandwidth of 100 Mbps, under Phase-II, there was a technological 
+upgradation with 48 -fibre OFC, bandwidth capacity of up to 1 Gbps and 6 dark fibres from 
+Block to GP.  
+We observed that in Haryana and Rajasthan, 63 and 535 GPs respectively were shifted from 
+Phase-II to Phase-I during 2018 without approval of TC thereby denying these GPs the benefits 
+of technological upgradation envisaged under Phase-II, as detailed below: 
+(i) In Rajasthan, BSNL submitted (March 2018) the DPR covering 1,671 GPs (535 in non -EPC 
+mode and 1,136 in EPC mode) to BBNL for TC approval. However, BBNL approved (April 2018) 
+the transfer of 535 GPs from Phase -II to Phase-I without any intimation to or approval from 
+USOF/TC. Subsequently, USOF conveyed TC approval (May 2018) for the same 1,671 GPs 
+under Phase-II, out of which 535 GPs were already shifted to Phase-I. 
+(ii) Similarly, in Haryana, BSNL reported (December 2018) to BBNL that 24F OFC had been laid 
+in 63 Phase -II GPs in place of 48F OFC and sought administrative and financial approval for 
+the executed work. BBNL thereafter approved (February 2019) transfer of these 63 GPs from 
+Phase-II to Phase-I. 
+BBNL in its reply stated (February 2024) that the action was in accordance with DoT 
+instructions (December 2017) permitting adoption of Phase -I methodology in Blocks where 
+Phase-I work was completed or ongoing. 
+Reply of the management may be viewed in the li ght of the fact that  in terms of DoT’s 
+instructions of December 2017, only newly created GPs in the Blocks where work of BharatNet 
+is already completed or being executed in Phase -I may be executed as per Phase-I 
+methodology. However, these GPs were not newly created and were already covered under 
+Phase-II. Further, transfer of these GPs from Phase-II to Phase-I violated the Cabinet approval 
+and deprived them the benefits of technological upgradation.  
+As reported in para 3.1.4 (CPSU-led Model – PGCIL), BharatNet Phase-II was not implemented 
+in Himachal Pradesh and Uttarakhand due to problems in planning stage and its 8 ,700 GPs 
+were taken to ABP.  
+Case Study 3.1: Implementation of BharatNet in Sikkim   
+The TC approved BSNL's DPRs for Sikkim in May 2018, followed by a Memorandum of 
+Understanding between BBNL and BSNL in August 2018. As pointed out in para 3.1.2, the 
+tendered costs were 22.48 per cent  higher than the TC approved costs in Sikkim. BSNL 
+submitted (Oct 2018) for approval of funds, Ministry did not approve the revised claim for 
+funds. The denial for funds led to work stoppage in February 2019. At the time of 
+
+Report No. 19 of 2026 
+23 
+suspension of work, Sikkim had achieved 82 per cent  duct laying and 67 per cent  OFC 
+laying35. 
+BSNL submitted revised DPRs in 2019, attributing cost escalations to previously omitted 
+items, expanded scope, and increased trenching rates. BSNL also raised concerns about the 
+deterioration of already-laid infrastructure, warning that the investment would be wasted 
+if left unattended. This prompted USOF to approve (February 2020) inspections by a 
+committee on the already completed work. 
+The Committee reported substandard work quality and significant gaps in project 
+monitoring. Further, DPR was revised and approved in May 2021.  
+In March 2023, BSNL submitted an additional proposal for Sikkim covering 419 villages/GPs, 
+citing infrastructure damage from landslides and construction activities. The proposal 
+included plans to co -lay OFC with the Sikkim Power Department and request ed a 
+substantial write-off of ₹89.42 crore for both Phase-I and II.  
+We noted that as of November 2025, no GP was service ready in Sikkim. 
+While accepting the audit contention, the Ministry in its reply (November 2025) stated that 
+the corrective measures are being undertaken in Sikkim. 
+State-Led Model 
+In the State-led Model, out of eight States, all (100 per cent) GPs were made service ready in 
+three States (Gujarat, Andhra Pradesh and Odisha) and in Jharkhand 99.94 per cent GPs were 
+made service ready. In remaining four States, the service ready GPs ranged from 75 per cent 
+to 94 per cent. Further, in Andhra Pradesh, Maharashtra and Chhattisgarh, zero operational 
+GPs were reported despite higher level of service readiness (November 2025), indicating non-
+utilisation of created infrastructure (Annexure 3.2).  
+The States of Andhra Pradesh, Gujarat and Tamil Nadu fall in our audit sample.  
+(i) In Andhra Pradesh , after signing of MoU (November 2017)  the State Implementing 
+Agency (SIA) viz. Andhra Pradesh State Fibrenet Limited (APSFL) issued (January 2019) work 
+orders with target for completion by October 2019. However, by the deadline (October 2019), 
+only 20 per cent of the work was completed. In March 2020, APSFL asked the vendors to stop 
+the aerial OFC laying work  in order to replace the aerial fibre network with an underground 
+one and the State government requested additional funds of ₹1,429.35 crore36. After several 
+rounds of discussions 37, the State Government decided (November 2021) to continue with 
+the aerial methodology. The indecision contributed to prolonged delays, with all GPs made 
+service ready five years later in March 2024. 
+ 
+35  Work commenced in Sikkim in February 2018. 
+36  initially the cost was ₹3,155.91 crore, which was increased to ₹4,585.26 crore. 
+37  Between USOF, BBNL, Govt. of AP and APSFL. 
+
+Report No. 19 of 2026 
+24 
+ (ii) In Gujarat, after signing of MoU (December 2017) among USOF, BBNL, Government 
+of Gujarat and Gujarat Fibre Grid Network Limited (GFGNL), purchase orders were issued in 
+October 2018 and all the GPs were made service ready in January 2025 against the deadline 
+of March 2019. Although the execution was delayed, we noted high level of operational GPs 
+in Gujarat. 
+The Ministry stated (March 2025) that penalty in the form of Liquidated Damages (LD) for 
+delay would be suitably levied and till date ₹48.63 crore has been recovered from GFGNL in 
+this regard.  
+(iii)  In Tamil Nadu, after signing of MoU (December 2017), purchase orders were issued38 
+after a delay of more than three years.  The delay was mainly attributable to change in the 
+State implementing Agency.  The DPR of Tamil Nadu through its designated SIA Tamil Nadu 
+Arasu Cable T.V Corporation Ltd. (TACTV) was approved to connect 12,524 GPs using GPON 
+technology in linear topology. Later, the State government changed (September 2019) the SIA 
+from TACTV to Tam il Nadu FibreNet Corporation Limited (TANFINET) and submitted revised 
+DPR including mix of linear and ring topology which was approved (September 2019) by 
+Telecom Commission. The change led to delay of more than five years, with 86.77 per cent 
+GPs made service ready by November 2025. 
+BBNL Management while accepting the audit contention stated (March 2024) that the delays 
+were attributable to retendering and that liquidity damages were to be imposed by SIA. 
+However, substantial delays in completion of Phase-II of the project spanning more than five 
+years in eight states (Annexure-3.2), raises questions about the effectiveness of planning and 
+execution of the projects. This needs to be addressed to prevent further delays. In summary, 
+poor planning, changes in technology and inability to take timely actions delayed project 
+completion in the state-led model.  
+The Ministry, while accepting the audit contention  stated (November 2025) that liquidated 
+damages (LD) for delays were to be imposed by the State Implementing Agencies (SIAs) and 
+any LD penalties would be recovered from the final milestone payments. Further, ABP model 
+minimizes the risks of cost overruns, delays and oversight gaps observed in earlier phases. 
+The effectiveness of the measures envisaged under the ABP can be assessed in subsequent 
+audit. 
+Private-Led model 
+Under Private-led model39, private sector entities were engaged by BBNL for implementing 
+the BharatNet and undertaking the responsibility for Operations & Maintenance (O&M) and 
+facilitating service provisioning of the established network on turnkey basis. BBNL floated 
+tender for Phase -II during December 2017 for Bihar and Punjab and Purchase Orders were 
+issued during Aug ust 2018 and July 2018 respectively. The project was completed in these 
+ 
+38  Oct 2021, March 2022 and May 2022. 
+39  Cabinet Note 2017. 
+
+Report No. 19 of 2026 
+25 
+two States with delays of two years and 4.75 years respectively. We found that Punjab and 
+Bihar ranked first and third respectively in terms of operational GPs ( as of November 2025 , 
+Annexure 3.2) which was, in our opinion, a consequence of close linkage of payment terms 
+with service delivery  (as brought out in Para 3.3.1)  and other institutional measures (as 
+brought out in Case Study 4.2).  
+3.2.3 Wi-Fi Deployment and Functionality 
+The agreement (July 2019) among USOF, BBNL and CSC and MoU (February 2018) between 
+BBNL and Government of Rajasthan envisaged provision of Wi-Fi connections in 1,15,358 GPs 
+against which Wi -Fi connections in 1,04,675 GPs (March 2024) were provided.  As of 
+March 2024, mere 6.01 per cent of installed Wi-Fi connections remained active (6,293 out of 
+1,04,675), with Rajasthan accounting for 82.8 per cent of functional connections.  
+During the physical verification conducted in 131 GPs across eight States/Circle and one UT, 
+we found that no Wi -Fi Access Points were installed in Assam, Bihar, Haryana, Sikkim, Uttar 
+Pradesh (West). In Andhra Pradesh, one Wi-Fi Access Point was found installed in each of the 
+five GPs visited, however, all of them were found to be non-functional.  
+The Ministry stated (March 2025) that the DBN  (USOF) is taking action to address the issues 
+with the installed Wi-Fi Access Points according to the agreements. 
+We noticed that, as of March 2025 40, only 766 Wi -Fi connections (0.7 per cent ) were 
+functional across all the States. Of these, 658 were in Kerala, 52 in Jammu & Kashmir, 21 in 
+Arunachal Pradesh, 13 in Leh (UT), five in Karnataka, and four each in Madhya Pradesh and 
+Rajasthan, while Haryana, Meghalaya, Odisha, Uttar Pradesh (East) and Chhattisgarh reported 
+two or fewer functional connections. 
+3.2.4 Satellite component of BharatNet to connect GPs  
+Telecom Commission approved the project in January 2018 to connect 5,298 Gram 
+Panchayats (GPs) in the remote and hilly areas of Northeast and other regions through 
+satellite media, along with installation of Wi -Fi Access Points (AP) at each GP  to provide last 
+mile connectivity. BSNL and BBNL were tasked for different sets of GPs. BBNL issued purchase 
+orders on turnkey basis in December 2018 with the target completion date by September 
+2019. However, as of July 2024, against the revised scope of 5,16641 GPs, 4,98442 GPs were 
+service-ready43. Although BSNL has installed Wi -Fi APs in their GPs but all GPs under BBNL, 
+remained without these APs, thereby depriving these GPs of last -mile connectivity and 
+affecting service delivery. The project  involved capital expenditure of ₹111.58 crore, 
+operational expenditure of ₹5.16 crore and transponder charges of ₹ 484.70 crore paid to 
+ 
+40  The situation remained unchanged in June 2025 and the November 2025 weekly reports did not disclose information on Wi-Fi status. 
+41  BSNL – 1,408 GPs and BBNL – 3,758 GPs. 
+42  BSNL – 1,393 GPs and BBNL – 3,591 GPs. 
+43  For satellite based GPs “Service ready” indicates readiness of satellite components (including modem) and power systems; howe ver, 
+Wi-Fi APs are required for last-mile connectivity to users. 
+
+Report No. 19 of 2026 
+26 
+ISRO for satellite connectivity. In all, ₹601.44 crore was spent but the Satellite component of 
+Phase-II could not be delivered as envisaged. 
+BBNL management stated (May 2024) that tender for provisioning of Wi -Fi for all GPs 
+executed by BBNL was under process. 
+The Ministry stated (November 2025) that out of 5,166 planned GPs, 5,121  GPs have been 
+connected through satellite media and as of 23 September 2025, Wi -Fi Access Points (APs) 
+have been installed in 710 satellite GPs, while installation work for the remaining GPs is in 
+progress. 
+This reply endorses the audit observations and confirms that last-mile utilisation remained 
+inadequate with Wi-Fi APs commissioned in only 710 GPs, while installation in the remaining 
+GPs was pending (September 2025), thereby limiting service delivery. 
+3.2.5  Non-deployment of Fibre Fault Localisation system 
+Fibre Fault Localisation System (FFLS) planned to be installed as far back as in April 201444 in 
+Phase-I, was not put in place as of July 2024. In 2021, the Ministry acknowledged the lack of 
+implementation, attributing it to C-DOT’s inability to demonstrate a reliable solution, leading 
+BBNL to initiate an open tender. As of June 2024, FFLS remains un-deployed.  
+BBNL admitted (June 2024) that FFLS was not deployed as yet and informed us that it stands 
+included in the RFP issued for ABP.  
+The Ministry stated (March 2025) that in Phase -I and II of BharatNet, GPON technology was 
+used, where deploying a FFLS was considered too expensive and beyond the project's 
+approved cost, leading to its exclusion.  Further, under ABP, a Remote Fibre Monitoring 
+System (RFMS) has been introduced to address fault detection and resolution in a more 
+cost-effective and efficient manner, ensuring improved network reliability and faster fault 
+restoration. 
+In the absence of FFLS, fault reporting continued to rely on manual interventions, resulting in 
+higher downtime and delayed restoration of services, which contributed to sub -optimal 
+network availability. Further, the effectiveness of the measures envisaged under the ABP can 
+be assessed in subsequent audit. 
+3.2.6 Quality Assurance  
+We found that as of November 2025, the project has been completed in seven States/Circles 
+under CPSU/State/Private-led model [viz. Gujarat, Andhra Pradesh, Odisha, MP, Bihar, Punjab 
+and UP(W)] ; however, only in Andhra Pradesh and Punjab , the closure process (viz. 
+Acceptance testing) was completed.  
+ 
+ 
+44  An agreement between BBNL and C-DoT signed in April 2014 covering network management and fault detection (FFLS). 
+
+Report No. 19 of 2026 
+27 
+Case study 3.2: The unfinished task: Acceptance Testing deficiencies 
+Acceptance Testing (AT) under Phase-II was found substantially incomplete as of July 2024. 
+The State-led Model showed substantial pendency rates of up to 88.66 per cent across all 
+components. In CPSU-led Model (BSNL), pendency was up to 100 per cent. The Private-led 
+Model showed better performance (almost 100 per cent) in acceptance testing. 
+BBNL attributed (September 2024) the delays to multiple factors such as fibre damage 
+necessitating repairs by maintenance agencies (BSNL/CSC) creating discrepancies in OFC 
+verification. Further local issues led to delays in completion of acceptance testing.  
+The Ministry stated (March 2025) that there was some gap between OFC laid and OFC AT. 
+However, at the time of final adjustment of advance /asset capitalization, AT would be 
+considered. It was further stated that for Phase -II, 84.91 per cent AT has been completed 
+with the remaining AT in progress.  
+While we note the replies of BBNL and Ministry, the remaining ATs may be expedited to 
+ensure quality assurance and facilitate effective project implementation. 
+3.3  Financial Management 
+ 
+3.3.1 Release of funds 
+Chart-3.5: Release of Funds
+Chart-3.5 illustrates the process for release of funds. There were variations in the payment 
+terms across all the three Models. In case of CPSU -led Model, the terms envisaged payment 
+of 100 per cent of the value of material on placing purchase order; and for works component 
+70 per cent  on placing purchase order, 25 per cent  payment on Acceptance Testing and 
+Commissioning of network in each block and five per cent  payment after one year of 
+commissioning. In the State -led model, payments were linked to deliverables. An initial 
+payment of 10 per cent was made when the MoU was signed, with further payments linked 
+Implementing Agencies 
+raise an invoice to 
+BBNL
+After scrutiny, BBNL 
+raises the Demand to 
+USOF
+USOF releases fund to 
+BBNL
+BBNL releases the fund 
+to Implementing 
+Agencies 
+
+Report No. 19 of 2026 
+28 
+to the completion of specific work stages. The final payment of 10 per cent was to be made 
+after one year of completion, i.e. on successful operations and running of services.  
+In the Private-led Model, payment terms were more tightly linked to deliverables. 50 per cent 
+of the material cost was payable on delivery of material. The remaining payments of 
+50 per cent of material and 100 per cent of service component were linked to achievement of 
+GP connectivity in eight stages  from 30 per cent  to 100 per cent . For the first two stages 
+(30 per cent  and 40 per cent ), 10 per cent  of the service cost was payable. For the next 
+six stages (50 per cent  to 100 per cent ), five per cent  of the remaining material cost and 
+10 per cent of the service cost was payable at each stage. After the network goes live and 
+performs for one year as per SLAs, the final payment of 20 per cent of material and 20 per cent 
+of service are released. We noticed that the Private -led model where payment terms were 
+more strictly linked to deliverables contributed to better performance in terms of 
+uninterrupted internet connectivity (viz. higher operational GPs) than CPSU -led Model and 
+the State-led model (Chart 3.6). 
+Chart-3.6: Operational GPs (in per cent) as of November 2025 
+ 
+3.3.2 Financial Status 
+Financial status of BharatNet Phase -II as o f November 2025  is at Table 3.6 . As of 
+November 2025, BBNL spent ₹18,590 crore on BharatNet Phase-II (Capex), which was within 
+the budget approved. 
+ 
+ 
+90.11
+39.80
+10.74
+0.00 10.00 20.00 30.00 40.00 50.00 60.00 70.00 80.00 90.00 100.00
+Private Led Model
+State Led Model
+CPSU Led Model
+
+Report No. 19 of 2026 
+29 
+Table 3.6: Details of Expenditure incurred against BharatNet Project (till Nov-2025) (₹ in crore) 
+Sl. 
+No. 
+Component of the Project Amount Approved 
+by the Cabinet 
+(Without Taxes) 
+Amount 
+(Including 
+Taxes) 
+Expenditure 
+(Inclusive of Taxes) 
+1 Phase-I (Capex) 11,148 12,708.72 12,663 
+2 Phase-II (Capex) 18,792 22,174.56 18,590 
+3 Opex 6,046 7,134.28 7,843 
+4 Last Mile Connectivity 4,066 4,066.00 425 
+5 Replacement of Lossy Fiber 2,016 2,378.88 367 
+Total 42,068 48,462.44 39,888 
+3.3.3 Inadequate safeguards in Fund Management  
+We noticed instances of inadequate safeguards in fund management, wherein procedures for 
+utilisation and monitoring of project funds were either absent or not complied with, as 
+detailed below:  
+(i) The Agreement executed (May 2013) between BBNL and CPSUs in Phase -I, linked release 
+of funds to submission of Utilisation Certificates (UCs) supported by certified bills. 
+This requirement was done away with in Phase -II. However, while removing this control, no 
+alternate mechanism was put in place to monitor utilisation of funds, including adjustment of 
+penalties from vendors or deposit of unutilised funds etc.  
+One instance illustrates the need for such monitoring. BBNL approved (2016) funds for survey 
+and GIS mapping of electrical poles for BharatNet Phase -II in five States  (Himachal Pradesh, 
+Jharkhand, Odisha, Uttarakhand and West Bengal), with 50 per cent of the sanctioned amount 
+paid in advance. Out of total cost of ₹21.09 crore, though ₹10.55 crore45 was paid in advance, 
+there was no record of its utilisation for the purpose it was sanctioned. 
+While accepting the audit contention, Ministry assured (December 2024) that a robust system 
+to streamline the process would be adopted. Ministry further stated (March 2025) that BBNL 
+has been pursuing for refund of unutilised amounts and submission of supporting documents 
+from States.  
+(ii) As per USOF sanction conditions, funds were to be utilised for the purpose for which 
+it was allocated. We found that this condition could not be fulfilled as detailed below:  
+MoUs signed (November 2017 -January 2018) by USOF with BBNL, State Governments and 
+State Implementing Agencies (SIAs) provided that all funds released for the project shall be 
+placed in a separate Project Bank Account. The Account was to be used only for project 
+payments and administrative expenses. Surplus funds in this account w ere to be kept in a 
+fixed deposit with a public sector bank, with interest credited to the project corpus.  
+We noted that the above control was not included in the MoU signed (August 2018) between 
+BBNL and BSNL. BBNL released an advance of ₹2,302 crore to BSNL by March 2018  and 
+released an additional advance of ₹ 863 crore to BSNL  in September 201 8, aggregating the 
+ 
+45  Odisha- ₹2.39 crore, West Bengal- ₹2.10 crore, Jharkhand- ₹2.11 crore, Himachal Pradesh- ₹1.30 crore and Uttarakhand- ₹2.65 crore. 
+
+Report No. 19 of 2026 
+30 
+total advance to ₹3,165 crore . However, as per the terms governing fund release, the 
+admissible amount (based on purchase order/work order submitted by BSNL ) was 
+₹2,516 crore. Accordingly, the total release exceeded the admissible amount by ₹649 crore . 
+Out of ₹3,165 crore released to BSNL, it utilised only  ₹1,163.57 on Phase -II and diverted 
+₹2,001.43 crore for other purposes.  
+An Enquiry Committee constituted (May 2019) by USOF found (September 2019) that BSNL 
+had utilised ₹2,001.43 crore for meeting establishment costs and other ongoing projects even 
+as liabilities of ₹683.41 crore towards vendor supplies under Phase-II were pending. Based on 
+the recommendation of the Enquiry Committee, BSNL opened  (February 2020)  a separate 
+project account, but did not recoup the diverted funds (as on March 2024).  
+The Ministry stated (March 2025) that although the MoU of August 2018 did not contain a 
+clause for submission of utilisation certificates, BSNL submitted justification to BBNL, at the 
+time of demand of funds. It was further stated that BSNL was releasing f unds to the vendors 
+regularly from its own sources to recoup the diverted funds.  
+The Ministry subsequently informed (November 2025) that BSNL had since recouped entire 
+amount of ₹2,001.43 crore. 
+(iii) Under State-led model, MoU signed (December 2017) among USOF, BBNL, 
+Government of Tamil Nadu and SIA ( TANFINET46) did not provide a clause for Liquidated 
+Damages (LD). The SIA (TANFINET) re covered ₹3.21 crore from vendors out of total 
+recoverable LD of ₹54.81 crore. However, due to the absence of LD clause in the MoU , the 
+recovered amount of LD was not transferred to BBNL.  
+The Ministry stated (November 2025) that as per the Quadripartite Agreement between 
+USOF, BBNL, the State SPV and the State Government, only the actual project cost is to be 
+disbursed by BBNL/USOF. Accordingly, any liquidated damages (LD) imposed by the SI A on 
+the PIA are adjusted by BBNL while making the final milestone payment. 
+The adjustment of liquidated damages against final milestone payments may be verified in 
+subsequent audit. 
+(iv) We observed instance s of deviation from MoU provisions under State-led model as 
+well as CPSU-led model as below: 
+(a)  Under State -led model, the MoU signed (December 2017) among USOF, BBNL, the 
+Government of Maharashtra and SIA  (Maharashtra Information Technology Corporation 
+Limited) stipulated that all releases be placed in a separate Project Bank Account and 
+unutilised funds be placed in fixed deposits with a public sector bank, with the accrued 
+interest added to the account. However, out of ₹541.94 crore released (December 2017 and 
+November 2018)  as advance to SIA, ₹65.50 crore remained unutilised and was parked in 
+savings account instead of fixed deposits, leading to interest loss of ₹12.48 crore.  
+ 
+46  Tamil Nadu FiberNet Corporation Limited. 
+
+Report No. 19 of 2026 
+31 
+While accepting the audit contention, the Ministry stated (March 2025) that adjustment 
+would be done as per provision of MoU when the next instalment of fund is transferred to 
+SIA of Maharashtra.  
+(b) Under CPSU-led model, MoU signed (August 2018) between BBNL and BSNL provided 
+that in case of non -execution of the project for whatever reason, action with regard to the 
+advances paid to BSNL shall be taken in accordance with the decision of USOF . We observed 
+that BSNL started issuing Advance Purchase Orders (APOs) for EPC mode packages from 
+April 2018 to October 2018 pending approval. While no work order was issued by BSNL, BBNL 
+released47 ₹420 crore as an advance to BSNL. In Jul 2019 USOF communicated that no further 
+action to be taken on EPC mode projects. It was also informed that advance of ₹ 420 crore 
+released for EPC mode projects was to be adjusted from non-EPC mode projects. However, 
+BSNL justified the non-adjustment on the ground that Advance Purchase Orders were already 
+issued and it had already incurred costs for manpower and resources which would require to 
+be compensated. Besides, approximately ₹64 crore was paid as GST.  
+Ministry stated (November 2025) that  as per Department of Expenditure OM (March 2022) 
+on the revised procedure for fund flow under Central Sector Schemes, funds are disbursed 
+from DBN to BSNL through the Central Nodal Agency (CNA) Model-1. Under this model, BSNL 
+has to make payments directly to the PIA, enabling fund tracking to the ultimate beneficiary 
+in PFMS. Under ABP, BSNL is required to submit Utili sation Certificates before the release of 
+subsequent assignments.  
+Though the audit appreciate s the corrective measures taken  by the Ministry, however, the 
+implementation of these measures in ABP can be assessed in subsequent audit. 
+3.3.4 Capitalization of BharatNet assets  
+Capitalization is essential for accurately recording the investments in infrastructure projects. 
+It ensures that expenditure incurred for creation of assets are properly accounted for in 
+financial records.  
+We noticed that although nearly 100 per cent of work was reported as completed in four 
+States of Andhra Pradesh, Chhattisgarh, Gujarat and Odisha, no GPs (assets created in GPs) 
+was capitalized till March 2024.  Also, In UP(W) and Sikkim also, no GPs was capitalized. In 
+Madhya Pradesh, Bihar and UP (East), 96 per cent, 68 per cent and 62 per cent of GPs were 
+capitalized respectively. Only in case of Punjab 100 per cent of the GPs were capitalized.  
+While accepting the audit contention, the Ministry stated (March 2025) that the capitalization 
+of the assets could not be undertaken due to variations in the State-led model and a team of 
+consultants would be hired to finalize the modalities. The Ministry further stated 
+(November 2025) that the process had not yet commenced and would be taken up with BBNL. 
+ 
+47  ₹232 crore in December 2017 and ₹188 crore in March 2018. 
+
+Report No. 19 of 2026 
+32 
+We are of the view that  delays in c apitalisation despite completed works indicate weak 
+financial closure and asset accounting. 
+3.4 Conclusion 
+BharatNet Phase -II was marked by planning and execution deficiencies that impacted its 
+implementation. The project, which aimed at providing broadband connectivity to Gram 
+Panchayats, faced delays of over six years beyond its original deadline (March 2019). Phase-II 
+achieved 92.79 per cent service ready GPs as of November 2025 but the operational GPs were 
+significantly lower indicating underutili sation of infrastructure. Further,  acceptance testing 
+and quality assurance remained substantially incomplete. 
+The Detailed Project Reports (State-led and CPSU-led) were prepared without ground surveys 
+leading to revisions and delays while the Private-led model was implemented without DPRs. 
+The fibre fault localisation system remained unimplemented and GIS mapping progressed 
+with delays. The implementation models - State-led, CPSU-led and Private-led showed varying 
+degrees of success, with the Private-led model demonstrated better performance in terms of 
+operational connectivity.  
+There were concerns regarding financial management. The relaxation of controls in Phase-II, 
+particularly the removal of utilisation certificate requirements, absence of separate  Project 
+Accounts and MoU oversights led to instances of fund diversion , interest losses and non -
+transfer of liquidated damages. Capitalisation of assets was delayed or incomplete, reflecting 
+inadequate financial closure and asset accounting. 
+3.5 Recommendations 
+ 
+3.5.1 Streamline Planning, its approval and System Integration 
+i. Detailed Project Reports should be based on comprehensive ground surveys, 
+ensuring accurate cost projections and reducing revisions.  
+ii. Department of Telecommunications and Digital Communication Commission should 
+establish a fast -track approval mechanism with strategies that factor location -
+specific challenges. 
+iii. Better coordination is needed between the Department of Telecommunications 
+(DoT), BSNL and State governments to address bottlenecks. 
+iv. Fast-track GIS mapping completion for all Gram Panchayats (GPs) to streamline 
+maintenance and network upgrades. 
+v. Ensure effective rollout of Fibre Fault Localisation System (FFLS)/Remote Fibre 
+Monitoring Systems (RFMS) and integrate these systems with a centralized NOC. 
+vi. Ensure integration of GIS, FFLS/RFMS and Network Management System (NMS) for 
+automated fault localization and route optimization. 
+
+Report No. 19 of 2026 
+33 
+vii. Ensure that Wi-Fi Access Points are operational and properly maintained to enhance 
+utilisation. 
+3.5.2  Improve Financial Oversight  
+i. Implement a performance -linked disbursement model similar to the Private-led 
+approach, ensuring payments are strictly tied to project milestones (e.g., GIS 
+mapping, Acceptance Testing, uptime targets) and service availability.  
+ 
+
+Report No. 19 of 2026 
+11 
+Operation & Maintenance and  
+Utilisation of BharatNet Infrastructure 
+Chapter IV 
+
+Report No. 19 of 2026
+35 
+CHAPTER IV 
+Operation & Maintenance and Utilisation of BharatNet 
+Infrastructure 
+4.1 Operation and Maintenance arrangement 
+We noted that Operation and maintenance (O&M) arrangements for BharatNet underwent 
+multiple transitions. In pursuant to the Cabinet approval (July 2017) for dedicated funds for 
+O&M, BBNL entered into an agreement with BSNL for O&M arrangements for Phase -I in 
+October 2017. The agreement provided for O&M and revenue sharing without any defined 
+Service Level Agreements (SLAs); this remained in force until June 2019. However, no formal 
+agreement was put in place for projects implemented by the other CPSU that participated in 
+Phase-I (namely RailTel and PGCIL ) although BBNL paid ₹ 26.04 cr ore to RailTel for this 
+purpose. Thus, the non-provision of funds and absence of formal O&M agreements resulted 
+in inadequate maintenance affecting network availability.  
+DCC recognized (June 2019) BSNL’s limitations in handling BharatNet O&M responsibility, due 
+to its limited village -level presence which affected speedy fault response and network 
+reliability. Accordingly, the Commission decided to transfer responsibility of O&M to CSC. This 
+arrangement came into effect from July 2019 through a tripartite agreement among USOF, 
+BBNL and CSC. This agreement prescribed network availability of 95 per cent and remained 
+valid up to June 2022. Data showed relative improvement in network availability during this 
+period, although it still fell short of SLA targets  (Para 4.2.2). CSC could not fully deliver on its 
+commitment of O&M satisfactorily and the agreement was terminated in 2022.  
+Thereafter, an agreement (August 2022) between USOF and BSNL restored (from July 2022) 
+O&M responsibility to BSNL for Phase-I and Phase-II (CPSU-led model), with stricter network 
+availability requirements of 98 per cent at GP level and 99 per cent at block level, with penal 
+provisions for non -compliance. USOF was to forfeit the O&M payment in a month if the 
+network availability f ell below 70 per cent . For Phase -II implemented under State -led and 
+Private-led models, O&M responsibility remained with respective Implementing Agency with 
+a lower SLA threshold of 95 per cent.  
+We noted that subsequent to the termination of agreement with CSC, the operational 
+performance deteriorated, which is discussed later in the Chapter (Para 4.2.2).  
+4.2  Operational performance 
+Audit evaluated the operational performance of BharatNet on two parameters: (i) State-wise 
+monthly network availability; and (ii) Operational GPs (in per cent of service-ready GPs). These 
+are discussed below:  
+
+Report No. 19 of 2026 
+36 
+4.2.1 State-wise monthly network availability 
+We analysed  the GP Monthly Availability Report  [showing network availability in Optical 
+Network Terminal (ONT) at GP] for Phase-I from March 2023 to July 2024 and found that BSNL 
+did not meet the prescribed availability target in any state/circle (detailed in Annexure 4.1). 
+In 25 states/circles, availability fell below 70 per cent and in the remaining seven 
+states/circles48, availability ranged from 35.9 per cent to 97.58 per cent necessitating penalty 
+deductions.  
+Chart-4.1: BharatNet Phase-I Monthly GP Availability (in per cent) for Mar 2023-Jul 2024 
+ 
+We analysed the GP Monthly Availability Report of all three model s of Phase–II from June 
+2023 to July 2024. In the CPSU -led Model [Madhya Pradesh, Uttar Pradesh (East), Uttar 
+Pradesh (West), and Sikkim], performance was dismal, with an average monthly GP ONT 
+availability of only 11.84 per cent, with the lowest availability recorded in Uttar Pradesh (East) 
+at 4.03 per cent. The State-led Model performed relatively better, though it remained below 
+the prescribed threshold. Gujarat was a notable exception by achieving GP availability ranging 
+from 52.79 per cent  to 98.71 per cent . Under the Private-led model, Punjab met the 
+performance benchmark, recording monthly availability between 95.95 per cent  and 
+99.33 per cent, while Bihar's availability ranged from 66.75 per cent to 83.62 per cent, falling 
+short of the 95 per cent target. Thus, only Gujarat and Punjab could achieve the benchmark 
+of 95 per cent . Although Bihar did not achieve the prescribed performance benchmark, it 
+ranked third in terms of GP ONT availability among the States covered under Phase -II (the 
+performance of Gujarat, Punjab and Bihar is discussed in Case Studies 4.1 and 4.2). 
+ 
+48  These states are not included in the 25 Circles where availability is less than 70 per cent. 
+0
+20
+40
+60
+80
+100
+120
+Minimum Maximum Average
+
+Report No. 19 of 2026
+37 
+Chart-4.2: BharatNet Phase-II Monthly GP Availability (in per cent)- June 2023-July 2024 
+Our further analysis of Block Monthly Availability Report  [showing network availability by 
+Optical Line Terminal (OLT) at Block] for Phase-II of BharatNet project in different models for 
+the period April 2024 to July 2024, revealed that the network availability remained below the 
+benchmarks at the block-level. In the CPSU -led Model, none of the three states/four circles 
+under BSNL achieved even 70 per cent  availability. In the State -led Model, the monthly 
+availability report of OLTs was not accessible in the BBNL central NOC due to incomplete 
+integration with State NOCs. Under the Private-led Model, only Punjab exceeded 70 per cent 
+for all OLTs.  
+The Ministry stated (March 2025) that as per agreement, SLAs and penalties are calculated 
+GP wise/ Block wise on monthly basis not on overall GP monthly availability of a Circle/State. 
+It was also stated that penalty of ₹34.77 crore has been deducted from BSNL claims. The 
+Ministry attributed the reasons for lower uptime to several factors, such as OFC damage due 
+to other development activities, the linear network design of the connectivity causing 
+isolation of equipment wh en the OFC is damaged and the lack of electricity connections in 
+many GPs etc. It also stated that under the ABP the PMA is now responsible for operating and 
+maintaining the network while adhering to strict SLAs to ensure higher reliability. 
+While we acknowledge the  constraints, we  are of the view that  the monthly availability 
+reported at Circle/State level represents the average of the availability of indi vidual GPs in 
+that Circle/State and reflects the aggregated performance of GPs within that Circle/State. We 
+
+
+Report No. 19 of 2026 
+38 
+noted that in f ive Circles {Haryana, Himachal Pradesh, Jharkhand , NE-I (Meghalaya, Tripura 
+and Mizoram) and NE -II (Manipur) } no penalty was recovered, even though the monthly 
+network availability in these States was lower than the threshold levels (70 per cent  or 
+90 per cent) during March 2023 to July 2024 as detailed below  (Table 4.1) which indicates 
+inadequate enforcement of the penalty provisions: 
+Table 4.1 
+State Name Monthly availability range (in per cent) 
+Haryana 14.58 to 49.92 
+Himachal Pradesh49 77.6 to 87.55 
+Jharkhand 16.54 to 37.74 
+Manipur 3.79 to 15.09 
+Meghalaya 6.97 to 11.31 
+Mizoram 24.22 to 38.5 
+Tripura 42.03 to 60.13 
+The Ministry subsequently stated (November 2025) that the downtime penalty is being 
+deducted by BSNL as per Terms and Condition s of the respective Agreement/RFP. It was 
+further stated that the State Network Operation Centres (S -NOCs) in five States i.e. Gujarat, 
+Odisha, Jharkhand, Telangana and Tamil Nadu has been integrated with Central NOC and is 
+operational.  
+However, no details of recovery were furnished for the five circles where availability fell below 
+the prescribed thresholds. Further, integration of the remaining three State NOCs with the 
+Central NOC is yet to be completed, which limits monitoring of network performance. 
+Case Study 4.1 - Gujarat: Good practice in service delivery 
+Gujarat attributed its improved operational performance to several institutional measures. 
+Firstly, OLTs at the Blocks were relocated from BSNL exchanges to telco -grade shelters 
+equipped with independent electricity connections, air conditioning and batter y backups. 
+Secondly, installation of State Electricity Board (SEB) meters ensured stable power supply 
+at GP level. Thirdly, awareness initiatives with village heads (Sarpanch) helped to 
+discourage avoidable power disconnections. Fourthly, the State promote d the use of "Call 
+Before You Dig" app among field teams, which facilitated coordination among public 
+agencies and reduced incidents of fibre cuts. In addition, regular fibre route monitoring by 
+Project Implementing Agency (PIA) and First Response Time (FR T) teams at the block level 
+was undertaken to strengthen network maintenance.  
+ 
+49  Under CPSU-led model, BSNL was required to maintain 98 per cent network availability. In the case of Himachal Pradesh, monthly 
+availability ranged between 77.6 per cent and 87.55 per cent, attracting penalty ranging from 45 to 55 per cent. 
+
+Report No. 19 of 2026 
+39 
+Case Study 4.2 - Punjab and Bihar: Good practice 
+In Punjab and Bihar, the work was awarded on turnkey basis to Project Implementing 
+Agencies (PIAs) for implementation along with O&M for seven years (one year warranty 
+plus six year O&M). Further, comprehensive documentation including GIS mapping and As 
+Build Diagram with geo-coordinates was maintained which facilitated in effective O&M and 
+adequate power supply/back up at GPs. After commissioning the network at GP, the O&M 
+was immediately taken over by the respective PIAs contributing to improved network 
+availability. 
+4.2.2 Operational Gram Panchayats 
+One of the key indicators  is Operational GPs i.e.  the percentage of service -ready Gram 
+Panchayats that provided uninterrupted internet services. We found that the operational GPs 
+showed an increasing trend from January 2018 to March 2021, reaching a peak at 
+59.63 per cent50 as a percentage of GPs that were made service ready. Our analysis of the 
+data showed that performance thereafter was uneven  (Chart 4.3) . Although more than 
+50 per cent of service -ready GPs remained operational between September 2020 and 
+December 2021, the percentage fell sharply from 57.84 per cent  in December 2021 to 
+27.22 per cent in December 2023. Further , as of November 2025, only 33.2 0 per cent of the 
+GPs connected under the project were operational indicating a significant and sustained 
+deterioration in service delivery. 
+Chart-4.3: Operational GPs (in per cent of Service Ready GPs) 
+ 
+ 
+50  Highest percentage of Operational GPs achieved between January 2018 to July 2024. 
+0
+10
+20
+30
+40
+50
+60
+70
+
+Report No. 19 of 2026 
+40 
+We conducted physical verification (December 2023 to February 2024) in 131 GPs 51 across 
+nine states/circles/UT. Out of a total of 131 GPs, 65 GPs were found non -operational due to 
+fibre cuts, power disruptions  etc. In Lakshadweep, although 10 GPs were planned to be 
+connected through VSAT under Satellite mode, none was commissioned.  
+The Ministry attributed (December 2024) the poor network availability to factors such as 
+simultaneous implementation of various projects by other Government of India Departments 
+(e.g. Jal Jeevan Mission) resulting in frequent cable cuts and dependence on State power 
+infrastructure. The Ministry further elaborated (March 2025) that the low percentage of 
+operational GPs was due to multiple factors including low availability of power in rural areas 
+resulting in deep discharge of batteries, linear network design, access issues to GP offices and 
+use of BSNL existing fibre with expired life. It also sta ted that these challenges have been 
+addressed under ABP. 
+Ministry’s reply may be viewed in the light of the fact that  the cited constraints were known 
+at the planning stage but were not adequately addressed underscoring persistent deficiencies 
+in network availability. Further, physical verification confirmed significant non -operational 
+GPs. 
+Further analysis of Network Management System (NMS) data for the period January 2024 to 
+July 2024 revealed that the primary contributors to low operational performance, measured 
+in terms of downtime, were fibre cable faults or cuts, which accounted for app roximately 
+48 per cent  of the total downtime, followed by equipment and power -related faults, 
+contributing about 26 per cent. 
+We also reviewed Trouble Ticket (TT) data for the period August 2023 to July 2024 to assess 
+delays in fault resolution. During the 12 months under review, a total of 41.77 lakh TTs were 
+closed, while 1.82 lakh TTs remained unresolved as of 31 July 2024. Al though 87.28 per cent 
+of faults were rectified within 24 hours, this was below the prescribed benchmark of more 
+than 90 per cent. Further, 94.46 per cent of faults were resolved within three working days, 
+against the requirement of at least 99 per cent. 
+Further, the power faults constituted the largest share of reported faults (64.29 per cent), 
+followed by equipment faults (OLT/ONT) (21 per cent ) and fibre -related faults 
+(14.71 per cent). However, despite their relatively lower share in the total number of faults, 
+fibre-related faults accounted for a higher share of downtime, owing to significantly higher 
+Mean Time to Restore (MTTR). MTTR for fibre faults was 17 days, compared to 13 days  for 
+ONT faults and one day for OLT/power-related faults. We further noted an overall increase in 
+MTTR from 2.62 days in August 2023 -September 2023 to 5.64 days in April 2024 -May 2024 
+(Chart-4.4). There were significant geographical variations, with Jammu & Kashmir 
+maintaining MTTR within 24 hours while in Chandigarh MTTR was approximately 22 days . 
+ 
+51  We physically inspected 131 GPs spread over nine States/UTs of Assam, Andhra Pradesh, Bihar, Gujarat, Haryana, Lakshadweep, Sikkim, 
+Uttar Pradesh (W) and Tamil Nadu.  
+
+Report No. 19 of 2026 
+41 
+Failure to restore faults in a timely manner has led to increased downtime, customer 
+dissatisfaction and higher O&M costs affecting utilisation and revenue generation. 
+Chart-4.4: Mean time to Restore 
+  
+The Ministry stated (November 2025) that the ABP introduces ring -based IP -MPLS 
+technology, digital monitoring of OFC laying, Remote Fiber Management Systems, smart 
+racks, dedicated power connections at GPs and third -party validation to address utilisation,  
+O&M and reliability gaps observed in earlier phases, with the objective of improving network 
+uptime and operational GPs. 
+The corrective action envisaged under ABP can be validated in subsequent audit. 
+4.3  Utilisation 
+BharatNet was conceived  as a self -sustaining project , where operation and maintenance 
+expenses were to be met from the revenue generated through its services. To broad base its 
+revenue streams, customer satisfaction was critical. Regular maintenance and speedy 
+resolution of service disruptions, therefore, become central to BharatNet to achieve its 
+objective of providing non-discriminatory access to all broadband service providers. This para 
+examines the extent to which BharatNet’s objective of becoming self -sustaining has been 
+realised and highlights deficiencies that undermine the project’s sustainability. 
+4.3.1 Utilisation: Performance against metrics 
+We measured the performance of BharatNet on utilisation of infrastructure against the 
+benchmarks: (i) Fibre -to-the-home connections (FTTH)  (ii) Bandwidth utilisation  and 
+(iii) Leasing of dark fibre. Chart 4.5 depicts the network utilisation trends. 
+ 
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+0
+10
+20
+30
+40
+50
+60
+70
+Power fault OLT fault Fiber fault ONT fault/ Internet fault
+at OLT
+Nature of Fault
+Mean time to restore (in days)
+Tickets raised (in per cent)
+Tickets aised (in %) Mean time to restore  (in days)
+
+Report No. 19 of 2026 
+42 
+Chart-4.5: Network Utilisation Trends 
+ 
+4.3.1.1 FTTH connections 
+In accordance with the DCC approval (June and December 2019) , minimum five FTTH 
+connections52 were to be provided  in every Gram Panchayat (in 77 ,115 GPs ). Against the  
+minimum target of 3.85 lakh FTTH connection s, 4.94 lakh FTTH connections (March 2021) 
+were provided. During the one -year period (2021) when the Government, in order to 
+encourage use of BharatNet Infrastructure permitted free internet to Government agencies , 
+the number of connections increased from 34,981 (March 2020) to 4,94,241 (March 2021). A 
+significant number (61.7 per cent) of users of FTTH were government agencies. However, after 
+the offer was withdrawn the connections dropped to 2,29,144 (March 2022). 
+The Union Cabinet approved the BharatNet Udyami Model (BNU) in August 2023, envisaging 
+the involvement of local entrepreneurs for providing last-mile connectivity (FTTH connections 
+to households) on a revenue-sharing basis with BSNL. BharatNet has provided 9.66 lakh FTTH 
+connections (March 2024)  attributed to BharatNet Udyami Model  (BNU). We conducted 
+physical verification in 131 GPs53 across nine States and found that no FTTH connections were 
+provided in these GPs54.  
+ 
+52  Connections were to be provided to Government Institutions (Police Stations, Public Health and Wellness centers, Schools, Anganwadi 
+etc.); additional FTTH connections to individual homes on demand. 
+53  We physically inspected 131 GPs, spread over nine States/UTs of Assam, Andhra Pradesh, Bihar, Gujarat, Haryana, Lakshadweep, 
+Sikkim, Uttar Pradesh (W) and Tamil Nadu.  
+54  Connections were not provided in these GPs through ONT. 
+0
+2,00,000
+4,00,000
+6,00,000
+8,00,000
+10,00,000
+12,00,000
+14,00,000
+Mar-20 Mar-21 Mar-22 Mar-23 Mar-24 Mar-25
+Mar-20 Mar-21 Mar-22 Mar-23 Mar-24 Mar-25
+Service Ready GPs 1,38,262 1,57,717 1,78,126 1,94,136 2,15,654 2,18,331
+FTTH (Commissioned Connection) 34,981 4,94,241 2,29,141 3,12,974 9,66,213 12,71,823
+Dark Fibre (Fiber Kms) 9,572 18,923 38,448 62,099 82,311 1,11,208
+Data Consumption (TB) 136 1,834 4,121 26,727 1,03,960 1,32,719
+
+Report No. 19 of 2026
+43 
+The Ministry stated (November 2025) that as of 03 November 2025, BSNL had commissioned 
+12,18,778 FTTH connections  with increase of  over 26 per cent  between March 2024 and 
+November 2025. Regarding physical verification conducted by audit in 131 GPs, it was stated 
+that under the Utili sation Agreement (April 2025), 1.5 crore FTTH connections are to be 
+provided nationwide. 
+The Ministry’s reply does not address that the growth in 2020 -21 was mainly driven by 
+incentives and declined sharply once the free -internet offer ended. Further, referring to 
+future Utilisation Agreement targets does not explain the utilisation gaps during the period 
+examined.  
+4.3.1.2 Bandwidth utilisation 
+In Phase-I, each GP was to be provided with 100 Mbps  bandwidth; this was scalable to one 
+Gbps in Phase-II. Since all customers at GPs may not be using internet services simultaneously, 
+the internet leased line bandwidth at the Block level is provisioned with a contention ratio of 
+1:10 - i.e., one-tenth of the total bandwidth subscribed by all customers. For a conservative 
+estimate, audit considered  100 Mbps per GP to compute the total installed capacity and 
+one-tenth of this total was taken as the available capacity. Our analysis revealed (Table 4.2) 
+that, as of November 2025, only 17.91 per cent  of the available bandwidth was actually 
+utilised in the service-ready GPs. 
+Table 4.2 
+Sl. No. Bandwidth utilisation of BharatNet Infrastructure capacity (November 2025) 
+1 Total Service Ready GPs 2,18,910 
+2 Aims to provide capacity at every GP 100 Mbps 
+3 Total Bandwidth capacity (1*2) 2,18,91,000 Mbps 
+4 Available Bandwidth capacity (after contention ratio i.e. 
+1/10th) 
+21,89,100 Mbps 
+5 Bandwidth usage 3,92,141 Mbps 
+6 Percentage Bandwidth usage {(5*100)/4} 17.91 per cent 
+Source: BBNL weekly report -November 2025 and Telecom Commission note December 2016 
+The low level of utilisation indicates that BBNL did not effectively promote BharatNet through 
+marketing initiatives such as media advertisements, roadshows, and display boards, despite 
+the explicit requirements outlined in the MoU (February 2014) between USOF and BBNL. The 
+poor utilisation may also be attributable to deficient  operational performance (Para 4.1 and 
+Para 4.2). 
+
+Report No. 19 of 2026 
+44 
+4.3.1.3 Leasing of dark fibre  
+Leasing of dark fibres 55 denotes leasing of BharatNet Optical Fibre Cable (OFC) to individual 
+users without internet services. Being a key revenue stream, it is crucial to the project’s 
+self-sustainability.  
+To utilise BharatNet Infrastructure and provide broadband services in rural areas, BBNL 
+organised (November 2017) a seminar in New Delhi with participation from Telecom Service 
+Providers (TSPs) and Internet Service Providers (ISPs). Four major TSPs, Relian ce Jio Infocom 
+Ltd (RJIO), Bharti Airtel Ltd (Airtel), Vodafone India Ltd (Vodafone) and Idea Cellular Ltd (Idea) 
+expressed (November 2017) willingness to utilise the network and paid advances aggregating 
+₹19.38 crore for utilisation of dark fibre/bandwidth services to BBNL. Audit observed that out 
+of total advance amount of ₹ 19.38 crore, RJIO, which had deposite d the highest advance of 
+₹14.22 crore, did not utilise BharatNet services due to BBNL’s inability to commit network 
+availability at 99.5 per cent . Consequently, the entire advance was refunded  (July 2021) . 
+Airtel, Vodafone and Idea utilised BharatNet services.  
+The Ministry acknowledged the audit’s contention and stated (March 2025) that the Cabinet 
+approval (October 2011) did not provide funds for O&M activities. Dedicated O&M funding 
+was approved only in July 2017. It further noted that the 2014 Agreement between USOF and 
+BBNL prescribed 95 per cent network availability per node, and therefore SLA levels above 
+99 per cent  for TSPs were not feasible in a linear topology. The said challenge has been 
+addressed under ABP, which envisages SLA-based O&M for 10 years.  
+Measures proposed under the ABP are prospective in nature and therefore do not address 
+the shortfalls identified during the audit period. 
+We found instances where dark fibre availability was not leased out despite requests. For 
+instance, in Andhra Pradesh, seven Internet Service Providers requested for 2,792 kilometres 
+of dark fibre but the State Implementing Agency, APSFL, did not meet the requests. We noted 
+that BBNL State Unit also requested APSFL in August 2022 to facilitate the leasing process; yet 
+no action was taken, nor were valid reasons provided to us as of March 2025. 
+Similarly, in Gujarat, multiple requests for dark fibre leasing were received between May and 
+November 2020. But the Gujarat SIA, Gujarat Fibre Grid Network Limited (GFGNL), was unable 
+to proceed in the absence of an approved fibre leasing policy. GFGNL cl arified in 
+February 2024 that its leasing policy was finalized in November 2021 and feasible routes were 
+delivered, but we noted no progress. 
+The Ministry stated (November 2025) that as per BBNL Utili sation report, as on 
+15 September 2025, 2,665 fibre km has been leased out in Andhra Pradesh and 3,180 fibre 
+km has been leased out in Gujarat. Further, leasing of dark fibre is done as per demand of 
+dark fibre. 
+ 
+55  Dark fibres, also known as unlit fibres, are already laid fibres but remain unused for leasing out to TSPs. 
+
+Report No. 19 of 2026 
+45 
+While Audit notes the progress made in leasing of 2,665 km and 3,180 km dark fibre in Andhra 
+Pradesh and Gujarat respectively, timely action could have enabled be tter utilisation of 
+BharatNet infrastructure.  
+4.4 Impact of poor utilisation on self-sustainability 
+At the time of approval of Phase-II, the Cabinet envisaged (2017) that BharatNet would attain 
+operational self -sufficiency within five years of its inception. The project was expected to 
+become OPEX-neutral, meaning that its recurring O&M  56 costs would be met entirely from 
+the revenue generated by the project. We, however, observed that the anticipated revenue 
+generation remained significantly below the projections resulting in non -achievement of the 
+objective of operational self-sufficiency.  
+Rising O&M costs 
+As the number of service ready GPs increased, the O&M costs of the BharatNet infrastructure 
+rose from ₹859.70 crore (Chart-4.6) in FY 2019-20 to ₹1,679 crore in FY 2024-25.  
+Chart-4.6: Operation & Maintenance Cost 
+ 
+While revenue increased from ₹0.32 crore in 2016-17 to ₹40.75 crore in 2021-22, it declined 
+sharply to ₹ 8.45 crore in 2022 -23 before partially recovering to ₹ 20.30 crore in 202 4-25. 
+During the period 2016 -17 to 2023 -2024, BharatNet revenue covered only 0.11 per cent to 
+2.75 per cent of its O&M expenses, far below the intended self-sustaining model (Table-4.3). 
+This persistent financial underperformance is a matter of concern. We noted that the MoU 
+between BBNL and USOF had a provision for marketing, but no such activity was taken up by 
+BBNL. The absence of a structured marketing strategy, coupled with inadequate service 
+delivery, contributed significantly to the project's inability to generate sufficient revenue.  
+ 
+56  O&M cost includes maintenance (AMC) cost, fibre leases charges, space and infra charges etc. 
+0
+500
+1000
+1500
+2000
+2500
+0
+50,000
+1,00,000
+1,50,000
+2,00,000
+2,50,000
+Mar-20 Mar-21 Mar-22 Mar-23 Mar-24 Mar-25
+Period
+O&M cost  (₹ in crore)
+Service Ready GPs
+Service Ready GPs O&M cost  (₹ in crore)
+
+Report No. 19 of 2026 
+46 
+Table-4.3 
+Financial 
+Year 
+Revenue 
+Forecast  
+(₹ in crore)  
+Revenue 
+generated  
+(₹ in crore) 
+O& M Expenses  
+(₹ in crore) 
+Revenue as 
+per cent of 
+Forecast 
+Revenue 
+as per cent 
+of O&M 
+2016-17 0.42 0.32 61.57 76.19 0.52 
+2017-18 44.66 0.35 247.30 0.78 0.14 
+2018-19 155.19 0.57 519.96 0.37 0.11 
+2019-20 368.78 22.14 859.70 6.00 2.58 
+2020-21 742.11 23.46 862.16 3.16 2.72 
+2021-22 1,252.30 40.75 1,482.19 3.25 2.75 
+2022-23 1,865.37 8.45 1,985.90 0.45 0.43 
+2023-24 NA 20.92 1,518.87 - 1.38 
+2024-25 NA 20.30 1,679.00 - 1.21 
+The Ministry stated (November 2025) that in FY 2024–25, BBNL earned ₹23.10 crore from 
+network utilisation, while BSNL realized about ₹400 crore in revenue from the FTTH services. 
+Additionally, around 1.4 lakh FTTH connections were provided under the State -led model. 
+With timely implementation and adherence to SLAs, BharatNet’s annual revenue potential is 
+expected to grow manifold.  
+We noticed that as per BBNL Annual Report 2024-25, revenue receipt during FY 2024-25 was 
+only ₹20.30 crore. Further, the revenues cited by the Ministry (₹400 crore) accrued to BSNL 
+and not to BBNL and therefore did not contribute to its operational self -sufficiency. 
+Consequently, the objective of achieving operational self -sustainability within five years, as 
+envisaged in the Cabinet approval (July 2017), remained unachieved. 
+4.5 Conclusion 
+BharatNet has succeeded in creating a large -scale rural digital infrastructure; however, the 
+utilisation and operational  performance of the network has  not kept pace with its physical 
+expansion. Partnerships with Telecom Service Providers did not mature, as the network could 
+not meet service availability requirements.  
+Utilisation indicators —FTTH connections, bandwidth con sumption and dark fibre leasing 
+remained below expectations and the percentage of operational GPs declined to one-third of 
+service-ready GPs. Low uptime, frequent fibre cuts, power disruptions and slow fault 
+resolution contributed to poor customer experience. 
+Rising O&M costs and low revenue realisation prevented the project from attaining 
+operational self -sustainability, with revenue covering only a small fraction of operating 
+expenses. 
+
+Report No. 19 of 2026 
+47 
+At the same time, examples from Gujarat, Punjab and Bihar demonstrated that coordinated 
+power provisioning, proper documentation, turnkey O&M accountability and regular fibre 
+route monitoring can yield better operational outcomes. 
+The Government has acknowledged these constraints and attempted to address the issues  
+under the ABP, with SLA -based O&M, ring topology, greater FTTH penetration and unified 
+responsibility for implementation and maintenance. The impact of these corrective measures 
+can be assessed once the ABP is executed. 
+4.6 Recommendations 
+ 
+4.6.1  Accelerate Network Completion and utilisation 
+i. Ensure integration of  state and central NOCs  by implementing consolidated 
+monitoring frameworks. 
+ii. Prioritize completion of acceptance testing across all GPs before declaring project 
+milestones as achieved. 
+iii. Consider launching a targeted awareness and marketing campaigns to promote 
+BharatNet services to rural users, MSMEs, public agencies, and local businesses.  
+iv. Consider introducing targeted incentives to promote anchor tenancy  by key 
+government departments such as health, education, and agriculture. Additionally, 
+tiered pricing models  for first-time users, with subsidized rates for priority sectors  
+like agriculture, and education may be considered to encourage utili sation and 
+enhance financial sustainability. 
+v. Ensure that all GPs are operational and properly maintained to enhance utilisation. 
+4.6.2  Enhance Service Quality  
+i. Deploy dedicated maintenance teams in each State with strict Service Level 
+Agreements (SLAs) to ensure high uptime. 
+ii. Implement predictive maintenance and AI -based fault detection systems to reduce 
+downtime and optimize network operation. 
+iii. Deploy real-time dashboards to monitor data usage, uptime and service quality at 
+the Gram Panchayat (GP) level and link partner incentives  to key performance 
+metrics such as uptime (above 95  per cent ), bandwidth utili sation, and customer 
+satisfaction.  
+4.6.3  Strengthen Long-Term Sustainability 
+i. Develop a self -sustaining revenue model, including monetization of dark fibre and 
+leasing of excess network capacity to telecom providers. 
+
+Report No. 19 of 2026 
+48 
+ii. Explore BOOT (Build -Own-Operate-Transfer) or DBOM (Design -Build-Operate-
+Maintain) model for ABP to ensure long -term sustainability and attract private 
+sector participation and Viability Gap Funding (VGF) linked to clearly defined service-
+level milestones. 
+4.6.4  Align Implementation Strategy with Digital Inclusion Goals 
+i. ABP should move beyond mere infrastructure deployment and focus equally on 
+community awareness, and Service delivery at the last mile by engaging non -
+telecom partners (NGOs, SHGs, CSCs), thereby addressing the persistent issue of 
+underutilisation and ensuring that the socio -economic benefits envisioned under 
+BharatNet are fully realized. 
+ 
+
+Report No. 19 of 2026 
+35 
+Governance 
+Chapter V 
+
+Report No. 19 of 2026 
+49 
+CHAPTER V 
+Governance 
+BharatNet is India’s flagship rural broadband project, aiming to connect about 2.5 lakh Gram 
+Panchayats. To execute this unprecedented project, the Government in 2012 created Bharat 
+Broadband Network Limited (BBNL) as a Special Purpose Vehicle (SPV). However, BBNL’s 
+governance model struggled. BharatNet suffered extensive delays and underutilisation, 
+prompting the government to merge BBNL into the state -run telecom BSNL in 2022.  The 
+major governance deficiencies within BBNL that contributed to these outcomes are detailed 
+below:  
+5.1 Structural Weaknesses 
+ 
+ Organizational Capacity 
+BBNL was ill-equipped from the start to handle a project of BharatNet’s scale. The company 
+had a minimal permanent workforce (only 15 staff) and relied heavily on employees on 
+deputation from other telecom PSUs. BBNL suffered from acute leadership gaps during the 
+period from 2019-20 to 2023-24, as key senior executive posts at Level-I57 remained vacant 
+in the range of 24 percent to 100 percent and posts at Level-II58 remained vacant in the range 
+of 85 percent to 89 percent. Thus, lack of qualified Human Resources at Key managerial and 
+technical positions adversely affected the functioning of BBNL as SPV. This skeletal staffing 
+made it difficult to plan and monitor a nationwide infrastructure rollout. Moreover, key 
+leadership positions were left unfilled or allowed to run on additional charge. For most of its 
+existence, BBNL had no regular full-time Chairman and Managing Director (except for a brief 
+period between February 2019 and October 2022) , and Board-level positions like Director 
+(Planning), Director (Operations), and Director (Finance) were never permanently staffed and 
+were operated through additional charge arrangements . Such leadership vacuum and high 
+vacancy rates (up to 100 per cent  in some senior technical positions) undermined BBNL’s 
+capacity for strategic planning and oversight which are essential for managing a project of 
+BharatNet’s magnitude. 
+Board Independence and Strategic Guidance 
+As a Government-owned SPV, BBNL’s board was expected to guide the project. In practice, it 
+lacked independent oversight – no independent directors were appointed to BBNL’s board as 
+required under Companies (Appointment and Qualification of Directors) Rules, 2014. 
+Required committees like the Nomination and Remuneration Committee responsible for 
+identification of Board members/senior management, determining their qualifications and 
+ 
+57  Principal General Manager/Sr. General Manager/General Manager. 
+58  Managers. 
+
+Report No. 19 of 2026 
+50 
+remuneration was also not constituted. Additionally, BBNL did not formulate a business risk 
+management policy, despite frequent changes in project scope, implementation models and 
+technology choices. The absence of a risk framework meant that emerging issues relating to 
+technology, operational challenges etc. were not proactively addressed.  
+Coordination Challenges with Multiple Agencies 
+BharatNet’s implementation involved many stakeholders – Central Public Sector units and 
+various State government agencies under a “ State-led model.” BBNL, as the central 
+coordinating body, struggled to harmonize efforts across these diverse implementers. 
+The Ministry stated (March 2025) that Cabinet has approved (July 2022) the merger of BBNL 
+and BSNL into single entity. Hence, the posts of CMD and Independent Directors for BBNL are 
+available. Attempts to fill Level -I posts through deputations were unsuccessful, leaving 
+positions vacant. Previous recruitment in 2015 and 2017 brought in 22 and 6 officers  
+respectively, but only 1 4 remain. No new recruitment has taken place after merger and the 
+current workforce deemed sufficient to meet objectives. 
+We are of the view that in a multi -agency implementation environment such as BharatNet, 
+the continued manpower shortages and absence of a dedicated leadership and governance 
+structure restricted effective coordination and monitoring. 
+5.2 Planning and Execution challenges 
+ 
+Focus on Infrastructure Over Services and Operation and Maintenance arrangement 
+BharatNet’s execution initially emphasised the creation of assets, with service delivery  
+mechanism evolving subsequently. BSNL was tasked (October 2017) with O&M, but DCC later 
+observed (June 2019) that BSNL lacked manpower and field presence at the GP level, resulting 
+in inadequate maintenance. Consequently, the maintenance was handed over to the CSC to 
+involve local village level entrepreneurs. However, by 2022 the government reversed this 
+decision and returned O&M to BSNL, citing coordination difficulties with multiple agencies. 
+The service delivery remained unsatisfactory – network uptime at the Gram Panchayat level 
+was dismal, with an average of only 27.22 per cent to 59.63 per cent of the connected GPs 
+online at any given time during January 2018 to July 2024. Thus, cables were laid, equipment 
+were commissioned but a majority remained non -functional due to maintenance and 
+operational deficiencies, undermining the project’s core purpose of providing broadband 
+services. 
+Missed Deadlines 
+The Government of India launched the National Optical Fibre Network ( later renamed 
+BharatNet) project in October 2011 to provide broadband connectivity to about 2.5 lakh Gram 
+Panchayats (GPs). The project was implemented in two phases—Phase-I for one lakh GPs and 
+
+Report No. 19 of 2026 
+51 
+Phase-II for the remaining 1.5 lakh GPs. In April 2016, the scope of Phase-I was revised to 1.25 
+lakh GPs. The completion timeline for Phase-I was deferred multiple times from March 2014 
+to March 2015 and then to March 2017. Even by December 2017, when Phase-I was declared 
+“complete”, over 23,000 of the intended GPs were still not connected. As of November 2025, 
+Phase-I was completed. Phase -II, originally scheduled for completion by March 2019, was 
+extended up to 2025. Even after this extension, 92.79  per cent of GPs were covered as of 
+November 2025, indicating a persistent shortfall.  Some States saw complete breakdowns in 
+execution: for example, Himachal Pradesh and Uttarakhand never progressed in Phase-II due 
+to planning deficiency, forcing 8,700 GPs to be rolled into ABP. Overall, the project’s five-year 
+timeline has stretched into a decade-plus, with goals still unfulfilled. 
+5.3 Self-Sustaining Model 
+MoU between USOF and BBNL envisaged that, BBNL will strive to become self-sustaining after 
+five years of its effective date (February 2012), with revenues expected to cover operating 
+costs. This never materialized. The SPV’s operational revenue was minuscule compared to 
+expenses till 2024-25. Thus, it could not become self-sufficient within five years of inception. 
+The reasons were twofold: poor service uptime (if networks are down, they cannot generate 
+revenue) and lack of marketing and commercialization. Notably, although the agreement with 
+USOF included provisions for promoting the network to attract users, BBNL undertook no 
+significant marketing effort.  
+5.4 Project Monitoring and Quality Control 
+Instances of, sub-par work quality and lax monitoring were found . For example, in Sikkim 
+significant shortcomings in work quality and project supervision were found, work 
+commenced without requisite approvals and was later halted. Subsequent inspection 
+revealed that quality of work executed was unsatisfactory with substantial gaps in planning, 
+monitoring and acceptance testing.  
+5.5 TRAI concerns on BSNL’s Role in ABP 
+The Telecom Regulatory Authority of India (TRAI) had cautioned (2011) that assigning BSNL 
+the role of executing agency could give rise to conflict of interest, distort competition and 
+undermine a level playing field for other service providers, besides div erting BSNL’s focus 
+from its core responsibility of providing telecom service particularly in view of its financial 
+stress.  
+With the implementation of ABP (2023), BSNL has been designated as the Project 
+Management Agency (PMA) for the programme. In this context, the concerns highlighted by 
+TRAI assume renewed relevance.  
+No response was received from the Ministry in this regard, as of November 2025. 
+
+Report No. 19 of 2026 
+52 
+5.6  Conclusion: Lessons from BharatNet’s Underperformance 
+The underperformance of BharatNet’s SPV governance model offers important lessons. A 
+high-stakes, multi -agency project needs a strong central management with adequate 
+authority and resources. In BharatNet’s case, BBNL’s weak organizational set -up and lack of 
+empowered leadership meant it could not effectively plan or respond to on -ground 
+challenges. Structural inadequacies led to deficiencies in planning and delays in execution, 
+while the focus remained on  infrastructure creation rather than delivering quality service . 
+Consequently, a substantial portion of the network remained underutilised or non -
+operational and the revenue from operations remained negligible in relation to O&M cost.  
+In 2022, the government recognis ed these underperformances and decided to merge BBNL 
+into BSNL and dissolve the SPV indicating a tacit admission that the existing governance model 
+needed a reset. Going forward, with ABP placed under a single agency (BSNL), the government 
+has signalled a strategic shift towards more centralised execution.  
+The Ministry stated (November 2025) that in ABP, a single PMA will manage network creation 
+with milestone-based payments, SLA-linked O&M for 10 years, penalties for delays, and fund 
+flow through CNA accounts  to ensure transparency , ring topology  with dedicated power 
+backup, Remote Fibre Monitoring Systems  and real-time monitoring  via Central Network 
+Operations Centre supported by Independent Engineers. BharatNet Udyamis will strengthen 
+last-mile delivery. It was also informed that p rimary goal of BharatNet is digital inclusion 
+rather than profit generation.  
+The reply given by the Ministry does not address the deficiencies point ed out by audit. 
+Further, the effectiveness of the measures envisaged in ABP can be assessed in subsequent 
+audit. Moreover, while digital inclusion is a core objective, the Cabinet approval envisaged 
+operational self-sustainability, which remains unrealised.  
+5.7 Recommendations 
+ 
+Strengthen Governance and Institutional Design for ABP 
+i. The executing agency (BSNL) for ABP should be supported by a specialized division with 
+independent leadership, separate financials, adequate institutional capacity and 
+clearly defined performance KPIs  to ensure focused implementation and operational 
+efficiency. Governance should be strengthened through the oversight by independent 
+directors. 
+ii. The legacy concerns raised by TRAI, such as conflict of interest, lack of competitive 
+neutrality and distraction from BSNL’s core telecom mandate  need to be proactively 
+addressed by legally separating BharatNet’s infrastructure and service provision 
+functions within BSNL. 
+
+Report No. 19 of 2026
+53 
+iii. Ensure PPP based training programs in collaboration with Gram Panchayats and local
+bodies, supported by certification modules  covering fibre maintenance, RFMS
+operation, and fault localization. Encourage trained local youth and entrepreneurs  to
+take up O&M roles under the BharatNet Udyami Model  through performance-linked
+contracts, fostering employment, accountability and high quality service delivery.
+New Delhi 
+Dated: 20 July 2026   
+(KHALID BIN JAMAL) 
+Director General of Audit 
+Finance and Communication 
+Countersigned 
+New Delhi 
+Dated: 29 July 2026   
+(K. SANJAY MURTHY) 
+ Comptroller and Auditor General of India 
+
+
+Report No. 19 of 2026 
+1 
+Annexures 
+
+Report No. 19 of 2026
+55 
+ Annexure-3.1 
+(Refer Para 3.1.2) 
+Cost cuts in CPSU Model 
+State/Circle Assam MP Rajasthan Sikkim UP(E) UP(W) West 
+Bengal 
+EPC EPC Non-EPC EPC Non-EPC EPC Non-EPC EPC Non-EPC EPC Non-EPC EPC 
+No of GPs 1,217 5,022 5,832 1,136 535 42 82 6,123 17,032 2,138 2,169 593 
+Total CAPEX as per BSNL 
+DPR (in crore) 
+398.25 1,548.11 2,060.82 450.47 209.92 34.93 148.49 1,163.57 2,939.19 376.53 378.72 298.10 
+CAPEX recommended by 
+SC/BBNL (in crore) 
+308.00 1,308.01 1,553.10 362.64 172.35 25.10 43.82 874.89 2,598.96 257.26 266.33 185.01 
+CAPEX recommended by 
+PAC (in crore) 
+293.00* 1,285.75# 1,553.10 362.64 172.36 24.49* 42.44* 860.58# 2,598.96 257.23 266.29 182.40* 
+TC approved CAPEX 
+(in crore) 
+293.00 1,285.75 1,553.10 362.64 172.36 24.49 42.44 860.58 2,598.96 257.23 266.29 182.40 
+Tender Discovered cost 
+(in crore) 
+492.00 1,930.87 1,505.00 488.34 146.55 30.79 51.98 1,208.76 2,432.68 353.48 331.17 320.80 
+Variation from TC 
+approved cost vis-vis 
+Tender discover cost 
+(in percentage) 
+67.92 50.17 -3.10 34.66 -14.97 25.72 22.48 40.46 -6.40 37.42 24.36 75.88 
+Deduction in approved 
+funding by TC in 
+comparison to BSNL DPR 
+(in percentage) 
+26.43 16.95 24.64 19.50 17.89 29.89 71.42 26.04 11.58 31.68 29.69 38.81 
+*Underground Fibre laying cost including material cost reduced. #Administrative cost reduced from @14 per cent to @12 per cen t
+
+Report No. 19 of 2026 
+56 
+Annexure-3.2  
+(Refer Para 3.2.1 and 3.2.2) 
+ Status of service ready GPs under Phase-II BharatNet (as of November 2025) 
+Model Name of State Completion 
+Date/Status 
+Delay (as of 
+November 2025)  
+(due date  
+March 2019) 
+Revised 
+Scope (GPs 
+i/c BHQs)  
+Service Ready 
+GPs  
+(November 
+2025) 
+Service Ready 
+GPs  
+(in per cent) 
+Operational 
+GPs  
+(November 
+2025) 
+Operational GP 
+(in per cent) 
+State Led Jharkhand Under 
+Progress 
+6 Years 08 
+Months 
+1,790 1,789 99.94 1,213 67.80 
+Andhra Pradesh March 2024 5 Years 11,254 11,254 100.00 0 0 
+Odisha March 2023 4 Years 3,065 3,065 100.00 1,951 63.65 
+Maharashtra Under 
+Progress 
+6 Years 08 
+Months 
+12,513 9,403 75.14 0 0 
+Telangana Under 
+Progress 
+6 Years 08 
+Months 
+10,787 8,887 82.38 5,442 61.24 
+Chhattisgarh Under 
+Progress 
+6 Years 08 
+Months 
+5,964 5,631 94.41 0 0 
+Gujarat January 2025 5 Years 10 
+Months  
+7,847 7,847 100.00 7,224 92.06 
+Tamil Nadu Under 
+Progress 
+6 Years 08 
+Months 
+12,525 10,869 86.77 7,552 69.48 
+CPSU led 
+(BSNL) 
+Madhya Pradesh December 
+2023 
+4 Years 09 
+Months 
+5,345 5,345 100.00 161 3.01 
+UP(E) Under 
+Progress 
+6 Years 08 
+Months 
+16,933 16,770 99.03 1,899 11.32 
+UP(W) December 
+2024 
+5 Years 09 
+Months 
+2,175 2,175 100.00 548 25.20 
+
+Report No. 19 of 2026
+57 
+Model Name of State Completion 
+Date/Status 
+Delay (as of 
+November 2025) 
+(due date 
+March 2019) 
+Revised 
+Scope (GPs 
+i/c BHQs) 
+Service Ready 
+GPs 
+(November 
+2025) 
+Service Ready 
+GPs 
+(in per cent) 
+Operational 
+GPs 
+(November 
+2025) 
+Operational GP 
+(in per cent) 
+Sikkim Under 
+Progress 
+6 Years 08 
+Months 
+136 0 0 0 0 
+Private led 
+(BBNL) 
+Punjab March 2021 2 Years 4,763 4,763 100.00 4,659 97.82 
+Bihar January 2024 4 Years 10 
+Months 
+2,849 2,849 100.00 2,200 77.22 
+Satellite Under 
+Progress 
+6 Years 08 
+Months 
+5,166 5,034 97.44 439 8.70 
+Total 1,03,112 95,681 92.79 33,288 34.79 
+
+Report No. 19 of 2026 
+58 
+Annexure-4.1  
+(Refer Para 4.2.1) 
+ Monthly GP Node Availability Report (Phase-I) (in per cent) 
+STATE NAME 03-
+2023 
+04-
+2023 
+05-
+2023 
+06-
+2023 
+07-
+2023 
+08-
+2023 
+09-
+2023 
+10-
+2023 
+11-
+2023 
+12-
+2023 
+01-
+2024 
+02-
+2024 
+03-
+2024 
+04-
+2024 
+05-
+2024 
+06-
+2024 
+07-
+2024 
+ANDAMAN AND 
+NICOBAR ISLANDS 
+77.15 75.80 72.50 71.05 64.38 65.34 64.88 69.87 72.1 73.73 82.29 79.47 80.18 78.38 80.30 76.24 70.66 
+ANDHRA PRADESH 43.64 45.03 39.74 36.08 32.29 33.52 28.48 24.38 19.23 22.46 26.07 27.20 27.54 29.85 33.66 33.52 36.40 
+ARUNACHAL 
+PRADESH 
+8.32 9.68 11.59 7.76 4.31 3.40 3.40 4.00 11.78 12.14 15.76 9.72 8.53 9.76 10.98 15.77 22.07 
+ASSAM 36.44 31.97 31.79 30.85 32.33 31.73 30.25 30.71 32.27 31.97 34.28 35.52 36.51 34.12 34.59 32.10 33.31 
+BIHAR 26.91 27.29 26.95 25.13 22.44 19.60 17.60 15.39 13.88 13.22 14.68 17.89 18.77 17.24 18.15 18.62 18.14 
+CHANDIGARH 79.06 85.21 90.66 85.53 82.64 67.38 61.36 47.25 35.90 43.47 54.27 66.68 72.91 68.27 78.07 81.38 81.87 
+CHHATTISGARH 38.65 37.63 37.53 38.11 37.29 37.05 35.96 37.16 39.04 38.64 38.94 40.30 38.95 40.02 40.43 36.91 34.42 
+GUJARAT 62.87 63.82 63.71 60.53 60.59 60.25 60.45 64.97 62.71 63.27 64.57 65.83 66.22 68.02 68.59 65.56 63.45 
+HARYANA 45.98 49.92 46.72 39.09 29.15 23.04 19.44 16.81 14.58 16.89 19.53 22.98 26.87 30.21 32.26 27.85 29.01 
+HIMACHAL 
+PRADESH 
+80.82 83.26 82.71 82.28 82.05 77.60 80.98 81.15 84.51 84.94 86.42 84.52 87.06 87.55 85.88 86.84 86.62 
+JAMMU AND 
+KASHMIR 
+67.03 69.60 70.53 74.05 77.75 79.75 78.64 74.35 71.03 70.48 83.91 88.65 90.75 92.88 95.90 96.67 97.17 
+JHARKHAND 25.78 27.70 25.44 22.99 20.41 17.24 16.92 16.54 18.19 22.78 27.29 29.94 31.84 33.27 35.96 37.58 37.74 
+
+Report No. 19 of 2026
+59 
+STATE NAME 03-
+2023 
+04-
+2023 
+05-
+2023 
+06-
+2023 
+07-
+2023 
+08-
+2023 
+09-
+2023 
+10-
+2023 
+11-
+2023 
+12-
+2023 
+01-
+2024 
+02-
+2024 
+03-
+2024 
+04-
+2024 
+05-
+2024 
+06-
+2024 
+07-
+2024 
+KARNATAKA 54.51 54.01 52.43 51.73 49.57 47.72 46.30 45.58 45.19 48.29 51.45 53.86 54.36 53.53 51.76 52.50 52.44 
+KERALA 62.09 52.26 54.94 58.41 61.14 59.69 59.90 58.21 58.49 58.03 59.54 60.86 60.61 56.91 55.39 55.84 63.87 
+MADHYA PRADESH 23.57 17.53 15.44 15.40 14.35 12.42 10.36 8.79 9.35 11.87 13.87 15.92 17.12 17.81 19.33 19.86 19.58 
+MAHARASHTRA 34.03 31.77 30.08 27.41 25.82 24.26 21.83 19.56 16.64 14.95 15.17 16.08 16.69 16.55 16.33 16.06 15.74 
+MANIPUR 15.09 13.55 11.27 7.27 6.38 4.88 5.15 5.25 5.11 5.69 5.55 5.30 4.30 3.99 3.79 4.24 6.80 
+MEGHALAYA 10.64 9.72 11.31 7.44 6.97 9.27 9.69 10.40 10.07 8.22 9.30 10.23 10.30 11.13 10.53 7.47 8.75 
+MIZORAM 38.50 31.95 30.66 33.02 31.55 24.22 29.05 27.04 33.91 26.59 31.66 26.66 26.03 25.55 36.01 26.25 32.39 
+NAGALAND 4.81 2.06 1.43 1.34 1.39 0.75 0.61 0.65 0.68 0.73 6.17 0.92 0.53 0.23 6.93 5.96 5.76 
+ODISHA 45.66 46.66 44.20 41.97 39.81 39.62 40.31 40.35 38.09 36.74 37.51 39.14 37.04 38.76 40.10 38.51 39.29 
+PUDUCHERRY 88.60 90.35 90.54 90.39 90.95 93.31 91.69 90.59 93.58 94.53 95.68 97.58 96.08 96.12 96.46 92.62 88.24 
+PUNJAB 60.57 61.74 56.40 49.19 41.21 38.16 33.33 30.03 27.33 29.30 32.13 40.78 46.98 50.64 52.76 52.60 53.67 
+RAJASTHAN 85.89 85.61 83.48 79.31 74.81 69.00 64.89 61.79 58.16 61.14 65.42 70.15 72.35 72.72 71.77 71.63 71.39 
+SIKKIM 11.76 6.59 6.36 7.32 7.05 5.74 15.81 21.09 17.27 15.78 15.82 14.37 14.87 12.48 18.4 8.79 4.33 
+TELANGANA 10.60 9.62 9.07 7.95 6.76 6.16 5.69 5.32 4.99 4.50 3.95 3.43 3.78 4.00 4.04 4.86 4.76 
+DADRA, NAGAR 
+HAVELI & DAMAN -
+DIU 
+37.66 36.47 45.27 57.06 58.24 59.06 58.00 43.13 51.91 40.28 46.73 45.18 45.28 47.64 47.25 35.30 43.90 
+
+Report No. 19 of 2026
+60 
+STATE NAME 03-
+2023 
+04-
+2023 
+05-
+2023 
+06-
+2023 
+07-
+2023 
+08-
+2023 
+09-
+2023 
+10-
+2023 
+11-
+2023 
+12-
+2023 
+01-
+2024 
+02-
+2024 
+03-
+2024 
+04-
+2024 
+05-
+2024 
+06-
+2024 
+07-
+2024 
+TRIPURA 42.33 42.03 46.04 43.95 49.04 47.09 46.44 46.65 47.34 51.32 53.95 55.32 59.16 57.15 55.96 55.14 60.13 
+UTTAR PRADESH 
+EAST 
+20.85 19.54 17.44 15.19 13.66 10.66 8.48 6.47 5.34 5.46 6.70 8.16 9.10 8.74 10.92 10.90 9.92 
+UTTAR PRADESH 
+WEST 
+24.31 22.13 17.31 16.01 15.60 12.26 9.97 9.05 8.04 7.41 6.26 7.72 8.97 10.05 11.24 12.80 12.48 
+UTTARAKHAND 52.35 52.70 52.12 50.95 45.40 44.84 47.87 43.51 33.32 41.02 46.94 49.78 46.97 50.75 54.95 54.68 50.87 
+WEST BENGAL 75.42 74.3 73.33 73.73 74.42 73.72 72.65 70.32 71.17 72.43 73.24 75.56 75.40 76.63 76.58 75.67 76.19 
+
+Report No. 19 of 2026
+61 
+Glossary 
+Acronyms Description  
+APO Advance Purchase Order  
+AT Acceptance Testing  
+BBNL Bharat Broadband Network Limited  
+BHQ Block Headquarters  
+BSNL Bharat Sanchar Nigam Limited  
+CAPEX Capital Expenditure  
+CMD Chairman and Managing Director  
+CPSU Central Public Sector Undertaking  
+CVC Central Vigilance Commission  
+DCC Digital Communications Commission  
+DoT Department of Telecommunications  
+DPR Detailed Project Report  
+EPC Engineering, Procurement, and Construction  
+FLM First Level Maintenance  
+FMA Field Maintenance Agency  
+GFR General Financial Rules  
+GIS Geographic Information System  
+GP Gram Panchayat  
+GPON Gigabit Passive Optical Network  
+GST Goods and Services Tax  
+IP-MPLS Internet Protocol - Multiprotocol Label Switching  
+ISP Internet Service Provider  
+MIS Management Information System  
+MoU Memorandum of Understanding  
+MTTR Mean Time To Repair  
+
+Report No. 19 of 2026 
+62 
+Acronyms Description  
+NER North East Region  
+NIT Notice Inviting Tender  
+NOC Network Operations Center  
+NOFN National Optical Fibre Network (later renamed BharatNet)  
+O&M Operations and Maintenance  
+OFC Optical Fibre Cable  
+OLT Optical Line Terminal  
+ONT Optical Network Terminal  
+OPEX Operating Expenditure  
+PIA Project Implementing Agency  
+PMA Project Management Agency  
+PMU Project Management Unit  
+PPP Public-Private Partnership  
+PSU Public Sector Undertaking  
+SIA State Implementing Agency  
+SLA Service Level Agreement  
+TC Telecom Commission (later renamed Digital Communication Commission)  
+TSP Telecom Service Provider  
+TT Trouble Tickets  
+USOF Universal Service Obligation Fund (later renamed Digital Bharat Nidhi)  
+VSAT Very Small Aperture Terminal  
+ 
