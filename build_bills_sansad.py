@@ -1114,4 +1114,10 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    import requests as _rq
+    try:
+        _rc = main()
+    except (_rq.exceptions.ConnectionError, _rq.exceptions.Timeout) as _e:
+        print(f"::warning::Source unreachable ({type(_e).__name__}: {_e}); skipping this run \u2014 next scheduled run will retry.", flush=True)
+        _rc = 0
+    raise SystemExit(_rc)

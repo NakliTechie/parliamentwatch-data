@@ -951,4 +951,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import requests as _rq
+    try:
+        main()
+    except (_rq.exceptions.ConnectionError, _rq.exceptions.Timeout) as _e:
+        print(f"::warning::Source unreachable ({type(_e).__name__}: {_e}); skipping this run \u2014 next scheduled run will retry.", flush=True)
+        raise SystemExit(0)

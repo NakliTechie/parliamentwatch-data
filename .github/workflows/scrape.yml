@@ -93,5 +93,10 @@ jobs:
             exit 0
           fi
           git commit -m "Auto-update DRSC primary data [$(date -u +%Y-%m-%dT%H:%MZ)]"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3 4 5; do
+            if git fetch origin main && git rebase -X theirs origin/main && git push origin HEAD:main; then
+              echo "pushed on attempt $attempt"; exit 0
+            fi
+            echo "push attempt $attempt failed (race); retrying"; git rebase --abort 2>/dev/null || true; sleep $((RANDOM % 5 + 3))
+          done
+          echo "::error::failed to push after 5 attempts"; exit 1

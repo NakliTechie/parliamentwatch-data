@@ -72,7 +72,7 @@ def _jitter() -> None:
     time.sleep(ms / 1000.0)
 
 
-def _get(url: str, *, timeout: int = 30, retries: int = 1, **kwargs) -> requests.Response:
+def _get(url: str, *, timeout: int = 30, retries: int = 4, **kwargs) -> requests.Response:
     """HTTP GET with rate-limit-aware error handling + one retry on transient
     timeouts. Honours Retry-After in the RateLimited message (per the
     parliamentwatch-data 1c09f17 fix; logic duplicated here per Independence).

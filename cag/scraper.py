@@ -68,7 +68,7 @@ def _jitter() -> None:
     time.sleep(ms / 1000.0)
 
 
-def _get(url: str, *, timeout: int = 30, retries: int = 1, **kwargs) -> requests.Response:
+def _get(url: str, *, timeout: int = 30, retries: int = 4, **kwargs) -> requests.Response:
     """HTTP GET with rate-limit-aware error handling + one retry on transient
     timeouts. Default 30s — generous enough to ride out cag.gov.in's
     occasional slow-response blips (run 25619522300 caught a 15s+
