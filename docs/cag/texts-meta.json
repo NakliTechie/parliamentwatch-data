@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 2787,
-    "shards": 2787,
+    "records_with_text": 2789,
+    "shards": 2789,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 574994,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 2787,
-    "txt_files_removed": 0
+    "txt_files_removed": 2
   },
   "shard_stride": 250,
   "shards": [
@@ -6474,6 +6474,16 @@
       "file": "texts-126303-0505.json",
       "count": 1,
       "bytes": 386098
+    },
+    {
+      "file": "texts-126307-0505.json",
+      "count": 1,
+      "bytes": 233849
+    },
+    {
+      "file": "texts-126308-0505.json",
+      "count": 1,
+      "bytes": 357910
     },
     {
       "file": "texts-126309-0505.json",
