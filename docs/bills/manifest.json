@@ -1,11 +1,11 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-09-28T07:29:16Z",
+  "scraped_at": "2026-09-28T11:45:02Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9928,
-    "with_intro_pdf": 7480,
-    "with_canonical_pdf": 7509,
+    "with_intro_pdf": 7481,
+    "with_canonical_pdf": 7510,
     "with_text": 7331,
     "became_law": 3458,
     "with_drsc_report_link": 29,
