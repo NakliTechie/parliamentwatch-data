@@ -1,6 +1,6 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-10-04T11:10:08Z",
+  "scraped_at": "2026-10-04T12:35:00Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9928,
@@ -21329,7 +21329,7 @@
       "bundled": true
     },
     "XXXII_1963_R": {
-      "url": "text/XXXII_1963_R.txt"
+      "bundled": true
     },
     "XXXII_1999_R": {
       "bundled": true
