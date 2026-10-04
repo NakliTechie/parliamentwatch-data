@@ -1,12 +1,12 @@
 {
   "scraper_version": "bills.sansad.scraper/0.2",
-  "scraped_at": "2026-10-04T05:21:06Z",
+  "scraped_at": "2026-10-04T11:10:08Z",
   "source": "https://sansad.in/api_rs/legislation/getBills",
   "totals": {
     "bills": 9928,
     "with_intro_pdf": 7481,
     "with_canonical_pdf": 7510,
-    "with_text": 7331,
+    "with_text": 7332,
     "became_law": 3458,
     "with_drsc_report_link": 29,
     "with_gazette_link": 717
@@ -21327,6 +21327,9 @@
     },
     "XXXIII_2026_R": {
       "bundled": true
+    },
+    "XXXII_1963_R": {
+      "url": "text/XXXII_1963_R.txt"
     },
     "XXXII_1999_R": {
       "bundled": true

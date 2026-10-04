@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 7331,
-    "shards": 7331,
+    "records_with_text": 7332,
+    "shards": 7332,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 6319,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 7331,
-    "txt_files_removed": 0
+    "txt_files_removed": 1
   },
   "shard_stride": 250,
   "shards": [
@@ -35839,6 +35839,11 @@
       "file": "texts-XXXI-2026-0008.json",
       "count": 1,
       "bytes": 28465
+    },
+    {
+      "file": "texts-XXXII-1963-0007.json",
+      "count": 1,
+      "bytes": 6632
     },
     {
       "file": "texts-XXXII-1999-0007.json",
