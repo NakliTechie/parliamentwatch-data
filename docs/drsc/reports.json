@@ -2750,6 +2750,51 @@
     {
       "committee": "external_affairs",
       "committee_name": "External Affairs",
+      "report_number": 18,
+      "title": "Action Taken by the Government on the Observations/ Recommendations contained in the Twelfth Report of the Committee on ‘Demands for Grants of the Ministry of External Affairs for the year 2026-27’\r\n\r\n\r\n",
+      "presented_in_ls": null,
+      "laid_in_rs": null,
+      "presented_to_speaker": "25-Sep-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/External Affairs/18_External_Affairs_18.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/External Affairs/18_External_Affairs_18(hindi).pdf?source=app",
+      "lok_sabha": 18,
+      "house": "L"
+    },
+    {
+      "committee": "external_affairs",
+      "committee_name": "External Affairs",
+      "report_number": 17,
+      "title": "INDIA’S ROLE IN GLOBAL TECH DIPLOMACY, DIGITAL GOVERNANCE, OUTER SPACE DIPLOMACY, AI AND EMERGING INNOVATIONS",
+      "presented_in_ls": null,
+      "laid_in_rs": null,
+      "presented_to_speaker": "25-Sep-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/External Affairs/18_External_Affairs_17.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/External Affairs/18_External_Affairs_17(hindi).pdf?source=app",
+      "lok_sabha": 18,
+      "house": "L"
+    },
+    {
+      "committee": "external_affairs",
+      "committee_name": "External Affairs",
+      "report_number": 16,
+      "title": "INDIA-SRI LANKA RELATIONS AND THE WAY AHEAD",
+      "presented_in_ls": null,
+      "laid_in_rs": null,
+      "presented_to_speaker": "25-Sep-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/External Affairs/18_External_Affairs_16.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/External Affairs/18_External_Affairs_16(hindi).pdf?source=app",
+      "lok_sabha": 18,
+      "house": "L"
+    },
+    {
+      "committee": "external_affairs",
+      "committee_name": "External Affairs",
       "report_number": 15,
       "title": "Action Taken by the Government on the Observations/ Recommendations contained in the Ninth Report of the Committee on the subject ‘Future of India-Bangladesh Relationship’",
       "presented_in_ls": "30-Jul-2026",
@@ -43065,6 +43110,21 @@
     }
   ],
   "housing": [
+    {
+      "committee": "housing",
+      "committee_name": "Housing and Urban Affairs",
+      "report_number": 13,
+      "title": "Thirteenth Report of the Standing Committee on Housing and Urban Affairs (2025-26) on the subject, ‘Census Criteria for Defining Urban Areas’.",
+      "presented_in_ls": null,
+      "laid_in_rs": null,
+      "presented_to_speaker": "25-Sep-2026",
+      "date_of_presentation": null,
+      "date_of_adoption": null,
+      "pdf_url": "https://sansad.in/getFile/app/lsscommittee/Housing and Urban Affairs/18_Housing_and_Urban_Affairs_13.pdf?source=app",
+      "pdf_url_hindi": "https://sansad.in/getFile/app/committee_hindi/Housing and Urban Affairs/18_Housing_and_Urban_Affairs_13(hindi).pdf?source=app",
+      "lok_sabha": 18,
+      "house": "L"
+    },
     {
       "committee": "housing",
       "committee_name": "Housing and Urban Affairs",
