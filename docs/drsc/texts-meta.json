@@ -4,14 +4,14 @@
   "r2_origin": null,
   "schema": 2,
   "totals": {
-    "records_with_text": 14581,
-    "shards": 14581,
+    "records_with_text": 14585,
+    "shards": 14585,
     "r2_fallback": 0,
-    "total_text_bytes": 0,
+    "total_text_bytes": 1176300,
     "missing_files": 0,
     "skipped_oversize_no_r2": 0,
     "from_existing_shards": 14581,
-    "txt_files_removed": 0
+    "txt_files_removed": 4
   },
   "shard_stride": 250,
   "shards": [
@@ -23076,6 +23076,21 @@
       "bytes": 163210
     },
     {
+      "file": "texts-externalaffairs-LS18-16-0000.json",
+      "count": 1,
+      "bytes": 216260
+    },
+    {
+      "file": "texts-externalaffairs-LS18-17-0000.json",
+      "count": 1,
+      "bytes": 478224
+    },
+    {
+      "file": "texts-externalaffairs-LS18-18-0000.json",
+      "count": 1,
+      "bytes": 365552
+    },
+    {
       "file": "texts-externalaffairs-LS18-2-0000.json",
       "count": 1,
       "bytes": 128720
@@ -36174,6 +36189,11 @@
       "file": "texts-housing-LS18-12-0000.json",
       "count": 1,
       "bytes": 163871
+    },
+    {
+      "file": "texts-housing-LS18-13-0000.json",
+      "count": 1,
+      "bytes": 138903
     },
     {
       "file": "texts-housing-LS18-2-0000.json",
