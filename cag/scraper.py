@@ -75,8 +75,8 @@ def _get(url: str, *, timeout: int = 30, retries: int = 4, **kwargs) -> requests
     listing-page response and crashed the whole backfill workflow before
     this fix).
 
-    RateLimited / HTTPError still short-circuit immediately (signal, not
-    noise). Only ReadTimeout / ConnectionError trigger the retry path.
+    RateLimited (429/403) and 4xx short-circuit immediately (signal, not
+    noise). ReadTimeout / ConnectionError and 5xx trigger the retry path.
     Callers needing longer timeouts (PDF downloads, ~180s) pass
     `timeout=` explicitly.
     """
@@ -104,6 +104,14 @@ def _get(url: str, *, timeout: int = 30, retries: int = 4, **kwargs) -> requests
             if suggested_wait is not None:
                 msg += f" (Retry-After: {suggested_wait}s)"
             raise RateLimited(msg)
+        if resp.status_code in (500, 502, 503, 504) and attempt < retries:
+            # cag.gov.in throws sporadic 500s on listing pages (runs
+            # 38560254019 at page=76, 38728243244 at page=1); a retry after
+            # a short wait usually succeeds.
+            last_err = requests.exceptions.HTTPError(
+                f"{resp.status_code} for url: {url}", response=resp)
+            time.sleep(5 * (attempt + 1))
+            continue
         resp.raise_for_status()
         return resp
     # Unreachable — loop returns or raises.
