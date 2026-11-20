@@ -12,7 +12,7 @@ Per scheduled (or workflow_dispatch) run:
   4. (Derive phase) Build manifest + sharded bundle + sharded index +
      meta + audit.
 
-Output goes under docs/lc/, served at sansadsaar-data.naklitechie.com/lc/.
+Output goes under docs/lc/, served at data.indiavotes.com/lc/.
 
 Independence Principle: no imports from cag/scraper.py, drsc/build_static.py,
 or bills/sansad/scraper.py. Small duplication of HTTP / jitter / checkpoint

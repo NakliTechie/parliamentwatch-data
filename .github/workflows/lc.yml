@@ -86,7 +86,7 @@ jobs:
           git init -q -b main
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          REMOTE_URL="https://x-access-token:${LC_ARCHIVE_TOKEN}@github.com/NakliTechie/sansadsaar-lc.git"
+          REMOTE_URL="https://x-access-token:${LC_ARCHIVE_TOKEN}@github.com/indiavotes/sansadsaar-lc.git"
           if git remote get-url origin >/dev/null 2>&1; then
             git remote set-url origin "$REMOTE_URL"
           else

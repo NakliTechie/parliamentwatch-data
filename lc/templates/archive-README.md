@@ -4,7 +4,7 @@ Archive of PDF reports from the **Law Commission of India**
 (<https://lawcommissionofindia.nic.in/>).
 
 This repo is auto-populated by the
-[`parliamentwatch-data`](https://github.com/NakliTechie/parliamentwatch-data)
+[`parliamentwatch-data`](https://github.com/indiavotes/parliamentwatch-data)
 daily Action whenever a new Law Commission report PDF is fetched. It
 exists as a durability hedge — the upstream site is a WordPress / S3WaaS
 deployment with a track record of URL rotations and occasional content
@@ -31,7 +31,7 @@ pdfs/<n>.pdf` against the recorded digest to verify.
 ## Live app
 
 Reports here are searchable, summarisable, and queryable via AI at
-<https://sansadsaar.naklitechie.com>. The app links to the live
+<https://sansadsaar.indiavotes.com>. The app links to the live
 upstream source first; this archive is the click-through fallback when
 upstream 404s.
 
@@ -42,13 +42,13 @@ Layout is intentionally stable. You can `git clone` the whole archive
 if you want a local copy:
 
 ```sh
-git clone https://github.com/NakliTechie/sansadsaar-lc.git
+git clone https://github.com/indiavotes/sansadsaar-lc.git
 ```
 
 ## Companion repos
 
-- [`parliamentwatch-data`](https://github.com/NakliTechie/parliamentwatch-data)
+- [`parliamentwatch-data`](https://github.com/indiavotes/parliamentwatch-data)
   — daily-mirrored extracted text + metadata for LC + other parliamentary
   corpora (DRSC standing committees, CAG audits, Bills).
-- [`SansadSaar`](https://sansadsaar.naklitechie.com) — the browser app that
+- [`SansadSaar`](https://sansadsaar.indiavotes.com) — the browser app that
   consumes both this archive and the parliamentwatch-data mirror.

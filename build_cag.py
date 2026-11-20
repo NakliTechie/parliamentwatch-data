@@ -9,7 +9,7 @@ Per scheduled (or workflow_dispatch) run:
   4. Build manifest.json + reports.json + meta.json
   5. Build search-bundle.json + search-index.json (mirror DRSC's v0.6 ladder)
 
-Output goes under docs/cag/, served at sansadsaar-data.naklitechie.com/cag/.
+Output goes under docs/cag/, served at data.indiavotes.com/cag/.
 
 Independence Principle: this orchestrator does not import from the DRSC
 build_static.py. The two corpora share a docs/ tree but no Python state.

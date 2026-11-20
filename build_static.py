@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ParliamentWatch — static data builder for naklitechie/parliamentwatch-data.
+"""ParliamentWatch — static data builder for indiavotes/parliamentwatch-data.
 
 Per scheduled (or workflow_dispatch) run:
   1. Scrape metadata for all 24 DRSCs across configured Lok Sabhas

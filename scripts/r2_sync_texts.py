@@ -110,7 +110,7 @@ def ensure_bucket() -> None:
             "     GitHub secret if you edited in place).\n"
             "  2. Token was REPLACED rather than edited — GitHub secret still\n"
             "     holds the old value. Fix: `gh secret set CLOUDFLARE_API_TOKEN\n"
-            "     --repo NakliTechie/parliamentwatch-data` and paste the new value.\n"
+            "     --repo indiavotes/parliamentwatch-data` and paste the new value.\n"
             "  3. Token's Account Resources scope doesn't include the account\n"
             "     specified by CLOUDFLARE_ACCOUNT_ID. Fix: edit the token's\n"
             "     scope to include the account that holds your R2 buckets.")

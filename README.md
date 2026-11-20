@@ -2,7 +2,7 @@
 
 Static data mirror for [SansadSaar](https://github.com/indiavotes/SansadSaar). Holds the document-centric corpora: **DRSC committee reports**, **CAG audits**, **Bills**, **Law Commission reports**, **Financial Committee reports**.
 
-Served at `sansadsaar-data.naklitechie.com`.
+Served at `data.indiavotes.com`.
 
 ## Why a separate repo?
 
@@ -11,9 +11,9 @@ Upstream sources don't permit cross-origin browser requests. GitHub Actions scra
 ## Family
 
 - [SansadSaar](https://github.com/indiavotes/SansadSaar) — the app
-- [sansadsaar-proceedings-data](https://github.com/NakliTechie/sansadsaar-proceedings-data) — Debates, Questions
-- [sansadsaar-gazettes](https://github.com/NakliTechie/sansadsaar-gazettes) — Central Gazette
-- [sansadsaar-lc](https://github.com/NakliTechie/sansadsaar-lc) — Law Commission PDF archive
+- [sansadsaar-proceedings-data](https://github.com/indiavotes/sansadsaar-proceedings-data) — Debates, Questions
+- [sansadsaar-gazettes](https://github.com/indiavotes/sansadsaar-gazettes) — Central Gazette
+- [sansadsaar-lc](https://github.com/indiavotes/sansadsaar-lc) — Law Commission PDF archive
 
 ## Credits
 

@@ -10,7 +10,7 @@ Per scheduled (or workflow_dispatch) run:
   4. (Derive phase) Build manifest + sharded bundle + sharded index +
      meta + audit.
 
-Output goes under docs/fc/, served at sansadsaar-data.naklitechie.com/fc/.
+Output goes under docs/fc/, served at data.indiavotes.com/fc/.
 
 Structurally a hybrid: shape borrowed from build_lc.py (split-phase,
 checkpoint cadence, derive separation) + composite-key handling

@@ -11,7 +11,7 @@ Per scheduled (or workflow_dispatch) run:
         docs/bills/manifest.json         (deeper stats for diagnostics)
         docs/bills/meta.json             (status display for the chip)
 
-Output goes under docs/bills/, served at sansadsaar-data.naklitechie.com/bills/.
+Output goes under docs/bills/, served at data.indiavotes.com/bills/.
 
 Sharding rationale: full archive ~9.9k records ≈ 10.5 MB single-file. Under
 the 25 MiB per-asset cap on the host today, but PRS-payload merge will grow

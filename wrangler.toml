@@ -12,6 +12,7 @@
 
 name = "sansad-files"
 main = "src/index.js"
+routes = [{ pattern = "data.indiavotes.com", custom_domain = true }]
 compatibility_date = "2026-05-09"
 
 [assets]
