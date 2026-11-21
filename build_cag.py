@@ -210,6 +210,23 @@ def cleanup_html_entities(reports: dict[int, dict]) -> int:
     return n_changed
 
 
+def fix_future_years(reports: dict[int, dict]) -> int:
+    """Idempotent. Recomputes `year` for reports whose stored year is after the
+    current year (a cag.gov.in date typo) with the scraper's guarded rule.
+    `date_tabled` keeps the raw upstream string. Returns entries changed."""
+    import datetime
+    from cag.scraper import infer_report_year
+    this_year = datetime.date.today().year
+    n_changed = 0
+    for meta in reports.values():
+        year = meta.get("year")
+        if isinstance(year, int) and year > this_year:
+            meta["year"] = infer_report_year(meta.get("date_tabled"), meta.get("date_sent"),
+                                             meta.get("report_no"), meta.get("title"))
+            n_changed += 1
+    return n_changed
+
+
 def save_reports(reports: dict[int, dict]) -> None:
     # Sort by id desc (newest first) for stable diffs and easier scanning.
     sorted_items = sorted(reports.items(), key=lambda kv: -kv[0])
@@ -813,6 +830,9 @@ def phase_extract() -> None:
     cleaned = cleanup_html_entities(reports)
     if cleaned:
         print(f"  cleaned {cleaned} entries with HTML-entity-encoded fields (one-shot fix)")
+    fixed_years = fix_future_years(reports)
+    if fixed_years:
+        print(f"  fixed {fixed_years} entries with a year after the current one")
     overall_deadline = time.monotonic() + MAX_RUN_SECONDS
     new_meta = fetch_new_metadata(set(reports.keys()), all_ids, deadline=overall_deadline)
     reports.update(new_meta)

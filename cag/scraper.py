@@ -26,6 +26,7 @@ when a third corpus arrives and the duplication starts to bite.
 
 from __future__ import annotations
 
+import datetime
 import html
 import os
 import random
@@ -222,10 +223,24 @@ _YEAR_FROM_DATE = re.compile(r'(19|20)\d{2}')
 
 
 def _infer_year(date_str: str) -> Optional[int]:
+    """First 19xx/20xx year in the string, or None. A year after the
+    current one is a typo on cag.gov.in (report 2 of 2016, Telangana local
+    bodies, is listed as tabled 'Sat 16 Mar, 2030'), so it counts as None and
+    the caller falls back to the next source."""
     if not date_str:
         return None
     m = _YEAR_FROM_DATE.search(date_str)
-    return int(m.group(0)) if m else None
+    if not m:
+        return None
+    year = int(m.group(0))
+    return year if year <= datetime.date.today().year else None
+
+
+def infer_report_year(date_tabled, date_sent, report_no, title) -> Optional[int]:
+    """Report year: date tabled, then date sent, then the 'of YYYY' in the
+    report number, then the title. Future years are skipped."""
+    return (_infer_year(date_tabled) or _infer_year(date_sent)
+            or _infer_year(report_no) or _infer_year(title))
 
 
 # Best-effort report-type / report-number extraction from title. CAG title
@@ -341,7 +356,7 @@ def parse_detail_html(report_id: int, html: str) -> CAGReport:
             rep.state = value
 
     # Year inference: prefer date_tabled, fall back to date_sent, then title.
-    rep.year = _infer_year(rep.date_tabled) or _infer_year(rep.date_sent) or _infer_year(rep.title)
+    rep.year = infer_report_year(rep.date_tabled, rep.date_sent, None, rep.title)
 
     # Report number + type from title
     m = _REPORT_NO_RE.search(rep.title or "")
