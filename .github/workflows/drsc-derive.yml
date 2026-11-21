@@ -18,7 +18,8 @@ on:
       - "Scrape and publish"
     types: [completed]
   schedule:
-    - cron: '*/30 * * * *'
+    # Daily backstop; the primary trigger is workflow_run (set 21 Nov 2026).
+    - cron: '35 22 * * *'
   workflow_dispatch:
 
 permissions:

@@ -2,16 +2,9 @@ name: Scrape and publish
 
 on:
   schedule:
-    # Every 4 hours. With max_extractions=400 (env default in this workflow),
-    # 6 runs/day × 400 = 2,400 PDFs/day = ~5.5 days to complete the LS14-18
-    # historical backfill (~13,300 candidates as of 2026-05-08).
-    #
-    # build_static.py has a rate-limit cooldown guard (6h) that skips the
-    # extraction phase when the previous run was 429'd by sansad.in, so
-    # this cron is safe to fire-and-forget — at most one wasted cycle per
-    # rate-limit event.
-    #
-    - cron: '17 */4 * * *'
+    # Daily run, then a fallback ~12 h later that skips if today's run succeeded (set 21 Nov 2026).
+    - cron: '16 20 * * *'
+    - cron: '16 8 * * *'
   workflow_dispatch:
     inputs:
       lok_sabhas:
@@ -34,7 +27,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    # Daily schedule plus a fallback cron about 12 h later (both in `on.schedule`).
+    # The fallback run skips the real job when this workflow already succeeded
+    # today (IST), so a missed or failed morning run is retried once, and the
+    # workflow-level concurrency group keeps the two from overlapping.
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          IS_FALLBACK: ${{ github.event_name == 'schedule' && github.event.schedule == '16 8 * * *' }}
+        run: |
+          if [ "$IS_FALLBACK" != "true" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          start=$(date -u -d "$(TZ=Asia/Kolkata date +%F) 00:00 +0530" +%Y-%m-%dT%H:%M:%SZ)
+          n=$(gh run list --workflow scrape.yml --status success --created ">=$start" --limit 20 \
+                --json databaseId --jq "[.[] | select(.databaseId != $GITHUB_RUN_ID)] | length")
+          echo "successful runs of scrape.yml since $start (IST midnight): $n"
+          if [ "$n" -gt 0 ]; then echo "run=false" >> "$GITHUB_OUTPUT"; else echo "run=true" >> "$GITHUB_OUTPUT"; fi
+
   build:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

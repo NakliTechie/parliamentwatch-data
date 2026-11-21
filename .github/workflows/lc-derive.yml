@@ -23,10 +23,8 @@ on:
       - "LC OCR slow-lane"
     types: [completed]
   schedule:
-    # Every 30 min — backstop for dropped workflow_run events (GH Actions
-    # has occasionally lost these in the wild) and for the case where a
-    # writer commits but doesn't trigger a workflow_run for some reason.
-    - cron: '*/30 * * * *'
+    # Daily backstop; the primary trigger is workflow_run (set 21 Nov 2026).
+    - cron: '5 23 * * *'
   workflow_dispatch:
 
 permissions:
